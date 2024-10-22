@@ -1,12 +1,7 @@
--- This file was automatically created by Diesel to setup helper functions
--- and other internal bookkeeping. This file is safe to edit, any future
--- changes will be added to existing projects as new migrations.
-
--- Create a table for storing proposals
-CREATE TABLE
+CREATE TABLE IF NOT EXISTS
   proposals (id serial primary key, author_id VARCHAR not null);
 
-CREATE TABLE
+CREATE TABLE IF NOT EXISTS
   proposal_snapshots (
     -- due to how query api runs, an edit_proposal can be processed by the worker before corresponding add_proposal, so we can't enforce proposal_id as foreign key
     proposal_id int,
@@ -33,7 +28,7 @@ CREATE TABLE
     primary key (proposal_id, ts)
   );
 
-CREATE TABLE
+CREATE TABLE IF NOT EXISTS
   dumps (
     receipt_id varchar primary key,
     method_name varchar,
@@ -122,10 +117,10 @@ FROM
   INNER JOIN proposal_snapshots ps ON latest_snapshots.proposal_id = ps.proposal_id
   AND latest_snapshots.max_ts = ps.ts;
 
-CREATE TABLE
+CREATE TABLE IF NOT EXISTS
   rfps (id serial primary key, author_id VARCHAR not null);
 
-CREATE TABLE
+CREATE TABLE IF NOT EXISTS
   rfp_snapshots (
     -- due to how query api runs, an edit_rfp can be processed by the worker before corresponding add_rfp, so we can't enforce rfp_id as foreign key
     rfp_id int REFERENCES rfps (id),
@@ -214,7 +209,7 @@ FROM
   INNER JOIN rfp_snapshots ps ON latest_snapshots.rfp_id = ps.rfp_id
   AND latest_snapshots.max_ts = ps.ts;
 
-CREATE TABLE
+CREATE TABLE IF NOT EXISTS
   rfp_dumps (
     receipt_id varchar primary key,
     method_name varchar,
@@ -224,34 +219,3 @@ CREATE TABLE
     author varchar,
     rfp_id bigint
   );
-
-
--- Sets up a trigger for the given table to automatically set a column called
--- `updated_at` whenever the row is modified (unless `updated_at` was included
--- in the modified columns)
---
--- # Example
---
--- ```sql
--- CREATE TABLE users (id SERIAL PRIMARY KEY, updated_at TIMESTAMP NOT NULL DEFAULT NOW());
---
--- SELECT diesel_manage_updated_at('users');
--- ```
--- CREATE OR REPLACE FUNCTION diesel_manage_updated_at(_tbl regclass) RETURNS VOID AS $$
--- BEGIN
---     EXECUTE format('CREATE TRIGGER set_updated_at BEFORE UPDATE ON %s
---                     FOR EACH ROW EXECUTE PROCEDURE diesel_set_updated_at()', _tbl);
--- END;
--- $$ LANGUAGE plpgsql;
-
--- CREATE OR REPLACE FUNCTION diesel_set_updated_at() RETURNS trigger AS $$
--- BEGIN
---     IF (
---         NEW IS DISTINCT FROM OLD AND
---         NEW.updated_at IS NOT DISTINCT FROM OLD.updated_at
---     ) THEN
---         NEW.updated_at := current_timestamp;
---     END IF;
---     RETURN NEW;
--- END;
--- $$ LANGUAGE plpgsql;
