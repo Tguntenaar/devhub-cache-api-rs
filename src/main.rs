@@ -1,48 +1,96 @@
 use near::{types::Data, Contract, NetworkConfig};
 use near_account_id::AccountId;
-// use rocket::tokio::task;
-// use near_workspaces;
-use rocket::{get, launch, routes};
+use rocket::http::uri::Query;
+use rocket::request::FromParam;
+
+use rocket::serde::Serialize;
+use rocket::{catch, catchers, get, launch, routes, FromForm};
+use serde_json::json;
+use utoipa::OpenApi;
+use utoipa_swagger_ui::SwaggerUi;
+mod entrypoints;
+use entrypoints::ApiDoc;
+
+use devhub_cache_api::db;
+use rocket_cors::AllowedOrigins;
+use rocket_db_pools::sqlx::{self, PgPool};
+
+use rocket::serde::json::Json;
+use rocket_db_pools::{Connection, Database};
 
 #[get("/")]
 fn index() -> &'static str {
     "Welcome from fly.io!!!!!"
 }
 
-#[get("/get_proposal_ids")]
-async fn get_proposal_ids() -> Result<String, rocket::http::Status> {
-    let mainnet = near_workspaces::mainnet()
-        .await
-        .map_err(|_e| rocket::http::Status::InternalServerError)?;
-    let account_id = "devhub.near".parse::<AccountId>().unwrap();
-    let network = NetworkConfig::from(mainnet);
-    let contract = Contract(account_id);
+// Allow robots to crawl the site
+#[get("/robots.txt")]
+fn robots() -> &'static str {
+    "User-agent: *\nDisallow: /"
+}
 
-    // Let's fetch current value on a contract
-    let result: Result<Data<Vec<i32>>, _> = contract
-        // Please note that you can add any argument as long as it is deserializable by serde :)
-        // feel free to use serde_json::json macro as well
-        .call_function("get_all_proposal_ids", ())
-        .unwrap()
-        .read_only()
-        .fetch_from(&network)
-        .await;
+#[catch(422)]
+fn unprocessable_entity() -> &'static str {
+    "Custom 422 Error: Unprocessable Entity"
+}
 
-    match result {
-        Ok(current_value) => {
-            println!("Current value: {:?}", current_value);
-            Ok(format!("Hello, {:?}!", current_value))
-        }
-        Err(e) => {
-            println!("Error fetching proposal ids: {:?}", e);
-            Err(rocket::http::Status::InternalServerError)
-        }
-    }
+#[catch(500)]
+fn internal_server_error() -> &'static str {
+    "Custom 500 Error: Internal Server Error"
+}
+
+#[catch(404)]
+fn not_found() -> &'static str {
+    "Custom 404 Error: Not Found"
+}
+
+#[catch(400)]
+fn bad_request() -> &'static str {
+    "Custom 400 Error: Bad Request"
+}
+
+#[derive(Debug, serde::Deserialize)]
+pub struct Env {
+    contract: String,
+    database_url: String,
 }
 
 #[launch]
 fn rocket() -> _ {
+    dotenvy::dotenv().ok();
+    // let env = envy::from_env::<Env>().expect("Failed to load environment variables");
+    // let database_url = env::var("DATABASE_URL").expect("DATABASE_URL must be set");
+    // PgConnection::establish(&env.database_url)
+    //     .unwrap_or_else(|_| panic!("Error connecting to {}", env.database_url));
+
+    let allowed_origins = AllowedOrigins::some_exact(&[
+        "http://localhost:3000",
+        // TODO Add prod urls here
+    ]);
+    let cors = rocket_cors::CorsOptions {
+        allowed_origins,
+        ..Default::default()
+    }
+    .to_cors()
+    .expect("Failed to create cors config");
+
     rocket::build()
-        .mount("/", routes![index])
-        .mount("/", routes![get_proposal_ids])
+        .attach(cors)
+        .attach(db::stage())
+        .mount("/", routes![robots, index])
+        // .mount("/", routes![get_all_proposal_ids, get_proposals])
+        .attach(entrypoints::stage())
+        .mount(
+            "/",
+            SwaggerUi::new("/swagger-ui/<_..>").url("/api-docs/openapi.json", ApiDoc::openapi()),
+        )
+        .register(
+            "/",
+            catchers![
+                unprocessable_entity,
+                internal_server_error,
+                not_found,
+                bad_request
+            ],
+        )
 }
