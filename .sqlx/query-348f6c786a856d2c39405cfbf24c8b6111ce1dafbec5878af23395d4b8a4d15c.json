@@ -1,0 +1,22 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n          INSERT INTO rfps (author_id)\n          VALUES ($1)\n          RETURNING id\n          ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Int4"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Varchar"
+      ]
+    },
+    "nullable": [
+      false
+    ]
+  },
+  "hash": "348f6c786a856d2c39405cfbf24c8b6111ce1dafbec5878af23395d4b8a4d15c"
+}
