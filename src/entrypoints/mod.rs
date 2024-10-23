@@ -6,6 +6,7 @@ use utoipa::OpenApi;
 // pub mod statistics;
 // pub mod user;
 pub mod proposal;
+pub mod rfp;
 use crate::db::types::{Proposal, ProposalSnapshot};
 
 use devhub_cache_api::types;
