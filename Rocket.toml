@@ -1,9 +1,3 @@
 [default]
-address = "localhost"
+address = "127.0.0.1"
 port = 8000
-
-[default.databases.devhub_cache]
-url = { env = "DATABASE_URL" }
-
-# [global.databases.devhub_cache]
-# url = "${DATABASE_URL}"
