@@ -1,10 +1,9 @@
 // use crate::db::DBTrait;
 use devhub_cache_api::db::DB;
-use devhub_shared::proposal::VersionedProposal;
+use devhub_cache_api::rpc_service::RpcService;
 use near::{types::Data, Contract, NetworkConfig};
 use near_account_id::AccountId;
 use rocket::request::FromParam;
-use rocket::serde::json::json;
 use rocket::serde::Serialize;
 use rocket::{get, FromForm, State};
 
@@ -71,57 +70,22 @@ struct ProposalQuery {
 #[utoipa::path(get, path = "/proposals")]
 #[get("/")]
 async fn get_proposals(db: &State<DB>) -> Result<String, rocket::http::Status> {
-    let params = ProposalParams {
-        proposal_ids: Some(vec![200, 199]),
-    };
+    // Store in postgres
+    // let mut tx: sqlx::Transaction<'_, sqlx::Postgres> = db.begin().await.unwrap();
+    // Upsert into postgres
+    // proposals.clone().into_iter().for_each(|proposal| {
+    //     let VersionedProposal::V0(proposal_v0) = proposal;
+    //     // TODO: Upsert into postgres
 
-    if let Some(proposal_ids) = params.proposal_ids {
-        println!("Proposal ids: {:?}", proposal_ids);
+    //     db.insert_proposal(&mut tx, "thomasguntenaar.near".to_string())
+    //         .await
+    //         .unwrap();
+    // });
 
-        let mainnet = near_workspaces::mainnet()
-            .await
-            .map_err(|_e| rocket::http::Status::InternalServerError)?;
-        let account_id = "devhub.near".parse::<AccountId>().unwrap();
-        let network = NetworkConfig::from(mainnet);
-        let contract = Contract(account_id);
-        println!("Proposal ids: {:?}", proposal_ids);
+    let rpc_service = RpcService::new(Some("devhub.near".parse::<AccountId>().unwrap()));
+    let proposals = rpc_service.get_proposals().await;
 
-        // TODO
-        // let proposal_ids = proposal_ids.unwrap_or(ProposalIds(vec![]));
-        println!("Proposal ids: {:?}", proposal_ids);
-        // Let's fetch current value on a contract
-        // : Result<Data<Vec<Proposal>>, _>
-        let result: Result<Data<Vec<VersionedProposal>>, _> = contract
-            .call_function("get_proposals", json!({ "ids": proposal_ids }))
-            .unwrap()
-            .read_only()
-            .fetch_from(&network)
-            .await;
-
-        // Store in postgres
-        let data_vector_proposals = result.unwrap();
-        let proposals = data_vector_proposals
-            .data
-            .into_iter()
-            .map(|proposal: VersionedProposal| proposal.into())
-            .collect::<Vec<VersionedProposal>>();
-
-        let mut tx = db.begin().await.unwrap();
-        // Upsert into postgres
-        // proposals.clone().into_iter().for_each(|proposal| {
-        //     let VersionedProposal::V0(proposal_v0) = proposal;
-        //     // TODO: Upsert into postgres
-
-        //     db.insert_proposal(&mut tx, "thomasguntenaar.near".to_string())
-        //         .await
-        //         .unwrap();
-        // });
-
-        Ok(format!("Hello, {:?}!", proposals))
-    } else {
-        Ok("No proposal ids provided".to_string())
-    }
-    //         Err(rocket::http::Status::InternalServerError)
+    Ok(format!("Hello, {:?}!", proposals))
 }
 
 #[utoipa::path(get, path = "/proposals/{proposal_id}")]
