@@ -1,12 +1,18 @@
 use serde::{Deserialize, Serialize};
+use sqlx::FromRow;
 use utoipa::ToSchema;
-#[derive(Debug, Clone, sqlx::FromRow, Serialize, Deserialize, ToSchema)]
+#[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
 pub struct Proposal {
     pub id: i32,
     pub author_id: String,
 }
 
-#[derive(Debug, Clone, sqlx::FromRow, Serialize, Deserialize)]
+#[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
+pub struct AfterDate {
+    pub after_date: i64,
+}
+
+#[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
 pub struct ProposalSnapshot {
     pub proposal_id: i32,
     pub block_height: i64,
@@ -31,7 +37,7 @@ pub struct ProposalSnapshot {
     pub views: Option<i32>,
 }
 
-#[derive(Debug, Clone, sqlx::FromRow, Serialize, Deserialize)]
+#[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
 pub struct Dump {
     pub receipt_id: String,
     pub method_name: String,
@@ -42,7 +48,7 @@ pub struct Dump {
     pub proposal_id: i64,
 }
 
-#[derive(Debug, Clone, sqlx::FromRow, Serialize, Deserialize)]
+#[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
 pub struct ProposalWithLatestSnapshot {
     pub proposal_id: i32,
     pub author_id: String,
@@ -68,13 +74,13 @@ pub struct ProposalWithLatestSnapshot {
     pub views: Option<i32>,
 }
 
-#[derive(Debug, Clone, sqlx::FromRow, Serialize, Deserialize)]
+#[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
 pub struct Rfp {
     pub id: i32,
     pub author_id: String,
 }
 
-#[derive(Debug, Clone, sqlx::FromRow, Serialize, Deserialize)]
+#[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
 pub struct RfpSnapshot {
     pub rfp_id: i32,
     pub block_height: i64,
@@ -94,7 +100,7 @@ pub struct RfpSnapshot {
     pub views: Option<i32>,
 }
 
-#[derive(Debug, Clone, sqlx::FromRow, Serialize, Deserialize)]
+#[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
 pub struct RfpWithLatestSnapshot {
     pub rfp_id: i32,
     pub author_id: String,
@@ -115,7 +121,7 @@ pub struct RfpWithLatestSnapshot {
     pub submission_deadline: i32,
 }
 
-#[derive(Debug, Clone, sqlx::FromRow, Serialize, Deserialize)]
+#[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
 pub struct RfpDump {
     pub receipt_id: String,
     pub method_name: String,

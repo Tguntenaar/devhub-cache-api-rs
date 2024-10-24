@@ -16,7 +16,7 @@ serde = "1.0.210"
 serde_derive = "1.0.210"
 serde_json = "1.0.128"
 devhub-shared = "0.1.0"
-sqlx = { version = "0.7" }                                                    # 0.7
+sqlx = { version = "0.7", features = ["bigdecimal", "macros"] }               # 0.7
 # 0.8.2 , features = [
 #   "postgres",
 #   "macros",

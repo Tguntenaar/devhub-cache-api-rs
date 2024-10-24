@@ -16,6 +16,7 @@ pub struct ApiClient {
 
 // TODO Create a nearblocks client
 // https://github.com/Nearblocks/nearblocks/tree/main/apps/api/src
+// https://api.nearblocks.io/v1/account/devhub.near/txns?method=add_proposal&after_date=2024-10-10&page=1&per_page=25&order=desc
 
 impl ApiClient {
     pub fn new(api_url: &str) -> Self {

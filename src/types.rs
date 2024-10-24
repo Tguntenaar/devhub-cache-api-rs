@@ -7,7 +7,7 @@ use serde::{Deserialize, Serialize};
 use utoipa::ToSchema;
 
 #[derive(Clone, Debug, Serialize, Deserialize, Default, ToSchema)]
-//TODO;
+//TODO aliases with utopia
 // #[aliases(PaginatedProposalResponse = PaginatedResponse<ProposalResponse>)]
 pub struct PaginatedResponse<T: Serialize> {
     pub records: Vec<T>,

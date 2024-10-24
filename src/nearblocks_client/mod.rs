@@ -3,10 +3,12 @@ use reqwest::Client;
 use serde::Deserialize;
 use tokio::time::{self, Duration};
 
-#[derive(Deserialize)]
+pub mod types;
+use types::Transaction;
+#[derive(Deserialize, Debug)]
 pub struct ApiResponse {
     // Define the response fields
-    pub data: String,
+    pub txns: Vec<Transaction>,
 }
 
 #[derive(Clone)]

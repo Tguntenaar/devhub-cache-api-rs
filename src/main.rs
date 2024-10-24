@@ -1,3 +1,5 @@
+use std::sync::Arc;
+
 use near::{types::Data, Contract, NetworkConfig};
 use near_account_id::AccountId;
 use rocket::http::uri::Query;
@@ -58,6 +60,8 @@ pub struct Env {
 #[launch]
 fn rocket() -> _ {
     dotenvy::dotenv().ok();
+    let atomic_bool = Arc::new(std::sync::atomic::AtomicBool::new(true));
+
     // let env = envy::from_env::<Env>().expect("Failed to load environment variables");
     // let database_url = env::var("DATABASE_URL").expect("DATABASE_URL must be set");
     // PgConnection::establish(&env.database_url)
@@ -80,6 +84,16 @@ fn rocket() -> _ {
         .mount("/", routes![robots, index])
         // .mount("/", routes![get_all_proposal_ids, get_proposals])
         .attach(entrypoints::stage())
+        // TODO add fairing/ middleware background service that is callable from entrypoints
+        // also as a cron job
+        .attach(rocket::fairing::AdHoc::on_shutdown(
+            "Stop loading users from Near and Github metadata",
+            |_| {
+                Box::pin(async move {
+                    atomic_bool.store(false, std::sync::atomic::Ordering::Relaxed);
+                })
+            },
+        ))
         .mount(
             "/",
             SwaggerUi::new("/swagger-ui/<_..>").url("/api-docs/openapi.json", ApiDoc::openapi()),

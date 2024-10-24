@@ -11,7 +11,6 @@ use crate::db::types::{Proposal, ProposalSnapshot};
 
 use devhub_cache_api::types;
 
-// TODO add openapi docs
 #[derive(OpenApi)]
 #[openapi(
     info(
@@ -51,8 +50,7 @@ pub struct ApiDoc;
 
 pub fn stage() -> AdHoc {
     AdHoc::on_ignite("Installing entrypoints", |rocket| async {
-        rocket.attach(proposal::stage())
-        // .attach(leaderboards::stage())
+        rocket.attach(proposal::stage()).attach(rfp::stage())
         // .attach(aliases::stage())
         // .attach(statistics::stage())
     })

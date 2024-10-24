@@ -1,0 +1,1 @@
+SELECT after_date FROM after_date;

@@ -1,6 +1,7 @@
 // use crate::db::DBTrait;
 use devhub_cache_api::db::DB;
 use devhub_cache_api::rpc_service::RpcService;
+use devhub_cache_api::{nearblocks_client, timestamp_to_date_string};
 use near::{types::Data, Contract, NetworkConfig};
 use near_account_id::AccountId;
 use rocket::request::FromParam;
@@ -66,7 +67,7 @@ struct ProposalQuery {
     sort: Option<String>, // Optional sorting parameter
 }
 
-// TODO add query params
+// TODO add query params to get_proposals entrypoint
 #[utoipa::path(get, path = "/proposals")]
 #[get("/")]
 async fn get_proposals(db: &State<DB>) -> Result<String, rocket::http::Status> {
@@ -75,15 +76,44 @@ async fn get_proposals(db: &State<DB>) -> Result<String, rocket::http::Status> {
     // Upsert into postgres
     // proposals.clone().into_iter().for_each(|proposal| {
     //     let VersionedProposal::V0(proposal_v0) = proposal;
-    //     // TODO: Upsert into postgres
+    // TODO: Upsert into postgres
 
     //     db.insert_proposal(&mut tx, "thomasguntenaar.near".to_string())
     //         .await
     //         .unwrap();
     // });
+    // Get current timestamp
+    let current_timestamp = chrono::Utc::now().timestamp();
+    // Get last timestamp when database was updated
+    let last_updated_timestamp = db.get_last_updated_timestamp().await.unwrap();
 
-    let rpc_service = RpcService::new(Some("devhub.near".parse::<AccountId>().unwrap()));
-    let proposals = rpc_service.get_proposals().await;
+    // If last updated timestamp is within 1 minute return cached data from postgres
+    if last_updated_timestamp > current_timestamp - 60 {
+        let proposals = db.get_proposals().await;
+        println!("Returning cached proposals");
+        return Ok(format!("Hello, {:?}!", proposals));
+    }
+    println!("Fetching proposals from nearblocks");
+
+    // Else fetch data from nearblocks and update database
+    let nearblocks_client = nearblocks_client::ApiClient::default();
+    // TODO should return proposals nog ApiResponse struct
+    let proposals = nearblocks_client
+        .get_account_txns_by_pagination(
+            "devhub.near".parse::<AccountId>().unwrap(),
+            Some("add_proposal".to_string()),
+            Some(timestamp_to_date_string(last_updated_timestamp)),
+            Some(10),
+            Some("desc".to_string()),
+        )
+        .await;
+
+    println!("Fetched proposals from nearblocks");
+    // Upsert into postgres
+
+    // TODO instead of rpc service use api client for nearblocks / database
+    // let rpc_service = RpcService::new(Some("devhub.near".parse::<AccountId>().unwrap()));
+    // let proposals = rpc_service.get_proposals().await;
 
     Ok(format!("Hello, {:?}!", proposals))
 }
