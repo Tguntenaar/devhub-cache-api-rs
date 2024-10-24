@@ -77,7 +77,7 @@ struct AddProposalArgs {
     accepted_terms_and_conditions_version: Option<near_sdk::BlockHeight>,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Clone)]
 struct SetBlockHeightCallbackArgs {
     proposal: Proposal,
 }
@@ -101,8 +101,9 @@ async fn get_proposals(db: &State<DB>) -> Result<Json<Proposal>, Status> {
     let current_timestamp = chrono::Utc::now().timestamp();
     // Get last timestamp when database was updated
     let last_updated_timestamp = db.get_last_updated_timestamp().await.unwrap();
-
-    // If last updated timestamp is within 1 minute return cached data from postgres
+    println!("last_updated_timestamp: {:?}", last_updated_timestamp); // TODO 1709470463748732291
+    println!("current_timestamp: {:?}", current_timestamp); // TODO 1729806249 is way smaller
+                                                            // If last updated timestamp is within 1 minute return cached data from postgres
     if last_updated_timestamp > current_timestamp - 60 {
         let _proposals = db.get_proposals().await;
         println!("Returning cached proposals");
@@ -120,36 +121,51 @@ async fn get_proposals(db: &State<DB>) -> Result<Json<Proposal>, Status> {
             Some("set_block_height_callback".to_string()),
             Some(timestamp_to_date_string(last_updated_timestamp)),
             Some(10),
-            Some("desc".to_string()),
+            Some("asc".to_string()),
         )
         .await;
 
     // TODO hide this away in nearblocks client
     let proposals_unwrapped = proposals.unwrap();
-    let action = proposals_unwrapped
+    let transaction = proposals_unwrapped
         .txns
-        .first()
+        .first() // TODO don't get the first txn but all txns
         .unwrap()
-        .actions
-        .first()
-        .unwrap();
-    // let method = action.method.clone();
+        .clone();
+    let action = transaction.clone().actions.first().unwrap().clone();
     let json_args = action.args.clone();
 
     println!("json_args: {:?}", json_args.clone());
-    // HERE IT FAILS
-    let args: Result<SetBlockHeightCallbackArgs, _> = serde_json::from_str(&json_args); //.expect("Failed to parse json");
+    //: Result<SetBlockHeightCallbackArgs, _>
+    let args: SetBlockHeightCallbackArgs = serde_json::from_str(&json_args).unwrap(); //.expect("Failed to parse json");
 
-    match args {
-        Ok(proposal) => {
-            println!("Fetched proposals from nearblocks");
-            Ok(Json(proposal.proposal))
-        }
-        Err(e) => {
-            println!("Failed to parse json: {:?}", e);
-            Err(Status::InternalServerError)
-        }
-    }
+    let mut tx = db.begin().await.map_err(|_e| Status::InternalServerError)?;
+
+    DB::upsert_proposal(
+        &mut tx,
+        args.clone().proposal.id,
+        args.clone().proposal.author_id.to_string(),
+    )
+    .await
+    .unwrap();
+
+    tx.commit()
+        .await
+        .map_err(|_e| Status::InternalServerError)?;
+
+    let timestamp = args.proposal.snapshot.timestamp.try_into().unwrap();
+    db.set_last_updated_timestamp(timestamp).await.unwrap();
+
+    // match args {
+    //     Ok(proposal) => {
+    //         println!("Fetched proposals from nearblocks");
+    //         Ok(Json(proposal.proposal))
+    //     }
+    //     Err(e) => {
+    //         println!("Failed to parse json: {:?}", e);
+    //         Err(Status::InternalServerError)
+    //     }
+    // }
 
     // Upsert into postgres
 
@@ -157,7 +173,7 @@ async fn get_proposals(db: &State<DB>) -> Result<Json<Proposal>, Status> {
     // let rpc_service = RpcService::new(Some("devhub.near".parse::<AccountId>().unwrap()));
     // let proposals = rpc_service.get_proposals().await;
 
-    // Ok(Json(args))
+    Ok(Json(args.proposal))
 }
 
 #[utoipa::path(get, path = "/proposals/{proposal_id}")]

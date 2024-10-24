@@ -21,34 +21,39 @@ use types::{
 
 impl DB {
     // Functions for Proposals
-    pub async fn insert_proposal(
+    pub async fn upsert_proposal(
         tx: &mut Transaction<'static, Postgres>,
+        proposal_id: u32,
         author_id: String,
     ) -> Result<i32, Error> {
         let rec = sqlx::query!(
             r#"
-            INSERT INTO proposals (author_id)
-            VALUES ($1)
+            UPDATE proposals SET author_id = $1 WHERE id = $2
             RETURNING id
             "#,
-            author_id
+            author_id,
+            proposal_id as i32
         )
-        .fetch_optional(tx.as_mut()) // Use `fetch_one` instead of `execute`
+        .fetch_optional(tx.as_mut())
         .await?;
 
+        // If the update did not find a matching row, insert the user
         if let Some(record) = rec {
             Ok(record.id)
         } else {
+            // INSERT ON CONFLICT DO NOTHING
             let rec = sqlx::query!(
                 r#"
-            SELECT id FROM proposals
-            WHERE author_id = $1
-            "#,
+                INSERT INTO proposals (id, author_id)
+                VALUES ($1, $2)
+                ON CONFLICT (id) DO NOTHING
+                RETURNING id
+                "#,
+                proposal_id as i32,
                 author_id
             )
             .fetch_one(tx.as_mut())
             .await?;
-
             Ok(rec.id)
         }
     }
@@ -72,7 +77,7 @@ impl DB {
     pub async fn set_last_updated_timestamp(&self, after_date: i64) -> Result<(), Error> {
         sqlx::query!(
             r#"
-            INSERT INTO after_date (after_date) VALUES ($1)
+            UPDATE after_date SET after_date = $1
             "#,
             after_date
         )

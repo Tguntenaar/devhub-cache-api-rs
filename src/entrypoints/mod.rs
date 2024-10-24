@@ -18,28 +18,28 @@ use devhub_cache_api::types;
         version = "0.0.1",
     ),
     paths(
-// leaderboards::get_leaderboard,
-// leaderboards::get_repos,
-// user::get_user,
-// user::get_user_contributions,
-// user::get_badge,
-// statistics::get_statistics
-proposal::get_proposals
-),
-components(schemas(
-// types::PaginatedResponse<types::LeaderboardResponse>,
-// types::PaginatedLeaderboardResponse,
-// types::PaginatedResponse<types::RepoResponse>,
-// types::PaginatedRepoResponse,
-// types::PaginatedResponse<types::UserContributionResponse>,
-// types::PaginatedUserContributionResponse,
-// types::UserContributionResponse,
-// types::LeaderboardResponse,
-// types::RepoResponse,
-// types::UserProfile,
-// types::GithubMeta,
-// types::Streak,
-// types::Statistics,
+        // leaderboards::get_leaderboard,
+        // leaderboards::get_repos,
+        // user::get_user,
+        // user::get_user_contributions,
+        // user::get_badge,
+        // statistics::get_statistics
+        proposal::get_proposals
+    ),
+    components(schemas(
+        // types::PaginatedResponse<types::LeaderboardResponse>,
+        // types::PaginatedLeaderboardResponse,
+        // types::PaginatedResponse<types::RepoResponse>,
+        // types::PaginatedRepoResponse,
+        // types::PaginatedResponse<types::UserContributionResponse>,
+        // types::PaginatedUserContributionResponse,
+        // types::UserContributionResponse,
+        // types::LeaderboardResponse,
+        // types::RepoResponse,
+        // types::UserProfile,
+        // types::GithubMeta,
+        // types::Streak,
+        // types::Statistics,
         types::PaginatedResponse<Proposal>
     )),
     tags(
