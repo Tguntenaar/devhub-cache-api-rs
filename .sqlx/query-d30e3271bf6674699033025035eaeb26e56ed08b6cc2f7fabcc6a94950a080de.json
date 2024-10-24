@@ -1,6 +1,6 @@
 {
   "db_name": "PostgreSQL",
-  "query": "\n          SELECT * FROM proposal_snapshots\n          WHERE proposal_id = $1\n          ORDER BY ts DESC\n          LIMIT 1\n          ",
+  "query": "\n            SELECT * FROM proposal_snapshots\n            WHERE proposal_id = $1\n            ORDER BY ts DESC\n            LIMIT 1\n            ",
   "describe": {
     "columns": [
       {
@@ -138,5 +138,5 @@
       true
     ]
   },
-  "hash": "16c0c0bc397399eb91a2b2f2f2b4e87d3f9b90454adedf4a54b6a26f80b3ccb9"
+  "hash": "d30e3271bf6674699033025035eaeb26e56ed08b6cc2f7fabcc6a94950a080de"
 }
