@@ -1,6 +1,6 @@
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 
-#[derive(Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Transaction {
     pub id: String,
     pub receipt_id: String,
@@ -20,14 +20,14 @@ pub struct Transaction {
     pub outcomes_agg: OutcomesAgg,
 }
 
-#[derive(Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Block {
     pub block_hash: String,
     pub block_height: i64,
     pub block_timestamp: i64,
 }
 
-#[derive(Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct ReceiptOutcome {
     pub gas_burnt: f64,
     pub tokens_burnt: f64,
@@ -35,12 +35,12 @@ pub struct ReceiptOutcome {
     pub status: bool,
 }
 
-#[derive(Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct BlockInfo {
     pub block_height: i64,
 }
 
-#[derive(Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Action {
     pub action: String,
     pub method: String,
@@ -49,17 +49,17 @@ pub struct Action {
     pub args: String,
 }
 
-#[derive(Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct ActionsAgg {
     pub deposit: i64,
 }
 
-#[derive(Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Outcomes {
     pub status: bool,
 }
 
-#[derive(Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct OutcomesAgg {
     pub transaction_fee: f64,
 }

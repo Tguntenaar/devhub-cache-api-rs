@@ -1,11 +1,12 @@
 use near_sdk::AccountId;
 use reqwest::Client;
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 use tokio::time::{self, Duration};
 
 pub mod types;
 use types::Transaction;
-#[derive(Deserialize, Debug)]
+
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct ApiResponse {
     // Define the response fields
     pub txns: Vec<Transaction>,

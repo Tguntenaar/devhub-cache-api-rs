@@ -1,12 +1,15 @@
+use std::collections::HashSet;
+
 // use crate::db::DBTrait;
 use devhub_cache_api::db::DB;
-use devhub_cache_api::rpc_service::RpcService;
+// use devhub_cache_api::rpc_service::RpcService;
 use devhub_cache_api::{nearblocks_client, timestamp_to_date_string};
+use devhub_shared::proposal::{Proposal, VersionedProposalBody};
 use near::{types::Data, Contract, NetworkConfig};
 use near_account_id::AccountId;
 use rocket::request::FromParam;
-use rocket::serde::Serialize;
-use rocket::{get, FromForm, State};
+use rocket::serde::{json::Json, Deserialize, Serialize};
+use rocket::{get, http::Status, FromForm, State};
 
 #[derive(Debug, Serialize)]
 struct ProposalIds(Vec<i32>);
@@ -25,10 +28,10 @@ impl<'r> FromParam<'r> for ProposalIds {
 }
 
 // #[get("/get_all_proposal_ids")]
-async fn get_all_proposal_ids() -> Result<String, rocket::http::Status> {
+async fn get_all_proposal_ids() -> Result<String, Status> {
     let mainnet = near_workspaces::mainnet()
         .await
-        .map_err(|_e| rocket::http::Status::InternalServerError)?;
+        .map_err(|_e| Status::InternalServerError)?;
     let account_id = "devhub.near".parse::<AccountId>().unwrap();
     let network = NetworkConfig::from(mainnet);
     let contract = Contract(account_id);
@@ -67,10 +70,22 @@ struct ProposalQuery {
     sort: Option<String>, // Optional sorting parameter
 }
 
+#[derive(Serialize, Deserialize)]
+struct AddProposalArgs {
+    body: VersionedProposalBody,
+    labels: HashSet<String>,
+    accepted_terms_and_conditions_version: Option<near_sdk::BlockHeight>,
+}
+
+#[derive(Serialize, Deserialize)]
+struct SetBlockHeightCallbackArgs {
+    proposal: Proposal,
+}
+
 // TODO add query params to get_proposals entrypoint
 #[utoipa::path(get, path = "/proposals")]
 #[get("/")]
-async fn get_proposals(db: &State<DB>) -> Result<String, rocket::http::Status> {
+async fn get_proposals(db: &State<DB>) -> Result<Json<Proposal>, Status> {
     // Store in postgres
     // let mut tx: sqlx::Transaction<'_, sqlx::Postgres> = db.begin().await.unwrap();
     // Upsert into postgres
@@ -89,9 +104,10 @@ async fn get_proposals(db: &State<DB>) -> Result<String, rocket::http::Status> {
 
     // If last updated timestamp is within 1 minute return cached data from postgres
     if last_updated_timestamp > current_timestamp - 60 {
-        let proposals = db.get_proposals().await;
+        let _proposals = db.get_proposals().await;
         println!("Returning cached proposals");
-        return Ok(format!("Hello, {:?}!", proposals));
+        // TODO ApiResponse should be Proposal struct Json(proposals)
+        return Err(Status::NotImplemented);
     }
     println!("Fetching proposals from nearblocks");
 
@@ -101,21 +117,47 @@ async fn get_proposals(db: &State<DB>) -> Result<String, rocket::http::Status> {
     let proposals = nearblocks_client
         .get_account_txns_by_pagination(
             "devhub.near".parse::<AccountId>().unwrap(),
-            Some("add_proposal".to_string()),
+            Some("set_block_height_callback".to_string()),
             Some(timestamp_to_date_string(last_updated_timestamp)),
             Some(10),
             Some("desc".to_string()),
         )
         .await;
 
-    println!("Fetched proposals from nearblocks");
+    // TODO hide this away in nearblocks client
+    let proposals_unwrapped = proposals.unwrap();
+    let action = proposals_unwrapped
+        .txns
+        .first()
+        .unwrap()
+        .actions
+        .first()
+        .unwrap();
+    // let method = action.method.clone();
+    let json_args = action.args.clone();
+
+    println!("json_args: {:?}", json_args.clone());
+    // HERE IT FAILS
+    let args: Result<SetBlockHeightCallbackArgs, _> = serde_json::from_str(&json_args); //.expect("Failed to parse json");
+
+    match args {
+        Ok(proposal) => {
+            println!("Fetched proposals from nearblocks");
+            Ok(Json(proposal.proposal))
+        }
+        Err(e) => {
+            println!("Failed to parse json: {:?}", e);
+            Err(Status::InternalServerError)
+        }
+    }
+
     // Upsert into postgres
 
     // TODO instead of rpc service use api client for nearblocks / database
     // let rpc_service = RpcService::new(Some("devhub.near".parse::<AccountId>().unwrap()));
     // let proposals = rpc_service.get_proposals().await;
 
-    Ok(format!("Hello, {:?}!", proposals))
+    // Ok(Json(args))
 }
 
 #[utoipa::path(get, path = "/proposals/{proposal_id}")]
