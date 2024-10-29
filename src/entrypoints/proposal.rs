@@ -2,7 +2,6 @@ use std::collections::HashSet;
 
 // use crate::db::DBTrait;
 use devhub_cache_api::db::DB;
-// use devhub_cache_api::rpc_service::RpcService;
 use devhub_cache_api::{nearblocks_client, timestamp_to_date_string};
 use devhub_shared::proposal::{Proposal, VersionedProposalBody};
 use near::{types::Data, Contract, NetworkConfig};
@@ -10,6 +9,10 @@ use near_account_id::AccountId;
 use rocket::request::FromParam;
 use rocket::serde::{json::Json, Deserialize, Serialize};
 use rocket::{get, http::Status, FromForm, State};
+
+// use devhub_cache_api::rpc_service::RpcService;
+// let rpc_service = RpcService::new(Some("devhub.near".parse::<AccountId>().unwrap()));
+// let proposals = rpc_service.get_proposals().await;
 
 #[derive(Debug, Serialize)]
 struct ProposalIds(Vec<i32>);
@@ -82,65 +85,64 @@ struct SetBlockHeightCallbackArgs {
     proposal: Proposal,
 }
 
-// TODO add query params to get_proposals entrypoint
+// add query params to get_proposals entrypoint
 #[utoipa::path(get, path = "/proposals")]
 #[get("/")]
 async fn get_proposals(db: &State<DB>) -> Result<Json<Proposal>, Status> {
-    // Store in postgres
-    // let mut tx: sqlx::Transaction<'_, sqlx::Postgres> = db.begin().await.unwrap();
-    // Upsert into postgres
-    // proposals.clone().into_iter().for_each(|proposal| {
-    //     let VersionedProposal::V0(proposal_v0) = proposal;
-    // TODO: Upsert into postgres
-
-    //     db.insert_proposal(&mut tx, "thomasguntenaar.near".to_string())
-    //         .await
-    //         .unwrap();
-    // });
     // Get current timestamp
     let current_timestamp = chrono::Utc::now().timestamp();
     // Get last timestamp when database was updated
     let last_updated_timestamp = db.get_last_updated_timestamp().await.unwrap();
-    println!("last_updated_timestamp: {:?}", last_updated_timestamp); // TODO 1709470463748732291
-    println!("current_timestamp: {:?}", current_timestamp); // TODO 1729806249 is way smaller
-                                                            // If last updated timestamp is within 1 minute return cached data from postgres
+
+    // TODO the timestamps are way off between blockchain and database.
+    println!("last_updated_timestamp: {:?}", last_updated_timestamp); // 1709470463748732291
+    println!("current_timestamp: {:?}", current_timestamp); // 1729806249 is way smaller
+
     if last_updated_timestamp > current_timestamp - 60 {
         let _proposals = db.get_proposals().await;
         println!("Returning cached proposals");
-        // TODO ApiResponse should be Proposal struct Json(proposals)
+        // ApiResponse should be Proposal struct Json(proposals)
         return Err(Status::NotImplemented);
     }
-    println!("Fetching proposals from nearblocks");
 
-    // Else fetch data from nearblocks and update database
+    println!("Fetching not yet indexed method calls from nearblocks");
+
     let nearblocks_client = nearblocks_client::ApiClient::default();
-    // TODO should return proposals nog ApiResponse struct
+
     let proposals = nearblocks_client
         .get_account_txns_by_pagination(
             "devhub.near".parse::<AccountId>().unwrap(),
+            // Instead of just set_block_height_callback we should get all method calls
+            // and handle them accordingly.
             Some("set_block_height_callback".to_string()),
             Some(timestamp_to_date_string(last_updated_timestamp)),
+            // if this limit hits 10 we might need to do it in a loop let's say there are 100 changes since the last call to nearblocks.
             Some(10),
             Some("asc".to_string()),
         )
         .await;
 
-    // TODO hide this away in nearblocks client
+    println!(
+        "Fetched {} method calls from nearblocks",
+        proposals.unwrap().len()
+    );
+
+    // TODO refactor this functionality away in nearblocks client
     let proposals_unwrapped = proposals.unwrap();
     let transaction = proposals_unwrapped
         .txns
-        .first() // TODO don't get the first txn but all txns
+        // don't get the first txn but all txns and than loop over them while inserting into postgres
+        .first()
         .unwrap()
         .clone();
     let action = transaction.clone().actions.first().unwrap().clone();
     let json_args = action.args.clone();
 
     println!("json_args: {:?}", json_args.clone());
-    //: Result<SetBlockHeightCallbackArgs, _>
     let args: SetBlockHeightCallbackArgs = serde_json::from_str(&json_args).unwrap(); //.expect("Failed to parse json");
 
+    println("Adding to the database...");
     let mut tx = db.begin().await.map_err(|_e| Status::InternalServerError)?;
-
     DB::upsert_proposal(
         &mut tx,
         args.clone().proposal.id,
@@ -153,8 +155,12 @@ async fn get_proposals(db: &State<DB>) -> Result<Json<Proposal>, Status> {
         .await
         .map_err(|_e| Status::InternalServerError)?;
 
+    println!("Added proposal to database, now adding timestamp.");
+
     let timestamp = args.proposal.snapshot.timestamp.try_into().unwrap();
     db.set_last_updated_timestamp(timestamp).await.unwrap();
+
+    println!("Added timestamp to database, returning proposals...");
 
     // match args {
     //     Ok(proposal) => {
@@ -168,10 +174,6 @@ async fn get_proposals(db: &State<DB>) -> Result<Json<Proposal>, Status> {
     // }
 
     // Upsert into postgres
-
-    // TODO instead of rpc service use api client for nearblocks / database
-    // let rpc_service = RpcService::new(Some("devhub.near".parse::<AccountId>().unwrap()));
-    // let proposals = rpc_service.get_proposals().await;
 
     Ok(Json(args.proposal))
 }

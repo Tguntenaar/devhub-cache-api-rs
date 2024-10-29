@@ -11,7 +11,7 @@ async fn main() {
 
     // Let's deploy the contract. The contract is simple counter with `get_num`, `increase`, `decrease` arguments
     contract
-        .deploy(include_bytes!("../resources/counter.wasm").to_vec())
+        .deploy(include_bytes!("../examples/counter.wasm").to_vec())
         // You can add init call as well using `with_init_call`
         .without_init_call()
         .with_signer(signer.clone())

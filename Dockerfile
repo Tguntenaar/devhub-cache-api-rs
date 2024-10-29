@@ -11,10 +11,10 @@ COPY --from=planner /app/recipe.json recipe.json
 RUN cargo chef cook --release --recipe-path recipe.json
 # Build application
 COPY . .
-RUN cargo build --release --bin rocket-app
+RUN cargo build --release --bin devhub-cache-api
 
 # We do not need the Rust toolchain to run the binary!
 FROM debian:bookworm-slim AS runtime
 WORKDIR /app
-COPY --from=builder /app/target/release/rocket-app /usr/local/bin
-ENTRYPOINT ["/usr/local/bin/rocket-app"]
+COPY --from=builder /app/target/release/devhub-cache-api /usr/local/bin
+ENTRYPOINT ["/usr/local/bin/devhub-cache-api"]
