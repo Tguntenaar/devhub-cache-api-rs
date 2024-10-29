@@ -1,14 +1,13 @@
 {
-    "features": {
-        "ghcr.io/devcontainers/features/rust:1": {}
-    },
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "rust-lang.rust-analyzer",
-                "github.vscode-github-actions",
-            ]
-        }
-    },
-    "postCreateCommand": "./.devcontainer/install-dependencies.sh"
+  "image": "mcr.microsoft.com/devcontainers/universal",
+
+  "features": {
+    "ghcr.io/devcontainers/features/rust:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["rust-lang.rust-analyzer", "github.vscode-github-actions"]
+    }
+  },
+  "postCreateCommand": "./.devcontainer/install-dependencies.sh"
 }
