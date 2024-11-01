@@ -2,7 +2,7 @@ use serde::{Deserialize, Serialize};
 use sqlx::FromRow;
 use utoipa::ToSchema;
 #[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
-pub struct Proposal {
+pub struct ProposalRecord {
     pub id: i32,
     pub author_id: String,
 }
@@ -13,7 +13,7 @@ pub struct AfterDate {
 }
 
 #[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
-pub struct ProposalSnapshot {
+pub struct ProposalSnapshotRecord {
     pub proposal_id: i32,
     pub block_height: i64,
     pub ts: i32,
@@ -38,7 +38,7 @@ pub struct ProposalSnapshot {
 }
 
 #[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
-pub struct Dump {
+pub struct DumpRecord {
     pub receipt_id: String,
     pub method_name: String,
     pub block_height: i64,
@@ -49,7 +49,7 @@ pub struct Dump {
 }
 
 #[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
-pub struct ProposalWithLatestSnapshot {
+pub struct ProposalWithLatestSnapshotView {
     pub proposal_id: i32,
     pub author_id: String,
     pub block_height: i64,
@@ -75,13 +75,13 @@ pub struct ProposalWithLatestSnapshot {
 }
 
 #[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
-pub struct Rfp {
+pub struct RfpRecord {
     pub id: i32,
     pub author_id: String,
 }
 
 #[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
-pub struct RfpSnapshot {
+pub struct RfpSnapshotRecord {
     pub rfp_id: i32,
     pub block_height: i64,
     pub ts: i32,
@@ -101,7 +101,7 @@ pub struct RfpSnapshot {
 }
 
 #[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
-pub struct RfpWithLatestSnapshot {
+pub struct RfpWithLatestSnapshotView {
     pub rfp_id: i32,
     pub author_id: String,
     pub block_height: i64,
@@ -122,7 +122,7 @@ pub struct RfpWithLatestSnapshot {
 }
 
 #[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
-pub struct RfpDump {
+pub struct RfpDumpRecord {
     pub receipt_id: String,
     pub method_name: String,
     pub block_height: i64,

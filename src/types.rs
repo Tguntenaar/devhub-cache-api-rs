@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-use crate::db::types::{Proposal, ProposalSnapshot};
+use crate::db::types::{ProposalRecord, ProposalSnapshotRecord};
 // use chrono::NaiveDateTime;
 use serde::{Deserialize, Serialize};
 // use shared::TimePeriod;

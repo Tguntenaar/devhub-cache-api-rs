@@ -14,10 +14,14 @@ pub struct DB(PgPool);
 
 pub mod types;
 
+use devhub_shared::proposal::{Proposal, ProposalSnapshot};
+
 use types::{
-    AfterDate, Dump, Proposal, ProposalSnapshot, ProposalWithLatestSnapshot, RfpDump, RfpSnapshot,
-    RfpWithLatestSnapshot,
+    AfterDate, ProposalRecord, ProposalSnapshotRecord, ProposalWithLatestSnapshotView,
+    RfpSnapshotRecord,
 };
+
+// use crate::types::ProposalResponse;
 
 impl DB {
     // Functions for Proposals
@@ -86,14 +90,14 @@ impl DB {
         Ok(())
     }
     // TODO db.get_proposals
-    pub async fn get_proposals(&self) -> Vec<Proposal> {
+    pub async fn get_proposals(&self) -> Vec<ProposalRecord> {
         vec![]
     }
 
     pub async fn get_proposal_by_id(
         tx: &mut Transaction<'static, Postgres>,
         proposal_id: i32,
-    ) -> anyhow::Result<Option<Proposal>> {
+    ) -> anyhow::Result<Option<ProposalRecord>> {
         let rec = query!(
             r#"
           SELECT id, author_id
@@ -106,9 +110,12 @@ impl DB {
         .await?;
 
         // Map the Record to Proposal
-        let proposal = rec.map(|record| Proposal {
+        let proposal = rec.map(|record| ProposalRecord {
             id: record.id,
             author_id: record.author_id,
+            // social_db_post_block_height: 0,
+            // snapshot: record.clone().snapshot,
+            // snapshot_history: vec![],
             // Initialize other fields of Proposal if necessary
         });
 
@@ -117,7 +124,7 @@ impl DB {
 
     pub async fn upsert_proposal_snapshot(
         tx: &mut Transaction<'static, Postgres>,
-        snapshot: &ProposalSnapshot,
+        snapshot: &ProposalSnapshotRecord,
     ) -> anyhow::Result<()> {
         // Since primary key is (proposal_id, ts)
         query!(
