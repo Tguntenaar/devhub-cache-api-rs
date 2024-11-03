@@ -255,7 +255,8 @@ struct SetBlockHeightCallbackArgs {
 #[get("/")]
 async fn get_proposals(db: &State<DB>) -> Result<Json<Proposal>, Status> {
     // Get current timestamp
-    let current_timestamp = chrono::Utc::now().timestamp();
+    // let current_timestamp = chrono::Utc::now().timestamp();
+    let current_timestamp = chrono::Utc::now().timestamp_millis();
     // Get last timestamp when database was updated
     let last_updated_timestamp = db.get_last_updated_timestamp().await.unwrap();
 
@@ -263,6 +264,7 @@ async fn get_proposals(db: &State<DB>) -> Result<Json<Proposal>, Status> {
     println!("last_updated_timestamp: {:?}", last_updated_timestamp); // 1709470463748732291
     println!("current_timestamp: {:?}", current_timestamp); // 1729806249 is way smaller
 
+    // If we called nearblocks in the last 60 seconds return the database values
     if last_updated_timestamp > current_timestamp - 60 {
         let _proposals = db.get_proposals().await;
         println!("Returning cached proposals");
@@ -274,7 +276,11 @@ async fn get_proposals(db: &State<DB>) -> Result<Json<Proposal>, Status> {
 
     let nearblocks_client = nearblocks_client::ApiClient::default();
 
-    let proposals = nearblocks_client
+    // Nearblocks reacts with all contract changes since the timestamp we pass
+    // This could return 0 new tx in which case we get the database stuff anyway
+    // Or it could return 1 new tx in which case we want to update the database first
+    // then get it from database using the right queries
+    let nearblocks_response = nearblocks_client
         .get_account_txns_by_pagination(
             "devhub.near".parse::<AccountId>().unwrap(),
             // Instead of just set_block_height_callback we should get all method calls
@@ -287,15 +293,22 @@ async fn get_proposals(db: &State<DB>) -> Result<Json<Proposal>, Status> {
         )
         .await;
 
-    let proposals_unwrapped = proposals.unwrap();
+    // TODO handle these different method calls
+    // "edit_proposal",
+    // "edit_proposal_internal",
+    // "edit_proposal_linked_rfp",
+    // "edit_proposal_timeline",
+    // "edit_proposal_versioned_timeline",
+
+    let nearblocks_unwrapped = nearblocks_response.unwrap();
 
     println!(
         "Fetched {} method calls from nearblocks",
-        proposals_unwrapped.clone().txns.len()
+        nearblocks_unwrapped.clone().txns.len()
     );
 
     // TODO refactor this functionality away in nearblocks client
-    let transaction = proposals_unwrapped
+    let transaction = nearblocks_unwrapped
         .txns
         // don't get the first txn but all txns and than loop over them while inserting into postgres
         .first()
@@ -353,11 +366,16 @@ async fn get_proposals(db: &State<DB>) -> Result<Json<Proposal>, Status> {
     //         Err(Status::InternalServerError)
     //     }
     // }
-
     // Upsert into postgres
 
     Ok(Json(args.proposal))
 }
+
+async fn handle_set_block_height() {}
+
+async fn handle_edit_proposal() {}
+
+async fn handle_edit_proposal_timeline() {}
 
 #[utoipa::path(get, path = "/proposals/{proposal_id}")]
 #[get("/<proposal_id>")]
