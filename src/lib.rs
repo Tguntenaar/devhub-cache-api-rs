@@ -8,8 +8,8 @@ use chrono::DateTime;
 
 pub fn timestamp_to_date_string(timestamp: i64) -> String {
     // Convert the timestamp to a NaiveDateTime
-    let datetime = DateTime::from_timestamp(timestamp, 0);
+    let datetime = DateTime::from_timestamp_nanos(timestamp);
 
     // Format the NaiveDateTime to a string in YYYY-MM-DD format
-    datetime.unwrap().format("%Y-%m-%d").to_string()
+    datetime.format("%Y-%m-%d").to_string()
 }
