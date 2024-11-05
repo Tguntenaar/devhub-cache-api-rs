@@ -14,10 +14,14 @@ pub struct DB(PgPool);
 
 pub mod types;
 
+use devhub_shared::proposal::{Proposal, ProposalSnapshot};
+
 use types::{
-    AfterDate, Dump, Proposal, ProposalSnapshot, ProposalWithLatestSnapshot, RfpDump, RfpSnapshot,
-    RfpWithLatestSnapshot,
+    AfterDate, ProposalRecord, ProposalSnapshotRecord, ProposalWithLatestSnapshotView,
+    RfpSnapshotRecord,
 };
+
+// use crate::types::ProposalResponse;
 
 impl DB {
     // Functions for Proposals
@@ -86,14 +90,14 @@ impl DB {
         Ok(())
     }
     // TODO db.get_proposals
-    pub async fn get_proposals(&self) -> Vec<Proposal> {
+    pub async fn get_proposals(&self) -> Vec<ProposalRecord> {
         vec![]
     }
 
     pub async fn get_proposal_by_id(
         tx: &mut Transaction<'static, Postgres>,
         proposal_id: i32,
-    ) -> anyhow::Result<Option<Proposal>> {
+    ) -> anyhow::Result<Option<ProposalRecord>> {
         let rec = query!(
             r#"
           SELECT id, author_id
@@ -106,18 +110,21 @@ impl DB {
         .await?;
 
         // Map the Record to Proposal
-        let proposal = rec.map(|record| Proposal {
+        let proposal = rec.map(|record| ProposalRecord {
             id: record.id,
             author_id: record.author_id,
+            // social_db_post_block_height: 0,
+            // snapshot: record.clone().snapshot,
+            // snapshot_history: vec![],
             // Initialize other fields of Proposal if necessary
         });
 
         Ok(proposal)
     }
 
-    pub async fn upsert_proposal_snapshot(
+    pub async fn insert_proposal_snapshot(
         tx: &mut Transaction<'static, Postgres>,
-        snapshot: &ProposalSnapshot,
+        snapshot: &ProposalSnapshotRecord,
     ) -> anyhow::Result<()> {
         // Since primary key is (proposal_id, ts)
         query!(
@@ -171,7 +178,7 @@ impl DB {
           "#,
             snapshot.proposal_id,
             snapshot.block_height,
-            BigDecimal::from(snapshot.ts),
+            snapshot.ts,
             snapshot.editor_id,
             snapshot.social_db_post_block_height,
             snapshot.labels,
@@ -183,9 +190,7 @@ impl DB {
             snapshot.description,
             snapshot.linked_proposals,
             snapshot.linked_rfp,
-            snapshot
-                .requested_sponsorship_usd_amount
-                .map(BigDecimal::from),
+            snapshot.requested_sponsorship_usd_amount,
             snapshot.requested_sponsorship_paid_in_currency,
             snapshot.requested_sponsor,
             snapshot.receiver_account,
@@ -304,6 +309,72 @@ impl DB {
     // }
 
     // Function to get proposals with the latest snapshot
+
+    pub async fn get_proposals_with_latest_snapshot(
+        &self,
+        limit: i64,
+        order: &str,
+    ) -> anyhow::Result<Vec<ProposalWithLatestSnapshotView>> {
+        // Validate the order clause to prevent SQL injection
+        let order_clause = match order.to_lowercase().as_str() {
+            "asc" => "ASC",
+            "desc" => "DESC",
+            _ => "DESC", // Default to DESC if the order is not recognized
+        };
+
+        // Build the SQL query with the validated order clause
+        let sql = format!(
+            r#"
+            SELECT
+                ps.proposal_id,
+                p.author_id,
+                ps.block_height,
+                ps.ts,
+                ps.editor_id,
+                ps.social_db_post_block_height,
+                ps.labels,
+                ps.proposal_version,
+                ps.proposal_body_version,
+                ps.name,
+                ps.category,
+                ps.summary,
+                ps.description,
+                ps.linked_proposals,
+                ps.linked_rfp,
+                ps.requested_sponsorship_usd_amount::numeric::float8 AS "requested_sponsorship_usd_amount!",
+                ps.requested_sponsorship_paid_in_currency,
+                ps.requested_sponsor,
+                ps.receiver_account,
+                ps.supervisor,
+                ps.timeline,
+                ps.views
+            FROM
+                proposals p
+            INNER JOIN (
+                SELECT
+                    proposal_id,
+                    MAX(ts) AS max_ts
+                FROM
+                    proposal_snapshots
+                GROUP BY
+                    proposal_id
+            ) latest_snapshots ON p.id = latest_snapshots.proposal_id
+            INNER JOIN proposal_snapshots ps ON latest_snapshots.proposal_id = ps.proposal_id
+                AND latest_snapshots.max_ts = ps.ts
+            ORDER BY ps.ts {}
+            LIMIT $1
+            "#,
+            order_clause,
+        );
+
+        // Execute the query
+        let recs = sqlx::query_as::<_, ProposalWithLatestSnapshotView>(&sql)
+            .bind(limit)
+            .fetch_all(&self.0)
+            .await?;
+
+        Ok(recs)
+    }
 
     // pub async fn get_proposals_with_latest_snapshot(
     //     &self,

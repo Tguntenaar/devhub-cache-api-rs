@@ -1,8 +1,14 @@
 use serde::{Deserialize, Serialize};
 use sqlx::FromRow;
 use utoipa::ToSchema;
+
+// u64 is not supported by sqlx postgres
+// use near_sdk::{BlockHeight, Timestamp};
+pub type BlockHeight = i64;
+pub type Timestamp = i64;
+
 #[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
-pub struct Proposal {
+pub struct ProposalRecord {
     pub id: i32,
     pub author_id: String,
 }
@@ -13,12 +19,12 @@ pub struct AfterDate {
 }
 
 #[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
-pub struct ProposalSnapshot {
+pub struct ProposalSnapshotRecord {
     pub proposal_id: i32,
-    pub block_height: i64,
-    pub ts: i32,
+    pub block_height: BlockHeight,
+    pub ts: Timestamp,
     pub editor_id: String,
-    pub social_db_post_block_height: i64,
+    pub social_db_post_block_height: BlockHeight,
     pub labels: serde_json::Value,
     pub proposal_version: String,
     pub proposal_body_version: String,
@@ -38,27 +44,27 @@ pub struct ProposalSnapshot {
 }
 
 #[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
-pub struct Dump {
+pub struct DumpRecord {
     pub receipt_id: String,
     pub method_name: String,
-    pub block_height: i64,
+    pub block_height: BlockHeight,
     pub block_timestamp: i32,
     pub args: String,
     pub author: String,
-    pub proposal_id: i64,
+    pub proposal_id: i32,
 }
 
 #[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
-pub struct ProposalWithLatestSnapshot {
+pub struct ProposalWithLatestSnapshotView {
     pub proposal_id: i32,
     pub author_id: String,
-    pub block_height: i64,
-    pub ts: i32,
-    pub editor_id: String,
-    pub social_db_post_block_height: i64,
-    pub labels: serde_json::Value,
-    pub proposal_version: String,
-    pub proposal_body_version: String,
+    pub block_height: Option<BlockHeight>,
+    pub ts: Option<Timestamp>,
+    pub editor_id: Option<String>,
+    pub social_db_post_block_height: Option<BlockHeight>,
+    pub labels: Option<serde_json::Value>,
+    pub proposal_version: Option<String>,
+    pub proposal_body_version: Option<String>,
     pub name: Option<String>,
     pub category: Option<String>,
     pub summary: Option<String>,
@@ -75,18 +81,18 @@ pub struct ProposalWithLatestSnapshot {
 }
 
 #[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
-pub struct Rfp {
+pub struct RfpRecord {
     pub id: i32,
     pub author_id: String,
 }
 
 #[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
-pub struct RfpSnapshot {
+pub struct RfpSnapshotRecord {
     pub rfp_id: i32,
-    pub block_height: i64,
-    pub ts: i32,
+    pub block_height: BlockHeight,
+    pub ts: Timestamp,
     pub editor_id: String,
-    pub social_db_post_block_height: i64,
+    pub social_db_post_block_height: BlockHeight,
     pub labels: serde_json::Value,
     pub linked_proposals: Option<serde_json::Value>,
     pub rfp_version: String,
@@ -96,18 +102,18 @@ pub struct RfpSnapshot {
     pub summary: Option<String>,
     pub description: Option<String>,
     pub timeline: Option<serde_json::Value>,
-    pub submission_deadline: i32,
+    pub submission_deadline: Timestamp,
     pub views: Option<i32>,
 }
 
 #[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
-pub struct RfpWithLatestSnapshot {
+pub struct RfpWithLatestSnapshotView {
     pub rfp_id: i32,
     pub author_id: String,
-    pub block_height: i64,
-    pub ts: i32,
+    pub block_height: BlockHeight,
+    pub ts: Timestamp,
     pub editor_id: String,
-    pub social_db_post_block_height: i64,
+    pub social_db_post_block_height: BlockHeight,
     pub labels: serde_json::Value,
     pub linked_proposals: Option<serde_json::Value>,
     pub rfp_version: String,
@@ -118,16 +124,16 @@ pub struct RfpWithLatestSnapshot {
     pub description: Option<String>,
     pub timeline: Option<serde_json::Value>,
     pub views: Option<i32>,
-    pub submission_deadline: i32,
+    pub submission_deadline: Timestamp,
 }
 
 #[derive(Debug, Clone, FromRow, Serialize, Deserialize, ToSchema)]
-pub struct RfpDump {
+pub struct RfpDumpRecord {
     pub receipt_id: String,
     pub method_name: String,
-    pub block_height: i64,
+    pub block_height: BlockHeight,
     pub block_timestamp: i32,
     pub args: String,
     pub author: String,
-    pub rfp_id: i64,
+    pub rfp_id: i32,
 }
