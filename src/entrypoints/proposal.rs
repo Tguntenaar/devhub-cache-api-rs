@@ -300,6 +300,7 @@ struct SetBlockHeightCallbackArgs {
 
 #[near(serializers=[borsh, json])]
 #[derive(Clone)]
+// NOTE: deserializing didn't work for some reason so instead we use get_proposal from RPC
 struct EditProposalArgs {
     id: ProposalId,
     body: VersionedProposalBody,
@@ -366,7 +367,7 @@ async fn get_proposals(
             "devhub.near".parse::<AccountId>().unwrap(),
             // Instead of just set_block_height_callback we should get all method calls
             // and handle them accordingly.
-            Some("edit_proposal".to_string()),
+            Some("set_block_height_callback".to_string()),
             Some(timestamp_to_date_string(last_updated_timestamp)),
             // if this limit hits 10 we might need to do it in a loop let's say there are 100 changes since the last call to nearblocks.
             Some(25),
@@ -394,12 +395,14 @@ async fn get_proposals(
     process_transactions(&nearblocks_unwrapped.txns, db).await;
 
     // TODO refactor this functionality away in nearblocks client
-    let transaction = nearblocks_unwrapped
+    let transaction = match nearblocks_unwrapped
         .txns
         // should we get the first or last?
-        .first()
-        .unwrap()
-        .clone();
+        .last()
+    {
+        Some(transaction) => transaction,
+        None => return None,
+    };
 
     println!("Added proposals to database, now adding timestamp.");
 
@@ -458,13 +461,13 @@ async fn process_transactions(
                     handle_set_block_height_callback(transaction.to_owned(), db).await
                 }
                 "edit_proposal_versioned_timeline" => {
-                    handle_edit_proposal_versioned_timeline(transaction.to_owned(), db).await
+                    handle_edit_proposal(transaction.to_owned(), db).await
                 }
-
-                "edit_proposal_timeline" => {
-                    handle_edit_proposal_timeline(transaction.to_owned(), db).await
-                }
+                "edit_proposal_timeline" => handle_edit_proposal(transaction.to_owned(), db).await,
                 "edit_proposal" => handle_edit_proposal(transaction.to_owned(), db).await,
+                "edit_proposal_linked_rfp" => {
+                    handle_edit_proposal(transaction.to_owned(), db).await
+                }
                 _ => {
                     println!("Unhandled method: {}", action.method);
                     continue;
@@ -489,7 +492,7 @@ async fn handle_set_block_height_callback(
     // println!("json_args: {:?}", json_args.clone());
     let args: SetBlockHeightCallbackArgs = serde_json::from_str(&json_args).unwrap();
 
-    println!("Adding to the database...");
+    println!("Adding to the database... {}", args.clone().proposal.id);
     let mut tx = db.begin().await.map_err(|_e| Status::InternalServerError)?;
     DB::upsert_proposal(
         &mut tx,
@@ -520,29 +523,28 @@ async fn handle_set_block_height_callback(
     Ok("ok".to_string())
 }
 
-async fn handle_edit_proposal(
-    transaction: Transaction,
-    db: &State<DB>,
-) -> Result<String, rocket::http::Status> {
+fn get_proposal_id(transaction: &Transaction) -> i32 {
+    // handle the unwrap better
     let action = transaction.clone().actions.first().unwrap().clone();
     let json_args = action.args.clone();
 
-    // println!("json_args: {:?}", json_args.clone());
-    // I have to parse the json to get the args. There are multiple versions of the proposal body.
-
-    // Instead of deserialize just get_proposal from RPC
-
-    // EditProposalArgs
     let args: PartialEditProposalArgs = match serde_json::from_str(&json_args) {
         Ok(parsed_args) => parsed_args,
         Err(e) => {
             eprintln!("Failed to parse JSON: {:?}", e);
-            return Err(Status::InternalServerError);
+            PartialEditProposalArgs { id: 0 }
         }
     };
+    args.id
+}
 
+async fn handle_edit_proposal(
+    transaction: Transaction,
+    db: &State<DB>,
+) -> Result<String, rocket::http::Status> {
     let rpc_service = RpcService::default();
-    let versioned_proposal = match rpc_service.get_proposal(args.id).await {
+    let id = get_proposal_id(&transaction);
+    let versioned_proposal = match rpc_service.get_proposal(id).await {
         Ok(proposal) => proposal,
         Err(e) => {
             eprintln!("Failed to get proposal from RPC: {:?}", e);
@@ -556,10 +558,9 @@ async fn handle_edit_proposal(
         versioned_proposal.into(),
         transaction.block_timestamp,
         transaction.block.block_height,
-        // transaction.predecessor_account_id.to_string(),
     );
 
-    // Upsert into postgres ?
+    // Upsert into postgres
     DB::insert_proposal_snapshot(&mut tx, &snapshot)
         .await
         .unwrap();
@@ -568,22 +569,6 @@ async fn handle_edit_proposal(
         .await
         .map_err(|_e| Status::InternalServerError)?;
 
-    Ok("ok".to_string())
-}
-
-async fn handle_edit_proposal_timeline(
-    tx: Transaction,
-    db: &State<DB>,
-) -> Result<String, rocket::http::Status> {
-    // TODO
-    Ok("ok".to_string())
-}
-
-async fn handle_edit_proposal_versioned_timeline(
-    tx: Transaction,
-    db: &State<DB>,
-) -> Result<String, rocket::http::Status> {
-    // TODO
     Ok("ok".to_string())
 }
 
