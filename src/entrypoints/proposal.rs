@@ -1,7 +1,13 @@
+use devhub_cache_api::api_client::ApiResponse;
 use devhub_cache_api::db::DB;
+use devhub_cache_api::nearblocks_client::types::Transaction;
+use devhub_cache_api::rpc_service::RpcService;
 use devhub_cache_api::{nearblocks_client, timestamp_to_date_string};
-use devhub_shared::proposal::{Proposal, ProposalFundingCurrency, VersionedProposalBody};
+use devhub_shared::proposal::{
+    Proposal, ProposalFundingCurrency, ProposalId, VersionedProposal, VersionedProposalBody,
+};
 use near_account_id::AccountId;
+use near_sdk::near;
 use rocket::request::FromParam;
 use rocket::serde::{json::Json, Deserialize, Serialize};
 use rocket::{get, http::Status, FromForm, State};
@@ -11,6 +17,7 @@ use std::convert::TryInto;
 
 // Assuming these are the types you are working with
 use devhub_cache_api::db::types::ProposalSnapshotRecord;
+// TODO think about if this should be VersionedProposal instead of Proposal :(
 use devhub_shared::proposal::Proposal as ContractProposal;
 
 // Define a trait for accessing various fields
@@ -174,7 +181,7 @@ impl FromContractProposal for ProposalSnapshotRecord {
         ProposalSnapshotRecord {
             proposal_id: proposal.id as i32,
             block_height,
-            ts: timestamp.parse::<i32>().unwrap_or_default(),
+            ts: timestamp.parse::<i64>().unwrap_or_default(),
             editor_id: proposal.snapshot.editor_id.to_string(),
             social_db_post_block_height: proposal.social_db_post_block_height as i64,
             labels: serde_json::Value::from(Vec::from_iter(
@@ -214,6 +221,56 @@ impl FromContractProposal for ProposalSnapshotRecord {
     }
 }
 
+trait FromVersionedProposalBody {
+    fn from_versioned_proposal_body(
+        args: EditProposalArgs,
+        timestamp: String,
+        block_height: i64,
+        editor_id: String,
+    ) -> Self;
+}
+
+impl FromVersionedProposalBody for ProposalSnapshotRecord {
+    fn from_versioned_proposal_body(
+        args: EditProposalArgs,
+        timestamp: String,
+        block_height: i64,
+        editor_id: String, // transaction.predecessor_account_id
+    ) -> Self {
+        ProposalSnapshotRecord {
+            proposal_id: args.id as i32,
+            block_height,
+            ts: timestamp.parse::<i64>().unwrap_or_default(),
+            editor_id,
+            social_db_post_block_height: 0,
+            labels: serde_json::Value::from(Vec::from_iter(args.labels.iter().cloned())),
+            proposal_version: "V0".to_string(), // Get this from the last snapshot
+            proposal_body_version: "V2".to_string(), // Get this from the last snapshot
+            name: Some(args.body.get_name().clone()),
+            category: Some(args.body.get_category().clone()),
+            summary: Some(args.body.get_summary().clone()),
+            description: Some(args.body.get_description().clone()),
+            linked_proposals: Some(serde_json::Value::from(Vec::from_iter(
+                args.body.get_linked_proposals().to_vec(),
+            ))),
+            linked_rfp: args.body.get_linked_rfp().map(|x| x as i32),
+            requested_sponsorship_usd_amount: Some(
+                *args.body.get_requested_sponsorship_usd_amount() as i32,
+            ),
+            requested_sponsorship_paid_in_currency: Some(
+                args.body
+                    .get_requested_sponsorship_paid_in_currency()
+                    .clone(),
+            ),
+            requested_sponsor: Some(args.body.get_requested_sponsor().clone()),
+            receiver_account: Some(args.body.get_receiver_account().clone()),
+            supervisor: args.body.get_supervisor(),
+            timeline: Some(serde_json::Value::from(args.body.get_timeline().clone())),
+            views: None, // Last snapshot + 1
+        }
+    }
+}
+
 #[derive(Debug, Serialize)]
 struct ProposalIds(Vec<i32>);
 
@@ -229,15 +286,6 @@ impl<'r> FromParam<'r> for ProposalIds {
         Ok(ProposalIds(ids))
     }
 }
-
-// Struct for query parameters
-#[derive(Debug, FromForm)]
-pub struct ProposalQuery {
-    proposal_ids: Option<Vec<i32>>,
-    limit: Option<usize>, // Optional limit parameter
-    sort: Option<String>, // Optional sorting parameter
-}
-
 #[derive(Serialize, Deserialize)]
 struct AddProposalArgs {
     body: VersionedProposalBody,
@@ -250,26 +298,59 @@ struct SetBlockHeightCallbackArgs {
     proposal: Proposal,
 }
 
+#[near(serializers=[borsh, json])]
+#[derive(Clone)]
+struct EditProposalArgs {
+    id: ProposalId,
+    body: VersionedProposalBody,
+    labels: HashSet<String>,
+}
+
+#[derive(Deserialize, Clone)]
+struct PartialEditProposalArgs {
+    id: i32,
+}
+
 // add query params to get_proposals entrypoint
-#[utoipa::path(get, path = "/proposals")]
+#[utoipa::path(get, path = "/proposals?<order>&<limit>&<sort>")]
 #[get("/")]
-async fn get_proposals(db: &State<DB>) -> Result<Json<Proposal>, Status> {
+// Json<Proposal>
+async fn get_proposals(
+    // order: Option<&str>,
+    // limit: Option<usize>,
+    // sort: Option<String>,
+    db: &State<DB>,
+    // Json<PaginatedResponse<ProposalWithLatestSnapshotView>>
+) -> Option<&str> {
     // Get current timestamp
     // let current_timestamp = chrono::Utc::now().timestamp();
-    let current_timestamp = chrono::Utc::now().timestamp_millis();
+    let current_timestamp_nano = chrono::Utc::now().timestamp_nanos_opt().unwrap();
     // Get last timestamp when database was updated
     let last_updated_timestamp = db.get_last_updated_timestamp().await.unwrap();
 
     // TODO the timestamps are way off between blockchain and database.
-    println!("last_updated_timestamp: {:?}", last_updated_timestamp); // 1709470463748732291
-    println!("current_timestamp: {:?}", current_timestamp); // 1729806249 is way smaller
+    println!("last_updated_timestamp: {:?}", last_updated_timestamp);
+    println!("current_timestamp: {:?}", current_timestamp_nano);
 
-    // If we called nearblocks in the last 60 seconds return the database values
-    if last_updated_timestamp > current_timestamp - 60 {
+    // last_updated_timestamp: 1709470458142
+    // current_timestamp: 1730777916903
+
+    println!(
+        "Difference: {:?}",
+        current_timestamp_nano - last_updated_timestamp
+    );
+    println!(
+        "Duration: {:?}",
+        chrono::Duration::seconds(60).num_nanoseconds().unwrap()
+    );
+    // If we called nearblocks in the last 60 milliseconds return the database values
+    if current_timestamp_nano - last_updated_timestamp
+        < chrono::Duration::seconds(60).num_nanoseconds().unwrap()
+    {
         let _proposals = db.get_proposals().await;
         println!("Returning cached proposals");
         // ApiResponse should be Proposal struct Json(proposals)
-        return Err(Status::NotImplemented);
+        return None; // implement pagination
     }
 
     println!("Fetching not yet indexed method calls from nearblocks");
@@ -280,44 +361,132 @@ async fn get_proposals(db: &State<DB>) -> Result<Json<Proposal>, Status> {
     // This could return 0 new tx in which case we get the database stuff anyway
     // Or it could return 1 new tx in which case we want to update the database first
     // then get it from database using the right queries
-    let nearblocks_response = nearblocks_client
+    let nearblocks_unwrapped = match nearblocks_client
         .get_account_txns_by_pagination(
             "devhub.near".parse::<AccountId>().unwrap(),
             // Instead of just set_block_height_callback we should get all method calls
             // and handle them accordingly.
-            Some("set_block_height_callback".to_string()),
+            Some("edit_proposal".to_string()),
             Some(timestamp_to_date_string(last_updated_timestamp)),
             // if this limit hits 10 we might need to do it in a loop let's say there are 100 changes since the last call to nearblocks.
-            Some(10),
+            Some(25),
             Some("asc".to_string()),
         )
-        .await;
-
-    // TODO handle these different method calls
-    // "edit_proposal",
-    // "edit_proposal_internal",
-    // "edit_proposal_linked_rfp",
-    // "edit_proposal_timeline",
-    // "edit_proposal_versioned_timeline",
-
-    let nearblocks_unwrapped = nearblocks_response.unwrap();
+        .await
+    {
+        Ok(nearblocks_unwrapped) => {
+            // If the response was successful, print the count of method calls
+            // println!("Response: {:?}", nearblocks_unwrapped);
+            nearblocks_unwrapped
+        }
+        Err(e) => {
+            // If there was an error, print it or handle it as needed
+            eprintln!("Failed to fetch data from nearblocks: {:?}", e);
+            nearblocks_client::ApiResponse { txns: vec![] }
+        }
+    };
 
     println!(
         "Fetched {} method calls from nearblocks",
         nearblocks_unwrapped.clone().txns.len()
     );
 
+    process_transactions(&nearblocks_unwrapped.txns, db).await;
+
     // TODO refactor this functionality away in nearblocks client
     let transaction = nearblocks_unwrapped
         .txns
-        // don't get the first txn but all txns and than loop over them while inserting into postgres
+        // should we get the first or last?
         .first()
         .unwrap()
         .clone();
+
+    println!("Added proposals to database, now adding timestamp.");
+
+    println!("Transaction timestamp: {}", transaction.block_timestamp);
+    let timestamp_nano: i64 = transaction.block_timestamp.parse().unwrap();
+
+    println!("Parsed tx timestamp: {}", timestamp_nano);
+    db.set_last_updated_timestamp(timestamp_nano).await.unwrap();
+
+    println!("Added timestamp to database, returning proposals...");
+
+    // match args {
+    //     Ok(proposal) => {
+    //         println!("Fetched proposals from nearblocks");
+    //         Ok(Json(proposal.proposal))
+    //     }
+    //     Err(e) => {
+    //         println!("Failed to parse json: {:?}", e);
+    //         Err(Status::InternalServerError)
+    //     }
+    // }
+    // Upsert into postgres
+
+    // TODO add back in
+    // let order = order.unwrap_or("desc");
+    // let limit = limit.unwrap_or(25);
+
+    // let proposals = match db.get_proposals_with_latest_snapshot(limit, order).await {
+    //     Err(e) => {
+    //         // race_of_sloths_server::error(
+    //         //     telegram,
+    //         //     &format!("Failed to get user contributions: {username}: {e}"),
+    //         // );
+    //         return None;
+    //     }
+    //     Ok(proposals) => proposals,
+    // };
+
+    // Ok(Json(PaginatedResponse::new(
+    //     proposals.into_iter().map(Into::into).collect(),
+    //     page + 1,
+    //     limit,
+    //     total, // TODO TOTAL
+    // )))
+    Some("ok")
+}
+
+async fn process_transactions(
+    transactions: &Vec<Transaction>,
+    db: &State<DB>,
+) -> Result<String, Status> {
+    for transaction in transactions.iter() {
+        if let Some(action) = transaction.actions.get(0) {
+            let result = match action.method.as_str() {
+                "set_block_height_callback" => {
+                    handle_set_block_height_callback(transaction.to_owned(), db).await
+                }
+                "edit_proposal_versioned_timeline" => {
+                    handle_edit_proposal_versioned_timeline(transaction.to_owned(), db).await
+                }
+
+                "edit_proposal_timeline" => {
+                    handle_edit_proposal_timeline(transaction.to_owned(), db).await
+                }
+                "edit_proposal" => handle_edit_proposal(transaction.to_owned(), db).await,
+                _ => {
+                    println!("Unhandled method: {}", action.method);
+                    continue;
+                } // or do something else if you want
+            };
+            if let Err(e) = result {
+                return Err(e);
+            }
+        }
+    }
+
+    Ok("All transactions processed successfully".to_string())
+}
+
+async fn handle_set_block_height_callback(
+    transaction: Transaction,
+    db: &State<DB>,
+) -> Result<String, Status> {
     let action = transaction.clone().actions.first().unwrap().clone();
     let json_args = action.args.clone();
 
-    println!("json_args: {:?}", json_args.clone());
+    // println!("json_args: {:?}", json_args.clone());
     let args: SetBlockHeightCallbackArgs = serde_json::from_str(&json_args).unwrap();
 
     println!("Adding to the database...");
@@ -340,8 +509,7 @@ async fn get_proposals(db: &State<DB>) -> Result<Json<Proposal>, Status> {
             block_height,
         );
 
-    //
-    DB::upsert_proposal_snapshot(&mut tx, &snapshot)
+    DB::insert_proposal_snapshot(&mut tx, &snapshot)
         .await
         .unwrap();
 
@@ -349,33 +517,75 @@ async fn get_proposals(db: &State<DB>) -> Result<Json<Proposal>, Status> {
         .await
         .map_err(|_e| Status::InternalServerError)?;
 
-    println!("Added proposal to database, now adding timestamp.");
-
-    let timestamp = args.proposal.snapshot.timestamp.try_into().unwrap();
-    db.set_last_updated_timestamp(timestamp).await.unwrap();
-
-    println!("Added timestamp to database, returning proposals...");
-
-    // match args {
-    //     Ok(proposal) => {
-    //         println!("Fetched proposals from nearblocks");
-    //         Ok(Json(proposal.proposal))
-    //     }
-    //     Err(e) => {
-    //         println!("Failed to parse json: {:?}", e);
-    //         Err(Status::InternalServerError)
-    //     }
-    // }
-    // Upsert into postgres
-
-    Ok(Json(args.proposal))
+    Ok("ok".to_string())
 }
 
-async fn handle_set_block_height() {}
+async fn handle_edit_proposal(
+    transaction: Transaction,
+    db: &State<DB>,
+) -> Result<String, rocket::http::Status> {
+    let action = transaction.clone().actions.first().unwrap().clone();
+    let json_args = action.args.clone();
 
-async fn handle_edit_proposal() {}
+    // println!("json_args: {:?}", json_args.clone());
+    // I have to parse the json to get the args. There are multiple versions of the proposal body.
 
-async fn handle_edit_proposal_timeline() {}
+    // Instead of deserialize just get_proposal from RPC
+
+    // EditProposalArgs
+    let args: PartialEditProposalArgs = match serde_json::from_str(&json_args) {
+        Ok(parsed_args) => parsed_args,
+        Err(e) => {
+            eprintln!("Failed to parse JSON: {:?}", e);
+            return Err(Status::InternalServerError);
+        }
+    };
+
+    let rpc_service = RpcService::default();
+    let versioned_proposal = match rpc_service.get_proposal(args.id).await {
+        Ok(proposal) => proposal,
+        Err(e) => {
+            eprintln!("Failed to get proposal from RPC: {:?}", e);
+            return Err(Status::InternalServerError);
+        }
+    };
+
+    let mut tx = db.begin().await.map_err(|_e| Status::InternalServerError)?;
+
+    let snapshot = ProposalSnapshotRecord::from_contract_proposal(
+        versioned_proposal.into(),
+        transaction.block_timestamp,
+        transaction.block.block_height,
+        // transaction.predecessor_account_id.to_string(),
+    );
+
+    // Upsert into postgres ?
+    DB::insert_proposal_snapshot(&mut tx, &snapshot)
+        .await
+        .unwrap();
+
+    tx.commit()
+        .await
+        .map_err(|_e| Status::InternalServerError)?;
+
+    Ok("ok".to_string())
+}
+
+async fn handle_edit_proposal_timeline(
+    tx: Transaction,
+    db: &State<DB>,
+) -> Result<String, rocket::http::Status> {
+    // TODO
+    Ok("ok".to_string())
+}
+
+async fn handle_edit_proposal_versioned_timeline(
+    tx: Transaction,
+    db: &State<DB>,
+) -> Result<String, rocket::http::Status> {
+    // TODO
+    Ok("ok".to_string())
+}
 
 #[utoipa::path(get, path = "/proposals/{proposal_id}")]
 #[get("/<proposal_id>")]
