@@ -7,6 +7,9 @@ use devhub_cache_api::db;
 use entrypoints::ApiDoc;
 use rocket_cors::AllowedOrigins;
 
+#[cfg(test)]
+mod tests;
+
 #[get("/")]
 fn index() -> &'static str {
     "Welcome from fly.io!!!!!"
