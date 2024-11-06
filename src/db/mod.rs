@@ -225,23 +225,40 @@ impl DB {
 
     // Functions for RFPs
 
-    // pub async fn insert_rfp(
-    //     tx: &mut Transaction<'static, Postgres>,
-    //     author_id: &str,
-    // ) -> anyhow::Result<i32> {
-    //     let rec = sqlx::query!(
-    //         r#"
-    //       INSERT INTO rfps (author_id)
-    //       VALUES ($1)
-    //       RETURNING id
-    //       "#,
-    //         author_id
-    //     )
-    //     .fetch_one(tx)
-    //     .await?;
+    pub async fn upsert_rfp(
+        tx: &mut Transaction<'static, Postgres>,
+        rfp_id: u32,
+        author_id: String,
+    ) -> Result<i32, Error> {
+        let rec = sqlx::query!(
+            r#"
+          UPDATE rfps SET author_id = $1 WHERE id = $2
+          RETURNING id
+          "#,
+            author_id,
+            rfp_id as i32,
+        )
+        .fetch_optional(tx.as_mut())
+        .await?;
 
-    //     Ok(rec.id)
-    // }
+        if let Some(record) = rec {
+            Ok(record.id)
+        } else {
+            let rec = sqlx::query!(
+                r#"
+                INSERT INTO rfps (id, author_id)
+                VALUES ($1, $2)
+                ON CONFLICT (id) DO NOTHING
+                RETURNING id
+                "#,
+                rfp_id as i32,
+                author_id
+            )
+            .fetch_one(tx.as_mut())
+            .await?;
+            Ok(rec.id)
+        }
+    }
 
     // pub async fn upsert_rfp_snapshot(
     //     tx: &mut Transaction<'static, Postgres>,
