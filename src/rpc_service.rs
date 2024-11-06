@@ -1,4 +1,5 @@
 use devhub_shared::proposal::VersionedProposal;
+use devhub_shared::rfp::VersionedRFP;
 use near_account_id::AccountId;
 use near_api::{types::Data, Contract, NetworkConfig};
 use rocket::http::Status;
@@ -53,6 +54,21 @@ impl RpcService {
         let result: Result<Data<VersionedProposal>, _> = self
             .contract
             .call_function("get_proposal", json!({ "proposal_id": proposal_id }))
+            .unwrap()
+            .read_only()
+            .fetch_from(&self.network)
+            .await;
+
+        match result {
+            Ok(proposal) => Ok(proposal.data),
+            Err(e) => Err(e.to_string()),
+        }
+    }
+
+    pub async fn get_rfp(&self, rfp_id: i32) -> Result<VersionedRFP, String> {
+        let result: Result<Data<VersionedRFP>, _> = self
+            .contract
+            .call_function("get_rfp", json!({ "rfp_id": rfp_id }))
             .unwrap()
             .read_only()
             .fetch_from(&self.network)
