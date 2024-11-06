@@ -429,7 +429,7 @@ async fn get_proposals(
             //     &format!("Failed to get user contributions: {username}: {e}"),
             // );
             println!("Failed to get proposals: {:?}", e);
-            return None;
+            vec![]
         }
         Ok(proposals) => proposals,
     };

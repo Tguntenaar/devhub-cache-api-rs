@@ -9,7 +9,8 @@ use sqlx::{
 };
 
 #[derive(Database, Clone, Debug)]
-#[database("devhub_cache")] // Adjust the database name accordingly
+// devhub_cache_api_rs but locally devhub_cache
+#[database("devhub_cache_api_rs")] // Adjust the database name accordingly
 pub struct DB(PgPool);
 
 pub mod types;
@@ -343,17 +344,18 @@ impl DB {
             _ => "DESC", // Default to DESC if the order is not recognized
         };
 
-        let stage_clause = match stage.unwrap().to_uppercase().as_str() {
-            "DRAFT" => "DRAFT",
-            "REVIEW" => "REVIEW",
-            "APPROVED" => "APPROVED",
-            "REJECTED" => "REJECTED",
-            "CANCELED" => "CANCELLED",
-            "APPROVED_CONDITIONALLY" => "APPROVED_CONDITIONALLY",
-            "PAYMENT_PROCESSING" => "PAYMENT_PROCESSING",
-            "FUNDED" => "FUNDED",
-            _ => "",
-        };
+        // Set 'stage_clause' to None if 'stage' is None
+        let stage_clause: Option<String> = stage.and_then(|s| match s.to_uppercase().as_str() {
+            "DRAFT" => Some("DRAFT".to_string()),
+            "REVIEW" => Some("REVIEW".to_string()),
+            "APPROVED" => Some("APPROVED".to_string()),
+            "REJECTED" => Some("REJECTED".to_string()),
+            "CANCELED" => Some("CANCELLED".to_string()),
+            "APPROVED_CONDITIONALLY" => Some("CONDITIONALLY".to_string()),
+            "PAYMENT_PROCESSING" => Some("PAYMENT".to_string()),
+            "FUNDED" => Some("FUNDED".to_string()),
+            _ => None,
+        });
 
         // Build the SQL query with the validated order clause
         let sql = format!(
