@@ -319,7 +319,10 @@ struct ProposalQuery {
 }
 
 // add query params to get_proposals entrypoint
-#[utoipa::path(get, path = "/proposals")]
+#[utoipa::path(
+    get,
+    path = "/proposals?<order>&<limit>&<offset>&<filtered_account_id>&<block_timestamp>"
+)]
 #[get("/?<order>&<limit>&<offset>&<filtered_account_id>&<block_timestamp>")]
 // Json<Proposal>
 async fn get_proposals(
@@ -454,11 +457,11 @@ async fn get_proposals(
 }
 
 async fn process_transactions(
-    transactions: &Vec<Transaction>,
+    transactions: &[Transaction],
     db: &State<DB>,
 ) -> Result<String, Status> {
     for transaction in transactions.iter() {
-        if let Some(action) = transaction.actions.get(0) {
+        if let Some(action) = transaction.actions.first() {
             let result = match action.method.as_str() {
                 "set_block_height_callback" => {
                     handle_set_block_height_callback(transaction.to_owned(), db).await
@@ -476,9 +479,7 @@ async fn process_transactions(
                     continue;
                 } // or do something else if you want
             };
-            if let Err(e) = result {
-                return Err(e);
-            }
+            result?;
         }
     }
 
@@ -577,8 +578,15 @@ async fn handle_edit_proposal(
 
 #[utoipa::path(get, path = "/proposals/{proposal_id}")]
 #[get("/<proposal_id>")]
-async fn get_proposal(proposal_id: i32, db: &State<DB>) -> Result<String, rocket::http::Status> {
-    Ok(format!("Hello, {:?}!", proposal_id))
+async fn get_proposal(proposal_id: i32) -> Result<Json<VersionedProposal>, rocket::http::Status> {
+    let rpc_service = RpcService::default();
+    match rpc_service.get_proposal(proposal_id).await {
+        Ok(proposal) => Ok(Json(proposal)),
+        Err(e) => {
+            eprintln!("Failed to get proposal from RPC: {:?}", e);
+            Err(Status::InternalServerError)
+        }
+    }
 }
 
 pub fn stage() -> rocket::fairing::AdHoc {
