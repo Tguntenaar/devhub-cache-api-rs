@@ -334,12 +334,25 @@ impl DB {
         offset: i64,
         filtered_account_id: Option<String>,
         block_timestamp: Option<i64>,
+        stage: Option<String>,
     ) -> anyhow::Result<Vec<ProposalWithLatestSnapshotView>> {
         // Validate the order clause to prevent SQL injection
         let order_clause = match order.to_lowercase().as_str() {
             "asc" => "ASC",
             "desc" => "DESC",
             _ => "DESC", // Default to DESC if the order is not recognized
+        };
+
+        let stage_clause = match stage.unwrap().to_uppercase().as_str() {
+            "DRAFT" => "DRAFT",
+            "REVIEW" => "REVIEW",
+            "APPROVED" => "APPROVED",
+            "REJECTED" => "REJECTED",
+            "CANCELED" => "CANCELLED",
+            "APPROVED_CONDITIONALLY" => "APPROVED_CONDITIONALLY",
+            "PAYMENT_PROCESSING" => "PAYMENT_PROCESSING",
+            "FUNDED" => "FUNDED",
+            _ => "",
         };
 
         // Build the SQL query with the validated order clause
@@ -384,6 +397,7 @@ impl DB {
             WHERE
                 ($3 IS NULL OR p.author_id = $3)
                 AND ($4 IS NULL OR ps.ts > $4)
+                AND ($5 IS NULL OR ps.timeline::text ~ $5)
             ORDER BY ps.ts {}
             LIMIT $1 OFFSET $2
             "#,
@@ -396,6 +410,7 @@ impl DB {
             .bind(offset)
             .bind(filtered_account_id)
             .bind(block_timestamp)
+            .bind(stage_clause)
             .fetch_all(&self.0)
             .await?;
 

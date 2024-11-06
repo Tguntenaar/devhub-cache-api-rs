@@ -1,4 +1,3 @@
-use devhub_cache_api::api_client::ApiResponse;
 use devhub_cache_api::db::DB;
 use devhub_cache_api::nearblocks_client::types::Transaction;
 use devhub_cache_api::rpc_service::RpcService;
@@ -272,21 +271,6 @@ impl FromVersionedProposalBody for ProposalSnapshotRecord {
     }
 }
 
-#[derive(Debug, Serialize)]
-struct ProposalIds(Vec<i32>);
-
-impl<'r> FromParam<'r> for ProposalIds {
-    type Error = &'r str;
-
-    fn from_param(param: &'r str) -> Result<Self, Self::Error> {
-        let ids = param
-            .split(',')
-            .map(|s| s.parse::<i32>())
-            .collect::<Result<Vec<_>, _>>()
-            .map_err(|_| "Invalid integer")?;
-        Ok(ProposalIds(ids))
-    }
-}
 #[derive(Serialize, Deserialize)]
 struct AddProposalArgs {
     body: VersionedProposalBody,
@@ -321,15 +305,16 @@ struct ProposalQuery {
 // add query params to get_proposals entrypoint
 #[utoipa::path(
     get,
-    path = "/proposals?<order>&<limit>&<offset>&<filtered_account_id>&<block_timestamp>"
+    path = "/proposals?<order>&<limit>&<offset>&<filtered_account_id>&<block_timestamp>&<stage>"
 )]
-#[get("/?<order>&<limit>&<offset>&<filtered_account_id>&<block_timestamp>")]
+#[get("/?<order>&<limit>&<offset>&<filtered_account_id>&<block_timestamp>&<stage>")]
 // Json<Proposal>
 async fn get_proposals(
     order: Option<&str>,
     limit: Option<i64>,
     offset: Option<i64>,
     filtered_account_id: Option<String>,
+    stage: Option<String>,
     block_timestamp: Option<i64>, // support for feed update functionality
     db: &State<DB>,
     // Json<PaginatedResponse<ProposalWithLatestSnapshotView>>
@@ -434,6 +419,7 @@ async fn get_proposals(
             offset,
             filtered_account_id,
             block_timestamp,
+            stage,
         )
         .await
     {
@@ -456,10 +442,7 @@ async fn get_proposals(
     )))
 }
 
-async fn process_transactions(
-    transactions: &[Transaction],
-    db: &State<DB>,
-) -> Result<String, Status> {
+async fn process_transactions(transactions: &[Transaction], db: &State<DB>) -> Result<(), Status> {
     for transaction in transactions.iter() {
         if let Some(action) = transaction.actions.first() {
             let result = match action.method.as_str() {
@@ -477,19 +460,19 @@ async fn process_transactions(
                 _ => {
                     println!("Unhandled method: {}", action.method);
                     continue;
-                } // or do something else if you want
+                }
             };
             result?;
         }
     }
 
-    Ok("All transactions processed successfully".to_string())
+    Ok(())
 }
 
 async fn handle_set_block_height_callback(
     transaction: Transaction,
     db: &State<DB>,
-) -> Result<String, Status> {
+) -> Result<(), Status> {
     let action = transaction.clone().actions.first().unwrap().clone();
     let json_args = action.args.clone();
 
@@ -524,7 +507,7 @@ async fn handle_set_block_height_callback(
         .await
         .map_err(|_e| Status::InternalServerError)?;
 
-    Ok("ok".to_string())
+    Ok(())
 }
 
 fn get_proposal_id(transaction: &Transaction) -> Result<i32, &'static str> {
@@ -544,7 +527,7 @@ fn get_proposal_id(transaction: &Transaction) -> Result<i32, &'static str> {
 async fn handle_edit_proposal(
     transaction: Transaction,
     db: &State<DB>,
-) -> Result<String, rocket::http::Status> {
+) -> Result<(), rocket::http::Status> {
     let rpc_service = RpcService::default();
     let id = get_proposal_id(&transaction).map_err(|e| {
         eprintln!("Failed to get proposal ID: {}", e);
@@ -566,7 +549,6 @@ async fn handle_edit_proposal(
         transaction.block.block_height,
     );
 
-    // Upsert into postgres
     DB::insert_proposal_snapshot(&mut tx, &snapshot)
         .await
         .unwrap();
@@ -575,7 +557,7 @@ async fn handle_edit_proposal(
         .await
         .map_err(|_e| Status::InternalServerError)?;
 
-    Ok("ok".to_string())
+    Ok(())
 }
 
 #[utoipa::path(get, path = "/proposals/{proposal_id}")]
