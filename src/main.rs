@@ -45,7 +45,7 @@ fn rocket() -> _ {
 
     let allowed_origins = AllowedOrigins::some_exact(&[
         "http://localhost:3000",
-        // TODO Add prod urls here
+        "https://devhub-cache-api-rs.fly.dev", // TODO Add prod urls here
     ]);
     let cors = rocket_cors::CorsOptions {
         allowed_origins,

@@ -51,5 +51,6 @@ RUN useradd -ms /bin/bash app
 USER app
 WORKDIR /app
 COPY --from=builder /app/target/release/devhub-cache-api .
-EXPOSE 8000
+COPY --from=builder /app/Rocket.toml .
+EXPOSE 8080
 CMD ["./devhub-cache-api"]

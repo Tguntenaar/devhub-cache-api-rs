@@ -6,17 +6,33 @@
 app = 'devhub-cache-api-rs'
 primary_region = 'ams'
 
-[build]
+# [[services]]
+# internal_port = 8080
+# processes = ["app"]
+# protocol = "tcp"
+
+# [[services.ports]]
+# handlers = ["http"]
+# port = "80"
+# force_https = true
+
+# [[services.ports]]
+# handlers = ["tls", "http"]
+# port = 443
 
 [http_service]
-  internal_port = 8000
-  force_https = true
-  auto_stop_machines = 'stop'
-  auto_start_machines = true
-  min_machines_running = 0
-  processes = ['app']
+internal_port = 8080
+force_https = true
+auto_stop_machines = 'stop'
+auto_start_machines = true
+min_machines_running = 1
+processes = ['app']
 
 [[vm]]
-  memory = '1gb'
-  cpu_kind = 'shared'
-  cpus = 1
+memory = '1gb'
+cpu_kind = 'shared'
+cpus = 1
+
+[env]
+ROCKET_ADDRESS = "0.0.0.0"
+ROCKET_PORT = "8080"
