@@ -1,0 +1,23 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n          UPDATE rfps SET author_id = $1 WHERE id = $2\n          RETURNING id\n          ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Int4"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Varchar",
+        "Int4"
+      ]
+    },
+    "nullable": [
+      false
+    ]
+  },
+  "hash": "6b4e4a2e8ba4a7acc740015d1a602978868b21b3f9e211ec824964241b65616c"
+}

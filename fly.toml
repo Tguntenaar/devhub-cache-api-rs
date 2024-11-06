@@ -1,20 +1,15 @@
-# fly.toml app configuration file generated for devhub-cache-api-rs on 2024-10-29T10:00:35-05:00
+# fly.toml app configuration file generated for devhub-cache-api-rs on 2024-11-06T08:54:33+07:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
 app = 'devhub-cache-api-rs'
-primary_region = 'dfw'
+primary_region = 'ams'
 
 [build]
 
-[env]
-  PORT = '8080'
-  ROCKET_ADDRESS = '0.0.0.0'
-  ROCKET_PORT = '8080'
-
 [http_service]
-  internal_port = 8080
+  internal_port = 8000
   force_https = true
   auto_stop_machines = 'stop'
   auto_start_machines = true

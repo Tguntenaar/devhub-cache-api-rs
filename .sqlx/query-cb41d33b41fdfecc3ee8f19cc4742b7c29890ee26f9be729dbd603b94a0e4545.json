@@ -1,0 +1,14 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n            UPDATE after_date SET after_date = $1\n            ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Int8"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "cb41d33b41fdfecc3ee8f19cc4742b7c29890ee26f9be729dbd603b94a0e4545"
+}

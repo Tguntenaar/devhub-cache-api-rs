@@ -1,0 +1,23 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n                INSERT INTO rfps (id, author_id)\n                VALUES ($1, $2)\n                ON CONFLICT (id) DO NOTHING\n                RETURNING id\n                ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Int4"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Int4",
+        "Varchar"
+      ]
+    },
+    "nullable": [
+      false
+    ]
+  },
+  "hash": "9496950dbb64351b32b320720014df7c2fc6c2ba9523c3d2d261d58d3e9bade6"
+}
