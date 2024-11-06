@@ -2,6 +2,7 @@ use devhub_cache_api::api_client::ApiResponse;
 use devhub_cache_api::db::DB;
 use devhub_cache_api::nearblocks_client::types::Transaction;
 use devhub_cache_api::rpc_service::RpcService;
+use devhub_cache_api::types::PaginatedResponse;
 use devhub_cache_api::{nearblocks_client, timestamp_to_date_string};
 use devhub_shared::proposal::{
     Proposal, ProposalFundingCurrency, ProposalId, VersionedProposal, VersionedProposalBody,
@@ -16,7 +17,7 @@ use std::collections::HashSet;
 use std::convert::TryInto;
 
 // Assuming these are the types you are working with
-use devhub_cache_api::db::types::ProposalSnapshotRecord;
+use devhub_cache_api::db::types::{ProposalSnapshotRecord, ProposalWithLatestSnapshotView};
 // TODO think about if this should be VersionedProposal instead of Proposal :(
 use devhub_shared::proposal::Proposal as ContractProposal;
 
@@ -312,29 +313,32 @@ struct PartialEditProposalArgs {
     id: i32,
 }
 
+#[derive(FromForm)]
+struct ProposalQuery {
+    limit: Option<usize>,
+}
+
 // add query params to get_proposals entrypoint
-#[utoipa::path(get, path = "/proposals?<order>&<limit>&<sort>")]
-#[get("/")]
+#[utoipa::path(get, path = "/proposals")]
+#[get("/?<order>&<limit>&<offset>&<filtered_account_id>&<block_timestamp>")]
 // Json<Proposal>
 async fn get_proposals(
-    // order: Option<&str>,
-    // limit: Option<usize>,
-    // sort: Option<String>,
+    order: Option<&str>,
+    limit: Option<i64>,
+    offset: Option<i64>,
+    filtered_account_id: Option<String>,
+    block_timestamp: Option<i64>, // support for feed update functionality
     db: &State<DB>,
     // Json<PaginatedResponse<ProposalWithLatestSnapshotView>>
-) -> Option<&str> {
+) -> Option<Json<PaginatedResponse<ProposalWithLatestSnapshotView>>> {
     // Get current timestamp
     // let current_timestamp = chrono::Utc::now().timestamp();
     let current_timestamp_nano = chrono::Utc::now().timestamp_nanos_opt().unwrap();
     // Get last timestamp when database was updated
     let last_updated_timestamp = db.get_last_updated_timestamp().await.unwrap();
 
-    // TODO the timestamps are way off between blockchain and database.
     println!("last_updated_timestamp: {:?}", last_updated_timestamp);
     println!("current_timestamp: {:?}", current_timestamp_nano);
-
-    // last_updated_timestamp: 1709470458142
-    // current_timestamp: 1730777916903
 
     println!(
         "Difference: {:?}",
@@ -350,8 +354,7 @@ async fn get_proposals(
     {
         let _proposals = db.get_proposals().await;
         println!("Returning cached proposals");
-        // ApiResponse should be Proposal struct Json(proposals)
-        return None; // implement pagination
+        return None;
     }
 
     println!("Fetching not yet indexed method calls from nearblocks");
@@ -394,60 +397,60 @@ async fn get_proposals(
 
     process_transactions(&nearblocks_unwrapped.txns, db).await;
 
-    // TODO refactor this functionality away in nearblocks client
-    let transaction = match nearblocks_unwrapped
+    match nearblocks_unwrapped
         .txns
         // should we get the first or last?
         .last()
     {
-        Some(transaction) => transaction,
-        None => return None,
+        Some(transaction) => {
+            println!("Added proposals to database, now adding timestamp.");
+
+            println!("Transaction timestamp: {}", transaction.block_timestamp);
+            let timestamp_nano: i64 = transaction.block_timestamp.parse().unwrap();
+
+            println!("Parsed tx timestamp: {}", timestamp_nano);
+            db.set_last_updated_timestamp(timestamp_nano).await.unwrap();
+
+            println!("Added timestamp to database, returning proposals...");
+        }
+        None => {
+            println!("No transactions found")
+        }
     };
 
-    println!("Added proposals to database, now adding timestamp.");
-
-    println!("Transaction timestamp: {}", transaction.block_timestamp);
-    let timestamp_nano: i64 = transaction.block_timestamp.parse().unwrap();
-
-    println!("Parsed tx timestamp: {}", timestamp_nano);
-    db.set_last_updated_timestamp(timestamp_nano).await.unwrap();
-
-    println!("Added timestamp to database, returning proposals...");
-
-    // match args {
-    //     Ok(proposal) => {
-    //         println!("Fetched proposals from nearblocks");
-    //         Ok(Json(proposal.proposal))
-    //     }
-    //     Err(e) => {
-    //         println!("Failed to parse json: {:?}", e);
-    //         Err(Status::InternalServerError)
-    //     }
-    // }
-    // Upsert into postgres
-
     // TODO add back in
-    // let order = order.unwrap_or("desc");
-    // let limit = limit.unwrap_or(25);
+    let order = order.unwrap_or("desc");
+    let limit = limit.unwrap_or(25);
+    let offset = offset.unwrap_or(0);
+    // let block_timestamp = block_timestamp.unwrap_or(None);
 
-    // let proposals = match db.get_proposals_with_latest_snapshot(limit, order).await {
-    //     Err(e) => {
-    //         // race_of_sloths_server::error(
-    //         //     telegram,
-    //         //     &format!("Failed to get user contributions: {username}: {e}"),
-    //         // );
-    //         return None;
-    //     }
-    //     Ok(proposals) => proposals,
-    // };
+    let proposals = match db
+        .get_proposals_with_latest_snapshot(
+            limit,
+            order,
+            offset,
+            filtered_account_id,
+            block_timestamp,
+        )
+        .await
+    {
+        Err(e) => {
+            // race_of_sloths_server::error(
+            //     telegram,
+            //     &format!("Failed to get user contributions: {username}: {e}"),
+            // );
+            println!("Failed to get proposals: {:?}", e);
+            return None;
+        }
+        Ok(proposals) => proposals,
+    };
 
-    // Ok(Json(PaginatedResponse::new(
-    //     proposals.into_iter().map(Into::into).collect(),
-    //     page + 1,
-    //     limit,
-    //     total, // TODO TOTAL
-    // )))
-    Some("ok")
+    Some(Json(PaginatedResponse::new(
+        proposals.into_iter().map(Into::into).collect(),
+        1,
+        limit.try_into().unwrap(),
+        0, // TODO TOTAL
+    )))
 }
 
 async fn process_transactions(

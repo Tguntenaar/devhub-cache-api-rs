@@ -7,7 +7,7 @@ use utoipa::OpenApi;
 // pub mod user;
 pub mod proposal;
 pub mod rfp;
-use crate::db::types::{ProposalRecord, ProposalSnapshotRecord};
+use crate::db::types::{ProposalRecord, ProposalSnapshotRecord, ProposalWithLatestSnapshotView};
 
 use devhub_cache_api::types;
 
@@ -40,7 +40,7 @@ use devhub_cache_api::types;
         // types::GithubMeta,
         // types::Streak,
         // types::Statistics,
-        types::PaginatedResponse<ProposalRecord>
+        types::PaginatedResponse<ProposalWithLatestSnapshotView>
     )),
     tags(
         (name = "Devhub Cache", description = "Devhub cache endpoints.")

@@ -314,6 +314,9 @@ impl DB {
         &self,
         limit: i64,
         order: &str,
+        offset: i64,
+        filtered_account_id: Option<String>,
+        block_timestamp: Option<i64>,
     ) -> anyhow::Result<Vec<ProposalWithLatestSnapshotView>> {
         // Validate the order clause to prevent SQL injection
         let order_clause = match order.to_lowercase().as_str() {
@@ -341,7 +344,7 @@ impl DB {
                 ps.description,
                 ps.linked_proposals,
                 ps.linked_rfp,
-                ps.requested_sponsorship_usd_amount::numeric::float8 AS "requested_sponsorship_usd_amount!",
+                ps.requested_sponsorship_usd_amount,
                 ps.requested_sponsorship_paid_in_currency,
                 ps.requested_sponsor,
                 ps.receiver_account,
@@ -361,8 +364,11 @@ impl DB {
             ) latest_snapshots ON p.id = latest_snapshots.proposal_id
             INNER JOIN proposal_snapshots ps ON latest_snapshots.proposal_id = ps.proposal_id
                 AND latest_snapshots.max_ts = ps.ts
+            WHERE
+                ($3 IS NULL OR p.author_id = $3)
+                AND ($4 IS NULL OR ps.ts > $4)
             ORDER BY ps.ts {}
-            LIMIT $1
+            LIMIT $1 OFFSET $2
             "#,
             order_clause,
         );
@@ -370,6 +376,9 @@ impl DB {
         // Execute the query
         let recs = sqlx::query_as::<_, ProposalWithLatestSnapshotView>(&sql)
             .bind(limit)
+            .bind(offset)
+            .bind(filtered_account_id)
+            .bind(block_timestamp)
             .fetch_all(&self.0)
             .await?;
 
