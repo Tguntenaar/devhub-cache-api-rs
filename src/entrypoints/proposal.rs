@@ -527,19 +527,18 @@ async fn handle_set_block_height_callback(
     Ok("ok".to_string())
 }
 
-fn get_proposal_id(transaction: &Transaction) -> i32 {
-    // handle the unwrap better
-    let action = transaction.clone().actions.first().unwrap().clone();
-    let json_args = action.args.clone();
+fn get_proposal_id(transaction: &Transaction) -> Result<i32, &'static str> {
+    let action = transaction
+        .actions
+        .first()
+        .ok_or("No actions found in transaction")?;
 
-    let args: PartialEditProposalArgs = match serde_json::from_str(&json_args) {
-        Ok(parsed_args) => parsed_args,
-        Err(e) => {
-            eprintln!("Failed to parse JSON: {:?}", e);
-            PartialEditProposalArgs { id: 0 }
-        }
-    };
-    args.id
+    let args: PartialEditProposalArgs = serde_json::from_str(&action.args).map_err(|e| {
+        eprintln!("Failed to parse JSON: {:?}", e);
+        "Failed to parse proposal arguments"
+    })?;
+
+    Ok(args.id)
 }
 
 async fn handle_edit_proposal(
@@ -547,7 +546,10 @@ async fn handle_edit_proposal(
     db: &State<DB>,
 ) -> Result<String, rocket::http::Status> {
     let rpc_service = RpcService::default();
-    let id = get_proposal_id(&transaction);
+    let id = get_proposal_id(&transaction).map_err(|e| {
+        eprintln!("Failed to get proposal ID: {}", e);
+        Status::InternalServerError
+    })?;
     let versioned_proposal = match rpc_service.get_proposal(id).await {
         Ok(proposal) => proposal,
         Err(e) => {
@@ -580,6 +582,8 @@ async fn handle_edit_proposal(
 #[get("/<proposal_id>")]
 async fn get_proposal(proposal_id: i32) -> Result<Json<VersionedProposal>, rocket::http::Status> {
     let rpc_service = RpcService::default();
+    // We should cache this in the future
+    // We should also add rate limiting to this endpoint
     match rpc_service.get_proposal(proposal_id).await {
         Ok(proposal) => Ok(Json(proposal)),
         Err(e) => {
