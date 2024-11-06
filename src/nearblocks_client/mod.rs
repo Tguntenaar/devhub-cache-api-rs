@@ -1,13 +1,13 @@
 use near_sdk::AccountId;
 use reqwest::Client;
 use serde::{Deserialize, Serialize};
-
 pub mod types;
 use types::Transaction;
 
+// TODO use nearblocks API KEY
+
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct ApiResponse {
-    // Define the response fields
     pub txns: Vec<Transaction>,
 }
 
@@ -16,9 +16,6 @@ pub struct ApiClient {
     base_url: String,
     client: Client,
 }
-
-// TODO Create a nearblocks client
-// https://api.nearblocks.io/v1/account/devhub.near/txns?method=add_proposal&after_date=2024-10-10&page=1&per_page=25&order=desc
 
 impl Default for ApiClient {
     fn default() -> Self {
@@ -42,7 +39,6 @@ impl ApiClient {
         limit: Option<i32>,
         order: Option<String>,
     ) -> Result<ApiResponse, reqwest::Error> {
-        // TODO page = 1
         let query_params = format!(
             "?method={}&after_date={}&page=1&per_page={}&order={}",
             method.unwrap_or_default(),
