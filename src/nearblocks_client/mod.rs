@@ -1,7 +1,6 @@
 use near_sdk::AccountId;
 use reqwest::Client;
 use serde::{Deserialize, Serialize};
-use tokio::time::{self, Duration};
 
 pub mod types;
 use types::Transaction;

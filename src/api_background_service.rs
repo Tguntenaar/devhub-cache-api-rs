@@ -5,7 +5,7 @@ use tokio::{
     time::{self, Duration},
 };
 
-struct ApiBackgroundService {
+pub struct ApiBackgroundService {
     api_client: ApiClient,
     handle: Option<JoinHandle<()>>,
 }

@@ -1,14 +1,10 @@
-use std::collections::HashMap;
-
-use crate::db::types::{ProposalRecord, ProposalSnapshotRecord};
-// use chrono::NaiveDateTime;
 use serde::{Deserialize, Serialize};
-// use shared::TimePeriod;
 use utoipa::ToSchema;
 
+use crate::db::types::ProposalWithLatestSnapshotView;
+
 #[derive(Clone, Debug, Serialize, Deserialize, Default, ToSchema)]
-//TODO aliases with utopia
-// #[aliases(PaginatedProposalResponse = PaginatedResponse<ProposalResponse>)]
+#[aliases(PaginatedProposalResponse = PaginatedResponse<ProposalWithLatestSnapshotView>)]
 pub struct PaginatedResponse<T: Serialize> {
     pub records: Vec<T>,
     pub page: u64,

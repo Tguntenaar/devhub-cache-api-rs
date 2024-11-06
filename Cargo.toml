@@ -32,9 +32,3 @@ near-api = "0.2.1"
 [features]
 default = ["workspaces"]
 workspaces = ["near-workspaces"]
-
-[profile.dev]
-rustc = "nightly"
-
-[profile.release]
-rustc = "nightly"

@@ -1,6 +1,5 @@
 use reqwest::Client;
 use serde::Deserialize;
-use tokio::time::{self, Duration};
 
 #[derive(Deserialize)]
 pub struct ApiResponse {

@@ -11,9 +11,9 @@ struct RfpQuery {
     sort: Option<String>, // Optional sorting parameter
 }
 
-#[derive(Deserialize, Clone)]
-struct PartialEditRFPArgs {
-    id: i32,
+#[derive(Deserialize)]
+pub struct PartialEditRFPArgs {
+    pub id: i32,
 }
 
 fn get_rfp_id(transaction: &Transaction) -> Result<i32, &'static str> {
@@ -57,6 +57,7 @@ async fn handle_edit_rfp(transaction: Transaction, db: &State<DB>) -> Result<(),
 
     let mut tx = db.begin().await.map_err(|_e| Status::InternalServerError)?;
 
+    // TODO
     // DB::insert_rfp_snapshot(&mut tx, &versioned_rfp.into())
     //     .await
     //     .map_err(|_e| Status::InternalServerError)?;

@@ -3,26 +3,15 @@ use rocket::{
     Build, Rocket,
 };
 use rocket_db_pools::Database;
-use sqlx::{
-    migrate, query, query_as, query_file_as, query_scalar, types::BigDecimal, Error, PgPool,
-    Postgres, Transaction,
-};
+use sqlx::{migrate, query, query_scalar, Error, PgPool, Postgres, Transaction};
 
 #[derive(Database, Clone, Debug)]
-// devhub_cache_api_rs but locally devhub_cache
-#[database("devhub_cache_api_rs")] // Adjust the database name accordingly
+#[database("devhub_cache_api_rs")]
 pub struct DB(PgPool);
 
 pub mod types;
 
-use devhub_shared::proposal::{Proposal, ProposalSnapshot};
-
-use types::{
-    AfterDate, ProposalRecord, ProposalSnapshotRecord, ProposalWithLatestSnapshotView,
-    RfpSnapshotRecord,
-};
-
-// use crate::types::ProposalResponse;
+use types::{ProposalRecord, ProposalSnapshotRecord, ProposalWithLatestSnapshotView};
 
 impl DB {
     // Functions for Proposals
