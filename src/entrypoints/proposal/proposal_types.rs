@@ -1,14 +1,23 @@
+use crate::db::db_types::ProposalSnapshotRecord;
 use devhub_shared::proposal::{
     Proposal, ProposalFundingCurrency, ProposalId, VersionedProposalBody,
 };
 use near_sdk::near;
+use rocket::form::FromForm;
 use rocket::serde::{Deserialize, Serialize};
 use std::collections::HashSet;
-
-// Assuming these are the types you are working with
-use devhub_cache_api::db::types::ProposalSnapshotRecord;
 // NOTE should this be VersionedProposal instead of Proposal?
 use devhub_shared::proposal::Proposal as ContractProposal;
+
+#[derive(Clone, Debug, FromForm)]
+pub struct GetProposalFilters {
+    pub category: Option<String>,
+    pub labels: Option<Vec<String>>,
+    pub input: Option<String>,
+    pub author_id: Option<String>,
+    pub stage: Option<String>,
+    pub block_timestamp: Option<i64>,
+}
 
 // Define a trait for accessing various fields
 pub trait ProposalBodyFields {

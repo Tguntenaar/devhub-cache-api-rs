@@ -1,39 +1,30 @@
-use devhub_cache_api::db::types::{ProposalSnapshotRecord, ProposalWithLatestSnapshotView};
-use devhub_cache_api::db::DB;
-use devhub_cache_api::nearblocks_client::types::Transaction;
-use devhub_cache_api::rpc_service::RpcService;
-use devhub_cache_api::types::PaginatedResponse;
-use devhub_cache_api::{nearblocks_client, timestamp_to_date_string};
+use self::proposal_types::*;
+use crate::db::db_types::{ProposalSnapshotRecord, ProposalWithLatestSnapshotView};
+use crate::db::DB;
+use crate::nearblocks_client::types::Transaction;
+use crate::rpc_service::RpcService;
+use crate::types::PaginatedResponse;
+use crate::{nearblocks_client, timestamp_to_date_string};
 use devhub_shared::proposal::VersionedProposal;
 use near_account_id::AccountId;
 use rocket::serde::json::Json;
 use rocket::{get, http::Status, State};
 use std::convert::TryInto;
+pub mod proposal_types;
 
-pub mod types;
-use self::types::*;
+// TODO input -> search name description summary fields
+fn search() {}
 
-// add query params to get_proposals entrypoint
-#[utoipa::path(
-    get,
-    path = "/proposals?<order>&<limit>&<offset>&<filtered_account_id>&<block_timestamp>&<stage>"
-)]
-#[get("/?<order>&<limit>&<offset>&<filtered_account_id>&<block_timestamp>&<stage>")]
-// Json<Proposal>
+#[utoipa::path(get, path = "/proposals?<order>&<limit>&<offset>&<filters>")]
+#[get("/?<order>&<limit>&<offset>&<filters>")]
 async fn get_proposals(
     order: Option<&str>,
     limit: Option<i64>,
     offset: Option<i64>,
-    filtered_account_id: Option<String>,
-    stage: Option<String>,
-    block_timestamp: Option<i64>, // support for feed update functionality
+    filters: Option<GetProposalFilters>,
     db: &State<DB>,
-    // Json<PaginatedResponse<ProposalWithLatestSnapshotView>>
 ) -> Option<Json<PaginatedResponse<ProposalWithLatestSnapshotView>>> {
-    // Get current timestamp
-    // let current_timestamp = chrono::Utc::now().timestamp();
     let current_timestamp_nano = chrono::Utc::now().timestamp_nanos_opt().unwrap();
-    // Get last timestamp when database was updated
     let last_updated_timestamp = db.get_last_updated_timestamp().await.unwrap();
 
     println!("last_updated_timestamp: {:?}", last_updated_timestamp);
@@ -66,9 +57,11 @@ async fn get_proposals(
     // then get it from database using the right queries
     let nearblocks_unwrapped = match nearblocks_client
         .get_account_txns_by_pagination(
+            // TODO get from ENV variable
             "devhub.near".parse::<AccountId>().unwrap(),
             // Instead of just set_block_height_callback we should get all method calls
             // and handle them accordingly.
+            // TODO no method call
             Some("set_block_height_callback".to_string()),
             Some(timestamp_to_date_string(last_updated_timestamp)),
             // if this limit hits 10 we might need to do it in a loop let's say there are 100 changes since the last call to nearblocks.
@@ -124,21 +117,10 @@ async fn get_proposals(
     // let block_timestamp = block_timestamp.unwrap_or(None);
 
     let proposals = match db
-        .get_proposals_with_latest_snapshot(
-            limit,
-            order,
-            offset,
-            filtered_account_id,
-            block_timestamp,
-            stage,
-        )
+        .get_proposals_with_latest_snapshot(limit, order, offset, filters)
         .await
     {
         Err(e) => {
-            // race_of_sloths_server::error(
-            //     telegram,
-            //     &format!("Failed to get user contributions: {username}: {e}"),
-            // );
             println!("Failed to get proposals: {:?}", e);
             vec![]
         }
@@ -203,12 +185,11 @@ async fn handle_set_block_height_callback(
     let block_timestamp = transaction.clone().block_timestamp;
     let block_height = transaction.clone().block.block_height;
 
-    let snapshot: devhub_cache_api::db::types::ProposalSnapshotRecord =
-        FromContractProposal::from_contract_proposal(
-            args.proposal.clone(),
-            block_timestamp,
-            block_height,
-        );
+    let snapshot: ProposalSnapshotRecord = FromContractProposal::from_contract_proposal(
+        args.proposal.clone(),
+        block_timestamp,
+        block_height,
+    );
 
     DB::insert_proposal_snapshot(&mut tx, &snapshot)
         .await

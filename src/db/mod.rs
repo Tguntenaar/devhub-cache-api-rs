@@ -1,3 +1,4 @@
+use crate::entrypoints::proposal::proposal_types::GetProposalFilters;
 use rocket::{
     fairing::{self, AdHoc},
     Build, Rocket,
@@ -9,12 +10,11 @@ use sqlx::{migrate, query, query_scalar, Error, PgPool, Postgres, Transaction};
 #[database("devhub_cache_api_rs")]
 pub struct DB(PgPool);
 
-pub mod types;
+pub mod db_types;
 
-use types::{ProposalRecord, ProposalSnapshotRecord, ProposalWithLatestSnapshotView};
+use db_types::{ProposalRecord, ProposalSnapshotRecord, ProposalWithLatestSnapshotView};
 
 impl DB {
-    // Functions for Proposals
     pub async fn upsert_proposal(
         tx: &mut Transaction<'static, Postgres>,
         proposal_id: u32,
@@ -322,9 +322,7 @@ impl DB {
         limit: i64,
         order: &str,
         offset: i64,
-        filtered_account_id: Option<String>,
-        block_timestamp: Option<i64>,
-        stage: Option<String>,
+        filters: Option<GetProposalFilters>,
     ) -> anyhow::Result<Vec<ProposalWithLatestSnapshotView>> {
         // Validate the order clause to prevent SQL injection
         let order_clause = match order.to_lowercase().as_str() {
@@ -333,6 +331,7 @@ impl DB {
             _ => "DESC", // Default to DESC if the order is not recognized
         };
 
+        let stage = filters.as_ref().and_then(|f| f.stage.as_ref());
         // Set 'stage_clause' to None if 'stage' is None
         let stage_clause: Option<String> = stage.and_then(|s| match s.to_uppercase().as_str() {
             "DRAFT" => Some("DRAFT".to_string()),
@@ -395,11 +394,14 @@ impl DB {
             order_clause,
         );
 
+        let author_id = filters.as_ref().and_then(|f| f.author_id.as_ref());
+        let block_timestamp = filters.as_ref().and_then(|f| f.block_timestamp);
+
         // Execute the query
         let recs = sqlx::query_as::<_, ProposalWithLatestSnapshotView>(&sql)
             .bind(limit)
             .bind(offset)
-            .bind(filtered_account_id)
+            .bind(author_id)
             .bind(block_timestamp)
             .bind(stage_clause)
             .fetch_all(&self.0)

@@ -1,11 +1,27 @@
+pub mod api_background_service;
+pub mod api_client;
+pub mod db;
+pub mod entrypoints;
+pub mod nearblocks_client;
+pub mod rpc_service;
+pub mod types;
+
+use chrono::DateTime;
+
+pub fn timestamp_to_date_string(timestamp: i64) -> String {
+    // Convert the timestamp to a NaiveDateTime
+    let datetime = DateTime::from_timestamp_nanos(timestamp);
+
+    // Format the NaiveDateTime to a string in YYYY-MM-DD format
+    datetime.format("%Y-%m-%d").to_string()
+}
+
+use crate::entrypoints::ApiDoc;
 use rocket::{catch, catchers, get, launch, routes};
+use rocket_cors::AllowedOrigins;
 use std::sync::Arc;
 use utoipa::OpenApi;
 use utoipa_swagger_ui::SwaggerUi;
-mod entrypoints;
-use devhub_cache_api::db;
-use entrypoints::ApiDoc;
-use rocket_cors::AllowedOrigins;
 
 #[cfg(test)]
 mod tests;

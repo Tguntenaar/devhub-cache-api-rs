@@ -2,10 +2,8 @@ use rocket::fairing::AdHoc;
 use utoipa::OpenApi;
 pub mod proposal;
 // pub mod rfp;
-use crate::db::types::ProposalWithLatestSnapshotView;
-
-use devhub_cache_api::types;
-
+use crate::db::db_types::ProposalWithLatestSnapshotView;
+use crate::types::PaginatedResponse;
 #[derive(OpenApi)]
 #[openapi(
     info(
@@ -16,7 +14,7 @@ use devhub_cache_api::types;
       proposal::get_proposals
     ),
     components(schemas(
-      types::PaginatedResponse<ProposalWithLatestSnapshotView>
+      PaginatedResponse<ProposalWithLatestSnapshotView>
     )),
     tags(
         (name = "Devhub Cache", description = "Devhub cache endpoints.")

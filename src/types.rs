@@ -1,7 +1,7 @@
 use serde::{Deserialize, Serialize};
 use utoipa::ToSchema;
 
-use crate::db::types::ProposalWithLatestSnapshotView;
+use crate::db::db_types::ProposalWithLatestSnapshotView;
 
 #[derive(Clone, Debug, Serialize, Deserialize, Default, ToSchema)]
 #[aliases(PaginatedProposalResponse = PaginatedResponse<ProposalWithLatestSnapshotView>)]
