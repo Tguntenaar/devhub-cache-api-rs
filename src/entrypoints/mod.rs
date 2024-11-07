@@ -1,4 +1,6 @@
+use devhub_shared::proposal::VersionedProposal;
 use rocket::fairing::AdHoc;
+use rocket::serde::json::Json;
 use utoipa::OpenApi;
 pub mod proposal;
 // pub mod rfp;
@@ -11,10 +13,12 @@ use crate::types::PaginatedResponse;
         version = "0.0.1",
     ),
     paths(
-      proposal::get_proposals
+      proposal::get_proposals,
+      proposal::get_proposal
     ),
     components(schemas(
-      PaginatedResponse<ProposalWithLatestSnapshotView>
+      PaginatedResponse<ProposalWithLatestSnapshotView>,
+      // Json<VersionedProposal>
     )),
     tags(
         (name = "Devhub Cache", description = "Devhub cache endpoints.")

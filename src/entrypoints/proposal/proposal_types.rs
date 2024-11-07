@@ -6,10 +6,11 @@ use near_sdk::near;
 use rocket::form::FromForm;
 use rocket::serde::{Deserialize, Serialize};
 use std::collections::HashSet;
+use utoipa::ToSchema;
 // NOTE should this be VersionedProposal instead of Proposal?
 use devhub_shared::proposal::Proposal as ContractProposal;
 
-#[derive(Clone, Debug, FromForm)]
+#[derive(Clone, Debug, FromForm, ToSchema)]
 pub struct GetProposalFilters {
     pub category: Option<String>,
     pub labels: Option<Vec<String>>,

@@ -15,7 +15,12 @@ pub mod proposal_types;
 // TODO input -> search name description summary fields
 fn search() {}
 
-#[utoipa::path(get, path = "/proposals?<order>&<limit>&<offset>&<filters>")]
+#[utoipa::path(get, path = "/proposals?<order>&<limit>&<offset>&<filters>", params(
+  ("order"= &str, Path, description ="order"),
+  ("limit"= i64, Path, description = "limit"),
+  ("offset"= i64, Path, description = "offset"),
+  ("filters"= GetProposalFilters, Path, description = "filters struct that contains stuff like category, labels (vec), author_id, stage, block_timestamp (i64)"),
+))]
 #[get("/?<order>&<limit>&<offset>&<filters>")]
 async fn get_proposals(
     order: Option<&str>,
