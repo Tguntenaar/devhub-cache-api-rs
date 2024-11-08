@@ -1,12 +1,14 @@
 app = 'devhub-cache-api-rs'
 primary_region = 'ams'
 
+[build]
+
 [http_service]
 internal_port = 8080
 force_https = true
 auto_stop_machines = 'stop'
 auto_start_machines = true
-min_machines_running = 1
+min_machines_running = 0
 processes = ['app']
 
 [[vm]]
@@ -17,6 +19,3 @@ cpus = 1
 [env]
 ROCKET_ENV = "production"
 CONTRACT = "devhub.near"
-# ROCKET_ADDRESS = "0.0.0.0"
-# ROCKET_PORT = "8080"
-# TODO create infra and events apps

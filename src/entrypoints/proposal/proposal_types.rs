@@ -20,7 +20,6 @@ pub struct GetProposalFilters {
     pub block_timestamp: Option<i64>,
 }
 
-// Define a trait for accessing various fields
 pub trait ProposalBodyFields {
     fn get_name(&self) -> &String;
     fn get_category(&self) -> &String;
@@ -40,7 +39,6 @@ pub trait ProposalFundingCurrencyToString {
     fn to_string(&self) -> String;
 }
 
-// Implement the new trait for ProposalFundingCurrency
 impl ProposalFundingCurrencyToString for ProposalFundingCurrency {
     fn to_string(&self) -> String {
         match self {
@@ -51,7 +49,7 @@ impl ProposalFundingCurrencyToString for ProposalFundingCurrency {
         }
     }
 }
-// Implement the trait for VersionedProposalBody
+
 impl ProposalBodyFields for VersionedProposalBody {
     fn get_name(&self) -> &String {
         match self {
@@ -160,10 +158,8 @@ impl ProposalBodyFields for VersionedProposalBody {
             }
         }
     }
-    // Implement more methods as needed
 }
 
-// Define a trait for the conversion
 pub trait FromContractProposal {
     fn from_contract_proposal(
         proposal: ContractProposal,

@@ -840,6 +840,7 @@ dependencies = [
  "chrono",
  "devhub-shared",
  "dotenvy",
+ "envy",
  "near-account-id",
  "near-api",
  "near-jsonrpc-client",
@@ -1051,6 +1052,15 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn 2.0.65",
+]
+
+[[package]]
+name = "envy"
+version = "0.4.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3f47e0157f2cb54f5ae1bd371b30a2ae4311e1c028f575cd4e81de7353215965"
+dependencies = [
+ "serde",
 ]
 
 [[package]]

@@ -1,11 +1,9 @@
-use devhub_shared::proposal::VersionedProposal;
 use rocket::fairing::AdHoc;
-use rocket::serde::json::Json;
 use utoipa::OpenApi;
 pub mod proposal;
-// pub mod rfp;
+pub mod rfp;
 use crate::db::db_types::ProposalWithLatestSnapshotView;
-use crate::types::PaginatedResponse;
+use crate::types::{Contract, PaginatedResponse};
 #[derive(OpenApi)]
 #[openapi(
     info(
@@ -26,9 +24,10 @@ use crate::types::PaginatedResponse;
 )]
 pub struct ApiDoc;
 
-pub fn stage() -> AdHoc {
+pub fn stage(contract: Contract) -> AdHoc {
     AdHoc::on_ignite("Installing entrypoints", |rocket| async {
-        rocket.attach(proposal::stage())
-        // .attach(rfp::stage())
+        rocket
+            .attach(proposal::stage(contract))
+            .attach(rfp::stage())
     })
 }

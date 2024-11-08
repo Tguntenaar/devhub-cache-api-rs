@@ -5,7 +5,6 @@ use near_api::{types::Data, Contract, NetworkConfig};
 use near_jsonrpc_client::methods::query::RpcQueryRequest;
 use rocket::http::Status;
 use rocket::serde::json::json;
-use rocket::FromForm;
 use serde::Deserialize;
 #[derive(Deserialize)]
 pub struct RpcResponse {
@@ -18,11 +17,6 @@ pub struct RpcService {
     contract: Contract,
 }
 
-#[derive(FromForm)]
-pub struct ProposalParams {
-    proposal_ids: Option<Vec<i32>>,
-}
-
 impl Default for RpcService {
     fn default() -> Self {
         Self {
@@ -31,13 +25,6 @@ impl Default for RpcService {
         }
     }
 }
-
-/**
- * Usage
- * use devhub_cache_api::rpc_service::RpcService;
- * let rpc_service = RpcService::new(Some("devhub.near".parse::<AccountId>().unwrap()));
- * let proposals = rpc_service.get_proposals().await;
- */
 
 impl RpcService {
     pub fn new(account_id: Option<AccountId>) -> Self {
@@ -54,6 +41,7 @@ impl RpcService {
         &self,
         proposal_id: i32,
     ) -> Result<Data<VersionedProposal>, near_api::errors::QueryError<RpcQueryRequest>> {
+        // TODO get cached proposal
         let result: Result<Data<VersionedProposal>, _> = self
             .contract
             .call_function("get_proposal", json!({ "proposal_id": proposal_id }))
@@ -65,7 +53,10 @@ impl RpcService {
         result
     }
 
-    pub async fn get_rfp(&self, rfp_id: i32) -> Result<VersionedRFP, String> {
+    pub async fn get_rfp(
+        &self,
+        rfp_id: i32,
+    ) -> Result<Data<VersionedRFP>, near_api::errors::QueryError<RpcQueryRequest>> {
         let result: Result<Data<VersionedRFP>, _> = self
             .contract
             .call_function("get_rfp", json!({ "rfp_id": rfp_id }))
@@ -74,36 +65,7 @@ impl RpcService {
             .fetch_from(&self.network)
             .await;
 
-        match result {
-            Ok(proposal) => Ok(proposal.data),
-            Err(e) => Err(e.to_string()),
-        }
-    }
-
-    // TODO return value should it be Result or Option?
-    pub async fn get_proposals(&self) -> Result<Vec<VersionedProposal>, String> {
-        // TODO: Add query params , params: ProposalParams
-        let params: ProposalParams = ProposalParams {
-            proposal_ids: Some(vec![200, 199]),
-        };
-
-        let mut args = json!({});
-        if let Some(proposal_ids) = params.proposal_ids {
-            println!("Proposal ids: {:?}", proposal_ids);
-            args = json!({ "ids": proposal_ids });
-        }
-
-        match self
-            .contract
-            .call_function("get_proposals", args)
-            .unwrap()
-            .read_only::<Vec<VersionedProposal>>()
-            .fetch_from(&self.network)
-            .await
-        {
-            Ok(res) => Ok(res.data),
-            Err(e) => Err(e.to_string()),
-        }
+        result
     }
 
     pub async fn get_all_proposal_ids(&self) -> Result<Vec<i32>, Status> {

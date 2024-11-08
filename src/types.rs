@@ -3,6 +3,8 @@ use utoipa::ToSchema;
 
 use crate::db::db_types::ProposalWithLatestSnapshotView;
 
+pub type Contract = String;
+
 #[derive(Clone, Debug, Serialize, Deserialize, Default, ToSchema)]
 #[aliases(PaginatedProposalResponse = PaginatedResponse<ProposalWithLatestSnapshotView>)]
 pub struct PaginatedResponse<T: Serialize> {

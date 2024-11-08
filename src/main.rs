@@ -1,5 +1,4 @@
 pub mod api_background_service;
-pub mod api_client;
 pub mod db;
 pub mod entrypoints;
 pub mod nearblocks_client;
@@ -20,6 +19,7 @@ use crate::entrypoints::ApiDoc;
 use rocket::{catch, catchers, get, launch, routes};
 use rocket_cors::AllowedOrigins;
 use std::sync::Arc;
+use types::Contract;
 use utoipa::OpenApi;
 use utoipa_swagger_ui::SwaggerUi;
 
@@ -57,10 +57,18 @@ fn bad_request() -> &'static str {
     "Custom 400 Error: Bad Request"
 }
 
+#[derive(Debug, serde::Deserialize)]
+pub struct Env {
+    contract: Contract,
+    database_url: String,
+}
+
 #[launch]
 fn rocket() -> _ {
     dotenvy::dotenv().ok();
     let atomic_bool = Arc::new(std::sync::atomic::AtomicBool::new(true));
+
+    let env: Env = envy::from_env::<Env>().expect("Failed to load environment variables");
 
     let allowed_origins = AllowedOrigins::some_exact(&[
         "http://localhost:3000",
@@ -69,7 +77,10 @@ fn rocket() -> _ {
         "https://near.social",
         "https://neardevhub.org",
         "https://devhub.near.page",
-        "https://devhub-cache-api-rs.fly.dev", // TODO Add prod urls here
+        "https://devhub-cache-api-rs.fly.dev",
+        "https://infra-cache-api-rs.fly.dev",
+        "https://events-cache-api-rs.fly.dev",
+        // TODO Add prod urls here
     ]);
     let cors = rocket_cors::CorsOptions {
         allowed_origins,
@@ -78,11 +89,13 @@ fn rocket() -> _ {
     .to_cors()
     .expect("Failed to create cors config");
 
-    rocket::build()
+    let figment = rocket::Config::figment().merge(("databases.my_db.url", env.database_url));
+
+    rocket::custom(figment)
         .attach(cors)
         .attach(db::stage())
         .mount("/", routes![robots, index])
-        .attach(entrypoints::stage())
+        .attach(entrypoints::stage(env.contract))
         .attach(rocket::fairing::AdHoc::on_shutdown(
             "Stop loading users from Near and Github metadata",
             |_| {

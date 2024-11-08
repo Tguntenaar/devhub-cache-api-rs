@@ -1,4 +1,6 @@
-use crate::api_client::ApiClient;
+use crate::nearblocks_client::ApiClient;
+use crate::types::Contract;
+use near_account_id::AccountId;
 use tokio::{
     signal,
     task::JoinHandle,
@@ -8,27 +10,39 @@ use tokio::{
 pub struct ApiBackgroundService {
     api_client: ApiClient,
     handle: Option<JoinHandle<()>>,
+    contract: Contract,
 }
 
 impl ApiBackgroundService {
-    pub fn new(api_client: ApiClient) -> Self {
+    pub fn new(api_client: ApiClient, contract: Contract) -> Self {
         Self {
             api_client,
             handle: None,
+            contract,
         }
     }
 
     // Spawns the background task and starts it
     pub fn start(&mut self) {
         let api_client = self.api_client.clone();
+        let contract = self.contract.clone();
         let handle = tokio::spawn(async move {
             let mut interval = time::interval(Duration::from_secs(60));
             loop {
                 interval.tick().await;
 
-                match api_client.get_data().await {
+                match api_client
+                    .get_account_txns_by_pagination(
+                        contract.parse::<AccountId>().unwrap(),
+                        None,
+                        None,
+                        None,
+                        None,
+                    )
+                    .await
+                {
                     Ok(response) => {
-                        println!("Received data: {:?}", response.data);
+                        println!("Received data: {:?}", response);
                     }
                     Err(e) => {
                         eprintln!("Error fetching data: {:?}", e);

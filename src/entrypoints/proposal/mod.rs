@@ -3,7 +3,7 @@ use crate::db::db_types::{ProposalSnapshotRecord, ProposalWithLatestSnapshotView
 use crate::db::DB;
 use crate::nearblocks_client::types::Transaction;
 use crate::rpc_service::RpcService;
-use crate::types::PaginatedResponse;
+use crate::types::{Contract, PaginatedResponse};
 use crate::{nearblocks_client, timestamp_to_date_string};
 use devhub_shared::proposal::VersionedProposal;
 use near_account_id::AccountId;
@@ -12,8 +12,13 @@ use rocket::{get, http::Status, State};
 use std::convert::TryInto;
 pub mod proposal_types;
 
-// TODO input -> search name description summary fields
-fn search() {}
+// #[utoipa::path(get, path = "/proposals/search?<input>", params(
+//   ("input"= &str, Path, description ="The string to search for in proposal name, description, summary, and category fields."),
+// ))]
+// #[get("/search/<input>")]
+// fn search(input: String) -> Option<Json<PaginatedResponse<ProposalWithLatestSnapshotView>>> {
+//     None
+// }
 
 #[utoipa::path(get, path = "/proposals?<order>&<limit>&<offset>&<filters>", params(
   ("order"= &str, Path, description ="order"),
@@ -28,28 +33,37 @@ async fn get_proposals(
     offset: Option<i64>,
     filters: Option<GetProposalFilters>,
     db: &State<DB>,
+    contract: &State<Contract>,
 ) -> Option<Json<PaginatedResponse<ProposalWithLatestSnapshotView>>> {
     let current_timestamp_nano = chrono::Utc::now().timestamp_nanos_opt().unwrap();
     let last_updated_timestamp = db.get_last_updated_timestamp().await.unwrap();
 
-    println!("last_updated_timestamp: {:?}", last_updated_timestamp);
-    println!("current_timestamp: {:?}", current_timestamp_nano);
+    let order = order.unwrap_or("desc");
+    let limit = limit.unwrap_or(25);
+    let offset = offset.unwrap_or(0);
 
-    println!(
-        "Difference: {:?}",
-        current_timestamp_nano - last_updated_timestamp
-    );
-    println!(
-        "Duration: {:?}",
-        chrono::Duration::seconds(60).num_nanoseconds().unwrap()
-    );
     // If we called nearblocks in the last 60 milliseconds return the database values
     if current_timestamp_nano - last_updated_timestamp
         < chrono::Duration::seconds(60).num_nanoseconds().unwrap()
     {
-        let _proposals = db.get_proposals().await;
         println!("Returning cached proposals");
-        return None;
+        let (proposals, total) = match db
+            .get_proposals_with_latest_snapshot(limit, order, offset, filters)
+            .await
+        {
+            Err(e) => {
+                println!("Failed to get proposals: {:?}", e);
+                (vec![], 0)
+            }
+            Ok(result) => result,
+        };
+
+        return Some(Json(PaginatedResponse::new(
+            proposals.into_iter().map(Into::into).collect(),
+            1,
+            limit.try_into().unwrap(),
+            total.try_into().unwrap(),
+        )));
     }
 
     println!("Fetching not yet indexed method calls from nearblocks");
@@ -62,11 +76,10 @@ async fn get_proposals(
     // then get it from database using the right queries
     let nearblocks_unwrapped = match nearblocks_client
         .get_account_txns_by_pagination(
-            // TODO get from ENV variable
-            "devhub.near".parse::<AccountId>().unwrap(),
+            contract.parse::<AccountId>().unwrap(),
             // Instead of just set_block_height_callback we should get all method calls
             // and handle them accordingly.
-            // TODO no method call
+            // TODO change to None
             Some("set_block_height_callback".to_string()),
             Some(timestamp_to_date_string(last_updated_timestamp)),
             // if this limit hits 10 we might need to do it in a loop let's say there are 100 changes since the last call to nearblocks.
@@ -114,10 +127,6 @@ async fn get_proposals(
             println!("No transactions found")
         }
     };
-
-    let order = order.unwrap_or("desc");
-    let limit = limit.unwrap_or(25);
-    let offset = offset.unwrap_or(0);
 
     let (proposals, total) = match db
         .get_proposals_with_latest_snapshot(limit, order, offset, filters)
@@ -267,6 +276,11 @@ async fn handle_edit_proposal(
     Ok(())
 }
 
+#[get("/test")]
+async fn test(contract: &State<Contract>) -> String {
+    format!("Welcome to {}", contract)
+}
+
 #[utoipa::path(get, path = "/proposals/{proposal_id}")]
 #[get("/<proposal_id>")]
 async fn get_proposal(proposal_id: i32) -> Result<Json<VersionedProposal>, rocket::http::Status> {
@@ -282,11 +296,14 @@ async fn get_proposal(proposal_id: i32) -> Result<Json<VersionedProposal>, rocke
     }
 }
 
-pub fn stage() -> rocket::fairing::AdHoc {
+pub fn stage(contract: Contract) -> rocket::fairing::AdHoc {
     // rocket
     rocket::fairing::AdHoc::on_ignite("Proposal Stage", |rocket| async {
         println!("Proposal stage on ignite!");
 
-        rocket.mount("/proposals/", rocket::routes![get_proposals, get_proposal])
+        rocket.manage(contract).mount(
+            "/proposals/",
+            rocket::routes![get_proposals, get_proposal, test],
+        )
     })
 }

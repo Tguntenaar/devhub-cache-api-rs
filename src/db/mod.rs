@@ -1,4 +1,6 @@
-use crate::entrypoints::proposal::proposal_types::GetProposalFilters;
+use crate::entrypoints::{
+    proposal::proposal_types::GetProposalFilters, rfp::rfp_types::GetRfpFilters,
+};
 use rocket::{
     fairing::{self, AdHoc},
     Build, Rocket,
@@ -7,12 +9,15 @@ use rocket_db_pools::Database;
 use sqlx::{migrate, query, query_scalar, Error, PgPool, Postgres, Transaction};
 
 #[derive(Database, Clone, Debug)]
-#[database("devhub_cache_api_rs")]
+#[database("my_db")]
 pub struct DB(PgPool);
 
 pub mod db_types;
 
-use db_types::{ProposalRecord, ProposalSnapshotRecord, ProposalWithLatestSnapshotView};
+use db_types::{
+    ProposalSnapshotRecord, ProposalWithLatestSnapshotView, RfpSnapshotRecord,
+    RfpWithLatestSnapshotView,
+};
 
 impl DB {
     pub async fn upsert_proposal(
@@ -52,12 +57,7 @@ impl DB {
         }
     }
 
-    // TODO db.get_last_updated_timestamp
     pub async fn get_last_updated_timestamp(&self) -> Result<i64, Error> {
-        // let rec = sqlx::query_file_as!(i64, "./sql/get_after_date.sql")
-        //     .fetch_one(&self)
-        //     .await?;
-
         let rec = query_scalar!(
             r#"
             SELECT after_date FROM after_date
@@ -78,38 +78,6 @@ impl DB {
         .execute(&self.0)
         .await?;
         Ok(())
-    }
-    // TODO db.get_proposals
-    pub async fn get_proposals(&self) -> Vec<ProposalRecord> {
-        vec![]
-    }
-
-    pub async fn get_proposal_by_id(
-        tx: &mut Transaction<'static, Postgres>,
-        proposal_id: i32,
-    ) -> anyhow::Result<Option<ProposalRecord>> {
-        let rec = query!(
-            r#"
-          SELECT id, author_id
-          FROM proposals
-          WHERE id = $1
-          "#,
-            proposal_id
-        )
-        .fetch_optional(tx.as_mut())
-        .await?;
-
-        // Map the Record to Proposal
-        let proposal = rec.map(|record| ProposalRecord {
-            id: record.id,
-            author_id: record.author_id,
-            // social_db_post_block_height: 0,
-            // snapshot: record.clone().snapshot,
-            // snapshot_history: vec![],
-            // Initialize other fields of Proposal if necessary
-        });
-
-        Ok(proposal)
     }
 
     pub async fn insert_proposal_snapshot(
@@ -193,25 +161,143 @@ impl DB {
         Ok(())
     }
 
-    // pub async fn get_latest_proposal_snapshot(
-    //     tx: &mut Transaction<'static, Postgres>,
-    //     proposal_id: i32,
-    // ) -> anyhow::Result<Option<ProposalSnapshot>> {
-    //     let rec = query_as!(
-    //         ProposalSnapshot,
-    //         r#"
-    //         SELECT * FROM proposal_snapshots
-    //         WHERE proposal_id = $1
-    //         ORDER BY ts DESC
-    //         LIMIT 1
-    //         "#,
-    //         proposal_id
-    //     )
-    //     .fetch_optional(tx.as_mut())
-    //     .await?;
+    pub async fn get_proposals_with_latest_snapshot(
+        &self,
+        limit: i64,
+        order: &str,
+        offset: i64,
+        filters: Option<GetProposalFilters>,
+    ) -> anyhow::Result<(Vec<ProposalWithLatestSnapshotView>, i64)> {
+        // Validate the order clause to prevent SQL injection
+        let order_clause = match order.to_lowercase().as_str() {
+            "asc" => "ASC",
+            "desc" => "DESC",
+            _ => "DESC", // Default to DESC if the order is not recognized
+        };
 
-    //     Ok(rec)
-    // }
+        let stage = filters.as_ref().and_then(|f| f.stage.as_ref());
+        // Set 'stage_clause' to None if 'stage' is None
+        let stage_clause: Option<String> = stage.and_then(|s| match s.to_uppercase().as_str() {
+            "DRAFT" => Some("DRAFT".to_string()),
+            "REVIEW" => Some("REVIEW".to_string()),
+            "APPROVED" => Some("APPROVED".to_string()),
+            "REJECTED" => Some("REJECTED".to_string()),
+            "CANCELED" => Some("CANCELLED".to_string()),
+            "APPROVED_CONDITIONALLY" => Some("CONDITIONALLY".to_string()),
+            "PAYMENT_PROCESSING" => Some("PAYMENT".to_string()),
+            "FUNDED" => Some("FUNDED".to_string()),
+            _ => None,
+        });
+
+        // Build the SQL query with the validated order clause
+        let data_sql = format!(
+            r#"
+          SELECT
+              ps.proposal_id,
+              p.author_id,
+              ps.block_height,
+              ps.ts,
+              ps.editor_id,
+              ps.social_db_post_block_height,
+              ps.labels,
+              ps.proposal_version,
+              ps.proposal_body_version,
+              ps.name,
+              ps.category,
+              ps.summary,
+              ps.description,
+              ps.linked_proposals,
+              ps.linked_rfp,
+              ps.requested_sponsorship_usd_amount,
+              ps.requested_sponsorship_paid_in_currency,
+              ps.requested_sponsor,
+              ps.receiver_account,
+              ps.supervisor,
+              ps.timeline,
+              ps.views
+          FROM
+              proposals p
+          INNER JOIN (
+              SELECT
+                  proposal_id,
+                  MAX(ts) AS max_ts
+              FROM
+                  proposal_snapshots
+              GROUP BY
+                  proposal_id
+          ) latest_snapshots ON p.id = latest_snapshots.proposal_id
+          INNER JOIN proposal_snapshots ps ON latest_snapshots.proposal_id = ps.proposal_id
+              AND latest_snapshots.max_ts = ps.ts
+          WHERE
+              ($3 IS NULL OR p.author_id = $3)
+              AND ($4 IS NULL OR ps.ts > $4)
+              AND ($5 IS NULL OR ps.timeline::text ~ $5)
+              AND ($6 IS NULL OR ps.category = $6)    
+              AND ($7 IS NULL OR ps.labels::jsonb ?| $7)
+          ORDER BY ps.ts {}
+          LIMIT $1 OFFSET $2
+          "#,
+            order_clause,
+        );
+
+        // Build the count query
+        let count_sql = r#"
+          SELECT COUNT(*)
+          FROM (
+              SELECT
+                  ps.proposal_id
+              FROM
+                  proposals p
+              INNER JOIN (
+                  SELECT
+                      proposal_id,
+                      MAX(ts) AS max_ts
+                  FROM
+                      proposal_snapshots
+                  GROUP BY
+                      proposal_id
+              ) latest_snapshots ON p.id = latest_snapshots.proposal_id
+              INNER JOIN proposal_snapshots ps ON latest_snapshots.proposal_id = ps.proposal_id
+                  AND latest_snapshots.max_ts = ps.ts
+              WHERE
+                  ($1 IS NULL OR p.author_id = $1)
+                  AND ($2 IS NULL OR ps.ts > $2)
+                  AND ($3 IS NULL OR ps.timeline::text ~ $3)
+                  AND ($4 IS NULL OR ps.category = $4)    
+                  AND ($5 IS NULL OR ps.labels::jsonb ?| $5)
+          ) AS count_subquery
+      "#;
+
+        // Extract filter parameters
+        let author_id = filters.as_ref().and_then(|f| f.author_id.as_ref());
+        let block_timestamp = filters.as_ref().and_then(|f| f.block_timestamp);
+        let category = filters.as_ref().and_then(|f| f.category.as_ref());
+        let labels = filters.as_ref().and_then(|f| f.labels.as_ref());
+
+        // Execute the data query
+        let recs = sqlx::query_as::<_, ProposalWithLatestSnapshotView>(&data_sql)
+            .bind(limit)
+            .bind(offset)
+            .bind(author_id)
+            .bind(block_timestamp)
+            .bind(stage_clause.clone())
+            .bind(category)
+            .bind(labels)
+            .fetch_all(&self.0)
+            .await?;
+
+        // Execute the count query
+        let total_count: i64 = sqlx::query_scalar(count_sql)
+            .bind(author_id)
+            .bind(block_timestamp)
+            .bind(stage_clause)
+            .bind(category)
+            .bind(labels)
+            .fetch_one(&self.0)
+            .await?;
+
+        Ok((recs, total_count))
+    }
 
     // Functions for RFPs
 
@@ -250,80 +336,78 @@ impl DB {
         }
     }
 
-    // pub async fn upsert_rfp_snapshot(
-    //     tx: &mut Transaction<'static, Postgres>,
-    //     snapshot: &RfpSnapshot,
-    // ) -> anyhow::Result<()> {
-    // Primary key is (rfp_id, ts)
-    //     sqlx::query!(
-    //         r#"
-    //       INSERT INTO rfp_snapshots (
-    //           rfp_id,
-    //           block_height,
-    //           ts,
-    //           editor_id,
-    //           social_db_post_block_height,
-    //           labels,
-    //           linked_proposals,
-    //           rfp_version,
-    //           rfp_body_version,
-    //           name,
-    //           category,
-    //           summary,
-    //           description,
-    //           timeline,
-    //           submission_deadline,
-    //           views
-    //       ) VALUES (
-    //           $1, $2, $3, $4, $5, $6, $7, $8,
-    //           $9, $10, $11, $12, $13, $14, $15, $16
-    //       ) ON CONFLICT (rfp_id, ts) DO UPDATE SET
-    //           block_height = $2,
-    //           editor_id = $4,
-    //           social_db_post_block_height = $5,
-    //           labels = $6,
-    //           linked_proposals = $7,
-    //           rfp_version = $8,
-    //           rfp_body_version = $9,
-    //           name = $10,
-    //           category = $11,
-    //           summary = $12,
-    //           description = $13,
-    //           timeline = $14,
-    //           submission_deadline = $15,
-    //           views = $16
-    //       "#,
-    //         snapshot.rfp_id,
-    //         snapshot.block_height,
-    //         snapshot.ts,
-    //         snapshot.editor_id,
-    //         snapshot.social_db_post_block_height,
-    //         snapshot.labels,
-    //         snapshot.linked_proposals,
-    //         snapshot.rfp_version,
-    //         snapshot.rfp_body_version,
-    //         snapshot.name,
-    //         snapshot.category,
-    //         snapshot.summary,
-    //         snapshot.description,
-    //         snapshot.timeline,
-    //         snapshot.submission_deadline,
-    //         snapshot.views
-    //     )
-    //     .execute(tx)
-    //     .await?;
-    //     Ok(())
-    // }
+    pub async fn insert_rfp_snapshot(
+        tx: &mut Transaction<'static, Postgres>,
+        snapshot: &RfpSnapshotRecord,
+    ) -> anyhow::Result<()> {
+        // Primary key is (rfp_id, ts)
+        sqlx::query!(
+            r#"
+          INSERT INTO rfp_snapshots (
+              rfp_id,
+              block_height,
+              ts,
+              editor_id,
+              social_db_post_block_height,
+              labels,
+              linked_proposals,
+              rfp_version,
+              rfp_body_version,
+              name,
+              category,
+              summary,
+              description,
+              timeline,
+              submission_deadline,
+              views
+          ) VALUES (
+              $1, $2, $3, $4, $5, $6, $7, $8,
+              $9, $10, $11, $12, $13, $14, $15, $16
+          ) ON CONFLICT (rfp_id, ts) DO UPDATE SET
+              block_height = $2,
+              editor_id = $4,
+              social_db_post_block_height = $5,
+              labels = $6,
+              linked_proposals = $7,
+              rfp_version = $8,
+              rfp_body_version = $9,
+              name = $10,
+              category = $11,
+              summary = $12,
+              description = $13,
+              timeline = $14,
+              submission_deadline = $15,
+              views = $16
+          "#,
+            snapshot.rfp_id,
+            snapshot.block_height,
+            snapshot.ts,
+            snapshot.editor_id,
+            snapshot.social_db_post_block_height,
+            snapshot.labels,
+            snapshot.linked_proposals,
+            snapshot.rfp_version,
+            snapshot.rfp_body_version,
+            snapshot.name,
+            snapshot.category,
+            snapshot.summary,
+            snapshot.description,
+            snapshot.timeline,
+            snapshot.submission_deadline,
+            snapshot.views
+        )
+        .execute(tx.as_mut())
+        .await?;
+        Ok(())
+    }
 
-    // Function to get proposals with the latest snapshot
-
-    pub async fn get_proposals_with_latest_snapshot(
+    pub async fn get_rfps_with_latest_snapshot(
         &self,
         limit: i64,
         order: &str,
         offset: i64,
-        filters: Option<GetProposalFilters>,
-    ) -> anyhow::Result<(Vec<ProposalWithLatestSnapshotView>, i64)> {
+        filters: Option<GetRfpFilters>,
+    ) -> anyhow::Result<(Vec<RfpWithLatestSnapshotView>, i64)> {
         // Validate the order clause to prevent SQL injection
         let order_clause = match order.to_lowercase().as_str() {
             "asc" => "ASC",
@@ -331,95 +415,88 @@ impl DB {
             _ => "DESC", // Default to DESC if the order is not recognized
         };
 
+        // Extract and validate the stage filter
         let stage = filters.as_ref().and_then(|f| f.stage.as_ref());
-        // Set 'stage_clause' to None if 'stage' is None
         let stage_clause: Option<String> = stage.and_then(|s| match s.to_uppercase().as_str() {
-            "DRAFT" => Some("DRAFT".to_string()),
-            "REVIEW" => Some("REVIEW".to_string()),
-            "APPROVED" => Some("APPROVED".to_string()),
-            "REJECTED" => Some("REJECTED".to_string()),
-            "CANCELED" => Some("CANCELLED".to_string()),
-            "APPROVED_CONDITIONALLY" => Some("CONDITIONALLY".to_string()),
-            "PAYMENT_PROCESSING" => Some("PAYMENT".to_string()),
-            "FUNDED" => Some("FUNDED".to_string()),
+            // AcceptingSubmissions,
+            // Evaluation,
+            // "ACCEPTING_SUBMISSIONS" => Some(),
+            "PROPOSAL_SELECTED" => Some("PROPOSAL_SELECTED".to_string()),
+            "CANCELLED" => Some("CANCELLED".to_string()),
+
             _ => None,
         });
 
-        // Build the SQL query with the validated order clause
+        // Build the SQL query for fetching data with the validated order clause
         let data_sql = format!(
             r#"
             SELECT
-                ps.proposal_id,
+                ps.rfp_id,
                 p.author_id,
                 ps.block_height,
                 ps.ts,
                 ps.editor_id,
                 ps.social_db_post_block_height,
                 ps.labels,
-                ps.proposal_version,
-                ps.proposal_body_version,
+                ps.linked_proposals,
+                ps.rfp_version,
+                ps.rfp_body_version,
                 ps.name,
                 ps.category,
                 ps.summary,
                 ps.description,
-                ps.linked_proposals,
-                ps.linked_rfp,
-                ps.requested_sponsorship_usd_amount,
-                ps.requested_sponsorship_paid_in_currency,
-                ps.requested_sponsor,
-                ps.receiver_account,
-                ps.supervisor,
                 ps.timeline,
-                ps.views
+                ps.views,
+                ps.submission_deadline
             FROM
-                proposals p
+                rfps p
             INNER JOIN (
                 SELECT
-                    proposal_id,
+                    rfp_id,
                     MAX(ts) AS max_ts
                 FROM
-                    proposal_snapshots
+                    rfp_snapshots
                 GROUP BY
-                    proposal_id
-            ) latest_snapshots ON p.id = latest_snapshots.proposal_id
-            INNER JOIN proposal_snapshots ps ON latest_snapshots.proposal_id = ps.proposal_id
+                    rfp_id
+            ) latest_snapshots ON p.id = latest_snapshots.rfp_id
+            INNER JOIN rfp_snapshots ps ON latest_snapshots.rfp_id = ps.rfp_id
                 AND latest_snapshots.max_ts = ps.ts
             WHERE
                 ($3 IS NULL OR p.author_id = $3)
                 AND ($4 IS NULL OR ps.ts > $4)
                 AND ($5 IS NULL OR ps.timeline::text ~ $5)
-                AND ($6 IS NULL OR ps.category = $6)    
+                AND ($6 IS NULL OR ps.category = $6)
                 AND ($7 IS NULL OR ps.labels::jsonb ?| $7)
-            ORDER BY ps.ts {}
+            ORDER BY ps.ts {order}
             LIMIT $1 OFFSET $2
             "#,
-            order_clause,
+            order = order_clause,
         );
 
-        // Build the count query
+        // Build the SQL query for counting total records
         let count_sql = r#"
             SELECT COUNT(*)
             FROM (
                 SELECT
-                    ps.proposal_id
+                    ps.rfp_id
                 FROM
-                    proposals p
+                    rfps p
                 INNER JOIN (
                     SELECT
-                        proposal_id,
+                        rfp_id,
                         MAX(ts) AS max_ts
                     FROM
-                        proposal_snapshots
+                        rfp_snapshots
                     GROUP BY
-                        proposal_id
-                ) latest_snapshots ON p.id = latest_snapshots.proposal_id
-                INNER JOIN proposal_snapshots ps ON latest_snapshots.proposal_id = ps.proposal_id
+                        rfp_id
+                ) latest_snapshots ON p.id = latest_snapshots.rfp_id
+                INNER JOIN rfp_snapshots ps ON latest_snapshots.rfp_id = ps.rfp_id
                     AND latest_snapshots.max_ts = ps.ts
                 WHERE
                     ($1 IS NULL OR p.author_id = $1)
                     AND ($2 IS NULL OR ps.ts > $2)
                     AND ($3 IS NULL OR ps.timeline::text ~ $3)
-                    AND ($4 IS NULL OR ps.category = $4)    
+                    AND ($4 IS NULL OR ps.category = $4)
                     AND ($5 IS NULL OR ps.labels::jsonb ?| $5)
             ) AS count_subquery
         "#;
@@ -431,7 +508,7 @@ impl DB {
         let labels = filters.as_ref().and_then(|f| f.labels.as_ref());
 
         // Execute the data query
-        let recs = sqlx::query_as::<_, ProposalWithLatestSnapshotView>(&data_sql)
+        let recs = sqlx::query_as::<_, RfpWithLatestSnapshotView>(&data_sql)
             .bind(limit)
             .bind(offset)
             .bind(author_id)
@@ -443,7 +520,7 @@ impl DB {
             .await?;
 
         // Execute the count query
-        let total_count: i64 = sqlx::query_scalar(&count_sql)
+        let total_count: i64 = sqlx::query_scalar(count_sql)
             .bind(author_id)
             .bind(block_timestamp)
             .bind(stage_clause)
@@ -454,101 +531,6 @@ impl DB {
 
         Ok((recs, total_count))
     }
-
-    // pub async fn get_proposals_with_latest_snapshot(
-    //     &self,
-    // ) -> anyhow::Result<Vec<ProposalWithLatestSnapshot>> {
-    //     let recs = sqlx::query_as!(
-    //         ProposalWithLatestSnapshot,
-    //         r#"
-    //       SELECT
-    //         ps.proposal_id,
-    //         p.author_id,
-    //         ps.block_height,
-    //         ps.ts,
-    //         ps.editor_id,
-    //         ps.social_db_post_block_height,
-    //         ps.labels,
-    //         ps.proposal_version,
-    //         ps.proposal_body_version,
-    //         ps.name,
-    //         ps.category,
-    //         ps.summary,
-    //         ps.description,
-    //         ps.linked_proposals,
-    //         ps.linked_rfp,
-    //         ps.requested_sponsorship_usd_amount,
-    //         ps.requested_sponsorship_paid_in_currency,
-    //         ps.requested_sponsor,
-    //         ps.receiver_account,
-    //         ps.supervisor,
-    //         ps.timeline,
-    //         ps.views
-    //       FROM
-    //         proposals p
-    //         INNER JOIN (
-    //           SELECT
-    //             proposal_id,
-    //             MAX(ts) AS max_ts
-    //           FROM
-    //             proposal_snapshots
-    //           GROUP BY
-    //             proposal_id
-    //         ) latest_snapshots ON p.id = latest_snapshots.proposal_id
-    //         INNER JOIN proposal_snapshots ps ON latest_snapshots.proposal_id = ps.proposal_id
-    //         AND latest_snapshots.max_ts = ps.ts;
-    //       "#
-    //     )
-    //     .fetch_all(&self.0)
-    //     .await?;
-    //     Ok(recs)
-    // }
-
-    // Function to get RFPs with the latest snapshot
-
-    // pub async fn get_rfps_with_latest_snapshot(
-    //     &self,
-    // ) -> anyhow::Result<Vec<RfpWithLatestSnapshot>> {
-    //     let recs = sqlx::query_as!(
-    //         RfpWithLatestSnapshot,
-    //         r#"
-    //       SELECT
-    //         ps.rfp_id,
-    //         p.author_id,
-    //         ps.block_height,
-    //         ps.ts,
-    //         ps.editor_id,
-    //         ps.social_db_post_block_height,
-    //         ps.labels,
-    //         ps.linked_proposals,
-    //         ps.rfp_version,
-    //         ps.rfp_body_version,
-    //         ps.name,
-    //         ps.category,
-    //         ps.summary,
-    //         ps.description,
-    //         ps.timeline,
-    //         ps.views,
-    //         ps.submission_deadline
-    //       FROM
-    //         rfps p
-    //         INNER JOIN (
-    //           SELECT
-    //             rfp_id,
-    //             MAX(ts) AS max_ts
-    //           FROM
-    //             rfp_snapshots
-    //           GROUP BY
-    //             rfp_id
-    //         ) latest_snapshots ON p.id = latest_snapshots.rfp_id
-    //         INNER JOIN rfp_snapshots ps ON latest_snapshots.rfp_id = ps.rfp_id
-    //         AND latest_snapshots.max_ts = ps.ts;
-    //       "#
-    //     )
-    //     .fetch_all(&self.0)
-    //     .await?;
-    //     Ok(recs)
-    // }
 
     // Additional functions can be added as needed
 }

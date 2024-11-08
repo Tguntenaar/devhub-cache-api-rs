@@ -11,7 +11,7 @@ pub struct Transaction {
     pub receipt_outcome: ReceiptOutcome,
     pub transaction_hash: String,
     pub included_in_block_hash: String,
-    pub block_timestamp: String, // TODO TransactionTimestamp 1709470458142465270 should be u64?
+    pub block_timestamp: String,
     pub block: BlockInfo,
     pub receipt_conversion_tokens_burnt: String,
     pub actions: Vec<Action>,
@@ -24,7 +24,7 @@ pub struct Transaction {
 pub struct Block {
     pub block_hash: String,
     pub block_height: i64,
-    pub block_timestamp: i64, // TODO ReceiptBlockTimestamp 1709470464665290800 should be u64?
+    pub block_timestamp: i64,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
