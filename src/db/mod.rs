@@ -323,7 +323,7 @@ impl DB {
         order: &str,
         offset: i64,
         filters: Option<GetProposalFilters>,
-    ) -> anyhow::Result<Vec<ProposalWithLatestSnapshotView>> {
+    ) -> anyhow::Result<(Vec<ProposalWithLatestSnapshotView>, i64)> {
         // Validate the order clause to prevent SQL injection
         let order_clause = match order.to_lowercase().as_str() {
             "asc" => "ASC",
@@ -346,7 +346,7 @@ impl DB {
         });
 
         // Build the SQL query with the validated order clause
-        let sql = format!(
+        let data_sql = format!(
             r#"
             SELECT
                 ps.proposal_id,
@@ -388,26 +388,71 @@ impl DB {
                 ($3 IS NULL OR p.author_id = $3)
                 AND ($4 IS NULL OR ps.ts > $4)
                 AND ($5 IS NULL OR ps.timeline::text ~ $5)
+                AND ($6 IS NULL OR ps.category = $6)    
+                AND ($7 IS NULL OR ps.labels::jsonb ?| $7)
             ORDER BY ps.ts {}
             LIMIT $1 OFFSET $2
             "#,
             order_clause,
         );
 
+        // Build the count query
+        let count_sql = r#"
+            SELECT COUNT(*)
+            FROM (
+                SELECT
+                    ps.proposal_id
+                FROM
+                    proposals p
+                INNER JOIN (
+                    SELECT
+                        proposal_id,
+                        MAX(ts) AS max_ts
+                    FROM
+                        proposal_snapshots
+                    GROUP BY
+                        proposal_id
+                ) latest_snapshots ON p.id = latest_snapshots.proposal_id
+                INNER JOIN proposal_snapshots ps ON latest_snapshots.proposal_id = ps.proposal_id
+                    AND latest_snapshots.max_ts = ps.ts
+                WHERE
+                    ($1 IS NULL OR p.author_id = $1)
+                    AND ($2 IS NULL OR ps.ts > $2)
+                    AND ($3 IS NULL OR ps.timeline::text ~ $3)
+                    AND ($4 IS NULL OR ps.category = $4)    
+                    AND ($5 IS NULL OR ps.labels::jsonb ?| $5)
+            ) AS count_subquery
+        "#;
+
+        // Extract filter parameters
         let author_id = filters.as_ref().and_then(|f| f.author_id.as_ref());
         let block_timestamp = filters.as_ref().and_then(|f| f.block_timestamp);
+        let category = filters.as_ref().and_then(|f| f.category.as_ref());
+        let labels = filters.as_ref().and_then(|f| f.labels.as_ref());
 
-        // Execute the query
-        let recs = sqlx::query_as::<_, ProposalWithLatestSnapshotView>(&sql)
+        // Execute the data query
+        let recs = sqlx::query_as::<_, ProposalWithLatestSnapshotView>(&data_sql)
             .bind(limit)
             .bind(offset)
             .bind(author_id)
             .bind(block_timestamp)
-            .bind(stage_clause)
+            .bind(stage_clause.clone())
+            .bind(category)
+            .bind(labels)
             .fetch_all(&self.0)
             .await?;
 
-        Ok(recs)
+        // Execute the count query
+        let total_count: i64 = sqlx::query_scalar(&count_sql)
+            .bind(author_id)
+            .bind(block_timestamp)
+            .bind(stage_clause)
+            .bind(category)
+            .bind(labels)
+            .fetch_one(&self.0)
+            .await?;
+
+        Ok((recs, total_count))
     }
 
     // pub async fn get_proposals_with_latest_snapshot(

@@ -2,11 +2,11 @@ use devhub_shared::proposal::VersionedProposal;
 use devhub_shared::rfp::VersionedRFP;
 use near_account_id::AccountId;
 use near_api::{types::Data, Contract, NetworkConfig};
+use near_jsonrpc_client::methods::query::RpcQueryRequest;
 use rocket::http::Status;
 use rocket::serde::json::json;
 use rocket::FromForm;
 use serde::Deserialize;
-
 #[derive(Deserialize)]
 pub struct RpcResponse {
     pub data: String,
@@ -50,7 +50,10 @@ impl RpcService {
         }
     }
 
-    pub async fn get_proposal(&self, proposal_id: i32) -> Result<VersionedProposal, String> {
+    pub async fn get_proposal(
+        &self,
+        proposal_id: i32,
+    ) -> Result<Data<VersionedProposal>, near_api::errors::QueryError<RpcQueryRequest>> {
         let result: Result<Data<VersionedProposal>, _> = self
             .contract
             .call_function("get_proposal", json!({ "proposal_id": proposal_id }))
@@ -59,10 +62,7 @@ impl RpcService {
             .fetch_from(&self.network)
             .await;
 
-        match result {
-            Ok(proposal) => Ok(proposal.data),
-            Err(e) => Err(e.to_string()),
-        }
+        result
     }
 
     pub async fn get_rfp(&self, rfp_id: i32) -> Result<VersionedRFP, String> {

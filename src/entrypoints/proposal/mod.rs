@@ -115,28 +115,26 @@ async fn get_proposals(
         }
     };
 
-    // TODO add back in
     let order = order.unwrap_or("desc");
     let limit = limit.unwrap_or(25);
     let offset = offset.unwrap_or(0);
-    // let block_timestamp = block_timestamp.unwrap_or(None);
 
-    let proposals = match db
+    let (proposals, total) = match db
         .get_proposals_with_latest_snapshot(limit, order, offset, filters)
         .await
     {
         Err(e) => {
             println!("Failed to get proposals: {:?}", e);
-            vec![]
+            (vec![], 0)
         }
-        Ok(proposals) => proposals,
+        Ok(result) => result,
     };
 
     Some(Json(PaginatedResponse::new(
         proposals.into_iter().map(Into::into).collect(),
         1,
         limit.try_into().unwrap(),
-        0, // TODO create a query that aggregates and counts the total
+        total.try_into().unwrap(),
     )))
 }
 
@@ -187,13 +185,25 @@ async fn handle_set_block_height_callback(
     .await
     .unwrap();
 
-    let block_timestamp = transaction.clone().block_timestamp;
-    let block_height = transaction.clone().block.block_height;
+    let rpc_service = RpcService::default();
+    let id = args.clone().proposal.id.try_into().unwrap();
 
-    let snapshot: ProposalSnapshotRecord = FromContractProposal::from_contract_proposal(
-        args.proposal.clone(),
-        block_timestamp,
-        block_height,
+    let versioned_proposal_fallback: VersionedProposal = args.clone().proposal.into();
+    let versioned_proposal = match rpc_service.get_proposal(id).await {
+        Ok(proposal) => proposal.data,
+        Err(e) => {
+            eprintln!(
+                "Failed to get proposal from RPC, using first snapshot as fallback {:?}",
+                e
+            );
+            versioned_proposal_fallback
+        }
+    };
+
+    let snapshot = ProposalSnapshotRecord::from_contract_proposal(
+        versioned_proposal.into(),
+        transaction.block_timestamp,
+        transaction.block.block_height,
     );
 
     DB::insert_proposal_snapshot(&mut tx, &snapshot)
@@ -231,7 +241,7 @@ async fn handle_edit_proposal(
         Status::InternalServerError
     })?;
     let versioned_proposal = match rpc_service.get_proposal(id).await {
-        Ok(proposal) => proposal,
+        Ok(proposal) => proposal.data,
         Err(e) => {
             eprintln!("Failed to get proposal from RPC: {:?}", e);
             return Err(Status::InternalServerError);
@@ -264,7 +274,7 @@ async fn get_proposal(proposal_id: i32) -> Result<Json<VersionedProposal>, rocke
     // We should cache this in the future
     // We should also add rate limiting to this endpoint
     match rpc_service.get_proposal(proposal_id).await {
-        Ok(proposal) => Ok(Json(proposal)),
+        Ok(proposal) => Ok(Json(proposal.data)),
         Err(e) => {
             eprintln!("Failed to get proposal from RPC: {:?}", e);
             Err(Status::InternalServerError)

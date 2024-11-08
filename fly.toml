@@ -15,7 +15,8 @@ cpu_kind = 'shared'
 cpus = 1
 
 [env]
-ROCKET_ADDRESS = "0.0.0.0"
-ROCKET_PORT = "8080"
-
+ROCKET_ENV = "production"
+CONTRACT = "devhub.near"
+# ROCKET_ADDRESS = "0.0.0.0"
+# ROCKET_PORT = "8080"
 # TODO create infra and events apps
