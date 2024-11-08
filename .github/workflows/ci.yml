@@ -26,6 +26,8 @@ jobs:
         run: cargo build --verbose
 
       - name: Run tests
+        env:
+          CONTRACT: devhub.near
         run: cargo test --verbose
 
       - name: Run clippy
