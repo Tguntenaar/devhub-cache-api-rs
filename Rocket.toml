@@ -1,12 +1,15 @@
-[production]
+[default]
+address = "0.0.0.0"
+
+[release]
 address = "0.0.0.0"
 port = 8080
-workers = 2
+workers = 1
 log_level = "normal"
 
 
-[development]
+[debug]
 address = "127.0.0.1"
 port = 8080
-workers = 2
+workers = 1
 log_level = "normal"

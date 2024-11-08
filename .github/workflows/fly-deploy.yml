@@ -13,7 +13,6 @@ jobs:
   deploy:
     name: Deploy Devhub
     runs-on: ubuntu-latest
-    concurrency: deploy-group # optional: ensure only one action runs at a time
     steps:
       - uses: actions/checkout@v4
       - uses: superfly/flyctl-actions/setup-flyctl@master
@@ -24,7 +23,6 @@ jobs:
   deploy-infra:
     name: Deploy Infra
     runs-on: ubuntu-latest
-    concurrency: deploy-group # optional: ensure only one action runs at a time
     steps:
       - uses: actions/checkout@v4
       - uses: superfly/flyctl-actions/setup-flyctl@master
@@ -35,7 +33,6 @@ jobs:
   deploy-events:
     name: Deploy Events
     runs-on: ubuntu-latest
-    concurrency: deploy-group # optional: ensure only one action runs at a time
     steps:
       - uses: actions/checkout@v4
       - uses: superfly/flyctl-actions/setup-flyctl@master

@@ -5,13 +5,13 @@ This repository leverages PostgreSQL as a caching layer to reduce DevHub's RPC c
 ## Develop
 
 ```sh
-ROCKET_ENV=development cargo run
+cargo run
 ```
 
 or
 
 ```sh
-ROCKET_ENV=development cargo watch -q -c -w src/ -x 'run '
+cargo watch -q -c -w src/ -x 'run '
 ```
 
 ### SQLx Postgres

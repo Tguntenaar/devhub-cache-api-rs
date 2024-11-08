@@ -18,7 +18,6 @@ pub fn timestamp_to_date_string(timestamp: i64) -> String {
 use crate::entrypoints::ApiDoc;
 use rocket::{catch, catchers, get, launch, routes};
 use rocket_cors::AllowedOrigins;
-use std::sync::Arc;
 use types::Contract;
 use utoipa::OpenApi;
 use utoipa_swagger_ui::SwaggerUi;
@@ -66,7 +65,6 @@ pub struct Env {
 #[launch]
 fn rocket() -> _ {
     dotenvy::dotenv().ok();
-    let atomic_bool = Arc::new(std::sync::atomic::AtomicBool::new(true));
 
     let env: Env = envy::from_env::<Env>().expect("Failed to load environment variables");
 
@@ -89,21 +87,15 @@ fn rocket() -> _ {
     .to_cors()
     .expect("Failed to create cors config");
 
-    let figment = rocket::Config::figment().merge(("databases.my_db.url", env.database_url));
+    let figment = rocket::Config::figment()
+        .merge(rocket::Config::default())
+        .merge(("databases.my_db.url", env.database_url));
 
     rocket::custom(figment)
         .attach(cors)
         .attach(db::stage())
         .mount("/", routes![robots, index])
         .attach(entrypoints::stage(env.contract))
-        .attach(rocket::fairing::AdHoc::on_shutdown(
-            "Stop loading users from Near and Github metadata",
-            |_| {
-                Box::pin(async move {
-                    atomic_bool.store(false, std::sync::atomic::Ordering::Relaxed);
-                })
-            },
-        ))
         .mount(
             "/",
             SwaggerUi::new("/swagger-ui/<_..>").url("/api-docs/openapi.json", ApiDoc::openapi()),
