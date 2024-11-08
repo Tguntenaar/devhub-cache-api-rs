@@ -75,6 +75,8 @@ fn rocket() -> _ {
         "https://near.social",
         "https://neardevhub.org",
         "https://devhub.near.page",
+        "https://events-committee.near.page/",
+        "https://infrastructure-committee.near.page/",
         "https://devhub-cache-api-rs.fly.dev",
         "https://infra-cache-api-rs.fly.dev",
         "https://events-cache-api-rs.fly.dev",

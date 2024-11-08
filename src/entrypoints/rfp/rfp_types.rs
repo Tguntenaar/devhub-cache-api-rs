@@ -21,7 +21,7 @@ pub struct GetRfpFilters {
 }
 
 #[derive(Serialize, Deserialize, Clone)]
-pub struct SetBlockHeightCallbackArgs {
+pub struct SetRfpBlockHeightCallbackArgs {
     pub rfp: RFP,
 }
 

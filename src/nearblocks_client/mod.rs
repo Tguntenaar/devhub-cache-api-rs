@@ -1,6 +1,7 @@
 use near_sdk::AccountId;
 use reqwest::Client;
 use serde::{Deserialize, Serialize};
+pub mod transactions;
 pub mod types;
 use types::Transaction;
 
