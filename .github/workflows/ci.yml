@@ -22,6 +22,16 @@ jobs:
           toolchain: stable
           components: clippy
 
+      - name: Install dependencies
+        run: apt-get update -y && apt-get install -y \
+          libssl-dev \
+          ca-certificates \
+          libudev-dev \
+          libusb-1.0-0-dev \
+          pkg-config \
+          libudev-dev \
+          build-essential
+
       - name: Build the project
         run: cargo build --verbose
 
