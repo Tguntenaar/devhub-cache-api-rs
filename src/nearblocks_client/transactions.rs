@@ -15,7 +15,7 @@ use std::convert::TryInto;
 pub async fn process(transactions: &[Transaction], db: &State<DB>) -> Result<(), Status> {
     for transaction in transactions.iter() {
         if let Some(action) = transaction.actions.first() {
-            let result = match action.method.as_str() {
+            let result = match action.method.as_deref().unwrap_or("") {
                 "set_block_height_callback" => {
                     handle_set_block_height_callback(transaction.to_owned(), db).await
                 }
@@ -37,7 +37,7 @@ pub async fn process(transactions: &[Transaction], db: &State<DB>) -> Result<(),
                 }
 
                 _ => {
-                    println!("Unhandled method: {}", action.method);
+                    println!("Unhandled method: {:?}", action.method);
                     continue;
                 }
             };
@@ -53,7 +53,7 @@ async fn handle_set_rfp_block_height_callback(
     db: &State<DB>,
 ) -> Result<(), Status> {
     let action = transaction.clone().actions.first().unwrap().clone();
-    let json_args = action.args.clone();
+    let json_args = action.args.clone().unwrap_or_default();
 
     // println!("json_args: {:?}", json_args.clone());
     let args: SetRfpBlockHeightCallbackArgs = serde_json::from_str(&json_args).unwrap();
@@ -86,7 +86,7 @@ async fn handle_set_rfp_block_height_callback(
     let snapshot = RfpSnapshotRecord::from_contract_rfp(
         versioned_rfp.into(),
         transaction.block_timestamp,
-        transaction.block.block_height,
+        transaction.block.block_height as i64,
     );
 
     DB::insert_rfp_snapshot(&mut tx, &snapshot).await.unwrap();
@@ -104,10 +104,11 @@ fn get_rfp_id(transaction: &Transaction) -> Result<i32, &'static str> {
         .first()
         .ok_or("No actions found in transaction")?;
 
-    let args: PartialEditRFPArgs = serde_json::from_str(&action.args).map_err(|e| {
-        eprintln!("Failed to parse JSON: {:?}", e);
-        "Failed to parse proposal arguments"
-    })?;
+    let args: PartialEditRFPArgs =
+        serde_json::from_str(&action.args.as_ref().unwrap()).map_err(|e| {
+            eprintln!("Failed to parse JSON: {:?}", e);
+            "Failed to parse proposal arguments"
+        })?;
 
     Ok(args.id)
 }
@@ -132,7 +133,7 @@ async fn handle_edit_rfp(transaction: Transaction, db: &State<DB>) -> Result<(),
     let snapshot = RfpSnapshotRecord::from_contract_rfp(
         versioned_rfp.into(),
         transaction.block_timestamp,
-        transaction.block.block_height,
+        transaction.block.block_height as i64,
     );
 
     DB::insert_rfp_snapshot(&mut tx, &snapshot)
@@ -153,7 +154,8 @@ async fn handle_set_block_height_callback(
     let action = transaction.clone().actions.first().unwrap().clone();
     let json_args = action.args.clone();
 
-    let args: SetBlockHeightCallbackArgs = serde_json::from_str(&json_args).unwrap();
+    let args: SetBlockHeightCallbackArgs =
+        serde_json::from_str(&json_args.unwrap_or_default()).unwrap();
 
     println!("Adding to the database... {}", args.clone().proposal.id);
     let mut tx = db.begin().await.map_err(|_e| Status::InternalServerError)?;
@@ -183,7 +185,7 @@ async fn handle_set_block_height_callback(
     let snapshot = ProposalSnapshotRecord::from_contract_proposal(
         versioned_proposal.into(),
         transaction.block_timestamp,
-        transaction.block.block_height,
+        transaction.block.block_height as i64,
     );
 
     DB::insert_proposal_snapshot(&mut tx, &snapshot)
@@ -203,10 +205,11 @@ fn get_proposal_id(transaction: &Transaction) -> Result<i32, &'static str> {
         .first()
         .ok_or("No actions found in transaction")?;
 
-    let args: PartialEditProposalArgs = serde_json::from_str(&action.args).map_err(|e| {
-        eprintln!("Failed to parse JSON: {:?}", e);
-        "Failed to parse proposal arguments"
-    })?;
+    let args: PartialEditProposalArgs = serde_json::from_str(&action.args.as_ref().unwrap())
+        .map_err(|e| {
+            eprintln!("Failed to parse JSON: {:?}", e);
+            "Failed to parse proposal arguments"
+        })?;
 
     Ok(args.id)
 }
@@ -233,7 +236,7 @@ async fn handle_edit_proposal(
     let snapshot = ProposalSnapshotRecord::from_contract_proposal(
         versioned_proposal.into(),
         transaction.block_timestamp,
-        transaction.block.block_height,
+        transaction.block.block_height as i64,
     );
 
     DB::insert_proposal_snapshot(&mut tx, &snapshot)

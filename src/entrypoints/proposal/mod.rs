@@ -95,7 +95,7 @@ async fn get_proposals(
     let nearblocks_unwrapped = match nearblocks_client
         .get_account_txns_by_pagination(
             contract.parse::<AccountId>().unwrap(),
-            None,
+            // None,
             Some(timestamp_to_date_string(last_updated_timestamp)),
             Some(25),
             Some("asc".to_string()),
@@ -104,7 +104,7 @@ async fn get_proposals(
     {
         Ok(nearblocks_unwrapped) => nearblocks_unwrapped,
         Err(e) => {
-            eprintln!("Failed to fetch data from nearblocks: {:?}", e);
+            eprintln!("Failed to fetch proposals from nearblocks: {:?}", e);
             nearblocks_client::ApiResponse { txns: vec![] }
         }
     };
@@ -162,9 +162,15 @@ async fn test(contract: &State<Contract>) -> String {
 }
 
 #[get("/timestamp/<timestamp>")]
-async fn timestamp(timestamp: i64, db: &State<DB>) -> Result<(), Status> {
+async fn set_timestamp(timestamp: i64, db: &State<DB>) -> Result<(), Status> {
     db.set_last_updated_timestamp(timestamp).await.unwrap();
     Ok(())
+}
+
+#[get("/timestamp")]
+async fn get_timestamp(db: &State<DB>) -> Result<Json<i64>, Status> {
+    let timestamp = db.get_last_updated_timestamp().await.unwrap();
+    Ok(Json(timestamp))
 }
 
 #[utoipa::path(get, path = "/proposals/{proposal_id}")]
@@ -189,7 +195,14 @@ pub fn stage(contract: Contract) -> rocket::fairing::AdHoc {
 
         rocket.manage(contract).mount(
             "/proposals/",
-            rocket::routes![get_proposals, get_proposal, test, timestamp, search],
+            rocket::routes![
+                get_proposals,
+                get_proposal,
+                test,
+                set_timestamp,
+                get_timestamp,
+                search
+            ],
         )
     })
 }

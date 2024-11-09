@@ -41,7 +41,6 @@ impl ApiBackgroundService {
                         None,
                         None,
                         None,
-                        None,
                     )
                     .await
                 {

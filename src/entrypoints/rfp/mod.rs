@@ -92,16 +92,21 @@ async fn get_rfps(
     let nearblocks_unwrapped = match nearblocks_client
         .get_account_txns_by_pagination(
             contract.parse::<AccountId>().unwrap(),
-            None,
             Some(timestamp_to_date_string(last_updated_timestamp)),
             Some(25),
             Some("asc".to_string()),
         )
         .await
     {
-        Ok(nearblocks_unwrapped) => nearblocks_unwrapped,
+        Ok(nearblocks_unwrapped) => {
+            println!(
+                "Fetched method calls from nearblocks {:?}",
+                nearblocks_unwrapped
+            );
+            nearblocks_unwrapped
+        }
         Err(e) => {
-            eprintln!("Failed to fetch data from nearblocks: {:?}", e);
+            eprintln!("Failed to fetch rfp from nearblocks: {:?}", e);
             nearblocks_client::ApiResponse { txns: vec![] }
         }
     };
@@ -112,7 +117,7 @@ async fn get_rfps(
         .await
     {
         Err(e) => {
-            println!("Failed to get proposals: {:?}", e);
+            println!("Failed to get rfps: {:?}", e);
             (vec![], 0)
         }
         Ok(result) => result,

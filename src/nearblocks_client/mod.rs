@@ -9,6 +9,7 @@ use types::Transaction;
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct ApiResponse {
+    #[serde(default)]
     pub txns: Vec<Transaction>,
 }
 
@@ -35,27 +36,24 @@ impl ApiClient {
     pub async fn get_account_txns_by_pagination(
         &self,
         account_id: AccountId,
-        method: Option<String>,
         since_date: Option<String>,
         limit: Option<i32>,
         order: Option<String>,
     ) -> Result<ApiResponse, reqwest::Error> {
         let query_params = format!(
-            "?method={}&after_date={}&page=1&per_page={}&order={}",
-            method.unwrap_or_default(),
+            "?after_date={}&page=1&per_page={}&order={}",
             since_date.unwrap_or("2024-10-10".to_string()),
             limit.unwrap_or(10),
             order.unwrap_or("desc".to_string())
         );
         let endpoint = format!("v1/account/{}/txns", account_id);
         let url = self.base_url.clone() + &endpoint + &query_params;
-        let res = self
-            .client
+        println!("Fetching txns from nearblocks: {}", url);
+        self.client
             .get(&url)
             .send()
             .await?
             .json::<ApiResponse>()
-            .await?;
-        Ok(res)
+            .await
     }
 }

@@ -2,6 +2,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Transaction {
+    #[serde(default)]
     pub id: String,
     pub receipt_id: String,
     pub predecessor_account_id: String,
@@ -23,8 +24,8 @@ pub struct Transaction {
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Block {
     pub block_hash: String,
-    pub block_height: i64,
-    pub block_timestamp: i64,
+    pub block_height: f64,
+    pub block_timestamp: f64,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
@@ -37,21 +38,23 @@ pub struct ReceiptOutcome {
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct BlockInfo {
-    pub block_height: i64,
+    pub block_height: f64,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Action {
     pub action: String,
-    pub method: String,
-    pub deposit: i64,
+    #[serde(default)]
+    pub method: Option<String>,
+    pub deposit: f64,
     pub fee: f64,
-    pub args: String,
+    #[serde(default)]
+    pub args: Option<String>,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct ActionsAgg {
-    pub deposit: i64,
+    pub deposit: f64,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
