@@ -1,7 +1,14 @@
+# fly.toml app configuration file generated for devhub-cache-api-rs on 2024-11-09T09:10:37+07:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
 app = 'devhub-cache-api-rs'
 primary_region = 'ams'
 
-[build]
+[env]
+CONTRACT = 'devhub.near'
+ROCKET_PROFILE = 'release'
 
 [http_service]
 internal_port = 8080
@@ -15,7 +22,3 @@ processes = ['app']
 memory = '1gb'
 cpu_kind = 'shared'
 cpus = 1
-
-[env]
-ROCKET_PROFILE = "release"
-CONTRACT = "devhub.near"

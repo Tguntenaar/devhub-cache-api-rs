@@ -151,6 +151,12 @@ async fn test(contract: &State<Contract>) -> String {
     format!("Welcome to {}", contract)
 }
 
+#[get("/timestamp/<timestamp>")]
+async fn timestamp(timestamp: i64, db: &State<DB>) -> Result<(), Status> {
+    db.set_last_updated_timestamp(timestamp).await.unwrap();
+    Ok(())
+}
+
 #[utoipa::path(get, path = "/proposals/{proposal_id}")]
 #[get("/<proposal_id>")]
 async fn get_proposal(proposal_id: i32) -> Result<Json<VersionedProposal>, rocket::http::Status> {
@@ -173,7 +179,7 @@ pub fn stage(contract: Contract) -> rocket::fairing::AdHoc {
 
         rocket.manage(contract).mount(
             "/proposals/",
-            rocket::routes![get_proposals, get_proposal, test],
+            rocket::routes![get_proposals, get_proposal, test, timestamp],
         )
     })
 }
