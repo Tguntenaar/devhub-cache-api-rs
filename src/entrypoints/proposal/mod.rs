@@ -3,7 +3,7 @@ use crate::db::db_types::ProposalWithLatestSnapshotView;
 use crate::db::DB;
 use crate::rpc_service::RpcService;
 use crate::types::{Contract, PaginatedResponse};
-use crate::{nearblocks_client, timestamp_to_date_string};
+use crate::{nearblocks_client, separate_number_and_text, timestamp_to_date_string};
 use devhub_shared::proposal::VersionedProposal;
 use near_account_id::AccountId;
 use rocket::serde::json::Json;
@@ -11,13 +11,37 @@ use rocket::{get, http::Status, State};
 use std::convert::TryInto;
 pub mod proposal_types;
 
-// #[utoipa::path(get, path = "/proposals/search?<input>", params(
-//   ("input"= &str, Path, description ="The string to search for in proposal name, description, summary, and category fields."),
-// ))]
-// #[get("/search/<input>")]
-// fn search(input: String) -> Option<Json<PaginatedResponse<ProposalWithLatestSnapshotView>>> {
-//     None
-// }
+// TODO use caching in search
+#[utoipa::path(get, path = "/proposals/search?<input>", params(
+  ("input"= &str, Path, description ="The string to search for in proposal name, description, summary, and category fields."),
+))]
+#[get("/search/<input>")]
+async fn search(
+    input: String,
+    db: &State<DB>,
+) -> Option<Json<PaginatedResponse<ProposalWithLatestSnapshotView>>> {
+    let (number, _) = separate_number_and_text(&input);
+
+    let result = if let Some(number) = number {
+        db.get_proposals_with_latest_snapshot(number as i64, "desc", 0, None)
+            .await
+    } else {
+        db.search_proposals_with_latest_snapshot(input).await
+    };
+
+    match result {
+        Ok((proposals, total)) => Some(Json(PaginatedResponse::new(
+            proposals.clone().into_iter().map(Into::into).collect(),
+            1,
+            proposals.len() as u64,
+            total as u64,
+        ))),
+        Err(e) => {
+            eprintln!("Error fetching proposals: {:?}", e);
+            None
+        }
+    }
+}
 
 #[utoipa::path(get, path = "/proposals?<order>&<limit>&<offset>&<filters>", params(
   ("order"= &str, Path, description ="order"),
@@ -179,7 +203,7 @@ pub fn stage(contract: Contract) -> rocket::fairing::AdHoc {
 
         rocket.manage(contract).mount(
             "/proposals/",
-            rocket::routes![get_proposals, get_proposal, test, timestamp],
+            rocket::routes![get_proposals, get_proposal, test, timestamp, search],
         )
     })
 }

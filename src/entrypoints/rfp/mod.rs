@@ -3,7 +3,7 @@ use crate::db::db_types::RfpWithLatestSnapshotView;
 use crate::db::DB;
 use crate::rpc_service::RpcService;
 use crate::types::{Contract, PaginatedResponse};
-use crate::{nearblocks_client, timestamp_to_date_string};
+use crate::{nearblocks_client, separate_number_and_text, timestamp_to_date_string};
 use devhub_shared::rfp::VersionedRFP;
 use near_account_id::AccountId;
 use rocket::serde::json::Json;
@@ -11,13 +11,35 @@ use rocket::{get, http::Status, State};
 use std::convert::TryInto;
 pub mod rfp_types;
 
-// #[utoipa::path(get, path = "/rfps/search?<input>", params(
-//   ("input"= &str, Path, description ="The string to search for in rfp name, description, summary, and category fields."),
-// ))]
-// #[get("/search/<input>")]
-// fn search(input: String) -> Option<Json<PaginatedResponse<RfpWithLatestSnapshotView>>> {
-//     None
-// }
+// TODO use caching in search
+#[utoipa::path(get, path = "/rfps/search?<input>", params(
+  ("input"= &str, Path, description ="The string to search for in rfp name, description, summary, and category fields."),
+))]
+#[get("/search/<input>")]
+async fn search(
+    input: String,
+    db: &State<DB>,
+) -> Option<Json<PaginatedResponse<RfpWithLatestSnapshotView>>> {
+    let (number, _) = separate_number_and_text(&input);
+    let result = if let Some(number) = number {
+        db.get_rfps_with_latest_snapshot(number as i64, "desc", 0, None)
+            .await
+    } else {
+        db.search_rfps_with_latest_snapshot(input).await
+    };
+    match result {
+        Ok((rfps, total)) => Some(Json(PaginatedResponse::new(
+            rfps.clone().into_iter().map(Into::into).collect(),
+            1,
+            rfps.len() as u64,
+            total as u64,
+        ))),
+        Err(e) => {
+            eprintln!("Error fetching rfps: {:?}", e);
+            None
+        }
+    }
+}
 
 #[utoipa::path(get, path = "/rfps?<order>&<limit>&<offset>&<filters>", params(
   ("order"= &str, Path, description ="order"),
@@ -131,6 +153,6 @@ pub fn stage() -> rocket::fairing::AdHoc {
     rocket::fairing::AdHoc::on_ignite("Rfp Stage", |rocket| async {
         println!("Rfp stage on ignite!");
 
-        rocket.mount("/rfps/", rocket::routes![get_rfps, get_rfp])
+        rocket.mount("/rfps/", rocket::routes![get_rfps, get_rfp, search])
     })
 }

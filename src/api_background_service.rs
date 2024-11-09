@@ -1,3 +1,7 @@
+/**
+ * TODO
+ * - Update the cache in the background instead of blocking responses
+ */
 use crate::nearblocks_client::ApiClient;
 use crate::types::Contract;
 use near_account_id::AccountId;

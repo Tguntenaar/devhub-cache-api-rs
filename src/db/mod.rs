@@ -299,6 +299,69 @@ impl DB {
         Ok((recs, total_count))
     }
 
+    pub async fn search_proposals_with_latest_snapshot(
+        &self,
+        input: String,
+    ) -> anyhow::Result<(Vec<ProposalWithLatestSnapshotView>, i64)> {
+        let sql = r#"
+            SELECT
+                ps.*
+            FROM
+                proposals p
+            INNER JOIN (
+                SELECT
+                    proposal_id,
+                    MAX(ts) AS max_ts
+                FROM
+                    proposal_snapshots
+                GROUP BY
+                    proposal_id
+            ) latest_snapshots ON p.id = latest_snapshots.proposal_id
+            INNER JOIN proposal_snapshots ps ON latest_snapshots.proposal_id = ps.proposal_id
+                AND latest_snapshots.max_ts = ps.ts
+            WHERE
+                ps.name ILIKE '%' || $1 || '%'
+                OR ps.summary ILIKE '%' || $1 || '%'
+                OR ps.description ILIKE '%' || $1 || '%'
+        "#;
+
+        let proposals = sqlx::query_as::<_, ProposalWithLatestSnapshotView>(sql)
+            .bind(&input)
+            .fetch_all(&self.0)
+            .await
+            .expect("Failed to fetch proposals.");
+
+        let total_count_sql = r#"
+                SELECT
+                    COUNT(*)
+                FROM
+                    proposals p
+                INNER JOIN (
+                    SELECT
+                        proposal_id,
+                        MAX(ts) AS max_ts
+                    FROM
+                        proposal_snapshots
+                    GROUP BY
+                        proposal_id
+                ) latest_snapshots ON p.id = latest_snapshots.proposal_id
+                INNER JOIN proposal_snapshots ps ON latest_snapshots.proposal_id = ps.proposal_id
+                    AND latest_snapshots.max_ts = ps.ts
+                WHERE
+                    ps.name ILIKE '%' || $1 || '%'
+                    OR ps.summary ILIKE '%' || $1 || '%'
+                    OR ps.description ILIKE '%' || $1 || '%'
+            "#;
+
+        let total_count = sqlx::query_scalar::<_, i64>(total_count_sql)
+            .bind(&input)
+            .fetch_one(&self.0)
+            .await
+            .expect("Failed to count proposals.");
+
+        Ok((proposals, total_count))
+    }
+
     // Functions for RFPs
 
     pub async fn upsert_rfp(
@@ -532,7 +595,66 @@ impl DB {
         Ok((recs, total_count))
     }
 
-    // Additional functions can be added as needed
+    pub async fn search_rfps_with_latest_snapshot(
+        &self,
+        input: String,
+    ) -> anyhow::Result<(Vec<RfpWithLatestSnapshotView>, i64)> {
+        let sql = r#"
+            SELECT
+                ps.*
+            FROM
+                rfps p
+            INNER JOIN (
+                SELECT
+                    rfp_id,
+                    MAX(ts) AS max_ts
+                FROM
+                    rfp_snapshots
+                GROUP BY
+                    rfp_id
+            ) latest_snapshots ON p.id = latest_snapshots.rfp_id
+            INNER JOIN rfp_snapshots ps ON latest_snapshots.rfp_id = ps.rfp_id
+                AND latest_snapshots.max_ts = ps.ts
+            WHERE
+                ps.name ILIKE '%' || $1 || '%'
+                OR ps.summary ILIKE '%' || $1 || '%'
+                OR ps.description ILIKE '%' || $1 || '%'
+        "#;
+
+        let rfps = sqlx::query_as::<_, RfpWithLatestSnapshotView>(sql)
+            .bind(&input)
+            .fetch_all(&self.0)
+            .await?;
+
+        let total_count_sql = r#"
+            SELECT
+                COUNT(*)
+            FROM
+                rfps p
+            INNER JOIN (
+                SELECT
+                    rfp_id,
+                    MAX(ts) AS max_ts
+                FROM
+                    rfp_snapshots
+                GROUP BY
+                    rfp_id
+            ) latest_snapshots ON p.id = latest_snapshots.rfp_id
+            INNER JOIN rfp_snapshots ps ON latest_snapshots.rfp_id = ps.rfp_id
+                AND latest_snapshots.max_ts = ps.ts
+            WHERE
+                ps.name ILIKE '%' || $1 || '%'
+                OR ps.summary ILIKE '%' || $1 || '%'
+                OR ps.description ILIKE '%' || $1 || '%'
+        "#;
+
+        let total_count = sqlx::query_scalar::<_, i64>(total_count_sql)
+            .bind(&input)
+            .fetch_one(&self.0)
+            .await?;
+
+        Ok((rfps, total_count))
+    }
 }
 
 async fn run_migrations(rocket: Rocket<Build>) -> fairing::Result {
