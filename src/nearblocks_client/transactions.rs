@@ -60,7 +60,7 @@ async fn handle_set_rfp_block_height_callback(
 
     println!("Adding to the database... {}", args.clone().rfp.id);
     let mut tx = db.begin().await.map_err(|_e| Status::InternalServerError)?;
-    DB::upsert_proposal(
+    DB::upsert_rfp(
         &mut tx,
         args.clone().rfp.id,
         args.clone().rfp.author_id.to_string(),

@@ -65,7 +65,6 @@ async fn get_proposals(
     let limit = limit.unwrap_or(25);
     let offset = offset.unwrap_or(0);
 
-    // If we called nearblocks in the last 60 milliseconds return the database values
     if current_timestamp_nano - last_updated_timestamp
         < chrono::Duration::seconds(60).num_nanoseconds().unwrap()
     {
@@ -93,31 +92,18 @@ async fn get_proposals(
 
     let nearblocks_client = nearblocks_client::ApiClient::default();
 
-    // Nearblocks reacts with all contract changes since the timestamp we pass
-    // This could return 0 new tx in which case we get the database stuff anyway
-    // Or it could return 1 new tx in which case we want to update the database first
-    // then get it from database using the right queries
     let nearblocks_unwrapped = match nearblocks_client
         .get_account_txns_by_pagination(
             contract.parse::<AccountId>().unwrap(),
-            // Instead of just set_block_height_callback we should get all method calls
-            // and handle them accordingly.
-            // TODO change to None
-            Some("set_block_height_callback".to_string()),
+            None,
             Some(timestamp_to_date_string(last_updated_timestamp)),
-            // if this limit hits 10 we might need to do it in a loop let's say there are 100 changes since the last call to nearblocks.
             Some(25),
             Some("asc".to_string()),
         )
         .await
     {
-        Ok(nearblocks_unwrapped) => {
-            // If the response was successful, print the count of method calls
-            // println!("Response: {:?}", nearblocks_unwrapped);
-            nearblocks_unwrapped
-        }
+        Ok(nearblocks_unwrapped) => nearblocks_unwrapped,
         Err(e) => {
-            // If there was an error, print it or handle it as needed
             eprintln!("Failed to fetch data from nearblocks: {:?}", e);
             nearblocks_client::ApiResponse { txns: vec![] }
         }
