@@ -116,11 +116,7 @@ async fn get_proposals(
 
     let _ = nearblocks_client::transactions::process(&nearblocks_unwrapped.txns, db).await;
 
-    match nearblocks_unwrapped
-        .txns
-        // should we get the first or last?
-        .last()
-    {
+    match nearblocks_unwrapped.txns.last() {
         Some(transaction) => {
             println!("Added proposals to database, now adding timestamp.");
 

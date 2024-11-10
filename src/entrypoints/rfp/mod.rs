@@ -112,6 +112,23 @@ async fn get_rfps(
     };
     let _ = nearblocks_client::transactions::process(&nearblocks_unwrapped.txns, db).await;
 
+    match nearblocks_unwrapped.txns.last() {
+        Some(transaction) => {
+            println!("Added rfps to database, now adding timestamp.");
+
+            println!("Transaction timestamp: {}", transaction.block_timestamp);
+            let timestamp_nano: i64 = transaction.block_timestamp.parse().unwrap();
+
+            println!("Parsed tx timestamp: {}", timestamp_nano);
+            db.set_last_updated_timestamp(timestamp_nano).await.unwrap();
+
+            println!("Added timestamp to database, returning rfps...");
+        }
+        None => {
+            println!("No transactions found")
+        }
+    };
+
     let (rfps, total) = match db
         .get_rfps_with_latest_snapshot(limit, order, offset, filters)
         .await
