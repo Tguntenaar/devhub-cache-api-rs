@@ -24,6 +24,7 @@ jobs:
 
       - name: Set up PostgreSQL database
         run: |
+          sudo service postgresql start
           sudo su - postgres -c "
             psql -c \"CREATE DATABASE devhub_cache_api_rs\"
             psql -c \"CREATE ROLE devhub_cache_api_rs WITH LOGIN PASSWORD 'password';\"
