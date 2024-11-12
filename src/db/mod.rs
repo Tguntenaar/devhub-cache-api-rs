@@ -170,9 +170,11 @@ impl DB {
     ) -> anyhow::Result<(Vec<ProposalWithLatestSnapshotView>, i64)> {
         // Validate the order clause to prevent SQL injection
         let order_clause = match order.to_lowercase().as_str() {
-            "asc" => "ASC",
-            "desc" => "DESC",
-            _ => "DESC", // Default to DESC if the order is not recognized
+            "ts_asc" => "ps.ts ASC",
+            "ts_desc" => "ps.ts DESC",
+            "id_asc" => "ps.proposal_id ASC",
+            "id_desc" => "ps.proposal_id DESC",
+            _ => "ps.proposal_id DESC", // Default to DESC if the order is not recognized
         };
 
         let stage = filters.as_ref().and_then(|f| f.stage.as_ref());
@@ -234,7 +236,7 @@ impl DB {
               AND ($5 IS NULL OR ps.timeline::text ~ $5)
               AND ($6 IS NULL OR ps.category = $6)    
               AND ($7 IS NULL OR ps.labels::jsonb ?| $7)
-          ORDER BY ps.ts {}
+          ORDER BY {}
           LIMIT $1 OFFSET $2
           "#,
             order_clause,
@@ -473,20 +475,20 @@ impl DB {
     ) -> anyhow::Result<(Vec<RfpWithLatestSnapshotView>, i64)> {
         // Validate the order clause to prevent SQL injection
         let order_clause = match order.to_lowercase().as_str() {
-            "asc" => "ASC",
-            "desc" => "DESC",
-            _ => "DESC", // Default to DESC if the order is not recognized
+            "ts_asc" => "ps.ts ASC",
+            "ts_desc" => "ps.ts DESC",
+            "id_asc" => "ps.rfp_id ASC",
+            "id_desc" => "ps.rfp_id DESC",
+            _ => "ps.rfp_id DESC", // Default to DESC if the order is not recognized
         };
 
         // Extract and validate the stage filter
         let stage = filters.as_ref().and_then(|f| f.stage.as_ref());
         let stage_clause: Option<String> = stage.and_then(|s| match s.to_uppercase().as_str() {
-            // AcceptingSubmissions,
-            // Evaluation,
-            // "ACCEPTING_SUBMISSIONS" => Some(),
+            "ACCEPTING_SUBMISSIONS" => Some("ACCEPTING_SUBMISSIONS".to_string()),
+            "EVALUATION" => Some("EVALUATION".to_string()),
             "PROPOSAL_SELECTED" => Some("PROPOSAL_SELECTED".to_string()),
             "CANCELLED" => Some("CANCELLED".to_string()),
-
             _ => None,
         });
 
@@ -530,7 +532,7 @@ impl DB {
                 AND ($5 IS NULL OR ps.timeline::text ~ $5)
                 AND ($6 IS NULL OR ps.category = $6)
                 AND ($7 IS NULL OR ps.labels::jsonb ?| $7)
-            ORDER BY ps.ts {order}
+            ORDER BY {order}
             LIMIT $1 OFFSET $2
             "#,
             order = order_clause,

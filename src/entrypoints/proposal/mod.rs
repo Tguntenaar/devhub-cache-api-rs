@@ -44,8 +44,8 @@ async fn search(
 }
 
 #[utoipa::path(get, path = "/proposals?<order>&<limit>&<offset>&<filters>", params(
-  ("order"= &str, Path, description ="order"),
-  ("limit"= i64, Path, description = "limit"),
+  ("order"= &str, Path, description ="default order id_desc (ts_asc)"),
+  ("limit"= i64, Path, description = "default limit 10"),
   ("offset"= i64, Path, description = "offset"),
   ("filters"= GetProposalFilters, Path, description = "filters struct that contains stuff like category, labels (vec), author_id, stage, block_timestamp (i64)"),
 ))]
@@ -61,8 +61,8 @@ async fn get_proposals(
     let current_timestamp_nano = chrono::Utc::now().timestamp_nanos_opt().unwrap();
     let last_updated_timestamp = db.get_last_updated_timestamp().await.unwrap();
 
-    let order = order.unwrap_or("desc");
-    let limit = limit.unwrap_or(25);
+    let order = order.unwrap_or("id_desc");
+    let limit = limit.unwrap_or(10);
     let offset = offset.unwrap_or(0);
 
     if current_timestamp_nano - last_updated_timestamp

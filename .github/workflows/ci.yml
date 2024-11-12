@@ -31,6 +31,9 @@ jobs:
             psql -c \"ALTER ROLE devhub_cache_api_rs CREATEDB;\"
             psql -c \"GRANT ALL PRIVILEGES ON DATABASE devhub_cache_api_rs TO devhub_cache_api_rs;\"
           "
+      - name: Install SQlx
+        run: cargo install sqlx-cli
+
       - name: Create database tables
         run: cargo sqlx database create
 
