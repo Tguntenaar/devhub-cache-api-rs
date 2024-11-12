@@ -72,7 +72,7 @@ async fn get_rfps(
             .await
         {
             Err(e) => {
-                println!("Failed to get proposals: {:?}", e);
+                eprintln!("Failed to get proposals: {:?}", e);
                 (vec![], 0)
             }
             Ok(result) => result,
@@ -114,15 +114,9 @@ async fn get_rfps(
 
     match nearblocks_unwrapped.txns.last() {
         Some(transaction) => {
-            println!("Added rfps to database, now adding timestamp.");
-
-            println!("Transaction timestamp: {}", transaction.block_timestamp);
             let timestamp_nano: i64 = transaction.block_timestamp.parse().unwrap();
-
-            println!("Parsed tx timestamp: {}", timestamp_nano);
+            println!("Storing timestamp: {}", timestamp_nano);
             db.set_last_updated_timestamp(timestamp_nano).await.unwrap();
-
-            println!("Added timestamp to database, returning rfps...");
         }
         None => {
             println!("No transactions found")
@@ -134,7 +128,7 @@ async fn get_rfps(
         .await
     {
         Err(e) => {
-            println!("Failed to get rfps: {:?}", e);
+            eprintln!("Failed to get rfps: {:?}", e);
             (vec![], 0)
         }
         Ok(result) => result,

@@ -74,7 +74,7 @@ async fn get_proposals(
             .await
         {
             Err(e) => {
-                println!("Failed to get proposals: {:?}", e);
+                eprintln!("Failed to get proposals: {:?}", e);
                 (vec![], 0)
             }
             Ok(result) => result,
@@ -95,7 +95,6 @@ async fn get_proposals(
     let nearblocks_unwrapped = match nearblocks_client
         .get_account_txns_by_pagination(
             contract.parse::<AccountId>().unwrap(),
-            // None,
             Some(timestamp_to_date_string(last_updated_timestamp)),
             Some(25),
             Some("asc".to_string()),
@@ -118,15 +117,9 @@ async fn get_proposals(
 
     match nearblocks_unwrapped.txns.last() {
         Some(transaction) => {
-            println!("Added proposals to database, now adding timestamp.");
-
-            println!("Transaction timestamp: {}", transaction.block_timestamp);
             let timestamp_nano: i64 = transaction.block_timestamp.parse().unwrap();
-
-            println!("Parsed tx timestamp: {}", timestamp_nano);
+            println!("Storing timestamp: {}", timestamp_nano);
             db.set_last_updated_timestamp(timestamp_nano).await.unwrap();
-
-            println!("Added timestamp to database, returning proposals...");
         }
         None => {
             println!("No transactions found")
@@ -138,7 +131,7 @@ async fn get_proposals(
         .await
     {
         Err(e) => {
-            println!("Failed to get proposals: {:?}", e);
+            eprintln!("Failed to get proposals: {:?}", e);
             (vec![], 0)
         }
         Ok(result) => result,
@@ -159,8 +152,13 @@ async fn test(contract: &State<Contract>) -> String {
 
 #[get("/timestamp/<timestamp>")]
 async fn set_timestamp(timestamp: i64, db: &State<DB>) -> Result<(), Status> {
-    db.set_last_updated_timestamp(timestamp).await.unwrap();
-    Ok(())
+    match db.set_last_updated_timestamp(timestamp).await {
+        Ok(()) => Ok(()),
+        Err(e) => {
+            eprintln!("Error updating timestamp: {:?}", e);
+            Err(Status::InternalServerError)
+        }
+    }
 }
 
 #[get("/timestamp")]

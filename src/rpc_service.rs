@@ -80,7 +80,7 @@ impl RpcService {
         match result {
             Ok(res) => Ok(res.data),
             Err(e) => {
-                println!("Error fetching proposal ids: {:?}", e);
+                eprintln!("Error fetching proposal ids: {:?}", e);
                 Err(rocket::http::Status::InternalServerError)
             }
         }

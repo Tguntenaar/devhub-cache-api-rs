@@ -48,7 +48,7 @@ impl ApiClient {
         );
         let endpoint = format!("v1/account/{}/txns", account_id);
         let url = self.base_url.clone() + &endpoint + &query_params;
-        println!("Fetching txns from nearblocks: {}", url);
+        println!("Fetching from {}", url);
         self.client
             .get(&url)
             .send()

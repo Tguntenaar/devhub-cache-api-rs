@@ -35,9 +35,8 @@ pub async fn process(transactions: &[Transaction], db: &State<DB>) -> Result<(),
                 "set_rfp_block_height_callback" => {
                     handle_set_rfp_block_height_callback(transaction.to_owned(), db).await
                 }
-
                 _ => {
-                    println!("Unhandled method: {:?}", action.method);
+                    // println!("Unhandled method: {:?}", action.method);
                     continue;
                 }
             };
@@ -70,6 +69,8 @@ async fn handle_set_rfp_block_height_callback(
 
     let rpc_service = RpcService::default();
     let id = args.clone().rfp.id.try_into().unwrap();
+
+    println!("stored rfp {}", id);
 
     let versioned_rfp_fallback: VersionedRFP = args.clone().rfp.into();
     let versioned_rfp = match rpc_service.get_rfp(id).await {
@@ -119,7 +120,7 @@ async fn handle_edit_rfp(transaction: Transaction, db: &State<DB>) -> Result<(),
         eprintln!("Failed to get RFP ID: {}", e);
         Status::InternalServerError
     })?;
-
+    println!("Updating rfp {}", id);
     let versioned_rfp = match rpc_service.get_rfp(id).await {
         Ok(rfp) => rfp.data,
         Err(e) => {
@@ -158,6 +159,7 @@ async fn handle_set_block_height_callback(
         serde_json::from_str(&json_args.unwrap_or_default()).unwrap();
 
     println!("Adding to the database... {}", args.clone().proposal.id);
+    // TODO move txs the the outside
     let mut tx = db.begin().await.map_err(|_e| Status::InternalServerError)?;
     DB::upsert_proposal(
         &mut tx,
@@ -169,6 +171,8 @@ async fn handle_set_block_height_callback(
 
     let rpc_service = RpcService::default();
     let id = args.clone().proposal.id.try_into().unwrap();
+
+    println!("stored proposal {}", id);
 
     let versioned_proposal_fallback: VersionedProposal = args.clone().proposal.into();
     let versioned_proposal = match rpc_service.get_proposal(id).await {
@@ -223,6 +227,7 @@ async fn handle_edit_proposal(
         eprintln!("Failed to get proposal ID: {}", e);
         Status::InternalServerError
     })?;
+    println!("Updating proposal {}", id);
     let versioned_proposal = match rpc_service.get_proposal(id).await {
         Ok(proposal) => proposal.data,
         Err(e) => {
