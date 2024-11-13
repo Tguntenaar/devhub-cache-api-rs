@@ -14,7 +14,11 @@ use std::convert::TryInto;
 
 pub async fn process(transactions: &[Transaction], db: &State<DB>) -> Result<(), Status> {
     for transaction in transactions.iter() {
-        if let Some(action) = transaction.actions.first() {
+        if let Some(action) = transaction
+            .actions
+            .as_ref()
+            .and_then(|actions| actions.first())
+        {
             let result = match action.method.as_deref().unwrap_or("") {
                 "set_block_height_callback" => {
                     handle_set_block_height_callback(transaction.to_owned(), db).await
@@ -51,7 +55,11 @@ async fn handle_set_rfp_block_height_callback(
     transaction: Transaction,
     db: &State<DB>,
 ) -> Result<(), Status> {
-    let action = transaction.clone().actions.first().unwrap().clone();
+    let action = transaction
+        .actions
+        .as_ref()
+        .and_then(|actions| actions.first())
+        .ok_or(Status::InternalServerError)?;
     let json_args = action.args.clone().unwrap_or_default();
 
     // println!("json_args: {:?}", json_args.clone());
@@ -102,7 +110,8 @@ async fn handle_set_rfp_block_height_callback(
 fn get_rfp_id(transaction: &Transaction) -> Result<i32, &'static str> {
     let action = transaction
         .actions
-        .first()
+        .as_ref()
+        .and_then(|actions| actions.first())
         .ok_or("No actions found in transaction")?;
 
     let args: PartialEditRFPArgs =
@@ -152,7 +161,12 @@ async fn handle_set_block_height_callback(
     transaction: Transaction,
     db: &State<DB>,
 ) -> Result<(), Status> {
-    let action = transaction.clone().actions.first().unwrap().clone();
+    let action = transaction
+        .actions
+        .as_ref()
+        .and_then(|actions| actions.first())
+        .ok_or(Status::InternalServerError)?;
+
     let json_args = action.args.clone();
 
     let args: SetBlockHeightCallbackArgs =
@@ -206,7 +220,8 @@ async fn handle_set_block_height_callback(
 fn get_proposal_id(transaction: &Transaction) -> Result<i32, &'static str> {
     let action = transaction
         .actions
-        .first()
+        .as_ref()
+        .and_then(|actions| actions.first())
         .ok_or("No actions found in transaction")?;
 
     let args: PartialEditProposalArgs = serde_json::from_str(&action.args.as_ref().unwrap())

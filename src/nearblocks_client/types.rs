@@ -15,7 +15,7 @@ pub struct Transaction {
     pub block_timestamp: String,
     pub block: BlockInfo,
     pub receipt_conversion_tokens_burnt: String,
-    pub actions: Vec<Action>,
+    pub actions: Option<Vec<Action>>,
     pub actions_agg: ActionsAgg,
     pub outcomes: Outcomes,
     pub outcomes_agg: OutcomesAgg,
