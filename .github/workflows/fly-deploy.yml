@@ -39,3 +39,13 @@ jobs:
       - run: flyctl deploy --remote-only -c fly.events.toml
     env:
       FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+
+  deploy-templar:
+    name: Deploy Templar
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: superfly/flyctl-actions/setup-flyctl@master
+      - run: flyctl deploy --remote-only -c fly.templar.toml
+    env:
+      FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
