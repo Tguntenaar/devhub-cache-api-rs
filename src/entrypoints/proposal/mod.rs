@@ -96,7 +96,7 @@ async fn get_proposals(
         .get_account_txns_by_pagination(
             contract.parse::<AccountId>().unwrap(),
             Some(timestamp_to_date_string(last_updated_timestamp)),
-            Some(25),
+            Some(50),
             Some("asc".to_string()),
         )
         .await

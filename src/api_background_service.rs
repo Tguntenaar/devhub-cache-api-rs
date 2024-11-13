@@ -39,7 +39,7 @@ impl ApiBackgroundService {
                     .get_account_txns_by_pagination(
                         contract.parse::<AccountId>().unwrap(),
                         None,
-                        None,
+                        Some(50),
                         None,
                     )
                     .await

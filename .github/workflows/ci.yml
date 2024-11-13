@@ -19,11 +19,9 @@ jobs:
       - name: Install Rust toolchain
         uses: dsherret/rust-toolchain-file@v1
 
-      - name: Install dependencies
-        run: sudo apt-get update -y && sudo apt-get install -y libssl-dev ca-certificates libudev-dev libusb-1.0-0-dev pkg-config libudev-dev build-essential
-
-      - name: Set up PostgreSQL database
+      - name: Install Dependencies and Set up PostgreSQL
         run: |
+          sudo apt-get update -y && sudo apt-get install -y libssl-dev ca-certificates libudev-dev libusb-1.0-0-dev pkg-config libudev-dev build-essential
           sudo service postgresql start
           sudo su - postgres -c "
             psql -c \"CREATE DATABASE devhub_cache_api_rs\"
@@ -31,31 +29,27 @@ jobs:
             psql -c \"ALTER ROLE devhub_cache_api_rs CREATEDB;\"
             psql -c \"GRANT ALL PRIVILEGES ON DATABASE devhub_cache_api_rs TO devhub_cache_api_rs;\"
           "
-      - name: Install SQlx
-        run: cargo install sqlx-cli
 
-      - name: Create database tables
-        run: cargo sqlx database create
+      - name: Install SQlx and cargo audit
+        run: cargo install sqlx-cli cargo-audit
+
+      - name: Create database and Run migrations
+        run: |
+          cargo sqlx database create
+          cargo sqlx migrate run
         env:
           DATABASE_URL: postgres://devhub_cache_api_rs:password@127.0.0.1:5432/devhub_cache_api_rs
 
-      - name: Build the project
-        run: cargo build --verbose
+      - name: Build and test the project
+        run: |
+          cargo build --verbose
+          cargo test --verbose
         env:
           SQLX_OFFLINE: true
-
-      - name: Run tests
-        env:
           CONTRACT: devhub.near
           DATABASE_URL: postgres://devhub_cache_api_rs:password@127.0.0.1:5432/devhub_cache_api_rs
-        run: cargo test --verbose
 
-      - name: Run clippy
-        run: cargo clippy -- -D warnings
-
-      - name: Install cargo audit
+      - name: Run clippy and audit
         run: |
-          cargo install cargo-audit
-
-      - name: Run cargo audit
-        run: cargo audit
+          cargo clippy -- -D warnings
+          cargo audit

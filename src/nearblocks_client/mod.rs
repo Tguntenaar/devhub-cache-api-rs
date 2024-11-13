@@ -43,7 +43,7 @@ impl ApiClient {
         let query_params = format!(
             "?after_date={}&page=1&per_page={}&order={}",
             since_date.unwrap_or("2024-10-10".to_string()),
-            limit.unwrap_or(10),
+            limit.unwrap_or(50),
             order.unwrap_or("desc".to_string())
         );
         let endpoint = format!("v1/account/{}/txns", account_id);
