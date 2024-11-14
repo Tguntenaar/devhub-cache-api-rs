@@ -307,7 +307,8 @@ impl DB {
     ) -> anyhow::Result<(Vec<ProposalWithLatestSnapshotView>, i64)> {
         let sql = r#"
             SELECT
-                ps.*
+                ps.*,
+                p.author_id
             FROM
                 proposals p
             INNER JOIN (
