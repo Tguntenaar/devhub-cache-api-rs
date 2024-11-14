@@ -8,41 +8,24 @@ on:
 
 jobs:
   deploy:
-    name: Deploy Devhub
+    name: Deploy Applications
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: superfly/flyctl-actions/setup-flyctl@master
-      - run: flyctl deploy --remote-only -c fly.toml
-    env:
-      FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
-
-  deploy-infra:
-    name: Deploy Infra
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: superfly/flyctl-actions/setup-flyctl@master
-      - run: flyctl deploy --remote-only -c fly.infra.toml
-    env:
-      FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
-
-  deploy-events:
-    name: Deploy Events
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: superfly/flyctl-actions/setup-flyctl@master
-      - run: flyctl deploy --remote-only -c fly.events.toml
-    env:
-      FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
-
-  deploy-templar:
-    name: Deploy Templar
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: superfly/flyctl-actions/setup-flyctl@master
-      - run: flyctl deploy --remote-only -c fly.templar.toml
-    env:
-      FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+      - name: Deploy Devhub
+        run: flyctl deploy --remote-only -c fly.toml
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+      - name: Deploy Infra
+        run: flyctl deploy --remote-only -c fly.infra.toml
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+      - name: Deploy Events
+        run: flyctl deploy --remote-only -c fly.events.toml
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+      - name: Deploy Templar
+        run: flyctl deploy --remote-only -c fly.templar.toml
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
