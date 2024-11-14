@@ -184,9 +184,9 @@ impl DB {
             "REVIEW" => Some("REVIEW".to_string()),
             "APPROVED" => Some("APPROVED".to_string()),
             "REJECTED" => Some("REJECTED".to_string()),
-            "CANCELED" => Some("CANCELLED".to_string()),
-            "APPROVED_CONDITIONALLY" => Some("CONDITIONALLY".to_string()),
-            "PAYMENT_PROCESSING" => Some("PAYMENT".to_string()),
+            "CANCELLED" => Some("CANCELLED".to_string()),
+            "CONDITIONAL" => Some("CONDITIONALLY".to_string()),
+            "PAYMENT" => Some("PAYMENT".to_string()),
             "FUNDED" => Some("FUNDED".to_string()),
             _ => None,
         });
