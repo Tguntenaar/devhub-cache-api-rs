@@ -303,7 +303,9 @@ impl DB {
 
     pub async fn search_proposals_with_latest_snapshot(
         &self,
-        input: String,
+        input: &str,
+        limit: i64,
+        offset: i64,
     ) -> anyhow::Result<(Vec<ProposalWithLatestSnapshotView>, i64)> {
         let sql = r#"
             SELECT
@@ -323,46 +325,77 @@ impl DB {
             INNER JOIN proposal_snapshots ps ON latest_snapshots.proposal_id = ps.proposal_id
                 AND latest_snapshots.max_ts = ps.ts
             WHERE
-                ps.name ILIKE '%' || $1 || '%'
-                OR ps.summary ILIKE '%' || $1 || '%'
-                OR ps.description ILIKE '%' || $1 || '%'
+                to_tsvector('english', coalesce(ps.name, '') || ' ' || coalesce(ps.summary, '') || ' ' || coalesce(ps.description, '')) @@ plainto_tsquery($1)
+            ORDER BY ps.ts DESC
+            LIMIT $2 OFFSET $3
         "#;
 
         let proposals = sqlx::query_as::<_, ProposalWithLatestSnapshotView>(sql)
-            .bind(&input)
+            .bind(input)
+            .bind(limit)
+            .bind(offset)
             .fetch_all(&self.0)
-            .await
-            .expect("Failed to fetch proposals.");
+            .await?;
 
         let total_count_sql = r#"
+            SELECT
+                COUNT(*)
+            FROM
+                proposals p
+            INNER JOIN (
                 SELECT
-                    COUNT(*)
+                    proposal_id,
+                    MAX(ts) AS max_ts
                 FROM
-                    proposals p
-                INNER JOIN (
-                    SELECT
-                        proposal_id,
-                        MAX(ts) AS max_ts
-                    FROM
-                        proposal_snapshots
-                    GROUP BY
-                        proposal_id
-                ) latest_snapshots ON p.id = latest_snapshots.proposal_id
-                INNER JOIN proposal_snapshots ps ON latest_snapshots.proposal_id = ps.proposal_id
-                    AND latest_snapshots.max_ts = ps.ts
-                WHERE
-                    ps.name ILIKE '%' || $1 || '%'
-                    OR ps.summary ILIKE '%' || $1 || '%'
-                    OR ps.description ILIKE '%' || $1 || '%'
-            "#;
+                    proposal_snapshots
+                GROUP BY
+                    proposal_id
+            ) latest_snapshots ON p.id = latest_snapshots.proposal_id
+            INNER JOIN proposal_snapshots ps ON latest_snapshots.proposal_id = ps.proposal_id
+                AND latest_snapshots.max_ts = ps.ts
+            WHERE
+                to_tsvector('english', coalesce(ps.name, '') || ' ' || coalesce(ps.summary, '') || ' ' || coalesce(ps.description, '')) @@ plainto_tsquery($1)
+        "#;
 
         let total_count = sqlx::query_scalar::<_, i64>(total_count_sql)
-            .bind(&input)
+            .bind(input)
             .fetch_one(&self.0)
-            .await
-            .expect("Failed to count proposals.");
+            .await?;
 
         Ok((proposals, total_count))
+    }
+
+    pub async fn get_proposal_with_latest_snapshot_by_id(
+        &self,
+        id: i32,
+    ) -> anyhow::Result<ProposalWithLatestSnapshotView> {
+        let sql = r#"
+              SELECT
+                  ps.*,
+                  p.author_id
+              FROM
+                  proposals p
+              INNER JOIN (
+                  SELECT
+                      proposal_id,
+                      MAX(ts) AS max_ts
+                  FROM
+                      proposal_snapshots
+                  GROUP BY
+                      proposal_id
+              ) latest_snapshots ON p.id = latest_snapshots.proposal_id
+              INNER JOIN proposal_snapshots ps ON latest_snapshots.proposal_id = ps.proposal_id
+                  AND latest_snapshots.max_ts = ps.ts
+              WHERE
+                  p.id = $1
+          "#;
+        // Start Generation Here
+        let proposal = sqlx::query_as::<_, ProposalWithLatestSnapshotView>(sql)
+            .bind(id)
+            .fetch_one(&self.0)
+            .await?;
+
+        Ok(proposal)
     }
 
     // Functions for RFPs
@@ -598,13 +631,14 @@ impl DB {
         Ok((recs, total_count))
     }
 
-    pub async fn search_rfps_with_latest_snapshot(
+    pub async fn get_rfp_with_latest_snapshot_by_id(
         &self,
-        input: String,
-    ) -> anyhow::Result<(Vec<RfpWithLatestSnapshotView>, i64)> {
-        let sql = r#"
+        id: i32,
+    ) -> anyhow::Result<RfpWithLatestSnapshotView> {
+        let sql = r#" 
             SELECT
-                ps.*
+                ps.*,
+                p.author_id
             FROM
                 rfps p
             INNER JOIN (
@@ -619,13 +653,51 @@ impl DB {
             INNER JOIN rfp_snapshots ps ON latest_snapshots.rfp_id = ps.rfp_id
                 AND latest_snapshots.max_ts = ps.ts
             WHERE
-                ps.name ILIKE '%' || $1 || '%'
-                OR ps.summary ILIKE '%' || $1 || '%'
-                OR ps.description ILIKE '%' || $1 || '%'
+                p.id = $1
+        "#;
+
+        let rfp = sqlx::query_as::<_, RfpWithLatestSnapshotView>(sql)
+            .bind(id)
+            .fetch_one(&self.0)
+            .await?;
+
+        Ok(rfp)
+    }
+
+    // TODO test rfp search with infra env variables
+    pub async fn search_rfps_with_latest_snapshot(
+        &self,
+        input: &str,
+        limit: i64,
+        offset: i64,
+    ) -> anyhow::Result<(Vec<RfpWithLatestSnapshotView>, i64)> {
+        let sql = r#"
+            SELECT
+                ps.*,
+                p.author_id
+            FROM
+                rfps p
+            INNER JOIN (
+                SELECT
+                    rfp_id,
+                    MAX(ts) AS max_ts
+                FROM
+                    rfp_snapshots
+                GROUP BY
+                    rfp_id
+            ) latest_snapshots ON p.id = latest_snapshots.rfp_id
+            INNER JOIN rfp_snapshots ps ON latest_snapshots.rfp_id = ps.rfp_id
+                AND latest_snapshots.max_ts = ps.ts
+            WHERE
+                to_tsvector('english', coalesce(ps.name, '') || ' ' || coalesce(ps.summary, '') || ' ' || coalesce(ps.description, '')) @@ plainto_tsquery($1)
+            ORDER BY ps.ts DESC
+            LIMIT $2 OFFSET $3
         "#;
 
         let rfps = sqlx::query_as::<_, RfpWithLatestSnapshotView>(sql)
-            .bind(&input)
+            .bind(input)
+            .bind(limit)
+            .bind(offset)
             .fetch_all(&self.0)
             .await?;
 
@@ -646,13 +718,11 @@ impl DB {
             INNER JOIN rfp_snapshots ps ON latest_snapshots.rfp_id = ps.rfp_id
                 AND latest_snapshots.max_ts = ps.ts
             WHERE
-                ps.name ILIKE '%' || $1 || '%'
-                OR ps.summary ILIKE '%' || $1 || '%'
-                OR ps.description ILIKE '%' || $1 || '%'
+                to_tsvector('english', coalesce(ps.name, '') || ' ' || coalesce(ps.summary, '') || ' ' || coalesce(ps.description, '')) @@ plainto_tsquery($1)
         "#;
 
         let total_count = sqlx::query_scalar::<_, i64>(total_count_sql)
-            .bind(&input)
+            .bind(input)
             .fetch_one(&self.0)
             .await?;
 

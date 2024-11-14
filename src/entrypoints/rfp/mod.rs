@@ -17,22 +17,26 @@ pub mod rfp_types;
 ))]
 #[get("/search/<input>")]
 async fn search(
-    input: String,
+    input: &str,
     db: &State<DB>,
 ) -> Option<Json<PaginatedResponse<RfpWithLatestSnapshotView>>> {
-    let (number, _) = separate_number_and_text(&input);
-    let result = if let Some(number) = number {
-        db.get_rfps_with_latest_snapshot(number as i64, "desc", 0, None)
-            .await
+    let limit = 10;
+    let (number_opt, _) = separate_number_and_text(input);
+    let result = if let Some(number) = number_opt {
+        match db.get_rfp_with_latest_snapshot_by_id(number).await {
+            Ok(rfp) => Ok((vec![rfp], 1)),
+            Err(e) => Err(e),
+        }
     } else {
-        db.search_rfps_with_latest_snapshot(input).await
+        db.search_rfps_with_latest_snapshot(input, limit, 0).await
     };
+
     match result {
         Ok((rfps, total)) => Some(Json(PaginatedResponse::new(
-            rfps.clone().into_iter().map(Into::into).collect(),
+            rfps.into_iter().map(Into::into).collect(),
             1,
-            rfps.len() as u64,
-            total as u64,
+            limit.try_into().unwrap(),
+            total.try_into().unwrap(),
         ))),
         Err(e) => {
             eprintln!("Error fetching rfps: {:?}", e);

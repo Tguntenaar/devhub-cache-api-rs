@@ -20,21 +20,25 @@ async fn search(
     input: String,
     db: &State<DB>,
 ) -> Option<Json<PaginatedResponse<ProposalWithLatestSnapshotView>>> {
+    let limit = 10;
     let (number, _) = separate_number_and_text(&input);
 
     let result = if let Some(number) = number {
-        db.get_proposals_with_latest_snapshot(number as i64, "desc", 0, None)
-            .await
+        match db.get_proposal_with_latest_snapshot_by_id(number).await {
+            Ok(proposal) => Ok((vec![proposal], 1)),
+            Err(e) => Err(e),
+        }
     } else {
-        db.search_proposals_with_latest_snapshot(input).await
+        db.search_proposals_with_latest_snapshot(&input, limit, 0)
+            .await
     };
 
     match result {
         Ok((proposals, total)) => Some(Json(PaginatedResponse::new(
             proposals.clone().into_iter().map(Into::into).collect(),
             1,
-            proposals.len() as u64,
-            total as u64,
+            limit.try_into().unwrap(),
+            total.try_into().unwrap(),
         ))),
         Err(e) => {
             eprintln!("Error fetching proposals: {:?}", e);
