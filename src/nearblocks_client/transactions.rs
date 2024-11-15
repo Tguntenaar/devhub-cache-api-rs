@@ -137,7 +137,7 @@ fn get_rfp_id(transaction: &Transaction) -> Result<i32, &'static str> {
         .ok_or("No actions found in transaction")?;
 
     let args: PartialEditRFPArgs =
-        serde_json::from_str(&action.args.as_ref().unwrap()).map_err(|e| {
+        serde_json::from_str(action.args.as_ref().unwrap()).map_err(|e| {
             eprintln!("Failed to parse JSON: {:?}", e);
             "Failed to parse proposal arguments"
         })?;
@@ -251,7 +251,7 @@ fn get_proposal_id(transaction: &Transaction) -> Result<i32, &'static str> {
         .and_then(|actions| actions.first())
         .ok_or("No actions found in transaction")?;
 
-    let args: PartialEditProposalArgs = serde_json::from_str(&action.args.as_ref().unwrap())
+    let args: PartialEditProposalArgs = serde_json::from_str(action.args.as_ref().unwrap())
         .map_err(|e| {
             eprintln!("Failed to parse JSON: {:?}", e);
             "Failed to parse proposal arguments"
