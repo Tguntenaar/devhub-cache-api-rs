@@ -2,7 +2,7 @@ use self::proposal_types::*;
 use crate::db::db_types::ProposalWithLatestSnapshotView;
 use crate::db::DB;
 use crate::rpc_service::RpcService;
-use crate::types::{Contract, PaginatedResponse};
+use crate::types::PaginatedResponse;
 use crate::{nearblocks_client, separate_number_and_text, timestamp_to_date_string};
 use devhub_shared::proposal::VersionedProposal;
 use near_account_id::AccountId;
@@ -60,7 +60,7 @@ async fn get_proposals(
     offset: Option<i64>,
     filters: Option<GetProposalFilters>,
     db: &State<DB>,
-    contract: &State<Contract>,
+    contract: &State<AccountId>,
 ) -> Option<Json<PaginatedResponse<ProposalWithLatestSnapshotView>>> {
     let current_timestamp_nano = chrono::Utc::now().timestamp_nanos_opt().unwrap();
     let last_updated_timestamp = db.get_last_updated_timestamp().await.unwrap();
@@ -98,7 +98,7 @@ async fn get_proposals(
 
     let nearblocks_unwrapped = match nearblocks_client
         .get_account_txns_by_pagination(
-            contract.parse::<AccountId>().unwrap(),
+            contract.inner().clone(),
             Some(timestamp_to_date_string(last_updated_timestamp)),
             Some(50),
             Some("asc".to_string()),
@@ -117,7 +117,12 @@ async fn get_proposals(
         nearblocks_unwrapped.clone().txns.len()
     );
 
-    let _ = nearblocks_client::transactions::process(&nearblocks_unwrapped.txns, db).await;
+    let _ = nearblocks_client::transactions::process(
+        &nearblocks_unwrapped.txns,
+        db,
+        contract.inner().clone(),
+    )
+    .await;
 
     match nearblocks_unwrapped.txns.last() {
         Some(transaction) => {
@@ -149,11 +154,6 @@ async fn get_proposals(
     )))
 }
 
-#[get("/test")]
-async fn test(contract: &State<Contract>) -> String {
-    format!("Welcome to {}", contract)
-}
-
 #[get("/timestamp/<timestamp>")]
 async fn set_timestamp(timestamp: i64, db: &State<DB>) -> Result<(), Status> {
     match db.set_last_updated_timestamp(timestamp).await {
@@ -173,8 +173,11 @@ async fn get_timestamp(db: &State<DB>) -> Result<Json<i64>, Status> {
 
 #[utoipa::path(get, path = "/proposals/{proposal_id}")]
 #[get("/<proposal_id>")]
-async fn get_proposal(proposal_id: i32) -> Result<Json<VersionedProposal>, rocket::http::Status> {
-    let rpc_service = RpcService::default();
+async fn get_proposal(
+    proposal_id: i32,
+    contract: &State<AccountId>,
+) -> Result<Json<VersionedProposal>, rocket::http::Status> {
+    let rpc_service = RpcService::new(contract.inner().clone());
     // We should cache this in the future
     // We should also add rate limiting to this endpoint
     match rpc_service.get_proposal(proposal_id).await {
@@ -186,17 +189,16 @@ async fn get_proposal(proposal_id: i32) -> Result<Json<VersionedProposal>, rocke
     }
 }
 
-pub fn stage(contract: Contract) -> rocket::fairing::AdHoc {
+pub fn stage() -> rocket::fairing::AdHoc {
     // rocket
     rocket::fairing::AdHoc::on_ignite("Proposal Stage", |rocket| async {
         println!("Proposal stage on ignite!");
 
-        rocket.manage(contract).mount(
+        rocket.mount(
             "/proposals/",
             rocket::routes![
                 get_proposals,
                 get_proposal,
-                test,
                 set_timestamp,
                 get_timestamp,
                 search

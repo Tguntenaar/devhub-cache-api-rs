@@ -2,7 +2,7 @@ use self::rfp_types::*;
 use crate::db::db_types::RfpWithLatestSnapshotView;
 use crate::db::DB;
 use crate::rpc_service::RpcService;
-use crate::types::{Contract, PaginatedResponse};
+use crate::types::PaginatedResponse;
 use crate::{nearblocks_client, separate_number_and_text, timestamp_to_date_string};
 use devhub_shared::rfp::VersionedRFP;
 use near_account_id::AccountId;
@@ -58,7 +58,7 @@ async fn get_rfps(
     offset: Option<i64>,
     filters: Option<GetRfpFilters>,
     db: &State<DB>,
-    contract: &State<Contract>,
+    contract: &State<AccountId>,
 ) -> Option<Json<PaginatedResponse<RfpWithLatestSnapshotView>>> {
     let current_timestamp_nano = chrono::Utc::now().timestamp_nanos_opt().unwrap();
     let last_updated_timestamp = db.get_last_updated_timestamp().await.unwrap();
@@ -95,26 +95,25 @@ async fn get_rfps(
 
     let nearblocks_unwrapped = match nearblocks_client
         .get_account_txns_by_pagination(
-            contract.parse::<AccountId>().unwrap(),
+            contract.inner().clone(),
             Some(timestamp_to_date_string(last_updated_timestamp)),
             Some(50),
             Some("asc".to_string()),
         )
         .await
     {
-        Ok(nearblocks_unwrapped) => {
-            println!(
-                "Fetched method calls from nearblocks {:?}",
-                nearblocks_unwrapped
-            );
-            nearblocks_unwrapped
-        }
+        Ok(nearblocks_unwrapped) => nearblocks_unwrapped,
         Err(e) => {
             eprintln!("Failed to fetch rfp from nearblocks: {:?}", e);
             nearblocks_client::ApiResponse { txns: vec![] }
         }
     };
-    let _ = nearblocks_client::transactions::process(&nearblocks_unwrapped.txns, db).await;
+    let _ = nearblocks_client::transactions::process(
+        &nearblocks_unwrapped.txns,
+        db,
+        contract.inner().clone(),
+    )
+    .await;
 
     match nearblocks_unwrapped.txns.last() {
         Some(transaction) => {
@@ -148,9 +147,12 @@ async fn get_rfps(
 
 #[utoipa::path(get, path = "/rfps/{rfp_id}")]
 #[get("/<rfp_id>")]
-async fn get_rfp(rfp_id: i32) -> Result<Json<VersionedRFP>, Status> {
+async fn get_rfp(rfp_id: i32, contract: &State<AccountId>) -> Result<Json<VersionedRFP>, Status> {
     // TODO Get cached rfp
-    match RpcService::default().get_rfp(rfp_id).await {
+    match RpcService::new(contract.inner().clone())
+        .get_rfp(rfp_id)
+        .await
+    {
         Ok(rfp) => Ok(Json(rfp.data)),
         Err(e) => {
             eprintln!("Failed to get rfp from RPC: {:?}", e);

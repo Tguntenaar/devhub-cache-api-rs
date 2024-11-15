@@ -27,13 +27,10 @@ impl Default for RpcService {
 }
 
 impl RpcService {
-    pub fn new(account_id: Option<AccountId>) -> Self {
-        match account_id {
-            Some(id) => Self {
-                network: NetworkConfig::mainnet(),
-                contract: Contract(id),
-            },
-            None => Self::default(),
+    pub fn new(id: AccountId) -> Self {
+        Self {
+            network: NetworkConfig::mainnet(),
+            contract: Contract(id),
         }
     }
 

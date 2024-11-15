@@ -30,7 +30,8 @@ pub fn separate_number_and_text(s: &str) -> (Option<i32>, String) {
 }
 
 use crate::entrypoints::ApiDoc;
-use rocket::{catch, catchers, get, launch, routes};
+use near_account_id::AccountId;
+use rocket::{catch, catchers, get, launch, routes, State};
 use rocket_cors::AllowedOrigins;
 use types::Contract;
 use utoipa::OpenApi;
@@ -48,6 +49,11 @@ fn index() -> &'static str {
 #[get("/robots.txt")]
 fn robots() -> &'static str {
     "User-agent: *\nDisallow: /"
+}
+
+#[get("/")]
+async fn test(contract: &State<AccountId>) -> String {
+    format!("Welcome to {}", contract.inner())
 }
 
 #[catch(422)]
@@ -107,11 +113,15 @@ fn rocket() -> _ {
         .merge(rocket::Config::default())
         .merge(("databases.my_db.url", env.database_url));
 
+    let contract: AccountId = env.contract.parse::<AccountId>().unwrap();
+
     rocket::custom(figment)
         .attach(cors)
         .attach(db::stage())
         .mount("/", routes![robots, index])
-        .attach(entrypoints::stage(env.contract))
+        .manage(contract)
+        .mount("/test", rocket::routes![test])
+        .attach(entrypoints::stage())
         .mount(
             "/",
             SwaggerUi::new("/swagger-ui/<_..>").url("/api-docs/openapi.json", ApiDoc::openapi()),

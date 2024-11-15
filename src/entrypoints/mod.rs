@@ -3,7 +3,7 @@ use utoipa::OpenApi;
 pub mod proposal;
 pub mod rfp;
 use crate::db::db_types::ProposalWithLatestSnapshotView;
-use crate::types::{Contract, PaginatedResponse};
+use crate::types::PaginatedResponse;
 #[derive(OpenApi)]
 #[openapi(
     info(
@@ -24,10 +24,8 @@ use crate::types::{Contract, PaginatedResponse};
 )]
 pub struct ApiDoc;
 
-pub fn stage(contract: Contract) -> AdHoc {
+pub fn stage() -> AdHoc {
     AdHoc::on_ignite("Installing entrypoints", |rocket| async {
-        rocket
-            .attach(proposal::stage(contract))
-            .attach(rfp::stage())
+        rocket.attach(proposal::stage()).attach(rfp::stage())
     })
 }

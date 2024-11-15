@@ -9,10 +9,15 @@ use crate::nearblocks_client::types::Transaction;
 use crate::rpc_service::RpcService;
 use devhub_shared::proposal::VersionedProposal;
 use devhub_shared::rfp::VersionedRFP;
+use near_account_id::AccountId;
 use rocket::{http::Status, State};
 use std::convert::TryInto;
 
-pub async fn process(transactions: &[Transaction], db: &State<DB>) -> Result<(), Status> {
+pub async fn process(
+    transactions: &[Transaction],
+    db: &State<DB>,
+    contract: AccountId,
+) -> Result<(), Status> {
     for transaction in transactions.iter() {
         if let Some(action) = transaction
             .actions
@@ -21,23 +26,39 @@ pub async fn process(transactions: &[Transaction], db: &State<DB>) -> Result<(),
         {
             let result = match action.method.as_deref().unwrap_or("") {
                 "set_block_height_callback" => {
-                    handle_set_block_height_callback(transaction.to_owned(), db).await
+                    handle_set_block_height_callback(transaction.to_owned(), db, contract.clone())
+                        .await
                 }
-                "edit_proposal" => handle_edit_proposal(transaction.to_owned(), db).await,
-                "edit_proposal_timeline" => handle_edit_proposal(transaction.to_owned(), db).await,
+                "edit_proposal" => {
+                    handle_edit_proposal(transaction.to_owned(), db, contract.clone()).await
+                }
+                "edit_proposal_timeline" => {
+                    handle_edit_proposal(transaction.to_owned(), db, contract.clone()).await
+                }
                 "edit_proposal_versioned_timeline" => {
-                    handle_edit_proposal(transaction.to_owned(), db).await
+                    handle_edit_proposal(transaction.to_owned(), db, contract.clone()).await
                 }
                 "edit_proposal_linked_rfp" => {
-                    handle_edit_proposal(transaction.to_owned(), db).await
+                    handle_edit_proposal(transaction.to_owned(), db, contract.clone()).await
                 }
-                "edit_proposal_internal" => handle_edit_proposal(transaction.to_owned(), db).await,
-                "edit_rfp_timeline" => handle_edit_rfp(transaction.to_owned(), db).await,
-                "edit_rfp" => handle_edit_rfp(transaction.to_owned(), db).await,
-                "edit_rfp_internal" => handle_edit_rfp(transaction.to_owned(), db).await,
-                "cancel_rfp" => handle_edit_rfp(transaction.to_owned(), db).await,
+                "edit_proposal_internal" => {
+                    handle_edit_proposal(transaction.to_owned(), db, contract.clone()).await
+                }
+                "edit_rfp_timeline" => {
+                    handle_edit_rfp(transaction.to_owned(), db, contract.clone()).await
+                }
+                "edit_rfp" => handle_edit_rfp(transaction.to_owned(), db, contract.clone()).await,
+                "edit_rfp_internal" => {
+                    handle_edit_rfp(transaction.to_owned(), db, contract.clone()).await
+                }
+                "cancel_rfp" => handle_edit_rfp(transaction.to_owned(), db, contract.clone()).await,
                 "set_rfp_block_height_callback" => {
-                    handle_set_rfp_block_height_callback(transaction.to_owned(), db).await
+                    handle_set_rfp_block_height_callback(
+                        transaction.to_owned(),
+                        db,
+                        contract.clone(),
+                    )
+                    .await
                 }
                 _ => {
                     // println!("Unhandled method: {:?}", action.method);
@@ -54,6 +75,7 @@ pub async fn process(transactions: &[Transaction], db: &State<DB>) -> Result<(),
 async fn handle_set_rfp_block_height_callback(
     transaction: Transaction,
     db: &State<DB>,
+    contract: AccountId,
 ) -> Result<(), Status> {
     let action = transaction
         .actions
@@ -75,7 +97,7 @@ async fn handle_set_rfp_block_height_callback(
     .await
     .unwrap();
 
-    let rpc_service = RpcService::default();
+    let rpc_service = RpcService::new(contract);
     let id = args.clone().rfp.id.try_into().unwrap();
 
     println!("stored rfp {}", id);
@@ -123,8 +145,12 @@ fn get_rfp_id(transaction: &Transaction) -> Result<i32, &'static str> {
     Ok(args.id)
 }
 
-async fn handle_edit_rfp(transaction: Transaction, db: &State<DB>) -> Result<(), Status> {
-    let rpc_service = RpcService::default();
+async fn handle_edit_rfp(
+    transaction: Transaction,
+    db: &State<DB>,
+    contract: AccountId,
+) -> Result<(), Status> {
+    let rpc_service = RpcService::new(contract);
     let id = get_rfp_id(&transaction).map_err(|e| {
         eprintln!("Failed to get RFP ID: {}", e);
         Status::InternalServerError
@@ -160,6 +186,7 @@ async fn handle_edit_rfp(transaction: Transaction, db: &State<DB>) -> Result<(),
 async fn handle_set_block_height_callback(
     transaction: Transaction,
     db: &State<DB>,
+    contract: AccountId,
 ) -> Result<(), Status> {
     let action = transaction
         .actions
@@ -183,7 +210,7 @@ async fn handle_set_block_height_callback(
     .await
     .unwrap();
 
-    let rpc_service = RpcService::default();
+    let rpc_service = RpcService::new(contract);
     let id = args.clone().proposal.id.try_into().unwrap();
 
     println!("stored proposal {}", id);
@@ -236,8 +263,9 @@ fn get_proposal_id(transaction: &Transaction) -> Result<i32, &'static str> {
 async fn handle_edit_proposal(
     transaction: Transaction,
     db: &State<DB>,
+    contract: AccountId,
 ) -> Result<(), rocket::http::Status> {
-    let rpc_service = RpcService::default();
+    let rpc_service = RpcService::new(contract);
     let id = get_proposal_id(&transaction).map_err(|e| {
         eprintln!("Failed to get proposal ID: {}", e);
         Status::InternalServerError
