@@ -80,6 +80,7 @@ fn bad_request() -> &'static str {
 pub struct Env {
     contract: Contract,
     database_url: String,
+    nearblocks_api_key: String,
 }
 
 #[launch]
@@ -114,12 +115,14 @@ fn rocket() -> _ {
         .merge(("databases.my_db.url", env.database_url));
 
     let contract: AccountId = env.contract.parse::<AccountId>().unwrap();
+    let nearblocks_api_key = env.nearblocks_api_key;
 
     rocket::custom(figment)
         .attach(cors)
         .attach(db::stage())
         .mount("/", routes![robots, index])
         .manage(contract)
+        .manage(nearblocks_api_key)
         .mount("/test", rocket::routes![test])
         .attach(entrypoints::stage())
         .mount(

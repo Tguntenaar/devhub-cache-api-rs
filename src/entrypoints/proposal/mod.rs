@@ -62,6 +62,7 @@ async fn get_proposals(
     filters: Option<GetProposalFilters>,
     db: &State<DB>,
     contract: &State<AccountId>,
+    nearblocks_api_key: &State<String>,
 ) -> Option<Json<PaginatedResponse<ProposalWithLatestSnapshotView>>> {
     let current_timestamp_nano = chrono::Utc::now().timestamp_nanos_opt().unwrap();
     let last_updated_timestamp = db.get_last_updated_timestamp().await.unwrap();
@@ -95,7 +96,7 @@ async fn get_proposals(
 
     println!("Fetching not yet indexed method calls from nearblocks");
 
-    let nearblocks_client = nearblocks_client::ApiClient::default();
+    let nearblocks_client = nearblocks_client::ApiClient::new(nearblocks_api_key.inner().clone());
 
     let nearblocks_unwrapped = match nearblocks_client
         .get_account_txns_by_pagination(

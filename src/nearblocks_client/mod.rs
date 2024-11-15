@@ -17,6 +17,7 @@ pub struct ApiResponse {
 pub struct ApiClient {
     base_url: String,
     client: Client,
+    api_key: String,
 }
 
 impl Default for ApiClient {
@@ -24,13 +25,18 @@ impl Default for ApiClient {
         Self {
             base_url: "https://api.nearblocks.io/".to_string(),
             client: Client::new(),
+            api_key: "".to_string(),
         }
     }
 }
 
 impl ApiClient {
-    pub fn new() -> Self {
-        Self::default()
+    pub fn new(api_key: String) -> Self {
+        Self {
+            base_url: "https://api.nearblocks.io/".to_string(),
+            client: Client::new(),
+            api_key,
+        }
     }
 
     pub async fn get_account_txns_by_pagination(
@@ -51,6 +57,7 @@ impl ApiClient {
         println!("Fetching from {}", url);
         self.client
             .get(&url)
+            .header("Authorization", format!("Bearer {}", self.api_key))
             .send()
             .await?
             .json::<ApiResponse>()

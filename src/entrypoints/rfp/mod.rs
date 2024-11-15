@@ -61,6 +61,7 @@ async fn get_rfps(
     filters: Option<GetRfpFilters>,
     db: &State<DB>,
     contract: &State<AccountId>,
+    nearblocks_api_key: &State<String>,
 ) -> Option<Json<PaginatedResponse<RfpWithLatestSnapshotView>>> {
     let current_timestamp_nano = chrono::Utc::now().timestamp_nanos_opt().unwrap();
     let last_updated_timestamp = db.get_last_updated_timestamp().await.unwrap();
@@ -93,7 +94,7 @@ async fn get_rfps(
     }
     println!("Fetching not yet indexed method calls from nearblocks");
 
-    let nearblocks_client = nearblocks_client::ApiClient::default();
+    let nearblocks_client = nearblocks_client::ApiClient::new(nearblocks_api_key.inner().clone());
 
     let nearblocks_unwrapped = match nearblocks_client
         .get_account_txns_by_pagination(
@@ -157,7 +158,7 @@ async fn get_rfp(rfp_id: i32, contract: &State<AccountId>) -> Result<Json<Versio
     {
         Ok(rfp) => Ok(Json(rfp.data)),
         Err(e) => {
-            eprintln!("Failed to get rfp from RPC: {:?}", e);
+            eprintln!("In /rfp/rfp_id; Failed to get rfp from RPC: {:?}", e);
             Err(Status::InternalServerError)
         }
     }
