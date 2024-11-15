@@ -1,15 +1,14 @@
 # # See https://fly.io/docs/app-guides/continuous-deployment-with-github-actions/
 
-# name: Fly Deploy
-# on:
-#   push:
-#     branches:
-#       - main
-
-# jobs:
-#   deploy:
-#     name: Deploy Applications
-#     runs-on: ubuntu-latest
+name: Fly Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    name: Deploy Applications
+    runs-on: ubuntu-latest
 #     steps:
 #       - uses: actions/checkout@v4
 #       - uses: superfly/flyctl-actions/setup-flyctl@master

@@ -10,6 +10,12 @@ pub struct PartialEditRFPArgs {
     pub id: i32,
 }
 
+#[derive(Deserialize)]
+pub struct PartialEditRFPTimelineArgs {
+    pub id: i32,
+    pub timeline: String,
+}
+
 #[derive(Clone, Debug, FromForm, ToSchema)]
 pub struct GetRfpFilters {
     pub category: Option<String>,

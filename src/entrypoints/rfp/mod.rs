@@ -1,5 +1,5 @@
 use self::rfp_types::*;
-use crate::db::db_types::RfpWithLatestSnapshotView;
+use crate::db::db_types::{RfpSnapshotRecord, RfpWithLatestSnapshotView};
 use crate::db::DB;
 use crate::rpc_service::RpcService;
 use crate::types::PaginatedResponse;
@@ -147,7 +147,7 @@ async fn get_rfps(
     )))
 }
 
-#[utoipa::path(get, path = "/rfps/{rfp_id}")]
+#[utoipa::path(get, path = "/rfp/{rfp_id}")]
 #[get("/<rfp_id>")]
 async fn get_rfp(rfp_id: i32, contract: &State<AccountId>) -> Result<Json<VersionedRFP>, Status> {
     // TODO Get cached rfp
@@ -163,10 +163,31 @@ async fn get_rfp(rfp_id: i32, contract: &State<AccountId>) -> Result<Json<Versio
     }
 }
 
+#[utoipa::path(get, path = "/{rfp_id}/snapshots")]
+#[get("/<rfp_id>/snapshots")]
+async fn get_rfp_with_all_snapshots(
+    rfp_id: i32,
+    db: &State<DB>,
+) -> Result<Json<Vec<RfpSnapshotRecord>>, Status> {
+    match db.get_rfp_with_all_snapshots(rfp_id).await {
+        Err(e) => {
+            eprintln!("Failed to get rfps: {:?}", e);
+            // Ok(Json(vec![]))
+            Err(Status::InternalServerError)
+        }
+        Ok(result) => Ok(Json(result)),
+    }
+}
+
 pub fn stage() -> rocket::fairing::AdHoc {
     rocket::fairing::AdHoc::on_ignite("Rfp Stage", |rocket| async {
         println!("Rfp stage on ignite!");
 
-        rocket.mount("/rfps/", rocket::routes![get_rfps, get_rfp, search])
+        rocket
+            .mount("/rfps/", rocket::routes![get_rfps, search])
+            .mount(
+                "/rfp/",
+                rocket::routes![get_rfp, get_rfp_with_all_snapshots],
+            )
     })
 }

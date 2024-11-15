@@ -662,12 +662,48 @@ impl DB {
                 p.id = $1
         "#;
 
-        let rfp = sqlx::query_as::<_, RfpWithLatestSnapshotView>(sql)
+        let result = sqlx::query_as::<_, RfpWithLatestSnapshotView>(sql)
             .bind(id)
             .fetch_one(&self.0)
-            .await?;
+            .await;
 
-        Ok(rfp)
+        match result {
+            Ok(rfp) => Ok(rfp),
+            Err(e) => {
+                eprintln!("Failed to get rfp with latest snapshot: {:?}", e);
+                Err(anyhow::anyhow!("Failed to get rfp with latest snapshot"))
+            }
+        }
+    }
+
+    pub async fn get_rfp_with_all_snapshots(
+        &self,
+        id: i32,
+    ) -> anyhow::Result<Vec<RfpSnapshotRecord>> {
+        // Group by ts
+        // Build the SQL query for fetching data with the validated order clause
+        let data_sql = r#"
+          SELECT
+              rfp.*
+          FROM
+              rfp_snapshots rfp
+          WHERE
+             rfp.rfp_id = $1
+          "#;
+
+        // Execute the data query
+        let result = sqlx::query_as::<_, RfpSnapshotRecord>(&data_sql)
+            .bind(id)
+            .fetch_all(&self.0)
+            .await;
+
+        match result {
+            Ok(recs) => Ok(recs),
+            Err(e) => {
+                eprintln!("Failed to get rfp with all snapshots: {:?}", e);
+                Err(anyhow::anyhow!("Failed to get rfp with all snapshots"))
+            }
+        }
     }
 
     pub async fn search_rfps_with_latest_snapshot(

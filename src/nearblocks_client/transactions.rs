@@ -44,15 +44,25 @@ pub async fn process(
                 "edit_proposal_internal" => {
                     handle_edit_proposal(transaction.to_owned(), db, contract.clone()).await
                 }
+                // TODO: find out which one I need to index the content from and not call the RPC for the latest snapshot
                 "edit_rfp_timeline" => {
+                    println!("edit_rfp_timeline");
+                    handle_edit_rfp_timeline(transaction.to_owned(), db).await
+                }
+                "edit_rfp" => {
+                    println!("edit_rfp");
                     handle_edit_rfp(transaction.to_owned(), db, contract.clone()).await
                 }
-                "edit_rfp" => handle_edit_rfp(transaction.to_owned(), db, contract.clone()).await,
                 "edit_rfp_internal" => {
+                    println!("edit_rfp_internal");
                     handle_edit_rfp(transaction.to_owned(), db, contract.clone()).await
                 }
-                "cancel_rfp" => handle_edit_rfp(transaction.to_owned(), db, contract.clone()).await,
+                "cancel_rfp" => {
+                    println!("cancel_rfp");
+                    handle_edit_rfp(transaction.to_owned(), db, contract.clone()).await
+                }
                 "set_rfp_block_height_callback" => {
+                    println!("set_rfp_block_height_callback");
                     handle_set_rfp_block_height_callback(
                         transaction.to_owned(),
                         db,
@@ -77,6 +87,15 @@ async fn handle_set_rfp_block_height_callback(
     db: &State<DB>,
     contract: AccountId,
 ) -> Result<(), Status> {
+    if !transaction.receipt_outcome.status {
+        eprintln!(
+            "RFP receipt outcome status is {:?}",
+            transaction.receipt_outcome.status
+        );
+        eprintln!("On transaction: {:?}", transaction);
+        return Ok(());
+    }
+
     let action = transaction
         .actions
         .as_ref()
@@ -183,11 +202,72 @@ async fn handle_edit_rfp(
     Ok(())
 }
 
+async fn handle_edit_rfp_timeline(transaction: Transaction, db: &State<DB>) -> Result<(), Status> {
+    let action = transaction
+        .actions
+        .as_ref()
+        .and_then(|actions| actions.first())
+        .ok_or(Status::InternalServerError)?;
+
+    let args: PartialEditRFPTimelineArgs = serde_json::from_str(action.args.as_ref().unwrap())
+        .map_err(|e| {
+            eprintln!("Failed to parse JSON: {:?}", e);
+            "Failed to parse proposal arguments"
+        })
+        .map_err(|_e| Status::InternalServerError)?;
+
+    // Get snapshot from database with id
+    let snapshot = db
+        .get_rfp_with_latest_snapshot_by_id(args.id)
+        .await
+        .map_err(|_e| Status::InternalServerError)?;
+    // Insert snapshot with new timeline and timestamp
+    let mut tx = db.begin().await.map_err(|_e| Status::InternalServerError)?;
+
+    let snapshot = RfpSnapshotRecord {
+        rfp_id: args.id,
+        block_height: transaction.block.block_height as i64,
+        ts: transaction.block_timestamp.parse().unwrap(),
+        editor_id: transaction.predecessor_account_id,
+        social_db_post_block_height: snapshot.social_db_post_block_height,
+        labels: snapshot.labels,
+        linked_proposals: snapshot.linked_proposals,
+        rfp_version: "V0".to_string(),
+        rfp_body_version: "V0".to_string(),
+        name: snapshot.name,
+        category: snapshot.category,
+        summary: snapshot.summary,
+        description: snapshot.description,
+        timeline: Some(args.timeline.parse().unwrap()),
+        submission_deadline: snapshot.submission_deadline,
+        views: snapshot.views,
+    };
+
+    DB::insert_rfp_snapshot(&mut tx, &snapshot)
+        .await
+        .map_err(|_e| Status::InternalServerError)?;
+
+    tx.commit()
+        .await
+        .map_err(|_e| Status::InternalServerError)?;
+
+    Ok(())
+}
+
 async fn handle_set_block_height_callback(
     transaction: Transaction,
     db: &State<DB>,
     contract: AccountId,
 ) -> Result<(), Status> {
+    if !transaction.receipt_outcome.status {
+        eprintln!(
+            "Proposal receipt outcome status is {:?}",
+            transaction.receipt_outcome.status
+        );
+        eprintln!("On transaction: {:?}", transaction);
+        return Ok(());
+    }
+
     let action = transaction
         .actions
         .as_ref()
