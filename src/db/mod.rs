@@ -326,6 +326,9 @@ impl DB {
                 AND latest_snapshots.max_ts = ps.ts
             WHERE
                 to_tsvector('english', coalesce(ps.name, '') || ' ' || coalesce(ps.summary, '') || ' ' || coalesce(ps.description, '')) @@ plainto_tsquery($1)
+                OR lower(ps.name) ILIKE $1
+                OR lower(ps.summary) ILIKE $1
+                OR lower(ps.description) ILIKE $1
             ORDER BY ps.ts DESC
             LIMIT $2 OFFSET $3
         "#;
@@ -355,6 +358,9 @@ impl DB {
                 AND latest_snapshots.max_ts = ps.ts
             WHERE
                 to_tsvector('english', coalesce(ps.name, '') || ' ' || coalesce(ps.summary, '') || ' ' || coalesce(ps.description, '')) @@ plainto_tsquery($1)
+                OR lower(ps.name) ILIKE $1
+                OR lower(ps.summary) ILIKE $1
+                OR lower(ps.description) ILIKE $1
         "#;
 
         let total_count = sqlx::query_scalar::<_, i64>(total_count_sql)
@@ -664,7 +670,6 @@ impl DB {
         Ok(rfp)
     }
 
-    // TODO test rfp search with infra env variables
     pub async fn search_rfps_with_latest_snapshot(
         &self,
         input: &str,
@@ -690,6 +695,9 @@ impl DB {
                 AND latest_snapshots.max_ts = ps.ts
             WHERE
                 to_tsvector('english', coalesce(ps.name, '') || ' ' || coalesce(ps.summary, '') || ' ' || coalesce(ps.description, '')) @@ plainto_tsquery($1)
+                OR lower(ps.name) ILIKE $1
+                OR lower(ps.summary) ILIKE $1
+                OR lower(ps.description) ILIKE $1
             ORDER BY ps.ts DESC
             LIMIT $2 OFFSET $3
         "#;
@@ -719,6 +727,9 @@ impl DB {
                 AND latest_snapshots.max_ts = ps.ts
             WHERE
                 to_tsvector('english', coalesce(ps.name, '') || ' ' || coalesce(ps.summary, '') || ' ' || coalesce(ps.description, '')) @@ plainto_tsquery($1)
+                OR lower(ps.name) ILIKE $1
+                OR lower(ps.summary) ILIKE $1
+                OR lower(ps.description) ILIKE $1
         "#;
 
         let total_count = sqlx::query_scalar::<_, i64>(total_count_sql)

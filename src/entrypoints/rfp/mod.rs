@@ -28,7 +28,9 @@ async fn search(
             Err(e) => Err(e),
         }
     } else {
-        db.search_rfps_with_latest_snapshot(input, limit, 0).await
+        let search_input = format!("%{}%", input.to_lowercase());
+        db.search_rfps_with_latest_snapshot(&search_input, limit, 0)
+            .await
     };
 
     match result {
