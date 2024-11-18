@@ -9,8 +9,11 @@ use chrono::DateTime;
 use regex::Regex;
 
 pub fn timestamp_to_date_string(timestamp: i64) -> String {
+    // A day in nanos
+    let day_in_nanos = 86400000000000;
+
     // Convert the timestamp to a NaiveDateTime
-    let datetime = DateTime::from_timestamp_nanos(timestamp);
+    let datetime = DateTime::from_timestamp_nanos(timestamp - day_in_nanos);
 
     // Format the NaiveDateTime to a string in YYYY-MM-DD format
     datetime.format("%Y-%m-%d").to_string()
