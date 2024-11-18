@@ -1,5 +1,5 @@
 use self::proposal_types::*;
-use crate::db::db_types::ProposalWithLatestSnapshotView;
+use crate::db::db_types::{ProposalSnapshotRecord, ProposalWithLatestSnapshotView};
 use crate::db::DB;
 use crate::rpc_service::RpcService;
 use crate::types::PaginatedResponse;
@@ -156,6 +156,22 @@ async fn get_proposals(
     )))
 }
 
+#[utoipa::path(get, path = "/proposal/{proposal_id}/snapshots")]
+#[get("/<proposal_id>/snapshots")]
+async fn get_proposal_with_all_snapshots(
+    proposal_id: i32,
+    db: &State<DB>,
+) -> Result<Json<Vec<ProposalSnapshotRecord>>, Status> {
+    match db.get_proposal_with_all_snapshots(proposal_id).await {
+        Err(e) => {
+            eprintln!("Failed to get proposal snapshots: {:?}", e);
+            // Ok(Json(vec![]))
+            Err(Status::InternalServerError)
+        }
+        Ok(result) => Ok(Json(result)),
+    }
+}
+
 #[get("/timestamp/<timestamp>")]
 async fn set_timestamp(timestamp: i64, db: &State<DB>) -> Result<(), Status> {
     match db.set_last_updated_timestamp(timestamp).await {
@@ -173,7 +189,7 @@ async fn get_timestamp(db: &State<DB>) -> Result<Json<i64>, Status> {
     Ok(Json(timestamp))
 }
 
-#[utoipa::path(get, path = "/proposals/{proposal_id}")]
+#[utoipa::path(get, path = "/proposal/{proposal_id}")]
 #[get("/<proposal_id>")]
 async fn get_proposal(
     proposal_id: i32,
@@ -196,15 +212,14 @@ pub fn stage() -> rocket::fairing::AdHoc {
     rocket::fairing::AdHoc::on_ignite("Proposal Stage", |rocket| async {
         println!("Proposal stage on ignite!");
 
-        rocket.mount(
-            "/proposals/",
-            rocket::routes![
-                get_proposals,
-                get_proposal,
-                set_timestamp,
-                get_timestamp,
-                search
-            ],
-        )
+        rocket
+            .mount(
+                "/proposals/",
+                rocket::routes![get_proposals, set_timestamp, get_timestamp, search],
+            )
+            .mount(
+                "/proposal/",
+                rocket::routes![get_proposal, get_proposal_with_all_snapshots],
+            )
     })
 }

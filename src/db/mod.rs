@@ -692,7 +692,7 @@ impl DB {
           "#;
 
         // Execute the data query
-        let result = sqlx::query_as::<_, RfpSnapshotRecord>(&data_sql)
+        let result = sqlx::query_as::<_, RfpSnapshotRecord>(data_sql)
             .bind(id)
             .fetch_all(&self.0)
             .await;
@@ -702,6 +702,36 @@ impl DB {
             Err(e) => {
                 eprintln!("Failed to get rfp with all snapshots: {:?}", e);
                 Err(anyhow::anyhow!("Failed to get rfp with all snapshots"))
+            }
+        }
+    }
+
+    pub async fn get_proposal_with_all_snapshots(
+        &self,
+        id: i32,
+    ) -> anyhow::Result<Vec<ProposalSnapshotRecord>> {
+        // Group by ts
+        // Build the SQL query for fetching data with the validated order clause
+        let data_sql = r#"
+        SELECT
+            proposal.*
+        FROM  
+            proposal_snapshots proposal
+        WHERE
+           proposal.proposal_id = $1
+        "#;
+
+        // Execute the data query
+        let result = sqlx::query_as::<_, ProposalSnapshotRecord>(data_sql)
+            .bind(id)
+            .fetch_all(&self.0)
+            .await;
+
+        match result {
+            Ok(recs) => Ok(recs),
+            Err(e) => {
+                eprintln!("Failed to get proposal with all snapshots: {:?}", e);
+                Err(anyhow::anyhow!("Failed to get proposal with all snapshots"))
             }
         }
     }
