@@ -178,7 +178,7 @@ async fn get_rfp(rfp_id: i32, contract: &State<AccountId>) -> Result<Json<Versio
 #[utoipa::path(get, path = "/{rfp_id}/snapshots")]
 #[get("/<rfp_id>/snapshots")]
 async fn get_rfp_with_snapshots(
-    rfp_id: i32,
+    rfp_id: i64,
     db: &State<DB>,
 ) -> Result<Json<Vec<RfpSnapshotRecord>>, Status> {
     match db.get_rfp_with_all_snapshots(rfp_id).await {

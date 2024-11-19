@@ -74,7 +74,10 @@ impl DB {
         after_date: i64,
         after_block: i64,
     ) -> Result<(), Error> {
-        println!("Storing timestamp: {}", after_date);
+        println!(
+            "Storing timestamp: {} and block: {}",
+            after_date, after_block
+        );
         println!("Storing date: {}", timestamp_to_date_string(after_date));
         sqlx::query!(
             r#"
@@ -686,8 +689,8 @@ impl DB {
 
     pub async fn get_rfp_with_all_snapshots(
         &self,
-        id: i32,
-    ) -> anyhow::Result<(Vec<RfpSnapshotRecord>, i32)> {
+        id: i64,
+    ) -> anyhow::Result<(Vec<RfpSnapshotRecord>, i64)> {
         // Group by ts
         // Build the SQL query for fetching data with the validated order clause
         let data_sql = r#"
