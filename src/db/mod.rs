@@ -1,12 +1,13 @@
-use crate::entrypoints::{
-    proposal::proposal_types::GetProposalFilters, rfp::rfp_types::GetRfpFilters,
+use crate::{
+    entrypoints::{proposal::proposal_types::GetProposalFilters, rfp::rfp_types::GetRfpFilters},
+    timestamp_to_date_string,
 };
 use rocket::{
     fairing::{self, AdHoc},
     Build, Rocket,
 };
 use rocket_db_pools::Database;
-use sqlx::{migrate, query, query_scalar, Error, PgPool, Postgres, Transaction};
+use sqlx::{migrate, query, Error, PgPool, Postgres, Transaction};
 
 #[derive(Database, Clone, Debug)]
 #[database("my_db")]
@@ -57,23 +58,30 @@ impl DB {
         }
     }
 
-    pub async fn get_last_updated_timestamp(&self) -> Result<i64, Error> {
-        let rec = query_scalar!(
+    pub async fn get_last_updated_info(&self) -> Result<(i64, i64), Error> {
+        let rec = query!(
             r#"
-            SELECT after_date FROM after_date
+            SELECT after_date, after_block FROM last_updated_info
             "#
         )
         .fetch_one(&self.0)
         .await?;
-        Ok(rec)
+        Ok((rec.after_date, rec.after_block))
     }
 
-    pub async fn set_last_updated_timestamp(&self, after_date: i64) -> Result<(), Error> {
+    pub async fn set_last_updated_info(
+        &self,
+        after_date: i64,
+        after_block: i64,
+    ) -> Result<(), Error> {
+        println!("Storing timestamp: {}", after_date);
+        println!("Storing date: {}", timestamp_to_date_string(after_date));
         sqlx::query!(
             r#"
-            UPDATE after_date SET after_date = $1
+            UPDATE last_updated_info SET after_date = $1, after_block = $2
             "#,
-            after_date
+            after_date,
+            after_block
         )
         .execute(&self.0)
         .await?;
@@ -679,7 +687,7 @@ impl DB {
     pub async fn get_rfp_with_all_snapshots(
         &self,
         id: i32,
-    ) -> anyhow::Result<Vec<RfpSnapshotRecord>> {
+    ) -> anyhow::Result<(Vec<RfpSnapshotRecord>, i32)> {
         // Group by ts
         // Build the SQL query for fetching data with the validated order clause
         let data_sql = r#"
@@ -697,8 +705,20 @@ impl DB {
             .fetch_all(&self.0)
             .await;
 
+        let count_sql = r#"
+            SELECT COUNT(*)
+            FROM rfp_snapshots
+            WHERE rfp_id = $1
+        "#;
+
+        // Build the SQL query for counting total records
+        let total_count = sqlx::query_scalar(count_sql)
+            .bind(id)
+            .fetch_one(&self.0)
+            .await?;
+
         match result {
-            Ok(recs) => Ok(recs),
+            Ok(recs) => Ok((recs, total_count)),
             Err(e) => {
                 eprintln!("Failed to get rfp with all snapshots: {:?}", e);
                 Err(anyhow::anyhow!("Failed to get rfp with all snapshots"))

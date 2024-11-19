@@ -44,10 +44,9 @@ pub async fn process(
                 "edit_proposal_internal" => {
                     handle_edit_proposal(transaction.to_owned(), db, contract.clone()).await
                 }
-                // TODO: find out which one I need to index the content from and not call the RPC for the latest snapshot
                 "edit_rfp_timeline" => {
                     println!("edit_rfp_timeline");
-                    handle_edit_rfp_timeline(transaction.to_owned(), db).await
+                    handle_edit_rfp(transaction.to_owned(), db, contract.clone()).await
                 }
                 "edit_rfp" => {
                     println!("edit_rfp");
@@ -136,7 +135,7 @@ async fn handle_set_rfp_block_height_callback(
     let snapshot = RfpSnapshotRecord::from_contract_rfp(
         versioned_rfp.into(),
         transaction.block_timestamp,
-        transaction.block.block_height as i64,
+        transaction.block.block_height,
     );
 
     DB::insert_rfp_snapshot(&mut tx, &snapshot).await.unwrap();
@@ -175,8 +174,11 @@ async fn handle_edit_rfp(
         Status::InternalServerError
     })?;
     println!("Updating rfp {}", id);
-    let versioned_rfp = match rpc_service.get_rfp(id).await {
-        Ok(rfp) => rfp.data,
+    let versioned_rfp = match rpc_service
+        .get_rfp_on_block(id, transaction.block.block_height)
+        .await
+    {
+        Ok(rfp) => rfp,
         Err(e) => {
             eprintln!("Failed to get rfp from RPC: {:?}", e);
             return Err(Status::InternalServerError);
@@ -188,60 +190,8 @@ async fn handle_edit_rfp(
     let snapshot = RfpSnapshotRecord::from_contract_rfp(
         versioned_rfp.into(),
         transaction.block_timestamp,
-        transaction.block.block_height as i64,
+        transaction.block.block_height,
     );
-
-    DB::insert_rfp_snapshot(&mut tx, &snapshot)
-        .await
-        .map_err(|_e| Status::InternalServerError)?;
-
-    tx.commit()
-        .await
-        .map_err(|_e| Status::InternalServerError)?;
-
-    Ok(())
-}
-
-async fn handle_edit_rfp_timeline(transaction: Transaction, db: &State<DB>) -> Result<(), Status> {
-    let action = transaction
-        .actions
-        .as_ref()
-        .and_then(|actions| actions.first())
-        .ok_or(Status::InternalServerError)?;
-
-    let args: PartialEditRFPTimelineArgs = serde_json::from_str(action.args.as_ref().unwrap())
-        .map_err(|e| {
-            eprintln!("Failed to parse JSON: {:?}", e);
-            "Failed to parse proposal arguments"
-        })
-        .map_err(|_e| Status::InternalServerError)?;
-
-    // Get snapshot from database with id
-    let snapshot = db
-        .get_rfp_with_latest_snapshot_by_id(args.id)
-        .await
-        .map_err(|_e| Status::InternalServerError)?;
-    // Insert snapshot with new timeline and timestamp
-    let mut tx = db.begin().await.map_err(|_e| Status::InternalServerError)?;
-
-    let snapshot = RfpSnapshotRecord {
-        rfp_id: args.id,
-        block_height: transaction.block.block_height as i64,
-        ts: transaction.block_timestamp.parse().unwrap(),
-        editor_id: transaction.predecessor_account_id,
-        social_db_post_block_height: snapshot.social_db_post_block_height,
-        labels: snapshot.labels,
-        linked_proposals: snapshot.linked_proposals,
-        rfp_version: "V0".to_string(),
-        rfp_body_version: "V0".to_string(),
-        name: snapshot.name,
-        category: snapshot.category,
-        summary: snapshot.summary,
-        description: snapshot.description,
-        timeline: Some(args.timeline.parse().unwrap()),
-        submission_deadline: snapshot.submission_deadline,
-        views: snapshot.views,
-    };
 
     DB::insert_rfp_snapshot(&mut tx, &snapshot)
         .await
@@ -310,7 +260,7 @@ async fn handle_set_block_height_callback(
     let snapshot = ProposalSnapshotRecord::from_contract_proposal(
         versioned_proposal.into(),
         transaction.block_timestamp,
-        transaction.block.block_height as i64,
+        transaction.block.block_height,
     );
 
     DB::insert_proposal_snapshot(&mut tx, &snapshot)
@@ -364,7 +314,7 @@ async fn handle_edit_proposal(
     let snapshot = ProposalSnapshotRecord::from_contract_proposal(
         versioned_proposal.into(),
         transaction.block_timestamp,
-        transaction.block.block_height as i64,
+        transaction.block.block_height,
     );
 
     DB::insert_proposal_snapshot(&mut tx, &snapshot)

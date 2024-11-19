@@ -3,7 +3,7 @@ use crate::db::db_types::{ProposalSnapshotRecord, ProposalWithLatestSnapshotView
 use crate::db::DB;
 use crate::rpc_service::RpcService;
 use crate::types::PaginatedResponse;
-use crate::{nearblocks_client, separate_number_and_text, timestamp_to_date_string};
+use crate::{nearblocks_client, separate_number_and_text};
 use devhub_shared::proposal::VersionedProposal;
 use near_account_id::AccountId;
 use rocket::serde::json::Json;
@@ -65,13 +65,13 @@ async fn get_proposals(
     nearblocks_api_key: &State<String>,
 ) -> Option<Json<PaginatedResponse<ProposalWithLatestSnapshotView>>> {
     let current_timestamp_nano = chrono::Utc::now().timestamp_nanos_opt().unwrap();
-    let last_updated_timestamp = db.get_last_updated_timestamp().await.unwrap();
+    let last_updated_info = db.get_last_updated_info().await.unwrap();
 
     let order = order.unwrap_or("id_desc");
     let limit = limit.unwrap_or(10);
     let offset = offset.unwrap_or(0);
 
-    if current_timestamp_nano - last_updated_timestamp
+    if current_timestamp_nano - last_updated_info.0
         < chrono::Duration::seconds(60).num_nanoseconds().unwrap()
     {
         println!("Returning cached proposals");
@@ -101,9 +101,10 @@ async fn get_proposals(
     let nearblocks_unwrapped = match nearblocks_client
         .get_account_txns_by_pagination(
             contract.inner().clone(),
-            Some(timestamp_to_date_string(last_updated_timestamp)),
+            Some(last_updated_info.1),
             Some(50),
             Some("asc".to_string()),
+            Some(1),
         )
         .await
     {
@@ -129,8 +130,10 @@ async fn get_proposals(
     match nearblocks_unwrapped.txns.last() {
         Some(transaction) => {
             let timestamp_nano: i64 = transaction.block_timestamp.parse().unwrap();
-            println!("Storing timestamp: {}", timestamp_nano);
-            db.set_last_updated_timestamp(timestamp_nano).await.unwrap();
+
+            db.set_last_updated_info(timestamp_nano, transaction.block.block_height)
+                .await
+                .unwrap();
         }
         None => {
             println!("No transactions found")
@@ -172,9 +175,9 @@ async fn get_proposal_with_all_snapshots(
     }
 }
 
-#[get("/timestamp/<timestamp>")]
-async fn set_timestamp(timestamp: i64, db: &State<DB>) -> Result<(), Status> {
-    match db.set_last_updated_timestamp(timestamp).await {
+#[get("/info/<block_height>")]
+async fn set_timestamp(block_height: i64, db: &State<DB>) -> Result<(), Status> {
+    match db.set_last_updated_info(0, block_height).await {
         Ok(()) => Ok(()),
         Err(e) => {
             eprintln!("Error updating timestamp: {:?}", e);
@@ -183,10 +186,10 @@ async fn set_timestamp(timestamp: i64, db: &State<DB>) -> Result<(), Status> {
     }
 }
 
-#[get("/timestamp")]
-async fn get_timestamp(db: &State<DB>) -> Result<Json<i64>, Status> {
-    let timestamp = db.get_last_updated_timestamp().await.unwrap();
-    Ok(Json(timestamp))
+#[get("/info")]
+async fn get_timestamp(db: &State<DB>) -> Result<Json<(i64, i64)>, Status> {
+    let (timestamp, block_height) = db.get_last_updated_info().await.unwrap();
+    Ok(Json((timestamp, block_height)))
 }
 
 #[utoipa::path(get, path = "/proposal/{proposal_id}")]

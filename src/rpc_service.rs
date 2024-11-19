@@ -2,7 +2,7 @@ use base64::{engine::general_purpose, Engine as _}; // Add this import
 use devhub_shared::proposal::VersionedProposal;
 use devhub_shared::rfp::VersionedRFP;
 use near_account_id::AccountId;
-use near_api::{types::Data, Contract, NetworkConfig};
+use near_api::{prelude::*, types::reference::Reference, types::Data};
 use near_jsonrpc_client::methods::query::RpcQueryRequest;
 use rocket::http::Status;
 use rocket::serde::json::json;
@@ -104,7 +104,7 @@ impl RpcService {
     pub async fn get_proposal_on_block(
         &self,
         proposal_id: i32,
-        block_id: String,
+        block_id: i64,
     ) -> Result<VersionedProposal, Status> {
         let args = json!({ "proposal_id": proposal_id });
         let args_encoded = general_purpose::STANDARD.encode(args.to_string().as_bytes());
@@ -129,20 +129,19 @@ impl RpcService {
     pub async fn get_rfp_on_block(
         &self,
         rfp_id: i32,
-        block_id: String,
+        block_id: i64,
     ) -> Result<VersionedRFP, Status> {
-        let args = json!({ "rfp_id": rfp_id });
-        let args_encoded = general_purpose::STANDARD.encode(args.to_string().as_bytes());
-        let result = self
-            .query("get_rfp".to_string(), block_id, args_encoded)
-            .await;
+        let result: Result<Data<VersionedRFP>, near_api::errors::QueryError<RpcQueryRequest>> =
+            self.contract
+                .call_function("get_rfp", json!({ "rfp_id": rfp_id }))
+                .unwrap()
+                .read_only()
+                .at(Reference::AtBlock(block_id as u64))
+                .fetch_from(&self.network)
+                .await;
 
         match result {
-            Ok(res) => {
-                let rfp: VersionedRFP = serde_json::from_str(&res).unwrap();
-                // println!("Deserialized rfp: {:?}", rfp);
-                Ok(rfp)
-            }
+            Ok(res) => Ok(res.data),
             Err(e) => {
                 eprintln!("Failed to get rfp on block: {:?}", e);
                 Err(Status::InternalServerError)
@@ -153,7 +152,7 @@ impl RpcService {
     pub async fn query(
         &self,
         method_name: String,
-        block_id: String,
+        block_id: i64,
         args_base64: String,
     ) -> Result<String, Status> {
         let args = json!({
@@ -163,6 +162,8 @@ impl RpcService {
           "method_name": method_name,
           "args_base64": args_base64
         });
+
+        println!("Querying args: {:?}", args);
 
         let result: Result<Data<QueryResponse>, _> = self
             .contract

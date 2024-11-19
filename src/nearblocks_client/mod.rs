@@ -42,15 +42,17 @@ impl ApiClient {
     pub async fn get_account_txns_by_pagination(
         &self,
         account_id: AccountId,
-        since_date: Option<String>,
+        since_block: Option<i64>,
         limit: Option<i32>,
         order: Option<String>,
+        page: Option<i32>,
     ) -> Result<ApiResponse, reqwest::Error> {
         let query_params = format!(
-            "?after_date={}&page=1&per_page={}&order={}",
-            since_date.unwrap_or("2024-10-10".to_string()),
+            "?after_block={}&per_page={}&order={}&page={}",
+            since_block.unwrap_or(0),
             limit.unwrap_or(50),
-            order.unwrap_or("desc".to_string())
+            order.unwrap_or("desc".to_string()),
+            page.unwrap_or(1)
         );
         let endpoint = format!("v1/account/{}/txns", account_id);
         let url = self.base_url.clone() + &endpoint + &query_params;

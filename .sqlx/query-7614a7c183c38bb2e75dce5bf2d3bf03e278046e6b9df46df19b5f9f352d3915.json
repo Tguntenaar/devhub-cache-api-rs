@@ -1,0 +1,15 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n            UPDATE last_updated_info SET after_date = $1, after_block = $2\n            ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Int8",
+        "Int8"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "7614a7c183c38bb2e75dce5bf2d3bf03e278046e6b9df46df19b5f9f352d3915"
+}

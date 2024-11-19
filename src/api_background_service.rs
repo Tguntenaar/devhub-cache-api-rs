@@ -41,6 +41,7 @@ impl ApiBackgroundService {
                         None,
                         Some(50),
                         None,
+                        Some(1),
                     )
                     .await
                 {

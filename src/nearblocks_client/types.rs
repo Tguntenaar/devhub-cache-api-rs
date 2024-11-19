@@ -38,7 +38,7 @@ pub struct ReceiptOutcome {
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct BlockInfo {
-    pub block_height: f64,
+    pub block_height: i64,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]

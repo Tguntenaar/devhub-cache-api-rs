@@ -64,13 +64,19 @@ async fn get_rfps(
     nearblocks_api_key: &State<String>,
 ) -> Option<Json<PaginatedResponse<RfpWithLatestSnapshotView>>> {
     let current_timestamp_nano = chrono::Utc::now().timestamp_nanos_opt().unwrap();
-    let last_updated_timestamp = db.get_last_updated_timestamp().await.unwrap();
+    let last_updated_info = db.get_last_updated_info().await.unwrap();
+
+    // A day in nanos
+    println!(
+        "Last updated timestamp date: {}",
+        timestamp_to_date_string(last_updated_info.0)
+    );
 
     let order = order.unwrap_or("id_desc");
     let limit = limit.unwrap_or(10);
     let offset = offset.unwrap_or(0);
 
-    if current_timestamp_nano - last_updated_timestamp
+    if current_timestamp_nano - last_updated_info.0
         < chrono::Duration::seconds(60).num_nanoseconds().unwrap()
     {
         println!("Returning cached proposals");
@@ -99,9 +105,10 @@ async fn get_rfps(
     let nearblocks_unwrapped = match nearblocks_client
         .get_account_txns_by_pagination(
             contract.inner().clone(),
-            Some(timestamp_to_date_string(last_updated_timestamp)),
+            Some(last_updated_info.1),
             Some(50),
             Some("asc".to_string()),
+            Some(1),
         )
         .await
     {
@@ -111,6 +118,7 @@ async fn get_rfps(
             nearblocks_client::ApiResponse { txns: vec![] }
         }
     };
+
     let _ = nearblocks_client::transactions::process(
         &nearblocks_unwrapped.txns,
         db,
@@ -118,11 +126,14 @@ async fn get_rfps(
     )
     .await;
 
+    // TODO: Check if the last transaction is the same day as the last updated timestamp
+    // If it is, then we need to use the cursor from the nearblocks response
     match nearblocks_unwrapped.txns.last() {
         Some(transaction) => {
             let timestamp_nano: i64 = transaction.block_timestamp.parse().unwrap();
-            println!("Storing timestamp: {}", timestamp_nano);
-            db.set_last_updated_timestamp(timestamp_nano).await.unwrap();
+            db.set_last_updated_info(timestamp_nano, transaction.block.block_height)
+                .await
+                .unwrap();
         }
         None => {
             println!("No transactions found")
@@ -166,7 +177,7 @@ async fn get_rfp(rfp_id: i32, contract: &State<AccountId>) -> Result<Json<Versio
 
 #[utoipa::path(get, path = "/{rfp_id}/snapshots")]
 #[get("/<rfp_id>/snapshots")]
-async fn get_rfp_with_all_snapshots(
+async fn get_rfp_with_snapshots(
     rfp_id: i32,
     db: &State<DB>,
 ) -> Result<Json<Vec<RfpSnapshotRecord>>, Status> {
@@ -176,7 +187,7 @@ async fn get_rfp_with_all_snapshots(
             // Ok(Json(vec![]))
             Err(Status::InternalServerError)
         }
-        Ok(result) => Ok(Json(result)),
+        Ok((result, _)) => Ok(Json(result)),
     }
 }
 
@@ -186,9 +197,6 @@ pub fn stage() -> rocket::fairing::AdHoc {
 
         rocket
             .mount("/rfps/", rocket::routes![get_rfps, search])
-            .mount(
-                "/rfp/",
-                rocket::routes![get_rfp, get_rfp_with_all_snapshots],
-            )
+            .mount("/rfp/", rocket::routes![get_rfp, get_rfp_with_snapshots])
     })
 }
