@@ -1,0 +1,26 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n            SELECT after_date, after_block FROM last_updated_info\n            ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "after_date",
+        "type_info": "Int8"
+      },
+      {
+        "ordinal": 1,
+        "name": "after_block",
+        "type_info": "Int8"
+      }
+    ],
+    "parameters": {
+      "Left": []
+    },
+    "nullable": [
+      false,
+      false
+    ]
+  },
+  "hash": "a27a7db324a999ef7fe62b3eb3472358b32821e7605e4837fe0a242c4c988980"
+}
