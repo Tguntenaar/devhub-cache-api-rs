@@ -91,6 +91,7 @@ fn rocket() -> _ {
 
     let allowed_origins = AllowedOrigins::some_exact(&[
         "http://localhost:3000",
+        "http://localhost:8080",
         "http://127.0.0.1:8080",
         "https://dev.near.org",
         "https://near.social",
