@@ -163,7 +163,7 @@ impl ProposalBodyFields for VersionedProposalBody {
 pub trait FromContractProposal {
     fn from_contract_proposal(
         proposal: ContractProposal,
-        timestamp: String,
+        timestamp: i64,
         block_height: i64,
     ) -> Self;
 }
@@ -171,13 +171,13 @@ pub trait FromContractProposal {
 impl FromContractProposal for ProposalSnapshotRecord {
     fn from_contract_proposal(
         proposal: ContractProposal,
-        timestamp: String,
+        timestamp: i64,
         block_height: i64,
     ) -> Self {
         ProposalSnapshotRecord {
             proposal_id: proposal.id as i32,
             block_height,
-            ts: timestamp.parse::<i64>().unwrap_or_default(),
+            ts: timestamp,
             editor_id: proposal.snapshot.editor_id.to_string(),
             social_db_post_block_height: proposal.social_db_post_block_height as i64,
             labels: serde_json::Value::from(Vec::from_iter(

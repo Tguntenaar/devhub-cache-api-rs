@@ -25,7 +25,7 @@ pub struct Transaction {
 pub struct Block {
     pub block_hash: String,
     pub block_height: f64,
-    pub block_timestamp: f64,
+    pub block_timestamp: i64,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]

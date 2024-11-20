@@ -1,5 +1,5 @@
 use crate::db::db_types::RfpSnapshotRecord;
-use devhub_shared::rfp::RFP as ContractRFP;
+pub use devhub_shared::rfp::RFP as ContractRFP;
 use devhub_shared::rfp::{VersionedRFPBody, RFP};
 use rocket::serde::{Deserialize, Serialize};
 use rocket::FromForm;
@@ -32,19 +32,19 @@ pub struct SetRfpBlockHeightCallbackArgs {
 }
 
 pub trait FromContractProposal {
-    fn from_contract_rfp(rfp: ContractRFP, timestamp: String, block_height: i64) -> Self;
+    fn from_contract_rfp(rfp: ContractRFP, timestamp: i64, block_height: i64) -> Self;
 }
 
 pub trait FromContractRFP {
-    fn from_contract_rfp(rfp: ContractRFP, timestamp: String, block_height: i64) -> Self;
+    fn from_contract_rfp(rfp: ContractRFP, timestamp: i64, block_height: i64) -> Self;
 }
 
 impl FromContractRFP for RfpSnapshotRecord {
-    fn from_contract_rfp(rfp: ContractRFP, timestamp: String, block_height: i64) -> Self {
+    fn from_contract_rfp(rfp: ContractRFP, timestamp: i64, block_height: i64) -> Self {
         RfpSnapshotRecord {
             rfp_id: rfp.id as i32,
             block_height,
-            ts: timestamp.parse::<i64>().unwrap_or_default(),
+            ts: timestamp,
             editor_id: rfp.snapshot.editor_id.to_string(),
             social_db_post_block_height: rfp.social_db_post_block_height as i64,
             labels: serde_json::Value::from(Vec::from_iter(rfp.snapshot.labels.iter().cloned())),

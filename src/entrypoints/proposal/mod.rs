@@ -6,6 +6,7 @@ use crate::types::PaginatedResponse;
 use crate::{nearblocks_client, separate_number_and_text};
 use devhub_shared::proposal::VersionedProposal;
 use near_account_id::AccountId;
+use rocket::delete;
 use rocket::serde::json::Json;
 use rocket::{get, http::Status, State};
 use std::convert::TryInto;
@@ -129,7 +130,7 @@ async fn get_proposals(
 
     match nearblocks_unwrapped.txns.last() {
         Some(transaction) => {
-            let timestamp_nano: i64 = transaction.block_timestamp.parse().unwrap();
+            let timestamp_nano: i64 = transaction.receipt_block.block_timestamp;
 
             db.set_last_updated_info(timestamp_nano, transaction.block.block_height)
                 .await
@@ -186,6 +187,18 @@ async fn set_timestamp(block_height: i64, db: &State<DB>) -> Result<(), Status> 
     }
 }
 
+// TODO remove after testing
+#[get("/info/clean")]
+async fn clean(db: &State<DB>) -> Result<(), Status> {
+    match db.remove_all_snapshots().await {
+        Ok(()) => Ok(()),
+        Err(e) => {
+            eprintln!("Error cleaning snapshots: {:?}", e);
+            Err(Status::InternalServerError)
+        }
+    }
+}
+
 #[get("/info")]
 async fn get_timestamp(db: &State<DB>) -> Result<Json<(i64, i64)>, Status> {
     let (timestamp, block_height) = db.get_last_updated_info().await.unwrap();
@@ -210,6 +223,18 @@ async fn get_proposal(
     }
 }
 
+// TODO Remove this once we go in production or put it behind authentication or a flag
+#[delete("/<proposal_id>/snapshots")]
+async fn remove_proposal_snapshots_by_id(proposal_id: i32, db: &State<DB>) -> Result<(), Status> {
+    match db.remove_proposal_snapshots_by_id(proposal_id).await {
+        Ok(_) => Ok(()),
+        Err(e) => {
+            eprintln!("Failed to remove proposal snapshots: {:?}", e);
+            Err(Status::InternalServerError)
+        }
+    }
+}
+
 pub fn stage() -> rocket::fairing::AdHoc {
     // rocket
     rocket::fairing::AdHoc::on_ignite("Proposal Stage", |rocket| async {
@@ -218,11 +243,15 @@ pub fn stage() -> rocket::fairing::AdHoc {
         rocket
             .mount(
                 "/proposals/",
-                rocket::routes![get_proposals, set_timestamp, get_timestamp, search],
+                rocket::routes![get_proposals, set_timestamp, get_timestamp, search, clean],
             )
             .mount(
                 "/proposal/",
-                rocket::routes![get_proposal, get_proposal_with_all_snapshots],
+                rocket::routes![
+                    get_proposal,
+                    get_proposal_with_all_snapshots,
+                    remove_proposal_snapshots_by_id,
+                ],
             )
     })
 }

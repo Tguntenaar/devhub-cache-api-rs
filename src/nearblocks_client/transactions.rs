@@ -134,7 +134,7 @@ async fn handle_set_rfp_block_height_callback(
 
     let snapshot = RfpSnapshotRecord::from_contract_rfp(
         versioned_rfp.into(),
-        transaction.block_timestamp,
+        transaction.receipt_block.block_timestamp,
         transaction.block.block_height,
     );
 
@@ -187,9 +187,15 @@ async fn handle_edit_rfp(
 
     let mut tx = db.begin().await.map_err(|_e| Status::InternalServerError)?;
 
+    let contract_rfp: ContractRFP = versioned_rfp.clone().into();
+    println!(
+        "RFP {} timestamp {}",
+        contract_rfp.id, transaction.receipt_block.block_timestamp
+    );
+
     let snapshot = RfpSnapshotRecord::from_contract_rfp(
         versioned_rfp.into(),
-        transaction.block_timestamp,
+        transaction.receipt_block.block_timestamp,
         transaction.block.block_height,
     );
 
@@ -259,7 +265,7 @@ async fn handle_set_block_height_callback(
 
     let snapshot = ProposalSnapshotRecord::from_contract_proposal(
         versioned_proposal.into(),
-        transaction.block_timestamp,
+        transaction.receipt_block.block_timestamp,
         transaction.block.block_height,
     );
 
@@ -301,8 +307,11 @@ async fn handle_edit_proposal(
         Status::InternalServerError
     })?;
     println!("Updating proposal {}", id);
-    let versioned_proposal = match rpc_service.get_proposal(id).await {
-        Ok(proposal) => proposal.data,
+    let versioned_proposal = match rpc_service
+        .get_proposal_on_block(id, transaction.block.block_height)
+        .await
+    {
+        Ok(proposal) => proposal,
         Err(e) => {
             eprintln!("Failed to get proposal from RPC: {:?}", e);
             return Err(Status::InternalServerError);
@@ -313,7 +322,7 @@ async fn handle_edit_proposal(
 
     let snapshot = ProposalSnapshotRecord::from_contract_proposal(
         versioned_proposal.into(),
-        transaction.block_timestamp,
+        transaction.receipt_block.block_timestamp,
         transaction.block.block_height,
     );
 

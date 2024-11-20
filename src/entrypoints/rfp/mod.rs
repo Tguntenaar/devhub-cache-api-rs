@@ -7,7 +7,7 @@ use crate::{nearblocks_client, separate_number_and_text, timestamp_to_date_strin
 use devhub_shared::rfp::VersionedRFP;
 use near_account_id::AccountId;
 use rocket::serde::json::Json;
-use rocket::{get, http::Status, State};
+use rocket::{delete, get, http::Status, State};
 use std::convert::TryInto;
 pub mod rfp_types;
 
@@ -130,7 +130,7 @@ async fn get_rfps(
     // If it is, then we need to use the cursor from the nearblocks response
     match nearblocks_unwrapped.txns.last() {
         Some(transaction) => {
-            let timestamp_nano: i64 = transaction.block_timestamp.parse().unwrap();
+            let timestamp_nano: i64 = transaction.receipt_block.block_timestamp;
             db.set_last_updated_info(timestamp_nano, transaction.block.block_height)
                 .await
                 .unwrap();
@@ -191,12 +191,31 @@ async fn get_rfp_with_snapshots(
     }
 }
 
+// TODO Remove this once we go in production or put it behind authentication or a flag
+#[delete("/<rfp_id>/snapshots")]
+async fn remove_rfp_snapshots_by_rfp_id(rfp_id: i32, db: &State<DB>) -> Result<(), Status> {
+    match db.remove_rfp_snapshots_by_rfp_id(rfp_id).await {
+        Ok(_) => Ok(()),
+        Err(e) => {
+            eprintln!("Failed to remove rfp snapshots: {:?}", e);
+            Err(Status::InternalServerError)
+        }
+    }
+}
+
 pub fn stage() -> rocket::fairing::AdHoc {
     rocket::fairing::AdHoc::on_ignite("Rfp Stage", |rocket| async {
         println!("Rfp stage on ignite!");
 
         rocket
             .mount("/rfps/", rocket::routes![get_rfps, search])
-            .mount("/rfp/", rocket::routes![get_rfp, get_rfp_with_snapshots])
+            .mount(
+                "/rfp/",
+                rocket::routes![
+                    get_rfp,
+                    get_rfp_with_snapshots,
+                    remove_rfp_snapshots_by_rfp_id
+                ],
+            )
     })
 }

@@ -452,6 +452,37 @@ impl DB {
         }
     }
 
+    // TODO Remove this once we go in production or put it behind authentication or a flag
+    pub async fn remove_rfp_snapshots_by_rfp_id(&self, rfp_id: i32) -> anyhow::Result<()> {
+        sqlx::query!(r#"DELETE FROM rfp_snapshots WHERE rfp_id = $1"#, rfp_id)
+            .execute(&self.0)
+            .await?;
+        Ok(())
+    }
+
+    // TODO Remove this once we go in production or put it behind authentication or a flag
+    pub async fn remove_proposal_snapshots_by_id(&self, proposal_id: i32) -> anyhow::Result<()> {
+        sqlx::query!(
+            r#"DELETE FROM proposal_snapshots WHERE proposal_id = $1"#,
+            proposal_id
+        )
+        .execute(&self.0)
+        .await?;
+        Ok(())
+    }
+
+    // TODO Remove this once we go in production or put it behind authentication or a flag
+    pub async fn remove_all_snapshots(&self) -> anyhow::Result<()> {
+        sqlx::query!(r#"DELETE FROM proposal_snapshots"#)
+            .execute(&self.0)
+            .await?;
+
+        sqlx::query!(r#"DELETE FROM rfp_snapshots"#)
+            .execute(&self.0)
+            .await?;
+        Ok(())
+    }
+
     pub async fn insert_rfp_snapshot(
         tx: &mut Transaction<'static, Postgres>,
         snapshot: &RfpSnapshotRecord,
@@ -700,6 +731,8 @@ impl DB {
               rfp_snapshots rfp
           WHERE
              rfp.rfp_id = $1
+          ORDER BY
+              rfp.ts DESC
           "#;
 
         // Execute the data query

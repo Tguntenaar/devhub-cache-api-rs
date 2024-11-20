@@ -1,4 +1,3 @@
-use base64::{engine::general_purpose, Engine as _}; // Add this import
 use devhub_shared::proposal::VersionedProposal;
 use devhub_shared::rfp::VersionedRFP;
 use near_account_id::AccountId;
@@ -106,19 +105,17 @@ impl RpcService {
         proposal_id: i32,
         block_id: i64,
     ) -> Result<VersionedProposal, Status> {
-        let args = json!({ "proposal_id": proposal_id });
-        let args_encoded = general_purpose::STANDARD.encode(args.to_string().as_bytes());
-        let result = self
-            .query("get_proposal".to_string(), block_id, args_encoded)
-            .await;
+        let result: Result<Data<VersionedProposal>, near_api::errors::QueryError<RpcQueryRequest>> =
+            self.contract
+                .call_function("get_proposal", json!({ "proposal_id": proposal_id }))
+                .unwrap()
+                .read_only()
+                .at(Reference::AtBlock(block_id as u64))
+                .fetch_from(&self.network)
+                .await;
 
         match result {
-            Ok(res) => {
-                // Deserialize the string as a Proposal type.
-                let proposal: VersionedProposal = serde_json::from_str(&res).unwrap();
-                println!("Deserialized proposal: {:?}", proposal);
-                Ok(proposal)
-            }
+            Ok(res) => Ok(res.data),
             Err(e) => {
                 eprintln!("Failed to get proposal on block: {:?}", e);
                 Err(Status::InternalServerError)
