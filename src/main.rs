@@ -32,7 +32,7 @@ pub fn separate_number_and_text(s: &str) -> (Option<i32>, String) {
 use crate::entrypoints::ApiDoc;
 use near_account_id::AccountId;
 use rocket::{catch, catchers, get, launch, routes, State};
-use rocket_cors::AllowedOrigins;
+use rocket_cors::{AllOrSome, AllowedOrigins, Origins};
 use types::Contract;
 use utoipa::OpenApi;
 use utoipa_swagger_ui::SwaggerUi;
@@ -89,7 +89,7 @@ fn rocket() -> _ {
 
     let env: Env = envy::from_env::<Env>().expect("Failed to load environment variables");
 
-    let allowed_origins = AllowedOrigins::some_exact(&[
+    let exact_origins = AllowedOrigins::some_exact(&[
         "http://localhost:3000",
         "http://localhost:8080", // Playwright
         "http://127.0.0.1:8080", // Local development
@@ -104,8 +104,14 @@ fn rocket() -> _ {
         "https://events-cache-api-rs.fly.dev",
         // TODO Add prod urls here
     ]);
+    let allowed_origins = Origins {
+        allow_null: true, // Iframe simpleMDE mentioning proposals
+        exact: exact_origins.unwrap().exact,
+        ..Default::default()
+    };
+
     let cors = rocket_cors::CorsOptions {
-        allowed_origins,
+        allowed_origins: AllOrSome::Some(allowed_origins),
         ..Default::default()
     }
     .to_cors()
