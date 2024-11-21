@@ -5,6 +5,7 @@ use crate::entrypoints::proposal::proposal_types::FromContractProposal;
 use crate::entrypoints::proposal::proposal_types::PartialEditProposalArgs;
 use crate::entrypoints::proposal::proposal_types::SetBlockHeightCallbackArgs;
 use crate::entrypoints::rfp::rfp_types::*;
+use crate::nearblocks_client;
 use crate::nearblocks_client::types::Transaction;
 use crate::rpc_service::RpcService;
 use devhub_shared::proposal::VersionedProposal;
@@ -12,6 +13,51 @@ use devhub_shared::rfp::VersionedRFP;
 use near_account_id::AccountId;
 use rocket::{http::Status, State};
 use std::convert::TryInto;
+
+pub async fn update_nearblocks_data(
+    db: &DB,
+    contract: &AccountId,
+    nearblocks_api_key: &str,
+    last_updated_info: (i64, i64),
+) {
+    let nearblocks_client = nearblocks_client::ApiClient::new(nearblocks_api_key.to_string());
+
+    let nearblocks_unwrapped = match nearblocks_client
+        .get_account_txns_by_pagination(
+            contract.clone(),
+            Some(last_updated_info.1),
+            Some(50),
+            Some("asc".to_string()),
+            Some(1),
+        )
+        .await
+    {
+        Ok(response) => response,
+        Err(e) => {
+            eprintln!("Failed to fetch proposals from nearblocks: {:?}", e);
+            return;
+        }
+    };
+
+    println!(
+        "Fetched {} method calls from nearblocks",
+        nearblocks_unwrapped.txns.len()
+    );
+
+    let _ = nearblocks_client::transactions::process(
+        &nearblocks_unwrapped.txns,
+        db.into(),
+        contract.clone(),
+    )
+    .await;
+
+    if let Some(transaction) = nearblocks_unwrapped.txns.last() {
+        let timestamp_nano = transaction.receipt_block.block_timestamp;
+        let _ = db
+            .set_last_updated_info(timestamp_nano, transaction.receipt_block.block_height)
+            .await;
+    }
+}
 
 pub async fn process(
     transactions: &[Transaction],

@@ -1,9 +1,10 @@
 use self::proposal_types::*;
 use crate::db::db_types::{ProposalSnapshotRecord, ProposalWithLatestSnapshotView};
 use crate::db::DB;
+use crate::nearblocks_client::transactions::update_nearblocks_data;
 use crate::rpc_service::RpcService;
+use crate::separate_number_and_text;
 use crate::types::PaginatedResponse;
-use crate::{nearblocks_client, separate_number_and_text};
 use devhub_shared::proposal::VersionedProposal;
 use near_account_id::AccountId;
 use rocket::delete;
@@ -49,6 +50,25 @@ async fn search(
     }
 }
 
+async fn fetch_proposals(
+    db: &DB,
+    limit: i64,
+    order: &str,
+    offset: i64,
+    filters: Option<GetProposalFilters>,
+) -> (Vec<ProposalWithLatestSnapshotView>, i64) {
+    match db
+        .get_proposals_with_latest_snapshot(limit, order, offset, filters)
+        .await
+    {
+        Err(e) => {
+            eprintln!("Failed to get proposals: {:?}", e);
+            (vec![], 0)
+        }
+        Ok(result) => result,
+    }
+}
+
 #[utoipa::path(get, path = "/proposals?<order>&<limit>&<offset>&<filters>", params(
   ("order"= &str, Path, description ="default order id_desc (ts_asc)"),
   ("limit"= i64, Path, description = "default limit 10"),
@@ -65,92 +85,26 @@ async fn get_proposals(
     contract: &State<AccountId>,
     nearblocks_api_key: &State<String>,
 ) -> Option<Json<PaginatedResponse<ProposalWithLatestSnapshotView>>> {
-    let current_timestamp_nano = chrono::Utc::now().timestamp_nanos_opt().unwrap();
-    let last_updated_info = db.get_last_updated_info().await.unwrap();
-
     let order = order.unwrap_or("id_desc");
     let limit = limit.unwrap_or(10);
     let offset = offset.unwrap_or(0);
 
-    if current_timestamp_nano - last_updated_info.0
-        < chrono::Duration::seconds(60).num_nanoseconds().unwrap()
-    {
-        println!("Returning cached proposals");
-        let (proposals, total) = match db
-            .get_proposals_with_latest_snapshot(limit, order, offset, filters)
-            .await
-        {
-            Err(e) => {
-                eprintln!("Failed to get proposals: {:?}", e);
-                (vec![], 0)
-            }
-            Ok(result) => result,
-        };
+    let current_timestamp_nano = chrono::Utc::now().timestamp_nanos_opt().unwrap();
+    let last_updated_info = db.get_last_updated_info().await.unwrap();
 
-        return Some(Json(PaginatedResponse::new(
-            proposals.into_iter().map(Into::into).collect(),
-            1,
-            limit.try_into().unwrap(),
-            total.try_into().unwrap(),
-        )));
+    if current_timestamp_nano - last_updated_info.0
+        >= chrono::Duration::seconds(60).num_nanoseconds().unwrap()
+    {
+        update_nearblocks_data(
+            db.inner(),
+            contract.inner(),
+            nearblocks_api_key.inner(),
+            last_updated_info,
+        )
+        .await;
     }
 
-    println!("Fetching not yet indexed method calls from nearblocks");
-
-    let nearblocks_client = nearblocks_client::ApiClient::new(nearblocks_api_key.inner().clone());
-
-    let nearblocks_unwrapped = match nearblocks_client
-        .get_account_txns_by_pagination(
-            contract.inner().clone(),
-            Some(last_updated_info.1),
-            Some(50),
-            Some("asc".to_string()),
-            Some(1),
-        )
-        .await
-    {
-        Ok(nearblocks_unwrapped) => nearblocks_unwrapped,
-        Err(e) => {
-            eprintln!("Failed to fetch proposals from nearblocks: {:?}", e);
-            nearblocks_client::ApiResponse { txns: vec![] }
-        }
-    };
-
-    println!(
-        "Fetched {} method calls from nearblocks",
-        nearblocks_unwrapped.clone().txns.len()
-    );
-
-    let _ = nearblocks_client::transactions::process(
-        &nearblocks_unwrapped.txns,
-        db,
-        contract.inner().clone(),
-    )
-    .await;
-
-    match nearblocks_unwrapped.txns.last() {
-        Some(transaction) => {
-            let timestamp_nano: i64 = transaction.receipt_block.block_timestamp;
-
-            db.set_last_updated_info(timestamp_nano, transaction.block.block_height)
-                .await
-                .unwrap();
-        }
-        None => {
-            println!("No transactions found")
-        }
-    };
-
-    let (proposals, total) = match db
-        .get_proposals_with_latest_snapshot(limit, order, offset, filters)
-        .await
-    {
-        Err(e) => {
-            eprintln!("Failed to get proposals: {:?}", e);
-            (vec![], 0)
-        }
-        Ok(result) => result,
-    };
+    let (proposals, total) = fetch_proposals(db.inner(), limit, order, offset, filters).await;
 
     Some(Json(PaginatedResponse::new(
         proposals.into_iter().map(Into::into).collect(),
@@ -165,7 +119,24 @@ async fn get_proposals(
 async fn get_proposal_with_all_snapshots(
     proposal_id: i32,
     db: &State<DB>,
+    contract: &State<AccountId>,
+    nearblocks_api_key: &State<String>,
 ) -> Result<Json<Vec<ProposalSnapshotRecord>>, Status> {
+    let current_timestamp_nano = chrono::Utc::now().timestamp_nanos_opt().unwrap();
+    let last_updated_info = db.get_last_updated_info().await.unwrap();
+
+    if current_timestamp_nano - last_updated_info.0
+        >= chrono::Duration::seconds(60).num_nanoseconds().unwrap()
+    {
+        update_nearblocks_data(
+            db.inner(),
+            contract.inner(),
+            nearblocks_api_key.inner(),
+            last_updated_info,
+        )
+        .await;
+    }
+
     match db.get_proposal_with_all_snapshots(proposal_id).await {
         Err(e) => {
             eprintln!("Failed to get proposal snapshots: {:?}", e);
