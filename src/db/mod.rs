@@ -16,7 +16,7 @@ pub struct DB(PgPool);
 pub mod db_types;
 
 use db_types::{
-    ProposalSnapshotRecord, ProposalWithLatestSnapshotView, RfpSnapshotRecord,
+    BlockHeight, ProposalSnapshotRecord, ProposalWithLatestSnapshotView, RfpSnapshotRecord,
     RfpWithLatestSnapshotView,
 };
 
@@ -72,7 +72,7 @@ impl DB {
     pub async fn set_last_updated_info(
         &self,
         after_date: i64,
-        after_block: i64,
+        after_block: BlockHeight,
     ) -> Result<(), Error> {
         println!(
             "Storing timestamp: {} and block: {}",

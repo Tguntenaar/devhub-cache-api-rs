@@ -1,5 +1,7 @@
 use serde::{Deserialize, Serialize};
 
+use crate::db::db_types::BlockHeight;
+
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Transaction {
     #[serde(default)]
@@ -24,7 +26,7 @@ pub struct Transaction {
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Block {
     pub block_hash: String,
-    pub block_height: f64,
+    pub block_height: BlockHeight,
     pub block_timestamp: i64,
 }
 
@@ -38,7 +40,7 @@ pub struct ReceiptOutcome {
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct BlockInfo {
-    pub block_height: i64,
+    pub block_height: BlockHeight,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]

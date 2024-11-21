@@ -1,4 +1,4 @@
-use crate::db::db_types::RfpSnapshotRecord;
+use crate::db::db_types::{BlockHeight, RfpSnapshotRecord};
 pub use devhub_shared::rfp::RFP as ContractRFP;
 use devhub_shared::rfp::{VersionedRFPBody, RFP};
 use rocket::serde::{Deserialize, Serialize};
@@ -40,17 +40,23 @@ pub trait FromContractRFP {
 }
 
 impl FromContractRFP for RfpSnapshotRecord {
-    fn from_contract_rfp(rfp: ContractRFP, timestamp: i64, block_height: i64) -> Self {
+    fn from_contract_rfp(rfp: ContractRFP, timestamp: i64, block_height: BlockHeight) -> Self {
         RfpSnapshotRecord {
             rfp_id: rfp.id as i32,
             block_height,
             ts: timestamp,
             editor_id: rfp.snapshot.editor_id.to_string(),
             social_db_post_block_height: rfp.social_db_post_block_height as i64,
-            labels: serde_json::Value::from(Vec::from_iter(rfp.snapshot.labels.iter().cloned())),
-            linked_proposals: Some(serde_json::Value::from(Vec::from_iter(
-                rfp.snapshot.linked_proposals,
-            ))),
+            labels: {
+                let mut labels = Vec::from_iter(rfp.snapshot.labels.iter().cloned());
+                labels.sort_unstable();
+                serde_json::Value::from(labels)
+            },
+            linked_proposals: Some({
+                let mut proposals = Vec::from_iter(rfp.snapshot.linked_proposals);
+                proposals.sort_unstable();
+                serde_json::Value::from(proposals)
+            }),
             rfp_version: "V0".to_string(),
             rfp_body_version: "V0".to_string(),
             name: Some(rfp.snapshot.body.get_name().clone()),
