@@ -13,7 +13,7 @@ use std::convert::TryInto;
 pub mod rfp_types;
 
 // TODO use caching in search
-#[utoipa::path(get, path = "/rfps/search?<input>", params(
+#[utoipa::path(get, path = "/rfps/search/<input>", params(
   ("input"= &str, Path, description ="The string to search for in rfp name, description, summary, and category fields."),
 ))]
 #[get("/search/<input>")]
