@@ -1,3 +1,16 @@
+/**
+ * Test Nearblocks mocked transactions
+ */
+
+/**
+ * Search Proposals
+ * Get Proposals
+ * Get Proposal Snapshots
+ * Search RFPs
+ * Get RFPs
+ * Get RFP Snapshots
+ */
+
 #[test]
 fn test_index() {
     use rocket::local::blocking::Client;
