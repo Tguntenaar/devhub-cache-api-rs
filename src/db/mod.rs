@@ -39,6 +39,7 @@ impl DB {
 
         // If the update did not find a matching row, insert the user
         if let Some(record) = rec {
+            println!("Updated proposal: {:?}", record.id);
             Ok(record.id)
         } else {
             // INSERT ON CONFLICT DO NOTHING
@@ -54,6 +55,7 @@ impl DB {
             )
             .fetch_one(tx.as_mut())
             .await?;
+            println!("Inserted proposal: {:?}", rec.id);
             Ok(rec.id)
         }
     }
@@ -96,7 +98,7 @@ impl DB {
         snapshot: &ProposalSnapshotRecord,
     ) -> anyhow::Result<()> {
         // Since primary key is (proposal_id, ts)
-        query!(
+        let result = query!(
             r#"
           INSERT INTO proposal_snapshots (
               proposal_id,
@@ -168,8 +170,22 @@ impl DB {
             snapshot.views
         )
         .execute(tx.as_mut())
-        .await?;
-        Ok(())
+        .await;
+
+        match result {
+            Ok(_) => {
+                println!(
+                    "Inserted proposal snapshot {:?} with name {:?}",
+                    snapshot.proposal_id,
+                    snapshot.name.as_ref().unwrap()
+                );
+                Ok(())
+            }
+            Err(e) => {
+                eprintln!("Failed to insert proposal snapshot: {:?}", e);
+                Err(anyhow::anyhow!("Failed to insert proposal snapshot"))
+            }
+        }
     }
 
     pub async fn get_proposals_with_latest_snapshot(
@@ -434,6 +450,7 @@ impl DB {
         .await?;
 
         if let Some(record) = rec {
+            println!("Updated rfp: {:?}", record.id);
             Ok(record.id)
         } else {
             let rec = sqlx::query!(
@@ -448,6 +465,7 @@ impl DB {
             )
             .fetch_one(tx.as_mut())
             .await?;
+            println!("Inserted rfp: {:?}", rec.id);
             Ok(rec.id)
         }
     }
@@ -488,7 +506,7 @@ impl DB {
         snapshot: &RfpSnapshotRecord,
     ) -> anyhow::Result<()> {
         // Primary key is (rfp_id, ts)
-        sqlx::query!(
+        let result = sqlx::query!(
             r#"
           INSERT INTO rfp_snapshots (
               rfp_id,
@@ -544,8 +562,18 @@ impl DB {
             snapshot.views
         )
         .execute(tx.as_mut())
-        .await?;
-        Ok(())
+        .await;
+
+        match result {
+            Ok(_) => {
+                println!("Inserted rfp snapshot {:?}", snapshot.rfp_id);
+                Ok(())
+            }
+            Err(e) => {
+                eprintln!("Failed to insert rfp snapshot: {:?}", e);
+                Err(anyhow::anyhow!("Failed to insert rfp snapshot"))
+            }
+        }
     }
 
     pub async fn get_rfps_with_latest_snapshot(

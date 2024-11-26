@@ -117,7 +117,13 @@ impl RpcService {
         match result {
             Ok(res) => Ok(res.data),
             Err(e) => {
-                eprintln!("Failed to get proposal on block: {:?}", e);
+                // After Block 122723375 & 122938305
+                // TODO caught error:
+                // Failed to get proposal on block: DeserializeError(Error("missing field `kyc_verified`", line: 0, column: 0))
+                eprintln!(
+                    "Failed to get proposal on block: {:?}, block_id: {}",
+                    e, block_id
+                );
                 Err(Status::InternalServerError)
             }
         }

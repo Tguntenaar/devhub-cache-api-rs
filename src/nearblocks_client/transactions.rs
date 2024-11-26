@@ -103,6 +103,8 @@ pub async fn process(
                     handle_edit_rfp(transaction.to_owned(), db, contract.clone()).await
                 }
                 "cancel_rfp" => {
+                    // TODO compare notes with indexer repo on how to handle this
+                    // differently than edit_rfp?
                     println!("cancel_rfp");
                     handle_edit_rfp(transaction.to_owned(), db, contract.clone()).await
                 }
@@ -148,10 +150,8 @@ async fn handle_set_rfp_block_height_callback(
         .ok_or(Status::InternalServerError)?;
     let json_args = action.args.clone().unwrap_or_default();
 
-    // println!("json_args: {:?}", json_args.clone());
     let args: SetRfpBlockHeightCallbackArgs = serde_json::from_str(&json_args).unwrap();
 
-    println!("Adding to the database... {}", args.clone().rfp.id);
     let mut tx = db.begin().await.map_err(|_e| Status::InternalServerError)?;
     DB::upsert_rfp(
         &mut tx,
@@ -163,8 +163,6 @@ async fn handle_set_rfp_block_height_callback(
 
     let rpc_service = RpcService::new(contract);
     let id = args.clone().rfp.id.try_into().unwrap();
-
-    println!("stored rfp {}", id);
 
     let versioned_rfp_fallback: VersionedRFP = args.clone().rfp.into();
     let versioned_rfp = match rpc_service.get_rfp(id).await {
@@ -185,6 +183,8 @@ async fn handle_set_rfp_block_height_callback(
     );
 
     DB::insert_rfp_snapshot(&mut tx, &snapshot).await.unwrap();
+
+    // TODO check the function checkAndUpdateLabels in the indexer repo + issue #989
 
     tx.commit()
         .await
@@ -249,6 +249,8 @@ async fn handle_edit_rfp(
         .await
         .map_err(|_e| Status::InternalServerError)?;
 
+    // TODO check the function checkAndUpdateLabels in the indexer repo + issue #989
+
     tx.commit()
         .await
         .map_err(|_e| Status::InternalServerError)?;
@@ -281,8 +283,6 @@ async fn handle_set_block_height_callback(
     let args: SetBlockHeightCallbackArgs =
         serde_json::from_str(&json_args.unwrap_or_default()).unwrap();
 
-    println!("Adding to the database... {}", args.clone().proposal.id);
-    // TODO move txs the the outside
     let mut tx = db.begin().await.map_err(|_e| Status::InternalServerError)?;
     DB::upsert_proposal(
         &mut tx,
@@ -294,8 +294,6 @@ async fn handle_set_block_height_callback(
 
     let rpc_service = RpcService::new(contract);
     let id = args.clone().proposal.id.try_into().unwrap();
-
-    println!("stored proposal {}", id);
 
     let versioned_proposal_fallback: VersionedProposal = args.clone().proposal.into();
     let versioned_proposal = match rpc_service.get_proposal(id).await {
@@ -318,6 +316,7 @@ async fn handle_set_block_height_callback(
     DB::insert_proposal_snapshot(&mut tx, &snapshot)
         .await
         .unwrap();
+    // TODO check the function checkAndUpdateLinkedProposals in the indexer repo + issue #989
 
     tx.commit()
         .await
@@ -375,6 +374,8 @@ async fn handle_edit_proposal(
     DB::insert_proposal_snapshot(&mut tx, &snapshot)
         .await
         .unwrap();
+
+    // TODO check the function checkAndUpdateLinkedProposals in the indexer repo + issue #989
 
     tx.commit()
         .await
