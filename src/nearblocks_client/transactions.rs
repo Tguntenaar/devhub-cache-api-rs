@@ -118,7 +118,11 @@ pub async fn process(
                     .await
                 }
                 _ => {
-                    // println!("Unhandled method: {:?}", action.method);
+                    if action.action == "FUNCTION_CALL" {
+                        println!("Unhandled method: {:?}", action.method.as_ref().unwrap());
+                    } else {
+                        println!("Unhandled action: {:?}", action.action);
+                    }
                     continue;
                 }
             };
@@ -179,7 +183,7 @@ async fn handle_set_rfp_block_height_callback(
     let snapshot = RfpSnapshotRecord::from_contract_rfp(
         versioned_rfp.into(),
         transaction.receipt_block.block_timestamp,
-        transaction.block.block_height,
+        transaction.receipt_block.block_height,
     );
 
     DB::insert_rfp_snapshot(&mut tx, &snapshot).await.unwrap();
@@ -221,7 +225,7 @@ async fn handle_edit_rfp(
     })?;
     println!("Updating rfp {}", id);
     let versioned_rfp = match rpc_service
-        .get_rfp_on_block(id, transaction.block.block_height)
+        .get_rfp_on_block(id, transaction.receipt_block.block_height)
         .await
     {
         Ok(rfp) => rfp,
@@ -242,7 +246,7 @@ async fn handle_edit_rfp(
     let snapshot = RfpSnapshotRecord::from_contract_rfp(
         versioned_rfp.into(),
         transaction.receipt_block.block_timestamp,
-        transaction.block.block_height,
+        transaction.receipt_block.block_height,
     );
 
     DB::insert_rfp_snapshot(&mut tx, &snapshot)
@@ -310,7 +314,7 @@ async fn handle_set_block_height_callback(
     let snapshot = ProposalSnapshotRecord::from_contract_proposal(
         versioned_proposal.into(),
         transaction.receipt_block.block_timestamp,
-        transaction.block.block_height,
+        transaction.receipt_block.block_height,
     );
 
     DB::insert_proposal_snapshot(&mut tx, &snapshot)
@@ -353,7 +357,7 @@ async fn handle_edit_proposal(
     })?;
     println!("Updating proposal {}", id);
     let versioned_proposal = match rpc_service
-        .get_proposal_on_block(id, transaction.block.block_height)
+        .get_proposal_on_block(id, transaction.receipt_block.block_height)
         .await
     {
         Ok(proposal) => proposal,
@@ -368,7 +372,7 @@ async fn handle_edit_proposal(
     let snapshot = ProposalSnapshotRecord::from_contract_proposal(
         versioned_proposal.into(),
         transaction.receipt_block.block_timestamp,
-        transaction.block.block_height,
+        transaction.receipt_block.block_height,
     );
 
     DB::insert_proposal_snapshot(&mut tx, &snapshot)
