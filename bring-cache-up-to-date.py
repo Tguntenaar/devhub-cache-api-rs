@@ -3,7 +3,10 @@ import requests
 
 local = False 
 reset_from_zero = True # False to continue from where it left off  
-fly_app_name = "devhub-cache-api-rs"
+fly_app_name = "events-cache-api-rs"
+# ~120 calls for devhub
+# ~20 calls for infra
+# ~40 calls for events
 max_calls = 120 # This is for devhub to catch up to the latest block
 
 base_url = f"http://localhost:8080/" if local else f"https://{fly_app_name}.fly.dev/"
