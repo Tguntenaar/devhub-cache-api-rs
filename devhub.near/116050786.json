@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "3539723317",
+    "receipt_id": "DDNVMz15k1dCy3c4gfe6Cpm67zutptwc3iGwsNqzybnZ",
+    "predecessor_account_id": "bo.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "C74UNwouq6JdTxGPS3xMY16KtvtD2WMbdovJopEidQd9",
+      "block_height": 116051910,
+      "block_timestamp": 1712152818588024800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7511039557668,
+      "tokens_burnt": 751103955766800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "C4qsP6aDbC6crcKnhQPDjEyUHiqCndC3YGRdyqUQpzuB",
+    "included_in_block_hash": "ByY1EYRM9pTfkHKYmJFyq6LsnG7mZXv7QcyQ9ZyxbQ9s",
+    "block_timestamp": "1712152817243531430",
+    "block": {
+      "block_height": 116051909
+    },
+    "receipt_conversion_tokens_burnt": "242821614328800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 751103955766800000000,
+        "args": "{\"id\": 25, \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4725158407283e+21
+    }
+  },
+  {
+    "id": "3539723880",
+    "receipt_id": "54yVz2jWJE6gxiLuqDZ6wR69vcm8nTMGfKg6xgJjzNeQ",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FTUykxZVgw8TvJHgkn4kJowHqftCSo5ajBVfGVy1DyBJ",
+      "block_height": 116051911,
+      "block_timestamp": 1712152819938405000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4785902706327,
+      "tokens_burnt": 478590270632700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "C4qsP6aDbC6crcKnhQPDjEyUHiqCndC3YGRdyqUQpzuB",
+    "included_in_block_hash": "ByY1EYRM9pTfkHKYmJFyq6LsnG7mZXv7QcyQ9ZyxbQ9s",
+    "block_timestamp": "1712152817243531430",
+    "block": {
+      "block_height": 116051909
+    },
+    "receipt_conversion_tokens_burnt": "242821614328800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 478590270632700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"spring-neardao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":25,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bo.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4725158407283e+21
+    }
+  },
+  {
+    "id": "3539755150",
+    "receipt_id": "9YEvvHGUAkM9Fn7AXTeqdcmHuk5d6sCGa1WQ8myEU4Km",
+    "predecessor_account_id": "bo.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FHbUfWWJhFh59xz939HW61a16LNBHeMFATnRTThD7Dpn",
+      "block_height": 116051990,
+      "block_timestamp": 1712152924182988000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7998878606822,
+      "tokens_burnt": 799887860682200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "6TFcmnE2TL2GH2Ejr5awZbBdpZKfJpv7KVC75LmaZupM",
+    "included_in_block_hash": "7CjHcMSwL1RU5Tzt86Dik6ooNJXr53zJhztn1ironaZv",
+    "block_timestamp": "1712152923090918166",
+    "block": {
+      "block_height": 116051989
+    },
+    "receipt_conversion_tokens_burnt": "242822061515600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 799887860682200000000,
+        "args": "{\"id\": 25, \"timeline\": {\"status\": \"APPROVED\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5205692957961e+21
+    }
+  },
+  {
+    "id": "3539755711",
+    "receipt_id": "C17C31NFX8ycizoQ5NZeyZQVCgA5zY11zAzrtZbDLBtn",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9TKAjFC3Krv6myn5CtxtVfgMcuEFF8oDgDKA2zqDLLiF",
+      "block_height": 116051991,
+      "block_timestamp": 1712152925582358800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4778593735983,
+      "tokens_burnt": 477859373598300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "6TFcmnE2TL2GH2Ejr5awZbBdpZKfJpv7KVC75LmaZupM",
+    "included_in_block_hash": "7CjHcMSwL1RU5Tzt86Dik6ooNJXr53zJhztn1ironaZv",
+    "block_timestamp": "1712152923090918166",
+    "block": {
+      "block_height": 116051989
+    },
+    "receipt_conversion_tokens_burnt": "242822061515600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 477859373598300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"spring-neardao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":25,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bo.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5205692957961e+21
+    }
+  },
+  {
+    "id": "3541700180",
+    "receipt_id": "AuTK2BCRoJ559qcyiAWtj3qaXJgBgALo1eKGYjjirgbR",
+    "predecessor_account_id": "madlime.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FFsnZ6km6WW1fEfnVJo5Wee3jNiAWL7xx3hZUXyQp87t",
+      "block_height": 116055534,
+      "block_timestamp": 1712157721639998500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 13010972341179,
+      "tokens_burnt": 1.3010972341179e+21,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "HekfHVWBSLX6XgCrjPio8pwSArKqZfUrLUxLm4B9hUyt",
+    "included_in_block_hash": "7jwRbnd1vWRUXsZgFcsiAWXPpwjYW4inG2aQY3LZY2WE",
+    "block_timestamp": "1712157720634416527",
+    "block": {
+      "block_height": 116055533
+    },
+    "receipt_conversion_tokens_burnt": "244492751400400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 1.3010972341179e+21,
+        "args": "{\"body\": {\"name\": \"RE:Public DebHub Proposal #1 - Milestone for April\", \"summary\": \"Re:public is a CI/CD automation tool for smart contract development, allowing deployments across multiple chains with a simple git push. You can see Re:public as GitLab or Vercel in web3 world.\\\\\\\\n\\\\\\\\nOur goal for this proposal - add \\\\\\\\\\\\\\\"bages and templates\\\\\\\\\\\\\\\" feature for this \", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"## Overview\\\\\\\\nRe:public is a CI/CD automation tool for smart contract development, allowing deployments across multiple chains with a simple git push. You can see Re:public as GitLab or Vercel in web3 world.\\\\\\\\n\\\\\\\\nDesigned to streamline Web3 development, it eliminates the need for manual deployments across testnet chains. Utilizing NEAR cli tools and chain abstraction, it offers a seamless development process, reducing time-to-market and making blockchain development more accessible.\\\\\\\\n\\\\\\\\nWe successfully participated in the EthLondon hackathon, securing bounties from Near and Arbitrum, and we won\\\\\\\\u{2019}t stop there. We are deeply believe in idea of improving the developer experience, making it our top priority. \\\\\\\\n\\\\\\\\nWe created a working demo of Re:public in just two days during the hackathon, demonstrating our capability and drive. For more details, you can check out Re:public demo on ETHGlobal: [Re:public Showcase](https://ethglobal.com/showcase/re-public-4en9r)\\\\\\\\n\\\\\\\\n## Description\\\\\\\\n\\\\\\\\nOur project leverages NEAR cli tools and chain abstraction to deliver best CI experience for customers. Dockerized worker handles commits from connected repositories. Deploys them to the network and stores addresses. Chain abstraction allows to deploy projects to both near evm chains paying fees in NEAR tokens.\\\\\\\\n\\\\\\\\nThe core functionality of our project hinges on leveraging GitHub webhooks to capture various events, including app installations, commits, and pushes. Upon receiving an event, we populate our deployment queue. This queue is then processed by a background worker that is responsible for deploying the project across different blockchain networks, tailored to the specific requirements of each project type.\\\\\\\\n\\\\\\\\n## Who we are\\\\\\\\n\\\\\\\\nWe are experienced developers with an extensive development background, having several years of experience working in big tech companies, as well as creating and founding projects like [ZkNoid](https://zknoid.io/) and [xRaise](https://xraise.io/).\\\\\\\\n\\\\\\\\n## Milestone for this proposal (April 2024)\\\\\\\\n\\\\\\\\n1. **Code Revision and Refactoring:** Following our participation in the EthLondon Hackathon, it\\\\\\\\\\\\'s crucial to revisit and refine our code. We aim to transform prototyped app components into more robust, production-ready elements.\\\\\\\\n2. **Marketplace with Templates and \\\\\\\\\\\\'Badge Deploy\\\\\\\\\\\\':** We aspire to provide a \\\\\\\\\\\\'Vercel-like\\\\\\\\\\\\' user experience. Users should be able to deploy templates with a single \\\\\\\\\\\\'badge\\\\\\\\\\\\' click from any documentation or readme, mimicking the \\\\\\\\\\\\'Vercel deploy\\\\\\\\\\\\' functionality. This process will clone the selected template into the repository, handling its deployment and setup automatically.\\\\\\\\n4. **Enhanced GitHub Integration:** Leveraging the GitHub API, we plan to enrich the developer experience by integrating comments and deployments directly on GitHub when relevant.\\\\\\\\n5. **Customer Development:** We will engage in customer development.\\\\\\\\n\\\\\\\\n## Roadmap for Re:public\\\\\\\\n\\\\\\\\n### **Q1 (April-May) 2024 - MVP**\\\\\\\\n\\\\\\\\n1. **Code Revision and Refactoring:** Following our participation in the EthLondon Hackathon, it\\\\\\\\\\\\'s crucial to revisit and refine our code. We aim to transform prototyped app components into more robust, production-ready elements.\\\\\\\\n2. **Marketplace with Templates and \\\\\\\\\\\\'Badge Deploy\\\\\\\\\\\\':** We aspire to provide a \\\\\\\\\\\\'Vercel-like\\\\\\\\\\\\' user experience. Users should be able to deploy templates with a single \\\\\\\\\\\\'badge\\\\\\\\\\\\' click from any documentation or readme, mimicking the \\\\\\\\\\\\'Vercel deploy\\\\\\\\\\\\' functionality. This process will clone the selected template into the repository, handling its deployment and setup automatically.\\\\\\\\n3. **Logging and Deployments Pages:** Implement features to view logs for each unique contract deployment, marking our initial steps toward observability within the app.\\\\\\\\n4. **Enhanced GitHub Integration:** Leveraging the GitHub API, we plan to enrich the developer experience by integrating comments and deployments directly on GitHub when relevant.\\\\\\\\n5. **Customer Development and Early Marketing:** We will engage in customer development and begin early-stage marketing efforts.\\\\\\\\n6. **Long-Term Monetization Strategy:** Begin to think on long-term monetization strategies.\\\\\\\\n7. **Early Stage MVP Release:** Launch an initial version of our Minimum Viable Product, focusing on Near ecosystem deployments.\\\\\\\\n\\\\\\\\n### **Q3 2024 - MLP**\\\\\\\\n\\\\\\\\n1. **HZN Accelerator and Fundraising:** Apply to the HZN accelerator and seek fundraising opportunities for the project.\\\\\\\\n2. **Continue to CustDev:** Enhance collaboration with smart contract developers on different chains\\\\\\\\n3. **Tracing/Monitoring Enhancements:** Develop a custom monitoring and tracing page, complemented by comprehensive logs.\\\\\\\\n4. **Multi-Chain Deployment Integration:** Start integrating deployment capabilities on other chains like Arbitrum and Polygon.\\\\\\\\n5. **Release of MLP:** Launch a fully functional and production-ready Minimal Lovable Product.\\\\\\\\n\\\\\\\\n### **Q4 2024**\\\\\\\\n\\\\\\\\n1. **Successful Fundraising:** Achieve our fundraising goals.\\\\\\\\n2. **Solana Deployments:** Implement deployment capabilities on Solana, utilizing Near chain signatures.\\\\\\\\n3. **In-House Multisig Control:** Centralize multisig control within the app.\\\\\\\\n4. **AI Contract Auditor:** Introduce an AI-based contract auditing feature.\\\\\\\\n5. **IPFS Integration:** Enable contract deployments with linked frontends on IPFS.\\\\\\\\n6. **Enhanced Access Control:** Implement precise access control mechanisms.\\\\\\\\n\\\\\\\\n## Funding\\\\\\\\n\\\\\\\\nWe are required 12k usdt, for first half of our Q1 roadmap. This money would be enough for us to hire a team of 5 being able to develop fully usable and working MVP: \\\\\\\\n\\\\\\\\n1x - Product Manager / Analyst / Business (we have a contact - 2000 usdt/month)\\\\\\\\n\\\\\\\\n2x - Fullstack Developers (approx 2500 usdt/month)\\\\\\\\n\\\\\\\\n2x - Founders (fundraising, cust devs, programming) (Me and Andrei - 2500 usdt/month)\\\\\\\\n\\\\\\\\nAll additional required exprenses (marketing, ads, etc) would be allocated from founders capital\\\\\\\\n\\\\\\\\nTotal amount = 13 000 usdt (2000 + 2500*2 + 2500*2 + 1000) for April 2024\\\\\\\\n\\\\\\\\n## Afterword\\\\\\\\n\\\\\\\\nWe truly believe that our project will become one of the key projects in the Near ecosystem and can significantly influence the further success of Near in the web3 space. We received a lot of positive feedback at the hackathon from fellow hackers, builders, and programmers, and we know that the project will be in demand.\\\\\\\\n\\\\\\\\nAs developers, we possess the ability to communicate effectively in the language of our peers, and I believe we have the capability to develop a product that will play a crucial role in advancing the field of development both on the Near platform and within the broader Web3 ecosystem. This project is not just about promoting Near; it\\\\\\\\\\\\'s about advancing the entirety of the Web3 landscape. We are hopeful that this proposal will mark the beginning of our collaborative journey with Near.\\\\\\\\n\\\\\\\\nEthLondon Showcase:  https://ethglobal.com/showcase/re-public-4en9r\\\\\\\\n\\\\\\\\nOur Twitter: https://twitter.com/re_public_dev\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"madlime.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"13000\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 3.0449436490476e+21
+    }
+  },
+  {
+    "id": "3541701531",
+    "receipt_id": "2z7ARSdvCJD38715nYYhPjeKLMTinVNJArHritj1S54p",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7FbzSEsJsAzvUWevttfVrbMZToq53fZrjA2Yw49itznB",
+      "block_height": 116055535,
+      "block_timestamp": 1712157722901765600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5768693847674,
+      "tokens_burnt": 576869384767400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "HekfHVWBSLX6XgCrjPio8pwSArKqZfUrLUxLm4B9hUyt",
+    "included_in_block_hash": "7jwRbnd1vWRUXsZgFcsiAWXPpwjYW4inG2aQY3LZY2WE",
+    "block_timestamp": "1712157720634416527",
+    "block": {
+      "block_height": 116055533
+    },
+    "receipt_conversion_tokens_burnt": "244492751400400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 576869384767400000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Tooling & Infrastructure* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @madlime.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}RE:Public DebHub Proposal #1 - Milestone for April\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRe:public is a CI/CD automation tool for smart contract development, allowing deployments across multiple chains with a simple git push. You can see Re:public as GitLab or Vercel in web3 world.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nOur goal for this proposal - add \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"bages and templates\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" feature for this \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=33)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 3.0449436490476e+21
+    }
+  },
+  {
+    "id": "3541701533",
+    "receipt_id": "FPpHEnvBNB2GShewvDBfbeaYWPcTW3GpgU41Psm4FYfY",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7FbzSEsJsAzvUWevttfVrbMZToq53fZrjA2Yw49itznB",
+      "block_height": 116055535,
+      "block_timestamp": 1712157722901765600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4431160432410,
+      "tokens_burnt": 443116043241000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "HekfHVWBSLX6XgCrjPio8pwSArKqZfUrLUxLm4B9hUyt",
+    "included_in_block_hash": "7jwRbnd1vWRUXsZgFcsiAWXPpwjYW4inG2aQY3LZY2WE",
+    "block_timestamp": "1712157720634416527",
+    "block": {
+      "block_height": 116055533
+    },
+    "receipt_conversion_tokens_burnt": "244492751400400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 443116043241000000000,
+        "args": "{\"proposal\": {\"id\": 33, \"snapshot\": {\"name\": \"RE:Public DebHub Proposal #1 - Milestone for April\", \"labels\": [], \"summary\": \"Re:public is a CI/CD automation tool for smart contract development, allowing deployments across multiple chains with a simple git push. You can see Re:public as GitLab or Vercel in web3 world.\\\\\\\\n\\\\\\\\nOur goal for this proposal - add \\\\\\\\\\\\\\\"bages and templates\\\\\\\\\\\\\\\" feature for this \", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"madlime.near\", \"timestamp\": \"1712157721639998366\", \"supervisor\": null, \"description\": \"## Overview\\\\\\\\nRe:public is a CI/CD automation tool for smart contract development, allowing deployments across multiple chains with a simple git push. You can see Re:public as GitLab or Vercel in web3 world.\\\\\\\\n\\\\\\\\nDesigned to streamline Web3 development, it eliminates the need for manual deployments across testnet chains. Utilizing NEAR cli tools and chain abstraction, it offers a seamless development process, reducing time-to-market and making blockchain development more accessible.\\\\\\\\n\\\\\\\\nWe successfully participated in the EthLondon hackathon, securing bounties from Near and Arbitrum, and we won\\\\\\\\u{2019}t stop there. We are deeply believe in idea of improving the developer experience, making it our top priority. \\\\\\\\n\\\\\\\\nWe created a working demo of Re:public in just two days during the hackathon, demonstrating our capability and drive. For more details, you can check out Re:public demo on ETHGlobal: [Re:public Showcase](https://ethglobal.com/showcase/re-public-4en9r)\\\\\\\\n\\\\\\\\n## Description\\\\\\\\n\\\\\\\\nOur project leverages NEAR cli tools and chain abstraction to deliver best CI experience for customers. Dockerized worker handles commits from connected repositories. Deploys them to the network and stores addresses. Chain abstraction allows to deploy projects to both near evm chains paying fees in NEAR tokens.\\\\\\\\n\\\\\\\\nThe core functionality of our project hinges on leveraging GitHub webhooks to capture various events, including app installations, commits, and pushes. Upon receiving an event, we populate our deployment queue. This queue is then processed by a background worker that is responsible for deploying the project across different blockchain networks, tailored to the specific requirements of each project type.\\\\\\\\n\\\\\\\\n## Who we are\\\\\\\\n\\\\\\\\nWe are experienced developers with an extensive development background, having several years of experience working in big tech companies, as well as creating and founding projects like [ZkNoid](https://zknoid.io/) and [xRaise](https://xraise.io/).\\\\\\\\n\\\\\\\\n## Milestone for this proposal (April 2024)\\\\\\\\n\\\\\\\\n1. **Code Revision and Refactoring:** Following our participation in the EthLondon Hackathon, it\\\\\\\\\\\\'s crucial to revisit and refine our code. We aim to transform prototyped app components into more robust, production-ready elements.\\\\\\\\n2. **Marketplace with Templates and \\\\\\\\\\\\'Badge Deploy\\\\\\\\\\\\':** We aspire to provide a \\\\\\\\\\\\'Vercel-like\\\\\\\\\\\\' user experience. Users should be able to deploy templates with a single \\\\\\\\\\\\'badge\\\\\\\\\\\\' click from any documentation or readme, mimicking the \\\\\\\\\\\\'Vercel deploy\\\\\\\\\\\\' functionality. This process will clone the selected template into the repository, handling its deployment and setup automatically.\\\\\\\\n4. **Enhanced GitHub Integration:** Leveraging the GitHub API, we plan to enrich the developer experience by integrating comments and deployments directly on GitHub when relevant.\\\\\\\\n5. **Customer Development:** We will engage in customer development.\\\\\\\\n\\\\\\\\n## Roadmap for Re:public\\\\\\\\n\\\\\\\\n### **Q1 (April-May) 2024 - MVP**\\\\\\\\n\\\\\\\\n1. **Code Revision and Refactoring:** Following our participation in the EthLondon Hackathon, it\\\\\\\\\\\\'s crucial to revisit and refine our code. We aim to transform prototyped app components into more robust, production-ready elements.\\\\\\\\n2. **Marketplace with Templates and \\\\\\\\\\\\'Badge Deploy\\\\\\\\\\\\':** We aspire to provide a \\\\\\\\\\\\'Vercel-like\\\\\\\\\\\\' user experience. Users should be able to deploy templates with a single \\\\\\\\\\\\'badge\\\\\\\\\\\\' click from any documentation or readme, mimicking the \\\\\\\\\\\\'Vercel deploy\\\\\\\\\\\\' functionality. This process will clone the selected template into the repository, handling its deployment and setup automatically.\\\\\\\\n3. **Logging and Deployments Pages:** Implement features to view logs for each unique contract deployment, marking our initial steps toward observability within the app.\\\\\\\\n4. **Enhanced GitHub Integration:** Leveraging the GitHub API, we plan to enrich the developer experience by integrating comments and deployments directly on GitHub when relevant.\\\\\\\\n5. **Customer Development and Early Marketing:** We will engage in customer development and begin early-stage marketing efforts.\\\\\\\\n6. **Long-Term Monetization Strategy:** Begin to think on long-term monetization strategies.\\\\\\\\n7. **Early Stage MVP Release:** Launch an initial version of our Minimum Viable Product, focusing on Near ecosystem deployments.\\\\\\\\n\\\\\\\\n### **Q3 2024 - MLP**\\\\\\\\n\\\\\\\\n1. **HZN Accelerator and Fundraising:** Apply to the HZN accelerator and seek fundraising opportunities for the project.\\\\\\\\n2. **Continue to CustDev:** Enhance collaboration with smart contract developers on different chains\\\\\\\\n3. **Tracing/Monitoring Enhancements:** Develop a custom monitoring and tracing page, complemented by comprehensive logs.\\\\\\\\n4. **Multi-Chain Deployment Integration:** Start integrating deployment capabilities on other chains like Arbitrum and Polygon.\\\\\\\\n5. **Release of MLP:** Launch a fully functional and production-ready Minimal Lovable Product.\\\\\\\\n\\\\\\\\n### **Q4 2024**\\\\\\\\n\\\\\\\\n1. **Successful Fundraising:** Achieve our fundraising goals.\\\\\\\\n2. **Solana Deployments:** Implement deployment capabilities on Solana, utilizing Near chain signatures.\\\\\\\\n3. **In-House Multisig Control:** Centralize multisig control within the app.\\\\\\\\n4. **AI Contract Auditor:** Introduce an AI-based contract auditing feature.\\\\\\\\n5. **IPFS Integration:** Enable contract deployments with linked frontends on IPFS.\\\\\\\\n6. **Enhanced Access Control:** Implement precise access control mechanisms.\\\\\\\\n\\\\\\\\n## Funding\\\\\\\\n\\\\\\\\nWe are required 12k usdt, for first half of our Q1 roadmap. This money would be enough for us to hire a team of 5 being able to develop fully usable and working MVP: \\\\\\\\n\\\\\\\\n1x - Product Manager / Analyst / Business (we have a contact - 2000 usdt/month)\\\\\\\\n\\\\\\\\n2x - Fullstack Developers (approx 2500 usdt/month)\\\\\\\\n\\\\\\\\n2x - Founders (fundraising, cust devs, programming) (Me and Andrei - 2500 usdt/month)\\\\\\\\n\\\\\\\\nAll additional required exprenses (marketing, ads, etc) would be allocated from founders capital\\\\\\\\n\\\\\\\\nTotal amount = 13 000 usdt (2000 + 2500*2 + 2500*2 + 1000) for April 2024\\\\\\\\n\\\\\\\\n## Afterword\\\\\\\\n\\\\\\\\nWe truly believe that our project will become one of the key projects in the Near ecosystem and can significantly influence the further success of Near in the web3 space. We received a lot of positive feedback at the hackathon from fellow hackers, builders, and programmers, and we know that the project will be in demand.\\\\\\\\n\\\\\\\\nAs developers, we possess the ability to communicate effectively in the language of our peers, and I believe we have the capability to develop a product that will play a crucial role in advancing the field of development both on the Near platform and within the broader Web3 ecosystem. This project is not just about promoting Near; it\\\\\\\\\\\\'s about advancing the entirety of the Web3 landscape. We are hopeful that this proposal will mark the beginning of our collaborative journey with Near.\\\\\\\\n\\\\\\\\nEthLondon Showcase:  https://ethglobal.com/showcase/re-public-4en9r\\\\\\\\n\\\\\\\\nOur Twitter: https://twitter.com/re_public_dev\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"madlime.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"13000\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"author_id\": \"madlime.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 3.0449436490476e+21
+    }
+  },
+  {
+    "id": "3541701536",
+    "receipt_id": "5PARD1h7AM4QJAxqxHuu7MomTNranDRDeUCzwtnfoeZi",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7FbzSEsJsAzvUWevttfVrbMZToq53fZrjA2Yw49itznB",
+      "block_height": 116055535,
+      "block_timestamp": 1712157722901765600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4793682355209,
+      "tokens_burnt": 479368235520900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "HekfHVWBSLX6XgCrjPio8pwSArKqZfUrLUxLm4B9hUyt",
+    "included_in_block_hash": "7jwRbnd1vWRUXsZgFcsiAWXPpwjYW4inG2aQY3LZY2WE",
+    "block_timestamp": "1712157720634416527",
+    "block": {
+      "block_height": 116055533
+    },
+    "receipt_conversion_tokens_burnt": "244492751400400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 479368235520900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":33,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"madlime.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 3.0449436490476e+21
+    }
+  },
+  {
+    "id": "3541830753",
+    "receipt_id": "7nKgPoZ5gF4CEcojsSaXgNZxUwoqWfBF5pP3gRUXDRJs",
+    "predecessor_account_id": "djeaunty_fourmule.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FzBvr4f4iD7D1caCRYL3DcciAg51t9NivREHQrpjWBbR",
+      "block_height": 116055751,
+      "block_timestamp": 1712158010992837600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8244075270392,
+      "tokens_burnt": 824407527039200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "2oqm6T8PDftdKmQgbQX3gcuNiAZnCuwUXuZDBxM12wTQ",
+    "included_in_block_hash": "HvZud6PNwHhSwGnmNSyrmidoEQbtJFfd2apPF5UF8iKP",
+    "block_timestamp": "1712158010137845969",
+    "block": {
+      "block_height": 116055750
+    },
+    "receipt_conversion_tokens_burnt": "242822732295800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 824407527039200000000,
+        "args": "{\"id\": 29, \"timeline\": {\"status\": \"CANCELLED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5466665220063e+21
+    }
+  },
+  {
+    "id": "3541831221",
+    "receipt_id": "Hm3rw5yQJKC2XgRWU7vUC3FxUv6o2Z8xgorZTzkcMfYy",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "781bdqtmtqVKMpXzu2VpaVyJvyyZ1TTgbWukYZWY2pNB",
+      "block_height": 116055752,
+      "block_timestamp": 1712158012337760800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4794362626713,
+      "tokens_burnt": 479436262671300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "2oqm6T8PDftdKmQgbQX3gcuNiAZnCuwUXuZDBxM12wTQ",
+    "included_in_block_hash": "HvZud6PNwHhSwGnmNSyrmidoEQbtJFfd2apPF5UF8iKP",
+    "block_timestamp": "1712158010137845969",
+    "block": {
+      "block_height": 116055750
+    },
+    "receipt_conversion_tokens_burnt": "242822732295800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 479436262671300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"djeaunty_fourmule.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":29,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"djeaunty_fourmule.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5466665220063e+21
+    }
+  },
+  {
+    "id": "3541850107",
+    "receipt_id": "AFjkfq45k1WuTYTGyAxwmfTAHMBCAUVHjevAxcq3kD81",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BA6YZbJNSUk2ZnPBUXASBcPynDhyRMuLAyrCXXXFpYoB",
+      "block_height": 116055807,
+      "block_timestamp": 1712158083345209300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6938414650298,
+      "tokens_burnt": 693841465029800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DPMXEuNN4h75YG4SgDjr33WVztDy2ud4ww7JjH4wzyJ8",
+    "included_in_block_hash": "fs3m4docNZdGh92pepcLJURN8HF5oFRKhVMcxWk3No2",
+    "block_timestamp": "1712158082046360666",
+    "block": {
+      "block_height": 116055806
+    },
+    "receipt_conversion_tokens_burnt": "242971869093600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "update_community",
+        "deposit": 0,
+        "fee": 693841465029800000000,
+        "args": "{\"handle\": \"neardevnews\", \"community\": {\"tag\": \"neardevnews\", \"name\": \"NEAR Dev NEWS\", \"addons\": [{\"id\": \"57gi1y\", \"enabled\": true, \"addon_id\": \"blog\", \"parameters\": \"{}\", \"display_name\": \"Developer Newsletters\"}], \"admins\": [\"victorkanu1.near\", \"orangejoe.near\", \"frol.near\", \"pivortex.near\", \"joshua.near\", \"theori.near\", \"flmel.near\"], \"handle\": \"neardevnews\", \"logo_url\": \"https://ipfs.near.social/ipfs/bafkreiccproffvv6bx2hmdmvdyvwrmz6brvyustw47m7ovmfuccmva7wx4\", \"banner_url\": \"https://ipfs.near.social/ipfs/bafybeihdw43htnwvppoeah3pw5szprcaiib7dkqc2jt5ywyndxex2rqyhm\", \"description\": \"Weekly Developer Updates\", \"website_url\": null, \"bio_markdown\": \"This is a sample text about your community.\\\\\\\\nYou can change it on the community configuration page.\", \"github_handle\": null, \"twitter_handle\": null, \"telegram_handle\": null}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8141260427516e+21
+    }
+  },
+  {
+    "id": "3541850503",
+    "receipt_id": "6m3YGBkmKn7EJvE9KAmMEsbf5W1oojHipE3wmrJr8FVf",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BJG8pBCsC1cs946kMBeLALWcK1rbeuf6j8AikLq1dyuG",
+      "block_height": 116055808,
+      "block_timestamp": 1712158084772944600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 18773127086282,
+      "tokens_burnt": 1.8773127086282e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DPMXEuNN4h75YG4SgDjr33WVztDy2ud4ww7JjH4wzyJ8",
+    "included_in_block_hash": "fs3m4docNZdGh92pepcLJURN8HF5oFRKhVMcxWk3No2",
+    "block_timestamp": "1712158082046360666",
+    "block": {
+      "block_height": 116055806
+    },
+    "receipt_conversion_tokens_burnt": "242971869093600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.8773127086282e+21,
+        "args": "{\"data\": {\"neardevnews.community.devhub.near\": {\"profile\": {\"name\": \"NEAR Dev NEWS\", \"tags\": {\"community\": \"\", \"neardevnews\": \"\", \"announcements\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreiccproffvv6bx2hmdmvdyvwrmz6brvyustw47m7ovmfuccmva7wx4\"}, \"linktree\": {\"github\": null, \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=neardevnews\", \"telegram\": null}, \"description\": \"This is a sample text about your community.\\\\\\\\nYou can change it on the community configuration page.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=neardevnews).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafybeihdw43htnwvppoeah3pw5szprcaiib7dkqc2jt5ywyndxex2rqyhm\"}}}, \"discussions.neardevnews.community.devhub.near\": {\"profile\": {\"name\": \"NEAR Dev NEWS (Community Discussions)\", \"tags\": {\"community\": \"\", \"discussions\": \"\", \"neardevnews\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreiccproffvv6bx2hmdmvdyvwrmz6brvyustw47m7ovmfuccmva7wx4\"}, \"linktree\": {\"github\": null, \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=neardevnews\", \"telegram\": null}, \"description\": \"Weekly Developer Updates\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=neardevnews).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafybeihdw43htnwvppoeah3pw5szprcaiib7dkqc2jt5ywyndxex2rqyhm\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8141260427516e+21
+    }
+  },
+  {
+    "id": "3541852187",
+    "receipt_id": "3VTLdJSZbBPDVnpHGpDgc7UuhXQZ56oCRheGrKY1QKdK",
+    "predecessor_account_id": "madlime.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "D6fr4FeULmvBHFG4LPrJ7JW6kfGQDXd1RjZ4aeTfXWaJ",
+      "block_height": 116055813,
+      "block_timestamp": 1712158091521215700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8334102452885,
+      "tokens_burnt": 833410245288500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "BcfvJz7rmgufawNNupBmcw2BeD98hCa5zcuEjfvrs22s",
+    "included_in_block_hash": "82Ndpe2kzLXX19HBW1HJUrLeL6in6PBn3ctNpw9VHehz",
+    "block_timestamp": "1712158090151060236",
+    "block": {
+      "block_height": 116055812
+    },
+    "receipt_conversion_tokens_burnt": "244506837784600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 833410245288500000000,
+        "args": "{\"id\": 33, \"body\": {\"name\": \"RE:Public DebHub Proposal #1 - Milestone for April\", \"summary\": \"Re:public is a CI/CD automation tool for smart contract development, allowing deployments across multiple chains with a simple git push. You can see Re:public as Vercel for web3. \\\\\\\\n\\\\\\\\nWe successfully participated in the EthLondon hackathon, securing bounties from Near and Arbitrum, and we won\\\\\\\\u{2019}t stop there. We are deeply believe in idea of improving the developer experience, making it our top priority. \\\\\\\\n\\\\\\\\nOur main goal for this proposal - add \\\\\\\\\\\\\\\"bages and templates\\\\\\\\\\\\\\\" feature, as well as refactor code.\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"## Overview\\\\\\\\nRe:public is a CI/CD automation tool for smart contract development, allowing deployments across multiple chains with a simple git push. You can see Re:public as GitLab or Vercel in web3 world.\\\\\\\\n\\\\\\\\nDesigned to streamline Web3 development, it eliminates the need for manual deployments across testnet chains. Utilizing NEAR cli tools and chain abstraction, it offers a seamless development process, reducing time-to-market and making blockchain development more accessible.\\\\\\\\n\\\\\\\\nWe successfully participated in the EthLondon hackathon, securing bounties from Near and Arbitrum, and we won\\\\\\\\u{2019}t stop there. We are deeply believe in idea of improving the developer experience, making it our top priority. \\\\\\\\n\\\\\\\\nWe created a working demo of Re:public in just two days during the hackathon, demonstrating our capability and drive. For more details, you can check out Re:public demo on ETHGlobal: [Re:public Showcase](https://ethglobal.com/showcase/re-public-4en9r)\\\\\\\\n\\\\\\\\n## Description\\\\\\\\n\\\\\\\\nOur project leverages NEAR cli tools and chain abstraction to deliver best CI experience for customers. Dockerized worker handles commits from connected repositories. Deploys them to the network and stores addresses. Chain abstraction allows to deploy projects to both near evm chains paying fees in NEAR tokens.\\\\\\\\n\\\\\\\\nThe core functionality of our project hinges on leveraging GitHub webhooks to capture various events, including app installations, commits, and pushes. Upon receiving an event, we populate our deployment queue. This queue is then processed by a background worker that is responsible for deploying the project across different blockchain networks, tailored to the specific requirements of each project type.\\\\\\\\n\\\\\\\\n## Who we are\\\\\\\\n\\\\\\\\nWe are experienced developers with an extensive development background, having several years of experience working in big tech companies, as well as creating and founding projects like [ZkNoid](https://zknoid.io/) and [xRaise](https://xraise.io/).\\\\\\\\n\\\\\\\\n## Milestone for this proposal (April 2024)\\\\\\\\n\\\\\\\\n1. **Code Revision and Refactoring:** Following our participation in the EthLondon Hackathon, it\\\\\\\\\\\\'s crucial to revisit and refine our code. We aim to transform prototyped app components into more robust, production-ready elements.\\\\\\\\n2. **Marketplace with Templates and \\\\\\\\\\\\'Badge Deploy\\\\\\\\\\\\':** We aspire to provide a \\\\\\\\\\\\'Vercel-like\\\\\\\\\\\\' user experience. Users should be able to deploy templates with a single \\\\\\\\\\\\'badge\\\\\\\\\\\\' click from any documentation or readme, mimicking the \\\\\\\\\\\\'Vercel deploy\\\\\\\\\\\\' functionality. This process will clone the selected template into the repository, handling its deployment and setup automatically.\\\\\\\\n3. **Customer Development:** We will engage in customer development.\\\\\\\\n\\\\\\\\n## Roadmap for Re:public\\\\\\\\n\\\\\\\\n### **Q1 (April-May) 2024 - MVP**\\\\\\\\n\\\\\\\\n1. **Code Revision and Refactoring:** Following our participation in the EthLondon Hackathon, it\\\\\\\\\\\\'s crucial to revisit and refine our code. We aim to transform prototyped app components into more robust, production-ready elements.\\\\\\\\n2. **Marketplace with Templates and \\\\\\\\\\\\'Badge Deploy\\\\\\\\\\\\':** We aspire to provide a \\\\\\\\\\\\'Vercel-like\\\\\\\\\\\\' user experience. Users should be able to deploy templates with a single \\\\\\\\\\\\'badge\\\\\\\\\\\\' click from any documentation or readme, mimicking the \\\\\\\\\\\\'Vercel deploy\\\\\\\\\\\\' functionality. This process will clone the selected template into the repository, handling its deployment and setup automatically.\\\\\\\\n3. **Logging and Deployments Pages:** Implement features to view logs for each unique contract deployment, marking our initial steps toward observability within the app.\\\\\\\\n4. **Enhanced GitHub Integration:** Leveraging the GitHub API, we plan to enrich the developer experience by integrating comments and deployments directly on GitHub when relevant.\\\\\\\\n5. **Customer Development and Early Marketing:** We will engage in customer development and begin early-stage marketing efforts.\\\\\\\\n6. **Long-Term Monetization Strategy:** Begin to think on long-term monetization strategies.\\\\\\\\n7. **Early Stage MVP Release:** Launch an initial version of our Minimum Viable Product, focusing on Near ecosystem deployments.\\\\\\\\n\\\\\\\\n### **Q3 2024 - MLP**\\\\\\\\n\\\\\\\\n1. **HZN Accelerator and Fundraising:** Apply to the HZN accelerator and seek fundraising opportunities for the project.\\\\\\\\n2. **Continue to CustDev:** Enhance collaboration with smart contract developers on different chains\\\\\\\\n3. **Tracing/Monitoring Enhancements:** Develop a custom monitoring and tracing page, complemented by comprehensive logs.\\\\\\\\n4. **Multi-Chain Deployment Integration:** Start integrating deployment capabilities on other chains like Arbitrum and Polygon.\\\\\\\\n5. **Release of MLP:** Launch a fully functional and production-ready Minimal Lovable Product.\\\\\\\\n\\\\\\\\n### **Q4 2024**\\\\\\\\n\\\\\\\\n1. **Successful Fundraising:** Achieve our fundraising goals.\\\\\\\\n2. **Solana Deployments:** Implement deployment capabilities on Solana, utilizing Near chain signatures.\\\\\\\\n3. **In-House Multisig Control:** Centralize multisig control within the app.\\\\\\\\n4. **AI Contract Auditor:** Introduce an AI-based contract auditing feature.\\\\\\\\n5. **IPFS Integration:** Enable contract deployments with linked frontends on IPFS.\\\\\\\\n6. **Enhanced Access Control:** Implement precise access control mechanisms.\\\\\\\\n\\\\\\\\n## Funding\\\\\\\\n\\\\\\\\nWe are required 13k usdt, for first half of our Q1 roadmap. This money would be enough for us to hire a team of 5 being able to develop fully usable and working MVP: \\\\\\\\n\\\\\\\\n1x - Product Manager / Analyst / Business (we have a contact - 2000 usdt/month)\\\\\\\\n\\\\\\\\n2x - Fullstack Developers (approx 2500 usdt/month)\\\\\\\\n\\\\\\\\n2x - Founders (fundraising, cust devs, programming) (Me and Andrei - 2500 usdt/month)\\\\\\\\n\\\\\\\\nAll additional required exprenses (marketing, ads, etc) would be allocated from founders capital\\\\\\\\n\\\\\\\\nTotal amount = 13 000 usdt (2000 + 2500*2 + 2500*2 + 1000) for April 2024\\\\\\\\n\\\\\\\\n## Afterword\\\\\\\\n\\\\\\\\nWe truly believe that our project will become one of the key projects in the Near ecosystem and can significantly influence the further success of Near in the web3 space. We received a lot of positive feedback at the hackathon from fellow hackers, builders, and programmers, and we know that the project will be in demand.\\\\\\\\n\\\\\\\\nAs developers, we possess the ability to communicate effectively in the language of our peers, and I believe we have the capability to develop a product that will play a crucial role in advancing the field of development both on the Near platform and within the broader Web3 ecosystem. This project is not just about promoting Near; it\\\\\\\\\\\\'s about advancing the entirety of the Web3 landscape. We are hopeful that this proposal will mark the beginning of our collaborative journey with Near.\\\\\\\\n\\\\\\\\nEthLondon Showcase:  https://ethglobal.com/showcase/re-public-4en9r\\\\\\\\n\\\\\\\\nOur Twitter: https://twitter.com/re_public_dev\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"madlime.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"13000\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5614704534198e+21
+    }
+  },
+  {
+    "id": "3541852620",
+    "receipt_id": "A3bZ62sSYMzsrGGpodqkDxVox3pgo1XrRR8pdAHfKEcr",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "hvLkzrd6haHSQD1GpyuuJNQaFnEJM1T539FAoCymnNF",
+      "block_height": 116055814,
+      "block_timestamp": 1712158092840847400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4835533703467,
+      "tokens_burnt": 483553370346700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "BcfvJz7rmgufawNNupBmcw2BeD98hCa5zcuEjfvrs22s",
+    "included_in_block_hash": "82Ndpe2kzLXX19HBW1HJUrLeL6in6PBn3ctNpw9VHehz",
+    "block_timestamp": "1712158090151060236",
+    "block": {
+      "block_height": 116055812
+    },
+    "receipt_conversion_tokens_burnt": "244506837784600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 483553370346700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"madlime.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":33,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"madlime.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5614704534198e+21
+    }
+  },
+  {
+    "id": "3541859045",
+    "receipt_id": "CP7kSybqMCeShn4dBt54Ly21sx4fnbzEZJw6CFzeeDkW",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EjAoKswUGfuRqBx9jJirMaoYxnNtr4ZvkghXGXRXGfoi",
+      "block_height": 116055830,
+      "block_timestamp": 1712158115077985500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7090823292822,
+      "tokens_burnt": 709082329282200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8WmnP7msQg7paSm2cVwjgLzrKNjfhNKgXNH7DJixSXKo",
+    "included_in_block_hash": "Qy1bdVWdUeNJc8v8M2GrjZWUBybkdD83wFxRva5Nx5J",
+    "block_timestamp": "1712158113744690884",
+    "block": {
+      "block_height": 116055829
+    },
+    "receipt_conversion_tokens_burnt": "242829216504400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 709082329282200000000,
+        "args": "{\"addons\": [{\"id\": \"57gi1y\", \"enabled\": true, \"addon_id\": \"blog\", \"parameters\": \"{}\", \"display_name\": \"Developer Newsletters \\\\\\\\u{1f4f0}\"}], \"handle\": \"neardevnews\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8347530367852e+21
+    }
+  },
+  {
+    "id": "3541859692",
+    "receipt_id": "bco1DLf7RZRhgTG1rPqYRhKDd7cyU5UcEmRmxPZA76E",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3cdxZMUVi8mXcZFMc1r2rRtxmSK5VvVKGdbo5onvWmHx",
+      "block_height": 116055831,
+      "block_timestamp": 1712158116446236000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 18828414909986,
+      "tokens_burnt": 1.8828414909986e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8WmnP7msQg7paSm2cVwjgLzrKNjfhNKgXNH7DJixSXKo",
+    "included_in_block_hash": "Qy1bdVWdUeNJc8v8M2GrjZWUBybkdD83wFxRva5Nx5J",
+    "block_timestamp": "1712158113744690884",
+    "block": {
+      "block_height": 116055829
+    },
+    "receipt_conversion_tokens_burnt": "242829216504400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.8828414909986e+21,
+        "args": "{\"data\": {\"neardevnews.community.devhub.near\": {\"profile\": {\"name\": \"NEAR Dev NEWS\", \"tags\": {\"community\": \"\", \"neardevnews\": \"\", \"announcements\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreiccproffvv6bx2hmdmvdyvwrmz6brvyustw47m7ovmfuccmva7wx4\"}, \"linktree\": {\"github\": null, \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=neardevnews\", \"telegram\": null}, \"description\": \"This is a sample text about your community.\\\\\\\\nYou can change it on the community configuration page.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=neardevnews).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafybeihdw43htnwvppoeah3pw5szprcaiib7dkqc2jt5ywyndxex2rqyhm\"}}}, \"discussions.neardevnews.community.devhub.near\": {\"profile\": {\"name\": \"NEAR Dev NEWS (Community Discussions)\", \"tags\": {\"community\": \"\", \"discussions\": \"\", \"neardevnews\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreiccproffvv6bx2hmdmvdyvwrmz6brvyustw47m7ovmfuccmva7wx4\"}, \"linktree\": {\"github\": null, \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=neardevnews\", \"telegram\": null}, \"description\": \"Weekly Developer Updates\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=neardevnews).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafybeihdw43htnwvppoeah3pw5szprcaiib7dkqc2jt5ywyndxex2rqyhm\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8347530367852e+21
+    }
+  },
+  {
+    "id": "3541886969",
+    "receipt_id": "82SNjTwcjnKR7hyUopVZT8Xfat6Jhj7dWM1sn1vE7D7V",
+    "predecessor_account_id": "madlime.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6PxcuX1NCNbpuNxvBhZybdEsoxyj71K46rXZ4osjtvqN",
+      "block_height": 116055909,
+      "block_timestamp": 1712158221198155800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9291048559907,
+      "tokens_burnt": 929104855990700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "F46Rg3CPGGcPfoHC4EKsQbsGSYDBx6ZwVKFTnTfJhtT8",
+    "included_in_block_hash": "95RA6MskkJr3qdwhVqAHCEak8fEhR1HgDGRxZ9gfgBHS",
+    "block_timestamp": "1712158219803254086",
+    "block": {
+      "block_height": 116055908
+    },
+    "receipt_conversion_tokens_burnt": "244506837784600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 929104855990700000000,
+        "args": "{\"id\": 33, \"body\": {\"name\": \"RE:Public DebHub Proposal #1 - Milestone for April\", \"summary\": \"Re:public is a CI/CD automation tool for smart contract development, allowing deployments across multiple chains with a simple git push. You can see Re:public as Vercel for web3. \\\\\\\\n\\\\\\\\nWe successfully participated in the EthLondon hackathon, securing bounties from Near and Arbitrum, and we won\\\\\\\\u{2019}t stop there. We are deeply believe in idea of improving the developer experience, making it our top priority. \\\\\\\\n\\\\\\\\nOur main goal for this proposal - add \\\\\\\\\\\\\\\"bages and templates\\\\\\\\\\\\\\\" feature, as well as refactor code.\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"## Overview\\\\\\\\nRe:public is a CI/CD automation tool for smart contract development, allowing deployments across multiple chains with a simple git push. You can see Re:public as GitLab or Vercel in web3 world.\\\\\\\\n\\\\\\\\nDesigned to streamline Web3 development, it eliminates the need for manual deployments across testnet chains. Utilizing NEAR cli tools and chain abstraction, it offers a seamless development process, reducing time-to-market and making blockchain development more accessible.\\\\\\\\n\\\\\\\\nWe successfully participated in the EthLondon hackathon, securing bounties from Near and Arbitrum, and we won\\\\\\\\u{2019}t stop there. We are deeply believe in idea of improving the developer experience, making it our top priority. \\\\\\\\n\\\\\\\\nWe created a working demo of Re:public in just two days during the hackathon, demonstrating our capability and drive. For more details, you can check out Re:public demo on ETHGlobal: [Re:public Showcase](https://ethglobal.com/showcase/re-public-4en9r)\\\\\\\\n\\\\\\\\n## Description\\\\\\\\n\\\\\\\\nOur project leverages NEAR cli tools and chain abstraction to deliver best CI experience for customers. Dockerized worker handles commits from connected repositories. Deploys them to the network and stores addresses. Chain abstraction allows to deploy projects to both near evm chains paying fees in NEAR tokens.\\\\\\\\n\\\\\\\\nThe core functionality of our project hinges on leveraging GitHub webhooks to capture various events, including app installations, commits, and pushes. Upon receiving an event, we populate our deployment queue. This queue is then processed by a background worker that is responsible for deploying the project across different blockchain networks, tailored to the specific requirements of each project type.\\\\\\\\n\\\\\\\\n## Who we are\\\\\\\\n\\\\\\\\nWe are experienced developers with an extensive development background, having several years of experience working in big tech companies, as well as creating and founding projects like [ZkNoid](https://zknoid.io/) and [xRaise](https://xraise.io/).\\\\\\\\n\\\\\\\\n## Milestone for this proposal (April 2024)\\\\\\\\n\\\\\\\\n1. **Code Revision and Refactoring:** Following our participation in the EthLondon Hackathon, it\\\\\\\\\\\\'s crucial to revisit and refine our code. We aim to transform prototyped app components into more robust, production-ready elements.\\\\\\\\n2. **Marketplace with Templates and \\\\\\\\\\\\'Badge Deploy\\\\\\\\\\\\':** We aspire to provide a \\\\\\\\\\\\'Vercel-like\\\\\\\\\\\\' user experience. Users should be able to deploy templates with a single \\\\\\\\\\\\'badge\\\\\\\\\\\\' click from any documentation or readme, mimicking the \\\\\\\\\\\\'Vercel deploy\\\\\\\\\\\\' functionality. This process will clone the selected template into the repository, handling its deployment and setup automatically.\\\\\\\\n3. **Customer Development:** We will engage in customer development.\\\\\\\\n\\\\\\\\n## Roadmap for Re:public\\\\\\\\n\\\\\\\\n### **Q1 (April-May) 2024 - MVP**\\\\\\\\n\\\\\\\\n1. **Code Revision and Refactoring:** Following our participation in the EthLondon Hackathon, it\\\\\\\\\\\\'s crucial to revisit and refine our code. We aim to transform prototyped app components into more robust, production-ready elements.\\\\\\\\n2. **Marketplace with Templates and \\\\\\\\\\\\'Badge Deploy\\\\\\\\\\\\':** We aspire to provide a \\\\\\\\\\\\'Vercel-like\\\\\\\\\\\\' user experience. Users should be able to deploy templates with a single \\\\\\\\\\\\'badge\\\\\\\\\\\\' click from any documentation or readme, mimicking the \\\\\\\\\\\\'Vercel deploy\\\\\\\\\\\\' functionality. This process will clone the selected template into the repository, handling its deployment and setup automatically.\\\\\\\\n3. **Logging and Deployments Pages:** Implement features to view logs for each unique contract deployment, marking our initial steps toward observability within the app.\\\\\\\\n4. **Enhanced GitHub Integration:** Leveraging the GitHub API, we plan to enrich the developer experience by integrating comments and deployments directly on GitHub when relevant.\\\\\\\\n5. **Customer Development and Early Marketing:** We will engage in customer development and begin early-stage marketing efforts.\\\\\\\\n6. **Long-Term Monetization Strategy:** Begin to think on long-term monetization strategies.\\\\\\\\n7. **Early Stage MVP Release:** Launch an initial version of our Minimum Viable Product, focusing on Near ecosystem deployments.\\\\\\\\n\\\\\\\\n### **Q3 2024 - MLP**\\\\\\\\n\\\\\\\\n1. **HZN Accelerator and Fundraising:** Apply to the HZN accelerator and seek fundraising opportunities for the project.\\\\\\\\n2. **Continue to CustDev:** Enhance collaboration with smart contract developers on different chains\\\\\\\\n3. **Tracing/Monitoring Enhancements:** Develop a custom monitoring and tracing page, complemented by comprehensive logs.\\\\\\\\n4. **Multi-Chain Deployment Integration:** Start integrating deployment capabilities on other chains like Arbitrum and Polygon.\\\\\\\\n5. **Release of MLP:** Launch a fully functional and production-ready Minimal Lovable Product.\\\\\\\\n\\\\\\\\n### **Q4 2024**\\\\\\\\n\\\\\\\\n1. **Successful Fundraising:** Achieve our fundraising goals.\\\\\\\\n2. **Solana Deployments:** Implement deployment capabilities on Solana, utilizing Near chain signatures.\\\\\\\\n3. **In-House Multisig Control:** Centralize multisig control within the app.\\\\\\\\n4. **AI Contract Auditor:** Introduce an AI-based contract auditing feature.\\\\\\\\n5. **IPFS Integration:** Enable contract deployments with linked frontends on IPFS.\\\\\\\\n6. **Enhanced Access Control:** Implement precise access control mechanisms.\\\\\\\\n\\\\\\\\n## Funding\\\\\\\\n\\\\\\\\nWe are required 13k usdt, for first half of our Q1 roadmap. This money would be enough for us to hire a team of 5 being able to develop fully usable and working MVP: \\\\\\\\n\\\\\\\\n1x - Product Manager / Analyst / Business (we have a contact - 2000 usdt/month)\\\\\\\\n\\\\\\\\n2x - Fullstack Developers (approx 2500 usdt/month)\\\\\\\\n\\\\\\\\n2x - Founders (fundraising, cust devs, programming) (Me and Andrei - 2500 usdt/month)\\\\\\\\n\\\\\\\\nAll additional required exprenses (marketing, ads, etc) would be allocated from founders capital\\\\\\\\n\\\\\\\\nTotal amount = 13 000 usdt (2000 + 2500*2 + 2500*2 + 1000) for April 2024\\\\\\\\n\\\\\\\\n## Afterword\\\\\\\\n\\\\\\\\nWe truly believe that our project will become one of the key projects in the Near ecosystem and can significantly influence the further success of Near in the web3 space. We received a lot of positive feedback at the hackathon from fellow hackers, builders, and programmers, and we know that the project will be in demand.\\\\\\\\n\\\\\\\\nAs developers, we possess the ability to communicate effectively in the language of our peers, and I believe we have the capability to develop a product that will play a crucial role in advancing the field of development both on the Near platform and within the broader Web3 ecosystem. This project is not just about promoting Near; it\\\\\\\\\\\\'s about advancing the entirety of the Web3 landscape. We are hopeful that this proposal will mark the beginning of our collaborative journey with Near.\\\\\\\\n\\\\\\\\nEthLondon Showcase:  https://ethglobal.com/showcase/re-public-4en9r\\\\\\\\n\\\\\\\\nOur Twitter: https://twitter.com/re_public_dev\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"madlime.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"13000\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6528847667466e+21
+    }
+  },
+  {
+    "id": "3541887619",
+    "receipt_id": "4cuP22wWn3ywDo7NjZyspf1smaXJDsKm15Lka4gtp7UM",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "52k3gBX7KEkhGf4LDiUJ2koXYgVaPjYp4twrmTpDZR3L",
+      "block_height": 116055910,
+      "block_timestamp": 1712158222544142000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4792730729713,
+      "tokens_burnt": 479273072971300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "F46Rg3CPGGcPfoHC4EKsQbsGSYDBx6ZwVKFTnTfJhtT8",
+    "included_in_block_hash": "95RA6MskkJr3qdwhVqAHCEak8fEhR1HgDGRxZ9gfgBHS",
+    "block_timestamp": "1712158219803254086",
+    "block": {
+      "block_height": 116055908
+    },
+    "receipt_conversion_tokens_burnt": "244506837784600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 479273072971300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"madlime.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":33,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"madlime.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6528847667466e+21
+    }
+  },
+  {
+    "id": "3541933729",
+    "receipt_id": "AdbTVB4BrMWfx8TURPaR3cA1EhiFN2GgoQExgPK5aD1F",
+    "predecessor_account_id": "madlime.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DBUAryZQkat7Qm7nhW4HovdytPG2ku182FyPMxjB18T1",
+      "block_height": 116056035,
+      "block_timestamp": 1712158385719653400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 10319236314741,
+      "tokens_burnt": 1.0319236314741e+21,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DWaSa1pSiF12QTY8yWB3wqWt6xdvAjgff9CrChgrCinT",
+    "included_in_block_hash": "G6DiCYoKoAk2eNb1AmH692bRBuE8CtGAovZ3bxszPLWy",
+    "block_timestamp": "1712158384368100090",
+    "block": {
+      "block_height": 116056034
+    },
+    "receipt_conversion_tokens_burnt": "244507732158200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 1.0319236314741e+21,
+        "args": "{\"id\": 33, \"body\": {\"name\": \"RE:Public DebHub Proposal #1 - Milestone for April\", \"summary\": \"Re:public is a CI/CD automation tool for smart contract development, allowing deployments across multiple chains with a simple git push. You can see Re:public as Vercel for web3. \\\\\\\\n\\\\\\\\nWe successfully participated in the EthLondon hackathon, securing bounties from Near and Arbitrum, and we won\\\\\\\\u{2019}t stop there. We are deeply believe in idea of improving the developer experience, making it our top priority. \\\\\\\\n\\\\\\\\nOur main goal for this proposal - add \\\\\\\\\\\\\\\"bages and templates\\\\\\\\\\\\\\\" feature, as well as refactor code.\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"## Overview\\\\\\\\nRe:public is a CI/CD automation tool for smart contract development, allowing deployments across multiple chains with a simple git push. You can see Re:public as GitLab or Vercel in web3 world.\\\\\\\\n\\\\\\\\nDesigned to streamline Web3 development, it eliminates the need for manual deployments across testnet chains. Utilizing NEAR cli tools and chain abstraction, it offers a seamless development process, reducing time-to-market and making blockchain development more accessible.\\\\\\\\n\\\\\\\\nWe successfully participated in the EthLondon hackathon, securing bounties from Near and Arbitrum, and we won\\\\\\\\u{2019}t stop there. We are deeply believe in idea of improving the developer experience, making it our top priority. \\\\\\\\n\\\\\\\\nWe created a working demo of Re:public in just two days during the hackathon, demonstrating our capability and drive. For more details, you can check out Re:public demo on ETHGlobal: [Re:public Showcase](https://ethglobal.com/showcase/re-public-4en9r)\\\\\\\\n\\\\\\\\n## Description\\\\\\\\n\\\\\\\\nOur project leverages NEAR cli tools and chain abstraction to deliver best CI experience for customers. Dockerized worker handles commits from connected repositories. Deploys them to the network and stores addresses. Chain abstraction allows to deploy projects to both near evm chains paying fees in NEAR tokens.\\\\\\\\n\\\\\\\\nThe core functionality of our project hinges on leveraging GitHub webhooks to capture various events, including app installations, commits, and pushes. Upon receiving an event, we populate our deployment queue. This queue is then processed by a background worker that is responsible for deploying the project across different blockchain networks, tailored to the specific requirements of each project type.\\\\\\\\n\\\\\\\\n## Who we are\\\\\\\\n\\\\\\\\nWe are experienced developers with an extensive development background, having several years of experience working in big tech companies, as well as creating and founding projects like [ZkNoid](https://zknoid.io/) and [xRaise](https://xraise.io/).\\\\\\\\n\\\\\\\\n## Milestone for this proposal (April 2024)\\\\\\\\n\\\\\\\\n1. **Code Revision and Refactoring:** Following our participation in the EthLondon Hackathon, it\\\\\\\\\\\\'s crucial to revisit and refine our code. We aim to transform prototyped app components into more robust, production-ready elements.\\\\\\\\n2. **Marketplace with Templates and \\\\\\\\\\\\'Badge Deploy\\\\\\\\\\\\':** We aspire to provide a \\\\\\\\\\\\'Vercel-like\\\\\\\\\\\\' user experience. Users should be able to deploy templates with a single \\\\\\\\\\\\'badge\\\\\\\\\\\\' click from any documentation or readme, mimicking the \\\\\\\\\\\\'Vercel deploy\\\\\\\\\\\\' functionality. This process will clone the selected template into the repository, handling its deployment and setup automatically.\\\\\\\\n3. **Customer Development:** We will engage in customer development.\\\\\\\\n\\\\\\\\n## Roadmap for Re:public\\\\\\\\n\\\\\\\\n### **Q1 (April-May) 2024 - MVP**\\\\\\\\n\\\\\\\\n1. **Code Revision and Refactoring:** Following our participation in the EthLondon Hackathon, it\\\\\\\\\\\\'s crucial to revisit and refine our code. We aim to transform prototyped app components into more robust, production-ready elements.\\\\\\\\n2. **Marketplace with Templates and \\\\\\\\\\\\'Badge Deploy\\\\\\\\\\\\':** We aspire to provide a \\\\\\\\\\\\'Vercel-like\\\\\\\\\\\\' user experience. Users should be able to deploy templates with a single \\\\\\\\\\\\'badge\\\\\\\\\\\\' click from any documentation or readme, mimicking the \\\\\\\\\\\\'Vercel deploy\\\\\\\\\\\\' functionality. This process will clone the selected template into the repository, handling its deployment and setup automatically.\\\\\\\\n3. **Logging and Deployments Pages:** Implement features to view logs for each unique contract deployment, marking our initial steps toward observability within the app.\\\\\\\\n4. **Enhanced GitHub Integration:** Leveraging the GitHub API, we plan to enrich the developer experience by integrating comments and deployments directly on GitHub when relevant.\\\\\\\\n5. **Customer Development and Early Marketing:** We will engage in customer development and begin early-stage marketing efforts.\\\\\\\\n6. **Long-Term Monetization Strategy:** Begin to think on long-term monetization strategies.\\\\\\\\n7. **Early Stage MVP Release:** Launch an initial version of our Minimum Viable Product, focusing on Near ecosystem deployments.\\\\\\\\n\\\\\\\\n### **Q3 2024 - MLP**\\\\\\\\n\\\\\\\\n1. **HZN Accelerator and Fundraising:** Apply to the HZN accelerator and seek fundraising opportunities for the project.\\\\\\\\n2. **Continue to CustDev:** Enhance collaboration with smart contract developers on different chains\\\\\\\\n3. **Tracing/Monitoring Enhancements:** Develop a custom monitoring and tracing page, complemented by comprehensive logs.\\\\\\\\n4. **Multi-Chain Deployment Integration:** Start integrating deployment capabilities on other chains like Arbitrum and Polygon.\\\\\\\\n5. **Release of MLP:** Launch a fully functional and production-ready Minimal Lovable Product.\\\\\\\\n\\\\\\\\n### **Q4 2024**\\\\\\\\n\\\\\\\\n1. **Successful Fundraising:** Achieve our fundraising goals.\\\\\\\\n2. **Solana Deployments:** Implement deployment capabilities on Solana, utilizing Near chain signatures.\\\\\\\\n3. **In-House Multisig Control:** Centralize multisig control within the app.\\\\\\\\n4. **AI Contract Auditor:** Introduce an AI-based contract auditing feature.\\\\\\\\n5. **IPFS Integration:** Enable contract deployments with linked frontends on IPFS.\\\\\\\\n6. **Enhanced Access Control:** Implement precise access control mechanisms.\\\\\\\\n\\\\\\\\n## Funding\\\\\\\\n\\\\\\\\nWe are required 13k usdt, for first half of our Q1 roadmap. This money would be enough for us to hire a team of 5 being able to develop fully usable and working MVP: \\\\\\\\n\\\\\\\\n1x - Product Manager / Analyst / Business (we have a contact - 2000 usdt/month)\\\\\\\\n\\\\\\\\n2x - Fullstack Developers (approx 2500 usdt/month)\\\\\\\\n\\\\\\\\n2x - Founders (fundraising, cust devs, programming) (Me and Andrei - 2500 usdt/month)\\\\\\\\n\\\\\\\\nAll additional required exprenses (marketing, ads, etc) would be allocated from founders capital\\\\\\\\n\\\\\\\\nTotal amount = 13 000 usdt (2000 + 2500 * 2 + 2500 * 2 + 1000) for April 2024\\\\\\\\n\\\\\\\\n## Afterword\\\\\\\\n\\\\\\\\nWe truly believe that our project will become one of the key projects in the Near ecosystem and can significantly influence the further success of Near in the web3 space. We received a lot of positive feedback at the hackathon from fellow hackers, builders, and programmers, and we know that the project will be in demand.\\\\\\\\n\\\\\\\\nAs developers, we possess the ability to communicate effectively in the language of our peers, and I believe we have the capability to develop a product that will play a crucial role in advancing the field of development both on the Near platform and within the broader Web3 ecosystem. This project is not just about promoting Near; it\\\\\\\\\\\\'s about advancing the entirety of the Web3 landscape. We are hopeful that this proposal will mark the beginning of our collaborative journey with Near.\\\\\\\\n\\\\\\\\nEthLondon Showcase:  https://ethglobal.com/showcase/re-public-4en9r\\\\\\\\n\\\\\\\\nOur Twitter: https://twitter.com/re_public_dev\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"madlime.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"13000\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.754322241011e+21
+    }
+  },
+  {
+    "id": "3541934018",
+    "receipt_id": "JE7e3v8eV3gKa2DVout7DP8S4xab4skkRYCwnadWroNF",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5B9NtY3UhgTGXRTan8Pgj3Rwmeo74w8PT4d6Nihr81xL",
+      "block_height": 116056036,
+      "block_timestamp": 1712158387032490000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4778908773787,
+      "tokens_burnt": 477890877378700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DWaSa1pSiF12QTY8yWB3wqWt6xdvAjgff9CrChgrCinT",
+    "included_in_block_hash": "G6DiCYoKoAk2eNb1AmH692bRBuE8CtGAovZ3bxszPLWy",
+    "block_timestamp": "1712158384368100090",
+    "block": {
+      "block_height": 116056034
+    },
+    "receipt_conversion_tokens_burnt": "244507732158200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 477890877378700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"madlime.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":33,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"madlime.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.754322241011e+21
+    }
+  },
+  {
+    "id": "3542147388",
+    "receipt_id": "13jDyZ6VYG9rPhMS485cXw3C4dtw3WhfSdYB4SWUvL24",
+    "predecessor_account_id": "madlime.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "E9E8m5HeJm5JG5uFXWS1d4qhkktrcDLNiAeK3bysGUZA",
+      "block_height": 116056478,
+      "block_timestamp": 1712158977384980700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 11304737483175,
+      "tokens_burnt": 1.1304737483175e+21,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "CDES8wcqzL7a1NjaVzExsXa6Y5SRwiAfJSGkWQYTXMkX",
+    "included_in_block_hash": "4JZmTQAdvzqDcnrfAwnYBKKTjn9cvQ5J5p4WDopLu1XG",
+    "block_timestamp": "1712158976062102428",
+    "block": {
+      "block_height": 116056477
+    },
+    "receipt_conversion_tokens_burnt": "244507732158200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 1.1304737483175e+21,
+        "args": "{\"id\": 33, \"body\": {\"name\": \"RE:Public DevHub Proposal #1 - Milestone for April\", \"summary\": \"Re:public is a CI/CD automation tool for smart contract development, allowing deployments across multiple chains with a simple git push. You can see Re:public as Vercel for web3. \\\\\\\\n\\\\\\\\nWe successfully participated in the EthLondon hackathon, securing bounties from Near and Arbitrum, and we won\\\\\\\\u{2019}t stop there. We are deeply believe in idea of improving the developer experience, making it our top priority. \\\\\\\\n\\\\\\\\nOur main goal for this proposal - add \\\\\\\\\\\\\\\"bages and templates\\\\\\\\\\\\\\\" feature, as well as refactor code.\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"## Overview\\\\\\\\nRe:public is a CI/CD automation tool for smart contract development, allowing deployments across multiple chains with a simple git push. You can see Re:public as GitLab or Vercel in web3 world.\\\\\\\\n\\\\\\\\nDesigned to streamline Web3 development, it eliminates the need for manual deployments across testnet chains. Utilizing NEAR cli tools and chain abstraction, it offers a seamless development process, reducing time-to-market and making blockchain development more accessible.\\\\\\\\n\\\\\\\\nWe successfully participated in the EthLondon hackathon, securing bounties from Near and Arbitrum, and we won\\\\\\\\u{2019}t stop there. We are deeply believe in idea of improving the developer experience, making it our top priority. \\\\\\\\n\\\\\\\\nWe created a working demo of Re:public in just two days during the hackathon, demonstrating our capability and drive. For more details, you can check out Re:public demo on ETHGlobal: [Re:public Showcase](https://ethglobal.com/showcase/re-public-4en9r)\\\\\\\\n\\\\\\\\n## Description\\\\\\\\n\\\\\\\\nOur project leverages NEAR cli tools and chain abstraction to deliver best CI experience for customers. Dockerized worker handles commits from connected repositories. Deploys them to the network and stores addresses. Chain abstraction allows to deploy projects to both near evm chains paying fees in NEAR tokens.\\\\\\\\n\\\\\\\\nThe core functionality of our project hinges on leveraging GitHub webhooks to capture various events, including app installations, commits, and pushes. Upon receiving an event, we populate our deployment queue. This queue is then processed by a background worker that is responsible for deploying the project across different blockchain networks, tailored to the specific requirements of each project type.\\\\\\\\n\\\\\\\\n## Who we are\\\\\\\\n\\\\\\\\nWe are experienced developers with an extensive development background, having several years of experience working in big tech companies, as well as creating and founding projects like [ZkNoid](https://zknoid.io/) and [xRaise](https://xraise.io/).\\\\\\\\n\\\\\\\\n## Milestone for this proposal (April 2024)\\\\\\\\n\\\\\\\\n1. **Code Revision and Refactoring:** Following our participation in the EthLondon Hackathon, it\\\\\\\\\\\\'s crucial to revisit and refine our code. We aim to transform prototyped app components into more robust, production-ready elements.\\\\\\\\n2. **Marketplace with Templates and \\\\\\\\\\\\'Badge Deploy\\\\\\\\\\\\':** We aspire to provide a \\\\\\\\\\\\'Vercel-like\\\\\\\\\\\\' user experience. Users should be able to deploy templates with a single \\\\\\\\\\\\'badge\\\\\\\\\\\\' click from any documentation or readme, mimicking the \\\\\\\\\\\\'Vercel deploy\\\\\\\\\\\\' functionality. This process will clone the selected template into the repository, handling its deployment and setup automatically.\\\\\\\\n3. **Customer Development:** We will engage in customer development.\\\\\\\\n\\\\\\\\n## Roadmap for Re:public\\\\\\\\n\\\\\\\\n### **Q1 (April-May) 2024 - MVP**\\\\\\\\n\\\\\\\\n1. **Code Revision and Refactoring:** Following our participation in the EthLondon Hackathon, it\\\\\\\\\\\\'s crucial to revisit and refine our code. We aim to transform prototyped app components into more robust, production-ready elements.\\\\\\\\n2. **Marketplace with Templates and \\\\\\\\\\\\'Badge Deploy\\\\\\\\\\\\':** We aspire to provide a \\\\\\\\\\\\'Vercel-like\\\\\\\\\\\\' user experience. Users should be able to deploy templates with a single \\\\\\\\\\\\'badge\\\\\\\\\\\\' click from any documentation or readme, mimicking the \\\\\\\\\\\\'Vercel deploy\\\\\\\\\\\\' functionality. This process will clone the selected template into the repository, handling its deployment and setup automatically.\\\\\\\\n3. **Logging and Deployments Pages:** Implement features to view logs for each unique contract deployment, marking our initial steps toward observability within the app.\\\\\\\\n4. **Enhanced GitHub Integration:** Leveraging the GitHub API, we plan to enrich the developer experience by integrating comments and deployments directly on GitHub when relevant.\\\\\\\\n5. **Customer Development and Early Marketing:** We will engage in customer development and begin early-stage marketing efforts.\\\\\\\\n6. **Long-Term Monetization Strategy:** Begin to think on long-term monetization strategies.\\\\\\\\n7. **Early Stage MVP Release:** Launch an initial version of our Minimum Viable Product, focusing on Near ecosystem deployments.\\\\\\\\n\\\\\\\\n### **Q3 2024 - MLP**\\\\\\\\n\\\\\\\\n1. **HZN Accelerator and Fundraising:** Apply to the HZN accelerator and seek fundraising opportunities for the project.\\\\\\\\n2. **Continue to CustDev:** Enhance collaboration with smart contract developers on different chains\\\\\\\\n3. **Tracing/Monitoring Enhancements:** Develop a custom monitoring and tracing page, complemented by comprehensive logs.\\\\\\\\n4. **Multi-Chain Deployment Integration:** Start integrating deployment capabilities on other chains like Arbitrum and Polygon.\\\\\\\\n5. **Release of MLP:** Launch a fully functional and production-ready Minimal Lovable Product.\\\\\\\\n\\\\\\\\n### **Q4 2024**\\\\\\\\n\\\\\\\\n1. **Successful Fundraising:** Achieve our fundraising goals.\\\\\\\\n2. **Solana Deployments:** Implement deployment capabilities on Solana, utilizing Near chain signatures.\\\\\\\\n3. **In-House Multisig Control:** Centralize multisig control within the app.\\\\\\\\n4. **AI Contract Auditor:** Introduce an AI-based contract auditing feature.\\\\\\\\n5. **IPFS Integration:** Enable contract deployments with linked frontends on IPFS.\\\\\\\\n6. **Enhanced Access Control:** Implement precise access control mechanisms.\\\\\\\\n\\\\\\\\n## Funding\\\\\\\\n\\\\\\\\nWe are required 13k usdt, for first half of our Q1 roadmap. This money would be enough for us to hire a team of 5 being able to develop fully usable and working MVP: \\\\\\\\n\\\\\\\\n1x - Product Manager / Analyst / Business (we have a contact - 2000 usdt/month)\\\\\\\\n\\\\\\\\n2x - Fullstack Developers (approx 2500 usdt/month)\\\\\\\\n\\\\\\\\n2x - Founders (fundraising, cust devs, programming) (Me and Andrei - 2500 usdt/month)\\\\\\\\n\\\\\\\\nAll additional required exprenses (marketing, ads, etc) would be allocated from founders capital\\\\\\\\n\\\\\\\\nTotal amount = 13 000 usdt (2000 + 2500 * 2 + 2500 * 2 + 1000) for April 2024\\\\\\\\n\\\\\\\\n## Afterword\\\\\\\\n\\\\\\\\nWe truly believe that our project will become one of the key projects in the Near ecosystem and can significantly influence the further success of Near in the web3 space. We received a lot of positive feedback at the hackathon from fellow hackers, builders, and programmers, and we know that the project will be in demand.\\\\\\\\n\\\\\\\\nAs developers, we possess the ability to communicate effectively in the language of our peers, and I believe we have the capability to develop a product that will play a crucial role in advancing the field of development both on the Near platform and within the broader Web3 ecosystem. This project is not just about promoting Near; it\\\\\\\\\\\\'s about advancing the entirety of the Web3 landscape. We are hopeful that this proposal will mark the beginning of our collaborative journey with Near.\\\\\\\\n\\\\\\\\nEthLondon Showcase:  https://ethglobal.com/showcase/re-public-4en9r\\\\\\\\n\\\\\\\\nOur Twitter: https://twitter.com/re_public_dev\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"madlime.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"13000\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8514901622618e+21
+    }
+  },
+  {
+    "id": "3542147807",
+    "receipt_id": "4QuwoonmwfwJ8tq3bK1KWSEoPwFc4BHUzoynqUuWPB43",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7uhSw1emDMXPVNMdQJYEYY4Z1VoJMhsPzLT3bvqEwVjQ",
+      "block_height": 116056479,
+      "block_timestamp": 1712158978729188400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4765086817861,
+      "tokens_burnt": 476508681786100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "CDES8wcqzL7a1NjaVzExsXa6Y5SRwiAfJSGkWQYTXMkX",
+    "included_in_block_hash": "4JZmTQAdvzqDcnrfAwnYBKKTjn9cvQ5J5p4WDopLu1XG",
+    "block_timestamp": "1712158976062102428",
+    "block": {
+      "block_height": 116056477
+    },
+    "receipt_conversion_tokens_burnt": "244507732158200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 476508681786100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"madlime.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":33,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"madlime.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8514901622618e+21
+    }
+  },
+  {
+    "id": "3542213200",
+    "receipt_id": "CxMgoEsMBw4muZKsYaoE9RGVt9mgC8qBgRZ1BNRTzM9C",
+    "predecessor_account_id": "bpolania.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Ev99wH2bQHw5NtdRjn3aEdtfHZpddE8Y7bLaMbtATfh5",
+      "block_height": 116056577,
+      "block_timestamp": 1712159112662266400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6889857680803,
+      "tokens_burnt": 688985768080300000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "E1jB2NaWTJVwCREkxcBdkMiz44Wa2FsEvEmxmJF2Kpxj",
+    "included_in_block_hash": "2VwjZUrVAxexLDRRTffHz7v4bSvbKbXygH9uSGHrevZA",
+    "block_timestamp": "1712159111348624719",
+    "block": {
+      "block_height": 116056576
+    },
+    "receipt_conversion_tokens_burnt": "242843973668800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 688985768080300000000,
+        "args": "{\"id\": 23, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": false, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4115421453172e+21
+    }
+  },
+  {
+    "id": "3542213993",
+    "receipt_id": "ETvw8kcqkJ8PTLTLKeLptAHM5hSL8aZaP1FVYUAC5PiP",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CpxD9V9akhmWMfXExKcJVqtCYwhveetXdFntCVfPTrjJ",
+      "block_height": 116056578,
+      "block_timestamp": 1712159114106888700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4797124035681,
+      "tokens_burnt": 479712403568100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "E1jB2NaWTJVwCREkxcBdkMiz44Wa2FsEvEmxmJF2Kpxj",
+    "included_in_block_hash": "2VwjZUrVAxexLDRRTffHz7v4bSvbKbXygH9uSGHrevZA",
+    "block_timestamp": "1712159111348624719",
+    "block": {
+      "block_height": 116056576
+    },
+    "receipt_conversion_tokens_burnt": "242843973668800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 479712403568100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"8566fc4bb16e1a7446b5e9b1b8aea94b5751d5f8c658d7af18d8cdf642d7b31d\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":23,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4115421453172e+21
+    }
+  },
+  {
+    "id": "3542321507",
+    "receipt_id": "4mbp3AsuokQhk6fxnNWCHPU9BnsXnjcPngWUg7mu7ERn",
+    "predecessor_account_id": "madlime.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DH6EjfGYqkN5HAkRa5AWp8TPg8iv14m5S2GDaAWQw315",
+      "block_height": 116056738,
+      "block_timestamp": 1712159331950016300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 12476982624061,
+      "tokens_burnt": 1.2476982624061e+21,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "9Mbh66CZsrPACPqyA7dXY4Qu1REumiB9JadQe53Ksd9p",
+    "included_in_block_hash": "6GPgdSZtmrAkRLsLadgQqeGWvAcCG1vB1DzumBBvRZr6",
+    "block_timestamp": "1712159330540708553",
+    "block": {
+      "block_height": 116056737
+    },
+    "receipt_conversion_tokens_burnt": "244954695364800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 1.2476982624061e+21,
+        "args": "{\"id\": 33, \"body\": {\"name\": \"RE:Public DevHub Proposal #1 - Milestone for April\", \"summary\": \"Re:public is a CI/CD automation tool for smart contract development, allowing deployments across multiple chains with a simple git push. You can see Re:public as Vercel for web3. \\\\\\\\n\\\\\\\\nWe successfully participated in the EthLondon hackathon, securing bounties from Near and Arbitrum, and we won\\\\\\\\u{2019}t stop there. We are deeply believe in idea of improving the developer experience, making it our top priority. \\\\\\\\n\\\\\\\\nOur main goal for this proposal - add \\\\\\\\\\\\\\\"bages and templates\\\\\\\\\\\\\\\" feature, as well as refactor code.\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"## Overview\\\\\\\\nRe:public is a CI/CD automation tool for smart contract development, allowing deployments across multiple chains with a simple git push. You can see Re:public as GitLab or Vercel in web3 world.\\\\\\\\n\\\\\\\\nDesigned to streamline Web3 development, it eliminates the need for manual deployments across testnet chains. Utilizing NEAR cli tools and chain abstraction, it offers a seamless development process, reducing time-to-market and making blockchain development more accessible.\\\\\\\\n\\\\\\\\nWe successfully participated in the EthLondon hackathon, securing bounties from Near and Arbitrum, and we won\\\\\\\\u{2019}t stop there. We are deeply believe in idea of improving the developer experience, making it our top priority. \\\\\\\\n\\\\\\\\nWe created a working demo of Re:public in just two days during the hackathon, demonstrating our capability and drive. For more details, you can check out Re:public demo on ETHGlobal: [Re:public Showcase](https://ethglobal.com/showcase/re-public-4en9r)\\\\\\\\n\\\\\\\\n## Description\\\\\\\\n\\\\\\\\nOur project leverages NEAR cli tools and chain abstraction to deliver best CI experience for customers. Dockerized worker handles commits from connected repositories. Deploys them to the network and stores addresses. Chain abstraction allows to deploy projects to both near evm chains paying fees in NEAR tokens.\\\\\\\\n\\\\\\\\nThe core functionality of our project hinges on leveraging GitHub webhooks to capture various events, including app installations, commits, and pushes. Upon receiving an event, we populate our deployment queue. This queue is then processed by a background worker that is responsible for deploying the project across different blockchain networks, tailored to the specific requirements of each project type.\\\\\\\\n\\\\\\\\n## Who we are\\\\\\\\n\\\\\\\\nWe are experienced developers with an extensive development background, having several years of experience working in big tech companies, as well as creating and founding projects like [ZkNoid](https://zknoid.io/) and [xRaise](https://xraise.io/).\\\\\\\\n\\\\\\\\n## Milestone for this proposal (April 2024)\\\\\\\\n\\\\\\\\n1. **Code Revision and Refactoring:** Following our participation in the EthLondon Hackathon, it\\\\\\\\\\\\'s crucial to revisit and refine our code. We aim to transform prototyped app components into more robust, production-ready elements.\\\\\\\\n2. **Marketplace with Templates and \\\\\\\\\\\\'Badge Deploy\\\\\\\\\\\\':** We aspire to provide a \\\\\\\\\\\\'Vercel-like\\\\\\\\\\\\' user experience. Users should be able to deploy templates with a single \\\\\\\\\\\\'badge\\\\\\\\\\\\' click from any documentation or readme, mimicking the \\\\\\\\\\\\'Vercel deploy\\\\\\\\\\\\' functionality. This process will clone the selected template into the repository, handling its deployment and setup automatically.\\\\\\\\n3. **Customer Development:** We will engage in customer development.\\\\\\\\n\\\\\\\\n## How This Benefits the Near Ecosystem:\\\\\\\\n\\\\\\\\nAdvantages of the project for the Near ecosystem include:\\\\\\\\n\\\\\\\\n1. **Near Chain Signatures Utilization:** Our project heavily relies on and utilizes chain signatures. Deploying this tool in a production environment and working closely with Near dev/Devrel team, we will significantly enhance documentation and the developer experience for those using chain signatures. Our experimental use of chain signatures, such as contract deployments via Near signatures, will provide invaluable insights for the Near core development team, which will benefir all chain signature users.\\\\\\\\n2. **Focus on Deployment Experience on NEAR:** Our MVP will prioritize deployment experiences and CI/CD in the Near ecosystem. We aim to offer the best onboarding experience with template-based deployments similar to Vercel, enabling users to deploy a sandbox contract directly from Near documentation. This approach will simplify the onboarding process for developers new to the Near ecosystem.\\\\\\\\n3. **Seamless Gas Payment using Near token:** A key advantage of our project is the seamless gas payment mechanism in Near, which could increase transaction volumes on the Near network and enhance the liquidity of the Near token.\\\\\\\\n4. **Deployment on Alternative Networks utilising NEAR:** Successful execution of the project and the ability to deploy on alternative networks, like Solana, will distinguish Near from competitors, broaden the application scope of chain signatures, and reinforce Near\\\\\\\\\\\\'s reputation as a leading developer experience network.\\\\\\\\n5. **Benefiting All of Web3:** This project aims to enhance the development experience across the entire Web3 ecosystem, not just for Near. By simplifying the process of developing, testing, and deploying smart contracts, we make it more appealing for developers to engage with and commit to the Web3 space. The more user-friendly the development environment, the greater the incentive for developers to innovate within Web3\\\\\\\\n\\\\\\\\n## Roadmap for Re:public\\\\\\\\n\\\\\\\\n### **Q1 (April-May) 2024 - MVP**\\\\\\\\n\\\\\\\\n1. **Code Revision and Refactoring:** Following our participation in the EthLondon Hackathon, it\\\\\\\\\\\\'s crucial to revisit and refine our code. We aim to transform prototyped app components into more robust, production-ready elements.\\\\\\\\n2. **Marketplace with Templates and \\\\\\\\\\\\'Badge Deploy\\\\\\\\\\\\':** We aspire to provide a \\\\\\\\\\\\'Vercel-like\\\\\\\\\\\\' user experience. Users should be able to deploy templates with a single \\\\\\\\\\\\'badge\\\\\\\\\\\\' click from any documentation or readme, mimicking the \\\\\\\\\\\\'Vercel deploy\\\\\\\\\\\\' functionality. This process will clone the selected template into the repository, handling its deployment and setup automatically.\\\\\\\\n3. **Logging and Deployments Pages:** Implement features to view logs for each unique contract deployment, marking our initial steps toward observability within the app.\\\\\\\\n4. **Enhanced GitHub Integration:** Leveraging the GitHub API, we plan to enrich the developer experience by integrating comments and deployments directly on GitHub when relevant.\\\\\\\\n5. **Customer Development and Early Marketing:** We will engage in customer development and begin early-stage marketing efforts.\\\\\\\\n6. **Long-Term Monetization Strategy:** Begin to think on long-term monetization strategies.\\\\\\\\n7. **Early Stage MVP Release:** Launch an initial version of our Minimum Viable Product, focusing on Near ecosystem deployments.\\\\\\\\n\\\\\\\\n### **Q3 2024 - MLP**\\\\\\\\n\\\\\\\\n1. **HZN Accelerator and Fundraising:** Apply to the HZN accelerator and seek fundraising opportunities for the project.\\\\\\\\n2. **Continue to CustDev:** Enhance collaboration with smart contract developers on different chains\\\\\\\\n3. **Tracing/Monitoring Enhancements:** Develop a custom monitoring and tracing page, complemented by comprehensive logs.\\\\\\\\n4. **Multi-Chain Deployment Integration:** Start integrating deployment capabilities on other chains like Arbitrum and Polygon.\\\\\\\\n5. **Release of MLP:** Launch a fully functional and production-ready Minimal Lovable Product.\\\\\\\\n\\\\\\\\n### **Q4 2024**\\\\\\\\n\\\\\\\\n1. **Successful Fundraising:** Achieve our fundraising goals.\\\\\\\\n2. **Solana Deployments:** Implement deployment capabilities on Solana, utilizing Near chain signatures.\\\\\\\\n3. **In-House Multisig Control:** Centralize multisig control within the app.\\\\\\\\n4. **AI Contract Auditor:** Introduce an AI-based contract auditing feature.\\\\\\\\n5. **IPFS Integration:** Enable contract deployments with linked frontends on IPFS.\\\\\\\\n6. **Enhanced Access Control:** Implement precise access control mechanisms.\\\\\\\\n\\\\\\\\n## Funding\\\\\\\\n\\\\\\\\nWe are required 13k usdt, for first half of our Q1 roadmap. This money would be enough for us to hire a team of 5 being able to develop fully usable and working MVP: \\\\\\\\n\\\\\\\\n1x - Product Manager / Analyst / Business (we have a contact - 2000 usdt/month)\\\\\\\\n\\\\\\\\n2x - Fullstack Developers (approx 2500 usdt/month)\\\\\\\\n\\\\\\\\n2x - Founders (fundraising, cust devs, programming) (Me and Andrei - 2500 usdt/month)\\\\\\\\n\\\\\\\\nAll additional required exprenses (marketing, ads, etc) would be allocated from founders capital\\\\\\\\n\\\\\\\\nTotal amount = 13 000 usdt (2000 + 2500 * 2 + 2500 * 2 + 1000) for April 2024\\\\\\\\n\\\\\\\\n## Afterword\\\\\\\\n\\\\\\\\nWe truly believe that our project will become one of the key projects in the Near ecosystem and can significantly influence the further success of Near in the web3 space. We received a lot of positive feedback at the hackathon from fellow hackers, builders, and programmers, and we know that the project will be in demand.\\\\\\\\n\\\\\\\\nAs developers, we possess the ability to communicate effectively in the language of our peers, and I believe we have the capability to develop a product that will play a crucial role in advancing the field of development both on the Near platform and within the broader Web3 ecosystem. This project is not just about promoting Near; it\\\\\\\\\\\\'s about advancing the entirety of the Web3 landscape. We are hopeful that this proposal will mark the beginning of our collaborative journey with Near.\\\\\\\\n\\\\\\\\nEthLondon Showcase:  https://ethglobal.com/showcase/re-public-4en9r\\\\\\\\n\\\\\\\\nOur Twitter: https://twitter.com/re_public_dev\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"madlime.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"13000\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9709132328956e+21
+    }
+  }
+]

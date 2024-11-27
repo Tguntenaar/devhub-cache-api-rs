@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "3928861243",
+    "receipt_id": "3rh75QY6nfDVf5GtjFw3STsBrSEsRErGEzTMPB4GfeCU",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EdN8W2x84skhStDBZ4ECYjjwitDoTQh8k5aK4NYPXRg",
+      "block_height": 116989680,
+      "block_timestamp": 1713299433215023600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5847418162835,
+      "tokens_burnt": 584741816283500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DXtxWjkTgxXTY93NKthhrNQAstWPqiaYjVAjtpKrp53S",
+    "included_in_block_hash": "12KmW4Y6GhBi7rJq9ebZQdBdhbiZRwPQhacHAan4Qm8Q",
+    "block_timestamp": "1713299431866179071",
+    "block": {
+      "block_height": 116989679
+    },
+    "receipt_conversion_tokens_burnt": "32658421319000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 584741816283500000000,
+        "args": "{\"addons\": [{\"id\": \"announcements\", \"enabled\": true, \"addon_id\": \"announcements\", \"parameters\": \"{}\", \"display_name\": \"Announcements\"}, {\"id\": \"discussions\", \"enabled\": true, \"addon_id\": \"discussions\", \"parameters\": \"{}\", \"display_name\": \"Discussions\"}, {\"id\": \"activity\", \"enabled\": true, \"addon_id\": \"activity\", \"parameters\": \"{}\", \"display_name\": \"Activity\"}, {\"id\": \"hq1s0t\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Developer Relations at near/dev/hub \\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"## About Us \\\\\\\\u{1f3c6}\\\\\\\\\\\\\\\\nWe are a dynamic team of community contributors dedicated to fostering the growth of the NEAR developer community. Our mission goes beyond engagement; we actively support developers through education, seamless onboarding, and collaborative development with NEAR\\\\\\\\\\\\'s open web stack. From gathering valuable feedback to orchestrating community calls and events, our commitment is to empower you as a developer and facilitate your journey in unlocking the full potential of NEAR Protocol.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## The Team \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n1. @bpolania.near\\\\\\\\\\\\\\\\n \\\\\\\\\\\\\\\\n Areas of Contribution: Head of DevRel , Coordinating NEAR Campus.\\\\\\\\\\\\\\\\n \\\\\\\\\\\\\\\\n2. @victorkanu1.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n Areas of Contribution: Developer onboarding / engagement, Technical writing, workshops, Coordinating African initiatives, Hackathons. \\\\\\\\\\\\\\\\n \\\\\\\\\\\\\\\\n3. @pivortex.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\tAreas of Contribution: Discord Support, Hosting workshops, Office Hours, Regional DevRel Support, Hackathons.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\t\\\\\\\\\\\\\\\\n4. @orangejoe.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n Areas of Contribution: Developer Retention , Developer Onboarding, Developer Support. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\t\\\\\\\\\\\\\\\\n5. @josecouto.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n Areas of Contribution: DevHub Marketing , Twitter Management, Hackathons.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n \\\\\\\\\\\\\\\\n6. @Flmel.near \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n Areas of Contribution: Developer Support, Documentation, Tooling, Office Hours.\\\\\\\\\\\\\\\\n \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Meet the team \\\\\\\\u{2b50}\\\\\\\\u{fe0f}\"}, {\"id\": \"9uriqz\", \"enabled\": true, \"addon_id\": \"blog\", \"parameters\": \"{}\", \"display_name\": \"Resources / Blogs \\\\\\\\u{1f680}\"}, {\"id\": \"ftd6ha\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Office Hours \\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\nNEAR Developer Office Hours are held several times a week by DevHub or other community groups, and are a great way to level up your NEAR development or just meet other developers in the community! We host office hours on the NEAR [Discord](https://discord.com/invite/zfhfRpaM4m), which is also a great place to ask questions via chat!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n#### NEAR DevHub - Developer Office Hours \\\\\\\\u{26a1}\\\\\\\\u{fe0f}\\\\\\\\\\\\\\\\n***When***: Thursday - 11:00 \\\\\\\\u{2013} 12:00 UTC (1:00 PM - 2:00PM CEST) & 18:00 \\\\\\\\u{2013} 19:00 UTC (11AM - 12PM PST)\\\\\\\\\\\\\\\\n***Where***: NEAR official Discord Server \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Developer Office Hours\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" Channel \\\\\\\\\\\\\\\\n- https://discord.com/channels/490367152054992913/914965851646603264\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nJoin these sessions get dev support on your projects, chat about developing on NEAR and get to know the development community better\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----- \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n#### NEAR Build DAO \\\\\\\\u{1f3c6}\\\\\\\\\\\\\\\\nOffice hours : Wednesday - 17:00 UTC / 12pm ET\\\\\\\\\\\\\\\\n \\\\\\\\u{201c}Hack-it Fridays\\\\\\\\u{201d}: Friday - 17:00 UTC / 12pm ET\\\\\\\\\\\\\\\\n \\\\\\\\\\\\\\\\n***Where***: Info how to join these sessions can be found on the #support channel on the Build DAO Telegram https://www.nearbuilders.com/tg-builders\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n#### NEAR HORIZON Founder Fridays \\\\\\\\u{1f91d}\\\\\\\\\\\\\\\\n***When***: Friday - 14:30 - 15:15 UTC (15:30 CET) \\\\\\\\\\\\\\\\n***Where***: https://shortlink.near.foundation/horizon-office-hours-rsvp (Requires Booking)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nContent geared toward Founders featuring: AMA\\\\\\\\\\\\'s from providers familiar with Web3 and NEAR ecosystem, ecosystem project demos, and updates from NDC, Horizon, and others...\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n-----\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n#### NEAR Chinese Developer Community Office Hours \\\\\\\\u{1f680}\\\\\\\\\\\\\\\\n***When***: Friday - 12:00 - 13:00 UTC (20:00-21:00 UTC +8)\\\\\\\\\\\\\\\\n***Where***: https://meeting.tencent.com/dm/a3xBOJfGHDYH\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe NEAR Chinese Developer Community Office Hour is held every Friday evening at 20:00 (UTC +8), featuring updates on NEAR engineering and ecosystem, course demos and open discussions.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nNEAR\\\\\\\\u{4e2d}\\\\\\\\u{6587}\\\\\\\\u{5f00}\\\\\\\\u{53d1}\\\\\\\\u{8005}\\\\\\\\u{793e}\\\\\\\\u{533a}\\\\\\\\u{7684}Office Hour\\\\\\\\u{6bcf}\\\\\\\\u{5468}\\\\\\\\u{4e94}\\\\\\\\u{665a}\\\\\\\\u{4e0a}20:00(UTC+8)\\\\\\\\u{4e3e}\\\\\\\\u{884c}\\\\\\\\u{ff0c}\\\\\\\\u{5185}\\\\\\\\u{5bb9}\\\\\\\\u{5305}\\\\\\\\u{62ec}NEAR\\\\\\\\u{5de5}\\\\\\\\u{7a0b}\\\\\\\\u{548c}\\\\\\\\u{751f}\\\\\\\\u{6001}\\\\\\\\u{7684}\\\\\\\\u{6700}\\\\\\\\u{65b0}\\\\\\\\u{8fdb}\\\\\\\\u{5c55}\\\\\\\\u{3001}\\\\\\\\u{8bfe}\\\\\\\\u{7a0b}\\\\\\\\u{6f14}\\\\\\\\u{793a}\\\\\\\\u{4ee5}\\\\\\\\u{53ca}\\\\\\\\u{5f00}\\\\\\\\u{653e}\\\\\\\\u{5f0f}\\\\\\\\u{8ba8}\\\\\\\\u{8bba}\\\\\\\\u{3002}\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Office hours \\\\\\\\u{1f468}\\\\\\\\u{200d}\\\\\\\\u{1f4bb}\"}, {\"id\": \"dqnckr\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Quarterly Updates \\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\n### DevHub Developer Relations Q1 2024 Report\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n*Empowering Developers, Building Communities*\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIn the first quarter of 2024, Our team has continued its efforts in building a vibrant developer ecosystem within NEAR. Through a series of strategic initiatives, content creation and engaging events. We significantly enhanced developer outreach, education, and support. Here\\\\\\\\\\\\'s a detailed overview of our key highlights and statistics for Q1 \\\\\\\\u{1f973}:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**1. Initiatives/Developer Outreach:**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **Developer Newsletter:** Our weekly technical updates have provided developers with tips, releases, and the latest developments within the ecosystem.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **Coding Challenges:** Monthly coding challenges for developers to hone their skills while tackling real-world problems.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **Office Hours:** Real-time support and personalized 1:1 sessions have been instrumental in addressing developers\\\\\\\\\\\\' queries promptly and effectively.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **Developer Survey on Tooling:** We conducted a comprehensive survey to gather feedback on tooling, ensuring that our resources align closely with developers\\\\\\\\\\\\' needs and preferences.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **NEAR Campus Activities:** Through workshops and engagements with universities worldwide, including ASU, UCSB, Boston University, UC San Diego, University of Calgary, Cambridge, Intelli, and Oxford, we\\\\\\\\\\\\'ve successfully introduced NEAR Protocol to the next generation of developers.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **Technical Support Channels:** Our presence on Discord, Telegram groups, and the DevHub community pages has facilitated seamless communication and support for developers at every stage of their journey.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **Proposals:** We\\\\\\\\\\\\'ve efficiently triaged proposals and connected developers with subject matter experts, streamlining the process and ensuring timely attestation.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**2. Content Creation:**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **Blogs:** With a commitment to consistent and informative content, we\\\\\\\\\\\\'ve published two tutorials and one comprehensive recap of DevHub activities in 2023, reaching developers globally.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **Recaps:** Through 5 detailed recaps of work group calls and community discussions posted on YouTube, we\\\\\\\\\\\\'ve provided transparency and insights into our initiatives\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **Developer Newsletter:** With five editions published in Q1, our newsletter continues to be a reliable source of updates and knowledge for developers\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**3. Trainings, Events, and Workshops:**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **University Engagements:** From Blockchain at ASU to engagements with universities worldwide, we\\\\\\\\\\\\'ve conducted workshops and presentations, attracting over 400 attendees and nurturing future talent.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **Online Workshops:** Leveraging the digital landscape, we\\\\\\\\\\\\'ve conducted workshops online, ensuring accessibility and inclusivity for developers globally.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **Event Participation:** Our active participation in events like ETHDenver and ETHSamba, has expanded our reach and strengthened our connections within the broader developer community.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**4. WG Calls/Community Calls/Twitter Spaces:**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **Protocol WG Calls:** Through two protocol working group calls and numerous community engagements, we\\\\\\\\\\\\'ve facilitated meaningful discussions and collaborations among NEP Authors, moderators and community members.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **Office Hours and Community Calls:** With over 26 sessions and three community calls, we\\\\\\\\\\\\'ve provided ample opportunities for developers to connect, learn, and share insights.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **Twitter Spaces:** Our Twitter Space garnered significant attention, reaching over 1.1k viewers and amplifying our message within the community.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**5. Platform Support (Community Page Management):**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **Community Page Management:** By updating 9 community pages with relevant information and call recaps, we\\\\\\\\\\\\'ve ensured that developers have access to up-to-date resources and insights.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n*DevHub Developer Relations Team*\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Updates \\\\\\\\u{26a1}\\\\\\\\u{fe0f}\"}], \"handle\": \"devrel\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.3680186783297e+21
+    }
+  },
+  {
+    "id": "3928862142",
+    "receipt_id": "8YDviMYSsd9jC3XGFNXhWA8PnVqCKMZzaN9thc5Pz8Up",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "83gHX1B9x1VsaPbVmpS99bd9SNH45jNUDnGxtxwAc1aT",
+      "block_height": 116989681,
+      "block_timestamp": 1713299434432261400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 17506184407272,
+      "tokens_burnt": 1.7506184407272e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DXtxWjkTgxXTY93NKthhrNQAstWPqiaYjVAjtpKrp53S",
+    "included_in_block_hash": "12KmW4Y6GhBi7rJq9ebZQdBdhbiZRwPQhacHAan4Qm8Q",
+    "block_timestamp": "1713299431866179071",
+    "block": {
+      "block_height": 116989679
+    },
+    "receipt_conversion_tokens_burnt": "32658421319000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.7506184407272e+21,
+        "args": "{\"data\": {\"devrel.community.devhub.near\": {\"profile\": {\"name\": \"Decentralized DevRel\", \"tags\": {\"devrel\": \"\", \"community\": \"\", \"announcements\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreignlfyjejbvnclxbkiybjejjjqgelvrjyqxd4gscb2maoy3qw7ame\"}, \"linktree\": {\"github\": null, \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=devrel\", \"telegram\": \"+niaMtWIjY3ZlZTVh\"}, \"description\": \"A group of community contributors who engage with the NEAR developer community, gather feedback, and coordinate community calls and events.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=devrel).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreicic7xwcw4no6kqpcqlhe3hcszlkfp5u53yw5a4x4lap3uzlndbcm\"}}}, \"discussions.devrel.community.devhub.near\": {\"profile\": {\"name\": \"Decentralized DevRel (Community Discussions)\", \"tags\": {\"devrel\": \"\", \"community\": \"\", \"discussions\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreignlfyjejbvnclxbkiybjejjjqgelvrjyqxd4gscb2maoy3qw7ame\"}, \"linktree\": {\"github\": null, \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=devrel\", \"telegram\": \"+niaMtWIjY3ZlZTVh\"}, \"description\": \"Providing community management and support to developers\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=devrel).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreicic7xwcw4no6kqpcqlhe3hcszlkfp5u53yw5a4x4lap3uzlndbcm\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.3680186783297e+21
+    }
+  },
+  {
+    "id": "3928864231",
+    "receipt_id": "DTAdq4gPoUTyz8wG5RQAMJ4GNXe6YQSsfny28WnpsGgH",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CP7gWRLyot9B9o1swu5X2txE3yJyCedkCaTgVEXB8pQw",
+      "block_height": 116989685,
+      "block_timestamp": 1713299439304696000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4645618364640,
+      "tokens_burnt": 464561836464000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "7DA91Hum2QXRTQKYYjF9yt5sF9ijQPBGoSbw8mPtZcp5",
+    "included_in_block_hash": "m44BZwKwW3vaJaRHzTqb45uaNPESQA2mcgp4vZmR1sw",
+    "block_timestamp": "1713299438279027031",
+    "block": {
+      "block_height": 116989684
+    },
+    "receipt_conversion_tokens_burnt": "31320214820000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 464561836464000000000,
+        "args": "{\"addons\": [{\"id\": \"announcements\", \"enabled\": true, \"addon_id\": \"announcements\", \"parameters\": \"{}\", \"display_name\": \"Announcements\"}, {\"id\": \"discussions\", \"enabled\": true, \"addon_id\": \"discussions\", \"parameters\": \"{}\", \"display_name\": \"Discussions\"}, {\"id\": \"activity\", \"enabled\": true, \"addon_id\": \"activity\", \"parameters\": \"{}\", \"display_name\": \"Activity\"}, {\"id\": \"a0fxp3\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"About Us\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"DevHub\\\\\\\\u{2019}s NEAR Campus supports existing student clubs, researchers, and faculties in blockchain technologies, enhancing both curricular and extracurricular activities.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Blockchain & Education:** Academia is recognizing Blockchain\\\\\\\\u{2019}s broad impact. NEAR\\\\\\\\\\\\'s contributions are facilitating global curriculum integration and research initiatives, focusing on refining existing norms, and highlighting its influence!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWe aim to merge blockchain education with mainstream academics, enabling participants to undertake innovative projects and excel in decentralized application development and research.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"center\\\\\\\\\\\\\\\"}\", \"display_name\": \"About us\"}, {\"id\": \"c64vnb\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"How to Join\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Step by Step\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"* Having a Blockchain club with history of activities;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* Setting up a call with NC team to present your club and learn more about the program;\\\\\\\\\\\\\\\\n(Set up a call [Here](https://calendly.com/nearcampus) adding the name of your club/University at the description)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* Creating a 3 months proposal that includes info about the club, proposed activities, timeline and KPIs;\\\\\\\\\\\\\\\\n \\\\\\\\\\\\\\\\n* Being approved after review;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* Posting the proposal at Near Social to the whole community;\\\\\\\\\\\\\\\\n \\\\\\\\\\\\\\\\n* Completing KYC;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* Ready to start! \\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"center\\\\\\\\\\\\\\\"}\", \"display_name\": \"How to Join\"}, {\"id\": \"zkqohe\", \"enabled\": true, \"addon_id\": \"blog\", \"parameters\": \"{}\", \"display_name\": \"Universities\"}, {\"id\": \"pvw5ay\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"How to post a proposal\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Step by Step\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[Here](https://drive.google.com/file/d/1OXW4mKcA2H0AI1KIHHT2jdm4hUorVJPO/view?usp=drive_link)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Posting a Proposal\"}], \"handle\": \"near-campus\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.7672374706402e+21
+    }
+  },
+  {
+    "id": "3928864818",
+    "receipt_id": "HizQGVD9gEzEXTpPKhaqeePb12V6CLjeJPQP92T3JYhB",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FgM4U44esxss8Rv2hauYmpZjaMuT3pc8fGAKu9w8ckSU",
+      "block_height": 116989686,
+      "block_timestamp": 1713299440326624800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 22713554193562,
+      "tokens_burnt": 2.2713554193562e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7DA91Hum2QXRTQKYYjF9yt5sF9ijQPBGoSbw8mPtZcp5",
+    "included_in_block_hash": "m44BZwKwW3vaJaRHzTqb45uaNPESQA2mcgp4vZmR1sw",
+    "block_timestamp": "1713299438279027031",
+    "block": {
+      "block_height": 116989684
+    },
+    "receipt_conversion_tokens_burnt": "31320214820000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 2.2713554193562e+21,
+        "args": "{\"data\": {\"near-campus.community.devhub.near\": {\"profile\": {\"name\": \"Near Campus\", \"tags\": {\"community\": \"\", \"near-campus\": \"\", \"announcements\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreib45plxkuy6wcefachijuq2dm4jnfs4236yhfleehqboeeljpmxje\"}, \"linktree\": {\"github\": null, \"twitter\": \"NearDevHub\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=near-campus\", \"telegram\": null}, \"description\": \"NEAR Devhub program intended to support existing Student Blockchain Clubs with resources, mentorships, and other collaboration opportunities. \\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=near-campus).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreib3tucyqaj6u6x6n5b45xqrvqyjm4l2xpwhousw5mxvfqocdgastu\"}}}, \"discussions.near-campus.community.devhub.near\": {\"profile\": {\"name\": \"Near Campus (Community Discussions)\", \"tags\": {\"community\": \"\", \"discussions\": \"\", \"near-campus\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreib45plxkuy6wcefachijuq2dm4jnfs4236yhfleehqboeeljpmxje\"}, \"linktree\": {\"github\": null, \"twitter\": \"NearDevHub\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=near-campus\", \"telegram\": null}, \"description\": \"Educational Program that aims to support Blockchain clubs.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=near-campus).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreib3tucyqaj6u6x6n5b45xqrvqyjm4l2xpwhousw5mxvfqocdgastu\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.7672374706402e+21
+    }
+  },
+  {
+    "id": "3928866059",
+    "receipt_id": "3GuuMA8eKFCgbanMbDwHXKzwFUcFrhnajFy4LALNqeKE",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EXD3F7hje4KMuon5D7yqkrXdz7L4uhYA8AVbjJBQn8Ls",
+      "block_height": 116989690,
+      "block_timestamp": 1713299445154372600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5433956136133,
+      "tokens_burnt": 543395613613300000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "BXdQTCwxvRYDoFR84ForRECZk8Jyu29LC78rquUsp8XS",
+    "included_in_block_hash": "4tL8QAYZ79QBud6g1mioHfeL2ww3dkZUXKaPadrCkWU5",
+    "block_timestamp": "1713299443902557941",
+    "block": {
+      "block_height": 116989689
+    },
+    "receipt_conversion_tokens_burnt": "32177024728800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 543395613613300000000,
+        "args": "{\"addons\": [{\"id\": \"announcements\", \"enabled\": true, \"addon_id\": \"announcements\", \"parameters\": \"{}\", \"display_name\": \"Announcements\"}, {\"id\": \"discussions\", \"enabled\": true, \"addon_id\": \"discussions\", \"parameters\": \"{}\", \"display_name\": \"Discussions\"}, {\"id\": \"activity\", \"enabled\": true, \"addon_id\": \"activity\", \"parameters\": \"{}\", \"display_name\": \"Activity\"}, {\"id\": \"p8zzt1\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview of Marketing Support Services\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We provide comprehensive marketing support services tailored for NEAR DevHub and our programs, including Hackbox, NEAR Campus, and the Fellowships.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Marketing services included Social Media amplification through Twitter X, Twitter Spaces, LinkedIn, TikTok, Youtube, Graphic design support and the design and execution of marketing campaigns.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWhile most of our operations are online, we can also design and help to execute and elevate IRL operations.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIn 2024 Q3 We\\\\\\\\u{2019}ll consider using the reputation tools to gain Marketing support privileges for projects.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Our tasks\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- Once per day, the marketing team will download the form applications and upload the new requests to the spreadsheet.\\\\\\\\\\\\\\\\n- The marketing team will review the new applications and fill out the Marketing Planning Log and the Twitter Planning Log on the spreadsheet.\\\\\\\\\\\\\\\\n- Suppose the marketing team notices missing information on the applications. In that case, it will contact the project owner through Telegram to get all the information and assets required for the amplification.\\\\\\\\\\\\\\\\n- The marketing team will post the amplification on due date and fill out the X report spreadsheet into the POST DATA tab.\\\\\\\\\\\\\\\\n- Seven days after the publishing date, the marketing team will upload the post activity data to the X report.\\\\\\\\\\\\\\\\n- The marketing team will keep the Marketing Planning Log updated.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n-----\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"About us \\\\\\\\u{2b50}\\\\\\\\u{fe0f}\"}, {\"id\": \"4hy9wk\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Marketing Policies and Handbook\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"**Welcome to the NEAR DevHub Marketing Policies and Handbook \\\\\\\\u{2013}** your comprehensive guide to navigating and harnessing the power of our marketing resources. As a vital part of NEAR DevHub, this handbook aims to streamline the process of requesting marketing support for your initiatives, covering a range of services including Social Media amplification, graphic design, Twitter spaces, and the development of engaging marketing campaigns.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWithin these pages, you\\\\\\\\\\\\'ll find clear guidelines on how to effectively communicate your marketing needs, ensuring that our team can seamlessly assist you in amplifying your projects. This handbook is your go-to resource for understanding the procedures, expectations, and collaborative opportunities that the NEAR DevHub Marketing team offers.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nBy aligning with these policies, you\\\\\\\\\\\\'ll pave the way for successful collaborations, ensuring that your projects receive the attention and support they deserve.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n-----\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Requesting Social Media Assistance\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nNEAR DevHub\\\\\\\\u{2019}s marketing team offers social media amplification through Twitter X and LinkedIn.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nNEAR DevHub team will request their amplification on this [spreadsheet](https://docs.google.com/spreadsheets/d/1wC9eZAe-dXziyuWFJBUhRJ7kAgvMW-zM9cI7dCDsPPM/edit#gid=0), filling out the info on the first tab named Request social media & Copy.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nCore Team members can also request amplification via Telegram DM to the Marketing team. The Marketing team will fill out the form for them. We suggest requesting the amplification seven to three days in advance of the publishing day. If the Core Team needs to post immediately, even on the same day, they can request it via Telegram DM.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nNEAR DevHub program partners such as Hackbox, NEAR Campus and Fellowships can request amplification by filling out the [Social Media request form](https://forms.gle/2UxKZjsKcKiT3co68).\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe amplification request through this form should be fully submitted seven days before the deadline. If they need graphic design support, they must request it before the social media amplification to provide the design asset. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nPlease remember to share all the information available when you request amplification.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n-----\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Request Media Assistance \\\\\\\\u{1f4fa}\"}, {\"id\": \"uy1tmi\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Graphic Design Requests\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\nNEAR DevHub\\\\\\\\u{2019}s marketing team offers graphic design support for all your needs, digital, online, and printed or produced for IRL events.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nNEAR DevHub team will request graphic design support on this spreadsheet, filling out the info on the second tab named [Request Graphic Design](https://docs.google.com/spreadsheets/d/1wC9eZAe-dXziyuWFJBUhRJ7kAgvMW-zM9cI7dCDsPPM/edit#gid=0).\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nCore Team members can also request graphic design assets via Telegram DM to the Marketing team. The Marketing team will fill out the form for them. If the Core Team needs the assets immediately, even on the same day, they can request it via Telegram DM. Please consider the production times below as a reference for your request.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nNEAR DevHub program partners such as Hackbox, NEAR Campus, and Fellowships can request amplification by filling out the [Graphic Design request](https://docs.google.com/forms/d/1T1XcKNGrzvQs0BR9siaEDWQToQmTRb-ENaRSPrFns2E/edit) form.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe graphic design support application through this form should be fully submitted some amount of days before the deadline regarding the asset requested.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**If they need graphic design and social media amplification, they need to plan ahead to share the asset on the Social Media amplification form.\\\\\\\\\\\\\\\\nPlease remember to share all the information available when you request a graphic design asset**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Request Design Assistance \\\\\\\\u{1f3a8}\"}, {\"id\": \"zgy5z7\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{}\", \"display_name\": \"Updates \\\\\\\\u{26a1}\\\\\\\\u{fe0f}\"}], \"handle\": \"devhub-marketing\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8342095826439e+21
+    }
+  },
+  {
+    "id": "3928866400",
+    "receipt_id": "AR5R5deZ631CYtvn5FU83LbUJMrRfcrjqNjyUJbBJfZo",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CNpWUxMGyad4Lh5XVHWE1s6DxfK4gEPULtDZtWcYRPNL",
+      "block_height": 116989691,
+      "block_timestamp": 1713299446525648600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 22586369443018,
+      "tokens_burnt": 2.2586369443018e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "BXdQTCwxvRYDoFR84ForRECZk8Jyu29LC78rquUsp8XS",
+    "included_in_block_hash": "4tL8QAYZ79QBud6g1mioHfeL2ww3dkZUXKaPadrCkWU5",
+    "block_timestamp": "1713299443902557941",
+    "block": {
+      "block_height": 116989689
+    },
+    "receipt_conversion_tokens_burnt": "32177024728800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 2.2586369443018e+21,
+        "args": "{\"data\": {\"devhub-marketing.community.devhub.near\": {\"profile\": {\"name\": \"DevHub Marketing\", \"tags\": {\"community\": \"\", \"announcements\": \"\", \"devhub-marketing\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibaajnupivr44jvlcog7okzn45a6lneupy2qw57glotdtyyfcxgii\"}, \"linktree\": {\"github\": null, \"twitter\": \"NEARdevhub\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=devhub-marketing\", \"telegram\": \"devhub_nearweek/1\"}, \"description\": \"Marketing support to help grow the NEAR developer ecosystem. If you\\\\\\\\\\\\'re a dev looking for NEAR Eco marketing support please submit a request via links found in \\\\\\\\\\\\\\\"Policies & Forms\\\\\\\\\\\\\\\" section!\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=devhub-marketing).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreihaibzlzo3n3n76x2nludvzwmgk3ov4zyf2zus4bdk45uadwwjjby\"}}}, \"discussions.devhub-marketing.community.devhub.near\": {\"profile\": {\"name\": \"DevHub Marketing (Community Discussions)\", \"tags\": {\"community\": \"\", \"discussions\": \"\", \"devhub-marketing\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibaajnupivr44jvlcog7okzn45a6lneupy2qw57glotdtyyfcxgii\"}, \"linktree\": {\"github\": null, \"twitter\": \"NEARdevhub\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=devhub-marketing\", \"telegram\": \"devhub_nearweek/1\"}, \"description\": \"On a mission to grow the NEAR developer ecosystem\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=devhub-marketing).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreihaibzlzo3n3n76x2nludvzwmgk3ov4zyf2zus4bdk45uadwwjjby\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8342095826439e+21
+    }
+  },
+  {
+    "id": "3928867081",
+    "receipt_id": "Am5SmUfYjGiLHjxWvFtAWNYYaR67Z1qgqAJvrM1EC8TZ",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "ASr2fTQGXWfRkn2q2rvx4e72i1Us9b7GamqiB6EGSGbY",
+      "block_height": 116989694,
+      "block_timestamp": 1713299450113208300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4216802540918,
+      "tokens_burnt": 421680254091800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "iixAqkd4ADZLfTGAHUDzjp9Q4h34yzCh7wEEwsACwmd",
+    "included_in_block_hash": "8UEo89PqJWyzgjmDLapPpFoptXh6jYiwMYDxPXLuSqMm",
+    "block_timestamp": "1713299448895481638",
+    "block": {
+      "block_height": 116989693
+    },
+    "receipt_conversion_tokens_burnt": "30890915492000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 421680254091800000000,
+        "args": "{\"addons\": [{\"id\": \"announcements\", \"enabled\": true, \"addon_id\": \"announcements\", \"parameters\": \"{}\", \"display_name\": \"Announcements\"}, {\"id\": \"discussions\", \"enabled\": true, \"addon_id\": \"discussions\", \"parameters\": \"{}\", \"display_name\": \"Discussions\"}, {\"id\": \"activity\", \"enabled\": true, \"addon_id\": \"activity\", \"parameters\": \"{}\", \"display_name\": \"Activity\"}], \"handle\": \"near-enterprise\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.7199756442338e+21
+    }
+  },
+  {
+    "id": "3928867426",
+    "receipt_id": "4jUC9f3VfThmWCv1MJLum7EUSy3nXF4d6Psx7H6NAyKu",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7rLhvshPdeumTgKRqUV8ShU2HENmnvyYJS9cHLYxNSTK",
+      "block_height": 116989695,
+      "block_timestamp": 1713299451182036200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 22674044746500,
+      "tokens_burnt": 2.26740447465e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "iixAqkd4ADZLfTGAHUDzjp9Q4h34yzCh7wEEwsACwmd",
+    "included_in_block_hash": "8UEo89PqJWyzgjmDLapPpFoptXh6jYiwMYDxPXLuSqMm",
+    "block_timestamp": "1713299448895481638",
+    "block": {
+      "block_height": 116989693
+    },
+    "receipt_conversion_tokens_burnt": "30890915492000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 2.26740447465e+21,
+        "args": "{\"data\": {\"near-enterprise.community.devhub.near\": {\"profile\": {\"name\": \"NEAR Enterprise\", \"tags\": {\"community\": \"\", \"announcements\": \"\", \"near-enterprise\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreidnuxnds4kbf5usckle2x3vhqdgfbrzox5kzkha54ccyqo6mbf5tq\"}, \"linktree\": {\"github\": null, \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=near-enterprise\", \"telegram\": null}, \"description\": \"Pioneering the future of enterprise blockchain solutions on the NEAR Protocol. Join us to explore innovation, collaboration, and the endless possibilities for businesses.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=near-enterprise).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafybeiftiomfhkkg356e6xfuu2tuger7tbiqwtv6dm3kqwbk7shfhasjoi\"}}}, \"discussions.near-enterprise.community.devhub.near\": {\"profile\": {\"name\": \"NEAR Enterprise (Community Discussions)\", \"tags\": {\"community\": \"\", \"discussions\": \"\", \"near-enterprise\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreidnuxnds4kbf5usckle2x3vhqdgfbrzox5kzkha54ccyqo6mbf5tq\"}, \"linktree\": {\"github\": null, \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=near-enterprise\", \"telegram\": null}, \"description\": \"NEAR-Powered Enterprise Blockchain Community\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=near-enterprise).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafybeiftiomfhkkg356e6xfuu2tuger7tbiqwtv6dm3kqwbk7shfhasjoi\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.7199756442338e+21
+    }
+  },
+  {
+    "id": "3928868493",
+    "receipt_id": "7Pn1M1tN7gD8dU6ayozRvf8obnUUB8Y3tstX4nT8Suq6",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "B5aLEtqSZsqMWdGXVdwEUV5QhaTXQDoErkxcB8kXP3E7",
+      "block_height": 116989699,
+      "block_timestamp": 1713299455594256100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4239767247945,
+      "tokens_burnt": 423976724794500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "mPvaQ6RPQBKzWetV2QK3zZgyA2THec6fvQ344z8n5r8",
+    "included_in_block_hash": "7u1DGaoqgVvamu5A1Y5KdRbSYfWVNQG6T9DgMXHbyGxD",
+    "block_timestamp": "1713299454571248064",
+    "block": {
+      "block_height": 116989698
+    },
+    "receipt_conversion_tokens_burnt": "30890691898600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 423976724794500000000,
+        "args": "{\"addons\": [{\"id\": \"announcements\", \"enabled\": true, \"addon_id\": \"announcements\", \"parameters\": \"{}\", \"display_name\": \"Announcements\"}, {\"id\": \"discussions\", \"enabled\": true, \"addon_id\": \"discussions\", \"parameters\": \"{}\", \"display_name\": \"Discussions\"}, {\"id\": \"activity\", \"enabled\": true, \"addon_id\": \"activity\", \"parameters\": \"{}\", \"display_name\": \"Activity\"}], \"handle\": \"ariz-portfolio\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.7191504063049e+21
+    }
+  },
+  {
+    "id": "3928868964",
+    "receipt_id": "2RFXm8boZXzUyUXHVaHsCQRcj41cXFgXZyNVG288pyYt",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6yg992KLDzsFoaq6EsCW2thREBPHQRKp2bPUrD9uAz8p",
+      "block_height": 116989700,
+      "block_timestamp": 1713299456692671200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 22642829896118,
+      "tokens_burnt": 2.2642829896118e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "mPvaQ6RPQBKzWetV2QK3zZgyA2THec6fvQ344z8n5r8",
+    "included_in_block_hash": "7u1DGaoqgVvamu5A1Y5KdRbSYfWVNQG6T9DgMXHbyGxD",
+    "block_timestamp": "1713299454571248064",
+    "block": {
+      "block_height": 116989698
+    },
+    "receipt_conversion_tokens_burnt": "30890691898600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 2.2642829896118e+21,
+        "args": "{\"data\": {\"ariz-portfolio.community.devhub.near\": {\"profile\": {\"name\": \"Ariz NEAR Portfolio\", \"tags\": {\"community\": \"\", \"announcements\": \"\", \"ariz-portfolio\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreicp7awkqdypsttlj6woekyixpd2uatt7nyc6le7dm4jzjnyguptpu\"}, \"linktree\": {\"github\": null, \"twitter\": \"@HelloAriz\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=ariz-portfolio\", \"telegram\": \"https://t.me/c/2056665559/1\"}, \"description\": \"Join us in our vision to create a diversified community, supported by effective tools, that facilitates users seeking financial control and simple reporting.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=ariz-portfolio).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreib2wq4ubigmvzvprbm75bq3gsa6nj4bf4ez7eybmcl7dq333codpm\"}}}, \"discussions.ariz-portfolio.community.devhub.near\": {\"profile\": {\"name\": \"Ariz NEAR Portfolio (Community Discussions)\", \"tags\": {\"community\": \"\", \"discussions\": \"\", \"ariz-portfolio\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreicp7awkqdypsttlj6woekyixpd2uatt7nyc6le7dm4jzjnyguptpu\"}, \"linktree\": {\"github\": null, \"twitter\": \"@HelloAriz\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=ariz-portfolio\", \"telegram\": \"https://t.me/c/2056665559/1\"}, \"description\": \"Providing asset overview and tax basis\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=ariz-portfolio).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreib2wq4ubigmvzvprbm75bq3gsa6nj4bf4ez7eybmcl7dq333codpm\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.7191504063049e+21
+    }
+  },
+  {
+    "id": "3928869829",
+    "receipt_id": "Y5UsAoaHpuxiiAhETymSJVwzi2SKAicVWh6fuwGSTJS",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CG6mqiuEtRzAX1GDwAFi8XVSA2ZkRmkf9sbpkNxLEgwu",
+      "block_height": 116989704,
+      "block_timestamp": 1713299460883522300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4304239148487,
+      "tokens_burnt": 430423914848700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "EyQktnEDnZpkHNT7ArmrCF1u5SzDAWPXCFcgVuypcF8S",
+    "included_in_block_hash": "6rU4P5mBPoTBNrETYmXdheqJv21577QrAtYqxqcvYKuj",
+    "block_timestamp": "1713299459715809106",
+    "block": {
+      "block_height": 116989703
+    },
+    "receipt_conversion_tokens_burnt": "30941224007000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 430423914848700000000,
+        "args": "{\"addons\": [{\"id\": \"announcements\", \"enabled\": true, \"addon_id\": \"announcements\", \"parameters\": \"{}\", \"display_name\": \"Announcements\"}, {\"id\": \"discussions\", \"enabled\": true, \"addon_id\": \"discussions\", \"parameters\": \"{}\", \"display_name\": \"Discussions\"}, {\"id\": \"activity\", \"enabled\": true, \"addon_id\": \"activity\", \"parameters\": \"{}\", \"display_name\": \"Activity\"}, {\"id\": \"nitmhf\", \"enabled\": true, \"addon_id\": \"telegram\", \"parameters\": \"{\\\\\\\\\\\\\\\"handles\\\\\\\\\\\\\\\":[\\\\\\\\\\\\\\\"nearprotocoluachannel\\\\\\\\\\\\\\\"]}\", \"display_name\": \"Telegram\"}, {\"id\": \"fqhqwj\", \"enabled\": true, \"addon_id\": \"github\", \"parameters\": \"{}\", \"display_name\": \"Github\"}], \"handle\": \"nearukraine\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.2258698682113e+21
+    }
+  },
+  {
+    "id": "3928870090",
+    "receipt_id": "Ac8wdon6C6v7HAaXwdNbRKszbjM1fS7D26HQfA2Sus4t",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Bqx2SkpJ2KCd7trWCXseUuhwc9PN9F7Kv5vRAHB2GA13",
+      "block_height": 116989705,
+      "block_timestamp": 1713299461966355200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 17645047293556,
+      "tokens_burnt": 1.7645047293556e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "EyQktnEDnZpkHNT7ArmrCF1u5SzDAWPXCFcgVuypcF8S",
+    "included_in_block_hash": "6rU4P5mBPoTBNrETYmXdheqJv21577QrAtYqxqcvYKuj",
+    "block_timestamp": "1713299459715809106",
+    "block": {
+      "block_height": 116989703
+    },
+    "receipt_conversion_tokens_burnt": "30941224007000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.7645047293556e+21,
+        "args": "{\"data\": {\"nearukraine.community.devhub.near\": {\"profile\": {\"name\": \"Near Ukraine Guild\", \"tags\": {\"community\": \"\", \"nearukraine\": \"\", \"announcements\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreifydvg7r7e34j5chme633yjhk6lqyhbesmdcd2ninjx6dyl46qyey\"}, \"linktree\": {\"github\": \"nearuaguild\", \"twitter\": \"nearuaguild\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=nearukraine\", \"telegram\": \"nearprotocoluachannel\"}, \"description\": \"This is a sample text about your community.\\\\\\\\nYou can change it on the community configuration page.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=nearukraine).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreid6e4sxkufdk6thaswuxy6qx4ojgorl67yf5q7v6polifljvx5px4\"}}}, \"discussions.nearukraine.community.devhub.near\": {\"profile\": {\"name\": \"Near Ukraine Guild (Community Discussions)\", \"tags\": {\"community\": \"\", \"discussions\": \"\", \"nearukraine\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreifydvg7r7e34j5chme633yjhk6lqyhbesmdcd2ninjx6dyl46qyey\"}, \"linktree\": {\"github\": \"nearuaguild\", \"twitter\": \"nearuaguild\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=nearukraine\", \"telegram\": \"nearprotocoluachannel\"}, \"description\": \"Community of Developers, Builders, Founders!\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=nearukraine).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreid6e4sxkufdk6thaswuxy6qx4ojgorl67yf5q7v6polifljvx5px4\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.2258698682113e+21
+    }
+  },
+  {
+    "id": "3928871159",
+    "receipt_id": "EnL8idKmh9dxLYpKjWR1pRSrWga3PJDiPMKA559zpzA7",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "76rzCguqzeEVZe6c85VfS1HJxoQ6wt1rKjvjmmuy2VLD",
+      "block_height": 116989709,
+      "block_timestamp": 1713299466086257000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4197592719194,
+      "tokens_burnt": 419759271919400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "5sq8RQ3DpqAEUGtXpRWs5BEf6xDzWhXgUTKTWbNCbuaJ",
+    "included_in_block_hash": "8sLU43ahJDYLYgTKfdyGkdKSgWmsXxg14piato8BAjxc",
+    "block_timestamp": "1713299464915586107",
+    "block": {
+      "block_height": 116989708
+    },
+    "receipt_conversion_tokens_burnt": "30890468305200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 419759271919400000000,
+        "args": "{\"addons\": [{\"id\": \"announcements\", \"enabled\": true, \"addon_id\": \"announcements\", \"parameters\": \"{}\", \"display_name\": \"Announcements\"}, {\"id\": \"discussions\", \"enabled\": true, \"addon_id\": \"discussions\", \"parameters\": \"{}\", \"display_name\": \"Discussions\"}, {\"id\": \"activity\", \"enabled\": true, \"addon_id\": \"activity\", \"parameters\": \"{}\", \"display_name\": \"Activity\"}], \"handle\": \"near-thailand\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.7130650079072e+21
+    }
+  },
+  {
+    "id": "3928871471",
+    "receipt_id": "46SqbgbCo6x884REXdbKxsaQdtt1LS5ThCMkZMAsesKB",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GcuupWwW6rYkCuKeAq9SYQ3m7wkaZXqtxPFRE4b6Jutm",
+      "block_height": 116989710,
+      "block_timestamp": 1713299467283542500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 22624152676826,
+      "tokens_burnt": 2.2624152676826e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5sq8RQ3DpqAEUGtXpRWs5BEf6xDzWhXgUTKTWbNCbuaJ",
+    "included_in_block_hash": "8sLU43ahJDYLYgTKfdyGkdKSgWmsXxg14piato8BAjxc",
+    "block_timestamp": "1713299464915586107",
+    "block": {
+      "block_height": 116989708
+    },
+    "receipt_conversion_tokens_burnt": "30890468305200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 2.2624152676826e+21,
+        "args": "{\"data\": {\"near-thailand.community.devhub.near\": {\"profile\": {\"name\": \"Thailand Dev\", \"tags\": {\"community\": \"\", \"announcements\": \"\", \"near-thailand\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibysr2mkwhb4j36h2t7mqwhynqdy4vzjfygfkfg65kuspd2bawauu\"}, \"linktree\": {\"github\": null, \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=near-thailand\", \"telegram\": null}, \"description\": \"This is a sample text about your community.\\\\\\\\nYou can change it on the community configuration page.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=near-thailand).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreic4xgorjt6ha5z4s5e3hscjqrowe5ahd7hlfc5p4hb6kdfp6prgy4\"}}}, \"discussions.near-thailand.community.devhub.near\": {\"profile\": {\"name\": \"Thailand Dev (Community Discussions)\", \"tags\": {\"community\": \"\", \"discussions\": \"\", \"near-thailand\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibysr2mkwhb4j36h2t7mqwhynqdy4vzjfygfkfg65kuspd2bawauu\"}, \"linktree\": {\"github\": null, \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=near-thailand\", \"telegram\": null}, \"description\": \"Welcome to Thailand\\\\\\\\u{1f1f9}\\\\\\\\u{1f1ed}\\\\\\\\u{1f389}\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=near-thailand).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreic4xgorjt6ha5z4s5e3hscjqrowe5ahd7hlfc5p4hb6kdfp6prgy4\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.7130650079072e+21
+    }
+  },
+  {
+    "id": "3928872364",
+    "receipt_id": "FEhujdv8iFSBfcT43z6FooRKYgTboLdL5K6SJAvTP66n",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6NysZZApGg4YhS3FsBSHdE3WF6nVXV5mWoPEazXBfcdu",
+      "block_height": 116989714,
+      "block_timestamp": 1713299471478915600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4220067542348,
+      "tokens_burnt": 422006754234800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DzRiid1nFgxfsSEindYp68qebDK7PWMUfLJJc7CCwv6F",
+    "included_in_block_hash": "3D9ZxCZTSpY63Hwo1B3FpnLd17hZVA8DLhPbE3DQ3dbT",
+    "block_timestamp": "1713299470329659711",
+    "block": {
+      "block_height": 116989713
+    },
+    "receipt_conversion_tokens_burnt": "30930715117200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 422006754234800000000,
+        "args": "{\"addons\": [{\"id\": \"announcements\", \"enabled\": true, \"addon_id\": \"announcements\", \"parameters\": \"{}\", \"display_name\": \"Announcements\"}, {\"id\": \"discussions\", \"enabled\": true, \"addon_id\": \"discussions\", \"parameters\": \"{}\", \"display_name\": \"Discussions\"}, {\"id\": \"activity\", \"enabled\": true, \"addon_id\": \"activity\", \"parameters\": \"{}\", \"display_name\": \"Activity\"}, {\"id\": \"60xxqp\", \"enabled\": true, \"addon_id\": \"blog\", \"parameters\": \"{}\", \"display_name\": \"Blog\"}, {\"id\": \"f81anq\", \"enabled\": true, \"addon_id\": \"telegram\", \"parameters\": \"{}\", \"display_name\": \"Telegram\"}], \"handle\": \"onboard\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.720188473175e+21
+    }
+  },
+  {
+    "id": "3928872797",
+    "receipt_id": "6sWsKxThSEYibKh3koiSaHCk8J1gbSMdvhsijopJYqhh",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FYXwQs44R59xdBzMcYBDTtdGmwYNQJfCJppRavkKY3Jx",
+      "block_height": 116989715,
+      "block_timestamp": 1713299472822154200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 22672510038230,
+      "tokens_burnt": 2.267251003823e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DzRiid1nFgxfsSEindYp68qebDK7PWMUfLJJc7CCwv6F",
+    "included_in_block_hash": "3D9ZxCZTSpY63Hwo1B3FpnLd17hZVA8DLhPbE3DQ3dbT",
+    "block_timestamp": "1713299470329659711",
+    "block": {
+      "block_height": 116989713
+    },
+    "receipt_conversion_tokens_burnt": "30930715117200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 2.267251003823e+21,
+        "args": "{\"data\": {\"onboard.community.devhub.near\": {\"profile\": {\"name\": \"OnboardDAO\", \"tags\": {\"onboard\": \"\", \"community\": \"\", \"announcements\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibysr2mkwhb4j36h2t7mqwhynqdy4vzjfygfkfg65kuspd2bawauu\"}, \"linktree\": {\"github\": null, \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=onboard\", \"telegram\": null}, \"description\": \"This is a sample text about your community.\\\\\\\\nYou can change it on the community configuration page.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=onboard).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreic4xgorjt6ha5z4s5e3hscjqrowe5ahd7hlfc5p4hb6kdfp6prgy4\"}}}, \"discussions.onboard.community.devhub.near\": {\"profile\": {\"name\": \"OnboardDAO (Community Discussions)\", \"tags\": {\"onboard\": \"\", \"community\": \"\", \"discussions\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibysr2mkwhb4j36h2t7mqwhynqdy4vzjfygfkfg65kuspd2bawauu\"}, \"linktree\": {\"github\": null, \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=onboard\", \"telegram\": null}, \"description\": \"onboarding, retention, & innovation\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=onboard).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreic4xgorjt6ha5z4s5e3hscjqrowe5ahd7hlfc5p4hb6kdfp6prgy4\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.720188473175e+21
+    }
+  },
+  {
+    "id": "3928875824",
+    "receipt_id": "3xXqUu9xP9wfi8Xd2RzbTQNvL9EcDxPzv6HM4PB3aLN8",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Gbb6ksKDxDnxyNg4JL1dcEPJ8mGVRDvEHyb9WspFCqrp",
+      "block_height": 116989719,
+      "block_timestamp": 1713299477610375200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4228911717294,
+      "tokens_burnt": 422891171729400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "4JKuE7or18wCRjW3XaghxjAP1QweCKkLvu78x6HJWgtF",
+    "included_in_block_hash": "3dZ26wYgjnSxWfmrNJejbpLAMwY3ZYTt4maEV63h2cNJ",
+    "block_timestamp": "1713299476366274002",
+    "block": {
+      "block_height": 116989718
+    },
+    "receipt_conversion_tokens_burnt": "30917746700000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 422891171729400000000,
+        "args": "{\"addons\": [{\"id\": \"announcements\", \"enabled\": true, \"addon_id\": \"announcements\", \"parameters\": \"{}\", \"display_name\": \"Announcements\"}, {\"id\": \"discussions\", \"enabled\": true, \"addon_id\": \"discussions\", \"parameters\": \"{}\", \"display_name\": \"Discussions\"}, {\"id\": \"activity\", \"enabled\": true, \"addon_id\": \"activity\", \"parameters\": \"{}\", \"display_name\": \"Activity\"}, {\"id\": \"slcxnp\", \"enabled\": true, \"addon_id\": \"telegram\", \"parameters\": \"{\\\\\\\\\\\\\\\"handles\\\\\\\\\\\\\\\":[\\\\\\\\\\\\\\\"NEARSecurity\\\\\\\\\\\\\\\"]}\", \"display_name\": \"Telegram\"}], \"handle\": \"security\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.7163883073378e+21
+    }
+  },
+  {
+    "id": "3928880996",
+    "receipt_id": "42xR8mc4Ebs3CT4u3cKxVYwDG9A2PzVri6Fd7qNzxMpc",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2WHxhy59idFDjyLLsHnJqY5EDfDQiuXAFf1bNQBeSFKm",
+      "block_height": 116989723,
+      "block_timestamp": 1713299482385979400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 22625793889084,
+      "tokens_burnt": 2.2625793889084e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4JKuE7or18wCRjW3XaghxjAP1QweCKkLvu78x6HJWgtF",
+    "included_in_block_hash": "3dZ26wYgjnSxWfmrNJejbpLAMwY3ZYTt4maEV63h2cNJ",
+    "block_timestamp": "1713299476366274002",
+    "block": {
+      "block_height": 116989718
+    },
+    "receipt_conversion_tokens_burnt": "30917746700000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 2.2625793889084e+21,
+        "args": "{\"data\": {\"security.community.devhub.near\": {\"profile\": {\"name\": \"Security\", \"tags\": {\"security\": \"\", \"community\": \"\", \"announcements\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreihyw6bdyzqitujuzgmfics7qwze4litnh2cx2m6ar3xrbr6dcqyfq\"}, \"linktree\": {\"github\": null, \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=security\", \"telegram\": null}, \"description\": \"This community is dedicated to keeping the NEAR ecosystem secure.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=security).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreic4xgorjt6ha5z4s5e3hscjqrowe5ahd7hlfc5p4hb6kdfp6prgy4\"}}}, \"discussions.security.community.devhub.near\": {\"profile\": {\"name\": \"Security (Community Discussions)\", \"tags\": {\"security\": \"\", \"community\": \"\", \"discussions\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreihyw6bdyzqitujuzgmfics7qwze4litnh2cx2m6ar3xrbr6dcqyfq\"}, \"linktree\": {\"github\": null, \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=security\", \"telegram\": null}, \"description\": \"Keeping NEAR secure\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=security).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreic4xgorjt6ha5z4s5e3hscjqrowe5ahd7hlfc5p4hb6kdfp6prgy4\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.7163883073378e+21
+    }
+  },
+  {
+    "id": "3928883231",
+    "receipt_id": "6AZQ2yDsY8BuebdpUbx2Sp2P6VjdMorhsZcGJyJfY5CF",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BsemRYHxxTjRHRYabQyp2TYWLK6JGEgQpCmAhaojnBsy",
+      "block_height": 116989728,
+      "block_timestamp": 1713299488395489500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4365549739244,
+      "tokens_burnt": 436554973924400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "6R6xWi89rzujYQBgvYJWaotX3Hsmer1ZXLRYCoBKqxfH",
+    "included_in_block_hash": "JZCkzY6d123k926YyWMhqqTwECQnczyFaCvwRr8ZNnD",
+    "block_timestamp": "1713299487300591623",
+    "block": {
+      "block_height": 116989727
+    },
+    "receipt_conversion_tokens_burnt": "30998463917400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 436554973924400000000,
+        "args": "{\"addons\": [{\"id\": \"announcements\", \"enabled\": true, \"addon_id\": \"announcements\", \"parameters\": \"{}\", \"display_name\": \"Announcements\"}, {\"id\": \"discussions\", \"enabled\": true, \"addon_id\": \"discussions\", \"parameters\": \"{}\", \"display_name\": \"Discussions\"}, {\"id\": \"activity\", \"enabled\": true, \"addon_id\": \"activity\", \"parameters\": \"{}\", \"display_name\": \"Activity\"}, {\"id\": \"bjryag\", \"enabled\": true, \"addon_id\": \"github\", \"parameters\": \"{\\\\\\\\\\\\\\\"dataTypesIncluded\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"issue\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"pullRequest\\\\\\\\\\\\\\\":false},\\\\\\\\\\\\\\\"description\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"repoURL\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"https://github.com/petersalomonsen/javascriptmusic\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"ticketState\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"all\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"WebAssembly Music\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"metadata\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"github.kanban_board\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"ticket\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"github.kanban_ticket\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"features\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"author\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"labels\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":true}}},\\\\\\\\\\\\\\\"columns\\\\\\\\\\\\\\\":{}}\", \"display_name\": \"Github\"}], \"handle\": \"webassemblymusic\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.2314548293276e+21
+    }
+  },
+  {
+    "id": "3928883727",
+    "receipt_id": "FgoVgKzLDQEfbpjcK5J971j49ATqEN5jSi8Xfvu6iUN5",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "81qZRakZtThj4ds4vKrCAwogTv7GMm8pKqStXrTmQGUG",
+      "block_height": 116989729,
+      "block_timestamp": 1713299489418675000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 17639013914858,
+      "tokens_burnt": 1.7639013914858e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "6R6xWi89rzujYQBgvYJWaotX3Hsmer1ZXLRYCoBKqxfH",
+    "included_in_block_hash": "JZCkzY6d123k926YyWMhqqTwECQnczyFaCvwRr8ZNnD",
+    "block_timestamp": "1713299487300591623",
+    "block": {
+      "block_height": 116989727
+    },
+    "receipt_conversion_tokens_burnt": "30998463917400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.7639013914858e+21,
+        "args": "{\"data\": {\"webassemblymusic.community.devhub.near\": {\"profile\": {\"name\": \"WebAssembly Music\", \"tags\": {\"community\": \"\", \"announcements\": \"\", \"webassemblymusic\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafybeiesrsf4fpdmlfgcnxpuxiqlgw2lk3bietdt25mvumrjk5yhf2c54e\"}, \"linktree\": {\"github\": \"petersalomonsen/javascriptmusic\", \"twitter\": \"salomonsen_p\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=webassemblymusic\", \"telegram\": null}, \"description\": \"Music written in Javascript / AssemblyScript and stored in tiny WebAssembly binaries. See the introduction here: https://youtu.be/C8j_ieOm4vE?si=I2Cq534eynlhasg5\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=webassemblymusic).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafybeihsid3qgrb2dd4adsd4kuwe3pondtjr3u27ru6e2mbvabvm4rocru\"}}}, \"discussions.webassemblymusic.community.devhub.near\": {\"profile\": {\"name\": \"WebAssembly Music (Community Discussions)\", \"tags\": {\"community\": \"\", \"discussions\": \"\", \"webassemblymusic\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafybeiesrsf4fpdmlfgcnxpuxiqlgw2lk3bietdt25mvumrjk5yhf2c54e\"}, \"linktree\": {\"github\": \"petersalomonsen/javascriptmusic\", \"twitter\": \"salomonsen_p\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=webassemblymusic\", \"telegram\": null}, \"description\": \"Music stored forever in the NEAR blockchain\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=webassemblymusic).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafybeihsid3qgrb2dd4adsd4kuwe3pondtjr3u27ru6e2mbvabvm4rocru\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.2314548293276e+21
+    }
+  },
+  {
+    "id": "3928885292",
+    "receipt_id": "FZm31BztDtLa5hkuxwSp6vyjkFUJwxERR6Z6QBNuNoDa",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AVnSTMaYC6ebzFwZDbQcvNWzY5G6yGGbKwUcfygejiQ4",
+      "block_height": 116989733,
+      "block_timestamp": 1713299494044434400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4313100048387,
+      "tokens_burnt": 431310004838700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "4jBKjHNtUBvV5benNJV2psvMPKkZXFMfegcbLaM7EHHh",
+    "included_in_block_hash": "22abpgrexEL8T1jy7ziz2DP2WFjPUsY6F7rJqcGfxWNw",
+    "block_timestamp": "1713299492811933254",
+    "block": {
+      "block_height": 116989732
+    },
+    "receipt_conversion_tokens_burnt": "30890021118400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 431310004838700000000,
+        "args": "{\"addons\": [{\"id\": \"announcements\", \"enabled\": true, \"addon_id\": \"announcements\", \"parameters\": \"{}\", \"display_name\": \"Announcements\"}, {\"id\": \"discussions\", \"enabled\": true, \"addon_id\": \"discussions\", \"parameters\": \"{}\", \"display_name\": \"Discussions\"}, {\"id\": \"activity\", \"enabled\": true, \"addon_id\": \"activity\", \"parameters\": \"{}\", \"display_name\": \"Activity\"}], \"handle\": \"she-is-near\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.7218459008761e+21
+    }
+  },
+  {
+    "id": "3928885647",
+    "receipt_id": "DRtLMbWVhAwKPszr7DSjmhCLWxHL7nRsgTGzzjJ8jMsC",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BWZzcLwHT8AdJuTropChkLo8bVjrpvdshFEwrvYWhmtZ",
+      "block_height": 116989734,
+      "block_timestamp": 1713299495206244900
+    },
+    "receipt_outcome": {
+      "gas_burnt": 22596458749190,
+      "tokens_burnt": 2.259645874919e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4jBKjHNtUBvV5benNJV2psvMPKkZXFMfegcbLaM7EHHh",
+    "included_in_block_hash": "22abpgrexEL8T1jy7ziz2DP2WFjPUsY6F7rJqcGfxWNw",
+    "block_timestamp": "1713299492811933254",
+    "block": {
+      "block_height": 116989732
+    },
+    "receipt_conversion_tokens_burnt": "30890021118400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 2.259645874919e+21,
+        "args": "{\"data\": {\"she-is-near.community.devhub.near\": {\"profile\": {\"name\": \"She is Near\", \"tags\": {\"community\": \"\", \"she-is-near\": \"\", \"announcements\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreif25fqciuct2v2nuwwbd3n4lmgjievim4hb37zbqa7nfmwilj75ke\"}, \"linktree\": {\"github\": null, \"twitter\": \"sheisnear23\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=she-is-near\", \"telegram\": null}, \"description\": \"This is a sample text about your community.\\\\\\\\nYou can change it on the community configuration page.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=she-is-near).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreidcqdkeqi7ovoioydmjjrq3pqraw4v7e6blaqc47hhjvq6ik2q2di\"}}}, \"discussions.she-is-near.community.devhub.near\": {\"profile\": {\"name\": \"She is Near (Community Discussions)\", \"tags\": {\"community\": \"\", \"discussions\": \"\", \"she-is-near\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreif25fqciuct2v2nuwwbd3n4lmgjievim4hb37zbqa7nfmwilj75ke\"}, \"linktree\": {\"github\": null, \"twitter\": \"sheisnear23\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=she-is-near\", \"telegram\": null}, \"description\": \"Onboarding, educating, empowering women in near ecosystem.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=she-is-near).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreidcqdkeqi7ovoioydmjjrq3pqraw4v7e6blaqc47hhjvq6ik2q2di\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.7218459008761e+21
+    }
+  },
+  {
+    "id": "3928886790",
+    "receipt_id": "21bvamPneA9MJWQuv1E3yuLw9xURGRJcwN6d3YM6ardR",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "seHFho77e3Xo9rKpMKzGtXDYgRaDfKXGGYjpoinGg3M",
+      "block_height": 116989737,
+      "block_timestamp": 1713299498388392200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4228973020735,
+      "tokens_burnt": 422897302073500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "BjpRQvBTpRSDDpxtGND1f5Yq6Dh1qvURtq9bZ5QWrxQK",
+    "included_in_block_hash": "8VNj78KDqAoHghBrhPqyPkZDPwxjcdAAkT5jSFyRG1xc",
+    "block_timestamp": "1713299497191999440",
+    "block": {
+      "block_height": 116989736
+    },
+    "receipt_conversion_tokens_burnt": "30888455964600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 422897302073500000000,
+        "args": "{\"addons\": [{\"id\": \"announcements\", \"enabled\": true, \"addon_id\": \"announcements\", \"parameters\": \"{}\", \"display_name\": \"Announcements\"}, {\"id\": \"discussions\", \"enabled\": true, \"addon_id\": \"discussions\", \"parameters\": \"{}\", \"display_name\": \"Discussions\"}, {\"id\": \"activity\", \"enabled\": true, \"addon_id\": \"activity\", \"parameters\": \"{}\", \"display_name\": \"Activity\"}], \"handle\": \"data\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.2099047473405e+21
+    }
+  },
+  {
+    "id": "3928887398",
+    "receipt_id": "HrWiaSzp3n2tygVGEX7aFe3bEY3d21fbQUX38a3oVdDx",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "59fPf4TtECe1rqTYwva9oMnLEtDcJ3PF36f4qcgZXR9H",
+      "block_height": 116989738,
+      "block_timestamp": 1713299499517228000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 17561189893024,
+      "tokens_burnt": 1.7561189893024e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "BjpRQvBTpRSDDpxtGND1f5Yq6Dh1qvURtq9bZ5QWrxQK",
+    "included_in_block_hash": "8VNj78KDqAoHghBrhPqyPkZDPwxjcdAAkT5jSFyRG1xc",
+    "block_timestamp": "1713299497191999440",
+    "block": {
+      "block_height": 116989736
+    },
+    "receipt_conversion_tokens_burnt": "30888455964600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.7561189893024e+21,
+        "args": "{\"data\": {\"data.community.devhub.near\": {\"profile\": {\"name\": \"Data\", \"tags\": {\"data\": \"\", \"community\": \"\", \"announcements\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibtrpy6skbdjafjdizdodnzan3g7qyxfxhtd33mcpjydvqpf47oou\"}, \"linktree\": {\"github\": \"near\", \"twitter\": \"NEARDevHub\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=data\", \"telegram\": \"NEARdata\"}, \"description\": \"We\\\\\\\\u{2019}re passionate about exploring the depths of on-chain data within the NEAR ecosystem. Our mission? To decode patterns, uncover insights, and empower builders, investors, and creators.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=data).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreic4xgorjt6ha5z4s5e3hscjqrowe5ahd7hlfc5p4hb6kdfp6prgy4\"}}}, \"discussions.data.community.devhub.near\": {\"profile\": {\"name\": \"Data (Community Discussions)\", \"tags\": {\"data\": \"\", \"community\": \"\", \"discussions\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibtrpy6skbdjafjdizdodnzan3g7qyxfxhtd33mcpjydvqpf47oou\"}, \"linktree\": {\"github\": \"near\", \"twitter\": \"NEARDevHub\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=data\", \"telegram\": \"NEARdata\"}, \"description\": \"Chain data & analytics\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=data).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreic4xgorjt6ha5z4s5e3hscjqrowe5ahd7hlfc5p4hb6kdfp6prgy4\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.2099047473405e+21
+    }
+  },
+  {
+    "id": "3928888643",
+    "receipt_id": "HioHCMzg6sMntb5FyqbJjucFFfbsWLKiZ5Vr9XfCnyDX",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "A92waRcCRa6og2pQGnqZ3vyRU5Zcg85Eq8Vx6cauT4ch",
+      "block_height": 116989742,
+      "block_timestamp": 1713299503732019000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4594553184333,
+      "tokens_burnt": 459455318433300000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8cqTbhwo3jwAfShmd8tCrm9SpdMBCbdywoxi6rYQ1Th",
+    "included_in_block_hash": "C48QNmvTDHb6iUU7qHLSffEJgVGrmWjB95fcCZ7mnE3G",
+    "block_timestamp": "1713299502509965155",
+    "block": {
+      "block_height": 116989741
+    },
+    "receipt_conversion_tokens_burnt": "31264987250200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 459455318433300000000,
+        "args": "{\"addons\": [{\"id\": \"announcements\", \"enabled\": true, \"addon_id\": \"announcements\", \"parameters\": \"{}\", \"display_name\": \"Announcements\"}, {\"id\": \"discussions\", \"enabled\": true, \"addon_id\": \"discussions\", \"parameters\": \"{}\", \"display_name\": \"Discussions\"}, {\"id\": \"activity\", \"enabled\": true, \"addon_id\": \"activity\", \"parameters\": \"{}\", \"display_name\": \"Activity\"}, {\"id\": \"57gi1y\", \"enabled\": true, \"addon_id\": \"blog\", \"parameters\": \"{}\", \"display_name\": \"Developer Newsletters \\\\\\\\u{1f4f0}\"}, {\"id\": \"sjhpwx\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Contribute to NEAR Dev NEWS \\\\\\\\u{1f91d}\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nNEAR Dev NEWS is our developer newsletter dedicated to sharing insights, updates, and resources within the NEAR Protocol developer community. There are numerous ways you can contribute to NEAR Dev NEWS and help shape weekly updates.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n1. **Articles and Tutorials**: Share your expertise and knowledge by writing articles and tutorials related to NEAR Protocol\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n2. **Project Showcases**: Showcase your projects and applications built on NEAR Protocol.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n3. **Event Announcements and Reports**: Keep the community informed about upcoming NEAR-related events, workshops, hackathons, and conferences. Additionally, share your experiences and key takeaways from events you\\\\\\\\\\\\'ve attended.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n4. **Feedback and Suggestions**: Share your thoughts on the newsletter\\\\\\\\\\\\'s content, format, and topics. Additionally, suggest ideas for future editions, highlight areas for improvement, and provide constructive criticism to help us better serve the community.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n5. **Sharing and Promotion**: Spread the word about NEAR Dev NEWS within your networks and communities. Share articles, tutorials, and updates on social media platforms, developer forums, and blockchain-related communities.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\n ##### Submit all relevant links via our \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Discussions page\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" and get featured! \\\\\\\\\\\\\\\\n **Be sure to include a brief bio and any resources.**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"How to get featured \\\\\\\\u{2728}\"}], \"handle\": \"neardevnews\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.2406018145291e+21
+    }
+  }
+]

@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "2277632991",
+    "receipt_id": "Gy8XYzMtqs6KECp8eyCE1FqW9gkxxj8U2hcB8msdJ42o",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4Eq5oE4Hp8UsEycgMqUzyWn56WPzhAkb51ZYi3GsNT1L",
+      "block_height": 111596137,
+      "block_timestamp": 1706519701748422000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7943351393852,
+      "tokens_burnt": 794335139385200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8uk5Hvrw4d4PzsQw837rTVXBZYueq5QuVUMKPAeVFxyJ",
+    "included_in_block_hash": "7sjTVMMqK7VAKaBrsrLwSHRMumBNpq8bzivsNh89aAUq",
+    "block_timestamp": "1706519700612538357",
+    "block": {
+      "block_height": 111596136
+    },
+    "receipt_conversion_tokens_burnt": "244081339544400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 794335139385200000000,
+        "args": "{\"addons\": [{\"id\": \"nuzsf0\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"About the Contract Standards Community\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Contracts are the fundamental components of dApps. NEAR Protocol\\\\\\\\u{2019}s contracts enable the possibilities of dApp development, and their standards ensure consistency in core primitives for those applications. If you are a dApp developer, you\\\\\\\\u{2019}re invested in contract standards! This group exists to connect those with interests in these standards to discuss and improve current standards, and maybe even propose new standards if such a need should arise.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## TIMELINE OF KEY EVENTS/HIGHLIGHTS \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n2023 Key Highlights \\\\\\\\\\\\\\\\n(Last updated June 14)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### COMMUNITY\\\\\\\\\\\\\\\\n- 167 members\\\\\\\\\\\\\\\\n- 2 community calls\\\\\\\\\\\\\\\\n- 4 Working Group calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### NEPS\\\\\\\\\\\\\\\\n- NEP-276 Payout NFT Standard Extension\\\\\\\\\\\\\\\\n- NEP-351 Add standards key to ContractSourceMetadata\\\\\\\\\\\\\\\\n- NEP-423 Add contract_metadata_update event\\\\\\\\\\\\\\\\n- NEP-463 Add nft_metadata_update event to NEP-171\\\\\\\\\\\\\\\\n- NEP-393 Adding soulbound token\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### EVENTS\\\\\\\\\\\\\\\\n- No events yet!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## STRUCTURE\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nAs with many core DevHub groups, the Contract Standards group has two main parts:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Working Group\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis formal group is a selected committee of subject matter experts who make official decisions on proposals and questions related to the NEAR dApp standards. They follow a strict process to review proposals, recommend funding to DAO or grant programs, and hold grant takers accountable. They engage with the broader community to understand their needs and encourage ideation.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Members**\\\\\\\\\\\\\\\\n- [Alexander Fadeev](https://github.com/fadeevab)\\\\\\\\\\\\\\\\n- [Evgeny Kapun](https://github.com/abacabadabacaba)\\\\\\\\\\\\\\\\n- [Robert Zaremba](https://github.com/robert-zaremba)\\\\\\\\\\\\\\\\n- [Vlad Frolov](https://github.com/frol)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Group\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis informal self-organized group provides a space for anyone interested in changes to the NEAR dApp standards. While this group does not make official decisions, it offers a great opportunity to meet with others to share ideas and submit proposals. This group is not controlled by anyone but the people who are organizing it. The group has a dedicated Telegram channel.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Communication Channels**\\\\\\\\\\\\\\\\n- [Contract Standards Community Group in Telegram](https://t.me/nearnft)\\\\\\\\\\\\\\\\n- Here on the discussions page!\\\\\\\\\\\\\\\\n- Check the Events tab for upcoming Community/Work Group calls.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Current Work & Topics of Discussion &nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you\\\\\\\\u{2019}d like to add a current topic you\\\\\\\\u{2019}re working on as part of this community, please make a post on the main Group page for inclusion!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Community Links &nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### Community Organizations / Projects\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### Reference Material\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you\\\\\\\\u{2019}d like to add links to your project, interesting reference material for the community, or anything else worth linking here, please reach out to the community lead! We want to be as inclusive as possible.\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"About Us \\\\\\\\u{2b50}\\\\\\\\u{fe0f}\"}, {\"id\": \"tzf4ez\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Events\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"## Upcoming Events\\\\\\\\\\\\\\\\nNo dates currently set! If you have topics to discuss, feel free to propose a call on our [Telegram Channel](https://t.me/nearnft)! We\\\\\\\\\\\\'ll find a time that works for the community.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Meeting Archive\\\\\\\\\\\\\\\\n\\\\\\\\u{1f4c4}  [See all previous meeting notes](https://docs.google.com/document/d/1cLthGcAIECWV3Ga4ocTf10PgAqDf6Owrz3VRMvdbV1k)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Recent Calls\\\\\\\\\\\\\\\\nSee summaries for the most recent calls below.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Call - May 25th, 2023\\\\\\\\\\\\\\\\nAnyone can propose topics and join the community call for discussion.\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**MODERATOR:** Maxwell S\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VIDEO:** [Contract Standards Community Group Call #3 \\\\\\\\u{2013} NEAR DevHub September 27th, 2023\\\\\\\\\\\\\\\\n](https://youtu.be/T0qMj1zGA3U)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**AGENDA** \\\\\\\\\\\\\\\\n- Discussion on incentivizing completion of the Multitoken standard and what the blockers might be.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**OUTCOMES**\\\\\\\\\\\\\\\\n- Ken from NEAR Horizon offered to do some unblocking work to move NEP-245 forward in the coming weeks.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Work Group Calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Contract Standards Work Group may host public formal calls to review specific proposals, discuss attestations, or vote on decisions.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### June 30th, 2023 - Working Group Call\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**MODERATOR :** Maxwell S\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VIDEO :** [Contract Standards Work Group Meeting \\\\\\\\u{2013} June 30th, 2023](https://youtu.be/S1An5CDG154)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**AGENDA**\\\\\\\\\\\\\\\\n-   Objective \\\\\\\\\\\\\\\\n-   Introductions\\\\\\\\\\\\\\\\n-   Discussion: Discussion: NEP-393 Soulbound Token\\\\\\\\\\\\\\\\n-   Voting Decision\\\\\\\\\\\\\\\\n-   Getting Involved\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**NOTES**\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **NEP-393 Soulbound Token:** This NEP implements wallet-bound non-fungible tokens on NEAR (Soulbound tokens). These tokens cannot trivially be transferred from wallet to wallet, so they serve as a form of wallet-identification & credentialing. This particular implementation has some built-in tools for transferring credentials (which bans/deletes) the transferring wallet)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VOTE DECISION**\\\\\\\\\\\\\\\\n-   NEP-393: Approved\\\\\\\\\\\\\\\\n    \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**ACTION ITEMS**\\\\\\\\\\\\\\\\n- Fill out \\\\\\\\u{201c}Changelog\\\\\\\\u{201d} section in the NEP with the reference to the video recording of WG call, benefit and concerns table - Robert Z\\\\\\\\\\\\\\\\n- Approve and merge the NEP - Vlad F\\\\\\\\\\\\\\\\n- Endorse SBT support in Wallets - Robert Z\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**RELATED RESOURCES**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- NEP-393 Soulbound Token on GitHub: [LINK](https://github.com/near/NEPs/pull/393)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Events\\\\\\\\\\\\\\\\nWatch this space. We\\\\\\\\\\\\'ll always share highlights and summaries of recent community events.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\"}\", \"display_name\": \"Community Events \\\\\\\\u{1f4fa}\"}], \"handle\": \"contract-standards\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6344515540884e+21
+    }
+  },
+  {
+    "id": "2277633020",
+    "receipt_id": "A2dSVYevjyrK8cpL5SefC6fZNWYAskXLEm6wFcBH3P2p",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2fF9Cx8G4BMiyuyEpXpKDyjwUGNHfAYsKtgaq8BJ7Coo",
+      "block_height": 111596138,
+      "block_timestamp": 1706519702878275600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5960350751588,
+      "tokens_burnt": 596035075158800000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8uk5Hvrw4d4PzsQw837rTVXBZYueq5QuVUMKPAeVFxyJ",
+    "included_in_block_hash": "7sjTVMMqK7VAKaBrsrLwSHRMumBNpq8bzivsNh89aAUq",
+    "block_timestamp": "1706519700612538357",
+    "block": {
+      "block_height": 111596136
+    },
+    "receipt_conversion_tokens_burnt": "244081339544400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 596035075158800000000,
+        "args": "{\"data\": {\"contract-standards.community.devhub.near\": {\"profile\": {\"name\": \"Contract Standards\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreieuxcx2oy5xbnhgppedsm7sym2xass4acgcvkxyaytf5igyoqitva\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6344515540884e+21
+    }
+  },
+  {
+    "id": "2277635995",
+    "receipt_id": "AjbW4Qzjp4UDMdfgNUjCLurdsxxBHCn6PYegyacAzc9C",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5FoNxL2xZqn47pfZgunK74hgufDEjxRn7fJ5NBmiZQ94",
+      "block_height": 111596228,
+      "block_timestamp": 1706519795149625000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7955961224536,
+      "tokens_burnt": 795596122453600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "JUghRS8YrSmLWWcjuX4dngU772Rwd9kfnqu4FZs2caw",
+    "included_in_block_hash": "5QTzEuzijbviomCbFf1VbtdNwAXKmPNLdugxwuk4gUKW",
+    "block_timestamp": "1706519794024600023",
+    "block": {
+      "block_height": 111596227
+    },
+    "receipt_conversion_tokens_burnt": "244104593258000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 795596122453600000000,
+        "args": "{\"addons\": [{\"id\": \"nuzsf0\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"About the Contract Standards Community\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Contracts are the fundamental components of dApps. NEAR Protocol\\\\\\\\u{2019}s contracts enable the possibilities of dApp development, and their standards ensure consistency in core primitives for those applications. If you are a dApp developer, you\\\\\\\\u{2019}re invested in contract standards! This group exists to connect those with interests in these standards to discuss and improve current standards, and maybe even propose new standards if such a need should arise.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## TIMELINE OF KEY EVENTS/HIGHLIGHTS \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n2023 Key Highlights \\\\\\\\\\\\\\\\n(Last updated June 14)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### COMMUNITY\\\\\\\\\\\\\\\\n- 167 members\\\\\\\\\\\\\\\\n- 2 community calls\\\\\\\\\\\\\\\\n- 4 Working Group calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### NEPS\\\\\\\\\\\\\\\\n- NEP-276 Payout NFT Standard Extension\\\\\\\\\\\\\\\\n- NEP-351 Add standards key to ContractSourceMetadata\\\\\\\\\\\\\\\\n- NEP-423 Add contract_metadata_update event\\\\\\\\\\\\\\\\n- NEP-463 Add nft_metadata_update event to NEP-171\\\\\\\\\\\\\\\\n- NEP-393 Adding soulbound token\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### EVENTS\\\\\\\\\\\\\\\\n- No events yet!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## STRUCTURE\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nAs with many core DevHub groups, the Contract Standards group has two main parts:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Working Group\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis formal group is a selected committee of subject matter experts who make official decisions on proposals and questions related to the NEAR dApp standards. They follow a strict process to review proposals, recommend funding to DAO or grant programs, and hold grant takers accountable. They engage with the broader community to understand their needs and encourage ideation.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Members**\\\\\\\\\\\\\\\\n- [Alexander Fadeev](https://github.com/fadeevab)\\\\\\\\\\\\\\\\n- [Evgeny Kapun](https://github.com/abacabadabacaba)\\\\\\\\\\\\\\\\n- [Robert Zaremba](https://github.com/robert-zaremba)\\\\\\\\\\\\\\\\n- [Vlad Frolov](https://github.com/frol)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Group\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis informal self-organized group provides a space for anyone interested in changes to the NEAR dApp standards. While this group does not make official decisions, it offers a great opportunity to meet with others to share ideas and submit proposals. This group is not controlled by anyone but the people who are organizing it. The group has a dedicated Telegram channel.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Communication Channels**\\\\\\\\\\\\\\\\n- [Contract Standards Community Group in Telegram](https://t.me/nearnft)\\\\\\\\\\\\\\\\n- Here on the discussions page!\\\\\\\\\\\\\\\\n- Check the Events tab for upcoming Community/Work Group calls.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Current Work & Topics of Discussion &nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you\\\\\\\\u{2019}d like to add a current topic you\\\\\\\\u{2019}re working on as part of this community, please make a post on the main Group page for inclusion!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Community Links &nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### Community Organizations / Projects\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### Reference Material\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you\\\\\\\\u{2019}d like to add links to your project, interesting reference material for the community, or anything else worth linking here, please reach out to the community lead! We want to be as inclusive as possible.\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"About Us \\\\\\\\u{2b50}\\\\\\\\u{fe0f}\"}, {\"id\": \"tzf4ez\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Events\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"## Upcoming Events\\\\\\\\\\\\\\\\nNo dates currently set! If you have topics to discuss, feel free to propose a call on our [Telegram Channel](https://t.me/nearnft)! We\\\\\\\\\\\\'ll find a time that works for the community.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Meeting Archive\\\\\\\\\\\\\\\\n\\\\\\\\u{1f4c4}  [See all previous meeting notes](https://docs.google.com/document/d/1cLthGcAIECWV3Ga4ocTf10PgAqDf6Owrz3VRMvdbV1k)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Recent Calls\\\\\\\\\\\\\\\\nSee summaries for the most recent calls below.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Call - May 25th, 2023\\\\\\\\\\\\\\\\nAnyone can propose topics and join the community call for discussion.\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**MODERATOR:** Maxwell S\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VIDEO:** [Contract Standards Community Group Call #3 \\\\\\\\u{2013} NEAR DevHub September 27th, 2023\\\\\\\\\\\\\\\\n](https://youtu.be/T0qMj1zGA3U)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**AGENDA** \\\\\\\\\\\\\\\\n- Discussion on incentivizing completion of the Multitoken standard and what the blockers might be.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**OUTCOMES**\\\\\\\\\\\\\\\\n- Ken from NEAR Horizon offered to do some unblocking work to move NEP-245 forward in the coming weeks.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Work Group Calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Contract Standards Work Group may host public formal calls to review specific proposals, discuss attestations, or vote on decisions.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### June 30th, 2023 - Working Group Call\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**MODERATOR :** Maxwell S\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VIDEO :** [Contract Standards Work Group Meeting \\\\\\\\u{2013} June 30th, 2023](https://youtu.be/S1An5CDG154)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**AGENDA**\\\\\\\\\\\\\\\\n-   Objective \\\\\\\\\\\\\\\\n-   Introductions\\\\\\\\\\\\\\\\n-   Discussion: Discussion: NEP-393 Soulbound Token\\\\\\\\\\\\\\\\n-   Voting Decision\\\\\\\\\\\\\\\\n-   Getting Involved\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**NOTES**\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **NEP-393 Soulbound Token:** This NEP implements wallet-bound non-fungible tokens on NEAR (Soulbound tokens). These tokens cannot trivially be transferred from wallet to wallet, so they serve as a form of wallet-identification & credentialing. This particular implementation has some built-in tools for transferring credentials (which bans/deletes) the transferring wallet)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VOTE DECISION**\\\\\\\\\\\\\\\\n-   NEP-393: Approved\\\\\\\\\\\\\\\\n    \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**ACTION ITEMS**\\\\\\\\\\\\\\\\n- Fill out \\\\\\\\u{201c}Changelog\\\\\\\\u{201d} section in the NEP with the reference to the video recording of WG call, benefit and concerns table - Robert Z\\\\\\\\\\\\\\\\n- Approve and merge the NEP - Vlad F\\\\\\\\\\\\\\\\n- Endorse SBT support in Wallets - Robert Z\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**RELATED RESOURCES**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- NEP-393 Soulbound Token on GitHub: [LINK](https://github.com/near/NEPs/pull/393)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Events\\\\\\\\\\\\\\\\nWatch this space. We\\\\\\\\\\\\'ll always share highlights and summaries of recent community events.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\"}\", \"display_name\": \"Community Events \\\\\\\\u{1f4fa}\"}, {\"id\": \"nbixkd\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{}\", \"display_name\": \"Updates \\\\\\\\u{1f468}\\\\\\\\u{200d}\\\\\\\\u{1f4bb}\"}], \"handle\": \"contract-standards\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6302070085e+21
+    }
+  },
+  {
+    "id": "2277636046",
+    "receipt_id": "AounS747AiEhqmFe2Z9ebhvE5PgrjPBrAb4ekvJ1pZet",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "J7savAgUD4mLV5SV2J6fmvjWb9pc3aGEyDVceWjM3RVb",
+      "block_height": 111596229,
+      "block_timestamp": 1706519796109938000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5905062927884,
+      "tokens_burnt": 590506292788400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "JUghRS8YrSmLWWcjuX4dngU772Rwd9kfnqu4FZs2caw",
+    "included_in_block_hash": "5QTzEuzijbviomCbFf1VbtdNwAXKmPNLdugxwuk4gUKW",
+    "block_timestamp": "1706519794024600023",
+    "block": {
+      "block_height": 111596227
+    },
+    "receipt_conversion_tokens_burnt": "244104593258000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 590506292788400000000,
+        "args": "{\"data\": {\"contract-standards.community.devhub.near\": {\"profile\": {\"name\": \"Contract Standards\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreieuxcx2oy5xbnhgppedsm7sym2xass4acgcvkxyaytf5igyoqitva\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6302070085e+21
+    }
+  },
+  {
+    "id": "2277638256",
+    "receipt_id": "7uB1bCzVYkJCeip5uF53PT4Q9rYSSwhAHtGJBFzpRi29",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "32XFcnVjgxXpwT2MZr2G2ha9wHUbTxu6kGsCv7jUKYa5",
+      "block_height": 111596299,
+      "block_timestamp": 1706519865494580700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7930922764876,
+      "tokens_burnt": 793092276487600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "6F4aiSWLQVkTTZvEQt6DWjYPDnHhBCPTZAaQT2zCrTEh",
+    "included_in_block_hash": "BJwEhcRNhAwAqqZGTRJ8BEWrhCwJ52mESkou7Cu77bk1",
+    "block_timestamp": "1706519864643828611",
+    "block": {
+      "block_height": 111596298
+    },
+    "receipt_conversion_tokens_burnt": "244125387444200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 793092276487600000000,
+        "args": "{\"addons\": [{\"id\": \"nuzsf0\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"About the Contract Standards Community\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Contracts are the fundamental components of dApps. NEAR Protocol\\\\\\\\u{2019}s contracts enable the possibilities of dApp development, and their standards ensure consistency in core primitives for those applications. If you are a dApp developer, you\\\\\\\\u{2019}re invested in contract standards! This group exists to connect those with interests in these standards to discuss and improve current standards, and maybe even propose new standards if such a need should arise.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## TIMELINE OF KEY EVENTS/HIGHLIGHTS \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n2023 Key Highlights \\\\\\\\\\\\\\\\n(Last updated June 14)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### COMMUNITY\\\\\\\\\\\\\\\\n- 167 members\\\\\\\\\\\\\\\\n- 2 community calls\\\\\\\\\\\\\\\\n- 4 Working Group calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### NEPS\\\\\\\\\\\\\\\\n- NEP-276 Payout NFT Standard Extension\\\\\\\\\\\\\\\\n- NEP-351 Add standards key to ContractSourceMetadata\\\\\\\\\\\\\\\\n- NEP-423 Add contract_metadata_update event\\\\\\\\\\\\\\\\n- NEP-463 Add nft_metadata_update event to NEP-171\\\\\\\\\\\\\\\\n- NEP-393 Adding soulbound token\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### EVENTS\\\\\\\\\\\\\\\\n- No events yet!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## STRUCTURE\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nAs with many core DevHub groups, the Contract Standards group has two main parts:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Working Group\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis formal group is a selected committee of subject matter experts who make official decisions on proposals and questions related to the NEAR dApp standards. They follow a strict process to review proposals, recommend funding to DAO or grant programs, and hold grant takers accountable. They engage with the broader community to understand their needs and encourage ideation.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Members**\\\\\\\\\\\\\\\\n- [Alexander Fadeev](https://github.com/fadeevab)\\\\\\\\\\\\\\\\n- [Evgeny Kapun](https://github.com/abacabadabacaba)\\\\\\\\\\\\\\\\n- [Robert Zaremba](https://github.com/robert-zaremba)\\\\\\\\\\\\\\\\n- [Vlad Frolov](https://github.com/frol)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Group\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis informal self-organized group provides a space for anyone interested in changes to the NEAR dApp standards. While this group does not make official decisions, it offers a great opportunity to meet with others to share ideas and submit proposals. This group is not controlled by anyone but the people who are organizing it. The group has a dedicated Telegram channel.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Communication Channels**\\\\\\\\\\\\\\\\n- [Contract Standards Community Group in Telegram](https://t.me/nearnft)\\\\\\\\\\\\\\\\n- Here on the discussions page!\\\\\\\\\\\\\\\\n- Check the Events tab for upcoming Community/Work Group calls.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Current Work & Topics of Discussion &nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you\\\\\\\\u{2019}d like to add a current topic you\\\\\\\\u{2019}re working on as part of this community, please make a post on the main Group page for inclusion!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Community Links &nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### Community Organizations / Projects\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### Reference Material\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you\\\\\\\\u{2019}d like to add links to your project, interesting reference material for the community, or anything else worth linking here, please reach out to the community lead! We want to be as inclusive as possible.\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"About Us \\\\\\\\u{2b50}\\\\\\\\u{fe0f}\"}, {\"id\": \"tzf4ez\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Events\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"## Upcoming Events\\\\\\\\\\\\\\\\nNo dates currently set! If you have topics to discuss, feel free to propose a call on our [Telegram Channel](https://t.me/nearnft)! We\\\\\\\\\\\\'ll find a time that works for the community.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Meeting Archive\\\\\\\\\\\\\\\\n\\\\\\\\u{1f4c4}  [See all previous meeting notes](https://docs.google.com/document/d/1cLthGcAIECWV3Ga4ocTf10PgAqDf6Owrz3VRMvdbV1k)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Recent Calls\\\\\\\\\\\\\\\\nSee summaries for the most recent calls below.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Call - May 25th, 2023\\\\\\\\\\\\\\\\nAnyone can propose topics and join the community call for discussion.\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**MODERATOR:** Maxwell S\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VIDEO:** [Contract Standards Community Group Call #3 \\\\\\\\u{2013} NEAR DevHub September 27th, 2023\\\\\\\\\\\\\\\\n](https://youtu.be/T0qMj1zGA3U)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**AGENDA** \\\\\\\\\\\\\\\\n- Discussion on incentivizing completion of the Multitoken standard and what the blockers might be.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**OUTCOMES**\\\\\\\\\\\\\\\\n- Ken from NEAR Horizon offered to do some unblocking work to move NEP-245 forward in the coming weeks.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Work Group Calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Contract Standards Work Group may host public formal calls to review specific proposals, discuss attestations, or vote on decisions.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### June 30th, 2023 - Working Group Call\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**MODERATOR :** Maxwell S\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VIDEO :** [Contract Standards Work Group Meeting \\\\\\\\u{2013} June 30th, 2023](https://youtu.be/S1An5CDG154)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**AGENDA**\\\\\\\\\\\\\\\\n-   Objective \\\\\\\\\\\\\\\\n-   Introductions\\\\\\\\\\\\\\\\n-   Discussion: Discussion: NEP-393 Soulbound Token\\\\\\\\\\\\\\\\n-   Voting Decision\\\\\\\\\\\\\\\\n-   Getting Involved\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**NOTES**\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **NEP-393 Soulbound Token:** This NEP implements wallet-bound non-fungible tokens on NEAR (Soulbound tokens). These tokens cannot trivially be transferred from wallet to wallet, so they serve as a form of wallet-identification & credentialing. This particular implementation has some built-in tools for transferring credentials (which bans/deletes) the transferring wallet)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VOTE DECISION**\\\\\\\\\\\\\\\\n-   NEP-393: Approved\\\\\\\\\\\\\\\\n    \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**ACTION ITEMS**\\\\\\\\\\\\\\\\n- Fill out \\\\\\\\u{201c}Changelog\\\\\\\\u{201d} section in the NEP with the reference to the video recording of WG call, benefit and concerns table - Robert Z\\\\\\\\\\\\\\\\n- Approve and merge the NEP - Vlad F\\\\\\\\\\\\\\\\n- Endorse SBT support in Wallets - Robert Z\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**RELATED RESOURCES**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- NEP-393 Soulbound Token on GitHub: [LINK](https://github.com/near/NEPs/pull/393)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Events\\\\\\\\\\\\\\\\nWatch this space. We\\\\\\\\\\\\'ll always share highlights and summaries of recent community events.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\"}\", \"display_name\": \"Community Events \\\\\\\\u{1f4fa}\"}, {\"id\": \"wyfza9\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{}\", \"display_name\": \"Updates \\\\\\\\u{1f468}\\\\\\\\u{200d}\\\\\\\\u{1f4bb}\"}, {\"id\": \"477x6z\", \"enabled\": true, \"addon_id\": \"kanban\", \"parameters\": \"{}\", \"display_name\": \"Kanban\"}], \"handle\": \"contract-standards\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6277239567202e+21
+    }
+  },
+  {
+    "id": "2277638316",
+    "receipt_id": "6oaUf1AfCZRsRhoPdKqWo96JmpXTTWyN5rGs6EwzeDHh",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "677YEs7tu3K48jDrRo4a2kedaoVN9moLzMFMEwVdVvZk",
+      "block_height": 111596300,
+      "block_timestamp": 1706519866470027000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5905062927884,
+      "tokens_burnt": 590506292788400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "6F4aiSWLQVkTTZvEQt6DWjYPDnHhBCPTZAaQT2zCrTEh",
+    "included_in_block_hash": "BJwEhcRNhAwAqqZGTRJ8BEWrhCwJ52mESkou7Cu77bk1",
+    "block_timestamp": "1706519864643828611",
+    "block": {
+      "block_height": 111596298
+    },
+    "receipt_conversion_tokens_burnt": "244125387444200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 590506292788400000000,
+        "args": "{\"data\": {\"contract-standards.community.devhub.near\": {\"profile\": {\"name\": \"Contract Standards\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreieuxcx2oy5xbnhgppedsm7sym2xass4acgcvkxyaytf5igyoqitva\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6277239567202e+21
+    }
+  },
+  {
+    "id": "2277639349",
+    "receipt_id": "A52QtXdKS4MVF548V8cxihE7sCRbnghPSiJ4BmFE6bp2",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4HbGdo5rU6ytinZ7M33Zq3YMLhJy6JNghKftpWuWvav8",
+      "block_height": 111596334,
+      "block_timestamp": 1706519900007856400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7991995811494,
+      "tokens_burnt": 799199581149400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "FA3ukfB4VkXnPNKA9iQ84xvKtRyEMij2XKQDg16bGTEr",
+    "included_in_block_hash": "5612ptyFNoMzJyq4uwXUXWuuW2vPuNjvBzcUZZ3dPouo",
+    "block_timestamp": "1706519899086011739",
+    "block": {
+      "block_height": 111596333
+    },
+    "receipt_conversion_tokens_burnt": "244104593258000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 799199581149400000000,
+        "args": "{\"addons\": [{\"id\": \"nuzsf0\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"About the Contract Standards Community\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Contracts are the fundamental components of dApps. NEAR Protocol\\\\\\\\u{2019}s contracts enable the possibilities of dApp development, and their standards ensure consistency in core primitives for those applications. If you are a dApp developer, you\\\\\\\\u{2019}re invested in contract standards! This group exists to connect those with interests in these standards to discuss and improve current standards, and maybe even propose new standards if such a need should arise.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## TIMELINE OF KEY EVENTS/HIGHLIGHTS \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n2023 Key Highlights \\\\\\\\\\\\\\\\n(Last updated June 14)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### COMMUNITY\\\\\\\\\\\\\\\\n- 167 members\\\\\\\\\\\\\\\\n- 2 community calls\\\\\\\\\\\\\\\\n- 4 Working Group calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### NEPS\\\\\\\\\\\\\\\\n- NEP-276 Payout NFT Standard Extension\\\\\\\\\\\\\\\\n- NEP-351 Add standards key to ContractSourceMetadata\\\\\\\\\\\\\\\\n- NEP-423 Add contract_metadata_update event\\\\\\\\\\\\\\\\n- NEP-463 Add nft_metadata_update event to NEP-171\\\\\\\\\\\\\\\\n- NEP-393 Adding soulbound token\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### EVENTS\\\\\\\\\\\\\\\\n- No events yet!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## STRUCTURE\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nAs with many core DevHub groups, the Contract Standards group has two main parts:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Working Group\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis formal group is a selected committee of subject matter experts who make official decisions on proposals and questions related to the NEAR dApp standards. They follow a strict process to review proposals, recommend funding to DAO or grant programs, and hold grant takers accountable. They engage with the broader community to understand their needs and encourage ideation.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Members**\\\\\\\\\\\\\\\\n- [Alexander Fadeev](https://github.com/fadeevab)\\\\\\\\\\\\\\\\n- [Evgeny Kapun](https://github.com/abacabadabacaba)\\\\\\\\\\\\\\\\n- [Robert Zaremba](https://github.com/robert-zaremba)\\\\\\\\\\\\\\\\n- [Vlad Frolov](https://github.com/frol)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Group\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis informal self-organized group provides a space for anyone interested in changes to the NEAR dApp standards. While this group does not make official decisions, it offers a great opportunity to meet with others to share ideas and submit proposals. This group is not controlled by anyone but the people who are organizing it. The group has a dedicated Telegram channel.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Communication Channels**\\\\\\\\\\\\\\\\n- [Contract Standards Community Group in Telegram](https://t.me/nearnft)\\\\\\\\\\\\\\\\n- Here on the discussions page!\\\\\\\\\\\\\\\\n- Check the Events tab for upcoming Community/Work Group calls.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Current Work & Topics of Discussion &nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you\\\\\\\\u{2019}d like to add a current topic you\\\\\\\\u{2019}re working on as part of this community, please make a post on the main Group page for inclusion!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Community Links &nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### Community Organizations / Projects\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### Reference Material\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you\\\\\\\\u{2019}d like to add links to your project, interesting reference material for the community, or anything else worth linking here, please reach out to the community lead! We want to be as inclusive as possible.\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"About Us \\\\\\\\u{2b50}\\\\\\\\u{fe0f}\"}, {\"id\": \"tzf4ez\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Events\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"## Upcoming Events\\\\\\\\\\\\\\\\nNo dates currently set! If you have topics to discuss, feel free to propose a call on our [Telegram Channel](https://t.me/nearnft)! We\\\\\\\\\\\\'ll find a time that works for the community.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Meeting Archive\\\\\\\\\\\\\\\\n\\\\\\\\u{1f4c4}  [See all previous meeting notes](https://docs.google.com/document/d/1cLthGcAIECWV3Ga4ocTf10PgAqDf6Owrz3VRMvdbV1k)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Recent Calls\\\\\\\\\\\\\\\\nSee summaries for the most recent calls below.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Call - May 25th, 2023\\\\\\\\\\\\\\\\nAnyone can propose topics and join the community call for discussion.\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**MODERATOR:** Maxwell S\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VIDEO:** [Contract Standards Community Group Call #3 \\\\\\\\u{2013} NEAR DevHub September 27th, 2023\\\\\\\\\\\\\\\\n](https://youtu.be/T0qMj1zGA3U)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**AGENDA** \\\\\\\\\\\\\\\\n- Discussion on incentivizing completion of the Multitoken standard and what the blockers might be.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**OUTCOMES**\\\\\\\\\\\\\\\\n- Ken from NEAR Horizon offered to do some unblocking work to move NEP-245 forward in the coming weeks.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Work Group Calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Contract Standards Work Group may host public formal calls to review specific proposals, discuss attestations, or vote on decisions.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### June 30th, 2023 - Working Group Call\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**MODERATOR :** Maxwell S\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VIDEO :** [Contract Standards Work Group Meeting \\\\\\\\u{2013} June 30th, 2023](https://youtu.be/S1An5CDG154)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**AGENDA**\\\\\\\\\\\\\\\\n-   Objective \\\\\\\\\\\\\\\\n-   Introductions\\\\\\\\\\\\\\\\n-   Discussion: Discussion: NEP-393 Soulbound Token\\\\\\\\\\\\\\\\n-   Voting Decision\\\\\\\\\\\\\\\\n-   Getting Involved\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**NOTES**\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **NEP-393 Soulbound Token:** This NEP implements wallet-bound non-fungible tokens on NEAR (Soulbound tokens). These tokens cannot trivially be transferred from wallet to wallet, so they serve as a form of wallet-identification & credentialing. This particular implementation has some built-in tools for transferring credentials (which bans/deletes) the transferring wallet)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VOTE DECISION**\\\\\\\\\\\\\\\\n-   NEP-393: Approved\\\\\\\\\\\\\\\\n    \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**ACTION ITEMS**\\\\\\\\\\\\\\\\n- Fill out \\\\\\\\u{201c}Changelog\\\\\\\\u{201d} section in the NEP with the reference to the video recording of WG call, benefit and concerns table - Robert Z\\\\\\\\\\\\\\\\n- Approve and merge the NEP - Vlad F\\\\\\\\\\\\\\\\n- Endorse SBT support in Wallets - Robert Z\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**RELATED RESOURCES**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- NEP-393 Soulbound Token on GitHub: [LINK](https://github.com/near/NEPs/pull/393)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Events\\\\\\\\\\\\\\\\nWatch this space. We\\\\\\\\\\\\'ll always share highlights and summaries of recent community events.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\"}\", \"display_name\": \"Community Events \\\\\\\\u{1f4fa}\"}, {\"id\": \"wyfza9\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{}\", \"display_name\": \"Updates \\\\\\\\u{1f468}\\\\\\\\u{200d}\\\\\\\\u{1f4bb}\"}], \"handle\": \"contract-standards\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6338104671958e+21
+    }
+  },
+  {
+    "id": "2277639368",
+    "receipt_id": "C5b2e1RfrNH2JnDrzm9FsSwPWZwAMMyTRrHpS99idLXr",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GFWc2dHFhQuJXvBJ6MT9L7vxE433rKSa8X7MBQ6gSqSR",
+      "block_height": 111596335,
+      "block_timestamp": 1706519900957644000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5905062927884,
+      "tokens_burnt": 590506292788400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "FA3ukfB4VkXnPNKA9iQ84xvKtRyEMij2XKQDg16bGTEr",
+    "included_in_block_hash": "5612ptyFNoMzJyq4uwXUXWuuW2vPuNjvBzcUZZ3dPouo",
+    "block_timestamp": "1706519899086011739",
+    "block": {
+      "block_height": 111596333
+    },
+    "receipt_conversion_tokens_burnt": "244104593258000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 590506292788400000000,
+        "args": "{\"data\": {\"contract-standards.community.devhub.near\": {\"profile\": {\"name\": \"Contract Standards\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreieuxcx2oy5xbnhgppedsm7sym2xass4acgcvkxyaytf5igyoqitva\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6338104671958e+21
+    }
+  },
+  {
+    "id": "2277639861",
+    "receipt_id": "3UVdkH19AhtQ9EQEpGa38fRZNFKRpFvR29kQEqNRbcc5",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HDTeviRRAyrxbXuuqtL63fXSSWXDy1tbGmQJCwQdkeWi",
+      "block_height": 111596351,
+      "block_timestamp": 1706519916311175200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7974437487988,
+      "tokens_burnt": 797443748798800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "45sJ2m1WNfBiqiUVepEePDqkRqErqCHU8zPE7ZB4zP5L",
+    "included_in_block_hash": "2owBt3dCMBKteRLfgMjUptFkNwRvGZZ64UeKPXuV4GQE",
+    "block_timestamp": "1706519915232375640",
+    "block": {
+      "block_height": 111596350
+    },
+    "receipt_conversion_tokens_burnt": "244104593258000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 797443748798800000000,
+        "args": "{\"addons\": [{\"id\": \"nuzsf0\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"About the Contract Standards Community\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Contracts are the fundamental components of dApps. NEAR Protocol\\\\\\\\u{2019}s contracts enable the possibilities of dApp development, and their standards ensure consistency in core primitives for those applications. If you are a dApp developer, you\\\\\\\\u{2019}re invested in contract standards! This group exists to connect those with interests in these standards to discuss and improve current standards, and maybe even propose new standards if such a need should arise.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## TIMELINE OF KEY EVENTS/HIGHLIGHTS \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n2023 Key Highlights \\\\\\\\\\\\\\\\n(Last updated June 14)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### COMMUNITY\\\\\\\\\\\\\\\\n- 167 members\\\\\\\\\\\\\\\\n- 2 community calls\\\\\\\\\\\\\\\\n- 4 Working Group calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### NEPS\\\\\\\\\\\\\\\\n- NEP-276 Payout NFT Standard Extension\\\\\\\\\\\\\\\\n- NEP-351 Add standards key to ContractSourceMetadata\\\\\\\\\\\\\\\\n- NEP-423 Add contract_metadata_update event\\\\\\\\\\\\\\\\n- NEP-463 Add nft_metadata_update event to NEP-171\\\\\\\\\\\\\\\\n- NEP-393 Adding soulbound token\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### EVENTS\\\\\\\\\\\\\\\\n- No events yet!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## STRUCTURE\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nAs with many core DevHub groups, the Contract Standards group has two main parts:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Working Group\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis formal group is a selected committee of subject matter experts who make official decisions on proposals and questions related to the NEAR dApp standards. They follow a strict process to review proposals, recommend funding to DAO or grant programs, and hold grant takers accountable. They engage with the broader community to understand their needs and encourage ideation.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Members**\\\\\\\\\\\\\\\\n- [Alexander Fadeev](https://github.com/fadeevab)\\\\\\\\\\\\\\\\n- [Evgeny Kapun](https://github.com/abacabadabacaba)\\\\\\\\\\\\\\\\n- [Robert Zaremba](https://github.com/robert-zaremba)\\\\\\\\\\\\\\\\n- [Vlad Frolov](https://github.com/frol)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Group\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis informal self-organized group provides a space for anyone interested in changes to the NEAR dApp standards. While this group does not make official decisions, it offers a great opportunity to meet with others to share ideas and submit proposals. This group is not controlled by anyone but the people who are organizing it. The group has a dedicated Telegram channel.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Communication Channels**\\\\\\\\\\\\\\\\n- [Contract Standards Community Group in Telegram](https://t.me/nearnft)\\\\\\\\\\\\\\\\n- Here on the discussions page!\\\\\\\\\\\\\\\\n- Check the Events tab for upcoming Community/Work Group calls.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Current Work & Topics of Discussion &nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you\\\\\\\\u{2019}d like to add a current topic you\\\\\\\\u{2019}re working on as part of this community, please make a post on the main Group page for inclusion!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Community Links &nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### Community Organizations / Projects\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### Reference Material\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you\\\\\\\\u{2019}d like to add links to your project, interesting reference material for the community, or anything else worth linking here, please reach out to the community lead! We want to be as inclusive as possible.\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"About Us \\\\\\\\u{2b50}\\\\\\\\u{fe0f}\"}, {\"id\": \"tzf4ez\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Events\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"## Upcoming Events\\\\\\\\\\\\\\\\nNo dates currently set! If you have topics to discuss, feel free to propose a call on our [Telegram Channel](https://t.me/nearnft)! We\\\\\\\\\\\\'ll find a time that works for the community.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Meeting Archive\\\\\\\\\\\\\\\\n\\\\\\\\u{1f4c4}  [See all previous meeting notes](https://docs.google.com/document/d/1cLthGcAIECWV3Ga4ocTf10PgAqDf6Owrz3VRMvdbV1k)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Recent Calls\\\\\\\\\\\\\\\\nSee summaries for the most recent calls below.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Call - May 25th, 2023\\\\\\\\\\\\\\\\nAnyone can propose topics and join the community call for discussion.\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**MODERATOR:** Maxwell S\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VIDEO:** [Contract Standards Community Group Call #3 \\\\\\\\u{2013} NEAR DevHub September 27th, 2023\\\\\\\\\\\\\\\\n](https://youtu.be/T0qMj1zGA3U)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**AGENDA** \\\\\\\\\\\\\\\\n- Discussion on incentivizing completion of the Multitoken standard and what the blockers might be.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**OUTCOMES**\\\\\\\\\\\\\\\\n- Ken from NEAR Horizon offered to do some unblocking work to move NEP-245 forward in the coming weeks.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Work Group Calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Contract Standards Work Group may host public formal calls to review specific proposals, discuss attestations, or vote on decisions.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### June 30th, 2023 - Working Group Call\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**MODERATOR :** Maxwell S\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VIDEO :** [Contract Standards Work Group Meeting \\\\\\\\u{2013} June 30th, 2023](https://youtu.be/S1An5CDG154)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**AGENDA**\\\\\\\\\\\\\\\\n-   Objective \\\\\\\\\\\\\\\\n-   Introductions\\\\\\\\\\\\\\\\n-   Discussion: Discussion: NEP-393 Soulbound Token\\\\\\\\\\\\\\\\n-   Voting Decision\\\\\\\\\\\\\\\\n-   Getting Involved\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**NOTES**\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **NEP-393 Soulbound Token:** This NEP implements wallet-bound non-fungible tokens on NEAR (Soulbound tokens). These tokens cannot trivially be transferred from wallet to wallet, so they serve as a form of wallet-identification & credentialing. This particular implementation has some built-in tools for transferring credentials (which bans/deletes) the transferring wallet)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VOTE DECISION**\\\\\\\\\\\\\\\\n-   NEP-393: Approved\\\\\\\\\\\\\\\\n    \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**ACTION ITEMS**\\\\\\\\\\\\\\\\n- Fill out \\\\\\\\u{201c}Changelog\\\\\\\\u{201d} section in the NEP with the reference to the video recording of WG call, benefit and concerns table - Robert Z\\\\\\\\\\\\\\\\n- Approve and merge the NEP - Vlad F\\\\\\\\\\\\\\\\n- Endorse SBT support in Wallets - Robert Z\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**RELATED RESOURCES**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- NEP-393 Soulbound Token on GitHub: [LINK](https://github.com/near/NEPs/pull/393)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Events\\\\\\\\\\\\\\\\nWatch this space. We\\\\\\\\\\\\'ll always share highlights and summaries of recent community events.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\"}\", \"display_name\": \"Community Events \\\\\\\\u{1f4fa}\"}, {\"id\": \"wyfza9\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{}\", \"display_name\": \"Updates \\\\\\\\u{1f468}\\\\\\\\u{200d}\\\\\\\\u{1f4bb}\"}], \"handle\": \"contract-standards\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6320546348452e+21
+    }
+  },
+  {
+    "id": "2277639884",
+    "receipt_id": "2VziptcpS3Lq95vxG5kumdkzMvpDJRMivchrGDxmDd9n",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HqvEvg1CkeTFWcEcEQRCwBEuNs8CxAPyNVQ8XQGG5qyg",
+      "block_height": 111596352,
+      "block_timestamp": 1706519917302037500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5905062927884,
+      "tokens_burnt": 590506292788400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "45sJ2m1WNfBiqiUVepEePDqkRqErqCHU8zPE7ZB4zP5L",
+    "included_in_block_hash": "2owBt3dCMBKteRLfgMjUptFkNwRvGZZ64UeKPXuV4GQE",
+    "block_timestamp": "1706519915232375640",
+    "block": {
+      "block_height": 111596350
+    },
+    "receipt_conversion_tokens_burnt": "244104593258000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 590506292788400000000,
+        "args": "{\"data\": {\"contract-standards.community.devhub.near\": {\"profile\": {\"name\": \"Contract Standards\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreieuxcx2oy5xbnhgppedsm7sym2xass4acgcvkxyaytf5igyoqitva\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6320546348452e+21
+    }
+  },
+  {
+    "id": "2277643296",
+    "receipt_id": "7d9rS5UoZphZA5WNjSRkZQvRw5PoBh7xXyYYjrfz9kds",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8CNWwYwq9YChstLsRPG8hqGbo6yzo3KvNnYsZU6pTLtb",
+      "block_height": 111596474,
+      "block_timestamp": 1706520037930894600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7697485018192,
+      "tokens_burnt": 769748501819200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "5fDaA3iTVdd44buUGCkqD3GanHBc6uXh3pdH4egf5Ljw",
+    "included_in_block_hash": "6kyh3Djz28zNhV9BeAdiJtUbbCUdQsq7JvZUwKPqkUJ",
+    "block_timestamp": "1706520037103030821",
+    "block": {
+      "block_height": 111596473
+    },
+    "receipt_conversion_tokens_burnt": "243804978102000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 769748501819200000000,
+        "args": "{\"addons\": [{\"id\": \"duxizk\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"## TIMELINE OF KEY EVENTS/HIGHLIGHTS \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### 2023 Key Highlights \\\\\\\\\\\\\\\\n(Last updated June 14)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### COMMUNITY\\\\\\\\\\\\\\\\n- 47 members\\\\\\\\\\\\\\\\n- 0 community calls\\\\\\\\\\\\\\\\n- 1 Working Group calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### NEPS\\\\\\\\\\\\\\\\n- NEP-418 Proposal to allow attached_deposit in view contexts - [LINK](https://github.com/near/NEPs/pull/418)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### EVENTS\\\\\\\\\\\\\\\\n- No events yet!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## STRUCTURE\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Protocol community consists of two main groups:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Working Group\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis formal group is a selected committee of subject matter experts who make official decisions on proposals and questions related to the NEAR dApp standards. They follow a strict process to review proposals, recommend funding to DAO or grant programs, and hold grant takers accountable. They engage with the broader community to understand their needs and encourage ideation.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Members**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- [Bo Yao](https://github.com/ailisp)\\\\\\\\\\\\\\\\n- [David Millar-Durrant](https://github.com/DavidM-D)\\\\\\\\\\\\\\\\n- [Serhii Volovyk](https://github.com/volovyks)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Group\\\\\\\\\\\\\\\\nThis informal self-organized group provides a space for anyone interested in the NEAR tooling. While this group does not make official decisions, it offers a great opportunity to meet with others to share ideas and submit proposals. This group is not controlled by anyone but the people who are organizing it. The group has a dedicated Telegram channel.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### Communication Channels\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- [Tooling Community Group in Telegram](https://t.me/NEAR_Tools_Community_Group)\\\\\\\\\\\\\\\\n- Here on the Discussions page!\\\\\\\\\\\\\\\\n- Check the Events tab for upcoming Community/Work Group calls.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Current Work & Topics of Discussion &nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you\\\\\\\\u{2019}d like to add a current topic you\\\\\\\\u{2019}re working on as part of this community, please make a post on the main Group page for inclusion!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Community Links &nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### Community Organizations / Projects:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### Reference Material:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you\\\\\\\\u{2019}d like to add links to your project, interesting reference material for the community, or anything else worth linking here, please reach out to the community lead! We want to be as inclusive as possible.\\\\\\\\\\\\\\\"}\", \"display_name\": \"About us \\\\\\\\u{2b50}\\\\\\\\u{fe0f}\"}, {\"id\": \"kp910a\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Events\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"# Tooling Community Calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Call #1: Oct 6th, 2023\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**MODERATOR :** Maxwell S\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VIDEO :** [Tools Community Group Call #1 \\\\\\\\u{2013} NEAR DevHub October 6th, 2023](https://youtu.be/vg9LYGLU7ok)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**AGENDA**\\\\\\\\\\\\\\\\n-  SourceScan presents the product and upcoming work\\\\\\\\\\\\\\\\n- Michael (Pagoda) presents bos-loader and workflow\\\\\\\\\\\\\\\\n- Guillermo presents BOS VSCode extension\\\\\\\\\\\\\\\\n- Elliot (DevHub) presents some of his toolchain/workflow for building BOS apps\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Work Group Calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Tooling Work Group may host public formal calls to review specific proposals, discuss attestations, or vote on decisions.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Working Group Call - January 19, 2023\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**MODERATOR :** Vlad Frolov\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VIDEO :** [Tooling Working Group Call - January 19, 2023](https://youtu.be/poVmblmc3L4)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**AGENDA**\\\\\\\\\\\\\\\\n-   Update on Developer Governance and the NEP process\\\\\\\\\\\\\\\\n-   Introductions\\\\\\\\\\\\\\\\n-   Discussion: NEP-418 Proposal to allow attached_deposit in view contexts\\\\\\\\\\\\\\\\n-   Voting Decision\\\\\\\\\\\\\\\\n-   Getting Involved\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**NOTES**\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**- NEP-418 :** A proposal to implement an `attached_deposit` host function for view-function calls, so it would just return zero instead of aborting the function call. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VOTE DECISION**\\\\\\\\\\\\\\\\n-   NEP-418 : Approved\\\\\\\\\\\\\\\\n    \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**ACTION ITEMS**\\\\\\\\\\\\\\\\n- No action items were discussed\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**RELATED RESOURCES**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- NEP-418 Proposal to allow attached_deposit in view contexts - [LINK](https://github.com/near/NEPs/pull/418)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**UPCOMING CALL:**\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nNo Working Group call currently scheduled! We\\\\\\\\\\\\'ll announce these calls as they occur.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[Previous Meeting Notes](https://docs.google.com/document/d/1DGMpaS_X1MSoRae5R0ULClc5Dsv6KmWvfjicFZTJZ64)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Events\\\\\\\\\\\\\\\\nWatch this space. We\\\\\\\\\\\\'ll always share highlights and summaries of recent community events.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\"}\", \"display_name\": \"Community Calls / Events \\\\\\\\u{1f4fa}\"}, {\"id\": \"0ucwyc\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{}\", \"display_name\": \"Updates \\\\\\\\u{1f468}\\\\\\\\u{200d}\\\\\\\\u{1f4bb}\"}], \"handle\": \"tooling\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5991478607992e+21
+    }
+  },
+  {
+    "id": "2277643317",
+    "receipt_id": "8ZYzhcBod3PEV8T2kAuG236pKd7dkmVC2vKDpt5qnGak",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8s2EWWcZKiGvDT564iEEuA9ELZNRa2MAZoZqsVbmgcSa",
+      "block_height": 111596475,
+      "block_timestamp": 1706520038688618800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5855943808780,
+      "tokens_burnt": 585594380878000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5fDaA3iTVdd44buUGCkqD3GanHBc6uXh3pdH4egf5Ljw",
+    "included_in_block_hash": "6kyh3Djz28zNhV9BeAdiJtUbbCUdQsq7JvZUwKPqkUJ",
+    "block_timestamp": "1706520037103030821",
+    "block": {
+      "block_height": 111596473
+    },
+    "receipt_conversion_tokens_burnt": "243804978102000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 585594380878000000000,
+        "args": "{\"data\": {\"tooling.community.devhub.near\": {\"profile\": {\"name\": \"Tooling\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreie25uquonqegy2zq3mw22lxavscptdfx2awd5j5quzier62owceuu\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5991478607992e+21
+    }
+  },
+  {
+    "id": "2277647424",
+    "receipt_id": "FniXnjrtVupwePJ43RruZMqEN8gr4btiCCMRBM1sbzbh",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2FBbdEn2eaQYkfmDDD1CQrawyxPkuuJq3B3XYec9cdhy",
+      "block_height": 111596623,
+      "block_timestamp": 1706520181975534300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7641465453148,
+      "tokens_burnt": 764146545314800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "4gUywAz16WzAsZjHh8LStUxXBduadXUAXfj1zymmmHtL",
+    "included_in_block_hash": "9YxudTkb95Te4EoPborSVsgZp9eFMztFm68GijtTit6e",
+    "block_timestamp": "1706520181098956787",
+    "block": {
+      "block_height": 111596622
+    },
+    "receipt_conversion_tokens_burnt": "243804978102000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 764146545314800000000,
+        "args": "{\"addons\": [{\"id\": \"duxizk\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"## TIMELINE OF KEY EVENTS/HIGHLIGHTS \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### 2023 Key Highlights \\\\\\\\\\\\\\\\n(Last updated June 14)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### COMMUNITY\\\\\\\\\\\\\\\\n- 47 members\\\\\\\\\\\\\\\\n- 0 community calls\\\\\\\\\\\\\\\\n- 1 Working Group calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### NEPS\\\\\\\\\\\\\\\\n- NEP-418 Proposal to allow attached_deposit in view contexts - [LINK](https://github.com/near/NEPs/pull/418)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### EVENTS\\\\\\\\\\\\\\\\n- No events yet!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## STRUCTURE\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Protocol community consists of two main groups:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Working Group\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis formal group is a selected committee of subject matter experts who make official decisions on proposals and questions related to the NEAR dApp standards. They follow a strict process to review proposals, recommend funding to DAO or grant programs, and hold grant takers accountable. They engage with the broader community to understand their needs and encourage ideation.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Members**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- [Bo Yao](https://github.com/ailisp)\\\\\\\\\\\\\\\\n- [David Millar-Durrant](https://github.com/DavidM-D)\\\\\\\\\\\\\\\\n- [Serhii Volovyk](https://github.com/volovyks)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Group\\\\\\\\\\\\\\\\nThis informal self-organized group provides a space for anyone interested in the NEAR tooling. While this group does not make official decisions, it offers a great opportunity to meet with others to share ideas and submit proposals. This group is not controlled by anyone but the people who are organizing it. The group has a dedicated Telegram channel.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### Communication Channels\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- [Tooling Community Group in Telegram](https://t.me/NEAR_Tools_Community_Group)\\\\\\\\\\\\\\\\n- Here on the Discussions page!\\\\\\\\\\\\\\\\n- Check the Events tab for upcoming Community/Work Group calls.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Current Work & Topics of Discussion &nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you\\\\\\\\u{2019}d like to add a current topic you\\\\\\\\u{2019}re working on as part of this community, please make a post on the main Group page for inclusion!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Community Links &nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### Community Organizations / Projects:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### Reference Material:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you\\\\\\\\u{2019}d like to add links to your project, interesting reference material for the community, or anything else worth linking here, please reach out to the community lead! We want to be as inclusive as possible.\\\\\\\\\\\\\\\"}\", \"display_name\": \"About us \\\\\\\\u{2b50}\\\\\\\\u{fe0f}\"}, {\"id\": \"kp910a\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Events\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"# Tooling Community Calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Call #1: Oct 6th, 2023\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**MODERATOR :** Maxwell S\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VIDEO :** [Tools Community Group Call #1 \\\\\\\\u{2013} NEAR DevHub October 6th, 2023](https://youtu.be/vg9LYGLU7ok)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**AGENDA**\\\\\\\\\\\\\\\\n-  SourceScan presents the product and upcoming work\\\\\\\\\\\\\\\\n- Michael (Pagoda) presents bos-loader and workflow\\\\\\\\\\\\\\\\n- Guillermo presents BOS VSCode extension\\\\\\\\\\\\\\\\n- Elliot (DevHub) presents some of his toolchain/workflow for building BOS apps\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Work Group Calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Tooling Work Group may host public formal calls to review specific proposals, discuss attestations, or vote on decisions.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Working Group Call - January 19, 2023\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**MODERATOR :** Vlad Frolov\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VIDEO :** [Tooling Working Group Call - January 19, 2023](https://youtu.be/poVmblmc3L4)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**AGENDA**\\\\\\\\\\\\\\\\n-   Update on Developer Governance and the NEP process\\\\\\\\\\\\\\\\n-   Introductions\\\\\\\\\\\\\\\\n-   Discussion: NEP-418 Proposal to allow attached_deposit in view contexts\\\\\\\\\\\\\\\\n-   Voting Decision\\\\\\\\\\\\\\\\n-   Getting Involved\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**NOTES**\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**- NEP-418 :** A proposal to implement an `attached_deposit` host function for view-function calls, so it would just return zero instead of aborting the function call. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VOTE DECISION**\\\\\\\\\\\\\\\\n-   NEP-418 : Approved\\\\\\\\\\\\\\\\n    \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**ACTION ITEMS**\\\\\\\\\\\\\\\\n- No action items were discussed\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**RELATED RESOURCES**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- NEP-418 Proposal to allow attached_deposit in view contexts - [LINK](https://github.com/near/NEPs/pull/418)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**UPCOMING CALL:**\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nNo Working Group call currently scheduled! We\\\\\\\\\\\\'ll announce these calls as they occur.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[Previous Meeting Notes](https://docs.google.com/document/d/1DGMpaS_X1MSoRae5R0ULClc5Dsv6KmWvfjicFZTJZ64)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Events\\\\\\\\\\\\\\\\nWatch this space. We\\\\\\\\\\\\'ll always share highlights and summaries of recent community events.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\"}\", \"display_name\": \"Community Calls / Events \\\\\\\\u{1f4fa}\"}, {\"id\": \"0ucwyc\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{}\", \"display_name\": \"Updates \\\\\\\\u{1f468}\\\\\\\\u{200d}\\\\\\\\u{1f4bb}\"}], \"handle\": \"tooling\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5935459042948e+21
+    }
+  },
+  {
+    "id": "2277647440",
+    "receipt_id": "7TfvsvM4xtGrt5S4HNhWjgSFye6hvR62zLw1xkjPhSrs",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HTyUNJUPbLXHFBCaDnk6JfxDHkJLTDSa9EBCgiaF7Nug",
+      "block_height": 111596624,
+      "block_timestamp": 1706520182946200300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5855943808780,
+      "tokens_burnt": 585594380878000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4gUywAz16WzAsZjHh8LStUxXBduadXUAXfj1zymmmHtL",
+    "included_in_block_hash": "9YxudTkb95Te4EoPborSVsgZp9eFMztFm68GijtTit6e",
+    "block_timestamp": "1706520181098956787",
+    "block": {
+      "block_height": 111596622
+    },
+    "receipt_conversion_tokens_burnt": "243804978102000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 585594380878000000000,
+        "args": "{\"data\": {\"tooling.community.devhub.near\": {\"profile\": {\"name\": \"Tooling\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreie25uquonqegy2zq3mw22lxavscptdfx2awd5j5quzier62owceuu\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5935459042948e+21
+    }
+  },
+  {
+    "id": "2277649780",
+    "receipt_id": "EGfTaFJmpEUgJh71iad3de7VzrNteWZhwSbtVLqriU7M",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7dxxL6ogqXHhRBQds3ZP4WTN6iJNrt4nCRjWSXjLTvj",
+      "block_height": 111596703,
+      "block_timestamp": 1706520260391479600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7583472279106,
+      "tokens_burnt": 758347227910600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "3w7uQQYRYxuGCUo4tYGFqrniZUEaA3jG73mTNvvBRS6E",
+    "included_in_block_hash": "7xaKbf4g2LuvnK2LEXFXvwkKcnEj61pzKadmxrrE461C",
+    "block_timestamp": "1706520259376301936",
+    "block": {
+      "block_height": 111596702
+    },
+    "receipt_conversion_tokens_burnt": "243256279898400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addon",
+        "deposit": 0,
+        "fee": 758347227910600000000,
+        "args": "{\"handle\": \"tooling\", \"community_addon\": {\"id\": \"kp910a\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Events\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"# Tooling Community Calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Call #1: Oct 6th, 2023\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**MODERATOR :** Maxwell S\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VIDEO :** [Tools Community Group Call #1 \\\\\\\\u{2013} NEAR DevHub October 6th, 2023](https://youtu.be/vg9LYGLU7ok)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**AGENDA**\\\\\\\\\\\\\\\\n-  SourceScan presents the product and upcoming work\\\\\\\\\\\\\\\\n- Michael (Pagoda) presents bos-loader and workflow\\\\\\\\\\\\\\\\n- Guillermo presents BOS VSCode extension\\\\\\\\\\\\\\\\n- Elliot (DevHub) presents some of his toolchain/workflow for building BOS apps\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Work Group Calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Tooling Work Group may host public formal calls to review specific proposals, discuss attestations, or vote on decisions.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Working Group Call - January 19, 2023\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**MODERATOR :** Vlad Frolov\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VIDEO :** [Tooling Working Group Call - January 19, 2023](https://youtu.be/poVmblmc3L4)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**AGENDA**\\\\\\\\\\\\\\\\n-   Update on Developer Governance and the NEP process\\\\\\\\\\\\\\\\n-   Introductions\\\\\\\\\\\\\\\\n-   Discussion: NEP-418 Proposal to allow attached_deposit in view contexts\\\\\\\\\\\\\\\\n-   Voting Decision\\\\\\\\\\\\\\\\n-   Getting Involved\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**NOTES**\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**- NEP-418 :** A proposal to implement an `attached_deposit` host function for view-function calls, so it would just return zero instead of aborting the function call. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VOTE DECISION**\\\\\\\\\\\\\\\\n-   NEP-418 : Approved\\\\\\\\\\\\\\\\n    \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**ACTION ITEMS**\\\\\\\\\\\\\\\\n- No action items were discussed\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**RELATED RESOURCES**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- NEP-418 Proposal to allow attached_deposit in view contexts - [LINK](https://github.com/near/NEPs/pull/418)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[Previous Meeting Notes](https://docs.google.com/document/d/1DGMpaS_X1MSoRae5R0ULClc5Dsv6KmWvfjicFZTJZ64)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Events\\\\\\\\\\\\\\\\nWatch this space. We\\\\\\\\\\\\'ll always share highlights and summaries of recent community events.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Community Calls / Events \\\\\\\\u{1f4fa}\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5927266710574e+21
+    }
+  },
+  {
+    "id": "2277649798",
+    "receipt_id": "Df8TMGeq9vT35jBdrxvTW6uz4FGaduvH1V45tHkZQ8uV",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "614SMqgdP9R7jUu43gCk7KDku29jsnXTy4EGYxEWLuX7",
+      "block_height": 111596704,
+      "block_timestamp": 1706520261311764200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5911231632484,
+      "tokens_burnt": 591123163248400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "3w7uQQYRYxuGCUo4tYGFqrniZUEaA3jG73mTNvvBRS6E",
+    "included_in_block_hash": "7xaKbf4g2LuvnK2LEXFXvwkKcnEj61pzKadmxrrE461C",
+    "block_timestamp": "1706520259376301936",
+    "block": {
+      "block_height": 111596702
+    },
+    "receipt_conversion_tokens_burnt": "243256279898400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 591123163248400000000,
+        "args": "{\"data\": {\"tooling.community.devhub.near\": {\"profile\": {\"name\": \"Tooling\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreie25uquonqegy2zq3mw22lxavscptdfx2awd5j5quzier62owceuu\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5927266710574e+21
+    }
+  },
+  {
+    "id": "2277780579",
+    "receipt_id": "G6K9vKA9a3CY9ExQVa2frSRr7GoKe5BRUFfLKz3jivpp",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3PB86dyj8X9iVSHiwDVhMwQtwogFqDwfdobhSvhug8ai",
+      "block_height": 111597243,
+      "block_timestamp": 1706520877110296000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7573895711800,
+      "tokens_burnt": 757389571180000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "AszYyyadodXASYGUYahQoWergpRLHzmvEmYGQfiAHgrm",
+    "included_in_block_hash": "CDTXjtv8w5rSaNrko5B6ZpRd43bxFNpPRuLNjfnHYHDA",
+    "block_timestamp": "1706520875868352651",
+    "block": {
+      "block_height": 111597242
+    },
+    "receipt_conversion_tokens_burnt": "243256279898400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addon",
+        "deposit": 0,
+        "fee": 757389571180000000000,
+        "args": "{\"handle\": \"tooling\", \"community_addon\": {\"id\": \"kp910a\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Events\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"# Tooling Community Calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Call #1: Oct 6th, 2023\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**MODERATOR :** Maxwell S\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VIDEO :** [Tools Community Group Call #1 \\\\\\\\u{2013} NEAR DevHub October 6th, 2023](https://youtu.be/vg9LYGLU7ok)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**AGENDA**\\\\\\\\\\\\\\\\n-  SourceScan presents the product and upcoming work\\\\\\\\\\\\\\\\n- Michael (Pagoda) presents bos-loader and workflow\\\\\\\\\\\\\\\\n- Guillermo presents BOS VSCode extension\\\\\\\\\\\\\\\\n- Elliot (DevHub) presents some of his toolchain/workflow for building BOS apps\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Work Group Calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Tooling Work Group may host public formal calls to review specific proposals, discuss attestations, or vote on decisions.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Working Group Call - January 19, 2023\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**MODERATOR :** Vlad Frolov\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VIDEO :** [Tooling Working Group Call - January 19, 2023](https://youtu.be/poVmblmc3L4)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**AGENDA**\\\\\\\\\\\\\\\\n-   Update on Developer Governance and the NEP process\\\\\\\\\\\\\\\\n-   Introductions\\\\\\\\\\\\\\\\n-   Discussion: NEP-418 Proposal to allow attached_deposit in view contexts\\\\\\\\\\\\\\\\n-   Voting Decision\\\\\\\\\\\\\\\\n-   Getting Involved\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**NOTES**\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**- NEP-418 :** A proposal to implement an `attached_deposit` host function for view-function calls, so it would just return zero instead of aborting the function call. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VOTE DECISION**\\\\\\\\\\\\\\\\n-   NEP-418 : Approved\\\\\\\\\\\\\\\\n    \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**ACTION ITEMS**\\\\\\\\\\\\\\\\n- No action items were discussed\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**RELATED RESOURCES**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- NEP-418 Proposal to allow attached_deposit in view contexts - [LINK](https://github.com/near/NEPs/pull/418)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[Previous Meeting Notes](https://docs.google.com/document/d/1DGMpaS_X1MSoRae5R0ULClc5Dsv6KmWvfjicFZTJZ64)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Events\\\\\\\\\\\\\\\\nWatch this space. We\\\\\\\\\\\\'ll always share highlights and summaries of recent community events.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Community Calls / Events \\\\\\\\u{1f4fa}\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5862402319564e+21
+    }
+  },
+  {
+    "id": "2277780621",
+    "receipt_id": "6W9SiLWYc9CuEo1efNgQnegYrdtj9zGqHXomACin3D2n",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4LxwteRjSDqnnrmpyd4ohHMD8PC1gxUzvNmfJ1sXzzXh",
+      "block_height": 111597244,
+      "block_timestamp": 1706520878112813000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5855943808780,
+      "tokens_burnt": 585594380878000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "AszYyyadodXASYGUYahQoWergpRLHzmvEmYGQfiAHgrm",
+    "included_in_block_hash": "CDTXjtv8w5rSaNrko5B6ZpRd43bxFNpPRuLNjfnHYHDA",
+    "block_timestamp": "1706520875868352651",
+    "block": {
+      "block_height": 111597242
+    },
+    "receipt_conversion_tokens_burnt": "243256279898400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 585594380878000000000,
+        "args": "{\"data\": {\"tooling.community.devhub.near\": {\"profile\": {\"name\": \"Tooling\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreie25uquonqegy2zq3mw22lxavscptdfx2awd5j5quzier62owceuu\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5862402319564e+21
+    }
+  },
+  {
+    "id": "2277786215",
+    "receipt_id": "DusjeDxihPaog4b6RmZcuvXvxnviNtpyHAys8zVwy5WG",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6LBdrSuBUuojrUGAkWWTZ9ZHwfxxauGz9f2hBFN7TUeH",
+      "block_height": 111597427,
+      "block_timestamp": 1706521064108015400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7552593239912,
+      "tokens_burnt": 755259323991200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DqJaRFnqDAP76nckGoNXCMs6rLoPA6p65Jgqw8kmyioh",
+    "included_in_block_hash": "Hu2PjfSCGKnHZKu8ZhCNYHYe71woRJNaUR4912kdtKwL",
+    "block_timestamp": "1706521063059573217",
+    "block": {
+      "block_height": 111597426
+    },
+    "receipt_conversion_tokens_burnt": "243244429448200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addon",
+        "deposit": 0,
+        "fee": 755259323991200000000,
+        "args": "{\"handle\": \"tooling\", \"community_addon\": {\"id\": \"duxizk\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"## TIMELINE OF KEY EVENTS/HIGHLIGHTS \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### 2023 Key Highlights \\\\\\\\\\\\\\\\n(Last updated June 14)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### COMMUNITY\\\\\\\\\\\\\\\\n- 47 members\\\\\\\\\\\\\\\\n- 0 community calls\\\\\\\\\\\\\\\\n- 1 Working Group calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### NEPS\\\\\\\\\\\\\\\\n- NEP-418 Proposal to allow attached_deposit in view contexts - [LINK](https://github.com/near/NEPs/pull/418)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## STRUCTURE\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Tooling community consists of two main groups:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Working Group\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis formal group is a selected committee of subject matter experts who make official decisions on proposals and questions related to the NEAR dApp standards. They follow a strict process to review proposals, recommend funding to DAO or grant programs, and hold grant takers accountable. They engage with the broader community to understand their needs and encourage ideation.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Members**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- [Bo Yao](https://github.com/ailisp)\\\\\\\\\\\\\\\\n- [David Millar-Durrant](https://github.com/DavidM-D)\\\\\\\\\\\\\\\\n- [Serhii Volovyk](https://github.com/volovyks)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Group\\\\\\\\\\\\\\\\nThis informal self-organized group provides a space for anyone interested in the NEAR tooling. While this group does not make official decisions, it offers a great opportunity to meet with others to share ideas and submit proposals. This group is not controlled by anyone but the people who are organizing it. The group has a dedicated Telegram channel.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### Communication Channels\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- [Tooling Community Group in Telegram](https://t.me/NEAR_Tools_Community_Group)\\\\\\\\\\\\\\\\n- Here on the Discussions page!\\\\\\\\\\\\\\\\n- Check the Events tab for upcoming Community/Work Group calls.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you\\\\\\\\u{2019}d like to add links to your project, interesting reference material for the community, or anything else worth linking here, please reach out to the community lead! We want to be as inclusive as possible.\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"About us \\\\\\\\u{2b50}\\\\\\\\u{fe0f}\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5840981343174e+21
+    }
+  },
+  {
+    "id": "2277786235",
+    "receipt_id": "6x37ouoLZcxZ4toYobsh69NhZeJb871FpoGVcc8JJ9e9",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HtHuD3B3stLVvNhHBLmesrMtUgo9vinrHGFoaUDxEUh1",
+      "block_height": 111597428,
+      "block_timestamp": 1706521064916343800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5855943808780,
+      "tokens_burnt": 585594380878000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DqJaRFnqDAP76nckGoNXCMs6rLoPA6p65Jgqw8kmyioh",
+    "included_in_block_hash": "Hu2PjfSCGKnHZKu8ZhCNYHYe71woRJNaUR4912kdtKwL",
+    "block_timestamp": "1706521063059573217",
+    "block": {
+      "block_height": 111597426
+    },
+    "receipt_conversion_tokens_burnt": "243244429448200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 585594380878000000000,
+        "args": "{\"data\": {\"tooling.community.devhub.near\": {\"profile\": {\"name\": \"Tooling\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreie25uquonqegy2zq3mw22lxavscptdfx2awd5j5quzier62owceuu\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5840981343174e+21
+    }
+  },
+  {
+    "id": "2277787735",
+    "receipt_id": "Bh9qbouEzSYasAPgnAXEzQx5UC4t2cyRrgobrZDMjhVK",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5yomfCgmX4GY2AaFZA2gRi5HmsSwyVyDjZtw7oeyLktG",
+      "block_height": 111597486,
+      "block_timestamp": 1706521122909584600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7513031050728,
+      "tokens_burnt": 751303105072800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "6MrzFBKw7GYmYwDnJ1iPVNDku7DJibV1PXvEswHcZHqM",
+    "included_in_block_hash": "6L39qVcrNaDLFPV32tfBHmdyrJyXSNXMkMKibh9Q6wVd",
+    "block_timestamp": "1706521122149955357",
+    "block": {
+      "block_height": 111597485
+    },
+    "receipt_conversion_tokens_burnt": "243241969920800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addon",
+        "deposit": 0,
+        "fee": 751303105072800000000,
+        "args": "{\"handle\": \"tooling\", \"community_addon\": {\"id\": \"duxizk\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"## TIMELINE OF KEY EVENTS/HIGHLIGHTS \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### 2023 Key Highlights \\\\\\\\\\\\\\\\n(Last updated June 14)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### COMMUNITY\\\\\\\\\\\\\\\\n- 47 members\\\\\\\\\\\\\\\\n- 0 community calls\\\\\\\\\\\\\\\\n- 1 Working Group calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### NEPS\\\\\\\\\\\\\\\\n- NEP-418 Proposal to allow attached_deposit in view contexts - [LINK](https://github.com/near/NEPs/pull/418)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## STRUCTURE\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Protocol community consists of two main groups:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Working Group\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis formal group is a selected committee of subject matter experts who make official decisions on proposals and questions related to the NEAR dApp standards. They follow a strict process to review proposals, recommend funding to DAO or grant programs, and hold grant takers accountable. They engage with the broader community to understand their needs and encourage ideation.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Members**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- [Bo Yao](https://github.com/ailisp)\\\\\\\\\\\\\\\\n- [David Millar-Durrant](https://github.com/DavidM-D)\\\\\\\\\\\\\\\\n- [Serhii Volovyk](https://github.com/volovyks)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Group\\\\\\\\\\\\\\\\nThis informal self-organized group provides a space for anyone interested in the NEAR tooling. While this group does not make official decisions, it offers a great opportunity to meet with others to share ideas and submit proposals. This group is not controlled by anyone but the people who are organizing it. The group has a dedicated Telegram channel.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### Communication Channels\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- [Tooling Community Group in Telegram](https://t.me/NEAR_Tools_Community_Group)\\\\\\\\\\\\\\\\n- Here on the Discussions page!\\\\\\\\\\\\\\\\n- Check the Events tab for upcoming Community/Work Group calls.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you\\\\\\\\u{2019}d like to add links to your project, interesting reference material for the community, or anything else worth linking here, please reach out to the community lead! We want to be as inclusive as possible.\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"About us \\\\\\\\u{2b50}\\\\\\\\u{fe0f}\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5801394558716e+21
+    }
+  },
+  {
+    "id": "2277787765",
+    "receipt_id": "8TGuUEBDKibcw31LdQbWcwTxH5AYiyuXvHQCKyVjwUtM",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AtUHmkMxd6UXEvkAFmPjFajzAVoyGm5L2sJSyAVgCSJu",
+      "block_height": 111597487,
+      "block_timestamp": 1706521123714918700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5855943808780,
+      "tokens_burnt": 585594380878000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "6MrzFBKw7GYmYwDnJ1iPVNDku7DJibV1PXvEswHcZHqM",
+    "included_in_block_hash": "6L39qVcrNaDLFPV32tfBHmdyrJyXSNXMkMKibh9Q6wVd",
+    "block_timestamp": "1706521122149955357",
+    "block": {
+      "block_height": 111597485
+    },
+    "receipt_conversion_tokens_burnt": "243241969920800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 585594380878000000000,
+        "args": "{\"data\": {\"tooling.community.devhub.near\": {\"profile\": {\"name\": \"Tooling\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreie25uquonqegy2zq3mw22lxavscptdfx2awd5j5quzier62owceuu\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5801394558716e+21
+    }
+  },
+  {
+    "id": "2277789386",
+    "receipt_id": "FiBVoreKqgdFq5WcywTxijFoGRLcUfvfbjY59HUi85fJ",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "42CkUpUG1M8wb5xyNenio9c7XyLgm3p9Jyk4hEEtWB27",
+      "block_height": 111597550,
+      "block_timestamp": 1706521186912785700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7488534482784,
+      "tokens_burnt": 748853448278400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "7b6ygtkTLuYJ3tjsGbwrrmVPnS6hrfR9gWU8mimXKpdK",
+    "included_in_block_hash": "78LhgSkLHidVaFuGy7XzKMTkGPRq8L5ooMZDoQfXjgJ3",
+    "block_timestamp": "1706521185822779178",
+    "block": {
+      "block_height": 111597549
+    },
+    "receipt_conversion_tokens_burnt": "243207760130600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addon",
+        "deposit": 0,
+        "fee": 748853448278400000000,
+        "args": "{\"handle\": \"tooling\", \"community_addon\": {\"id\": \"duxizk\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"#### COMMUNITY\\\\\\\\\\\\\\\\n- 47 members\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### NEPS\\\\\\\\\\\\\\\\n- NEP-418 Proposal to allow attached_deposit in view contexts - [LINK](https://github.com/near/NEPs/pull/418)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## STRUCTURE\\\\\\\\\\\\\\\\nThe Tooling community consists of two main groups:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Working Group\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis formal group is a selected committee of subject matter experts who make official decisions on proposals and questions related to the NEAR dApp standards. They follow a strict process to review proposals, recommend funding to DAO or grant programs, and hold grant takers accountable. They engage with the broader community to understand their needs and encourage ideation.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Members**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- [Bo Yao](https://github.com/ailisp)\\\\\\\\\\\\\\\\n- [David Millar-Durrant](https://github.com/DavidM-D)\\\\\\\\\\\\\\\\n- [Serhii Volovyk](https://github.com/volovyks)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Group\\\\\\\\\\\\\\\\nThis informal self-organized group provides a space for anyone interested in the NEAR tooling. While this group does not make official decisions, it offers a great opportunity to meet with others to share ideas and submit proposals. This group is not controlled by anyone but the people who are organizing it. The group has a dedicated Telegram channel.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### Communication Channels\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- [Tooling Community Group in Telegram](https://t.me/NEAR_Tools_Community_Group)\\\\\\\\\\\\\\\\n- Here on the Discussions page!\\\\\\\\\\\\\\\\n- Check the Events tab for upcoming Community/Work Group calls.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you\\\\\\\\u{2019}d like to add links to your project, interesting reference material for the community, or anything else worth linking here, please reach out to the community lead! We want to be as inclusive as possible.\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"About us \\\\\\\\u{2b50}\\\\\\\\u{fe0f}\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5831843716574e+21
+    }
+  },
+  {
+    "id": "2277789401",
+    "receipt_id": "E5CmiGvhqcVeREncZnQdHnYkE5ZCxre3pFr5UMqWFQsg",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "As154DCUKJ7VrkycQHvTbsSFN7XTFtbCh9uURife1FGC",
+      "block_height": 111597551,
+      "block_timestamp": 1706521187949825000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5911231632484,
+      "tokens_burnt": 591123163248400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7b6ygtkTLuYJ3tjsGbwrrmVPnS6hrfR9gWU8mimXKpdK",
+    "included_in_block_hash": "78LhgSkLHidVaFuGy7XzKMTkGPRq8L5ooMZDoQfXjgJ3",
+    "block_timestamp": "1706521185822779178",
+    "block": {
+      "block_height": 111597549
+    },
+    "receipt_conversion_tokens_burnt": "243207760130600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 591123163248400000000,
+        "args": "{\"data\": {\"tooling.community.devhub.near\": {\"profile\": {\"name\": \"Tooling\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreie25uquonqegy2zq3mw22lxavscptdfx2awd5j5quzier62owceuu\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5831843716574e+21
+    }
+  },
+  {
+    "id": "2277790677",
+    "receipt_id": "8tNzCbj5RMYJdWax58zDv3zNPvxvEe97MSuCWvxAH3Pr",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "C3GtqVh5EGTusx819EXSTZmC6qfX62Fr6dwnDkZsCsev",
+      "block_height": 111597601,
+      "block_timestamp": 1706521236560765700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7576434578126,
+      "tokens_burnt": 757643457812600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "CJ34JRG5qLTynpzvzggsoWoMP6C1f5R6vPuv2Xi8xSYP",
+    "included_in_block_hash": "6g1r4xK3Qnz9b6EqvrwEK9AwHVockqYV5kLU7yphnmTu",
+    "block_timestamp": "1706521235674442355",
+    "block": {
+      "block_height": 111597600
+    },
+    "receipt_conversion_tokens_burnt": "243681107358400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 757643457812600000000,
+        "args": "{\"addons\": [{\"id\": \"duxizk\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"#### COMMUNITY\\\\\\\\\\\\\\\\n- 47 members\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### NEPS\\\\\\\\\\\\\\\\n- NEP-418 Proposal to allow attached_deposit in view contexts - [LINK](https://github.com/near/NEPs/pull/418)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## STRUCTURE\\\\\\\\\\\\\\\\nThe Tooling community consists of two main groups:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Working Group\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis formal group is a selected committee of subject matter experts who make official decisions on proposals and questions related to the NEAR dApp standards. They follow a strict process to review proposals, recommend funding to DAO or grant programs, and hold grant takers accountable. They engage with the broader community to understand their needs and encourage ideation.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Members**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- [Bo Yao](https://github.com/ailisp)\\\\\\\\\\\\\\\\n- [David Millar-Durrant](https://github.com/DavidM-D)\\\\\\\\\\\\\\\\n- [Serhii Volovyk](https://github.com/volovyks)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Group\\\\\\\\\\\\\\\\nThis informal self-organized group provides a space for anyone interested in the NEAR tooling. While this group does not make official decisions, it offers a great opportunity to meet with others to share ideas and submit proposals. This group is not controlled by anyone but the people who are organizing it. The group has a dedicated Telegram channel.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### Communication Channels\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- [Tooling Community Group in Telegram](https://t.me/NEAR_Tools_Community_Group)\\\\\\\\\\\\\\\\n- Here on the Discussions page!\\\\\\\\\\\\\\\\n- Check the Events tab for upcoming Community/Work Group calls.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you\\\\\\\\u{2019}d like to add links to your project, interesting reference material for the community, or anything else worth linking here, please reach out to the community lead! We want to be as inclusive as possible.\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"About us \\\\\\\\u{2b50}\\\\\\\\u{fe0f}\"}, {\"id\": \"kp910a\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Events\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"# Tooling Community Calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Call #1: Oct 6th, 2023\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**MODERATOR :** Maxwell S\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VIDEO :** [Tools Community Group Call #1 \\\\\\\\u{2013} NEAR DevHub October 6th, 2023](https://youtu.be/vg9LYGLU7ok)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**AGENDA**\\\\\\\\\\\\\\\\n-  SourceScan presents the product and upcoming work\\\\\\\\\\\\\\\\n- Michael (Pagoda) presents bos-loader and workflow\\\\\\\\\\\\\\\\n- Guillermo presents BOS VSCode extension\\\\\\\\\\\\\\\\n- Elliot (DevHub) presents some of his toolchain/workflow for building BOS apps\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Work Group Calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Tooling Work Group may host public formal calls to review specific proposals, discuss attestations, or vote on decisions.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Working Group Call - January 19, 2023\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**MODERATOR :** Vlad Frolov\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VIDEO :** [Tooling Working Group Call - January 19, 2023](https://youtu.be/poVmblmc3L4)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**AGENDA**\\\\\\\\\\\\\\\\n-   Update on Developer Governance and the NEP process\\\\\\\\\\\\\\\\n-   Introductions\\\\\\\\\\\\\\\\n-   Discussion: NEP-418 Proposal to allow attached_deposit in view contexts\\\\\\\\\\\\\\\\n-   Voting Decision\\\\\\\\\\\\\\\\n-   Getting Involved\\\\\\\\\\\\\\\\n  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**NOTES**\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**- NEP-418 :** A proposal to implement an `attached_deposit` host function for view-function calls, so it would just return zero instead of aborting the function call. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**VOTE DECISION**\\\\\\\\\\\\\\\\n-   NEP-418 : Approved\\\\\\\\\\\\\\\\n    \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**ACTION ITEMS**\\\\\\\\\\\\\\\\n- No action items were discussed\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**RELATED RESOURCES**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- NEP-418 Proposal to allow attached_deposit in view contexts - [LINK](https://github.com/near/NEPs/pull/418)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[Previous Meeting Notes](https://docs.google.com/document/d/1DGMpaS_X1MSoRae5R0ULClc5Dsv6KmWvfjicFZTJZ64)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Events\\\\\\\\\\\\\\\\nWatch this space. We\\\\\\\\\\\\'ll always share highlights and summaries of recent community events.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Community Calls / Events \\\\\\\\u{1f4fa}\"}, {\"id\": \"0ucwyc\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{}\", \"display_name\": \"Updates \\\\\\\\u{1f468}\\\\\\\\u{200d}\\\\\\\\u{1f4bb}\"}], \"handle\": \"tooling\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.586918946049e+21
+    }
+  }
+]

@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "7674861900",
+    "receipt_id": "2Rpw7q2ETru5PntQD2Xqf9XXuKPXPYSkvjfdZbfPWReo",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "71QWVyodfPbBhaDgGQc4YjyBJ5f23n15XZ5T9pVkju1J",
+      "block_height": 126400742,
+      "block_timestamp": 1724433490533476600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3150057495039,
+      "tokens_burnt": 315005749503900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "4kypM1zCRmiu4XSV54VyDuhnYTgCGUGtUvPWNYorAJZt",
+    "included_in_block_hash": "3ZBxkTUntgg7KT6TZWHTUJnWp1ehZ1VFtnahhs5WdSAM",
+    "block_timestamp": "1724433489326841069",
+    "block": {
+      "block_height": 126400741
+    },
+    "receipt_conversion_tokens_burnt": "32327060508500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_member",
+        "deposit": 0,
+        "fee": 315005749503900000000,
+        "args": "{\"member\": \"team:moderators\", \"metadata\": {\"parents\": [], \"children\": [\"theori.near\", \"frol.near\", \"tfdevhub.near\", \"gagdiez.near\", \"orangejoe.near\", \"petersalomonsen.near\", \"nearmax.near\", \"yarotska.near\", \"neardevdao.near\"], \"description\": \"\", \"permissions\": {\"*\": [\"edit-post\", \"use-labels\"]}, \"member_metadata_version\": \"V0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 347332810012400000000
+    }
+  },
+  {
+    "id": "7674865903",
+    "receipt_id": "9GqY4KbXYub16iZXJ3dFvgEAkAS9i8JwyZkYWG5uSbGd",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EyQrsEEKsx2enMDV7N9KFfGcRuWWKi2JTUtnyVuLBYJW",
+      "block_height": 126400756,
+      "block_timestamp": 1724433506890677500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3115241306205,
+      "tokens_burnt": 311524130620500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "7s9PWnpyQzeGiXZ89fEYfm6od2rgjcB8giJLrJLvPjCL",
+    "included_in_block_hash": "uQfVRjP5udPfKzQ1vVoufGzApCigYYabrVKLqNdPeJC",
+    "block_timestamp": "1724433505777669837",
+    "block": {
+      "block_height": 126400755
+    },
+    "receipt_conversion_tokens_burnt": "32327060508500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_member",
+        "deposit": 0,
+        "fee": 311524130620500000000,
+        "args": "{\"member\": \"team:moderators\", \"metadata\": {\"parents\": [], \"children\": [\"theori.near\", \"frol.near\", \"tfdevhub.near\", \"gagdiez.near\", \"orangejoe.near\", \"petersalomonsen.near\", \"nearmax.near\", \"yarotska.near\", \"neardevdao.near\"], \"description\": \"\", \"permissions\": {\"*\": [\"edit-post\", \"use-labels\"]}, \"member_metadata_version\": \"V0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 343851191129000000000
+    }
+  },
+  {
+    "id": "7707923702",
+    "receipt_id": "DB3mHnHwHh64wAqhHGYUeayQ5p4dqvRkw7mXkb4Y6Zic",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5hvS4KjsVArBwYxaEeJmkVVdtWgU67dQvDUyk8mJhtCB",
+      "block_height": 126506958,
+      "block_timestamp": 1724557499100781300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5105156302383,
+      "tokens_burnt": 510515630238300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "2mi9C463QSvErhViG98pbc23iS8QFNNQ6szeV7V9wJu7",
+    "included_in_block_hash": "3dddmneovGkkTpLj4bgkN3XKeJSCsFHtdkYrJUZnPapU",
+    "block_timestamp": "1724557498196482341",
+    "block": {
+      "block_height": 126506957
+    },
+    "receipt_conversion_tokens_burnt": "63235644571500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 510515630238300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"widget\": {\"devhub.entity.proposal.VerificationStatus\": {\"\": \"const receiverAccount = props.receiverAccount;\\\\\\\\nconst showGetVerifiedBtn = props.showGetVerifiedBtn;\\\\\\\\nconst [verificationStatus, setVerificationStatus] = useState(null);\\\\\\\\nconst imageSize = props.imageSize ?? 40;\\\\\\\\n\\\\\\\\nconst WarningImg =\\\\\\\\n  \\\\\\\\\\\\\\\"https://ipfs.near.social/ipfs/bafkreieq4222tf3hkbccfnbw5kpgedm3bf2zcfgzbnmismxav2phqdwd7q\\\\\\\\\\\\\\\";\\\\\\\\n\\\\\\\\nconst SuccessImg =\\\\\\\\n  \\\\\\\\\\\\\\\"https://ipfs.near.social/ipfs/bafkreidqveupkcc7e3rko2e67lztsqrfnjzw3ceoajyglqeomvv7xznusm\\\\\\\\\\\\\\\";\\\\\\\\n\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (\\\\\\\\n    receiverAccount.length === 64 ||\\\\\\\\n    (receiverAccount ?? \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\").includes(\\\\\\\\\\\\\\\".near\\\\\\\\\\\\\\\") ||\\\\\\\\n    (receiverAccount ?? \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\").includes(\\\\\\\\\\\\\\\".tg\\\\\\\\\\\\\\\")\\\\\\\\n  ) {\\\\\\\\n    asyncFetch(\\\\\\\\n      `https://neardevhub-kyc-proxy.shuttleapp.rs/kyc/${receiverAccount}`\\\\\\\\n    ).then((res) => {\\\\\\\\n      let displayableText = \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\";\\\\\\\\n      switch (res.body.kyc_status) {\\\\\\\\n        case \\\\\\\\\\\\\\\"Approved\\\\\\\\\\\\\\\":\\\\\\\\n          displayableText = \\\\\\\\\\\\\\\"Verified\\\\\\\\\\\\\\\";\\\\\\\\n          break;\\\\\\\\n        case \\\\\\\\\\\\\\\"Pending\\\\\\\\\\\\\\\":\\\\\\\\n          displayableText = \\\\\\\\\\\\\\\"Pending\\\\\\\\\\\\\\\";\\\\\\\\n          break;\\\\\\\\n        case \\\\\\\\\\\\\\\"NotSubmitted\\\\\\\\\\\\\\\":\\\\\\\\n        case \\\\\\\\\\\\\\\"Rejected\\\\\\\\\\\\\\\":\\\\\\\\n          displayableText = \\\\\\\\\\\\\\\"Not Verfied\\\\\\\\\\\\\\\";\\\\\\\\n          break;\\\\\\\\n        default:\\\\\\\\n          displayableText = \\\\\\\\\\\\\\\"Failed to get status\\\\\\\\\\\\\\\";\\\\\\\\n          break;\\\\\\\\n      }\\\\\\\\n      setVerificationStatus(displayableText);\\\\\\\\n    });\\\\\\\\n  }\\\\\\\\n}, [receiverAccount]);\\\\\\\\n\\\\\\\\nconst DropdowntBtnContainer = styled.div`\\\\\\\\n  font-size: 13px;\\\\\\\\n  min-width: 150px;\\\\\\\\n\\\\\\\\n  .custom-select {\\\\\\\\n    position: relative;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .select-header {\\\\\\\\n    display: flex;\\\\\\\\n    justify-content: space-between;\\\\\\\\n    align-items: center;\\\\\\\\n    border: 1px solid #ccc;\\\\\\\\n    border-radius-top: 5px;\\\\\\\\n    cursor: pointer;\\\\\\\\n    background-color: #fff;\\\\\\\\n    border-radius: 5px;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .no-border {\\\\\\\\n    border: none !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .options-card {\\\\\\\\n    position: absolute;\\\\\\\\n    top: 100%;\\\\\\\\n    left: 0;\\\\\\\\n    width: 200%;\\\\\\\\n    border: 1px solid #ccc;\\\\\\\\n    background-color: #fff;\\\\\\\\n    padding: 0.5rem;\\\\\\\\n    z-index: 99;\\\\\\\\n    font-size: 13px;\\\\\\\\n    border-radius: 0.375rem !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .left {\\\\\\\\n    right: 0 !important;\\\\\\\\n    left: auto !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    .options-card {\\\\\\\\n      right: 0 !important;\\\\\\\\n      left: auto !important;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .option {\\\\\\\\n    margin-block: 2px;\\\\\\\\n    padding: 5px;\\\\\\\\n    cursor: pointer;\\\\\\\\n    border-bottom: 1px solid #f0f0f0;\\\\\\\\n    transition: background-color 0.3s ease;\\\\\\\\n    border-radius: 0.375rem !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .option:hover {\\\\\\\\n    background-color: #f0f0f0; /* Custom hover effect color */\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .option:last-child {\\\\\\\\n    border-bottom: none;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .selected {\\\\\\\\n    background-color: #f0f0f0;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .disabled {\\\\\\\\n    background-color: #f4f4f4 !important;\\\\\\\\n    cursor: not-allowed !important;\\\\\\\\n    font-weight: 500;\\\\\\\\n    color: #b3b3b3;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .disabled .circle {\\\\\\\\n    opacity: 0.5;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .circle {\\\\\\\\n    width: 8px;\\\\\\\\n    height: 8px;\\\\\\\\n    border-radius: 50%;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .grey {\\\\\\\\n    background-color: #818181;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .green {\\\\\\\\n    background-color: #04a46e;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  a:hover {\\\\\\\\n    text-decoration: none;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .black-btn {\\\\\\\\n    background-color: #000 !important;\\\\\\\\n    border: none;\\\\\\\\n    color: white;\\\\\\\\n    &:active {\\\\\\\\n      color: white;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\n\\\\\\\\nconst [kycOptionsOpen, setKycOptions] = useState(false);\\\\\\\\n\\\\\\\\nconst VerificationBtn = () => {\\\\\\\\n  const btnOptions = [\\\\\\\\n    {\\\\\\\\n      src: \\\\\\\\\\\\\\\"https://ipfs.near.social/ipfs/bafkreidqveupkcc7e3rko2e67lztsqrfnjzw3ceoajyglqeomvv7xznusm\\\\\\\\\\\\\\\",\\\\\\\\n      label: \\\\\\\\\\\\\\\"KYC\\\\\\\\\\\\\\\",\\\\\\\\n      description: \\\\\\\\\\\\\\\"Choose this if you are an individual.\\\\\\\\\\\\\\\",\\\\\\\\n      value: \\\\\\\\\\\\\\\"KYC\\\\\\\\\\\\\\\",\\\\\\\\n    },\\\\\\\\n    {\\\\\\\\n      src: \\\\\\\\\\\\\\\"https://ipfs.near.social/ipfs/bafkreic5ksax6b45pelvxm6a2v2j465jgbitpzrxtzpmn6zehl23gocwxm\\\\\\\\\\\\\\\",\\\\\\\\n      label: \\\\\\\\\\\\\\\"KYB\\\\\\\\\\\\\\\",\\\\\\\\n      description: \\\\\\\\\\\\\\\"Choose this if you are a business or corporate entity..\\\\\\\\\\\\\\\",\\\\\\\\n      value: \\\\\\\\\\\\\\\"KYB\\\\\\\\\\\\\\\",\\\\\\\\n    },\\\\\\\\n  ];\\\\\\\\n\\\\\\\\n  const toggleDropdown = () => {\\\\\\\\n    setKycOptions(!kycOptionsOpen);\\\\\\\\n  };\\\\\\\\n\\\\\\\\n  return (\\\\\\\\n    <DropdowntBtnContainer>\\\\\\\\n      <div\\\\\\\\n        className=\\\\\\\\\\\\\\\"custom-select\\\\\\\\\\\\\\\"\\\\\\\\n        tabIndex=\\\\\\\\\\\\\\\"0\\\\\\\\\\\\\\\"\\\\\\\\n        id=\\\\\\\\\\\\\\\"getVerifiedButton\\\\\\\\\\\\\\\"\\\\\\\\n        onClick={toggleDropdown}\\\\\\\\n        onBlur={() => {\\\\\\\\n          setTimeout(() => {\\\\\\\\n            setKycOptions(false);\\\\\\\\n          }, 100);\\\\\\\\n        }}\\\\\\\\n      >\\\\\\\\n        <div\\\\\\\\n          className={\\\\\\\\n            \\\\\\\\\\\\\\\"select-header no-border black-btn btn d-inline-flex align-items-center gap-2\\\\\\\\\\\\\\\"\\\\\\\\n          }\\\\\\\\n        >\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"d-flex align-items-center gap-1\\\\\\\\\\\\\\\">\\\\\\\\n            Get Verified\\\\\\\\n            <i class=\\\\\\\\\\\\\\\"bi bi-box-arrow-up-right\\\\\\\\\\\\\\\"></i>\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n\\\\\\\\n        {kycOptionsOpen && (\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"options-card left\\\\\\\\\\\\\\\">\\\\\\\\n            {btnOptions.map((option) => (\\\\\\\\n              <a\\\\\\\\n                target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n                rel=\\\\\\\\\\\\\\\"noopener noreferrer\\\\\\\\\\\\\\\"\\\\\\\\n                href={\\\\\\\\n                  option.value === \\\\\\\\\\\\\\\"KYC\\\\\\\\\\\\\\\"\\\\\\\\n                    ? \\\\\\\\\\\\\\\"https://go.fractal.id/near-social-kyc\\\\\\\\\\\\\\\"\\\\\\\\n                    : \\\\\\\\\\\\\\\"https://go.fractal.id/near-social-kyb\\\\\\\\\\\\\\\"\\\\\\\\n                }\\\\\\\\n              >\\\\\\\\n                <div\\\\\\\\n                  key={option.value}\\\\\\\\n                  className={`option ${\\\\\\\\n                    selectedOption.value === option.value ? \\\\\\\\\\\\\\\"selected\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n                  }`}\\\\\\\\n                >\\\\\\\\n                  <div className={`d-flex gap-2 align-items-center`}>\\\\\\\\n                    <img src={option.src} height={30} />\\\\\\\\n                    <div>\\\\\\\\n                      <div className=\\\\\\\\\\\\\\\"fw-bold\\\\\\\\\\\\\\\">{option.label}</div>\\\\\\\\n                      <div className=\\\\\\\\\\\\\\\"text-muted text-xs\\\\\\\\\\\\\\\">\\\\\\\\n                        {option.description}\\\\\\\\n                      </div>\\\\\\\\n                    </div>\\\\\\\\n                  </div>\\\\\\\\n                </div>\\\\\\\\n              </a>\\\\\\\\n            ))}\\\\\\\\n          </div>\\\\\\\\n        )}\\\\\\\\n      </div>\\\\\\\\n    </DropdowntBtnContainer>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\n\\\\\\\\nreturn (\\\\\\\\n  <div>\\\\\\\\n    {!verificationStatus ? (\\\\\\\\n      <span\\\\\\\\n        className=\\\\\\\\\\\\\\\"spinner-grow spinner-grow-sm me-1\\\\\\\\\\\\\\\"\\\\\\\\n        role=\\\\\\\\\\\\\\\"status\\\\\\\\\\\\\\\"\\\\\\\\n        aria-hidden=\\\\\\\\\\\\\\\"true\\\\\\\\\\\\\\\"\\\\\\\\n      />\\\\\\\\n    ) : (\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"d-flex text-black justify-content-between align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"d-flex\\\\\\\\\\\\\\\" style={{ gap: \\\\\\\\\\\\\\\"12px\\\\\\\\\\\\\\\" }}>\\\\\\\\n          <img\\\\\\\\n            className=\\\\\\\\\\\\\\\"align-self-center object-fit-cover\\\\\\\\\\\\\\\"\\\\\\\\n            src={verificationStatus === \\\\\\\\\\\\\\\"Verified\\\\\\\\\\\\\\\" ? SuccessImg : WarningImg}\\\\\\\\n            height={imageSize}\\\\\\\\n          />\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"d-flex flex-column justify-content-center\\\\\\\\\\\\\\\">\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"h6 mb-0\\\\\\\\\\\\\\\">Fractal</div>\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"text-sm text-muted\\\\\\\\\\\\\\\">{verificationStatus}</div>\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n        {verificationStatus !== \\\\\\\\\\\\\\\"Verified\\\\\\\\\\\\\\\" && showGetVerifiedBtn && (\\\\\\\\n          <VerificationBtn />\\\\\\\\n        )}\\\\\\\\n      </div>\\\\\\\\n    )}\\\\\\\\n  </div>\\\\\\\\n);\\\\\\\\n\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 573751274809800000000
+    }
+  },
+  {
+    "id": "7707923920",
+    "receipt_id": "AnjsFPRoKYVzpTBtjd4U8v9Pj8nE7MQbGbivUhmaCwEs",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5c75iAmVH15LjDxF3WW47cRzgtrcGwKest2kcpopT8dM",
+      "block_height": 126506959,
+      "block_timestamp": 1724557500203294500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "2mi9C463QSvErhViG98pbc23iS8QFNNQ6szeV7V9wJu7",
+    "included_in_block_hash": "3dddmneovGkkTpLj4bgkN3XKeJSCsFHtdkYrJUZnPapU",
+    "block_timestamp": "1724557498196482341",
+    "block": {
+      "block_height": 126506957
+    },
+    "receipt_conversion_tokens_burnt": "63235644571500000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.8756611416203223e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 573751274809800000000
+    }
+  },
+  {
+    "id": "7732609400",
+    "receipt_id": "57ZcjHcVNesvXYGnZrnB1KvJjbXbPRw3ab1Q6CggrwfG",
+    "predecessor_account_id": "gagdiez.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4bEbHoHva4JA1hrZtA9iPay7BnEvxzRwnvW44xBFZjwK",
+      "block_height": 126597860,
+      "block_timestamp": 1724662543425838000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4483557219600,
+      "tokens_burnt": 448355721960000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "EjM6DNft7JBaPptYAma2fC8rN2qi1pKw8hiJtAAMiSpR",
+    "included_in_block_hash": "CiKiLzQrqsfMKi8LThH3U7jHqoFwo694ujwy68SUffWV",
+    "block_timestamp": "1724662542143307009",
+    "block": {
+      "block_height": 126597859
+    },
+    "receipt_conversion_tokens_burnt": "31716708956500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 448355721960000000000,
+        "args": "{\"id\": 181, \"timeline\": {\"status\": \"APPROVED\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 838175343551600000000
+    }
+  },
+  {
+    "id": "7732610238",
+    "receipt_id": "Bye2zQ5akjhTgbNqJpdYmwn6AWb8B7NpxEzcmCxWVsaM",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9JxZKU9zEgFWDGUKMSPoeSqsgbmtBQNuBXneeabdT1cJ",
+      "block_height": 126597861,
+      "block_timestamp": 1724662544734162000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3581029126351,
+      "tokens_burnt": 358102912635100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "EjM6DNft7JBaPptYAma2fC8rN2qi1pKw8hiJtAAMiSpR",
+    "included_in_block_hash": "CiKiLzQrqsfMKi8LThH3U7jHqoFwo694ujwy68SUffWV",
+    "block_timestamp": "1724662542143307009",
+    "block": {
+      "block_height": 126597859
+    },
+    "receipt_conversion_tokens_burnt": "31716708956500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 358102912635100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rezarah.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":181,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 838175343551600000000
+    }
+  },
+  {
+    "id": "7745865834",
+    "receipt_id": "EogTZ95Gs29woGargiy4sBW6NCpEbSW4dbsav92AMJdV",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4k9ySx3pkdcgWvgsYknDNCSRhKcNYuHes88v2JDdNiwT",
+      "block_height": 126623680,
+      "block_timestamp": 1724692603122755300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5347450010332,
+      "tokens_burnt": 534745001033200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "CC7yxbnGH5JhXoPfSRuVAFrg5wrkGpgTJnitvNKwqwAE",
+    "included_in_block_hash": "RzS2ZMg2UcPArrgAoBu7AEofCKYv3VVVKdwv796QbWS",
+    "block_timestamp": "1724692601677314440",
+    "block": {
+      "block_height": 126623679
+    },
+    "receipt_conversion_tokens_burnt": "32074336819000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 534745001033200000000,
+        "args": "{\"id\": 183, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 919324920616100000000
+    }
+  },
+  {
+    "id": "7745866235",
+    "receipt_id": "A755j9ux1H1ABccZiozrKQtMLbsPwPJLsbJrD2sne2QN",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CYCtS9oUW4LbCxGQoi5bkRbS5okRqAW2xBPjpRLbQSt7",
+      "block_height": 126623681,
+      "block_timestamp": 1724692604280972500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3525055827639,
+      "tokens_burnt": 352505582763900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "CC7yxbnGH5JhXoPfSRuVAFrg5wrkGpgTJnitvNKwqwAE",
+    "included_in_block_hash": "RzS2ZMg2UcPArrgAoBu7AEofCKYv3VVVKdwv796QbWS",
+    "block_timestamp": "1724692601677314440",
+    "block": {
+      "block_height": 126623679
+    },
+    "receipt_conversion_tokens_burnt": "32074336819000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352505582763900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"joespano.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":183,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 919324920616100000000
+    }
+  },
+  {
+    "id": "7745953535",
+    "receipt_id": "7bvjU9FCmkfWMvU3jubyaZXaa18jFPNgv9ao2HoGM9wa",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8v1DPxKzQ2UxbwUFNcpgUucfMp1wQHLPe9rKG1j4cVoU",
+      "block_height": 126623967,
+      "block_timestamp": 1724692925709511700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 33361813994172,
+      "tokens_burnt": 3.3361813994172e+21,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "AWrsbqf1myD5M9iv2p63Liwj4HpNxGiBwtnUB3fbu4ga",
+    "included_in_block_hash": "9viqaQ8ticNdTg5NA9wJ1CpmpjeJJNJ8CkfRbWmV1Spa",
+    "block_timestamp": "1724692924562817584",
+    "block": {
+      "block_height": 126623966
+    },
+    "receipt_conversion_tokens_burnt": "32074336819000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 3.3361813994172e+21,
+        "args": "{\"id\": 182, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 3.7208478352481e+21
+    }
+  },
+  {
+    "id": "7745953720",
+    "receipt_id": "4ezdUS4CS5AeWSxRUWDCKz1veB3qQ6cG8SBZ4dfWgcum",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HKkb85FQz5RrpULEJwoaafhTbnBRYNTHX9tSbDuvss7q",
+      "block_height": 126623968,
+      "block_timestamp": 1724692926770967000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3525920990119,
+      "tokens_burnt": 352592099011900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "AWrsbqf1myD5M9iv2p63Liwj4HpNxGiBwtnUB3fbu4ga",
+    "included_in_block_hash": "9viqaQ8ticNdTg5NA9wJ1CpmpjeJJNJ8CkfRbWmV1Spa",
+    "block_timestamp": "1724692924562817584",
+    "block": {
+      "block_height": 126623966
+    },
+    "receipt_conversion_tokens_burnt": "32074336819000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352592099011900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"petersalomonsen.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":182,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 3.7208478352481e+21
+    }
+  },
+  {
+    "id": "7746126331",
+    "receipt_id": "DLG7SnedJRk6ttkCFTrZY7oxW6KKwXFKkZBxzjoGUAQd",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FZ2JUFvSQwekyJJAN2re7a4ZHC8YXstAddKWhwWigF1k",
+      "block_height": 126624296,
+      "block_timestamp": 1724693312217788700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4635743072604,
+      "tokens_burnt": 463574307260400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8f2AUNRiFgAmVVd6yPTXAy2RxFgA5VW1Ew74xDpAG8VC",
+    "included_in_block_hash": "HCRQZcgFYgeBgmKPtVuDDRYrGUzvqLVkEzv1vDs1B7wr",
+    "block_timestamp": "1724693310966532805",
+    "block": {
+      "block_height": 126624295
+    },
+    "receipt_conversion_tokens_burnt": "32079105190500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 463574307260400000000,
+        "args": "{\"id\": 181, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": false, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 848198531127200000000
+    }
+  },
+  {
+    "id": "7746127903",
+    "receipt_id": "98rrAbA5G2GM9eDAojRSUnjRz7vs7rWuaoDezNSxEY1w",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Fasmd6uXztTFspKonKHLKtTfYaHhT7bHkPjxPWYbWzcF",
+      "block_height": 126624297,
+      "block_timestamp": 1724693313295263700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3525451186763,
+      "tokens_burnt": 352545118676300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8f2AUNRiFgAmVVd6yPTXAy2RxFgA5VW1Ew74xDpAG8VC",
+    "included_in_block_hash": "HCRQZcgFYgeBgmKPtVuDDRYrGUzvqLVkEzv1vDs1B7wr",
+    "block_timestamp": "1724693310966532805",
+    "block": {
+      "block_height": 126624295
+    },
+    "receipt_conversion_tokens_burnt": "32079105190500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352545118676300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rezarah.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":181,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 848198531127200000000
+    }
+  },
+  {
+    "id": "7746220593",
+    "receipt_id": "5c6nG5aLQPQEGV4GL4FQmcYtFagRBcnk4aZhLcmd4DjX",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "F4GVYshLyEZyRortG2dik6y6gbDE7NYswbqpBnPLy8K",
+      "block_height": 126624426,
+      "block_timestamp": 1724693465835089700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9011807945442,
+      "tokens_burnt": 901180794544200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "82V78fLVFN9t7MpqDMaAW7jW1vovYUW3YaNCQHXHCBQy",
+    "included_in_block_hash": "ezFQUgZpBmWewvKuoJqUsNG933FxWfnNGfnsnsUYojK",
+    "block_timestamp": "1724693464713420346",
+    "block": {
+      "block_height": 126624425
+    },
+    "receipt_conversion_tokens_burnt": "32579784198000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 901180794544200000000,
+        "args": "{\"id\": 174, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"Bank Payment 08/16/2024 USD $8,475.00\"], \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"kyc_verified_deprecated\": false, \"sponsor_requested_review\": false, \"trustees_released_payment\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2862479677585e+21
+    }
+  },
+  {
+    "id": "7746221379",
+    "receipt_id": "F9bk8EZdAAgYSzA6nYb3LZDg2thoMMhveh3Huu5h6tXD",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HZXjBSgxbimPN8QXoTCU4bfd7jJiKTx5yhKAPVK8iVnr",
+      "block_height": 126624427,
+      "block_timestamp": 1724693466942966300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3524873890163,
+      "tokens_burnt": 352487389016300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "82V78fLVFN9t7MpqDMaAW7jW1vovYUW3YaNCQHXHCBQy",
+    "included_in_block_hash": "ezFQUgZpBmWewvKuoJqUsNG933FxWfnNGfnsnsUYojK",
+    "block_timestamp": "1724693464713420346",
+    "block": {
+      "block_height": 126624425
+    },
+    "receipt_conversion_tokens_burnt": "32579784198000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352487389016300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"megha19.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":174,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2862479677585e+21
+    }
+  },
+  {
+    "id": "7746380581",
+    "receipt_id": "EtNs65ARRVMNmqKGmvaZagk4BJkmwGgGS52SPEwyLHrW",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GPMzgTPg8snqviBwHvmQYfh9e1Gkvg3cafsQKFmvdnBN",
+      "block_height": 126624659,
+      "block_timestamp": 1724693733153033500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4547135157642,
+      "tokens_burnt": 454713515764200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "62gsUen7ZF3QTUUz3krVqsEPC9pKZ3AUQErAgZgLt6uu",
+    "included_in_block_hash": "5e25dLoicqG5tDv8MWmrBKc7pyg1sKmxXaCQLtJN4gXq",
+    "block_timestamp": "1724693732105856233",
+    "block": {
+      "block_height": 126624658
+    },
+    "receipt_conversion_tokens_burnt": "32741908829000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 454713515764200000000,
+        "args": "{\"id\": 165, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"https://nearblocks.io/txns/6dZAW8K2sJfE2tofv8T2ucvmiYYtvdBsukP9VAdnJC3i\"], \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"kyc_verified_deprecated\": false, \"sponsor_requested_review\": false, \"trustees_released_payment\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 839995581723500000000
+    }
+  },
+  {
+    "id": "7746381478",
+    "receipt_id": "GjsnNgmJJhHjXX5pKqHq8CdWzxSPypZZAW2FyAH3LGjJ",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DZorC3qtkootyvNock9RVFVTbNC1JbZk8dxoURitWdQY",
+      "block_height": 126624660,
+      "block_timestamp": 1724693734248098600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3525401571303,
+      "tokens_burnt": 352540157130300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "62gsUen7ZF3QTUUz3krVqsEPC9pKZ3AUQErAgZgLt6uu",
+    "included_in_block_hash": "5e25dLoicqG5tDv8MWmrBKc7pyg1sKmxXaCQLtJN4gXq",
+    "block_timestamp": "1724693732105856233",
+    "block": {
+      "block_height": 126624658
+    },
+    "receipt_conversion_tokens_burnt": "32741908829000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352540157130300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"victorkanu1.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":165,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 839995581723500000000
+    }
+  },
+  {
+    "id": "7746550934",
+    "receipt_id": "81R1VsfqnsVzqtM94cgN5RmkAKEJXRJDqs1n1DuqJdjt",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2x7gngH5NXJrgs6K3mNFanpTmzLk8oXmxpFBf8UjFzKG",
+      "block_height": 126624947,
+      "block_timestamp": 1724694065693618400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4253587347395,
+      "tokens_burnt": 425358734739500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "HGua4pPybU8gG3eZ2fxwrzeaUjtHjvfy5VUdmCV6S7fC",
+    "included_in_block_hash": "FLpGZVE6ttSaNG8b3Ubu1YSEG3Uzott6vUvMjGWHrtQj",
+    "block_timestamp": "1724694064671631957",
+    "block": {
+      "block_height": 126624946
+    },
+    "receipt_conversion_tokens_burnt": "32579784198000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 425358734739500000000,
+        "args": "{\"id\": 97, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"https://nearblocks.io/txns/87AfWfC2maDbNbnkfYjkx9Jrmh8MzdNrCX6gvaCw6dEF\"], \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": false, \"trustees_released_payment\": true, \"request_for_trustees_created\": true, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 811866594956000000000
+    }
+  },
+  {
+    "id": "7746552173",
+    "receipt_id": "Fm6eypMq4wcpSHvi3Upc8DmMEuJU8kmReF3thCFMfdur",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4oPBcasKuKUvuRxVWA9epNFxa2Cmb1KG2VfSwgQ8Aba2",
+      "block_height": 126624948,
+      "block_timestamp": 1724694066702704000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3539280760185,
+      "tokens_burnt": 353928076018500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "HGua4pPybU8gG3eZ2fxwrzeaUjtHjvfy5VUdmCV6S7fC",
+    "included_in_block_hash": "FLpGZVE6ttSaNG8b3Ubu1YSEG3Uzott6vUvMjGWHrtQj",
+    "block_timestamp": "1724694064671631957",
+    "block": {
+      "block_height": 126624946
+    },
+    "receipt_conversion_tokens_burnt": "32579784198000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353928076018500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"sashapais.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":97,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 811866594956000000000
+    }
+  },
+  {
+    "id": "7746598064",
+    "receipt_id": "4dcLCXJQPS6uVpSFHc1ii7Qjc6AjMdwYArjywn6vfSwM",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3LKripDDKd6TdW1Bg7W2QknYesSS8AbB7rc4wHnPyre1",
+      "block_height": 126625008,
+      "block_timestamp": 1724694136352022800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4377034908035,
+      "tokens_burnt": 437703490803500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "CCF1tz9oMCEk5tjJC7nvEDL4fCCPLJjfMxo9GnfBrtio",
+    "included_in_block_hash": "CSnnuL7mNAp85XNgGJJWakYDq2UmYyAguhcJJ6jicGDB",
+    "block_timestamp": "1724694135103589352",
+    "block": {
+      "block_height": 126625007
+    },
+    "receipt_conversion_tokens_burnt": "32579784198000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 437703490803500000000,
+        "args": "{\"id\": 87, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"https://nearblocks.io/txns/B8tCbaaHWwjr6Bedn7LzQSLdDCiCX8CYiaq9eFAinbTH\"], \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": false, \"trustees_released_payment\": true, \"request_for_trustees_created\": true, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 822803495869400000000
+    }
+  },
+  {
+    "id": "7746598854",
+    "receipt_id": "EsX6s5aqWD1twTx6GLa91N9rb1ef6raqmZdRRQoTJRX3",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Bux7YR8wxXxaPvLPFqNJgqpaxGyKEZSydLdW2yz1zCdb",
+      "block_height": 126625009,
+      "block_timestamp": 1724694137313561600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3525202208679,
+      "tokens_burnt": 352520220867900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "CCF1tz9oMCEk5tjJC7nvEDL4fCCPLJjfMxo9GnfBrtio",
+    "included_in_block_hash": "CSnnuL7mNAp85XNgGJJWakYDq2UmYyAguhcJJ6jicGDB",
+    "block_timestamp": "1724694135103589352",
+    "block": {
+      "block_height": 126625007
+    },
+    "receipt_conversion_tokens_burnt": "32579784198000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352520220867900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"sashapais.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":87,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 822803495869400000000
+    }
+  },
+  {
+    "id": "7746739214",
+    "receipt_id": "6tovqVjJ2E52a2pWPu6xzQLiKRbzfRxvzfLSiAaLiiCy",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "C4xe4GoEM2DwmtjtkAZru6VsFZe6QmTsEstgH3ymHhnh",
+      "block_height": 126625190,
+      "block_timestamp": 1724694358219278600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6212262372695,
+      "tokens_burnt": 621226237269500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "CxA3ZvM7sVbiTFPxMMhu1LGHaPPAFbWrEa6uj3NMTqXd",
+    "included_in_block_hash": "5zF59MmsRHSHmwYyu4pTRfNeMkZM2EwjNoyGVf77sgFb",
+    "block_timestamp": "1724694356767640136",
+    "block": {
+      "block_height": 126625189
+    },
+    "receipt_conversion_tokens_burnt": "32412891195500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 621226237269500000000,
+        "args": "{\"id\": 85, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"Bank Payment 06/11/2024 USD $8,425.00\"], \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"trustees_released_payment\": true, \"request_for_trustees_created\": true, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0061256016097e+21
+    }
+  },
+  {
+    "id": "7746740887",
+    "receipt_id": "6mfdZCqUnv867AroXwyDWCS9hSJVvComezcWnCV3u7fV",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CRCJXUCh16HHXUG1xxQnTbqsutJNynUnv5zgVdv6guc6",
+      "block_height": 126625192,
+      "block_timestamp": 1724694360688619300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3524864731447,
+      "tokens_burnt": 352486473144700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "CxA3ZvM7sVbiTFPxMMhu1LGHaPPAFbWrEa6uj3NMTqXd",
+    "included_in_block_hash": "5zF59MmsRHSHmwYyu4pTRfNeMkZM2EwjNoyGVf77sgFb",
+    "block_timestamp": "1724694356767640136",
+    "block": {
+      "block_height": 126625189
+    },
+    "receipt_conversion_tokens_burnt": "32412891195500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352486473144700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"megha19.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":85,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0061256016097e+21
+    }
+  },
+  {
+    "id": "7746775613",
+    "receipt_id": "Cup8nqw5ANroZUwv8gwW1xnuG5s7KAkUKFJbfq89XnAk",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FnzBipA9nrz9D25YqrXtWZiWmTF6eL2ULS3AXCyBLLrV",
+      "block_height": 126625236,
+      "block_timestamp": 1724694414589759200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4903256805657,
+      "tokens_burnt": 490325680565700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "G9BqfxWaobJTw7vFubFXF76MmgMuKmTT25r2YD4rWePK",
+    "included_in_block_hash": "m7RfLYYmwBGaGubotnSG18CDEC7es1THoz8t968f2eZ",
+    "block_timestamp": "1724694413476092643",
+    "block": {
+      "block_height": 126625235
+    },
+    "receipt_conversion_tokens_burnt": "32341365623000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 490325680565700000000,
+        "args": "{\"id\": 86, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"Close Test Transaction\"], \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"trustees_released_payment\": true, \"request_for_trustees_created\": true, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 875220228431000000000
+    }
+  },
+  {
+    "id": "7746776291",
+    "receipt_id": "DDbs4uvzyYqBRShsDqjWKqYdUzLbR2dsYyW7BXLQf6km",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AVebvpxNggezbasZaemiwGz9yDvFZPU8v7v4DQZpazbD",
+      "block_height": 126625237,
+      "block_timestamp": 1724694415581356300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3525531822423,
+      "tokens_burnt": 352553182242300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "G9BqfxWaobJTw7vFubFXF76MmgMuKmTT25r2YD4rWePK",
+    "included_in_block_hash": "m7RfLYYmwBGaGubotnSG18CDEC7es1THoz8t968f2eZ",
+    "block_timestamp": "1724694413476092643",
+    "block": {
+      "block_height": 126625235
+    },
+    "receipt_conversion_tokens_burnt": "32341365623000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352553182242300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"polyprogrammist.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":86,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 875220228431000000000
+    }
+  },
+  {
+    "id": "7767779379",
+    "receipt_id": "AqLNkB3W1j2keWS4ZPxf3UaXkzER6T8fG4wm9v4x8VcN",
+    "predecessor_account_id": "flmel.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AR88iA4Ex5n7AYjF5hZdHwwjD5aLnTA1mBWwfFhBSbR6",
+      "block_height": 126672996,
+      "block_timestamp": 1724750581772318200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5669568534582,
+      "tokens_burnt": 566956853458200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "B5Dwma5FeiN7ieoueVEDVYjRsD8Fce9ETWq333xLHuFi",
+    "included_in_block_hash": "3cN6Nw4hSEaELdFSu5gsnPCpfUTaUupfkLsHHGWY7K7s",
+    "block_timestamp": "1724750580420481497",
+    "block": {
+      "block_height": 126672995
+    },
+    "receipt_conversion_tokens_burnt": "71489695638000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "update_community",
+        "deposit": 0,
+        "fee": 566956853458200000000,
+        "args": "{\"handle\": \"tooling\", \"community\": {\"tag\": \"tooling\", \"name\": \"Tooling\", \"addons\": [{\"id\": \"announcements\", \"enabled\": true, \"addon_id\": \"announcements\", \"parameters\": \"{}\", \"display_name\": \"Announcements\"}, {\"id\": \"discussions\", \"enabled\": true, \"addon_id\": \"discussions\", \"parameters\": \"{}\", \"display_name\": \"Discussions\"}, {\"id\": \"activity\", \"enabled\": true, \"addon_id\": \"activity\", \"parameters\": \"{}\", \"display_name\": \"Activity\"}, {\"id\": \"duxizk\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"About\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Whether you evaluate an idea, hit an issue, want to contribute or just want to connect with founders and maintainers of tooling projects in the NEAR ecosystem, Tools Community is the right place to be.\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Calls\\\\\\\\\\\\\\\\nThe Tools Community Call is happening falls on every second Tuesday of the month. These are informal sessions where we facilitate discussions, get updates and present projects from the ecosystem. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you want to present your work or suggest topics reach out in the [Tools Community Group](https://t.me/NEAR_Tools_Community_Group) in Telegram\\\\\\\\\\\\\\\\nDates and times for these and all other events of DevHub can be found on the [DevHub Community Calendar](https://bit.ly/4aDceH8)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nCheck the [Community Calls Page](https://near.social/devhub.near/widget/app?page=community&handle=tooling&tab=community-calls) for the recordings of the most recent sessions. Find them all and much more on the DevHub\\\\\\\\\\\\'s [YouTube Channel](https://www.youtube.com/@NEARDevHub)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Communication Channels\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- [Tools Community Group in Telegram](https://t.me/NEAR_Tools_Community_Group)\\\\\\\\\\\\\\\\n- Here on the Discussions page!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"About us\"}, {\"id\": \"kp910a\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Tools Community Calls\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\" The community calls are informal sessions where we share updates, discuss tooling and present projects in the NEAR ecosystem.\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThese sessions are now at a regular interval taking place **Every Second Tuesday of the month** if you dont want to miss those make sure you follow **[DevHub Community Calendar](https://calendar.google.com/calendar/u/2/r?cid=c_f54ed37fd92327acdc7e4343fe40722ae5797b6c82929ba93e9f3a89c69657ab@group.calendar.google.com&pli=1)**. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you want to present your work, suggest discussion topics or simply get in touch - **[Join our Telegram group](https://t.me/NEAR_Tools_Community_Group)**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nHere are the recaps of our most recent community calls:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n### **[Community Call] #7 Jun 11, 2024**\\\\\\\\\\\\\\\\n[![Tools Community Call #7](https://i.imgur.com/YBqZjcH.png)](https://www.youtube.com/watch?v=WrtzgtS5tKE)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Watch on YouTube: [Tools Community Call #7 \\\\\\\\u{2013} near/dev/hub](https://www.youtube.com/watch?v=WrtzgtS5tKE)**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### **[Community Call] #6: May 14, 2024**\\\\\\\\\\\\\\\\n[![Tools Community Call #6](https://i.imgur.com/LHXt3u6.png)](https://www.youtube.com/watch?v=bfCFOwGZCDo)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Watch on YouTube: [Tools Community Call #6 \\\\\\\\u{2013} near/dev/hub](https://www.youtube.com/watch?v=bfCFOwGZCDo)**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Recap:**\\\\\\\\\\\\\\\\n- **Zahid** Gives updates on Jutsu.ai and talks about Bento \\\\\\\\\\\\\\\\n  * Q&A with Zahid\\\\\\\\\\\\\\\\n- **Jacob** presents NEAR Contract Tools\\\\\\\\\\\\\\\\n  * Q&A with Jacob\\\\\\\\\\\\\\\\n  * differences between NEAR Contract Tools and NEAR Contract Tools, \\\\\\\\\\\\\\\\n  * possibilities for cargo near extensions and collaborations\\\\\\\\\\\\\\\\n- **Vlad** presents ecosystem updates\\\\\\\\\\\\\\\\n  * near.cli.rs\\\\\\\\\\\\\\\\n  * near-jsonrpc-client-rs\\\\\\\\\\\\\\\\n  * near-api-js \\\\\\\\\\\\\\\\n  * upcomming rust sdk 5.2.0 that brings IterableMap & IterableSet \\\\\\\\\\\\\\\\n  * mentions the works of reproducible builds \\\\\\\\\\\\\\\\n  * presents collaboration opportunities on JS and Rust SDKs \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Links from chat:**\\\\\\\\\\\\\\\\nhttps://bento.jutsu.ai/\\\\\\\\\\\\\\\\nhttps://github.com/near/near-sdk-contract-tools\\\\\\\\\\\\\\\\nhttps://near.org/contractwizard.near/widget/ContractWizardUI\\\\\\\\\\\\\\\\nhttps://github.com/near/contract-wizard\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### **[Community Call] #5: Apr 9, 2024**\\\\\\\\\\\\\\\\n[![Tools Community Call #5](https://ipfs.near.social/ipfs/bafkreigo3mpikbg2ogjipjonelfbvnrtypx6hkyr3rszaicyi3pgxhwyou)](https://www.youtube.com/watch?v=EDCoWObguVs)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Watch on YouTube: [Tools Community Call #5 \\\\\\\\u{2013} near/dev/hub](https://www.youtube.com/watch?v=EDCoWObguVs)**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Recap:**\\\\\\\\\\\\\\\\n- **Vlad** Presents the updates of Rust SDK - v5.1 That reduces the boiler plate necessary for writing smart contracts.\\\\\\\\\\\\\\\\n Next version coming soon will bring \\\\\\\\u{201c}iterable map\\\\\\\\u{201d}.\\\\\\\\\\\\\\\\n- **LedgerApp** rewrite in Rust is complete and going through a formal security audit. Expecting to go live in May\\\\\\\\\\\\\\\\n- **[Cargo Near](https://github.com/near/cargo-near)** and **rust-sdk** are getting integrated with **SourceScan** making the contracts source code verifiable and discoverable\\\\\\\\\\\\\\\\n checkout the [NEP-330 here](https://github.com/near/NEPs/pull/533)\\\\\\\\\\\\\\\\n- **Morgan** presents **Okashi.dev** rewrite he did for ETH Denver simulating Near environment for interacting with smart contracts in the browser locally :blown:\\\\\\\\\\\\\\\\n- **Re:Public** showcase their entry for ETH London and present [their roadmap and proposal](https://near.social/devhub.near/widget/app?page=proposal&id=33)\\\\\\\\\\\\\\\\n- **[bos-workspace](https://github.com/NEARBuilders/bos-workspace)** had a rewrite making it more modular and easier to be worked with presented by **Elliot**\\\\\\\\\\\\\\\\n- **Yuval** - tight for record holder attendee of the community calls recaps Q1 and great stats of **LavaNet.xyz** speaks about what\\\\\\\\\\\\'s next\\\\\\\\\\\\\\\\n- **Zahid** Recaps [Q1 updates](https://www.youtube.com/watch?v=LuwX8InOQdU&ab_channel=JutsuAI) and [milestones](https://www.linkedin.com/pulse/jutsu-devhub-collaboration-q1-milestones-tryjutsu-zacec/?trackingId=pgauiK2OUj2s782z5cIhfw%3D%3D). Shares the [roadmap](https://trello.com/b/NUIKq7dq/jutsu-public-roadmap) for **Jutsu.ai**\\\\\\\\\\\\\\\\n- **NearBlocks** represented by **Luke** Shares some stats and recent updates supporting our ecosystem.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### **[Community Call] #4: Wed Mar 6, 2024**\\\\\\\\\\\\\\\\n[![Tools Community Call #4](https://i.imgur.com/eR30Vrg.jpeg)](https://www.youtube.com/watch?v=Rd3Vn09c-Goi)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Watch on YouTube: [Tools Community Group Call #4 \\\\\\\\u{2013} near/dev/hub](https://www.youtube.com/watch?v=kcKigCtsHDo)**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Recap:**\\\\\\\\\\\\\\\\n**Zahid** demoes copilot and generative UI feature built in** Jutsu.ai**.\\\\\\\\\\\\\\\\n**Yuval** overviews **LavaNet.xyz **and introduces Lava Points, provides stats of current usage.\\\\\\\\\\\\\\\\n**Euguene** introduces **FastNear.com** and talks about the infrastructure problems it aiming to solve.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### **[Community Call] #3: Feb 21, 2024**\\\\\\\\\\\\\\\\n[![Tools Community Call #3](https://i.imgur.com/UdPKO4F.jpeg)](https://www.youtube.com/watch?v=kcKigCtsHDo&list=PLrLLmjcJVAB9RoK95udIqkVE_JqHt_CCd)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Watch on YouTube [Tools Community Group Call #3 \\\\\\\\u{2013} near/dev/hub](https://www.youtube.com/watch?v=kcKigCtsHDo&list=PLrLLmjcJVAB9RoK95udIqkVE_JqHt_CCd)**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Recap:**\\\\\\\\\\\\\\\\n- **Oleg Kuzmin** discusses the new implementation of **LedgerApp**.\\\\\\\\\\\\\\\\n- **Ricardo** presents his team and **AgorApp** https://agorapp.dev.\\\\\\\\\\\\\\\\n- **Guillermo** shares about recently updated **near-cli** https://github.com/near/near-cli.\\\\\\\\\\\\\\\\n- **Jaswinder** from Harmonic Guild presents their current work on **near-api-rs** https://github.com/Harmonic-Guild/nea...\\\\\\\\\\\\\\\\n- **S\\\\\\\\u{e9}rgio Seco** introduces **near-relay** https://github.com/SurgeCode/near-relay.\\\\\\\\\\\\\\\\n- **Frol** talks about **NEAR\\\\\\\\\\\\'s Rust Stack**.\\\\\\\\\\\\\\\\n- **Zahid** from **Jutsu.ai** gives a last-minute heads-up that breaking changes have been introduced, with more to be announced and discussed on the next community call.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**All sessions can be found on the [DevHub YouTube Channel](https://www.youtube.com/watch?v=vg9LYGLU7ok&list=PLrLLmjcJVAB9RoK95udIqkVE_JqHt_CCd)**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Community Calls\"}], \"admins\": [\"theori.near\", \"frol.near\", \"flmel.near\", \"gagdiez.near\"], \"handle\": \"tooling\", \"logo_url\": \"https://ipfs.near.social/ipfs/bafkreidhehq7za5btjegq5u2rw5jmw2kygef2776d6qcpkopaa3nphg5pm\", \"banner_url\": \"https://ipfs.near.social/ipfs/bafkreiccjblp5fs7jowtqs7fkdywljfyxuikwaduck6mlidhvic3l4omtu\", \"description\": \"Supporting the ongoing innovation of developers tooling.\", \"website_url\": null, \"bio_markdown\": \"This space brings together individuals, experts, and organizations who are interested in supporting the ongoing innovation of tooling on NEAR.\", \"github_handle\": \"near\", \"twitter_handle\": \"NEARDevHub\", \"telegram_handle\": \"NEAR_Tools_Community_Group\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.3999351834774e+21
+    }
+  }
+]

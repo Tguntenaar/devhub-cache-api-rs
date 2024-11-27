@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "3263392375",
+    "receipt_id": "Yn3SKwDG9Q4jcRwKu69om5BiMrrtsFpqmdTmpZvy12y",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9he3CAJ55e2dy2AygpeJFntA2rzCAn8JXTUwRBwwX3rs",
+      "block_height": 115401297,
+      "block_timestamp": 1711320061236200400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8599196576592,
+      "tokens_burnt": 859919657659200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "2TAaYMvjsdHhTHGhHqhN9wQAaNj8cpYAYuUBAYYhmVrr",
+    "included_in_block_hash": "5uPwFSL3NKC2i5nPVaxAcfZ8GxKEnSnwMMqfionL7stj",
+    "block_timestamp": "1711320060228548360",
+    "block": {
+      "block_height": 115401296
+    },
+    "receipt_conversion_tokens_burnt": "244630708528200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addon",
+        "deposit": 0,
+        "fee": 859919657659200000000,
+        "args": "{\"handle\": \"fellowship\", \"community_addon\": {\"id\": \"d1wywg\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"About\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"DevDAO\\\\\\\\\\\\'s paid program offers financial rewards to experienced NEAR developers and newcomers for their contributions to NEAR Platform (blockchain, devtools, documentation). By collaborating on the developer productivity tools for NEAR\\\\\\\\u{2019}s Blockchain Operating System [BOS], Zero Knowledge [ZK], and Smart Contracts, community members can foster innovation and enrich our developer community.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Why is it needed?\\\\\\\\\\\\\\\\nAs the NEAR ecosystem grows rapidly, there is an increasing need to improve developer productivity. While open-source communities are essential to manage these needs, new developers may find it challenging to get started. The DevDAO NEAR Platform Fellowship Program aims to solve this issue by providing guidance to new contributors from experienced developers.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### What are the focus areas?\\\\\\\\\\\\\\\\nDevDAO focuses on improving work in the following strategic areas within the NEAR ecosystem:\\\\\\\\\\\\\\\\n- Blockchain Operating System implementation\\\\\\\\\\\\\\\\n- Zero Knowledge SDK\\\\\\\\\\\\\\\\n- JavaScript on-chain and off-chain SDK\\\\\\\\\\\\\\\\n- Rust on-chain and off-chain SDK\\\\\\\\\\\\\\\\n- Mobile development (native iOS/Android, and cross-platform frameworks like Flutter)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWithin each area, there are a number of tasks to complete, including developing security and contract development toolkits, creating productivity tools, and maintaining open-source repositories. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nDevDAO wants to prioritize contributions to the following repositories: \\\\\\\\\\\\\\\\n- [docs](https://github.com/near/docs)\\\\\\\\\\\\\\\\n- [near-api-js](https://github.com/near/near-api-js)\\\\\\\\\\\\\\\\n- [near-jsonrpc-client-rs](https://github.com/near/near-jsonrpc-client-rs)\\\\\\\\\\\\\\\\n- [near-cli-rs](https://github.com/near/near-cli-rs)\\\\\\\\\\\\\\\\n- [near-cli](https://github.com/near/near-cli)\\\\\\\\\\\\\\\\n- [near-sdk-rs](https://github.com/near/near-sdk-rs)\\\\\\\\\\\\\\\\n- [near-sdk-js](https://github.com/near/near-sdk-js)\\\\\\\\\\\\\\\\n- [workspaces-rs](https://github.com/near/workspaces-rs)\\\\\\\\\\\\\\\\n- [workspaces-js](https://github.com/near/workspaces-js)\\\\\\\\\\\\\\\\n- [wallet-selector](https://github.com/near/wallet-selector)\\\\\\\\\\\\\\\\n- [create-near-app](https://github.com/near/create-near-app)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### How does it work?\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nDevDAO\\\\\\\\\\\\'s NEAR Platform Fellowship Program is a way for active and experienced NEAR developers to empower new contributors and solve the focus areas above. Here\\\\\\\\u{2019}s it works: \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n1. **Apply**: Experienced contributors apply to become a Fellowship Leader by submitting a proposal on DevHub. The proposal must include a timeline, budget to allocate to new contributors, and a focus area.\\\\\\\\\\\\\\\\n2. **Approve**: DevDAO and the NEAR community review the proposal to ensure that it aligns with the NEAR community goals and that the budget is reasonable.\\\\\\\\\\\\\\\\n3. **Invite**: Upon acceptance, the Fellowship Leader invites new contributors to participate in the project. The Fellowship Leader is responsible for evaluating and negotiating compensation (see [funding guidelines](https://www.neardevgov.org/blog/near-developer-governance-funding-guidelines)) with the new contributors. \\\\\\\\\\\\\\\\n4. **Execute**: Once the team is assembled, they can begin working on the project. \\\\\\\\\\\\\\\\n5. **Compensate**: Once the work is complete, contributors submit their contribution report on DevHub. The Fellowship Leader must provide an attestation to confirm the work and compensation amount. DevDAO will then work to issue the payment.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nTo help bootstrap the program, DevDAO invites experienced developers to apply from various expert entities such as Pagoda, Aurora, Proximity, Human Guild, and Calimero. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### How to submit a fellowship proposal?\\\\\\\\\\\\\\\\nSubmit a fellowship proposal on the [NEAR DevHub](http://neardevhub.org) using these guidelines:\\\\\\\\\\\\\\\\n- Create a new \\\\\\\\u{201c}Solution\\\\\\\\u{201d} post.\\\\\\\\\\\\\\\\n- Add the \\\\\\\\u{201c}fellowship\\\\\\\\u{201d} and \\\\\\\\u{201c}fellowship-proposal\\\\\\\\u{201d} labels to your post.\\\\\\\\\\\\\\\\n- Provide a clear description of the project goals, scope, deliverables, and timeline.\\\\\\\\\\\\\\\\n- Describe the skills and experience you are looking for from new contributors.\\\\\\\\\\\\\\\\n- Set a budget for your fellowship using the [funding guidelines](https://www.neardevgov.org/blog/near-developer-governance-funding-guidelines). Note that the compensation will get paid directly from DevDAO to contributors.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nOnce you have submitted your proposal, the DevDAO team will review it and provide feedback. If your proposal is approved, you can start recruiting fellow contributors.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### How to be a great fellowship leader?\\\\\\\\\\\\\\\\nAs a Fellowship Leader, your role is crucial in empowering successful contributions to our ecosystem. To be an effective leader, it is essential to perform several key tasks:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **Define the scope of work**: Submit a well-defined proposal with clear goals.\\\\\\\\\\\\\\\\n- **Find contributors**: Utilize networking, various community groups, and applications left on DevHub as comments to your proposal to find contributors.\\\\\\\\\\\\\\\\n- **Onboard contributors**: Set clear expectations, including your availability and communication guidelines. Additionally, provide well-defined tasks with the relevant context and acceptance criteria.\\\\\\\\\\\\\\\\n- **Oversee execution**: Deliver quality results that meet the needs of our ecosystem by monitoring the project, providing feedback to contributors, and promptly responding to questions.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### How to be a great contributor?\\\\\\\\\\\\\\\\nNew contributors play an essential role in our ecosystem, bringing fresh perspectives and ideas. If you\\\\\\\\u{2019}re looking to make meaningful contributions and gain guidance from experienced developers, here are some tips to help you get started:  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **Apply to a fellowship**: Find [available fellowship proposals on NEAR DevHub](/devhub.near/widget/app?page=feed&tag=fellowship-proposal) and leave a comment with your application for a project that interests you.\\\\\\\\\\\\\\\\n- **Align with your Fellowship Leader**: If you are selected, it is important to align with your Fellowship Leader on the expectations and requirements for the project.\\\\\\\\\\\\\\\\n- **Be self-sufficient**: While your Fellowship Leader is there to guide you, it is important to become self-sufficient quickly and focus on completing your work. This means taking initiative to learn and communicating when you need support.\\\\\\\\\\\\\\\\n- **Provide updates**: Post a contribution report on DevHub to provide transparency and potentially to get compensated.\\\\\\\\\\\\\\\\n- **Keep improving**: As you gain more knowledge and experience, we hope that you continue to contribute to our ecosystem and share your insights to enable others to contribute too.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### How to submit a contribution report?\\\\\\\\\\\\\\\\nTo ensure transparency and accountability, DevDAO requires all contributors to submit a contribution report on the [NEAR DevHub](http://neardevhub.org) once the work is complete using these guidelines:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- Create a new \\\\\\\\u{201c}Solution\\\\\\\\u{201d} post.\\\\\\\\\\\\\\\\n- Add the \\\\\\\\u{201c}fellowship\\\\\\\\u{201d} and \\\\\\\\u{201c}contribution-report\\\\\\\\u{201d} labels to your post.\\\\\\\\\\\\\\\\n- Add the requested compensation amount\\\\\\\\\\\\\\\\n- In the description, reference the relevant fellowship proposal post. And list your contributions with references (e.g. PRs, issues, etc), the time spent, and [the factors to consider when determining the compensation amount](https://www.neardevgov.org/blog/near-developer-governance-funding-guidelines).\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nOnce you have submitted your contribution report, your Fellowship Leader must reply to it with an attestation confirming that the report is accurate and that they are offering a certain amount of their pre-approved budget.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nDevDAO will keep track of the attestations and take appropriate action to approve the payment unless there are any concerns raised.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### What does DevDAO expect in the short term?\\\\\\\\\\\\\\\\nOver the next three months, DevDAO aims to board 10 fellowship leaders who will help us establish and scale this program. We welcome feedback from the community, so please share your thoughts by replying to this post.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nTo learn more about the DevDAO goals, check out [the recently posted OKRs](/#/devgovgigs.near/widget/gigs-board.pages.Post?id=531). Together, we can build a community where developers share ideas, collaborate on projects, and learn from each other.\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"About\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 3.4892614170564e+21
+    }
+  },
+  {
+    "id": "3263392520",
+    "receipt_id": "F2gC6RteqNhKiNkFkrF1UdG7RzwRQjCX6XyRwPyaz67M",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "E9GsokNPmhus3FDguSFUFJZWbvNibqLTjCBx9acywBX",
+      "block_height": 115401298,
+      "block_timestamp": 1711320062059158000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 23847110508690,
+      "tokens_burnt": 2.384711050869e+21,
+      "executor_account_id": "social.near",
+      "status": false
+    },
+    "transaction_hash": "2TAaYMvjsdHhTHGhHqhN9wQAaNj8cpYAYuUBAYYhmVrr",
+    "included_in_block_hash": "5uPwFSL3NKC2i5nPVaxAcfZ8GxKEnSnwMMqfionL7stj",
+    "block_timestamp": "1711320060228548360",
+    "block": {
+      "block_height": 115401296
+    },
+    "receipt_conversion_tokens_burnt": "244630708528200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 2.384711050869e+21,
+        "args": "{\"data\": {\"fellowship.community.devhub.near\": {\"profile\": {\"name\": \"NEAR Platform Fellowship\", \"tags\": {\"community\": \"\", \"fellowship\": \"\", \"announcements\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibysr2mkwhb4j36h2t7mqwhynqdy4vzjfygfkfg65kuspd2bawauu\"}, \"linktree\": {\"github\": null, \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=fellowship\", \"telegram\": null}, \"description\": \"DevDAO\\\\\\\\\\\\'s paid program offers financial rewards to experienced NEAR developers and newcomers for their contributions to the NEAR Platform (blockchain and devtools). [Learn more](https://bit.ly/4507tna)\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=fellowship).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreic4xgorjt6ha5z4s5e3hscjqrowe5ahd7hlfc5p4hb6kdfp6prgy4\"}}}, \"discussions.fellowship.community.devhub.near\": {\"profile\": {\"name\": \"NEAR Platform Fellowship (Community Discussions)\", \"tags\": {\"community\": \"\", \"fellowship\": \"\", \"discussions\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibysr2mkwhb4j36h2t7mqwhynqdy4vzjfygfkfg65kuspd2bawauu\"}, \"linktree\": {\"github\": null, \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=fellowship\", \"telegram\": null}, \"description\": \"Fellowship Program to grow contributions to NEAR Platform\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=fellowship).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreic4xgorjt6ha5z4s5e3hscjqrowe5ahd7hlfc5p4hb6kdfp6prgy4\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 3.4892614170564e+21
+    }
+  },
+  {
+    "id": "3277959801",
+    "receipt_id": "GgvajC5WF5237WbKCiLZW7vQmCNjvuxAv5F1NXzok1bq",
+    "predecessor_account_id": "polyprogrammist.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AR8PAJcHk1EkcEw33Bne3jWm98UFy52vqNJG89s5vTKz",
+      "block_height": 115443282,
+      "block_timestamp": 1711370335543796700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 11758281601191,
+      "tokens_burnt": 1.1758281601191e+21,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8jmHev8drHPfUYMzjtUBK4RNDkkke6dwsjpMi3Nt7DHj",
+    "included_in_block_hash": "9WCEC9U7K64BgiZpxLY7pAH7j8sQW4LncsJPxUFuUvPL",
+    "block_timestamp": "1711370334232309878",
+    "block": {
+      "block_height": 115443281
+    },
+    "receipt_conversion_tokens_burnt": "242877736272200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 1.1758281601191e+21,
+        "args": "{\"body\": {\"name\": \"test\", \"summary\": \"qwer\", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"qwer\", \"linked_proposals\": [], \"receiver_account\": \"polyprogrammist.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"500\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8525417708614e+21
+    }
+  },
+  {
+    "id": "3277964211",
+    "receipt_id": "CQQtv9mQAaEEkMifaPEe8vM6DT3tuscYckuExLmTADaW",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7y37q691wNXgDmfTJDB6RRDJMC7Q8kDeWvAfr4625SCY",
+      "block_height": 115443289,
+      "block_timestamp": 1711370344923688400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5737033343118,
+      "tokens_burnt": 573703334311800000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8jmHev8drHPfUYMzjtUBK4RNDkkke6dwsjpMi3Nt7DHj",
+    "included_in_block_hash": "9WCEC9U7K64BgiZpxLY7pAH7j8sQW4LncsJPxUFuUvPL",
+    "block_timestamp": "1711370334232309878",
+    "block": {
+      "block_height": 115443281
+    },
+    "receipt_conversion_tokens_burnt": "242877736272200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 573703334311800000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *DevDAO Platform* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @polyprogrammist.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}test\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nqwer\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=15)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8525417708614e+21
+    }
+  },
+  {
+    "id": "3277964212",
+    "receipt_id": "77CSdP3RCS5QKEcNdPKCbiSkQuxayzCHfERnHj23gRAs",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7y37q691wNXgDmfTJDB6RRDJMC7Q8kDeWvAfr4625SCY",
+      "block_height": 115443289,
+      "block_timestamp": 1711370344923688400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3758294158232,
+      "tokens_burnt": 375829415823200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8jmHev8drHPfUYMzjtUBK4RNDkkke6dwsjpMi3Nt7DHj",
+    "included_in_block_hash": "9WCEC9U7K64BgiZpxLY7pAH7j8sQW4LncsJPxUFuUvPL",
+    "block_timestamp": "1711370334232309878",
+    "block": {
+      "block_height": 115443281
+    },
+    "receipt_conversion_tokens_burnt": "242877736272200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 375829415823200000000,
+        "args": "{\"proposal\": {\"id\": 15, \"snapshot\": {\"name\": \"test\", \"labels\": [], \"summary\": \"qwer\", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"polyprogrammist.near\", \"timestamp\": \"1711370343658735777\", \"supervisor\": null, \"description\": \"qwer\", \"linked_proposals\": [], \"receiver_account\": \"polyprogrammist.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"500\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"polyprogrammist.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8525417708614e+21
+    }
+  },
+  {
+    "id": "3277964213",
+    "receipt_id": "DyY1FyyKMsqggAtXhA1fE9UUHrJLz7pAgApV9fgVLAfY",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7y37q691wNXgDmfTJDB6RRDJMC7Q8kDeWvAfr4625SCY",
+      "block_height": 115443289,
+      "block_timestamp": 1711370344923688400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4843031243351,
+      "tokens_burnt": 484303124335100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8jmHev8drHPfUYMzjtUBK4RNDkkke6dwsjpMi3Nt7DHj",
+    "included_in_block_hash": "9WCEC9U7K64BgiZpxLY7pAH7j8sQW4LncsJPxUFuUvPL",
+    "block_timestamp": "1711370334232309878",
+    "block": {
+      "block_height": 115443281
+    },
+    "receipt_conversion_tokens_burnt": "242877736272200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 484303124335100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":15,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"polyprogrammist.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8525417708614e+21
+    }
+  },
+  {
+    "id": "3279156556",
+    "receipt_id": "4drdogZgWEisEx87GG4iPsemaAFgPguJEQJCoJfRi9B4",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8dGRb6gGMmTPCG44LZ7YYdPnbjFjhMJVytdndXter1Gv",
+      "block_height": 115446248,
+      "block_timestamp": 1711374017847567400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9527257250763,
+      "tokens_burnt": 952725725076300000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "2cPxMuBNp2xzgRfJo9jd1dTqonULFNbpvDvCpZzb5FPg",
+    "included_in_block_hash": "AwjoAmaEs9NJRMkusg1F3kyeqaZMYAbRB9xf1ap1DgPt",
+    "block_timestamp": "1711374016550304033",
+    "block": {
+      "block_height": 115446247
+    },
+    "receipt_conversion_tokens_burnt": "245473879239600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 952725725076300000000,
+        "args": "{\"addons\": [{\"id\": \"des7nb\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"About the Protocol Community\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"## Who are we\\\\\\\\\\\\\\\\nWithin the NEAR ecosystem, Protocol refers to the layer 1 blockchain, the foundation of NEAR ([ref](https://nomicon.io/Architecture)); contributors of Protocol mostly work on nearcore Github repository, containing critical implementation powering NEAR protocol blockchain including chain, sharding, network, storage and runtime. Through various researches, investigations, and rigorous discussions, we aim to build secure, reliable, and scalable blockchain infrastructure, where the vision of Blockchain OS and innovative Web3 apps can live on. \\\\\\\\\\\\\\\\nIf you are interested in how NEAR blockchain works and want to make contributions, this is the place for you!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## What is this space about\\\\\\\\\\\\\\\\nThis space aims to serve as an entry point to individuals, experts, and organizations who are interested in contributing to the ongoing innovation of the NEAR protocol. You will be able to find information about ongoing community programs, access to relevant documentations, and communication channels for you to participate in.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Community Groups\\\\\\\\\\\\\\\\nAs of now, the Protocol community consists of two groups: working group(PWG) and community group.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n### Protocol working group\\\\\\\\\\\\\\\\nThis formal group is a selected committee of subject matter experts who make official decisions on proposals related to the NEAR protocol. They follow a strict process to review proposals, recommend funding to DAO or grant programs, and hold grant takers accountable. They engage with the broader community to understand their needs and encourage ideation. Due to its significance, we pay special attention to the member selection process and make sure that each member can bring unique perspectives and experiences to improve NEAR protocol. With great power comes great responsibility.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### Current committee members\\\\\\\\\\\\\\\\nA protocol working group member will constantly seek a community member with deep expertise on how protocol works. When a qualified candidate is discovered, the committee goes through the nomination and alignment process to send an invitation.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nCurrent committee members are as follows:\\\\\\\\\\\\\\\\n* Bowen Wang ([Pagoda](https://www.pagoda.co/))\\\\\\\\\\\\\\\\n  * Near social: [@woben.near](https://near.social/#/mob.near/widget/ProfilePage?accountId=woben.near)\\\\\\\\\\\\\\\\n  * Github: [bowenwang1996](https://github.com/bowenwang1996)\\\\\\\\\\\\\\\\n* Marcelo Fornet\\\\\\\\\\\\\\\\n  * Near social: [@marcelo.near](https://near.social/#/mob.near/widget/ProfilePage?accountId=marcelo.near)\\\\\\\\\\\\\\\\n  * Github: [mfornet](https://github.com/mfornet)\\\\\\\\\\\\\\\\n  * Telegram: mnaeraxr\\\\\\\\\\\\\\\\n* Marcin Michalski ([Matter Labs](https://matter-labs.io/))\\\\\\\\\\\\\\\\n  * Github: [mm-near](https://github.com/mm-near)\\\\\\\\\\\\\\\\n* Michael Birch (Aurora)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### Responsibility\\\\\\\\\\\\\\\\n* Make decisions on Near Enhancement Proposals(A.K.A NEPs)\\\\\\\\\\\\\\\\n* Budget allocation for protocol development initiatives including RFPs, security audits, etc. This includes review of funding requests.\\\\\\\\\\\\\\\\n* Steer the general direction of protocol development\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### Communication channels\\\\\\\\\\\\\\\\n* Attend Protocol work group calls \\\\\\\\\\\\\\\\n* Message on Telegram channel: [link](https://t.me/NEAR_Protocol_Community_Group)\\\\\\\\\\\\\\\\n* Post on NEAR.org and tag [Pagoda](https://near.org/near/widget/ProfilePage?accountId=pagodaplatform.near)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n### Protocol community group\\\\\\\\\\\\\\\\nCommunity group is an open group providing a space for anyone interested in changes to the NEAR protocol. Unlike the Protocol working group, the community group does not require any commitment or membership. It focuses on offering a place where members can freely ask questions, seek/offer support, exchange ideas and initiate discussions. All contributors to nearcore repository, including [Pagoda](https://www.pagoda.co/) protocol team members, are implicit members of the community, and actively participate in community discussions.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* [Protocol Community Group TG Channel](https://t.me/NEAR_Protocol_Community_Group)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### Ongoing projects\\\\\\\\\\\\\\\\n* [Protocol roadmap](https://medium.com/nearprotocol/q1-protocol-roadmap-update-progress-and-changes-e2d61626e4a1)\\\\\\\\\\\\\\\\n* Github \\\\\\\\\\\\\\\\n  * [Major projects](https://github.com/near/nearcore/labels/C-tracking-issue)\\\\\\\\\\\\\\\\n  * [Discussions](https://github.com/near/nearcore/discussions)\\\\\\\\\\\\\\\\n  * [PRs](https://github.com/near/nearcore/pulls)\\\\\\\\\\\\\\\\n* [Sponsored projects](https://near.social/#/devgovgigs.near/widget/gigs-board.pages.community.Sponsorship?label=protocol)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Communication channels\\\\\\\\\\\\\\\\n* Attend periodic Protocol community group calls\\\\\\\\\\\\\\\\n* [Telegram channel](https://t.me/NEAR_Protocol_Community_Group)\\\\\\\\\\\\\\\\n* [Zulip](https://near.zulipchat.com/#narrow/stream/295558-pagoda.2Fcore)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n## Documents\\\\\\\\\\\\\\\\nProtocol community maintains several documents/wikis so community members can stay informative and efficient to find what they are seeking for. Here are major worth noting ones.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* [Guide to nearcore development](https://near.github.io/nearcore/index.html): Explains how each part of nearcore operates, e.g. how state sync, garbage collection, epoch works, how storage layer interacts with the layers on top, etc.\\\\\\\\\\\\\\\\n* [Nomicon](https://nomicon.io/): Near protocol specification\\\\\\\\\\\\\\\\n* [Near nodes](https://near-nodes.io/): Explains how near node works and how one can become a node operator \\\\\\\\\\\\\\\\n* [Near doc](https://docs.near.org/develop/welcome): Walks you through on how to develop on top of NEAR protocol, e.g. how to build a smart contract on NEAR\\\\\\\\\\\\\\\\n* [Rust](https://www.rust-lang.org/learn): Learn Rust, the programming language NEAR protocol is written in\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"About Us\"}, {\"id\": \"730ru7\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"How to contribute\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Protocol community group runs various events and programs you can participate in to improve NEAR blockchain. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Virtual meet ups\\\\\\\\\\\\\\\\nStay up-to-date on upcoming and past events in the NEAR protocol space. Whether it\\\\\\\\u{2019}s a monthly community call, hackathon, or meetup, you\\\\\\\\u{2019}ll find the details here to connect with other community members.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nCurrently, we have two periodic virtual meetups, one for general community group and another for working group.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n### Community Calls\\\\\\\\\\\\\\\\nThe Protocol Community Group hosts a monthly call to connect, share ideas or concerns, and stay up-to-date on the latest developments in the NEAR protocol.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### How to join the call\\\\\\\\\\\\\\\\nFind out about the latest meetings below or on our [Telegram channel](https://t.me/NEAR_Protocol_Community_Group).\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Who can attend\\\\\\\\\\\\\\\\nAnyone is welcome to attend the monthly call. Whether you\\\\\\\\\\\\'re an individual, organization, or an expert in the NEAR Protocol, it is open to all. Each call is recorded and posted on this page.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Format\\\\\\\\\\\\\\\\nThe monthly call is a free-format discussion with basic moderation. Anyone can volunteer to facilitate and lead future calls. The agenda typically starts with introductions from participants and follows with a list of potential discussion topics. The group will prioritize the topics based on what participants want to discuss the most. Topics may include updates from various members on any developments or initiatives, presentations on the latest research, as well as open discussion from questions and ideas to challenges and opportunities.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n## Work Group Calls\\\\\\\\\\\\\\\\nMostly, Protocol Working group reviews and discusses NEP asynchronously within the NEP\\\\\\\\u{2019}s public thread. This allows for broad participation and ensures transparency.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nHowever, if a discussion becomes circular and could benefit from a synchronous conversation, the Protocol Working Group may host public formal calls to review specific proposals, discuss attestations, or vote on decisions. For example, if a reviewer and author have multiple rounds of comments, they may request a call. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n## Monthly protocol engineer virtual meetup day\\\\\\\\\\\\\\\\nOnce a month, protocol engineers meet virtually on [Gather town](https://app.gather.town/app) to simulate \\\\\\\\u{2018}office working environment\\\\\\\\u{2019} by presenting in the virtual workspace during their work hours. By doing so, we encourage adhoc discussions and conversations to build stronger relationships and maximize our creativity. During this day, we also host a social hour so we can have fun activities together as well.\\\\\\\\\\\\\\\\nVirtual working day schedule is shared on [Zulip general stream](https://near.zulipchat.com/#narrow/stream/295302-general/topic/virtual.20meetup.20day)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n# Bug bounty program\\\\\\\\\\\\\\\\nBug bounty program is to leverage power of community to make NEAR protocol more secure and fraud-proof. If you notice any issues that can be a threat to our users on nearcore repo, please report them and claim the bounty! Please follow the [LINK](https://hackenproof.com/near/near-protocol) to Hacken proof Near protocol page to know more about the program\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n# Funding Proposal\\\\\\\\\\\\\\\\nIf you have the idea that can make NEAR protocol more scalable/reliable/secure, you can submit a proposal to get funding for your precious time and effort. Currently, NEAR DevDAO is running the funding program by collaborating with Protocol working group. Once a proposal is submitted, DevDAO will work with Protocol working group to determine the necessity of the project by thoroughly reviewing the proposal. Once conclusion is made, DevDAO will reach out to the proposer to share the final decision and work with them on the next step.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nTo learn more about the guidelines and how to submit a proposal for funding, please visit [here](https://near.social/devhub.near/widget/app?page=community&handle=developer-dao&tab=funding). \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### How to participate\\\\\\\\\\\\\\\\nThere are several ways to participate in community activities. Here are common examples. \\\\\\\\\\\\\\\\n##### You have a feedback to share with developers or want to initiate a discussion\\\\\\\\\\\\\\\\n* Create a topic in [Zulip pagoda/core stream](https://near.zulipchat.com/#narrow/stream/295558-pagoda.2Fcore)\\\\\\\\\\\\\\\\n* Protocol community group discussion board\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### You want to know more about the NEAR protocol and have questions\\\\\\\\\\\\\\\\n* Ask a question in [Zulip pagoda/core/questions topic](https://near.zulipchat.com/#narrow/stream/295558-pagoda.2Fcore/topic/questions)\\\\\\\\\\\\\\\\n* As a question in [Protocol telegram](https://t.me/NEAR_Protocol_Community_Group)\\\\\\\\\\\\\\\\n* Protocol community group discussion board\\\\\\\\\\\\\\\\n* Post your question on [Near social](https://near.social/)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### You want to learn about NEAR protocol by working on a simple issue\\\\\\\\\\\\\\\\n* Request an onboarding task in [Zulip pagoda/core stream](https://near.zulipchat.com/#narrow/stream/295558-pagoda.2Fcore)\\\\\\\\\\\\\\\\n* Check out Github issues labeled with good-first-issue: [link](https://github.com/near/nearcore/labels/C-good-first-issue)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### You want to talk to Pagoda protocol team\\\\\\\\\\\\\\\\n* Simply start a conversation in [Zulip pagoda/core stream](https://near.zulipchat.com/#narrow/stream/295558-pagoda.2Fcore) and tag @ protocol\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### You want to know more about proposals on protocol specification\\\\\\\\\\\\\\\\n* Visit [Github NEP board](https://github.com/orgs/near/projects/51/views/3) to see open/completed proposals\\\\\\\\\\\\\\\\n* Read through [Near Enhancement Proposal guideline](https://github.com/near/NEPs/blob/master/neps/nep-0001.md) to learn about NEP approval process how to submit a proposal\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### You have an idea and want to request funding\\\\\\\\\\\\\\\\n* Please check \\\\\\\\u{2018}Event\\\\\\\\u{2019} tab\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### You have found a bug on NEAR and want to claim reward via bug bounty program\\\\\\\\\\\\\\\\n* Please check \\\\\\\\u{2018}Event\\\\\\\\u{2019} tab\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"How to contribute \\\\\\\\u{1f468}\\\\\\\\u{200d}\\\\\\\\u{1f4bb}\"}, {\"id\": \"3i6q64\", \"enabled\": true, \"addon_id\": \"blog\", \"parameters\": \"{}\", \"display_name\": \"Community Calls / Events \\\\\\\\u{1f3c6}\"}, {\"id\": \"dw6dfj\", \"enabled\": true, \"addon_id\": \"github\", \"parameters\": \"{}\", \"display_name\": \"Github\"}], \"handle\": \"protocol\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 3.4909477584792e+21
+    }
+  },
+  {
+    "id": "3279156828",
+    "receipt_id": "43ou8vkHK1wNyx1bHvD3SM7fEkv41pSrDJsbd2WNnQpQ",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3Pja353yNqLDBKtjD514BVpkBMAntdgWvZMTtbjJLHBU",
+      "block_height": 115446249,
+      "block_timestamp": 1711374019062036000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 22927481541633,
+      "tokens_burnt": 2.2927481541633e+21,
+      "executor_account_id": "social.near",
+      "status": false
+    },
+    "transaction_hash": "2cPxMuBNp2xzgRfJo9jd1dTqonULFNbpvDvCpZzb5FPg",
+    "included_in_block_hash": "AwjoAmaEs9NJRMkusg1F3kyeqaZMYAbRB9xf1ap1DgPt",
+    "block_timestamp": "1711374016550304033",
+    "block": {
+      "block_height": 115446247
+    },
+    "receipt_conversion_tokens_burnt": "245473879239600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 2.2927481541633e+21,
+        "args": "{\"data\": {\"protocol.community.devhub.near\": {\"profile\": {\"name\": \"Protocol\", \"tags\": {\"protocol\": \"\", \"community\": \"\", \"announcements\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreicjvpczuukqwp5wy7zvgq7marjudv6aoj7lld4tmjirowilqky3fq\"}, \"linktree\": {\"github\": \"https://near.social/near.org/#/devgovgigs.near/widget/gigs-board.pages.community.github?label=protocol\", \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=protocol\", \"telegram\": \"NEAR_Protocol_Community_Group\"}, \"description\": \"This space brings together individuals, experts, and organizations who are interested in contributing to the ongoing innovation of the NEAR protocol.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=protocol).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreia7otwa4yrxrer6swsotdsphzjk76soh2oyivn6nroavrq4cqwj4y\"}}}, \"discussions.protocol.community.devhub.near\": {\"profile\": {\"name\": \"Protocol (Community Discussions)\", \"tags\": {\"protocol\": \"\", \"community\": \"\", \"discussions\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreicjvpczuukqwp5wy7zvgq7marjudv6aoj7lld4tmjirowilqky3fq\"}, \"linktree\": {\"github\": \"https://near.social/near.org/#/devgovgigs.near/widget/gigs-board.pages.community.github?label=protocol\", \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=protocol\", \"telegram\": \"NEAR_Protocol_Community_Group\"}, \"description\": \"Supporting the ongoing innovation of the NEAR Protocol.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=protocol).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreia7otwa4yrxrer6swsotdsphzjk76soh2oyivn6nroavrq4cqwj4y\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 3.4909477584792e+21
+    }
+  },
+  {
+    "id": "3279160752",
+    "receipt_id": "DBvDdzBwWd7E1QELcLxPKN4p2eLvhq2AotWhbbxz6ae9",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8wAwh6B1gMtPEFggTwtP5xBHsUepD63Zm9Dd4YRQy8nT",
+      "block_height": 115446266,
+      "block_timestamp": 1711374038418658800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9489491549301,
+      "tokens_burnt": 948949154930100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "ArbuJys9MXkqaHcuy9JJ6xiBCSkrpKMa9Njz5zvKNAMd",
+    "included_in_block_hash": "EQeDA3mn4ETHmmwWQc9b6X3hwnFgEg8nCUnUkUjAZqgi",
+    "block_timestamp": "1711374037351458471",
+    "block": {
+      "block_height": 115446265
+    },
+    "receipt_conversion_tokens_burnt": "245473879239600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 948949154930100000000,
+        "args": "{\"addons\": [{\"id\": \"des7nb\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"About the Protocol Community\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"## Who are we\\\\\\\\\\\\\\\\nWithin the NEAR ecosystem, Protocol refers to the layer 1 blockchain, the foundation of NEAR ([ref](https://nomicon.io/Architecture)); contributors of Protocol mostly work on nearcore Github repository, containing critical implementation powering NEAR protocol blockchain including chain, sharding, network, storage and runtime. Through various researches, investigations, and rigorous discussions, we aim to build secure, reliable, and scalable blockchain infrastructure, where the vision of Blockchain OS and innovative Web3 apps can live on. \\\\\\\\\\\\\\\\nIf you are interested in how NEAR blockchain works and want to make contributions, this is the place for you!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## What is this space about\\\\\\\\\\\\\\\\nThis space aims to serve as an entry point to individuals, experts, and organizations who are interested in contributing to the ongoing innovation of the NEAR protocol. You will be able to find information about ongoing community programs, access to relevant documentations, and communication channels for you to participate in.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Community Groups\\\\\\\\\\\\\\\\nAs of now, the Protocol community consists of two groups: working group(PWG) and community group.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n### Protocol working group\\\\\\\\\\\\\\\\nThis formal group is a selected committee of subject matter experts who make official decisions on proposals related to the NEAR protocol. They follow a strict process to review proposals, recommend funding to DAO or grant programs, and hold grant takers accountable. They engage with the broader community to understand their needs and encourage ideation. Due to its significance, we pay special attention to the member selection process and make sure that each member can bring unique perspectives and experiences to improve NEAR protocol. With great power comes great responsibility.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### Current committee members\\\\\\\\\\\\\\\\nA protocol working group member will constantly seek a community member with deep expertise on how protocol works. When a qualified candidate is discovered, the committee goes through the nomination and alignment process to send an invitation.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nCurrent committee members are as follows:\\\\\\\\\\\\\\\\n* Bowen Wang ([Pagoda](https://www.pagoda.co/))\\\\\\\\\\\\\\\\n  * Near social: [@woben.near](https://near.social/#/mob.near/widget/ProfilePage?accountId=woben.near)\\\\\\\\\\\\\\\\n  * Github: [bowenwang1996](https://github.com/bowenwang1996)\\\\\\\\\\\\\\\\n* Marcelo Fornet\\\\\\\\\\\\\\\\n  * Near social: [@marcelo.near](https://near.social/#/mob.near/widget/ProfilePage?accountId=marcelo.near)\\\\\\\\\\\\\\\\n  * Github: [mfornet](https://github.com/mfornet)\\\\\\\\\\\\\\\\n  * Telegram: mnaeraxr\\\\\\\\\\\\\\\\n* Marcin Michalski ([Matter Labs](https://matter-labs.io/))\\\\\\\\\\\\\\\\n  * Github: [mm-near](https://github.com/mm-near)\\\\\\\\\\\\\\\\n* Michael Birch (Aurora)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### Responsibility\\\\\\\\\\\\\\\\n* Make decisions on Near Enhancement Proposals(A.K.A NEPs)\\\\\\\\\\\\\\\\n* Budget allocation for protocol development initiatives including RFPs, security audits, etc. This includes review of funding requests.\\\\\\\\\\\\\\\\n* Steer the general direction of protocol development\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### Communication channels\\\\\\\\\\\\\\\\n* Attend Protocol work group calls \\\\\\\\\\\\\\\\n* Message on Telegram channel: [link](https://t.me/NEAR_Protocol_Community_Group)\\\\\\\\\\\\\\\\n* Post on NEAR.org and tag [Pagoda](https://near.org/near/widget/ProfilePage?accountId=pagodaplatform.near)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n### Protocol community group\\\\\\\\\\\\\\\\nCommunity group is an open group providing a space for anyone interested in changes to the NEAR protocol. Unlike the Protocol working group, the community group does not require any commitment or membership. It focuses on offering a place where members can freely ask questions, seek/offer support, exchange ideas and initiate discussions. All contributors to nearcore repository, including [Pagoda](https://www.pagoda.co/) protocol team members, are implicit members of the community, and actively participate in community discussions.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* [Protocol Community Group TG Channel](https://t.me/NEAR_Protocol_Community_Group)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### Ongoing projects\\\\\\\\\\\\\\\\n* [Protocol roadmap](https://medium.com/nearprotocol/q1-protocol-roadmap-update-progress-and-changes-e2d61626e4a1)\\\\\\\\\\\\\\\\n* Github \\\\\\\\\\\\\\\\n  * [Major projects](https://github.com/near/nearcore/labels/C-tracking-issue)\\\\\\\\\\\\\\\\n  * [Discussions](https://github.com/near/nearcore/discussions)\\\\\\\\\\\\\\\\n  * [PRs](https://github.com/near/nearcore/pulls)\\\\\\\\\\\\\\\\n* [Sponsored projects](https://near.social/#/devgovgigs.near/widget/gigs-board.pages.community.Sponsorship?label=protocol)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Communication channels\\\\\\\\\\\\\\\\n* Attend periodic Protocol community group calls\\\\\\\\\\\\\\\\n* [Telegram channel](https://t.me/NEAR_Protocol_Community_Group)\\\\\\\\\\\\\\\\n* [Zulip](https://near.zulipchat.com/#narrow/stream/295558-pagoda.2Fcore)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n## Documents\\\\\\\\\\\\\\\\nProtocol community maintains several documents/wikis so community members can stay informative and efficient to find what they are seeking for. Here are major worth noting ones.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* [Guide to nearcore development](https://near.github.io/nearcore/index.html): Explains how each part of nearcore operates, e.g. how state sync, garbage collection, epoch works, how storage layer interacts with the layers on top, etc.\\\\\\\\\\\\\\\\n* [Nomicon](https://nomicon.io/): Near protocol specification\\\\\\\\\\\\\\\\n* [Near nodes](https://near-nodes.io/): Explains how near node works and how one can become a node operator \\\\\\\\\\\\\\\\n* [Near doc](https://docs.near.org/develop/welcome): Walks you through on how to develop on top of NEAR protocol, e.g. how to build a smart contract on NEAR\\\\\\\\\\\\\\\\n* [Rust](https://www.rust-lang.org/learn): Learn Rust, the programming language NEAR protocol is written in\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"About Us\"}, {\"id\": \"730ru7\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"How to contribute\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Protocol community group runs various events and programs you can participate in to improve NEAR blockchain. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Virtual meet ups\\\\\\\\\\\\\\\\nStay up-to-date on upcoming and past events in the NEAR protocol space. Whether it\\\\\\\\u{2019}s a monthly community call, hackathon, or meetup, you\\\\\\\\u{2019}ll find the details here to connect with other community members.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nCurrently, we have two periodic virtual meetups, one for general community group and another for working group.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n### Community Calls\\\\\\\\\\\\\\\\nThe Protocol Community Group hosts a monthly call to connect, share ideas or concerns, and stay up-to-date on the latest developments in the NEAR protocol.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### How to join the call\\\\\\\\\\\\\\\\nFind out about the latest meetings below or on our [Telegram channel](https://t.me/NEAR_Protocol_Community_Group).\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Who can attend\\\\\\\\\\\\\\\\nAnyone is welcome to attend the monthly call. Whether you\\\\\\\\\\\\'re an individual, organization, or an expert in the NEAR Protocol, it is open to all. Each call is recorded and posted on this page.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Format\\\\\\\\\\\\\\\\nThe monthly call is a free-format discussion with basic moderation. Anyone can volunteer to facilitate and lead future calls. The agenda typically starts with introductions from participants and follows with a list of potential discussion topics. The group will prioritize the topics based on what participants want to discuss the most. Topics may include updates from various members on any developments or initiatives, presentations on the latest research, as well as open discussion from questions and ideas to challenges and opportunities.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n## Work Group Calls\\\\\\\\\\\\\\\\nMostly, Protocol Working group reviews and discusses NEP asynchronously within the NEP\\\\\\\\u{2019}s public thread. This allows for broad participation and ensures transparency.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nHowever, if a discussion becomes circular and could benefit from a synchronous conversation, the Protocol Working Group may host public formal calls to review specific proposals, discuss attestations, or vote on decisions. For example, if a reviewer and author have multiple rounds of comments, they may request a call. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n## Monthly protocol engineer virtual meetup day\\\\\\\\\\\\\\\\nOnce a month, protocol engineers meet virtually on [Gather town](https://app.gather.town/app) to simulate \\\\\\\\u{2018}office working environment\\\\\\\\u{2019} by presenting in the virtual workspace during their work hours. By doing so, we encourage adhoc discussions and conversations to build stronger relationships and maximize our creativity. During this day, we also host a social hour so we can have fun activities together as well.\\\\\\\\\\\\\\\\nVirtual working day schedule is shared on [Zulip general stream](https://near.zulipchat.com/#narrow/stream/295302-general/topic/virtual.20meetup.20day)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n# Bug bounty program\\\\\\\\\\\\\\\\nBug bounty program is to leverage power of community to make NEAR protocol more secure and fraud-proof. If you notice any issues that can be a threat to our users on nearcore repo, please report them and claim the bounty! Please follow the [LINK](https://hackenproof.com/near/near-protocol) to Hacken proof Near protocol page to know more about the program\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n# Funding Proposal\\\\\\\\\\\\\\\\nIf you have the idea that can make NEAR protocol more scalable/reliable/secure, you can submit a proposal to get funding for your precious time and effort. Currently, NEAR DevDAO is running the funding program by collaborating with Protocol working group. Once a proposal is submitted, DevDAO will work with Protocol working group to determine the necessity of the project by thoroughly reviewing the proposal. Once conclusion is made, DevDAO will reach out to the proposer to share the final decision and work with them on the next step.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nTo learn more about the guidelines and how to submit a proposal for funding, please visit [here](https://near.social/devhub.near/widget/app?page=community&handle=developer-dao&tab=funding). \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### How to participate\\\\\\\\\\\\\\\\nThere are several ways to participate in community activities. Here are common examples. \\\\\\\\\\\\\\\\n##### You have a feedback to share with developers or want to initiate a discussion\\\\\\\\\\\\\\\\n* Create a topic in [Zulip pagoda/core stream](https://near.zulipchat.com/#narrow/stream/295558-pagoda.2Fcore)\\\\\\\\\\\\\\\\n* Protocol community group discussion board\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### You want to know more about the NEAR protocol and have questions\\\\\\\\\\\\\\\\n* Ask a question in [Zulip pagoda/core/questions topic](https://near.zulipchat.com/#narrow/stream/295558-pagoda.2Fcore/topic/questions)\\\\\\\\\\\\\\\\n* As a question in [Protocol telegram](https://t.me/NEAR_Protocol_Community_Group)\\\\\\\\\\\\\\\\n* Protocol community group discussion board\\\\\\\\\\\\\\\\n* Post your question on [Near social](https://near.social/)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### You want to learn about NEAR protocol by working on a simple issue\\\\\\\\\\\\\\\\n* Request an onboarding task in [Zulip pagoda/core stream](https://near.zulipchat.com/#narrow/stream/295558-pagoda.2Fcore)\\\\\\\\\\\\\\\\n* Check out Github issues labeled with good-first-issue: [link](https://github.com/near/nearcore/labels/C-good-first-issue)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### You want to talk to Pagoda protocol team\\\\\\\\\\\\\\\\n* Simply start a conversation in [Zulip pagoda/core stream](https://near.zulipchat.com/#narrow/stream/295558-pagoda.2Fcore) and tag @ protocol\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### You want to know more about proposals on protocol specification\\\\\\\\\\\\\\\\n* Visit [Github NEP board](https://github.com/orgs/near/projects/51/views/3) to see open/completed proposals\\\\\\\\\\\\\\\\n* Read through [Near Enhancement Proposal guideline](https://github.com/near/NEPs/blob/master/neps/nep-0001.md) to learn about NEP approval process how to submit a proposal\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### You have an idea and want to request funding\\\\\\\\\\\\\\\\n* Please check \\\\\\\\u{2018}Event\\\\\\\\u{2019} tab\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### You have found a bug on NEAR and want to claim reward via bug bounty program\\\\\\\\\\\\\\\\n* Please check \\\\\\\\u{2018}Event\\\\\\\\u{2019} tab\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"How to contribute \\\\\\\\u{1f468}\\\\\\\\u{200d}\\\\\\\\u{1f4bb}\"}, {\"id\": \"3i6q64\", \"enabled\": true, \"addon_id\": \"blog\", \"parameters\": \"{}\", \"display_name\": \"Community Calls / Events \\\\\\\\u{1f3c6}\"}, {\"id\": \"dw6dfj\", \"enabled\": true, \"addon_id\": \"github\", \"parameters\": \"{}\", \"display_name\": \"Github\"}], \"handle\": \"protocol\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 3.5895158490357e+21
+    }
+  },
+  {
+    "id": "3279160933",
+    "receipt_id": "B5Q7ErWjjp37EvxgumcSkf42r6Da4393whVtkRi4isn5",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DJrNmXJrFjRacLMEZGKbRtPdNZftemUE81qjZ5hKnVjV",
+      "block_height": 115446267,
+      "block_timestamp": 1711374039338240800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 23950928148660,
+      "tokens_burnt": 2.395092814866e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "ArbuJys9MXkqaHcuy9JJ6xiBCSkrpKMa9Njz5zvKNAMd",
+    "included_in_block_hash": "EQeDA3mn4ETHmmwWQc9b6X3hwnFgEg8nCUnUkUjAZqgi",
+    "block_timestamp": "1711374037351458471",
+    "block": {
+      "block_height": 115446265
+    },
+    "receipt_conversion_tokens_burnt": "245473879239600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 2.395092814866e+21,
+        "args": "{\"data\": {\"protocol.community.devhub.near\": {\"profile\": {\"name\": \"Protocol\", \"tags\": {\"protocol\": \"\", \"community\": \"\", \"announcements\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreicjvpczuukqwp5wy7zvgq7marjudv6aoj7lld4tmjirowilqky3fq\"}, \"linktree\": {\"github\": \"https://near.social/near.org/#/devgovgigs.near/widget/gigs-board.pages.community.github?label=protocol\", \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=protocol\", \"telegram\": \"NEAR_Protocol_Community_Group\"}, \"description\": \"This space brings together individuals, experts, and organizations who are interested in contributing to the ongoing innovation of the NEAR protocol.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=protocol).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreia7otwa4yrxrer6swsotdsphzjk76soh2oyivn6nroavrq4cqwj4y\"}}}, \"discussions.protocol.community.devhub.near\": {\"profile\": {\"name\": \"Protocol (Community Discussions)\", \"tags\": {\"protocol\": \"\", \"community\": \"\", \"discussions\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreicjvpczuukqwp5wy7zvgq7marjudv6aoj7lld4tmjirowilqky3fq\"}, \"linktree\": {\"github\": \"https://near.social/near.org/#/devgovgigs.near/widget/gigs-board.pages.community.github?label=protocol\", \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=protocol\", \"telegram\": \"NEAR_Protocol_Community_Group\"}, \"description\": \"Supporting the ongoing innovation of the NEAR Protocol.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=protocol).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreia7otwa4yrxrer6swsotdsphzjk76soh2oyivn6nroavrq4cqwj4y\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 3.5895158490357e+21
+    }
+  },
+  {
+    "id": "3279266086",
+    "receipt_id": "yZMCS27u9NfR7eLX3zj4UiuerVUSpQKdZmBFEcppWPA",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CCiM1YGmQ9bVfys4npAE6u6kmT7VRpUzojThheq9eTTh",
+      "block_height": 115446661,
+      "block_timestamp": 1711374514088027100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9216993578647,
+      "tokens_burnt": 921699357864700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "5CF3fEhgsrWrwmzK6N5gFTcXXsTuRsf9jUic9B348M2i",
+    "included_in_block_hash": "Bj7psq4b4Mv1CaA3wHoEZwrTf9yi2pWEJDWNfU4vaYDr",
+    "block_timestamp": "1711374512957433441",
+    "block": {
+      "block_height": 115446660
+    },
+    "receipt_conversion_tokens_burnt": "243180705329200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addon",
+        "deposit": 0,
+        "fee": 921699357864700000000,
+        "args": "{\"handle\": \"protocol\", \"community_addon\": {\"id\": \"dw6dfj\", \"enabled\": true, \"addon_id\": \"github\", \"parameters\": \"{\\\\\\\\\\\\\\\"metadata\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"github.kanban_board\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"ticket\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"github.kanban_ticket\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"features\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"author\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"labels\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":true}}},\\\\\\\\\\\\\\\"repoURL\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"https://github.com/near/NEPs\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Protocol NEPs\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"description\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Showing all Protocol related NEAR Enhancement Proposals.\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"dataTypesIncluded\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"PullRequest\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[object Object]\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"Issue\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"},\\\\\\\\\\\\\\\"ticketState\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"all\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"columns\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"18e75d87008--69092f57-53ffb168--1ec6127e--416537f8\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"description\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"NEPs that need a review by subject matter experts.\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"labelSearchTerms\\\\\\\\\\\\\\\":[\\\\\\\\\\\\\\\"wg-protocol\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"review\\\\\\\\\\\\\\\"],\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\u{1f440} Review\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"18e75d87008--69092f57-53ffb168--1ec6127e--416537f8\\\\\\\\\\\\\\\"},\\\\\\\\\\\\\\\"18e75daf7a9-384fa1bd--6295828c--7a723126--6d79d58e\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"description\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"NEPs in the final review stage hat need the work group voting indications.\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"labelSearchTerms\\\\\\\\\\\\\\\":[\\\\\\\\\\\\\\\"wg-protocol\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"S-review/needs-wg-to-assign-sme\\\\\\\\\\\\\\\"],\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\u{2714}\\\\\\\\u{fe0f}Voting\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"18e75daf7a9-384fa1bd--6295828c--7a723126--6d79d58e\\\\\\\\\\\\\\\"},\\\\\\\\\\\\\\\"18e75dd02f0--182a15e3-29e0c272-1cb94fd8-5fa93c7f\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"description\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"NEPs that were reviewed and approved by work groups\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"labelSearchTerms\\\\\\\\\\\\\\\":[\\\\\\\\\\\\\\\"wg-protocol\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"S-approved\\\\\\\\\\\\\\\"],\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\u{2705} Approved NEPs\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"18e75dd02f0--182a15e3-29e0c272-1cb94fd8-5fa93c7f\\\\\\\\\\\\\\\"},\\\\\\\\\\\\\\\"18e75dd8ef8--5b0241a5-25b26fbf--43517f72-160df624\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"description\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"NEPS that were reviewed and approved by a work group or NEP moderators.\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"labelSearchTerms\\\\\\\\\\\\\\\":[\\\\\\\\\\\\\\\"wg-protocol\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"A-NEP-Extension\\\\\\\\\\\\\\\"],\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\u{1f527} Approved Fixes\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"18e75dd8ef8--5b0241a5-25b26fbf--43517f72-160df624\\\\\\\\\\\\\\\"}}}\", \"display_name\": \"Github\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 3.0549022215179e+21
+    }
+  },
+  {
+    "id": "3279266368",
+    "receipt_id": "E4UPVfjsa1fuaQfnLub1JTm9oHvyDCuhWg15U43tbV4R",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4NZ6w2fs2fHHFcLp3w1GJ9BTY7DjeRg1cp1yGLR1TuTE",
+      "block_height": 115446662,
+      "block_timestamp": 1711374515287269000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 18900221583240,
+      "tokens_burnt": 1.890022158324e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5CF3fEhgsrWrwmzK6N5gFTcXXsTuRsf9jUic9B348M2i",
+    "included_in_block_hash": "Bj7psq4b4Mv1CaA3wHoEZwrTf9yi2pWEJDWNfU4vaYDr",
+    "block_timestamp": "1711374512957433441",
+    "block": {
+      "block_height": 115446660
+    },
+    "receipt_conversion_tokens_burnt": "243180705329200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.890022158324e+21,
+        "args": "{\"data\": {\"protocol.community.devhub.near\": {\"profile\": {\"name\": \"Protocol\", \"tags\": {\"protocol\": \"\", \"community\": \"\", \"announcements\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreicjvpczuukqwp5wy7zvgq7marjudv6aoj7lld4tmjirowilqky3fq\"}, \"linktree\": {\"github\": \"https://near.social/near.org/#/devgovgigs.near/widget/gigs-board.pages.community.github?label=protocol\", \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=protocol\", \"telegram\": \"NEAR_Protocol_Community_Group\"}, \"description\": \"This space brings together individuals, experts, and organizations who are interested in contributing to the ongoing innovation of the NEAR protocol.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=protocol).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreia7otwa4yrxrer6swsotdsphzjk76soh2oyivn6nroavrq4cqwj4y\"}}}, \"discussions.protocol.community.devhub.near\": {\"profile\": {\"name\": \"Protocol (Community Discussions)\", \"tags\": {\"protocol\": \"\", \"community\": \"\", \"discussions\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreicjvpczuukqwp5wy7zvgq7marjudv6aoj7lld4tmjirowilqky3fq\"}, \"linktree\": {\"github\": \"https://near.social/near.org/#/devgovgigs.near/widget/gigs-board.pages.community.github?label=protocol\", \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=protocol\", \"telegram\": \"NEAR_Protocol_Community_Group\"}, \"description\": \"Supporting the ongoing innovation of the NEAR Protocol.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=protocol).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreia7otwa4yrxrer6swsotdsphzjk76soh2oyivn6nroavrq4cqwj4y\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 3.0549022215179e+21
+    }
+  },
+  {
+    "id": "3279267029",
+    "receipt_id": "6U133gbNavsfcnPPD5hd4vad7V8Cy673Khpz7eh3zJRm",
+    "predecessor_account_id": "8566fc4bb16e1a7446b5e9b1b8aea94b5751d5f8c658d7af18d8cdf642d7b31d",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EttTu15BWvHgvckLg63wnV8MK2tcjmrxbnBj31jDgvAx",
+      "block_height": 115446668,
+      "block_timestamp": 1711374521430675200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6931155561803,
+      "tokens_burnt": 693115556180300000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "F9x81PSEk2c4g8njbM8f71re7MZrQxQXAWt7mrTwjmcE",
+    "included_in_block_hash": "DnBmRggTeow7nWzyM9veZMS55T1eCNUtksALJvnuqVpS",
+    "block_timestamp": "1711374520450661623",
+    "block": {
+      "block_height": 115446667
+    },
+    "receipt_conversion_tokens_burnt": "243131514781200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 693115556180300000000,
+        "args": "{\"id\": 9, \"body\": {\"name\": \"Eth Samba Hacker House and NEAR day\", \"summary\": \"The Hacker House will host Near Campus Students that will be hacking during EthSamba Hackathon. \\\\\\\\n\\\\\\\\nNear Day is a ecossystem focused event that will prepare hackers to build on Near.\", \"category\": \"Universities & Bootcamps\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"bpolania.near\", \"description\": \"##### Hacker House \\\\\\\\n\\\\\\\\n\\\\\\\\nThe hacker house will be hosting students from the Universities ITA and Intelli, they are part of Near Campus program and have been onboarded to Near Ecossystem. \\\\\\\\n\\\\\\\\n\\\\\\\\n*List of names and contacts are available \\\\\\\\n\\\\\\\\n\\\\\\\\nCost of the house for 5 nights: $1249\\\\\\\\n \\\\\\\\n##### Near Day\\\\\\\\n\\\\\\\\n\\\\\\\\nNear Day is a event pre hackathon that will welcome devs to the near ecossystem, getting prepared to build on the hackathon.\\\\\\\\n\\\\\\\\n\\\\\\\\nAudio Visual equipaments and Lunch for 50 hackers are included to the price: $1000\\\\\\\\nOther Snacks and Beverages during the day: $180\\\\\\\\n\\\\\\\\n\\\\\\\\n##### Swags\\\\\\\\n\\\\\\\\n\\\\\\\\nProduction of 100 white shirts 6 dollars each + Delivery: $593\\\\\\\\n\\\\\\\\n_____________________________________\\\\\\\\n\\\\\\\\n\\\\\\\\nAll receipts were shared with the Supervisor and are available to the Near Foundation.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"8566fc4bb16e1a7446b5e9b1b8aea94b5751d5f8c658d7af18d8cdf642d7b31d\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"3022\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4164939202824e+21
+    }
+  },
+  {
+    "id": "3279267179",
+    "receipt_id": "6293LPna6iP6PthHTzt2HGoL7hg6ygBQQZZFenvhuw9r",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GNW578w6QMWv8TLqRXsXXSa8fosbvS8hhBHQJ7kQwi7S",
+      "block_height": 115446669,
+      "block_timestamp": 1711374522341944600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4802468493209,
+      "tokens_burnt": 480246849320900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "F9x81PSEk2c4g8njbM8f71re7MZrQxQXAWt7mrTwjmcE",
+    "included_in_block_hash": "DnBmRggTeow7nWzyM9veZMS55T1eCNUtksALJvnuqVpS",
+    "block_timestamp": "1711374520450661623",
+    "block": {
+      "block_height": 115446667
+    },
+    "receipt_conversion_tokens_burnt": "243131514781200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 480246849320900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"8566fc4bb16e1a7446b5e9b1b8aea94b5751d5f8c658d7af18d8cdf642d7b31d\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":9,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"8566fc4bb16e1a7446b5e9b1b8aea94b5751d5f8c658d7af18d8cdf642d7b31d\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4164939202824e+21
+    }
+  },
+  {
+    "id": "3279727258",
+    "receipt_id": "wK6za9R6VtGhpeFzcZ42bVfQxMGkSMESqjifDtb2AaX",
+    "predecessor_account_id": "orangejoe.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GxD45zYDyMkbdNPpLpUxofPGqfargyG15hYNxr5JmSKJ",
+      "block_height": 115447813,
+      "block_timestamp": 1711375988771643400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6995375171600,
+      "tokens_burnt": 699537517160000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "AgTyeedjq8hzcVWXkmtC2Rr2i1yNP4ePXYWYrBDCnFBj",
+    "included_in_block_hash": "9vwUJPQWLRLGgRG2WmDVgRZNiTXpNU7hG5jpekZL4Dcv",
+    "block_timestamp": "1711375987942250220",
+    "block": {
+      "block_height": 115447812
+    },
+    "receipt_conversion_tokens_burnt": "242974328621000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "update_community",
+        "deposit": 0,
+        "fee": 699537517160000000000,
+        "args": "{\"handle\": \"chain-abstraction\", \"community\": {\"tag\": \"chain-abstraction\", \"name\": \"Chain Abstraction\", \"addons\": [{\"id\": \"39dx6y\", \"enabled\": true, \"addon_id\": \"blog\", \"parameters\": \"{}\", \"display_name\": \"Blog\"}, {\"id\": \"y2iqqs\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{}\", \"display_name\": \"Wiki\"}], \"admins\": [\"orangejoe.near\"], \"handle\": \"chain-abstraction\", \"logo_url\": \"https://ipfs.near.social/ipfs/bafkreibysr2mkwhb4j36h2t7mqwhynqdy4vzjfygfkfg65kuspd2bawauu\", \"banner_url\": \"https://ipfs.near.social/ipfs/bafkreiabxysjawaxxumkuv3sirzrk7wqlket24fqhwhzn6vyeivsb3gy3m\", \"description\": \"Chain and Account Abstraction\", \"website_url\": null, \"bio_markdown\": \"This is a sample text about your community.\\\\\\\\nYou can change it on the community configuration page.\", \"github_handle\": null, \"twitter_handle\": null, \"telegram_handle\": null}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8262019980908e+21
+    }
+  },
+  {
+    "id": "3279727511",
+    "receipt_id": "AWZVHRyuvtAgNZLe57Ju1mmxD7AxvQfhhsu4XMmNUKkT",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "53RnNYyRiGaq6SrzrvBaCwH9gveg8iTEDvF391KtYfNJ",
+      "block_height": 115447814,
+      "block_timestamp": 1711375990011849500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 18836901523098,
+      "tokens_burnt": 1.8836901523098e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "AgTyeedjq8hzcVWXkmtC2Rr2i1yNP4ePXYWYrBDCnFBj",
+    "included_in_block_hash": "9vwUJPQWLRLGgRG2WmDVgRZNiTXpNU7hG5jpekZL4Dcv",
+    "block_timestamp": "1711375987942250220",
+    "block": {
+      "block_height": 115447812
+    },
+    "receipt_conversion_tokens_burnt": "242974328621000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.8836901523098e+21,
+        "args": "{\"data\": {\"chain-abstraction.community.devhub.near\": {\"profile\": {\"name\": \"Chain Abstraction\", \"tags\": {\"community\": \"\", \"announcements\": \"\", \"chain-abstraction\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibysr2mkwhb4j36h2t7mqwhynqdy4vzjfygfkfg65kuspd2bawauu\"}, \"linktree\": {\"github\": null, \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=chain-abstraction\", \"telegram\": null}, \"description\": \"This is a sample text about your community.\\\\\\\\nYou can change it on the community configuration page.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=chain-abstraction).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreiabxysjawaxxumkuv3sirzrk7wqlket24fqhwhzn6vyeivsb3gy3m\"}}}, \"discussions.chain-abstraction.community.devhub.near\": {\"profile\": {\"name\": \"Chain Abstraction (Community Discussions)\", \"tags\": {\"community\": \"\", \"discussions\": \"\", \"chain-abstraction\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibysr2mkwhb4j36h2t7mqwhynqdy4vzjfygfkfg65kuspd2bawauu\"}, \"linktree\": {\"github\": null, \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=chain-abstraction\", \"telegram\": null}, \"description\": \"Chain and Account Abstraction\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=chain-abstraction).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreiabxysjawaxxumkuv3sirzrk7wqlket24fqhwhzn6vyeivsb3gy3m\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8262019980908e+21
+    }
+  },
+  {
+    "id": "3280832348",
+    "receipt_id": "6hTZcheofR2ZuJaFokAnZhw37yM914hMZQMLHtykEMG3",
+    "predecessor_account_id": "bpolania.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3LAxFN2QJR6cdSwueQkN68GDuacVX7h5j4moW642PvLG",
+      "block_height": 115450685,
+      "block_timestamp": 1711379557593619000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 11977574030975,
+      "tokens_burnt": 1.1977574030975e+21,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "GHBrBg4uZ7GXqj8FXefN3Bf3R76hnhs4wzyezM7VZSJq",
+    "included_in_block_hash": "5q3FxZZJ4NUR2rUo5pt1L6Bu9rQ7NFEViprc2TvFEkSW",
+    "block_timestamp": "1711379556106106452",
+    "block": {
+      "block_height": 115450684
+    },
+    "receipt_conversion_tokens_burnt": "243118993550800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 1.1977574030975e+21,
+        "args": "{\"body\": {\"name\": \"Devrel Activities by Boris Polania (March 11 - March 24)\", \"summary\": \"This is the summary of activities for the specified period\", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"theori.near\", \"description\": \"## Planned Activities\\\\\\\\nThe following activities will be completed from March 11 - March 24. ***This includes weekend work activities***\\\\\\\\n\\\\\\\\n### Devhub Activities (16 hours)\\\\\\\\n* Contributors Proposal Reviews and Approvals (4 hours)\\\\\\\\n* Projects Proposal Reviews and Approvals (2 hours)\\\\\\\\n* Devhub Internal Meetings (4 hours)\\\\\\\\n* Devrels 2024 Proposal (6 hours)\\\\\\\\n### DevRel Activities (2 hours) \\\\\\\\n* Internal Meetings: weekly standup, 1-on-1 meetings with contributors. (2 hours)\\\\\\\\n### Events (76 hours)\\\\\\\\n* 2024 Q1 Event Planning, Bounties, Meetings (Oxford, London, Rio, Seoul) -  (4 hours)\\\\\\\\n* IRL ethGlobal London - Includes travel (40 hours)\\\\\\\\n* IRL ethSamba - Includes travel (32 hours)\\\\\\\\n### NEAR Campus (2 hours)\\\\\\\\n* Internal meetings (2 hours)\\\\\\\\n### Timeline\\\\\\\\n* Start Date: 03/11/2024\\\\\\\\n* End Date: 03/24/2024\\\\\\\\n### Requested Funding\\\\\\\\n* Total hours: 96 hours\\\\\\\\n* Rate: $100/hour\\\\\\\\n* Total amount: $9,600 USD\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"bpolania.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"9600\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8850125262206e+21
+    }
+  },
+  {
+    "id": "3280836150",
+    "receipt_id": "9E9jjdJaTqpEpt3Nw1iKhLV7EbxM82V7pKYE6rgAFNuW",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AZzoeCLqWnFyvJh9uKvAb2ATKsQPXLApssWQDNBuRt2X",
+      "block_height": 115450695,
+      "block_timestamp": 1711379570747458300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5755179331400,
+      "tokens_burnt": 575517933140000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "GHBrBg4uZ7GXqj8FXefN3Bf3R76hnhs4wzyezM7VZSJq",
+    "included_in_block_hash": "5q3FxZZJ4NUR2rUo5pt1L6Bu9rQ7NFEViprc2TvFEkSW",
+    "block_timestamp": "1711379556106106452",
+    "block": {
+      "block_height": 115450684
+    },
+    "receipt_conversion_tokens_burnt": "243118993550800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 575517933140000000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *DevDAO Operations* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @bpolania.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Devrel Activities by Boris Polania (March 11 - March 24)\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis is the summary of activities for the specified period\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=16)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8850125262206e+21
+    }
+  },
+  {
+    "id": "3280836157",
+    "receipt_id": "6sS733hcqKuPFzU5tL3oKCkfC5h6jyPKeCXYBJb7mjCC",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AZzoeCLqWnFyvJh9uKvAb2ATKsQPXLApssWQDNBuRt2X",
+      "block_height": 115450695,
+      "block_timestamp": 1711379570747458300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3831244156604,
+      "tokens_burnt": 383124415660400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "GHBrBg4uZ7GXqj8FXefN3Bf3R76hnhs4wzyezM7VZSJq",
+    "included_in_block_hash": "5q3FxZZJ4NUR2rUo5pt1L6Bu9rQ7NFEViprc2TvFEkSW",
+    "block_timestamp": "1711379556106106452",
+    "block": {
+      "block_height": 115450684
+    },
+    "receipt_conversion_tokens_burnt": "243118993550800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 383124415660400000000,
+        "args": "{\"proposal\": {\"id\": 16, \"snapshot\": {\"name\": \"Devrel Activities by Boris Polania (March 11 - March 24)\", \"labels\": [], \"summary\": \"This is the summary of activities for the specified period\", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"editor_id\": \"bpolania.near\", \"timestamp\": \"1711379569462092507\", \"supervisor\": \"theori.near\", \"description\": \"## Planned Activities\\\\\\\\nThe following activities will be completed from March 11 - March 24. ***This includes weekend work activities***\\\\\\\\n\\\\\\\\n### Devhub Activities (16 hours)\\\\\\\\n* Contributors Proposal Reviews and Approvals (4 hours)\\\\\\\\n* Projects Proposal Reviews and Approvals (2 hours)\\\\\\\\n* Devhub Internal Meetings (4 hours)\\\\\\\\n* Devrels 2024 Proposal (6 hours)\\\\\\\\n### DevRel Activities (2 hours) \\\\\\\\n* Internal Meetings: weekly standup, 1-on-1 meetings with contributors. (2 hours)\\\\\\\\n### Events (76 hours)\\\\\\\\n* 2024 Q1 Event Planning, Bounties, Meetings (Oxford, London, Rio, Seoul) -  (4 hours)\\\\\\\\n* IRL ethGlobal London - Includes travel (40 hours)\\\\\\\\n* IRL ethSamba - Includes travel (32 hours)\\\\\\\\n### NEAR Campus (2 hours)\\\\\\\\n* Internal meetings (2 hours)\\\\\\\\n### Timeline\\\\\\\\n* Start Date: 03/11/2024\\\\\\\\n* End Date: 03/24/2024\\\\\\\\n### Requested Funding\\\\\\\\n* Total hours: 96 hours\\\\\\\\n* Rate: $100/hour\\\\\\\\n* Total amount: $9,600 USD\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"bpolania.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"9600\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"bpolania.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8850125262206e+21
+    }
+  },
+  {
+    "id": "3280836158",
+    "receipt_id": "A52uTSpFA6JooriFm1AoisG53Hv5TVtT3LvSjyNjqN6J",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AZzoeCLqWnFyvJh9uKvAb2ATKsQPXLApssWQDNBuRt2X",
+      "block_height": 115450695,
+      "block_timestamp": 1711379570747458300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4854937807719,
+      "tokens_burnt": 485493780771900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "GHBrBg4uZ7GXqj8FXefN3Bf3R76hnhs4wzyezM7VZSJq",
+    "included_in_block_hash": "5q3FxZZJ4NUR2rUo5pt1L6Bu9rQ7NFEViprc2TvFEkSW",
+    "block_timestamp": "1711379556106106452",
+    "block": {
+      "block_height": 115450684
+    },
+    "receipt_conversion_tokens_burnt": "243118993550800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 485493780771900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":16,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":16,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8850125262206e+21
+    }
+  },
+  {
+    "id": "3281505738",
+    "receipt_id": "Bsbzz9q19vy2g4cyTpvcqhEoNKogWbbmyLFAbeoLYQo3",
+    "predecessor_account_id": "orangejoe.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3qSC1eWofAjmJfSaiHLZrBRxAwXmzjW13TjqrArVPRik",
+      "block_height": 115452481,
+      "block_timestamp": 1711381816163492900
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7009626697524,
+      "tokens_burnt": 700962669752400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "zKtGq7DKidfeVTCeFLUpaGS5ztVfo3sN7WM1gHn9rjD",
+    "included_in_block_hash": "3ARh7qdo28ZfEfkDW6KvSgJ38V1ZayM2zWzpCMVzpYuD",
+    "block_timestamp": "1711381814873068208",
+    "block": {
+      "block_height": 115452480
+    },
+    "receipt_conversion_tokens_burnt": "242990650939200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "update_community",
+        "deposit": 0,
+        "fee": 700962669752400000000,
+        "args": "{\"handle\": \"chain-abstraction\", \"community\": {\"tag\": \"chain-abstraction\", \"name\": \"Chain Abstraction\", \"addons\": [{\"id\": \"39dx6y\", \"enabled\": true, \"addon_id\": \"blog\", \"parameters\": \"{}\", \"display_name\": \"Blog\"}, {\"id\": \"y2iqqs\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{}\", \"display_name\": \"Wiki\"}], \"admins\": [\"orangejoe.near\"], \"handle\": \"chain-abstraction\", \"logo_url\": \"https://ipfs.near.social/ipfs/bafkreibysr2mkwhb4j36h2t7mqwhynqdy4vzjfygfkfg65kuspd2bawauu\", \"banner_url\": \"https://ipfs.near.social/ipfs/bafkreiabxysjawaxxumkuv3sirzrk7wqlket24fqhwhzn6vyeivsb3gy3m\", \"description\": \"Chain and Account Abstraction\", \"website_url\": \"docs.near.org/abstraction/what-is\", \"bio_markdown\": \"This is a sample text about your community.\\\\\\\\nYou can change it on the community configuration page.\", \"github_handle\": \"near-examples/near-multichain\", \"twitter_handle\": null, \"telegram_handle\": \"+RXYjlPob_XM5N2Ex\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8331708271948e+21
+    }
+  },
+  {
+    "id": "3281506207",
+    "receipt_id": "4RbzFR1x8VF9JgC52dx6VniNrqSmd4tVjgTTEkySY83H",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "D8zv5X9g17XjJR9z5dSJ2LCiuxbG4gLWjGze2eWPE2Gb",
+      "block_height": 115452482,
+      "block_timestamp": 1711381817496188000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 18892175065032,
+      "tokens_burnt": 1.8892175065032e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "zKtGq7DKidfeVTCeFLUpaGS5ztVfo3sN7WM1gHn9rjD",
+    "included_in_block_hash": "3ARh7qdo28ZfEfkDW6KvSgJ38V1ZayM2zWzpCMVzpYuD",
+    "block_timestamp": "1711381814873068208",
+    "block": {
+      "block_height": 115452480
+    },
+    "receipt_conversion_tokens_burnt": "242990650939200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.8892175065032e+21,
+        "args": "{\"data\": {\"chain-abstraction.community.devhub.near\": {\"profile\": {\"name\": \"Chain Abstraction\", \"tags\": {\"community\": \"\", \"announcements\": \"\", \"chain-abstraction\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibysr2mkwhb4j36h2t7mqwhynqdy4vzjfygfkfg65kuspd2bawauu\"}, \"linktree\": {\"github\": \"near-examples/near-multichain\", \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=chain-abstraction\", \"telegram\": \"+RXYjlPob_XM5N2Ex\"}, \"description\": \"This is a sample text about your community.\\\\\\\\nYou can change it on the community configuration page.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=chain-abstraction).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreiabxysjawaxxumkuv3sirzrk7wqlket24fqhwhzn6vyeivsb3gy3m\"}}}, \"discussions.chain-abstraction.community.devhub.near\": {\"profile\": {\"name\": \"Chain Abstraction (Community Discussions)\", \"tags\": {\"community\": \"\", \"discussions\": \"\", \"chain-abstraction\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibysr2mkwhb4j36h2t7mqwhynqdy4vzjfygfkfg65kuspd2bawauu\"}, \"linktree\": {\"github\": \"near-examples/near-multichain\", \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=chain-abstraction\", \"telegram\": \"+RXYjlPob_XM5N2Ex\"}, \"description\": \"Chain and Account Abstraction\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=chain-abstraction).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreiabxysjawaxxumkuv3sirzrk7wqlket24fqhwhzn6vyeivsb3gy3m\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8331708271948e+21
+    }
+  },
+  {
+    "id": "3281547916",
+    "receipt_id": "Fje81PeEwncENUG8aSevXxQkCXZRimMJmP3DPx6hjX6",
+    "predecessor_account_id": "megha19.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HSjb19sfexzYLKxcYywTN5sHSz3CByh63B1s9VYQpBZk",
+      "block_height": 115452634,
+      "block_timestamp": 1711381999549801700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 12520848772401,
+      "tokens_burnt": 1.2520848772401e+21,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "5PVixxj8pEdWvSQ7sxpobxmgzFsZ7gTutfM7Pbby9UoZ",
+    "included_in_block_hash": "EyqgFxW2ZwS1czLDudC6c5EbQkvf7oFk7BxcFWtPhcun",
+    "block_timestamp": "1711381998357558497",
+    "block": {
+      "block_height": 115452633
+    },
+    "receipt_conversion_tokens_burnt": "243681554545200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 1.2520848772401e+21,
+        "args": "{\"body\": {\"name\": \"DevHub Developer Contributor report by Megha for 02/26/2024 \\\\\\\\u{2013} 03/25/2024\", \"summary\": \"Contributed to the devhub platform development. Worked on proposal development and launch.\", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"### Summary of Activities\\\\\\\\n\\\\\\\\nWeek 1 (26 Feb to Mar 3)\\\\\\\\n- call with Bo regarding proposals filtering (0.5h)\\\\\\\\n- Fix create community gas error [#674](https://github.com/NEAR-DevHub/neardevhub-bos/pull/674) (0.5h)\\\\\\\\n- Fix dropdown with search with Peter\\\\\\\\u{2019}s solution for proposals (1h)\\\\\\\\n- Work on Ori\\\\\\\\u{2019} suggestions (5h)\\\\\\\\n- Figure out issue with comments and likes, blockheight was in string (~2h)\\\\\\\\n- Save changes as draft (proposal specific) for edit/create proposal and comments (1d)\\\\\\\\n- Add loader and login UI with support for near.org, tried to add support for near.social but couldn\\\\\\\\u{2019}t find the method. (1d)\\\\\\\\n- Fix create/edit post page bug [#676](https://github.com/NEAR-DevHub/neardevhub-bos/issues/676) (3h)\\\\\\\\n- Team sync (1.5h)\\\\\\\\n- Make UI changes for alpha launch -> update timeline, add withdrawal, payouts support and other UI updates (1.5d)\\\\\\\\n- Proposal testing call (1h)\\\\\\\\n\\\\\\\\nTotal: 42.5h\\\\\\\\n\\\\\\\\nWeek 2 (4 Mar to 10 Mar)\\\\\\\\n- Move alpha testers reported bugs to [sheets](https://docs.google.com/spreadsheets/d/1uaKGpIJl_mk1lpeFLAImv5s9XSvsR_s-kRzOKhuljwQ/edit#gid=0) and fix them (1.5d)\\\\\\\\n- Call with Vadim regarding bugs (0.5h)\\\\\\\\n- Fix posts feed [#685](https://github.com/NEAR-DevHub/neardevhub-bos/pull/685) figure out way to get aggregate count from QueryAPI and add offset support [#686](https://github.com/NEAR-DevHub/neardevhub-bos/pull/686) (7h)\\\\\\\\n- Add notifications support for devhub in near.org and near.social [#692](https://github.com/near/near-discovery-components/pull/692) (5h)\\\\\\\\n- Add logs for all proposal changes and sort with comments timestamp [#683](https://github.com/near/near-discovery-components/pull/683) (2d)\\\\\\\\n- Team call (0.5h)\\\\\\\\n\\\\\\\\nTotal: 41h\\\\\\\\n\\\\\\\\nWeek 3 (11 Mar to 17 Mar)\\\\\\\\n- Fix path and key for reply and like notifications, show author instead of devhub.near account in notification, discuss with Vadim about contract implementation [#683](https://github.com/NEAR-DevHub/neardevhub-bos/pull/683) (1d)\\\\\\\\n- Make proposals flow mobile responsive  [#683](https://github.com/NEAR-DevHub/neardevhub-bos/pull/683) (1.5d)\\\\\\\\n- Team call (0.5h)\\\\\\\\n- UI session with Ori (1h)\\\\\\\\n- UI enhancements [#693](https://github.com/NEAR-DevHub/neardevhub-bos/pull/693) (1.5d)\\\\\\\\n- KYC integration with different states [#693](https://github.com/NEAR-DevHub/neardevhub-bos/pull/693) (6h)\\\\\\\\n\\\\\\\\nTotal: 40h\\\\\\\\n\\\\\\\\nWeek 4 (18 Mar to 24 Mar)\\\\\\\\n- CSS updates , move new bugs to sheets reported by testers and fixes, figure out issue with copy to clipboard (1d)\\\\\\\\n- Tested notification on near.org and created issue [#717](https://github.com/near/near-discovery-components/issues/717)  (3h)\\\\\\\\n- Test and Review proposal filter PR (1h)\\\\\\\\n- Update data (show comment/new/updated proposal) after redirection for my near wallet [#693](https://github.com/NEAR-DevHub/neardevhub-bos/pull/693) (5h)\\\\\\\\n- Team sync (0.5h)\\\\\\\\n- UI session with Ori (1.5h)\\\\\\\\n- Update UI as per Ori\\\\\\\\u{2019}s suggestions to make it more similar to sigma design and add info banners, update links [#696](https://github.com/NEAR-DevHub/neardevhub-bos/pull/696) (5h)\\\\\\\\n- Review PRs (1h)\\\\\\\\n- Fix critical bugs [#701](https://github.com/NEAR-DevHub/neardevhub-bos/pull/701) and UI enhancements [#702](https://github.com/NEAR-DevHub/neardevhub-bos/pull/702) (4h)\\\\\\\\n- Update data (show comment/new/updated proposal) after redirection for my popup wallets/ don\\\\\\\\\\\\'t ask again [#706](https://github.com/NEAR-DevHub/neardevhub-bos/pull/706) (1d)\\\\\\\\n\\\\\\\\nTotal: 38h\\\\\\\\n\\\\\\\\nTotal Hours: 161.5 \\\\\\\\nHourly rate: $50/h\\\\\\\\nTotal: 8075 USD\\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"megha19.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"8075\", \"requested_sponsorship_paid_in_currency\": \"OTHER\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.9668226732088e+21
+    }
+  },
+  {
+    "id": "3281548162",
+    "receipt_id": "Dx1rxoZbKZjf5DvoPYgi7VBNjqgEwQSEj7bZmTqBfML",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Gsj6w5tvNVQMtUKPNDC6rXNDqnFHL5mXR5DFA5NDaytZ",
+      "block_height": 115452635,
+      "block_timestamp": 1711382000650188300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5807948170834,
+      "tokens_burnt": 580794817083400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5PVixxj8pEdWvSQ7sxpobxmgzFsZ7gTutfM7Pbby9UoZ",
+    "included_in_block_hash": "EyqgFxW2ZwS1czLDudC6c5EbQkvf7oFk7BxcFWtPhcun",
+    "block_timestamp": "1711381998357558497",
+    "block": {
+      "block_height": 115452633
+    },
+    "receipt_conversion_tokens_burnt": "243681554545200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 580794817083400000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *DevDAO Platform* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @megha19.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}DevHub Developer Contributor report by Megha for 02/26/2024 \\\\\\\\u{2013} 03/25/2024\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nContributed to the devhub platform development. Worked on proposal development and launch.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=17)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.9668226732088e+21
+    }
+  },
+  {
+    "id": "3281548166",
+    "receipt_id": "FZ42v3z78o3Gt8b38mpk9YXek8YF5thobRFUMGdebcBa",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Gsj6w5tvNVQMtUKPNDC6rXNDqnFHL5mXR5DFA5NDaytZ",
+      "block_height": 115452635,
+      "block_timestamp": 1711382000650188300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4101748729988,
+      "tokens_burnt": 410174872998800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "5PVixxj8pEdWvSQ7sxpobxmgzFsZ7gTutfM7Pbby9UoZ",
+    "included_in_block_hash": "EyqgFxW2ZwS1czLDudC6c5EbQkvf7oFk7BxcFWtPhcun",
+    "block_timestamp": "1711381998357558497",
+    "block": {
+      "block_height": 115452633
+    },
+    "receipt_conversion_tokens_burnt": "243681554545200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 410174872998800000000,
+        "args": "{\"proposal\": {\"id\": 17, \"snapshot\": {\"name\": \"DevHub Developer Contributor report by Megha for 02/26/2024 \\\\\\\\u{2013} 03/25/2024\", \"labels\": [], \"summary\": \"Contributed to the devhub platform development. Worked on proposal development and launch.\", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"megha19.near\", \"timestamp\": \"1711381999549801742\", \"supervisor\": null, \"description\": \"### Summary of Activities\\\\\\\\n\\\\\\\\nWeek 1 (26 Feb to Mar 3)\\\\\\\\n- call with Bo regarding proposals filtering (0.5h)\\\\\\\\n- Fix create community gas error [#674](https://github.com/NEAR-DevHub/neardevhub-bos/pull/674) (0.5h)\\\\\\\\n- Fix dropdown with search with Peter\\\\\\\\u{2019}s solution for proposals (1h)\\\\\\\\n- Work on Ori\\\\\\\\u{2019} suggestions (5h)\\\\\\\\n- Figure out issue with comments and likes, blockheight was in string (~2h)\\\\\\\\n- Save changes as draft (proposal specific) for edit/create proposal and comments (1d)\\\\\\\\n- Add loader and login UI with support for near.org, tried to add support for near.social but couldn\\\\\\\\u{2019}t find the method. (1d)\\\\\\\\n- Fix create/edit post page bug [#676](https://github.com/NEAR-DevHub/neardevhub-bos/issues/676) (3h)\\\\\\\\n- Team sync (1.5h)\\\\\\\\n- Make UI changes for alpha launch -> update timeline, add withdrawal, payouts support and other UI updates (1.5d)\\\\\\\\n- Proposal testing call (1h)\\\\\\\\n\\\\\\\\nTotal: 42.5h\\\\\\\\n\\\\\\\\nWeek 2 (4 Mar to 10 Mar)\\\\\\\\n- Move alpha testers reported bugs to [sheets](https://docs.google.com/spreadsheets/d/1uaKGpIJl_mk1lpeFLAImv5s9XSvsR_s-kRzOKhuljwQ/edit#gid=0) and fix them (1.5d)\\\\\\\\n- Call with Vadim regarding bugs (0.5h)\\\\\\\\n- Fix posts feed [#685](https://github.com/NEAR-DevHub/neardevhub-bos/pull/685) figure out way to get aggregate count from QueryAPI and add offset support [#686](https://github.com/NEAR-DevHub/neardevhub-bos/pull/686) (7h)\\\\\\\\n- Add notifications support for devhub in near.org and near.social [#692](https://github.com/near/near-discovery-components/pull/692) (5h)\\\\\\\\n- Add logs for all proposal changes and sort with comments timestamp [#683](https://github.com/near/near-discovery-components/pull/683) (2d)\\\\\\\\n- Team call (0.5h)\\\\\\\\n\\\\\\\\nTotal: 41h\\\\\\\\n\\\\\\\\nWeek 3 (11 Mar to 17 Mar)\\\\\\\\n- Fix path and key for reply and like notifications, show author instead of devhub.near account in notification, discuss with Vadim about contract implementation [#683](https://github.com/NEAR-DevHub/neardevhub-bos/pull/683) (1d)\\\\\\\\n- Make proposals flow mobile responsive  [#683](https://github.com/NEAR-DevHub/neardevhub-bos/pull/683) (1.5d)\\\\\\\\n- Team call (0.5h)\\\\\\\\n- UI session with Ori (1h)\\\\\\\\n- UI enhancements [#693](https://github.com/NEAR-DevHub/neardevhub-bos/pull/693) (1.5d)\\\\\\\\n- KYC integration with different states [#693](https://github.com/NEAR-DevHub/neardevhub-bos/pull/693) (6h)\\\\\\\\n\\\\\\\\nTotal: 40h\\\\\\\\n\\\\\\\\nWeek 4 (18 Mar to 24 Mar)\\\\\\\\n- CSS updates , move new bugs to sheets reported by testers and fixes, figure out issue with copy to clipboard (1d)\\\\\\\\n- Tested notification on near.org and created issue [#717](https://github.com/near/near-discovery-components/issues/717)  (3h)\\\\\\\\n- Test and Review proposal filter PR (1h)\\\\\\\\n- Update data (show comment/new/updated proposal) after redirection for my near wallet [#693](https://github.com/NEAR-DevHub/neardevhub-bos/pull/693) (5h)\\\\\\\\n- Team sync (0.5h)\\\\\\\\n- UI session with Ori (1.5h)\\\\\\\\n- Update UI as per Ori\\\\\\\\u{2019}s suggestions to make it more similar to sigma design and add info banners, update links [#696](https://github.com/NEAR-DevHub/neardevhub-bos/pull/696) (5h)\\\\\\\\n- Review PRs (1h)\\\\\\\\n- Fix critical bugs [#701](https://github.com/NEAR-DevHub/neardevhub-bos/pull/701) and UI enhancements [#702](https://github.com/NEAR-DevHub/neardevhub-bos/pull/702) (4h)\\\\\\\\n- Update data (show comment/new/updated proposal) after redirection for my popup wallets/ don\\\\\\\\\\\\'t ask again [#706](https://github.com/NEAR-DevHub/neardevhub-bos/pull/706) (1d)\\\\\\\\n\\\\\\\\nTotal: 38h\\\\\\\\n\\\\\\\\nTotal Hours: 161.5 \\\\\\\\nHourly rate: $50/h\\\\\\\\nTotal: 8075 USD\\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"megha19.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"8075\", \"requested_sponsorship_paid_in_currency\": \"OTHER\"}, \"author_id\": \"megha19.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.9668226732088e+21
+    }
+  }
+]

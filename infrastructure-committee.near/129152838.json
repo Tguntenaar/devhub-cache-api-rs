@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "8770224753",
+    "receipt_id": "5yQegN4W851FpPwPsxe59t7raSSjR9B9HTVnqpJQ8eEv",
+    "predecessor_account_id": "p-kurzawa.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3MeWSTEq9drkFMiXWXnKocRXH6du6fqnrFTqseaREv9A",
+      "block_height": 129162189,
+      "block_timestamp": 1727616309877772000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6877210317222,
+      "tokens_burnt": 687721031722200000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "6NT2PJcJpfwUDUkNnpnLdyAtvUmr4MKm6QHiUAFL5kWy",
+    "included_in_block_hash": "BaLuDWhHFZiAZVhaTYirWQvqFiDqg8qf4snbAbvecYDp",
+    "block_timestamp": "1727616308547658197",
+    "block": {
+      "block_height": 129162188
+    },
+    "receipt_conversion_tokens_burnt": "61013583452500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 687721031722200000000,
+        "args": "{\"body\": {\"name\": \"Mastercard x Mercuryo x NEAR Branded NEAR Debit Cards and DeFi Products\", \"summary\": \"This proposal outlines a partnership with Mastercard to develop the best-in-class crypto card offering across multiple chains. Mercuryo will also provide access to its advanced DCA (Dollar-Cost Averaging) products to enhance NEAR\\\\\\\\\\\\'s DeFi applications.\\\\\\\\nThis initiative is endorsed by Meteor Wallet, Burrow, Ref Finance, Bitte Wallet, and Here Wallet.\\\\\\\\nObjective:\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tLaunch branded debit cards (Here/Hot Wallet & Meteor) within the app.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tProvide a NEAR debit card that can be integrated into any project.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"description\": \"**Launches**\\\\\\\\nLaunch of embedded and fully customized card program - Here Wallet\\\\\\\\nLaunch of embedded and fully customized card program - Meteor\\\\\\\\nLaunch of Near branded card as open source for any project to integrate as off ramp - NEAR \\\\\\\\nLaunch of Defi Strategy / DCA - Ref / Burrow\\\\\\\\nLaunch of NEAR branded card and DCA - Bitte\\\\\\\\n\\\\\\\\n\\\\\\\\n**Endorsements**\\\\\\\\nThis proposal is supported by Bitte, Burrow, Ref Finance, Meteor, and Here/Hot Wallet. All teams have signed endorsement letters confirming their intent to integrate the fintech products described herein. (Meteor Wallet provided approval via message to the NEAR Foundation team). Links to endorsement letters will be provided below.\\\\\\\\n \\\\\\\\nMilestone 1 \\\\\\\\u{2013} $15,000\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tLiaise with Here/Hot Wallet, Meteor Wallet, and NEAR for card designs, and secure approval from Mastercard.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tSet up individual card terminals with Mastercard.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tFinalize commercial agreements with the mentioned projects for card launches.\\\\\\\\nUse of Funds:\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tCover setup fees for card terminals, paid directly to Mastercard.\\\\\\\\n \\\\\\\\nMilestone 2 \\\\\\\\u{2013} $45,000\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tLaunch custom-branded card programs with HOT Wallet and deploy the NEAR ecosystem debit card.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tMake the NEAR ecosystem debit card available through Mercuryo\\\\\\\\u{2019}s widget for all NEAR projects that have integrated on/off-ramp functionality.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tThis milestone is achieved once card issuance is available to consumers via the client app, validated by NEAR by creating its own card.\\\\\\\\nDisclaimer:\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tCards will be issued virtually to EU residents and passport holders.\\\\\\\\nUse of Funds:\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tCover integration and development costs to launch branded cards.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tEnable necessary features from branded widget flows to top-ups with NEAR assets and functionalities like Apple Pay/Google Pay connectivity.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tThe funds will largely go towards maintenance and card issuance costs, paid directly to Mastercard.\\\\\\\\n \\\\\\\\nMilestone 3 \\\\\\\\u{2013} $20,000\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tDevelop APIs for a white-label integration of cards for the Meteor Wallet team. This includes the setup of APIs and technical documentation. Other Mastercard launches will be widget-based.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tLaunch Mercuryo\\\\\\\\\\\\'s DeFi-focused products, including DCA for Ref Finance/Burrow.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tThe milestone is reached once DCA is live for consumers in 150+ markets and the Meteor Card is live for consumers in the EU.\\\\\\\\nUse of Funds:\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tCover development costs for setting up APIs for Mastercard\\\\\\\\\\\\'s fully white-labeled solution.\\\\\\\\n \\\\\\\\nMilestone 4 \\\\\\\\u{2013} $15,000\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tCo-marketing campaign with Mastercard x Mercuryo. This includes the development of co-marketing efforts through Mercuryo and Mastercard\\\\\\\\u{2019}s social channels, with the goal of hosting a fireside chat.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tThe milestone is achieved once NEAR, Mercuryo, and Mastercard approve and sign off on the structure and scope.\\\\\\\\nUse of Funds:\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tCreate marketing materials, push Mastercard for co-branding opportunities, and organize a fireside chat.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tThe funds can also be used for launching limited-time campaigns, such as 0-fee promotions.\\\\\\\\n \\\\\\\\nMilestone 5 \\\\\\\\u{2013} $10,000\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tA total of 10,000 debit cards have been issued across the NEAR ecosystem.\\\\\\\\nUse of Funds:\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tCover issuance and maintenance costs for a large number of cards.\\\\\\\\n \\\\\\\\n\\\\\\\\n\\\\\\\\n**Team Breakdown**\\\\\\\\nPascal Kurzawa \\\\\\\\u{2013} Senior Sales and Strategy Manager\\\\\\\\nPascal is responsible for managing this proposal, overseeing relationships with the NEAR Foundation and NEAR dApps.\\\\\\\\n\\\\\\\\n\\\\\\\\nStepan Fedorov \\\\\\\\u{2013} Integration Lead\\\\\\\\nStepan is in charge of all technical integrations and serves as the primary contact for any tech-related queries.\\\\\\\\n\\\\\\\\n\\\\\\\\nArthur Firstov \\\\\\\\u{2013} Chief Business Officer (CBO) & Co-Author of the NEAR Proposal\\\\\\\\nArthur plays a key role in co-authoring the NEAR proposal, contributing his business expertise.\\\\\\\\n\\\\\\\\n\\\\\\\\nBakhrom Sayd \\\\\\\\u{2013} Senior Product Manager\\\\\\\\nBakhrom is responsible for adding new supported tokens to the platform and gathering valuable product feedback.\\\\\\\\n\\\\\\\\n\\\\\\\\nPeter Kelen \\\\\\\\u{2013} Commercial Director\\\\\\\\nPeter is responsible for overseeing revenue growth, setting targets, ensuring project execution, and managing client acquisition for the NEAR initiative. He also acts as the main point of contact for the card program, leveraging his experience as a former Director at VISA.\\\\\\\\n\\\\\\\\n\\\\\\\\nVasil Viktorov \\\\\\\\u{2013} Product Lead (Debit Card)\\\\\\\\nVasil is in charge of Mercuryo\\\\\\\\u{2019}s card program, defining the roadmap, liaising with card providers, negotiating contracts, and incorporating customer feedback into product development.\\\\\\\\n\\\\\\\\n\\\\\\\\n**Value Proposition for the NEAR Ecosystem and Projects:**\\\\\\\\n1. Revenue Stream:\\\\\\\\nThe fee structure can be fully customized to include revenue-sharing components. Note that most neobanks generate significant revenue from their card programs.\\\\\\\\n2. Accessibility for Retail Investors and added utility for NEAR DeFi Applications:\\\\\\\\nThis plug-and-play fintech product suite (including debit cards, DCA, and on/off ramps) is available free of charge for all NEAR projects. Projects will be able to:\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tSeamlessly move funds into their applications.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tEnable users to withdraw profits or earnings via debit cards, making NEAR one of the most accessible ecosystems.\\\\\\\\n3. Massive Brand Exposure:\\\\\\\\nMastercard will support marketing efforts, including articles in AAA news outlets and co-hosting a fireside chat for NEAR x Mastercard to promote the first ecosystem-branded debit card.\\\\\\\\n\\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"p-kurzawa.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"105000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Onramps / Offramps\", \"Other\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9276422913339e+21
+    }
+  },
+  {
+    "id": "8770225346",
+    "receipt_id": "74fS5VtY5QsuGTWxAYpD64TZ1XLgNws3MH5hdyuiGRhi",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7aQfFnePGSoJuHYg6u339XHcAmgCFouGk2YVxBKpWtHg",
+      "block_height": 129162190,
+      "block_timestamp": 1727616311058550300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4531811506700,
+      "tokens_burnt": 453181150670000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "6NT2PJcJpfwUDUkNnpnLdyAtvUmr4MKm6QHiUAFL5kWy",
+    "included_in_block_hash": "BaLuDWhHFZiAZVhaTYirWQvqFiDqg8qf4snbAbvecYDp",
+    "block_timestamp": "1727616308547658197",
+    "block": {
+      "block_height": 129162188
+    },
+    "receipt_conversion_tokens_burnt": "61013583452500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 453181150670000000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Infrastructure Committee* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @p-kurzawa.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Mastercard x Mercuryo x NEAR Branded NEAR Debit Cards and DeFi Products\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis proposal outlines a partnership with Mastercard to develop the best-in-class crypto card offering across multiple chains. Mercuryo will also provide access to its advanced DCA (Dollar-Cost Averaging) products to enhance NEAR\\\\\\\\\\\\'s DeFi applications.\\\\\\\\\\\\\\\\nThis initiative is endorsed by Meteor Wallet, Burrow, Ref Finance, Bitte Wallet, and Here Wallet.\\\\\\\\\\\\\\\\nObjective:\\\\\\\\\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\\\\\\\\\tLaunch branded debit cards (Here/Hot Wallet & Meteor) within the app.\\\\\\\\\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\\\\\\\\\tProvide a NEAR debit card that can be integrated into any project.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=24)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9276422913339e+21
+    }
+  },
+  {
+    "id": "8770225349",
+    "receipt_id": "EVZXFLprEcDcedi3m2sqGEr4FYbW8KikS1h6z9y6zgwu",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7aQfFnePGSoJuHYg6u339XHcAmgCFouGk2YVxBKpWtHg",
+      "block_height": 129162190,
+      "block_timestamp": 1727616311058550300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3736728195067,
+      "tokens_burnt": 373672819506700000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "6NT2PJcJpfwUDUkNnpnLdyAtvUmr4MKm6QHiUAFL5kWy",
+    "included_in_block_hash": "BaLuDWhHFZiAZVhaTYirWQvqFiDqg8qf4snbAbvecYDp",
+    "block_timestamp": "1727616308547658197",
+    "block": {
+      "block_height": 129162188
+    },
+    "receipt_conversion_tokens_burnt": "61013583452500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 373672819506700000000,
+        "args": "{\"proposal\": {\"id\": 24, \"snapshot\": {\"name\": \"Mastercard x Mercuryo x NEAR Branded NEAR Debit Cards and DeFi Products\", \"labels\": [\"Onramps / Offramps\", \"Other\"], \"summary\": \"This proposal outlines a partnership with Mastercard to develop the best-in-class crypto card offering across multiple chains. Mercuryo will also provide access to its advanced DCA (Dollar-Cost Averaging) products to enhance NEAR\\\\\\\\\\\\'s DeFi applications.\\\\\\\\nThis initiative is endorsed by Meteor Wallet, Burrow, Ref Finance, Bitte Wallet, and Here Wallet.\\\\\\\\nObjective:\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tLaunch branded debit cards (Here/Hot Wallet & Meteor) within the app.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tProvide a NEAR debit card that can be integrated into any project.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"p-kurzawa.near\", \"timestamp\": \"1727616309877772110\", \"linked_rfp\": null, \"supervisor\": null, \"description\": \"**Launches**\\\\\\\\nLaunch of embedded and fully customized card program - Here Wallet\\\\\\\\nLaunch of embedded and fully customized card program - Meteor\\\\\\\\nLaunch of Near branded card as open source for any project to integrate as off ramp - NEAR \\\\\\\\nLaunch of Defi Strategy / DCA - Ref / Burrow\\\\\\\\nLaunch of NEAR branded card and DCA - Bitte\\\\\\\\n\\\\\\\\n\\\\\\\\n**Endorsements**\\\\\\\\nThis proposal is supported by Bitte, Burrow, Ref Finance, Meteor, and Here/Hot Wallet. All teams have signed endorsement letters confirming their intent to integrate the fintech products described herein. (Meteor Wallet provided approval via message to the NEAR Foundation team). Links to endorsement letters will be provided below.\\\\\\\\n \\\\\\\\nMilestone 1 \\\\\\\\u{2013} $15,000\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tLiaise with Here/Hot Wallet, Meteor Wallet, and NEAR for card designs, and secure approval from Mastercard.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tSet up individual card terminals with Mastercard.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tFinalize commercial agreements with the mentioned projects for card launches.\\\\\\\\nUse of Funds:\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tCover setup fees for card terminals, paid directly to Mastercard.\\\\\\\\n \\\\\\\\nMilestone 2 \\\\\\\\u{2013} $45,000\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tLaunch custom-branded card programs with HOT Wallet and deploy the NEAR ecosystem debit card.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tMake the NEAR ecosystem debit card available through Mercuryo\\\\\\\\u{2019}s widget for all NEAR projects that have integrated on/off-ramp functionality.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tThis milestone is achieved once card issuance is available to consumers via the client app, validated by NEAR by creating its own card.\\\\\\\\nDisclaimer:\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tCards will be issued virtually to EU residents and passport holders.\\\\\\\\nUse of Funds:\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tCover integration and development costs to launch branded cards.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tEnable necessary features from branded widget flows to top-ups with NEAR assets and functionalities like Apple Pay/Google Pay connectivity.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tThe funds will largely go towards maintenance and card issuance costs, paid directly to Mastercard.\\\\\\\\n \\\\\\\\nMilestone 3 \\\\\\\\u{2013} $20,000\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tDevelop APIs for a white-label integration of cards for the Meteor Wallet team. This includes the setup of APIs and technical documentation. Other Mastercard launches will be widget-based.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tLaunch Mercuryo\\\\\\\\\\\\'s DeFi-focused products, including DCA for Ref Finance/Burrow.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tThe milestone is reached once DCA is live for consumers in 150+ markets and the Meteor Card is live for consumers in the EU.\\\\\\\\nUse of Funds:\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tCover development costs for setting up APIs for Mastercard\\\\\\\\\\\\'s fully white-labeled solution.\\\\\\\\n \\\\\\\\nMilestone 4 \\\\\\\\u{2013} $15,000\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tCo-marketing campaign with Mastercard x Mercuryo. This includes the development of co-marketing efforts through Mercuryo and Mastercard\\\\\\\\u{2019}s social channels, with the goal of hosting a fireside chat.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tThe milestone is achieved once NEAR, Mercuryo, and Mastercard approve and sign off on the structure and scope.\\\\\\\\nUse of Funds:\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tCreate marketing materials, push Mastercard for co-branding opportunities, and organize a fireside chat.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tThe funds can also be used for launching limited-time campaigns, such as 0-fee promotions.\\\\\\\\n \\\\\\\\nMilestone 5 \\\\\\\\u{2013} $10,000\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tA total of 10,000 debit cards have been issued across the NEAR ecosystem.\\\\\\\\nUse of Funds:\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tCover issuance and maintenance costs for a large number of cards.\\\\\\\\n \\\\\\\\n\\\\\\\\n\\\\\\\\n**Team Breakdown**\\\\\\\\nPascal Kurzawa \\\\\\\\u{2013} Senior Sales and Strategy Manager\\\\\\\\nPascal is responsible for managing this proposal, overseeing relationships with the NEAR Foundation and NEAR dApps.\\\\\\\\n\\\\\\\\n\\\\\\\\nStepan Fedorov \\\\\\\\u{2013} Integration Lead\\\\\\\\nStepan is in charge of all technical integrations and serves as the primary contact for any tech-related queries.\\\\\\\\n\\\\\\\\n\\\\\\\\nArthur Firstov \\\\\\\\u{2013} Chief Business Officer (CBO) & Co-Author of the NEAR Proposal\\\\\\\\nArthur plays a key role in co-authoring the NEAR proposal, contributing his business expertise.\\\\\\\\n\\\\\\\\n\\\\\\\\nBakhrom Sayd \\\\\\\\u{2013} Senior Product Manager\\\\\\\\nBakhrom is responsible for adding new supported tokens to the platform and gathering valuable product feedback.\\\\\\\\n\\\\\\\\n\\\\\\\\nPeter Kelen \\\\\\\\u{2013} Commercial Director\\\\\\\\nPeter is responsible for overseeing revenue growth, setting targets, ensuring project execution, and managing client acquisition for the NEAR initiative. He also acts as the main point of contact for the card program, leveraging his experience as a former Director at VISA.\\\\\\\\n\\\\\\\\n\\\\\\\\nVasil Viktorov \\\\\\\\u{2013} Product Lead (Debit Card)\\\\\\\\nVasil is in charge of Mercuryo\\\\\\\\u{2019}s card program, defining the roadmap, liaising with card providers, negotiating contracts, and incorporating customer feedback into product development.\\\\\\\\n\\\\\\\\n\\\\\\\\n**Value Proposition for the NEAR Ecosystem and Projects:**\\\\\\\\n1. Revenue Stream:\\\\\\\\nThe fee structure can be fully customized to include revenue-sharing components. Note that most neobanks generate significant revenue from their card programs.\\\\\\\\n2. Accessibility for Retail Investors and added utility for NEAR DeFi Applications:\\\\\\\\nThis plug-and-play fintech product suite (including debit cards, DCA, and on/off ramps) is available free of charge for all NEAR projects. Projects will be able to:\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tSeamlessly move funds into their applications.\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tEnable users to withdraw profits or earnings via debit cards, making NEAR one of the most accessible ecosystems.\\\\\\\\n3. Massive Brand Exposure:\\\\\\\\nMastercard will support marketing efforts, including articles in AAA news outlets and co-hosting a fireside chat for NEAR x Mastercard to promote the first ecosystem-branded debit card.\\\\\\\\n\\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"p-kurzawa.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"105000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"p-kurzawa.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9276422913339e+21
+    }
+  },
+  {
+    "id": "8770225351",
+    "receipt_id": "7gCyrXQ6yxhmwnHgJfNmEhw2kKUTNxUKtWN1CRQjC5X6",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7aQfFnePGSoJuHYg6u339XHcAmgCFouGk2YVxBKpWtHg",
+      "block_height": 129162190,
+      "block_timestamp": 1727616311058550300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3520537059825,
+      "tokens_burnt": 352053705982500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "6NT2PJcJpfwUDUkNnpnLdyAtvUmr4MKm6QHiUAFL5kWy",
+    "included_in_block_hash": "BaLuDWhHFZiAZVhaTYirWQvqFiDqg8qf4snbAbvecYDp",
+    "block_timestamp": "1727616308547658197",
+    "block": {
+      "block_height": 129162188
+    },
+    "receipt_conversion_tokens_burnt": "61013583452500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352053705982500000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":24,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"p-kurzawa.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9276422913339e+21
+    }
+  },
+  {
+    "id": "8773168289",
+    "receipt_id": "Ae4gLMy8SmN45fgpw5WAsXJ18mXHvUvasQTvZiY1mTz8",
+    "predecessor_account_id": "nearblocks_io.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AYt87Xh8WMFWqLVgCjx8ic1Ui1PhqQQZxmJMv45HMyEu",
+      "block_height": 129170302,
+      "block_timestamp": 1727625812685465600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 2717476473398,
+      "tokens_burnt": 271747647339800000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": false
+    },
+    "transaction_hash": "XPK3Y3hciVpQp2bTRqicbnCQRV5cdxXHmz3UYhFAJSu",
+    "included_in_block_hash": "7B7usctCdpevUudVrYq2D8UcRgQejnQqNCr5qXjG6erQ",
+    "block_timestamp": "1727625811769933924",
+    "block": {
+      "block_height": 129170301
+    },
+    "receipt_conversion_tokens_burnt": "56311969153500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 271747647339800000000,
+        "args": "{\"body\": {\"name\": \"NearBlocks.io Proposal for KitWallet Transition\", \"summary\": \"We appreciate the opportunity to submit our proposal for the transition project and are confident that NearBlocks.io is the ideal partner for this endeavour. With our extensive experience in indexing and integration, we are well-positioned to ensure a seamless transition for KitWallet.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"linked_rfp\": 1, \"description\": \"Dear Infra Committee,\\\\\\\\n\\\\\\\\nWe appreciate the opportunity to submit our proposal for the transition project and are confident that NearBlocks.io is the ideal partner for this endeavour. With our extensive experience in indexing and integration, we are well-positioned to ensure a seamless transition for KitWallet.\\\\\\\\n\\\\\\\\n## Response to Requirements\\\\\\\\n\\\\\\\\nAt NearBlocks.io, we have already created drop-in replaceable KitWallet endpoints, which means there will be no need to build additional infrastructure. \\\\\\\\n\\\\\\\\nA transition plan would simply be updating `https://api.kitwallet.app/` to `https://api.nearblocks.io/v1/kitwallet/`.\\\\\\\\n\\\\\\\\nThis gives us a distinct advantage in terms of efficiency and speed for this transition. Our ongoing communication with members of the Pagoda team & infrastructure committee further reinforces our commitment to staying aligned with the ecosystem.\\\\\\\\n\\\\\\\\nNearBlocks is built on top of Near Lake as the data source and currently operates as the #1 explorer within the ecosystem. We believe NearBlocks is in the best position to support this transition.\\\\\\\\n\\\\\\\\n**Current live endpoints (documentation):**\\\\\\\\n\\\\\\\\n- Mainnet: https://api.nearblocks.io/api-docs/#/Kitwallet\\\\\\\\n- Testnet: https://api-testnet.nearblocks.io/api-docs/#/Kitwallet\\\\\\\\n\\\\\\\\n## Service Level\\\\\\\\n\\\\\\\\n### Monitoring\\\\\\\\nWe will set up monitoring with notifications for visualizing API availability. System health and performance are available here: https://status.nearblocks.io. From our status monitor, we can send email and/or Slack notifications to major stakeholders. For reference, NearBlocks has been able to maintain a monthly uptime of 99.83%. We are aiming for 99.99% in the coming weeks.\\\\\\\\n\\\\\\\\n### Response Time\\\\\\\\nAverage response time on the NearBlocks API is now sub-2 seconds. Legacy KitWallet endpoints are using LIKE queries, which are known to be less performant. We have avoided this due to additional indexing.\\\\\\\\n\\\\\\\\nCurrent caveat: `likelyTokens` only supports tokens which NearBlocks supports. This includes all NEP-141 tokens and *most* [legacy tokens](https://github.com/Nearblocks/nearblocks/tree/main/apps/indexer-events/src/services/contracts/ft). We are constantly working to add missing [legacy tokens](https://github.com/Nearblocks/nearblocks/issues/new?assignees=&labels=&projects=&template=token_request.md&title=).\\\\\\\\n\\\\\\\\n### Rate Limiting\\\\\\\\nNearBlocks API rate limiting is enforced by IP address and API keys. Given this is a public good endpoint, we will limit 150 queries per minute per IP address. We believe this should be within a very generous fair usage policy. This can be made flexible and is open for discussion.\\\\\\\\n\\\\\\\\n### Support\\\\\\\\n- Support Availability: GitHub issues available here https://github.com/Nearblocks/nearblocks/issues \\\\\\\\n- Response Time: 24-48 hours through GitHub issues.\\\\\\\\n\\\\\\\\n### Data Integrity\\\\\\\\nThe KitWallet endpoints are backed by existing NearBlocks data, which is indexed from Near Lake.\\\\\\\\n\\\\\\\\n### Updates and Changes\\\\\\\\nWe have no plans to make changes to KitWallet endpoints. We previously created these endpoints to support drop-in replacements without any work required other than replacing the endpoint.\\\\\\\\n\\\\\\\\n### Usage\\\\\\\\nWe will track KitWallet usage through the NearBlocks API key dashboard for real-time usage. This can be made available to stakeholders.\\\\\\\\n\\\\\\\\n![API Usage Dashboard](https://github.com/user-attachments/assets/ceefc8e0-a74a-4299-8bdb-98258c0f7ca1)\\\\\\\\n\\\\\\\\n## Approach\\\\\\\\n\\\\\\\\n1. Move NearBlocks KitWallet endpoints to be accessible from the existing endpoint (i.e., https://api.kitwallet.app/) to allow for a seamless transition experience with no downtime for any existing users.\\\\\\\\n\\\\\\\\n2. We are aware that there are remaining unknown users using this legacy endpoint. As we can\\\\\\\\\\\\'t reach out to suggest a transition to alternative solutions, we will set up a landing page on kitwallet.app stating the current situation and directing them to alternative solutions as well as a point of contact that will be monitored. The landing page will explain the KitWallet transition plans with links to:\\\\\\\\n\\\\\\\\n- Existing Documentation with user guides ;\\\\\\\\n- Support available through GitHub Issues ;\\\\\\\\n- Alternatives like NearBlocks API and FastNear.\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n$4,000 / month for 12 months - to ensure excess capacity for additional traffic.\\\\\\\\n\\\\\\\\n## Experience & Portfolio\\\\\\\\n\\\\\\\\nNearBlocks.io is our flagship product; however, we have built other products in the past on NEAR, such as nearsend.io.\\\\\\\\n\\\\\\\\nThank you for considering NearBlocks.io. We look forward to the possibility of working together to bring this transition to completion. Please don\\\\\\\\\\\\'t hesitate to reach out with any further questions or clarifications.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"nearblocks_io.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"48000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Indexers\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 328059616493300000000
+    }
+  },
+  {
+    "id": "8773230911",
+    "receipt_id": "CZBEDLSHt3X1qiCEe6AwhfJwct7sVHxfMoyMXk6p4KG8",
+    "predecessor_account_id": "nearblocks_io.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HydzZrDW2GVHpWEq8X5DK12srKdBgCswj3YKkRw1xq2",
+      "block_height": 129170579,
+      "block_timestamp": 1727626113877460700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 2718834203258,
+      "tokens_burnt": 271883420325800000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": false
+    },
+    "transaction_hash": "DcQgCpG1MPZd9TyfN4KFVsohUwG7XKCqWe5n2gjEdn83",
+    "included_in_block_hash": "Goo52gtatrX34mr6MiEP3WZq6Rtzdj3KGyqQp3xT65TQ",
+    "block_timestamp": "1727626112893391635",
+    "block": {
+      "block_height": 129170578
+    },
+    "receipt_conversion_tokens_burnt": "56369189611500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 271883420325800000000,
+        "args": "{\"body\": {\"name\": \"Nearblocks.io Proposal for KitWallet Transition\", \"summary\": \"We appreciate the opportunity to submit our proposal for the transition project and are confident that Nearblocks.io is the ideal partner for this endeavour. With our extensive experience in indexing and integration, we are well-positioned to ensure a seamless transition for KitWallet.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"linked_rfp\": 1, \"supervisor\": null, \"description\": \"Dear Infra Committee,\\\\\\\\n\\\\\\\\nWe appreciate the opportunity to submit our proposal for the transition project and are confident that Nearblocks.io is the ideal partner for this endeavour. With our extensive experience in indexing and integration, we are well-positioned to ensure a seamless transition for KitWallet.\\\\\\\\n\\\\\\\\n## Response to Requirements\\\\\\\\n\\\\\\\\nAt Nearblocks.io, we have already created drop-in replaceable KitWallet endpoints, which means there will be no need to build additional infrastructure. \\\\\\\\n\\\\\\\\nA transition plan would simply be updating `https://api.kitwallet.app/` to `https://api.nearblocks.io/v1/kitwallet/`.\\\\\\\\n\\\\\\\\nThis gives us a distinct advantage in terms of efficiency and speed for this transition. Our ongoing communication with members of the Pagoda team & infrastructure committee further reinforces our commitment to staying aligned with the ecosystem.\\\\\\\\n\\\\\\\\nNearblocks is built on top of Near Lake as the data source and currently operates as the #1 explorer within the ecosystem. We believe Nearblocks is in the best position to support this transition.\\\\\\\\n\\\\\\\\n**Current live endpoints (documentation):**\\\\\\\\n\\\\\\\\n- Mainnet: https://api.nearblocks.io/api-docs/#/Kitwallet\\\\\\\\n- Testnet: https://api-testnet.nearblocks.io/api-docs/#/Kitwallet\\\\\\\\n\\\\\\\\n## Service Level\\\\\\\\n\\\\\\\\n### Monitoring\\\\\\\\nWe will set up monitoring with notifications for visualizing API availability. System health and performance are available here: https://status.nearblocks.io. From our status monitor, we can send email and/or Slack notifications to major stakeholders. For reference, Nearblocks has been able to maintain a monthly uptime of 99.83%. We are aiming for 99.99% in the coming weeks.\\\\\\\\n\\\\\\\\n### Response Time\\\\\\\\nAverage response time on the Nearblocks API is now sub-2 seconds. Legacy KitWallet endpoints are using LIKE queries, which are known to be less performant. We have avoided this due to additional indexing.\\\\\\\\n\\\\\\\\nCurrent caveat: `likelyTokens` only supports tokens which Nearblocks supports. This includes all NEP-141 tokens and *most* [legacy tokens](https://github.com/Nearblocks/nearblocks/tree/main/apps/indexer-events/src/services/contracts/ft). We are constantly working to add missing [legacy tokens](https://github.com/Nearblocks/nearblocks/issues/new?assignees=&labels=&projects=&template=token_request.md&title=).\\\\\\\\n\\\\\\\\n### Rate Limiting\\\\\\\\nNearblocks API rate limiting is enforced by IP address and API keys. Given this is a public good endpoint, we will limit 150 queries per minute per IP address. We believe this should be within a very generous fair usage policy. This can be made flexible and is open for discussion.\\\\\\\\n\\\\\\\\n### Support\\\\\\\\n- Support Availability: GitHub issues available here https://github.com/Nearblocks/nearblocks/issues \\\\\\\\n- Response Time: 24-48 hours through GitHub issues.\\\\\\\\n\\\\\\\\n### Data Integrity\\\\\\\\nThe KitWallet endpoints are backed by existing Nearblocks data, which is indexed from Near Lake.\\\\\\\\n\\\\\\\\n### Updates and Changes\\\\\\\\nWe have no plans to make changes to KitWallet endpoints. We previously created these endpoints to support drop-in replacements without any work required other than replacing the endpoint.\\\\\\\\n\\\\\\\\n### Usage\\\\\\\\nWe will track KitWallet usage through the Nearblocks API key dashboard for real-time usage. This can be made available to stakeholders.\\\\\\\\n\\\\\\\\n![API Usage Dashboard](https://github.com/user-attachments/assets/ceefc8e0-a74a-4299-8bdb-98258c0f7ca1)\\\\\\\\n\\\\\\\\n## Approach\\\\\\\\n\\\\\\\\n1. Move Nearblocks KitWallet endpoints to be accessible from the existing endpoint (i.e., https://api.kitwallet.app/) to allow for a seamless transition experience with no downtime for any existing users.\\\\\\\\n\\\\\\\\n2. We are aware that there are remaining unknown users using this legacy endpoint. As we can\\\\\\\\\\\\'t reach out to suggest a transition to alternative solutions, we will set up a landing page on kitwallet.app stating the current situation and directing them to alternative solutions as well as a point of contact that will be monitored. The landing page will explain the KitWallet transition plans with links to:\\\\\\\\n\\\\\\\\n- Existing Documentation with user guide\\\\\\\\n- Support available through GitHub Issues\\\\\\\\n- Alternatives like Nearblocks API and FastNear\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n$4,000 / month for 12 months - to ensure excess capacity for additional traffic.\\\\\\\\n\\\\\\\\n## Experience & Portfolio\\\\\\\\n\\\\\\\\nNearblocks.io is our flagship product; however, we have built other products in the past on NEAR, such as nearsend.io.\\\\\\\\n\\\\\\\\nThank you for considering Nearblocks.io. We look forward to the possibility of working together to bring this transition to completion. Please don\\\\\\\\\\\\'t hesitate to reach out with any further questions or clarifications.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"nearblocks_io.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"48000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Indexers\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 328252609937300000000
+    }
+  },
+  {
+    "id": "8773267741",
+    "receipt_id": "4vJAksiAVBYdKiycWE1nFVxQgTh5bScEWJdP5ZpEsEqr",
+    "predecessor_account_id": "nearblocks_io.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CvAHWNm3f7KwmYNGEJJBJhSFPbHYvrJ5QFZHDceKnUbH",
+      "block_height": 129170731,
+      "block_timestamp": 1727626279092742400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 2712851157094,
+      "tokens_burnt": 271285115709400000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": false
+    },
+    "transaction_hash": "7KkrkneG4xZtDeDKLzh4qomdrCrsERWaKQx5gyw1YJR",
+    "included_in_block_hash": "55rjdC9BEdYozMLG5iAo1pqYFKNorVCLGiwxV3aeD4Ys",
+    "block_timestamp": "1727626278119523954",
+    "block": {
+      "block_height": 129170730
+    },
+    "receipt_conversion_tokens_burnt": "55606250171500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 271285115709400000000,
+        "args": "{\"body\": {\"name\": \"Nearblocks.io Proposal for KitWallet Transition\", \"summary\": \"With our extensive experience in indexing and integration, we are well-positioned to ensure a seamless transition for KitWallet.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"linked_rfp\": 1, \"supervisor\": null, \"description\": \"Dear Infra Committee,\\\\\\\\n\\\\\\\\nWe appreciate the opportunity to submit our proposal for the transition project and are confident that Nearblocks.io is the ideal partner for this endeavour. With our extensive experience in indexing and integration, we are well-positioned to ensure a seamless transition for KitWallet.\\\\\\\\n\\\\\\\\n## Response to Requirements\\\\\\\\n\\\\\\\\nAt Nearblocks.io, we have already created drop-in replaceable KitWallet endpoints, which means there will be no need to build additional infrastructure. \\\\\\\\n\\\\\\\\nA transition plan would simply be updating `https://api.kitwallet.app/` to `https://api.nearblocks.io/v1/kitwallet/`.\\\\\\\\n\\\\\\\\nThis gives us a distinct advantage in terms of efficiency and speed for this transition. Our ongoing communication with members of the Pagoda team & infrastructure committee further reinforces our commitment to staying aligned with the ecosystem.\\\\\\\\n\\\\\\\\nNearblocks is built on top of Near Lake as the data source and currently operates as the #1 explorer within the ecosystem. We believe Nearblocks is in the best position to support this transition.\\\\\\\\n\\\\\\\\n**Current live endpoints (documentation):**\\\\\\\\n\\\\\\\\n- Mainnet: https://api.nearblocks.io/api-docs/#/Kitwallet\\\\\\\\n- Testnet: https://api-testnet.nearblocks.io/api-docs/#/Kitwallet\\\\\\\\n\\\\\\\\n## Service Level\\\\\\\\n\\\\\\\\n### Monitoring\\\\\\\\nWe will set up monitoring with notifications for visualizing API availability. System health and performance are available here: https://status.nearblocks.io. From our status monitor, we can send email and/or Slack notifications to major stakeholders. For reference, Nearblocks has been able to maintain a monthly uptime of 99.83%. We are aiming for 99.99% in the coming weeks.\\\\\\\\n\\\\\\\\n### Response Time\\\\\\\\nAverage response time on the Nearblocks API is now sub-2 seconds. Legacy KitWallet endpoints are using LIKE queries, which are known to be less performant. We have avoided this due to additional indexing.\\\\\\\\n\\\\\\\\nCurrent caveat: `likelyTokens` only supports tokens which Nearblocks supports. This includes all NEP-141 tokens and *most* [legacy tokens](https://github.com/Nearblocks/nearblocks/tree/main/apps/indexer-events/src/services/contracts/ft). We are constantly working to add missing [legacy tokens](https://github.com/Nearblocks/nearblocks/issues/new?assignees=&labels=&projects=&template=token_request.md&title=).\\\\\\\\n\\\\\\\\n### Rate Limiting\\\\\\\\nNearblocks API rate limiting is enforced by IP address and API keys. Given this is a public good endpoint, we will limit 150 queries per minute per IP address. We believe this should be within a very generous fair usage policy. This can be made flexible and is open for discussion.\\\\\\\\n\\\\\\\\n### Support\\\\\\\\n- Support Availability: GitHub issues available here https://github.com/Nearblocks/nearblocks/issues \\\\\\\\n- Response Time: 24-48 hours through GitHub issues.\\\\\\\\n\\\\\\\\n### Data Integrity\\\\\\\\nThe KitWallet endpoints are backed by existing Nearblocks data, which is indexed from Near Lake.\\\\\\\\n\\\\\\\\n### Updates and Changes\\\\\\\\nWe have no plans to make changes to KitWallet endpoints. We previously created these endpoints to support drop-in replacements without any work required other than replacing the endpoint.\\\\\\\\n\\\\\\\\n### Usage\\\\\\\\nWe will track KitWallet usage through the Nearblocks API key dashboard for real-time usage. This can be made available to stakeholders.\\\\\\\\n\\\\\\\\n![API Usage Dashboard](https://github.com/user-attachments/assets/ceefc8e0-a74a-4299-8bdb-98258c0f7ca1)\\\\\\\\n\\\\\\\\n## Approach\\\\\\\\n\\\\\\\\n1. Move Nearblocks KitWallet endpoints to be accessible from the existing endpoint (i.e., https://api.kitwallet.app/) to allow for a seamless transition experience with no downtime for any existing users.\\\\\\\\n\\\\\\\\n2. We are aware that there are remaining unknown users using this legacy endpoint. As we can\\\\\\\\\\\\'t reach out to suggest a transition to alternative solutions, we will set up a landing page on kitwallet.app stating the current situation and directing them to alternative solutions as well as a point of contact that will be monitored. The landing page will explain the KitWallet transition plans with links to:\\\\\\\\n\\\\\\\\n- Existing Documentation with user guide\\\\\\\\n- Support available through GitHub Issues\\\\\\\\n- Alternatives like Nearblocks API and FastNear\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n$4,000 / month for 12 months - to ensure excess capacity for additional traffic.\\\\\\\\n\\\\\\\\n## Experience & Portfolio\\\\\\\\n\\\\\\\\nNearblocks.io is our flagship product; however, we have built other products in the past on NEAR, such as nearsend.io.\\\\\\\\n\\\\\\\\nThank you for considering Nearblocks.io. We look forward to the possibility of working together to bring this transition to completion. Please don\\\\\\\\\\\\'t hesitate to reach out with any further questions or clarifications.\", \"linked_proposals\": [], \"receiver_account\": \"nearblocks_io.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"48000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Indexers\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 326891365880900000000
+    }
+  },
+  {
+    "id": "8773379778",
+    "receipt_id": "D757FpYYc6hLUdXZHCKFbZExApYm5QDHXavpQtvBXWd3",
+    "predecessor_account_id": "nearblocks_io.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8MxNCCi9vNobaUhcr212XXriKx9eLB5aearYWvbMs6Ve",
+      "block_height": 129171128,
+      "block_timestamp": 1727626730025366000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6029797604576,
+      "tokens_burnt": 602979760457600000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "FL6JQoebsd73XkAQZ4iyKCo6QewmE4QjSk3KWxRDkwsP",
+    "included_in_block_hash": "GfXAVQvitMHHvL7pC8UxVTfMvpR6n6gK27M1ce3eyYMJ",
+    "block_timestamp": "1727626728860656220",
+    "block": {
+      "block_height": 129171127
+    },
+    "receipt_conversion_tokens_burnt": "55544261342000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 602979760457600000000,
+        "args": "{\"body\": {\"name\": \"Nearblocks.io Proposal for KitWallet Transition\", \"summary\": \"With our extensive experience in indexing and integration, we are well-positioned to ensure a seamless transition for KitWallet.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"Dear Infra Committee,\\\\\\\\n\\\\\\\\nWe appreciate the opportunity to submit our proposal for the transition project and are confident that Nearblocks.io is the ideal partner for this endeavour. With our extensive experience in indexing and integration, we are well-positioned to ensure a seamless transition for KitWallet.\\\\\\\\n\\\\\\\\n## Response to Requirements\\\\\\\\n\\\\\\\\nAt Nearblocks.io, we have already created drop-in replaceable KitWallet endpoints, which means there will be no need to build additional infrastructure. \\\\\\\\n\\\\\\\\nA transition plan would simply be updating `https://api.kitwallet.app/` to `https://api.nearblocks.io/v1/kitwallet/`.\\\\\\\\n\\\\\\\\nThis gives us a distinct advantage in terms of efficiency and speed for this transition. Our ongoing communication with members of the Pagoda team & infrastructure committee further reinforces our commitment to staying aligned with the ecosystem.\\\\\\\\n\\\\\\\\nNearblocks is built on top of Near Lake as the data source and currently operates as the #1 explorer within the ecosystem. We believe Nearblocks is in the best position to support this transition.\\\\\\\\n\\\\\\\\n**Current live endpoints (documentation):**\\\\\\\\n\\\\\\\\n- Mainnet: https://api.nearblocks.io/api-docs/#/Kitwallet\\\\\\\\n- Testnet: https://api-testnet.nearblocks.io/api-docs/#/Kitwallet\\\\\\\\n\\\\\\\\n## Service Level\\\\\\\\n\\\\\\\\n### Monitoring\\\\\\\\nWe will set up monitoring with notifications for visualizing API availability. System health and performance are available here: https://status.nearblocks.io. From our status monitor, we can send email and/or Slack notifications to major stakeholders. For reference, Nearblocks has been able to maintain a monthly uptime of 99.83%. We are aiming for 99.99% in the coming weeks.\\\\\\\\n\\\\\\\\n### Response Time\\\\\\\\nAverage response time on the Nearblocks API is now sub-2 seconds. Legacy KitWallet endpoints are using LIKE queries, which are known to be less performant. We have avoided this due to additional indexing.\\\\\\\\n\\\\\\\\nCurrent caveat: `likelyTokens` only supports tokens which Nearblocks supports. This includes all NEP-141 tokens and *most* [legacy tokens](https://github.com/Nearblocks/nearblocks/tree/main/apps/indexer-events/src/services/contracts/ft). We are constantly working to add missing [legacy tokens](https://github.com/Nearblocks/nearblocks/issues/new?assignees=&labels=&projects=&template=token_request.md&title=).\\\\\\\\n\\\\\\\\n### Rate Limiting\\\\\\\\nNearblocks API rate limiting is enforced by IP address and API keys. Given this is a public good endpoint, we will limit 150 queries per minute per IP address. We believe this should be within a very generous fair usage policy. This can be made flexible and is open for discussion.\\\\\\\\n\\\\\\\\n### Support\\\\\\\\n- Support Availability: GitHub issues available here https://github.com/Nearblocks/nearblocks/issues \\\\\\\\n- Response Time: 24-48 hours through GitHub issues.\\\\\\\\n\\\\\\\\n### Data Integrity\\\\\\\\nThe KitWallet endpoints are backed by existing Nearblocks data, which is indexed from Near Lake.\\\\\\\\n\\\\\\\\n### Updates and Changes\\\\\\\\nWe have no plans to make changes to KitWallet endpoints. We previously created these endpoints to support drop-in replacements without any work required other than replacing the endpoint.\\\\\\\\n\\\\\\\\n### Usage\\\\\\\\nWe will track KitWallet usage through the Nearblocks API key dashboard for real-time usage. This can be made available to stakeholders.\\\\\\\\n\\\\\\\\n![API Usage Dashboard](https://github.com/user-attachments/assets/ceefc8e0-a74a-4299-8bdb-98258c0f7ca1)\\\\\\\\n\\\\\\\\n## Approach\\\\\\\\n\\\\\\\\n1. Move Nearblocks KitWallet endpoints to be accessible from the existing endpoint (i.e., https://api.kitwallet.app/) to allow for a seamless transition experience with no downtime for any existing users.\\\\\\\\n\\\\\\\\n2. We are aware that there are remaining unknown users using this legacy endpoint. As we can\\\\\\\\\\\\'t reach out to suggest a transition to alternative solutions, we will set up a landing page on kitwallet.app stating the current situation and directing them to alternative solutions as well as a point of contact that will be monitored. The landing page will explain the KitWallet transition plans with links to:\\\\\\\\n\\\\\\\\n- Existing Documentation with user guide\\\\\\\\n- Support available through GitHub Issues\\\\\\\\n- Alternatives like Nearblocks API and FastNear\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n$4,000 / month for 12 months - to ensure excess capacity for additional traffic.\\\\\\\\n\\\\\\\\n## Experience & Portfolio\\\\\\\\n\\\\\\\\nNearblocks.io is our flagship product; however, we have built other products in the past on NEAR, such as nearsend.io.\\\\\\\\n\\\\\\\\nThank you for considering Nearblocks.io. We look forward to the possibility of working together to bring this transition to completion. Please don\\\\\\\\\\\\'t hesitate to reach out with any further questions or clarifications.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"nearblocks_io.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"48000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Indexers\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8300461571792e+21
+    }
+  },
+  {
+    "id": "8773380057",
+    "receipt_id": "DQcobc2mPyHWXAjNjEFZEay8UcEjABTNjxnzuinShZdn",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5sXELpYmNUXFyHfGyf4hU1w2gYGxYxYThnB1pP3rYLT",
+      "block_height": 129171129,
+      "block_timestamp": 1727626731179218000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4518605266496,
+      "tokens_burnt": 451860526649600000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "FL6JQoebsd73XkAQZ4iyKCo6QewmE4QjSk3KWxRDkwsP",
+    "included_in_block_hash": "GfXAVQvitMHHvL7pC8UxVTfMvpR6n6gK27M1ce3eyYMJ",
+    "block_timestamp": "1727626728860656220",
+    "block": {
+      "block_height": 129171127
+    },
+    "receipt_conversion_tokens_burnt": "55544261342000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 451860526649600000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Infrastructure Committee* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @nearblocks_io.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Nearblocks.io Proposal for KitWallet Transition\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWith our extensive experience in indexing and integration, we are well-positioned to ensure a seamless transition for KitWallet.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=25)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8300461571792e+21
+    }
+  },
+  {
+    "id": "8773380062",
+    "receipt_id": "43DK5Wv84SP6aFoHTcjR3v2c2MXDCCZUKTKjthP3xutV",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5sXELpYmNUXFyHfGyf4hU1w2gYGxYxYThnB1pP3rYLT",
+      "block_height": 129171129,
+      "block_timestamp": 1727626731179218000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3619731616667,
+      "tokens_burnt": 361973161666700000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "FL6JQoebsd73XkAQZ4iyKCo6QewmE4QjSk3KWxRDkwsP",
+    "included_in_block_hash": "GfXAVQvitMHHvL7pC8UxVTfMvpR6n6gK27M1ce3eyYMJ",
+    "block_timestamp": "1727626728860656220",
+    "block": {
+      "block_height": 129171127
+    },
+    "receipt_conversion_tokens_burnt": "55544261342000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 361973161666700000000,
+        "args": "{\"proposal\": {\"id\": 25, \"snapshot\": {\"name\": \"Nearblocks.io Proposal for KitWallet Transition\", \"labels\": [\"Indexers\"], \"summary\": \"With our extensive experience in indexing and integration, we are well-positioned to ensure a seamless transition for KitWallet.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"nearblocks_io.near\", \"timestamp\": \"1727626730025365929\", \"linked_rfp\": null, \"supervisor\": null, \"description\": \"Dear Infra Committee,\\\\\\\\n\\\\\\\\nWe appreciate the opportunity to submit our proposal for the transition project and are confident that Nearblocks.io is the ideal partner for this endeavour. With our extensive experience in indexing and integration, we are well-positioned to ensure a seamless transition for KitWallet.\\\\\\\\n\\\\\\\\n## Response to Requirements\\\\\\\\n\\\\\\\\nAt Nearblocks.io, we have already created drop-in replaceable KitWallet endpoints, which means there will be no need to build additional infrastructure. \\\\\\\\n\\\\\\\\nA transition plan would simply be updating `https://api.kitwallet.app/` to `https://api.nearblocks.io/v1/kitwallet/`.\\\\\\\\n\\\\\\\\nThis gives us a distinct advantage in terms of efficiency and speed for this transition. Our ongoing communication with members of the Pagoda team & infrastructure committee further reinforces our commitment to staying aligned with the ecosystem.\\\\\\\\n\\\\\\\\nNearblocks is built on top of Near Lake as the data source and currently operates as the #1 explorer within the ecosystem. We believe Nearblocks is in the best position to support this transition.\\\\\\\\n\\\\\\\\n**Current live endpoints (documentation):**\\\\\\\\n\\\\\\\\n- Mainnet: https://api.nearblocks.io/api-docs/#/Kitwallet\\\\\\\\n- Testnet: https://api-testnet.nearblocks.io/api-docs/#/Kitwallet\\\\\\\\n\\\\\\\\n## Service Level\\\\\\\\n\\\\\\\\n### Monitoring\\\\\\\\nWe will set up monitoring with notifications for visualizing API availability. System health and performance are available here: https://status.nearblocks.io. From our status monitor, we can send email and/or Slack notifications to major stakeholders. For reference, Nearblocks has been able to maintain a monthly uptime of 99.83%. We are aiming for 99.99% in the coming weeks.\\\\\\\\n\\\\\\\\n### Response Time\\\\\\\\nAverage response time on the Nearblocks API is now sub-2 seconds. Legacy KitWallet endpoints are using LIKE queries, which are known to be less performant. We have avoided this due to additional indexing.\\\\\\\\n\\\\\\\\nCurrent caveat: `likelyTokens` only supports tokens which Nearblocks supports. This includes all NEP-141 tokens and *most* [legacy tokens](https://github.com/Nearblocks/nearblocks/tree/main/apps/indexer-events/src/services/contracts/ft). We are constantly working to add missing [legacy tokens](https://github.com/Nearblocks/nearblocks/issues/new?assignees=&labels=&projects=&template=token_request.md&title=).\\\\\\\\n\\\\\\\\n### Rate Limiting\\\\\\\\nNearblocks API rate limiting is enforced by IP address and API keys. Given this is a public good endpoint, we will limit 150 queries per minute per IP address. We believe this should be within a very generous fair usage policy. This can be made flexible and is open for discussion.\\\\\\\\n\\\\\\\\n### Support\\\\\\\\n- Support Availability: GitHub issues available here https://github.com/Nearblocks/nearblocks/issues \\\\\\\\n- Response Time: 24-48 hours through GitHub issues.\\\\\\\\n\\\\\\\\n### Data Integrity\\\\\\\\nThe KitWallet endpoints are backed by existing Nearblocks data, which is indexed from Near Lake.\\\\\\\\n\\\\\\\\n### Updates and Changes\\\\\\\\nWe have no plans to make changes to KitWallet endpoints. We previously created these endpoints to support drop-in replacements without any work required other than replacing the endpoint.\\\\\\\\n\\\\\\\\n### Usage\\\\\\\\nWe will track KitWallet usage through the Nearblocks API key dashboard for real-time usage. This can be made available to stakeholders.\\\\\\\\n\\\\\\\\n![API Usage Dashboard](https://github.com/user-attachments/assets/ceefc8e0-a74a-4299-8bdb-98258c0f7ca1)\\\\\\\\n\\\\\\\\n## Approach\\\\\\\\n\\\\\\\\n1. Move Nearblocks KitWallet endpoints to be accessible from the existing endpoint (i.e., https://api.kitwallet.app/) to allow for a seamless transition experience with no downtime for any existing users.\\\\\\\\n\\\\\\\\n2. We are aware that there are remaining unknown users using this legacy endpoint. As we can\\\\\\\\\\\\'t reach out to suggest a transition to alternative solutions, we will set up a landing page on kitwallet.app stating the current situation and directing them to alternative solutions as well as a point of contact that will be monitored. The landing page will explain the KitWallet transition plans with links to:\\\\\\\\n\\\\\\\\n- Existing Documentation with user guide\\\\\\\\n- Support available through GitHub Issues\\\\\\\\n- Alternatives like Nearblocks API and FastNear\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n$4,000 / month for 12 months - to ensure excess capacity for additional traffic.\\\\\\\\n\\\\\\\\n## Experience & Portfolio\\\\\\\\n\\\\\\\\nNearblocks.io is our flagship product; however, we have built other products in the past on NEAR, such as nearsend.io.\\\\\\\\n\\\\\\\\nThank you for considering Nearblocks.io. We look forward to the possibility of working together to bring this transition to completion. Please don\\\\\\\\\\\\'t hesitate to reach out with any further questions or clarifications.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"nearblocks_io.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"48000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"nearblocks_io.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8300461571792e+21
+    }
+  },
+  {
+    "id": "8773380065",
+    "receipt_id": "Eaz9qou98vQmWm6i8n3QgsEaaVUQP9A6ztoN8VpT5Jg4",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5sXELpYmNUXFyHfGyf4hU1w2gYGxYxYThnB1pP3rYLT",
+      "block_height": 129171129,
+      "block_timestamp": 1727626731179218000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3576884470633,
+      "tokens_burnt": 357688447063300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "FL6JQoebsd73XkAQZ4iyKCo6QewmE4QjSk3KWxRDkwsP",
+    "included_in_block_hash": "GfXAVQvitMHHvL7pC8UxVTfMvpR6n6gK27M1ce3eyYMJ",
+    "block_timestamp": "1727626728860656220",
+    "block": {
+      "block_height": 129171127
+    },
+    "receipt_conversion_tokens_burnt": "55544261342000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357688447063300000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":25,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"nearblocks_io.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8300461571792e+21
+    }
+  },
+  {
+    "id": "8773393764",
+    "receipt_id": "AX1f4BrEjAi5CTtnqDMfJETfWExbnB5cEheYoTCHdcWu",
+    "predecessor_account_id": "nearblocks_io.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AFSfAfwZGiYCr4sX7evz7rSzR3t59FcKFWHZpyfELcD4",
+      "block_height": 129171182,
+      "block_timestamp": 1727626789153274600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 2687768803050,
+      "tokens_burnt": 268776880305000000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": false
+    },
+    "transaction_hash": "5tkY2CaPP9M9pHu17THoxun5CQM2AM2B2o7BjR18r3mV",
+    "included_in_block_hash": "9RUavChcmumMcNxrV4pAjBKGQz4C5PTyY3zsDD8gSCuo",
+    "block_timestamp": "1727626788001730322",
+    "block": {
+      "block_height": 129171181
+    },
+    "receipt_conversion_tokens_burnt": "55658702258000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 268776880305000000000,
+        "args": "{\"id\": 25, \"body\": {\"name\": \"Nearblocks.io Proposal for KitWallet Transition\", \"summary\": \"With our extensive experience in indexing and integration, we are well-positioned to ensure a seamless transition for KitWallet.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"linked_rfp\": 1, \"supervisor\": null, \"description\": \"Dear Infra Committee,\\\\\\\\n\\\\\\\\nWe appreciate the opportunity to submit our proposal for the transition project and are confident that Nearblocks.io is the ideal partner for this endeavour. With our extensive experience in indexing and integration, we are well-positioned to ensure a seamless transition for KitWallet.\\\\\\\\n\\\\\\\\n## Response to Requirements\\\\\\\\n\\\\\\\\nAt Nearblocks.io, we have already created drop-in replaceable KitWallet endpoints, which means there will be no need to build additional infrastructure. \\\\\\\\n\\\\\\\\nA transition plan would simply be updating `https://api.kitwallet.app/` to `https://api.nearblocks.io/v1/kitwallet/`.\\\\\\\\n\\\\\\\\nThis gives us a distinct advantage in terms of efficiency and speed for this transition. Our ongoing communication with members of the Pagoda team & infrastructure committee further reinforces our commitment to staying aligned with the ecosystem.\\\\\\\\n\\\\\\\\nNearblocks is built on top of Near Lake as the data source and currently operates as the #1 explorer within the ecosystem. We believe Nearblocks is in the best position to support this transition.\\\\\\\\n\\\\\\\\n**Current live endpoints (documentation):**\\\\\\\\n\\\\\\\\n- Mainnet: https://api.nearblocks.io/api-docs/#/Kitwallet\\\\\\\\n- Testnet: https://api-testnet.nearblocks.io/api-docs/#/Kitwallet\\\\\\\\n\\\\\\\\n## Service Level\\\\\\\\n\\\\\\\\n### Monitoring\\\\\\\\nWe will set up monitoring with notifications for visualizing API availability. System health and performance are available here: https://status.nearblocks.io. From our status monitor, we can send email and/or Slack notifications to major stakeholders. For reference, Nearblocks has been able to maintain a monthly uptime of 99.83%. We are aiming for 99.99% in the coming weeks.\\\\\\\\n\\\\\\\\n### Response Time\\\\\\\\nAverage response time on the Nearblocks API is now sub-2 seconds. Legacy KitWallet endpoints are using LIKE queries, which are known to be less performant. We have avoided this due to additional indexing.\\\\\\\\n\\\\\\\\nCurrent caveat: `likelyTokens` only supports tokens which Nearblocks supports. This includes all NEP-141 tokens and *most* [legacy tokens](https://github.com/Nearblocks/nearblocks/tree/main/apps/indexer-events/src/services/contracts/ft). We are constantly working to add missing [legacy tokens](https://github.com/Nearblocks/nearblocks/issues/new?assignees=&labels=&projects=&template=token_request.md&title=).\\\\\\\\n\\\\\\\\n### Rate Limiting\\\\\\\\nNearblocks API rate limiting is enforced by IP address and API keys. Given this is a public good endpoint, we will limit 150 queries per minute per IP address. We believe this should be within a very generous fair usage policy. This can be made flexible and is open for discussion.\\\\\\\\n\\\\\\\\n### Support\\\\\\\\n- Support Availability: GitHub issues available here https://github.com/Nearblocks/nearblocks/issues \\\\\\\\n- Response Time: 24-48 hours through GitHub issues.\\\\\\\\n\\\\\\\\n### Data Integrity\\\\\\\\nThe KitWallet endpoints are backed by existing Nearblocks data, which is indexed from Near Lake.\\\\\\\\n\\\\\\\\n### Updates and Changes\\\\\\\\nWe have no plans to make changes to KitWallet endpoints. We previously created these endpoints to support drop-in replacements without any work required other than replacing the endpoint.\\\\\\\\n\\\\\\\\n### Usage\\\\\\\\nWe will track KitWallet usage through the Nearblocks API key dashboard for real-time usage. This can be made available to stakeholders.\\\\\\\\n\\\\\\\\n![API Usage Dashboard](https://github.com/user-attachments/assets/ceefc8e0-a74a-4299-8bdb-98258c0f7ca1)\\\\\\\\n\\\\\\\\n## Approach\\\\\\\\n\\\\\\\\n1. Move Nearblocks KitWallet endpoints to be accessible from the existing endpoint (i.e., https://api.kitwallet.app/) to allow for a seamless transition experience with no downtime for any existing users.\\\\\\\\n\\\\\\\\n2. We are aware that there are remaining unknown users using this legacy endpoint. As we can\\\\\\\\\\\\'t reach out to suggest a transition to alternative solutions, we will set up a landing page on kitwallet.app stating the current situation and directing them to alternative solutions as well as a point of contact that will be monitored. The landing page will explain the KitWallet transition plans with links to:\\\\\\\\n\\\\\\\\n- Existing Documentation with user guide\\\\\\\\n- Support available through GitHub Issues\\\\\\\\n- Alternatives like Nearblocks API and FastNear\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n$4,000 / month for 12 months - to ensure excess capacity for additional traffic.\\\\\\\\n\\\\\\\\n## Experience & Portfolio\\\\\\\\n\\\\\\\\nNearblocks.io is our flagship product; however, we have built other products in the past on NEAR, such as nearsend.io.\\\\\\\\n\\\\\\\\nThank you for considering Nearblocks.io. We look forward to the possibility of working together to bring this transition to completion. Please don\\\\\\\\\\\\'t hesitate to reach out with any further questions or clarifications.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"nearblocks_io.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"48000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Indexers\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 324435582563000000000
+    }
+  },
+  {
+    "id": "8797000793",
+    "receipt_id": "ETDEWptansMLXQT15q4uYjQpKgkzPoGfaAjg2ebSjc1t",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DwM7h9iCJKF4ZMFU26NuCAZgeGm8GkFWFnMJREa2Lt37",
+      "block_height": 129243308,
+      "block_timestamp": 1727706210480587800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 10325019608663,
+      "tokens_burnt": 1.0325019608663e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "ALta5aUAmAcdRZGTJSWFp3fixagehXYNobpH3hFYbwZV",
+    "included_in_block_hash": "7VLx71Wmh1iF4zH2Fa9FD8e4eDsZuhDUcRGzJdj3ZkoU",
+    "block_timestamp": "1727706209364381390",
+    "block": {
+      "block_height": 129243307
+    },
+    "receipt_conversion_tokens_burnt": "212976814786000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.0325019608663e+21,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"widget\": {\"components.proposals.Editor\": {\"\": \"const { RFP_TIMELINE_STATUS, parseJSON, isNumber } = VM.require(\\\\\\\\n  `infrastructure-committee.near/widget/core.common`\\\\\\\\n) || { RFP_TIMELINE_STATUS: {}, parseJSON: () => {}, isNumber: () => {} };\\\\\\\\nconst { href } = VM.require(`devhub.near/widget/core.lib.url`);\\\\\\\\nhref || (href = () => {});\\\\\\\\nconst { getGlobalLabels } = VM.require(\\\\\\\\n  `infrastructure-committee.near/widget/components.core.lib.contract`\\\\\\\\n) || { getGlobalLabels: () => {} };\\\\\\\\nconst { id, timestamp, rfp_id } = props;\\\\\\\\nconst isEditPage = typeof id === \\\\\\\\\\\\\\\"string\\\\\\\\\\\\\\\";\\\\\\\\nconst author = context.accountId;\\\\\\\\nconst FundingDocs =\\\\\\\\n  \\\\\\\\\\\\\\\"https://github.com/near/Infrastructure-Working-Group/wiki/Funding-Process-%E2%80%90-Company\\\\\\\\\\\\\\\";\\\\\\\\nconst CoCDocs =\\\\\\\\n  \\\\\\\\\\\\\\\"https://github.com/near/Infrastructure-Working-Group/wiki/Code-Of-Conduct\\\\\\\\\\\\\\\";\\\\\\\\nif (!author) {\\\\\\\\n  return (\\\\\\\\n    <Widget src={`devhub.near/widget/devhub.entity.proposal.LoginScreen`} />\\\\\\\\n  );\\\\\\\\n}\\\\\\\\nlet editProposalData = null;\\\\\\\\nlet draftProposalData = null;\\\\\\\\nconst draftKey = \\\\\\\\\\\\\\\"INFRA_PROPOSAL_EDIT\\\\\\\\\\\\\\\";\\\\\\\\nconst rfpLabelOptions = getGlobalLabels();\\\\\\\\nconst pageLoader = (\\\\\\\\n  <div\\\\\\\\n    style={{ height: \\\\\\\\\\\\\\\"50vh\\\\\\\\\\\\\\\" }}\\\\\\\\n    className=\\\\\\\\\\\\\\\"d-flex justify-content-center align-items-center w-100\\\\\\\\\\\\\\\"\\\\\\\\n  >\\\\\\\\n    <Widget src={`devhub.near/widget/devhub.components.molecule.Spinner`} />\\\\\\\\n  </div>\\\\\\\\n);\\\\\\\\nif (!rfpLabelOptions?.length) {\\\\\\\\n  return pageLoader;\\\\\\\\n}\\\\\\\\nif (isEditPage) {\\\\\\\\n  editProposalData = Near.view(\\\\\\\\n    \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n    \\\\\\\\\\\\\\\"get_proposal\\\\\\\\\\\\\\\",\\\\\\\\n    {\\\\\\\\n      proposal_id: parseInt(id),\\\\\\\\n    }\\\\\\\\n  );\\\\\\\\n}\\\\\\\\nconst Container = styled.div`\\\\\\\\n  input {\\\\\\\\n    font-size: 14px !important;\\\\\\\\n  }\\\\\\\\n  .card.no-border {\\\\\\\\n    border-left: none !important;\\\\\\\\n    border-right: none !important;\\\\\\\\n    margin-bottom: -3.5rem;\\\\\\\\n  }\\\\\\\\n  textarea {\\\\\\\\n    font-size: 14px !important;\\\\\\\\n  }\\\\\\\\n  .full-width-div {\\\\\\\\n    width: 100vw;\\\\\\\\n    position: relative;\\\\\\\\n    left: 50%;\\\\\\\\n    right: 50%;\\\\\\\\n    margin-left: -50vw;\\\\\\\\n    margin-right: -50vw;\\\\\\\\n  }\\\\\\\\n  .text-sm {\\\\\\\\n    font-size: 13px;\\\\\\\\n  }\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    .h6 {\\\\\\\\n      font-size: 14px !important;\\\\\\\\n    }\\\\\\\\n    .h5 {\\\\\\\\n      font-size: 16px !important;\\\\\\\\n    }\\\\\\\\n    .text-sm {\\\\\\\\n      font-size: 11px;\\\\\\\\n    }\\\\\\\\n    .gap-6 {\\\\\\\\n      gap: 0.5rem !important;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  .border-bottom {\\\\\\\\n    border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);\\\\\\\\n  }\\\\\\\\n  .text-xs {\\\\\\\\n    font-size: 10px;\\\\\\\\n  }\\\\\\\\n  .flex-2 {\\\\\\\\n    flex: 2;\\\\\\\\n  }\\\\\\\\n  .flex-1 {\\\\\\\\n    flex: 1;\\\\\\\\n  }\\\\\\\\n  .bg-grey {\\\\\\\\n    background-color: #f4f4f4;\\\\\\\\n  }\\\\\\\\n  .border-bottom {\\\\\\\\n    border-bottom: 1px solid grey;\\\\\\\\n  }\\\\\\\\n  .cursor-pointer {\\\\\\\\n    cursor: pointer;\\\\\\\\n  }\\\\\\\\n  .proposal-card {\\\\\\\\n    &:hover {\\\\\\\\n      background-color: #f4f4f4;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  .border-1 {\\\\\\\\n    border: 1px solid #e2e6ec;\\\\\\\\n  }\\\\\\\\n  .green-btn {\\\\\\\\n    background-color: #03ba16 !important;\\\\\\\\n    border: none;\\\\\\\\n    color: white;\\\\\\\\n    &:active {\\\\\\\\n      color: white;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  .black-btn {\\\\\\\\n    background-color: #000 !important;\\\\\\\\n    border: none;\\\\\\\\n    color: white;\\\\\\\\n    &:active {\\\\\\\\n      color: white;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  .dropdown-toggle:after {\\\\\\\\n    position: absolute;\\\\\\\\n    top: 46%;\\\\\\\\n    right: 5%;\\\\\\\\n  }\\\\\\\\n  .drop-btn {\\\\\\\\n    max-width: none !important;\\\\\\\\n  }\\\\\\\\n  .dropdown-menu {\\\\\\\\n    width: 100%;\\\\\\\\n    border-radius: 0.375rem !important;\\\\\\\\n  }\\\\\\\\n  .input-icon {\\\\\\\\n    display: flex;\\\\\\\\n    height: 100%;\\\\\\\\n    align-items: center;\\\\\\\\n    border-right: 1px solid #dee2e6;\\\\\\\\n    padding-right: 10px;\\\\\\\\n  }\\\\\\\\n  /* Tooltip container */\\\\\\\\n  .custom-tooltip {\\\\\\\\n    position: relative;\\\\\\\\n    display: inline-block;\\\\\\\\n  }\\\\\\\\n  /* Tooltip text */\\\\\\\\n  .custom-tooltip .tooltiptext {\\\\\\\\n    visibility: hidden;\\\\\\\\n    width: 250px;\\\\\\\\n    background-color: #fff;\\\\\\\\n    color: #6c757d;\\\\\\\\n    text-align: center;\\\\\\\\n    padding: 10px;\\\\\\\\n    border-radius: 6px;\\\\\\\\n    font-size: 12px;\\\\\\\\n    border: 0.2px solid #6c757d;\\\\\\\\n    /* Position the tooltip text */\\\\\\\\n    position: absolute;\\\\\\\\n    z-index: 1;\\\\\\\\n    bottom: 125%;\\\\\\\\n    left: -30px;\\\\\\\\n    /* Fade in tooltip */\\\\\\\\n    opacity: 0;\\\\\\\\n    transition: opacity 0.3s;\\\\\\\\n  }\\\\\\\\n  /* Tooltip arrow */\\\\\\\\n  .custom-tooltip .tooltiptext::after {\\\\\\\\n    content: \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\";\\\\\\\\n    position: absolute;\\\\\\\\n    top: 100%;\\\\\\\\n    left: 15%;\\\\\\\\n    margin-left: -5px;\\\\\\\\n    border-width: 5px;\\\\\\\\n    border-style: solid;\\\\\\\\n    border-color: #555 transparent transparent transparent;\\\\\\\\n  }\\\\\\\\n  /* Show the tooltip text when you mouse over the tooltip container */\\\\\\\\n  .custom-tooltip:hover .tooltiptext {\\\\\\\\n    visibility: visible;\\\\\\\\n    opacity: 1;\\\\\\\\n  }\\\\\\\\n  .form-check-input:checked {\\\\\\\\n    background-color: #04a46e !important;\\\\\\\\n    border-color: #04a46e !important;\\\\\\\\n  }\\\\\\\\n  .gap-6 {\\\\\\\\n    gap: 2.5rem;\\\\\\\\n  }\\\\\\\\n  a.no-space {\\\\\\\\n    display: inline-block;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\nconst Heading = styled.div`\\\\\\\\n  font-size: 24px;\\\\\\\\n  font-weight: 700;\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    font-size: 18px;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\nconst tokensOptions = [\\\\\\\\n  { label: \\\\\\\\\\\\\\\"NEAR\\\\\\\\\\\\\\\", value: \\\\\\\\\\\\\\\"NEAR\\\\\\\\\\\\\\\" },\\\\\\\\n  { label: \\\\\\\\\\\\\\\"USDT\\\\\\\\\\\\\\\", value: \\\\\\\\\\\\\\\"USDT\\\\\\\\\\\\\\\" },\\\\\\\\n  {\\\\\\\\n    label: \\\\\\\\\\\\\\\"USDC\\\\\\\\\\\\\\\",\\\\\\\\n    value: \\\\\\\\\\\\\\\"USDC\\\\\\\\\\\\\\\",\\\\\\\\n  },\\\\\\\\n  {\\\\\\\\n    label: \\\\\\\\\\\\\\\"Other\\\\\\\\\\\\\\\",\\\\\\\\n    value: \\\\\\\\\\\\\\\"OTHER\\\\\\\\\\\\\\\",\\\\\\\\n  },\\\\\\\\n];\\\\\\\\nconst [linkedRfp, setLinkedRfp] = useState(rfp_id ? parseInt(rfp_id) : null);\\\\\\\\nconst [labels, setLabels] = useState([]);\\\\\\\\nconst [title, setTitle] = useState(null);\\\\\\\\nconst [description, setDescription] = useState(null);\\\\\\\\nconst [summary, setSummary] = useState(null);\\\\\\\\nconst [consent, setConsent] = useState({ coc: false });\\\\\\\\nconst [linkedProposals, setLinkedProposals] = useState([]);\\\\\\\\nconst [receiverAccount, setReceiverAccount] = useState(context.accountId);\\\\\\\\nconst [requestedSponsorshipAmount, setRequestedSponsorshipAmount] =\\\\\\\\n  useState(null);\\\\\\\\nconst [requestedSponsorshipToken, setRequestedSponsorshipToken] = useState(\\\\\\\\n  tokensOptions[2]\\\\\\\\n);\\\\\\\\nconst [allowDraft, setAllowDraft] = useState(true);\\\\\\\\nconst [loading, setLoading] = useState(true);\\\\\\\\nconst [disabledSubmitBtn, setDisabledSubmitBtn] = useState(false);\\\\\\\\nconst [isDraftBtnOpen, setDraftBtnOpen] = useState(false);\\\\\\\\nconst [selectedStatus, setSelectedStatus] = useState(\\\\\\\\\\\\\\\"draft\\\\\\\\\\\\\\\");\\\\\\\\nconst [isReviewModalOpen, setReviewModal] = useState(false);\\\\\\\\nconst [isCancelModalOpen, setCancelModal] = useState(false);\\\\\\\\nconst [showProposalViewModal, setShowProposalViewModal] = useState(false); // when user creates/edit a proposal and confirm the txn, this is true\\\\\\\\nconst [proposalId, setProposalId] = useState(null);\\\\\\\\nconst [proposalIdsArray, setProposalIdsArray] = useState(null);\\\\\\\\nconst [isTxnCreated, setCreateTxn] = useState(false);\\\\\\\\nconst [oldProposalData, setOldProposalData] = useState(null);\\\\\\\\nconst [supervisor, setSupervisor] = useState(null);\\\\\\\\nif (allowDraft) {\\\\\\\\n  draftProposalData = Storage.privateGet(draftKey);\\\\\\\\n}\\\\\\\\nconst isModerator = Near.view(\\\\\\\\n  \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n  \\\\\\\\\\\\\\\"is_allowed_to_write_rfps\\\\\\\\\\\\\\\",\\\\\\\\n  {\\\\\\\\n    editor: context.accountId,\\\\\\\\n  }\\\\\\\\n);\\\\\\\\nconst memoizedDraftData = useMemo(\\\\\\\\n  () => ({\\\\\\\\n    id: editProposalData.id ?? null,\\\\\\\\n    snapshot: {\\\\\\\\n      linked_rfp: linkedRfp,\\\\\\\\n      name: title,\\\\\\\\n      description: description,\\\\\\\\n      labels: labels,\\\\\\\\n      summary: summary,\\\\\\\\n      requested_sponsorship_usd_amount: requestedSponsorshipAmount,\\\\\\\\n      requested_sponsorship_paid_in_currency: requestedSponsorshipToken.value,\\\\\\\\n      receiver_account: receiverAccount,\\\\\\\\n    },\\\\\\\\n  }),\\\\\\\\n  [\\\\\\\\n    linkedRfp,\\\\\\\\n    title,\\\\\\\\n    summary,\\\\\\\\n    description,\\\\\\\\n    labels,\\\\\\\\n    requestedSponsorshipAmount,\\\\\\\\n    requestedSponsorshipToken,\\\\\\\\n    receiverAccount,\\\\\\\\n  ]\\\\\\\\n);\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (allowDraft) {\\\\\\\\n    let data = editProposalData || JSON.parse(draftProposalData);\\\\\\\\n    let snapshot = data.snapshot;\\\\\\\\n    if (data) {\\\\\\\\n      if (timestamp) {\\\\\\\\n        snapshot =\\\\\\\\n          data.snapshot_history.find((item) => item.timestamp === timestamp) ??\\\\\\\\n          data.snapshot;\\\\\\\\n      }\\\\\\\\n      if (\\\\\\\\n        draftProposalData &&\\\\\\\\n        editProposalData &&\\\\\\\\n        editProposalData.id === JSON.parse(draftProposalData).id\\\\\\\\n      ) {\\\\\\\\n        snapshot = {\\\\\\\\n          ...editProposalData.snapshot,\\\\\\\\n          ...JSON.parse(draftProposalData).snapshot,\\\\\\\\n        };\\\\\\\\n      }\\\\\\\\n      if (!isNumber(linkedRfp)) {\\\\\\\\n        setLinkedRfp(snapshot.linked_rfp);\\\\\\\\n      }\\\\\\\\n      setLabels(snapshot.labels ?? []);\\\\\\\\n      setTitle(snapshot.name);\\\\\\\\n      setSummary(snapshot.summary);\\\\\\\\n      setDescription(snapshot.description);\\\\\\\\n      setReceiverAccount(snapshot.receiver_account);\\\\\\\\n      setRequestedSponsorshipAmount(snapshot.requested_sponsorship_usd_amount);\\\\\\\\n      setSupervisor(snapshot.supervisor);\\\\\\\\n      const token = tokensOptions.find(\\\\\\\\n        (item) => item.value === snapshot.requested_sponsorship_paid_in_currency\\\\\\\\n      );\\\\\\\\n      setRequestedSponsorshipToken(token ?? tokensOptions[2]);\\\\\\\\n      if (isEditPage) {\\\\\\\\n        setConsent({ coc: true });\\\\\\\\n      }\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n}, [editProposalData, draftProposalData, allowDraft]);\\\\\\\\n// show loader until LS data is set in state\\\\\\\\nuseEffect(() => {\\\\\\\\n  const handler = setTimeout(() => {\\\\\\\\n    setAllowDraft(false);\\\\\\\\n    setLoading(false);\\\\\\\\n  }, 500);\\\\\\\\n  return () => clearTimeout(handler);\\\\\\\\n}, []);\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (showProposalViewModal) {\\\\\\\\n    return;\\\\\\\\n  }\\\\\\\\n  setDisabledSubmitBtn(\\\\\\\\n    isTxnCreated ||\\\\\\\\n      !title ||\\\\\\\\n      !description ||\\\\\\\\n      !summary ||\\\\\\\\n      !(labels ?? []).length ||\\\\\\\\n      !requestedSponsorshipAmount ||\\\\\\\\n      !receiverAccount ||\\\\\\\\n      !consent.coc\\\\\\\\n  );\\\\\\\\n  const handler = setTimeout(() => {\\\\\\\\n    Storage.privateSet(draftKey, JSON.stringify(memoizedDraftData));\\\\\\\\n  }, 10000);\\\\\\\\n  return () => clearTimeout(handler);\\\\\\\\n}, [\\\\\\\\n  memoizedDraftData,\\\\\\\\n  draftKey,\\\\\\\\n  draftProposalData,\\\\\\\\n  consent,\\\\\\\\n  isTxnCreated,\\\\\\\\n  showProposalViewModal,\\\\\\\\n]);\\\\\\\\n// set RFP labels, disable link rfp change when linked rfp is past accepting stage\\\\\\\\nconst [disabledLinkRFP, setDisableLinkRFP] = useState(false);\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (linkedRfp) {\\\\\\\\n    Near.asyncView(\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"get_rfp\\\\\\\\\\\\\\\", {\\\\\\\\n      rfp_id: linkedRfp.value ?? linkedRfp,\\\\\\\\n    }).then((i) => {\\\\\\\\n      const timeline = parseJSON(i.snapshot.timeline);\\\\\\\\n      setDisableLinkRFP(\\\\\\\\n        !isModerator &&\\\\\\\\n          timeline.status !== RFP_TIMELINE_STATUS.ACCEPTING_SUBMISSIONS\\\\\\\\n      );\\\\\\\\n      setLabels(i.snapshot.labels);\\\\\\\\n    });\\\\\\\\n  }\\\\\\\\n}, [linkedRfp]);\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (\\\\\\\\n    editProposalData &&\\\\\\\\n    editProposalData?.snapshot?.linked_proposals?.length > 0\\\\\\\\n  ) {\\\\\\\\n    editProposalData.snapshot.linked_proposals.map((item) => {\\\\\\\\n      useCache(\\\\\\\\n        () =>\\\\\\\\n          Near.asyncView(\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"get_proposal\\\\\\\\\\\\\\\", {\\\\\\\\n            proposal_id: parseInt(item),\\\\\\\\n          }).then((proposal) => {\\\\\\\\n            setLinkedProposals([\\\\\\\\n              ...linkedProposals,\\\\\\\\n              {\\\\\\\\n                label: \\\\\\\\\\\\\\\"# \\\\\\\\\\\\\\\" + proposal.id + \\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\" + proposal.snapshot.name,\\\\\\\\n                value: proposal.id,\\\\\\\\n              },\\\\\\\\n            ]);\\\\\\\\n          }),\\\\\\\\n        item + \\\\\\\\\\\\\\\"linked_proposals\\\\\\\\\\\\\\\",\\\\\\\\n        { subscribe: false }\\\\\\\\n      );\\\\\\\\n    });\\\\\\\\n  }\\\\\\\\n}, [editProposalData]);\\\\\\\\nconst InputContainer = ({ heading, description, children }) => {\\\\\\\\n  return (\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-1 gap-sm-2 w-100\\\\\\\\\\\\\\\">\\\\\\\\n      <b className=\\\\\\\\\\\\\\\"h6 mb-0\\\\\\\\\\\\\\\">{heading}</b>\\\\\\\\n      {description && (\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"text-muted w-100 text-sm\\\\\\\\\\\\\\\">{description}</div>\\\\\\\\n      )}\\\\\\\\n      {children}\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\n// show proposal created after txn approval for popup wallet\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (isTxnCreated) {\\\\\\\\n    if (editProposalData) {\\\\\\\\n      setOldProposalData(editProposalData);\\\\\\\\n      if (\\\\\\\\n        editProposalData &&\\\\\\\\n        typeof editProposalData === \\\\\\\\\\\\\\\"object\\\\\\\\\\\\\\\" &&\\\\\\\\n        oldProposalData &&\\\\\\\\n        typeof oldProposalData === \\\\\\\\\\\\\\\"object\\\\\\\\\\\\\\\" &&\\\\\\\\n        JSON.stringify(editProposalData) !== JSON.stringify(oldProposalData)\\\\\\\\n      ) {\\\\\\\\n        setCreateTxn(false);\\\\\\\\n        setProposalId(editProposalData.id);\\\\\\\\n        setShowProposalViewModal(true);\\\\\\\\n      }\\\\\\\\n    } else {\\\\\\\\n      const proposalIds = Near.view(\\\\\\\\n        \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n        \\\\\\\\\\\\\\\"get_all_proposal_ids\\\\\\\\\\\\\\\"\\\\\\\\n      );\\\\\\\\n      if (Array.isArray(proposalIds) && !proposalIdsArray) {\\\\\\\\n        setProposalIdsArray(proposalIds);\\\\\\\\n      }\\\\\\\\n      if (\\\\\\\\n        Array.isArray(proposalIds) &&\\\\\\\\n        Array.isArray(proposalIdsArray) &&\\\\\\\\n        proposalIds.length !== proposalIdsArray.length\\\\\\\\n      ) {\\\\\\\\n        setCreateTxn(false);\\\\\\\\n        setProposalId(proposalIds[proposalIds.length - 1]);\\\\\\\\n        setShowProposalViewModal(true);\\\\\\\\n      }\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  setLoading(false);\\\\\\\\n});\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (props.transactionHashes) {\\\\\\\\n    setLoading(true);\\\\\\\\n    useCache(\\\\\\\\n      () =>\\\\\\\\n        asyncFetch(\\\\\\\\\\\\\\\"https://rpc.mainnet.near.org\\\\\\\\\\\\\\\", {\\\\\\\\n          method: \\\\\\\\\\\\\\\"POST\\\\\\\\\\\\\\\",\\\\\\\\n          headers: {\\\\\\\\n            \\\\\\\\\\\\\\\"content-type\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"application/json\\\\\\\\\\\\\\\",\\\\\\\\n          },\\\\\\\\n          body: JSON.stringify({\\\\\\\\n            jsonrpc: \\\\\\\\\\\\\\\"2.0\\\\\\\\\\\\\\\",\\\\\\\\n            id: \\\\\\\\\\\\\\\"dontcare\\\\\\\\\\\\\\\",\\\\\\\\n            method: \\\\\\\\\\\\\\\"tx\\\\\\\\\\\\\\\",\\\\\\\\n            params: [props.transactionHashes, context.accountId],\\\\\\\\n          }),\\\\\\\\n        }).then((transaction) => {\\\\\\\\n          const transaction_method_name =\\\\\\\\n            transaction?.body?.result?.transaction?.actions[0].FunctionCall\\\\\\\\n              .method_name;\\\\\\\\n          const is_edit_or_add_post_transaction =\\\\\\\\n            transaction_method_name == \\\\\\\\\\\\\\\"add_proposal\\\\\\\\\\\\\\\" ||\\\\\\\\n            transaction_method_name == \\\\\\\\\\\\\\\"edit_proposal\\\\\\\\\\\\\\\";\\\\\\\\n          if (is_edit_or_add_post_transaction) {\\\\\\\\n            setShowProposalViewModal(true);\\\\\\\\n            Storage.privateSet(draftKey, null);\\\\\\\\n          }\\\\\\\\n          // show the latest created proposal to user\\\\\\\\n          if (transaction_method_name == \\\\\\\\\\\\\\\"add_proposal\\\\\\\\\\\\\\\") {\\\\\\\\n            useCache(\\\\\\\\n              () =>\\\\\\\\n                Near.asyncView(\\\\\\\\n                  \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n                  \\\\\\\\\\\\\\\"get_all_proposal_ids\\\\\\\\\\\\\\\"\\\\\\\\n                ).then((proposalIdsArray) => {\\\\\\\\n                  setProposalId(\\\\\\\\n                    proposalIdsArray?.[proposalIdsArray?.length - 1]\\\\\\\\n                  );\\\\\\\\n                }),\\\\\\\\n              props.transactionHashes + \\\\\\\\\\\\\\\"proposalIds\\\\\\\\\\\\\\\",\\\\\\\\n              { subscribe: false }\\\\\\\\n            );\\\\\\\\n          } else {\\\\\\\\n            setProposalId(id);\\\\\\\\n          }\\\\\\\\n          setLoading(false);\\\\\\\\n        }),\\\\\\\\n      props.transactionHashes + context.accountId,\\\\\\\\n      { subscribe: false }\\\\\\\\n    );\\\\\\\\n  } else {\\\\\\\\n    if (showProposalViewModal) {\\\\\\\\n      setShowProposalViewModal(false);\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n}, [props.transactionHashes]);\\\\\\\\nconst DropdowntBtnContainer = styled.div`\\\\\\\\n  font-size: 13px;\\\\\\\\n  min-width: 150px;\\\\\\\\n  .custom-select {\\\\\\\\n    position: relative;\\\\\\\\n  }\\\\\\\\n  .select-header {\\\\\\\\n    display: flex;\\\\\\\\n    justify-content: space-between;\\\\\\\\n    align-items: center;\\\\\\\\n    border: 1px solid #ccc;\\\\\\\\n    border-radius-top: 5px;\\\\\\\\n    cursor: pointer;\\\\\\\\n    background-color: #fff;\\\\\\\\n    border-radius: 5px;\\\\\\\\n  }\\\\\\\\n  .no-border {\\\\\\\\n    border: none !important;\\\\\\\\n  }\\\\\\\\n  .options-card {\\\\\\\\n    position: absolute;\\\\\\\\n    top: 100%;\\\\\\\\n    left: 0;\\\\\\\\n    width: 200%;\\\\\\\\n    border: 1px solid #ccc;\\\\\\\\n    background-color: #fff;\\\\\\\\n    padding: 0.5rem;\\\\\\\\n    z-index: 99;\\\\\\\\n    font-size: 13px;\\\\\\\\n    border-radius:0.375rem !important;\\\\\\\\n  }\\\\\\\\n  .left {\\\\\\\\n    right: 0 !important;\\\\\\\\n    left: auto !important;\\\\\\\\n  }\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    .options-card {\\\\\\\\n      right: 0 !important;\\\\\\\\n      left: auto !important;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  .option {\\\\\\\\n    margin-block: 5px;\\\\\\\\n    padding: 10px;\\\\\\\\n    cursor: pointer;\\\\\\\\n    border-bottom: 1px solid #f0f0f0;\\\\\\\\n    transition: background-color 0.3s ease;\\\\\\\\n    border-radius: 0.375rem !important;\\\\\\\\n  }\\\\\\\\n  .option:hover {\\\\\\\\n    background-color: #f0f0f0; /* Custom hover effect color */\\\\\\\\n  }\\\\\\\\n  .option:last-child {\\\\\\\\n    border-bottom: none;\\\\\\\\n  }\\\\\\\\n  .selected {\\\\\\\\n    background-color: #f0f0f0;\\\\\\\\n  }\\\\\\\\n  .disabled {\\\\\\\\n    background-color: #f4f4f4 !important;\\\\\\\\n    cursor: not-allowed !important;\\\\\\\\n    font-weight: 500;\\\\\\\\n    color: #b3b3b3;\\\\\\\\n  }\\\\\\\\n  .disabled .circle {\\\\\\\\n    opacity: 0.5;\\\\\\\\n  }\\\\\\\\n  .circle {\\\\\\\\n    width: 8px;\\\\\\\\n    height: 8px;\\\\\\\\n    border-radius: 50%;\\\\\\\\n  }\\\\\\\\n  .grey {\\\\\\\\n    background-color: #818181;\\\\\\\\n  }\\\\\\\\n  .green {\\\\\\\\n    background-color: #04a46e;\\\\\\\\n  }\\\\\\\\n  a:hover {\\\\\\\\n    text-decoration: none;\\\\\\\\n  }\\\\\\\\n}\\\\\\\\n`;\\\\\\\\nconst LoadingButtonSpinner = (\\\\\\\\n  <span\\\\\\\\n    class=\\\\\\\\\\\\\\\"submit-proposal-draft-loading-indicator spinner-border spinner-border-sm\\\\\\\\\\\\\\\"\\\\\\\\n    role=\\\\\\\\\\\\\\\"status\\\\\\\\\\\\\\\"\\\\\\\\n    aria-hidden=\\\\\\\\\\\\\\\"true\\\\\\\\\\\\\\\"\\\\\\\\n  ></span>\\\\\\\\n);\\\\\\\\nconst SubmitBtn = () => {\\\\\\\\n  const btnOptions = [\\\\\\\\n    {\\\\\\\\n      iconColor: \\\\\\\\\\\\\\\"grey\\\\\\\\\\\\\\\",\\\\\\\\n      label: \\\\\\\\\\\\\\\"Submit Draft\\\\\\\\\\\\\\\",\\\\\\\\n      description:\\\\\\\\n        \\\\\\\\\\\\\\\"The author can still edit the proposal and build consensus before sharing it with sponsors.\\\\\\\\\\\\\\\",\\\\\\\\n      value: \\\\\\\\\\\\\\\"draft\\\\\\\\\\\\\\\",\\\\\\\\n    },\\\\\\\\n    {\\\\\\\\n      iconColor: \\\\\\\\\\\\\\\"green\\\\\\\\\\\\\\\",\\\\\\\\n      label: \\\\\\\\\\\\\\\"Ready for Review\\\\\\\\\\\\\\\",\\\\\\\\n      description:\\\\\\\\n        \\\\\\\\\\\\\\\"Start the official review process with sponsors. This will lock the editing function, but comments are still open.\\\\\\\\\\\\\\\",\\\\\\\\n      value: \\\\\\\\\\\\\\\"review\\\\\\\\\\\\\\\",\\\\\\\\n    },\\\\\\\\n  ];\\\\\\\\n  const handleOptionClick = (option) => {\\\\\\\\n    setDraftBtnOpen(false);\\\\\\\\n    setSelectedStatus(option.value);\\\\\\\\n    handleSubmit(option.value);\\\\\\\\n  };\\\\\\\\n  const toggleDropdown = () => {\\\\\\\\n    setDraftBtnOpen(!isDraftBtnOpen);\\\\\\\\n  };\\\\\\\\n  const handleSubmit = (status) => {\\\\\\\\n    const isDraft = status === \\\\\\\\\\\\\\\"draft\\\\\\\\\\\\\\\";\\\\\\\\n    if (isDraft) {\\\\\\\\n      onSubmit({ isDraft });\\\\\\\\n      cleanDraft();\\\\\\\\n    } else {\\\\\\\\n      setReviewModal(true);\\\\\\\\n    }\\\\\\\\n  };\\\\\\\\n  const selectedOption = btnOptions.find((i) => i.value === selectedStatus);\\\\\\\\n  return (\\\\\\\\n    <DropdowntBtnContainer>\\\\\\\\n      <div\\\\\\\\n        className=\\\\\\\\\\\\\\\"custom-select\\\\\\\\\\\\\\\"\\\\\\\\n        tabIndex=\\\\\\\\\\\\\\\"0\\\\\\\\\\\\\\\"\\\\\\\\n        onBlur={() => setDraftBtnOpen(false)}\\\\\\\\n      >\\\\\\\\n        <div\\\\\\\\n          className={\\\\\\\\n            \\\\\\\\\\\\\\\"select-header d-flex gap-1 align-items-center submit-draft-button \\\\\\\\\\\\\\\" +\\\\\\\\n            (disabledSubmitBtn && \\\\\\\\\\\\\\\"disabled\\\\\\\\\\\\\\\")\\\\\\\\n          }\\\\\\\\n        >\\\\\\\\n          <div\\\\\\\\n            onClick={() => !disabledSubmitBtn && handleSubmit(selectedStatus)}\\\\\\\\n            className=\\\\\\\\\\\\\\\"p-2 d-flex gap-2 align-items-center \\\\\\\\\\\\\\\"\\\\\\\\n          >\\\\\\\\n            {isTxnCreated ? (\\\\\\\\n              LoadingButtonSpinner\\\\\\\\n            ) : (\\\\\\\\n              <div className={\\\\\\\\\\\\\\\"circle \\\\\\\\\\\\\\\" + selectedOption.iconColor}></div>\\\\\\\\n            )}\\\\\\\\n            <div className={`selected-option`}>{selectedOption.label}</div>\\\\\\\\n          </div>\\\\\\\\n          <div\\\\\\\\n            className=\\\\\\\\\\\\\\\"h-100 p-2\\\\\\\\\\\\\\\"\\\\\\\\n            style={{ borderLeft: \\\\\\\\\\\\\\\"1px solid #ccc\\\\\\\\\\\\\\\" }}\\\\\\\\n            onClick={!disabledSubmitBtn && toggleDropdown}\\\\\\\\n          >\\\\\\\\n            <i class={`bi bi-chevron-${isDraftBtnOpen ? \\\\\\\\\\\\\\\"up\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"down\\\\\\\\\\\\\\\"}`}></i>\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n        {isDraftBtnOpen && (\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"options-card\\\\\\\\\\\\\\\">\\\\\\\\n            {btnOptions.map((option) => (\\\\\\\\n              <div\\\\\\\\n                key={option.value}\\\\\\\\n                className={`option ${\\\\\\\\n                  selectedOption.value === option.value ? \\\\\\\\\\\\\\\"selected\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n                }`}\\\\\\\\n                onClick={() => handleOptionClick(option)}\\\\\\\\n              >\\\\\\\\n                <div className={`d-flex gap-2 align-items-center`}>\\\\\\\\n                  <div className={\\\\\\\\\\\\\\\"circle \\\\\\\\\\\\\\\" + option.iconColor}></div>\\\\\\\\n                  <div className=\\\\\\\\\\\\\\\"fw-bold\\\\\\\\\\\\\\\">{option.label}</div>\\\\\\\\n                </div>\\\\\\\\n                <div className=\\\\\\\\\\\\\\\"text-muted text-xs\\\\\\\\\\\\\\\">{option.description}</div>\\\\\\\\n              </div>\\\\\\\\n            ))}\\\\\\\\n          </div>\\\\\\\\n        )}\\\\\\\\n      </div>\\\\\\\\n    </DropdowntBtnContainer>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\nconst onSubmit = ({ isDraft, isCancel }) => {\\\\\\\\n  setCreateTxn(true);\\\\\\\\n  console.log(\\\\\\\\\\\\\\\"submitting transaction\\\\\\\\\\\\\\\");\\\\\\\\n  const linkedProposalsIds = linkedProposals.map((item) => item.value) ?? [];\\\\\\\\n  const body = {\\\\\\\\n    proposal_body_version: \\\\\\\\\\\\\\\"V1\\\\\\\\\\\\\\\",\\\\\\\\n    linked_rfp: linkedRfp?.value,\\\\\\\\n    category: \\\\\\\\\\\\\\\"Infrastructure Committee\\\\\\\\\\\\\\\",\\\\\\\\n    name: title,\\\\\\\\n    description: description,\\\\\\\\n    summary: summary,\\\\\\\\n    linked_proposals: linkedProposalsIds,\\\\\\\\n    requested_sponsorship_usd_amount: requestedSponsorshipAmount,\\\\\\\\n    requested_sponsorship_paid_in_currency: requestedSponsorshipToken.value,\\\\\\\\n    receiver_account: receiverAccount,\\\\\\\\n    requested_sponsor: \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n    supervisor: supervisor,\\\\\\\\n    timeline: isCancel\\\\\\\\n      ? {\\\\\\\\n          status: \\\\\\\\\\\\\\\"CANCELLED\\\\\\\\\\\\\\\",\\\\\\\\n          sponsor_requested_review: false,\\\\\\\\n          reviewer_completed_attestation: false,\\\\\\\\n        }\\\\\\\\n      : isDraft\\\\\\\\n      ? { status: \\\\\\\\\\\\\\\"DRAFT\\\\\\\\\\\\\\\" }\\\\\\\\n      : {\\\\\\\\n          status: \\\\\\\\\\\\\\\"REVIEW\\\\\\\\\\\\\\\",\\\\\\\\n          sponsor_requested_review: false,\\\\\\\\n          reviewer_completed_attestation: false,\\\\\\\\n        },\\\\\\\\n  };\\\\\\\\n  const args = {\\\\\\\\n    labels:\\\\\\\\n      typeof linkedRfp === \\\\\\\\\\\\\\\"number\\\\\\\\\\\\\\\" || typeof linkedRfp?.value === \\\\\\\\\\\\\\\"number\\\\\\\\\\\\\\\"\\\\\\\\n        ? []\\\\\\\\n        : (labels ?? []).map((i) => i.value ?? i),\\\\\\\\n    body: body,\\\\\\\\n  };\\\\\\\\n  if (isEditPage) {\\\\\\\\n    args[\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\"] = editProposalData.id;\\\\\\\\n  }\\\\\\\\n  Near.call([\\\\\\\\n    {\\\\\\\\n      contractName: \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n      methodName: isEditPage ? \\\\\\\\\\\\\\\"edit_proposal\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"add_proposal\\\\\\\\\\\\\\\",\\\\\\\\n      args: args,\\\\\\\\n      gas: 270000000000000,\\\\\\\\n    },\\\\\\\\n  ]);\\\\\\\\n};\\\\\\\\nfunction cleanDraft() {\\\\\\\\n  Storage.privateSet(draftKey, null);\\\\\\\\n}\\\\\\\\nif (loading) {\\\\\\\\n  return pageLoader;\\\\\\\\n}\\\\\\\\nconst [collapseState, setCollapseState] = useState({});\\\\\\\\nconst CollapsibleContainer = ({ title, children, noPaddingTop }) => {\\\\\\\\n  return (\\\\\\\\n    <div\\\\\\\\n      className={\\\\\\\\n        \\\\\\\\\\\\\\\"border-bottom py-4 \\\\\\\\\\\\\\\" +\\\\\\\\n        (noPaddingTop && \\\\\\\\\\\\\\\"pt-0 \\\\\\\\\\\\\\\") +\\\\\\\\n        (collapseState[title] && \\\\\\\\\\\\\\\" pb-0\\\\\\\\\\\\\\\")\\\\\\\\n      }\\\\\\\\n    >\\\\\\\\n      <div className={\\\\\\\\\\\\\\\"d-flex justify-content-between \\\\\\\\\\\\\\\"}>\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"h5 text-muted mb-2 mb-sm-3\\\\\\\\\\\\\\\">{title}</div>\\\\\\\\n        <div\\\\\\\\n          className=\\\\\\\\\\\\\\\"d-flex d-sm-none cursor-pointer\\\\\\\\\\\\\\\"\\\\\\\\n          onClick={() =>\\\\\\\\n            setCollapseState((prevState) => ({\\\\\\\\n              ...prevState,\\\\\\\\n              [title]: !prevState[title],\\\\\\\\n            }))\\\\\\\\n          }\\\\\\\\n        >\\\\\\\\n          {!collapseState[title] ? (\\\\\\\\n            <i class=\\\\\\\\\\\\\\\"bi bi-chevron-up h4\\\\\\\\\\\\\\\"></i>\\\\\\\\n          ) : (\\\\\\\\n            <i class=\\\\\\\\\\\\\\\"bi bi-chevron-down h4\\\\\\\\\\\\\\\"></i>\\\\\\\\n          )}\\\\\\\\n        </div>\\\\\\\\n      </div>\\\\\\\\n      <div className={!collapseState[title] ? \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"d-none\\\\\\\\\\\\\\\"}>{children}</div>\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\nconst CategoryDropdown = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src={`infrastructure-committee.near/widget/components.molecule.MultiSelectCategoryDropdown`}\\\\\\\\n      props={{\\\\\\\\n        selected: labels,\\\\\\\\n        onChange: (v) => setLabels(v),\\\\\\\\n        disabled: linkedRfp, // when RFP is linked, labels are disabled\\\\\\\\n        linkedRfp: linkedRfp,\\\\\\\\n        availableOptions: rfpLabelOptions,\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}, [draftProposalData, linkedRfp, labels]);\\\\\\\\nconst TitleComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src={`devhub.near/widget/devhub.components.molecule.Input`}\\\\\\\\n      props={{\\\\\\\\n        className: \\\\\\\\\\\\\\\"flex-grow-1\\\\\\\\\\\\\\\",\\\\\\\\n        value: title,\\\\\\\\n        onBlur: (e) => {\\\\\\\\n          setTitle(e.target.value);\\\\\\\\n        },\\\\\\\\n        skipPaddingGap: true,\\\\\\\\n        inputProps: {\\\\\\\\n          max: 80,\\\\\\\\n        },\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}, [draftProposalData]);\\\\\\\\nconst SummaryComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src={`devhub.near/widget/devhub.components.molecule.Input`}\\\\\\\\n      props={{\\\\\\\\n        className: \\\\\\\\\\\\\\\"flex-grow-1\\\\\\\\\\\\\\\",\\\\\\\\n        value: summary,\\\\\\\\n        multiline: true,\\\\\\\\n        onBlur: (e) => {\\\\\\\\n          setSummary(e.target.value);\\\\\\\\n        },\\\\\\\\n        skipPaddingGap: true,\\\\\\\\n        inputProps: {\\\\\\\\n          max: 500,\\\\\\\\n        },\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}, [draftProposalData]);\\\\\\\\nconst DescriptionComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src={`infrastructure-committee.near/widget/components.molecule.Compose`}\\\\\\\\n      props={{\\\\\\\\n        data: description,\\\\\\\\n        onChange: setDescription,\\\\\\\\n        autocompleteEnabled: true,\\\\\\\\n        autoFocus: false,\\\\\\\\n        showProposalIdAutoComplete: true,\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}, [draftProposalData]);\\\\\\\\nconst ConsentComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-2\\\\\\\\\\\\\\\">\\\\\\\\n      <Widget\\\\\\\\n        src={`devhub.near/widget/devhub.components.molecule.Checkbox`}\\\\\\\\n        props={{\\\\\\\\n          value: \\\\\\\\\\\\\\\"coc\\\\\\\\\\\\\\\",\\\\\\\\n          label: (\\\\\\\\n            <>\\\\\\\\n              I\\\\\\\\u{2019}ve read{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n              <a\\\\\\\\n                href={CoCDocs}\\\\\\\\n                className=\\\\\\\\\\\\\\\"text-decoration-underline\\\\\\\\\\\\\\\"\\\\\\\\n                target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n                rel=\\\\\\\\\\\\\\\"noopener noreferrer\\\\\\\\\\\\\\\"\\\\\\\\n              >\\\\\\\\n                Infrastructure Committee\\\\\\\\u{2019}s Code of Conduct\\\\\\\\n              </a>\\\\\\\\n              and commit to honoring it\\\\\\\\n            </>\\\\\\\\n          ),\\\\\\\\n          isChecked: consent.coc,\\\\\\\\n          onClick: (value) =>\\\\\\\\n            setConsent((prevConsent) => ({\\\\\\\\n              ...prevConsent,\\\\\\\\n              coc: value,\\\\\\\\n            })),\\\\\\\\n        }}\\\\\\\\n      />\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n}, [draftProposalData]);\\\\\\\\nconst ProfileComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src=\\\\\\\\\\\\\\\"mob.near/widget/Profile.ShortInlineBlock\\\\\\\\\\\\\\\"\\\\\\\\n      props={{\\\\\\\\n        accountId: author,\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}, []);\\\\\\\\nconst LinkRFPComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-1\\\\\\\\\\\\\\\">\\\\\\\\n      <Widget\\\\\\\\n        src={`infrastructure-committee.near/widget/components.molecule.LinkedRfpDropdown`}\\\\\\\\n        props={{\\\\\\\\n          onChange: setLinkedRfp,\\\\\\\\n          linkedRfp: linkedRfp,\\\\\\\\n          disabled: disabledLinkRFP,\\\\\\\\n          onDeleteRfp: () => setLabels([]),\\\\\\\\n        }}\\\\\\\\n      />\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n}, [draftProposalData, disabledLinkRFP]);\\\\\\\\nconst LinkedProposalsComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-1\\\\\\\\\\\\\\\">\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"text-muted w-100 text-sm\\\\\\\\\\\\\\\">\\\\\\\\n        Link any relevant proposals (e.g. previous milestones).\\\\\\\\n      </div>\\\\\\\\n      <Widget\\\\\\\\n        src={`infrastructure-committee.near/widget/components.molecule.LinkedProposalsDropdown`}\\\\\\\\n        props={{\\\\\\\\n          onChange: setLinkedProposals,\\\\\\\\n          linkedProposals: linkedProposals,\\\\\\\\n        }}\\\\\\\\n      />\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n}, [draftProposalData]);\\\\\\\\nconst ReceiverAccountComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src={`devhub.near/widget/devhub.entity.proposal.AccountInput`}\\\\\\\\n      props={{\\\\\\\\n        value: receiverAccount,\\\\\\\\n        placeholder: \\\\\\\\\\\\\\\"Enter Address\\\\\\\\\\\\\\\",\\\\\\\\n        onUpdate: setReceiverAccount,\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}, [draftProposalData]);\\\\\\\\nconst AmountComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src={`devhub.near/widget/devhub.components.molecule.Input`}\\\\\\\\n      props={{\\\\\\\\n        className: \\\\\\\\\\\\\\\"flex-grow-1\\\\\\\\\\\\\\\",\\\\\\\\n        value: requestedSponsorshipAmount,\\\\\\\\n        onChange: (e) => {\\\\\\\\n          setRequestedSponsorshipAmount(e.target.value);\\\\\\\\n        },\\\\\\\\n        skipPaddingGap: true,\\\\\\\\n        inputProps: {\\\\\\\\n          type: \\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\",\\\\\\\\n          prefix: \\\\\\\\\\\\\\\"$\\\\\\\\\\\\\\\",\\\\\\\\n          inputmode: \\\\\\\\\\\\\\\"numeric\\\\\\\\\\\\\\\",\\\\\\\\n          pattern: \\\\\\\\\\\\\\\"[0-9]*\\\\\\\\\\\\\\\",\\\\\\\\n        },\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}, [draftProposalData]);\\\\\\\\nconst CurrencyComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src={`devhub.near/widget/devhub.components.molecule.DropDown`}\\\\\\\\n      props={{\\\\\\\\n        options: tokensOptions,\\\\\\\\n        selectedValue: requestedSponsorshipToken,\\\\\\\\n        onUpdate: (v) => {\\\\\\\\n          setRequestedSponsorshipToken(v);\\\\\\\\n        },\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}, [draftProposalData]);\\\\\\\\nreturn (\\\\\\\\n  <Container className=\\\\\\\\\\\\\\\"w-100 py-4 px-0 px-sm-2 d-flex flex-column gap-3\\\\\\\\\\\\\\\">\\\\\\\\n    <Heading className=\\\\\\\\\\\\\\\"px-2 px-sm-0\\\\\\\\\\\\\\\">\\\\\\\\n      {isEditPage ? \\\\\\\\\\\\\\\"Edit\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"Create\\\\\\\\\\\\\\\"} Proposal\\\\\\\\n    </Heading>\\\\\\\\n    <Widget\\\\\\\\n      src={`infrastructure-committee.near/widget/components.proposals.ViewProposalModal`}\\\\\\\\n      props={{\\\\\\\\n        isOpen: showProposalViewModal,\\\\\\\\n        isEdit: isEditPage,\\\\\\\\n        proposalId: proposalId,\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n    <Widget\\\\\\\\n      src={`devhub.near/widget/devhub.entity.proposal.ConfirmReviewModal`}\\\\\\\\n      props={{\\\\\\\\n        isOpen: isReviewModalOpen,\\\\\\\\n        onCancelClick: () => setReviewModal(false),\\\\\\\\n        onReviewClick: () => {\\\\\\\\n          setReviewModal(false);\\\\\\\\n          cleanDraft();\\\\\\\\n          onSubmit({ isDraft: false });\\\\\\\\n        },\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n    <Widget\\\\\\\\n      src={`devhub.near/widget/devhub.entity.proposal.ConfirmCancelModal`}\\\\\\\\n      props={{\\\\\\\\n        isOpen: isCancelModalOpen,\\\\\\\\n        onCancelClick: () => setCancelModal(false),\\\\\\\\n        onConfirmClick: () => {\\\\\\\\n          setCancelModal(false);\\\\\\\\n          onSubmit({ isCancel: true });\\\\\\\\n        },\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"card no-border rounded-0 px-2 p-lg-0 full-width-div\\\\\\\\\\\\\\\">\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"container-xl py-4 d-flex flex-wrap gap-6 w-100\\\\\\\\\\\\\\\">\\\\\\\\n        <div\\\\\\\\n          style={{ minWidth: \\\\\\\\\\\\\\\"350px\\\\\\\\\\\\\\\" }}\\\\\\\\n          className=\\\\\\\\\\\\\\\"flex-2 w-100 order-2 order-md-1\\\\\\\\\\\\\\\"\\\\\\\\n        >\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"d-flex gap-2 w-100\\\\\\\\\\\\\\\">\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"d-none d-sm-flex\\\\\\\\\\\\\\\">\\\\\\\\n              <Widget\\\\\\\\n                src={`devhub.near/widget/devhub.entity.proposal.Profile`}\\\\\\\\n                props={{\\\\\\\\n                  accountId: author,\\\\\\\\n                }}\\\\\\\\n              />\\\\\\\\n            </div>\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-4 w-100\\\\\\\\\\\\\\\">\\\\\\\\n              <div className=\\\\\\\\\\\\\\\"border-bottom pb-4\\\\\\\\\\\\\\\">\\\\\\\\n                <InputContainer\\\\\\\\n                  heading=\\\\\\\\\\\\\\\"Link RFP (Optional)\\\\\\\\\\\\\\\"\\\\\\\\n                  description={\\\\\\\\n                    \\\\\\\\\\\\\\\"Link this proposal if it is a response to a specific RFP. You can only link to active RFPs in the \\\\\\\\u{201c}Accepting Submission\\\\\\\\u{201d} stage. You can only link to one RFP.\\\\\\\\\\\\\\\"\\\\\\\\n                  }\\\\\\\\n                >\\\\\\\\n                  {LinkRFPComponent}\\\\\\\\n                </InputContainer>\\\\\\\\n              </div>\\\\\\\\n              <InputContainer\\\\\\\\n                heading=\\\\\\\\\\\\\\\"Category\\\\\\\\\\\\\\\"\\\\\\\\n                description={\\\\\\\\n                  <>\\\\\\\\n                    Select the relevant categories that best align with your\\\\\\\\n                    contribution to the NEAR developer community. Need guidance?\\\\\\\\n                    See{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n                    <a\\\\\\\\n                      href={FundingDocs}\\\\\\\\n                      className=\\\\\\\\\\\\\\\"text-decoration-underline no-space\\\\\\\\\\\\\\\"\\\\\\\\n                      target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n                      rel=\\\\\\\\\\\\\\\"noopener noreferrer\\\\\\\\\\\\\\\"\\\\\\\\n                    >\\\\\\\\n                      Funding Docs\\\\\\\\n                    </a>\\\\\\\\n                    .\\\\\\\\n                  </>\\\\\\\\n                }\\\\\\\\n              >\\\\\\\\n                {CategoryDropdown}\\\\\\\\n              </InputContainer>\\\\\\\\n              <InputContainer\\\\\\\\n                heading=\\\\\\\\\\\\\\\"Title\\\\\\\\\\\\\\\"\\\\\\\\n                description=\\\\\\\\\\\\\\\"Highlight the essence of your proposal in a few words. This will appear on your proposal\\\\\\\\u{2019}s detail page and the main proposal feed. Keep it short, please :)\\\\\\\\\\\\\\\"\\\\\\\\n              >\\\\\\\\n                {TitleComponent}\\\\\\\\n              </InputContainer>\\\\\\\\n              <InputContainer\\\\\\\\n                heading=\\\\\\\\\\\\\\\"Summary\\\\\\\\\\\\\\\"\\\\\\\\n                description=\\\\\\\\\\\\\\\"Explain your proposal briefly. This is your chance to make a good first impression on the community. Include what needs or goals your work will address, your solution, and the benefit for the NEAR developer community.\\\\\\\\\\\\\\\"\\\\\\\\n              >\\\\\\\\n                {SummaryComponent}\\\\\\\\n              </InputContainer>\\\\\\\\n              <InputContainer\\\\\\\\n                heading=\\\\\\\\\\\\\\\"Description\\\\\\\\\\\\\\\"\\\\\\\\n                description={\\\\\\\\n                  <>\\\\\\\\n                    Expand on your summary with any relevant details like your\\\\\\\\n                    contribution timeline, key milestones, team background, and\\\\\\\\n                    a clear breakdown of how the funds will be used. Proposals\\\\\\\\n                    should be simple and clear (e.g. 1 month). For more complex\\\\\\\\n                    projects, treat each milestone as a separate proposal.\\\\\\\\n                  </>\\\\\\\\n                }\\\\\\\\n              >\\\\\\\\n                {DescriptionComponent}\\\\\\\\n              </InputContainer>\\\\\\\\n              <InputContainer heading=\\\\\\\\\\\\\\\"Final Consent\\\\\\\\\\\\\\\">\\\\\\\\n                {ConsentComponent}\\\\\\\\n              </InputContainer>\\\\\\\\n              <div className=\\\\\\\\\\\\\\\"d-flex justify-content-between gap-2 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n                <div>\\\\\\\\n                  {isEditPage && (\\\\\\\\n                    <Widget\\\\\\\\n                      src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n                      props={{\\\\\\\\n                        classNames: {\\\\\\\\n                          root: \\\\\\\\\\\\\\\"btn-outline-danger shadow-none border-0 btn-sm\\\\\\\\\\\\\\\",\\\\\\\\n                        },\\\\\\\\n                        label: (\\\\\\\\n                          <div className=\\\\\\\\\\\\\\\"d-flex align-items-center gap-1\\\\\\\\\\\\\\\">\\\\\\\\n                            <i class=\\\\\\\\\\\\\\\"bi bi-trash3\\\\\\\\\\\\\\\"></i> Cancel Proposal\\\\\\\\n                          </div>\\\\\\\\n                        ),\\\\\\\\n                        onClick: () => setCancelModal(true),\\\\\\\\n                      }}\\\\\\\\n                    />\\\\\\\\n                  )}\\\\\\\\n                </div>\\\\\\\\n                <div\\\\\\\\n                  className=\\\\\\\\\\\\\\\"d-flex gap-2\\\\\\\\\\\\\\\"\\\\\\\\n                  style={{\\\\\\\\n                    height: isDraftBtnOpen ? \\\\\\\\\\\\\\\"25vh\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"auto\\\\\\\\\\\\\\\",\\\\\\\\n                    alignItems: isDraftBtnOpen ? \\\\\\\\\\\\\\\"flex-start\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"center\\\\\\\\\\\\\\\",\\\\\\\\n                  }}\\\\\\\\n                >\\\\\\\\n                  <Link\\\\\\\\n                    to={\\\\\\\\n                      isEditPage\\\\\\\\n                        ? href({\\\\\\\\n                            widgetSrc: `infrastructure-committee.near/widget/app`,\\\\\\\\n                            params: {\\\\\\\\n                              page: \\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\",\\\\\\\\n                              id: parseInt(id),\\\\\\\\n                            },\\\\\\\\n                          })\\\\\\\\n                        : href({\\\\\\\\n                            widgetSrc: `infrastructure-committee.near/widget/app`,\\\\\\\\n                            params: {\\\\\\\\n                              page: \\\\\\\\\\\\\\\"proposals\\\\\\\\\\\\\\\",\\\\\\\\n                            },\\\\\\\\n                          })\\\\\\\\n                    }\\\\\\\\n                  >\\\\\\\\n                    <Widget\\\\\\\\n                      src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n                      props={{\\\\\\\\n                        classNames: {\\\\\\\\n                          root: \\\\\\\\\\\\\\\"d-flex h-100 text-muted fw-bold btn-outline shadow-none border-0 btn-sm\\\\\\\\\\\\\\\",\\\\\\\\n                        },\\\\\\\\n                        label: \\\\\\\\\\\\\\\"Discard Changes\\\\\\\\\\\\\\\",\\\\\\\\n                        onClick: cleanDraft,\\\\\\\\n                      }}\\\\\\\\n                    />\\\\\\\\n                  </Link>\\\\\\\\n                  <SubmitBtn />\\\\\\\\n                </div>\\\\\\\\n              </div>\\\\\\\\n            </div>\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n        <div\\\\\\\\n          style={{ minWidth: \\\\\\\\\\\\\\\"350px\\\\\\\\\\\\\\\" }}\\\\\\\\n          className=\\\\\\\\\\\\\\\"flex-1 w-100 order-1 order-md-2\\\\\\\\\\\\\\\"\\\\\\\\n        >\\\\\\\\n          <CollapsibleContainer noPaddingTop={true} title=\\\\\\\\\\\\\\\"Author Details\\\\\\\\\\\\\\\">\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-3 gap-sm-4\\\\\\\\\\\\\\\">\\\\\\\\n              <InputContainer heading=\\\\\\\\\\\\\\\"Author\\\\\\\\\\\\\\\">\\\\\\\\n                {ProfileComponent}\\\\\\\\n              </InputContainer>\\\\\\\\n            </div>\\\\\\\\n          </CollapsibleContainer>\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"my-2\\\\\\\\\\\\\\\">\\\\\\\\n            <CollapsibleContainer title=\\\\\\\\\\\\\\\"Link Proposals (Optional)\\\\\\\\\\\\\\\">\\\\\\\\n              {LinkedProposalsComponent}\\\\\\\\n            </CollapsibleContainer>\\\\\\\\n          </div>\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"my-2\\\\\\\\\\\\\\\">\\\\\\\\n            <CollapsibleContainer title=\\\\\\\\\\\\\\\"Funding Details\\\\\\\\\\\\\\\">\\\\\\\\n              <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-3 gap-sm-4\\\\\\\\\\\\\\\">\\\\\\\\n                <InputContainer\\\\\\\\n                  heading=\\\\\\\\\\\\\\\"Recipient NEAR Wallet Address\\\\\\\\\\\\\\\"\\\\\\\\n                  description=\\\\\\\\\\\\\\\"Enter the address that will receive the funds. We\\\\\\\\u{2019}ll need this to send a test transaction once your proposal is approved.\\\\\\\\\\\\\\\"\\\\\\\\n                >\\\\\\\\n                  {ReceiverAccountComponent}\\\\\\\\n                </InputContainer>\\\\\\\\n                <InputContainer\\\\\\\\n                  heading={\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n                      Recipient Verification Status\\\\\\\\n                      <div className=\\\\\\\\\\\\\\\"custom-tooltip\\\\\\\\\\\\\\\">\\\\\\\\n                        <i class=\\\\\\\\\\\\\\\"bi bi-info-circle-fill\\\\\\\\\\\\\\\"></i>\\\\\\\\n                        <span class=\\\\\\\\\\\\\\\"tooltiptext\\\\\\\\\\\\\\\">\\\\\\\\n                          To get approved and receive payments on our platform,\\\\\\\\n                          you must complete KYC/KYB verification using Fractal,\\\\\\\\n                          a trusted identity verification solution. This helps\\\\\\\\n                          others trust transactions with your account. Click\\\\\\\\n                          \\\\\\\\\\\\\\\"Get Verified\\\\\\\\\\\\\\\" to start. <br />\\\\\\\\n                          <br />\\\\\\\\n                          Once verified, your profile will display a badge,\\\\\\\\n                          which is valid for 365 days from the date of your\\\\\\\\n                          verification. You must renew your verification upon\\\\\\\\n                          expiration OR if any of your personal information\\\\\\\\n                          changes.\\\\\\\\n                        </span>\\\\\\\\n                      </div>\\\\\\\\n                    </div>\\\\\\\\n                  }\\\\\\\\n                  description=\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n                >\\\\\\\\n                  <div className=\\\\\\\\\\\\\\\"border border-1 p-3 rounded-2\\\\\\\\\\\\\\\">\\\\\\\\n                    <Widget\\\\\\\\n                      src={`devhub.near/widget/devhub.entity.proposal.VerificationStatus`}\\\\\\\\n                      props={{\\\\\\\\n                        receiverAccount: receiverAccount,\\\\\\\\n                        showGetVerifiedBtn: true,\\\\\\\\n                        imageSize: 30,\\\\\\\\n                      }}\\\\\\\\n                    />\\\\\\\\n                  </div>\\\\\\\\n                </InputContainer>\\\\\\\\n                <InputContainer\\\\\\\\n                  heading=\\\\\\\\\\\\\\\"Total Amount (USD)\\\\\\\\\\\\\\\"\\\\\\\\n                  description={\\\\\\\\n                    <>\\\\\\\\n                      Enter the exact amount you are seeking. See\\\\\\\\n                      <a\\\\\\\\n                        href={FundingDocs}\\\\\\\\n                        className=\\\\\\\\\\\\\\\"text-decoration-underline\\\\\\\\\\\\\\\"\\\\\\\\n                        target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n                        rel=\\\\\\\\\\\\\\\"noopener noreferrer\\\\\\\\\\\\\\\"\\\\\\\\n                      >\\\\\\\\n                        Funding Documentation\\\\\\\\n                      </a>\\\\\\\\n                      for guidelines.\\\\\\\\n                    </>\\\\\\\\n                  }\\\\\\\\n                >\\\\\\\\n                  {AmountComponent}\\\\\\\\n                </InputContainer>\\\\\\\\n                <InputContainer\\\\\\\\n                  heading=\\\\\\\\\\\\\\\"Currency\\\\\\\\\\\\\\\"\\\\\\\\n                  description=\\\\\\\\\\\\\\\"Select your preferred currency for receiving funds. Note: The exchange rate for NEAR tokens will be the closing rate at the day of the invoice.\\\\\\\\\\\\\\\"\\\\\\\\n                >\\\\\\\\n                  {CurrencyComponent}\\\\\\\\n                </InputContainer>\\\\\\\\n              </div>\\\\\\\\n            </CollapsibleContainer>\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n      </div>\\\\\\\\n    </div>\\\\\\\\n  </Container>\\\\\\\\n);\\\\\\\\n\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2454787756523e+21
+    }
+  },
+  {
+    "id": "8797001193",
+    "receipt_id": "737VzGFihG82jhYeYKTwZJ1M88zSkm3e83utS4Y2R158",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "34GkXqNS7C71VFAYSCj6vMYqmmmVn9wFNEY9EpUaYypx",
+      "block_height": 129243309,
+      "block_timestamp": 1727706211457344500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "ALta5aUAmAcdRZGTJSWFp3fixagehXYNobpH3hFYbwZV",
+    "included_in_block_hash": "7VLx71Wmh1iF4zH2Fa9FD8e4eDsZuhDUcRGzJdj3ZkoU",
+    "block_timestamp": "1727706209364381390",
+    "block": {
+      "block_height": 129243307
+    },
+    "receipt_conversion_tokens_burnt": "212976814786000000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.8708801504934933e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2454787756523e+21
+    }
+  },
+  {
+    "id": "8798568354",
+    "receipt_id": "5dgCEK7zRQuwUTQTcp8ybT9Mrqh2aB2q5JJF643X465Y",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AueNMk9XngVz2cUPBfJ5ZVYzELQsRa2B8BzbopvYnCyB",
+      "block_height": 129247747,
+      "block_timestamp": 1727711173218799400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6828458526548,
+      "tokens_burnt": 682845852654800000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "Ekb7ztLk7NdaKVk5Jc1xuyFuMJJJGvKJT8rgBQ62f1qc",
+    "included_in_block_hash": "X9m4Qmt8kEdWMbZ7BQKfaTodRC8JH4Xpi64v1KVSrCe",
+    "block_timestamp": "1727711172163001180",
+    "block": {
+      "block_height": 129247746
+    },
+    "receipt_conversion_tokens_burnt": "68890933170500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 682845852654800000000,
+        "args": "{\"id\": 22, \"body\": {\"name\": \"FastNear: Nearcore data snapshots\", \"summary\": \"FASTNEAR to provide RPC and Archive nearcore data snapshots on a regular basis by levering Cloudflare\\\\\\\\\\\\'s R2.\\\\\\\\nThe proposal outlines details and breaks down the costs.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"trechriron71.near\", \"description\": \"# Nearcore data snapshots\\\\\\\\n\\\\\\\\n## Organization\\\\\\\\n\\\\\\\\nFASTNEAR\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\\\\\'s contact information\\\\\\\\nEvgeny Kuzyakov (ek@fastnear.com)\\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\n### Background\\\\\\\\n\\\\\\\\nFor the operation of a nearcore node, one must synchronize the blockchain data to ensure the node has an up-to-date copy of the NEAR blockchain headers and latest blocks. There are two common types of nodes:\\\\\\\\n- RPC nodes (as well as validator nodes)\\\\\\\\n- Archive nodes\\\\\\\\n\\\\\\\\nRPC nodes keep track of all headers and the last N epochs of blocks data. RPC nodes usually require fast NVME SSD disk(s) to keep all data in order to be able to keep up with the network.\\\\\\\\n\\\\\\\\nArchive nodes keep track of all headers and all blocks data. Archive nodes split state into hot-data and cold-data. The hot-data requires an NVME SSD disk, while cold-data can be kept on the HDDs array. Note, that an archive node with hdd version is not practical for quick RPC queries against older data.\\\\\\\\n\\\\\\\\nTo synchronize a nearcore node, the operator usually uses a data snapshot from another synchronized nearcore node and then catches up with the head of the network. This process is much faster than synchronizing the blockchain from the beginning.\\\\\\\\n\\\\\\\\nThis proposal is focusing on providing snapshots to the community.\\\\\\\\n\\\\\\\\n### Previous state\\\\\\\\n\\\\\\\\nPreviously, the snapshots were provided by Pagoda and were served from AWS S3 and/or Cloudfront. S3 has a per GB egress cost associated with downloads. Cloudfront price depends on total monthly usage and varies from $30 to $120 per TB, and since regular RPC snapshots are around 1.6 TB, the cost of every RPC download may result in $150.\\\\\\\\n\\\\\\\\nA mainnet archive snapshot, contains about 62Tb of data. So a single download at $60 per TB costs $3,720.\\\\\\\\n\\\\\\\\nThe storage on S3 is around $22 per TB.\\\\\\\\n\\\\\\\\nIf the nodes are operated in the AWS, then upload to S3 is free, but if the nodes are hosted outside (e.g. on GCP), then there is a cost associated with uploading data, which for GCP may be around $45 to $90 per TB.\\\\\\\\n\\\\\\\\nWe estimate the current monthly size of S3 bucket to be around 500-700TB.\\\\\\\\n\\\\\\\\nThe egress costs may be the highest contributing factor! The egress also increases during resharding events and protocol upgrades (e.g. `2.0.0` release), when some validators fail to upgrade and are forced to sync from the snapshots.\\\\\\\\n\\\\\\\\nWe estimate the previous infrastructure cost to be from $30,000 to $90,000.\\\\\\\\n\\\\\\\\n### Solution\\\\\\\\n\\\\\\\\nFASTNEAR\\\\\\\\u{2019}s solution is to leverage Cloudflare\\\\\\\\u{2019}s R2 instead of S3, which has no associated egress cost, but instead it is charged based on amount of data stored and number of times each file is accessed. R2 also has lower storage cost per GB than AWS S3.\\\\\\\\n\\\\\\\\n- R2 storage cost per TB is $15 per month.\\\\\\\\n- R2 write costs are $4.5 per 1,000,000 Operations A (usually write, list, etc.)\\\\\\\\n- R2 access cost is $0.36 per 1,000,000 Operations B (which includes read and head requests).\\\\\\\\n\\\\\\\\nSince R2 doesn\\\\\\\\\\\\'t provide a public S3 endpoint, the snapshots will be accessible through HTTPS using a list of snapshot files in a separate file. It can be downloaded using `rclone` in parallel using one of the provided script, e.g. https://github.com/fastnear/static/blob/main/down_rclone.sh\\\\\\\\nThis setup supports downloading snapshot\\\\\\\\u{2019}s data at high bandwidth by leveraging Cloudflare caching and edge network.\\\\\\\\nWe plan to add md5 verification to verify files integrity and automatically retry downloads for malformed files.\\\\\\\\n\\\\\\\\n#### Snapshot process\\\\\\\\n\\\\\\\\nWe leverage BTRFS to be able to create a just-in-time snapshot of a storage on the node to decrease downtime of the node. On our proof-of-concept we were able to achieve close to 10Gbps upload speed.\\\\\\\\n\\\\\\\\nSimplified process:\\\\\\\\n1. Stop the node\\\\\\\\n2. Snapshot the data using BTRFS\\\\\\\\n3. Start the node\\\\\\\\n4. Generate the file list and md5 hashes\\\\\\\\n5. Upload files to R2\\\\\\\\n6. Upload the file list\\\\\\\\n7. Update list of available snapshots\\\\\\\\n8. Update the latest available snapshot\\\\\\\\n\\\\\\\\n### Snapshots\\\\\\\\n\\\\\\\\nFASTNEAR to provide snapshots at the following frequency:\\\\\\\\n- RPC for both mainnet and testnet:\\\\\\\\n    - 1 snapshot with 5 epochs per day with the retention of 30 days\\\\\\\\n    - (Mainnet only) 3 snapshots with 3 epochs per day with the retention of 2 days \\\\\\\\n- Archive for both mainnet and testnet:\\\\\\\\n    - 1 hot-data per day with the retention of 30 days\\\\\\\\n    - 1 cold-data per **week** with the retention of 30 days (about 4 snapshots per month)\\\\\\\\n\\\\\\\\n#### Sizing\\\\\\\\n\\\\\\\\n- Mainnet snapshots:\\\\\\\\n    - RPC/Hot-data with 5 epochs: 1.7Tb\\\\\\\\n    - RPC with 3 epochs: 1.3Tb\\\\\\\\n    - Cold-data: 60Tb\\\\\\\\n- Testnet snapshots:\\\\\\\\n    - RPC/Hot-data with 5 epochs: 0.6Tb\\\\\\\\n    - Cold-data: 11Tb\\\\\\\\n- Expected growth: 6% per month\\\\\\\\n\\\\\\\\nCurrent Total: ~432Tb / month\\\\\\\\nFile count: ~8,863,744 files per month (based on 64Mb p per file and ignoring retention)\\\\\\\\n\\\\\\\\n\\\\\\\\n### Nodes\\\\\\\\n\\\\\\\\nTo operate the service we need one main node and one backup node per snapshot type.\\\\\\\\n\\\\\\\\nRequirements:\\\\\\\\n* 10Gbps connection\\\\\\\\n* Only NVME disks (HDDs are too slow for upload and catch ups)\\\\\\\\n* Expected traffic 100Tb+ for RPC, 400Tb+ for archive node (mainnet)\\\\\\\\n\\\\\\\\nTotal 8 nodes, see budget breakdown for details.\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\n- Setup of the nodes\\\\\\\\n- Development of scripts and tools to generate snapshots\\\\\\\\n- Monitoring and alerts\\\\\\\\n- Publish snapshots at the schedule\\\\\\\\n- Documentation how to download snapshots from the new source\\\\\\\\n- Update near-nodes.io to point to the new solution\\\\\\\\n- Deprecate the legacy S3 solution\\\\\\\\n- A custom documentation website that dynamically provides links to the snapshots.\\\\\\\\n\\\\\\\\n## Metrics\\\\\\\\n- Uptime - not missing scheduled snapshots.\\\\\\\\n- Upload speed - how long it takes to publish a snapshot. Target upload time at 10Gbps\\\\\\\\n- Download speed - target at least 10Gbps.\\\\\\\\n- Quality - no broken snapshots.\\\\\\\\n\\\\\\\\n## Usage & Examples\\\\\\\\n- Current users: RPC and Archive node operators and validators\\\\\\\\n- Current metrics (from S3):\\\\\\\\n    - Number of downloads: unknown\\\\\\\\n    - Uptime: mostly all available\\\\\\\\n    - Upload speed: ~5Gbps based on s3 timestamps\\\\\\\\n    - Download speed: 6Gbps (at least at my setup)\\\\\\\\n    - Quality: great\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\nThe budget might be revisited for the future months if the projected growth of the state or storage exceeds expectations.\\\\\\\\n\\\\\\\\n### Budget Total\\\\\\\\n\\\\\\\\n$257,970 USD over 6 months\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\n* Oct 2024: $46,745 (includes one-time nodes setup fee)\\\\\\\\n* Nov 2024 - Mar 2025: $42,245 per month\\\\\\\\n\\\\\\\\nMonthly:\\\\\\\\n- R2: $10,045\\\\\\\\n- Nodes: $12,200\\\\\\\\n- Operations: $20,000\\\\\\\\n\\\\\\\\n#### R2 Costs\\\\\\\\n\\\\\\\\n* R2 storage: 432 * $15 = $6480\\\\\\\\n* R2 write cost: ~400$ (at 10 ops A per file)\\\\\\\\n* R2 read cost: ~320$ (at 100 ops B per file)\\\\\\\\n* R2 total: $7200\\\\\\\\n* Safety margin 20%: $1440\\\\\\\\n* Current R2 total with margin: $8640 per month\\\\\\\\n* With projected 6% growth: $9159, $9708, $10291, $10908, $11563 in the following months\\\\\\\\n* **Average per month: $10,045**\\\\\\\\n\\\\\\\\n#### Nodes\\\\\\\\n\\\\\\\\nCost estimate includes 10 Gbps connection and required traffic.\\\\\\\\n\\\\\\\\n- RPC node: 700$ * 2 = 1400$\\\\\\\\n- Mainnet Archival node: 3200$ * 2 = 6400$\\\\\\\\n- Testnet Archival node: 1500$ * 2 = 3000$\\\\\\\\n- Tesnet node: 700$ * 2 = 1400$\\\\\\\\n- **Monthly total: $12,200 per month**\\\\\\\\n- **One time setup cost: $4500** (charged by node providers for one-time custom node setup)\\\\\\\\n\\\\\\\\n#### Operational cost\\\\\\\\n\\\\\\\\nOperational cost includes compensation for the implementation, maintenance, and support.\\\\\\\\n\\\\\\\\n* **Total: $20000 per month**\\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"treasury.fastnear.tg\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"257970\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Other\", \"RPC Nodes\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1036768910458e+21
+    }
+  },
+  {
+    "id": "8798568664",
+    "receipt_id": "A7ugkLzPzfWzdb2TemKrDPxwHCT46J6odPm6VcX7K5Vi",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6v77qWkEJU1djNp3P2rHxh8svx8hRfZ4iQR8HzrT2RPF",
+      "block_height": 129247748,
+      "block_timestamp": 1727711174278570500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3519401052205,
+      "tokens_burnt": 351940105220500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Ekb7ztLk7NdaKVk5Jc1xuyFuMJJJGvKJT8rgBQ62f1qc",
+    "included_in_block_hash": "X9m4Qmt8kEdWMbZ7BQKfaTodRC8JH4Xpi64v1KVSrCe",
+    "block_timestamp": "1727711172163001180",
+    "block": {
+      "block_height": 129247746
+    },
+    "receipt_conversion_tokens_burnt": "68890933170500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351940105220500000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mob.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":22,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1036768910458e+21
+    }
+  },
+  {
+    "id": "8798581737",
+    "receipt_id": "DXTzexUwhdrd6K9DxaBb1jLZDFYPT6viyVB2QedcCkGK",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GQqaZVHqJqYGmsBycwZA1vd6EEYWhJMMf325JXgDfseG",
+      "block_height": 129247796,
+      "block_timestamp": 1727711227316819000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7875438275146,
+      "tokens_burnt": 787543827514600000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "AwHvCoGoKqftirSyfMhkS2EvHq4uTuQAE1UdoUVUiiqv",
+    "included_in_block_hash": "9SDzmfZYuVyGEGJ2kjPg6jM6gBUkUsrfQiKNTWCZR1nK",
+    "block_timestamp": "1727711226249519323",
+    "block": {
+      "block_height": 129247795
+    },
+    "receipt_conversion_tokens_burnt": "55959109662500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 787543827514600000000,
+        "args": "{\"id\": 25, \"body\": {\"name\": \"Nearblocks.io Proposal for KitWallet Transition\", \"summary\": \"With our extensive experience in indexing and integration, we are well-positioned to ensure a seamless transition for KitWallet.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": 1, \"supervisor\": null, \"description\": \"Dear Infra Committee,\\\\\\\\n\\\\\\\\nWe appreciate the opportunity to submit our proposal for the transition project and are confident that Nearblocks.io is the ideal partner for this endeavour. With our extensive experience in indexing and integration, we are well-positioned to ensure a seamless transition for KitWallet.\\\\\\\\n\\\\\\\\n## Response to Requirements\\\\\\\\n\\\\\\\\nAt Nearblocks.io, we have already created drop-in replaceable KitWallet endpoints, which means there will be no need to build additional infrastructure. \\\\\\\\n\\\\\\\\nA transition plan would simply be updating `https://api.kitwallet.app/` to `https://api.nearblocks.io/v1/kitwallet/`.\\\\\\\\n\\\\\\\\nThis gives us a distinct advantage in terms of efficiency and speed for this transition. Our ongoing communication with members of the Pagoda team & infrastructure committee further reinforces our commitment to staying aligned with the ecosystem.\\\\\\\\n\\\\\\\\nNearblocks is built on top of Near Lake as the data source and currently operates as the #1 explorer within the ecosystem. We believe Nearblocks is in the best position to support this transition.\\\\\\\\n\\\\\\\\n**Current live endpoints (documentation):**\\\\\\\\n\\\\\\\\n- Mainnet: https://api.nearblocks.io/api-docs/#/Kitwallet\\\\\\\\n- Testnet: https://api-testnet.nearblocks.io/api-docs/#/Kitwallet\\\\\\\\n\\\\\\\\n## Service Level\\\\\\\\n\\\\\\\\n### Monitoring\\\\\\\\nWe will set up monitoring with notifications for visualizing API availability. System health and performance are available here: https://status.nearblocks.io. From our status monitor, we can send email and/or Slack notifications to major stakeholders. For reference, Nearblocks has been able to maintain a monthly uptime of 99.83%. We are aiming for 99.99% in the coming weeks.\\\\\\\\n\\\\\\\\n### Response Time\\\\\\\\nAverage response time on the Nearblocks API is now sub-2 seconds. Legacy KitWallet endpoints are using LIKE queries, which are known to be less performant. We have avoided this due to additional indexing.\\\\\\\\n\\\\\\\\nCurrent caveat: `likelyTokens` only supports tokens which Nearblocks supports. This includes all NEP-141 tokens and *most* [legacy tokens](https://github.com/Nearblocks/nearblocks/tree/main/apps/indexer-events/src/services/contracts/ft). We are constantly working to add missing [legacy tokens](https://github.com/Nearblocks/nearblocks/issues/new?assignees=&labels=&projects=&template=token_request.md&title=).\\\\\\\\n\\\\\\\\n### Rate Limiting\\\\\\\\nNearblocks API rate limiting is enforced by IP address and API keys. Given this is a public good endpoint, we will limit 150 queries per minute per IP address. We believe this should be within a very generous fair usage policy. This can be made flexible and is open for discussion.\\\\\\\\n\\\\\\\\n### Support\\\\\\\\n- Support Availability: GitHub issues available here https://github.com/Nearblocks/nearblocks/issues \\\\\\\\n- Response Time: 24-48 hours through GitHub issues.\\\\\\\\n\\\\\\\\n### Data Integrity\\\\\\\\nThe KitWallet endpoints are backed by existing Nearblocks data, which is indexed from Near Lake.\\\\\\\\n\\\\\\\\n### Updates and Changes\\\\\\\\nWe have no plans to make changes to KitWallet endpoints. We previously created these endpoints to support drop-in replacements without any work required other than replacing the endpoint.\\\\\\\\n\\\\\\\\n### Usage\\\\\\\\nWe will track KitWallet usage through the Nearblocks API key dashboard for real-time usage. This can be made available to stakeholders.\\\\\\\\n\\\\\\\\n![API Usage Dashboard](https://github.com/user-attachments/assets/ceefc8e0-a74a-4299-8bdb-98258c0f7ca1)\\\\\\\\n\\\\\\\\n## Approach\\\\\\\\n\\\\\\\\n1. Move Nearblocks KitWallet endpoints to be accessible from the existing endpoint (i.e., https://api.kitwallet.app/) to allow for a seamless transition experience with no downtime for any existing users.\\\\\\\\n\\\\\\\\n2. We are aware that there are remaining unknown users using this legacy endpoint. As we can\\\\\\\\\\\\'t reach out to suggest a transition to alternative solutions, we will set up a landing page on kitwallet.app stating the current situation and directing them to alternative solutions as well as a point of contact that will be monitored. The landing page will explain the KitWallet transition plans with links to:\\\\\\\\n\\\\\\\\n- Existing Documentation with user guide\\\\\\\\n- Support available through GitHub Issues\\\\\\\\n- Alternatives like Nearblocks API and FastNear\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n$4,000 / month for 12 months - to ensure excess capacity for additional traffic.\\\\\\\\n\\\\\\\\n## Experience & Portfolio\\\\\\\\n\\\\\\\\nNearblocks.io is our flagship product; however, we have built other products in the past on NEAR, such as nearsend.io.\\\\\\\\n\\\\\\\\nThank you for considering Nearblocks.io. We look forward to the possibility of working together to bring this transition to completion. Please don\\\\\\\\\\\\'t hesitate to reach out with any further questions or clarifications.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"nearblocks_io.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"48000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1952722411996e+21
+    }
+  },
+  {
+    "id": "8798582717",
+    "receipt_id": "3A5rFG4HX8hfz1UcEgPijgjrzY1LB569FoQhQ1nZKQvo",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3XrrWUHzpP1Jtb3UEp1GJeKKGvx32VydApVLfjrwPkCE",
+      "block_height": 129247797,
+      "block_timestamp": 1727711228598566700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3517693040225,
+      "tokens_burnt": 351769304022500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "AwHvCoGoKqftirSyfMhkS2EvHq4uTuQAE1UdoUVUiiqv",
+    "included_in_block_hash": "9SDzmfZYuVyGEGJ2kjPg6jM6gBUkUsrfQiKNTWCZR1nK",
+    "block_timestamp": "1727711226249519323",
+    "block": {
+      "block_height": 129247795
+    },
+    "receipt_conversion_tokens_burnt": "55959109662500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351769304022500000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"nearblocks_io.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":25,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1952722411996e+21
+    }
+  },
+  {
+    "id": "8798614085",
+    "receipt_id": "FExsnBgi8MQCYXbWxR9wzAhyonKmzJvHwW6NbUvZEZoC",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3hQR7ZJLpLkNA9NMyL1Mk6wJt4HFqdjdWzS9fiMmvATP",
+      "block_height": 129247897,
+      "block_timestamp": 1727711349642082000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5302469827689,
+      "tokens_burnt": 530246982768900000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "EGmR8WDHhoxVabTXjKa4ik3DwcFGigp2eMHLRJqofh81",
+    "included_in_block_hash": "FTXfiZncC4CUXz8NjnayByi5iUFuPisKAV1FkYJJZXMX",
+    "block_timestamp": "1727711348336554400",
+    "block": {
+      "block_height": 129247896
+    },
+    "receipt_conversion_tokens_burnt": "31444911781000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 530246982768900000000,
+        "args": "{\"id\": 24, \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 913480962773600000000
+    }
+  },
+  {
+    "id": "8798614426",
+    "receipt_id": "A1FnRHYphtBzhf731ANLz4WmRhqUh5pzEDLhCSthGBHz",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8PR6CgqcaC6kt6E5FXjtUVc69NZDQTgZoavAC11QQQyp",
+      "block_height": 129247898,
+      "block_timestamp": 1727711350993733400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3517890682237,
+      "tokens_burnt": 351789068223700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "EGmR8WDHhoxVabTXjKa4ik3DwcFGigp2eMHLRJqofh81",
+    "included_in_block_hash": "FTXfiZncC4CUXz8NjnayByi5iUFuPisKAV1FkYJJZXMX",
+    "block_timestamp": "1727711348336554400",
+    "block": {
+      "block_height": 129247896
+    },
+    "receipt_conversion_tokens_burnt": "31444911781000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351789068223700000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"p-kurzawa.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":24,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 913480962773600000000
+    }
+  },
+  {
+    "id": "8800168764",
+    "receipt_id": "77Hj94XECCjLPM482dxR9zm9d4mXfqXVYaszmvv5TGoM",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6rgLyAgegR3vECZf7eJL3GsRipMjMaA7dmzkAhrhzZP2",
+      "block_height": 129251856,
+      "block_timestamp": 1727715968196445000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9361257656160,
+      "tokens_burnt": 936125765616000000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "FcNx7ATrV92rjHds1Wp8EbUgeW5CSRJA9NHHbmoaCXMn",
+    "included_in_block_hash": "3EWYsbWhoREkvb3EaHykEkxye6YiAqp5Tvsw3quZcP9D",
+    "block_timestamp": "1727715967154176742",
+    "block": {
+      "block_height": 129251855
+    },
+    "receipt_conversion_tokens_burnt": "31449680152500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 936125765616000000000,
+        "args": "{\"id\": 5, \"timeline\": {\"status\": \"REJECTED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3252673668598e+21
+    }
+  },
+  {
+    "id": "8800169950",
+    "receipt_id": "DKx3fk6Kjog2nhe1WZyGRxP8pgSSxYtyFUfq9C3GBFCc",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7sqA24CAwE6acWRtUwCDbFEiXVZU5xjYPd7riJFNNX8D",
+      "block_height": 129251857,
+      "block_timestamp": 1727715969434501600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3576919210913,
+      "tokens_burnt": 357691921091300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "FcNx7ATrV92rjHds1Wp8EbUgeW5CSRJA9NHHbmoaCXMn",
+    "included_in_block_hash": "3EWYsbWhoREkvb3EaHykEkxye6YiAqp5Tvsw3quZcP9D",
+    "block_timestamp": "1727715967154176742",
+    "block": {
+      "block_height": 129251855
+    },
+    "receipt_conversion_tokens_burnt": "31449680152500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357691921091300000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"524f24bb0320fa84ab2ea93e589019c2c4c60a3a6a45dd0577bd6e97f40f1521\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":5,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3252673668598e+21
+    }
+  },
+  {
+    "id": "8884353139",
+    "receipt_id": "GDcS4KJWAxWFdNrgAcQdJzyAEoW4kg2mDmYmJtodeTVy",
+    "predecessor_account_id": "shane0.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2HYGgXR1SZXmmKcC1FkPpjneg5wPJGtdew3WzwGaghB8",
+      "block_height": 129480693,
+      "block_timestamp": 1727972906880556300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 11613308697591,
+      "tokens_burnt": 1.1613308697591e+21,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "Hd8RGP2moL6Hf7U4CexZPnaSbtJ1vyUdzMRW9GSAPCwN",
+    "included_in_block_hash": "8q7HK6VFUbdKdoAqYSJqoC4SfsJtQ3PvKekjd3gspR6C",
+    "block_timestamp": "1727972905678237957",
+    "block": {
+      "block_height": 129480692
+    },
+    "receipt_conversion_tokens_burnt": "115487459468500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 1.1613308697591e+21,
+        "args": "{\"body\": {\"name\": \"Upgrade, Expand and Decentralise NEAR\\\\\\\\u{2019}s RPC Infrastructure with Liquify\", \"summary\": \"Liquify proposes to upgrade NEAR\\\\\\\\\\\\'s RPC infrastructure with a hybrid strategy, combining high-performance bare-metal servers with greater access to decentralized RPC protocols. Key points:\\\\\\\\n\\\\\\\\n- Already served 14B NEAR requests (99.999% success)\\\\\\\\n- Support decentralized infra protocols (LAVA, POKT, SubQuery etc.) with an industry leading infra backbone\\\\\\\\n- Mainnet & Testnet (archival included) \\\\\\\\n- Developer portal w/ free-tier & SLA support\\\\\\\\n- Global coverage w/ fully owned hardware (not rented or cloud)\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"linked_rfp\": 2, \"supervisor\": null, \"description\": \"# 1. Submission Info\\\\\\\\n\\\\\\\\n**Submitted By:**  \\\\\\\\nLiquify LTD\\\\\\\\n\\\\\\\\n**Contact Information:**\\\\\\\\n\\\\\\\\n- **Name**: Shane Burgett\\\\\\\\n- **Role**: Account Lead\\\\\\\\n- **Email**: shane@liquify.io\\\\\\\\n- **Telegram**: @shane8burger\\\\\\\\n\\\\\\\\n**Date:**  \\\\\\\\nOctober 3, 2024\\\\\\\\n\\\\\\\\n# 2. Executive Summary\\\\\\\\n\\\\\\\\n**Overview**  \\\\\\\\nAs the NEAR ecosystem grows, it requires a scalable, resilient RPC infrastructure that balances performance and decentralisation. **Liquify is uniquely positioned to meet this need with a bridge solution that combines the performance of centralised infrastructure with the greater access and resiliency of decentralisation through our involvement in decentralised RPC protocols.** Our globally distributed, fully-owned bare-metal infrastructure ensures high performance and reliability while supporting NEAR\\\\\\\\\\\\'s goal of broader, decentralised access.\\\\\\\\n\\\\\\\\n**Key Objectives**\\\\\\\\n\\\\\\\\n- Seamless transition and management of NEAR\\\\\\\\\\\\'s existing RPC infrastructure.\\\\\\\\n- High-performance and reliable RPC services that exceed NEAR\\\\\\\\\\\\'s stated goals.\\\\\\\\n- Flexible, scalable infrastructure to support NEAR\\\\\\\\\\\\'s growth and exposes NEAR to numerous decentralised infrastructure protocols.\\\\\\\\n- Developer Portal  \\\\\\\\n\\\\\\\\n**Value Proposition**  \\\\\\\\nLiquify\\\\\\\\\\\\'s hybrid approach blends the performance of centralised services with the decentralised ethos of blockchain. Our proven expertise in managing complex infrastructures makes us the ideal partner to support NEAR\\\\\\\\\\\\'s vision for a decentralised, scalable future.\\\\\\\\n\\\\\\\\n# 3. Organisation Information\\\\\\\\n\\\\\\\\n**Size of the Team**\\\\\\\\n\\\\\\\\n- **Total Employees**: 15+ team members.\\\\\\\\n- **Engineering Team**: 9+ engineers with extensive experience in blockchain infrastructure and RPC services.\\\\\\\\n\\\\\\\\n**Team Location**\\\\\\\\n\\\\\\\\n- Headquarters in the UK.\\\\\\\\n- Data centres in the US (Phoenix, Washington D.C.), Europe (Germany, UK), and Asia (Singapore, Japan) to provide comprehensive global coverage.\\\\\\\\n\\\\\\\\n**Team Background and Bios**\\\\\\\\n\\\\\\\\n- **Andy Pohl**: CEO with a strong background in software engineering and extensive experience in blockchain infrastructure. Andy has a Master\\\\\\\\\\\\'s in Electronic & Computer Engineering from the University of Birmingham and has previously worked with leading blockchain projects.\\\\\\\\n\\\\\\\\n- **Isaac Rodgin**: Head of Business Development with a robust background in integrating custom infrastructure solutions for web3 projects and investment firms. Founder of Rodgin Consulting Group and former advisor at Fuse.io.\\\\\\\\n\\\\\\\\n- **Shane Burgett**: Account Lead with a strong focus on blockchain infrastructure, having served as Product Lead at Pocket Network Foundation and founded Decentralized Authority, an infrastructure tooling devshop.\\\\\\\\n\\\\\\\\n**Affiliations with NEAR Ecosystem Partners**  \\\\\\\\nLiquify has had much involvement with NEAR, providing RPC and node services to various ecosystem participants, including Aurora, POKT Network, Lava Network, dRPC, Subquery, and TRGC.\\\\\\\\n\\\\\\\\n# 4. Professional Experience\\\\\\\\n\\\\\\\\n**Relevant Experience with NEAR Blockchain**\\\\\\\\n\\\\\\\\n- Liquify has been a trusted infrastructure provider for NEAR, serving over **14 billions NEAR RPC requests** acrossing full nodes, archival nodes, and indexing, with a success rate of 99.9998%.\\\\\\\\n- We are familiar with NEAR upgrades and were able to maintain reliability during the Q2 resharding events.\\\\\\\\n- We have brought critical NEAR infrastructure to multiple decentralised infrastructure protocols, like LAVA, POKT, and dRPC.\\\\\\\\n- Liquify is also heavily involved with NEAR validation with current delegations equating to $30M+ of staked NEAR tokens.\\\\\\\\n\\\\\\\\n**Non-Technical Capabilities**\\\\\\\\n\\\\\\\\n- **Product Management**: We assign dedicated product managers to each engagement, ensuring effective communication and timely delivery.\\\\\\\\n- **Customer Support**: Liquify provides 24/7 support through multiple channels, including Slack, Telegram, Discord, and email.\\\\\\\\n- **Business Development and Marketing**: We focus on building long-term relationships with institutional clients and blockchain ecosystems through tailored solutions and strategic partnerships.\\\\\\\\n\\\\\\\\n**In-House Resources**\\\\\\\\n\\\\\\\\n- **Design UX/UI**: Our design team specialises in creating custom applications and dashboards for monitoring RPC performance and network status.\\\\\\\\n- **Customer Support**: A dedicated team ensures prompt resolution of any technical issues, with a focus on providing a seamless user experience.\\\\\\\\n\\\\\\\\n**Portfolio of Relevant Work**\\\\\\\\n\\\\\\\\nLiquify has a long history of delivering on foundation partnership and public proposals:\\\\\\\\n\\\\\\\\n- **POKT validation, snapshots, RPC infra, and RPC Gateway**: [Public Proposal](https://forum.pokt.network/t/open-priority-gateway-demo/4874/2) \\\\\\\\u{2192} [Launched Product](https://www.liquify.com/blog/pokt-network-is-getting-a-new-gateway-by-liquify)\\\\\\\\n- **Selfchain RPC infra, IBC relayer, and validator**: [Foundation Partnership](https://x.com/selfchainxyz/status/1806251581186379816)\\\\\\\\n- **Subquery validator and RPC infra**: [Foundation Partnership](https://x.com/Liquify_ltd/status/1801260253809692689)\\\\\\\\n- **Stellar RPC infra**: [Public Proposal](https://communityfund.stellar.org/project/infrastructure-support-liquify)\\\\\\\\n- **Syscoin RPC infra**: [Foundation Partnership](https://rollux.com/news/weekly-240426)\\\\\\\\n- **Fuse RPC Infra**: [Foundation Partnership](https://news.fuse.io/liquify-powers-up-to-provide-fuse-network-rpc-nodes/)\\\\\\\\n- **Pyth Network Publisher infra & Hermes provider**: Foundation Partnership\\\\\\\\n- **Sentinel public RPC infra and validator**: Foundation Partnership\\\\\\\\n- **Infura\\\\\\\\\\\\'s DIN** (Liquify is the leading provider): [Public Partnership](https://www.infura.io/solutions/decentralized-infrastructure-service)\\\\\\\\n\\\\\\\\nLiquify also is a central player in numerous decentralised RPC protocols:\\\\\\\\n\\\\\\\\n- LAVA\\\\\\\\n- POKT\\\\\\\\n- DIN - Infura\\\\\\\\\\\\'s Decentralised Infrastructure Network\\\\\\\\n- dRPC\\\\\\\\n- Route Protocol\\\\\\\\n- Subquery\\\\\\\\n\\\\\\\\n# 5. Approach and Solution\\\\\\\\n\\\\\\\\n## Primary Approach and Solution\\\\\\\\n\\\\\\\\nLiquify will utilise a three-pronged strategy to address NEAR\\\\\\\\\\\\'s RPC infrastructure needs:\\\\\\\\n\\\\\\\\n1. **Delivering Top-Tier Performance through Bare-Metal Infrastructure**: Liquify will provide the fastest, most distributed, and highly reliable bare-metal infrastructure. This ensures industry-leading performance, capable of supporting NEAR\\\\\\\\\\\\'s expanding ecosystem with the highest levels of uptime, low latency, and optimised traffic management. This infrastructure will be a mix of nodes and indexing (likely [Read RPC](https://github.com/near/read-rpc/))\\\\\\\\n\\\\\\\\n2. **Empowering NEAR with a Robust Developer Portal**: Liquify will establish an industry-leading RPC portal for NEAR developers. This portal will feature an accessible free tier, simplified billing, robust monitoring, notifications, and comprehensive Service Level Agreement (SLA) assurances. In addition, developers will benefit from decentralised RPC protocol access, allowing for seamless interaction with NEAR\\\\\\\\\\\\'s network through a decentralised approach.\\\\\\\\n\\\\\\\\n3. **Bridging NEAR to Decentralised Infrastructure Protocols**: Liquify will strategically position NEAR within the decentralised infrastructure protocol landscape by integrating multiple RPC gateway options. This approach ensures that NEAR developers can access both centralised and decentralised RPC services, empowering them with the flexibility to choose the best infrastructure for their specific use case.\\\\\\\\n\\\\\\\\n## Why Choose Liquify\\\\\\\\n\\\\\\\\nLiquify is uniquely positioned to accelerate NEAR\\\\\\\\\\\\'s developer experience by offering a balanced solution that addresses both centralised and decentralised needs. NEAR should not be limited to a single RPC infrastructure solution. Liquify\\\\\\\\\\\\'s platform offers a variety of RPC experiences to cater to the diverse requirements of different projects and developers within the NEAR ecosystem.\\\\\\\\n\\\\\\\\nWith proven experience and a long-standing relationship with NEAR, Liquify can ensure a seamless transition from NEAR\\\\\\\\\\\\'s current RPC setup while introducing improvements in performance, decentralisation, and flexibility. This combination makes Liquify the optimal partner to lead NEAR\\\\\\\\\\\\'s infrastructure into the future.\\\\\\\\n\\\\\\\\n**Open Source and Licensing**  \\\\\\\\nAll software developed as part of this project will be released under Apache 2.0 or MIT licences, fostering community collaboration and transparency.\\\\\\\\n\\\\\\\\n# 6. Goals / Milestones\\\\\\\\n\\\\\\\\n**Goal 1: Transition Planning and Knowledge Transfer**  \\\\\\\\n*Completion by November 1, 2024*\\\\\\\\n\\\\\\\\n- Conduct workshops with Pagoda and NEAR teams to outline the transition strategy.\\\\\\\\n- Develop a comprehensive knowledge transfer document detailing the current infrastructure setup.\\\\\\\\n- Help test with the community focused on snapshot repair\\\\\\\\n\\\\\\\\n**Goal 2: Infrastructure Deployment**  \\\\\\\\n*Completion by December 1, 2024*\\\\\\\\n\\\\\\\\n- Deploy Liquify\\\\\\\\\\\\'s infrastructure for NEAR mainnet and testnet RPC services.\\\\\\\\n- Implement rate-limited free-tier services for developers.\\\\\\\\n- Share initial performance report.\\\\\\\\n\\\\\\\\n**Goal 3: Performance Optimization and SLA Implementation**  \\\\\\\\n*Completion by February 1, 2024*\\\\\\\\n\\\\\\\\n- Optimise infrastructure performance and implement the SLA.\\\\\\\\n- Establish external status pages and alerting systems for real-time monitoring.\\\\\\\\n- Deploy NEAR Archival across the globe in collaboration with the community focused on snapshot repair.\\\\\\\\n\\\\\\\\n**Goal 4: Public Launch and Community Engagement**  \\\\\\\\n*Completion by March 1, 2025*\\\\\\\\n\\\\\\\\n- Final testing and bug fixes.\\\\\\\\n- Launch Liquify\\\\\\\\\\\\'s NEAR portal and engage the developer community through workshops and webinars.\\\\\\\\n\\\\\\\\n# 7. Metrics\\\\\\\\n\\\\\\\\n**Key Metrics for Success**\\\\\\\\n\\\\\\\\n- **Uptime and Performance**: Achieving 99.95% uptime and sub-300ms response time for mainnet RPC.\\\\\\\\n- **User Adoption**: Number of developers and dApps using the Liquify RPC portal, and seeing NEAR continually supported on decentralised protocols LAVA, POKT and possibly others.\\\\\\\\n- **Community Engagement**: Participation in workshops and feedback from NEAR developers.\\\\\\\\n\\\\\\\\n**Measurement Plan**\\\\\\\\n\\\\\\\\n- Continuous monitoring through Liquify\\\\\\\\\\\\'s dashboard and other protocols.\\\\\\\\n- Monthly reports to the NEAR Foundation on SLA compliance, user adoption, and community feedback.\\\\\\\\n\\\\\\\\n# 8. Competitor Comparison\\\\\\\\n\\\\\\\\n**Competitor Analysis**\\\\\\\\n\\\\\\\\n- **Standard Providers**: Most RPC services rely on the cloud or hardware rental services for their infrastructure, making deployment significantly more challenging when trying to establish world coverage. These providers are subject to changing rental costs, hardware availability, usage agreements, etc. Liquify is unique in it owns all of their hardware, ensuring complete global coverage of our services.\\\\\\\\n\\\\\\\\n- **Decentralised Providers**: While they align with the ethos of decentralisation, they often struggle with performance and reliability issues due to fragmented infrastructure.\\\\\\\\n\\\\\\\\n**Unique Value Proposition**  \\\\\\\\nLiquify bridges the gap between these two models, providing a hybrid solution that combines the high performance and reliability of centralised infrastructure with the resilience and decentralisation of protocols. This makes us uniquely capable of supporting NEAR\\\\\\\\\\\\'s needs as it transitions to a more decentralised future.\\\\\\\\n\\\\\\\\n# 9. Usage & Examples\\\\\\\\n\\\\\\\\n**Current Users**\\\\\\\\n\\\\\\\\n- **Infura**: Liquify serves as the primary backup infrastructure to Infura, serving the lion share of all requests going through [DIN](https://www.infura.io/solutions/decentralized-infrastructure-service) due to our response times and reliability.\\\\\\\\n\\\\\\\\n- **Defi Kingdoms**: Liquify\\\\\\\\\\\\'s infrastructure successfully managed over 1 billion RPC requests a day with minimal latency and a 99.9999% success rate.\\\\\\\\n\\\\\\\\n- **TRGC**: Supported their portfolio companies with efficient, cost-effective infrastructure solutions, demonstrating our ability to handle mission-critical systems.\\\\\\\\n\\\\\\\\n**Potential Use Cases**\\\\\\\\n\\\\\\\\n- NEAR developers that require stable and high-performance RPC access, with a user experience similar to other ecosystems.\\\\\\\\n- dApps wanting a true decentralised experience through decentralised RPC protocols, knowing that Liquify is providing a reliable, fast, core infrastructure.\\\\\\\\n\\\\\\\\n**Scalability Examples**  \\\\\\\\nLiquify has demonstrated the ability to scale infrastructure to handle up to 200,000 requests per minute, far exceeding NEAR\\\\\\\\\\\\'s current traffic requirements. We have consistently delivered high-quality, high-performance RPC services, supporting 60+ chains, including NEAR, to customers directly or through decentralised RPC protocols. This scalability will support NEAR\\\\\\\\\\\\'s growth and ensure reliable service for developers and users.\\\\\\\\n\\\\\\\\n# 10. Budget\\\\\\\\n\\\\\\\\n**Total Budget**: $472,000 for the first year.\\\\\\\\n\\\\\\\\n**Budget Breakdown**\\\\\\\\n\\\\\\\\n- **Initial Setup**: $60,000 (October 2024)\\\\\\\\n  - Deploying full nodes, archival nodes, indexes, and setting up support infrastructure.\\\\\\\\n  - **$12,000** to be rewarded to the community members assisting with archival snapshot repair.\\\\\\\\n  - Developer Portal integration.\\\\\\\\n\\\\\\\\n- **Monthly Maintenance**: $35,000/month (November 2024 - September 2025)\\\\\\\\n  - Infrastructure cost, maintenance, and network upgrades.\\\\\\\\n  - Free-tier traffic coverage\\\\\\\\n  - Customer support\\\\\\\\n\\\\\\\\n**Contingency Plan**  \\\\\\\\nAn additional $15,000 is allocated for unforeseen infrastructure or operational costs, ensuring flexibility and readiness to address any unexpected challenges.\\\\\\\\n\\\\\\\\n# 11. Security and Compliance\\\\\\\\n\\\\\\\\n**Security Measures**\\\\\\\\n\\\\\\\\n- Comprehensive DDoS protection, IP whitelisting, and detailed logging and monitoring.\\\\\\\\n- Custom tools for disaster recovery and incident management, ensuring high availability and resilience.\\\\\\\\n- Leading EDR software running on all our hosts\\\\\\\\n\\\\\\\\n**Disaster Recovery Plan**\\\\\\\\n\\\\\\\\n- Regular backups and a robust disaster recovery protocol ensure service continuity and data integrity, with the ability to recover from any disruptions quickly and efficiently.\\\\\\\\n\\\\\\\\n**Compliance and Data Integrity**\\\\\\\\n\\\\\\\\n- Adherence to NEAR\\\\\\\\\\\\'s data consistency requirements and transparent communication of any service disruptions or changes. Liquify commits to providing a secure and compliant infrastructure that aligns with NEAR\\\\\\\\\\\\'s operational standards.\\\\\\\\n\\\\\\\\n# 12. Service Level Agreement (SLA)\\\\\\\\n\\\\\\\\n**Uptime Guarantee:**  \\\\\\\\n99.95% monthly uptime, ensuring minimal service interruptions and maintaining the high availability of NEAR\\\\\\\\\\\\'s RPC services.\\\\\\\\n\\\\\\\\n**Performance Standards \\\\\\\\\\\\\\\\***\\\\\\\\n\\\\\\\\n- **Mainnet RPC**: Average response time \\\\\\\\u{2264} 300 milliseconds.\\\\\\\\n- **Testnet RPC**: Average response time \\\\\\\\u{2264} 300 milliseconds.\\\\\\\\n- **Archival-RPC**: Average response time \\\\\\\\u{2264} 600 milliseconds.\\\\\\\\n\\\\\\\\n\\\\\\\\\\\\\\\\* From calls within EU, US and APAC\\\\\\\\n\\\\\\\\n**Throughput**\\\\\\\\n\\\\\\\\nWithin the budget of this proposal, Liquify estimates a potential throughput of 2 billion requests per day, which is 3,600% more than the stated peak traffic goals. Additional funds will be required to scale beyond that.\\\\\\\\n\\\\\\\\n**Support Availability**\\\\\\\\n\\\\\\\\n- Community-based support with best-effort responses within 24-48 hours for generic services, ensuring quick and efficient resolution of issues.\\\\\\\\n\\\\\\\\n# 13. Support and Maintenance\\\\\\\\n\\\\\\\\n**Community Support**\\\\\\\\n\\\\\\\\n- Dedicated support channels on Slack, Telegram, and Discord for developer assistance and issue resolution.\\\\\\\\n- Regular updates and bug fixes based on community feedback, ensuring a responsive and engaged support experience.\\\\\\\\n\\\\\\\\n**Ongoing Maintenance**\\\\\\\\n\\\\\\\\n- Continuous infrastructure monitoring and optimization, with regular collaboration with NEAR developers for client improvements and upgrades.\\\\\\\\n- Monthly performance reviews and reports to the NEAR Foundation, ensuring transparency and accountability.\\\\\\\\n\\\\\\\\n# 14. Governance and Compliance\\\\\\\\n\\\\\\\\n**Governance Structure**\\\\\\\\n\\\\\\\\n- Defined roles and responsibilities within the Liquify team for project management, technical leadership, and customer support, ensuring clear accountability and effective decision-making.\\\\\\\\n- Regular communication and reporting to NEAR stakeholders to maintain transparency and alignment with NEAR\\\\\\\\\\\\'s goals.\\\\\\\\n\\\\\\\\n**Reporting**\\\\\\\\n\\\\\\\\n- Monthly progress reports to the NEAR Foundation, including updates on project milestones, SLA compliance, and community engagement.\\\\\\\\n- Transparent communication of any changes or updates to the project plan, ensuring that all stakeholders are informed and aligned.\\\\\\\\n\\\\\\\\n# 15. Conclusion\\\\\\\\n\\\\\\\\n**Summary of Liquify\\\\\\\\\\\\'s Value Proposition**  \\\\\\\\nLiquify\\\\\\\\\\\\'s unique combination of high-performance, centralised service quality and decentralised resilience makes us the ideal partner for managing NEAR\\\\\\\\\\\\'s RPC infrastructure. Our fully-owned bare-metal infrastructure, extensive experience with the NEAR ecosystem, and commitment to decentralisation position us to provide a scalable, reliable, and future-proof solution.\\\\\\\\n\\\\\\\\n**Call to Action**  \\\\\\\\nWe invite the NEAR Foundation to collaborate with Liquify in transitioning and enhancing the current RPC infrastructure. Together, we can ensure that the NEAR ecosystem continues to grow and thrive with a robust, decentralised infrastructure that supports its long-term vision and goals.\", \"linked_proposals\": [], \"receiver_account\": \"liquify.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"472000\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.5691651453096e+21
+    }
+  },
+  {
+    "id": "8884353861",
+    "receipt_id": "944tb8tDrJZX15y54EhS5uAen6KMLVAkoVuSSK2N8Q5i",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "44dZFfzQL4rY8wfB6DeR9dgFBZJfMpsTUGHCpRYpPw6N",
+      "block_height": 129480694,
+      "block_timestamp": 1727972908210468900
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4583902022100,
+      "tokens_burnt": 458390202210000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Hd8RGP2moL6Hf7U4CexZPnaSbtJ1vyUdzMRW9GSAPCwN",
+    "included_in_block_hash": "8q7HK6VFUbdKdoAqYSJqoC4SfsJtQ3PvKekjd3gspR6C",
+    "block_timestamp": "1727972905678237957",
+    "block": {
+      "block_height": 129480692
+    },
+    "receipt_conversion_tokens_burnt": "115487459468500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 458390202210000000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Infrastructure Committee* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @shane0.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Upgrade, Expand and Decentralise NEAR\\\\\\\\u{2019}s RPC Infrastructure with Liquify\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nLiquify proposes to upgrade NEAR\\\\\\\\\\\\'s RPC infrastructure with a hybrid strategy, combining high-performance bare-metal servers with greater access to decentralized RPC protocols. Key points:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- Already served 14B NEAR requests (99.999% success)\\\\\\\\\\\\\\\\n- Support decentralized infra protocols (LAVA, POKT, SubQuery etc.) with an industry leading infra backbone\\\\\\\\\\\\\\\\n- Mainnet & Testnet (archival included) \\\\\\\\\\\\\\\\n- Developer portal w/ free-tier & SLA support\\\\\\\\\\\\\\\\n- Global coverage w/ fully owned hardware (not rented or cloud)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=26)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.5691651453096e+21
+    }
+  },
+  {
+    "id": "8884353862",
+    "receipt_id": "93VCaJPjtP16hMPdqJeif4E4dWuSLXysCeeThZsjLmLt",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "44dZFfzQL4rY8wfB6DeR9dgFBZJfMpsTUGHCpRYpPw6N",
+      "block_height": 129480694,
+      "block_timestamp": 1727972908210468900
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4781145341115,
+      "tokens_burnt": 478114534111500000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "Hd8RGP2moL6Hf7U4CexZPnaSbtJ1vyUdzMRW9GSAPCwN",
+    "included_in_block_hash": "8q7HK6VFUbdKdoAqYSJqoC4SfsJtQ3PvKekjd3gspR6C",
+    "block_timestamp": "1727972905678237957",
+    "block": {
+      "block_height": 129480692
+    },
+    "receipt_conversion_tokens_burnt": "115487459468500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 478114534111500000000,
+        "args": "{\"proposal\": {\"id\": 26, \"snapshot\": {\"name\": \"Upgrade, Expand and Decentralise NEAR\\\\\\\\u{2019}s RPC Infrastructure with Liquify\", \"labels\": [\"RPC Nodes\"], \"summary\": \"Liquify proposes to upgrade NEAR\\\\\\\\\\\\'s RPC infrastructure with a hybrid strategy, combining high-performance bare-metal servers with greater access to decentralized RPC protocols. Key points:\\\\\\\\n\\\\\\\\n- Already served 14B NEAR requests (99.999% success)\\\\\\\\n- Support decentralized infra protocols (LAVA, POKT, SubQuery etc.) with an industry leading infra backbone\\\\\\\\n- Mainnet & Testnet (archival included) \\\\\\\\n- Developer portal w/ free-tier & SLA support\\\\\\\\n- Global coverage w/ fully owned hardware (not rented or cloud)\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"shane0.near\", \"timestamp\": \"1727972906880556382\", \"linked_rfp\": 2, \"supervisor\": null, \"description\": \"# 1. Submission Info\\\\\\\\n\\\\\\\\n**Submitted By:**  \\\\\\\\nLiquify LTD\\\\\\\\n\\\\\\\\n**Contact Information:**\\\\\\\\n\\\\\\\\n- **Name**: Shane Burgett\\\\\\\\n- **Role**: Account Lead\\\\\\\\n- **Email**: shane@liquify.io\\\\\\\\n- **Telegram**: @shane8burger\\\\\\\\n\\\\\\\\n**Date:**  \\\\\\\\nOctober 3, 2024\\\\\\\\n\\\\\\\\n# 2. Executive Summary\\\\\\\\n\\\\\\\\n**Overview**  \\\\\\\\nAs the NEAR ecosystem grows, it requires a scalable, resilient RPC infrastructure that balances performance and decentralisation. **Liquify is uniquely positioned to meet this need with a bridge solution that combines the performance of centralised infrastructure with the greater access and resiliency of decentralisation through our involvement in decentralised RPC protocols.** Our globally distributed, fully-owned bare-metal infrastructure ensures high performance and reliability while supporting NEAR\\\\\\\\\\\\'s goal of broader, decentralised access.\\\\\\\\n\\\\\\\\n**Key Objectives**\\\\\\\\n\\\\\\\\n- Seamless transition and management of NEAR\\\\\\\\\\\\'s existing RPC infrastructure.\\\\\\\\n- High-performance and reliable RPC services that exceed NEAR\\\\\\\\\\\\'s stated goals.\\\\\\\\n- Flexible, scalable infrastructure to support NEAR\\\\\\\\\\\\'s growth and exposes NEAR to numerous decentralised infrastructure protocols.\\\\\\\\n- Developer Portal  \\\\\\\\n\\\\\\\\n**Value Proposition**  \\\\\\\\nLiquify\\\\\\\\\\\\'s hybrid approach blends the performance of centralised services with the decentralised ethos of blockchain. Our proven expertise in managing complex infrastructures makes us the ideal partner to support NEAR\\\\\\\\\\\\'s vision for a decentralised, scalable future.\\\\\\\\n\\\\\\\\n# 3. Organisation Information\\\\\\\\n\\\\\\\\n**Size of the Team**\\\\\\\\n\\\\\\\\n- **Total Employees**: 15+ team members.\\\\\\\\n- **Engineering Team**: 9+ engineers with extensive experience in blockchain infrastructure and RPC services.\\\\\\\\n\\\\\\\\n**Team Location**\\\\\\\\n\\\\\\\\n- Headquarters in the UK.\\\\\\\\n- Data centres in the US (Phoenix, Washington D.C.), Europe (Germany, UK), and Asia (Singapore, Japan) to provide comprehensive global coverage.\\\\\\\\n\\\\\\\\n**Team Background and Bios**\\\\\\\\n\\\\\\\\n- **Andy Pohl**: CEO with a strong background in software engineering and extensive experience in blockchain infrastructure. Andy has a Master\\\\\\\\\\\\'s in Electronic & Computer Engineering from the University of Birmingham and has previously worked with leading blockchain projects.\\\\\\\\n\\\\\\\\n- **Isaac Rodgin**: Head of Business Development with a robust background in integrating custom infrastructure solutions for web3 projects and investment firms. Founder of Rodgin Consulting Group and former advisor at Fuse.io.\\\\\\\\n\\\\\\\\n- **Shane Burgett**: Account Lead with a strong focus on blockchain infrastructure, having served as Product Lead at Pocket Network Foundation and founded Decentralized Authority, an infrastructure tooling devshop.\\\\\\\\n\\\\\\\\n**Affiliations with NEAR Ecosystem Partners**  \\\\\\\\nLiquify has had much involvement with NEAR, providing RPC and node services to various ecosystem participants, including Aurora, POKT Network, Lava Network, dRPC, Subquery, and TRGC.\\\\\\\\n\\\\\\\\n# 4. Professional Experience\\\\\\\\n\\\\\\\\n**Relevant Experience with NEAR Blockchain**\\\\\\\\n\\\\\\\\n- Liquify has been a trusted infrastructure provider for NEAR, serving over **14 billions NEAR RPC requests** acrossing full nodes, archival nodes, and indexing, with a success rate of 99.9998%.\\\\\\\\n- We are familiar with NEAR upgrades and were able to maintain reliability during the Q2 resharding events.\\\\\\\\n- We have brought critical NEAR infrastructure to multiple decentralised infrastructure protocols, like LAVA, POKT, and dRPC.\\\\\\\\n- Liquify is also heavily involved with NEAR validation with current delegations equating to $30M+ of staked NEAR tokens.\\\\\\\\n\\\\\\\\n**Non-Technical Capabilities**\\\\\\\\n\\\\\\\\n- **Product Management**: We assign dedicated product managers to each engagement, ensuring effective communication and timely delivery.\\\\\\\\n- **Customer Support**: Liquify provides 24/7 support through multiple channels, including Slack, Telegram, Discord, and email.\\\\\\\\n- **Business Development and Marketing**: We focus on building long-term relationships with institutional clients and blockchain ecosystems through tailored solutions and strategic partnerships.\\\\\\\\n\\\\\\\\n**In-House Resources**\\\\\\\\n\\\\\\\\n- **Design UX/UI**: Our design team specialises in creating custom applications and dashboards for monitoring RPC performance and network status.\\\\\\\\n- **Customer Support**: A dedicated team ensures prompt resolution of any technical issues, with a focus on providing a seamless user experience.\\\\\\\\n\\\\\\\\n**Portfolio of Relevant Work**\\\\\\\\n\\\\\\\\nLiquify has a long history of delivering on foundation partnership and public proposals:\\\\\\\\n\\\\\\\\n- **POKT validation, snapshots, RPC infra, and RPC Gateway**: [Public Proposal](https://forum.pokt.network/t/open-priority-gateway-demo/4874/2) \\\\\\\\u{2192} [Launched Product](https://www.liquify.com/blog/pokt-network-is-getting-a-new-gateway-by-liquify)\\\\\\\\n- **Selfchain RPC infra, IBC relayer, and validator**: [Foundation Partnership](https://x.com/selfchainxyz/status/1806251581186379816)\\\\\\\\n- **Subquery validator and RPC infra**: [Foundation Partnership](https://x.com/Liquify_ltd/status/1801260253809692689)\\\\\\\\n- **Stellar RPC infra**: [Public Proposal](https://communityfund.stellar.org/project/infrastructure-support-liquify)\\\\\\\\n- **Syscoin RPC infra**: [Foundation Partnership](https://rollux.com/news/weekly-240426)\\\\\\\\n- **Fuse RPC Infra**: [Foundation Partnership](https://news.fuse.io/liquify-powers-up-to-provide-fuse-network-rpc-nodes/)\\\\\\\\n- **Pyth Network Publisher infra & Hermes provider**: Foundation Partnership\\\\\\\\n- **Sentinel public RPC infra and validator**: Foundation Partnership\\\\\\\\n- **Infura\\\\\\\\\\\\'s DIN** (Liquify is the leading provider): [Public Partnership](https://www.infura.io/solutions/decentralized-infrastructure-service)\\\\\\\\n\\\\\\\\nLiquify also is a central player in numerous decentralised RPC protocols:\\\\\\\\n\\\\\\\\n- LAVA\\\\\\\\n- POKT\\\\\\\\n- DIN - Infura\\\\\\\\\\\\'s Decentralised Infrastructure Network\\\\\\\\n- dRPC\\\\\\\\n- Route Protocol\\\\\\\\n- Subquery\\\\\\\\n\\\\\\\\n# 5. Approach and Solution\\\\\\\\n\\\\\\\\n## Primary Approach and Solution\\\\\\\\n\\\\\\\\nLiquify will utilise a three-pronged strategy to address NEAR\\\\\\\\\\\\'s RPC infrastructure needs:\\\\\\\\n\\\\\\\\n1. **Delivering Top-Tier Performance through Bare-Metal Infrastructure**: Liquify will provide the fastest, most distributed, and highly reliable bare-metal infrastructure. This ensures industry-leading performance, capable of supporting NEAR\\\\\\\\\\\\'s expanding ecosystem with the highest levels of uptime, low latency, and optimised traffic management. This infrastructure will be a mix of nodes and indexing (likely [Read RPC](https://github.com/near/read-rpc/))\\\\\\\\n\\\\\\\\n2. **Empowering NEAR with a Robust Developer Portal**: Liquify will establish an industry-leading RPC portal for NEAR developers. This portal will feature an accessible free tier, simplified billing, robust monitoring, notifications, and comprehensive Service Level Agreement (SLA) assurances. In addition, developers will benefit from decentralised RPC protocol access, allowing for seamless interaction with NEAR\\\\\\\\\\\\'s network through a decentralised approach.\\\\\\\\n\\\\\\\\n3. **Bridging NEAR to Decentralised Infrastructure Protocols**: Liquify will strategically position NEAR within the decentralised infrastructure protocol landscape by integrating multiple RPC gateway options. This approach ensures that NEAR developers can access both centralised and decentralised RPC services, empowering them with the flexibility to choose the best infrastructure for their specific use case.\\\\\\\\n\\\\\\\\n## Why Choose Liquify\\\\\\\\n\\\\\\\\nLiquify is uniquely positioned to accelerate NEAR\\\\\\\\\\\\'s developer experience by offering a balanced solution that addresses both centralised and decentralised needs. NEAR should not be limited to a single RPC infrastructure solution. Liquify\\\\\\\\\\\\'s platform offers a variety of RPC experiences to cater to the diverse requirements of different projects and developers within the NEAR ecosystem.\\\\\\\\n\\\\\\\\nWith proven experience and a long-standing relationship with NEAR, Liquify can ensure a seamless transition from NEAR\\\\\\\\\\\\'s current RPC setup while introducing improvements in performance, decentralisation, and flexibility. This combination makes Liquify the optimal partner to lead NEAR\\\\\\\\\\\\'s infrastructure into the future.\\\\\\\\n\\\\\\\\n**Open Source and Licensing**  \\\\\\\\nAll software developed as part of this project will be released under Apache 2.0 or MIT licences, fostering community collaboration and transparency.\\\\\\\\n\\\\\\\\n# 6. Goals / Milestones\\\\\\\\n\\\\\\\\n**Goal 1: Transition Planning and Knowledge Transfer**  \\\\\\\\n*Completion by November 1, 2024*\\\\\\\\n\\\\\\\\n- Conduct workshops with Pagoda and NEAR teams to outline the transition strategy.\\\\\\\\n- Develop a comprehensive knowledge transfer document detailing the current infrastructure setup.\\\\\\\\n- Help test with the community focused on snapshot repair\\\\\\\\n\\\\\\\\n**Goal 2: Infrastructure Deployment**  \\\\\\\\n*Completion by December 1, 2024*\\\\\\\\n\\\\\\\\n- Deploy Liquify\\\\\\\\\\\\'s infrastructure for NEAR mainnet and testnet RPC services.\\\\\\\\n- Implement rate-limited free-tier services for developers.\\\\\\\\n- Share initial performance report.\\\\\\\\n\\\\\\\\n**Goal 3: Performance Optimization and SLA Implementation**  \\\\\\\\n*Completion by February 1, 2024*\\\\\\\\n\\\\\\\\n- Optimise infrastructure performance and implement the SLA.\\\\\\\\n- Establish external status pages and alerting systems for real-time monitoring.\\\\\\\\n- Deploy NEAR Archival across the globe in collaboration with the community focused on snapshot repair.\\\\\\\\n\\\\\\\\n**Goal 4: Public Launch and Community Engagement**  \\\\\\\\n*Completion by March 1, 2025*\\\\\\\\n\\\\\\\\n- Final testing and bug fixes.\\\\\\\\n- Launch Liquify\\\\\\\\\\\\'s NEAR portal and engage the developer community through workshops and webinars.\\\\\\\\n\\\\\\\\n# 7. Metrics\\\\\\\\n\\\\\\\\n**Key Metrics for Success**\\\\\\\\n\\\\\\\\n- **Uptime and Performance**: Achieving 99.95% uptime and sub-300ms response time for mainnet RPC.\\\\\\\\n- **User Adoption**: Number of developers and dApps using the Liquify RPC portal, and seeing NEAR continually supported on decentralised protocols LAVA, POKT and possibly others.\\\\\\\\n- **Community Engagement**: Participation in workshops and feedback from NEAR developers.\\\\\\\\n\\\\\\\\n**Measurement Plan**\\\\\\\\n\\\\\\\\n- Continuous monitoring through Liquify\\\\\\\\\\\\'s dashboard and other protocols.\\\\\\\\n- Monthly reports to the NEAR Foundation on SLA compliance, user adoption, and community feedback.\\\\\\\\n\\\\\\\\n# 8. Competitor Comparison\\\\\\\\n\\\\\\\\n**Competitor Analysis**\\\\\\\\n\\\\\\\\n- **Standard Providers**: Most RPC services rely on the cloud or hardware rental services for their infrastructure, making deployment significantly more challenging when trying to establish world coverage. These providers are subject to changing rental costs, hardware availability, usage agreements, etc. Liquify is unique in it owns all of their hardware, ensuring complete global coverage of our services.\\\\\\\\n\\\\\\\\n- **Decentralised Providers**: While they align with the ethos of decentralisation, they often struggle with performance and reliability issues due to fragmented infrastructure.\\\\\\\\n\\\\\\\\n**Unique Value Proposition**  \\\\\\\\nLiquify bridges the gap between these two models, providing a hybrid solution that combines the high performance and reliability of centralised infrastructure with the resilience and decentralisation of protocols. This makes us uniquely capable of supporting NEAR\\\\\\\\\\\\'s needs as it transitions to a more decentralised future.\\\\\\\\n\\\\\\\\n# 9. Usage & Examples\\\\\\\\n\\\\\\\\n**Current Users**\\\\\\\\n\\\\\\\\n- **Infura**: Liquify serves as the primary backup infrastructure to Infura, serving the lion share of all requests going through [DIN](https://www.infura.io/solutions/decentralized-infrastructure-service) due to our response times and reliability.\\\\\\\\n\\\\\\\\n- **Defi Kingdoms**: Liquify\\\\\\\\\\\\'s infrastructure successfully managed over 1 billion RPC requests a day with minimal latency and a 99.9999% success rate.\\\\\\\\n\\\\\\\\n- **TRGC**: Supported their portfolio companies with efficient, cost-effective infrastructure solutions, demonstrating our ability to handle mission-critical systems.\\\\\\\\n\\\\\\\\n**Potential Use Cases**\\\\\\\\n\\\\\\\\n- NEAR developers that require stable and high-performance RPC access, with a user experience similar to other ecosystems.\\\\\\\\n- dApps wanting a true decentralised experience through decentralised RPC protocols, knowing that Liquify is providing a reliable, fast, core infrastructure.\\\\\\\\n\\\\\\\\n**Scalability Examples**  \\\\\\\\nLiquify has demonstrated the ability to scale infrastructure to handle up to 200,000 requests per minute, far exceeding NEAR\\\\\\\\\\\\'s current traffic requirements. We have consistently delivered high-quality, high-performance RPC services, supporting 60+ chains, including NEAR, to customers directly or through decentralised RPC protocols. This scalability will support NEAR\\\\\\\\\\\\'s growth and ensure reliable service for developers and users.\\\\\\\\n\\\\\\\\n# 10. Budget\\\\\\\\n\\\\\\\\n**Total Budget**: $472,000 for the first year.\\\\\\\\n\\\\\\\\n**Budget Breakdown**\\\\\\\\n\\\\\\\\n- **Initial Setup**: $60,000 (October 2024)\\\\\\\\n  - Deploying full nodes, archival nodes, indexes, and setting up support infrastructure.\\\\\\\\n  - **$12,000** to be rewarded to the community members assisting with archival snapshot repair.\\\\\\\\n  - Developer Portal integration.\\\\\\\\n\\\\\\\\n- **Monthly Maintenance**: $35,000/month (November 2024 - September 2025)\\\\\\\\n  - Infrastructure cost, maintenance, and network upgrades.\\\\\\\\n  - Free-tier traffic coverage\\\\\\\\n  - Customer support\\\\\\\\n\\\\\\\\n**Contingency Plan**  \\\\\\\\nAn additional $15,000 is allocated for unforeseen infrastructure or operational costs, ensuring flexibility and readiness to address any unexpected challenges.\\\\\\\\n\\\\\\\\n# 11. Security and Compliance\\\\\\\\n\\\\\\\\n**Security Measures**\\\\\\\\n\\\\\\\\n- Comprehensive DDoS protection, IP whitelisting, and detailed logging and monitoring.\\\\\\\\n- Custom tools for disaster recovery and incident management, ensuring high availability and resilience.\\\\\\\\n- Leading EDR software running on all our hosts\\\\\\\\n\\\\\\\\n**Disaster Recovery Plan**\\\\\\\\n\\\\\\\\n- Regular backups and a robust disaster recovery protocol ensure service continuity and data integrity, with the ability to recover from any disruptions quickly and efficiently.\\\\\\\\n\\\\\\\\n**Compliance and Data Integrity**\\\\\\\\n\\\\\\\\n- Adherence to NEAR\\\\\\\\\\\\'s data consistency requirements and transparent communication of any service disruptions or changes. Liquify commits to providing a secure and compliant infrastructure that aligns with NEAR\\\\\\\\\\\\'s operational standards.\\\\\\\\n\\\\\\\\n# 12. Service Level Agreement (SLA)\\\\\\\\n\\\\\\\\n**Uptime Guarantee:**  \\\\\\\\n99.95% monthly uptime, ensuring minimal service interruptions and maintaining the high availability of NEAR\\\\\\\\\\\\'s RPC services.\\\\\\\\n\\\\\\\\n**Performance Standards \\\\\\\\\\\\\\\\***\\\\\\\\n\\\\\\\\n- **Mainnet RPC**: Average response time \\\\\\\\u{2264} 300 milliseconds.\\\\\\\\n- **Testnet RPC**: Average response time \\\\\\\\u{2264} 300 milliseconds.\\\\\\\\n- **Archival-RPC**: Average response time \\\\\\\\u{2264} 600 milliseconds.\\\\\\\\n\\\\\\\\n\\\\\\\\\\\\\\\\* From calls within EU, US and APAC\\\\\\\\n\\\\\\\\n**Throughput**\\\\\\\\n\\\\\\\\nWithin the budget of this proposal, Liquify estimates a potential throughput of 2 billion requests per day, which is 3,600% more than the stated peak traffic goals. Additional funds will be required to scale beyond that.\\\\\\\\n\\\\\\\\n**Support Availability**\\\\\\\\n\\\\\\\\n- Community-based support with best-effort responses within 24-48 hours for generic services, ensuring quick and efficient resolution of issues.\\\\\\\\n\\\\\\\\n# 13. Support and Maintenance\\\\\\\\n\\\\\\\\n**Community Support**\\\\\\\\n\\\\\\\\n- Dedicated support channels on Slack, Telegram, and Discord for developer assistance and issue resolution.\\\\\\\\n- Regular updates and bug fixes based on community feedback, ensuring a responsive and engaged support experience.\\\\\\\\n\\\\\\\\n**Ongoing Maintenance**\\\\\\\\n\\\\\\\\n- Continuous infrastructure monitoring and optimization, with regular collaboration with NEAR developers for client improvements and upgrades.\\\\\\\\n- Monthly performance reviews and reports to the NEAR Foundation, ensuring transparency and accountability.\\\\\\\\n\\\\\\\\n# 14. Governance and Compliance\\\\\\\\n\\\\\\\\n**Governance Structure**\\\\\\\\n\\\\\\\\n- Defined roles and responsibilities within the Liquify team for project management, technical leadership, and customer support, ensuring clear accountability and effective decision-making.\\\\\\\\n- Regular communication and reporting to NEAR stakeholders to maintain transparency and alignment with NEAR\\\\\\\\\\\\'s goals.\\\\\\\\n\\\\\\\\n**Reporting**\\\\\\\\n\\\\\\\\n- Monthly progress reports to the NEAR Foundation, including updates on project milestones, SLA compliance, and community engagement.\\\\\\\\n- Transparent communication of any changes or updates to the project plan, ensuring that all stakeholders are informed and aligned.\\\\\\\\n\\\\\\\\n# 15. Conclusion\\\\\\\\n\\\\\\\\n**Summary of Liquify\\\\\\\\\\\\'s Value Proposition**  \\\\\\\\nLiquify\\\\\\\\\\\\'s unique combination of high-performance, centralised service quality and decentralised resilience makes us the ideal partner for managing NEAR\\\\\\\\\\\\'s RPC infrastructure. Our fully-owned bare-metal infrastructure, extensive experience with the NEAR ecosystem, and commitment to decentralisation position us to provide a scalable, reliable, and future-proof solution.\\\\\\\\n\\\\\\\\n**Call to Action**  \\\\\\\\nWe invite the NEAR Foundation to collaborate with Liquify in transitioning and enhancing the current RPC infrastructure. Together, we can ensure that the NEAR ecosystem continues to grow and thrive with a robust, decentralised infrastructure that supports its long-term vision and goals.\", \"linked_proposals\": [], \"receiver_account\": \"liquify.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"472000\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"author_id\": \"shane0.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.5691651453096e+21
+    }
+  }
+]

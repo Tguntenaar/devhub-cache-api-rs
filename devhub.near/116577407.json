@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "3752502359",
+    "receipt_id": "AwvfYAFAvPMSFwRrop4DpKn4VzxJjYyihRt6PrzAvw4H",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CA2g81TiyywfuHnLhaavVV4Tfq3Vwji7MQsVAwWCit41",
+      "block_height": 116577528,
+      "block_timestamp": 1712797990571947800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5525210469843,
+      "tokens_burnt": 552521046984300000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "4MoiCP5gdD71LWgyaY3y6TsGkhqiWxKKxHicfagnYEYB",
+    "included_in_block_hash": "FKC5abywXbrZ6cVggLm63LnYY6bAK8adZtqrMdne1Ck7",
+    "block_timestamp": "1712797987680935562",
+    "block": {
+      "block_height": 116577526
+    },
+    "receipt_conversion_tokens_burnt": "31539336352000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addon",
+        "deposit": 0,
+        "fee": 552521046984300000000,
+        "args": "{\"handle\": \"documentation\", \"community_addon\": {\"id\": \"rfpy7f\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Welcome to the Community \\\\\\\\u{1f4da}\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Learn how to contribute to NEAR Docs\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\nNEAR documentation is an open source repository that anyone can fork, extend and contribute to by creating pull requests. To get started, all you need is some spare time, a computer with Node.js installed, and a GitHub account.\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\n## New to NEAR?\\\\\\\\\\\\\\\\nIf you\\\\\\\\\\\\'re new in the ecosystem, consider contributing by choosing a specific topic and following the documentation from start to finish. For instance, you can go through the \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"building smart contracts\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" docs and take notes on any areas where you face challenges\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nA web developer with real world experience in building applications (specially backend technologies) should be able to go through the docs. If you have such expertise and do not manage to understand the docs, then you have found a documentation problem! \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIn such cases, reach out through Telegram or Discord to seek clarification and then contribute by improving the docs to benefit others with your newfound knowledge.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\n### Forking\\\\\\\\\\\\\\\\nTo create a local instance of the docs: \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n1. Fork the official docs repository \\\\\\\\\\\\\\\\n2. Clone the forked repo to your local machine. \\\\\\\\\\\\\\\\n3. Navigate to the `website` folder.\\\\\\\\\\\\\\\\n4. Install all dependencies by running (`npm install`). \\\\\\\\\\\\\\\\n5. Start a local version of the docs by running (`npm start`). \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\n### Modifying an Article\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n1. Locate the relevant markdown file in the `docs` folder.\\\\\\\\\\\\\\\\n2. Edit the markdown file to make your desired changes.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you dont know which article corresponds to a specific markdown file, simply use the `Edit this page` button at the end of every article.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\n### Creating an Article\\\\\\\\\\\\\\\\nTo create a new article:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n1. Create a new markdown file in the `docs` folder.\\\\\\\\\\\\\\\\n2. Add the new article to the `sidebar.json` file. This will add it to the navigation sidebar.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nAwesome! you\\\\\\\\\\\\'ve successfully added new content to the docs \\\\\\\\u{1f680}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nBut keep in mind, building good documentation can be a challenging task and yet...surprisingly straightforward. The reason is simple: it is hard to write educational material, but it is very simple to evaluate its usefulness. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis guide on ***[The Art of Writing good Docs](https://docs.google.com/document/d/1bYNNlqu36-k44LN86KL8332ldAlgr84ql_2lcnyRYW8/edit?usp=sharing  )*** will give you the right mindset to keep throughout your creative process: \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\n***Tool Developers***\\\\\\\\\\\\\\\\nIf you\\\\\\\\\\\\'re a tool developer, you can contribute by:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- Creating documentation for your tool and other tools used in the NEAR ecosystem.\\\\\\\\\\\\\\\\n- Standardizing repositories\\\\\\\\\\\\\\\\n- Contributing to typedocs and READMEs to enhance the usability of NEAR tools.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\n## Specific Tasks\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nFor a list of specific tasks to work on, refer to this [***LINK***](https://docs.google.com/document/u/1/d/1SK-a50ZZBEG_RU6Je04CeVlr23bjodS65jz_EJDKiUo/mobilebasic).\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n***Your contributions play a vital role in improving NEAR documentation and making it more accessible to everyone***\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Get Involved \\\\\\\\u{1f3c6}\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.3421297005883e+21
+    }
+  },
+  {
+    "id": "3752503141",
+    "receipt_id": "4mSk3EDuaFERxJ4TS4LntPn5dT41DMpuP3zVTx6E3YAW",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9W7nhu4eoRUrGhThKqXogb2MNJyiy6GSM2pYD4MELZ4d",
+      "block_height": 116577529,
+      "block_timestamp": 1712797992482979300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 17580693172520,
+      "tokens_burnt": 1.758069317252e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4MoiCP5gdD71LWgyaY3y6TsGkhqiWxKKxHicfagnYEYB",
+    "included_in_block_hash": "FKC5abywXbrZ6cVggLm63LnYY6bAK8adZtqrMdne1Ck7",
+    "block_timestamp": "1712797987680935562",
+    "block": {
+      "block_height": 116577526
+    },
+    "receipt_conversion_tokens_burnt": "31539336352000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.758069317252e+21,
+        "args": "{\"data\": {\"documentation.community.devhub.near\": {\"profile\": {\"name\": \"Documentation\", \"tags\": {\"community\": \"\", \"announcements\": \"\", \"documentation\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreic2gksghvvrqizdxka5d2gvwabtovzyftspzni5ixqkyugx36wgiy\"}, \"linktree\": {\"github\": \"near/docs\", \"twitter\": \"NEARDevHub\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=documentation\", \"telegram\": \"neardocscg\"}, \"description\": \"Community to discuss everything about NEAR developer documentation\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=documentation).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreifkp6ajorpowqwaf6bknipsd64fctqepovmoemffiwewnpvcjch5u\"}}}, \"discussions.documentation.community.devhub.near\": {\"profile\": {\"name\": \"Documentation (Community Discussions)\", \"tags\": {\"community\": \"\", \"discussions\": \"\", \"documentation\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreic2gksghvvrqizdxka5d2gvwabtovzyftspzni5ixqkyugx36wgiy\"}, \"linktree\": {\"github\": \"near/docs\", \"twitter\": \"NEARDevHub\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=documentation\", \"telegram\": \"neardocscg\"}, \"description\": \"Participate in creating and maintaining NEAR docs\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=documentation).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreifkp6ajorpowqwaf6bknipsd64fctqepovmoemffiwewnpvcjch5u\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.3421297005883e+21
+    }
+  },
+  {
+    "id": "3754082318",
+    "receipt_id": "6t7GKc6eny5YELE76ggptg9n9Jae3iHqzEAz7GQRG5NQ",
+    "predecessor_account_id": "bpolania.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7be3rJtMEJMwKJY9RAW84W144Aj4A5wQDcttCXAW66Gi",
+      "block_height": 116582612,
+      "block_timestamp": 1712804507629265400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4387802709776,
+      "tokens_burnt": 438780270977600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "7gf6EQAxRNPrWJFbXrUU8LsjmibwCFJF4nCDdeGYEtP",
+    "included_in_block_hash": "C2KqTd84V2pe3uceWJEGV3LCbLhEb2ZRoZhLvGH7Jd3r",
+    "block_timestamp": "1712804506300148427",
+    "block": {
+      "block_height": 116582611
+    },
+    "receipt_conversion_tokens_burnt": "30857823668800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 438780270977600000000,
+        "args": "{\"id\": 41, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": false, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 818752293658300000000
+    }
+  },
+  {
+    "id": "3754082591",
+    "receipt_id": "7qL3qqwxruvkwT3aYX5yZow2QkTZ18dJ9HdUduorePdd",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "pUnYqacQCxVhHVZteqUd6HhsfxQsujGApxVpv7hgpp9",
+      "block_height": 116582613,
+      "block_timestamp": 1712804508848791300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3491141990119,
+      "tokens_burnt": 349114199011900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7gf6EQAxRNPrWJFbXrUU8LsjmibwCFJF4nCDdeGYEtP",
+    "included_in_block_hash": "C2KqTd84V2pe3uceWJEGV3LCbLhEb2ZRoZhLvGH7Jd3r",
+    "block_timestamp": "1712804506300148427",
+    "block": {
+      "block_height": 116582611
+    },
+    "receipt_conversion_tokens_burnt": "30857823668800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349114199011900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"orangejoe.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":41,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 818752293658300000000
+    }
+  },
+  {
+    "id": "3754283119",
+    "receipt_id": "3HMVdshgy9ZcHnDXLYjcyvM1sACkG76QGZHd7wbfuhwV",
+    "predecessor_account_id": "bpolania.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "C5nHMm898VUEUGxj854kBadbNzWD7w6r4WB9LLLkn4wW",
+      "block_height": 116583214,
+      "block_timestamp": 1712805280374894000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4913999316146,
+      "tokens_burnt": 491399931614600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "GVhsS9pYzoftYP1HGXMDnAWxojfgvGKPf62nWhDRGyHw",
+    "included_in_block_hash": "Cbf36Xvmash6ix6qXEf8Rq8PsVhEK9c7cxjvwmjK4bcM",
+    "block_timestamp": "1712805279081613626",
+    "block": {
+      "block_height": 116583213
+    },
+    "receipt_conversion_tokens_burnt": "31163028659800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 491399931614600000000,
+        "args": "{\"body\": {\"name\": \"Expenses for DevRel Events March-April 2024\", \"summary\": \"These are the expenses for ETHSamba and ETHSeoul\", \"category\": \"Events & Hackathons\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": \"theori.near\", \"description\": \"**Number of Days: 11 days\\\\\\\\nNumber of Events: 2\\\\\\\\nCosts Covered: Hotels, Transportation, Plane Tickets and Food**\\\\\\\\n\\\\\\\\n**ETHSamba (March 20 - March 25):**\\\\\\\\nFood: $231.25\\\\\\\\nTransportation: $202.74\\\\\\\\nHotel: $967.38 (shared room for 2 devrels)\\\\\\\\nPlane Tickets: $1,484.30\\\\\\\\nSub-Total: $2,885.67\\\\\\\\n\\\\\\\\n*Responsibilities:*\\\\\\\\n\\\\\\\\nSupport for ETHSamba Hackathon support including workshops, talks, and direct engagement and technical support with developers.\\\\\\\\nSupport for Side Event (NEAR Day) this support includes workshops, talks, booth work and direct engagement and technical support with developers.\\\\\\\\n\\\\\\\\n**ETHSeoul (March 27 - April 01):**\\\\\\\\nFood: $200.60\\\\\\\\nTransportation: $212.80\\\\\\\\nHotel: $737.96 \\\\\\\\nPlane Tickets: $2,815.20\\\\\\\\nSub-Total: $3,966.56\\\\\\\\n\\\\\\\\n*Responsibilities:*\\\\\\\\n\\\\\\\\nSupport for ETHSeoul Hackathon including workshops, talks, and direct engagement and technical support with developers.\\\\\\\\nSupport for Side Events (BUIDL Asia) booth work, direct engagement and technical support with developers, and engagement with general BUIDL participants.\\\\\\\\n\\\\\\\\n***Total for 2 Events: $6,852.22***\\\\\\\\n\\\\\\\\nAll invoices have been made available to NEAR Foundation.\", \"linked_proposals\": [], \"receiver_account\": \"bpolania.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"8600\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.64648357926e+21
+    }
+  },
+  {
+    "id": "3754283382",
+    "receipt_id": "FGg2NLYtWB6sCixVPJ1NNQVBK27vARVmicuZ3siKapXo",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3EVcEPJ4CJgTCHA6iqY9dAKpmBUPK9cZG1Ct3GSytxEa",
+      "block_height": 116583215,
+      "block_timestamp": 1712805282047998200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4460890517558,
+      "tokens_burnt": 446089051755800000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "GVhsS9pYzoftYP1HGXMDnAWxojfgvGKPf62nWhDRGyHw",
+    "included_in_block_hash": "Cbf36Xvmash6ix6qXEf8Rq8PsVhEK9c7cxjvwmjK4bcM",
+    "block_timestamp": "1712805279081613626",
+    "block": {
+      "block_height": 116583213
+    },
+    "receipt_conversion_tokens_burnt": "31163028659800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 446089051755800000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Events & Hackathons* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @bpolania.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Expenses for DevRel Events March-April 2024\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThese are the expenses for ETHSamba and ETHSeoul\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=43)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.64648357926e+21
+    }
+  },
+  {
+    "id": "3754283385",
+    "receipt_id": "FmwXnnTzPFy1ZCmpGpYBKaUoTqnn6Q4GyigfoBYAsFEf",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3EVcEPJ4CJgTCHA6iqY9dAKpmBUPK9cZG1Ct3GSytxEa",
+      "block_height": 116583215,
+      "block_timestamp": 1712805282047998200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3190931904119,
+      "tokens_burnt": 319093190411900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "GVhsS9pYzoftYP1HGXMDnAWxojfgvGKPf62nWhDRGyHw",
+    "included_in_block_hash": "Cbf36Xvmash6ix6qXEf8Rq8PsVhEK9c7cxjvwmjK4bcM",
+    "block_timestamp": "1712805279081613626",
+    "block": {
+      "block_height": 116583213
+    },
+    "receipt_conversion_tokens_burnt": "31163028659800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 319093190411900000000,
+        "args": "{\"proposal\": {\"id\": 43, \"snapshot\": {\"name\": \"Expenses for DevRel Events March-April 2024\", \"labels\": [], \"summary\": \"These are the expenses for ETHSamba and ETHSeoul\", \"category\": \"Events & Hackathons\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"bpolania.near\", \"timestamp\": \"1712805280374894085\", \"supervisor\": \"theori.near\", \"description\": \"**Number of Days: 11 days\\\\\\\\nNumber of Events: 2\\\\\\\\nCosts Covered: Hotels, Transportation, Plane Tickets and Food**\\\\\\\\n\\\\\\\\n**ETHSamba (March 20 - March 25):**\\\\\\\\nFood: $231.25\\\\\\\\nTransportation: $202.74\\\\\\\\nHotel: $967.38 (shared room for 2 devrels)\\\\\\\\nPlane Tickets: $1,484.30\\\\\\\\nSub-Total: $2,885.67\\\\\\\\n\\\\\\\\n*Responsibilities:*\\\\\\\\n\\\\\\\\nSupport for ETHSamba Hackathon support including workshops, talks, and direct engagement and technical support with developers.\\\\\\\\nSupport for Side Event (NEAR Day) this support includes workshops, talks, booth work and direct engagement and technical support with developers.\\\\\\\\n\\\\\\\\n**ETHSeoul (March 27 - April 01):**\\\\\\\\nFood: $200.60\\\\\\\\nTransportation: $212.80\\\\\\\\nHotel: $737.96 \\\\\\\\nPlane Tickets: $2,815.20\\\\\\\\nSub-Total: $3,966.56\\\\\\\\n\\\\\\\\n*Responsibilities:*\\\\\\\\n\\\\\\\\nSupport for ETHSeoul Hackathon including workshops, talks, and direct engagement and technical support with developers.\\\\\\\\nSupport for Side Events (BUIDL Asia) booth work, direct engagement and technical support with developers, and engagement with general BUIDL participants.\\\\\\\\n\\\\\\\\n***Total for 2 Events: $6,852.22***\\\\\\\\n\\\\\\\\nAll invoices have been made available to NEAR Foundation.\", \"linked_proposals\": [], \"receiver_account\": \"bpolania.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"8600\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"bpolania.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.64648357926e+21
+    }
+  },
+  {
+    "id": "3754283388",
+    "receipt_id": "DBfM9Py5Ap7rfoHcrNVsnrwSqo9a1wLo3p9nTewszCbk",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3EVcEPJ4CJgTCHA6iqY9dAKpmBUPK9cZG1Ct3GSytxEa",
+      "block_height": 116583215,
+      "block_timestamp": 1712805282047998200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3587383768179,
+      "tokens_burnt": 358738376817900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "GVhsS9pYzoftYP1HGXMDnAWxojfgvGKPf62nWhDRGyHw",
+    "included_in_block_hash": "Cbf36Xvmash6ix6qXEf8Rq8PsVhEK9c7cxjvwmjK4bcM",
+    "block_timestamp": "1712805279081613626",
+    "block": {
+      "block_height": 116583213
+    },
+    "receipt_conversion_tokens_burnt": "31163028659800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 358738376817900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":43,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":43,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.64648357926e+21
+    }
+  },
+  {
+    "id": "3754297257",
+    "receipt_id": "6pmYM2bRcTkk9q9hXJFGJKE2upxJBRPerqbCCoRZQp8C",
+    "predecessor_account_id": "bpolania.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5wckL6a1nxCykm7B4JNufTZxRrcqzepLQp8fwkpF6rr2",
+      "block_height": 116583291,
+      "block_timestamp": 1712805376733120500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4006910576710,
+      "tokens_burnt": 400691057671000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "EmnBeFb6S4qa3Cmp1cjYEWArXwSnagwx6dVAN68PjSUw",
+    "included_in_block_hash": "Hqd5WNgEqPGEqbgiEi1bDiDVm6vwhkM8GRNRuSw9HY4q",
+    "block_timestamp": "1712805375381809130",
+    "block": {
+      "block_height": 116583290
+    },
+    "receipt_conversion_tokens_burnt": "31165041000400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 400691057671000000000,
+        "args": "{\"id\": 43, \"body\": {\"name\": \"Expenses for DevRel Events March-April 2024\", \"summary\": \"These are the expenses for ETHSamba and ETHSeoul\", \"category\": \"Events & Hackathons\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": \"theori.near\", \"description\": \"**Number of Days: 11 days\\\\\\\\nNumber of Events: 2\\\\\\\\nCosts Covered: Hotels, Transportation, Plane Tickets and Food**\\\\\\\\n\\\\\\\\n**ETHSamba (March 20 - March 25):**\\\\\\\\nFood: $231.25\\\\\\\\nTransportation: $202.74\\\\\\\\nHotel: $967.38 (shared room for 2 devrels)\\\\\\\\nPlane Tickets: $1,484.30\\\\\\\\nSub-Total: $2,885.67\\\\\\\\n\\\\\\\\n*Responsibilities:*\\\\\\\\n\\\\\\\\nSupport for ETHSamba Hackathon support including workshops, talks, and direct engagement and technical support with developers.\\\\\\\\nSupport for Side Event (NEAR Day) this support includes workshops, talks, booth work and direct engagement and technical support with developers.\\\\\\\\n\\\\\\\\n**ETHSeoul (March 27 - April 01):**\\\\\\\\nFood: $200.60\\\\\\\\nTransportation: $212.80\\\\\\\\nHotel: $737.96 \\\\\\\\nPlane Tickets: $2,815.20\\\\\\\\nSub-Total: $3,966.56\\\\\\\\n\\\\\\\\n*Responsibilities:*\\\\\\\\n\\\\\\\\nSupport for ETHSeoul Hackathon including workshops, talks, and direct engagement and technical support with developers.\\\\\\\\nSupport for Side Events (BUIDL Asia) booth work, direct engagement and technical support with developers, and engagement with general BUIDL participants.\\\\\\\\n\\\\\\\\n***Total for 2 Events: $6,852.22***\\\\\\\\n\\\\\\\\nAll invoices have been made available to NEAR Foundation.\", \"linked_proposals\": [], \"receiver_account\": \"bpolania.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"6852\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 785857071274700000000
+    }
+  },
+  {
+    "id": "3754297580",
+    "receipt_id": "AxgF4f56kYCta8FBifQN3R85zaUoVwK4g6mARbhUdGpj",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DMenDTDYbyoMoncfmRGxUduxXUNT5KkGUmB8JuqMom6Q",
+      "block_height": 116583292,
+      "block_timestamp": 1712805377971842300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3540009726033,
+      "tokens_burnt": 354000972603300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "EmnBeFb6S4qa3Cmp1cjYEWArXwSnagwx6dVAN68PjSUw",
+    "included_in_block_hash": "Hqd5WNgEqPGEqbgiEi1bDiDVm6vwhkM8GRNRuSw9HY4q",
+    "block_timestamp": "1712805375381809130",
+    "block": {
+      "block_height": 116583290
+    },
+    "receipt_conversion_tokens_burnt": "31165041000400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 354000972603300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":43,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 785857071274700000000
+    }
+  },
+  {
+    "id": "3754309045",
+    "receipt_id": "5QBG13G4tNrB4bRzSCKAZrphW4XKnwjKe95MvaWV6RhN",
+    "predecessor_account_id": "bpolania.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8EcSNBRnYFy4cruxD8eayFATxN4F1r5iGArrJYkiXtem",
+      "block_height": 116583315,
+      "block_timestamp": 1712805407783127000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4325289946511,
+      "tokens_burnt": 432528994651100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "4JcdfFzYM28pNJ5WEJMuA4MReSKU94wQR2qo3DxsvoMZ",
+    "included_in_block_hash": "Ed2oLcgDobTsZ4KFPEZKWN4hqdttTaS9sWkiqHohBdkd",
+    "block_timestamp": "1712805406591967450",
+    "block": {
+      "block_height": 116583314
+    },
+    "receipt_conversion_tokens_burnt": "30835911515600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 432528994651100000000,
+        "args": "{\"id\": 43, \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 820783700726200000000
+    }
+  },
+  {
+    "id": "3754309248",
+    "receipt_id": "DzJVYfVeakJnHnhEc4usWRWc3SeDV5KV3c7nnU73KedD",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2N8NGfXTWc86K2ANwRr2C6sav5vQg8QHJcYPQczi3Rw7",
+      "block_height": 116583316,
+      "block_timestamp": 1712805409031158800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3574187945595,
+      "tokens_burnt": 357418794559500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4JcdfFzYM28pNJ5WEJMuA4MReSKU94wQR2qo3DxsvoMZ",
+    "included_in_block_hash": "Ed2oLcgDobTsZ4KFPEZKWN4hqdttTaS9sWkiqHohBdkd",
+    "block_timestamp": "1712805406591967450",
+    "block": {
+      "block_height": 116583314
+    },
+    "receipt_conversion_tokens_burnt": "30835911515600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357418794559500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":43,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 820783700726200000000
+    }
+  },
+  {
+    "id": "3754313625",
+    "receipt_id": "BzePEeNNV4Akb8rp6aBhcr8EyRd1eoPpCsZpfVL3DXTT",
+    "predecessor_account_id": "bpolania.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "23SHS5trnsZ4FVspykzfPfmnGFRsChe9ZGyWzrJKjxFu",
+      "block_height": 116583344,
+      "block_timestamp": 1712805441998040600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4490982986164,
+      "tokens_burnt": 449098298616400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DQHWgdAAfxLKtZA8BpFFmi59HT6teZs3z9f6XjztWh7N",
+    "included_in_block_hash": "HJfgMAGrTSrbFbXHJdcwmy2gTAkuJccfvQddRMTAdX3g",
+    "block_timestamp": "1712805440868395559",
+    "block": {
+      "block_height": 116583343
+    },
+    "receipt_conversion_tokens_burnt": "31181810505400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 449098298616400000000,
+        "args": "{\"id\": 43, \"body\": {\"name\": \"Expenses for DevRel Events March-April 2024\", \"summary\": \"These are the expenses for ETHSamba and ETHSeoul\", \"category\": \"Events & Hackathons\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"yarotska.near\", \"description\": \"**Number of Days: 11 days\\\\\\\\nNumber of Events: 2\\\\\\\\nCosts Covered: Hotels, Transportation, Plane Tickets and Food**\\\\\\\\n\\\\\\\\n**ETHSamba (March 20 - March 25):**\\\\\\\\nFood: $231.25\\\\\\\\nTransportation: $202.74\\\\\\\\nHotel: $967.38 (shared room for 2 devrels)\\\\\\\\nPlane Tickets: $1,484.30\\\\\\\\nSub-Total: $2,885.67\\\\\\\\n\\\\\\\\n*Responsibilities:*\\\\\\\\n\\\\\\\\nSupport for ETHSamba Hackathon support including workshops, talks, and direct engagement and technical support with developers.\\\\\\\\nSupport for Side Event (NEAR Day) this support includes workshops, talks, booth work and direct engagement and technical support with developers.\\\\\\\\n\\\\\\\\n**ETHSeoul (March 27 - April 01):**\\\\\\\\nFood: $200.60\\\\\\\\nTransportation: $212.80\\\\\\\\nHotel: $737.96 \\\\\\\\nPlane Tickets: $2,815.20\\\\\\\\nSub-Total: $3,966.56\\\\\\\\n\\\\\\\\n*Responsibilities:*\\\\\\\\n\\\\\\\\nSupport for ETHSeoul Hackathon including workshops, talks, and direct engagement and technical support with developers.\\\\\\\\nSupport for Side Events (BUIDL Asia) booth work, direct engagement and technical support with developers, and engagement with general BUIDL participants.\\\\\\\\n\\\\\\\\n***Total for 2 Events: $6,852.22***\\\\\\\\n\\\\\\\\nAll invoices have been made available to NEAR Foundation.\", \"linked_proposals\": [], \"receiver_account\": \"bpolania.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"6852\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 837698903681300000000
+    }
+  },
+  {
+    "id": "3754313819",
+    "receipt_id": "GMP6ekZqXVaPy9f6d2VrmFiqDQWvzHgkXFyN7UdKTXe6",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GioS2VgoYQVkWtixnTHumjjPXkKV1N7QhCtJF7gv9b9E",
+      "block_height": 116583345,
+      "block_timestamp": 1712805442745701400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3574187945595,
+      "tokens_burnt": 357418794559500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DQHWgdAAfxLKtZA8BpFFmi59HT6teZs3z9f6XjztWh7N",
+    "included_in_block_hash": "HJfgMAGrTSrbFbXHJdcwmy2gTAkuJccfvQddRMTAdX3g",
+    "block_timestamp": "1712805440868395559",
+    "block": {
+      "block_height": 116583343
+    },
+    "receipt_conversion_tokens_burnt": "31181810505400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357418794559500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":43,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 837698903681300000000
+    }
+  },
+  {
+    "id": "3765407938",
+    "receipt_id": "3hU6QagP2kbYs8ANC4KkvRFBhscQKGney278DCs4GpMH",
+    "predecessor_account_id": "flmel.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DuJD5M41EgvjZHNryzkSa4KXetanv8BmFrFMmuh3yjxz",
+      "block_height": 116605478,
+      "block_timestamp": 1712833426712166100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5308639138174,
+      "tokens_burnt": 530863913817400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "9xR22o3gGNpUUdHesfr4kxCM9F2qfKKZbwoSkYqxmoy1",
+    "included_in_block_hash": "eLPqwHyoShVbiSozqajWi19KcnGyoGoY2XvHEPWXMBZ",
+    "block_timestamp": "1712833425395477784",
+    "block": {
+      "block_height": 116605477
+    },
+    "receipt_conversion_tokens_burnt": "31664325062600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addon",
+        "deposit": 0,
+        "fee": 530863913817400000000,
+        "args": "{\"handle\": \"tooling\", \"community_addon\": {\"id\": \"kp910a\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Tools Community Calls\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\" The community calls are informal sessions where we share updates, discuss tooling and present projects in the NEAR ecosystem.\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThese sessions are now at a regular interval taking place **Every Second Tuesday of the month** if you dont want to miss those make sure you follow **[DevHub Community Calendar](https://calendar.google.com/calendar/u/2/r?cid=c_f54ed37fd92327acdc7e4343fe40722ae5797b6c82929ba93e9f3a89c69657ab@group.calendar.google.com&pli=1)**. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you want to present your work, suggest discussion topics or simply get in touch - **[Join our Telegram group](https://t.me/NEAR_Tools_Community_Group)**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nHere are the recaps of our most recent community calls:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### **[Community Call] #5: Apr 9, 2024**\\\\\\\\\\\\\\\\n[![Tools Community Call #5](https://ipfs.near.social/ipfs/bafkreigo3mpikbg2ogjipjonelfbvnrtypx6hkyr3rszaicyi3pgxhwyou)](https://youtube.com)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Watch on YouTube: [Tools Community Call #5 \\\\\\\\u{2013} near/dev/hub](https://youtu.be/EDCoWObguVst)**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Recap:**\\\\\\\\\\\\\\\\n- **Oleg Kuzmin** discusses the new implementation of **LedgerApp**.\\\\\\\\\\\\\\\\n- **Ricardo** presents his team and **AgorApp** https://agorapp.dev.\\\\\\\\\\\\\\\\n- **Guillermo** shares about recently updated **near-cli** https://github.com/near/near-cli.\\\\\\\\\\\\\\\\n- **Jaswinder** from Harmonic Guild presents their current work on **near-api-rs** https://github.com/Harmonic-Guild/nea...\\\\\\\\\\\\\\\\n- **S\\\\\\\\u{e9}rgio Seco** introduces **near-relay** https://github.com/SurgeCode/near-relay.\\\\\\\\\\\\\\\\n- **Frol** talks about **NEAR\\\\\\\\\\\\'s Rust Stack**.\\\\\\\\\\\\\\\\n- **Zahid** from **Jutsu.ai** gives a last-minute heads-up that breaking changes have been introduced, with more to be announced and discussed on the next community call.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### **[Community Call] #4: Wed Mar 6, 2024**\\\\\\\\\\\\\\\\n[![Tools Community Call #4](https://i.imgur.com/eR30Vrg.jpeg)](https://www.youtube.com/watch?v=Rd3Vn09c-Goi)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Watch on YouTube: [Tools Community Group Call #4 \\\\\\\\u{2013} near/dev/hub](https://www.youtube.com/watch?v=kcKigCtsHDo)**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Recap:**\\\\\\\\\\\\\\\\n**Zahid** demoes copilot and generative UI feature built in** Jutsu.ai**.\\\\\\\\\\\\\\\\n**Yuval** overviews **LavaNet.xyz **and introduces Lava Points, provides stats of current usage.\\\\\\\\\\\\\\\\n**Euguene** introduces **FastNear.com** and talks about the infrastructure problems it aiming to solve.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### **[Community Call] #3: Feb 21, 2024**\\\\\\\\\\\\\\\\n[![Tools Community Call #3](https://i.imgur.com/UdPKO4F.jpeg)](https://www.youtube.com/watch?v=kcKigCtsHDo&list=PLrLLmjcJVAB9RoK95udIqkVE_JqHt_CCd)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Watch on YouTube [Tools Community Group Call #3 \\\\\\\\u{2013} near/dev/hub](https://www.youtube.com/watch?v=kcKigCtsHDo&list=PLrLLmjcJVAB9RoK95udIqkVE_JqHt_CCd)**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Recap:**\\\\\\\\\\\\\\\\n- **Oleg Kuzmin** discusses the new implementation of **LedgerApp**.\\\\\\\\\\\\\\\\n- **Ricardo** presents his team and **AgorApp** https://agorapp.dev.\\\\\\\\\\\\\\\\n- **Guillermo** shares about recently updated **near-cli** https://github.com/near/near-cli.\\\\\\\\\\\\\\\\n- **Jaswinder** from Harmonic Guild presents their current work on **near-api-rs** https://github.com/Harmonic-Guild/nea...\\\\\\\\\\\\\\\\n- **S\\\\\\\\u{e9}rgio Seco** introduces **near-relay** https://github.com/SurgeCode/near-relay.\\\\\\\\\\\\\\\\n- **Frol** talks about **NEAR\\\\\\\\\\\\'s Rust Stack**.\\\\\\\\\\\\\\\\n- **Zahid** from **Jutsu.ai** gives a last-minute heads-up that breaking changes have been introduced, with more to be announced and discussed on the next community call.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**All sessions can be found on the [DevHub YouTube Channel](https://www.youtube.com/watch?v=vg9LYGLU7ok&list=PLrLLmjcJVAB9RoK95udIqkVE_JqHt_CCd)**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Community Calls\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.3253990688538e+21
+    }
+  },
+  {
+    "id": "3765418080",
+    "receipt_id": "CGccJRTt1jZrZpzJdpEJw4u5KbgqhGV7roZszyTMrjzE",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "J7JUgJk37h6D89gdjj9oP1GvoAHsrriMFAxEFqMEKAFn",
+      "block_height": 116605488,
+      "block_timestamp": 1712833440134198300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 17628708299738,
+      "tokens_burnt": 1.7628708299738e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "9xR22o3gGNpUUdHesfr4kxCM9F2qfKKZbwoSkYqxmoy1",
+    "included_in_block_hash": "eLPqwHyoShVbiSozqajWi19KcnGyoGoY2XvHEPWXMBZ",
+    "block_timestamp": "1712833425395477784",
+    "block": {
+      "block_height": 116605477
+    },
+    "receipt_conversion_tokens_burnt": "31664325062600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.7628708299738e+21,
+        "args": "{\"data\": {\"tooling.community.devhub.near\": {\"profile\": {\"name\": \"Tooling\", \"tags\": {\"tooling\": \"\", \"community\": \"\", \"announcements\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreidhehq7za5btjegq5u2rw5jmw2kygef2776d6qcpkopaa3nphg5pm\"}, \"linktree\": {\"github\": \"near\", \"twitter\": \"NEARDevHub\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=tooling\", \"telegram\": \"NEAR_Tools_Community_Group\"}, \"description\": \"This space brings together individuals, experts, and organizations who are interested in supporting the ongoing innovation of tooling on NEAR.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=tooling).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreiccjblp5fs7jowtqs7fkdywljfyxuikwaduck6mlidhvic3l4omtu\"}}}, \"discussions.tooling.community.devhub.near\": {\"profile\": {\"name\": \"Tooling (Community Discussions)\", \"tags\": {\"tooling\": \"\", \"community\": \"\", \"discussions\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreidhehq7za5btjegq5u2rw5jmw2kygef2776d6qcpkopaa3nphg5pm\"}, \"linktree\": {\"github\": \"near\", \"twitter\": \"NEARDevHub\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=tooling\", \"telegram\": \"NEAR_Tools_Community_Group\"}, \"description\": \"Supporting the ongoing innovation of developers tooling.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=tooling).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreiccjblp5fs7jowtqs7fkdywljfyxuikwaduck6mlidhvic3l4omtu\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.3253990688538e+21
+    }
+  },
+  {
+    "id": "3767766794",
+    "receipt_id": "Nd4RizeCRUWDRYFPuCwHvn5aJMgECYkRbTGoZ2DMkfW",
+    "predecessor_account_id": "flmel.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "ACFCYbBhznypETyVw2jNSaNLEpVjrzdqiV6qENZNvHhd",
+      "block_height": 116609385,
+      "block_timestamp": 1712838409020918800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3872038911573,
+      "tokens_burnt": 387203891157300000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "82dECDzmjTX5WKR3i1DZ5sXKXpTLY4GyYbrKgikxkvAm",
+    "included_in_block_hash": "8AbzaaH6Y2QUAQ3MZuasoruCMW2Yjc5GhnuypyQRsQwq",
+    "block_timestamp": "1712838407161146368",
+    "block": {
+      "block_height": 116609384
+    },
+    "receipt_conversion_tokens_burnt": "30951285710000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 387203891157300000000,
+        "args": "{\"data\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"image\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"ipfs_cid\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bafkreifadzm4kzm7d2tvkxmvxxkk55tgobzrpelcxn6bvku6iexjlqumzu\\\\\\\\\\\\\\\"},\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"# \\\\\\\\u{1f680} [NEAR API JS](https://github.com/near/near-api-js) 4.0.0 is out now\\\\\\\\\\\\\\\\n- More than 36% bundle size reduction (from 380kb to 240kb). Info here: https://bundlephobia.com/package/near-api-js@4.0.0\\\\\\\\\\\\\\\\n- Failover RPC configuration\\\\\\\\\\\\\\\\n- Executing view functions without the need of a Connection object\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nYou can read more about the changes here (https://github.com/near/near-api-js/pull/1318)!\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}, \"handle\": \"tooling\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 888339317114700000000
+    }
+  },
+  {
+    "id": "3767767759",
+    "receipt_id": "AhEsbeJ7fnKXfcsm9gT32GPHD8Qx33oodKvYufJyWNtE",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7usR1HoZEnVUwYvrvEALqetpQYDuh1gGtnAxYLp1Jxjd",
+      "block_height": 116609386,
+      "block_timestamp": 1712838409817960000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4701841402474,
+      "tokens_burnt": 470184140247400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "82dECDzmjTX5WKR3i1DZ5sXKXpTLY4GyYbrKgikxkvAm",
+    "included_in_block_hash": "8AbzaaH6Y2QUAQ3MZuasoruCMW2Yjc5GhnuypyQRsQwq",
+    "block_timestamp": "1712838407161146368",
+    "block": {
+      "block_height": 116609384
+    },
+    "receipt_conversion_tokens_burnt": "30951285710000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 470184140247400000000,
+        "args": "{\"data\": {\"tooling.community.devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"image\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"ipfs_cid\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bafkreifadzm4kzm7d2tvkxmvxxkk55tgobzrpelcxn6bvku6iexjlqumzu\\\\\\\\\\\\\\\"},\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"# \\\\\\\\u{1f680} [NEAR API JS](https://github.com/near/near-api-js) 4.0.0 is out now\\\\\\\\\\\\\\\\n- More than 36% bundle size reduction (from 380kb to 240kb). Info here: https://bundlephobia.com/package/near-api-js@4.0.0\\\\\\\\\\\\\\\\n- Failover RPC configuration\\\\\\\\\\\\\\\\n- Executing view functions without the need of a Connection object\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nYou can read more about the changes here (https://github.com/near/near-api-js/pull/1318)!\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 888339317114700000000
+    }
+  },
+  {
+    "id": "3768954059",
+    "receipt_id": "GvfnkK9tQ52C6WfpzPtTutFohNCzKsgTngHPae1LuEmb",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Gb1LY6dBRr38HdVv33MRfmToJbCBGBYR4DHwWdY9arb9",
+      "block_height": 116611375,
+      "block_timestamp": 1712840963219677400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8108252366392,
+      "tokens_burnt": 810825236639200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8SUdEREUNZcC5EGfvZoxgnsGeDhwi2atJQqwLPRCe1s6",
+    "included_in_block_hash": "9qaFRG2hLPULxF8revodYjbTZhctqapcyt7oYJjPcaqv",
+    "block_timestamp": "1712840962054534498",
+    "block": {
+      "block_height": 116611374
+    },
+    "receipt_conversion_tokens_burnt": "30857600075400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 810825236639200000000,
+        "args": "{\"id\": 28, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1935164532997e+21
+    }
+  },
+  {
+    "id": "3768957267",
+    "receipt_id": "FJ1CQ69XKhcFmopu8EEwj91XKejhAJW21MNj5uG2B9WQ",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FW19FSzq6cjFGD12C18N8CHMjgbeQ29NEYypzp7LDVGs",
+      "block_height": 116611378,
+      "block_timestamp": 1712840967230561300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3518336165851,
+      "tokens_burnt": 351833616585100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8SUdEREUNZcC5EGfvZoxgnsGeDhwi2atJQqwLPRCe1s6",
+    "included_in_block_hash": "9qaFRG2hLPULxF8revodYjbTZhctqapcyt7oYJjPcaqv",
+    "block_timestamp": "1712840962054534498",
+    "block": {
+      "block_height": 116611374
+    },
+    "receipt_conversion_tokens_burnt": "30857600075400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351833616585100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"jutsuai.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":28,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"frol.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1935164532997e+21
+    }
+  },
+  {
+    "id": "3770485020",
+    "receipt_id": "4UThZn5vUHQ9LxriD7aKZ8TppvNzcfUevrULLBeePNks",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DRe2QyzwfJVhq2TXctCBwQbEtEwS4b2UbHfnkRQJv5Gp",
+      "block_height": 116614321,
+      "block_timestamp": 1712844757639139300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3723831922251,
+      "tokens_burnt": 372383192225100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "BJ1My19Q1eJwzfpwPhyg9AscNVg5UvYn51dz3DLBMXK6",
+    "included_in_block_hash": "Gn9F2SZ2n5t7ZwbBAu5BMjocRvD3o1UcbVaWVvVUe6w1",
+    "block_timestamp": "1712844756493399932",
+    "block": {
+      "block_height": 116614320
+    },
+    "receipt_conversion_tokens_burnt": "31037145575600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 372383192225100000000,
+        "args": "{\"data\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"image\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"ipfs_cid\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bafkreiftb5hmwdvyskhg2ml7lwrg4jfq3o47geyl6wedpq7hp2dcus6h3q\\\\\\\\\\\\\\\"},\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\u{1f4fa} Join us for the **Fifth NEAR Contract Standards Work Group call** Next Week Thursday, where the group will vote on [NEP-330](https://github.com/near/NEPs/pull/533). This proposal brings new capabilities to NEAR smart contracts by introducing build details to the contract metadata.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**When:** Thursday April 18th 5PM UTC\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n \\\\\\\\u{2b50}\\\\\\\\u{fe0f} [ADD TO CALENDAR](https://calendar.google.com/calendar/u/0/r/eventedit/copy/N3YyZXJpZ2xwaGRicmRydTFhc2JjMDR1NjYgY19mNTRlZDM3ZmQ5MjMyN2FjZGM3ZTQzNDNmZTQwNzIyYWU1Nzk3YjZjODI5MjliYTkzZTlmM2E4OWM2OTY1N2FiQGc/ZW55aS5rYW51QGdtYWlsLmNvbQ) \\\\\\\\u{2b50}\\\\\\\\u{fe0f}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nHow can you participate?\\\\\\\\\\\\\\\\nThis NEP is in the final comment period. Dive into the technical details in the GitHub discussion and join the call to learn about the final decision!\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}, \"handle\": \"contract-standards\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 880327567923900000000
+    }
+  },
+  {
+    "id": "3770485489",
+    "receipt_id": "BEaEFVEKTXjuHv3o6GwmEar2x8oUe1i5FM8iDbuYNt2C",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2x8h2fBfokWh4p2FQ4dSR5Mw5YGGTrjQgmjWa8jSvmun",
+      "block_height": 116614322,
+      "block_timestamp": 1712844758724254000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4769072301232,
+      "tokens_burnt": 476907230123200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "BJ1My19Q1eJwzfpwPhyg9AscNVg5UvYn51dz3DLBMXK6",
+    "included_in_block_hash": "Gn9F2SZ2n5t7ZwbBAu5BMjocRvD3o1UcbVaWVvVUe6w1",
+    "block_timestamp": "1712844756493399932",
+    "block": {
+      "block_height": 116614320
+    },
+    "receipt_conversion_tokens_burnt": "31037145575600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 476907230123200000000,
+        "args": "{\"data\": {\"contract-standards.community.devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"image\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"ipfs_cid\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bafkreiftb5hmwdvyskhg2ml7lwrg4jfq3o47geyl6wedpq7hp2dcus6h3q\\\\\\\\\\\\\\\"},\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\u{1f4fa} Join us for the **Fifth NEAR Contract Standards Work Group call** Next Week Thursday, where the group will vote on [NEP-330](https://github.com/near/NEPs/pull/533). This proposal brings new capabilities to NEAR smart contracts by introducing build details to the contract metadata.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**When:** Thursday April 18th 5PM UTC\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n \\\\\\\\u{2b50}\\\\\\\\u{fe0f} [ADD TO CALENDAR](https://calendar.google.com/calendar/u/0/r/eventedit/copy/N3YyZXJpZ2xwaGRicmRydTFhc2JjMDR1NjYgY19mNTRlZDM3ZmQ5MjMyN2FjZGM3ZTQzNDNmZTQwNzIyYWU1Nzk3YjZjODI5MjliYTkzZTlmM2E4OWM2OTY1N2FiQGc/ZW55aS5rYW51QGdtYWlsLmNvbQ) \\\\\\\\u{2b50}\\\\\\\\u{fe0f}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nHow can you participate?\\\\\\\\\\\\\\\\nThis NEP is in the final comment period. Dive into the technical details in the GitHub discussion and join the call to learn about the final decision!\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 880327567923900000000
+    }
+  },
+  {
+    "id": "3770573047",
+    "receipt_id": "4a8MEUXSgKMVL2Fdnf4V6dZ8qJ9KxUL83RfXaieQ55vx",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BmswcRTBBgsV5pXAqxBjn3FRdKyDdcob6K7N5HVMCj5R",
+      "block_height": 116614456,
+      "block_timestamp": 1712844922864106000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3954157973356,
+      "tokens_burnt": 395415797335600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "4aAmeia1N8RAqh4pHFtBQDiMZ5MFqPpewZbu9HYaDLsL",
+    "included_in_block_hash": "4dquBAnGqiWjv83MdPtXhTdjVEB2wtPmfeZVxeoeDfss",
+    "block_timestamp": "1712844921409541070",
+    "block": {
+      "block_height": 116614455
+    },
+    "receipt_conversion_tokens_burnt": "30855587734800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 395415797335600000000,
+        "args": "{\"id\": 42, \"timeline\": {\"status\": \"APPROVED\", \"kyc_verified\": false, \"test_transaction_sent\": false, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 778061412969500000000
+    }
+  },
+  {
+    "id": "3770576726",
+    "receipt_id": "C3G7mGvyQ6AQYK6D1pyDAgvqR4j54HbnAvrEreS4ULre",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Bix2EQ4LaYxQNy8QzoyZMk2fqz9TtvLMKYQZvJ1K56ka",
+      "block_height": 116614458,
+      "block_timestamp": 1712844925850133200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3517900278991,
+      "tokens_burnt": 351790027899100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4aAmeia1N8RAqh4pHFtBQDiMZ5MFqPpewZbu9HYaDLsL",
+    "included_in_block_hash": "4dquBAnGqiWjv83MdPtXhTdjVEB2wtPmfeZVxeoeDfss",
+    "block_timestamp": "1712844921409541070",
+    "block": {
+      "block_height": 116614455
+    },
+    "receipt_conversion_tokens_burnt": "30855587734800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351790027899100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"denbite.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":42,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"frol.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 778061412969500000000
+    }
+  },
+  {
+    "id": "3772917342",
+    "receipt_id": "5ttB6RCYXnzM6Fw4YXzFZGMMTx4UJ9tJDB8yoxz47yrB",
+    "predecessor_account_id": "flmel.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8cjoPYSSUe6pykrGDPdduSTq3GS3SGPSDdWL6P711o7Y",
+      "block_height": 116619425,
+      "block_timestamp": 1712851033059911000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5337118755448,
+      "tokens_burnt": 533711875544800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "F6Ei7kMCZb915wjNoUF45GPe3UoHzFQbXRU25vpavkom",
+    "included_in_block_hash": "EXQ2gFFU9W3DsziUesshM3VBSSUzZse2AWJxxdgUA6E",
+    "block_timestamp": "1712851032000407188",
+    "block": {
+      "block_height": 116619424
+    },
+    "receipt_conversion_tokens_burnt": "31877633166200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addon",
+        "deposit": 0,
+        "fee": 533711875544800000000,
+        "args": "{\"handle\": \"tooling\", \"community_addon\": {\"id\": \"kp910a\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Tools Community Calls\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\" The community calls are informal sessions where we share updates, discuss tooling and present projects in the NEAR ecosystem.\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThese sessions are now at a regular interval taking place **Every Second Tuesday of the month** if you dont want to miss those make sure you follow **[DevHub Community Calendar](https://calendar.google.com/calendar/u/2/r?cid=c_f54ed37fd92327acdc7e4343fe40722ae5797b6c82929ba93e9f3a89c69657ab@group.calendar.google.com&pli=1)**. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you want to present your work, suggest discussion topics or simply get in touch - **[Join our Telegram group](https://t.me/NEAR_Tools_Community_Group)**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nHere are the recaps of our most recent community calls:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### **[Community Call] #5: Apr 9, 2024**\\\\\\\\\\\\\\\\n[![Tools Community Call #5](https://ipfs.near.social/ipfs/bafkreigo3mpikbg2ogjipjonelfbvnrtypx6hkyr3rszaicyi3pgxhwyou)](https://youtube.com)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Watch on YouTube: [Tools Community Call #5 \\\\\\\\u{2013} near/dev/hub](https://www.youtube.com/watch?v=EDCoWObguVs)**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Recap:**\\\\\\\\\\\\\\\\n- **Vlad** Presents the updates of Rust SDK - v5.1 That reduces the boiler plate necessary for writing smart contracts.\\\\\\\\\\\\\\\\n  Next version coming soon will bring \\\\\\\\u{201c}iterable map\\\\\\\\u{201d}.\\\\\\\\\\\\\\\\n- **LedgerApp** rewrite in Rust is complete and going through a formal security audit. Expecting to go live in May\\\\\\\\\\\\\\\\n- **[Cargo Near](https://github.com/near/cargo-near)** and **rust-sdk** are getting integrated with **SourceScan** making the contracts source code verifiable and discoverable\\\\\\\\\\\\\\\\n checkout the [NEP-330 here](https://github.com/near/NEPs/pull/533)\\\\\\\\\\\\\\\\n- **Morgan** presents **Okashi.dev** rewrite he did for ETH Denver simulating Near environment for interacting with smart contracts in the browser locally :blown:\\\\\\\\\\\\\\\\n- **Re:Public** showcase their entry for ETH London and present [their roadmap and proposal](https://near.social/devhub.near/widget/app?page=proposal&id=33)\\\\\\\\\\\\\\\\n- **[bos-workspace](https://github.com/NEARBuilders/bos-workspace)** had a rewrite making it more modular and easier to be worked with presented by **Elliot**\\\\\\\\\\\\\\\\n- **Yuval** - tight for record holder attendee of the community calls recaps Q1 and great stats of **LavaNet.xyz** speaks about what\\\\\\\\\\\\'s next\\\\\\\\\\\\\\\\n- **Zahid** Recaps [Q1 updates](https://www.youtube.com/watch?v=LuwX8InOQdU&ab_channel=JutsuAI) and [milestones](https://www.linkedin.com/pulse/jutsu-devhub-collaboration-q1-milestones-tryjutsu-zacec/?trackingId=pgauiK2OUj2s782z5cIhfw%3D%3D). Shares the [roadmap](https://trello.com/b/NUIKq7dq/jutsu-public-roadmap) for **Jutsu.ai**\\\\\\\\\\\\\\\\n- **NearBlocks** represented by **Luke** Shares some stats and recent updates supporting our ecosystem.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### **[Community Call] #4: Wed Mar 6, 2024**\\\\\\\\\\\\\\\\n[![Tools Community Call #4](https://i.imgur.com/eR30Vrg.jpeg)](https://www.youtube.com/watch?v=Rd3Vn09c-Goi)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Watch on YouTube: [Tools Community Group Call #4 \\\\\\\\u{2013} near/dev/hub](https://www.youtube.com/watch?v=kcKigCtsHDo)**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Recap:**\\\\\\\\\\\\\\\\n**Zahid** demoes copilot and generative UI feature built in** Jutsu.ai**.\\\\\\\\\\\\\\\\n**Yuval** overviews **LavaNet.xyz **and introduces Lava Points, provides stats of current usage.\\\\\\\\\\\\\\\\n**Euguene** introduces **FastNear.com** and talks about the infrastructure problems it aiming to solve.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### **[Community Call] #3: Feb 21, 2024**\\\\\\\\\\\\\\\\n[![Tools Community Call #3](https://i.imgur.com/UdPKO4F.jpeg)](https://www.youtube.com/watch?v=kcKigCtsHDo&list=PLrLLmjcJVAB9RoK95udIqkVE_JqHt_CCd)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Watch on YouTube [Tools Community Group Call #3 \\\\\\\\u{2013} near/dev/hub](https://www.youtube.com/watch?v=kcKigCtsHDo&list=PLrLLmjcJVAB9RoK95udIqkVE_JqHt_CCd)**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Recap:**\\\\\\\\\\\\\\\\n- **Oleg Kuzmin** discusses the new implementation of **LedgerApp**.\\\\\\\\\\\\\\\\n- **Ricardo** presents his team and **AgorApp** https://agorapp.dev.\\\\\\\\\\\\\\\\n- **Guillermo** shares about recently updated **near-cli** https://github.com/near/near-cli.\\\\\\\\\\\\\\\\n- **Jaswinder** from Harmonic Guild presents their current work on **near-api-rs** https://github.com/Harmonic-Guild/nea...\\\\\\\\\\\\\\\\n- **S\\\\\\\\u{e9}rgio Seco** introduces **near-relay** https://github.com/SurgeCode/near-relay.\\\\\\\\\\\\\\\\n- **Frol** talks about **NEAR\\\\\\\\\\\\'s Rust Stack**.\\\\\\\\\\\\\\\\n- **Zahid** from **Jutsu.ai** gives a last-minute heads-up that breaking changes have been introduced, with more to be announced and discussed on the next community call.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**All sessions can be found on the [DevHub YouTube Channel](https://www.youtube.com/watch?v=vg9LYGLU7ok&list=PLrLLmjcJVAB9RoK95udIqkVE_JqHt_CCd)**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n---------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp; \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Community Calls\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.3256959474996e+21
+    }
+  }
+]

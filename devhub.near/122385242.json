@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "6241763349",
+    "receipt_id": "KZgCAVLdeh1aQ91BCCA6VC4nBGwYF2WSda782NRAhbe",
+    "predecessor_account_id": "spring-neardao.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6LeGyyBH3Rigu7pt3a8EDw3xnr8VbPJcP9ftYGvEZUUt",
+      "block_height": 122385472,
+      "block_timestamp": 1719830279885466400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4329091224540,
+      "tokens_burnt": 432909122454000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "3VXC7hZQ9Cca7eVKhJi5EmThDEFeLpxMcAYymf7iZtae",
+    "included_in_block_hash": "47X69hWRdofE5rxjQej8RFuPrV5eQH77EY3QdPJbrj3K",
+    "block_timestamp": "1719830278583013988",
+    "block": {
+      "block_height": 122385471
+    },
+    "receipt_conversion_tokens_burnt": "31118533573200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 432909122454000000000,
+        "args": "{\"id\": 134, \"body\": {\"name\": \"DevHub Developer Contributor report by Spring Chiu for 05/29/2024 - 07/01/2024\", \"summary\": \"DevHub Developer Contributor report by Spring Chiu for 06/06/2024 - 07/01/2024 \\\\\\\\ncontribute code to repo of near-sdk-rs, near-workspaces-rs\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"frol.near\", \"description\": \"|Date  |Amount  |Task  |Issue  |Description |\\\\\\\\n|  ----  | ----  | ----  | ----  | ----  | \\\\\\\\n| 20240529-20240605 | 5 | tricky implementation for search attribute inner `#[near]` | https://github.com/near/near-sdk-rs/issues/1177 | https://github.com/near/near-sdk-rs/pull/1185 |\\\\\\\\n| 20240518 | 9 | upgrade near-sandbox-utils to `0.8.0`(nearcore 1.37.0+) and fix create top-level accounts problem | https://github.com/near/near-workspaces-rs/issues/354 | https://github.com/near/near-workspaces-rs/pull/360 |\\\\\\\\n\\\\\\\\n14 hours\\\\\\\\n\\\\\\\\nCost\\\\\\\\nTotal hours: 14\\\\\\\\nRate: $65/hour: Based on the application of [Idea: Engineering -- DevDAO dev](https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=729)\\\\\\\\nTotal amount: $910 USDC\", \"linked_proposals\": [], \"receiver_account\": \"yongchun.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"910\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 816763153034700000000
+    }
+  },
+  {
+    "id": "6241763831",
+    "receipt_id": "Ast28TxS9BCXwtcBUmsByoTtAUERcFg7MTfDYaZY8XHp",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "93SC5sM8KK2JhNB3qJXw8LtXFZjJDfdQGMknDYxUVzjX",
+      "block_height": 122385473,
+      "block_timestamp": 1719830281136819700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3527354970075,
+      "tokens_burnt": 352735497007500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "3VXC7hZQ9Cca7eVKhJi5EmThDEFeLpxMcAYymf7iZtae",
+    "included_in_block_hash": "47X69hWRdofE5rxjQej8RFuPrV5eQH77EY3QdPJbrj3K",
+    "block_timestamp": "1719830278583013988",
+    "block": {
+      "block_height": 122385471
+    },
+    "receipt_conversion_tokens_burnt": "31118533573200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352735497007500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"spring-neardao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":134,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"spring-neardao.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 816763153034700000000
+    }
+  },
+  {
+    "id": "6241773770",
+    "receipt_id": "2o6yPfyaKxPiHrHaTzKFAdrGSfWeDktvV8M8ZARjv5cs",
+    "predecessor_account_id": "spring-neardao.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BPdpNfUYY4XHQi1gWNMxgTxHpWkc3HBrVTunjfcHwmbu",
+      "block_height": 122385498,
+      "block_timestamp": 1719830312640121900
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4551736036569,
+      "tokens_burnt": 455173603656900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "3PYDj83rBCVmCG23QkSPzPoSxDTg4BZA5tnArsER9Fjg",
+    "included_in_block_hash": "2Mi15K58btABsWCSaKRDfRXgFyZnLgUTXRQ9GYWb7DBq",
+    "block_timestamp": "1719830311452107329",
+    "block": {
+      "block_height": 122385497
+    },
+    "receipt_conversion_tokens_burnt": "30836805889200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 455173603656900000000,
+        "args": "{\"id\": 134, \"timeline\": {\"status\": \"CANCELLED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 835973784938400000000
+    }
+  },
+  {
+    "id": "6241774088",
+    "receipt_id": "CBN6TffSCL2bkNZPts44sHifzbmVXxLonr8ymAZYJcA8",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "89CbPVyFzpvBcAP3wsV6u1iaQDo7aZWXgCbDUarvcAFP",
+      "block_height": 122385499,
+      "block_timestamp": 1719830313847823600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3499633753923,
+      "tokens_burnt": 349963375392300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "3PYDj83rBCVmCG23QkSPzPoSxDTg4BZA5tnArsER9Fjg",
+    "included_in_block_hash": "2Mi15K58btABsWCSaKRDfRXgFyZnLgUTXRQ9GYWb7DBq",
+    "block_timestamp": "1719830311452107329",
+    "block": {
+      "block_height": 122385497
+    },
+    "receipt_conversion_tokens_burnt": "30836805889200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349963375392300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"spring-neardao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":134,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"spring-neardao.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 835973784938400000000
+    }
+  },
+  {
+    "id": "6241815614",
+    "receipt_id": "A7p3bfbtNd1544p6ZL5oeoH5EkDRoDwivyx8xsEMXu4f",
+    "predecessor_account_id": "spring-neardao.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4S4EEBnfa1KxuQLY1otk6YggeyW8T426w2jTYZiTZW3i",
+      "block_height": 122385597,
+      "block_timestamp": 1719830425992535300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3051995576846,
+      "tokens_burnt": 305199557684600000000,
+      "executor_account_id": "devhub.near",
+      "status": false
+    },
+    "transaction_hash": "8trXMMyUQ4cdb8SdeVboS7Po9ZDQDgqXVZNW2kdewV3r",
+    "included_in_block_hash": "E5zMy8Tb4CkR2Knpd4LnWeiYHh2RAkKPbmvFZMUasQaL",
+    "block_timestamp": "1719830424615006631",
+    "block": {
+      "block_height": 122385596
+    },
+    "receipt_conversion_tokens_burnt": "31120322320400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 305199557684600000000,
+        "args": "{\"id\": 134, \"body\": {\"name\": \"DevHub Developer Contributor report by Spring Chiu for 05/29/2024 - 07/01/2024\", \"summary\": \"DevHub Developer Contributor report by Spring Chiu for 06/06/2024 - 07/01/2024 \\\\\\\\ncontribute code to repo of near-sdk-rs, near-workspaces-rs\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"frol.near\", \"description\": \"|Date  |Amount  |Task  |Issue  |Description |\\\\\\\\n|  ----  | ----  | ----  | ----  | ----  | \\\\\\\\n| 20240529-20240605 | 5 | tricky implementation for search attribute inner `#[near]` | https://github.com/near/near-sdk-rs/issues/1177 | https://github.com/near/near-sdk-rs/pull/1185 |\\\\\\\\n| 20240606-20240624 | 9 | upgrade near-sandbox-utils to `0.8.0`(nearcore 1.37.0+) and fix create top-level accounts problem | https://github.com/near/near-workspaces-rs/issues/354 | https://github.com/near/near-workspaces-rs/pull/360 |\\\\\\\\n\\\\\\\\n14 hours\\\\\\\\n\\\\\\\\nCost\\\\\\\\nTotal hours: 14\\\\\\\\nRate: $65/hour: Based on the application of [Idea: Engineering -- DevDAO dev](https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=729)\\\\\\\\nTotal amount: $910 USDC\", \"linked_proposals\": [], \"receiver_account\": \"yongchun.nea\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"910\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 336319880005000000000
+    }
+  },
+  {
+    "id": "6241857856",
+    "receipt_id": "8FZCbZaVRoVgVou1UkzLGuWXj58LJRXLYFjqepfHd4RB",
+    "predecessor_account_id": "spring-neardao.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7MNx3kvgzmNMCX7HSuGhjvLst6Wv3ocLZ3gUEiMxJeJz",
+      "block_height": 122385660,
+      "block_timestamp": 1719830505346196700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3046513472098,
+      "tokens_burnt": 304651347209800000000,
+      "executor_account_id": "devhub.near",
+      "status": false
+    },
+    "transaction_hash": "GFzMKRoym4kNTD7jq2oEdBQ9Sq6NNmycG9NREsj7vs8Q",
+    "included_in_block_hash": "4brmHSYTsRyYc7ZP1onEpRdtZzxoSvbmy4CUj3E7p6kZ",
+    "block_timestamp": "1719830504055617253",
+    "block": {
+      "block_height": 122385659
+    },
+    "receipt_conversion_tokens_burnt": "31104000002200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 304651347209800000000,
+        "args": "{\"id\": 134, \"body\": {\"name\": \"DevHub Developer Contributor report by Spring Chiu for 05/29/2024 - 07/01/2024\", \"summary\": \"DevHub Developer Contributor report by Spring Chiu for 06/06/2024 - 07/01/2024 \\\\\\\\ncontribute code to repo of near-sdk-rs, near-workspaces-rs\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": \"frol.near\", \"description\": \"|Date  |Amount  |Task  |Issue  |Description |\\\\\\\\n|  ----  | ----  | ----  | ----  | ----  | \\\\\\\\n| 20240529-20240605 | 5 | tricky implementation for search attribute inner `#[near]` | https://github.com/near/near-sdk-rs/issues/1177 | https://github.com/near/near-sdk-rs/pull/1185 |\\\\\\\\n| 20240606-20240624 | 9 | upgrade near-sandbox-utils to `0.8.0`(nearcore 1.37.0+) and fix create top-level accounts problem | https://github.com/near/near-workspaces-rs/issues/354 | https://github.com/near/near-workspaces-rs/pull/360 |\\\\\\\\n\\\\\\\\n14 hours\\\\\\\\n\\\\\\\\nCost\\\\\\\\nTotal hours: 14\\\\\\\\nRate: $65/hour: Based on the application of [Idea: Engineering -- DevDAO dev](https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=729)\\\\\\\\nTotal amount: $910 USDC\", \"linked_proposals\": [], \"receiver_account\": \"yongchun.nea\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"910\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 335755347212000000000
+    }
+  },
+  {
+    "id": "6241879830",
+    "receipt_id": "3LNcHjK6wVbVtrZDV4d2Bk27mxB3itFEcab6vBS55YFp",
+    "predecessor_account_id": "spring-neardao.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HG2EACdy7RDqyU9WqXJk8RUNNqNPm9ZbGat9GHL4Dyin",
+      "block_height": 122385709,
+      "block_timestamp": 1719830559226782200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 2282646259858,
+      "tokens_burnt": 228264625985800000000,
+      "executor_account_id": "devhub.near",
+      "status": false
+    },
+    "transaction_hash": "2oMxQ6Uftzf1cKWDXKMh25DSTRBEuTLCts4pRE1yLGCM",
+    "included_in_block_hash": "Ekw9vfDiRdjcYLwCaJVrsp1aFWFTuUy7hcRuM7HNGnop",
+    "block_timestamp": "1719830557924365451",
+    "block": {
+      "block_height": 122385708
+    },
+    "receipt_conversion_tokens_burnt": "30959111479000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 228264625985800000000,
+        "args": "{\"id\": 134, \"body\": {\"name\": \"DevHub Developer Contributor report by Spring Chiu for 05/29/2024 - 07/01/2024\", \"summary\": \"DevHub Developer Contributor report by Spring Chiu for 06/06/2024 - 07/01/2024 \\\\\\\\ncontribute code to repo of near-sdk-rs, near-workspaces-rs\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"CANCELLED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"frol.near\", \"description\": null, \"linked_proposals\": [], \"receiver_account\": \"yongchun.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"910\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 259223737464800000000
+    }
+  },
+  {
+    "id": "6241969471",
+    "receipt_id": "8Kc3e5r3kCgu5QvZqpsEw6otGRAW1943wYEQmrZmXSbP",
+    "predecessor_account_id": "spring-neardao.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "B33DQgdLegnziRxNhEmQ14QJyZECzgpcaccAca5yAGG",
+      "block_height": 122385829,
+      "block_timestamp": 1719830708931658000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5274222142552,
+      "tokens_burnt": 527422214255200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8L92bm5pemusYmdiN8FJr6x4eWzPUAxgrkagYKx9XuRf",
+    "included_in_block_hash": "7vfTKCEXPEFVUadb4gYiPUqwBc7rAvgCCMqeNeajdc5N",
+    "block_timestamp": "1719830707574946181",
+    "block": {
+      "block_height": 122385828
+    },
+    "receipt_conversion_tokens_burnt": "31118309979800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 527422214255200000000,
+        "args": "{\"body\": {\"name\": \"DevHub Developer Contributor report by Spring Chiu for 05/29/2024 - 07/01/2024\", \"summary\": \"DevHub Developer Contributor report by Spring Chiu for 06/06/2024 - 07/01/2024 \\\\\\\\ncontribute code to repo of near-sdk-rs, near-workspaces-rs\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"frol.near\", \"description\": \"|Date  |Amount  |Task  |Issue  |Description |\\\\\\\\n|  ----  | ----  | ----  | ----  | ----  | \\\\\\\\n| 20240529-20240605 | 5 | tricky implementation for search attribute inner `#[near]` | https://github.com/near/near-sdk-rs/issues/1177 | https://github.com/near/near-sdk-rs/pull/1185 |\\\\\\\\n| 20240606-20240624 | 9 | upgrade near-sandbox-utils to `0.8.0`(nearcore 1.37.0+) and fix create top-level accounts problem | https://github.com/near/near-workspaces-rs/issues/354 | https://github.com/near/near-workspaces-rs/pull/360 |\\\\\\\\n\\\\\\\\n14 hours\\\\\\\\n\\\\\\\\nCost\\\\\\\\nTotal hours: 14\\\\\\\\nRate: $65/hour: Based on the application of [Idea: Engineering -- DevDAO dev](https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=729)\\\\\\\\nTotal amount: $910 USDC\", \"linked_proposals\": [], \"receiver_account\": \"yongchun.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"910\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7030785485929e+21
+    }
+  },
+  {
+    "id": "6241970626",
+    "receipt_id": "CxVb54MFDzqRpbE43BdYpcv1ym7mFRytB6iRMiowAs4J",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CG5gfb9bgbFDERc2miJKiu7VGrp4Nk63eUoVTzAHPZGM",
+      "block_height": 122385830,
+      "block_timestamp": 1719830710196630800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4479122158710,
+      "tokens_burnt": 447912215871000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8L92bm5pemusYmdiN8FJr6x4eWzPUAxgrkagYKx9XuRf",
+    "included_in_block_hash": "7vfTKCEXPEFVUadb4gYiPUqwBc7rAvgCCMqeNeajdc5N",
+    "block_timestamp": "1719830707574946181",
+    "block": {
+      "block_height": 122385828
+    },
+    "receipt_conversion_tokens_burnt": "31118309979800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 447912215871000000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Tooling & Infrastructure* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @spring-neardao.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}DevHub Developer Contributor report by Spring Chiu for 05/29/2024 - 07/01/2024\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nDevHub Developer Contributor report by Spring Chiu for 06/06/2024 - 07/01/2024 \\\\\\\\\\\\\\\\ncontribute code to repo of near-sdk-rs, near-workspaces-rs\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=135)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7030785485929e+21
+    }
+  },
+  {
+    "id": "6241970629",
+    "receipt_id": "NHTDb83N34nWKd9DyihgozUp1KpCB88u1CsVgP7at1i",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CG5gfb9bgbFDERc2miJKiu7VGrp4Nk63eUoVTzAHPZGM",
+      "block_height": 122385830,
+      "block_timestamp": 1719830710196630800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3448507547422,
+      "tokens_burnt": 344850754742200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8L92bm5pemusYmdiN8FJr6x4eWzPUAxgrkagYKx9XuRf",
+    "included_in_block_hash": "7vfTKCEXPEFVUadb4gYiPUqwBc7rAvgCCMqeNeajdc5N",
+    "block_timestamp": "1719830707574946181",
+    "block": {
+      "block_height": 122385828
+    },
+    "receipt_conversion_tokens_burnt": "31118309979800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 344850754742200000000,
+        "args": "{\"proposal\": {\"id\": 135, \"snapshot\": {\"name\": \"DevHub Developer Contributor report by Spring Chiu for 05/29/2024 - 07/01/2024\", \"labels\": [], \"summary\": \"DevHub Developer Contributor report by Spring Chiu for 06/06/2024 - 07/01/2024 \\\\\\\\ncontribute code to repo of near-sdk-rs, near-workspaces-rs\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"editor_id\": \"spring-neardao.near\", \"timestamp\": \"1719830708931658007\", \"supervisor\": \"frol.near\", \"description\": \"|Date  |Amount  |Task  |Issue  |Description |\\\\\\\\n|  ----  | ----  | ----  | ----  | ----  | \\\\\\\\n| 20240529-20240605 | 5 | tricky implementation for search attribute inner `#[near]` | https://github.com/near/near-sdk-rs/issues/1177 | https://github.com/near/near-sdk-rs/pull/1185 |\\\\\\\\n| 20240606-20240624 | 9 | upgrade near-sandbox-utils to `0.8.0`(nearcore 1.37.0+) and fix create top-level accounts problem | https://github.com/near/near-workspaces-rs/issues/354 | https://github.com/near/near-workspaces-rs/pull/360 |\\\\\\\\n\\\\\\\\n14 hours\\\\\\\\n\\\\\\\\nCost\\\\\\\\nTotal hours: 14\\\\\\\\nRate: $65/hour: Based on the application of [Idea: Engineering -- DevDAO dev](https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=729)\\\\\\\\nTotal amount: $910 USDC\", \"linked_proposals\": [], \"receiver_account\": \"yongchun.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"910\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"author_id\": \"spring-neardao.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7030785485929e+21
+    }
+  },
+  {
+    "id": "6241970631",
+    "receipt_id": "4zYjqHAH2RS8cd7qU7DEdC6Zt1A3rktfjW3mKawZMcxt",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CG5gfb9bgbFDERc2miJKiu7VGrp4Nk63eUoVTzAHPZGM",
+      "block_height": 122385830,
+      "block_timestamp": 1719830710196630800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3517750537447,
+      "tokens_burnt": 351775053744700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8L92bm5pemusYmdiN8FJr6x4eWzPUAxgrkagYKx9XuRf",
+    "included_in_block_hash": "7vfTKCEXPEFVUadb4gYiPUqwBc7rAvgCCMqeNeajdc5N",
+    "block_timestamp": "1719830707574946181",
+    "block": {
+      "block_height": 122385828
+    },
+    "receipt_conversion_tokens_burnt": "31118309979800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351775053744700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"frol.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":135,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"spring-neardao.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":135,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"spring-neardao.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7030785485929e+21
+    }
+  },
+  {
+    "id": "6244190613",
+    "receipt_id": "2LSCCzkyUjpPqmszfRf63BiD2f32suTgThGZ3DUtnCcp",
+    "predecessor_account_id": "gagdiez.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5iwCPnrEMgNVycx8VaWL3hwAoP73JmoMNc8gHLtcyNv1",
+      "block_height": 122389850,
+      "block_timestamp": 1719835535049007400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4355054326951,
+      "tokens_burnt": 435505432695100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8E7EyoeNAGPkUGKGoJcHekVUw5jv1PKRAy8dt7Ry6ZP3",
+    "included_in_block_hash": "C5PM92VpRf1N1aaXZqE6wWwnLDej97Jx52FcdqgVPTyX",
+    "block_timestamp": "1719835533723430763",
+    "block": {
+      "block_height": 122389849
+    },
+    "receipt_conversion_tokens_burnt": "30858047262200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 435505432695100000000,
+        "args": "{\"id\": 100, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": false, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 819940356753200000000
+    }
+  },
+  {
+    "id": "6244191165",
+    "receipt_id": "9EXCFFPYDR6UDLUKWdxm6V1bFVjzoMwJHMv86x8318o1",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "F4x6Ux3F7nJVsV4dLErtZ8Q9Ed78HzWYrrRMwdPPCV6U",
+      "block_height": 122389851,
+      "block_timestamp": 1719835536280521000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3535768767959,
+      "tokens_burnt": 353576876795900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8E7EyoeNAGPkUGKGoJcHekVUw5jv1PKRAy8dt7Ry6ZP3",
+    "included_in_block_hash": "C5PM92VpRf1N1aaXZqE6wWwnLDej97Jx52FcdqgVPTyX",
+    "block_timestamp": "1719835533723430763",
+    "block": {
+      "block_height": 122389849
+    },
+    "receipt_conversion_tokens_burnt": "30858047262200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353576876795900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"victorkanu1.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":100,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 819940356753200000000
+    }
+  },
+  {
+    "id": "6255477627",
+    "receipt_id": "6rhhr4YF8QN7EVyh22mQTMZBibsJPun3z36vf1wFUe83",
+    "predecessor_account_id": "efiz.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9YzqcPMids6gJfMUav7kV3R6QAVFcJeYPrZctTji29TC",
+      "block_height": 122411753,
+      "block_timestamp": 1719861995978695700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3500711865327,
+      "tokens_burnt": 350071186532700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DDk6Ra7nSn6CuYP6E9iwNmYuCNPX7tMvqZLgeERhqT46",
+    "included_in_block_hash": "AVXWTMgL9FEJgzRPUUeriVVYAHy3cehzJqwvqb6j5KQp",
+    "block_timestamp": "1719861994511756914",
+    "block": {
+      "block_height": 122411752
+    },
+    "receipt_conversion_tokens_burnt": "30821377944600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "create_discussion",
+        "deposit": 0,
+        "fee": 350071186532700000000,
+        "args": "{\"handle\": \"near-discovery\", \"block_height\": 122411736}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 796760778833700000000
+    }
+  },
+  {
+    "id": "6255478092",
+    "receipt_id": "CM8wNTumhizgjwzZtTgAvV25dFFgvZh2rosMqNDeYcxf",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EE8KXpJ3LTvrhsVytdizshdmFopok9Mi7vjy93HwDons",
+      "block_height": 122411754,
+      "block_timestamp": 1719861997244399000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4158682143564,
+      "tokens_burnt": 415868214356400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DDk6Ra7nSn6CuYP6E9iwNmYuCNPX7tMvqZLgeERhqT46",
+    "included_in_block_hash": "AVXWTMgL9FEJgzRPUUeriVVYAHy3cehzJqwvqb6j5KQp",
+    "block_timestamp": "1719861994511756914",
+    "block": {
+      "block_height": 122411752
+    },
+    "receipt_conversion_tokens_burnt": "30821377944600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 415868214356400000000,
+        "args": "{\"data\": {\"discussions.near-discovery.community.devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"efiz.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"repost\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"item\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"path\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"efiz.near/post/main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"blockHeight\\\\\\\\\\\\\\\":122411736}}}\", \"repost\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"repost\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"item\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"path\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"efiz.near/post/main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"blockHeight\\\\\\\\\\\\\\\":122411736}}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"path\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"efiz.near/post/main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"blockHeight\\\\\\\\\\\\\\\":122411736},\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"repost\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 796760778833700000000
+    }
+  },
+  {
+    "id": "6257645682",
+    "receipt_id": "w5LzdB2s12xb6r95v4Lg5UJoxjchpP6rY6aVSSr8hDh",
+    "predecessor_account_id": "jutsuai.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AndSETYS2DMbRPSykPcgwi8ztqKFnuS9f5oCtyPMpvKi",
+      "block_height": 122415629,
+      "block_timestamp": 1719866784735706000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5579495807690,
+      "tokens_burnt": 557949580769000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DvzFEeM1arpJ6tzobACJXpGAc72zX3LzkzSDDWvauTkc",
+    "included_in_block_hash": "6rqxrziZM3hr1ZxRPN9oHgRsmsjQ8EvPwkxvSMqw8kk6",
+    "block_timestamp": "1719866783726616389",
+    "block": {
+      "block_height": 122415628
+    },
+    "receipt_conversion_tokens_burnt": "31509598429800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 557949580769000000000,
+        "args": "{\"body\": {\"name\": \"Jutsu DevHub Proposal - Milestone 3\", \"summary\": \"This is a continuation of the Jutsu proposal (posted on 19 January 2024) to DevHub for the building of WebIDE features to improve the developer onboarding and overall hackathon experience with Hackbox. This proposal contains our Milestone 2 report, and Milestone 3 proposal.\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": \"frol.near\", \"description\": \"Previous DevHub Proposal (19 January): https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=2750\\\\\\\\n\\\\\\\\n# Milestone 2 Report: Q2 (April-June)\\\\\\\\n\\\\\\\\n- [x] Ability to import and export BOS components to GitHub.\\\\\\\\n- [x] Persist the component search query so that when developers switch tabs and come back, the previous search result is maintained.\\\\\\\\n- [x] Ability to upload, use, and manage \\\\\\\\u{2018}styled-components\\\\\\\\u{2019} files in IPFS from Jutsu WebIDE.\\\\\\\\n- [x] Anyone can build BOS components/landing pages using just prompt/AI - [Try Bento](https://bento.jutsu.ai)\\\\\\\\n- [x] Anyone can build BOS components/landing page by uploading a screenshopt of an app -  [Try Bento](https://bento.jutsu.ai)\\\\\\\\n- [x] Talked with builders and simplified the WebIDE developer experince. -  [Try Jutsu](https://app.jutsu.ai)\\\\\\\\n- [x] Product Demo - [Youtube]()\\\\\\\\n# Milestone 3 Proposal: Q3 (July - September)\\\\\\\\n\\\\\\\\n- [ ] Testnet Faucet: Developoer will get free testnet tokens for their app\\\\\\\\n- [ ] Proof-of-dev: Improve Dev profile that will show their contribution in NEAR ecosystem\\\\\\\\n- [ ] Add NEAR AI related features: Builder will be able to access NEAR AI related features\\\\\\\\n- [ ] Components similarity search: Show similar components when a developer search for a component\\\\\\\\n- [ ] Community Requested Features\\\\\\\\n\\\\\\\\n# Ongoing support to Hackbox\\\\\\\\n\\\\\\\\n**Seamless Onboarding for Beginners:**\\\\\\\\n\\\\\\\\n- Update NEAR Wallet Selector and add support for new wallets\\\\\\\\n\\\\\\\\n**Learning resources:**\\\\\\\\n\\\\\\\\n- Getting started with Jutsu and BOS component development.\\\\\\\\n- Getting started with Bento for non-technical people.\\\\\\\\n\\\\\\\\n**Ongoing Mentorship and Support During Events:**\\\\\\\\n\\\\\\\\n- When requested, Jutsu will actively participate in Hackbox Hackathon meetings and group chats to facilitate team introductions, platform demonstrations, and Q&A sessions as necessary. Continuous technical support and mentorship will be provided as it pertains to the use of the Jutsu platform for hackathon participants and organizers within Hackbox.\\\\\\\\n\\\\\\\\n**Post-Event Analysis and Metrics:**\\\\\\\\n\\\\\\\\n- When requested, detailed tracking of active builders per event and cohort and comprehensive metrics related to the building and forking of components, insights into participant engagement and project popularity, etc.\\\\\\\\n\\\\\\\\n**Feature Requests:**\\\\\\\\n\\\\\\\\n- Jutsu will consider additional feature requests that have been approved by Hackbox or Devhub admin for the purpose of enhancing developer experience (within the scope of this proposal).\", \"linked_proposals\": [], \"receiver_account\": \"jutsuai.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"37500\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7563116250999e+21
+    }
+  },
+  {
+    "id": "6257646054",
+    "receipt_id": "SJy9ZvSGPQkQQEkU3je8s1Lc7Li92osoZrtYJANmro7",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Ch4y9JSWhRihCnvMGUKKxmPNqjMof3ABhHNhzsTEuyn",
+      "block_height": 122415630,
+      "block_timestamp": 1719866785683211300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4486341710106,
+      "tokens_burnt": 448634171010600000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DvzFEeM1arpJ6tzobACJXpGAc72zX3LzkzSDDWvauTkc",
+    "included_in_block_hash": "6rqxrziZM3hr1ZxRPN9oHgRsmsjQ8EvPwkxvSMqw8kk6",
+    "block_timestamp": "1719866783726616389",
+    "block": {
+      "block_height": 122415628
+    },
+    "receipt_conversion_tokens_burnt": "31509598429800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 448634171010600000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Tooling & Infrastructure* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @jutsuai.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Jutsu DevHub Proposal - Milestone 3\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis is a continuation of the Jutsu proposal (posted on 19 January 2024) to DevHub for the building of WebIDE features to improve the developer onboarding and overall hackathon experience with Hackbox. This proposal contains our Milestone 2 report, and Milestone 3 proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=136)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7563116250999e+21
+    }
+  },
+  {
+    "id": "6257646056",
+    "receipt_id": "8TmZpfQXt4WbwMr3gTTZnY3NwY5fHaGE2hqnEyZNPSCN",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Ch4y9JSWhRihCnvMGUKKxmPNqjMof3ABhHNhzsTEuyn",
+      "block_height": 122415630,
+      "block_timestamp": 1719866785683211300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3666539972838,
+      "tokens_burnt": 366653997283800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DvzFEeM1arpJ6tzobACJXpGAc72zX3LzkzSDDWvauTkc",
+    "included_in_block_hash": "6rqxrziZM3hr1ZxRPN9oHgRsmsjQ8EvPwkxvSMqw8kk6",
+    "block_timestamp": "1719866783726616389",
+    "block": {
+      "block_height": 122415628
+    },
+    "receipt_conversion_tokens_burnt": "31509598429800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 366653997283800000000,
+        "args": "{\"proposal\": {\"id\": 136, \"snapshot\": {\"name\": \"Jutsu DevHub Proposal - Milestone 3\", \"labels\": [], \"summary\": \"This is a continuation of the Jutsu proposal (posted on 19 January 2024) to DevHub for the building of WebIDE features to improve the developer onboarding and overall hackathon experience with Hackbox. This proposal contains our Milestone 2 report, and Milestone 3 proposal.\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"jutsuai.near\", \"timestamp\": \"1719866784735706033\", \"supervisor\": \"frol.near\", \"description\": \"Previous DevHub Proposal (19 January): https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=2750\\\\\\\\n\\\\\\\\n# Milestone 2 Report: Q2 (April-June)\\\\\\\\n\\\\\\\\n- [x] Ability to import and export BOS components to GitHub.\\\\\\\\n- [x] Persist the component search query so that when developers switch tabs and come back, the previous search result is maintained.\\\\\\\\n- [x] Ability to upload, use, and manage \\\\\\\\u{2018}styled-components\\\\\\\\u{2019} files in IPFS from Jutsu WebIDE.\\\\\\\\n- [x] Anyone can build BOS components/landing pages using just prompt/AI - [Try Bento](https://bento.jutsu.ai)\\\\\\\\n- [x] Anyone can build BOS components/landing page by uploading a screenshopt of an app -  [Try Bento](https://bento.jutsu.ai)\\\\\\\\n- [x] Talked with builders and simplified the WebIDE developer experince. -  [Try Jutsu](https://app.jutsu.ai)\\\\\\\\n- [x] Product Demo - [Youtube]()\\\\\\\\n# Milestone 3 Proposal: Q3 (July - September)\\\\\\\\n\\\\\\\\n- [ ] Testnet Faucet: Developoer will get free testnet tokens for their app\\\\\\\\n- [ ] Proof-of-dev: Improve Dev profile that will show their contribution in NEAR ecosystem\\\\\\\\n- [ ] Add NEAR AI related features: Builder will be able to access NEAR AI related features\\\\\\\\n- [ ] Components similarity search: Show similar components when a developer search for a component\\\\\\\\n- [ ] Community Requested Features\\\\\\\\n\\\\\\\\n# Ongoing support to Hackbox\\\\\\\\n\\\\\\\\n**Seamless Onboarding for Beginners:**\\\\\\\\n\\\\\\\\n- Update NEAR Wallet Selector and add support for new wallets\\\\\\\\n\\\\\\\\n**Learning resources:**\\\\\\\\n\\\\\\\\n- Getting started with Jutsu and BOS component development.\\\\\\\\n- Getting started with Bento for non-technical people.\\\\\\\\n\\\\\\\\n**Ongoing Mentorship and Support During Events:**\\\\\\\\n\\\\\\\\n- When requested, Jutsu will actively participate in Hackbox Hackathon meetings and group chats to facilitate team introductions, platform demonstrations, and Q&A sessions as necessary. Continuous technical support and mentorship will be provided as it pertains to the use of the Jutsu platform for hackathon participants and organizers within Hackbox.\\\\\\\\n\\\\\\\\n**Post-Event Analysis and Metrics:**\\\\\\\\n\\\\\\\\n- When requested, detailed tracking of active builders per event and cohort and comprehensive metrics related to the building and forking of components, insights into participant engagement and project popularity, etc.\\\\\\\\n\\\\\\\\n**Feature Requests:**\\\\\\\\n\\\\\\\\n- Jutsu will consider additional feature requests that have been approved by Hackbox or Devhub admin for the purpose of enhancing developer experience (within the scope of this proposal).\", \"linked_proposals\": [], \"receiver_account\": \"jutsuai.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"37500\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"jutsuai.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7563116250999e+21
+    }
+  },
+  {
+    "id": "6257646057",
+    "receipt_id": "8WL5jpTAQcMX4vkaTVrCiPvWKUmLtTPZqBfpF8SbeABS",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Ch4y9JSWhRihCnvMGUKKxmPNqjMof3ABhHNhzsTEuyn",
+      "block_height": 122415630,
+      "block_timestamp": 1719866785683211300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3515642776067,
+      "tokens_burnt": 351564277606700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DvzFEeM1arpJ6tzobACJXpGAc72zX3LzkzSDDWvauTkc",
+    "included_in_block_hash": "6rqxrziZM3hr1ZxRPN9oHgRsmsjQ8EvPwkxvSMqw8kk6",
+    "block_timestamp": "1719866783726616389",
+    "block": {
+      "block_height": 122415628
+    },
+    "receipt_conversion_tokens_burnt": "31509598429800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351564277606700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"frol.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":136,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"jutsuai.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":136,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"jutsuai.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7563116250999e+21
+    }
+  },
+  {
+    "id": "6257774843",
+    "receipt_id": "2f641nZ1CaoK3P7PdFUDxAzfx2UaiMtkAxz9PJtSHg6p",
+    "predecessor_account_id": "jutsuai.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "24ci7PDaAQpc2kD3Gv8ob2rcnSxh6Js4ffqc9Ex2pUS3",
+      "block_height": 122415905,
+      "block_timestamp": 1719867112982608000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4734954701029,
+      "tokens_burnt": 473495470102900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "C6ioVCmi62Sfp5tNUe1rdDhpn2WBJ3UdBga38LsRyKUu",
+    "included_in_block_hash": "AdCW2zspKMe6pv9dcvUuy1AxRyTxrhdg6ypw8AeeMZzg",
+    "block_timestamp": "1719867111548032557",
+    "block": {
+      "block_height": 122415904
+    },
+    "receipt_conversion_tokens_burnt": "30836135109000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 473495470102900000000,
+        "args": "{\"id\": 136, \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 857756702741000000000
+    }
+  },
+  {
+    "id": "6257778536",
+    "receipt_id": "7MLmweJEa4GBRrGaR63Yt2EqXpfrEJDDqFqiHXc4TZfR",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "93mU22E8L9XAJmLEQbJCYCHpyc9kjAxSj8FXJYqvM5tS",
+      "block_height": 122415907,
+      "block_timestamp": 1719867115371565600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3534250975291,
+      "tokens_burnt": 353425097529100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "C6ioVCmi62Sfp5tNUe1rdDhpn2WBJ3UdBga38LsRyKUu",
+    "included_in_block_hash": "AdCW2zspKMe6pv9dcvUuy1AxRyTxrhdg6ypw8AeeMZzg",
+    "block_timestamp": "1719867111548032557",
+    "block": {
+      "block_height": 122415904
+    },
+    "receipt_conversion_tokens_burnt": "30836135109000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353425097529100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"jutsuai.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":136,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"jutsuai.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 857756702741000000000
+    }
+  },
+  {
+    "id": "6270957827",
+    "receipt_id": "3kUHFssFvnHsAPLdBVa2c8CspwWkLjgztJ73pbams1VR",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7ub13QD6DbZnSqUkHWrBFvTXcrWV9FNcegJ6QL564S7L",
+      "block_height": 122447484,
+      "block_timestamp": 1719903420670261800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4501986946744,
+      "tokens_burnt": 450198694674400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DHYx3vjtW9dxECoL4h2SJDxEk5pbJZJLpsT2q1UUQ2T7",
+    "included_in_block_hash": "FpAYNZ284yVMhf9vZUX2hR9Jbc58eoUS9ojkwff8YndX",
+    "block_timestamp": "1719903419509022565",
+    "block": {
+      "block_height": 122447483
+    },
+    "receipt_conversion_tokens_burnt": "30857600075400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 450198694674400000000,
+        "args": "{\"id\": 132, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 830734837778900000000
+    }
+  },
+  {
+    "id": "6270957977",
+    "receipt_id": "2EJwCGGU3pYtekEqRJ7mqnNPb5UufQK2sbogRWPt2dsc",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3sHAa6gjJ1ex2KtKnm28Zxu2Tpiz6XJFJJyW8dEjZ9R1",
+      "block_height": 122447485,
+      "block_timestamp": 1719903421510494200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3496785430291,
+      "tokens_burnt": 349678543029100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DHYx3vjtW9dxECoL4h2SJDxEk5pbJZJLpsT2q1UUQ2T7",
+    "included_in_block_hash": "FpAYNZ284yVMhf9vZUX2hR9Jbc58eoUS9ojkwff8YndX",
+    "block_timestamp": "1719903419509022565",
+    "block": {
+      "block_height": 122447483
+    },
+    "receipt_conversion_tokens_burnt": "30857600075400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349678543029100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"denbite.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":132,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"frol.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 830734837778900000000
+    }
+  },
+  {
+    "id": "6271587194",
+    "receipt_id": "Fs9qRJUpA3dVKFoZSiRg3BRHmwuXdtNm7xEegKSNT4xM",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GiCgfp4ixPsDLXTyqwcdBHGR3vyLRRRnBQqwaDW37mhi",
+      "block_height": 122448555,
+      "block_timestamp": 1719904805689731800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4350682210235,
+      "tokens_burnt": 435068221023500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "GBsUz4VndnfxNwu44PKUFCtCRr2LmyAzM6z8Sqbj7kdT",
+    "included_in_block_hash": "ChqEkoExNimghaAR6AdqpdecA9NrQJdATpQ1Q2Ay2Ara",
+    "block_timestamp": "1719904804370214644",
+    "block": {
+      "block_height": 122448554
+    },
+    "receipt_conversion_tokens_burnt": "30857600075400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 435068221023500000000,
+        "args": "{\"id\": 135, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 815679296898400000000
+    }
+  },
+  {
+    "id": "6271587907",
+    "receipt_id": "Evaz6gKpjgUJePfiaEruaa8jZJwjRFEwNUezFDTzHQQf",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AW2RghMwDVxvU1WAGP3dgBRAkLh1y8psRDBRgghRnsNb",
+      "block_height": 122448556,
+      "block_timestamp": 1719904807004084200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3497534757995,
+      "tokens_burnt": 349753475799500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "GBsUz4VndnfxNwu44PKUFCtCRr2LmyAzM6z8Sqbj7kdT",
+    "included_in_block_hash": "ChqEkoExNimghaAR6AdqpdecA9NrQJdATpQ1Q2Ay2Ara",
+    "block_timestamp": "1719904804370214644",
+    "block": {
+      "block_height": 122448554
+    },
+    "receipt_conversion_tokens_burnt": "30857600075400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349753475799500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"spring-neardao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":135,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"frol.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 815679296898400000000
+    }
+  }
+]

@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "2179910654",
+    "receipt_id": "DAdXMX3tadvDt9NiNJLjsAdQztfh8gQxU3G31X2PigXY",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HUxee4gXUg25gZVgbPhmKBoUrq1ga7bEj3EdFA7jLRwy",
+      "block_height": 110814753,
+      "block_timestamp": 1705690234311585800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7466382353711,
+      "tokens_burnt": 746638235371100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "CKuHgTLDc96vb2WSNBZCnQkH7rnscEBhvGfHjpRfNB7o",
+    "included_in_block_hash": "AU68ewcoVeVKxiGzTS45KDfQoX1vGn36zEkEHFqQMLxL",
+    "block_timestamp": "1705690233486892006",
+    "block": {
+      "block_height": 110814752
+    },
+    "receipt_conversion_tokens_burnt": "244014485117800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "update_community",
+        "deposit": 0,
+        "fee": 746638235371100000000,
+        "args": "{\"handle\": \"validators\", \"community\": {\"tag\": \"validators\", \"name\": \"Validators\", \"addons\": [{\"id\": \"tqgmh9\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Validators hold a vital role in maintaining a decentralized, secure, and efficient network. This group was created to foster dialogue and engagement within NEAR\\\\\\\\u{2019}s validator community, ensure decentralization, and maintain a smoothly operating network. We believe that nurturing a robust community among validators is crucial for promoting the long-term stability of the NEAR ecosystem.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Our Groups\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Validator community consists of two main groups:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Working Group\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis formal group is a selected committee of subject matter experts who make official decisions on proposals and questions related to NEAR\\\\\\\\u{2019}s Validators Ecosystem. They follow a strict process to review proposals, recommend funding to DAO or grant programs, and hold grant takers accountable. They engage with the broader community to understand their needs and encourage ideation.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Members**\\\\\\\\\\\\\\\\n- Denys Kovalenko - Stardust Staking, NEARWEEK\\\\\\\\\\\\\\\\n- Alan Estrada - Metapool\\\\\\\\\\\\\\\\n- [Mario Zito](https://github.com/mazito )\\\\\\\\\\\\\\\\n- [Will White](https://github.com/null-ref-ex)\\\\\\\\\\\\\\\\n- Paul\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Group\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis informal self-organized group provides a space for anyone interested in making changes to the NEAR Validators Ecosystem. While this group does not make official decisions, it offers a great opportunity to meet with others to share ideas and submit proposals. This group is not controlled by anyone but the people who are organizing it. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Communication Channels**\\\\\\\\\\\\\\\\n- [NEAR Validators Community Group in Telegram](https://t.me/joinchat/T12wrqSx66utgg-P)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## How to get involved\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- Join the community group\\\\\\\\\\\\'s dedicated [Telegram channel](https://t.me/joinchat/T12wrqSx66utgg-P) to learn about the latest discussions and activities. Don\\\\\\\\u{2019}t forget to introduce yourself.\\\\\\\\\\\\\\\\n- Register for upcoming calls to connect with other members and experts. Review previous call notes/recordings.\\\\\\\\\\\\\\\\n- Participate in discussions, comment on existing ideas, or propose new ideas.\\\\\\\\\\\\\\\\n- Volunteer to speak about a topic or lead a meeting.\\\\\\\\\\\\\\\"}\", \"display_name\": \"Wiki 1\"}, {\"id\": \"80oje0\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Events\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Stay up-to-date on upcoming and past events in the NEAR Validators Ecosystem. Whether it\\\\\\\\u{2019}s a monthly community call, meetup, or upcoming agenda, you\\\\\\\\u{2019}ll find the details here to connect with other community members.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Community Calls\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Validator Community Group hosts a monthly call to connect, and foster communication, collaboration, and development within the NEAR ecosystem.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe call is organized by [NEARWEEK](https://twitter.com/NEARWEEK)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### How to join the call\\\\\\\\\\\\\\\\nFind out about the latest meetings below or on our [Telegram channel](https://t.me/joinchat/T12wrqSx66utgg-P)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Who can attend\\\\\\\\\\\\\\\\nAnyone in the Validator community is welcome to attend the monthly call. Whether you\\\\\\\\\\\\'re an individual, an organization, or an expert in the Validators space, each call is recorded and posted on this page.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Format\\\\\\\\\\\\\\\\nThe monthly call is an open-format discussion with some light moderation. Anyone can volunteer to facilitate and lead future calls. The agenda typically starts with introductions from participants and follows with a list of potential discussion topics. The group will prioritize the topics based on what participants want to discuss the most. Topics may include updates from members of the community, presentations on new research or projects, or general discussions.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Meetings\\\\\\\\\\\\\\\\n| No. | Date                                   | Notes       | Recording |\\\\\\\\\\\\\\\\n|-----|----------------------------------------|-------------|-----------|\\\\\\\\\\\\\\\\n| 1   | Friday, April 28th, 2023, 15:00 UTC | [Summary](https://twitter.com/NEARValidators/status/1656360999266709506) | [Video](https://www.youtube.com/watch?v=aDntRysPIk0) |\\\\\\\\\\\\\\\\n| 2   | Friday, June 02nd, 2023, 15:00 UTC | [Summary](https://twitter.com/NEARValidators/status/1669749923565428736) | [Video](https://www.youtube.com/watch?v=G45YdrBFqDw) |\\\\\\\\\\\\\\\\n| 3   |Thursday, July 6th, 2023 15:00 UTC | **Cancelled** |\\\\\\\\\\\\\\\\n| 4   | Tuesday, Sept 19th, 2023, 15:00 UTC | [Summary](https://x.com/NEARValidators/status/1704683610723565973) | [Video](https://www.youtube.com/watch?v=RV4NQKEPgIA) |\\\\\\\\\\\\\\\\n| -    | -     |\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Work Group Calls\\\\\\\\\\\\\\\\nThe Validators Work Group may host public formal calls to review specific proposals, discuss attestations, or vote on decisions. They will post upcoming calls below.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Upcoming calls\\\\\\\\\\\\\\\\nWe are taking the Validator community call to the real world for the first time at NEARCON 2023!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRSVP now! https://lu.ma/Chunktalks2023\\\\\\\\\\\\\\\"}\", \"display_name\": \"Wiki 2\"}], \"admins\": [\"theori.near\", \"denysk.near\", \"victorkanu1.near\"], \"handle\": \"validators\", \"logo_url\": \"https://ipfs.near.social/ipfs/bafkreia2c5oa5qltucvxvbitdlsz4iv5pljoxztjqysacbbejc7x2fqwby\", \"banner_url\": \"https://ipfs.near.social/ipfs/bafkreieo3h4tyx3wy6dbo34tkzk5dfvygjmbbxsglqzyoamdnp5duqgvbq\", \"description\": \"Ensuring a healthy & efficient ecosystem.\", \"website_url\": null, \"bio_markdown\": \"A self-organized group provides a space for anyone interested in making changes to the NEAR Validators Ecosystem to foster a better ecosystem.\", \"github_handle\": null, \"twitter_handle\": \"NEARValidators\", \"telegram_handle\": null}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5763135940023e+21
+    }
+  },
+  {
+    "id": "2179910683",
+    "receipt_id": "DqkYWkF8Kr43DK1iDpGqZyDc1aHQesVL7yneXN5feywa",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "J1A77j7gkn6WkERj3CcFJ3rhWW7GvZUaFAmFcWKkpmMb",
+      "block_height": 110814754,
+      "block_timestamp": 1705690235212829000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5856608735134,
+      "tokens_burnt": 585660873513400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "CKuHgTLDc96vb2WSNBZCnQkH7rnscEBhvGfHjpRfNB7o",
+    "included_in_block_hash": "AU68ewcoVeVKxiGzTS45KDfQoX1vGn36zEkEHFqQMLxL",
+    "block_timestamp": "1705690233486892006",
+    "block": {
+      "block_height": 110814752
+    },
+    "receipt_conversion_tokens_burnt": "244014485117800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 585660873513400000000,
+        "args": "{\"data\": {\"validators.community.devhub.near\": {\"profile\": {\"name\": \"Validators\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreia2c5oa5qltucvxvbitdlsz4iv5pljoxztjqysacbbejc7x2fqwby\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5763135940023e+21
+    }
+  },
+  {
+    "id": "2179911976",
+    "receipt_id": "G6PWNU2QMoPHewuvi859b3e8xdHZPyDLNvyneuigHFMz",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Hip4c96R36JHq5axAnALByE1PKDCpGCwnuPT4u8rXchw",
+      "block_height": 110814798,
+      "block_timestamp": 1705690278859239200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7525555193398,
+      "tokens_burnt": 752555519339800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "AccABNGtKBMnbhxYnCbkkcbvTJEj3NsaUpso25T4feTo",
+    "included_in_block_hash": "6AMnz72fqTwU2GCCoSGGSfGziVdAi4i9eD13jMa5f5eu",
+    "block_timestamp": "1705690277910956736",
+    "block": {
+      "block_height": 110814797
+    },
+    "receipt_conversion_tokens_burnt": "244038856798400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "update_community",
+        "deposit": 0,
+        "fee": 752555519339800000000,
+        "args": "{\"handle\": \"devhub-platform\", \"community\": {\"tag\": \"devhub-platform\", \"name\": \"DevHub Platform\", \"addons\": [{\"id\": \"o9p934\", \"enabled\": true, \"addon_id\": \"telegram\", \"parameters\": \"{\\\\\\\\\\\\\\\"handles\\\\\\\\\\\\\\\":[\\\\\\\\\\\\\\\"https://t.me/devhubplatform\\\\\\\\\\\\\\\"]}\", \"display_name\": \"Telegram\"}, {\"id\": \"p56v0f\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"# \\\\\\\\u{1f44b} Welcome!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis community is all about delivering high impact features to the [NEAR DevHub Platform](http://neardevhub.org), a decentralized community platform for NEAR developers to contribute to the ecosystem and stay informed. This space aims to serve as an entry point to individuals, experts, and organizations who are interested in contributing. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Our Groups\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWe have two main groups:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### 1. Working group\\\\\\\\\\\\\\\\nThis formal group is a group of subject matter experts who make official decisions on proposals and questions related to the DevHub Platform. They follow a strict process to review proposals, recommend funding to DAO, and hold grant takers accountable. They also engage with the broader community to understand their needs and encourage ideation. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Members**\\\\\\\\\\\\\\\\n- @frol.near\\\\\\\\\\\\\\\\n- @ori.near\\\\\\\\\\\\\\\\n- @bo.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### 2. Community contributors\\\\\\\\\\\\\\\\nWe have a core group of regular product & technical community contributors who regularly work on making the DevHub platform better, from contributing code to reporting and triaging issues. These individuals collaborate across different time zones using lightweight and mostly asynchronous processes. To learn more about how we work, check out our project [README](https://github.com/near/neardevhub-widgets#how-to-contribute) page on GitHub.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## What are we working on?\\\\\\\\\\\\\\\\nTo track our progress and manage issues effectively, we use a [Kanban board](https://github.com/orgs/near/projects/60/views/1). You can also check out our [current](https://github.com/near/neardevhub-widgets/milestones) and [past](https://github.com/near/neardevhub-widgets/milestones?state=closed) initiatives.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Communication channels\\\\\\\\\\\\\\\\nWe use the following channels for communication:\\\\\\\\\\\\\\\\n- [GitHub:](https://github.com/orgs/near/projects/60/views/1) For specific issues and pull requests. Enable notifications to ensure you get the latest updates.\\\\\\\\\\\\\\\\n- [Telegram:](https://t.me/devhubplatform) For general questions or concerns.\\\\\\\\\\\\\\\\n- [Weekly Standup Calls](https://bit.ly/DevHubCalendar): To align on priorities and discuss progress, plans, and blockers.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## How to get involved\\\\\\\\\\\\\\\\nAnyone is welcome to contribute to the DevHub platform. Here are ways to get involved:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* **Contribute code**: Review the list of [good first issues](https://github.com/near/devgigsboard-widgets/contribute). You can pick any issues from the [Backlog column](https://github.com/orgs/near/projects/60) and indicate your interest by leaving comments. Before you get started, we encourage you to check out [how we work](https://github.com/near/devgigsboard-widgets/blob/main/docs/how-we-work.md) and the [developer guidelines](https://github.com/near/devgigsboard-widgets/blob/main/CONTRIBUTING.md).\\\\\\\\\\\\\\\\n* **Report issues**: To report a [bug](https://github.com/near/devgigsboard-widgets/issues/new?assignees=&labels=bug&template=bug_report.md&title=) or a [feature request](https://github.com/near/devgigsboard-widgets/issues/new?assignees=&labels=enhancement&template=feature-request.md&title=), please review all open and closed [issues](https://github.com/near/devgigsboard-widgets/issues?q=is%3Aissue+is%3Aall+) to make sure no one has previously created a similar topic. If you have a more robust proposal or idea that you\\\\\\\\\\\\'d like to discuss, you are also welcome to create an idea or solution post on our community here.\\\\\\\\\\\\\\\\n* **Triage issues**: You are welcome to help us triage by verifying or reproducing bugs, adding more specific reproduction instructions, or voting on issues by adding a \\\\\\\\u{1f44d} thumbs-up reaction to the issue\\\\\\\\\\\\'s description comment.  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### How to become a paid contributor\\\\\\\\\\\\\\\\nAs an an open-source project, we greatly approach the contributions of each individual. We aim to grow an ecosystem of developers who are here because they like the technology and community. Given that there\\\\\\\\u{2019}s a lot of time and effort that goes into this, we have financial means to compensate for some activities and projects for regular contributors.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you are interested in getting compensate for contributing your skills and expertise to our project, the best way to get started is to first familiarize yourself with [DevHub](https://www.neardevhub.org) and start getting involved (see section above). Once you\\\\\\\\u{2019}ve gained the community\\\\\\\\u{2019}s trust by demonstrating high-quality contributions and ongoing commitment, you can [apply here](https://near.social/#/devgovgigs.near/widget/gigs-board.pages.Post?id=507). \\\\\\\\\\\\\\\"}\", \"display_name\": \"Overview\"}], \"admins\": [\"theori.near\", \"victorkanu1.near\", \"frol.near\"], \"handle\": \"devhub-platform\", \"logo_url\": \"https://ipfs.near.social/ipfs/bafkreigivabiaog2s2qgfsuhyrl7f4jmpdwelsv2jmga6jfdbocsrbgv5i\", \"banner_url\": \"https://ipfs.near.social/ipfs/bafkreic4xgorjt6ha5z4s5e3hscjqrowe5ahd7hlfc5p4hb6kdfp6prgy4\", \"description\": \"Delivering high impact features to the DevHub Platform.\", \"website_url\": \"neardevhub.org\", \"bio_markdown\": \"A community of product & technical contributors focusing on delivering high impact features to the DevHub Platform that empower NEAR developers to thrive and contribute.\", \"github_handle\": \"/near/neardevhub-widgets/tree/main\", \"twitter_handle\": null, \"telegram_handle\": \"https://t.me/devhubplatform\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.582448538287e+21
+    }
+  },
+  {
+    "id": "2179912007",
+    "receipt_id": "86t1ZU8fd5eXdpzHBg4EnF5Asy1nJL7mPV4s6XEVwYK4",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5sUn7AnCgRVsjGxq9zBUY2vDBUDxHCQ6tBPKaiu3mh7X",
+      "block_height": 110814799,
+      "block_timestamp": 1705690280012008700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5858541621488,
+      "tokens_burnt": 585854162148800000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "AccABNGtKBMnbhxYnCbkkcbvTJEj3NsaUpso25T4feTo",
+    "included_in_block_hash": "6AMnz72fqTwU2GCCoSGGSfGziVdAi4i9eD13jMa5f5eu",
+    "block_timestamp": "1705690277910956736",
+    "block": {
+      "block_height": 110814797
+    },
+    "receipt_conversion_tokens_burnt": "244038856798400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 585854162148800000000,
+        "args": "{\"data\": {\"devhub-platform.community.devhub.near\": {\"profile\": {\"name\": \"DevHub Platform\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreigivabiaog2s2qgfsuhyrl7f4jmpdwelsv2jmga6jfdbocsrbgv5i\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.582448538287e+21
+    }
+  },
+  {
+    "id": "2179913839",
+    "receipt_id": "DczmbJo5HH2Vvgc9Yu65C1TR12oP4i2y17Bq7Mx46R9b",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5mNAH4YjoriWoSM3phiW33pdfLjHoUci3MHdJ3TZ3zZe",
+      "block_height": 110814866,
+      "block_timestamp": 1705690345049573600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7184742726369,
+      "tokens_burnt": 718474272636900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "AebC8VnBEkuJpbYGyppfDBSKQgoo1uTzxhTwPHPq6VTC",
+    "included_in_block_hash": "wFPPAz9bsELx6TsdMxucRcv7bEaBLEhn1anFjmDhaFY",
+    "block_timestamp": "1705690344163786176",
+    "block": {
+      "block_height": 110814865
+    },
+    "receipt_conversion_tokens_burnt": "243549634439200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "update_community",
+        "deposit": 0,
+        "fee": 718474272636900000000,
+        "args": "{\"handle\": \"nft\", \"community\": {\"tag\": \"nft\", \"name\": \"NFT Builders\", \"addons\": [{\"id\": \"7fjqz3\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"A decentralized community of NFT builders in the NEAR Ecosystem. This group consists of the top NFT infrastructure projects, applications + marketplaces, smart contract developers service providers, founders, and PMs in the NEAR Ecosystem. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Builder Group\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nTheir is no formal NFT Working group, decisions around standards & funding affecting the NFT Builder Group are normally referred to the [Contracts Working Group](https://near.social/#/devgovgigs.near/widget/gigs-board.pages.community.Overview?label=contract-standards).\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nSome objectives of the Builder Group include\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- Ideate, Review, & Implement Protocol Standards (NEPs) relevant to NFTs\\\\\\\\\\\\\\\\n- Proliferate Open Source tooling to support NFT projects on NEAR\\\\\\\\\\\\\\\\n- Support  NFT tooling, marketplaces, applications, and infrastructure in the NEAR Ecosystem\\\\\\\\\\\\\\\\n- Exchange new ideas in the Web3 ecosystem\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# **How to get involved**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- Join the Builder group\\\\\\\\\\\\'s dedicated [Telegram channel](https://nearbuilders.com/tg-nft) to learn about the latest discussions and activities. Don\\\\\\\\u{2019}t forget to introduce yourself.\\\\\\\\\\\\\\\\n- Register for the weekly calls [here](https://nearbuilders.com/nft-calendar)   Review previous [call notes/recordings](https://nearbuilders.com/nft-notes).  & check the pinned messages on Telegram\\\\\\\\\\\\\\\\n- Participate in discussions: Comment on existing ideas or discussions. Or propose a new idea.\\\\\\\\\\\\\\\\n- Volunteer to speak about a topic or lead a meeting.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Resources\\\\\\\\\\\\\\\\n- Original Governance Post [nearbuilders.com/nft-post](http://nearbuilders.com/nft-post)\\\\\\\\\\\\\\\"}\", \"display_name\": \"Wiki 1\"}, {\"id\": \"6r7u6z\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Meetings\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"## **Community Calls**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe NFT Builder groups host regular calls weekly at Wednesday at 12PM EST; register [here](https://nearbuilders.com/nft-calendar). All calls can be found here. [nearbuilders.com/nft-videos](https://nearbuilders.com/nft-videos) \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## **Work Group Calls**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Contract Standards Work Group (the go-to WG for NFT Standards) may host public formal calls to review specific proposals, discuss attestations, or vote on decisions to review NFT related proposals\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n| Meeting Name | Recording |\\\\\\\\\\\\\\\\n| --- | --- |\\\\\\\\\\\\\\\\n| Contract WG - Non Transferrable NFT (Aug 22, 2022) | https://youtu.be/6Tok9_iwtYk |\\\\\\\\\\\\\\\\n| Contract WG - NFT Additions, Payout NFT Standard Extension (Nov 18, 2022) | https://youtu.be/BSt25DznXx4 |\\\\\\\\\\\\\\\\n| Contract WG - Contract Metadata Update (Jan 13, 2023) | https://youtu.be/pBLN9UyE6AA |.\\\\\\\\\\\\\\\"}\", \"display_name\": \"Wiki 2\"}], \"admins\": [\"theori.near\", \"hackerhouse.near\", \"cameron_banyan.near\", \"victorkanu1.near\"], \"handle\": \"nft\", \"logo_url\": \"https://ipfs.near.social/ipfs/bafkreideetca2gibxkdrpovapcrk4xf6nbdvuyjft5oxuly2vpoyhvf7fu\", \"banner_url\": \"https://ipfs.near.social/ipfs/bafkreia4kpaarcpgkuxcps7rgdpgtud2x5i6hlcxkdmqgxrdf6azgprnmm\", \"description\": \"Building the future of NFTs on NEAR\", \"website_url\": \"https://nearbuilders.com/nft\", \"bio_markdown\": \"A decentralized community of NFT builders in the NEAR Ecosystem. This group consists of the top NFT infrastructure projects, applications, and people.\", \"github_handle\": \"NEARBuilders\", \"twitter_handle\": \"NEARHacks\", \"telegram_handle\": null}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5564055714965e+21
+    }
+  },
+  {
+    "id": "2179913858",
+    "receipt_id": "71v4ozKgmP9tYCiwTCkocr4BieKTNE84BdqFKZQVH3B6",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GD8SkQHHb5T2kNzWfuyTAtoA6kBvYJnznN4nBwDzu3g2",
+      "block_height": 110814867,
+      "block_timestamp": 1705690346156072700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5943816644204,
+      "tokens_burnt": 594381664420400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "AebC8VnBEkuJpbYGyppfDBSKQgoo1uTzxhTwPHPq6VTC",
+    "included_in_block_hash": "wFPPAz9bsELx6TsdMxucRcv7bEaBLEhn1anFjmDhaFY",
+    "block_timestamp": "1705690344163786176",
+    "block": {
+      "block_height": 110814865
+    },
+    "receipt_conversion_tokens_burnt": "243549634439200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 594381664420400000000,
+        "args": "{\"data\": {\"nft.community.devhub.near\": {\"profile\": {\"name\": \"NFT Builders\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreideetca2gibxkdrpovapcrk4xf6nbdvuyjft5oxuly2vpoyhvf7fu\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5564055714965e+21
+    }
+  },
+  {
+    "id": "2179914053",
+    "receipt_id": "6NTJjL4pmhauG1romGo9tHBowyhpp3bf94qQMJbjzmDm",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4sGxzhx2Xun5XRs1N46bLY26SQLeoYzPNUY6V5xfoBP1",
+      "block_height": 110814874,
+      "block_timestamp": 1705690352879521800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6775337172143,
+      "tokens_burnt": 677533717214300000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "2EtWCCq7ZqhnNe5br1exuVdmRfbQYVt3adhpz7THTZyr",
+    "included_in_block_hash": "7BzjMJLWJMnvgEWGkKW7qbt3AwPS1yPw3AYyzr9PzkM3",
+    "block_timestamp": "1705690352023490853",
+    "block": {
+      "block_height": 110814873
+    },
+    "receipt_conversion_tokens_burnt": "243020165268000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "update_community",
+        "deposit": 0,
+        "fee": 677533717214300000000,
+        "args": "{\"handle\": \"dao\", \"community\": {\"tag\": \"dao\", \"name\": \"DAO Builders\", \"addons\": [{\"id\": \"r0ccmg\", \"enabled\": true, \"addon_id\": \"telegram\", \"parameters\": \"{\\\\\\\\\\\\\\\"handles\\\\\\\\\\\\\\\":[\\\\\\\\\\\\\\\"https://nearbuilders.com/tg-dao\\\\\\\\\\\\\\\"]}\", \"display_name\": \"Telegram\"}], \"admins\": [\"hackerhouse.near\", \"hack.near\", \"build.sputnik-dao.near\", \"cameron_banyan.near\", \"victorkanu1.near\"], \"handle\": \"dao\", \"logo_url\": \"https://ipfs.near.social/ipfs/bafkreif6bjxggjapukodhmc76pshf3l2vhj2jtawvzba54j64vy4im6khy\", \"banner_url\": \"https://ipfs.near.social/ipfs/bafkreihcw2xluucthoysikzodv2ge7ihtcqjcghy3w5qiamfbltmo2vhfi\", \"description\": \"Building DAOs & DAO tooling on NEAR\", \"website_url\": \"https://nearbuilders.com/dao\", \"bio_markdown\": \"A decentralized community of DAO Builders, application + smart contract developers, PMs, DAO leaders and more building the future of decentralized organizations for the NEAR Ecosystem.\\\\\\\\n\", \"github_handle\": \"https://github.com/NEARBuilders\", \"twitter_handle\": \"https://twitter.com/nearhacks\", \"telegram_handle\": \"https://nearbuilders.com/tg-dao\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5094067645323e+21
+    }
+  },
+  {
+    "id": "2179914075",
+    "receipt_id": "Atcz6J8Zkc7LhMYpinBmduNWsdkw3rFse1nEtdZgHbpN",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9u3ZA37ad2jCNjbtS7oVRmFwRCo4rZLXukvqLkRPjDRs",
+      "block_height": 110814875,
+      "block_timestamp": 1705690353852732700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5888528820500,
+      "tokens_burnt": 588852882050000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "2EtWCCq7ZqhnNe5br1exuVdmRfbQYVt3adhpz7THTZyr",
+    "included_in_block_hash": "7BzjMJLWJMnvgEWGkKW7qbt3AwPS1yPw3AYyzr9PzkM3",
+    "block_timestamp": "1705690352023490853",
+    "block": {
+      "block_height": 110814873
+    },
+    "receipt_conversion_tokens_burnt": "243020165268000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 588852882050000000000,
+        "args": "{\"data\": {\"dao.community.devhub.near\": {\"profile\": {\"name\": \"DAO Builders\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreif6bjxggjapukodhmc76pshf3l2vhj2jtawvzba54j64vy4im6khy\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5094067645323e+21
+    }
+  },
+  {
+    "id": "2179914209",
+    "receipt_id": "A6ZKtdaYMTwvuNSMuy82jWPsXmtBNnHsP5wm6GzPsE9R",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "J9hg7xXpHTr6a3qExP3Uboxj26LZjMXx4ewP8tLGJ8ke",
+      "block_height": 110814881,
+      "block_timestamp": 1705690359567129000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6686910338502,
+      "tokens_burnt": 668691033850200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "FJrzvnh3pt295V8cs5eD3fvuJZ9GbbHop6hf6gBPotCR",
+    "included_in_block_hash": "822Ez7rRzuqpAJa1GbrWMLuySHtUcEVTdvuxwyigr36t",
+    "block_timestamp": "1705690358802459543",
+    "block": {
+      "block_height": 110814880
+    },
+    "receipt_conversion_tokens_burnt": "242958900676400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "update_community",
+        "deposit": 0,
+        "fee": 668691033850200000000,
+        "args": "{\"handle\": \"devhub-marketing\", \"community\": {\"tag\": \"devhub-marketing\", \"name\": \"DevHub Marketing\", \"addons\": [], \"admins\": [\"nearweek.near\", \"victorkanu1.near\"], \"handle\": \"devhub-marketing\", \"logo_url\": \"https://ipfs.near.social/ipfs/bafkreibysr2mkwhb4j36h2t7mqwhynqdy4vzjfygfkfg65kuspd2bawauu\", \"banner_url\": \"https://ipfs.near.social/ipfs/bafkreic4xgorjt6ha5z4s5e3hscjqrowe5ahd7hlfc5p4hb6kdfp6prgy4\", \"description\": \"On a mission to grow DevHub\", \"website_url\": null, \"bio_markdown\": \"We support DevHub verticals, contributors and initiatives to grow the NEAR developer ecosystem. If you\\\\\\\\\\\\'re a dev looking for NEAR Eco marketing support please submit a request via web link in bio!\", \"github_handle\": null, \"twitter_handle\": null, \"telegram_handle\": null}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4974606598088e+21
+    }
+  },
+  {
+    "id": "2179914236",
+    "receipt_id": "DFSNHvasBJDceU81eggTA12gPsWfDpbHDp7ngKR1VzVC",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7STagWb91i7hDBNZMLDzJMpmK2RtgZpuGrTBPpX3udjx",
+      "block_height": 110814882,
+      "block_timestamp": 1705690360571172600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5858107252822,
+      "tokens_burnt": 585810725282200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "FJrzvnh3pt295V8cs5eD3fvuJZ9GbbHop6hf6gBPotCR",
+    "included_in_block_hash": "822Ez7rRzuqpAJa1GbrWMLuySHtUcEVTdvuxwyigr36t",
+    "block_timestamp": "1705690358802459543",
+    "block": {
+      "block_height": 110814880
+    },
+    "receipt_conversion_tokens_burnt": "242958900676400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 585810725282200000000,
+        "args": "{\"data\": {\"devhub-marketing.community.devhub.near\": {\"profile\": {\"name\": \"DevHub Marketing\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibysr2mkwhb4j36h2t7mqwhynqdy4vzjfygfkfg65kuspd2bawauu\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4974606598088e+21
+    }
+  },
+  {
+    "id": "2192580454",
+    "receipt_id": "7vYm6MGmBLyhT5J2LYpQgXqGBDaGe2Y7JZJzT5tVGyRk",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7iuBMAWYXLNvXNg3RqsSK6ZhDhVoDKPhR2bCpEEA32Cn",
+      "block_height": 110960216,
+      "block_timestamp": 1705839873474732500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7577065598556,
+      "tokens_burnt": 757706559855600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "CYH2wEwYaqrYFhYd3K4deTBBfDJXzau7xLS9eJbRoGn1",
+    "included_in_block_hash": "3Aw6BvALQVRMwv4yfHbhkyC5QHisP3wMeS6mm6iZYxG8",
+    "block_timestamp": "1705839872244072443",
+    "block": {
+      "block_height": 110960215
+    },
+    "receipt_conversion_tokens_burnt": "243305694039800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addon",
+        "deposit": 0,
+        "fee": 757706559855600000000,
+        "args": "{\"handle\": \"devrel\", \"community_addon\": {\"id\": \"ftd6ha\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Office Hours \\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\nNEAR Developer Office Hours are held several times a week by DevHub or other community groups, and are a great way to level up your NEAR development or just meet other developers in the community! We host office hours on the NEAR [Discord](https://discord.com/invite/zfhfRpaM4m), which is also a great place to ask questions via chat!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### NEAR DevHub - Developer Office Hours \\\\\\\\u{26a1}\\\\\\\\u{fe0f}\\\\\\\\\\\\\\\\n***When***: Thursday  - 11:00 \\\\\\\\u{2013} 12:00 UTC (1:00 PM - 2:00PM CEST) & 18:00 \\\\\\\\u{2013} 19:00 UTC (11AM - 12PM PST)\\\\\\\\\\\\\\\\n***Where***: NEAR official Discord Server \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Developer Office Hours\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" Channel \\\\\\\\\\\\\\\\n- https://discord.com/channels/490367152054992913/914965851646603264\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nJoin these sessions get dev support on your projects, chat about developing on NEAR and get to know the development community better\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----- \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### NEAR Build DAO \\\\\\\\u{1f3c6}\\\\\\\\\\\\\\\\nOffice hours : Wednesday -  17:00 UTC / 12pm ET\\\\\\\\\\\\\\\\n \\\\\\\\u{201c}Hack-it Fridays\\\\\\\\u{201d}: Friday -  17:00 UTC / 12pm ET\\\\\\\\\\\\\\\\n \\\\\\\\\\\\\\\\n***Where***: Info how to join these sessions can be found on the #support channel on the Build DAO Telegram https://www.nearbuilders.com/tg-builders\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### NEAR HORIZON Founder Fridays \\\\\\\\u{1f91d}\\\\\\\\\\\\\\\\n***When***: Friday -  14:30 - 15:15 UTC (15:30 CET) \\\\\\\\\\\\\\\\nWhere: https://shortlink.near.foundation/horizon-office-hours-rsvp  (Requires Booking)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nContent geared toward Founders featuring: AMA\\\\\\\\\\\\'s from providers familiar with Web3 and NEAR ecosystem, ecosystem project demos, and updates from NDC, Horizon, and others...\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n-----\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### NEAR Chinese Developer Community Office Hours \\\\\\\\u{1f680}\\\\\\\\\\\\\\\\n***When***: Friday - 12:00 - 13:00 UTC (20:00-21:00 UTC +8)\\\\\\\\\\\\\\\\n***Where***: https://meeting.tencent.com/dm/srZlduGSaHfY\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe NEAR Chinese Developer Community Office Hour is held every Friday evening at 20:00 (UTC +8), featuring updates on NEAR engineering and ecosystem, course demos and open discussions.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nNEAR\\\\\\\\u{4e2d}\\\\\\\\u{6587}\\\\\\\\u{5f00}\\\\\\\\u{53d1}\\\\\\\\u{8005}\\\\\\\\u{793e}\\\\\\\\u{533a}\\\\\\\\u{7684}Office Hour\\\\\\\\u{6bcf}\\\\\\\\u{5468}\\\\\\\\u{4e94}\\\\\\\\u{665a}\\\\\\\\u{4e0a}20:00(UTC+8)\\\\\\\\u{4e3e}\\\\\\\\u{884c}\\\\\\\\u{ff0c}\\\\\\\\u{5185}\\\\\\\\u{5bb9}\\\\\\\\u{5305}\\\\\\\\u{62ec}NEAR\\\\\\\\u{5de5}\\\\\\\\u{7a0b}\\\\\\\\u{548c}\\\\\\\\u{751f}\\\\\\\\u{6001}\\\\\\\\u{7684}\\\\\\\\u{6700}\\\\\\\\u{65b0}\\\\\\\\u{8fdb}\\\\\\\\u{5c55}\\\\\\\\u{3001}\\\\\\\\u{8bfe}\\\\\\\\u{7a0b}\\\\\\\\u{6f14}\\\\\\\\u{793a}\\\\\\\\u{4ee5}\\\\\\\\u{53ca}\\\\\\\\u{5f00}\\\\\\\\u{653e}\\\\\\\\u{5f0f}\\\\\\\\u{8ba8}\\\\\\\\u{8bba}\\\\\\\\u{3002}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Office hours / Support \"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5867982221408e+21
+    }
+  },
+  {
+    "id": "2192580487",
+    "receipt_id": "8c4a3tnzcnVnnVdvQZegLjaGHPuZbPnatosSD8yxH7ak",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AqTawe7T1BAMhDf5BPjEqxc91o2emy7nhVaK7YFLkcE6",
+      "block_height": 110960217,
+      "block_timestamp": 1705839874613444400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5857859682454,
+      "tokens_burnt": 585785968245400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "CYH2wEwYaqrYFhYd3K4deTBBfDJXzau7xLS9eJbRoGn1",
+    "included_in_block_hash": "3Aw6BvALQVRMwv4yfHbhkyC5QHisP3wMeS6mm6iZYxG8",
+    "block_timestamp": "1705839872244072443",
+    "block": {
+      "block_height": 110960215
+    },
+    "receipt_conversion_tokens_burnt": "243305694039800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 585785968245400000000,
+        "args": "{\"data\": {\"devrel.community.devhub.near\": {\"profile\": {\"name\": \"Decentralized DevRel\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreignlfyjejbvnclxbkiybjejjjqgelvrjyqxd4gscb2maoy3qw7ame\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5867982221408e+21
+    }
+  },
+  {
+    "id": "2192585487",
+    "receipt_id": "ENu9DbQQvn1mR6KvRKg3s2fXw5SR7QonaBoZUDPmpJRB",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "RCy1zh8ZgLijQz5j6yVB9f2d7A9XjxqfX9JGQKpHM6W",
+      "block_height": 110960471,
+      "block_timestamp": 1705840121857773800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7777702586772,
+      "tokens_burnt": 777770258677200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "4UAUSYnhNjxne2ewLYyDKQBHkiXzsvFRDo69HvNxfvJV",
+    "included_in_block_hash": "8UkBACbpXGJhkf7KZseoZpaAVbLjbqRLZrED2hBsV6Bx",
+    "block_timestamp": "1705840121033211737",
+    "block": {
+      "block_height": 110960470
+    },
+    "receipt_conversion_tokens_burnt": "243307035600200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addon",
+        "deposit": 0,
+        "fee": 777770258677200000000,
+        "args": "{\"handle\": \"devrel\", \"community_addon\": {\"id\": \"ftd6ha\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Office Hours \\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\nNEAR Developer Office Hours are held several times a week by DevHub or other community groups, and are a great way to level up your NEAR development or just meet other developers in the community! We host office hours on the NEAR [Discord](https://discord.com/invite/zfhfRpaM4m), which is also a great place to ask questions via chat!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### NEAR DevHub - Developer Office Hours \\\\\\\\u{26a1}\\\\\\\\u{fe0f}\\\\\\\\\\\\\\\\n***When***: Thursday  - 11:00 \\\\\\\\u{2013} 12:00 UTC (1:00 PM - 2:00PM CEST) & 18:00 \\\\\\\\u{2013} 19:00 UTC (11AM - 12PM PST)\\\\\\\\\\\\\\\\n***Where***: NEAR official Discord Server \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Developer Office Hours\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" Channel \\\\\\\\\\\\\\\\n- https://discord.com/channels/490367152054992913/914965851646603264\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nJoin these sessions get dev support on your projects, chat about developing on NEAR and get to know the development community better\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----- \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### NEAR Build DAO \\\\\\\\u{1f3c6}\\\\\\\\\\\\\\\\nOffice hours : Wednesday -  17:00 UTC / 12pm ET\\\\\\\\\\\\\\\\n \\\\\\\\u{201c}Hack-it Fridays\\\\\\\\u{201d}: Friday -  17:00 UTC / 12pm ET\\\\\\\\\\\\\\\\n \\\\\\\\\\\\\\\\n***Where***: Info how to join these sessions can be found on the #support channel on the Build DAO Telegram https://www.nearbuilders.com/tg-builders\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n----\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### NEAR HORIZON Founder Fridays \\\\\\\\u{1f91d}\\\\\\\\\\\\\\\\n***When***: Friday -  14:30 - 15:15 UTC (15:30 CET) \\\\\\\\\\\\\\\\n***Where***: https://shortlink.near.foundation/horizon-office-hours-rsvp  (Requires Booking)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nContent geared toward Founders featuring: AMA\\\\\\\\\\\\'s from providers familiar with Web3 and NEAR ecosystem, ecosystem project demos, and updates from NDC, Horizon, and others...\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n-----\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### NEAR Chinese Developer Community Office Hours \\\\\\\\u{1f680}\\\\\\\\\\\\\\\\n***When***: Friday - 12:00 - 13:00 UTC (20:00-21:00 UTC +8)\\\\\\\\\\\\\\\\n***Where***: https://meeting.tencent.com/dm/srZlduGSaHfY\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe NEAR Chinese Developer Community Office Hour is held every Friday evening at 20:00 (UTC +8), featuring updates on NEAR engineering and ecosystem, course demos and open discussions.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nNEAR\\\\\\\\u{4e2d}\\\\\\\\u{6587}\\\\\\\\u{5f00}\\\\\\\\u{53d1}\\\\\\\\u{8005}\\\\\\\\u{793e}\\\\\\\\u{533a}\\\\\\\\u{7684}Office Hour\\\\\\\\u{6bcf}\\\\\\\\u{5468}\\\\\\\\u{4e94}\\\\\\\\u{665a}\\\\\\\\u{4e0a}20:00(UTC+8)\\\\\\\\u{4e3e}\\\\\\\\u{884c}\\\\\\\\u{ff0c}\\\\\\\\u{5185}\\\\\\\\u{5bb9}\\\\\\\\u{5305}\\\\\\\\u{62ec}NEAR\\\\\\\\u{5de5}\\\\\\\\u{7a0b}\\\\\\\\u{548c}\\\\\\\\u{751f}\\\\\\\\u{6001}\\\\\\\\u{7684}\\\\\\\\u{6700}\\\\\\\\u{65b0}\\\\\\\\u{8fdb}\\\\\\\\u{5c55}\\\\\\\\u{3001}\\\\\\\\u{8bfe}\\\\\\\\u{7a0b}\\\\\\\\u{6f14}\\\\\\\\u{793a}\\\\\\\\u{4ee5}\\\\\\\\u{53ca}\\\\\\\\u{5f00}\\\\\\\\u{653e}\\\\\\\\u{5f0f}\\\\\\\\u{8ba8}\\\\\\\\u{8bba}\\\\\\\\u{3002}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Office hours / Support \"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6068632625228e+21
+    }
+  },
+  {
+    "id": "2192585501",
+    "receipt_id": "Bfxc73prYcVCU7mgE1jKSAEbQQW1QxQcot33sm2xt618",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9Ta9VSCbBSYCnNDnN4oAhr38Ax7YFmYMFcZbiHtvvJDb",
+      "block_height": 110960472,
+      "block_timestamp": 1705840122925655600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5857859682454,
+      "tokens_burnt": 585785968245400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4UAUSYnhNjxne2ewLYyDKQBHkiXzsvFRDo69HvNxfvJV",
+    "included_in_block_hash": "8UkBACbpXGJhkf7KZseoZpaAVbLjbqRLZrED2hBsV6Bx",
+    "block_timestamp": "1705840121033211737",
+    "block": {
+      "block_height": 110960470
+    },
+    "receipt_conversion_tokens_burnt": "243307035600200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 585785968245400000000,
+        "args": "{\"data\": {\"devrel.community.devhub.near\": {\"profile\": {\"name\": \"Decentralized DevRel\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreignlfyjejbvnclxbkiybjejjjqgelvrjyqxd4gscb2maoy3qw7ame\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6068632625228e+21
+    }
+  },
+  {
+    "id": "2201448401",
+    "receipt_id": "Gsj7hxJXmYziP9V79NGHrogSDNte1ehqsgbPDnkxABjP",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CugjgD7jHVS6QDjtu6xGCNjFD6NsRWA9w4hQ6KwkMXnS",
+      "block_height": 111022927,
+      "block_timestamp": 1705911165210783000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 19937247430757,
+      "tokens_burnt": 1.9937247430757e+21,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "AAg5u6PHGFBuuQHLqpD8x67BKtAgjsiYpunRZGkeYCf8",
+    "included_in_block_hash": "CugjgD7jHVS6QDjtu6xGCNjFD6NsRWA9w4hQ6KwkMXnS",
+    "block_timestamp": "1705911165210782955",
+    "block": {
+      "block_height": 111022927
+    },
+    "receipt_conversion_tokens_burnt": "408843291323200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "unsafe_self_upgrade",
+        "deposit": 0,
+        "fee": 1.9937247430757e+21,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 7.4986198876459e+21
+    }
+  },
+  {
+    "id": "2201448885",
+    "receipt_id": "8SEw1PSE9o9JJiQdFpJHAm3K6nvJiKyjg9LPVaBKVK6A",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "J1NqGvbE26DGmN5GhXA5o3iqSw2sCVDpo1XRsorxwkLP",
+      "block_height": 111022928,
+      "block_timestamp": 1705911166543557000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 48246566079776,
+      "tokens_burnt": 4.8246566079776e+21,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "AAg5u6PHGFBuuQHLqpD8x67BKtAgjsiYpunRZGkeYCf8",
+    "included_in_block_hash": "CugjgD7jHVS6QDjtu6xGCNjFD6NsRWA9w4hQ6KwkMXnS",
+    "block_timestamp": "1705911165210782955",
+    "block": {
+      "block_height": 111022927
+    },
+    "receipt_conversion_tokens_burnt": "408843291323200000000",
+    "actions": [
+      {
+        "action": "DEPLOY_CONTRACT",
+        "method": null,
+        "deposit": 0,
+        "fee": 4.8246566079776e+21,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 7.4986198876459e+21
+    }
+  },
+  {
+    "id": "2201448887",
+    "receipt_id": "D1kWJh5tDEDKTxSQUFkJPeNLTP8FvEeHti6MQWirRQEU",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "J1NqGvbE26DGmN5GhXA5o3iqSw2sCVDpo1XRsorxwkLP",
+      "block_height": 111022928,
+      "block_timestamp": 1705911166543557000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 2713952452694,
+      "tokens_burnt": 271395245269400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "AAg5u6PHGFBuuQHLqpD8x67BKtAgjsiYpunRZGkeYCf8",
+    "included_in_block_hash": "CugjgD7jHVS6QDjtu6xGCNjFD6NsRWA9w4hQ6KwkMXnS",
+    "block_timestamp": "1705911165210782955",
+    "block": {
+      "block_height": 111022927
+    },
+    "receipt_conversion_tokens_burnt": "408843291323200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "unsafe_migrate",
+        "deposit": 0,
+        "fee": 271395245269400000000,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 7.4986198876459e+21
+    }
+  },
+  {
+    "id": "2201448890",
+    "receipt_id": "D1v38StY67G4ko3SHGaGJSLBz69M29Fcj7QRVzGp9Vx4",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "J1NqGvbE26DGmN5GhXA5o3iqSw2sCVDpo1XRsorxwkLP",
+      "block_height": 111022928,
+      "block_timestamp": 1705911166543557000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "AAg5u6PHGFBuuQHLqpD8x67BKtAgjsiYpunRZGkeYCf8",
+    "included_in_block_hash": "CugjgD7jHVS6QDjtu6xGCNjFD6NsRWA9w4hQ6KwkMXnS",
+    "block_timestamp": "1705911165210782955",
+    "block": {
+      "block_height": 111022927
+    },
+    "receipt_conversion_tokens_burnt": "408843291323200000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.5952810684697822e+22,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 7.4986198876459e+21
+    }
+  },
+  {
+    "id": "2201449732",
+    "receipt_id": "D4qjDB1Bqd2UZjA1dba37ppywRtKGn7Es9UQWF7JYJdJ",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "H7PptXfx1NpDdvKfh1A4WpBWoT7RY9C7ThYksiJA1JSJ",
+      "block_height": 111022929,
+      "block_timestamp": 1705911167961340000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "AAg5u6PHGFBuuQHLqpD8x67BKtAgjsiYpunRZGkeYCf8",
+    "included_in_block_hash": "CugjgD7jHVS6QDjtu6xGCNjFD6NsRWA9w4hQ6KwkMXnS",
+    "block_timestamp": "1705911165210782955",
+    "block": {
+      "block_height": 111022927
+    },
+    "receipt_conversion_tokens_burnt": "408843291323200000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.1385701966783768e+22,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 7.4986198876459e+21
+    }
+  },
+  {
+    "id": "2201449844",
+    "receipt_id": "Fobj6vJHMW8Nikq5GABPwonbUgPPVBBG1Mm7abJt269C",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Ajdc2uxQFB6vh1ASAR4p4vWXQb7kzRvoK8Fh2JeUKLYi",
+      "block_height": 111022930,
+      "block_timestamp": 1705911169171712300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "AAg5u6PHGFBuuQHLqpD8x67BKtAgjsiYpunRZGkeYCf8",
+    "included_in_block_hash": "CugjgD7jHVS6QDjtu6xGCNjFD6NsRWA9w4hQ6KwkMXnS",
+    "block_timestamp": "1705911165210782955",
+    "block": {
+      "block_height": 111022927
+    },
+    "receipt_conversion_tokens_burnt": "408843291323200000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 3.414336148925021e+22,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 7.4986198876459e+21
+    }
+  },
+  {
+    "id": "2219112184",
+    "receipt_id": "8RbS1AxJZ91y3GkYw1hftJe3pjFvcsV4YmBkpgsWYnQm",
+    "predecessor_account_id": "8566fc4bb16e1a7446b5e9b1b8aea94b5751d5f8c658d7af18d8cdf642d7b31d",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "F8MU1Hnh7PEWQGL6838xAz15BTFvc6ijiZ2mdxsBxbN6",
+      "block_height": 111136570,
+      "block_timestamp": 1706032889268567000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6392147938577,
+      "tokens_burnt": 639214793857700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "CXumi16W9i8QZaK3miiyjtLiDLL7wrGSHcjtVRY8xFok",
+    "included_in_block_hash": "7igkgv8by1P9KSB9PLQQt1XNC9ccKCog3GMZhymT9idT",
+    "block_timestamp": "1706032888396190056",
+    "block": {
+      "block_height": 111136569
+    },
+    "receipt_conversion_tokens_burnt": "242949733347000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 639214793857700000000,
+        "args": "{\"data\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"image\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"ipfs_cid\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bafkreiccoc3rcc642bigrocjirv5vcgl7wditsvvjijhiharshwz3byifu\\\\\\\\\\\\\\\"},\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\" @bpolania.near at @blockchainatucsb_baf.near event\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\", \"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"item\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"path\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"8566fc4bb16e1a7446b5e9b1b8aea94b5751d5f8c658d7af18d8cdf642d7b31d/post/main\\\\\\\\\\\\\\\"}}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"blockchainatucsb_baf.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"item\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"path\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"8566fc4bb16e1a7446b5e9b1b8aea94b5751d5f8c658d7af18d8cdf642d7b31d/post/main\\\\\\\\\\\\\\\"}}}]\"}}, \"handle\": \"near-campus\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6230351324391e+21
+    }
+  },
+  {
+    "id": "2219112217",
+    "receipt_id": "HWnfEiQUZeFHpQMnXFT39P8TiPvrK5T3DViJznA8Muo1",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CmrEs63cVBewCMZ9B2B1QY3rxQrtnoDTQcjoSKFXpV1J",
+      "block_height": 111136571,
+      "block_timestamp": 1706032890380040200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7408706052344,
+      "tokens_burnt": 740870605234400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "CXumi16W9i8QZaK3miiyjtLiDLL7wrGSHcjtVRY8xFok",
+    "included_in_block_hash": "7igkgv8by1P9KSB9PLQQt1XNC9ccKCog3GMZhymT9idT",
+    "block_timestamp": "1706032888396190056",
+    "block": {
+      "block_height": 111136569
+    },
+    "receipt_conversion_tokens_burnt": "242949733347000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 740870605234400000000,
+        "args": "{\"data\": {\"near-campus.community.devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"image\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"ipfs_cid\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bafkreiccoc3rcc642bigrocjirv5vcgl7wditsvvjijhiharshwz3byifu\\\\\\\\\\\\\\\"},\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\" @bpolania.near at @blockchainatucsb_baf.near event\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\", \"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"item\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"path\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"8566fc4bb16e1a7446b5e9b1b8aea94b5751d5f8c658d7af18d8cdf642d7b31d/post/main\\\\\\\\\\\\\\\"}}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"blockchainatucsb_baf.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"item\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"path\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"8566fc4bb16e1a7446b5e9b1b8aea94b5751d5f8c658d7af18d8cdf642d7b31d/post/main\\\\\\\\\\\\\\\"}}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6230351324391e+21
+    }
+  },
+  {
+    "id": "2219213962",
+    "receipt_id": "vq7cdABf24gYdjxf4K5pFPXaNStkkttPixJH9jUBBWg",
+    "predecessor_account_id": "8566fc4bb16e1a7446b5e9b1b8aea94b5751d5f8c658d7af18d8cdf642d7b31d",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Jzo6s8jGehy52rNXFd7zBxDmWATbFfdrMrN4J32MTaB",
+      "block_height": 111137125,
+      "block_timestamp": 1706033501393088000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6424994431021,
+      "tokens_burnt": 642499443102100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "EiruSAK8XeAsoywyWLv2JNUAL811jG1AmGenbxRwq9d7",
+    "included_in_block_hash": "G7NPWaTjwnVy8HQJActafhtcdHoESZNxbtMcdcgRKYA8",
+    "block_timestamp": "1706033500476173330",
+    "block": {
+      "block_height": 111137124
+    },
+    "receipt_conversion_tokens_burnt": "242969409566200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 642499443102100000000,
+        "args": "{\"data\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"image\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"ipfs_cid\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bafkreid6nscsr7nmshqacuvz7tz2ragwa6o7uvxwbmgmarhirj2txekvti\\\\\\\\\\\\\\\"},\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\" @bpolania.near representing Near Campus at @2d43bcf331706f4a8378c16f1691c95216459da22ca568a29ffb5f285a6503e4\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\", \"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"item\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"path\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"8566fc4bb16e1a7446b5e9b1b8aea94b5751d5f8c658d7af18d8cdf642d7b31d/post/main\\\\\\\\\\\\\\\"}}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"2d43bcf331706f4a8378c16f1691c95216459da22ca568a29ffb5f285a6503e4\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"item\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"path\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"8566fc4bb16e1a7446b5e9b1b8aea94b5751d5f8c658d7af18d8cdf642d7b31d/post/main\\\\\\\\\\\\\\\"}}}]\"}}, \"handle\": \"near-campus\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5238662282602e+21
+    }
+  },
+  {
+    "id": "2219213992",
+    "receipt_id": "2cr8ZiyzGcp2bUNJnJQ12bYwNDv8RPeDRgfuf6aejQ2T",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5exeY21D68WYZTU1hvt5kqfyMmBVkQr5nGKGtTZXq1jw",
+      "block_height": 111137126,
+      "block_timestamp": 1706033502301905000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6383973755919,
+      "tokens_burnt": 638397375591900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "EiruSAK8XeAsoywyWLv2JNUAL811jG1AmGenbxRwq9d7",
+    "included_in_block_hash": "G7NPWaTjwnVy8HQJActafhtcdHoESZNxbtMcdcgRKYA8",
+    "block_timestamp": "1706033500476173330",
+    "block": {
+      "block_height": 111137124
+    },
+    "receipt_conversion_tokens_burnt": "242969409566200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 638397375591900000000,
+        "args": "{\"data\": {\"near-campus.community.devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"image\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"ipfs_cid\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bafkreid6nscsr7nmshqacuvz7tz2ragwa6o7uvxwbmgmarhirj2txekvti\\\\\\\\\\\\\\\"},\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\" @bpolania.near representing Near Campus at @2d43bcf331706f4a8378c16f1691c95216459da22ca568a29ffb5f285a6503e4\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\", \"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"item\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"path\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"8566fc4bb16e1a7446b5e9b1b8aea94b5751d5f8c658d7af18d8cdf642d7b31d/post/main\\\\\\\\\\\\\\\"}}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"2d43bcf331706f4a8378c16f1691c95216459da22ca568a29ffb5f285a6503e4\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"item\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"path\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"8566fc4bb16e1a7446b5e9b1b8aea94b5751d5f8c658d7af18d8cdf642d7b31d/post/main\\\\\\\\\\\\\\\"}}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5238662282602e+21
+    }
+  },
+  {
+    "id": "2219325317",
+    "receipt_id": "FCJA9GZqbB3esQeSCBV9Z7WGgTZ7bVYZDpNiUUQqc7j5",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Dhn4j1FhqGWKMbpCZAnzx8zhAgsGZy6cs9dwvddiojuf",
+      "block_height": 111138181,
+      "block_timestamp": 1706034571235146500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3013360059845,
+      "tokens_burnt": 301336005984500000000,
+      "executor_account_id": "devhub.near",
+      "status": false
+    },
+    "transaction_hash": "4B7jua6nKYqNHQaCF2ifsf1tw2ksdeYAHtey17BtSm4t",
+    "included_in_block_hash": "BMYe71vTy3JsMqsYTog4NGGwtFzRPNo8pKPANZxYSYma",
+    "block_timestamp": "1706034570402732280",
+    "block": {
+      "block_height": 111138180
+    },
+    "receipt_conversion_tokens_burnt": "242844197262200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 301336005984500000000,
+        "args": "{\"data\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Testing what happens to when I create a discussion\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}, \"handle\": \"discussions.devhub-test\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 544180203246700000000
+    }
+  }
+]

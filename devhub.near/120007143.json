@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "5153126334",
+    "receipt_id": "7U2TeXuYaAEHiesjcdgzMxJRMeDQbVyEAQW3hoY7ornx",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3vnZxm8XzXMFX3J23Cb2UhrbsPcnhVvW94z82vdkcXse",
+      "block_height": 120007542,
+      "block_timestamp": 1717002673891646200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4027612168202,
+      "tokens_burnt": 402761216820200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "AY7PshYY9v5Uzadv2NZ8vSU2mMzQwy6hF6FYPH2e4YzC",
+    "included_in_block_hash": "GJJprQcoqm5goAoF7D7HPEnFU3aTug7ZHVSu4w5qVBQT",
+    "block_timestamp": "1717002672838271403",
+    "block": {
+      "block_height": 120007541
+    },
+    "receipt_conversion_tokens_burnt": "30890691898600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 402761216820200000000,
+        "args": "{\"data\": {\"blog\": {\"draft-blog-fz6bbc\": {\"\": \"Testing this content\", \"metadata\": {\"title\": \"Draft blog\", \"author\": \"thomasguntenaar.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Supposed to stay drafted\", \"updatedAt\": \"2024-05-29\", \"description\": \"This is a short description that is shown in the card.\", \"publishedAt\": \"2024-05-18\"}}}}, \"handle\": \"webassemblymusic\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2173152955415e+21
+    }
+  },
+  {
+    "id": "5153126799",
+    "receipt_id": "CsDPzyVQHuoMe8KaTpMgCfpQotV9c5ndLnCw3Zi27Mv4",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Fvdt8UD8vWAbjHiaTAkd5k73NAGxPPxGaYuoSN6A1hqR",
+      "block_height": 120007543,
+      "block_timestamp": 1717002674997747500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7836633868227,
+      "tokens_burnt": 783663386822700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "AY7PshYY9v5Uzadv2NZ8vSU2mMzQwy6hF6FYPH2e4YzC",
+    "included_in_block_hash": "GJJprQcoqm5goAoF7D7HPEnFU3aTug7ZHVSu4w5qVBQT",
+    "block_timestamp": "1717002672838271403",
+    "block": {
+      "block_height": 120007541
+    },
+    "receipt_conversion_tokens_burnt": "30890691898600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 783663386822700000000,
+        "args": "{\"data\": {\"webassemblymusic.community.devhub.near\": {\"blog\": {\"draft-blog-fz6bbc\": {\"\": \"Testing this content\", \"metadata\": {\"title\": \"Draft blog\", \"author\": \"thomasguntenaar.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Supposed to stay drafted\", \"updatedAt\": \"2024-05-29\", \"description\": \"This is a short description that is shown in the card.\", \"publishedAt\": \"2024-05-18\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2173152955415e+21
+    }
+  },
+  {
+    "id": "5153375906",
+    "receipt_id": "CRnvcgNRJkxDDQ6wu5UBGWf2do4ogy5r5H5QUe41oHFu",
+    "predecessor_account_id": "bpolania.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HeaB2yWWiWR759yKb45WYVn8Cmx8x3Ctqo4t4MU7rQyr",
+      "block_height": 120007971,
+      "block_timestamp": 1717003220019939600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4411626774878,
+      "tokens_burnt": 441162677487800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "5RMhHqh1fSyNPN6SjLh5te3R6sDy6whH6iXXhbg9Yk1E",
+    "included_in_block_hash": "6KiAfh6sSqh2KGd6AdRgiQUx7Vzv7svQP71KB3NMXzFZ",
+    "block_timestamp": "1717003218754366757",
+    "block": {
+      "block_height": 120007970
+    },
+    "receipt_conversion_tokens_burnt": "30836358702400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 441162677487800000000,
+        "args": "{\"id\": 83, \"timeline\": {\"status\": \"APPROVED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 821157003166500000000
+    }
+  },
+  {
+    "id": "5153376373",
+    "receipt_id": "J27jciYFr4kjGjCCjfGZEHa79MFg1ayWbSdUkPFhvcwZ",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AB31gGbRTsTkheUy7uBDKt2eJdjdEEddsgeFqhSPeAMz",
+      "block_height": 120007972,
+      "block_timestamp": 1717003221971739400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3491579669763,
+      "tokens_burnt": 349157966976300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5RMhHqh1fSyNPN6SjLh5te3R6sDy6whH6iXXhbg9Yk1E",
+    "included_in_block_hash": "6KiAfh6sSqh2KGd6AdRgiQUx7Vzv7svQP71KB3NMXzFZ",
+    "block_timestamp": "1717003218754366757",
+    "block": {
+      "block_height": 120007970
+    },
+    "receipt_conversion_tokens_burnt": "30836358702400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349157966976300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"victorkanu1.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":83,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 821157003166500000000
+    }
+  },
+  {
+    "id": "5153404315",
+    "receipt_id": "38uAR7ZPVjaMadYRFQU1DLsUzXZkaZa2GLEQ4AoEsPp1",
+    "predecessor_account_id": "bpolania.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9C3ddPtsHyzEvpkBeU7qYsiysKut64RvDTG1L97sEjr4",
+      "block_height": 120008025,
+      "block_timestamp": 1717003291481799700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4742071902388,
+      "tokens_burnt": 474207190238800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DQb6bQQPGACkrgtn8ABrqCbdr1hKzSaBecwSodhYWVik",
+    "included_in_block_hash": "A6dzjJQmrkDYd8gRjK5LrFsacH8ayPi5joRAbMW7mXum",
+    "block_timestamp": "1717003290246637661",
+    "block": {
+      "block_height": 120008024
+    },
+    "receipt_conversion_tokens_burnt": "30858270855600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 474207190238800000000,
+        "args": "{\"id\": 83, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": false, \"test_transaction_sent\": false, \"sponsor_requested_review\": false, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 854223428070700000000
+    }
+  },
+  {
+    "id": "5153406671",
+    "receipt_id": "F4gr379MrGMRPGZDqRJTRNB5s1uj6Sr3X4yApuc57Rpd",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "W6ENAsG1ivHbMx4FPi7pn5oYxpfD2k6kpXqBo2QUaJD",
+      "block_height": 120008028,
+      "block_timestamp": 1717003295250494700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3491579669763,
+      "tokens_burnt": 349157966976300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DQb6bQQPGACkrgtn8ABrqCbdr1hKzSaBecwSodhYWVik",
+    "included_in_block_hash": "A6dzjJQmrkDYd8gRjK5LrFsacH8ayPi5joRAbMW7mXum",
+    "block_timestamp": "1717003290246637661",
+    "block": {
+      "block_height": 120008024
+    },
+    "receipt_conversion_tokens_burnt": "30858270855600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349157966976300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"victorkanu1.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":83,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 854223428070700000000
+    }
+  },
+  {
+    "id": "5156076691",
+    "receipt_id": "94sFk77bPC1StxRyhqf38w446zTxus6eJWSNf6NsAPX2",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7Sy4D5wwMgfztCVzJuZr8uU5D2TrR3rpLgDAySQfMphy",
+      "block_height": 120012330,
+      "block_timestamp": 1717008457882375400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5423082550154,
+      "tokens_burnt": 542308255015400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "2eKecRhSrNLPS3dLDhP5cqvDWWe2LVpjpffzLnKhhVLX",
+    "included_in_block_hash": "GGDxSiqVFDPcqHZcLN698BYB7FiUPoVSJurKXSEEQFpk",
+    "block_timestamp": "1717008456872215124",
+    "block": {
+      "block_height": 120012329
+    },
+    "receipt_conversion_tokens_burnt": "30881300975800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 542308255015400000000,
+        "args": "{\"id\": 75, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"https://nearblocks.io/txns/DaZNg4XJx3VPG6akwv1GZymBNkzwXVCnAPzrt2qL3aT5\"], \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"trustees_released_payment\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 922327491902700000000
+    }
+  },
+  {
+    "id": "5156077170",
+    "receipt_id": "81SWFu7xJA5h5Zkwm3kjQSktr91j5X2PZwLTzMLgmoAz",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Fms7mz4JhaCngvQmepG7rUWhh1hXzmTv3nrFh2aWNacz",
+      "block_height": 120012331,
+      "block_timestamp": 1717008458854504000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3491379359115,
+      "tokens_burnt": 349137935911500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "2eKecRhSrNLPS3dLDhP5cqvDWWe2LVpjpffzLnKhhVLX",
+    "included_in_block_hash": "GGDxSiqVFDPcqHZcLN698BYB7FiUPoVSJurKXSEEQFpk",
+    "block_timestamp": "1717008456872215124",
+    "block": {
+      "block_height": 120012329
+    },
+    "receipt_conversion_tokens_burnt": "30881300975800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349137935911500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"djeaunty_fourmule.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":75,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 922327491902700000000
+    }
+  },
+  {
+    "id": "5156806693",
+    "receipt_id": "FFSKGgkKvkD3gXY51sJc7mzWXcoUUp2kLKHgKYJpz3ae",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9yxx6gBiKQh6tpyPgMtCCeNwB5eDibybXDcoB8UVqbQ7",
+      "block_height": 120013760,
+      "block_timestamp": 1717010211581188400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5160978533852,
+      "tokens_burnt": 516097853385200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "9jfL6dYnrEtRQJnuHpYubcAyrkbdm5oVXMSsFtWHsxs6",
+    "included_in_block_hash": "3xagUxF25f6ARjKMwJ76nsnSWX3EVYUtZ8jUYP8scL7A",
+    "block_timestamp": "1717010210430339631",
+    "block": {
+      "block_height": 120013759
+    },
+    "receipt_conversion_tokens_burnt": "30881748162600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 516097853385200000000,
+        "args": "{\"id\": 10, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"https://nearblocks.io/txns/3P9ALPVbBg2shvSRZBCPtmYMZsVbHRacRniAf9XLmbcp\"], \"kyc_verified\": false, \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"trustees_released_payment\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 897531164839500000000
+    }
+  },
+  {
+    "id": "5156807340",
+    "receipt_id": "9gfUJWMNkf8wsV32DQtCnrKdWKnggUksJLzPtdok6YH4",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "26JgNLneLJQB4pN4t2EFc2SMsvdg1owFPjrSgnFW9JEC",
+      "block_height": 120013761,
+      "block_timestamp": 1717010212774372600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3505515632917,
+      "tokens_burnt": 350551563291700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "9jfL6dYnrEtRQJnuHpYubcAyrkbdm5oVXMSsFtWHsxs6",
+    "included_in_block_hash": "3xagUxF25f6ARjKMwJ76nsnSWX3EVYUtZ8jUYP8scL7A",
+    "block_timestamp": "1717010210430339631",
+    "block": {
+      "block_height": 120013759
+    },
+    "receipt_conversion_tokens_burnt": "30881748162600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 350551563291700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"orangejoe.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":10,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 897531164839500000000
+    }
+  },
+  {
+    "id": "5156859102",
+    "receipt_id": "CdzJDDV45cv8Uc4Uzzwrhw2666155iyZepknsGDjvxxg",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5ZWduf65toQoFC8xDuArzdiF2gFPQa3jKok3GDF5Jb3q",
+      "block_height": 120013867,
+      "block_timestamp": 1717010331968236300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5551628728111,
+      "tokens_burnt": 555162872811100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "GZFqGcFZgSmyLVrF1CGCfpvDjnKJeynVToGjTGnFpxgf",
+    "included_in_block_hash": "89ASEtjfEsZ9qXDM4UeTWCzdHKfg6gtuxUNTKxbXPFQv",
+    "block_timestamp": "1717010330757486053",
+    "block": {
+      "block_height": 120013866
+    },
+    "receipt_conversion_tokens_burnt": "30881748162600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 555162872811100000000,
+        "args": "{\"id\": 13, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"https://nearblocks.io/txns/Gs3UFmoH255jrubNff22AFePLvsGfEs8mv2o6YFU5g7d\"], \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": false, \"trustees_released_payment\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 937926402126400000000
+    }
+  },
+  {
+    "id": "5156859412",
+    "receipt_id": "8fwdkEngYhyGkSKmktnh3HCF2TQJeUqjRLaPopQkbBae",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HV5dsawni1ohj2mm6EUiR5Jw6uwNwAjb2NW4XfngSKMG",
+      "block_height": 120013868,
+      "block_timestamp": 1717010332723215600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3518817811527,
+      "tokens_burnt": 351881781152700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "GZFqGcFZgSmyLVrF1CGCfpvDjnKJeynVToGjTGnFpxgf",
+    "included_in_block_hash": "89ASEtjfEsZ9qXDM4UeTWCzdHKfg6gtuxUNTKxbXPFQv",
+    "block_timestamp": "1717010330757486053",
+    "block": {
+      "block_height": 120013866
+    },
+    "receipt_conversion_tokens_burnt": "30881748162600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351881781152700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":13,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 937926402126400000000
+    }
+  },
+  {
+    "id": "5157246888",
+    "receipt_id": "F9UTVgf966qCGwMMZ4VKQ8VxYatbe6HRyF6p7vAb2cgR",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2jGEsNedms96e3pHfHL9poDDKM73rAabMV4iRN7EqCTn",
+      "block_height": 120014682,
+      "block_timestamp": 1717011274787203800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4700174270872,
+      "tokens_burnt": 470017427087200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "Fw1k1WrWHtGuraGh2rFXcMPB6QTqkYroQvRwCbLyVXZP",
+    "included_in_block_hash": "2mMhZnxsW7A77GFWh7kvHyKgQEvfa5AckcD5uLUendnn",
+    "block_timestamp": "1717011273467008307",
+    "block": {
+      "block_height": 120014681
+    },
+    "receipt_conversion_tokens_burnt": "30881300975800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 470017427087200000000,
+        "args": "{\"id\": 42, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"https://nearblocks.io/txns/3ArC1i14t2Cv35HEbvwMk6hQyhfiFZsukS1nRc9yd4Sz\"], \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"trustees_released_payment\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 850009943473300000000
+    }
+  },
+  {
+    "id": "5157247286",
+    "receipt_id": "7oRt4KaKoMLmG2peyrtJRqqHWTUeSkT7xu2CikMM9BnA",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "89sUEWoUSavf2S5XubSbVDZvTGxYws1Fmzb6aDomgzym",
+      "block_height": 120014683,
+      "block_timestamp": 1717011276127814700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3491112154103,
+      "tokens_burnt": 349111215410300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Fw1k1WrWHtGuraGh2rFXcMPB6QTqkYroQvRwCbLyVXZP",
+    "included_in_block_hash": "2mMhZnxsW7A77GFWh7kvHyKgQEvfa5AckcD5uLUendnn",
+    "block_timestamp": "1717011273467008307",
+    "block": {
+      "block_height": 120014681
+    },
+    "receipt_conversion_tokens_burnt": "30881300975800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349111215410300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"denbite.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":42,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 850009943473300000000
+    }
+  },
+  {
+    "id": "5157295736",
+    "receipt_id": "5AG7frKWhXueX8ijD1mnW3Fi66GtijYSP8qqowSuaiZP",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CLE6mrMDtbYfMDKzB6Agw6zJ5M3CYt7wj1bzYdePqk8g",
+      "block_height": 120014760,
+      "block_timestamp": 1717011372098770000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5064534549630,
+      "tokens_burnt": 506453454963000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "Gr2FjeQQ9txvUgz8buMvG11apMFKLsTViPYaSEJeqEfy",
+    "included_in_block_hash": "8xqeBVLr96ojfh619wpbsHUxvQ6UeQMzAEGo2zEDtDeE",
+    "block_timestamp": "1717011370889913841",
+    "block": {
+      "block_height": 120014759
+    },
+    "receipt_conversion_tokens_burnt": "30881077382400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 506453454963000000000,
+        "args": "{\"id\": 46, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"https://nearblocks.io/txns/xwxZEYvn8ryjAdLg391r3KZjwGf28MCAwetSYrpALQU\"], \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"trustees_released_payment\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 889202408510900000000
+    }
+  },
+  {
+    "id": "5157297788",
+    "receipt_id": "EB8jcuZ7YiUR6n4xWQRjkw2DxdUPFSAu1ohFvm4nXSoj",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7ZimQCint8E8ACYMZ6mUGXwxqYMdiHjhk7zgwDknv3cV",
+      "block_height": 120014761,
+      "block_timestamp": 1717011373279673600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3518678761655,
+      "tokens_burnt": 351867876165500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Gr2FjeQQ9txvUgz8buMvG11apMFKLsTViPYaSEJeqEfy",
+    "included_in_block_hash": "8xqeBVLr96ojfh619wpbsHUxvQ6UeQMzAEGo2zEDtDeE",
+    "block_timestamp": "1717011370889913841",
+    "block": {
+      "block_height": 120014759
+    },
+    "receipt_conversion_tokens_burnt": "30881077382400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351867876165500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"maguila.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":46,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 889202408510900000000
+    }
+  },
+  {
+    "id": "5157330305",
+    "receipt_id": "DJ9QCeAMYnpmL451MGEcb7jTipeF4dkeiALa7sFrn5UT",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6x8tyWyurdniZ5nL79M8dZcUBSSjxNsYMFzEak7NkBeZ",
+      "block_height": 120014825,
+      "block_timestamp": 1717011454054077400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 19779930198826,
+      "tokens_burnt": 1.9779930198826e+21,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "4PrX9DKpW7d3zPvYATmUmAS8E9bn7ULcy3PSRvTe7dnL",
+    "included_in_block_hash": "BZ7giogrhUv82R3ao26ZwG2agLwRWnD4bid2NjpJNWTv",
+    "block_timestamp": "1717011452807394294",
+    "block": {
+      "block_height": 120014824
+    },
+    "receipt_conversion_tokens_burnt": "30881524569200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 1.9779930198826e+21,
+        "args": "{\"id\": 50, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"https://nearblocks.io/txns/Ak4uX3RwvwhJA6bSExhk8JUDvqfGbateu7zbebeHmyw2\"], \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"trustees_released_payment\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.3607469224085e+21
+    }
+  },
+  {
+    "id": "5157330751",
+    "receipt_id": "FyquZ9ERhjx1Qeio2x2PWG5vTmvBZLaXXX4Fo6P5Lba1",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DK3dsxQQSWUcbzpnym5m2smbXMgFceJZ9dfnk1rPtNeg",
+      "block_height": 120014826,
+      "block_timestamp": 1717011455307885000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3518723779567,
+      "tokens_burnt": 351872377956700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4PrX9DKpW7d3zPvYATmUmAS8E9bn7ULcy3PSRvTe7dnL",
+    "included_in_block_hash": "BZ7giogrhUv82R3ao26ZwG2agLwRWnD4bid2NjpJNWTv",
+    "block_timestamp": "1717011452807394294",
+    "block": {
+      "block_height": 120014824
+    },
+    "receipt_conversion_tokens_burnt": "30881524569200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351872377956700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"petersalomonsen.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":50,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.3607469224085e+21
+    }
+  },
+  {
+    "id": "5157496388",
+    "receipt_id": "J6TD8cty9r9c2CkpXWvTf6sHCz5kbcaEuZTDsweauBhR",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2WY5iwA9F4eDXHQk8UWW5PSkxwzEYUEvDV3wanVgfh4u",
+      "block_height": 120015154,
+      "block_timestamp": 1717011878233272800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5154120522710,
+      "tokens_burnt": 515412052271000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "5YqgyaqeF9WX7Z4MGCVLmbUioU3Z5Sqf1ndLc6swXpEo",
+    "included_in_block_hash": "FPiwYRaiiXobE8c5zhhDkJKEzgafGMRz3k6UMHJW3jxT",
+    "block_timestamp": "1717011876910708836",
+    "block": {
+      "block_height": 120015153
+    },
+    "receipt_conversion_tokens_burnt": "30881300975800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 515412052271000000000,
+        "args": "{\"id\": 53, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"https://nearblocks.io/txns/9tDtidbEhoTAcSA2WorANxy4Q4XbYMMLQehN1X777Pdf\"], \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"trustees_released_payment\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 866210573538300000000
+    }
+  },
+  {
+    "id": "5157497232",
+    "receipt_id": "9wBsHf36t2CfMd577wiVgFyA1Eb6dZAc1m8fiJCmo6rd",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "pJLQyqbakLDde37CUaZq6RW8Kp8khRoDbWiVAvxT6v8",
+      "block_height": 120015155,
+      "block_timestamp": 1717011879607003100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3199172202915,
+      "tokens_burnt": 319917220291500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5YqgyaqeF9WX7Z4MGCVLmbUioU3Z5Sqf1ndLc6swXpEo",
+    "included_in_block_hash": "FPiwYRaiiXobE8c5zhhDkJKEzgafGMRz3k6UMHJW3jxT",
+    "block_timestamp": "1717011876910708836",
+    "block": {
+      "block_height": 120015153
+    },
+    "receipt_conversion_tokens_burnt": "30881300975800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 319917220291500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"22516c1b4e5d40db919e5e56a040c5670eac947fcb53a71207d5ce640a973820\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":53,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 866210573538300000000
+    }
+  },
+  {
+    "id": "5157507920",
+    "receipt_id": "GoTVo5HgENprd6Ea8wocjGyyQVqZHnqA9hh9yfPFGYeX",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "F8Cz2nBbiMuy7jgcSZ63G2vBtp6XrZBy5aZ8pZPGd5PD",
+      "block_height": 120015168,
+      "block_timestamp": 1717011896988448800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 12871467915080,
+      "tokens_burnt": 1.287146791508e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "BfWy42Pd5V1kzShSwYiAAX3ZWPomd5yh9Xn1BbAPoC81",
+    "included_in_block_hash": "BYewugrhAXDuir5BwVbEL6WQByHFy1BTgCpGiQvNA1Wi",
+    "block_timestamp": "1717011895649451784",
+    "block": {
+      "block_height": 120015167
+    },
+    "receipt_conversion_tokens_burnt": "39527210567000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.287146791508e+21,
+        "args": "{\"data\": {\"devhub.near\": {\"widget\": {\"devhub.components.molecule.Compose\": {\"\": \"const EmbeddCSS = `\\\\\\\\n  .CodeMirror {\\\\\\\\n   margin-inline:10px;\\\\\\\\n   border-radius:5px;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .editor-toolbar {\\\\\\\\n    border: none !important;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\n\\\\\\\\nconst Wrapper = styled.div`\\\\\\\\n  .nav-link {\\\\\\\\n    color: inherit !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .card-header {\\\\\\\\n    padding-bottom: 0px !important;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\n\\\\\\\\nconst Compose = ({\\\\\\\\n  data,\\\\\\\\n  onChange,\\\\\\\\n  autocompleteEnabled,\\\\\\\\n  placeholder,\\\\\\\\n  height,\\\\\\\\n  embeddCSS,\\\\\\\\n  showProposalIdAutoComplete,\\\\\\\\n  onChangeKeyup,\\\\\\\\n  handler,\\\\\\\\n}) => {\\\\\\\\n  State.init({\\\\\\\\n    data: data,\\\\\\\\n    selectedTab: \\\\\\\\\\\\\\\"editor\\\\\\\\\\\\\\\",\\\\\\\\n    autoFocus: false,\\\\\\\\n  });\\\\\\\\n\\\\\\\\n  useEffect(() => {\\\\\\\\n    if (typeof onChange === \\\\\\\\\\\\\\\"function\\\\\\\\\\\\\\\") {\\\\\\\\n      onChange(state.data);\\\\\\\\n    }\\\\\\\\n  }, [state.data]);\\\\\\\\n\\\\\\\\n  useEffect(() => {\\\\\\\\n    // for clearing editor after txn approval/ showing draft state\\\\\\\\n    if (data !== state.data || handler !== state.handler) {\\\\\\\\n      State.update({ data: data, handler: handler });\\\\\\\\n    }\\\\\\\\n  }, [data, handler]);\\\\\\\\n\\\\\\\\n  return (\\\\\\\\n    <Wrapper>\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"card\\\\\\\\\\\\\\\">\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"card-header\\\\\\\\\\\\\\\" style={{ position: \\\\\\\\\\\\\\\"relative\\\\\\\\\\\\\\\" }}>\\\\\\\\n          <div>\\\\\\\\n            <ul class=\\\\\\\\\\\\\\\"nav nav-tabs\\\\\\\\\\\\\\\">\\\\\\\\n              <li class=\\\\\\\\\\\\\\\"nav-item\\\\\\\\\\\\\\\">\\\\\\\\n                <button\\\\\\\\n                  class={`nav-link ${\\\\\\\\n                    state.selectedTab === \\\\\\\\\\\\\\\"editor\\\\\\\\\\\\\\\" ? \\\\\\\\\\\\\\\"active\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n                  }`}\\\\\\\\n                  onClick={() =>\\\\\\\\n                    State.update({ selectedTab: \\\\\\\\\\\\\\\"editor\\\\\\\\\\\\\\\", autoFocus: true })\\\\\\\\n                  }\\\\\\\\n                >\\\\\\\\n                  Write\\\\\\\\n                </button>\\\\\\\\n              </li>\\\\\\\\n              <li class=\\\\\\\\\\\\\\\"nav-item\\\\\\\\\\\\\\\">\\\\\\\\n                <button\\\\\\\\n                  class={`nav-link ${\\\\\\\\n                    state.selectedTab === \\\\\\\\\\\\\\\"preview\\\\\\\\\\\\\\\" ? \\\\\\\\\\\\\\\"active\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n                  }`}\\\\\\\\n                  onClick={() => State.update({ selectedTab: \\\\\\\\\\\\\\\"preview\\\\\\\\\\\\\\\" })}\\\\\\\\n                >\\\\\\\\n                  Preview\\\\\\\\n                </button>\\\\\\\\n              </li>\\\\\\\\n            </ul>\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n\\\\\\\\n        {state.selectedTab === \\\\\\\\\\\\\\\"editor\\\\\\\\\\\\\\\" ? (\\\\\\\\n          <>\\\\\\\\n            <Widget\\\\\\\\n              src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.SimpleMDE\\\\\\\\\\\\\\\"}\\\\\\\\n              props={{\\\\\\\\n                data: { handler: state.handler, content: state.data },\\\\\\\\n                onChange: (content) => {\\\\\\\\n                  State.update({ data: content, handler: \\\\\\\\\\\\\\\"update\\\\\\\\\\\\\\\" });\\\\\\\\n                },\\\\\\\\n                placeholder: placeholder,\\\\\\\\n                height,\\\\\\\\n                embeddCSS: embeddCSS || EmbeddCSS,\\\\\\\\n                showAutoComplete: autocompleteEnabled,\\\\\\\\n                showProposalIdAutoComplete: showProposalIdAutoComplete,\\\\\\\\n                autoFocus: state.autoFocus,\\\\\\\\n                onChangeKeyup: onChangeKeyup,\\\\\\\\n              }}\\\\\\\\n            />\\\\\\\\n          </>\\\\\\\\n        ) : (\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"card-body\\\\\\\\\\\\\\\">\\\\\\\\n            <Widget\\\\\\\\n              src={\\\\\\\\n                \\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.MarkdownViewer\\\\\\\\\\\\\\\"\\\\\\\\n              }\\\\\\\\n              props={{\\\\\\\\n                text: state.data,\\\\\\\\n              }}\\\\\\\\n            />\\\\\\\\n          </div>\\\\\\\\n        )}\\\\\\\\n      </div>\\\\\\\\n    </Wrapper>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\n\\\\\\\\nreturn Compose(props);\\\\\\\\n\"}, \"devhub.components.molecule.SimpleMDE\": {\"\": \"/**\\\\\\\\n * iframe embedding a SimpleMDE component\\\\\\\\n * https://github.com/sparksuite/simplemde-markdown-editor\\\\\\\\n */\\\\\\\\n\\\\\\\\nconst data = props.data;\\\\\\\\nconst onChange = props.onChange ?? (() => {});\\\\\\\\nconst onChangeKeyup = props.onChangeKeyup ?? (() => {}); // in case where we want immediate action\\\\\\\\nconst height = props.height ?? \\\\\\\\\\\\\\\"390\\\\\\\\\\\\\\\";\\\\\\\\nconst className = props.className ?? \\\\\\\\\\\\\\\"w-100\\\\\\\\\\\\\\\";\\\\\\\\nconst embeddCSS = props.embeddCSS;\\\\\\\\n\\\\\\\\nState.init({\\\\\\\\n  iframeHeight: height,\\\\\\\\n  message: props.data,\\\\\\\\n});\\\\\\\\n\\\\\\\\nconst profilesData = Social.get(\\\\\\\\\\\\\\\"*/profile/name\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"final\\\\\\\\\\\\\\\");\\\\\\\\nconst followingData = Social.get(\\\\\\\\n  `${context.accountId}/graph/follow/**`,\\\\\\\\n  \\\\\\\\\\\\\\\"final\\\\\\\\\\\\\\\"\\\\\\\\n);\\\\\\\\n\\\\\\\\n// SIMPLEMDE CONFIG //\\\\\\\\nconst fontFamily = props.fontFamily ?? \\\\\\\\\\\\\\\"sans-serif\\\\\\\\\\\\\\\";\\\\\\\\nconst alignToolItems = props.alignToolItems ?? \\\\\\\\\\\\\\\"right\\\\\\\\\\\\\\\";\\\\\\\\nconst placeholder = props.placeholder ?? \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\";\\\\\\\\nconst showAccountAutoComplete = props.showAutoComplete ?? false;\\\\\\\\nconst showProposalIdAutoComplete = props.showProposalIdAutoComplete ?? false;\\\\\\\\nconst autoFocus = props.autoFocus ?? false;\\\\\\\\n\\\\\\\\nconst queryName =\\\\\\\\n  \\\\\\\\\\\\\\\"thomasguntenaar_near_devhub_proposals_quebec_proposals_with_latest_snapshot\\\\\\\\\\\\\\\";\\\\\\\\nconst query = `query GetLatestSnapshot($offset: Int = 0, $limit: Int = 10, $where: ${queryName}_bool_exp = {}) {\\\\\\\\n${queryName}(\\\\\\\\n  offset: $offset\\\\\\\\n  limit: $limit\\\\\\\\n  order_by: {proposal_id: desc}\\\\\\\\n  where: $where\\\\\\\\n) {\\\\\\\\n  name\\\\\\\\n  proposal_id\\\\\\\\n}\\\\\\\\n}`;\\\\\\\\n\\\\\\\\nconst code = `\\\\\\\\n<!doctype html>\\\\\\\\n<html>\\\\\\\\n  <head>\\\\\\\\n  <meta charset=\\\\\\\\\\\\\\\"utf-8\\\\\\\\\\\\\\\">\\\\\\\\n  <meta name=\\\\\\\\\\\\\\\"viewport\\\\\\\\\\\\\\\" content=\\\\\\\\\\\\\\\"width=device-width, initial-scale=1, shrink-to-fit=no\\\\\\\\\\\\\\\">\\\\\\\\n  <style>\\\\\\\\n  body {  \\\\\\\\n      margin: auto;\\\\\\\\n      font-family: ${fontFamily};\\\\\\\\n      overflow: visible;\\\\\\\\n      font-size:14px !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    body {\\\\\\\\n      font-size: 12px;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  \\\\\\\\n  .cursor-pointer {\\\\\\\\n    cursor: pointer;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .text-wrap {\\\\\\\\n    overflow: hidden;\\\\\\\\n    white-space: normal;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .dropdown-item:hover,\\\\\\\\n  .dropdown-item:focus {\\\\\\\\n    background-color:rgb(0, 236, 151) !important;\\\\\\\\n    color:white !important;\\\\\\\\n    outline: none !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .editor-toolbar {\\\\\\\\n      text-align: ${alignToolItems};\\\\\\\\n  }\\\\\\\\n  \\\\\\\\n  .CodeMirror {\\\\\\\\n    min-height:200px !important; // for autocomplete to be visble \\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .CodeMirror-scroll {\\\\\\\\n    min-height:200px !important; // for autocomplete to be visble \\\\\\\\n  }\\\\\\\\n\\\\\\\\n  ${embeddCSS}\\\\\\\\n\\\\\\\\n  </style>\\\\\\\\n  <link rel=\\\\\\\\\\\\\\\"stylesheet\\\\\\\\\\\\\\\" href=\\\\\\\\\\\\\\\"https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css\\\\\\\\\\\\\\\">\\\\\\\\n  <link rel=\\\\\\\\\\\\\\\"stylesheet\\\\\\\\\\\\\\\" href=\\\\\\\\\\\\\\\"https://cdn.jsdelivr.net/highlight.js/latest/styles/github.min.css\\\\\\\\\\\\\\\">\\\\\\\\n  <link href=\\\\\\\\\\\\\\\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css\\\\\\\\\\\\\\\" rel=\\\\\\\\\\\\\\\"stylesheet\\\\\\\\\\\\\\\" integrity=\\\\\\\\\\\\\\\"sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65\\\\\\\\\\\\\\\" crossorigin=\\\\\\\\\\\\\\\"anonymous\\\\\\\\\\\\\\\">\\\\\\\\n</head>\\\\\\\\n<body>\\\\\\\\n<div class=\\\\\\\\\\\\\\\"dropdown\\\\\\\\\\\\\\\">\\\\\\\\n  <button style=\\\\\\\\\\\\\\\"display: none\\\\\\\\\\\\\\\" type=\\\\\\\\\\\\\\\"button\\\\\\\\\\\\\\\" data-bs-toggle=\\\\\\\\\\\\\\\"dropdown\\\\\\\\\\\\\\\">\\\\\\\\n    Dropdown button\\\\\\\\n  </button>\\\\\\\\n\\\\\\\\n  <ul class=\\\\\\\\\\\\\\\"dropdown-menu\\\\\\\\\\\\\\\" id=\\\\\\\\\\\\\\\"mentiondropdown\\\\\\\\\\\\\\\" style=\\\\\\\\\\\\\\\"position: absolute;\\\\\\\\\\\\\\\">\\\\\\\\n</div>\\\\\\\\n<div class=\\\\\\\\\\\\\\\"dropdown\\\\\\\\\\\\\\\">\\\\\\\\n  <button style=\\\\\\\\\\\\\\\"display: none\\\\\\\\\\\\\\\" type=\\\\\\\\\\\\\\\"button\\\\\\\\\\\\\\\" data-bs-toggle=\\\\\\\\\\\\\\\"dropdown\\\\\\\\\\\\\\\">\\\\\\\\n    Dropdown button\\\\\\\\n  </button>\\\\\\\\n  <ul class=\\\\\\\\\\\\\\\"dropdown-menu\\\\\\\\\\\\\\\" id=\\\\\\\\\\\\\\\"referencedropdown\\\\\\\\\\\\\\\" style=\\\\\\\\\\\\\\\"position: absolute;\\\\\\\\\\\\\\\">\\\\\\\\n</div>\\\\\\\\n</ul>\\\\\\\\n\\\\\\\\n<textarea></textarea>\\\\\\\\n\\\\\\\\n<script src=\\\\\\\\\\\\\\\"https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js\\\\\\\\\\\\\\\"></script>\\\\\\\\n<script src=\\\\\\\\\\\\\\\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js\\\\\\\\\\\\\\\" integrity=\\\\\\\\\\\\\\\"sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3\\\\\\\\\\\\\\\" crossorigin=\\\\\\\\\\\\\\\"anonymous\\\\\\\\\\\\\\\"></script>\\\\\\\\n<script src=\\\\\\\\\\\\\\\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js\\\\\\\\\\\\\\\" integrity=\\\\\\\\\\\\\\\"sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V\\\\\\\\\\\\\\\" crossorigin=\\\\\\\\\\\\\\\"anonymous\\\\\\\\\\\\\\\"></script>\\\\\\\\n<script>\\\\\\\\nlet codeMirrorInstance;\\\\\\\\nlet isEditorInitialized = false;\\\\\\\\nlet followingData = {};\\\\\\\\nlet profilesData = {};\\\\\\\\nlet query = \\\\\\\\\\\\'\\\\\\\\\\\\';\\\\\\\\nlet showAccountAutoComplete = ${showAccountAutoComplete};\\\\\\\\nlet showProposalIdAutoComplete = ${showProposalIdAutoComplete};\\\\\\\\n\\\\\\\\nfunction getSuggestedAccounts(term) {\\\\\\\\n  let results = [];\\\\\\\\n\\\\\\\\n  term = (term || \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\").replace(/\\\\\\\\\\\\\\\\W/g, \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\").toLowerCase();\\\\\\\\n  const limit = 5;\\\\\\\\n\\\\\\\\n  const profiles = Object.entries(profilesData);\\\\\\\\n\\\\\\\\n  for (let i = 0; i < profiles.length; i++) {\\\\\\\\n    let score = 0;\\\\\\\\n    const accountId = profiles[i][0];\\\\\\\\n    const accountIdSearch = profiles[i][0].replace(/\\\\\\\\\\\\\\\\W/g, \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\").toLowerCase();\\\\\\\\n    const nameSearch = (profiles[i][1]?.profile?.name || \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\")\\\\\\\\n      .replace(/\\\\\\\\\\\\\\\\W/g, \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\")\\\\\\\\n      .toLowerCase();\\\\\\\\n    const accountIdSearchIndex = accountIdSearch.indexOf(term);\\\\\\\\n    const nameSearchIndex = nameSearch.indexOf(term);\\\\\\\\n\\\\\\\\n    if (accountIdSearchIndex > -1 || nameSearchIndex > -1) {\\\\\\\\n      score += 10;\\\\\\\\n\\\\\\\\n      if (accountIdSearchIndex === 0) {\\\\\\\\n        score += 10;\\\\\\\\n      }\\\\\\\\n      if (nameSearchIndex === 0) {\\\\\\\\n        score += 10;\\\\\\\\n      }\\\\\\\\n      if (followingData[accountId] === \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\") {\\\\\\\\n        score += 30;\\\\\\\\n      }\\\\\\\\n\\\\\\\\n      results.push({\\\\\\\\n        accountId,\\\\\\\\n        score,\\\\\\\\n      });\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  results.sort((a, b) => b.score - a.score);\\\\\\\\n  results = results.slice(0, limit);\\\\\\\\n\\\\\\\\n  return results;\\\\\\\\n}\\\\\\\\n\\\\\\\\nasync function asyncFetch(endpoint, { method, headers, body }) {\\\\\\\\n  try {\\\\\\\\n    const response = await fetch(endpoint, {\\\\\\\\n      method: method,\\\\\\\\n      headers: headers,\\\\\\\\n      body: body\\\\\\\\n    });\\\\\\\\n\\\\\\\\n    if (!response.ok) {\\\\\\\\n      throw new Error(\\\\\\\\\\\\\\\"HTTP error!\\\\\\\\\\\\\\\");\\\\\\\\n    }\\\\\\\\n\\\\\\\\n    return await response.json();\\\\\\\\n  } catch (error) {\\\\\\\\n    console.error(\\\\\\\\\\\\'Error fetching data:\\\\\\\\\\\\', error);\\\\\\\\n    throw error;\\\\\\\\n  }\\\\\\\\n}\\\\\\\\n\\\\\\\\nfunction extractNumbers(str) {\\\\\\\\n  let numbers = \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\";\\\\\\\\n  for (let i = 0; i < str.length; i++) {\\\\\\\\n    if (!isNaN(str[i])) {\\\\\\\\n      numbers += str[i];\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  return numbers;\\\\\\\\n};\\\\\\\\n\\\\\\\\nasync function getSuggestedProposals(id) {\\\\\\\\n  let results = [];\\\\\\\\n  const variables = {\\\\\\\\n    limit: 5,\\\\\\\\n    offset: 0,\\\\\\\\n    where: {},\\\\\\\\n  };\\\\\\\\n  if (id) {\\\\\\\\n    const proposalId = extractNumbers(id);\\\\\\\\n    if (proposalId) {\\\\\\\\n      variables[\\\\\\\\\\\\\\\"where\\\\\\\\\\\\\\\"] = { proposal_id: { _eq: id } };\\\\\\\\n    } else {\\\\\\\\n      variables[\\\\\\\\\\\\\\\"where\\\\\\\\\\\\\\\"] = { name: { _ilike: \\\\\\\\\\\\\\\"%\\\\\\\\\\\\\\\" + id + \\\\\\\\\\\\\\\"%\\\\\\\\\\\\\\\" } };\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  await asyncFetch(\\\\\\\\\\\\\\\"https://near-queryapi.api.pagoda.co/v1/graphql\\\\\\\\\\\\\\\", {\\\\\\\\n    method: \\\\\\\\\\\\\\\"POST\\\\\\\\\\\\\\\",\\\\\\\\n    headers: { \\\\\\\\\\\\\\\"x-hasura-role\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"thomasguntenaar_near\\\\\\\\\\\\\\\" },\\\\\\\\n    body: JSON.stringify({\\\\\\\\n      query: query,\\\\\\\\n      variables: variables,\\\\\\\\n      operationName: \\\\\\\\\\\\\\\"GetLatestSnapshot\\\\\\\\\\\\\\\",\\\\\\\\n    }),\\\\\\\\n  })\\\\\\\\n    .then((res) => {\\\\\\\\n      const proposals =\\\\\\\\n        res?.data?.[\\\\\\\\n          \\\\\\\\\\\\\\\"thomasguntenaar_near_devhub_proposals_quebec_proposals_with_latest_snapshot\\\\\\\\\\\\\\\"\\\\\\\\n        ];\\\\\\\\n      results = proposals;\\\\\\\\n    })\\\\\\\\n    .catch((error) => {\\\\\\\\n      console.error(error);\\\\\\\\n    });\\\\\\\\n  return results;\\\\\\\\n};\\\\\\\\n\\\\\\\\n// Initializes SimpleMDE element and attaches to text-area\\\\\\\\nconst simplemde = new SimpleMDE({\\\\\\\\n  forceSync: true,\\\\\\\\n  toolbar: [\\\\\\\\n    \\\\\\\\\\\\\\\"heading\\\\\\\\\\\\\\\",\\\\\\\\n    \\\\\\\\\\\\\\\"bold\\\\\\\\\\\\\\\",\\\\\\\\n    \\\\\\\\\\\\\\\"italic\\\\\\\\\\\\\\\",\\\\\\\\n    \\\\\\\\\\\\\\\"|\\\\\\\\\\\\\\\", // adding | creates a divider in the toolbar\\\\\\\\n    \\\\\\\\\\\\\\\"quote\\\\\\\\\\\\\\\",\\\\\\\\n    \\\\\\\\\\\\\\\"code\\\\\\\\\\\\\\\",\\\\\\\\n    \\\\\\\\\\\\\\\"link\\\\\\\\\\\\\\\",\\\\\\\\n  ],\\\\\\\\n  placeholder: \\\\\\\\\\\\\\\\`${placeholder}\\\\\\\\\\\\\\\\`,\\\\\\\\n  initialValue: \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\n  insertTexts: {\\\\\\\\n    link: [\\\\\\\\\\\\\\\"[\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"]()\\\\\\\\\\\\\\\"],\\\\\\\\n  },\\\\\\\\n  spellChecker: false,\\\\\\\\n  renderingConfig: {\\\\\\\\n\\\\\\\\t\\\\\\\\tsingleLineBreaks: false,\\\\\\\\n\\\\\\\\t\\\\\\\\tcodeSyntaxHighlighting: true,\\\\\\\\n\\\\\\\\t},\\\\\\\\n  autofocus:${autoFocus}\\\\\\\\n});\\\\\\\\n\\\\\\\\ncodeMirrorInstance = simplemde.codemirror;\\\\\\\\n\\\\\\\\n/**\\\\\\\\n * Sends message to Widget to update content\\\\\\\\n */\\\\\\\\nconst updateContent = () => {\\\\\\\\n  const content = simplemde.value();\\\\\\\\n  window.parent.postMessage({ handler: \\\\\\\\\\\\\\\"update\\\\\\\\\\\\\\\", content }, \\\\\\\\\\\\\\\"*\\\\\\\\\\\\\\\");\\\\\\\\n};\\\\\\\\n\\\\\\\\n/**\\\\\\\\n * Sends message to Widget to update iframe height\\\\\\\\n */\\\\\\\\nconst updateIframeHeight = () => {\\\\\\\\n  const iframeHeight = document.body.scrollHeight;\\\\\\\\n  window.parent.postMessage({ handler: \\\\\\\\\\\\\\\"resize\\\\\\\\\\\\\\\", height: iframeHeight }, \\\\\\\\\\\\\\\"*\\\\\\\\\\\\\\\");\\\\\\\\n};\\\\\\\\n\\\\\\\\n// On Change\\\\\\\\nsimplemde.codemirror.on(\\\\\\\\\\\\'blur\\\\\\\\\\\\', () => {\\\\\\\\n  updateContent();\\\\\\\\n});\\\\\\\\n\\\\\\\\nsimplemde.codemirror.on(\\\\\\\\\\\\'keyup\\\\\\\\\\\\', () => {\\\\\\\\n  updateIframeHeight();\\\\\\\\n  const content = simplemde.value();\\\\\\\\n  window.parent.postMessage({ handler: \\\\\\\\\\\\\\\"updateOnKeyup\\\\\\\\\\\\\\\", content }, \\\\\\\\\\\\\\\"*\\\\\\\\\\\\\\\");\\\\\\\\n});\\\\\\\\n\\\\\\\\n\\\\\\\\nif (showAccountAutoComplete) {\\\\\\\\n  let mentionToken;\\\\\\\\n  let mentionCursorStart;\\\\\\\\n  const dropdown = document.getElementById(\\\\\\\\\\\\\\\"mentiondropdown\\\\\\\\\\\\\\\");\\\\\\\\n\\\\\\\\n  simplemde.codemirror.on(\\\\\\\\\\\\\\\"keydown\\\\\\\\\\\\\\\", () => {\\\\\\\\n    if (mentionToken && event.key === \\\\\\\\\\\\'ArrowDown\\\\\\\\\\\\') {\\\\\\\\n      dropdown.querySelector(\\\\\\\\\\\\'button\\\\\\\\\\\\').focus();\\\\\\\\n      event.preventDefault();\\\\\\\\n      return false;\\\\\\\\n    }\\\\\\\\n  });\\\\\\\\n\\\\\\\\n  simplemde.codemirror.on(\\\\\\\\\\\\\\\"keyup\\\\\\\\\\\\\\\", (cm, event) => {\\\\\\\\n    const cursor = cm.getCursor();\\\\\\\\n    const token = cm.getTokenAt(cursor);\\\\\\\\n\\\\\\\\n    const createMentionDropDownOptions = () => {\\\\\\\\n      const mentionInput = cm.getRange(mentionCursorStart, cursor);\\\\\\\\n      dropdown.innerHTML = getSuggestedAccounts(mentionInput)\\\\\\\\n      .map(\\\\\\\\n        (item) =>\\\\\\\\n          \\\\\\\\\\\\'<li><button class=\\\\\\\\\\\\\\\"dropdown-item cursor-pointer w-100 text-wrap\\\\\\\\\\\\\\\">\\\\\\\\\\\\' + item?.accountId + \\\\\\\\\\\\'</button></li>\\\\\\\\\\\\'\\\\\\\\n      )\\\\\\\\n      .join(\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\");\\\\\\\\n\\\\\\\\n      dropdown.querySelectorAll(\\\\\\\\\\\\\\\"li\\\\\\\\\\\\\\\").forEach((li) => {\\\\\\\\n        li.addEventListener(\\\\\\\\\\\\\\\"click\\\\\\\\\\\\\\\", () => {\\\\\\\\n          const selectedText = li.textContent.trim();\\\\\\\\n          simplemde.codemirror.replaceRange(selectedText, mentionCursorStart, cursor);\\\\\\\\n          mentionToken = null;\\\\\\\\n          dropdown.classList.remove(\\\\\\\\\\\\\\\"show\\\\\\\\\\\\\\\");\\\\\\\\n          cm.focus();\\\\\\\\n        });\\\\\\\\n      });\\\\\\\\n    }\\\\\\\\n    // show dropwdown only when @ is at first place or when there is a space before @\\\\\\\\n      if (!mentionToken && (token.string === \\\\\\\\\\\\\\\"@\\\\\\\\\\\\\\\" && cursor.ch === 1 || token.string === \\\\\\\\\\\\\\\"@\\\\\\\\\\\\\\\" && cm.getTokenAt({line:cursor.line, ch: cursor.ch - 1}).string == \\\\\\\\\\\\' \\\\\\\\\\\\')) {\\\\\\\\n        mentionToken = token;\\\\\\\\n        mentionCursorStart = cursor;\\\\\\\\n        // Calculate cursor position relative to the iframe\\\\\\\\\\\\'s viewport\\\\\\\\n        const rect = cm.charCoords(cursor);\\\\\\\\n        const x = rect.left;\\\\\\\\n        const y = rect.bottom;\\\\\\\\n\\\\\\\\n        // Create dropdown with options\\\\\\\\n        dropdown.style.top = y + \\\\\\\\\\\\\\\"px\\\\\\\\\\\\\\\";\\\\\\\\n        dropdown.style.left = x + \\\\\\\\\\\\\\\"px\\\\\\\\\\\\\\\";\\\\\\\\n\\\\\\\\n        createMentionDropDownOptions();\\\\\\\\n\\\\\\\\n        dropdown.classList.add(\\\\\\\\\\\\\\\"show\\\\\\\\\\\\\\\");\\\\\\\\n\\\\\\\\n        // Close dropdown on outside click\\\\\\\\n        document.addEventListener(\\\\\\\\\\\\\\\"click\\\\\\\\\\\\\\\", function(event) {\\\\\\\\n            if (!dropdown.contains(event.target)) {\\\\\\\\n                mentionToken = null;\\\\\\\\n                dropdown.classList.remove(\\\\\\\\\\\\\\\"show\\\\\\\\\\\\\\\");\\\\\\\\n            }\\\\\\\\n        });\\\\\\\\n    } else if (mentionToken && token.string.match(/[^@a-z0-9.]/)) {\\\\\\\\n        mentionToken = null;\\\\\\\\n        dropdown.classList.remove(\\\\\\\\\\\\\\\"show\\\\\\\\\\\\\\\");\\\\\\\\n    } else if (mentionToken) {\\\\\\\\n        createMentionDropDownOptions();\\\\\\\\n    }\\\\\\\\n});\\\\\\\\n}\\\\\\\\n\\\\\\\\nif (showProposalIdAutoComplete) {\\\\\\\\n  let proposalId;\\\\\\\\n  let referenceCursorStart;\\\\\\\\n  const dropdown = document.getElementById(\\\\\\\\\\\\\\\"referencedropdown\\\\\\\\\\\\\\\");\\\\\\\\n  const loader = document.createElement(\\\\\\\\\\\\'div\\\\\\\\\\\\');\\\\\\\\n  loader.className = \\\\\\\\\\\\'loader\\\\\\\\\\\\';\\\\\\\\n  loader.textContent = \\\\\\\\\\\\'Loading...\\\\\\\\\\\\';\\\\\\\\n\\\\\\\\n  simplemde.codemirror.on(\\\\\\\\\\\\\\\"keydown\\\\\\\\\\\\\\\", () => {\\\\\\\\n    if (proposalId && event.key === \\\\\\\\\\\\'ArrowDown\\\\\\\\\\\\') {\\\\\\\\n      dropdown.querySelector(\\\\\\\\\\\\'button\\\\\\\\\\\\').focus();\\\\\\\\n      event.preventDefault();\\\\\\\\n      return false;\\\\\\\\n    }\\\\\\\\n  });\\\\\\\\n\\\\\\\\n  simplemde.codemirror.on(\\\\\\\\\\\\\\\"keyup\\\\\\\\\\\\\\\", (cm, event) => {\\\\\\\\n    const cursor = cm.getCursor();\\\\\\\\n    const token = cm.getTokenAt(cursor);\\\\\\\\n\\\\\\\\n    const createReferenceDropDownOptions = async () => {\\\\\\\\n      try {\\\\\\\\n        const proposalIdInput = cm.getRange(referenceCursorStart, cursor);\\\\\\\\n        dropdown.innerHTML = \\\\\\\\\\\\'\\\\\\\\\\\\'; // Clear previous content\\\\\\\\n        dropdown.appendChild(loader); // Show loader\\\\\\\\n\\\\\\\\n        const suggestedProposals = await getSuggestedProposals(proposalIdInput);\\\\\\\\n        dropdown.innerHTML = suggestedProposals\\\\\\\\n        .map(\\\\\\\\n          (item) =>\\\\\\\\n            \\\\\\\\\\\\'<li><button class=\\\\\\\\\\\\\\\"dropdown-item cursor-pointer w-100 text-wrap\\\\\\\\\\\\\\\">\\\\\\\\\\\\' + \\\\\\\\\\\\\\\"#\\\\\\\\\\\\\\\" + item?.proposal_id + \\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\" + item.name + \\\\\\\\\\\\'</button></li>\\\\\\\\\\\\'\\\\\\\\n        )\\\\\\\\n        .join(\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\");\\\\\\\\n\\\\\\\\n        dropdown.querySelectorAll(\\\\\\\\\\\\\\\"li\\\\\\\\\\\\\\\").forEach((li) => {\\\\\\\\n          li.addEventListener(\\\\\\\\\\\\\\\"click\\\\\\\\\\\\\\\", () => {\\\\\\\\n            const selectedText = li.textContent.trim();\\\\\\\\n            const startIndex = selectedText.indexOf(\\\\\\\\\\\\'#\\\\\\\\\\\\') + 1; \\\\\\\\n            const endIndex = selectedText.indexOf(\\\\\\\\\\\\' \\\\\\\\\\\\', startIndex);\\\\\\\\n            const id = endIndex !== -1 ? selectedText.substring(startIndex, endIndex) : selectedText.substring(startIndex);\\\\\\\\n            const link = \\\\\\\\\\\\\\\"https://near.social/devhub.near/widget/app?page=proposal&id=\\\\\\\\\\\\\\\" + id;\\\\\\\\n            const adjustedStart = {\\\\\\\\n              line: referenceCursorStart.line,\\\\\\\\n              ch: referenceCursorStart.ch - 1\\\\\\\\n            };\\\\\\\\n            simplemde.codemirror.replaceRange(\\\\\\\\\\\\\\\"[\\\\\\\\\\\\\\\" + selectedText + \\\\\\\\\\\\\\\"]\\\\\\\\\\\\\\\" + \\\\\\\\\\\\\\\"(\\\\\\\\\\\\\\\" + link + \\\\\\\\\\\\\\\")\\\\\\\\\\\\\\\", adjustedStart, cursor);\\\\\\\\n            proposalId = null;\\\\\\\\n            dropdown.classList.remove(\\\\\\\\\\\\\\\"show\\\\\\\\\\\\\\\");\\\\\\\\n            cm.focus();\\\\\\\\n          });\\\\\\\\n        });\\\\\\\\n      } catch (error) {\\\\\\\\n        console.error(\\\\\\\\\\\\'Error fetching data:\\\\\\\\\\\\', error);\\\\\\\\n        // Handle error: Remove loader\\\\\\\\n        dropdown.innerHTML = \\\\\\\\\\\\'\\\\\\\\\\\\'; // Clear previous content\\\\\\\\n      } finally {\\\\\\\\n        // Remove loader\\\\\\\\n        dropdown.removeChild(loader);\\\\\\\\n      }\\\\\\\\n    }\\\\\\\\n\\\\\\\\n    // show dropwdown only when there is space before # or it\\\\\\\\\\\\'s first char\\\\\\\\n      if (!proposalId && (token.string === \\\\\\\\\\\\\\\"#\\\\\\\\\\\\\\\" && cursor.ch === 1 || token.string === \\\\\\\\\\\\\\\"#\\\\\\\\\\\\\\\" && cm.getTokenAt({line:cursor.line, ch: cursor.ch - 1}).string == \\\\\\\\\\\\' \\\\\\\\\\\\')) {\\\\\\\\n        proposalId = token;\\\\\\\\n        referenceCursorStart = cursor;\\\\\\\\n        // Calculate cursor position relative to the iframe\\\\\\\\\\\\'s viewport\\\\\\\\n        const rect = cm.charCoords(cursor);\\\\\\\\n        const x = rect.left;\\\\\\\\n        const y = rect.bottom;\\\\\\\\n\\\\\\\\n        // Create dropdown with options\\\\\\\\n        dropdown.style.top = y + \\\\\\\\\\\\\\\"px\\\\\\\\\\\\\\\";\\\\\\\\n        dropdown.style.left = x + \\\\\\\\\\\\\\\"px\\\\\\\\\\\\\\\";\\\\\\\\n\\\\\\\\n        createReferenceDropDownOptions();\\\\\\\\n\\\\\\\\n        dropdown.classList.add(\\\\\\\\\\\\\\\"show\\\\\\\\\\\\\\\");\\\\\\\\n\\\\\\\\n        // Close dropdown on outside click\\\\\\\\n        document.addEventListener(\\\\\\\\\\\\\\\"click\\\\\\\\\\\\\\\", function(event) {\\\\\\\\n            if (!dropdown.contains(event.target)) {\\\\\\\\n              proposalId = null;\\\\\\\\n                dropdown.classList.remove(\\\\\\\\\\\\\\\"show\\\\\\\\\\\\\\\");\\\\\\\\n            }\\\\\\\\n        });\\\\\\\\n    } else if (proposalId && (token.string.match(/[^#a-z0-9.]/) || !token.string)) {\\\\\\\\n      proposalId = null;\\\\\\\\n      dropdown.classList.remove(\\\\\\\\\\\\\\\"show\\\\\\\\\\\\\\\");\\\\\\\\n    } else if (proposalId) {\\\\\\\\n      createReferenceDropDownOptions();\\\\\\\\n  }\\\\\\\\n});\\\\\\\\n\\\\\\\\n}\\\\\\\\n\\\\\\\\nwindow.addEventListener(\\\\\\\\\\\\\\\"message\\\\\\\\\\\\\\\", (event) => {\\\\\\\\n  if (!isEditorInitialized && event.data !== \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\") {\\\\\\\\n    simplemde.value(event.data.content);\\\\\\\\n    isEditorInitialized = true;\\\\\\\\n  } else {\\\\\\\\n    if (event.data.handler === \\\\\\\\\\\\'refreshEditor\\\\\\\\\\\\' || event.data.handler === \\\\\\\\\\\\'committed\\\\\\\\\\\\') {\\\\\\\\n      codeMirrorInstance.getDoc().setValue(event.data.content);\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  if (event.data.followingData) {\\\\\\\\n    followingData = event.data.followingData;\\\\\\\\n  }\\\\\\\\n  if (event.data.profilesData) {\\\\\\\\n    profilesData = JSON.parse(event.data.profilesData);\\\\\\\\n  }\\\\\\\\n  if (event.data.query) {\\\\\\\\n    query = event.data.query;\\\\\\\\n  }\\\\\\\\n});\\\\\\\\n</script>\\\\\\\\n</body>\\\\\\\\n</html>\\\\\\\\n`;\\\\\\\\n\\\\\\\\nreturn (\\\\\\\\n  <iframe\\\\\\\\n    className={className}\\\\\\\\n    style={{\\\\\\\\n      height: `${state.iframeHeight}px`,\\\\\\\\n      maxHeight: \\\\\\\\\\\\\\\"410px\\\\\\\\\\\\\\\",\\\\\\\\n      minHeight: \\\\\\\\\\\\\\\"250px\\\\\\\\\\\\\\\",\\\\\\\\n    }}\\\\\\\\n    srcDoc={code}\\\\\\\\n    message={{\\\\\\\\n      content: props.data?.content ?? \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\n      followingData,\\\\\\\\n      profilesData: JSON.stringify(profilesData),\\\\\\\\n      query: query,\\\\\\\\n      handler: props.data.handler,\\\\\\\\n    }}\\\\\\\\n    onMessage={(e) => {\\\\\\\\n      switch (e.handler) {\\\\\\\\n        case \\\\\\\\\\\\\\\"update\\\\\\\\\\\\\\\":\\\\\\\\n          {\\\\\\\\n            onChange(e.content);\\\\\\\\n          }\\\\\\\\n          break;\\\\\\\\n        case \\\\\\\\\\\\\\\"resize\\\\\\\\\\\\\\\":\\\\\\\\n          {\\\\\\\\n            const offset = 10;\\\\\\\\n            State.update({ iframeHeight: e.height + offset });\\\\\\\\n          }\\\\\\\\n          break;\\\\\\\\n        case \\\\\\\\\\\\\\\"updateOnKeyup\\\\\\\\\\\\\\\":\\\\\\\\n          {\\\\\\\\n            onChangeKeyup(e.content);\\\\\\\\n          }\\\\\\\\n          break;\\\\\\\\n      }\\\\\\\\n    }}\\\\\\\\n  />\\\\\\\\n);\\\\\\\\n\"}, \"devhub.entity.proposal.ComposeComment\": {\"\": \"const proposalId = props.id;\\\\\\\\nconst draftKey = \\\\\\\\\\\\\\\"COMMENT_DRAFT\\\\\\\\\\\\\\\" + proposalId;\\\\\\\\nlet draftComment = \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\";\\\\\\\\n\\\\\\\\nconst ComposeEmbeddCSS = `\\\\\\\\n  .CodeMirror {\\\\\\\\n    border: none !important;\\\\\\\\n    min-height: 50px !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .editor-toolbar {\\\\\\\\n    border: none !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .CodeMirror-scroll{\\\\\\\\n    min-height: 50px !important;\\\\\\\\n    max-height: 300px !important;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\nconst notifyAccountId = props.notifyAccountId;\\\\\\\\nconst accountId = context.accountId;\\\\\\\\nconst item = props.item;\\\\\\\\nconst [allowGetDraft, setAllowGetDraft] = useState(true);\\\\\\\\nconst [comment, setComment] = useState(null);\\\\\\\\nconst [isTxnCreated, setTxnCreated] = useState(false);\\\\\\\\nconst [handler, setHandler] = useState(\\\\\\\\\\\\\\\"update\\\\\\\\\\\\\\\"); // to update editor state on draft and txn approval\\\\\\\\nconst [showCommentToast, setCommentToast] = useState(false);\\\\\\\\n\\\\\\\\nif (allowGetDraft) {\\\\\\\\n  draftComment = Storage.privateGet(draftKey);\\\\\\\\n}\\\\\\\\n\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (draftComment) {\\\\\\\\n    setComment(draftComment);\\\\\\\\n    setAllowGetDraft(false);\\\\\\\\n    setHandler(\\\\\\\\\\\\\\\"refreshEditor\\\\\\\\\\\\\\\");\\\\\\\\n  }\\\\\\\\n}, [draftComment]);\\\\\\\\n\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (draftComment === comment) {\\\\\\\\n    return;\\\\\\\\n  }\\\\\\\\n  const handler = setTimeout(() => {\\\\\\\\n    Storage.privateSet(draftKey, comment);\\\\\\\\n  }, 1000);\\\\\\\\n\\\\\\\\n  return () => {\\\\\\\\n    clearTimeout(handler);\\\\\\\\n  };\\\\\\\\n}, [comment]);\\\\\\\\n\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (handler === \\\\\\\\\\\\\\\"update\\\\\\\\\\\\\\\") {\\\\\\\\n    return;\\\\\\\\n  }\\\\\\\\n  const handler = setTimeout(() => {\\\\\\\\n    setHandler(\\\\\\\\\\\\\\\"update\\\\\\\\\\\\\\\");\\\\\\\\n  }, 3000);\\\\\\\\n\\\\\\\\n  return () => {\\\\\\\\n    clearTimeout(handler);\\\\\\\\n  };\\\\\\\\n}, [handler]);\\\\\\\\n\\\\\\\\nif (!accountId) {\\\\\\\\n  return (\\\\\\\\n    <div\\\\\\\\n      style={{\\\\\\\\n        marginLeft: 10,\\\\\\\\n        backgroundColor: \\\\\\\\\\\\\\\"#ECF8FB\\\\\\\\\\\\\\\",\\\\\\\\n        border: \\\\\\\\\\\\\\\"1px solid #E2E6EC\\\\\\\\\\\\\\\",\\\\\\\\n      }}\\\\\\\\n      className=\\\\\\\\\\\\\\\"d-flex align-items-center gap-1 p-4 rounded-2 flex-wrap flex-md-nowrap\\\\\\\\\\\\\\\"\\\\\\\\n    >\\\\\\\\n      <Link to=\\\\\\\\\\\\\\\"https://near.org/signup\\\\\\\\\\\\\\\">\\\\\\\\n        <Widget\\\\\\\\n          src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.Button\\\\\\\\\\\\\\\"}\\\\\\\\n          props={{\\\\\\\\n            classNames: { root: \\\\\\\\\\\\\\\"grey-btn\\\\\\\\\\\\\\\" },\\\\\\\\n            label: \\\\\\\\\\\\\\\"Sign up\\\\\\\\\\\\\\\",\\\\\\\\n          }}\\\\\\\\n        />\\\\\\\\n      </Link>\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"fw-bold\\\\\\\\\\\\\\\">to join this conversation.</div>\\\\\\\\n      <div>Already have an account?</div>\\\\\\\\n      <a className=\\\\\\\\\\\\\\\"text-decoration-underline\\\\\\\\\\\\\\\" href=\\\\\\\\\\\\\\\"https://near.org/signin\\\\\\\\\\\\\\\">\\\\\\\\n        Log in to comment\\\\\\\\n      </a>\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n}\\\\\\\\n\\\\\\\\nfunction extractMentions(text) {\\\\\\\\n  const mentionRegex =\\\\\\\\n    /@((?:(?:[a-z\\\\\\\\\\\\\\\\d]+[-_])*[a-z\\\\\\\\\\\\\\\\d]+\\\\\\\\\\\\\\\\.)*(?:[a-z\\\\\\\\\\\\\\\\d]+[-_])*[a-z\\\\\\\\\\\\\\\\d]+)/gi;\\\\\\\\n  mentionRegex.lastIndex = 0;\\\\\\\\n  const accountIds = new Set();\\\\\\\\n  for (const match of text.matchAll(mentionRegex)) {\\\\\\\\n    if (\\\\\\\\n      !/[\\\\\\\\\\\\\\\\w`]/.test(match.input.charAt(match.index - 1)) &&\\\\\\\\n      !/[/\\\\\\\\\\\\\\\\w`]/.test(match.input.charAt(match.index + match[0].length)) &&\\\\\\\\n      match[1].length >= 2 &&\\\\\\\\n      match[1].length <= 64\\\\\\\\n    ) {\\\\\\\\n      accountIds.add(match[1].toLowerCase());\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  return [...accountIds];\\\\\\\\n}\\\\\\\\n\\\\\\\\nfunction extractTagNotifications(text, item) {\\\\\\\\n  return extractMentions(text || \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\")\\\\\\\\n    .filter((accountId) => accountId !== context.accountId)\\\\\\\\n    .map((accountId) => ({\\\\\\\\n      key: accountId,\\\\\\\\n      value: {\\\\\\\\n        type: \\\\\\\\\\\\\\\"mention\\\\\\\\\\\\\\\",\\\\\\\\n        item,\\\\\\\\n      },\\\\\\\\n    }));\\\\\\\\n}\\\\\\\\n\\\\\\\\nfunction composeData() {\\\\\\\\n  setTxnCreated(true);\\\\\\\\n  const data = {\\\\\\\\n    post: {\\\\\\\\n      comment: JSON.stringify({\\\\\\\\n        type: \\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\n        text: comment,\\\\\\\\n        item,\\\\\\\\n      }),\\\\\\\\n    },\\\\\\\\n    index: {\\\\\\\\n      comment: JSON.stringify({\\\\\\\\n        key: item,\\\\\\\\n        value: {\\\\\\\\n          type: \\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\n        },\\\\\\\\n      }),\\\\\\\\n    },\\\\\\\\n  };\\\\\\\\n\\\\\\\\n  const notifications = extractTagNotifications(comment, {\\\\\\\\n    type: \\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\n    path: `${accountId}/post/comment`,\\\\\\\\n  });\\\\\\\\n\\\\\\\\n  if (notifyAccountId && notifyAccountId !== context.accountId) {\\\\\\\\n    notifications.push({\\\\\\\\n      key: notifyAccountId,\\\\\\\\n      value: {\\\\\\\\n        type: \\\\\\\\\\\\\\\"devhub/reply\\\\\\\\\\\\\\\",\\\\\\\\n        item,\\\\\\\\n        proposal: proposalId,\\\\\\\\n      },\\\\\\\\n    });\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  if (notifications.length) {\\\\\\\\n    data.index.notify = JSON.stringify(\\\\\\\\n      notifications.length > 1 ? notifications : notifications[0]\\\\\\\\n    );\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  Social.set(data, {\\\\\\\\n    force: true,\\\\\\\\n    onCommit: () => {\\\\\\\\n      setCommentToast(true);\\\\\\\\n      setComment(\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\");\\\\\\\\n      setHandler(\\\\\\\\\\\\\\\"committed\\\\\\\\\\\\\\\");\\\\\\\\n      setTxnCreated(false);\\\\\\\\n    },\\\\\\\\n    onCancel: () => {\\\\\\\\n      setTxnCreated(false);\\\\\\\\n    },\\\\\\\\n  });\\\\\\\\n}\\\\\\\\n\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (props.transactionHashes && comment) {\\\\\\\\n    setComment(\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\");\\\\\\\\n  }\\\\\\\\n}, [props.transactionHashes]);\\\\\\\\n\\\\\\\\nconst LoadingButtonSpinner = (\\\\\\\\n  <span\\\\\\\\n    class=\\\\\\\\\\\\\\\"comment-btn-spinner spinner-border spinner-border-sm\\\\\\\\\\\\\\\"\\\\\\\\n    role=\\\\\\\\\\\\\\\"status\\\\\\\\\\\\\\\"\\\\\\\\n    aria-hidden=\\\\\\\\\\\\\\\"true\\\\\\\\\\\\\\\"\\\\\\\\n  ></span>\\\\\\\\n);\\\\\\\\n\\\\\\\\nconst Compose = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.Compose\\\\\\\\\\\\\\\"}\\\\\\\\n      props={{\\\\\\\\n        data: comment,\\\\\\\\n        onChangeKeyup: setComment,\\\\\\\\n        autocompleteEnabled: true,\\\\\\\\n        placeholder: \\\\\\\\\\\\\\\"Add your comment here...\\\\\\\\\\\\\\\",\\\\\\\\n        height: \\\\\\\\\\\\\\\"250\\\\\\\\\\\\\\\",\\\\\\\\n        embeddCSS: ComposeEmbeddCSS,\\\\\\\\n        handler: handler,\\\\\\\\n        showProposalIdAutoComplete: true,\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}, [draftComment, handler]);\\\\\\\\n\\\\\\\\nreturn (\\\\\\\\n  <div className=\\\\\\\\\\\\\\\"d-flex gap-2\\\\\\\\\\\\\\\">\\\\\\\\n    <Widget\\\\\\\\n      src=\\\\\\\\\\\\\\\"near/widget/DIG.Toast\\\\\\\\\\\\\\\"\\\\\\\\n      props={{\\\\\\\\n        title: \\\\\\\\\\\\\\\"Comment Submitted Successfully\\\\\\\\\\\\\\\",\\\\\\\\n        type: \\\\\\\\\\\\\\\"success\\\\\\\\\\\\\\\",\\\\\\\\n        open: showCommentToast,\\\\\\\\n        onOpenChange: (v) => setCommentToast(v),\\\\\\\\n        trigger: <></>,\\\\\\\\n        providerProps: { duration: 3000 },\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n    <Widget\\\\\\\\n      src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.Profile\\\\\\\\\\\\\\\"}\\\\\\\\n      props={{\\\\\\\\n        accountId: accountId,\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-2 w-100\\\\\\\\\\\\\\\">\\\\\\\\n      <b className=\\\\\\\\\\\\\\\"mt-1\\\\\\\\\\\\\\\">Add a comment</b>\\\\\\\\n      {Compose}\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-content-center justify-content-end\\\\\\\\\\\\\\\">\\\\\\\\n        <Widget\\\\\\\\n          src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.Button\\\\\\\\\\\\\\\"}\\\\\\\\n          props={{\\\\\\\\n            label: isTxnCreated ? LoadingButtonSpinner : \\\\\\\\\\\\\\\"Comment\\\\\\\\\\\\\\\",\\\\\\\\n            [\\\\\\\\\\\\\\\"data-testid\\\\\\\\\\\\\\\"]: \\\\\\\\\\\\\\\"compose-comment\\\\\\\\\\\\\\\",\\\\\\\\n            disabled: !comment || isTxnCreated,\\\\\\\\n            classNames: { root: \\\\\\\\\\\\\\\"green-btn btn-sm\\\\\\\\\\\\\\\" },\\\\\\\\n            onClick: () => {\\\\\\\\n              composeData();\\\\\\\\n            },\\\\\\\\n          }}\\\\\\\\n        />\\\\\\\\n      </div>\\\\\\\\n    </div>\\\\\\\\n  </div>\\\\\\\\n);\\\\\\\\n\"}, \"devhub.entity.proposal.CommentsAndLogs\": {\"\": \"const snapshotHistory = props.snapshotHistory;\\\\\\\\n\\\\\\\\nconst Wrapper = styled.div`\\\\\\\\n  position: relative;\\\\\\\\n  .log-line {\\\\\\\\n    position: absolute;\\\\\\\\n    left: 7%;\\\\\\\\n    top: -30px;\\\\\\\\n    bottom: 0;\\\\\\\\n    z-index: 1;\\\\\\\\n    width: 1px;\\\\\\\\n    background-color: var(--bs-border-color);\\\\\\\\n    z-index: 1;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .text-wrap {\\\\\\\\n    overflow: hidden;\\\\\\\\n    white-space: normal;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .fw-bold {\\\\\\\\n    font-weight: 600 !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .inline-flex {\\\\\\\\n    display: -webkit-inline-box !important;\\\\\\\\n    align-items: center !important;\\\\\\\\n    gap: 0.25rem !important;\\\\\\\\n    margin-right: 2px;\\\\\\\\n    flex-wrap: wrap;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\n\\\\\\\\nconst CommentContainer = styled.div`\\\\\\\\n  border: 1px solid lightgrey;\\\\\\\\n  overflow: auto;\\\\\\\\n`;\\\\\\\\n\\\\\\\\nconst Header = styled.div`\\\\\\\\n  position: relative;\\\\\\\\n  background-color: #f4f4f4;\\\\\\\\n  height: 50px;\\\\\\\\n\\\\\\\\n  .menu {\\\\\\\\n    position: absolute;\\\\\\\\n    right: 10px;\\\\\\\\n    top: 4px;\\\\\\\\n    font-size: 30px;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\n\\\\\\\\n// check snapshot history all keys and values for differences\\\\\\\\nfunction getDifferentKeysWithValues(obj1, obj2) {\\\\\\\\n  return Object.keys(obj1)\\\\\\\\n    .filter((key) => {\\\\\\\\n      if (key !== \\\\\\\\\\\\\\\"editor_id\\\\\\\\\\\\\\\" && obj2.hasOwnProperty(key)) {\\\\\\\\n        const value1 = obj1[key];\\\\\\\\n        const value2 = obj2[key];\\\\\\\\n\\\\\\\\n        if (typeof value1 === \\\\\\\\\\\\\\\"object\\\\\\\\\\\\\\\" && typeof value2 === \\\\\\\\\\\\\\\"object\\\\\\\\\\\\\\\") {\\\\\\\\n          return JSON.stringify(value1) !== JSON.stringify(value2);\\\\\\\\n        } else if (Array.isArray(value1) && Array.isArray(value2)) {\\\\\\\\n          return JSON.stringify(value1) !== JSON.stringify(value2);\\\\\\\\n        } else {\\\\\\\\n          return value1 !== value2;\\\\\\\\n        }\\\\\\\\n      }\\\\\\\\n      return false;\\\\\\\\n    })\\\\\\\\n    .map((key) => ({\\\\\\\\n      key,\\\\\\\\n      originalValue: obj1[key],\\\\\\\\n      modifiedValue: obj2[key],\\\\\\\\n    }));\\\\\\\\n}\\\\\\\\n\\\\\\\\nState.init({\\\\\\\\n  data: null,\\\\\\\\n  socialComments: null,\\\\\\\\n  changedKeysListWithValues: null,\\\\\\\\n});\\\\\\\\n\\\\\\\\nfunction sortTimelineAndComments() {\\\\\\\\n  const comments = Social.index(\\\\\\\\\\\\\\\"comment\\\\\\\\\\\\\\\", props.item, { subscribe: true });\\\\\\\\n\\\\\\\\n  if (state.changedKeysListWithValues === null) {\\\\\\\\n    const changedKeysListWithValues = snapshotHistory\\\\\\\\n      .slice(1)\\\\\\\\n      .map((item, index) => {\\\\\\\\n        const startingPoint = snapshotHistory[index]; // Set comparison to the previous item\\\\\\\\n        return {\\\\\\\\n          editorId: item.editor_id,\\\\\\\\n          ...getDifferentKeysWithValues(startingPoint, item),\\\\\\\\n        };\\\\\\\\n      });\\\\\\\\n    State.update({ changedKeysListWithValues });\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  // sort comments and timeline logs by time\\\\\\\\n  const snapShotTimeStamp = Array.isArray(snapshotHistory)\\\\\\\\n    ? snapshotHistory.map((i) => {\\\\\\\\n        return { blockHeight: null, timestamp: parseFloat(i.timestamp / 1e6) };\\\\\\\\n      })\\\\\\\\n    : [];\\\\\\\\n\\\\\\\\n  const commentsTimeStampPromise = Array.isArray(comments)\\\\\\\\n    ? Promise.all(\\\\\\\\n        comments.map((item) => {\\\\\\\\n          return asyncFetch(\\\\\\\\n            `https://api.near.social/time?blockHeight=${item.blockHeight}`\\\\\\\\n          ).then((res) => {\\\\\\\\n            const timeMs = parseFloat(res.body);\\\\\\\\n            return {\\\\\\\\n              blockHeight: item.blockHeight,\\\\\\\\n              timestamp: timeMs,\\\\\\\\n            };\\\\\\\\n          });\\\\\\\\n        })\\\\\\\\n      ).then((res) => res)\\\\\\\\n    : Promise.resolve([]);\\\\\\\\n\\\\\\\\n  commentsTimeStampPromise.then((commentsTimeStamp) => {\\\\\\\\n    const combinedArray = [...snapShotTimeStamp, ...commentsTimeStamp];\\\\\\\\n    combinedArray.sort((a, b) => a.timestamp - b.timestamp);\\\\\\\\n    State.update({ data: combinedArray, socialComments: comments });\\\\\\\\n  });\\\\\\\\n}\\\\\\\\n\\\\\\\\nsortTimelineAndComments();\\\\\\\\nconst Comment = ({ commentItem }) => {\\\\\\\\n  const { accountId, blockHeight } = commentItem;\\\\\\\\n  const item = {\\\\\\\\n    type: \\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\n    path: `${accountId}/post/comment`,\\\\\\\\n    blockHeight,\\\\\\\\n  };\\\\\\\\n  const content = JSON.parse(Social.get(item.path, blockHeight) ?? \\\\\\\\\\\\\\\"null\\\\\\\\\\\\\\\");\\\\\\\\n  const link = `https://near.social/devhub.near/widget/app?page=proposal&id=${props.id}&accountId=${accountId}&blockHeight=${blockHeight}`;\\\\\\\\n  const hightlightComment =\\\\\\\\n    parseInt(props.blockHeight ?? \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\") === blockHeight &&\\\\\\\\n    props.accountId === accountId;\\\\\\\\n\\\\\\\\n  return (\\\\\\\\n    <div style={{ zIndex: 99, background: \\\\\\\\\\\\\\\"white\\\\\\\\\\\\\\\" }}>\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"d-flex gap-2 flex-1\\\\\\\\\\\\\\\">\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"d-none d-sm-flex\\\\\\\\\\\\\\\">\\\\\\\\n          <Widget\\\\\\\\n            src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.Profile\\\\\\\\\\\\\\\"}\\\\\\\\n            props={{\\\\\\\\n              accountId: accountId,\\\\\\\\n            }}\\\\\\\\n          />\\\\\\\\n        </div>\\\\\\\\n        <CommentContainer\\\\\\\\n          style={{ border: hightlightComment ? \\\\\\\\\\\\\\\"2px solid black\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\" }}\\\\\\\\n          className=\\\\\\\\\\\\\\\"rounded-2 flex-1\\\\\\\\\\\\\\\"\\\\\\\\n        >\\\\\\\\n          <Header className=\\\\\\\\\\\\\\\"d-flex gap-3 align-items-center p-2 px-3\\\\\\\\\\\\\\\">\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"text-muted\\\\\\\\\\\\\\\">\\\\\\\\n              <Link href={`/near/widget/ProfilePage?accountId=${accountId}`}>\\\\\\\\n                <span className=\\\\\\\\\\\\\\\"fw-bold text-black\\\\\\\\\\\\\\\">{accountId}</span>\\\\\\\\n              </Link>\\\\\\\\n              commented \\\\\\\\u{ff65}{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n              <Widget\\\\\\\\n                src=\\\\\\\\\\\\\\\"near/widget/TimeAgo\\\\\\\\\\\\\\\"\\\\\\\\n                props={{\\\\\\\\n                  blockHeight: blockHeight,\\\\\\\\n                }}\\\\\\\\n              />\\\\\\\\n            </div>\\\\\\\\n            {context.accountId && (\\\\\\\\n              <div className=\\\\\\\\\\\\\\\"menu\\\\\\\\\\\\\\\">\\\\\\\\n                <Widget\\\\\\\\n                  src=\\\\\\\\\\\\\\\"near/widget/Posts.Menu\\\\\\\\\\\\\\\"\\\\\\\\n                  props={{\\\\\\\\n                    accountId: accountId,\\\\\\\\n                    blockHeight: blockHeight,\\\\\\\\n                    contentPath: `/post/comment`,\\\\\\\\n                    contentType: \\\\\\\\\\\\\\\"comment\\\\\\\\\\\\\\\",\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              </div>\\\\\\\\n            )}\\\\\\\\n          </Header>\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"p-2 px-3\\\\\\\\\\\\\\\">\\\\\\\\n            <Widget\\\\\\\\n              src={\\\\\\\\n                \\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.MarkdownViewer\\\\\\\\\\\\\\\"\\\\\\\\n              }\\\\\\\\n              props={{\\\\\\\\n                text: content.text,\\\\\\\\n              }}\\\\\\\\n            />\\\\\\\\n\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center mt-4\\\\\\\\\\\\\\\">\\\\\\\\n              <Widget\\\\\\\\n                src=\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.LikeButton\\\\\\\\\\\\\\\"\\\\\\\\n                props={{\\\\\\\\n                  item: item,\\\\\\\\n                  notifyAccountId: accountId,\\\\\\\\n                }}\\\\\\\\n              />\\\\\\\\n              <Widget\\\\\\\\n                src=\\\\\\\\\\\\\\\"near/widget/CopyUrlButton\\\\\\\\\\\\\\\"\\\\\\\\n                props={{\\\\\\\\n                  url: link,\\\\\\\\n                }}\\\\\\\\n              />\\\\\\\\n            </div>\\\\\\\\n          </div>\\\\\\\\n        </CommentContainer>\\\\\\\\n      </div>\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\n\\\\\\\\nfunction capitalizeFirstLetter(string) {\\\\\\\\n  const updated = string.replace(\\\\\\\\\\\\\\\"_\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\");\\\\\\\\n  return updated.charAt(0).toUpperCase() + updated.slice(1).toLowerCase();\\\\\\\\n}\\\\\\\\n\\\\\\\\nfunction parseTimelineKeyAndValue(timeline, originalValue, modifiedValue) {\\\\\\\\n  const oldValue = originalValue[timeline];\\\\\\\\n  const newValue = modifiedValue[timeline];\\\\\\\\n  switch (timeline) {\\\\\\\\n    case \\\\\\\\\\\\\\\"status\\\\\\\\\\\\\\\":\\\\\\\\n      return (\\\\\\\\n        oldValue !== newValue && (\\\\\\\\n          <span className=\\\\\\\\\\\\\\\"inline-flex\\\\\\\\\\\\\\\">\\\\\\\\n            moved proposal from{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n            <Widget\\\\\\\\n              src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.StatusTag\\\\\\\\\\\\\\\"}\\\\\\\\n              props={{\\\\\\\\n                timelineStatus: oldValue,\\\\\\\\n              }}\\\\\\\\n            />\\\\\\\\n            to{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n            <Widget\\\\\\\\n              src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.StatusTag\\\\\\\\\\\\\\\"}\\\\\\\\n              props={{\\\\\\\\n                timelineStatus: newValue,\\\\\\\\n              }}\\\\\\\\n            />\\\\\\\\n            stage\\\\\\\\n          </span>\\\\\\\\n        )\\\\\\\\n      );\\\\\\\\n    case \\\\\\\\\\\\\\\"sponsor_requested_review\\\\\\\\\\\\\\\":\\\\\\\\n      return !oldValue && newValue && <span>completed review</span>;\\\\\\\\n    case \\\\\\\\\\\\\\\"reviewer_completed_attestation\\\\\\\\\\\\\\\":\\\\\\\\n      return !oldValue && newValue && <span>completed attestation</span>;\\\\\\\\n    case \\\\\\\\\\\\\\\"kyc_verified\\\\\\\\\\\\\\\":\\\\\\\\n      return !oldValue && newValue && <span>verified KYC/KYB</span>;\\\\\\\\n    case \\\\\\\\\\\\\\\"test_transaction_sent\\\\\\\\\\\\\\\":\\\\\\\\n      return (\\\\\\\\n        !oldValue &&\\\\\\\\n        newValue && (\\\\\\\\n          <span>\\\\\\\\n            confirmed sponsorship and shared funding steps with recipient\\\\\\\\n          </span>\\\\\\\\n        )\\\\\\\\n      );\\\\\\\\n    // we don\\\\\\\\\\\\'t have this step for now\\\\\\\\n    // case \\\\\\\\\\\\\\\"request_for_trustees_created\\\\\\\\\\\\\\\":\\\\\\\\n    //   return !oldValue && newValue && <span>successfully created request for trustees</span>;\\\\\\\\n    default:\\\\\\\\n      return null;\\\\\\\\n  }\\\\\\\\n}\\\\\\\\n\\\\\\\\nconst AccountProfile = ({ accountId }) => {\\\\\\\\n  return (\\\\\\\\n    <span className=\\\\\\\\\\\\\\\"inline-flex fw-bold text-black\\\\\\\\\\\\\\\">\\\\\\\\n      <Widget\\\\\\\\n        src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.Profile\\\\\\\\\\\\\\\"}\\\\\\\\n        props={{\\\\\\\\n          accountId: accountId,\\\\\\\\n          size: \\\\\\\\\\\\\\\"sm\\\\\\\\\\\\\\\",\\\\\\\\n          showAccountId: true,\\\\\\\\n        }}\\\\\\\\n      />\\\\\\\\n    </span>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\n\\\\\\\\nconst parseProposalKeyAndValue = (key, modifiedValue, originalValue) => {\\\\\\\\n  switch (key) {\\\\\\\\n    case \\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\n      return <span>changed title</span>;\\\\\\\\n    case \\\\\\\\\\\\\\\"summary\\\\\\\\\\\\\\\":\\\\\\\\n    case \\\\\\\\\\\\\\\"description\\\\\\\\\\\\\\\":\\\\\\\\n      return <span>changed {key}</span>;\\\\\\\\n    case \\\\\\\\\\\\\\\"category\\\\\\\\\\\\\\\":\\\\\\\\n      return (\\\\\\\\n        <span>\\\\\\\\n          changed category from {originalValue} to {modifiedValue}\\\\\\\\n        </span>\\\\\\\\n      );\\\\\\\\n    case \\\\\\\\\\\\\\\"linked_proposals\\\\\\\\\\\\\\\":\\\\\\\\n      return <span>updated linked proposals</span>;\\\\\\\\n    case \\\\\\\\\\\\\\\"requested_sponsorship_usd_amount\\\\\\\\\\\\\\\":\\\\\\\\n      return (\\\\\\\\n        <span>\\\\\\\\n          changed sponsorship amount from {originalValue} to {modifiedValue}\\\\\\\\n        </span>\\\\\\\\n      );\\\\\\\\n    case \\\\\\\\\\\\\\\"requested_sponsorship_paid_in_currency\\\\\\\\\\\\\\\":\\\\\\\\n      return (\\\\\\\\n        <span>\\\\\\\\n          changed sponsorship currency from {originalValue} to {modifiedValue}\\\\\\\\n        </span>\\\\\\\\n      );\\\\\\\\n    case \\\\\\\\\\\\\\\"receiver_account\\\\\\\\\\\\\\\":\\\\\\\\n      return (\\\\\\\\n        <span className=\\\\\\\\\\\\\\\"inline-flex\\\\\\\\\\\\\\\">\\\\\\\\n          changed receiver account from{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n          <AccountProfile accountId={originalValue} />\\\\\\\\n          to <AccountProfile accountId={modifiedValue} />\\\\\\\\n        </span>\\\\\\\\n      );\\\\\\\\n    case \\\\\\\\\\\\\\\"supervisor\\\\\\\\\\\\\\\":\\\\\\\\n      return !originalValue && modifiedValue ? (\\\\\\\\n        <span className=\\\\\\\\\\\\\\\"inline-flex\\\\\\\\\\\\\\\">\\\\\\\\n          added\\\\\\\\n          <AccountProfile accountId={modifiedValue} />\\\\\\\\n          as supervisor\\\\\\\\n        </span>\\\\\\\\n      ) : (\\\\\\\\n        <span className=\\\\\\\\\\\\\\\"inline-flex\\\\\\\\\\\\\\\">\\\\\\\\n          changed receiver account from{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n          <AccountProfile accountId={originalValue} />\\\\\\\\n          to <AccountProfile accountId={modifiedValue} />\\\\\\\\n        </span>\\\\\\\\n      );\\\\\\\\n    case \\\\\\\\\\\\\\\"requested_sponsor\\\\\\\\\\\\\\\":\\\\\\\\n      return (\\\\\\\\n        <span className=\\\\\\\\\\\\\\\"inline-flex\\\\\\\\\\\\\\\">\\\\\\\\n          changed sponsor from <AccountProfile accountId={originalValue} />\\\\\\\\n          to <AccountProfile accountId={modifiedValue} />\\\\\\\\n        </span>\\\\\\\\n      );\\\\\\\\n    case \\\\\\\\\\\\\\\"timeline\\\\\\\\\\\\\\\": {\\\\\\\\n      const modifiedKeys = Object.keys(modifiedValue);\\\\\\\\n      const originalKeys = Object.keys(originalValue);\\\\\\\\n      return modifiedKeys.map((i, index) => {\\\\\\\\n        const text = parseTimelineKeyAndValue(i, originalValue, modifiedValue);\\\\\\\\n        return (\\\\\\\\n          text && (\\\\\\\\n            <span key={index} className=\\\\\\\\\\\\\\\"inline-flex\\\\\\\\\\\\\\\">\\\\\\\\n              {text}\\\\\\\\n              {text && \\\\\\\\\\\\\\\"\\\\\\\\u{ff65}\\\\\\\\\\\\\\\"}\\\\\\\\n            </span>\\\\\\\\n          )\\\\\\\\n        );\\\\\\\\n      });\\\\\\\\n    }\\\\\\\\n    default:\\\\\\\\n      return null;\\\\\\\\n  }\\\\\\\\n};\\\\\\\\n\\\\\\\\nconst LogIconContainer = styled.div`\\\\\\\\n  margin-left: 50px;\\\\\\\\n  z-index: 99;\\\\\\\\n\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    margin-left: 10px;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\n\\\\\\\\nconst Log = ({ timestamp }) => {\\\\\\\\n  const updatedData = useMemo(\\\\\\\\n    () =>\\\\\\\\n      state.changedKeysListWithValues.find((obj) =>\\\\\\\\n        Object.values(obj).some(\\\\\\\\n          (value) =>\\\\\\\\n            value && parseFloat(value.modifiedValue / 1e6) === timestamp\\\\\\\\n        )\\\\\\\\n      ),\\\\\\\\n    [state.changedKeysListWithValues, timestamp]\\\\\\\\n  );\\\\\\\\n\\\\\\\\n  const editorId = updatedData.editorId;\\\\\\\\n  const valuesArray = Object.values(updatedData ?? {});\\\\\\\\n  // if valuesArray length is 2 that means it only has timestamp and editorId\\\\\\\\n  if (!updatedData || valuesArray.length === 2) {\\\\\\\\n    return <></>;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  return valuesArray.map((i, index) => {\\\\\\\\n    if (i.key && i.key !== \\\\\\\\\\\\\\\"timestamp\\\\\\\\\\\\\\\" && i.key !== \\\\\\\\\\\\\\\"proposal_body_version\\\\\\\\\\\\\\\") {\\\\\\\\n      return (\\\\\\\\n        <LogIconContainer\\\\\\\\n          className=\\\\\\\\\\\\\\\"d-flex gap-3 align-items-center\\\\\\\\\\\\\\\"\\\\\\\\n          key={index}\\\\\\\\n        >\\\\\\\\n          <img\\\\\\\\n            src=\\\\\\\\\\\\\\\"https://ipfs.near.social/ipfs/bafkreiffqrxdi4xqu7erf46gdlwuodt6dm6rji2jtixs3iionjvga6rhdi\\\\\\\\\\\\\\\"\\\\\\\\n            height={30}\\\\\\\\n          />\\\\\\\\n          <div\\\\\\\\n            className={\\\\\\\\n              \\\\\\\\\\\\\\\"flex-1 gap-1 w-100 text-wrap text-muted align-items-center \\\\\\\\\\\\\\\" +\\\\\\\\n              (i.key === \\\\\\\\\\\\\\\"timeline\\\\\\\\\\\\\\\" &&\\\\\\\\n              Object.keys(i.originalValue ?? {}).length > 1\\\\\\\\n                ? \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n                : \\\\\\\\\\\\\\\"inline-flex\\\\\\\\\\\\\\\")\\\\\\\\n            }\\\\\\\\n          >\\\\\\\\n            <span className=\\\\\\\\\\\\\\\"inline-flex fw-bold text-black\\\\\\\\\\\\\\\">\\\\\\\\n              <AccountProfile accountId={editorId} showAccountId={true} />\\\\\\\\n            </span>\\\\\\\\n            {parseProposalKeyAndValue(i.key, i.modifiedValue, i.originalValue)}\\\\\\\\n            {i.key !== \\\\\\\\\\\\\\\"timeline\\\\\\\\\\\\\\\" && \\\\\\\\\\\\\\\"\\\\\\\\u{ff65}\\\\\\\\\\\\\\\"}\\\\\\\\n            <Widget\\\\\\\\n              src=\\\\\\\\\\\\\\\"near/widget/TimeAgo\\\\\\\\\\\\\\\"\\\\\\\\n              props={{\\\\\\\\n                blockTimestamp: timestamp * 1000000,\\\\\\\\n              }}\\\\\\\\n            />\\\\\\\\n          </div>\\\\\\\\n        </LogIconContainer>\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n  });\\\\\\\\n};\\\\\\\\n\\\\\\\\nif (Array.isArray(state.data)) {\\\\\\\\n  return (\\\\\\\\n    <Wrapper>\\\\\\\\n      <div\\\\\\\\n        className=\\\\\\\\\\\\\\\"log-line\\\\\\\\\\\\\\\"\\\\\\\\n        style={{ height: state.data.length > 2 ? \\\\\\\\\\\\\\\"110%\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"150%\\\\\\\\\\\\\\\" }}\\\\\\\\n      ></div>\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-4\\\\\\\\\\\\\\\">\\\\\\\\n        {state.data.map((i, index) => {\\\\\\\\n          if (i.blockHeight) {\\\\\\\\n            const item = state.socialComments.find(\\\\\\\\n              (t) => t.blockHeight === i.blockHeight\\\\\\\\n            );\\\\\\\\n            return <Comment commentItem={item} />;\\\\\\\\n          } else {\\\\\\\\n            return <Log timestamp={i.timestamp} key={index} />;\\\\\\\\n          }\\\\\\\\n        })}\\\\\\\\n      </div>\\\\\\\\n    </Wrapper>\\\\\\\\n  );\\\\\\\\n}\\\\\\\\n\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.326674002075e+21
+    }
+  },
+  {
+    "id": "5157509273",
+    "receipt_id": "BgQZKxRowEzVtPDAGWu4r79WRNqFXqJMFL7j2MYH3vsY",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "A4KyqqwsQUVAbyiKBWinoH8NhFGD6ghhjeVizbUgFBXL",
+      "block_height": 120015169,
+      "block_timestamp": 1717011898304213000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "BfWy42Pd5V1kzShSwYiAAX3ZWPomd5yh9Xn1BbAPoC81",
+    "included_in_block_hash": "BYewugrhAXDuir5BwVbEL6WQByHFy1BTgCpGiQvNA1Wi",
+    "block_timestamp": "1717011895649451784",
+    "block": {
+      "block_height": 120015167
+    },
+    "receipt_conversion_tokens_burnt": "39527210567000000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.868344896551173e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.326674002075e+21
+    }
+  },
+  {
+    "id": "5157537581",
+    "receipt_id": "J37auqcx4Vo1cL11FJQiyhRMg75Q2NhpHjekVvK6BiCH",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2cuGdVoBQC8ec2LYq8A1VH6zcG85Vt8rp1ogga8zUsbQ",
+      "block_height": 120015225,
+      "block_timestamp": 1717011964947378400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4635761048471,
+      "tokens_burnt": 463576104847100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "vftf2XbX8xVNgPdEnzecMffbx3EyzNMfFjc9V5TURUn",
+    "included_in_block_hash": "54VgQXvbpecwURKs52F7SbQBPHh591QiXPfjEJZ59zm6",
+    "block_timestamp": "1717011963838443118",
+    "block": {
+      "block_height": 120015224
+    },
+    "receipt_conversion_tokens_burnt": "30881748162600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 463576104847100000000,
+        "args": "{\"id\": 52, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"https://nearblocks.io/txns/4FymLvxj6T1t1MqiubVBL6wFbfVMtDSTkWD8DwysmvWJ\"], \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": false, \"trustees_released_payment\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 852201115063200000000
+    }
+  },
+  {
+    "id": "5157537897",
+    "receipt_id": "CHQAoGpgL8KWUPHLVkrsu896kH1vPWNFckZvo6JkXWUr",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HN4myQE9wwWK3mWo63J7aVJmLsRC1GzbmTZZpNTegtxG",
+      "block_height": 120015226,
+      "block_timestamp": 1717011966007410000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3577432620535,
+      "tokens_burnt": 357743262053500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "vftf2XbX8xVNgPdEnzecMffbx3EyzNMfFjc9V5TURUn",
+    "included_in_block_hash": "54VgQXvbpecwURKs52F7SbQBPHh591QiXPfjEJZ59zm6",
+    "block_timestamp": "1717011963838443118",
+    "block": {
+      "block_height": 120015224
+    },
+    "receipt_conversion_tokens_burnt": "30881748162600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357743262053500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"malbec.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":52,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 852201115063200000000
+    }
+  },
+  {
+    "id": "5157640782",
+    "receipt_id": "476QCZR314XV6ycGvAnTHNbMJkLg37Linzg1z6p5PKgW",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GZ5ujHMMSS6eD7npJFJ25k5zjXfKQVqvrSYhnQGpucEw",
+      "block_height": 120015411,
+      "block_timestamp": 1717012203934484200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5119943675201,
+      "tokens_burnt": 511994367520100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "HxK8QLnvFYnpDf4opbMrorVFz2etrdnRTtVVyVPhHvy8",
+    "included_in_block_hash": "BNhWkHmtyf4zygBbhCLmmgkw5zViNjwNzZCJP1KoXrWb",
+    "block_timestamp": "1717012202661609324",
+    "block": {
+      "block_height": 120015410
+    },
+    "receipt_conversion_tokens_burnt": "30881748162600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 511994367520100000000,
+        "args": "{\"id\": 56, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"https://nearblocks.io/txns/Hx6izo2bsNKhyrBvYC8PD2Y9weyEKMqx7i4yVdi8qL1m\"], \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": false, \"trustees_released_payment\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 891956806434600000000
+    }
+  }
+]

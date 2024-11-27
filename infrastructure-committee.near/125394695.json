@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "7295546163",
+    "receipt_id": "B7cPLKX9dirFC9XZXR2dvhJ4pqJqUXuWk7BkB5Ummung",
+    "predecessor_account_id": "megha19.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9SPT1nv4MkgMMvFXX5DKLrK1sbZV47gzuAZFk5gnDvBg",
+      "block_height": 125396843,
+      "block_timestamp": 1723224884969754000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3356521742423,
+      "tokens_burnt": 335652174242300000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "FAbCmvmZh5fJuF7vm1UrRDpmZqSog4yimoWU2Pt56A8m",
+    "included_in_block_hash": "HKLDKgDi7ZG6S9DMHSRS69CEp8H52NoVxsH94qGW55yb",
+    "block_timestamp": "1723224883603749327",
+    "block": {
+      "block_height": 125396842
+    },
+    "receipt_conversion_tokens_burnt": "32238289320400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_social_db_profile_description",
+        "deposit": 0,
+        "fee": 335652174242300000000,
+        "args": "{\"description\": \"## Introduction\\\\\\\\n\\\\\\\\nThe long-term vision for NEAR is for ecosystem and infrastructure development efforts to be fully decentralized and community-led.  Until then, some of that work comes through the [NEAR Foundation](https://near.foundation/).  The NEAR Foundation has appointed and endowed the **NEAR Infrastructure Committee** with a mission to improve and maintain the underlying infrastructure so developers can build successful applications on NEAR.\\\\\\\\n\\\\\\\\nThe Committee consists of various leaders across the NEAR ecosystem.  Its work involves proposing improvements for the NEAR ecosystem via RFPs, considering and voting on community proposals, and getting funds to teams when a proposal is approved.\\\\\\\\n\\\\\\\\nThe GitHub Wiki provides information about the [Infrastructure Committee](https://github.com/near/Infrastructure-Working-Group/wiki/Infrastructure-Committee) (IC) and the [Working Group](https://github.com/near/Infrastructure-Working-Group/wiki/Infrastructure-Working-Group) (WG), including current members.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Process Summary\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nThe Committee actively seeks proposals from partners like you to enhance, upgrade, and fortify NEAR ecosystem infrastructure. To this end, the Committee will draft several Requests For Proposals (RFPs) that outline new ideas to tackle, urgent problems to solve, or highly desired projects. We encourage you to submit proposals in response to an RFP or standalone, as your contributions and innovations are crucial to our collective success.\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nGenerally, the process proceeds as follows;\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\n\\\\\\\\n1. You draft the proposal. Working Group and Committee members are free to review and offer suggestions.\\\\\\\\n2. Once everyone feels the proposal is ready, it moves to voting. The committee votes asynchronously and in regular committee meetings. A proposal is approved if it receives a majority vote from the Committee members.\\\\\\\\n3. In the event of a rejection, you will be informed by an IC or WG member, usually via the Telegram group established. Guidance may be offered on how to update the proposal for resubmission.\\\\\\\\n4. If your proposal is approved, you will move into the Funding Pipeline. You (or your company) will complete the KYC/B process, which involves providing your personal or company information for verification purposes. Next will be a legal working agreement, and finally, a test transaction will be conducted to ensure the target wallet address is correct.\\\\\\\\n5. Project Management: we encourage awarded teams to create a project on our [Github repo](https://github.com/near/Infrastructure-Working-Group) where the community tracks progress on our [Github project](https://github.com/orgs/near/projects/133/views/6). Sharing project status gives the community and ecosystem leaders visibility into the status of awarded projects.\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\n### Important Links\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nThe following links contain specific information about the processes of responding to RFPs, submitting a proposal, voting, securing funds, and managing the subsequent project for transparency. Please note that the working group will update articles as processes change. We appreciate your patience and understanding.\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\n#### [RFPs](https://github.com/near/Infrastructure-Working-Group/wiki/Request-For-Proposals)\\\\\\\\n\\\\\\\\n\\\\\\\\n#### [Submitting a Proposal](https://github.com/near/Infrastructure-Working-Group/wiki/Proposal-Process-%E2%80%90-Team)\\\\\\\\n\\\\\\\\n\\\\\\\\n#### [Voting](https://github.com/near/Infrastructure-Working-Group/wiki/Proposal-Process-%E2%80%90-Team#5-voting-on-proposals)\\\\\\\\n\\\\\\\\n\\\\\\\\n#### [Getting Funds](https://github.com/near/Infrastructure-Working-Group/wiki/Funding-Process-%E2%80%90-Company)\\\\\\\\n\\\\\\\\n\\\\\\\\n#### [Managing The Project](https://github.com/near/Infrastructure-Working-Group/wiki/Projects-&-Tasks)\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\n### Areas Of Interest\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nThe Infrastructure Committee will consider any proposal that helps make the NEAR ecosystem a more compelling place for web3 builders and users.  That includes, but is not limited to, these key areas:\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\n* Protocol Development\\\\\\\\n* Contract and Token Standards\\\\\\\\n* Wallets\\\\\\\\n* Oracles\\\\\\\\n* Bridges\\\\\\\\n* Onramps / Offramps\\\\\\\\n* Relayers\\\\\\\\n* Explorers\\\\\\\\n* Indexers\\\\\\\\n* Data Lakes\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\n### Proposal Markup\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nPlease use the following markup templates when submitting the body of your proposal.\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nProposal: [https://docs.google.com/document/d/1UZRfOE1JAOhsnSmp-RmL2hY7KPJbpBImKZVvPV4YJmA/edit?usp=sharing](https://docs.google.com/document/d/1UZRfOE1JAOhsnSmp-RmL2hY7KPJbpBImKZVvPV4YJmA/edit?usp=sharing)\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\n### Evaluation Criteria\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nThe Committee intentionally does not publish strict evaluation criteria for proposals and does not publish their meeting notes.  This subjective approach helps us be honest, decisive, and unrestrained in our ability to effect change in the NEAR ecosystem.  All RFPs, proposals, committee decisions, and funding allocations are published for community transparency and accountability.\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nThat said, the Committee greatly appreciates proposals that:\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\n* Add new capabilities to the NEAR ecosystem\\\\\\\\n* Fill in gaps or address challenges faced by NEAR builders and users\\\\\\\\n* Bring new developers or users into the NEAR ecosystem\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nGenerally speaking, the Committee believes infrastructure providers in the NEAR ecosystem should be economically self-sustaining, with a business model that does not rely on continuous grants from the Committee or other funding bodies.  For instance, we have rejected proposals from RPC providers to fund all setup and operation of RPC nodes so that developers would get free access to RPC services.  But we are open to alternate arrangements, such as loans to help cover initial setup costs and grants in exchange for service credits we (or the NEAR Foundation) can distribute to NEAR builders.\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nWe are also eager to fund projects that benefit the ecosystem but have no direct revenue potential, such as open-source libraries.\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nOften, a blockchain business involves creating some new open-source specification or protocol and then building a for-profit business on top of that protocol.  We are open to funding that effort\\\\\\\\\\\\'s \\\\\\\\u{201c}protocol\\\\\\\\u{201d} portion to help get your NEAR ecosystem business off the ground.\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\n### Important Announcements\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nImportant policy or procedure changes, notices, and urgent communications.\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\n[Regular Quarterly Wallet Support - Policy](https://github.com/near/Infrastructure-Working-Group/discussions/134)\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 828515858064200000000
+    }
+  },
+  {
+    "id": "7295546295",
+    "receipt_id": "4qytxoK4NqtJX6PTXnEavEoEjvTR2MFX31pUp8twFniZ",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2Nunoea5bZTkV16c5zAQgHKK4A1bpUvCJwV5k3knabH6",
+      "block_height": 125396844,
+      "block_timestamp": 1723224886271073500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4606253945015,
+      "tokens_burnt": 460625394501500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "FAbCmvmZh5fJuF7vm1UrRDpmZqSog4yimoWU2Pt56A8m",
+    "included_in_block_hash": "HKLDKgDi7ZG6S9DMHSRS69CEp8H52NoVxsH94qGW55yb",
+    "block_timestamp": "1723224883603749327",
+    "block": {
+      "block_height": 125396842
+    },
+    "receipt_conversion_tokens_burnt": "32238289320400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 460625394501500000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"profile\": {\"description\": \"## Introduction\\\\\\\\n\\\\\\\\nThe long-term vision for NEAR is for ecosystem and infrastructure development efforts to be fully decentralized and community-led.  Until then, some of that work comes through the [NEAR Foundation](https://near.foundation/).  The NEAR Foundation has appointed and endowed the **NEAR Infrastructure Committee** with a mission to improve and maintain the underlying infrastructure so developers can build successful applications on NEAR.\\\\\\\\n\\\\\\\\nThe Committee consists of various leaders across the NEAR ecosystem.  Its work involves proposing improvements for the NEAR ecosystem via RFPs, considering and voting on community proposals, and getting funds to teams when a proposal is approved.\\\\\\\\n\\\\\\\\nThe GitHub Wiki provides information about the [Infrastructure Committee](https://github.com/near/Infrastructure-Working-Group/wiki/Infrastructure-Committee) (IC) and the [Working Group](https://github.com/near/Infrastructure-Working-Group/wiki/Infrastructure-Working-Group) (WG), including current members.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Process Summary\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nThe Committee actively seeks proposals from partners like you to enhance, upgrade, and fortify NEAR ecosystem infrastructure. To this end, the Committee will draft several Requests For Proposals (RFPs) that outline new ideas to tackle, urgent problems to solve, or highly desired projects. We encourage you to submit proposals in response to an RFP or standalone, as your contributions and innovations are crucial to our collective success.\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nGenerally, the process proceeds as follows;\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\n\\\\\\\\n1. You draft the proposal. Working Group and Committee members are free to review and offer suggestions.\\\\\\\\n2. Once everyone feels the proposal is ready, it moves to voting. The committee votes asynchronously and in regular committee meetings. A proposal is approved if it receives a majority vote from the Committee members.\\\\\\\\n3. In the event of a rejection, you will be informed by an IC or WG member, usually via the Telegram group established. Guidance may be offered on how to update the proposal for resubmission.\\\\\\\\n4. If your proposal is approved, you will move into the Funding Pipeline. You (or your company) will complete the KYC/B process, which involves providing your personal or company information for verification purposes. Next will be a legal working agreement, and finally, a test transaction will be conducted to ensure the target wallet address is correct.\\\\\\\\n5. Project Management: we encourage awarded teams to create a project on our [Github repo](https://github.com/near/Infrastructure-Working-Group) where the community tracks progress on our [Github project](https://github.com/orgs/near/projects/133/views/6). Sharing project status gives the community and ecosystem leaders visibility into the status of awarded projects.\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\n### Important Links\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nThe following links contain specific information about the processes of responding to RFPs, submitting a proposal, voting, securing funds, and managing the subsequent project for transparency. Please note that the working group will update articles as processes change. We appreciate your patience and understanding.\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\n#### [RFPs](https://github.com/near/Infrastructure-Working-Group/wiki/Request-For-Proposals)\\\\\\\\n\\\\\\\\n\\\\\\\\n#### [Submitting a Proposal](https://github.com/near/Infrastructure-Working-Group/wiki/Proposal-Process-%E2%80%90-Team)\\\\\\\\n\\\\\\\\n\\\\\\\\n#### [Voting](https://github.com/near/Infrastructure-Working-Group/wiki/Proposal-Process-%E2%80%90-Team#5-voting-on-proposals)\\\\\\\\n\\\\\\\\n\\\\\\\\n#### [Getting Funds](https://github.com/near/Infrastructure-Working-Group/wiki/Funding-Process-%E2%80%90-Company)\\\\\\\\n\\\\\\\\n\\\\\\\\n#### [Managing The Project](https://github.com/near/Infrastructure-Working-Group/wiki/Projects-&-Tasks)\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\n### Areas Of Interest\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nThe Infrastructure Committee will consider any proposal that helps make the NEAR ecosystem a more compelling place for web3 builders and users.  That includes, but is not limited to, these key areas:\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\n* Protocol Development\\\\\\\\n* Contract and Token Standards\\\\\\\\n* Wallets\\\\\\\\n* Oracles\\\\\\\\n* Bridges\\\\\\\\n* Onramps / Offramps\\\\\\\\n* Relayers\\\\\\\\n* Explorers\\\\\\\\n* Indexers\\\\\\\\n* Data Lakes\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\n### Proposal Markup\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nPlease use the following markup templates when submitting the body of your proposal.\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nProposal: [https://docs.google.com/document/d/1UZRfOE1JAOhsnSmp-RmL2hY7KPJbpBImKZVvPV4YJmA/edit?usp=sharing](https://docs.google.com/document/d/1UZRfOE1JAOhsnSmp-RmL2hY7KPJbpBImKZVvPV4YJmA/edit?usp=sharing)\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\n### Evaluation Criteria\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nThe Committee intentionally does not publish strict evaluation criteria for proposals and does not publish their meeting notes.  This subjective approach helps us be honest, decisive, and unrestrained in our ability to effect change in the NEAR ecosystem.  All RFPs, proposals, committee decisions, and funding allocations are published for community transparency and accountability.\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nThat said, the Committee greatly appreciates proposals that:\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\n* Add new capabilities to the NEAR ecosystem\\\\\\\\n* Fill in gaps or address challenges faced by NEAR builders and users\\\\\\\\n* Bring new developers or users into the NEAR ecosystem\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nGenerally speaking, the Committee believes infrastructure providers in the NEAR ecosystem should be economically self-sustaining, with a business model that does not rely on continuous grants from the Committee or other funding bodies.  For instance, we have rejected proposals from RPC providers to fund all setup and operation of RPC nodes so that developers would get free access to RPC services.  But we are open to alternate arrangements, such as loans to help cover initial setup costs and grants in exchange for service credits we (or the NEAR Foundation) can distribute to NEAR builders.\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nWe are also eager to fund projects that benefit the ecosystem but have no direct revenue potential, such as open-source libraries.\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nOften, a blockchain business involves creating some new open-source specification or protocol and then building a for-profit business on top of that protocol.  We are open to funding that effort\\\\\\\\\\\\'s \\\\\\\\u{201c}protocol\\\\\\\\u{201d} portion to help get your NEAR ecosystem business off the ground.\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\n### Important Announcements\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\nImportant policy or procedure changes, notices, and urgent communications.\\\\\\\\n\\\\\\\\\\\\\\\\\\\\\\\\n[Regular Quarterly Wallet Support - Policy](https://github.com/near/Infrastructure-Working-Group/discussions/134)\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 828515858064200000000
+    }
+  },
+  {
+    "id": "7296324426",
+    "receipt_id": "5F48UGKsiMaUBV67RFMNaqMQRHJVHiNDJXcUFcrAQsV5",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5XLVtyJ9NP5PnLctKNYtx7efbjs72eU7y5efEa4kADAA",
+      "block_height": 125398845,
+      "block_timestamp": 1723227377890674000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 10250178788363,
+      "tokens_burnt": 1.0250178788363e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DbSGfPSrX95NqkEqQ8DnR1By7ENwfF1QBGg2MtLeVbLv",
+    "included_in_block_hash": "3jhKjUEYBnMMUV3NzUiERpqURbcQ1P2EiJBt8eNj6cvd",
+    "block_timestamp": "1723227376881644451",
+    "block": {
+      "block_height": 125398844
+    },
+    "receipt_conversion_tokens_burnt": "32093624390600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.0250178788363e+21,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"widget\": {\"app\": {\"\": \"/**\\\\\\\\n * This is the main entry point for the RFP application.\\\\\\\\n * Page route gets passed in through params, along with all other page props.\\\\\\\\n */\\\\\\\\nconst { page, ...passProps } = props;\\\\\\\\n// Import our modules\\\\\\\\nconst { AppLayout } = VM.require(\\\\\\\\n  `infrastructure-committee.near/widget/components.template.AppLayout`\\\\\\\\n);\\\\\\\\nconst { Theme } = VM.require(\\\\\\\\n  `infrastructure-committee.near/widget/config.theme`\\\\\\\\n);\\\\\\\\nconst { CssContainer } = VM.require(\\\\\\\\n  `infrastructure-committee.near/widget/config.css`\\\\\\\\n);\\\\\\\\nif (!AppLayout || !Theme || !CssContainer) {\\\\\\\\n  return <p>Loading modules...</p>;\\\\\\\\n}\\\\\\\\nif (!page) {\\\\\\\\n  // If no page is specified, we default to the feed page TEMP\\\\\\\\n  page = \\\\\\\\\\\\\\\"about\\\\\\\\\\\\\\\";\\\\\\\\n}\\\\\\\\n// This is our navigation, rendering the page based on the page parameter\\\\\\\\nfunction Page() {\\\\\\\\n  const routes = page.split(\\\\\\\\\\\\\\\".\\\\\\\\\\\\\\\");\\\\\\\\n  switch (routes[0]) {\\\\\\\\n    case \\\\\\\\\\\\\\\"about\\\\\\\\\\\\\\\": {\\\\\\\\n      return (\\\\\\\\n        <Widget\\\\\\\\n          src={`infrastructure-committee.near/widget/components.pages.about`}\\\\\\\\n          props={passProps}\\\\\\\\n        />\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n    case \\\\\\\\\\\\\\\"rfps\\\\\\\\\\\\\\\": {\\\\\\\\n      return (\\\\\\\\n        <Widget\\\\\\\\n          src={`infrastructure-committee.near/widget/components.rfps.Feed`}\\\\\\\\n          props={passProps}\\\\\\\\n        />\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n    case \\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\": {\\\\\\\\n      return (\\\\\\\\n        <Widget\\\\\\\\n          src={`infrastructure-committee.near/widget/components.rfps.Rfp`}\\\\\\\\n          props={passProps}\\\\\\\\n        />\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n    case \\\\\\\\\\\\\\\"create-rfp\\\\\\\\\\\\\\\": {\\\\\\\\n      return (\\\\\\\\n        <Widget\\\\\\\\n          src={`infrastructure-committee.near/widget/components.rfps.Editor`}\\\\\\\\n          props={passProps}\\\\\\\\n        />\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n    case \\\\\\\\\\\\\\\"create-proposal\\\\\\\\\\\\\\\": {\\\\\\\\n      return (\\\\\\\\n        <Widget\\\\\\\\n          src={`infrastructure-committee.near/widget/components.proposals.Editor`}\\\\\\\\n          props={{ ...passProps }}\\\\\\\\n        />\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n    case \\\\\\\\\\\\\\\"proposals\\\\\\\\\\\\\\\": {\\\\\\\\n      return (\\\\\\\\n        <Widget\\\\\\\\n          src={`infrastructure-committee.near/widget/components.proposals.Proposals`}\\\\\\\\n          props={passProps}\\\\\\\\n        />\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n    case \\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\": {\\\\\\\\n      return (\\\\\\\\n        <Widget\\\\\\\\n          src={`infrastructure-committee.near/widget/components.proposals.Proposal`}\\\\\\\\n          props={passProps}\\\\\\\\n        />\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n    case \\\\\\\\\\\\\\\"about\\\\\\\\\\\\\\\": {\\\\\\\\n      return (\\\\\\\\n        <Widget\\\\\\\\n          src={`infrastructure-committee.near/widget/components.pages.about`}\\\\\\\\n          props={passProps}\\\\\\\\n        />\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n    case \\\\\\\\\\\\\\\"admin\\\\\\\\\\\\\\\": {\\\\\\\\n      return (\\\\\\\\n        <Widget\\\\\\\\n          src={`infrastructure-committee.near/widget/components.pages.admin`}\\\\\\\\n          props={passProps}\\\\\\\\n        />\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n    default: {\\\\\\\\n      // TODO: 404 page\\\\\\\\n      return <p>404</p>;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n}\\\\\\\\nreturn (\\\\\\\\n  <Theme>\\\\\\\\n    <CssContainer>\\\\\\\\n      <AppLayout page={page}>\\\\\\\\n        <Page />\\\\\\\\n      </AppLayout>\\\\\\\\n    </CssContainer>\\\\\\\\n  </Theme>\\\\\\\\n);\\\\\\\\n\"}, \"config.css\": {\"\": \"const CssContainer = styled.div`\\\\\\\\n  .theme-btn {\\\\\\\\n    background-color: var(--theme-color) !important;\\\\\\\\n    border: none;\\\\\\\\n    color: white;\\\\\\\\n    &:active {\\\\\\\\n      color: white;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  a {\\\\\\\\n    color: inherit;\\\\\\\\n  }\\\\\\\\n  .bg-blue {\\\\\\\\n    background-image: linear-gradient(to bottom, #4b7a93, #213236);\\\\\\\\n    color: white;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\nreturn { CssContainer };\\\\\\\\n\"}, \"config.data\": {\"\": \"const { getGlobalLabels } = VM.require(\\\\\\\\n  `infrastructure-committee.near/widget/components.core.lib.contract`\\\\\\\\n) || { getGlobalLabels: () => {} };\\\\\\\\nconst proposalFeedAnnouncement = (\\\\\\\\n  <div className=\\\\\\\\\\\\\\\"bg-blue text-sm mt-2 p-3 rounded-3\\\\\\\\\\\\\\\">\\\\\\\\n    <p className=\\\\\\\\\\\\\\\"d-flex gap-3 align-items-center mb-0\\\\\\\\\\\\\\\">\\\\\\\\n      <div>\\\\\\\\n        <i className=\\\\\\\\\\\\\\\"bi bi-info-circle\\\\\\\\\\\\\\\"></i>\\\\\\\\n      </div>\\\\\\\\n      <div>\\\\\\\\n        <span className=\\\\\\\\\\\\\\\"fw-bold\\\\\\\\\\\\\\\">\\\\\\\\n          Welcome to the Infrastructure Committee Proposal Feed!\\\\\\\\n        </span>\\\\\\\\n        This dedicated space makes it easy to submit and track funding proposals\\\\\\\\n        from the Infrastructure Committee, the primary organization overseeing\\\\\\\\n        improvements pertaining to wallets, indexers, RPC services, explorers,\\\\\\\\n        oracles, bridges, NEAR Protocol features, and related ecosystem\\\\\\\\n        upgrades. You are welcome to respond to any RFPs that are accepting\\\\\\\\n        submissions or submit an independent proposal.\\\\\\\\n      </div>\\\\\\\\n    </p>\\\\\\\\n  </div>\\\\\\\\n);\\\\\\\\nconst categoryOptions = [\\\\\\\\n  {\\\\\\\\n    title: \\\\\\\\\\\\\\\"DevDAO Operations\\\\\\\\\\\\\\\",\\\\\\\\n    value: \\\\\\\\\\\\\\\"DevDAO Operations\\\\\\\\\\\\\\\",\\\\\\\\n  },\\\\\\\\n  {\\\\\\\\n    title: \\\\\\\\\\\\\\\"DevDAO Platform\\\\\\\\\\\\\\\",\\\\\\\\n    value: \\\\\\\\\\\\\\\"DevDAO Platform\\\\\\\\\\\\\\\",\\\\\\\\n  },\\\\\\\\n  {\\\\\\\\n    title: \\\\\\\\\\\\\\\"Events & Hackathons\\\\\\\\\\\\\\\",\\\\\\\\n    value: \\\\\\\\\\\\\\\"Events & Hackathons\\\\\\\\\\\\\\\",\\\\\\\\n  },\\\\\\\\n  {\\\\\\\\n    title: \\\\\\\\\\\\\\\"Engagement & Awareness\\\\\\\\\\\\\\\",\\\\\\\\n    value: \\\\\\\\\\\\\\\"Engagement & Awareness\\\\\\\\\\\\\\\",\\\\\\\\n  },\\\\\\\\n  {\\\\\\\\n    title: \\\\\\\\\\\\\\\"Decentralized DevRel\\\\\\\\\\\\\\\",\\\\\\\\n    value: \\\\\\\\\\\\\\\"Decentralized DevRel\\\\\\\\\\\\\\\",\\\\\\\\n  },\\\\\\\\n  {\\\\\\\\n    title: \\\\\\\\\\\\\\\"Universities & Bootcamps\\\\\\\\\\\\\\\",\\\\\\\\n    value: \\\\\\\\\\\\\\\"Universities & Bootcamps\\\\\\\\\\\\\\\",\\\\\\\\n  },\\\\\\\\n  {\\\\\\\\n    title: \\\\\\\\\\\\\\\"Tooling & Infrastructure\\\\\\\\\\\\\\\",\\\\\\\\n    value: \\\\\\\\\\\\\\\"Tooling & Infrastructure\\\\\\\\\\\\\\\",\\\\\\\\n  },\\\\\\\\n  {\\\\\\\\n    title: \\\\\\\\\\\\\\\"Other\\\\\\\\\\\\\\\",\\\\\\\\n    value: \\\\\\\\\\\\\\\"Other\\\\\\\\\\\\\\\",\\\\\\\\n  },\\\\\\\\n];\\\\\\\\nreturn {\\\\\\\\n  contract: \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n  proposalFeedIndexerQueryName:\\\\\\\\n    \\\\\\\\\\\\\\\"polyprogrammist_near_devhub_ic_v1_proposals_with_latest_snapshot\\\\\\\\\\\\\\\",\\\\\\\\n  rfpFeedIndexerQueryName:\\\\\\\\n    \\\\\\\\\\\\\\\"polyprogrammist_near_devhub_ic_v1_rfps_with_latest_snapshot\\\\\\\\\\\\\\\",\\\\\\\\n  indexerHasuraRole: \\\\\\\\\\\\\\\"polyprogrammist_near\\\\\\\\\\\\\\\",\\\\\\\\n  isInfra: true,\\\\\\\\n  proposalFeedAnnouncement,\\\\\\\\n  aavailableCategoryOptions: getGlobalLabels(),\\\\\\\\n};\\\\\\\\n\"}, \"config.theme\": {\"\": \"const Theme = styled.div`\\\\\\\\n  --theme-color: rgb(60, 105, 125);\\\\\\\\n`;\\\\\\\\nreturn { Theme };\\\\\\\\n\"}, \"components.proposals.Proposals\": {\"\": \"return (\\\\\\\\n  <Widget\\\\\\\\n    src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.Feed\\\\\\\\\\\\\\\"}\\\\\\\\n    props={{\\\\\\\\n      instance: \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n    }}\\\\\\\\n  />\\\\\\\\n);\\\\\\\\n\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0571115032269e+21
+    }
+  },
+  {
+    "id": "7296324881",
+    "receipt_id": "vkndTpmW67dX16g2AAMoHzCX6zNDSDfsvqLzysPYEsg",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5GS8Knkkvt6eRM5sF378Frk9Xy4nDeedfoaGcoULWixy",
+      "block_height": 125398846,
+      "block_timestamp": 1723227378816051500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "DbSGfPSrX95NqkEqQ8DnR1By7ENwfF1QBGg2MtLeVbLv",
+    "included_in_block_hash": "3jhKjUEYBnMMUV3NzUiERpqURbcQ1P2EiJBt8eNj6cvd",
+    "block_timestamp": "1723227376881644451",
+    "block": {
+      "block_height": 125398844
+    },
+    "receipt_conversion_tokens_burnt": "32093624390600000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.870501556678176e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0571115032269e+21
+    }
+  },
+  {
+    "id": "7304104778",
+    "receipt_id": "4nBN1ntX8adXHXY8r383hUxzw3vhc8oeBanELGVDeJkC",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7Pxuwd2UQhXKzrgr9gKfnvAjUTAb7sBKdi972ftqksqo",
+      "block_height": 125423254,
+      "block_timestamp": 1723254417945750300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9424629279370,
+      "tokens_burnt": 942462927937000000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "EHgCqKiLWktbetevTs4QaKUdRkHZtYpW1AiJo1qxtKd2",
+    "included_in_block_hash": "EnhnCnJCxozVrDren5X6XMQbsdb9XhnGB3sVgDxzWEmD",
+    "block_timestamp": "1723254416929374110",
+    "block": {
+      "block_height": 125423253
+    },
+    "receipt_conversion_tokens_burnt": "30867885371800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 942462927937000000000,
+        "args": "{\"id\": 4, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"Bank Payment\"], \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"trustees_released_payment\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3317904476765e+21
+    }
+  },
+  {
+    "id": "7304105019",
+    "receipt_id": "FoGgrbHEF7f1aSNhyh1Neo665xU2UrTmbx59yc3AHB8c",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "JDR9qawj1APdKR8tegYLSxTyMREeRV5bhnr3PgQmNksX",
+      "block_height": 125423255,
+      "block_timestamp": 1723254419015110400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3584596343677,
+      "tokens_burnt": 358459634367700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "EHgCqKiLWktbetevTs4QaKUdRkHZtYpW1AiJo1qxtKd2",
+    "included_in_block_hash": "EnhnCnJCxozVrDren5X6XMQbsdb9XhnGB3sVgDxzWEmD",
+    "block_timestamp": "1723254416929374110",
+    "block": {
+      "block_height": 125423253
+    },
+    "receipt_conversion_tokens_burnt": "30867885371800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 358459634367700000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"nearblocks_io.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":4,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3317904476765e+21
+    }
+  },
+  {
+    "id": "7304116059",
+    "receipt_id": "Hx1h53a5UdY8ypHXZEhVfSZ6NuJRdmiUoKuSE8czWDf1",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EYMr5twb1BYSox7SkR3LECtrrXNHJDZdYHthirHXtRyj",
+      "block_height": 125423312,
+      "block_timestamp": 1723254478673791000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7162264656501,
+      "tokens_burnt": 716226465650100000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "4JZB9w1o1As4cDmR9YMKU4Y6qMTP6kbZ7s6SDAVjrjiX",
+    "included_in_block_hash": "D6XEdbq8E1cvJUC9qHZtyzgb45nDgRQrwYFPik3saUUU",
+    "block_timestamp": "1723254477655442975",
+    "block": {
+      "block_height": 125423311
+    },
+    "receipt_conversion_tokens_burnt": "30858047262200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 716226465650100000000,
+        "args": "{\"id\": 7, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": false, \"test_transaction_sent\": false, \"sponsor_requested_review\": false, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1044500340096e+21
+    }
+  },
+  {
+    "id": "7304116237",
+    "receipt_id": "FVL8KgKFvqwF8XtJmaZkYniW9rqUj9dRbLzJWc9yPSt8",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "232dLWJBxz5kXD9iZk6tcY8SbvxogTTKATYMDXiiaYAM",
+      "block_height": 125423313,
+      "block_timestamp": 1723254479673941200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3573655210973,
+      "tokens_burnt": 357365521097300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4JZB9w1o1As4cDmR9YMKU4Y6qMTP6kbZ7s6SDAVjrjiX",
+    "included_in_block_hash": "D6XEdbq8E1cvJUC9qHZtyzgb45nDgRQrwYFPik3saUUU",
+    "block_timestamp": "1723254477655442975",
+    "block": {
+      "block_height": 125423311
+    },
+    "receipt_conversion_tokens_burnt": "30858047262200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357365521097300000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"stillemail8340.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":7,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1044500340096e+21
+    }
+  },
+  {
+    "id": "7304122354",
+    "receipt_id": "2jwdEdoJnej3U9qAR13TX5Mgh2kNKeJcjz9DE2wwy5uU",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "ENqS9nAyFcPimzQHPLugYtSAniwQSE1NVRQSEViu8LJ5",
+      "block_height": 125423343,
+      "block_timestamp": 1723254510146076700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 12278292136416,
+      "tokens_burnt": 1.2278292136416e+21,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "FnSQ8NXTer1rzFyXbHrXWyoYvamPi3SX9r7Hqvrf9itk",
+    "included_in_block_hash": "63XVrhWmwXpBN7UYYPNRW18hqZjheBJQA2bEoHREYNy6",
+    "block_timestamp": "1723254509141295983",
+    "block": {
+      "block_height": 125423342
+    },
+    "receipt_conversion_tokens_burnt": "30858047262200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 1.2278292136416e+21,
+        "args": "{\"id\": 6, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": false, \"test_transaction_sent\": false, \"sponsor_requested_review\": false, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6108857642271e+21
+    }
+  },
+  {
+    "id": "7304122622",
+    "receipt_id": "Cgc2pWheCqAq9nhuHVbahkGWXvMGtXBzsT5162Ux9ySg",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3TqoPJSwCKZ12Hn8Cy3eZcvvuwygbFBu9SGKYQHoXKnU",
+      "block_height": 125423344,
+      "block_timestamp": 1723254511081252600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3521985033233,
+      "tokens_burnt": 352198503323300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "FnSQ8NXTer1rzFyXbHrXWyoYvamPi3SX9r7Hqvrf9itk",
+    "included_in_block_hash": "63XVrhWmwXpBN7UYYPNRW18hqZjheBJQA2bEoHREYNy6",
+    "block_timestamp": "1723254509141295983",
+    "block": {
+      "block_height": 125423342
+    },
+    "receipt_conversion_tokens_burnt": "30858047262200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352198503323300000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"f63d2dbe387b41b94499ccf4d14c49d3b0e1316744dc98a2c3e0cf2c23710ecf\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":6,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6108857642271e+21
+    }
+  },
+  {
+    "id": "7354031551",
+    "receipt_id": "98yXGFLdJfQ6Kik4nJAs1AhRcRCtrrVrB3D4m6yuPJVN",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7Dxk32uuvvhJvbyWRRWNN5CoLXYhBd5EB6wVWYjCfxiU",
+      "block_height": 125602583,
+      "block_timestamp": 1723452699912616700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5861858861668,
+      "tokens_burnt": 586185886166800000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7aGgj17hFLRAgCZgeUQhot7Z511adG9FJJ9KHfcRrhuv",
+    "included_in_block_hash": "8r48sqG4DzwuavQutxosXC7Qbyh1VXnzbfkxuZYU8vHh",
+    "block_timestamp": "1723452698833683245",
+    "block": {
+      "block_height": 125602582
+    },
+    "receipt_conversion_tokens_burnt": "32104804060600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 586185886166800000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"widget\": {\"components.pages.about\": {\"\": \"const profile = Social.getr(`infrastructure-committee.near/profile`, \\\\\\\\\\\\\\\"final\\\\\\\\\\\\\\\", {\\\\\\\\n  subscribe: true,\\\\\\\\n});\\\\\\\\nif (!profile) {\\\\\\\\n  <div\\\\\\\\n    style={{ height: \\\\\\\\\\\\\\\"50vh\\\\\\\\\\\\\\\" }}\\\\\\\\n    className=\\\\\\\\\\\\\\\"d-flex justify-content-center align-items-center w-100\\\\\\\\\\\\\\\"\\\\\\\\n  >\\\\\\\\n    <Widget src={`devhub.near/widget/devhub.components.molecule.Spinner`} />\\\\\\\\n  </div>;\\\\\\\\n}\\\\\\\\nreturn (\\\\\\\\n  <div style={{ width: \\\\\\\\\\\\\\\"-webkit-fill-available\\\\\\\\\\\\\\\" }} className=\\\\\\\\\\\\\\\"p-3\\\\\\\\\\\\\\\">\\\\\\\\n    <Widget\\\\\\\\n      src={`devhub.near/widget/devhub.components.molecule.SimpleMDEViewer`}\\\\\\\\n      props={{\\\\\\\\n        content: profile.description,\\\\\\\\n        height: \\\\\\\\\\\\\\\"70vh\\\\\\\\\\\\\\\",\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  </div>\\\\\\\\n);\\\\\\\\n\"}, \"components.admin.AboutConfigurator\": {\"\": \"const { Tile } = VM.require(\\\\\\\\n  `devhub.near/widget/devhub.components.molecule.Tile`\\\\\\\\n) || { Tile: () => <></> };\\\\\\\\nconst item = {\\\\\\\\n  path: `infrastructure-committee.near/profile/**`,\\\\\\\\n};\\\\\\\\nconst profile = Social.get(item.path);\\\\\\\\nif (!profile.description) {\\\\\\\\n  <div\\\\\\\\n    style={{ height: \\\\\\\\\\\\\\\"50vh\\\\\\\\\\\\\\\" }}\\\\\\\\n    className=\\\\\\\\\\\\\\\"d-flex justify-content-center align-items-center w-100\\\\\\\\\\\\\\\"\\\\\\\\n  >\\\\\\\\n    <Widget src={`devhub.near/widget/devhub.components.molecule.Spinner`} />\\\\\\\\n  </div>;\\\\\\\\n}\\\\\\\\nconst initialData = profile.description;\\\\\\\\nconst [content, setContent] = useState(null);\\\\\\\\nconst [showCommentToast, setCommentToast] = useState(false);\\\\\\\\nconst [handler, setHandler] = useState(null);\\\\\\\\nconst [isTxnCreated, setTxnCreated] = useState(false);\\\\\\\\nconst Container = styled.div`\\\\\\\\n  width: 100%;\\\\\\\\n  margin: 0 auto;\\\\\\\\n  padding: 20px;\\\\\\\\n  text-align: left;\\\\\\\\n`;\\\\\\\\nconst hasDataChanged = () => {\\\\\\\\n  return content !== initialData;\\\\\\\\n};\\\\\\\\nconst handlePublish = () => {\\\\\\\\n  setTxnCreated(true);\\\\\\\\n  Near.call([\\\\\\\\n    {\\\\\\\\n      contractName: \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n      methodName: \\\\\\\\\\\\\\\"set_social_db_profile_description\\\\\\\\\\\\\\\",\\\\\\\\n      args: { description: content },\\\\\\\\n      gas: 270000000000000,\\\\\\\\n    },\\\\\\\\n  ]);\\\\\\\\n};\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (isTxnCreated) {\\\\\\\\n    const checkForAboutInSocialDB = () => {\\\\\\\\n      Near.asyncView(REPL_SOCIAL_CONTRACT, \\\\\\\\\\\\\\\"get\\\\\\\\\\\\\\\", {\\\\\\\\n        keys: [item.path],\\\\\\\\n      }).then((result) => {\\\\\\\\n        try {\\\\\\\\n          const submittedAboutText = content;\\\\\\\\n          const lastAboutTextFromSocialDB =\\\\\\\\n            result[\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"].profile.description;\\\\\\\\n          if (submittedAboutText === lastAboutTextFromSocialDB) {\\\\\\\\n            setTxnCreated(false);\\\\\\\\n            setCommentToast(true);\\\\\\\\n            return;\\\\\\\\n          }\\\\\\\\n        } catch (e) {}\\\\\\\\n        setTimeout(() => checkForAboutInSocialDB(), 2000);\\\\\\\\n      });\\\\\\\\n    };\\\\\\\\n    checkForAboutInSocialDB();\\\\\\\\n  }\\\\\\\\n}, [isTxnCreated]);\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (!content && initialData) {\\\\\\\\n    setContent(initialData);\\\\\\\\n    setHandler(\\\\\\\\\\\\\\\"update\\\\\\\\\\\\\\\");\\\\\\\\n  }\\\\\\\\n}, [initialData]);\\\\\\\\nfunction Preview() {\\\\\\\\n  return (\\\\\\\\n    <Tile className=\\\\\\\\\\\\\\\"p-3\\\\\\\\\\\\\\\" style={{ background: \\\\\\\\\\\\\\\"white\\\\\\\\\\\\\\\", minHeight: \\\\\\\\\\\\\\\"500px\\\\\\\\\\\\\\\" }}>\\\\\\\\n      <Widget\\\\\\\\n        src={`devhub.near/widget/devhub.components.molecule.SimpleMDEViewer`}\\\\\\\\n        props={{\\\\\\\\n          content: content,\\\\\\\\n          height: \\\\\\\\\\\\\\\"500px\\\\\\\\\\\\\\\",\\\\\\\\n        }}\\\\\\\\n      />\\\\\\\\n    </Tile>\\\\\\\\n  );\\\\\\\\n}\\\\\\\\nreturn (\\\\\\\\n  <Container>\\\\\\\\n    <Widget\\\\\\\\n      src={`near/widget/DIG.Toast`}\\\\\\\\n      props={{\\\\\\\\n        title: \\\\\\\\\\\\\\\"About page updated successfully\\\\\\\\\\\\\\\",\\\\\\\\n        type: \\\\\\\\\\\\\\\"success\\\\\\\\\\\\\\\",\\\\\\\\n        open: showCommentToast,\\\\\\\\n        onOpenChange: (v) => setCommentToast(v),\\\\\\\\n        trigger: <></>,\\\\\\\\n        providerProps: { duration: 3000 },\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n    <ul className=\\\\\\\\\\\\\\\"nav nav-tabs\\\\\\\\\\\\\\\" id=\\\\\\\\\\\\\\\"editPreviewTabs\\\\\\\\\\\\\\\" role=\\\\\\\\\\\\\\\"tablist\\\\\\\\\\\\\\\">\\\\\\\\n      <li className=\\\\\\\\\\\\\\\"nav-item\\\\\\\\\\\\\\\" role=\\\\\\\\\\\\\\\"presentation\\\\\\\\\\\\\\\">\\\\\\\\n        <button\\\\\\\\n          className=\\\\\\\\\\\\\\\"nav-link active\\\\\\\\\\\\\\\"\\\\\\\\n          id=\\\\\\\\\\\\\\\"edit-tab\\\\\\\\\\\\\\\"\\\\\\\\n          data-bs-toggle=\\\\\\\\\\\\\\\"tab\\\\\\\\\\\\\\\"\\\\\\\\n          data-bs-target=\\\\\\\\\\\\\\\"#edit\\\\\\\\\\\\\\\"\\\\\\\\n          type=\\\\\\\\\\\\\\\"button\\\\\\\\\\\\\\\"\\\\\\\\n          role=\\\\\\\\\\\\\\\"tab\\\\\\\\\\\\\\\"\\\\\\\\n          aria-controls=\\\\\\\\\\\\\\\"edit\\\\\\\\\\\\\\\"\\\\\\\\n          aria-selected=\\\\\\\\\\\\\\\"true\\\\\\\\\\\\\\\"\\\\\\\\n        >\\\\\\\\n          Edit\\\\\\\\n        </button>\\\\\\\\n      </li>\\\\\\\\n      <li className=\\\\\\\\\\\\\\\"nav-item\\\\\\\\\\\\\\\" role=\\\\\\\\\\\\\\\"presentation\\\\\\\\\\\\\\\">\\\\\\\\n        <button\\\\\\\\n          className=\\\\\\\\\\\\\\\"nav-link\\\\\\\\\\\\\\\"\\\\\\\\n          id=\\\\\\\\\\\\\\\"preview-tab\\\\\\\\\\\\\\\"\\\\\\\\n          data-bs-toggle=\\\\\\\\\\\\\\\"tab\\\\\\\\\\\\\\\"\\\\\\\\n          data-bs-target=\\\\\\\\\\\\\\\"#preview\\\\\\\\\\\\\\\"\\\\\\\\n          type=\\\\\\\\\\\\\\\"button\\\\\\\\\\\\\\\"\\\\\\\\n          role=\\\\\\\\\\\\\\\"tab\\\\\\\\\\\\\\\"\\\\\\\\n          aria-controls=\\\\\\\\\\\\\\\"preview\\\\\\\\\\\\\\\"\\\\\\\\n          aria-selected=\\\\\\\\\\\\\\\"false\\\\\\\\\\\\\\\"\\\\\\\\n        >\\\\\\\\n          Preview\\\\\\\\n        </button>\\\\\\\\n      </li>\\\\\\\\n    </ul>\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"tab-content\\\\\\\\\\\\\\\" id=\\\\\\\\\\\\\\\"editPreviewTabsContent\\\\\\\\\\\\\\\">\\\\\\\\n      <div\\\\\\\\n        className=\\\\\\\\\\\\\\\"tab-pane show active py-4\\\\\\\\\\\\\\\"\\\\\\\\n        id=\\\\\\\\\\\\\\\"edit\\\\\\\\\\\\\\\"\\\\\\\\n        role=\\\\\\\\\\\\\\\"tabpanel\\\\\\\\\\\\\\\"\\\\\\\\n        aria-labelledby=\\\\\\\\\\\\\\\"edit-tab\\\\\\\\\\\\\\\"\\\\\\\\n      >\\\\\\\\n        <Widget\\\\\\\\n          src={`infrastructure-committee.near/widget/components.molecule.SimpleMDE`}\\\\\\\\n          props={{\\\\\\\\n            data: { handler: handler, content: content },\\\\\\\\n            onChangeKeyup: (v) => {\\\\\\\\n              setContent(v);\\\\\\\\n            },\\\\\\\\n            showAutoComplete: true,\\\\\\\\n          }}\\\\\\\\n        />\\\\\\\\n        <div\\\\\\\\n          className={\\\\\\\\\\\\\\\"d-flex align-items-center justify-content-end gap-3 mt-4\\\\\\\\\\\\\\\"}\\\\\\\\n        >\\\\\\\\n          <Widget\\\\\\\\n            src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n            props={{\\\\\\\\n              classNames: { root: \\\\\\\\\\\\\\\"btn-success\\\\\\\\\\\\\\\" },\\\\\\\\n              disabled: !hasDataChanged(),\\\\\\\\n              icon: {\\\\\\\\n                type: \\\\\\\\\\\\\\\"bootstrap_icon\\\\\\\\\\\\\\\",\\\\\\\\n                variant: \\\\\\\\\\\\\\\"bi-check-circle-fill\\\\\\\\\\\\\\\",\\\\\\\\n              },\\\\\\\\n              label: \\\\\\\\\\\\\\\"Publish\\\\\\\\\\\\\\\",\\\\\\\\n              onClick: handlePublish,\\\\\\\\n            }}\\\\\\\\n          />\\\\\\\\n        </div>\\\\\\\\n      </div>\\\\\\\\n      <div\\\\\\\\n        className=\\\\\\\\\\\\\\\"tab-pane\\\\\\\\\\\\\\\"\\\\\\\\n        id=\\\\\\\\\\\\\\\"preview\\\\\\\\\\\\\\\"\\\\\\\\n        role=\\\\\\\\\\\\\\\"tabpanel\\\\\\\\\\\\\\\"\\\\\\\\n        aria-labelledby=\\\\\\\\\\\\\\\"preview-tab\\\\\\\\\\\\\\\"\\\\\\\\n        style={{ position: \\\\\\\\\\\\\\\"relative\\\\\\\\\\\\\\\" }}\\\\\\\\n      >\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"w-100 h-100 py-4\\\\\\\\\\\\\\\">\\\\\\\\n          <Preview />\\\\\\\\n        </div>\\\\\\\\n      </div>\\\\\\\\n    </div>\\\\\\\\n  </Container>\\\\\\\\n);\\\\\\\\n\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 618290690227400000000
+    }
+  },
+  {
+    "id": "7354032070",
+    "receipt_id": "CrutMPYiRV3W6kv1CVymZoQaJ9D3jCnk9KrZQKhbdDc8",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "D1MhNcJS6Ys31nKiD3UkSgzBA4XZd5zJJFzc9Tqj1aKs",
+      "block_height": 125602584,
+      "block_timestamp": 1723452701073209300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "7aGgj17hFLRAgCZgeUQhot7Z511adG9FJJ9KHfcRrhuv",
+    "included_in_block_hash": "8r48sqG4DzwuavQutxosXC7Qbyh1VXnzbfkxuZYU8vHh",
+    "block_timestamp": "1723452698833683245",
+    "block": {
+      "block_height": 125602582
+    },
+    "receipt_conversion_tokens_burnt": "32104804060600000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.8748905753791595e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 618290690227400000000
+    }
+  },
+  {
+    "id": "7354060648",
+    "receipt_id": "8b3cjuNEq6H7KaFpimmkN8i1YTAKibmAiNqPkShKYnGe",
+    "predecessor_account_id": "megha19.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BeseGz2ZWhXYdm4ZqFwU1cWvUqLXgxTs2jLWfktCNrKo",
+      "block_height": 125602686,
+      "block_timestamp": 1723452818918699500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3350807966179,
+      "tokens_burnt": 335080796617900000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "6CNq89Tcd3DRSctrMRqwKafTw2y7Xin2quuggya7Jobf",
+    "included_in_block_hash": "3JUsPPzEiMUg4NFaqsgS1QddVcky3ATm9bvGubarDCAF",
+    "block_timestamp": "1723452817894514357",
+    "block": {
+      "block_height": 125602685
+    },
+    "receipt_conversion_tokens_burnt": "32228451210800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_social_db_profile_description",
+        "deposit": 0,
+        "fee": 335080796617900000000,
+        "args": "{\"description\": \"## Introduction\\\\\\\\n\\\\\\\\nThe long-term vision for NEAR is for ecosystem and infrastructure development efforts to be fully decentralized and community-led.  Until then, some of that work comes through the [NEAR Foundation](https://near.foundation/).  The NEAR Foundation has appointed and endowed the **NEAR Infrastructure Committee** with a mission to improve and maintain the underlying infrastructure so developers can build successful applications on NEAR.\\\\\\\\n\\\\\\\\nThe Committee consists of various leaders across the NEAR ecosystem.  Its work involves proposing improvements for the NEAR ecosystem via RFPs, considering and voting on community proposals, and getting funds to teams when a proposal is approved.\\\\\\\\n\\\\\\\\nThe GitHub Wiki provides information about the [Infrastructure Committee](https://github.com/near/Infrastructure-Working-Group/wiki/Infrastructure-Committee) (IC) and the [Working Group](https://github.com/near/Infrastructure-Working-Group/wiki/Infrastructure-Working-Group) (WG), including current members.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Process Summary\\\\\\\\n\\\\\\\\nThe Committee actively seeks proposals from partners like you to enhance, upgrade, and fortify NEAR ecosystem infrastructure. To this end, the Committee will draft several Requests For Proposals (RFPs) that outline new ideas to tackle, urgent problems to solve, or highly desired projects. We encourage you to submit proposals in response to an RFP or standalone, as your contributions and innovations are crucial to our collective success.\\\\\\\\n\\\\\\\\nGenerally, the process proceeds as follows;\\\\\\\\n\\\\\\\\n\\\\\\\\n1. You draft the proposal. Working Group and Committee members are free to review and offer suggestions.\\\\\\\\n2. Once everyone feels the proposal is ready, it moves to voting. The committee votes asynchronously and in regular committee meetings. A proposal is approved if it receives a majority vote from the Committee members.\\\\\\\\n3. In the event of a rejection, you will be informed by an IC or WG member, usually via the Telegram group established. Guidance may be offered on how to update the proposal for resubmission.\\\\\\\\n4. If your proposal is approved, you will move into the Funding Pipeline. You (or your company) will complete the KYC/B process, which involves providing your personal or company information for verification purposes. Next will be a legal working agreement, and finally, a test transaction will be conducted to ensure the target wallet address is correct.\\\\\\\\n5. Project Management: we encourage awarded teams to create a project on our [Github repo](https://github.com/near/Infrastructure-Working-Group) where the community tracks progress on our [Github project](https://github.com/orgs/near/projects/133/views/6). Sharing project status gives the community and ecosystem leaders visibility into the status of awarded projects.\\\\\\\\n\\\\\\\\n### Important Links\\\\\\\\n\\\\\\\\nThe following links contain specific information about the processes of responding to RFPs, submitting a proposal, voting, securing funds, and managing the subsequent project for transparency. Please note that the working group will update articles as processes change. We appreciate your patience and understanding.\\\\\\\\n\\\\\\\\n#### [RFPs](https://github.com/near/Infrastructure-Working-Group/wiki/Request-For-Proposals)\\\\\\\\n\\\\\\\\n\\\\\\\\n#### [Submitting a Proposal](https://github.com/near/Infrastructure-Working-Group/wiki/Proposal-Process-%E2%80%90-Team)\\\\\\\\n\\\\\\\\n\\\\\\\\n#### [Voting](https://github.com/near/Infrastructure-Working-Group/wiki/Proposal-Process-%E2%80%90-Team#5-voting-on-proposals)\\\\\\\\n\\\\\\\\n\\\\\\\\n#### [Getting Funds](https://github.com/near/Infrastructure-Working-Group/wiki/Funding-Process-%E2%80%90-Company)\\\\\\\\n\\\\\\\\n\\\\\\\\n#### [Managing The Project](https://github.com/near/Infrastructure-Working-Group/wiki/Projects-&-Tasks)\\\\\\\\n\\\\\\\\n### Areas Of Interest\\\\\\\\n\\\\\\\\nThe Infrastructure Committee will consider any proposal that helps make the NEAR ecosystem a more compelling place for web3 builders and users.  That includes, but is not limited to, these key areas:\\\\\\\\n\\\\\\\\n* Protocol Development\\\\\\\\n* Contract and Token Standards\\\\\\\\n* Wallets\\\\\\\\n* Oracles\\\\\\\\n* Bridges\\\\\\\\n* Onramps / Offramps\\\\\\\\n* Relayers\\\\\\\\n* Explorers\\\\\\\\n* Indexers\\\\\\\\n* Data Lakes\\\\\\\\n\\\\\\\\n### Proposal Markup\\\\\\\\n\\\\\\\\nPlease use the following markup templates when submitting the body of your proposal.\\\\\\\\n\\\\\\\\nProposal: [https://docs.google.com/document/d/1UZRfOE1JAOhsnSmp-RmL2hY7KPJbpBImKZVvPV4YJmA/edit?usp=sharing](https://docs.google.com/document/d/1UZRfOE1JAOhsnSmp-RmL2hY7KPJbpBImKZVvPV4YJmA/edit?usp=sharing)\\\\\\\\n\\\\\\\\n### Evaluation Criteria\\\\\\\\n\\\\\\\\nThe Committee intentionally does not publish strict evaluation criteria for proposals and does not publish their meeting notes.  This subjective approach helps us be honest, decisive, and unrestrained in our ability to effect change in the NEAR ecosystem.  All RFPs, proposals, committee decisions, and funding allocations are published for community transparency and accountability.\\\\\\\\n\\\\\\\\nThat said, the Committee greatly appreciates proposals that:\\\\\\\\n\\\\\\\\n* Add new capabilities to the NEAR ecosystem\\\\\\\\n* Fill in gaps or address challenges faced by NEAR builders and users\\\\\\\\n* Bring new developers or users into the NEAR ecosystem\\\\\\\\n\\\\\\\\nGenerally speaking, the Committee believes infrastructure providers in the NEAR ecosystem should be economically self-sustaining, with a business model that does not rely on continuous grants from the Committee or other funding bodies.  For instance, we have rejected proposals from RPC providers to fund all setup and operation of RPC nodes so that developers would get free access to RPC services.  But we are open to alternate arrangements, such as loans to help cover initial setup costs and grants in exchange for service credits we (or the NEAR Foundation) can distribute to NEAR builders.\\\\\\\\n\\\\\\\\nWe are also eager to fund projects that benefit the ecosystem but have no direct revenue potential, such as open-source libraries.\\\\\\\\n\\\\\\\\nOften, a blockchain business involves creating some new open-source specification or protocol and then building a for-profit business on top of that protocol.  We are open to funding that effort\\\\\\\\\\\\'s \\\\\\\\u{201c}protocol\\\\\\\\u{201d} portion to help get your NEAR ecosystem business off the ground.\\\\\\\\n\\\\\\\\n### Important Announcements\\\\\\\\n\\\\\\\\nImportant policy or procedure changes, notices, and urgent communications.\\\\\\\\n\\\\\\\\n[Regular Quarterly Wallet Support - Policy](https://github.com/near/Infrastructure-Working-Group/discussions/134)\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 789491415429000000000
+    }
+  },
+  {
+    "id": "7354060857",
+    "receipt_id": "9RU7XJL8aPyEtwBSTTTMHdfHMCvDieFirHfM7USA4xiG",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CLDQWcEXXVkqZSU1qyiLGHmj3sKH8kSaTviGjK2F4cQa",
+      "block_height": 125602687,
+      "block_timestamp": 1723452820002449000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4221821676003,
+      "tokens_burnt": 422182167600300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "6CNq89Tcd3DRSctrMRqwKafTw2y7Xin2quuggya7Jobf",
+    "included_in_block_hash": "3JUsPPzEiMUg4NFaqsgS1QddVcky3ATm9bvGubarDCAF",
+    "block_timestamp": "1723452817894514357",
+    "block": {
+      "block_height": 125602685
+    },
+    "receipt_conversion_tokens_burnt": "32228451210800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 422182167600300000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"profile\": {\"description\": \"## Introduction\\\\\\\\n\\\\\\\\nThe long-term vision for NEAR is for ecosystem and infrastructure development efforts to be fully decentralized and community-led.  Until then, some of that work comes through the [NEAR Foundation](https://near.foundation/).  The NEAR Foundation has appointed and endowed the **NEAR Infrastructure Committee** with a mission to improve and maintain the underlying infrastructure so developers can build successful applications on NEAR.\\\\\\\\n\\\\\\\\nThe Committee consists of various leaders across the NEAR ecosystem.  Its work involves proposing improvements for the NEAR ecosystem via RFPs, considering and voting on community proposals, and getting funds to teams when a proposal is approved.\\\\\\\\n\\\\\\\\nThe GitHub Wiki provides information about the [Infrastructure Committee](https://github.com/near/Infrastructure-Working-Group/wiki/Infrastructure-Committee) (IC) and the [Working Group](https://github.com/near/Infrastructure-Working-Group/wiki/Infrastructure-Working-Group) (WG), including current members.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Process Summary\\\\\\\\n\\\\\\\\nThe Committee actively seeks proposals from partners like you to enhance, upgrade, and fortify NEAR ecosystem infrastructure. To this end, the Committee will draft several Requests For Proposals (RFPs) that outline new ideas to tackle, urgent problems to solve, or highly desired projects. We encourage you to submit proposals in response to an RFP or standalone, as your contributions and innovations are crucial to our collective success.\\\\\\\\n\\\\\\\\nGenerally, the process proceeds as follows;\\\\\\\\n\\\\\\\\n\\\\\\\\n1. You draft the proposal. Working Group and Committee members are free to review and offer suggestions.\\\\\\\\n2. Once everyone feels the proposal is ready, it moves to voting. The committee votes asynchronously and in regular committee meetings. A proposal is approved if it receives a majority vote from the Committee members.\\\\\\\\n3. In the event of a rejection, you will be informed by an IC or WG member, usually via the Telegram group established. Guidance may be offered on how to update the proposal for resubmission.\\\\\\\\n4. If your proposal is approved, you will move into the Funding Pipeline. You (or your company) will complete the KYC/B process, which involves providing your personal or company information for verification purposes. Next will be a legal working agreement, and finally, a test transaction will be conducted to ensure the target wallet address is correct.\\\\\\\\n5. Project Management: we encourage awarded teams to create a project on our [Github repo](https://github.com/near/Infrastructure-Working-Group) where the community tracks progress on our [Github project](https://github.com/orgs/near/projects/133/views/6). Sharing project status gives the community and ecosystem leaders visibility into the status of awarded projects.\\\\\\\\n\\\\\\\\n### Important Links\\\\\\\\n\\\\\\\\nThe following links contain specific information about the processes of responding to RFPs, submitting a proposal, voting, securing funds, and managing the subsequent project for transparency. Please note that the working group will update articles as processes change. We appreciate your patience and understanding.\\\\\\\\n\\\\\\\\n#### [RFPs](https://github.com/near/Infrastructure-Working-Group/wiki/Request-For-Proposals)\\\\\\\\n\\\\\\\\n\\\\\\\\n#### [Submitting a Proposal](https://github.com/near/Infrastructure-Working-Group/wiki/Proposal-Process-%E2%80%90-Team)\\\\\\\\n\\\\\\\\n\\\\\\\\n#### [Voting](https://github.com/near/Infrastructure-Working-Group/wiki/Proposal-Process-%E2%80%90-Team#5-voting-on-proposals)\\\\\\\\n\\\\\\\\n\\\\\\\\n#### [Getting Funds](https://github.com/near/Infrastructure-Working-Group/wiki/Funding-Process-%E2%80%90-Company)\\\\\\\\n\\\\\\\\n\\\\\\\\n#### [Managing The Project](https://github.com/near/Infrastructure-Working-Group/wiki/Projects-&-Tasks)\\\\\\\\n\\\\\\\\n### Areas Of Interest\\\\\\\\n\\\\\\\\nThe Infrastructure Committee will consider any proposal that helps make the NEAR ecosystem a more compelling place for web3 builders and users.  That includes, but is not limited to, these key areas:\\\\\\\\n\\\\\\\\n* Protocol Development\\\\\\\\n* Contract and Token Standards\\\\\\\\n* Wallets\\\\\\\\n* Oracles\\\\\\\\n* Bridges\\\\\\\\n* Onramps / Offramps\\\\\\\\n* Relayers\\\\\\\\n* Explorers\\\\\\\\n* Indexers\\\\\\\\n* Data Lakes\\\\\\\\n\\\\\\\\n### Proposal Markup\\\\\\\\n\\\\\\\\nPlease use the following markup templates when submitting the body of your proposal.\\\\\\\\n\\\\\\\\nProposal: [https://docs.google.com/document/d/1UZRfOE1JAOhsnSmp-RmL2hY7KPJbpBImKZVvPV4YJmA/edit?usp=sharing](https://docs.google.com/document/d/1UZRfOE1JAOhsnSmp-RmL2hY7KPJbpBImKZVvPV4YJmA/edit?usp=sharing)\\\\\\\\n\\\\\\\\n### Evaluation Criteria\\\\\\\\n\\\\\\\\nThe Committee intentionally does not publish strict evaluation criteria for proposals and does not publish their meeting notes.  This subjective approach helps us be honest, decisive, and unrestrained in our ability to effect change in the NEAR ecosystem.  All RFPs, proposals, committee decisions, and funding allocations are published for community transparency and accountability.\\\\\\\\n\\\\\\\\nThat said, the Committee greatly appreciates proposals that:\\\\\\\\n\\\\\\\\n* Add new capabilities to the NEAR ecosystem\\\\\\\\n* Fill in gaps or address challenges faced by NEAR builders and users\\\\\\\\n* Bring new developers or users into the NEAR ecosystem\\\\\\\\n\\\\\\\\nGenerally speaking, the Committee believes infrastructure providers in the NEAR ecosystem should be economically self-sustaining, with a business model that does not rely on continuous grants from the Committee or other funding bodies.  For instance, we have rejected proposals from RPC providers to fund all setup and operation of RPC nodes so that developers would get free access to RPC services.  But we are open to alternate arrangements, such as loans to help cover initial setup costs and grants in exchange for service credits we (or the NEAR Foundation) can distribute to NEAR builders.\\\\\\\\n\\\\\\\\nWe are also eager to fund projects that benefit the ecosystem but have no direct revenue potential, such as open-source libraries.\\\\\\\\n\\\\\\\\nOften, a blockchain business involves creating some new open-source specification or protocol and then building a for-profit business on top of that protocol.  We are open to funding that effort\\\\\\\\\\\\'s \\\\\\\\u{201c}protocol\\\\\\\\u{201d} portion to help get your NEAR ecosystem business off the ground.\\\\\\\\n\\\\\\\\n### Important Announcements\\\\\\\\n\\\\\\\\nImportant policy or procedure changes, notices, and urgent communications.\\\\\\\\n\\\\\\\\n[Regular Quarterly Wallet Support - Policy](https://github.com/near/Infrastructure-Working-Group/discussions/134)\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 789491415429000000000
+    }
+  },
+  {
+    "id": "7366146065",
+    "receipt_id": "92KzUWo2aktZcYUMjTisJ8aZxfbU9qZa4yRjFuAxhDcx",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Ag425ydkJcg65FhKqwE3KrpiRJcNAtigSKUgp4YpD2Wz",
+      "block_height": 125627270,
+      "block_timestamp": 1723481108082020000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5165622578697,
+      "tokens_burnt": 516562257869700000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "GRmns4cpSpHkN4aEC6kRBQkAcCvVUnDn1UESxANHGYM",
+    "included_in_block_hash": "DhYUcZnN8m89f2XQkHaoCjbaCi7Dkq3VdsmPyUbvMYAg",
+    "block_timestamp": "1723481107067827656",
+    "block": {
+      "block_height": 125627269
+    },
+    "receipt_conversion_tokens_burnt": "32008882492000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 516562257869700000000,
+        "args": "{\"id\": 3, \"body\": {\"name\": \"PayTrie - Stablecoin On/Off Ramp in Canada\", \"summary\": \"PayTrie is a stablecoin on/off ramp serving users in Canada. We provide the quickest, easiest and cheapest way to buy/sell stablecoins. We currently support stablecoins on ERC-20, BEP-20, Polygon, Arbitrum, Optimism, BASE, Solana and SX networks. Our proposal is to integrate PayTrie with the NEAR ecosystem and enable on and off-ramping of USDC on NEAR\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REJECTED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": null, \"supervisor\": \"trechriron.near\", \"description\": \"## Organization\\\\\\\\nPayTrie AB Inc. \\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\u{2019}s contact information\\\\\\\\nJason Tong - jason@paytrie.com\\\\\\\\n\\\\\\\\n### Size of the whole team\\\\\\\\n7\\\\\\\\n\\\\\\\\n### Size of the engineering team\\\\\\\\n2\\\\\\\\n\\\\\\\\n### Team location\\\\\\\\nCanada\\\\\\\\n\\\\\\\\n### Team background and bios\\\\\\\\nKevin Zhang - Co-founder - A seasoned blockchain developer, and is the technical lead for Paytrie. Most recently, he served as a senior blockchain architect at ConsenSys where he led blockchain scaling for the firm. During his time at ConsenSys, Kevin built a number of proof of concepts for enterprise clients. Previous to ConsenSys, Kevin was the first technical staff on TD Bank\\\\\\\\u{2019}s blockchain team. Kevin also co-founded DFX Finance. Kevin graduated with an engineering degree from the University of Waterloo.\\\\\\\\n\\\\\\\\nHenry Chan - Co-founder - Henry Chan serves as the operations and compliance lead for Paytrie. Henry most recently served as the Regional Director for ConsenSys Toronto. While at ConsenSys, Henry helped build out the WeiFund platform which launched the world\\\\\\\\u{2019}s first security token offering. Prior to ConsenSys, Henry co-founded Deloitte\\\\\\\\u{2019}s blockchain practice in Canada. Henry also co-founded DFX Finance. Henry graduated with an engineering degree from the University of Waterloo.\\\\\\\\n\\\\\\\\n### Any affiliations with other NEAR ecosystem partners?\\\\\\\\nN/A\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\nPlease see above team background and bios\\\\\\\\n\\\\\\\\n### Examples of relevant experience with NEAR blockchain\\\\\\\\nWe\\\\\\\\u{2019}ve launched on multiple networks/blockchains\\\\\\\\n\\\\\\\\n### Non-technical capabilities:\\\\\\\\nN/A\\\\\\\\n\\\\\\\\n### In-House Resources;\\\\\\\\nN/A\\\\\\\\n\\\\\\\\n### Portfolio of relevant work\\\\\\\\nwww.paytrie.com\\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\n[//]: # (The primary approach and solution of the proposal.)\\\\\\\\nPayTrie is a stablecoin on/off ramp serving users in Canada. We provide the quickest, easiest and cheapest way to buy/sell stablecoins. We currently support stablecoins on ERC-20, BEP-20, Polygon, Arbitrum, Optimism, BASE, Solana and SX networks. This is the first time that users can buy stablecoins in Canada directly on the network of their choice, without having to jump through hoops/bridging etc. \\\\\\\\n\\\\\\\\nOur proposal is to integrate PayTrie with the NEAR ecosystem and enable on and off-ramping of USDC on NEAR\\\\\\\\n\\\\\\\\n\\\\\\\\n[//]: # (Why should the committee choose this project?)\\\\\\\\nPayTrie has successfully been operating in Canada over the past 4 years with the current business model and has on/off-ramped more than $500M in volume. It is clear from the demand that we\\\\\\\\\\\\'re seeing on other stablecoins and networks, that users want an option to get directly on-chain without having to jump through hoops. We are also the only option in Canada that does not custody users\\\\\\\\\\\\' funds. We receive fiat and send out the stablecoins right away. We believe that this is the way that crypto should be bought and sold and we attract users who understand the importance of this.\\\\\\\\n\\\\\\\\nAn ecosystem is only as healthy as the on/off ramp solutions. PayTrie will allow Canadians to directly on-ramp onto NEAR and provide net-new liquidity to the network. We believe that launching our on/off ramp for USDC on NEAR would bring a lot of value to the ecosystem.\\\\\\\\n\\\\\\\\n[//]: # (Will this solution be open source? What licensing are you releasing under?)\\\\\\\\nThis will not be open source\\\\\\\\n\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\nGoal #1: Partnership start - This is when we start the efforts to integrate with the NEAR ecosystem. We will need to take our dev resources to research everything needed to start the integration\\\\\\\\nGoal #2: USDC-NEAR Launch - 4-6 weeks after the initial partnership start, we will officially launch the capability to on and off-ramp USDC on NEAR. \\\\\\\\n \\\\\\\\n## Metrics\\\\\\\\nVolume - amount of USDC-NEAR that is on/off ramped through PayTrie\\\\\\\\n\\\\\\\\n## Competitor Comparison\\\\\\\\nPayTrie does not have a direct competitor when it comes to the stablecoin side of the business. Most of the companies in Canada are exchanges and they do not have a focus on stablecoins. \\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n### Budget Total\\\\\\\\n$50,000 USD\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\n[//]: # (Breakdown of funds usage. How will you use these funds? Be specific.)\\\\\\\\n$40,000 - Development resources - implementing USDC on NEAR will take significant dev resources. We will need to either hire somebody who has knowledge of this or re-prioritize our existing team away from other projects to implement USDC on NEAR. \\\\\\\\n$10,000 - We will be providing each on-ramp transaction with a small amount of $NEAR so that the user can interact with the network.\\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"paytriejt.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"50000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Onramps / Offramps\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 906199006166200000000
+    }
+  },
+  {
+    "id": "7366146910",
+    "receipt_id": "DnaGZzs5hfSeAztoSW5RmhBYtFD5SfDMDiEpvPMmbj1J",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "wu6bBEJqj8pK5ZxVLyTjFsYGMTvD8PTPNLnKRYPvnAz",
+      "block_height": 125627271,
+      "block_timestamp": 1723481108985266700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3576278658045,
+      "tokens_burnt": 357627865804500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "GRmns4cpSpHkN4aEC6kRBQkAcCvVUnDn1UESxANHGYM",
+    "included_in_block_hash": "DhYUcZnN8m89f2XQkHaoCjbaCi7Dkq3VdsmPyUbvMYAg",
+    "block_timestamp": "1723481107067827656",
+    "block": {
+      "block_height": 125627269
+    },
+    "receipt_conversion_tokens_burnt": "32008882492000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357627865804500000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"paytriejt.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":3,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 906199006166200000000
+    }
+  },
+  {
+    "id": "7582158465",
+    "receipt_id": "3v14MUMnpHYgE8yxAe69GbUscUe9RNCnhm8B2xEYrSo6",
+    "predecessor_account_id": "c14bc75b16db942957b04d34f15be548a34cac70d22835f22a7d021d2158d002",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Exb9JTVmUnTbmw5RQNgdj1K6z4h5CuX5V1St9YwoXQwq",
+      "block_height": 126177839,
+      "block_timestamp": 1724160832155389400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7461545706540,
+      "tokens_burnt": 746154570654000000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "3rwXogUcJhsqoa36KEEQM1kseZQkLnHphStSrCEdC3VS",
+    "included_in_block_hash": "CyLwLk35KpKZDzaQSDX2Cw4otZh33aLETYz2MYayJyK4",
+    "block_timestamp": "1724160830922236032",
+    "block": {
+      "block_height": 126177838
+    },
+    "receipt_conversion_tokens_burnt": "95150355021000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 746154570654000000000,
+        "args": "{\"body\": {\"name\": \"Nightly - Regular Quarterly Wallet Support Policy #134\", \"summary\": \"Nightly and NEAR share a vision for the future of Web3, with Nightly as the first multi-chain wallet supporting NEAR.\\\\\\\\n\\\\\\\\nWe\\\\\\\\u{2019}re committed to providing users with a comprehensive blockchain experience by integrating additional chains and developing new features like Sidepanel, a mobile app, and hardware wallet support.\\\\\\\\n\\\\\\\\nOur goal is to enhance crypto wallets as essential tools for dApps and to build a wallet standard and Nightly Connect, improving analytics by analyzing traffic.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"description\": \"## Organization\\\\\\\\nNightly Wallet\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\u{2019}s contact information\\\\\\\\nDominik Gnap https://t.me/Pannggg \\\\\\\\nNorbert Bodziony https://t.me/NorbertBodziony\\\\\\\\n\\\\\\\\n### Size of the whole team\\\\\\\\n15 people\\\\\\\\n\\\\\\\\n### Size of the engineering team\\\\\\\\n9 people \\\\\\\\n\\\\\\\\n### Team location\\\\\\\\nCracow, Poland\\\\\\\\n\\\\\\\\n### Team background and bios\\\\\\\\nNorbert Bodziony is a founder and core developer of Nightly. He is a young Polish blockchain developer who graduated with a Master\\\\\\\\u{2019}s degree from the University of Science and Technology in Cracow. Before starting his own company, he worked as a trader at Star Beta and as a full-stack engineer at Rumblefish. Norbert has gained coding experience on several blockchains, including Ethereum, Solana, and NEAR. He is one of the early contributors to the Anchor framework. His main focus is decentralized finance; his first major project, Synthetify, led him to win the 2021 Solana x Serum Hackathon. He is also a contributor and advisor to several projects.\\\\\\\\n\\\\\\\\nAdditionally, we have won several hackathons, such as the CTF MOVEment Hackathon and the Solana x Serum DeFi Hackathon. As a team, we have been awarded multiple grants from the Aleph Zero Foundation, the Vara Foundation, and the NEAR Foundation.\\\\\\\\n\\\\\\\\n### Any affiliations with other NEAR ecosystem partners?\\\\\\\\nWe have been developing a wallet on NEAR since 2022 and received a grant that year. We have many partner projects, including Burrow Finance, Metapool, Everstake, and REF Finance.\\\\\\\\n\\\\\\\\nWe have established successful partnerships with other projects to provide our users with additional features. For example, we have implemented a swap feature thanks to our partnership with REF Finance and offer liquid staking through our cooperation with Metapool. Additionally, users can stake directly through the wallet and choose from a variety of validators.\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\nOur core team has been working in crypto since 2020, though we have individually contributed to various other projects as well. We launched Nightly in Q2 2022. Initially, it was a wallet supporting only NEAR and Solana, but it now operates on over 10 chains, including Sui and EVMs.\\\\\\\\n\\\\\\\\nPreviously, our team was involved in two major projects: Synthetify, a decentralized synthetic assets exchange built on Solana, and Invariant, an AMM DEX operating on Solana, Eclipse, and Aleph Zero.\\\\\\\\nOur team focuses on bringing new users to crypto by lowering the entry point. We offer a range of solutions, such as the \\\\\\\\\\\\'dApps\\\\\\\\\\\\' tab, which showcases the most important projects on the chain; the ability to buy tokens directly in the wallet; and Nightly Connect, which facilitates the connection between dApps and wallets.\\\\\\\\n\\\\\\\\nWe have achieved victories in various hackathons, including the CTF MOVEment Hackathon and the Solana x Serum DeFi Hackathon. Our team has also secured several grants from the Aleph Zero Foundation, the Vara Foundation, and the NEAR Foundation.\\\\\\\\n\\\\\\\\n### Examples of relevant experience with NEAR blockchain\\\\\\\\nWe were among the first wallets on NEAR. We were the first to fully support NEAR Wallet migration and the first to implement cross-chain functionality.\\\\\\\\n\\\\\\\\nOur wallet has pioneered advanced features such as liquid staking within the wallet, in-wallet swaps, and DApps integration. We successfully developed Nightly Connect v1 to simplify the connection between the wallet and dApps, implemented hardware wallet support, and integrated domain management directly within the wallet. Additionally, we have built a fully supported mobile wallet on NEAR.\\\\\\\\n\\\\\\\\nThese achievements have advanced NEAR\\\\\\\\u{2019}s capabilities and solidified our position as innovators in the ecosystem. However, we are continuously seeking new opportunities to develop features such as a Safari extension and the Earn tab.\\\\\\\\n\\\\\\\\n### Non-technical capabilities:\\\\\\\\nWe are a fully independent team with our own Backend, Frontend, Design, and Marketing/BD teams. We are capable of building new features, developing smart contracts, and organizing activities such as AMAs and other community events both online and offline.\\\\\\\\n\\\\\\\\n### In-House Resources;\\\\\\\\nEngineering Team: 9\\\\\\\\nDesign, UX/UI: 2\\\\\\\\nProject Management: 1\\\\\\\\nCustomer Support: 1\\\\\\\\nBD/Marketing: 2\\\\\\\\nTotal: 15 people\\\\\\\\n\\\\\\\\n### Portfolio of relevant work\\\\\\\\n\\\\\\\\nNightly Wallet - a multi-chain wallet designed to harness the full potential of blockchain. It includes both a browser extension and a mobile wallet, supporting Solana, NEAR, Aptos, Sui, Aleph Zero, Vara, Movement, Sonic, Polkadot and EVM.\\\\\\\\n\\\\\\\\nNightly Connect - a permissionless, open-source tool that functions as both a wallet adapter and a bridge wallet, enabling connections via QR codes or deep links. It simplifies the process for dApp developers by automatically adding all standard-compliant wallets after a one-time implementation. While minimal changes are needed on the wallet\\\\\\\\\\\\'s side for compatibility, these updates allow any mobile wallet to connect to any dApp through Nightly Connect, with additional features like push notifications. It is currently available on Solana, Sui, Aptos, and Movement, with plans to implement it on NEAR as well.\\\\\\\\n\\\\\\\\nInvariant - a peer-to-peer system on Solana, Eclipse, and Aleph Zero for trading assets. It uses smart contracts to ensure security, self-custody, and resistance to censorship, all without relying on intermediaries who could limit access.\\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\n[//]: # (The primary approach and solution of the proposal.)\\\\\\\\nNightly and NEAR share similar approaches to the future of their products. NEAR projects are expanding and exploring cross-blockchain solutions in the Web3 space (https://near.org/blog/nuffle-labs). Nightly aligns with these values as the first multi-chain wallet supporting NEAR, and we continue to integrate additional chains to provide our users with a comprehensive experience, including easily accessible blockchains and their unique features.\\\\\\\\n\\\\\\\\nMoreover, we believe that successful products must continually evolve to make crypto usage as simple and accessible as possible. To this end, we have been diligently developing new features over the past few months. Notable additions include:\\\\\\\\n- Sidepanel: This feature allows our extension wallet to function as a constantly open side panel alongside the active extension.\\\\\\\\n- Mobile App: We are updating our mobile wallet to mirror the features of our extension wallet, ensuring it is equally functional and useful.\\\\\\\\n- Hardware Wallet Integrations: We are working on supporting various hardware wallets, including Keystone, and are also aiming to integrate Keystone support into our mobile wallet.\\\\\\\\n\\\\\\\\nOur primary goal is to enhance the functionality and utility of crypto wallets, making them essential tools for interacting with any dApp. At Nightly, we are committed to expanding the capabilities of wallets beyond their traditional roles. We have made significant progress in diversifying our income through various revenue streams, including partnerships with other dApps. These strategic collaborations will enable us to create sustainable and profitable solutions within the wallet ecosystem.\\\\\\\\n- Staking: We partner with validators such as Everstake to encourage users to stake through Nightly.\\\\\\\\n- Liquid Staking: Our partnership with Metapool allows users to liquid stake and receive stNEAR directly in their wallets without leaving the platform.\\\\\\\\n- Swaps: We have partnered with REF Finance and integrated their dApp into our wallet, allowing NEAR users to swap tokens directly within Nightly. We receive a fee from REF Finance for these transactions.\\\\\\\\n\\\\\\\\nThese features are already implemented in Nightly, but we aim to offer even more possibilities for an enhanced wallet experience, making Nightly the central hub for NEAR while ensuring our \\\\\\\\nsustainability.\\\\\\\\n\\\\\\\\nWe are also developing additional features to help generate yield:\\\\\\\\nEarn Tab: This feature within our wallet allows users to deposit and withdraw tokens to on-chain dApps directly from the wallet. It includes options for borrowing, lending, creating pools, and liquid staking. Users will see APYs for each option, providing a comprehensive view in one place. This feature will also increase exposure for dApps on NEAR, enabling us to charge them a fee for the yield generated through this feature.\\\\\\\\n\\\\\\\\n[//]: # (Why should the committee choose this project?)\\\\\\\\nAs mentioned before, we have been one of the first wallets on NEAR and the first multi-chain wallet. Additionally, we were the first wallet to support NEAR Wallet migration. Our dedication to NEAR is evident, and our goal is not only to maintain our wallet and develop new solutions for ourselves but also to advance NEAR\\\\\\\\u{2019}s future.\\\\\\\\n\\\\\\\\nWe aim to develop the NEAR wallet standard. Our objective is to preserve all existing functionalities while transitioning to a wallet standard that supports multiple wallets, similar to how it works on Solana, Sui, or Ethereum (https://eips.ethereum.org/EIPS/eip-6963). We have already implemented a similar solution for Aptos (https://github.com/aptos-foundation/AIPs/blob/main/aips/aip-62.md). This transition will enhance security, speed, and ease of use. NEAR\\\\\\\\u{2019}s current infrastructure requires a robust wallet standard, and we are well-positioned to not only maintain but also enhance it.\\\\\\\\n\\\\\\\\nAdditionally, Nightly Connect could improve analytics by analyzing traffic and providing more comprehensive data, such as connections with dApps, used wallets, or time spent on dApps.\\\\\\\\n## Goals / Milestones\\\\\\\\n- We currently have 8,000 WAU (Weekly Active Users) and aim for at least 30% of them to start managing their tokens primarily through Nightly. This means not only holding tokens within our wallet but also taking proactive steps like lending or liquid staking through our \\\\\\\\u{201c}Earn\\\\\\\\u{201d} tab.\\\\\\\\n- Add hardware support to the mobile wallet.\\\\\\\\n- Develop support for a Safari extension to make iOS usage even easier.\\\\\\\\n- Implement push notifications within the wallet.\\\\\\\\n- Develop QR code payments.\\\\\\\\n- Develop Nightly Connect on NEAR to assist with gathering data and tracking traffic for dApps and wallets, in line with NEAR\\\\\\\\u{2019}s current development approach.\\\\\\\\n- Ensure that the NEAR wallet standard built by us will be accepted by all wallets on NEAR.\\\\\\\\n- Advance wallet development to achieve full sustainability.\\\\\\\\n\\\\\\\\n[//]: # (Be sure to communicate what the finished effort looks like.)\\\\\\\\nOnce we successfully integrate all our planned activities and develop the new features, we aim to double our user base and ensure that at least 30% of our users engage with NEAR dApps directly via Nightly.\\\\\\\\nNightly Connect will be completed, open-sourced, and ready for integration by dApps.\\\\\\\\n\\\\\\\\n[//]: # (Should include a timeline with milestones, including what will be delivered for each milestone.)\\\\\\\\nQuarter 1: Develop the mentioned features (Earn tab, hardware wallet support, Safari extension) and conduct marketing activities to promote these features.\\\\\\\\nQuarter 2: Build the new wallet standard for NEAR and pursue business development to encourage all NEAR wallets to implement it. Continue development of existing features within the wallet.\\\\\\\\nQuarter 3: Develop Nightly Connect to track dApp and wallet traffic, prepare analytics for this solution, and focus on business development and marketing.\\\\\\\\n\\\\\\\\n## Metrics\\\\\\\\nThe key success metrics we will track are:\\\\\\\\n- Total number of unique users using the wallet\\\\\\\\n- Total number of unique users using dApp features within the wallet\\\\\\\\n- Number of dApps that integrate Nightly Connect\\\\\\\\n- Number of wallets that implement the new wallet standard\\\\\\\\n\\\\\\\\n[//]: # (How will we measure success?)\\\\\\\\nWe can track these statistics directly within the wallet. Additionally, we can monitor metrics such as unique users, events conducted within the wallet, users\\\\\\\\u{2019} devices, and newly created wallets.\\\\\\\\nAfter each quarter, we will prepare a summary of our progress.\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n$50,000 quarterly, according to https://github.com/near/Infrastructure-Working-Group/discussions/134\\\\\\\\n\\\\\\\\n[//]: # (Breakdown of funds usage. How will you use these funds? Be specific.)\\\\\\\\nAccording to Regular Quarterly Wallet Support Policy #134, we plan to use these funds for operations, maintenance, and continued improvements.\\\\\\\\n\\\\\\\\nWe will invest in developing the new features mentioned earlier, promote them with our partner dApps, and allocate funds for marketing activities to attract new users to NEAR.\\\\\\\\nAdditionally, we will use these funds for the development of Nightly Connect to provide dApps with data analytics tools and to build the Wallet Standard to enhance NEAR\\\\\\\\u{2019}s infrastructure.\", \"linked_proposals\": [], \"receiver_account\": \"3ca104db88eca30ab9a91c47148efe81e855d6793cabf3dec702e9796adba9e4\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"50000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Other\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.0876257058971e+21
+    }
+  },
+  {
+    "id": "7582158659",
+    "receipt_id": "5N6CkoixwUaXZTRmbRXfeEx6dskLAeNyRENCTLCGjr2A",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9ZtgffmzD43ifmTYYo3tPFhYEnbB6SFB9kY45it5TppE",
+      "block_height": 126177840,
+      "block_timestamp": 1724160833435832800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4549341401088,
+      "tokens_burnt": 454934140108800000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "3rwXogUcJhsqoa36KEEQM1kseZQkLnHphStSrCEdC3VS",
+    "included_in_block_hash": "CyLwLk35KpKZDzaQSDX2Cw4otZh33aLETYz2MYayJyK4",
+    "block_timestamp": "1724160830922236032",
+    "block": {
+      "block_height": 126177838
+    },
+    "receipt_conversion_tokens_burnt": "95150355021000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 454934140108800000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Infrastructure Committee* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @c14bc75b16db942957b04d34f15be548a34cac70d22835f22a7d021d2158d002\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Nightly - Regular Quarterly Wallet Support Policy #134\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nNightly and NEAR share a vision for the future of Web3, with Nightly as the first multi-chain wallet supporting NEAR.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWe\\\\\\\\u{2019}re committed to providing users with a comprehensive blockchain experience by integrating additional chains and developing new features like Sidepanel, a mobile app, and hardware wallet support.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nOur goal is to enhance crypto wallets as essential tools for dApps and to build a wallet standard and Nightly Connect, improving analytics by analyzing traffic.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=9)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.0876257058971e+21
+    }
+  },
+  {
+    "id": "7582158663",
+    "receipt_id": "2yx5LQZRJp4ecmDQ5RDVFbuaRHrKj48eahoerEhWPh8G",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9ZtgffmzD43ifmTYYo3tPFhYEnbB6SFB9kY45it5TppE",
+      "block_height": 126177840,
+      "block_timestamp": 1724160833435832800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4389400978440,
+      "tokens_burnt": 438940097844000000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "3rwXogUcJhsqoa36KEEQM1kseZQkLnHphStSrCEdC3VS",
+    "included_in_block_hash": "CyLwLk35KpKZDzaQSDX2Cw4otZh33aLETYz2MYayJyK4",
+    "block_timestamp": "1724160830922236032",
+    "block": {
+      "block_height": 126177838
+    },
+    "receipt_conversion_tokens_burnt": "95150355021000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 438940097844000000000,
+        "args": "{\"proposal\": {\"id\": 9, \"snapshot\": {\"name\": \"Nightly - Regular Quarterly Wallet Support Policy #134\", \"labels\": [\"Other\"], \"summary\": \"Nightly and NEAR share a vision for the future of Web3, with Nightly as the first multi-chain wallet supporting NEAR.\\\\\\\\n\\\\\\\\nWe\\\\\\\\u{2019}re committed to providing users with a comprehensive blockchain experience by integrating additional chains and developing new features like Sidepanel, a mobile app, and hardware wallet support.\\\\\\\\n\\\\\\\\nOur goal is to enhance crypto wallets as essential tools for dApps and to build a wallet standard and Nightly Connect, improving analytics by analyzing traffic.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"c14bc75b16db942957b04d34f15be548a34cac70d22835f22a7d021d2158d002\", \"timestamp\": \"1724160832155389333\", \"linked_rfp\": null, \"supervisor\": null, \"description\": \"## Organization\\\\\\\\nNightly Wallet\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\u{2019}s contact information\\\\\\\\nDominik Gnap https://t.me/Pannggg \\\\\\\\nNorbert Bodziony https://t.me/NorbertBodziony\\\\\\\\n\\\\\\\\n### Size of the whole team\\\\\\\\n15 people\\\\\\\\n\\\\\\\\n### Size of the engineering team\\\\\\\\n9 people \\\\\\\\n\\\\\\\\n### Team location\\\\\\\\nCracow, Poland\\\\\\\\n\\\\\\\\n### Team background and bios\\\\\\\\nNorbert Bodziony is a founder and core developer of Nightly. He is a young Polish blockchain developer who graduated with a Master\\\\\\\\u{2019}s degree from the University of Science and Technology in Cracow. Before starting his own company, he worked as a trader at Star Beta and as a full-stack engineer at Rumblefish. Norbert has gained coding experience on several blockchains, including Ethereum, Solana, and NEAR. He is one of the early contributors to the Anchor framework. His main focus is decentralized finance; his first major project, Synthetify, led him to win the 2021 Solana x Serum Hackathon. He is also a contributor and advisor to several projects.\\\\\\\\n\\\\\\\\nAdditionally, we have won several hackathons, such as the CTF MOVEment Hackathon and the Solana x Serum DeFi Hackathon. As a team, we have been awarded multiple grants from the Aleph Zero Foundation, the Vara Foundation, and the NEAR Foundation.\\\\\\\\n\\\\\\\\n### Any affiliations with other NEAR ecosystem partners?\\\\\\\\nWe have been developing a wallet on NEAR since 2022 and received a grant that year. We have many partner projects, including Burrow Finance, Metapool, Everstake, and REF Finance.\\\\\\\\n\\\\\\\\nWe have established successful partnerships with other projects to provide our users with additional features. For example, we have implemented a swap feature thanks to our partnership with REF Finance and offer liquid staking through our cooperation with Metapool. Additionally, users can stake directly through the wallet and choose from a variety of validators.\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\nOur core team has been working in crypto since 2020, though we have individually contributed to various other projects as well. We launched Nightly in Q2 2022. Initially, it was a wallet supporting only NEAR and Solana, but it now operates on over 10 chains, including Sui and EVMs.\\\\\\\\n\\\\\\\\nPreviously, our team was involved in two major projects: Synthetify, a decentralized synthetic assets exchange built on Solana, and Invariant, an AMM DEX operating on Solana, Eclipse, and Aleph Zero.\\\\\\\\nOur team focuses on bringing new users to crypto by lowering the entry point. We offer a range of solutions, such as the \\\\\\\\\\\\'dApps\\\\\\\\\\\\' tab, which showcases the most important projects on the chain; the ability to buy tokens directly in the wallet; and Nightly Connect, which facilitates the connection between dApps and wallets.\\\\\\\\n\\\\\\\\nWe have achieved victories in various hackathons, including the CTF MOVEment Hackathon and the Solana x Serum DeFi Hackathon. Our team has also secured several grants from the Aleph Zero Foundation, the Vara Foundation, and the NEAR Foundation.\\\\\\\\n\\\\\\\\n### Examples of relevant experience with NEAR blockchain\\\\\\\\nWe were among the first wallets on NEAR. We were the first to fully support NEAR Wallet migration and the first to implement cross-chain functionality.\\\\\\\\n\\\\\\\\nOur wallet has pioneered advanced features such as liquid staking within the wallet, in-wallet swaps, and DApps integration. We successfully developed Nightly Connect v1 to simplify the connection between the wallet and dApps, implemented hardware wallet support, and integrated domain management directly within the wallet. Additionally, we have built a fully supported mobile wallet on NEAR.\\\\\\\\n\\\\\\\\nThese achievements have advanced NEAR\\\\\\\\u{2019}s capabilities and solidified our position as innovators in the ecosystem. However, we are continuously seeking new opportunities to develop features such as a Safari extension and the Earn tab.\\\\\\\\n\\\\\\\\n### Non-technical capabilities:\\\\\\\\nWe are a fully independent team with our own Backend, Frontend, Design, and Marketing/BD teams. We are capable of building new features, developing smart contracts, and organizing activities such as AMAs and other community events both online and offline.\\\\\\\\n\\\\\\\\n### In-House Resources;\\\\\\\\nEngineering Team: 9\\\\\\\\nDesign, UX/UI: 2\\\\\\\\nProject Management: 1\\\\\\\\nCustomer Support: 1\\\\\\\\nBD/Marketing: 2\\\\\\\\nTotal: 15 people\\\\\\\\n\\\\\\\\n### Portfolio of relevant work\\\\\\\\n\\\\\\\\nNightly Wallet - a multi-chain wallet designed to harness the full potential of blockchain. It includes both a browser extension and a mobile wallet, supporting Solana, NEAR, Aptos, Sui, Aleph Zero, Vara, Movement, Sonic, Polkadot and EVM.\\\\\\\\n\\\\\\\\nNightly Connect - a permissionless, open-source tool that functions as both a wallet adapter and a bridge wallet, enabling connections via QR codes or deep links. It simplifies the process for dApp developers by automatically adding all standard-compliant wallets after a one-time implementation. While minimal changes are needed on the wallet\\\\\\\\\\\\'s side for compatibility, these updates allow any mobile wallet to connect to any dApp through Nightly Connect, with additional features like push notifications. It is currently available on Solana, Sui, Aptos, and Movement, with plans to implement it on NEAR as well.\\\\\\\\n\\\\\\\\nInvariant - a peer-to-peer system on Solana, Eclipse, and Aleph Zero for trading assets. It uses smart contracts to ensure security, self-custody, and resistance to censorship, all without relying on intermediaries who could limit access.\\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\n[//]: # (The primary approach and solution of the proposal.)\\\\\\\\nNightly and NEAR share similar approaches to the future of their products. NEAR projects are expanding and exploring cross-blockchain solutions in the Web3 space (https://near.org/blog/nuffle-labs). Nightly aligns with these values as the first multi-chain wallet supporting NEAR, and we continue to integrate additional chains to provide our users with a comprehensive experience, including easily accessible blockchains and their unique features.\\\\\\\\n\\\\\\\\nMoreover, we believe that successful products must continually evolve to make crypto usage as simple and accessible as possible. To this end, we have been diligently developing new features over the past few months. Notable additions include:\\\\\\\\n- Sidepanel: This feature allows our extension wallet to function as a constantly open side panel alongside the active extension.\\\\\\\\n- Mobile App: We are updating our mobile wallet to mirror the features of our extension wallet, ensuring it is equally functional and useful.\\\\\\\\n- Hardware Wallet Integrations: We are working on supporting various hardware wallets, including Keystone, and are also aiming to integrate Keystone support into our mobile wallet.\\\\\\\\n\\\\\\\\nOur primary goal is to enhance the functionality and utility of crypto wallets, making them essential tools for interacting with any dApp. At Nightly, we are committed to expanding the capabilities of wallets beyond their traditional roles. We have made significant progress in diversifying our income through various revenue streams, including partnerships with other dApps. These strategic collaborations will enable us to create sustainable and profitable solutions within the wallet ecosystem.\\\\\\\\n- Staking: We partner with validators such as Everstake to encourage users to stake through Nightly.\\\\\\\\n- Liquid Staking: Our partnership with Metapool allows users to liquid stake and receive stNEAR directly in their wallets without leaving the platform.\\\\\\\\n- Swaps: We have partnered with REF Finance and integrated their dApp into our wallet, allowing NEAR users to swap tokens directly within Nightly. We receive a fee from REF Finance for these transactions.\\\\\\\\n\\\\\\\\nThese features are already implemented in Nightly, but we aim to offer even more possibilities for an enhanced wallet experience, making Nightly the central hub for NEAR while ensuring our \\\\\\\\nsustainability.\\\\\\\\n\\\\\\\\nWe are also developing additional features to help generate yield:\\\\\\\\nEarn Tab: This feature within our wallet allows users to deposit and withdraw tokens to on-chain dApps directly from the wallet. It includes options for borrowing, lending, creating pools, and liquid staking. Users will see APYs for each option, providing a comprehensive view in one place. This feature will also increase exposure for dApps on NEAR, enabling us to charge them a fee for the yield generated through this feature.\\\\\\\\n\\\\\\\\n[//]: # (Why should the committee choose this project?)\\\\\\\\nAs mentioned before, we have been one of the first wallets on NEAR and the first multi-chain wallet. Additionally, we were the first wallet to support NEAR Wallet migration. Our dedication to NEAR is evident, and our goal is not only to maintain our wallet and develop new solutions for ourselves but also to advance NEAR\\\\\\\\u{2019}s future.\\\\\\\\n\\\\\\\\nWe aim to develop the NEAR wallet standard. Our objective is to preserve all existing functionalities while transitioning to a wallet standard that supports multiple wallets, similar to how it works on Solana, Sui, or Ethereum (https://eips.ethereum.org/EIPS/eip-6963). We have already implemented a similar solution for Aptos (https://github.com/aptos-foundation/AIPs/blob/main/aips/aip-62.md). This transition will enhance security, speed, and ease of use. NEAR\\\\\\\\u{2019}s current infrastructure requires a robust wallet standard, and we are well-positioned to not only maintain but also enhance it.\\\\\\\\n\\\\\\\\nAdditionally, Nightly Connect could improve analytics by analyzing traffic and providing more comprehensive data, such as connections with dApps, used wallets, or time spent on dApps.\\\\\\\\n## Goals / Milestones\\\\\\\\n- We currently have 8,000 WAU (Weekly Active Users) and aim for at least 30% of them to start managing their tokens primarily through Nightly. This means not only holding tokens within our wallet but also taking proactive steps like lending or liquid staking through our \\\\\\\\u{201c}Earn\\\\\\\\u{201d} tab.\\\\\\\\n- Add hardware support to the mobile wallet.\\\\\\\\n- Develop support for a Safari extension to make iOS usage even easier.\\\\\\\\n- Implement push notifications within the wallet.\\\\\\\\n- Develop QR code payments.\\\\\\\\n- Develop Nightly Connect on NEAR to assist with gathering data and tracking traffic for dApps and wallets, in line with NEAR\\\\\\\\u{2019}s current development approach.\\\\\\\\n- Ensure that the NEAR wallet standard built by us will be accepted by all wallets on NEAR.\\\\\\\\n- Advance wallet development to achieve full sustainability.\\\\\\\\n\\\\\\\\n[//]: # (Be sure to communicate what the finished effort looks like.)\\\\\\\\nOnce we successfully integrate all our planned activities and develop the new features, we aim to double our user base and ensure that at least 30% of our users engage with NEAR dApps directly via Nightly.\\\\\\\\nNightly Connect will be completed, open-sourced, and ready for integration by dApps.\\\\\\\\n\\\\\\\\n[//]: # (Should include a timeline with milestones, including what will be delivered for each milestone.)\\\\\\\\nQuarter 1: Develop the mentioned features (Earn tab, hardware wallet support, Safari extension) and conduct marketing activities to promote these features.\\\\\\\\nQuarter 2: Build the new wallet standard for NEAR and pursue business development to encourage all NEAR wallets to implement it. Continue development of existing features within the wallet.\\\\\\\\nQuarter 3: Develop Nightly Connect to track dApp and wallet traffic, prepare analytics for this solution, and focus on business development and marketing.\\\\\\\\n\\\\\\\\n## Metrics\\\\\\\\nThe key success metrics we will track are:\\\\\\\\n- Total number of unique users using the wallet\\\\\\\\n- Total number of unique users using dApp features within the wallet\\\\\\\\n- Number of dApps that integrate Nightly Connect\\\\\\\\n- Number of wallets that implement the new wallet standard\\\\\\\\n\\\\\\\\n[//]: # (How will we measure success?)\\\\\\\\nWe can track these statistics directly within the wallet. Additionally, we can monitor metrics such as unique users, events conducted within the wallet, users\\\\\\\\u{2019} devices, and newly created wallets.\\\\\\\\nAfter each quarter, we will prepare a summary of our progress.\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n$50,000 quarterly, according to https://github.com/near/Infrastructure-Working-Group/discussions/134\\\\\\\\n\\\\\\\\n[//]: # (Breakdown of funds usage. How will you use these funds? Be specific.)\\\\\\\\nAccording to Regular Quarterly Wallet Support Policy #134, we plan to use these funds for operations, maintenance, and continued improvements.\\\\\\\\n\\\\\\\\nWe will invest in developing the new features mentioned earlier, promote them with our partner dApps, and allocate funds for marketing activities to attract new users to NEAR.\\\\\\\\nAdditionally, we will use these funds for the development of Nightly Connect to provide dApps with data analytics tools and to build the Wallet Standard to enhance NEAR\\\\\\\\u{2019}s infrastructure.\", \"linked_proposals\": [], \"receiver_account\": \"3ca104db88eca30ab9a91c47148efe81e855d6793cabf3dec702e9796adba9e4\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"50000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"c14bc75b16db942957b04d34f15be548a34cac70d22835f22a7d021d2158d002\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.0876257058971e+21
+    }
+  },
+  {
+    "id": "7582158665",
+    "receipt_id": "367L5JssU2LZwDqx8Vaxpr2DVUCLRZSK56swVrHLHB9G",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9ZtgffmzD43ifmTYYo3tPFhYEnbB6SFB9kY45it5TppE",
+      "block_height": 126177840,
+      "block_timestamp": 1724160833435832800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3524465422693,
+      "tokens_burnt": 352446542269300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "3rwXogUcJhsqoa36KEEQM1kseZQkLnHphStSrCEdC3VS",
+    "included_in_block_hash": "CyLwLk35KpKZDzaQSDX2Cw4otZh33aLETYz2MYayJyK4",
+    "block_timestamp": "1724160830922236032",
+    "block": {
+      "block_height": 126177838
+    },
+    "receipt_conversion_tokens_burnt": "95150355021000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352446542269300000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":9,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"c14bc75b16db942957b04d34f15be548a34cac70d22835f22a7d021d2158d002\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.0876257058971e+21
+    }
+  },
+  {
+    "id": "7586544363",
+    "receipt_id": "GhfhKtG9JU7MBcWRndf5gPAqEc92dZ2qN6phftqHG9dM",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BT36WpYEW9EAUEbWBs4hL2VumTKtDqK2Ji4Ktq21E4RV",
+      "block_height": 126187196,
+      "block_timestamp": 1724172421822781200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7959842423831,
+      "tokens_burnt": 795984242383100000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "94nF6omjSRrTicQqU1HxqrWpKwF8digyBedBGNDfty9P",
+    "included_in_block_hash": "FBrE1yQpygBBaL84pMaxp7qsijvGAQmXj4bKP94zWajw",
+    "block_timestamp": "1724172418205318826",
+    "block": {
+      "block_height": 126187194
+    },
+    "receipt_conversion_tokens_burnt": "82270983599500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 795984242383100000000,
+        "args": "{\"id\": 2, \"body\": {\"name\": \"Near Enablement in Alterscope Risk Infrastructure\", \"summary\": \"Alterscope provides the risk infrastructure for DeFi and Restaking protocols to facilitate data-driven decision-making to mitigate risk for protocol teams and investment firms. Alterscope breaks down the complexity, provides a comprehensive view of the dApp ecosystems, and enables access to DeFi-specific technical and fundamental risks. Over 400 risk metrics and fundamental parameters are tracked across different ecosystem primitives.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": null, \"supervisor\": \"trechriron.near\", \"description\": \"**1. About Alterscope**\\\\\\\\nAlterscope provides the risk infrastructure for DeFi and restaking protocols to facilitate data-driven decision-making to mitigate risk for protocol teams and investment firms. We enable real-time processing of risk across chains, protocols, LPs, and off-chain events. Alterscope breaks down the complexity, provides a comprehensive view of the dApp ecosystems, and enables access to DeFi-specific technical and fundamental risks. Over 400 risk and fundamental parameters are tracked across DeFi primitives and aggregated in risk modules that dissect and investigate multiple risk factors of relevance. \\\\\\\\n\\\\\\\\nAlterscope (legal entity: Solity Network UG) consists of a team of about 20 people and has set up presences in Munich/Germany, London/UK, and Zagreb/Croatia. We are backed by well-known web3 investors, such as IOSG Ventures, Delta Blockchain Fund, and Zee Prime Capital. Additionally, we are part of the prestigious accelerators, such as Earlybird VisionLab, PwC Scale, and Consensys Scale. Notable projects we are working with to enable advanced risk management include Lido, Spool DAO, Euler, IPOR, Silo Finance. Additionally, we are currently working with the Stellar Foundation to enable professional risk management on their evolving dApp layer.\\\\\\\\n\\\\\\\\nThe development team of 15 is led by Marijo Radman (Linkedin). With more than 10 years of experience in corporate development, Marijo has worked for major German corporations such as AUDI, ZF Group, and E.ON. He has led intricate multibillion-dollar projects and managed teams of over 70 individuals in the area of electromobility. Since 2016, Marijo has immersed himself in the crypto space, with a predominant focus on DeFi. He co-founded his first web3 startup, in the niche of gamification & NFTs. He won prizes at various web3 hackathons (e.g., Miami Wormhole, Avalanche Summit Barcelona, ETH Amsterdam). These achievements led to inclusion in the inaugural cohort of the Polkadot Academy, where he spent a month with Gavin Wood. Together, they delved deep into the intricacies of designing a blockchain network. Regarding his academic credentials, Marijo holds a technical degree in electrical engineering and informatics, with a focus on software robotics and machine learning. Additionally, he earned an executive MBA from the Technical University of Munich.\\\\\\\\n\\\\\\\\nThe Alterscope development team consists of a mix of senior and junior developers from the best European technical universities (e.g., Technical University Munich/TUM, Koc University Istanbul, FER Zagreb), with a strong track record in applied research (e.g., working at institutions such as Frauenhofer IIS, IEEE) and practical experience gathered at renowned organizations (e.g., Oracle, SAP Labs, ING, Cisco, Dassault Systems). Notably, Vedran Zivicnjak (Linkedin), the infrastructure lead of Alterscope, has over 15 years of experience in DevOps and previously built critical national IT infrastructures in the area of telecommunications.\\\\\\\\n\\\\\\\\n**2. Benefits for Near**\\\\\\\\nAlterscope\\\\\\\\\\\\'s objective is to provide a comprehensive, real-time view on relevant risk metrics to enable sound due diligence for users, liquidity providers, and developers in the ecosystem of Near. Our core aim is to set Near apart from other ecosystems and to support its vision in, while providing the highest possible degree of security to its users. We are eager to support the Near team in the process of creating a neutral community dashboard that significantly reduces the burden for users and developers to analyze and monitor critical events in the ecosystem. \\\\\\\\n\\\\\\\\nSpecifically, partnering with us provides the following benefits for Near: \\\\\\\\n\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tAdvanced Risk Mapping with Proprietary Methodologies: Our developed methodologies allow for precise mapping of dApps and associated risks, achieving multidimensional comparability across various dApp categories within the Near ecosystem. Our solution enhances understanding and visibility of the inherent risks, assisting developers and users in making informed decisions based on robust data sets across different dApps.\\\\\\\\n\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tUnlocking of Novel Risk Tooling: Alterscope unlocks innovative risk tooling for participants in the Near ecosystem. For instance, being part of Alterscope\\\\\\\\u{2019}s infrastructure unlocks our comparison tool that allows for the graphical representation of quantitative metrics across dApps as well as a customizable risk framework tool that enables any user to configure and adapt risk frameworks according to their specific risk tolerance and requirements.\\\\\\\\n\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tIncreased Liquidity and Investment Security: With 53% of crypto hedge funds and 43% of traditional hedge funds already involved in liquidity provision strategies, Alterscope addresses top investment barriers such as protocol understanding, security concerns, and perceived complexity. Our tools provide the insights necessary for professional investors to engage confidently, thereby attracting and retaining more TVL in the Near ecosystem.\\\\\\\\n\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tCommunity Empowerment for Risk Research: The traditional DYOR (\\\\\\\\\\\\\\\"Do Your Own Research\\\\\\\\\\\\\\\") approach falls short. Alterscope puts this approach on new grounds by facilitating comparable, comprehensive research across chains, protocols, and liquidity pools, empowering both the community and professional liquidity providers (LPs) to perform sound risk assessments.\\\\\\\\n\\\\\\\\nOverall, by leveraging Alterscope\\\\\\\\\\\\'s infrastructure, we can set a new standards in terms of operational capabilities, foster a more secure and transparent Near ecosystem, and increase engagement in terms of users, liquidity providers and developers.\\\\\\\\n\\\\\\\\nThe strength of our solution lies in its real-time capabilities, the ability to integrate diverse parameters from chains, protocols, and various middleware solutions simultaneously, and the opportunity for community collaboration. By aggregating relevant on- and off-chain data, Alterscope provides a multidimensional overview of protocol risks, combined with a no-code risk engine that enables anyone in the community to set up customizable risk frameworks and publicly share them on a marketplace. Our initial focus is on DeFi and Re-Staking applications due to their heightened exposure to risks. However, we are also open to discuss with Near an extension of our risk frameworks to other verticals (e.g., RWA projects, GameFi, SocialFi). By integrating Near-based dApps in the infrastructure of Alterscope, we allow the community to build customizable risk frameworks leveraging over 400 different parameters, addressing risks grounded in the composability and interconnectedness of web3. \\\\\\\\n\\\\\\\\nAs an outlook: We are also progressing towards incorporating zk-proofs into our risk frameworks, enhancing user privacy and augmenting ecosystem protocols with greater intelligence and flexibility. This feature development is intended to be released by end of 2024 with integrated dApps in Alterscope\\\\\\\\u{2019}s infrastructure automatically being enabled to benefit from this innovation.\\\\\\\\n\\\\\\\\u{2003}\\\\\\\\n**3. Project Deliveries**\\\\\\\\nIn the context of this proposal, we plan to systematically establish the foundations for integrating on-chain data from Near and adjusting our backend for being able to onboard Near-based dApps on Alterscope\\\\\\\\u{2019}s platform. We start with configuring our AWS cluster to capture block-level data. A robust ETL pipeline will be implemented, transforming raw data into structured databases for real-time data processing. This setup enables dynamic analytics with statistical and machine learning models. Parallelly, we will craft visually engaging dashboards, optimized for network data to enhance the user experience. The process culminates with extensive testing and documentation, ensuring the reliability of the setup.\\\\\\\\n\\\\\\\\nKey Deliverables\\\\\\\\n1.\\\\\\\\tBackend Infrastructure Setup:\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tDevelop a backend system ready to integrate Near-based dApps and include a dedicated Alterscope ecosystem dashboard for Near.\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tKey Outcome: Enable calculation of risk metrics around tokenomics, liquidity, decentralization of dApps, and monitoring of on-chain-specific risks.\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tMeasured by: Successful integration and functional dashboard display.\\\\\\\\n2.\\\\\\\\tData Pipelines and API Endpoints:\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tConfiguration of AWS clusters to capture and process block-level data.\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tCreation of ETL pipelines to transform raw data into actionable insights.\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tSetup of API endpoints for seamless interaction with Near\\\\\\\\\\\\'s ecosystem portal.\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tMeasured by: Data syncing in real-time with the Near network and API functionality.\\\\\\\\n3.\\\\\\\\tReal-Time Data Processing and Visualization:\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tImplementation of advanced Machine Learning and Deep Learning models for real-time data processing.\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tDevelopment of visually engaging, dynamic dashboards to enhance user experience and data interaction.\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tMeasurable by: Real-time processing capabilities and dashboard usability.\\\\\\\\n4.\\\\\\\\tTesting, Documentation, and Launch Preparation:\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tComprehensive testing across all systems to ensure reliability and performance.\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tDetailed documentation outlining key features, usage, and technical specifications.\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tMeasured by: Detailed technical documentation published.\\\\\\\\n\\\\\\\\nWe suggest a project commencement date set for July 2024 and a finalization until end of July 2024. The details and the respective deliverables are outlined below. The indicated costs includes the data maintenance for 12 months.\\\\\\\\n\\\\\\\\nTimeline with key milestones: \\\\\\\\n07/17/2024: Near on-chain data integration,\\\\\\\\t80h, USD 9,600\\\\\\\\n07/31/2024: ETL pipeline setup, 100h, USD\\\\\\\\t12,000\\\\\\\\n08/10/2024: Data processing setup,\\\\\\\\t80h, USD\\\\\\\\t9,600\\\\\\\\n08/17/2024: Frontend setup, 70h, USD 8,400\\\\\\\\n08/31/2024: Testing & documentation,\\\\\\\\t70h, USD 8,400\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"0f7d8dc84b08c9421f017148884d31fa5b7519ce953beb91b7eb62136b2091d5\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"48000\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"labels\": [\"Other\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2308812646135e+21
+    }
+  },
+  {
+    "id": "7586544967",
+    "receipt_id": "9JH18NeJBJ3MZUu3Ko8yE3xxYNjVX19mb9RjapoKJYgK",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HpvqnR7ycu8pY1p9s8MiXBiCZFbrQnMFS34AJd6Hin8E",
+      "block_height": 126187197,
+      "block_timestamp": 1724172423250574600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3526260386309,
+      "tokens_burnt": 352626038630900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "94nF6omjSRrTicQqU1HxqrWpKwF8digyBedBGNDfty9P",
+    "included_in_block_hash": "FBrE1yQpygBBaL84pMaxp7qsijvGAQmXj4bKP94zWajw",
+    "block_timestamp": "1724172418205318826",
+    "block": {
+      "block_height": 126187194
+    },
+    "receipt_conversion_tokens_burnt": "82270983599500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352626038630900000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"0f7d8dc84b08c9421f017148884d31fa5b7519ce953beb91b7eb62136b2091d5\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":2,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2308812646135e+21
+    }
+  },
+  {
+    "id": "7594941984",
+    "receipt_id": "Dky8LUxqAv353Xrkt6EXpQWS6XttmQkcfnRRBGkMgCgL",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3wnaC9tbrrxgskbVEvv1TNfBPPeGBeWTGADbccGkpxqm",
+      "block_height": 126206956,
+      "block_timestamp": 1724196480842430200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9467983592275,
+      "tokens_burnt": 946798359227500000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "HqWjpTATaLSAZMdWkckxdLxRfBT2Hh4NRgxyfbZjS3wu",
+    "included_in_block_hash": "2vTopnJyDzRnDrUMQohevVrABCMhtt5QZkSt8msnvryc",
+    "block_timestamp": "1724196479608328035",
+    "block": {
+      "block_height": 126206955
+    },
+    "receipt_conversion_tokens_burnt": "82280520342500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 946798359227500000000,
+        "args": "{\"id\": 2, \"body\": {\"name\": \"Near Enablement in Alterscope Risk Infrastructure\", \"summary\": \"Alterscope provides the risk infrastructure for DeFi and Restaking protocols to facilitate data-driven decision-making to mitigate risk for protocol teams and investment firms. Alterscope breaks down the complexity, provides a comprehensive view of the dApp ecosystems, and enables access to DeFi-specific technical and fundamental risks. Over 400 risk metrics and fundamental parameters are tracked across different ecosystem primitives.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": null, \"supervisor\": \"trechriron71.near\", \"description\": \"**1. About Alterscope**\\\\\\\\nAlterscope provides the risk infrastructure for DeFi and restaking protocols to facilitate data-driven decision-making to mitigate risk for protocol teams and investment firms. We enable real-time processing of risk across chains, protocols, LPs, and off-chain events. Alterscope breaks down the complexity, provides a comprehensive view of the dApp ecosystems, and enables access to DeFi-specific technical and fundamental risks. Over 400 risk and fundamental parameters are tracked across DeFi primitives and aggregated in risk modules that dissect and investigate multiple risk factors of relevance. \\\\\\\\n\\\\\\\\nAlterscope (legal entity: Solity Network UG) consists of a team of about 20 people and has set up presences in Munich/Germany, London/UK, and Zagreb/Croatia. We are backed by well-known web3 investors, such as IOSG Ventures, Delta Blockchain Fund, and Zee Prime Capital. Additionally, we are part of the prestigious accelerators, such as Earlybird VisionLab, PwC Scale, and Consensys Scale. Notable projects we are working with to enable advanced risk management include Lido, Spool DAO, Euler, IPOR, Silo Finance. Additionally, we are currently working with the Stellar Foundation to enable professional risk management on their evolving dApp layer.\\\\\\\\n\\\\\\\\nThe development team of 15 is led by Marijo Radman (Linkedin). With more than 10 years of experience in corporate development, Marijo has worked for major German corporations such as AUDI, ZF Group, and E.ON. He has led intricate multibillion-dollar projects and managed teams of over 70 individuals in the area of electromobility. Since 2016, Marijo has immersed himself in the crypto space, with a predominant focus on DeFi. He co-founded his first web3 startup, in the niche of gamification & NFTs. He won prizes at various web3 hackathons (e.g., Miami Wormhole, Avalanche Summit Barcelona, ETH Amsterdam). These achievements led to inclusion in the inaugural cohort of the Polkadot Academy, where he spent a month with Gavin Wood. Together, they delved deep into the intricacies of designing a blockchain network. Regarding his academic credentials, Marijo holds a technical degree in electrical engineering and informatics, with a focus on software robotics and machine learning. Additionally, he earned an executive MBA from the Technical University of Munich.\\\\\\\\n\\\\\\\\nThe Alterscope development team consists of a mix of senior and junior developers from the best European technical universities (e.g., Technical University Munich/TUM, Koc University Istanbul, FER Zagreb), with a strong track record in applied research (e.g., working at institutions such as Frauenhofer IIS, IEEE) and practical experience gathered at renowned organizations (e.g., Oracle, SAP Labs, ING, Cisco, Dassault Systems). Notably, Vedran Zivicnjak (Linkedin), the infrastructure lead of Alterscope, has over 15 years of experience in DevOps and previously built critical national IT infrastructures in the area of telecommunications.\\\\\\\\n\\\\\\\\n**2. Benefits for Near**\\\\\\\\nAlterscope\\\\\\\\\\\\'s objective is to provide a comprehensive, real-time view on relevant risk metrics to enable sound due diligence for users, liquidity providers, and developers in the ecosystem of Near. Our core aim is to set Near apart from other ecosystems and to support its vision in, while providing the highest possible degree of security to its users. We are eager to support the Near team in the process of creating a neutral community dashboard that significantly reduces the burden for users and developers to analyze and monitor critical events in the ecosystem. \\\\\\\\n\\\\\\\\nSpecifically, partnering with us provides the following benefits for Near: \\\\\\\\n\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tAdvanced Risk Mapping with Proprietary Methodologies: Our developed methodologies allow for precise mapping of dApps and associated risks, achieving multidimensional comparability across various dApp categories within the Near ecosystem. Our solution enhances understanding and visibility of the inherent risks, assisting developers and users in making informed decisions based on robust data sets across different dApps.\\\\\\\\n\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tUnlocking of Novel Risk Tooling: Alterscope unlocks innovative risk tooling for participants in the Near ecosystem. For instance, being part of Alterscope\\\\\\\\u{2019}s infrastructure unlocks our comparison tool that allows for the graphical representation of quantitative metrics across dApps as well as a customizable risk framework tool that enables any user to configure and adapt risk frameworks according to their specific risk tolerance and requirements.\\\\\\\\n\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tIncreased Liquidity and Investment Security: With 53% of crypto hedge funds and 43% of traditional hedge funds already involved in liquidity provision strategies, Alterscope addresses top investment barriers such as protocol understanding, security concerns, and perceived complexity. Our tools provide the insights necessary for professional investors to engage confidently, thereby attracting and retaining more TVL in the Near ecosystem.\\\\\\\\n\\\\\\\\n\\\\\\\\u{2022}\\\\\\\\tCommunity Empowerment for Risk Research: The traditional DYOR (\\\\\\\\\\\\\\\"Do Your Own Research\\\\\\\\\\\\\\\") approach falls short. Alterscope puts this approach on new grounds by facilitating comparable, comprehensive research across chains, protocols, and liquidity pools, empowering both the community and professional liquidity providers (LPs) to perform sound risk assessments.\\\\\\\\n\\\\\\\\nOverall, by leveraging Alterscope\\\\\\\\\\\\'s infrastructure, we can set a new standards in terms of operational capabilities, foster a more secure and transparent Near ecosystem, and increase engagement in terms of users, liquidity providers and developers.\\\\\\\\n\\\\\\\\nThe strength of our solution lies in its real-time capabilities, the ability to integrate diverse parameters from chains, protocols, and various middleware solutions simultaneously, and the opportunity for community collaboration. By aggregating relevant on- and off-chain data, Alterscope provides a multidimensional overview of protocol risks, combined with a no-code risk engine that enables anyone in the community to set up customizable risk frameworks and publicly share them on a marketplace. Our initial focus is on DeFi and Re-Staking applications due to their heightened exposure to risks. However, we are also open to discuss with Near an extension of our risk frameworks to other verticals (e.g., RWA projects, GameFi, SocialFi). By integrating Near-based dApps in the infrastructure of Alterscope, we allow the community to build customizable risk frameworks leveraging over 400 different parameters, addressing risks grounded in the composability and interconnectedness of web3. \\\\\\\\n\\\\\\\\nAs an outlook: We are also progressing towards incorporating zk-proofs into our risk frameworks, enhancing user privacy and augmenting ecosystem protocols with greater intelligence and flexibility. This feature development is intended to be released by end of 2024 with integrated dApps in Alterscope\\\\\\\\u{2019}s infrastructure automatically being enabled to benefit from this innovation.\\\\\\\\n\\\\\\\\u{2003}\\\\\\\\n**3. Project Deliveries**\\\\\\\\nIn the context of this proposal, we plan to systematically establish the foundations for integrating on-chain data from Near and adjusting our backend for being able to onboard Near-based dApps on Alterscope\\\\\\\\u{2019}s platform. We start with configuring our AWS cluster to capture block-level data. A robust ETL pipeline will be implemented, transforming raw data into structured databases for real-time data processing. This setup enables dynamic analytics with statistical and machine learning models. Parallelly, we will craft visually engaging dashboards, optimized for network data to enhance the user experience. The process culminates with extensive testing and documentation, ensuring the reliability of the setup.\\\\\\\\n\\\\\\\\nKey Deliverables\\\\\\\\n1.\\\\\\\\tBackend Infrastructure Setup:\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tDevelop a backend system ready to integrate Near-based dApps and include a dedicated Alterscope ecosystem dashboard for Near.\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tKey Outcome: Enable calculation of risk metrics around tokenomics, liquidity, decentralization of dApps, and monitoring of on-chain-specific risks.\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tMeasured by: Successful integration and functional dashboard display.\\\\\\\\n2.\\\\\\\\tData Pipelines and API Endpoints:\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tConfiguration of AWS clusters to capture and process block-level data.\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tCreation of ETL pipelines to transform raw data into actionable insights.\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tSetup of API endpoints for seamless interaction with Near\\\\\\\\\\\\'s ecosystem portal.\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tMeasured by: Data syncing in real-time with the Near network and API functionality.\\\\\\\\n3.\\\\\\\\tReal-Time Data Processing and Visualization:\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tImplementation of advanced Machine Learning and Deep Learning models for real-time data processing.\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tDevelopment of visually engaging, dynamic dashboards to enhance user experience and data interaction.\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tMeasurable by: Real-time processing capabilities and dashboard usability.\\\\\\\\n4.\\\\\\\\tTesting, Documentation, and Launch Preparation:\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tComprehensive testing across all systems to ensure reliability and performance.\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tDetailed documentation outlining key features, usage, and technical specifications.\\\\\\\\n\\\\\\\\t\\\\\\\\u{2022}\\\\\\\\tMeasured by: Detailed technical documentation published.\\\\\\\\n\\\\\\\\nWe suggest a project commencement date set for July 2024 and a finalization until end of July 2024. The details and the respective deliverables are outlined below. The indicated costs includes the data maintenance for 12 months.\\\\\\\\n\\\\\\\\nTimeline with key milestones: \\\\\\\\n07/17/2024: Near on-chain data integration,\\\\\\\\t80h, USD 9,600\\\\\\\\n07/31/2024: ETL pipeline setup, 100h, USD\\\\\\\\t12,000\\\\\\\\n08/10/2024: Data processing setup,\\\\\\\\t80h, USD\\\\\\\\t9,600\\\\\\\\n08/17/2024: Frontend setup, 70h, USD 8,400\\\\\\\\n08/31/2024: Testing & documentation,\\\\\\\\t70h, USD 8,400\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"0f7d8dc84b08c9421f017148884d31fa5b7519ce953beb91b7eb62136b2091d5\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"48000\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"labels\": [\"Other\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3871080425533e+21
+    }
+  },
+  {
+    "id": "7594942318",
+    "receipt_id": "6fR96pgsWLWgtvviVeVMeWQgpFhVxLkeoEc4heK9faQc",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9gMyzJAU9nXCo7fnFToeeAncXEMXDWdsyjiS27dBrjFW",
+      "block_height": 126206957,
+      "block_timestamp": 1724196481845010700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3580291629833,
+      "tokens_burnt": 358029162983300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "HqWjpTATaLSAZMdWkckxdLxRfBT2Hh4NRgxyfbZjS3wu",
+    "included_in_block_hash": "2vTopnJyDzRnDrUMQohevVrABCMhtt5QZkSt8msnvryc",
+    "block_timestamp": "1724196479608328035",
+    "block": {
+      "block_height": 126206955
+    },
+    "receipt_conversion_tokens_burnt": "82280520342500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 358029162983300000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"0f7d8dc84b08c9421f017148884d31fa5b7519ce953beb91b7eb62136b2091d5\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":2,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3871080425533e+21
+    }
+  },
+  {
+    "id": "7627818934",
+    "receipt_id": "2bJUDaphBAH6iugXGjjgB4sgZSWURfGnowxpW722EM8j",
+    "predecessor_account_id": "c14bc75b16db942957b04d34f15be548a34cac70d22835f22a7d021d2158d002",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4fedgAcyykcxbhNxNkrEtDCoFz7Fr3nS93DWk762wAi7",
+      "block_height": 126297858,
+      "block_timestamp": 1724308077820728600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6957812381198,
+      "tokens_burnt": 695781238119800000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "favHh3ZruPkVUeXmszaxs6GVng92bp4DYL3Y3jBNRf8",
+    "included_in_block_hash": "4N4658cyBaz2Yc3qMsQyvsivFWWTYkzTNS7xUjoh7ogY",
+    "block_timestamp": "1724308076490624812",
+    "block": {
+      "block_height": 126297857
+    },
+    "receipt_conversion_tokens_burnt": "31440143409500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 695781238119800000000,
+        "args": "{\"id\": 9, \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0801269041834e+21
+    }
+  }
+]

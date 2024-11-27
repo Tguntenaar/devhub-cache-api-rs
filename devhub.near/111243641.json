@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "2231262159",
+    "receipt_id": "24aHGu2jcNso1aqh8pmuN1eqahdgRt4RdPeAxmA5H4Uf",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HasKEtSZM5Kf3Jw7smsFPyCjKRZvw9kNHhM9oJq2Q6my",
+      "block_height": 111243647,
+      "block_timestamp": 1706145321341394000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7742722337722,
+      "tokens_burnt": 774272233772200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "Gfq7wXFJsTfohSwFkjSkFwVW41f1ZftESBADWa3LzG1M",
+    "included_in_block_hash": "68X7Za5tuMVaX4pVvWCjdD9qvGw72J6HNcFSLxXU1vCb",
+    "block_timestamp": "1706145320570131368",
+    "block": {
+      "block_height": 111243646
+    },
+    "receipt_conversion_tokens_burnt": "243869820188000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 774272233772200000000,
+        "args": "{\"addons\": [{\"id\": \"p56v0f\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"# \\\\\\\\u{1f44b} Welcome!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis community is all about delivering high impact features to the [NEAR DevHub Platform](http://neardevhub.org), a decentralized community platform for NEAR developers to contribute to the ecosystem and stay informed. This space aims to serve as an entry point to individuals, experts, and organizations who are interested in contributing. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Our Groups\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWe have two main groups:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### 1. Working group\\\\\\\\\\\\\\\\nThis formal group is a group of subject matter experts who make official decisions on proposals and questions related to the DevHub Platform. They follow a strict process to review proposals, recommend funding to DAO, and hold grant takers accountable. They also engage with the broader community to understand their needs and encourage ideation. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Members**\\\\\\\\\\\\\\\\n- @frol.near\\\\\\\\\\\\\\\\n- @ori.near\\\\\\\\\\\\\\\\n- @bo.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### 2. Community contributors\\\\\\\\\\\\\\\\nWe have a core group of regular product & technical community contributors who regularly work on making the DevHub platform better, from contributing code to reporting and triaging issues. These individuals collaborate across different time zones using lightweight and mostly asynchronous processes. To learn more about how we work, check out our project [README](https://github.com/near/neardevhub-widgets#how-to-contribute) page on GitHub.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## What are we working on?\\\\\\\\\\\\\\\\nTo track our progress and manage issues effectively, we use a [Kanban board](https://github.com/orgs/near/projects/60/views/1). You can also check out our [current](https://github.com/near/neardevhub-widgets/milestones) and [past](https://github.com/near/neardevhub-widgets/milestones?state=closed) initiatives.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Communication channels\\\\\\\\\\\\\\\\nWe use the following channels for communication:\\\\\\\\\\\\\\\\n- [GitHub:](https://github.com/orgs/near/projects/60/views/1) For specific issues and pull requests. Enable notifications to ensure you get the latest updates.\\\\\\\\\\\\\\\\n- [Telegram:](https://t.me/devhubplatform) For general questions or concerns.\\\\\\\\\\\\\\\\n- [Weekly Standup Calls](https://bit.ly/DevHubCalendar): To align on priorities and discuss progress, plans, and blockers.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## How to get involved\\\\\\\\\\\\\\\\nAnyone is welcome to contribute to the DevHub platform. Here are ways to get involved:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* **Contribute code**: Review the list of [good first issues](https://github.com/near/devgigsboard-widgets/contribute). You can pick any issues from the [Backlog column](https://github.com/orgs/near/projects/60) and indicate your interest by leaving comments. Before you get started, we encourage you to check out [how we work](https://github.com/near/devgigsboard-widgets/blob/main/docs/how-we-work.md) and the [developer guidelines](https://github.com/near/devgigsboard-widgets/blob/main/CONTRIBUTING.md).\\\\\\\\\\\\\\\\n* **Report issues**: To report a [bug](https://github.com/near/devgigsboard-widgets/issues/new?assignees=&labels=bug&template=bug_report.md&title=) or a [feature request](https://github.com/near/devgigsboard-widgets/issues/new?assignees=&labels=enhancement&template=feature-request.md&title=), please review all open and closed [issues](https://github.com/near/devgigsboard-widgets/issues?q=is%3Aissue+is%3Aall+) to make sure no one has previously created a similar topic. If you have a more robust proposal or idea that you\\\\\\\\\\\\'d like to discuss, you are also welcome to create an idea or solution post on our community here.\\\\\\\\\\\\\\\\n* **Triage issues**: You are welcome to help us triage by verifying or reproducing bugs, adding more specific reproduction instructions, or voting on issues by adding a \\\\\\\\u{1f44d} thumbs-up reaction to the issue\\\\\\\\\\\\'s description comment.  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### How to become a paid contributor\\\\\\\\\\\\\\\\nAs an an open-source project, we greatly approach the contributions of each individual. We aim to grow an ecosystem of developers who are here because they like the technology and community. Given that there\\\\\\\\u{2019}s a lot of time and effort that goes into this, we have financial means to compensate for some activities and projects for regular contributors.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you are interested in getting compensate for contributing your skills and expertise to our project, the best way to get started is to first familiarize yourself with [DevHub](https://www.neardevhub.org) and start getting involved (see section above). Once you\\\\\\\\u{2019}ve gained the community\\\\\\\\u{2019}s trust by demonstrating high-quality contributions and ongoing commitment, you can [apply here](https://near.social/#/devgovgigs.near/widget/gigs-board.pages.Post?id=507). \\\\\\\\\\\\\\\"}\", \"display_name\": \"About us \\\\\\\\u{2b50}\\\\\\\\u{fe0f}\"}, {\"id\": \"o9p934\", \"enabled\": true, \"addon_id\": \"telegram\", \"parameters\": \"{\\\\\\\\\\\\\\\"handles\\\\\\\\\\\\\\\":[\\\\\\\\\\\\\\\"https://t.me/devhubplatform\\\\\\\\\\\\\\\"]}\", \"display_name\": \"Telegram\"}], \"handle\": \"devhub-platform\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.603996216109e+21
+    }
+  },
+  {
+    "id": "2231262376",
+    "receipt_id": "4kBj5e338Afzz37tLgp14TbNPqqQSg4NADhvT15hSWjP",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2ATqqyygfdCM5AzVE1qssXLB5fpXzueu9yzkaXjnJ9ui",
+      "block_height": 111243648,
+      "block_timestamp": 1706145322434222000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5858541621488,
+      "tokens_burnt": 585854162148800000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Gfq7wXFJsTfohSwFkjSkFwVW41f1ZftESBADWa3LzG1M",
+    "included_in_block_hash": "68X7Za5tuMVaX4pVvWCjdD9qvGw72J6HNcFSLxXU1vCb",
+    "block_timestamp": "1706145320570131368",
+    "block": {
+      "block_height": 111243646
+    },
+    "receipt_conversion_tokens_burnt": "243869820188000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 585854162148800000000,
+        "args": "{\"data\": {\"devhub-platform.community.devhub.near\": {\"profile\": {\"name\": \"DevHub Platform\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreigivabiaog2s2qgfsuhyrl7f4jmpdwelsv2jmga6jfdbocsrbgv5i\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.603996216109e+21
+    }
+  },
+  {
+    "id": "2231262887",
+    "receipt_id": "DXoDhGfWCqwPYoEHTyjTM4BksetK1ghkC58KHx8rsUNK",
+    "predecessor_account_id": "orangejoe.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2rjgGyWSXhvj1Yv8TFDitqBDz5A1ZQiCRvBM2XvnDXCy",
+      "block_height": 111243650,
+      "block_timestamp": 1706145324955310600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6661322082305,
+      "tokens_burnt": 666132208230500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "9CAZuD75RrGppHijNNaaWctgLSYsegWh2kKEs6njxiWB",
+    "included_in_block_hash": "AbXe9jaY2SJTte2coxXF3tAbTr71S7hWQG6AAoYWRJEm",
+    "block_timestamp": "1706145323710242031",
+    "block": {
+      "block_height": 111243649
+    },
+    "receipt_conversion_tokens_burnt": "242993557653400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "update_community",
+        "deposit": 0,
+        "fee": 666132208230500000000,
+        "args": "{\"handle\": \"devhub-marketing\", \"community\": {\"tag\": \"devhub-marketing\", \"name\": \"DevHub Marketing\", \"addons\": [{\"id\": \"4hy9wk\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{}\", \"display_name\": \"Policies & Forms\"}], \"admins\": [\"nearweek.near\", \"victorkanu1.near\", \"orangejoe.near\"], \"handle\": \"devhub-marketing\", \"logo_url\": \"https://ipfs.near.social/ipfs/bafkreibysr2mkwhb4j36h2t7mqwhynqdy4vzjfygfkfg65kuspd2bawauu\", \"banner_url\": \"https://ipfs.near.social/ipfs/bafkreic4xgorjt6ha5z4s5e3hscjqrowe5ahd7hlfc5p4hb6kdfp6prgy4\", \"description\": \"On a mission to grow the NEAR developer ecosystem\", \"website_url\": null, \"bio_markdown\": \"Marketing support to help grow the NEAR developer ecosystem. If you\\\\\\\\\\\\'re a dev looking for NEAR Eco marketing support please submit a request via links found in \\\\\\\\\\\\\\\"Policies & Forms\\\\\\\\\\\\\\\" section!\", \"github_handle\": null, \"twitter_handle\": \"NEARdevhub\", \"telegram_handle\": \"devhub_nearweek/1\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4949364911661e+21
+    }
+  },
+  {
+    "id": "2231263446",
+    "receipt_id": "6sDVH8Tv5VVRJzTTQVdHncSBQPtxVLqUsybp4V3oAnqh",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "12hYfLGa3Q8Rmng4rfGKMWqdSgxj3QXoGrR8wGebKVC9",
+      "block_height": 111243651,
+      "block_timestamp": 1706145326202302000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5858107252822,
+      "tokens_burnt": 585810725282200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "9CAZuD75RrGppHijNNaaWctgLSYsegWh2kKEs6njxiWB",
+    "included_in_block_hash": "AbXe9jaY2SJTte2coxXF3tAbTr71S7hWQG6AAoYWRJEm",
+    "block_timestamp": "1706145323710242031",
+    "block": {
+      "block_height": 111243649
+    },
+    "receipt_conversion_tokens_burnt": "242993557653400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 585810725282200000000,
+        "args": "{\"data\": {\"devhub-marketing.community.devhub.near\": {\"profile\": {\"name\": \"DevHub Marketing\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibysr2mkwhb4j36h2t7mqwhynqdy4vzjfygfkfg65kuspd2bawauu\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4949364911661e+21
+    }
+  },
+  {
+    "id": "2232460380",
+    "receipt_id": "EkBJEz2zcWjyhbhYu6JfPzWbUktz6fNgmEzX1oqpnLmS",
+    "predecessor_account_id": "orangejoe.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3LxLKLgx2UrepKBhAoxavK9UQnFWY5cNBsTvTxNHmScJ",
+      "block_height": 111250565,
+      "block_timestamp": 1706152877385838800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6793106706084,
+      "tokens_burnt": 679310670608400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "CQss5ZZ5ea7vUs24k7coyo4cNvo983XWh3Ngzqr93aw9",
+    "included_in_block_hash": "2uPut53h3HDwtvc4coFLdxkeo2oVPaa1guFrjRUTwPvK",
+    "block_timestamp": "1706152876188926952",
+    "block": {
+      "block_height": 111250564
+    },
+    "receipt_conversion_tokens_burnt": "242828098537400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 679310670608400000000,
+        "args": "{\"addons\": [{\"id\": \"4hy9wk\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{}\", \"display_name\": \"Policies & Forms\"}], \"handle\": \"devhub-marketing\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.507949494428e+21
+    }
+  },
+  {
+    "id": "2232460806",
+    "receipt_id": "3zyqVqkBWb4Mea1dC2nEqWokouLhBCxXakTgp8pMfaYJ",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "G2YVTnfnc5SvAc4us344Lt3TFrazJfsXQUZBDz7VEWZp",
+      "block_height": 111250566,
+      "block_timestamp": 1706152878487791000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5858107252822,
+      "tokens_burnt": 585810725282200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "CQss5ZZ5ea7vUs24k7coyo4cNvo983XWh3Ngzqr93aw9",
+    "included_in_block_hash": "2uPut53h3HDwtvc4coFLdxkeo2oVPaa1guFrjRUTwPvK",
+    "block_timestamp": "1706152876188926952",
+    "block": {
+      "block_height": 111250564
+    },
+    "receipt_conversion_tokens_burnt": "242828098537400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 585810725282200000000,
+        "args": "{\"data\": {\"devhub-marketing.community.devhub.near\": {\"profile\": {\"name\": \"DevHub Marketing\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibysr2mkwhb4j36h2t7mqwhynqdy4vzjfygfkfg65kuspd2bawauu\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.507949494428e+21
+    }
+  },
+  {
+    "id": "2236932518",
+    "receipt_id": "52sJ1QQqv3HJaghhRhW8u1g8frTRyzokudsfi8HjWfHw",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3v5bLXuagQooHuJDeEDQ1PD5fctsbsdgDdU4VYV1rVpd",
+      "block_height": 111281110,
+      "block_timestamp": 1706185988245703000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7515527385221,
+      "tokens_burnt": 751552738522100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "CXRFnL38d9kHY3Xq7UyUTLPjFd8ByE6pKu5jYsDh5zh1",
+    "included_in_block_hash": "9boofL6zVuorh7PBTHWjATPRz59JhYnTdQcKmbHyuP4W",
+    "block_timestamp": "1706185987091173420",
+    "block": {
+      "block_height": 111281109
+    },
+    "receipt_conversion_tokens_burnt": "244040421952200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "update_community",
+        "deposit": 0,
+        "fee": 751552738522100000000,
+        "args": "{\"handle\": \"devhub-platform\", \"community\": {\"tag\": \"devhub-platform\", \"name\": \"DevHub Platform\", \"addons\": [{\"id\": \"p56v0f\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"# \\\\\\\\u{1f44b} Welcome!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis community is all about delivering high impact features to the [NEAR DevHub Platform](http://neardevhub.org), a decentralized community platform for NEAR developers to contribute to the ecosystem and stay informed. This space aims to serve as an entry point to individuals, experts, and organizations who are interested in contributing. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Our Groups\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWe have two main groups:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### 1. Working group\\\\\\\\\\\\\\\\nThis formal group is a group of subject matter experts who make official decisions on proposals and questions related to the DevHub Platform. They follow a strict process to review proposals, recommend funding to DAO, and hold grant takers accountable. They also engage with the broader community to understand their needs and encourage ideation. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Members**\\\\\\\\\\\\\\\\n- @frol.near\\\\\\\\\\\\\\\\n- @ori.near\\\\\\\\\\\\\\\\n- @bo.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### 2. Community contributors\\\\\\\\\\\\\\\\nWe have a core group of regular product & technical community contributors who regularly work on making the DevHub platform better, from contributing code to reporting and triaging issues. These individuals collaborate across different time zones using lightweight and mostly asynchronous processes. To learn more about how we work, check out our project [README](https://github.com/near/neardevhub-widgets#how-to-contribute) page on GitHub.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## What are we working on?\\\\\\\\\\\\\\\\nTo track our progress and manage issues effectively, we use a [Kanban board](https://github.com/orgs/near/projects/60/views/1). You can also check out our [current](https://github.com/near/neardevhub-widgets/milestones) and [past](https://github.com/near/neardevhub-widgets/milestones?state=closed) initiatives.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Communication channels\\\\\\\\\\\\\\\\nWe use the following channels for communication:\\\\\\\\\\\\\\\\n- [GitHub:](https://github.com/orgs/near/projects/60/views/1) For specific issues and pull requests. Enable notifications to ensure you get the latest updates.\\\\\\\\\\\\\\\\n- [Telegram:](https://t.me/devhubplatform) For general questions or concerns.\\\\\\\\\\\\\\\\n- [Weekly Standup Calls](https://bit.ly/DevHubCalendar): To align on priorities and discuss progress, plans, and blockers.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## How to get involved\\\\\\\\\\\\\\\\nAnyone is welcome to contribute to the DevHub platform. Here are ways to get involved:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* **Contribute code**: Review the list of [good first issues](https://github.com/near/devgigsboard-widgets/contribute). You can pick any issues from the [Backlog column](https://github.com/orgs/near/projects/60) and indicate your interest by leaving comments. Before you get started, we encourage you to check out [how we work](https://github.com/near/devgigsboard-widgets/blob/main/docs/how-we-work.md) and the [developer guidelines](https://github.com/near/devgigsboard-widgets/blob/main/CONTRIBUTING.md).\\\\\\\\\\\\\\\\n* **Report issues**: To report a [bug](https://github.com/near/devgigsboard-widgets/issues/new?assignees=&labels=bug&template=bug_report.md&title=) or a [feature request](https://github.com/near/devgigsboard-widgets/issues/new?assignees=&labels=enhancement&template=feature-request.md&title=), please review all open and closed [issues](https://github.com/near/devgigsboard-widgets/issues?q=is%3Aissue+is%3Aall+) to make sure no one has previously created a similar topic. If you have a more robust proposal or idea that you\\\\\\\\\\\\'d like to discuss, you are also welcome to create an idea or solution post on our community here.\\\\\\\\\\\\\\\\n* **Triage issues**: You are welcome to help us triage by verifying or reproducing bugs, adding more specific reproduction instructions, or voting on issues by adding a \\\\\\\\u{1f44d} thumbs-up reaction to the issue\\\\\\\\\\\\'s description comment.  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### How to become a paid contributor\\\\\\\\\\\\\\\\nAs an an open-source project, we greatly approach the contributions of each individual. We aim to grow an ecosystem of developers who are here because they like the technology and community. Given that there\\\\\\\\u{2019}s a lot of time and effort that goes into this, we have financial means to compensate for some activities and projects for regular contributors.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you are interested in getting compensate for contributing your skills and expertise to our project, the best way to get started is to first familiarize yourself with [DevHub](https://www.neardevhub.org) and start getting involved (see section above). Once you\\\\\\\\u{2019}ve gained the community\\\\\\\\u{2019}s trust by demonstrating high-quality contributions and ongoing commitment, you can [apply here](https://near.social/#/devgovgigs.near/widget/gigs-board.pages.Post?id=507). \\\\\\\\\\\\\\\"}\", \"display_name\": \"About us \\\\\\\\u{2b50}\\\\\\\\u{fe0f}\"}, {\"id\": \"o9p934\", \"enabled\": true, \"addon_id\": \"telegram\", \"parameters\": \"{\\\\\\\\\\\\\\\"handles\\\\\\\\\\\\\\\":[\\\\\\\\\\\\\\\"https://t.me/devhubplatform\\\\\\\\\\\\\\\"]}\", \"display_name\": \"Telegram\"}], \"admins\": [\"theori.near\", \"victorkanu1.near\", \"frol.near\"], \"handle\": \"devhub-platform\", \"logo_url\": \"https://ipfs.near.social/ipfs/bafkreickgqvypgp5vty4udeuslxxaxm3n6lemwjfkebyddzzl4jif3qddi\", \"banner_url\": \"https://ipfs.near.social/ipfs/bafkreievtx75idx2aw3ipy7q2etvvzxh2kn6e3evzqsgm3cjyh6otehtjy\", \"description\": \"Delivering high impact features to the DevHub Platform.\", \"website_url\": \"neardevhub.org\", \"bio_markdown\": \"A community of product & technical contributors focusing on delivering high impact features to the DevHub Platform that empower NEAR developers to thrive and contribute.\", \"github_handle\": \"/near/neardevhub-widgets/tree/main\", \"twitter_handle\": null, \"telegram_handle\": \"https://t.me/devhubplatform\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5814473226231e+21
+    }
+  },
+  {
+    "id": "2236933067",
+    "receipt_id": "8exP822JLuKtYhZyn12vcgr5Z8gtmLP8uwwYcTRiQ3gn",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3M72QWX5d5zuunCsPgmbCMWxRSA9kg67nh16Ew1gL8Xo",
+      "block_height": 111281111,
+      "block_timestamp": 1706185989324512500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5858541621488,
+      "tokens_burnt": 585854162148800000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "CXRFnL38d9kHY3Xq7UyUTLPjFd8ByE6pKu5jYsDh5zh1",
+    "included_in_block_hash": "9boofL6zVuorh7PBTHWjATPRz59JhYnTdQcKmbHyuP4W",
+    "block_timestamp": "1706185987091173420",
+    "block": {
+      "block_height": 111281109
+    },
+    "receipt_conversion_tokens_burnt": "244040421952200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 585854162148800000000,
+        "args": "{\"data\": {\"devhub-platform.community.devhub.near\": {\"profile\": {\"name\": \"DevHub Platform\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreickgqvypgp5vty4udeuslxxaxm3n6lemwjfkebyddzzl4jif3qddi\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5814473226231e+21
+    }
+  },
+  {
+    "id": "2237009670",
+    "receipt_id": "D1bYKPToifqfJsqNUvxqJRafUw1bmMBQs2n4SkhgcfNo",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "31jcb6zsu5UpL3z3NQVoXzxnrXsgFu21jbv7wa1miXhr",
+      "block_height": 111281310,
+      "block_timestamp": 1706186241437898500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6710764405145,
+      "tokens_burnt": 671076440514500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "Gxi4cHQBUDWCiQpHg3c5QbsAJDRAq4NZt68Y2d1waMKQ",
+    "included_in_block_hash": "BE7SMhScvtSPS52xkZVjm6GFjFBgbTZjGShnu8YtyRst",
+    "block_timestamp": "1706186240297918776",
+    "block": {
+      "block_height": 111281309
+    },
+    "receipt_conversion_tokens_burnt": "243020165268000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "update_community",
+        "deposit": 0,
+        "fee": 671076440514500000000,
+        "args": "{\"handle\": \"dao\", \"community\": {\"tag\": \"dao\", \"name\": \"DAO Builders\", \"addons\": [{\"id\": \"r0ccmg\", \"enabled\": true, \"addon_id\": \"telegram\", \"parameters\": \"{\\\\\\\\\\\\\\\"handles\\\\\\\\\\\\\\\":[\\\\\\\\\\\\\\\"https://nearbuilders.com/tg-dao\\\\\\\\\\\\\\\"]}\", \"display_name\": \"Telegram\"}], \"admins\": [\"hackerhouse.near\", \"hack.near\", \"build.sputnik-dao.near\", \"cameron_banyan.near\", \"victorkanu1.near\"], \"handle\": \"dao\", \"logo_url\": \"https://ipfs.near.social/ipfs/bafkreibpyaac4l4ll3pjuri7mq62nc4ckabef4xhuhhssydtyuukklguyy\", \"banner_url\": \"https://ipfs.near.social/ipfs/bafkreifnyahbsh6mvfuqnt7ra2gzkuo5jg3apfl2tigf34vzr7xhq6iyzq\", \"description\": \"Building DAOs & DAO tooling on NEAR\", \"website_url\": \"https://nearbuilders.com/dao\", \"bio_markdown\": \"A decentralized community of DAO Builders, application + smart contract developers, PMs, DAO leaders and more building the future of decentralized organizations for the NEAR Ecosystem.\\\\\\\\n\", \"github_handle\": \"https://github.com/NEARBuilders\", \"twitter_handle\": \"https://twitter.com/nearhacks\", \"telegram_handle\": \"https://nearbuilders.com/tg-dao\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5029494878325e+21
+    }
+  },
+  {
+    "id": "2237010217",
+    "receipt_id": "9kJWm5KE9j3rXYmfUWZ9QKiQAeqpfQkjhUeHW9K35Jvi",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "ACSoXAinbqizT8xigqAN4vtSkKvCbu1GfjhNzw63xVUx",
+      "block_height": 111281311,
+      "block_timestamp": 1706186242581314600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5888528820500,
+      "tokens_burnt": 588852882050000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Gxi4cHQBUDWCiQpHg3c5QbsAJDRAq4NZt68Y2d1waMKQ",
+    "included_in_block_hash": "BE7SMhScvtSPS52xkZVjm6GFjFBgbTZjGShnu8YtyRst",
+    "block_timestamp": "1706186240297918776",
+    "block": {
+      "block_height": 111281309
+    },
+    "receipt_conversion_tokens_burnt": "243020165268000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 588852882050000000000,
+        "args": "{\"data\": {\"dao.community.devhub.near\": {\"profile\": {\"name\": \"DAO Builders\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibpyaac4l4ll3pjuri7mq62nc4ckabef4xhuhhssydtyuukklguyy\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5029494878325e+21
+    }
+  },
+  {
+    "id": "2237011313",
+    "receipt_id": "62BNNQvnp98fk9E7JZXKuQNHeqK3AMR5c8beGpo365pZ",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Ah6PjHgEtRuGxSA7vjdA71jvDHEhkKnRrE2tLXuurKBB",
+      "block_height": 111281345,
+      "block_timestamp": 1706186276123689700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6766052228849,
+      "tokens_burnt": 676605222884900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8KtkycL78LFjDwrvwhmDWYQkdB28aUMxMZmvAmTkHuzB",
+    "included_in_block_hash": "92asE1G9f7daBS7uKptdbVv3kefdJy8PhwkZLZgYcLvq",
+    "block_timestamp": "1706186275206040560",
+    "block": {
+      "block_height": 111281344
+    },
+    "receipt_conversion_tokens_burnt": "243020165268000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "update_community",
+        "deposit": 0,
+        "fee": 676605222884900000000,
+        "args": "{\"handle\": \"dao\", \"community\": {\"tag\": \"dao\", \"name\": \"DAO Builders\", \"addons\": [{\"id\": \"r0ccmg\", \"enabled\": true, \"addon_id\": \"telegram\", \"parameters\": \"{\\\\\\\\\\\\\\\"handles\\\\\\\\\\\\\\\":[\\\\\\\\\\\\\\\"https://nearbuilders.com/tg-dao\\\\\\\\\\\\\\\"]}\", \"display_name\": \"Telegram\"}], \"admins\": [\"hackerhouse.near\", \"hack.near\", \"build.sputnik-dao.near\", \"cameron_banyan.near\", \"victorkanu1.near\"], \"handle\": \"dao\", \"logo_url\": \"https://ipfs.near.social/ipfs/bafkreibpyaac4l4ll3pjuri7mq62nc4ckabef4xhuhhssydtyuukklguyy\", \"banner_url\": \"https://ipfs.near.social/ipfs/bafkreifnyahbsh6mvfuqnt7ra2gzkuo5jg3apfl2tigf34vzr7xhq6iyzq\", \"description\": \"Building DAOs & DAO tooling on NEAR\", \"website_url\": \"https://nearbuilders.com/dao\", \"bio_markdown\": \"A decentralized community of DAO Builders, application + smart contract developers, PMs, DAO leaders and more building the future of decentralized organizations for the NEAR Ecosystem.\\\\\\\\n\", \"github_handle\": \"https://github.com/NEARBuilders\", \"twitter_handle\": \"https://twitter.com/nearhacks\", \"telegram_handle\": \"https://nearbuilders.com/tg-dao\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5084782702029e+21
+    }
+  },
+  {
+    "id": "2237011351",
+    "receipt_id": "EFtz96AbnUvohR3TicjnoHgD9g8Q6KGkqKEoqqWy815A",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7aUgHPGpyzx7ocHjy69ZsJSC6sAAFVpp5YAdDeZhWYp",
+      "block_height": 111281346,
+      "block_timestamp": 1706186277023724800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5888528820500,
+      "tokens_burnt": 588852882050000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8KtkycL78LFjDwrvwhmDWYQkdB28aUMxMZmvAmTkHuzB",
+    "included_in_block_hash": "92asE1G9f7daBS7uKptdbVv3kefdJy8PhwkZLZgYcLvq",
+    "block_timestamp": "1706186275206040560",
+    "block": {
+      "block_height": 111281344
+    },
+    "receipt_conversion_tokens_burnt": "243020165268000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 588852882050000000000,
+        "args": "{\"data\": {\"dao.community.devhub.near\": {\"profile\": {\"name\": \"DAO Builders\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibpyaac4l4ll3pjuri7mq62nc4ckabef4xhuhhssydtyuukklguyy\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5084782702029e+21
+    }
+  },
+  {
+    "id": "2237419838",
+    "receipt_id": "BnpHYkUhz2gXPEep6FwSe5d1QiQy7Tcz64egqqQB2BZk",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AtZZhpdhaZaEx5tRfafohg3Stt3Xb3wyaauv9jadBm6C",
+      "block_height": 111283543,
+      "block_timestamp": 1706188702746149600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6670088435585,
+      "tokens_burnt": 667008843558500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "D8CzpPPFaHm7oWV5MwfX9p3wHY3a4qkGQeWNDnSR58LW",
+    "included_in_block_hash": "8KokHLsMwvUz5quthaTomSWCuuisdkMtC57ipagLbhG",
+    "block_timestamp": "1706188701466745703",
+    "block": {
+      "block_height": 111283542
+    },
+    "receipt_conversion_tokens_burnt": "242993557653400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "update_community",
+        "deposit": 0,
+        "fee": 667008843558500000000,
+        "args": "{\"handle\": \"devhub-marketing\", \"community\": {\"tag\": \"devhub-marketing\", \"name\": \"DevHub Marketing\", \"addons\": [{\"id\": \"4hy9wk\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{}\", \"display_name\": \"Policies & Forms\"}], \"admins\": [\"nearweek.near\", \"victorkanu1.near\", \"orangejoe.near\"], \"handle\": \"devhub-marketing\", \"logo_url\": \"https://ipfs.near.social/ipfs/bafkreif6iwbss63x2maim5bb4w6ypxkuyabnhuc4nk3dgzjaaulfxn4wvm\", \"banner_url\": \"https://ipfs.near.social/ipfs/bafkreid7i3jvx7ejg3q6o7v56bi5siustpjwoexxtdkdhtpy4gtaqe2ctq\", \"description\": \"On a mission to grow the NEAR developer ecosystem\", \"website_url\": null, \"bio_markdown\": \"Marketing support to help grow the NEAR developer ecosystem. If you\\\\\\\\\\\\'re a dev looking for NEAR Eco marketing support please submit a request via links found in \\\\\\\\\\\\\\\"Policies & Forms\\\\\\\\\\\\\\\" section!\", \"github_handle\": null, \"twitter_handle\": \"NEARdevhub\", \"telegram_handle\": \"devhub_nearweek/1\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4958131264941e+21
+    }
+  },
+  {
+    "id": "2237420370",
+    "receipt_id": "3kCHfmMX6KLPCRad1qi3tKdjBpKoWsthATBpNsGgjU2r",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7QRwiE3kVNVJb1fcv9SGbnFscA8vApEuX4JGt5WRXJnu",
+      "block_height": 111283544,
+      "block_timestamp": 1706188704111592200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5858107252822,
+      "tokens_burnt": 585810725282200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "D8CzpPPFaHm7oWV5MwfX9p3wHY3a4qkGQeWNDnSR58LW",
+    "included_in_block_hash": "8KokHLsMwvUz5quthaTomSWCuuisdkMtC57ipagLbhG",
+    "block_timestamp": "1706188701466745703",
+    "block": {
+      "block_height": 111283542
+    },
+    "receipt_conversion_tokens_burnt": "242993557653400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 585810725282200000000,
+        "args": "{\"data\": {\"devhub-marketing.community.devhub.near\": {\"profile\": {\"name\": \"DevHub Marketing\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreif6iwbss63x2maim5bb4w6ypxkuyabnhuc4nk3dgzjaaulfxn4wvm\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4958131264941e+21
+    }
+  },
+  {
+    "id": "2239290106",
+    "receipt_id": "J91C3SSqQigGEAmXK3bZUwJQxi3TKySDrCH3nB6DvS1P",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7sHdW9nuwxKynrjALPWNgdkJnRXTSNZ6vnnWYuxsA4BD",
+      "block_height": 111293455,
+      "block_timestamp": 1706199757727253000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6891335577134,
+      "tokens_burnt": 689133557713400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "B3Ftu2hj3GhG62h3ULHvpbEN6XFfvFptgHbFEFf86NLp",
+    "included_in_block_hash": "4j5CLFh3MRt2jGXBecR9G2nkRUU8aTZx2bwdhLgebfw7",
+    "block_timestamp": "1706199756631873706",
+    "block": {
+      "block_height": 111293454
+    },
+    "receipt_conversion_tokens_burnt": "243070026596200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addon",
+        "deposit": 0,
+        "fee": 689133557713400000000,
+        "args": "{\"handle\": \"devhub-marketing\", \"community_addon\": {\"id\": \"4hy9wk\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Marketing Policies and Handbook\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"**Welcome to the NEAR DevHub Marketing Policies and Handbook** \\\\\\\\u{2013} your comprehensive guide to navigating and harnessing the power of our marketing resources. As a vital part of NEAR DevHub, this handbook aims to streamline the process of requesting marketing support for your initiatives, covering a range of services including Social Media amplification, graphic design, Twitter spaces, and the development of engaging marketing campaigns.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWithin this page, you\\\\\\\\\\\\'ll find clear guidelines on how to effectively communicate your marketing needs, ensuring that our team can seamlessly assist you in amplifying your projects. This handbook is your go-to resource for understanding the procedures, expectations, and collaborative opportunities that the NEAR DevHub Marketing team offers.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nBy aligning with these policies, you\\\\\\\\\\\\'ll pave the way for successful collaborations, ensuring that your projects receive the attention and support they deserve.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n-----\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Policies & Forms\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5180143095918e+21
+    }
+  },
+  {
+    "id": "2239290437",
+    "receipt_id": "G5QnLSAjUy4rAKhYxDXEtQCiqJm8xgLb1yBRWk7ZSSJE",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GEPriYmDkkf6YnisaBPddNCHZEeM8LABMyF5uJ24bUkQ",
+      "block_height": 111293456,
+      "block_timestamp": 1706199758996425000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5858107252822,
+      "tokens_burnt": 585810725282200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "B3Ftu2hj3GhG62h3ULHvpbEN6XFfvFptgHbFEFf86NLp",
+    "included_in_block_hash": "4j5CLFh3MRt2jGXBecR9G2nkRUU8aTZx2bwdhLgebfw7",
+    "block_timestamp": "1706199756631873706",
+    "block": {
+      "block_height": 111293454
+    },
+    "receipt_conversion_tokens_burnt": "243070026596200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 585810725282200000000,
+        "args": "{\"data\": {\"devhub-marketing.community.devhub.near\": {\"profile\": {\"name\": \"DevHub Marketing\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreif6iwbss63x2maim5bb4w6ypxkuyabnhuc4nk3dgzjaaulfxn4wvm\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5180143095918e+21
+    }
+  },
+  {
+    "id": "2239308038",
+    "receipt_id": "65UeBymF5iixmf7GkzenLL12hhku9Ysex5VyULJfu6mq",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6hrJ1PDSTKjvChVbTCqKVFWetxZ2HmmMLUhWPnEbK5yh",
+      "block_height": 111293512,
+      "block_timestamp": 1706199822714657500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6924624258334,
+      "tokens_burnt": 692462425833400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8FeLNhTZv9W7PnnSzh67R3E3XZMFQwCS83zuWpAXZwyf",
+    "included_in_block_hash": "BHHjun2ZHHvTiq8eh21kmZgrn2YVCvoxqeqMsiptywTy",
+    "block_timestamp": "1706199821601327464",
+    "block": {
+      "block_height": 111293511
+    },
+    "receipt_conversion_tokens_burnt": "242851128657600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 692462425833400000000,
+        "args": "{\"addons\": [{\"id\": \"p8zzt1\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{}\", \"display_name\": \"About us \\\\\\\\u{1f52c}\"}, {\"id\": \"4hy9wk\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{}\", \"display_name\": \"Policies & Forms \\\\\\\\u{1f4dc}\"}], \"handle\": \"devhub-marketing\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5211242797732e+21
+    }
+  },
+  {
+    "id": "2239308704",
+    "receipt_id": "E5w7VxQkW18537dyuA3UgaqZ6oV76dN8zmqm4gsUvhFL",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GVC2rwgi5heemb1HGnd1eU2yiMrSUik5yyaJmrULSiAQ",
+      "block_height": 111293513,
+      "block_timestamp": 1706199824029107500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5858107252822,
+      "tokens_burnt": 585810725282200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8FeLNhTZv9W7PnnSzh67R3E3XZMFQwCS83zuWpAXZwyf",
+    "included_in_block_hash": "BHHjun2ZHHvTiq8eh21kmZgrn2YVCvoxqeqMsiptywTy",
+    "block_timestamp": "1706199821601327464",
+    "block": {
+      "block_height": 111293511
+    },
+    "receipt_conversion_tokens_burnt": "242851128657600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 585810725282200000000,
+        "args": "{\"data\": {\"devhub-marketing.community.devhub.near\": {\"profile\": {\"name\": \"DevHub Marketing\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreif6iwbss63x2maim5bb4w6ypxkuyabnhuc4nk3dgzjaaulfxn4wvm\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5211242797732e+21
+    }
+  },
+  {
+    "id": "2239328445",
+    "receipt_id": "8pimfbok553zsRrSWmmxZNgWUKyNasvvSdyeD4gDWT4t",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Br61qT3uUrLTYsEQG5Q7xUVShyif4dgQEqfbVXBLBo8E",
+      "block_height": 111293572,
+      "block_timestamp": 1706199897468959000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6879981072044,
+      "tokens_burnt": 687998107204400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "58fZrB8bnjZR1aBDUSLFP6Gu7bHLqnEkGip8jEUoHJ7B",
+    "included_in_block_hash": "C2Noraswf2QcbfBdExvC4wx4n4vh7xan7mtJxY6He6sG",
+    "block_timestamp": "1706199896134411098",
+    "block": {
+      "block_height": 111293571
+    },
+    "receipt_conversion_tokens_burnt": "242981483609800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addon",
+        "deposit": 0,
+        "fee": 687998107204400000000,
+        "args": "{\"handle\": \"devhub-marketing\", \"community_addon\": {\"id\": \"p8zzt1\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview of Marketing Support Services\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We provide comprehensive marketing support services tailored for NEAR DevHub and our programs, including Hackbox, NEAR Campus, and the Fellowships.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Marketing services included Social Media amplification through Twitter X, Twitter Spaces, LinkedIn, TikTok, Youtube, Graphic design support and the design and execution of marketing campaigns.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWhile most of our operations are online, we can also design and help to execute and elevate IRL operations.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIn 2024 Q3 We\\\\\\\\u{2019}ll consider using the reputation tools to gain Marketing support privileges for projects.\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"About us \\\\\\\\u{1f52c}\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5167903160964e+21
+    }
+  },
+  {
+    "id": "2239328886",
+    "receipt_id": "5bAYAvrF2MSSZMFCGDA4bEmd7ejQMUTgWGaXUsEpU77N",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "74QUX531aXGKga7DEMRKE7cwo2Nnu86bhDPC9ZVStwfp",
+      "block_height": 111293573,
+      "block_timestamp": 1706199898711837000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5858107252822,
+      "tokens_burnt": 585810725282200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "58fZrB8bnjZR1aBDUSLFP6Gu7bHLqnEkGip8jEUoHJ7B",
+    "included_in_block_hash": "C2Noraswf2QcbfBdExvC4wx4n4vh7xan7mtJxY6He6sG",
+    "block_timestamp": "1706199896134411098",
+    "block": {
+      "block_height": 111293571
+    },
+    "receipt_conversion_tokens_burnt": "242981483609800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 585810725282200000000,
+        "args": "{\"data\": {\"devhub-marketing.community.devhub.near\": {\"profile\": {\"name\": \"DevHub Marketing\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreif6iwbss63x2maim5bb4w6ypxkuyabnhuc4nk3dgzjaaulfxn4wvm\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5167903160964e+21
+    }
+  },
+  {
+    "id": "2239377974",
+    "receipt_id": "o5AXRUBdfhsrnSr5EV2JhVbSpv5ra84w6kDKjNrxuRc",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "PDnFLvTKaAPawmeP4rARAsjVr54E7TacDz3EDiX7DM1",
+      "block_height": 111294054,
+      "block_timestamp": 1706200401410512400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7177650518562,
+      "tokens_burnt": 717765051856200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8dr9eHBAcZKQnmuhjg71ZgFY9LMwezc577bRoR4qo6Nh",
+    "included_in_block_hash": "FztE8MxNi3agujBdDhNx9SGZqQtxHWXoC5rUthov25Tf",
+    "block_timestamp": "1706200400539441457",
+    "block": {
+      "block_height": 111294053
+    },
+    "receipt_conversion_tokens_burnt": "243351307093400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addon",
+        "deposit": 0,
+        "fee": 717765051856200000000,
+        "args": "{\"handle\": \"devhub-marketing\", \"community_addon\": {\"id\": \"4hy9wk\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Marketing Policies and Handbook\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"**Welcome to the NEAR DevHub Marketing Policies and Handbook \\\\\\\\u{2013}** your comprehensive guide to navigating and harnessing the power of our marketing resources. As a vital part of NEAR DevHub, this handbook aims to streamline the process of requesting marketing support for your initiatives, covering a range of services including Social Media amplification, graphic design, Twitter spaces, and the development of engaging marketing campaigns.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWithin these pages, you\\\\\\\\\\\\'ll find clear guidelines on how to effectively communicate your marketing needs, ensuring that our team can seamlessly assist you in amplifying your projects. This handbook is your go-to resource for understanding the procedures, expectations, and collaborative opportunities that the NEAR DevHub Marketing team offers.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nBy aligning with these policies, you\\\\\\\\\\\\'ll pave the way for successful collaborations, ensuring that your projects receive the attention and support they deserve.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n-----  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Requesting Social Media Assistance\\\\\\\\\\\\\\\\nNEAR DevHub\\\\\\\\u{2019}s marketing team offers social media amplification through Twitter X and LinkedIn.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nNEAR DevHub team will request their amplification on this [spreadsheet](https://docs.google.com/spreadsheets/d/1wC9eZAe-dXziyuWFJBUhRJ7kAgvMW-zM9cI7dCDsPPM/edit#gid=0), filling out the info on the first tab named Request social media & Copy.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nCore Team members can also request amplification via Telegram DM to the Marketing team. The Marketing team will fill out the form for them. We suggest requesting the amplification seven to three days in advance of the publishing day. If the Core Team needs to post immediately, even on the same day, they can request it via Telegram DM.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nNEAR DevHub program partners such as Hackbox, NEAR Campus and Fellowships can request amplification by filling out the [Social Media request form](https://forms.gle/2UxKZjsKcKiT3co68). **The amplification request through this form should be fully submitted seven days before the deadline. If they need graphic design support, they must request it before the social media amplification to provide the design asset.**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nPlease remember to share all the information available when you request amplification.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n-----\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Policies & Forms \\\\\\\\u{1f4dc}\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5469270842318e+21
+    }
+  },
+  {
+    "id": "2239377998",
+    "receipt_id": "EzLfxkkdaj1DrZfVuadprgpK7STzjgd5WNrjQaiM5dQP",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6briDodZCGsfeP9b1r3yCw4e12VVvrB696tn6iRrn8sf",
+      "block_height": 111294055,
+      "block_timestamp": 1706200402500439600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5858107252822,
+      "tokens_burnt": 585810725282200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8dr9eHBAcZKQnmuhjg71ZgFY9LMwezc577bRoR4qo6Nh",
+    "included_in_block_hash": "FztE8MxNi3agujBdDhNx9SGZqQtxHWXoC5rUthov25Tf",
+    "block_timestamp": "1706200400539441457",
+    "block": {
+      "block_height": 111294053
+    },
+    "receipt_conversion_tokens_burnt": "243351307093400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 585810725282200000000,
+        "args": "{\"data\": {\"devhub-marketing.community.devhub.near\": {\"profile\": {\"name\": \"DevHub Marketing\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreif6iwbss63x2maim5bb4w6ypxkuyabnhuc4nk3dgzjaaulfxn4wvm\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5469270842318e+21
+    }
+  },
+  {
+    "id": "2239379054",
+    "receipt_id": "Et5nSfVRz2E7458vKApQ1kH2XJNg11zzSQKBxf65an8T",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CMShszJ6V2nR7CEZ3LL379t4PaLkTjL3VwMUdZ3mzEuN",
+      "block_height": 111294111,
+      "block_timestamp": 1706200455394678800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7219870132862,
+      "tokens_burnt": 721987013286200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8Va7s2yLNjstzF1qY5BjesoJWSQr1AhtmU5CKkRFNBFC",
+    "included_in_block_hash": "H52GCUZ99rV3HWgU1JEYzQzJi5JgLNDt554hG5XJeR8T",
+    "block_timestamp": "1706200454435015585",
+    "block": {
+      "block_height": 111294110
+    },
+    "receipt_conversion_tokens_burnt": "243005631697000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 721987013286200000000,
+        "args": "{\"addons\": [{\"id\": \"p8zzt1\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview of Marketing Support Services\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We provide comprehensive marketing support services tailored for NEAR DevHub and our programs, including Hackbox, NEAR Campus, and the Fellowships.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Marketing services included Social Media amplification through Twitter X, Twitter Spaces, LinkedIn, TikTok, Youtube, Graphic design support and the design and execution of marketing campaigns.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWhile most of our operations are online, we can also design and help to execute and elevate IRL operations.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIn 2024 Q3 We\\\\\\\\u{2019}ll consider using the reputation tools to gain Marketing support privileges for projects.\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"About us \\\\\\\\u{1f52c}\"}, {\"id\": \"4hy9wk\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{}\", \"display_name\": \"Request Media Assistance \\\\\\\\u{1f4fa}\"}], \"handle\": \"devhub-marketing\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5508033702654e+21
+    }
+  },
+  {
+    "id": "2239379079",
+    "receipt_id": "CJh4Ny5ELUqBAsyHkBbwZCyVXUWbU9HDXytJEmQ9wyY4",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CnriY42FjH8yJim17P36mJbrtzVS8D66xe7Xp9C9QfsQ",
+      "block_height": 111294112,
+      "block_timestamp": 1706200456344743000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5858107252822,
+      "tokens_burnt": 585810725282200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8Va7s2yLNjstzF1qY5BjesoJWSQr1AhtmU5CKkRFNBFC",
+    "included_in_block_hash": "H52GCUZ99rV3HWgU1JEYzQzJi5JgLNDt554hG5XJeR8T",
+    "block_timestamp": "1706200454435015585",
+    "block": {
+      "block_height": 111294110
+    },
+    "receipt_conversion_tokens_burnt": "243005631697000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 585810725282200000000,
+        "args": "{\"data\": {\"devhub-marketing.community.devhub.near\": {\"profile\": {\"name\": \"DevHub Marketing\", \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreif6iwbss63x2maim5bb4w6ypxkuyabnhuc4nk3dgzjaaulfxn4wvm\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5508033702654e+21
+    }
+  },
+  {
+    "id": "2239448647",
+    "receipt_id": "8bRvEgSx1YfJv28fF6nwNDXsQNysmiFWod6ncjmFDvEi",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DpXHfAq946YN3uZqacGxFTKMgCecJUPsCfujbTifycyy",
+      "block_height": 111294365,
+      "block_timestamp": 1706200763431328300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7028335894894,
+      "tokens_burnt": 702833589489400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "AYoAYwRVNoFbbBna5GXobcZDrsBMpYmpeGzjUvmdjNEE",
+    "included_in_block_hash": "GW5KtuVDdFFcpznF7EdpE9SDEW5S7jvBoV14WuFZgsKS",
+    "block_timestamp": "1706200762045711809",
+    "block": {
+      "block_height": 111294364
+    },
+    "receipt_conversion_tokens_burnt": "243169078472400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addon",
+        "deposit": 0,
+        "fee": 702833589489400000000,
+        "args": "{\"handle\": \"devhub-marketing\", \"community_addon\": {\"id\": \"p8zzt1\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview of Marketing Support Services\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We provide comprehensive marketing support services tailored for NEAR DevHub and our programs, including Hackbox, NEAR Campus, and the Fellowships.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Marketing services included Social Media amplification through Twitter X, Twitter Spaces, LinkedIn, TikTok, Youtube, Graphic design support and the design and execution of marketing campaigns.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWhile most of our operations are online, we can also design and help to execute and elevate IRL operations.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIn 2024 Q3 We\\\\\\\\u{2019}ll consider using the reputation tools to gain Marketing support privileges for projects.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Our tasks\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- Once per day, the marketing team will download the form applications and upload the new requests to the spreadsheet.\\\\\\\\\\\\\\\\n- The marketing team will review the new applications and fill out the Marketing Planning Log and the Twitter Planning Log on the spreadsheet.\\\\\\\\\\\\\\\\n- Suppose the marketing team notices missing information on the applications. In that case, it will contact the project owner through Telegram to get all the information and assets required for the amplification.\\\\\\\\\\\\\\\\n- The marketing team will post the amplification on due date and fill out the X report spreadsheet into the POST DATA tab.\\\\\\\\\\\\\\\\n- Seven days after the publishing date, the marketing team will upload the post activity data to the X report.\\\\\\\\\\\\\\\\n- The marketing team will keep the Marketing Planning Log updated.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n-----\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"About us \\\\\\\\u{1f52c}\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.531813393244e+21
+    }
+  }
+]

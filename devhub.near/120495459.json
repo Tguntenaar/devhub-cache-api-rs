@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "5414918519",
+    "receipt_id": "9hWkBvDSg7jzrr4ovobpYbov33FFheMMNvf7pMBitPEf",
+    "predecessor_account_id": "gagdiez.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HDCs8ULWjiqx5Z1aVFQvxNdLqbR4WsVL4qx33daPQiTG",
+      "block_height": 120496242,
+      "block_timestamp": 1717595386797614800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4580011910961,
+      "tokens_burnt": 458001191096100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "9SFbzYHFoFmu2NfsyTZhAnYvFvfu9uAywpnRHqhyCVyg",
+    "included_in_block_hash": "6dCA1ZMnyywzG3QtNejLmSvyKC2xkAbCFB5rscqGnShn",
+    "block_timestamp": "1717595385509467284",
+    "block": {
+      "block_height": 120496241
+    },
+    "receipt_conversion_tokens_burnt": "30858270855600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 458001191096100000000,
+        "args": "{\"id\": 99, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": false, \"test_transaction_sent\": false, \"sponsor_requested_review\": false, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 838721599740800000000
+    }
+  },
+  {
+    "id": "5414918879",
+    "receipt_id": "BLmf4A2u8orPeMMwgBZuvpiMhfXjKwFWMEkGHVRJYcXr",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4Ko2mUG4SRSSC8Ksaxx8WPhfrBNoqoAxSnuFrUyg4vSR",
+      "block_height": 120496243,
+      "block_timestamp": 1717595387877301200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3498621377891,
+      "tokens_burnt": 349862137789100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "9SFbzYHFoFmu2NfsyTZhAnYvFvfu9uAywpnRHqhyCVyg",
+    "included_in_block_hash": "6dCA1ZMnyywzG3QtNejLmSvyKC2xkAbCFB5rscqGnShn",
+    "block_timestamp": "1717595385509467284",
+    "block": {
+      "block_height": 120496241
+    },
+    "receipt_conversion_tokens_burnt": "30858270855600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349862137789100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"flmel.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":99,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 838721599740800000000
+    }
+  },
+  {
+    "id": "5415948542",
+    "receipt_id": "7DBakj6JqpGhN7b5bjpvcU2MiGuchf37ZrFvTb875jri",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BZcrHt5KJReXegmo9G8gYT4zBmZ1vuUNvUhedWnDXjyw",
+      "block_height": 120498338,
+      "block_timestamp": 1717597872208388600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4780865063586,
+      "tokens_burnt": 478086506358600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "ChsGbXncrYaH4WEMf7MZ5yjcg26nkMHzHG945DKEjfZa",
+    "included_in_block_hash": "CsRpdBPxwytEmskAG4RDciz92Eh1AY4xiEvhFaptMVKz",
+    "block_timestamp": "1717597871232307623",
+    "block": {
+      "block_height": 120498337
+    },
+    "receipt_conversion_tokens_burnt": "30998463917400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 478086506358600000000,
+        "args": "{\"addons\": [{\"id\": \"announcements\", \"enabled\": true, \"addon_id\": \"announcements\", \"parameters\": \"{}\", \"display_name\": \"Announcements\"}, {\"id\": \"discussions\", \"enabled\": true, \"addon_id\": \"discussions\", \"parameters\": \"{}\", \"display_name\": \"Discussions\"}, {\"id\": \"activity\", \"enabled\": true, \"addon_id\": \"activity\", \"parameters\": \"{}\", \"display_name\": \"Activity\"}, {\"id\": \"bjryag\", \"enabled\": true, \"addon_id\": \"github\", \"parameters\": \"{\\\\\\\\\\\\\\\"dataTypesIncluded\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"issue\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"pullRequest\\\\\\\\\\\\\\\":false},\\\\\\\\\\\\\\\"description\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"repoURL\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"https://github.com/petersalomonsen/javascriptmusic\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"ticketState\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"all\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"WebAssembly Music\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"metadata\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"github.kanban_board\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"ticket\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"github.kanban_ticket\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"features\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"author\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"labels\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":true}}},\\\\\\\\\\\\\\\"columns\\\\\\\\\\\\\\\":{}}\", \"display_name\": \"Github\"}], \"handle\": \"webassemblymusic\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.2350256675394e+21
+    }
+  },
+  {
+    "id": "5415948929",
+    "receipt_id": "7B94rQibMz3r8tPzBCTcm1UhnoZB3ok45yCLWVkeNhr6",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8x4nwuMQaZYQNoGPpfcixUfYLuXzg5u2hM9FXsS58gqi",
+      "block_height": 120498339,
+      "block_timestamp": 1717597873322356200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 17259406972634,
+      "tokens_burnt": 1.7259406972634e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "ChsGbXncrYaH4WEMf7MZ5yjcg26nkMHzHG945DKEjfZa",
+    "included_in_block_hash": "CsRpdBPxwytEmskAG4RDciz92Eh1AY4xiEvhFaptMVKz",
+    "block_timestamp": "1717597871232307623",
+    "block": {
+      "block_height": 120498337
+    },
+    "receipt_conversion_tokens_burnt": "30998463917400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.7259406972634e+21,
+        "args": "{\"data\": {\"webassemblymusic.community.devhub.near\": {\"profile\": {\"name\": \"WebAssembly Music\", \"tags\": {\"community\": \"\", \"announcements\": \"\", \"webassemblymusic\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafybeiesrsf4fpdmlfgcnxpuxiqlgw2lk3bietdt25mvumrjk5yhf2c54e\"}, \"linktree\": {\"github\": \"petersalomonsen/javascriptmusic\", \"twitter\": \"salomonsen_p\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=webassemblymusic\", \"telegram\": null}, \"description\": \"Music written in Javascript / AssemblyScript and stored in tiny WebAssembly binaries. See the introduction here: https://youtu.be/C8j_ieOm4vE?si=I2Cq534eynlhasg5\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=webassemblymusic).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafybeihsid3qgrb2dd4adsd4kuwe3pondtjr3u27ru6e2mbvabvm4rocru\"}}}, \"discussions.webassemblymusic.community.devhub.near\": {\"profile\": {\"name\": \"WebAssembly Music (Community Discussions)\", \"tags\": {\"community\": \"\", \"discussions\": \"\", \"webassemblymusic\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafybeiesrsf4fpdmlfgcnxpuxiqlgw2lk3bietdt25mvumrjk5yhf2c54e\"}, \"linktree\": {\"github\": \"petersalomonsen/javascriptmusic\", \"twitter\": \"salomonsen_p\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=webassemblymusic\", \"telegram\": null}, \"description\": \"Music stored forever in the NEAR blockchain\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=webassemblymusic).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafybeihsid3qgrb2dd4adsd4kuwe3pondtjr3u27ru6e2mbvabvm4rocru\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.2350256675394e+21
+    }
+  },
+  {
+    "id": "5416458141",
+    "receipt_id": "65BCPoaSzWe36q8ExoD38MUBh3T7iBYsv69r8MVCKqkh",
+    "predecessor_account_id": "maguila.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CmHSrHA4QkBybmhiwsTBBN99oe3uzz8jgUzA9rBmGtqJ",
+      "block_height": 120499330,
+      "block_timestamp": 1717599062818912000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5393029378050,
+      "tokens_burnt": 539302937805000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "7cuD1b4wV7WLvvQvGgGfbpvApQhVF6PtqQYScYgPZYv",
+    "included_in_block_hash": "GU3tvhJHAtcVUDmB5c1xKBGwcB9YykfoMT3e5x5c3qTo",
+    "block_timestamp": "1717599061513717704",
+    "block": {
+      "block_height": 120499329
+    },
+    "receipt_conversion_tokens_burnt": "31252242426400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 539302937805000000000,
+        "args": "{\"body\": {\"name\": \"Fellowship Contributor report by Matias Benary for 2024-04-29 2024-06-02\", \"summary\": \"Fellowship Contributor report by Matias Benary for 2024-04-29 2024-06-02\", \"category\": \"Decentralized DevRel\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"gagdiez.near\", \"description\": \"I am submitting this contributor report as a [fellowship contributor](https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=1566) led by Guillermo (@gagdiez.near).\\\\\\\\n\\\\\\\\nMy previously approved reports: [acceptance](https://near.social/devhub.near/widget/app?page=post&id=2234),[first](https://near.org/devhub.near/widget/app?page=post&id=2365),[second](https://near.org/devhub.near/widget/app?page=post&id=2550),[third](https://near.org/devhub.near/widget/app?page=post&id=2755),[forth](https://near.org/devhub.near/widget/app?page=post&id=2789),[fifth](https://near.org/devhub.near/widget/app?page=post&id=2949),[sixth](https://near.org/devhub.near/widget/app?page=post&id=3005),[seventh](https://near.org/devhub.near/widget/app?page=post&id=3104),[eighth](https://near.social/devhub.near/widget/app?page=post&id=3275),[ninth](https://near.org/devhub.near/widget/app?page=proposal&id=46),[tenth](https://dev.near.org/devhub.near/widget/app?page=proposal&id=70)\\\\\\\\n\\\\\\\\nRequested amount: 2000 (80 * 25$)\\\\\\\\nRequested sponsor: @neardevdao.near\\\\\\\\n\\\\\\\\nSummary of Work\\\\\\\\n\\\\\\\\nMeetings/reports/etc: 12h\\\\\\\\n\\\\\\\\ncheck nft tutorial: 12h\\\\\\\\nhttps://docs.near.org/tutorials/nfts/introduction\\\\\\\\n\\\\\\\\nbasic auction: 12h\\\\\\\\nowner claims money: 12h\\\\\\\\nowner claims winner gets nft: 20h\\\\\\\\nft owner claims winner gets nft: 12h\\\\\\\\nhttps://github.com/matiasbenary/near-ft-auction/tree/addFTtoTs\\\\\\\\n\\\\\\\\n\\\\\\\\nTotal hours: 80\\\\\\\\nHourly rate: $25/hour\", \"linked_proposals\": [], \"receiver_account\": \"maguila.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"2000\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7216104014699e+21
+    }
+  },
+  {
+    "id": "5416458637",
+    "receipt_id": "HC2nnFGX1G2Pv7HxbbGjc1hq6a7MiV52qibVeugY7ymK",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3CpHTpbi5PkMBHkoQDYYEn4wM9GUkUpCPXzkrxxKhSnb",
+      "block_height": 120499331,
+      "block_timestamp": 1717599064160635000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4502517992054,
+      "tokens_burnt": 450251799205400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7cuD1b4wV7WLvvQvGgGfbpvApQhVF6PtqQYScYgPZYv",
+    "included_in_block_hash": "GU3tvhJHAtcVUDmB5c1xKBGwcB9YykfoMT3e5x5c3qTo",
+    "block_timestamp": "1717599061513717704",
+    "block": {
+      "block_height": 120499329
+    },
+    "receipt_conversion_tokens_burnt": "31252242426400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 450251799205400000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Decentralized DevRel* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @maguila.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Fellowship Contributor report by Matias Benary for 2024-04-29 2024-06-02\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nFellowship Contributor report by Matias Benary for 2024-04-29 2024-06-02\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=105)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7216104014699e+21
+    }
+  },
+  {
+    "id": "5416458641",
+    "receipt_id": "6MWYzoc5EmtxFJwgnVzWjm6pcBTQrVeeUuq2uQ877mZm",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3CpHTpbi5PkMBHkoQDYYEn4wM9GUkUpCPXzkrxxKhSnb",
+      "block_height": 120499331,
+      "block_timestamp": 1717599064160635000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3478395403064,
+      "tokens_burnt": 347839540306400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "7cuD1b4wV7WLvvQvGgGfbpvApQhVF6PtqQYScYgPZYv",
+    "included_in_block_hash": "GU3tvhJHAtcVUDmB5c1xKBGwcB9YykfoMT3e5x5c3qTo",
+    "block_timestamp": "1717599061513717704",
+    "block": {
+      "block_height": 120499329
+    },
+    "receipt_conversion_tokens_burnt": "31252242426400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 347839540306400000000,
+        "args": "{\"proposal\": {\"id\": 105, \"snapshot\": {\"name\": \"Fellowship Contributor report by Matias Benary for 2024-04-29 2024-06-02\", \"labels\": [], \"summary\": \"Fellowship Contributor report by Matias Benary for 2024-04-29 2024-06-02\", \"category\": \"Decentralized DevRel\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"editor_id\": \"maguila.near\", \"timestamp\": \"1717599062818911976\", \"supervisor\": \"gagdiez.near\", \"description\": \"I am submitting this contributor report as a [fellowship contributor](https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=1566) led by Guillermo (@gagdiez.near).\\\\\\\\n\\\\\\\\nMy previously approved reports: [acceptance](https://near.social/devhub.near/widget/app?page=post&id=2234),[first](https://near.org/devhub.near/widget/app?page=post&id=2365),[second](https://near.org/devhub.near/widget/app?page=post&id=2550),[third](https://near.org/devhub.near/widget/app?page=post&id=2755),[forth](https://near.org/devhub.near/widget/app?page=post&id=2789),[fifth](https://near.org/devhub.near/widget/app?page=post&id=2949),[sixth](https://near.org/devhub.near/widget/app?page=post&id=3005),[seventh](https://near.org/devhub.near/widget/app?page=post&id=3104),[eighth](https://near.social/devhub.near/widget/app?page=post&id=3275),[ninth](https://near.org/devhub.near/widget/app?page=proposal&id=46),[tenth](https://dev.near.org/devhub.near/widget/app?page=proposal&id=70)\\\\\\\\n\\\\\\\\nRequested amount: 2000 (80 * 25$)\\\\\\\\nRequested sponsor: @neardevdao.near\\\\\\\\n\\\\\\\\nSummary of Work\\\\\\\\n\\\\\\\\nMeetings/reports/etc: 12h\\\\\\\\n\\\\\\\\ncheck nft tutorial: 12h\\\\\\\\nhttps://docs.near.org/tutorials/nfts/introduction\\\\\\\\n\\\\\\\\nbasic auction: 12h\\\\\\\\nowner claims money: 12h\\\\\\\\nowner claims winner gets nft: 20h\\\\\\\\nft owner claims winner gets nft: 12h\\\\\\\\nhttps://github.com/matiasbenary/near-ft-auction/tree/addFTtoTs\\\\\\\\n\\\\\\\\n\\\\\\\\nTotal hours: 80\\\\\\\\nHourly rate: $25/hour\", \"linked_proposals\": [], \"receiver_account\": \"maguila.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"2000\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"author_id\": \"maguila.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7216104014699e+21
+    }
+  },
+  {
+    "id": "5416458645",
+    "receipt_id": "89ZxHa4QHZ7M8rrVn2HY1msZ5sgDGKnJcgjios92d9Pr",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3CpHTpbi5PkMBHkoQDYYEn4wM9GUkUpCPXzkrxxKhSnb",
+      "block_height": 120499331,
+      "block_timestamp": 1717599064160635000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3529638817267,
+      "tokens_burnt": 352963881726700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7cuD1b4wV7WLvvQvGgGfbpvApQhVF6PtqQYScYgPZYv",
+    "included_in_block_hash": "GU3tvhJHAtcVUDmB5c1xKBGwcB9YykfoMT3e5x5c3qTo",
+    "block_timestamp": "1717599061513717704",
+    "block": {
+      "block_height": 120499329
+    },
+    "receipt_conversion_tokens_burnt": "31252242426400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352963881726700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":105,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"maguila.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":105,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"maguila.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":105,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"maguila.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":105,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"maguila.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7216104014699e+21
+    }
+  },
+  {
+    "id": "5421758832",
+    "receipt_id": "Fd9BpzPK6JZAG4jbkU1GF1uF4LfLw5pHBuCPE8jE9Bsh",
+    "predecessor_account_id": "gagdiez.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "H2V9FxadwYx5meoHFAV7w5jjndtPfXAooEtkr49xAQnU",
+      "block_height": 120510072,
+      "block_timestamp": 1717612319064323300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4435058451571,
+      "tokens_burnt": 443505845157100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "HvWbsNNXstQmUaV3FYZdVam5HEUeMsSFXZkA8ZfDVNAp",
+    "included_in_block_hash": "4hxG5auVPEQWbEXP4Jef6MZc5iikpFCjbrGfJd666mo7",
+    "block_timestamp": "1717612317917232816",
+    "block": {
+      "block_height": 120510071
+    },
+    "receipt_conversion_tokens_burnt": "30858494449000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 443505845157100000000,
+        "args": "{\"id\": 105, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": false, \"test_transaction_sent\": false, \"sponsor_requested_review\": false, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 825600499694800000000
+    }
+  },
+  {
+    "id": "5421760092",
+    "receipt_id": "5poxB9qNzfWQctgu5HGGN3oBnnv35UkZYYGEYxiysmTD",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "44VdVbZwT9NRY5gsbkjtjyaqi677YMqZwz8F9GquNfXs",
+      "block_height": 120510073,
+      "block_timestamp": 1717612320274443500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3512361600887,
+      "tokens_burnt": 351236160088700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "HvWbsNNXstQmUaV3FYZdVam5HEUeMsSFXZkA8ZfDVNAp",
+    "included_in_block_hash": "4hxG5auVPEQWbEXP4Jef6MZc5iikpFCjbrGfJd666mo7",
+    "block_timestamp": "1717612317917232816",
+    "block": {
+      "block_height": 120510071
+    },
+    "receipt_conversion_tokens_burnt": "30858494449000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351236160088700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"maguila.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":105,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 825600499694800000000
+    }
+  },
+  {
+    "id": "5422013448",
+    "receipt_id": "54fGN5u3LqY2QD5VZfvCJ5FZ1h9oGobMQDsKzzeCL33Q",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Ctrs4AjKbJZRUrJuUA493uVuPSF2hD3ZwffA9No73p5x",
+      "block_height": 120510775,
+      "block_timestamp": 1717613125718166000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 2645960261047,
+      "tokens_burnt": 264596026104700000000,
+      "executor_account_id": "devhub.near",
+      "status": false
+    },
+    "transaction_hash": "DkowMKNUTyRgTvpg2j8A5iyDUqsnpNWgkhfZv1cix5B4",
+    "included_in_block_hash": "4N7B7E4sFoaEBGp5SBV7nMkmUYo3WbxkR9zDLihxRqFQ",
+    "block_timestamp": "1717613124495343372",
+    "block": {
+      "block_height": 120510774
+    },
+    "receipt_conversion_tokens_burnt": "30901200788400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 264596026104700000000,
+        "args": "{\"data\": {\"blog\": {\"test-blog-1993\": {\"\": \"## Hello this is content\\\\\\\\n\\\\\\\\n### And this is an H3\\\\\\\\n\\\\\\\\n\\\\\\\\nWhere am I?\", \"metadata\": {\"id\": 1993, \"title\": \"Test Blog\", \"author\": \"efiz.near\", \"status\": \"DRAFT\", \"category\": \"blog\", \"subtitle\": \"Subtitle for blog\", \"createdAt\": \"2023-11-03\", \"updatedAt\": \"2023-11-03\", \"description\": \"Describing the blog\", \"publishedAt\": \"2023-11-03\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"devhub-test\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 295497226893100000000
+    }
+  },
+  {
+    "id": "5422014793",
+    "receipt_id": "9EUQcBRrKSurcfD9YT2Kszm9pfAPjYqqcUra4b5d8xSY",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Fn9rsMGx2S8Gup4Wyxf21JRdReQg7jLUACqDKyFpb7nX",
+      "block_height": 120510780,
+      "block_timestamp": 1717613130978451700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4933792857709,
+      "tokens_burnt": 493379285770900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "3UBou4yY993ujGT5ELvy8qjzFYdkbwEPpTzdoV4yTcY8",
+    "included_in_block_hash": "4dkfmgwvGheLtNazydMtzPJmktrbC27Vrt7KMgiiqfMp",
+    "block_timestamp": "1717613129862382657",
+    "block": {
+      "block_height": 120510779
+    },
+    "receipt_conversion_tokens_burnt": "31273260206000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 493379285770900000000,
+        "args": "{\"data\": {\"blog\": {\"devgov-dao-staking-pool-announcement-2015\": {\"\": \"Hey everyone! Today we are happy to announce the launch of the Developer Governance staking pool, [neardevgov.poolv1.near](https://wallet.near.org/staking/neardevgov.poolv1.near) that you can use to directly support the NEAR developer ecosystem.\\\\\\\\n\\\\\\\\nSo far Developer Governance has kicked off 4 Work Groups and 11 Community Groups that all have regular meetings to discuss new ideas and formally agree on technical decisions. Our next steps are to scale what we\\\\\\\\u{2019}ve been already doing, introduce a platform for matching ideas with sponsorships and people implementing them, and further diversify community participation.\\\\\\\\n\\\\\\\\nThis project exists to help organize the NEAR developer ecosystem, and to a lesser extent to be an asset distribution router. However, to scale further, meet the above-mentioned growth milestones, and to simply cover the operational costs, we need to start receiving sponsorship and funding.\\\\\\\\n\\\\\\\\nIn the spirit of this being a community-centric project we would like to invite everyone to support Developer Governance DAO financially by staking NEAR tokens with our staking pool. All staking fees will be spent on the operation of the Developer Governance, which will include operational costs (including node/website infra costs and legal fees), incentivisation of the community in some select cases, direct grants to the projects, among other things. All transactions will be going through [neardevgov.sputnik-dao.near](https://app.astrodao.com/dao/neardevgov.sputnik-dao.near) which allows full transparency and accountability into asset allocation.\", \"metadata\": {\"id\": 2015, \"title\": \"DevGov DAO Staking Pool Announcement\", \"author\": \"bearmans.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Announcing the launch of the Developer Governance staking pool, which you can use to directly support the NEAR developer ecosystem.\", \"createdAt\": \"2023-11-03\", \"updatedAt\": \"2023-11-03\", \"description\": \" \", \"publishedAt\": \"2023-11-03\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"developer-dao\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3177546991179e+21
+    }
+  },
+  {
+    "id": "5422015054",
+    "receipt_id": "EnahonvfnRrWk8Hwfa5XrgAbhTQfg3JUkokBwxa9FEC9",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EZc1YsJ6mKn32ZpwmypTns4bR51zbZ5YSuKKw5dpJk9f",
+      "block_height": 120510781,
+      "block_timestamp": 1717613132236060200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7931021531410,
+      "tokens_burnt": 793102153141000000000,
+      "executor_account_id": "social.near",
+      "status": false
+    },
+    "transaction_hash": "3UBou4yY993ujGT5ELvy8qjzFYdkbwEPpTzdoV4yTcY8",
+    "included_in_block_hash": "4dkfmgwvGheLtNazydMtzPJmktrbC27Vrt7KMgiiqfMp",
+    "block_timestamp": "1717613129862382657",
+    "block": {
+      "block_height": 120510779
+    },
+    "receipt_conversion_tokens_burnt": "31273260206000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 793102153141000000000,
+        "args": "{\"data\": {\"developer-dao.community.devhub.near\": {\"blog\": {\"devgov-dao-staking-pool-announcement-2015\": {\"\": \"Hey everyone! Today we are happy to announce the launch of the Developer Governance staking pool, [neardevgov.poolv1.near](https://wallet.near.org/staking/neardevgov.poolv1.near) that you can use to directly support the NEAR developer ecosystem.\\\\\\\\n\\\\\\\\nSo far Developer Governance has kicked off 4 Work Groups and 11 Community Groups that all have regular meetings to discuss new ideas and formally agree on technical decisions. Our next steps are to scale what we\\\\\\\\u{2019}ve been already doing, introduce a platform for matching ideas with sponsorships and people implementing them, and further diversify community participation.\\\\\\\\n\\\\\\\\nThis project exists to help organize the NEAR developer ecosystem, and to a lesser extent to be an asset distribution router. However, to scale further, meet the above-mentioned growth milestones, and to simply cover the operational costs, we need to start receiving sponsorship and funding.\\\\\\\\n\\\\\\\\nIn the spirit of this being a community-centric project we would like to invite everyone to support Developer Governance DAO financially by staking NEAR tokens with our staking pool. All staking fees will be spent on the operation of the Developer Governance, which will include operational costs (including node/website infra costs and legal fees), incentivisation of the community in some select cases, direct grants to the projects, among other things. All transactions will be going through [neardevgov.sputnik-dao.near](https://app.astrodao.com/dao/neardevgov.sputnik-dao.near) which allows full transparency and accountability into asset allocation.\", \"metadata\": {\"id\": 2015, \"title\": \"DevGov DAO Staking Pool Announcement\", \"author\": \"bearmans.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Announcing the launch of the Developer Governance staking pool, which you can use to directly support the NEAR developer ecosystem.\", \"createdAt\": \"2023-11-03\", \"updatedAt\": \"2023-11-03\", \"description\": \" \", \"publishedAt\": \"2023-11-03\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3177546991179e+21
+    }
+  },
+  {
+    "id": "5422016425",
+    "receipt_id": "8K6kauN8H8cfZCG9kcQABMoUy9j5oWhDVkggo2vWPkBp",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AY3686Wsf7XiDUEsiNKHuqMpoJZ7v2T2exNLJKVnhqkF",
+      "block_height": 120510786,
+      "block_timestamp": 1717613137745654500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5564634388771,
+      "tokens_burnt": 556463438877100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "EDjmihrkyxBFvENtkF9PnZ6ZX4N2nCZPLjTtw1rC6MiE",
+    "included_in_block_hash": "2qmY4E9VmyNS2VMaro4tLfaH9pNGo3JSuSuKcH8YqCKG",
+    "block_timestamp": "1717613136614730073",
+    "block": {
+      "block_height": 120510785
+    },
+    "receipt_conversion_tokens_burnt": "32790565018400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 556463438877100000000,
+        "args": "{\"data\": {\"blog\": {\"ways-to-engage-on-devhub-2028\": {\"\": \"A few months ago, we launched the NEAR Developer Governance to help decentralize the NEAR developer ecosystem. The goal is to encourage broad innovation from the developer community without relying on a single entity. This opens the door for anyone to participate and contribute in any capacity in a transparent and permissionless way, while ensuring quality.\\\\\\\\n\\\\\\\\nThere are many ways to engage with developer governance. Almost any type of developer community activity falls under one of four categories:\\\\\\\\n\\\\\\\\n![](https://ipfs.near.social/ipfs/bafkreihdce75h4zzarrorgazcoh6wjb4qyoy65d5x7ymqvvc2xtdqknuwi)\\\\\\\\n\\\\\\\\n*For example, Alice starts with an idea and bounces her thoughts in some community channel about it. This group gives her social validation and helps hone her idea, enough for her to start planning implementation. At some point she might choose to validate her plan with subject matter experts, to ensure other products agree to integrate with her tech, to rally more community behind it, to seek funding, or to simply strengthen her pitch. One of the acceleration and funding programs passes by and decides to fund and enable her project based on her strong plan and community support.*\\\\\\\\n\\\\\\\\nThis simple story does not describe all the options available to Alice. If she has a solution already fully figured out in her mind, she might choose to implement it without announcing it or seeking validation, or to fundraise entirely on her own. Also, her idea might not have anything to do with writing code. Perhaps she is offering to review or audit someone else\\\\\\\\u{2019}s project, or to organize a technical event, etc. Regardless of what she chooses to do and not do, there are four categories of developer community activity she can choose to engage with.\\\\\\\\n\\\\\\\\nDeveloper Governance is both a decentralized social structure and a set of tools. As a social structure it consists of groups and roles with different responsibilities that are aligned with each of the four categories below. And for each of the categories there are tools that a person can use to Ideate, Implement, Review, or Support.\\\\\\\\n\\\\\\\\n## Ideate\\\\\\\\nAny improvement to the NEAR ecosystem starts with an idea. We want to provide a place for people to freely express and explore their ideas in a supportive and encouraging environment. It should be done in the most permissionless and low-barrier way. But people cannot be just thrusted into general purpose chats where their ideas are buried in the noise and where it is hard to discover like-minded people. Based on our experience in other Open Source communities, we adopted the concept of a Community Group (CG) \\\\\\\\u{2013} a self-organized circle of people interested in a specific topic. CGs are not controlled by anyone but the people organizing them and anyone can create a CG with the specialization they want.\\\\\\\\n\\\\\\\\n**Ways to participate in ideation:**\\\\\\\\n\\\\\\\\nSubmit your idea on the [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed)\\\\\\\\n- Join an existing [Community Group ](https://near.org/devgovgigs.near/widget/app?page=communities) and discuss ideas\\\\\\\\n- Start a new [Community Group ](https://near.org/devgovgigs.near/widget/app?page=communities)\\\\\\\\n\\\\\\\\n## Implement\\\\\\\\nCoding is the defining feature of the development community, and we don\\\\\\\\u{2019}t want to create any barriers in the way of community members who just want to write some code. We recognize that sometimes coding is done in response to some idea and that people can discover ideas as the result of coding. However, we want the coding to be inclusive and therefore if you want to submit your implementation specification, you first need to describe an idea even if it is vague. In this way, anyone can propose alternative implementations to your idea.\\\\\\\\n\\\\\\\\n**Ways to participate in implementation:**\\\\\\\\n\\\\\\\\n- Explore existing Ideas on the  [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed) and submit implementation proposals\\\\\\\\n- Propose an original idea and submit implementation details on the  [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed)\\\\\\\\n- Comment on the existing submissions and discuss their technical details\\\\\\\\n\\\\\\\\n## Review\\\\\\\\n* While you can discuss your idea or solution with the general community, the social support in itself is frequently insufficient if you need to be integrated across the ecosystem, included into some standards or the protocol, and if you are seeking funding or other support. To validate your idea more officially,  you need a recognized group of experts to review and approve it. Following the example of [Rust governance](https://www.rust-lang.org/governance), we adopted the concept of a Work Group (WG) \\\\\\\\u{2013} a selected committee of subject matter experts that make official decisions on certain questions. Work Groups follow a rigorous [NEP-0001](https://github.com/near/NEPs/blob/master/neps/nep-0001.md) process which guarantees that proposals are reviewed fairly and timely.\\\\\\\\n\\\\\\\\nWe do not limit reviews to Work Groups only. If you are a valuable and recognized expert (e.g. a security auditor), you might post your review to someone\\\\\\\\u{2019}s submission for free or at a cost. Anyone can submit a review as an attestation to an existing submission, but keep in mind that your reputation is on the line. Consider just leaving a comment, if unsure.\\\\\\\\n\\\\\\\\n**Ways to participate in reviews:**\\\\\\\\n\\\\\\\\n- Request a review to your idea on the [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed) by leaving a comment and tagging it with a corresponding label, e.g. \\\\\\\\u{201c}wg-protocol\\\\\\\\u{201d}\\\\\\\\n- Become a WG member by actively participating in CG (other WG members will notice and nominate you)\\\\\\\\n- If you are a recognized expert post or suggest doing attestations on the [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed)\\\\\\\\n\\\\\\\\n## Support \\\\\\\\n[NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed) is a platform that enables organizations seeking to fund and help NEAR ecosystem projects. NEAR Foundation, NDC, and various accelerators have different criteria and motivation to sponsor and support ecosystem projects. However, they don\\\\\\\\u{2019}t have resources to review all applications and oversee proper utilization of funds. While we don\\\\\\\\u{2019}t want our developer community to be centered around funding, we want to make funding as easy as possible.\\\\\\\\n\\\\\\\\nSponsors can quickly explore projects matching their criteria by using filtering with labels (coming soon) and checking out the attestations submitted by the experts, e.g. Work Groups. They can also request reviews from WG in the comments of the ideas and submissions. Once they find projects that are matching their criteria, they can negotiate the cost in the comments or delegate it to the Work Group experts. Finally, they can submit a sponsorship with and designate an expert to supervise funds utilization, which might require paying them a fee. is a platform that enables organizations seeking to fund and help NEAR ecosystem projects. NEAR Foundation, NDC, and various accelerators have different criteria and motivation to sponsor and support ecosystem projects. However, they don\\\\\\\\u{2019}t have resources to review all applications and oversee proper utilization of funds. While we don\\\\\\\\u{2019}t want our developer community to be centered around funding, we want to make funding as easy as possible.\\\\\\\\n\\\\\\\\nSponsors can quickly explore projects matching their criteria by using filtering with labels (coming soon) and checking out the attestations submitted by the experts, e.g. Work Groups. They can also request reviews from WG in the comments of the ideas and submissions. Once they find projects that are matching their criteria, they can negotiate the cost in the comments or delegate it to the Work Group experts. Finally, they can submit a sponsorship with and designate an expert to supervise funds utilization, which might require paying them a fee.\\\\\\\\n\\\\\\\\n**Ways to participate in support:**\\\\\\\\n\\\\\\\\n- Explore submissions on the [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed) to find the ones matching your criteria\\\\\\\\n- Request necessary attestations from the Work Groups if a submission lacks them\\\\\\\\n- Submit a sponsorship and designate an expert to supervise funds utilization\\\\\\\\n\\\\\\\\nIn future posts, we will share our progress and insights of even more ways to get involved.\", \"metadata\": {\"id\": 2028, \"title\": \"Ways to engage on DevHub\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"How you can ideate, implement, review, and support projects within the decentralized NEAR developer ecosystem.\", \"createdAt\": \"2023-11-03\", \"updatedAt\": \"2023-11-03\", \"description\": \"How you can ideate, implement, review, and support projects within the decentralized NEAR developer ecosystem.\", \"publishedAt\": \"2023-11-03\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"developer-dao\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4476191624841e+21
+    }
+  },
+  {
+    "id": "5422016602",
+    "receipt_id": "3a1j3JttiYooCNZsBhdoE1e8ePkQtZVLNnXnqZfbrbV3",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DLwv4KdR9eBbUrKswq3qJjSeEZVQQQirJhEXuAhZQ1n6",
+      "block_height": 120510787,
+      "block_timestamp": 1717613138903342800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8583651585886,
+      "tokens_burnt": 858365158588600000000,
+      "executor_account_id": "social.near",
+      "status": false
+    },
+    "transaction_hash": "EDjmihrkyxBFvENtkF9PnZ6ZX4N2nCZPLjTtw1rC6MiE",
+    "included_in_block_hash": "2qmY4E9VmyNS2VMaro4tLfaH9pNGo3JSuSuKcH8YqCKG",
+    "block_timestamp": "1717613136614730073",
+    "block": {
+      "block_height": 120510785
+    },
+    "receipt_conversion_tokens_burnt": "32790565018400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 858365158588600000000,
+        "args": "{\"data\": {\"developer-dao.community.devhub.near\": {\"blog\": {\"ways-to-engage-on-devhub-2028\": {\"\": \"A few months ago, we launched the NEAR Developer Governance to help decentralize the NEAR developer ecosystem. The goal is to encourage broad innovation from the developer community without relying on a single entity. This opens the door for anyone to participate and contribute in any capacity in a transparent and permissionless way, while ensuring quality.\\\\\\\\n\\\\\\\\nThere are many ways to engage with developer governance. Almost any type of developer community activity falls under one of four categories:\\\\\\\\n\\\\\\\\n![](https://ipfs.near.social/ipfs/bafkreihdce75h4zzarrorgazcoh6wjb4qyoy65d5x7ymqvvc2xtdqknuwi)\\\\\\\\n\\\\\\\\n*For example, Alice starts with an idea and bounces her thoughts in some community channel about it. This group gives her social validation and helps hone her idea, enough for her to start planning implementation. At some point she might choose to validate her plan with subject matter experts, to ensure other products agree to integrate with her tech, to rally more community behind it, to seek funding, or to simply strengthen her pitch. One of the acceleration and funding programs passes by and decides to fund and enable her project based on her strong plan and community support.*\\\\\\\\n\\\\\\\\nThis simple story does not describe all the options available to Alice. If she has a solution already fully figured out in her mind, she might choose to implement it without announcing it or seeking validation, or to fundraise entirely on her own. Also, her idea might not have anything to do with writing code. Perhaps she is offering to review or audit someone else\\\\\\\\u{2019}s project, or to organize a technical event, etc. Regardless of what she chooses to do and not do, there are four categories of developer community activity she can choose to engage with.\\\\\\\\n\\\\\\\\nDeveloper Governance is both a decentralized social structure and a set of tools. As a social structure it consists of groups and roles with different responsibilities that are aligned with each of the four categories below. And for each of the categories there are tools that a person can use to Ideate, Implement, Review, or Support.\\\\\\\\n\\\\\\\\n## Ideate\\\\\\\\nAny improvement to the NEAR ecosystem starts with an idea. We want to provide a place for people to freely express and explore their ideas in a supportive and encouraging environment. It should be done in the most permissionless and low-barrier way. But people cannot be just thrusted into general purpose chats where their ideas are buried in the noise and where it is hard to discover like-minded people. Based on our experience in other Open Source communities, we adopted the concept of a Community Group (CG) \\\\\\\\u{2013} a self-organized circle of people interested in a specific topic. CGs are not controlled by anyone but the people organizing them and anyone can create a CG with the specialization they want.\\\\\\\\n\\\\\\\\n**Ways to participate in ideation:**\\\\\\\\n\\\\\\\\nSubmit your idea on the [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed)\\\\\\\\n- Join an existing [Community Group ](https://near.org/devgovgigs.near/widget/app?page=communities) and discuss ideas\\\\\\\\n- Start a new [Community Group ](https://near.org/devgovgigs.near/widget/app?page=communities)\\\\\\\\n\\\\\\\\n## Implement\\\\\\\\nCoding is the defining feature of the development community, and we don\\\\\\\\u{2019}t want to create any barriers in the way of community members who just want to write some code. We recognize that sometimes coding is done in response to some idea and that people can discover ideas as the result of coding. However, we want the coding to be inclusive and therefore if you want to submit your implementation specification, you first need to describe an idea even if it is vague. In this way, anyone can propose alternative implementations to your idea.\\\\\\\\n\\\\\\\\n**Ways to participate in implementation:**\\\\\\\\n\\\\\\\\n- Explore existing Ideas on the  [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed) and submit implementation proposals\\\\\\\\n- Propose an original idea and submit implementation details on the  [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed)\\\\\\\\n- Comment on the existing submissions and discuss their technical details\\\\\\\\n\\\\\\\\n## Review\\\\\\\\n* While you can discuss your idea or solution with the general community, the social support in itself is frequently insufficient if you need to be integrated across the ecosystem, included into some standards or the protocol, and if you are seeking funding or other support. To validate your idea more officially,  you need a recognized group of experts to review and approve it. Following the example of [Rust governance](https://www.rust-lang.org/governance), we adopted the concept of a Work Group (WG) \\\\\\\\u{2013} a selected committee of subject matter experts that make official decisions on certain questions. Work Groups follow a rigorous [NEP-0001](https://github.com/near/NEPs/blob/master/neps/nep-0001.md) process which guarantees that proposals are reviewed fairly and timely.\\\\\\\\n\\\\\\\\nWe do not limit reviews to Work Groups only. If you are a valuable and recognized expert (e.g. a security auditor), you might post your review to someone\\\\\\\\u{2019}s submission for free or at a cost. Anyone can submit a review as an attestation to an existing submission, but keep in mind that your reputation is on the line. Consider just leaving a comment, if unsure.\\\\\\\\n\\\\\\\\n**Ways to participate in reviews:**\\\\\\\\n\\\\\\\\n- Request a review to your idea on the [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed) by leaving a comment and tagging it with a corresponding label, e.g. \\\\\\\\u{201c}wg-protocol\\\\\\\\u{201d}\\\\\\\\n- Become a WG member by actively participating in CG (other WG members will notice and nominate you)\\\\\\\\n- If you are a recognized expert post or suggest doing attestations on the [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed)\\\\\\\\n\\\\\\\\n## Support \\\\\\\\n[NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed) is a platform that enables organizations seeking to fund and help NEAR ecosystem projects. NEAR Foundation, NDC, and various accelerators have different criteria and motivation to sponsor and support ecosystem projects. However, they don\\\\\\\\u{2019}t have resources to review all applications and oversee proper utilization of funds. While we don\\\\\\\\u{2019}t want our developer community to be centered around funding, we want to make funding as easy as possible.\\\\\\\\n\\\\\\\\nSponsors can quickly explore projects matching their criteria by using filtering with labels (coming soon) and checking out the attestations submitted by the experts, e.g. Work Groups. They can also request reviews from WG in the comments of the ideas and submissions. Once they find projects that are matching their criteria, they can negotiate the cost in the comments or delegate it to the Work Group experts. Finally, they can submit a sponsorship with and designate an expert to supervise funds utilization, which might require paying them a fee. is a platform that enables organizations seeking to fund and help NEAR ecosystem projects. NEAR Foundation, NDC, and various accelerators have different criteria and motivation to sponsor and support ecosystem projects. However, they don\\\\\\\\u{2019}t have resources to review all applications and oversee proper utilization of funds. While we don\\\\\\\\u{2019}t want our developer community to be centered around funding, we want to make funding as easy as possible.\\\\\\\\n\\\\\\\\nSponsors can quickly explore projects matching their criteria by using filtering with labels (coming soon) and checking out the attestations submitted by the experts, e.g. Work Groups. They can also request reviews from WG in the comments of the ideas and submissions. Once they find projects that are matching their criteria, they can negotiate the cost in the comments or delegate it to the Work Group experts. Finally, they can submit a sponsorship with and designate an expert to supervise funds utilization, which might require paying them a fee.\\\\\\\\n\\\\\\\\n**Ways to participate in support:**\\\\\\\\n\\\\\\\\n- Explore submissions on the [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed) to find the ones matching your criteria\\\\\\\\n- Request necessary attestations from the Work Groups if a submission lacks them\\\\\\\\n- Submit a sponsorship and designate an expert to supervise funds utilization\\\\\\\\n\\\\\\\\nIn future posts, we will share our progress and insights of even more ways to get involved.\", \"metadata\": {\"id\": 2028, \"title\": \"Ways to engage on DevHub\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"How you can ideate, implement, review, and support projects within the decentralized NEAR developer ecosystem.\", \"createdAt\": \"2023-11-03\", \"updatedAt\": \"2023-11-03\", \"description\": \"How you can ideate, implement, review, and support projects within the decentralized NEAR developer ecosystem.\", \"publishedAt\": \"2023-11-03\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4476191624841e+21
+    }
+  },
+  {
+    "id": "5422018256",
+    "receipt_id": "8TbFuVpfDUc4T3HPTCV23JzanHz4yNRLYTYvKaH6BYL4",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CRUoZ8PTtK5mAAjMBhvXJB5MyXdSJFv6UMvx1QQbYaQ1",
+      "block_height": 120510792,
+      "block_timestamp": 1717613144080536000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5180753977506,
+      "tokens_burnt": 518075397750600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "6phphPacPXPHEZKsSEwwUwX8fyENxgG2v8w9ZnFxTorm",
+    "included_in_block_hash": "EFTbkYXnBDmFNxhrR4hrjtKEv4ZsrVkfzHKooHiCKtEV",
+    "block_timestamp": "1717613143052644381",
+    "block": {
+      "block_height": 120510791
+    },
+    "receipt_conversion_tokens_burnt": "31961704284600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 518075397750600000000,
+        "args": "{\"data\": {\"blog\": {\"how-to-ideate-on-devhub-2029\": {\"\": \"*The previous blog [post](https://near.org/devgovgigs.near/widget/app?page=blog&id=2028) covered various ways to participate on DevHub. This post dives further into the ideation area.*\\\\\\\\n\\\\\\\\nThe first step in any NEAR ecosystem project is ideation. It is crucial to have a way to find people to share and explore ideas with, partly because it can save a lot of time based on prior discussions. But also because it can help strengthen your ideas & gauge support from a diversity of stakeholders.\\\\\\\\n\\\\\\\\nHere are three ways to get started:\\\\\\\\n\\\\\\\\n## 1. Sharing ideas on the NEAR Dev Hub\\\\\\\\nThe best place to share an idea is in the [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed). Anyone can add an idea in any shape or form. The more your idea is fleshed out, the higher chances it will receive votes and comments. By posting an idea, you are inviting others to comment or propose their solutions. It is critical to specify what sort of response you are hoping for.\\\\\\\\n\\\\\\\\nHow to share an idea:\\\\\\\\n\\\\\\\\n**1) Check for prior ideas:** Before posting your idea, please search the [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed) for similar ideas to learn from previous efforts. If you find a similar idea, consider how your proposed idea differs from or builds upon the existing one. If you already have a solution in mind, consider responding with a Solution Post to an existing idea.\\\\\\\\n\\\\\\\\n**2) Create a post:** In the [proposal feed](https://near.org/devgovgigs.near/widget/app?page=feed), Click Create Idea and fill out all the fields.\\\\\\\\n\\\\\\\\n- Posting guidelines:\\\\\\\\n\\\\\\\\u{2022} Labels \\\\\\\\u{2013} The appropriate label categories\\\\\\\\n\\\\\\\\u{2022} Title \\\\\\\\u{2013}  A short summary of the proposed idea\\\\\\\\n\\\\\\\\u{2022} Description \\\\\\\\u{2013} The relevant information and rationale to enable the community to provide feedback. Describe the problem or opportunity your idea is addressing, as well as your desired outcome. It is also helpful to include a clear call to action for community members, such as asking for feedback on how to improve certain aspects of the idea.\\\\\\\\n\\\\\\\\n\\\\\\\\n**3) Share with the ecosystem:** Once posted, the author is responsible for gathering social support or expert validation. Consider reaching out to any relevant Community Groups or individuals and leading the discussion further.\\\\\\\\n\\\\\\\\n\\\\\\\\n**4) Iterate:** Monitor your post for any replies and take the time to follow up with people who provided feedback. If you are ready to move from idea to implementation, consider submitting a Solution Post to your idea or encouraging others to do so.\\\\\\\\n\\\\\\\\nExample Post:\\\\\\\\n![](https://ipfs.near.social/ipfs/bafkreifjcyk2cj64aol2uh5pb76brytv3affg335rzczj3tzgkyhuulbtq)\\\\\\\\n\\\\\\\\n## 2. Exploring ideas using existing community groups\\\\\\\\nIf you have an early seed for an idea, or a topic area you are interested in exploring, consider joining an existing developer Community Group (CG). CGs are self-organized groups of people interested in a specific topic, such as Zero Knowledge or Wallet Standards. They are not controlled by anyone but the people organizing them. They offer a great opportunity to meet and discuss ideas with like-minded people. Most groups have a dedicated social channel, like Telegram, as well as regular  video calls or in-person events.\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n**How to engage with an existing group:**\\\\\\\\n\\\\\\\\n- Search for groups: Browse the list of existing [Community Groups](https://near.org/devgovgigs.near/widget/app?page=communities) to familiarize yourself with their topic area, guidelines, and communication channels.\\\\\\\\n\\\\\\\\n- Get involved: Join the CG\\\\\\\\u{2019}s dedicated social channel and learn about their recent activities. Don\\\\\\\\u{2019}t forget to introduce yourself.\\\\\\\\n\\\\\\\\n- Join events: Review previous meeting notes/recordings and register for upcoming meetings. In the future, consider volunteering to speak about a topic or even to lead the meeting.\\\\\\\\n\\\\\\\\n- Participate in discussions: Comment on existing ideas or discussions. Or propose a new idea.\\\\\\\\n\\\\\\\\nExample ideas:\\\\\\\\n- A vague wish: \\\\\\\\u{201c}I think it would be great if NEAR supported ZK contracts\\\\\\\\u{201d}\\\\\\\\n- A highly detailed multi-page specification: A  new consensus algorithm\\\\\\\\n- A concern: \\\\\\\\u{201c}near-api-js does not use TypeScript everywhere and it is kinda concerning to me\\\\\\\\u{201d}\\\\\\\\n- A stackoverflow problem: \\\\\\\\u{201c}I cannot figure out how to make Markdown work in near.social\\\\\\\\u{201d}\\\\\\\\n\\\\\\\\n## 3. Starting a new community group\\\\\\\\nIf none of the existing CGs work for you, consider [creating your own CG](https://near.org/devgovgigs.near/widget/app?page=communities)!\\\\\\\\n\\\\\\\\nFor more insights and to stay up to date on our latest updates, sign up for our newsletter below or follow us on [Twitter](https://twitter.com/NEARDevGov) and [Telegram](https://t.me/NEARDevGov).\", \"metadata\": {\"id\": 2029, \"title\": \"How to ideate on DevHub\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"A guide for sharing and exploring ideas with others to evolve the NEAR ecosystem.\", \"createdAt\": \"2023-11-03\", \"updatedAt\": \"2023-11-03\", \"description\": \"A guide for sharing and exploring ideas with others to evolve the NEAR ecosystem.\", \"publishedAt\": \"2023-11-03\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"developer-dao\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3735223764466e+21
+    }
+  },
+  {
+    "id": "5422018382",
+    "receipt_id": "HJtYF7BoVdoB5QsRp5BWYhgoiYzbrZ27hZm8x6gPt2Zu",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "SKCRXy4F3n22Rf8xBZA4Y45HutENR26VvsVBVtYjitj",
+      "block_height": 120510793,
+      "block_timestamp": 1717613145283148300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8234852744114,
+      "tokens_burnt": 823485274411400000000,
+      "executor_account_id": "social.near",
+      "status": false
+    },
+    "transaction_hash": "6phphPacPXPHEZKsSEwwUwX8fyENxgG2v8w9ZnFxTorm",
+    "included_in_block_hash": "EFTbkYXnBDmFNxhrR4hrjtKEv4ZsrVkfzHKooHiCKtEV",
+    "block_timestamp": "1717613143052644381",
+    "block": {
+      "block_height": 120510791
+    },
+    "receipt_conversion_tokens_burnt": "31961704284600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 823485274411400000000,
+        "args": "{\"data\": {\"developer-dao.community.devhub.near\": {\"blog\": {\"how-to-ideate-on-devhub-2029\": {\"\": \"*The previous blog [post](https://near.org/devgovgigs.near/widget/app?page=blog&id=2028) covered various ways to participate on DevHub. This post dives further into the ideation area.*\\\\\\\\n\\\\\\\\nThe first step in any NEAR ecosystem project is ideation. It is crucial to have a way to find people to share and explore ideas with, partly because it can save a lot of time based on prior discussions. But also because it can help strengthen your ideas & gauge support from a diversity of stakeholders.\\\\\\\\n\\\\\\\\nHere are three ways to get started:\\\\\\\\n\\\\\\\\n## 1. Sharing ideas on the NEAR Dev Hub\\\\\\\\nThe best place to share an idea is in the [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed). Anyone can add an idea in any shape or form. The more your idea is fleshed out, the higher chances it will receive votes and comments. By posting an idea, you are inviting others to comment or propose their solutions. It is critical to specify what sort of response you are hoping for.\\\\\\\\n\\\\\\\\nHow to share an idea:\\\\\\\\n\\\\\\\\n**1) Check for prior ideas:** Before posting your idea, please search the [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed) for similar ideas to learn from previous efforts. If you find a similar idea, consider how your proposed idea differs from or builds upon the existing one. If you already have a solution in mind, consider responding with a Solution Post to an existing idea.\\\\\\\\n\\\\\\\\n**2) Create a post:** In the [proposal feed](https://near.org/devgovgigs.near/widget/app?page=feed), Click Create Idea and fill out all the fields.\\\\\\\\n\\\\\\\\n- Posting guidelines:\\\\\\\\n\\\\\\\\u{2022} Labels \\\\\\\\u{2013} The appropriate label categories\\\\\\\\n\\\\\\\\u{2022} Title \\\\\\\\u{2013}  A short summary of the proposed idea\\\\\\\\n\\\\\\\\u{2022} Description \\\\\\\\u{2013} The relevant information and rationale to enable the community to provide feedback. Describe the problem or opportunity your idea is addressing, as well as your desired outcome. It is also helpful to include a clear call to action for community members, such as asking for feedback on how to improve certain aspects of the idea.\\\\\\\\n\\\\\\\\n\\\\\\\\n**3) Share with the ecosystem:** Once posted, the author is responsible for gathering social support or expert validation. Consider reaching out to any relevant Community Groups or individuals and leading the discussion further.\\\\\\\\n\\\\\\\\n\\\\\\\\n**4) Iterate:** Monitor your post for any replies and take the time to follow up with people who provided feedback. If you are ready to move from idea to implementation, consider submitting a Solution Post to your idea or encouraging others to do so.\\\\\\\\n\\\\\\\\nExample Post:\\\\\\\\n![](https://ipfs.near.social/ipfs/bafkreifjcyk2cj64aol2uh5pb76brytv3affg335rzczj3tzgkyhuulbtq)\\\\\\\\n\\\\\\\\n## 2. Exploring ideas using existing community groups\\\\\\\\nIf you have an early seed for an idea, or a topic area you are interested in exploring, consider joining an existing developer Community Group (CG). CGs are self-organized groups of people interested in a specific topic, such as Zero Knowledge or Wallet Standards. They are not controlled by anyone but the people organizing them. They offer a great opportunity to meet and discuss ideas with like-minded people. Most groups have a dedicated social channel, like Telegram, as well as regular  video calls or in-person events.\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n**How to engage with an existing group:**\\\\\\\\n\\\\\\\\n- Search for groups: Browse the list of existing [Community Groups](https://near.org/devgovgigs.near/widget/app?page=communities) to familiarize yourself with their topic area, guidelines, and communication channels.\\\\\\\\n\\\\\\\\n- Get involved: Join the CG\\\\\\\\u{2019}s dedicated social channel and learn about their recent activities. Don\\\\\\\\u{2019}t forget to introduce yourself.\\\\\\\\n\\\\\\\\n- Join events: Review previous meeting notes/recordings and register for upcoming meetings. In the future, consider volunteering to speak about a topic or even to lead the meeting.\\\\\\\\n\\\\\\\\n- Participate in discussions: Comment on existing ideas or discussions. Or propose a new idea.\\\\\\\\n\\\\\\\\nExample ideas:\\\\\\\\n- A vague wish: \\\\\\\\u{201c}I think it would be great if NEAR supported ZK contracts\\\\\\\\u{201d}\\\\\\\\n- A highly detailed multi-page specification: A  new consensus algorithm\\\\\\\\n- A concern: \\\\\\\\u{201c}near-api-js does not use TypeScript everywhere and it is kinda concerning to me\\\\\\\\u{201d}\\\\\\\\n- A stackoverflow problem: \\\\\\\\u{201c}I cannot figure out how to make Markdown work in near.social\\\\\\\\u{201d}\\\\\\\\n\\\\\\\\n## 3. Starting a new community group\\\\\\\\nIf none of the existing CGs work for you, consider [creating your own CG](https://near.org/devgovgigs.near/widget/app?page=communities)!\\\\\\\\n\\\\\\\\nFor more insights and to stay up to date on our latest updates, sign up for our newsletter below or follow us on [Twitter](https://twitter.com/NEARDevGov) and [Telegram](https://t.me/NEARDevGov).\", \"metadata\": {\"id\": 2029, \"title\": \"How to ideate on DevHub\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"A guide for sharing and exploring ideas with others to evolve the NEAR ecosystem.\", \"createdAt\": \"2023-11-03\", \"updatedAt\": \"2023-11-03\", \"description\": \"A guide for sharing and exploring ideas with others to evolve the NEAR ecosystem.\", \"publishedAt\": \"2023-11-03\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3735223764466e+21
+    }
+  },
+  {
+    "id": "5422019921",
+    "receipt_id": "KCsuM7RKC7wveGBmcHyCawkFQRLRZd6EDBAL5dvAvnJ",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3S6fPCHC9RErCCHDUr6JWPrJMM8dTuJ87Xt6Y4yJabcw",
+      "block_height": 120510798,
+      "block_timestamp": 1717613150731143200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5196184023244,
+      "tokens_burnt": 519618402324400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DAiPS9dfgSGPu2s8AiNnRdZLcVNh9E37pcWSY8983f7H",
+    "included_in_block_hash": "5V6rWfqPsxktT5U6q2DVfXUTHTmFEBxtPi9KP1QD9D5c",
+    "block_timestamp": "1717613149687153988",
+    "block": {
+      "block_height": 120510797
+    },
+    "receipt_conversion_tokens_burnt": "31771649894600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 519618402324400000000,
+        "args": "{\"data\": {\"blog\": {\"near-developer-dao-2032\": {\"\": \"![](https://ipfs.near.social/ipfs/bafkreigtak76atotbqumd646wiy7ojc5xu4hgdvvtt4vcgnla4hdcsle74)\\\\\\\\n\\\\\\\\n## What is the NEAR Developer DAO?\\\\\\\\nDeveloper DAO (DevDAO) brings together individuals and organizations to build a decentralized NEAR developer ecosystem. We provide social structures and tools to empower anyone to ideate, implement, review, and support projects in the NEAR ecosystem.\\\\\\\\n\\\\\\\\n### Mission\\\\\\\\nBuild a growing self-sufficient community of NEAR developers to enable a thriving NEAR ecosystem.\\\\\\\\n\\\\\\\\n### Values\\\\\\\\n- **Decentralized:** We are building together.\\\\\\\\n- **Transparent:** All decision making and communication is open.\\\\\\\\n- **Self-sufficient:** We do not critically depend on any single entity.\\\\\\\\n- **Robust:** Any role or team can be duplicated or replaced.\\\\\\\\n- **High-velocity:** We need to move faster than classic OSS.\\\\\\\\n\\\\\\\\n### Vision\\\\\\\\nWe are building an open source developer community on NEAR that owns all aspects of its own success, including coding, event organization, promotion, fundraising, partnerships, etc. DevDAO establishes and maintains the structure and the processes to grow our developer ecosystem.\\\\\\\\n\\\\\\\\nExample areas of involvement include:\\\\\\\\n\\\\\\\\n- **Technical decision making:** Partnering with recognized experts to review technical proposals and making decisions based on the needs of the community and ecosystem.\\\\\\\\n- **Creating deep tech awareness:** Working with marketing partners to create awareness on interesting projects and technology areas.\\\\\\\\n- **Organizing events and local presence:** Organizing events and empowering community leaders with resources to grow their local communities.\\\\\\\\n- **Managing documentation and public repositories:** Managing a variety of documentation and public repositories that support NEAR developers.\\\\\\\\n\\\\\\\\n### Roles & Responsibilities\\\\\\\\nDevDAO provides various social structures to support developers:\\\\\\\\n\\\\\\\\n- **Work Groups:** A formal committee of selected subject matter experts who make official decisions on proposals and questions in their ecosystem focus area. Each work group has the authority to review proposals using a strict process, suggest funding to a DAO, and hold grant recipients accountable. They also engage with the community to understand their needs and encourage ideation. As of April 2023, we have six Work Groups with more underway. There is also a Moderators Work Group that supervises and facilitates other Work Groups.\\\\\\\\n- **Community Groups:** An informal self-organized group of people interested in a specific topic area. While this group does not make official decisions, it offers a great opportunity to connect with others to share ideas and submit proposals. Each group is not controlled by anyone but the people who are organizing it. We have about 15 Community Groups as of April 2023.\\\\\\\\n- **DevDAO Operations:** A minimal group of operators managing the legal and the administrative side of DevDAO.\\\\\\\\n\\\\\\\\n### Sponsorships\\\\\\\\nOur goal is to grow an ecosystem of developers who are here because they like the technology and community. Given that there\\\\\\\\u{2019}s a lot of time and effort that goes into this, we have financial means to compensate for some activities and projects for the involvement areas above. Our budget comes from our [staking pool](https://near.org/devgovgigs.near/widget/app?page=blog&id=2015), the NEAR Foundation, as well as other partners in the ecosystem.\\\\\\\\n\\\\\\\\nWe use the [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=home) as our main platform for sponsoring projects and individual contributions to the NEAR developer ecosystem. The [Funding Board](https://near.social/devgovgigs.near/widget/gigs-board.pages.Boards?selectedBoardId=funding) shows all the projects that we approved for funding.\\\\\\\\n\\\\\\\\nIf you are interested in applying for funding from DevDAO, check out our [funding guidelines](https://near.org/devgovgigs.near/widget/app?page=blog&id=2036).\", \"metadata\": {\"id\": 2032, \"title\": \"NEAR Developer DAO\", \"author\": \"bearmans.near\", \"status\": \"DRAFT\", \"category\": \"reference\", \"subtitle\": \"Empowering a decentralized developer community\", \"createdAt\": \"2023-11-03\", \"updatedAt\": \"2023-11-03\", \"description\": \"Empowering a decentralized developer community\", \"publishedAt\": \"2023-11-03\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"developer-dao\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3670820221524e+21
+    }
+  },
+  {
+    "id": "5422020000",
+    "receipt_id": "FDDvwsAKfspAHUxynqmpmnMmxJmnSrWWNDxehEsGJYpm",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DDNsodG2QbKQXXM9ktyBanwi8g3ZgGsky3FmYm3bw2ux",
+      "block_height": 120510799,
+      "block_timestamp": 1717613151709547500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8156919699334,
+      "tokens_burnt": 815691969933400000000,
+      "executor_account_id": "social.near",
+      "status": false
+    },
+    "transaction_hash": "DAiPS9dfgSGPu2s8AiNnRdZLcVNh9E37pcWSY8983f7H",
+    "included_in_block_hash": "5V6rWfqPsxktT5U6q2DVfXUTHTmFEBxtPi9KP1QD9D5c",
+    "block_timestamp": "1717613149687153988",
+    "block": {
+      "block_height": 120510797
+    },
+    "receipt_conversion_tokens_burnt": "31771649894600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 815691969933400000000,
+        "args": "{\"data\": {\"developer-dao.community.devhub.near\": {\"blog\": {\"near-developer-dao-2032\": {\"\": \"![](https://ipfs.near.social/ipfs/bafkreigtak76atotbqumd646wiy7ojc5xu4hgdvvtt4vcgnla4hdcsle74)\\\\\\\\n\\\\\\\\n## What is the NEAR Developer DAO?\\\\\\\\nDeveloper DAO (DevDAO) brings together individuals and organizations to build a decentralized NEAR developer ecosystem. We provide social structures and tools to empower anyone to ideate, implement, review, and support projects in the NEAR ecosystem.\\\\\\\\n\\\\\\\\n### Mission\\\\\\\\nBuild a growing self-sufficient community of NEAR developers to enable a thriving NEAR ecosystem.\\\\\\\\n\\\\\\\\n### Values\\\\\\\\n- **Decentralized:** We are building together.\\\\\\\\n- **Transparent:** All decision making and communication is open.\\\\\\\\n- **Self-sufficient:** We do not critically depend on any single entity.\\\\\\\\n- **Robust:** Any role or team can be duplicated or replaced.\\\\\\\\n- **High-velocity:** We need to move faster than classic OSS.\\\\\\\\n\\\\\\\\n### Vision\\\\\\\\nWe are building an open source developer community on NEAR that owns all aspects of its own success, including coding, event organization, promotion, fundraising, partnerships, etc. DevDAO establishes and maintains the structure and the processes to grow our developer ecosystem.\\\\\\\\n\\\\\\\\nExample areas of involvement include:\\\\\\\\n\\\\\\\\n- **Technical decision making:** Partnering with recognized experts to review technical proposals and making decisions based on the needs of the community and ecosystem.\\\\\\\\n- **Creating deep tech awareness:** Working with marketing partners to create awareness on interesting projects and technology areas.\\\\\\\\n- **Organizing events and local presence:** Organizing events and empowering community leaders with resources to grow their local communities.\\\\\\\\n- **Managing documentation and public repositories:** Managing a variety of documentation and public repositories that support NEAR developers.\\\\\\\\n\\\\\\\\n### Roles & Responsibilities\\\\\\\\nDevDAO provides various social structures to support developers:\\\\\\\\n\\\\\\\\n- **Work Groups:** A formal committee of selected subject matter experts who make official decisions on proposals and questions in their ecosystem focus area. Each work group has the authority to review proposals using a strict process, suggest funding to a DAO, and hold grant recipients accountable. They also engage with the community to understand their needs and encourage ideation. As of April 2023, we have six Work Groups with more underway. There is also a Moderators Work Group that supervises and facilitates other Work Groups.\\\\\\\\n- **Community Groups:** An informal self-organized group of people interested in a specific topic area. While this group does not make official decisions, it offers a great opportunity to connect with others to share ideas and submit proposals. Each group is not controlled by anyone but the people who are organizing it. We have about 15 Community Groups as of April 2023.\\\\\\\\n- **DevDAO Operations:** A minimal group of operators managing the legal and the administrative side of DevDAO.\\\\\\\\n\\\\\\\\n### Sponsorships\\\\\\\\nOur goal is to grow an ecosystem of developers who are here because they like the technology and community. Given that there\\\\\\\\u{2019}s a lot of time and effort that goes into this, we have financial means to compensate for some activities and projects for the involvement areas above. Our budget comes from our [staking pool](https://near.org/devgovgigs.near/widget/app?page=blog&id=2015), the NEAR Foundation, as well as other partners in the ecosystem.\\\\\\\\n\\\\\\\\nWe use the [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=home) as our main platform for sponsoring projects and individual contributions to the NEAR developer ecosystem. The [Funding Board](https://near.social/devgovgigs.near/widget/gigs-board.pages.Boards?selectedBoardId=funding) shows all the projects that we approved for funding.\\\\\\\\n\\\\\\\\nIf you are interested in applying for funding from DevDAO, check out our [funding guidelines](https://near.org/devgovgigs.near/widget/app?page=blog&id=2036).\", \"metadata\": {\"id\": 2032, \"title\": \"NEAR Developer DAO\", \"author\": \"bearmans.near\", \"status\": \"DRAFT\", \"category\": \"reference\", \"subtitle\": \"Empowering a decentralized developer community\", \"createdAt\": \"2023-11-03\", \"updatedAt\": \"2023-11-03\", \"description\": \"Empowering a decentralized developer community\", \"publishedAt\": \"2023-11-03\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3670820221524e+21
+    }
+  },
+  {
+    "id": "5422021232",
+    "receipt_id": "35hSNN6Vd5c4jhHExENEYoGYjYgsrXe93x2UFrCiVany",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EKKzuwMguFhEcinfR7WCQbThmHGYNRvMzW5jMUVH7qLT",
+      "block_height": 120510803,
+      "block_timestamp": 1717613156424775400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5117252589694,
+      "tokens_burnt": 511725258969400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "7LPTztDftmMXzia3fz8hTDsnqLjqo54aXmLcyFb81YWS",
+    "included_in_block_hash": "FHjs5mQdSNf7AxsEQR9ru7zvhYpZHb5SDxfomeeF5vbc",
+    "block_timestamp": "1717613155221543021",
+    "block": {
+      "block_height": 120510802
+    },
+    "receipt_conversion_tokens_burnt": "31775674575800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 511725258969400000000,
+        "args": "{\"data\": {\"blog\": {\"open-call-for-devdao-paid-contributors-2033\": {\"\": \"[DevDAO](https://near.org/devgovgigs.near/widget/app?page=blog&id=2032) is looking for talented community members to contribute their skills and expertise to grow our developer ecosystem. We have a pretty large [scope of work](https://docs.google.com/spreadsheets/d/1_DwQjSU8fvv_Kk7vIlatzcWwhzQXbm9FbGhI-a-BZTY/edit#gid=743927926) and want to compensate contributors through our DAO. If you\\\\\\\\u{2019}re passionate about our mission and want to get involved, we encourage you to apply.\\\\\\\\n\\\\\\\\n### Areas of work\\\\\\\\nWe\\\\\\\\u{2019}re looking for contributors in the following areas:\\\\\\\\n\\\\\\\\n- **Community Management:** Engage with our community across various social platforms, gather feedback, and provide general moderation.\\\\\\\\n- **Developer Relations:** Create better documentation, coordinate community meetings, and organize events such as hackathons and meetups.\\\\\\\\n- **Engineering:** Develop our DevHub as a product using your front-end, full-stack, and smart contract development skills.\\\\\\\\n- **Other:** We need help scouting, screening, and supervising paid contributors.\\\\\\\\n### Commitment\\\\\\\\nWe expect paid contributors to commit 10-40 hours per week based on their own availability. We\\\\\\\\u{2019}re looking for self-starters who can take initiative, work independently, disambiguate needs, and communicate effectively.\\\\\\\\n\\\\\\\\n### How to become a contributor\\\\\\\\nInterested individuals should first familiarize themselves with [DevDAO](https://near.org/devgovgigs.near/widget/app?page=blog&id=2032) and the DevHub. Then review the [areas](https://docs.google.com/spreadsheets/d/1_DwQjSU8fvv_Kk7vIlatzcWwhzQXbm9FbGhI-a-BZTY/edit#gid=743927926) where we need help and ensure that you have the skills and experience necessary to contribute.\\\\\\\\n\\\\\\\\nTo become a paid contributor, please follow these steps:\\\\\\\\n\\\\\\\\n**1) Application:** Reply to the [open call post](https://near.org/devgovgigs.near/widget/app?page=post&id=507) on DevHub with the following information:\\\\\\\\n\\\\\\\\n- A summary of your background, including a link to our resume and LinkedIn profile if available.\\\\\\\\n- A statement on why you are interested in getting involved, what areas you are interested in contributing to, and how you believe you have the skills and experience.\\\\\\\\n- The number of hours per week you can commit to and your hourly compensation expectations in USDC, including justification (see guidelines).\\\\\\\\n- Your Telegram handle and/or contact information.\\\\\\\\n- Your availability in UTC (or a Calendly link) for a 30-minute call in the upcoming two weeks.\\\\\\\\n\\\\\\\\n**2) Evaluation:** The DevDAO team will review submissions on a weekly basis and schedule a call with you if there is a good fit. This is a chance for us to meet, discuss your interest and how you can contribute, and answer any questions you have.\\\\\\\\n\\\\\\\\n**3) Approval:** If we agree to move forward, we\\\\\\\\u{2019}ll ask you to create a solution post on DevHub outlining your proposed scope of work for two weeks, including the deliverables, timeline, and compensation amount in USDC. Upon acceptance, DevDAO will reply with a formal sponsorship (fast grant) to approve the funding, and work can begin. Please note funding is contingent on you passing our KYC.\\\\\\\\n\\\\\\\\nIf you have any questions about becoming a contributor, please email us at [devhub@near.org](mailto:devhub@near.org).\\\\\\\\n\\\\\\\\n### Once you start contributing\\\\\\\\nOnce you start contributing, we\\\\\\\\u{2019}ll designate a point of contact and also invite you to a weekly stand-up to align on your progress or any needs. We will also invite you to our Telegram group with all other previous contributors where you can ask questions and share resources.\\\\\\\\n\\\\\\\\nWe want to create visibility on the progress we are making, so we will ask each contributor to submit a report on DevHub every two weeks with the work they completed. We will also use this report for processing the funding.\", \"metadata\": {\"id\": 2033, \"title\": \"Open call for DevDAO Paid Contributors\", \"author\": \"bearmans.near\", \"status\": \"DRAFT\", \"category\": \"reference\", \"subtitle\": \"Contribute your skills and experience to help shape the NEAR developer ecosystem\", \"createdAt\": \"2023-11-03\", \"updatedAt\": \"2023-11-03\", \"description\": \"Contribute your skills and experience to help shape the NEAR developer ecosystem\", \"publishedAt\": \"2023-11-03\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"developer-dao\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.358499452755e+21
+    }
+  },
+  {
+    "id": "5422021519",
+    "receipt_id": "3NSWociRJqfhGkFHccPP9icze7zCcCVXwi7hnQGfpwWj",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7U7BcY9nW9219UmWo6LfJrgNggczxnC1MnBap76G2fLS",
+      "block_height": 120510804,
+      "block_timestamp": 1717613157887730000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8149985192098,
+      "tokens_burnt": 814998519209800000000,
+      "executor_account_id": "social.near",
+      "status": false
+    },
+    "transaction_hash": "7LPTztDftmMXzia3fz8hTDsnqLjqo54aXmLcyFb81YWS",
+    "included_in_block_hash": "FHjs5mQdSNf7AxsEQR9ru7zvhYpZHb5SDxfomeeF5vbc",
+    "block_timestamp": "1717613155221543021",
+    "block": {
+      "block_height": 120510802
+    },
+    "receipt_conversion_tokens_burnt": "31775674575800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 814998519209800000000,
+        "args": "{\"data\": {\"developer-dao.community.devhub.near\": {\"blog\": {\"open-call-for-devdao-paid-contributors-2033\": {\"\": \"[DevDAO](https://near.org/devgovgigs.near/widget/app?page=blog&id=2032) is looking for talented community members to contribute their skills and expertise to grow our developer ecosystem. We have a pretty large [scope of work](https://docs.google.com/spreadsheets/d/1_DwQjSU8fvv_Kk7vIlatzcWwhzQXbm9FbGhI-a-BZTY/edit#gid=743927926) and want to compensate contributors through our DAO. If you\\\\\\\\u{2019}re passionate about our mission and want to get involved, we encourage you to apply.\\\\\\\\n\\\\\\\\n### Areas of work\\\\\\\\nWe\\\\\\\\u{2019}re looking for contributors in the following areas:\\\\\\\\n\\\\\\\\n- **Community Management:** Engage with our community across various social platforms, gather feedback, and provide general moderation.\\\\\\\\n- **Developer Relations:** Create better documentation, coordinate community meetings, and organize events such as hackathons and meetups.\\\\\\\\n- **Engineering:** Develop our DevHub as a product using your front-end, full-stack, and smart contract development skills.\\\\\\\\n- **Other:** We need help scouting, screening, and supervising paid contributors.\\\\\\\\n### Commitment\\\\\\\\nWe expect paid contributors to commit 10-40 hours per week based on their own availability. We\\\\\\\\u{2019}re looking for self-starters who can take initiative, work independently, disambiguate needs, and communicate effectively.\\\\\\\\n\\\\\\\\n### How to become a contributor\\\\\\\\nInterested individuals should first familiarize themselves with [DevDAO](https://near.org/devgovgigs.near/widget/app?page=blog&id=2032) and the DevHub. Then review the [areas](https://docs.google.com/spreadsheets/d/1_DwQjSU8fvv_Kk7vIlatzcWwhzQXbm9FbGhI-a-BZTY/edit#gid=743927926) where we need help and ensure that you have the skills and experience necessary to contribute.\\\\\\\\n\\\\\\\\nTo become a paid contributor, please follow these steps:\\\\\\\\n\\\\\\\\n**1) Application:** Reply to the [open call post](https://near.org/devgovgigs.near/widget/app?page=post&id=507) on DevHub with the following information:\\\\\\\\n\\\\\\\\n- A summary of your background, including a link to our resume and LinkedIn profile if available.\\\\\\\\n- A statement on why you are interested in getting involved, what areas you are interested in contributing to, and how you believe you have the skills and experience.\\\\\\\\n- The number of hours per week you can commit to and your hourly compensation expectations in USDC, including justification (see guidelines).\\\\\\\\n- Your Telegram handle and/or contact information.\\\\\\\\n- Your availability in UTC (or a Calendly link) for a 30-minute call in the upcoming two weeks.\\\\\\\\n\\\\\\\\n**2) Evaluation:** The DevDAO team will review submissions on a weekly basis and schedule a call with you if there is a good fit. This is a chance for us to meet, discuss your interest and how you can contribute, and answer any questions you have.\\\\\\\\n\\\\\\\\n**3) Approval:** If we agree to move forward, we\\\\\\\\u{2019}ll ask you to create a solution post on DevHub outlining your proposed scope of work for two weeks, including the deliverables, timeline, and compensation amount in USDC. Upon acceptance, DevDAO will reply with a formal sponsorship (fast grant) to approve the funding, and work can begin. Please note funding is contingent on you passing our KYC.\\\\\\\\n\\\\\\\\nIf you have any questions about becoming a contributor, please email us at [devhub@near.org](mailto:devhub@near.org).\\\\\\\\n\\\\\\\\n### Once you start contributing\\\\\\\\nOnce you start contributing, we\\\\\\\\u{2019}ll designate a point of contact and also invite you to a weekly stand-up to align on your progress or any needs. We will also invite you to our Telegram group with all other previous contributors where you can ask questions and share resources.\\\\\\\\n\\\\\\\\nWe want to create visibility on the progress we are making, so we will ask each contributor to submit a report on DevHub every two weeks with the work they completed. We will also use this report for processing the funding.\", \"metadata\": {\"id\": 2033, \"title\": \"Open call for DevDAO Paid Contributors\", \"author\": \"bearmans.near\", \"status\": \"DRAFT\", \"category\": \"reference\", \"subtitle\": \"Contribute your skills and experience to help shape the NEAR developer ecosystem\", \"createdAt\": \"2023-11-03\", \"updatedAt\": \"2023-11-03\", \"description\": \"Contribute your skills and experience to help shape the NEAR developer ecosystem\", \"publishedAt\": \"2023-11-03\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.358499452755e+21
+    }
+  },
+  {
+    "id": "5422023487",
+    "receipt_id": "5EQsAKfpRsjrPcYcAeRZDQFN65dZHERRsY51GH2VM2Ah",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5Betxo9DatgyckoTQ4BaMxkqc4Wu8kgqJ7ukZQ13ZPec",
+      "block_height": 120510810,
+      "block_timestamp": 1717613166100823600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5183969185301,
+      "tokens_burnt": 518396918530100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "HSavXBHQYbuQ9Ncdw8rG6KSDWips4xipmq1FtN7zq5Pq",
+    "included_in_block_hash": "DWC1WNJxFP4dsw6eaSfbqsSSVCFYVzd87W8uoHGsg2EV",
+    "block_timestamp": "1717613164361293664",
+    "block": {
+      "block_height": 120510809
+    },
+    "receipt_conversion_tokens_burnt": "31918997945200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 518396918530100000000,
+        "args": "{\"data\": {\"blog\": {\"near-devhub-funding-guidelines-2036\": {\"\": \"Are you or your team working on a NEAR ecosystem common good project and looking for funding? In this post, we will take a closer look at who determines the funding at DevHub, what factors to consider when proposing the funding amount, and how to submit a funding request.\\\\\\\\n\\\\\\\\nNEAR DevHub plays a major role in facilitating technical projects and empowering anyone to [contribute to the ecosystem](https://near.org/devgovgigs.near/widget/app?page=blog&id=2028). A big part of this is providing financial support to some of the activities that go into bringing innovative projects to life.\\\\\\\\n\\\\\\\\n### Who determines the funding\\\\\\\\nThe funding amount for a proposal is a collaborative and transparent effort between the applicant, the Work Groups, and the Developer DAO moderators.\\\\\\\\n\\\\\\\\nIt starts with the applicant figuring out the appropriate amount to ask for in their proposal based on factors such as project complexity, timeline, and skill levels. Once the applicant posts their proposal on the [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed), various Work Groups evaluate the technical and product aspects of the proposal within their area of expertise. They also assess the project cost considerations, and in some cases negotiate with the applicant. Since Work Groups specialize in different areas, their evaluation may vary. After the Work Groups provide their attestations, the Developer DAO moderators will consolidate the feedback and make the final funding decision. In some cases, the Developer DAO moderators may schedule a public call to meet with the applicant(s) to discuss or negotiate the proposal.\\\\\\\\n\\\\\\\\n### What factors to consider when determining the funding\\\\\\\\nAll parties mentioned above should use the following factors when determining the funding amount.\\\\\\\\n\\\\\\\\n- Project complexity and duration: Consider the level of effort and the length of the project.\\\\\\\\n- Seniority and skill required for the task. Consider using [Levels.fyi](https://www.levels.fyi/) as a guideline to determine the expected hourly rate for each level of seniority and role.\\\\\\\\n- Temporary nature of the engagement: Adjust for the temporary nature of engagement. Since temporary engagements are less financially secure than full-time job positions, an extra 20-80% markup is potentially justifiable.\\\\\\\\n- Special skills or experience: If the project requires niche skills, such as a proven knowledge of NEAR protocol internals, a person with such skills can justify requesting more compensation.\\\\\\\\n- Economic circumstances: While it is difficult to apply geographic compensation calibration consistently in a blockchain space, it is also unfair to recognize that some teams might have a 4x lower cost of the workforce than other teams due to their geographic location. We expect applicants to be open about it and for Work Groups to enforce [geographic coefficients](https://web.archive.org/web/20200721125654/https://about.gitlab.com/handbook/total-rewards/compensation/compensation-calculator/calculator/) when the disparity is drastic.\\\\\\\\n- Diversification of the NEAR ecosystem: It is in the interests of DevHub to support multiple entities with funding, rather than giving all grants to a single qualified party. Therefore, in some rare cases, funding may be granted to a party that is slightly less fit but is a newcomer to the ecosystem.\\\\\\\\n\\\\\\\\n### Submitting funding requests on the NEAR Dev Hub\\\\\\\\nThe best place to submit a funding request is through a solution post on [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed). You must first create an [idea](https://near.org/devgovgigs.near/widget/app?page=blog&id=2029) post, and reply to it with a solution post type.\\\\\\\\n\\\\\\\\nFunding requests guidelines:\\\\\\\\n\\\\\\\\n- Project details: Include a clear overview of the project goals, scope, deliverables, and timeline.\\\\\\\\n- Budget breakdown: To ensure transparency and increase the chances of approval, the applicant should include a budget breakdown with justification based on the various factors mentioned in the previous section.\\\\\\\\n- Timeline: Projects and their corresponding funding should have a short timeline, preferably under a month. This helps ensure project success by creating a clearly defined scope and minimizing risks. If a project has multiple milestones, propose each milestone as an independent funding request.\\\\\\\\n- Evaluation before funding: The bulk of the evaluation should happen before the project receives the funding. This helps to minimize the risks and ensure the project meets the desired goals.\", \"metadata\": {\"id\": 2036, \"title\": \"NEAR DevHub Funding Guidelines\", \"author\": \"bearmans.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"Factors to consider when requesting funds\", \"createdAt\": \"2023-11-29\", \"updatedAt\": \"2023-11-29\", \"description\": \"Factors to consider when requesting funds\", \"publishedAt\": \"2023-11-29\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"developer-dao\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3728241867395e+21
+    }
+  },
+  {
+    "id": "5422023768",
+    "receipt_id": "Hvj4VeenZ7Bock2W8hYUnyGVrrH1uGxn5peZahxYGNew",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CCMKFvmUmLG8k7BxDc6xqfmhTTkgQRfL8w8WgyAuz8S9",
+      "block_height": 120510811,
+      "block_timestamp": 1717613166995217200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8225082702642,
+      "tokens_burnt": 822508270264200000000,
+      "executor_account_id": "social.near",
+      "status": false
+    },
+    "transaction_hash": "HSavXBHQYbuQ9Ncdw8rG6KSDWips4xipmq1FtN7zq5Pq",
+    "included_in_block_hash": "DWC1WNJxFP4dsw6eaSfbqsSSVCFYVzd87W8uoHGsg2EV",
+    "block_timestamp": "1717613164361293664",
+    "block": {
+      "block_height": 120510809
+    },
+    "receipt_conversion_tokens_burnt": "31918997945200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 822508270264200000000,
+        "args": "{\"data\": {\"developer-dao.community.devhub.near\": {\"blog\": {\"near-devhub-funding-guidelines-2036\": {\"\": \"Are you or your team working on a NEAR ecosystem common good project and looking for funding? In this post, we will take a closer look at who determines the funding at DevHub, what factors to consider when proposing the funding amount, and how to submit a funding request.\\\\\\\\n\\\\\\\\nNEAR DevHub plays a major role in facilitating technical projects and empowering anyone to [contribute to the ecosystem](https://near.org/devgovgigs.near/widget/app?page=blog&id=2028). A big part of this is providing financial support to some of the activities that go into bringing innovative projects to life.\\\\\\\\n\\\\\\\\n### Who determines the funding\\\\\\\\nThe funding amount for a proposal is a collaborative and transparent effort between the applicant, the Work Groups, and the Developer DAO moderators.\\\\\\\\n\\\\\\\\nIt starts with the applicant figuring out the appropriate amount to ask for in their proposal based on factors such as project complexity, timeline, and skill levels. Once the applicant posts their proposal on the [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed), various Work Groups evaluate the technical and product aspects of the proposal within their area of expertise. They also assess the project cost considerations, and in some cases negotiate with the applicant. Since Work Groups specialize in different areas, their evaluation may vary. After the Work Groups provide their attestations, the Developer DAO moderators will consolidate the feedback and make the final funding decision. In some cases, the Developer DAO moderators may schedule a public call to meet with the applicant(s) to discuss or negotiate the proposal.\\\\\\\\n\\\\\\\\n### What factors to consider when determining the funding\\\\\\\\nAll parties mentioned above should use the following factors when determining the funding amount.\\\\\\\\n\\\\\\\\n- Project complexity and duration: Consider the level of effort and the length of the project.\\\\\\\\n- Seniority and skill required for the task. Consider using [Levels.fyi](https://www.levels.fyi/) as a guideline to determine the expected hourly rate for each level of seniority and role.\\\\\\\\n- Temporary nature of the engagement: Adjust for the temporary nature of engagement. Since temporary engagements are less financially secure than full-time job positions, an extra 20-80% markup is potentially justifiable.\\\\\\\\n- Special skills or experience: If the project requires niche skills, such as a proven knowledge of NEAR protocol internals, a person with such skills can justify requesting more compensation.\\\\\\\\n- Economic circumstances: While it is difficult to apply geographic compensation calibration consistently in a blockchain space, it is also unfair to recognize that some teams might have a 4x lower cost of the workforce than other teams due to their geographic location. We expect applicants to be open about it and for Work Groups to enforce [geographic coefficients](https://web.archive.org/web/20200721125654/https://about.gitlab.com/handbook/total-rewards/compensation/compensation-calculator/calculator/) when the disparity is drastic.\\\\\\\\n- Diversification of the NEAR ecosystem: It is in the interests of DevHub to support multiple entities with funding, rather than giving all grants to a single qualified party. Therefore, in some rare cases, funding may be granted to a party that is slightly less fit but is a newcomer to the ecosystem.\\\\\\\\n\\\\\\\\n### Submitting funding requests on the NEAR Dev Hub\\\\\\\\nThe best place to submit a funding request is through a solution post on [NEAR DevHub](https://near.org/devgovgigs.near/widget/app?page=feed). You must first create an [idea](https://near.org/devgovgigs.near/widget/app?page=blog&id=2029) post, and reply to it with a solution post type.\\\\\\\\n\\\\\\\\nFunding requests guidelines:\\\\\\\\n\\\\\\\\n- Project details: Include a clear overview of the project goals, scope, deliverables, and timeline.\\\\\\\\n- Budget breakdown: To ensure transparency and increase the chances of approval, the applicant should include a budget breakdown with justification based on the various factors mentioned in the previous section.\\\\\\\\n- Timeline: Projects and their corresponding funding should have a short timeline, preferably under a month. This helps ensure project success by creating a clearly defined scope and minimizing risks. If a project has multiple milestones, propose each milestone as an independent funding request.\\\\\\\\n- Evaluation before funding: The bulk of the evaluation should happen before the project receives the funding. This helps to minimize the risks and ensure the project meets the desired goals.\", \"metadata\": {\"id\": 2036, \"title\": \"NEAR DevHub Funding Guidelines\", \"author\": \"bearmans.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"Factors to consider when requesting funds\", \"createdAt\": \"2023-11-29\", \"updatedAt\": \"2023-11-29\", \"description\": \"Factors to consider when requesting funds\", \"publishedAt\": \"2023-11-29\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3728241867395e+21
+    }
+  },
+  {
+    "id": "5422026018",
+    "receipt_id": "CBMVLg8Cfyjxdti2fALvS6D9t5o1kBzT62Sx4WV6WNzG",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "79yAH9e93nh6vs4a6MHc7RwGUNR4w8esaJKo4vVrvsin",
+      "block_height": 120510818,
+      "block_timestamp": 1717613175100045300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 2640834271959,
+      "tokens_burnt": 264083427195900000000,
+      "executor_account_id": "devhub.near",
+      "status": false
+    },
+    "transaction_hash": "FtrkakULvhS9aERW4ZyjbwTR1ovijECrrLxf27dmKAsZ",
+    "included_in_block_hash": "G49STsEw8JVi3Mhico5vvdMBGkeLBGPN3XKmm3TYjxgv",
+    "block_timestamp": "1717613173759130348",
+    "block": {
+      "block_height": 120510817
+    },
+    "receipt_conversion_tokens_burnt": "30888903151400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 264083427195900000000,
+        "args": "{\"data\": {\"blog\": {\"testing-notification-blog-2309\": {\"\": \"Test blog\", \"metadata\": {\"id\": \"2309\", \"title\": \"Testing Notification Blog\", \"author\": \"megha19.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"\", \"createdAt\": \"2024-02-01\", \"updatedAt\": \"2024-02-01\", \"description\": \"\", \"publishedAt\": \"2024-02-01\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"devhub-test\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 294972330347300000000
+    }
+  },
+  {
+    "id": "5422027672",
+    "receipt_id": "8rUCC5u3KEp6Gy9u8NE6kJ7cuyurzgv2F6Bz56krCxg9",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "37f2EU9RaDeHW4vTzoq22XBrqjwo7GWvgY9eEujAFtV9",
+      "block_height": 120510824,
+      "block_timestamp": 1717613181785678600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 2637662949291,
+      "tokens_burnt": 263766294929100000000,
+      "executor_account_id": "devhub.near",
+      "status": false
+    },
+    "transaction_hash": "8BHGaK6aWC9ycmX7Fyss4iyxdy8dXkRuk683RED4Pdn2",
+    "included_in_block_hash": "D1a2dqqySWbs5GPhHBJcj6Zy1vNqrLMcLi8wCTG4JpbL",
+    "block_timestamp": "1717613180763269036",
+    "block": {
+      "block_height": 120510823
+    },
+    "receipt_conversion_tokens_burnt": "30888903151400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 263766294929100000000,
+        "args": "{\"data\": {\"blog\": {\"education-post-1-2471\": {\"\": \"This is our blog post! \", \"metadata\": {\"title\": \"Education Post 1\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"Subtitle\", \"createdAt\": \"2023-12-07\", \"updatedAt\": \"2023-12-07\", \"description\": \"Description\", \"publishedAt\": \"2023-12-07\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"education\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 294655198080500000000
+    }
+  }
+]

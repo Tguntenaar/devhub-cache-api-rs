@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "6335785002",
+    "receipt_id": "2Sxuko2dsvBqHyEMC157zbzHd5BfNBoxDm7fNJaKBmCL",
+    "predecessor_account_id": "hemera.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FGxDjqzajckqpL7mGb2EsSiWAW9dYHGKa4Pes7BXLd21",
+      "block_height": 122579845,
+      "block_timestamp": 1720059916703226000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3258133634616,
+      "tokens_burnt": 325813363461600000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": false
+    },
+    "transaction_hash": "4PHcCHEAX7QDgKyLnbsJVEHvW3JXb9U4WP76xXE3V6g1",
+    "included_in_block_hash": "8axpd8trCsju3F2P7PSvbso3tUPNj4mNFQqn9GX55zip",
+    "block_timestamp": "1720059914992278476",
+    "block": {
+      "block_height": 122579844
+    },
+    "receipt_conversion_tokens_burnt": "30835687922200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 325813363461600000000,
+        "args": "{\"id\": 1, \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 356649051383800000000
+    }
+  },
+  {
+    "id": "6510718302",
+    "receipt_id": "CBw4zfyvwZDeFd1KLkexTeF7icYLer5nQocNFSVHMoMB",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "ERnmRoBKS7vfz3VuXKf5M7mQXxBsrLbhMGLcYMJqobuD",
+      "block_height": 123004813,
+      "block_timestamp": 1720548559003823900
+    },
+    "receipt_outcome": {
+      "gas_burnt": 10453812741033,
+      "tokens_burnt": 1.0453812741033e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8SEQQru6vAijU3gM4hQRB4suhkiSK2veTKU1SPej8rmR",
+    "included_in_block_hash": "3SjRWy9E5VPyenpvo38YQPeCPPR7nQekkuYQ6xsDvGdL",
+    "block_timestamp": "1720548557746792884",
+    "block": {
+      "block_height": 123004812
+    },
+    "receipt_conversion_tokens_burnt": "31012550301600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 1,
+        "fee": 1.0453812741033e+21,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"profile\": {\"name\": \"NEAR Infrastructure Committee\", \"tags\": {\"NEAR\": \"\", \"committee\": \"\"}, \"image\": {\"ipfs_cid\": \"bafkreicgbhtzxgdb3noivjfx4xcwsx6nq5pnjttdc4fpgfq74ynqj5h6mq\"}, \"linktree\": {\"github\": \"near\", \"twitter\": \"NEARProtocol\", \"website\": \"https://infrastructure-committee.near.page/\", \"telegram\": \"neardev\"}, \"description\": \"The Infrastructure Committee, a direct response to community concerns, was formed in collaboration with various leaders across the NEAR ecosystem. The committee will swiftly address infrastructure concerns with funding and processes to distribute those funds. These processes handle sharing RFPs, submitting proposals, reviewing and voting on proposals, and getting funds to teams when a proposal is approved. This initiative will focus funds on building resilient, fast, redundant infrastructure to meet NEAR\\\\\\\\\\\\'s thriving ecosystem\\\\\\\\\\\\'s short-term and future needs.\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 1
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0763938244049e+21
+    }
+  },
+  {
+    "id": "6510719552",
+    "receipt_id": "FHXMkkWFzowQAM6UgCuswiab4AejJUqsmNAn256j7ntH",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FezWkggVtRRkoyh5zagvYm6ce4UZaLcTxf92KPzgi4es",
+      "block_height": 123004814,
+      "block_timestamp": 1720548560360531200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "8SEQQru6vAijU3gM4hQRB4suhkiSK2veTKU1SPej8rmR",
+    "included_in_block_hash": "3SjRWy9E5VPyenpvo38YQPeCPPR7nQekkuYQ6xsDvGdL",
+    "block_timestamp": "1720548557746792884",
+    "block": {
+      "block_height": 123004812
+    },
+    "receipt_conversion_tokens_burnt": "31012550301600000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.8702303512518367e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 1
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0763938244049e+21
+    }
+  },
+  {
+    "id": "6511105746",
+    "receipt_id": "6hKVQK6BKMohQ5rL8tYakf9hHmjQNcuwuKL7TF2haSft",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HmGJtKCS9QYaZkTre2uFLESiQ8AGpfz3hPcHtWeZs7DL",
+      "block_height": 123005778,
+      "block_timestamp": 1720549668404201200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3954234235879,
+      "tokens_burnt": 395423423587900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "F644A85NEhLhkHDaCHtNevdGFXYVpQi4Vj6Gu6L9DDBE",
+    "included_in_block_hash": "Ge5yFdNmd95BYh3b6qNuEHRTaaxePm5wFn9ENfFrhRgk",
+    "block_timestamp": "1720549667245860767",
+    "block": {
+      "block_height": 123005777
+    },
+    "receipt_conversion_tokens_burnt": "31787525026000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 1,
+        "fee": 395423423587900000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"profile\": {\"description\": \"#### Introduction\\\\\\\\n\\\\\\\\nThe Infrastructure Committee, a direct response to community concerns, was formed in collaboration with various leaders across the NEAR ecosystem. The committee will swiftly address infrastructure concerns with funding and processes to distribute those funds. These processes handle sharing RFPs, submitting proposals, reviewing and voting on proposals, and getting funds to teams when a proposal is approved. This initiative will focus funds on building resilient, fast, redundant infrastructure to meet NEAR\\\\\\\\\\\\'s thriving ecosystem\\\\\\\\\\\\'s short-term and future needs.\\\\\\\\n\\\\\\\\nThe GitHub Wiki provides information about the [Infrastructure Committee (IC)](https://github.com/near/Infrastructure-Working-Group/wiki/Infrastructure-Committee) and the [Working Group (WG)](https://github.com/near/Infrastructure-Working-Group/wiki/Infrastructure-Working-Group), including current members.\\\\\\\\n\\\\\\\\n#### Process Summary\\\\\\\\n\\\\\\\\nThe Committee actively seeks proposals from partners like you to enhance, upgrade, and fortify NEAR ecosystem infrastructure. To this end, the Committee will draft several Requests For Proposals (RFPs) that outline urgent or highly desired projects. We encourage you to submit proposals as a response to an RFP or standalone, as your contributions are crucial to our collective success.\\\\\\\\n\\\\\\\\nGenerally, the process proceeds as follows;\\\\\\\\n\\\\\\\\n1.  The proposal is drafted. Working Group and Committee members are free to review and offer suggestions.\\\\\\\\n2.  Once everyone feels the proposal is ready, it moves to voting. The committee votes asynchronously and in regular committee meetings. A proposal is approved if it receives a majority vote from the Committee members.\\\\\\\\n3.  In the event of a rejection, you will be informed by an IC or WG member, usually via the Telegram group established. Guidance may be offered on how to update the proposal for resubmission.\\\\\\\\n4.  If your proposal is approved, you will move into the Funding Pipeline. You (or your company) will complete the KYC/B process, which involves providing your personal or company information for verification purposes. Next will be a legal working agreement, and finally, a test transaction will be conducted to ensure the target wallet address is correct.\\\\\\\\n5.  Project Management: we encourage awarded teams to create a project on our [Github repo](https://github.com/near/Infrastructure-Working-Group) where the community tracks progress on our [Github project](https://github.com/orgs/near/projects/133/views/6). Sharing project status gives the community and ecosystem leaders visibility into the status of awarded projects.\\\\\\\\n\\\\\\\\n#### Important Links\\\\\\\\n\\\\\\\\nThe following links contain specific information about the processes of responding to RFPs, submitting a proposal, voting, securing funds, and managing the subsequent project for transparency. Please note that the working group will update articles as processes change. We appreciate your patience and understanding.\\\\\\\\n\\\\\\\\n*   [RFPs](https://github.com/near/Infrastructure-Working-Group/wiki/Request-For-Proposals)\\\\\\\\n*   [Submitting a Proposal](https://github.com/near/Infrastructure-Working-Group/wiki/Proposal-Process-%E2%80%90-Team)\\\\\\\\n*   [Voting](https://github.com/near/Infrastructure-Working-Group/wiki/Proposal-Process-%E2%80%90-Team#5-voting-on-proposals)\\\\\\\\n*   [Getting Funds](https://github.com/near/Infrastructure-Working-Group/wiki/Funding-Process-%E2%80%90-Company)\\\\\\\\n*   [Managing The Project](https://github.com/near/Infrastructure-Working-Group/wiki/Projects-&-Tasks)\\\\\\\\n\\\\\\\\n#### Areas Of Funding\\\\\\\\n\\\\\\\\nThe Infrastructure Committee is looking for projects in the following areas. These areas are key to the growth and development of the NEAR ecosystem, so we encourage potential proposers to consider them when submitting their proposals.\\\\\\\\n\\\\\\\\n*   Wallets\\\\\\\\n*   Oracles\\\\\\\\n*   RPC Nodes\\\\\\\\n*   Bridges\\\\\\\\n*   Onramps / Offramps\\\\\\\\n*   Relayers\\\\\\\\n*   Explorers\\\\\\\\n*   Indexers\\\\\\\\n*   Query API\\\\\\\\n*   Data Lakes\\\\\\\\n\\\\\\\\n#### Proposal Markup\\\\\\\\n\\\\\\\\nPlease use the following markdown templates when submitting the body of your proposal.  \\\\\\\\n[Proposal: https://docs.google.com/document/d/1UZRfOE1JAOhsnSmp-RmL2hY7KPJbpBImKZVvPV4YJmA/edit?usp=sharing](https://docs.google.com/document/d/1UZRfOE1JAOhsnSmp-RmL2hY7KPJbpBImKZVvPV4YJmA/edit?usp=sharing)\\\\\\\\n\\\\\\\\n#### Evaluation Criteria\\\\\\\\n\\\\\\\\nSuggestions are forthcoming.\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 1
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 427210948613900000000
+    }
+  },
+  {
+    "id": "6511106070",
+    "receipt_id": "A9Chw1i6JQkr6A6vJL4rfGZzNDSHsBYYEycXxWpVo18N",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HDRDvRegPABPTkjn9MEwWivdhijpJSaYc2xFX1y1NATL",
+      "block_height": 123005779,
+      "block_timestamp": 1720549669596181000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "F644A85NEhLhkHDaCHtNevdGFXYVpQi4Vj6Gu6L9DDBE",
+    "included_in_block_hash": "Ge5yFdNmd95BYh3b6qNuEHRTaaxePm5wFn9ENfFrhRgk",
+    "block_timestamp": "1720549667245860767",
+    "block": {
+      "block_height": 123005777
+    },
+    "receipt_conversion_tokens_burnt": "31787525026000000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.876778368790649e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 1
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 427210948613900000000
+    }
+  },
+  {
+    "id": "6551254497",
+    "receipt_id": "ACW2KiYxLreSevJX2JruPMoPgQs5yRp7ni6XWryg3ySf",
+    "predecessor_account_id": "nearblocks_io.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FpxY4uYfuHvc78yBLsyzwFpjCpqhJgn8HWyCFx5NPHas",
+      "block_height": 123116410,
+      "block_timestamp": 1720674891278193700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6836421317403,
+      "tokens_burnt": 683642131740300000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "7AXDzYmkyG6voW3dnNUQZwYowh6sUxr5Sp2xFn1N9uq1",
+    "included_in_block_hash": "HvnCqTX6qYE1mueXTPVdBmkYqAAsXsrQi1nFdfwYkFBf",
+    "block_timestamp": "1720674890228585713",
+    "block": {
+      "block_height": 123116409
+    },
+    "receipt_conversion_tokens_burnt": "33097335163200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 683642131740300000000,
+        "args": "{\"body\": {\"name\": \"Milestone #5 (12-15 months) - Transition Pagoda\\\\\\\\u{2019}s Near Explorer to NearBlocks\", \"summary\": \"Please find below an update on our current works. The following points are being worked on and will be released in the coming days & weeks. The ad network and API plan revamp are in the goal of growing additional revenue, easier developer onboarding and allowing other dApps to leverage nearblocks\\\\\\\\u{2019} audience (1M monthly unique users currently).\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"description\": \"Hello Devhub,\\\\\\\\n\\\\\\\\nPlease find below an update on our current works. The following points are being worked on and will be released in the coming days & weeks. The ad network and API plan revamp are in the goal of growing additional revenue, easier developer onboarding and allowing other dApps to leverage nearblocks\\\\\\\\u{2019} audience (1M monthly unique users currently).\\\\\\\\n\\\\\\\\n- **Proprietary ad network**. A self-served ad network is being setup with plans ranging from $100 to $300 per month for full exposure across the entire website to leverage 3M monthly impressions and 1M monthly unique visitors.\\\\\\\\n- **Revamp on API plans.** A new pricing model on API plans allowing early founders to leverage historical data starting from $20 per month.\\\\\\\\n- **Aurora integration.** Work on the aurora integration is now ongoing and we will have some results in the coming weeks ; \\\\\\\\n- **DEX Analytics.** In support of the recent \\\\\\\\u{201c}meme\\\\\\\\u{201d} narrative and the potential revival of [Tkn Homes](https://tkn.homes/), we will be adding more analytics on trades, token prices, charts and liquidity pairs and hope to build the same relationship that Pumpfun and Dexscreener have ;\\\\\\\\n- **Migrating from BOS back to React.** With the recent [Pagoda announcement](https://docs.near.org/blog/bos-web-engine-sunset), we will be sunsetting Nearblocks on BOS. It is rather sadening with the change of direction but we do agree with the points surrounding the decision. Building Nearblocks on BOS was a very laborious exercise with a lot of fine tuning and suboptimal user experience. The lack of ability to do npm imports and double loaders we have from first loading BOS and then loaders for data. Our plan will be to keep the lite explorer built on BOS so it can continue to be hosted in a decentralised way without the need for any centralised intermediary. Due to the simplicity of the site, it is a perfect use case for BOS. However, we will transition Nearblocks back to a NextJS app which would allow us to improve the user experience issues we\\\\\\\\u{2019}ve been facing with BOS (ie. double loaders). Users would see immediate benefits on loading speeds and faster iterations of newer features.\\\\\\\\n- **Existing tasks such as contract stats, verifications.**\\\\\\\\n\\\\\\\\nAs our data storage continues to grow in an exponential rate, we are also actively researching and testing better ways to index and store the large data requirements of the growing Near blockchain. \\\\\\\\n\\\\\\\\nOur public roadmap for milestone #5 can be [found here](https://github.com/orgs/Nearblocks/projects/2/views/5).\\\\\\\\n\\\\\\\\nAs a reminder : \\\\\\\\n- Milestone #1 can be found [here](https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=635) ; \\\\\\\\n- Milestone #2 can be found [here](https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=2042) ;\\\\\\\\n- Milestone #3 can be found [here](https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=2804) ;\\\\\\\\n- Milestone #4 can be found [here](https://near.social/mob.near/widget/MainPage.N.Comment.Page?accountId=frol.near&blockHeight=118848444).\\\\\\\\n\\\\\\\\n## Highlights of milestone #1 (month 0-3)\\\\\\\\n\\\\\\\\n- Launch of the explorer selector on BOS ([link](https://explorer.near.org/)).\\\\\\\\n- Nearblocks is now open-source ([link](https://github.com/Nearblocks/nearblocks/)).\\\\\\\\n- As well as fixing outdated bugs, re-indexing missing tokens and infrastructure upgrades.\\\\\\\\n\\\\\\\\nOur public roadmap for milestone #1 can be [found here](https://github.com/orgs/Nearblocks/projects/2/views/2?filterQuery=iteration%3A%22Iteration+1%22+).\\\\\\\\n\\\\\\\\n## Highlights of milestone #2 (month 3-6)\\\\\\\\n\\\\\\\\nThe bulk of the work within these 3 months has been on BOS and our new infrastructure. The rewrite on BOS and updated indexer we have coded V3 - which we aim to publish by the end of January / early February 2024. \\\\\\\\n\\\\\\\\nFollowing the incident caused by the NEAT inscription our focus shifted to our infrastructure. The incident highlighted a bottleneck issue, which we were able to fix and sustain subsequent inscriptions without any impact to the site availability.\\\\\\\\n\\\\\\\\nOur V3 infrastructure has been focused on building a full high availability design with disaster recovery backup in place. With this new infrastructure in place we are able to tolerate 1 location to be unavailable, at any point in time and continue to operate without any interruption to the end user experience. Our focus for this milestone has been on failover testing and ensuring our code can withstand outages while maintaining the data integrity required of being the near block explorer. For some context, our total in use storage sits at 50TB (inclusive of replicas and disaster recovery). The increased investment in our infrastructure cost we believe is critical to maintain the uptime of Nearblocks.\\\\\\\\n\\\\\\\\nWe will continue to focus on this high availability, our plans will be to have a gateway and BOS selector on Nearblocks, so users can select between: \\\\\\\\n\\\\\\\\n- Nearblocks on BOS Mainnet\\\\\\\\n- Nearblocks on BOS Testnet \\\\\\\\n- Legacy React app (which will receive only minor updates). \\\\\\\\n\\\\\\\\nThe following points are completed and will be published in V3: \\\\\\\\n\\\\\\\\n- Remaining actions from milestone #1 : Can be [seen here](https://github.com/orgs/Nearblocks/projects/2/views/2?filterQuery=iteration%3A%22Iteration+1%22+) in \\\\\\\\u{201c}Done\\\\\\\\u{201d} ;\\\\\\\\n- Updated indexer: Running on mainnet and testnet ([link])(https://beta.nearblocks.io/) ;\\\\\\\\n- BOS : Publication of BOS components ([link](https://near.social/devhub.near/widget/app?page=profile&accountId=nearblocks.near)) or search for nearblocks.near [here](https://near.social/lord1.near/widget/component-total)) ; \\\\\\\\n- Validators : Validator section in review ([link](https://beta.nearblocks.io/node-explorer)) ;\\\\\\\\n- Tokens : Additional legacy tokens added ([link])(https://github.com/Nearblocks/nearblocks/issues/15) ; \\\\\\\\n- Ads: As per request from the ecosystem, we have prepared an ad network for NEAR projects to advertise on Nearblocks. While we know that no one likes ads, the ad revenue will go towards covering the ongoing increased infrastructure costs, and we hope also support Near ecosystem players ; \\\\\\\\n- Contract connect methods updated to use MNW. Wallet selector will be added to BOS version.\\\\\\\\n\\\\\\\\nWe are currently working the following points on V3: \\\\\\\\n\\\\\\\\n- Add SBT token support - Postponed until finalised ([link](https://github.com/near/NEPs/pull/504))\\\\\\\\n- Transaction execution enhancements\\\\\\\\n\\\\\\\\nOur public roadmap for milestone #2 can be [found here](https://github.com/orgs/Nearblocks/projects/2/views/2). \\\\\\\\nWe are continuing our attempts to support the ecosystem where best we can, with a number of ongoing requests for additional API data endpoints being worked on for multiple use cases such as taxation, validator stats and wallet support.\\\\\\\\n\\\\\\\\nOur public roadmap for milestone #2 can be [found here](https://github.com/orgs/Nearblocks/projects/2/views/2). \\\\\\\\n\\\\\\\\nWe are continuing our attempts to support the ecosystem where best we can, with a number of ongoing requests for additional API data endpoints being worked on for multiple use cases such as taxation, validator stats and wallet support.\\\\\\\\n\\\\\\\\n## Highlights of milestone #3 (month 6-9) \\\\\\\\n\\\\\\\\nWithin this milestone we have successfully deployed nearblocks.io on BOS. With this deployment, users can enjoy a faster web experience and developers can leverage a suite of BOS components ([link](https://near.social/mob.near/widget/ProfilePage?accountId=nearblocksonbos.near) - check Widgets tab) we have made available.\\\\\\\\n\\\\\\\\nOther feature requests and improvements done within this milestone : \\\\\\\\n\\\\\\\\n- Contract interactions with embedded ABI ;\\\\\\\\n- Near.social comments section on addresses, transactions and token pages;\\\\\\\\n- Wallet selector integration for contract interactions ;\\\\\\\\n- Additional API endpoints for API users (balance history) ;\\\\\\\\n- Dark mode ;\\\\\\\\n- A new way of visualising a transaction execution plan ([link](https://nearblocks.io/txns/9gQFCZZN2EzjssZkRVZBmgiYjHqfwSAgwX2D62sUhnhP?tab=execution)) ;\\\\\\\\n- FT & NFT holder count in real-time ;\\\\\\\\n- Validator explorer ([link](https://nearblocks.io/node-explorer)).\\\\\\\\n\\\\\\\\nOur public roadmap for milestone #3 can be [found here](https://github.com/orgs/Nearblocks/projects/2/views/3).\\\\\\\\n\\\\\\\\n## Highlights of milestone #4 (month 9-12)\\\\\\\\n\\\\\\\\nNearblocks schema and infrastructure was updated over the past 3 months. A number of breaking changes were forced to be introduced to the API has resulted in significant speed improvements. \\\\\\\\n\\\\\\\\nThis milestone we built the first decentralised explorer on Near. The lite explorer is built on BOS found [here](https://lite.nearblocks.io) (for now) and on social.near gateway allows users to check their transaction by using any of the public RPC nodes available. This offers a solution to look up the status of transactions and accounts without any dependency on a centralised indexer.\\\\\\\\n\\\\\\\\n- Lite explorer ([lite.nearblocks.io](https://lite.nearblocks.io))\\\\\\\\n- Enhanced and tree execution plan\\\\\\\\n- Receipt summary\\\\\\\\n- Display Web3 wallet ie. metamask transactions ([example](https://testnet.nearblocks.io/txns/FH7hDFGa3hXzT8EWupRDBzEf4AwPcgpA9HoPDHhHTUAe?tab=execution))\\\\\\\\n- Dex tracking (trades indexing now)\\\\\\\\n- Initial work on aurora integration ([example](https://aurora.exploreblocks.io/))\\\\\\\\n- Spam token list ([link](https://github.com/Nearblocks/spam-token-list))\\\\\\\\n- Cursor pagination for API clients allowing for unlimited historical data query\\\\\\\\n- Logarithmic chart changes\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"nearblocks_io.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"75000\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": [\"Explorers\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9197994025682e+21
+    }
+  },
+  {
+    "id": "6551255250",
+    "receipt_id": "G6jHJE3s2qNFindmcpaKsXM3CQYG4tgaHNcoDSxSwmKr",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3xapFwakWd2tjtLmhTVBoRfPzrWgfYhpdA3ny4V9i1Rg",
+      "block_height": 123116411,
+      "block_timestamp": 1720674892273530000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4500900390936,
+      "tokens_burnt": 450090039093600000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7AXDzYmkyG6voW3dnNUQZwYowh6sUxr5Sp2xFn1N9uq1",
+    "included_in_block_hash": "HvnCqTX6qYE1mueXTPVdBmkYqAAsXsrQi1nFdfwYkFBf",
+    "block_timestamp": "1720674890228585713",
+    "block": {
+      "block_height": 123116409
+    },
+    "receipt_conversion_tokens_burnt": "33097335163200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 450090039093600000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Infrastructure Committee* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @nearblocks_io.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Milestone #5 (12-15 months) - Transition Pagoda\\\\\\\\u{2019}s Near Explorer to NearBlocks\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nPlease find below an update on our current works. The following points are being worked on and will be released in the coming days & weeks. The ad network and API plan revamp are in the goal of growing additional revenue, easier developer onboarding and allowing other dApps to leverage nearblocks\\\\\\\\u{2019} audience (1M monthly unique users currently).\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=4)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9197994025682e+21
+    }
+  },
+  {
+    "id": "6551255255",
+    "receipt_id": "2mpFDPHTmXFhAD8gxSu7NiZ9NpvQbE7ZindHECSFqXjL",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3xapFwakWd2tjtLmhTVBoRfPzrWgfYhpdA3ny4V9i1Rg",
+      "block_height": 123116411,
+      "block_timestamp": 1720674892273530000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4023832203636,
+      "tokens_burnt": 402383220363600000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "7AXDzYmkyG6voW3dnNUQZwYowh6sUxr5Sp2xFn1N9uq1",
+    "included_in_block_hash": "HvnCqTX6qYE1mueXTPVdBmkYqAAsXsrQi1nFdfwYkFBf",
+    "block_timestamp": "1720674890228585713",
+    "block": {
+      "block_height": 123116409
+    },
+    "receipt_conversion_tokens_burnt": "33097335163200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 402383220363600000000,
+        "args": "{\"proposal\": {\"id\": 4, \"snapshot\": {\"name\": \"Milestone #5 (12-15 months) - Transition Pagoda\\\\\\\\u{2019}s Near Explorer to NearBlocks\", \"labels\": [\"Explorers\"], \"summary\": \"Please find below an update on our current works. The following points are being worked on and will be released in the coming days & weeks. The ad network and API plan revamp are in the goal of growing additional revenue, easier developer onboarding and allowing other dApps to leverage nearblocks\\\\\\\\u{2019} audience (1M monthly unique users currently).\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"editor_id\": \"nearblocks_io.near\", \"timestamp\": \"1720674891278193625\", \"linked_rfp\": null, \"supervisor\": null, \"description\": \"Hello Devhub,\\\\\\\\n\\\\\\\\nPlease find below an update on our current works. The following points are being worked on and will be released in the coming days & weeks. The ad network and API plan revamp are in the goal of growing additional revenue, easier developer onboarding and allowing other dApps to leverage nearblocks\\\\\\\\u{2019} audience (1M monthly unique users currently).\\\\\\\\n\\\\\\\\n- **Proprietary ad network**. A self-served ad network is being setup with plans ranging from $100 to $300 per month for full exposure across the entire website to leverage 3M monthly impressions and 1M monthly unique visitors.\\\\\\\\n- **Revamp on API plans.** A new pricing model on API plans allowing early founders to leverage historical data starting from $20 per month.\\\\\\\\n- **Aurora integration.** Work on the aurora integration is now ongoing and we will have some results in the coming weeks ; \\\\\\\\n- **DEX Analytics.** In support of the recent \\\\\\\\u{201c}meme\\\\\\\\u{201d} narrative and the potential revival of [Tkn Homes](https://tkn.homes/), we will be adding more analytics on trades, token prices, charts and liquidity pairs and hope to build the same relationship that Pumpfun and Dexscreener have ;\\\\\\\\n- **Migrating from BOS back to React.** With the recent [Pagoda announcement](https://docs.near.org/blog/bos-web-engine-sunset), we will be sunsetting Nearblocks on BOS. It is rather sadening with the change of direction but we do agree with the points surrounding the decision. Building Nearblocks on BOS was a very laborious exercise with a lot of fine tuning and suboptimal user experience. The lack of ability to do npm imports and double loaders we have from first loading BOS and then loaders for data. Our plan will be to keep the lite explorer built on BOS so it can continue to be hosted in a decentralised way without the need for any centralised intermediary. Due to the simplicity of the site, it is a perfect use case for BOS. However, we will transition Nearblocks back to a NextJS app which would allow us to improve the user experience issues we\\\\\\\\u{2019}ve been facing with BOS (ie. double loaders). Users would see immediate benefits on loading speeds and faster iterations of newer features.\\\\\\\\n- **Existing tasks such as contract stats, verifications.**\\\\\\\\n\\\\\\\\nAs our data storage continues to grow in an exponential rate, we are also actively researching and testing better ways to index and store the large data requirements of the growing Near blockchain. \\\\\\\\n\\\\\\\\nOur public roadmap for milestone #5 can be [found here](https://github.com/orgs/Nearblocks/projects/2/views/5).\\\\\\\\n\\\\\\\\nAs a reminder : \\\\\\\\n- Milestone #1 can be found [here](https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=635) ; \\\\\\\\n- Milestone #2 can be found [here](https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=2042) ;\\\\\\\\n- Milestone #3 can be found [here](https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=2804) ;\\\\\\\\n- Milestone #4 can be found [here](https://near.social/mob.near/widget/MainPage.N.Comment.Page?accountId=frol.near&blockHeight=118848444).\\\\\\\\n\\\\\\\\n## Highlights of milestone #1 (month 0-3)\\\\\\\\n\\\\\\\\n- Launch of the explorer selector on BOS ([link](https://explorer.near.org/)).\\\\\\\\n- Nearblocks is now open-source ([link](https://github.com/Nearblocks/nearblocks/)).\\\\\\\\n- As well as fixing outdated bugs, re-indexing missing tokens and infrastructure upgrades.\\\\\\\\n\\\\\\\\nOur public roadmap for milestone #1 can be [found here](https://github.com/orgs/Nearblocks/projects/2/views/2?filterQuery=iteration%3A%22Iteration+1%22+).\\\\\\\\n\\\\\\\\n## Highlights of milestone #2 (month 3-6)\\\\\\\\n\\\\\\\\nThe bulk of the work within these 3 months has been on BOS and our new infrastructure. The rewrite on BOS and updated indexer we have coded V3 - which we aim to publish by the end of January / early February 2024. \\\\\\\\n\\\\\\\\nFollowing the incident caused by the NEAT inscription our focus shifted to our infrastructure. The incident highlighted a bottleneck issue, which we were able to fix and sustain subsequent inscriptions without any impact to the site availability.\\\\\\\\n\\\\\\\\nOur V3 infrastructure has been focused on building a full high availability design with disaster recovery backup in place. With this new infrastructure in place we are able to tolerate 1 location to be unavailable, at any point in time and continue to operate without any interruption to the end user experience. Our focus for this milestone has been on failover testing and ensuring our code can withstand outages while maintaining the data integrity required of being the near block explorer. For some context, our total in use storage sits at 50TB (inclusive of replicas and disaster recovery). The increased investment in our infrastructure cost we believe is critical to maintain the uptime of Nearblocks.\\\\\\\\n\\\\\\\\nWe will continue to focus on this high availability, our plans will be to have a gateway and BOS selector on Nearblocks, so users can select between: \\\\\\\\n\\\\\\\\n- Nearblocks on BOS Mainnet\\\\\\\\n- Nearblocks on BOS Testnet \\\\\\\\n- Legacy React app (which will receive only minor updates). \\\\\\\\n\\\\\\\\nThe following points are completed and will be published in V3: \\\\\\\\n\\\\\\\\n- Remaining actions from milestone #1 : Can be [seen here](https://github.com/orgs/Nearblocks/projects/2/views/2?filterQuery=iteration%3A%22Iteration+1%22+) in \\\\\\\\u{201c}Done\\\\\\\\u{201d} ;\\\\\\\\n- Updated indexer: Running on mainnet and testnet ([link])(https://beta.nearblocks.io/) ;\\\\\\\\n- BOS : Publication of BOS components ([link](https://near.social/devhub.near/widget/app?page=profile&accountId=nearblocks.near)) or search for nearblocks.near [here](https://near.social/lord1.near/widget/component-total)) ; \\\\\\\\n- Validators : Validator section in review ([link](https://beta.nearblocks.io/node-explorer)) ;\\\\\\\\n- Tokens : Additional legacy tokens added ([link])(https://github.com/Nearblocks/nearblocks/issues/15) ; \\\\\\\\n- Ads: As per request from the ecosystem, we have prepared an ad network for NEAR projects to advertise on Nearblocks. While we know that no one likes ads, the ad revenue will go towards covering the ongoing increased infrastructure costs, and we hope also support Near ecosystem players ; \\\\\\\\n- Contract connect methods updated to use MNW. Wallet selector will be added to BOS version.\\\\\\\\n\\\\\\\\nWe are currently working the following points on V3: \\\\\\\\n\\\\\\\\n- Add SBT token support - Postponed until finalised ([link](https://github.com/near/NEPs/pull/504))\\\\\\\\n- Transaction execution enhancements\\\\\\\\n\\\\\\\\nOur public roadmap for milestone #2 can be [found here](https://github.com/orgs/Nearblocks/projects/2/views/2). \\\\\\\\nWe are continuing our attempts to support the ecosystem where best we can, with a number of ongoing requests for additional API data endpoints being worked on for multiple use cases such as taxation, validator stats and wallet support.\\\\\\\\n\\\\\\\\nOur public roadmap for milestone #2 can be [found here](https://github.com/orgs/Nearblocks/projects/2/views/2). \\\\\\\\n\\\\\\\\nWe are continuing our attempts to support the ecosystem where best we can, with a number of ongoing requests for additional API data endpoints being worked on for multiple use cases such as taxation, validator stats and wallet support.\\\\\\\\n\\\\\\\\n## Highlights of milestone #3 (month 6-9) \\\\\\\\n\\\\\\\\nWithin this milestone we have successfully deployed nearblocks.io on BOS. With this deployment, users can enjoy a faster web experience and developers can leverage a suite of BOS components ([link](https://near.social/mob.near/widget/ProfilePage?accountId=nearblocksonbos.near) - check Widgets tab) we have made available.\\\\\\\\n\\\\\\\\nOther feature requests and improvements done within this milestone : \\\\\\\\n\\\\\\\\n- Contract interactions with embedded ABI ;\\\\\\\\n- Near.social comments section on addresses, transactions and token pages;\\\\\\\\n- Wallet selector integration for contract interactions ;\\\\\\\\n- Additional API endpoints for API users (balance history) ;\\\\\\\\n- Dark mode ;\\\\\\\\n- A new way of visualising a transaction execution plan ([link](https://nearblocks.io/txns/9gQFCZZN2EzjssZkRVZBmgiYjHqfwSAgwX2D62sUhnhP?tab=execution)) ;\\\\\\\\n- FT & NFT holder count in real-time ;\\\\\\\\n- Validator explorer ([link](https://nearblocks.io/node-explorer)).\\\\\\\\n\\\\\\\\nOur public roadmap for milestone #3 can be [found here](https://github.com/orgs/Nearblocks/projects/2/views/3).\\\\\\\\n\\\\\\\\n## Highlights of milestone #4 (month 9-12)\\\\\\\\n\\\\\\\\nNearblocks schema and infrastructure was updated over the past 3 months. A number of breaking changes were forced to be introduced to the API has resulted in significant speed improvements. \\\\\\\\n\\\\\\\\nThis milestone we built the first decentralised explorer on Near. The lite explorer is built on BOS found [here](https://lite.nearblocks.io) (for now) and on social.near gateway allows users to check their transaction by using any of the public RPC nodes available. This offers a solution to look up the status of transactions and accounts without any dependency on a centralised indexer.\\\\\\\\n\\\\\\\\n- Lite explorer ([lite.nearblocks.io](https://lite.nearblocks.io))\\\\\\\\n- Enhanced and tree execution plan\\\\\\\\n- Receipt summary\\\\\\\\n- Display Web3 wallet ie. metamask transactions ([example](https://testnet.nearblocks.io/txns/FH7hDFGa3hXzT8EWupRDBzEf4AwPcgpA9HoPDHhHTUAe?tab=execution))\\\\\\\\n- Dex tracking (trades indexing now)\\\\\\\\n- Initial work on aurora integration ([example](https://aurora.exploreblocks.io/))\\\\\\\\n- Spam token list ([link](https://github.com/Nearblocks/spam-token-list))\\\\\\\\n- Cursor pagination for API clients allowing for unlimited historical data query\\\\\\\\n- Logarithmic chart changes\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"nearblocks_io.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"75000\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"author_id\": \"nearblocks_io.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9197994025682e+21
+    }
+  },
+  {
+    "id": "6551255260",
+    "receipt_id": "Fp31p4V5ayeMkQDSUFuW1pZnHvm9gBriY4uJXi9PLsnD",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3xapFwakWd2tjtLmhTVBoRfPzrWgfYhpdA3ny4V9i1Rg",
+      "block_height": 123116411,
+      "block_timestamp": 1720674892273530000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3505866762075,
+      "tokens_burnt": 350586676207500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7AXDzYmkyG6voW3dnNUQZwYowh6sUxr5Sp2xFn1N9uq1",
+    "included_in_block_hash": "HvnCqTX6qYE1mueXTPVdBmkYqAAsXsrQi1nFdfwYkFBf",
+    "block_timestamp": "1720674890228585713",
+    "block": {
+      "block_height": 123116409
+    },
+    "receipt_conversion_tokens_burnt": "33097335163200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 350586676207500000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":4,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"nearblocks_io.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9197994025682e+21
+    }
+  },
+  {
+    "id": "6562812463",
+    "receipt_id": "Fa9T6g7cGcx8YK22jPy2fC7MHwTCpnP8ypgy4BsDbYqo",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4ncFgDY3F2bzx3DN4nDwv5pPgFswaeQhhbnSAnaDDoyA",
+      "block_height": 123146518,
+      "block_timestamp": 1720708945638161200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3246175745123,
+      "tokens_burnt": 324617574512300000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": false
+    },
+    "transaction_hash": "EPE9kBAPDeGbcTn7DTBNMxpJZuNg4svaEB64xppQ6DXk",
+    "included_in_block_hash": "9yQRdBjg7sfwHBuFrVyqPwZ5wzdCLRWHVRvjHDJmM3ti",
+    "block_timestamp": "1720708944636735293",
+    "block": {
+      "block_height": 123146517
+    },
+    "receipt_conversion_tokens_burnt": "33108738426600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 324617574512300000000,
+        "args": "{\"id\": 4, \"body\": {\"name\": \"Milestone #5 (12-15 months) - Transition Pagoda\\\\\\\\u{2019}s Near Explorer to NearBlocks\", \"summary\": \"Please find below an update on our current works. The following points are being worked on and will be released in the coming days & weeks. The ad network and API plan revamp are in the goal of growing additional revenue, easier developer onboarding and allowing other dApps to leverage nearblocks\\\\\\\\u{2019} audience (1M monthly unique users currently).\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"APPROVED\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": true}, \"linked_rfp\": null, \"supervisor\": \"frol.near\", \"description\": \"Hello Devhub,\\\\\\\\n\\\\\\\\nPlease find below an update on our current works. The following points are being worked on and will be released in the coming days & weeks. The ad network and API plan revamp are in the goal of growing additional revenue, easier developer onboarding and allowing other dApps to leverage nearblocks\\\\\\\\u{2019} audience (1M monthly unique users currently).\\\\\\\\n\\\\\\\\n- **Proprietary ad network**. A self-served ad network is being setup with plans ranging from $100 to $300 per month for full exposure across the entire website to leverage 3M monthly impressions and 1M monthly unique visitors.\\\\\\\\n- **Revamp on API plans.** A new pricing model on API plans allowing early founders to leverage historical data starting from $20 per month.\\\\\\\\n- **Aurora integration.** Work on the aurora integration is now ongoing and we will have some results in the coming weeks ; \\\\\\\\n- **DEX Analytics.** In support of the recent \\\\\\\\u{201c}meme\\\\\\\\u{201d} narrative and the potential revival of [Tkn Homes](https://tkn.homes/), we will be adding more analytics on trades, token prices, charts and liquidity pairs and hope to build the same relationship that Pumpfun and Dexscreener have ;\\\\\\\\n- **Migrating from BOS back to React.** With the recent [Pagoda announcement](https://docs.near.org/blog/bos-web-engine-sunset), we will be sunsetting Nearblocks on BOS. It is rather sadening with the change of direction but we do agree with the points surrounding the decision. Building Nearblocks on BOS was a very laborious exercise with a lot of fine tuning and suboptimal user experience. The lack of ability to do npm imports and double loaders we have from first loading BOS and then loaders for data. Our plan will be to keep the lite explorer built on BOS so it can continue to be hosted in a decentralised way without the need for any centralised intermediary. Due to the simplicity of the site, it is a perfect use case for BOS. However, we will transition Nearblocks back to a NextJS app which would allow us to improve the user experience issues we\\\\\\\\u{2019}ve been facing with BOS (ie. double loaders). Users would see immediate benefits on loading speeds and faster iterations of newer features.\\\\\\\\n- **Existing tasks such as contract stats, verifications.**\\\\\\\\n\\\\\\\\nAs our data storage continues to grow in an exponential rate, we are also actively researching and testing better ways to index and store the large data requirements of the growing Near blockchain. \\\\\\\\n\\\\\\\\nOur public roadmap for milestone #5 can be [found here](https://github.com/orgs/Nearblocks/projects/2/views/5).\\\\\\\\n\\\\\\\\nAs a reminder : \\\\\\\\n- Milestone #1 can be found [here](https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=635) ; \\\\\\\\n- Milestone #2 can be found [here](https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=2042) ;\\\\\\\\n- Milestone #3 can be found [here](https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=2804) ;\\\\\\\\n- Milestone #4 can be found [here](https://near.social/mob.near/widget/MainPage.N.Comment.Page?accountId=frol.near&blockHeight=118848444).\\\\\\\\n\\\\\\\\n## Highlights of milestone #1 (month 0-3)\\\\\\\\n\\\\\\\\n- Launch of the explorer selector on BOS ([link](https://explorer.near.org/)).\\\\\\\\n- Nearblocks is now open-source ([link](https://github.com/Nearblocks/nearblocks/)).\\\\\\\\n- As well as fixing outdated bugs, re-indexing missing tokens and infrastructure upgrades.\\\\\\\\n\\\\\\\\nOur public roadmap for milestone #1 can be [found here](https://github.com/orgs/Nearblocks/projects/2/views/2?filterQuery=iteration%3A%22Iteration+1%22+).\\\\\\\\n\\\\\\\\n## Highlights of milestone #2 (month 3-6)\\\\\\\\n\\\\\\\\nThe bulk of the work within these 3 months has been on BOS and our new infrastructure. The rewrite on BOS and updated indexer we have coded V3 - which we aim to publish by the end of January / early February 2024. \\\\\\\\n\\\\\\\\nFollowing the incident caused by the NEAT inscription our focus shifted to our infrastructure. The incident highlighted a bottleneck issue, which we were able to fix and sustain subsequent inscriptions without any impact to the site availability.\\\\\\\\n\\\\\\\\nOur V3 infrastructure has been focused on building a full high availability design with disaster recovery backup in place. With this new infrastructure in place we are able to tolerate 1 location to be unavailable, at any point in time and continue to operate without any interruption to the end user experience. Our focus for this milestone has been on failover testing and ensuring our code can withstand outages while maintaining the data integrity required of being the near block explorer. For some context, our total in use storage sits at 50TB (inclusive of replicas and disaster recovery). The increased investment in our infrastructure cost we believe is critical to maintain the uptime of Nearblocks.\\\\\\\\n\\\\\\\\nWe will continue to focus on this high availability, our plans will be to have a gateway and BOS selector on Nearblocks, so users can select between: \\\\\\\\n\\\\\\\\n- Nearblocks on BOS Mainnet\\\\\\\\n- Nearblocks on BOS Testnet \\\\\\\\n- Legacy React app (which will receive only minor updates). \\\\\\\\n\\\\\\\\nThe following points are completed and will be published in V3: \\\\\\\\n\\\\\\\\n- Remaining actions from milestone #1 : Can be [seen here](https://github.com/orgs/Nearblocks/projects/2/views/2?filterQuery=iteration%3A%22Iteration+1%22+) in \\\\\\\\u{201c}Done\\\\\\\\u{201d} ;\\\\\\\\n- Updated indexer: Running on mainnet and testnet ([link])(https://beta.nearblocks.io/) ;\\\\\\\\n- BOS : Publication of BOS components ([link](https://near.social/devhub.near/widget/app?page=profile&accountId=nearblocks.near)) or search for nearblocks.near [here](https://near.social/lord1.near/widget/component-total)) ; \\\\\\\\n- Validators : Validator section in review ([link](https://beta.nearblocks.io/node-explorer)) ;\\\\\\\\n- Tokens : Additional legacy tokens added ([link])(https://github.com/Nearblocks/nearblocks/issues/15) ; \\\\\\\\n- Ads: As per request from the ecosystem, we have prepared an ad network for NEAR projects to advertise on Nearblocks. While we know that no one likes ads, the ad revenue will go towards covering the ongoing increased infrastructure costs, and we hope also support Near ecosystem players ; \\\\\\\\n- Contract connect methods updated to use MNW. Wallet selector will be added to BOS version.\\\\\\\\n\\\\\\\\nWe are currently working the following points on V3: \\\\\\\\n\\\\\\\\n- Add SBT token support - Postponed until finalised ([link](https://github.com/near/NEPs/pull/504))\\\\\\\\n- Transaction execution enhancements\\\\\\\\n\\\\\\\\nOur public roadmap for milestone #2 can be [found here](https://github.com/orgs/Nearblocks/projects/2/views/2). \\\\\\\\nWe are continuing our attempts to support the ecosystem where best we can, with a number of ongoing requests for additional API data endpoints being worked on for multiple use cases such as taxation, validator stats and wallet support.\\\\\\\\n\\\\\\\\nOur public roadmap for milestone #2 can be [found here](https://github.com/orgs/Nearblocks/projects/2/views/2). \\\\\\\\n\\\\\\\\nWe are continuing our attempts to support the ecosystem where best we can, with a number of ongoing requests for additional API data endpoints being worked on for multiple use cases such as taxation, validator stats and wallet support.\\\\\\\\n\\\\\\\\n## Highlights of milestone #3 (month 6-9) \\\\\\\\n\\\\\\\\nWithin this milestone we have successfully deployed nearblocks.io on BOS. With this deployment, users can enjoy a faster web experience and developers can leverage a suite of BOS components ([link](https://near.social/mob.near/widget/ProfilePage?accountId=nearblocksonbos.near) - check Widgets tab) we have made available.\\\\\\\\n\\\\\\\\nOther feature requests and improvements done within this milestone : \\\\\\\\n\\\\\\\\n- Contract interactions with embedded ABI ;\\\\\\\\n- Near.social comments section on addresses, transactions and token pages;\\\\\\\\n- Wallet selector integration for contract interactions ;\\\\\\\\n- Additional API endpoints for API users (balance history) ;\\\\\\\\n- Dark mode ;\\\\\\\\n- A new way of visualising a transaction execution plan ([link](https://nearblocks.io/txns/9gQFCZZN2EzjssZkRVZBmgiYjHqfwSAgwX2D62sUhnhP?tab=execution)) ;\\\\\\\\n- FT & NFT holder count in real-time ;\\\\\\\\n- Validator explorer ([link](https://nearblocks.io/node-explorer)).\\\\\\\\n\\\\\\\\nOur public roadmap for milestone #3 can be [found here](https://github.com/orgs/Nearblocks/projects/2/views/3).\\\\\\\\n\\\\\\\\n## Highlights of milestone #4 (month 9-12)\\\\\\\\n\\\\\\\\nNearblocks schema and infrastructure was updated over the past 3 months. A number of breaking changes were forced to be introduced to the API has resulted in significant speed improvements. \\\\\\\\n\\\\\\\\nThis milestone we built the first decentralised explorer on Near. The lite explorer is built on BOS found [here](https://lite.nearblocks.io) (for now) and on social.near gateway allows users to check their transaction by using any of the public RPC nodes available. This offers a solution to look up the status of transactions and accounts without any dependency on a centralised indexer.\\\\\\\\n\\\\\\\\n- Lite explorer ([lite.nearblocks.io](https://lite.nearblocks.io))\\\\\\\\n- Enhanced and tree execution plan\\\\\\\\n- Receipt summary\\\\\\\\n- Display Web3 wallet ie. metamask transactions ([example](https://testnet.nearblocks.io/txns/FH7hDFGa3hXzT8EWupRDBzEf4AwPcgpA9HoPDHhHTUAe?tab=execution))\\\\\\\\n- Dex tracking (trades indexing now)\\\\\\\\n- Initial work on aurora integration ([example](https://aurora.exploreblocks.io/))\\\\\\\\n- Spam token list ([link](https://github.com/Nearblocks/spam-token-list))\\\\\\\\n- Cursor pagination for API clients allowing for unlimited historical data query\\\\\\\\n- Logarithmic chart changes\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"nearblocks_io.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"75000\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": [\"Explorers\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 357726312938900000000
+    }
+  },
+  {
+    "id": "6562926182",
+    "receipt_id": "BvZk5BQa2YiGTpAiVNnjj5aYZTFS3Pe2e4N7vMS4UwdF",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5Y3ALRjpAEYerAyhcp38HgUxLjW7mJumy7w2rCZXiv6M",
+      "block_height": 123146885,
+      "block_timestamp": 1720709370591248000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 2525758004970,
+      "tokens_burnt": 252575800497000000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": false
+    },
+    "transaction_hash": "58K5XhXossqBDLXaxgcKbvQfL33Eiy8mk8R5R93v9wLe",
+    "included_in_block_hash": "5Y3ALRjpAEYerAyhcp38HgUxLjW7mJumy7w2rCZXiv6M",
+    "block_timestamp": "1720709370591247988",
+    "block": {
+      "block_height": 123146885
+    },
+    "receipt_conversion_tokens_burnt": "30906790623400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_member",
+        "deposit": 0,
+        "fee": 252575800497000000000,
+        "args": "{\"member\": \"team:moderators\", \"metadata\": {\"parents\": [], \"children\": [\"pivortex.near\", \"woben.near\", \"flmel.near\", \"theori.near\", \"polyprogrammist.near\", \"trechriron71.near\", \"frol.near\", \"as2.near\", \"eric3.near\", \"megha19.near\", \"petersalomonsen.near\"], \"description\": \"The moderator group has permissions to create and edit RFPs, edit and manage proposals, and manage admins.\", \"permissions\": {\"*\": [\"edit-post\", \"use-labels\"]}, \"member_metadata_version\": \"V0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 283482591120400000000
+    }
+  },
+  {
+    "id": "6562926457",
+    "receipt_id": "5rqeeN76virDwNa26qp3jmG8nLHZzFsh4G9AqV4k6Uyk",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9rdi5De3VGTz9dfBVZtpQHwHjtzDbhjeMobGiiQ7bJ1t",
+      "block_height": 123146886,
+      "block_timestamp": 1720709371743604700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "58K5XhXossqBDLXaxgcKbvQfL33Eiy8mk8R5R93v9wLe",
+    "included_in_block_hash": "5Y3ALRjpAEYerAyhcp38HgUxLjW7mJumy7w2rCZXiv6M",
+    "block_timestamp": "1720709370591247988",
+    "block": {
+      "block_height": 123146885
+    },
+    "receipt_conversion_tokens_burnt": "30906790623400000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.8233747782907065e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 283482591120400000000
+    }
+  },
+  {
+    "id": "6562935906",
+    "receipt_id": "HYQwceR2oksZb2kw78K53fMD38U2p4D12XSn6EZ15zi2",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4X8RVjKUtTAF42qQtiAb7hycqKc83vojoqciW692acdp",
+      "block_height": 123146930,
+      "block_timestamp": 1720709418755524400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3134408786659,
+      "tokens_burnt": 313440878665900000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "5CJyk5wEJAPGCQk2hJZB6jPQUwDJRqEB5VsHr2PndShd",
+    "included_in_block_hash": "4X8RVjKUtTAF42qQtiAb7hycqKc83vojoqciW692acdp",
+    "block_timestamp": "1720709418755524323",
+    "block": {
+      "block_height": 123146930
+    },
+    "receipt_conversion_tokens_burnt": "30907014216800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_member",
+        "deposit": 0,
+        "fee": 313440878665900000000,
+        "args": "{\"member\": \"team:moderators\", \"metadata\": {\"parents\": [], \"children\": [\"pivortex.near\", \"woben.near\", \"flmel.near\", \"theori.near\", \"polyprogrammist.near\", \"trechriron71.near\", \"frol.near\", \"as2.near\", \"eric3.near\", \"megha19.near\", \"petersalomonsen.near\"], \"description\": \"The moderator group has permissions to create and edit RFPs, edit and manage proposals, and manage admins.\", \"permissions\": {\"*\": [\"edit-post\", \"use-labels\"]}, \"member_metadata_version\": \"V0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 344347892882700000000
+    }
+  },
+  {
+    "id": "6562936210",
+    "receipt_id": "CBkWixEjwE7CMvSnhXyuPTh51AfenayzM3St2Gd2AH69",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HsjUxbufoXsyEDyF8px5fsSDpdYrRXKxQoNhooQ3yYWW",
+      "block_height": 123146931,
+      "block_timestamp": 1720709419946670300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "5CJyk5wEJAPGCQk2hJZB6jPQUwDJRqEB5VsHr2PndShd",
+    "included_in_block_hash": "4X8RVjKUtTAF42qQtiAb7hycqKc83vojoqciW692acdp",
+    "block_timestamp": "1720709418755524323",
+    "block": {
+      "block_height": 123146930
+    },
+    "receipt_conversion_tokens_burnt": "30907014216800000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.8227661410774503e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 344347892882700000000
+    }
+  },
+  {
+    "id": "6563617549",
+    "receipt_id": "3fX7YuDocMWeDy2YWiQ9HeVK6KV7dqoKqnH1UsJEZQkh",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7gYGdR7XNSMPo2GvzB8Wdxj4ovfCPkXdXS1YkxtqNXx5",
+      "block_height": 123148566,
+      "block_timestamp": 1720711319868569900
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6297675656701,
+      "tokens_burnt": 629767565670100000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "68rfqLeo6eezjFuXJJgdhTgcviGwLQTUjBXtoHN7TyWA",
+    "included_in_block_hash": "GDjJKumDbP5V85qxx8Rhskr1rTZkekKpaNjBbkAGCyNj",
+    "block_timestamp": "1720711318973198823",
+    "block": {
+      "block_height": 123148565
+    },
+    "receipt_conversion_tokens_burnt": "33108738426600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 629767565670100000000,
+        "args": "{\"id\": 4, \"body\": {\"name\": \"Milestone #5 (12-15 months) - Transition Pagoda\\\\\\\\u{2019}s Near Explorer to NearBlocks\", \"summary\": \"Please find below an update on our current works. The following points are being worked on and will be released in the coming days & weeks. The ad network and API plan revamp are in the goal of growing additional revenue, easier developer onboarding and allowing other dApps to leverage nearblocks\\\\\\\\u{2019} audience (1M monthly unique users currently).\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"APPROVED\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": true}, \"linked_rfp\": null, \"supervisor\": \"frol.near\", \"description\": \"Hello Devhub,\\\\\\\\n\\\\\\\\nPlease find below an update on our current works. The following points are being worked on and will be released in the coming days & weeks. The ad network and API plan revamp are in the goal of growing additional revenue, easier developer onboarding and allowing other dApps to leverage nearblocks\\\\\\\\u{2019} audience (1M monthly unique users currently).\\\\\\\\n\\\\\\\\n- **Proprietary ad network**. A self-served ad network is being setup with plans ranging from $100 to $300 per month for full exposure across the entire website to leverage 3M monthly impressions and 1M monthly unique visitors.\\\\\\\\n- **Revamp on API plans.** A new pricing model on API plans allowing early founders to leverage historical data starting from $20 per month.\\\\\\\\n- **Aurora integration.** Work on the aurora integration is now ongoing and we will have some results in the coming weeks ; \\\\\\\\n- **DEX Analytics.** In support of the recent \\\\\\\\u{201c}meme\\\\\\\\u{201d} narrative and the potential revival of [Tkn Homes](https://tkn.homes/), we will be adding more analytics on trades, token prices, charts and liquidity pairs and hope to build the same relationship that Pumpfun and Dexscreener have ;\\\\\\\\n- **Migrating from BOS back to React.** With the recent [Pagoda announcement](https://docs.near.org/blog/bos-web-engine-sunset), we will be sunsetting Nearblocks on BOS. It is rather sadening with the change of direction but we do agree with the points surrounding the decision. Building Nearblocks on BOS was a very laborious exercise with a lot of fine tuning and suboptimal user experience. The lack of ability to do npm imports and double loaders we have from first loading BOS and then loaders for data. Our plan will be to keep the lite explorer built on BOS so it can continue to be hosted in a decentralised way without the need for any centralised intermediary. Due to the simplicity of the site, it is a perfect use case for BOS. However, we will transition Nearblocks back to a NextJS app which would allow us to improve the user experience issues we\\\\\\\\u{2019}ve been facing with BOS (ie. double loaders). Users would see immediate benefits on loading speeds and faster iterations of newer features.\\\\\\\\n- **Existing tasks such as contract stats, verifications.**\\\\\\\\n\\\\\\\\nAs our data storage continues to grow in an exponential rate, we are also actively researching and testing better ways to index and store the large data requirements of the growing Near blockchain. \\\\\\\\n\\\\\\\\nOur public roadmap for milestone #5 can be [found here](https://github.com/orgs/Nearblocks/projects/2/views/5).\\\\\\\\n\\\\\\\\nAs a reminder : \\\\\\\\n- Milestone #1 can be found [here](https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=635) ; \\\\\\\\n- Milestone #2 can be found [here](https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=2042) ;\\\\\\\\n- Milestone #3 can be found [here](https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=2804) ;\\\\\\\\n- Milestone #4 can be found [here](https://near.social/mob.near/widget/MainPage.N.Comment.Page?accountId=frol.near&blockHeight=118848444).\\\\\\\\n\\\\\\\\n## Highlights of milestone #1 (month 0-3)\\\\\\\\n\\\\\\\\n- Launch of the explorer selector on BOS ([link](https://explorer.near.org/)).\\\\\\\\n- Nearblocks is now open-source ([link](https://github.com/Nearblocks/nearblocks/)).\\\\\\\\n- As well as fixing outdated bugs, re-indexing missing tokens and infrastructure upgrades.\\\\\\\\n\\\\\\\\nOur public roadmap for milestone #1 can be [found here](https://github.com/orgs/Nearblocks/projects/2/views/2?filterQuery=iteration%3A%22Iteration+1%22+).\\\\\\\\n\\\\\\\\n## Highlights of milestone #2 (month 3-6)\\\\\\\\n\\\\\\\\nThe bulk of the work within these 3 months has been on BOS and our new infrastructure. The rewrite on BOS and updated indexer we have coded V3 - which we aim to publish by the end of January / early February 2024. \\\\\\\\n\\\\\\\\nFollowing the incident caused by the NEAT inscription our focus shifted to our infrastructure. The incident highlighted a bottleneck issue, which we were able to fix and sustain subsequent inscriptions without any impact to the site availability.\\\\\\\\n\\\\\\\\nOur V3 infrastructure has been focused on building a full high availability design with disaster recovery backup in place. With this new infrastructure in place we are able to tolerate 1 location to be unavailable, at any point in time and continue to operate without any interruption to the end user experience. Our focus for this milestone has been on failover testing and ensuring our code can withstand outages while maintaining the data integrity required of being the near block explorer. For some context, our total in use storage sits at 50TB (inclusive of replicas and disaster recovery). The increased investment in our infrastructure cost we believe is critical to maintain the uptime of Nearblocks.\\\\\\\\n\\\\\\\\nWe will continue to focus on this high availability, our plans will be to have a gateway and BOS selector on Nearblocks, so users can select between: \\\\\\\\n\\\\\\\\n- Nearblocks on BOS Mainnet\\\\\\\\n- Nearblocks on BOS Testnet \\\\\\\\n- Legacy React app (which will receive only minor updates). \\\\\\\\n\\\\\\\\nThe following points are completed and will be published in V3: \\\\\\\\n\\\\\\\\n- Remaining actions from milestone #1 : Can be [seen here](https://github.com/orgs/Nearblocks/projects/2/views/2?filterQuery=iteration%3A%22Iteration+1%22+) in \\\\\\\\u{201c}Done\\\\\\\\u{201d} ;\\\\\\\\n- Updated indexer: Running on mainnet and testnet ([link])(https://beta.nearblocks.io/) ;\\\\\\\\n- BOS : Publication of BOS components ([link](https://near.social/devhub.near/widget/app?page=profile&accountId=nearblocks.near)) or search for nearblocks.near [here](https://near.social/lord1.near/widget/component-total)) ; \\\\\\\\n- Validators : Validator section in review ([link](https://beta.nearblocks.io/node-explorer)) ;\\\\\\\\n- Tokens : Additional legacy tokens added ([link])(https://github.com/Nearblocks/nearblocks/issues/15) ; \\\\\\\\n- Ads: As per request from the ecosystem, we have prepared an ad network for NEAR projects to advertise on Nearblocks. While we know that no one likes ads, the ad revenue will go towards covering the ongoing increased infrastructure costs, and we hope also support Near ecosystem players ; \\\\\\\\n- Contract connect methods updated to use MNW. Wallet selector will be added to BOS version.\\\\\\\\n\\\\\\\\nWe are currently working the following points on V3: \\\\\\\\n\\\\\\\\n- Add SBT token support - Postponed until finalised ([link](https://github.com/near/NEPs/pull/504))\\\\\\\\n- Transaction execution enhancements\\\\\\\\n\\\\\\\\nOur public roadmap for milestone #2 can be [found here](https://github.com/orgs/Nearblocks/projects/2/views/2). \\\\\\\\nWe are continuing our attempts to support the ecosystem where best we can, with a number of ongoing requests for additional API data endpoints being worked on for multiple use cases such as taxation, validator stats and wallet support.\\\\\\\\n\\\\\\\\nOur public roadmap for milestone #2 can be [found here](https://github.com/orgs/Nearblocks/projects/2/views/2). \\\\\\\\n\\\\\\\\nWe are continuing our attempts to support the ecosystem where best we can, with a number of ongoing requests for additional API data endpoints being worked on for multiple use cases such as taxation, validator stats and wallet support.\\\\\\\\n\\\\\\\\n## Highlights of milestone #3 (month 6-9) \\\\\\\\n\\\\\\\\nWithin this milestone we have successfully deployed nearblocks.io on BOS. With this deployment, users can enjoy a faster web experience and developers can leverage a suite of BOS components ([link](https://near.social/mob.near/widget/ProfilePage?accountId=nearblocksonbos.near) - check Widgets tab) we have made available.\\\\\\\\n\\\\\\\\nOther feature requests and improvements done within this milestone : \\\\\\\\n\\\\\\\\n- Contract interactions with embedded ABI ;\\\\\\\\n- Near.social comments section on addresses, transactions and token pages;\\\\\\\\n- Wallet selector integration for contract interactions ;\\\\\\\\n- Additional API endpoints for API users (balance history) ;\\\\\\\\n- Dark mode ;\\\\\\\\n- A new way of visualising a transaction execution plan ([link](https://nearblocks.io/txns/9gQFCZZN2EzjssZkRVZBmgiYjHqfwSAgwX2D62sUhnhP?tab=execution)) ;\\\\\\\\n- FT & NFT holder count in real-time ;\\\\\\\\n- Validator explorer ([link](https://nearblocks.io/node-explorer)).\\\\\\\\n\\\\\\\\nOur public roadmap for milestone #3 can be [found here](https://github.com/orgs/Nearblocks/projects/2/views/3).\\\\\\\\n\\\\\\\\n## Highlights of milestone #4 (month 9-12)\\\\\\\\n\\\\\\\\nNearblocks schema and infrastructure was updated over the past 3 months. A number of breaking changes were forced to be introduced to the API has resulted in significant speed improvements. \\\\\\\\n\\\\\\\\nThis milestone we built the first decentralised explorer on Near. The lite explorer is built on BOS found [here](https://lite.nearblocks.io) (for now) and on social.near gateway allows users to check their transaction by using any of the public RPC nodes available. This offers a solution to look up the status of transactions and accounts without any dependency on a centralised indexer.\\\\\\\\n\\\\\\\\n- Lite explorer ([lite.nearblocks.io](https://lite.nearblocks.io))\\\\\\\\n- Enhanced and tree execution plan\\\\\\\\n- Receipt summary\\\\\\\\n- Display Web3 wallet ie. metamask transactions ([example](https://testnet.nearblocks.io/txns/FH7hDFGa3hXzT8EWupRDBzEf4AwPcgpA9HoPDHhHTUAe?tab=execution))\\\\\\\\n- Dex tracking (trades indexing now)\\\\\\\\n- Initial work on aurora integration ([example](https://aurora.exploreblocks.io/))\\\\\\\\n- Spam token list ([link](https://github.com/Nearblocks/spam-token-list))\\\\\\\\n- Cursor pagination for API clients allowing for unlimited historical data query\\\\\\\\n- Logarithmic chart changes\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"nearblocks_io.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"75000\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": [\"Explorers\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0119777341052e+21
+    }
+  },
+  {
+    "id": "6563617843",
+    "receipt_id": "HREzcWW3tGJLrXtgr13PNaJACZnzRMow2kEiwenCw4WU",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Gev3KSpT5sUmChq5byiD1WXCk1pWTjHnM34SjppGP8Gv",
+      "block_height": 123148567,
+      "block_timestamp": 1720711320862495200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3491014300085,
+      "tokens_burnt": 349101430008500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "68rfqLeo6eezjFuXJJgdhTgcviGwLQTUjBXtoHN7TyWA",
+    "included_in_block_hash": "GDjJKumDbP5V85qxx8Rhskr1rTZkekKpaNjBbkAGCyNj",
+    "block_timestamp": "1720711318973198823",
+    "block": {
+      "block_height": 123148565
+    },
+    "receipt_conversion_tokens_burnt": "33108738426600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349101430008500000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"nearblocks_io.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":4,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"frol.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0119777341052e+21
+    }
+  },
+  {
+    "id": "6657130142",
+    "receipt_id": "EmigsF2r4hXKefWUA9hoQfxrVLHvudrR4v43EF9rHzTd",
+    "predecessor_account_id": "524f24bb0320fa84ab2ea93e589019c2c4c60a3a6a45dd0577bd6e97f40f1521",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BDh1nhBLjzXgyCGeGErDQpbLCE1uqgfavt1qtqyHHZ7t",
+      "block_height": 123446871,
+      "block_timestamp": 1721042142197486000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7590939760950,
+      "tokens_burnt": 759093976095000000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "EVR8hGzDwmR71H7x4PT9kKpqPApU4TkGK8WpKQ452WyD",
+    "included_in_block_hash": "86xp1vmrxmXZbftNzJ2r7je3RGsCJTf8Wz88QbXgfCMn",
+    "block_timestamp": "1721042141038769773",
+    "block": {
+      "block_height": 123446870
+    },
+    "receipt_conversion_tokens_burnt": "33047026648200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 759093976095000000000,
+        "args": "{\"body\": {\"name\": \"Powerful Data APIs and GPT Tools for Near Developers to Easily Build\", \"summary\": \"Problem: The Near blockchain\\\\\\\\\\\\'s data infrastructure is underdeveloped, making it difficult for developers to access and process on-chain data. The non-EVM nature of Near adds complexity to data parsing and processing. Solution: Provide standardized, structured APIs for on-chain data on Near, enabling developers to efficiently access data. Offer an AI-powered assistant for developers to gain the necessary knowledge for building on Near.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": null, \"description\": \"## Footprint Analytics\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\u{2019}s contact information\\\\\\\\nTelegram handle: @dplinnn\\\\\\\\n\\\\\\\\n### Size of the whole team\\\\\\\\nFootprint has a team of 20+ full-time developers - 10 AI and Big Data, 4 Backend, 3 Frontend, 2 Analysts, and 2 + Ops.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Team background and bios\\\\\\\\nOur core team is made up of experienced developers.\\\\\\\\n\\\\\\\\nPrior to venturing into the blockchain space, our team members have worked in reputed companies such as Goldman Sachs, JP Morgan Chase and Oracle.\\\\\\\\n\\\\\\\\nOur three co-founders have been working together for 11 years, showcasing a long-term commitment to shared goals and synergy.\\\\\\\\n\\\\\\\\nKey Team Profiles:\\\\\\\\n1. Tony Zhang - Co-founder & CEO \\\\\\\\n- A serial entrepreneur with over 20 years of experience on Wall Street \\\\\\\\n- Formerly Senior Vice President of Global Credit Trading at Bank of America in New York; Director of Credit - - Derivatives Trading at Merrill Lynch, also worked at Goldman Sachs Global, JPMorgan, and Lehman Brothers\\\\\\\\n2. Wade Deng - Co-founder & CTO \\\\\\\\n- Over a decade of tech experience\\\\\\\\n- Director of a fintech company where he built anti-fraud systems and AI models for credit score\\\\\\\\n- Led a crypto trading team, which focused on algo trading strategy on CeFi\\\\\\\\n3. Navy Tse - Co-founder & Head of Product\\\\\\\\n- Over 10 years of experience in fintech, big data, e-commerce, and mobile internet development\\\\\\\\n- Entered the blockchain technology space in 2017\\\\\\\\n- Led the team to develop several DeFi projects\\\\\\\\n- A pioneer in the open source community, contributed to the Open Source Project with over 37k stars.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\n\\\\\\\\n**Blockchain Data Capabilities**\\\\\\\\n\\\\\\\\nFootprint Analytics has been online for over three years and has extensive expertise in the blockchain and big data space. We are capable of handling both EVM and non-EVM chains. We have successfully indexed 30+chains,including Solana and some EVM chains\\\\\\\\u{2019} trace data, demonstrating our ability to manage large volumes of data effectively. Given Near\\\\\\\\\\\\'s substantial historical on-chain data and the high volume of daily transactions, we are confident in our ability to handle it proficiently.\\\\\\\\n\\\\\\\\nMoreover, we are dedicated to making data more accessible and lowering the barriers to entry. We excel at abstracting and summarizing data to transform it into business-meaningful insights. Our data and APIs are designed for ease of use, covering areas such as GameFi data, token data, wallet data, and more.\\\\\\\\n\\\\\\\\n**Technical Architecture Details:**\\\\\\\\n1. Program language: Python, Javascript\\\\\\\\n2. Technical design: https://www.processon.com/view/link/632d7bd8637689341d71c50d \\\\\\\\n- Query engine: Doris, Trino\\\\\\\\n- Storage: Iceberg\\\\\\\\n- Compute engine: Trino\\\\\\\\n- Real-time: Flink + Kafka\\\\\\\\n3. Data architecture, https://files.readme.io/2ab5caf-Screenshot_2022-10-27_at_08.35.37.png \\\\\\\\n- Bronze\\\\\\\\n- Silver\\\\\\\\n- Gold\\\\\\\\n\\\\\\\\n**Non-Technical Capabilities and Resources:**\\\\\\\\n1. Research Capabilities and Resources: Research portal available for the entire community, offering metrics that matter for the ecosystem and projects all in one place. Our in-house research team collaborates with media and the community to produce market reports. We can amplify Near\\\\\\\\u{2019}s progress with dashboards and research reports. We have over 50+ media channels with 500k+ exposure.\\\\\\\\n2. Marketing Resources: Footprint has over 50k Twitter followers. To maximize exposure opportunities, projects can get featured on Footprint\\\\\\\\\\\\'s Twitter, participate in our Twitter Spaces, and engage in other community activities.\\\\\\\\n3. Community Support: Footprint provides dedicated analyst support to help users or projects build data dashboards and offer data tutorials.\\\\\\\\n4. AI-Powered Growth Tool: A growth tool based on the telegram and discord communities. Unlike other quests, we can provide verification of on-chain and off-chain interactions, introduce viral functions, and help projects achieve growth in key on-chain indicators.\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\nFootprint\\\\\\\\\\\\'s proposal focuses on providing ready-to-use data APIs and AI-powered assistants to enable more developers to easily onboard their applications onto Near. Additionally, by increasing Near\\\\\\\\\\\\'s brand exposure and influence through research content, we aim to attract more developers to the Near ecosystem.\\\\\\\\n\\\\\\\\nAs a non-EVM chain, Near has a complex data structure and vast on-chain data, making it costly for ordinary projects to parse and manage this data. Footprint\\\\\\\\\\\\'s solution addresses this issue. We believe that stable and user-friendly APIs will significantly accelerate development and improve developer efficiency. Pre-configured research pages will allow investors, researchers, and KOLs to easily access and use data.\\\\\\\\n\\\\\\\\nBeyond data, we aim to bring a data-driven culture and transformation to Near. We will provide the community with free growth tools based on Telegram and Discord, combining on-chain and off-chain interactive community growth tools to assist in acquiring traffic. Provide data support for marketing efforts\\\\\\\\u{ff0c}such as TVL/DAU project/user rankings, Use viral tools to incentivize users to improve their leaderboard standings.\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\nOur implementation program consists of two main parts: data API infrastructure and AI GPT creation.\\\\\\\\n**Data APIs:**\\\\\\\\nTo support developer growth, we offer a comprehensive API suite covering chain raw data, tokens, wallets, and key project indicators. Developers can access data with a single line of code, enabling rapid on-chain app development with a user-friendly experience.\\\\\\\\n**AI Assistant:**\\\\\\\\nDevelopers face numerous challenges before building on-chain, making mentorship crucial. Our Developer AI Assistant, customized for NEAR, incorporates NEAR\\\\\\\\\\\\'s development documentation, community guidelines, and fundamental blockchain knowledge. This trained GPT helps developers quickly access information through natural language queries, including our API interfaces and documentation. This allows developers to minimize learning time, write more efficient code, and focus on building core product functionality.\\\\\\\\n\\\\\\\\n**Milestone 1 Near chain data API**\\\\\\\\nTasks: By providing the raw data API and generating structured data tables, developers can use the data API to build any application or build a data analytics system for their project.And users can use the data on Footprint to create charts and dashboards and explore the data freely.\\\\\\\\nDeliverables:\\\\\\\\nNear chain data APIs: transactions, receipts, logs and blocks\\\\\\\\nNear chain data analytics dashboard\\\\\\\\nBatch download solution for get the all historical\\\\\\\\n  \\\\\\\\n**Milestone 2: Key indicators data API for dapps on Near **\\\\\\\\nTasks: We will collect and verify the contracts belonging to the projects on the chain, and produce reference data of the contracts of the projects on the chain, so that developers can easily find all the records of the contracts corresponding to each project. Secondly, based on the contract, we will also build key indicators data and API of the protocol, which can be used to discover the popular projects on the chain and view the performance of the projects, including DAU, TVL, transaction, volume, new user growth, etc.\\\\\\\\nDeliverables:\\\\\\\\nReference data of contracts and protocols\\\\\\\\nKey indicators of Dapp: DAU, transactions, TVL and more\\\\\\\\nKey indicators data APIs\\\\\\\\nDapp ranking dashboard\\\\\\\\n  \\\\\\\\n**Milestone 3 Token price data of tokens on Near**\\\\\\\\nTasks: Real-time 5-minute coin price data will provide the most solid and widespread support for on-chain data analytics, allowing for easy calculation of volume, balance, TVL and other metrics in USD.\\\\\\\\nDeliverables:\\\\\\\\nStructured data table: token_5min_price\\\\\\\\nToken price data API\\\\\\\\n  \\\\\\\\n**Milestone 4: Developer AI assistant for Near ecosystem**\\\\\\\\nTasks: We can customize an AI gpt assistant for Near developers, and we can add project docs, whitepapers, on-chain data, etc. to the GPT to enable it to answer development questions and provide 24/7 community service.\\\\\\\\nDeliverables:\\\\\\\\nA developer GPT assistan\\\\\\\\n   \\\\\\\\n\\\\\\\\n \\\\\\\\n## Metrics\\\\\\\\nWe will measure success based on the following deliverables and metrics:\\\\\\\\n1. The APIs will all deliveried and can be called in docs.\\\\\\\\n2. We will deliver Near\\\\\\\\\\\\'s data and promote Near\\\\\\\\\\\\'s dashboard through various channels such as articles and community engagements, aiming to achieve over 100,000 views for the Near data dashboard.\\\\\\\\n3. We will collect and maintain data on Near\\\\\\\\\\\\'s blockchain, ensuring that the protocols included represent over 80% of the total value locked (TVL).\\\\\\\\n\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\nHuman resources involvement (60% of the funds)\\\\\\\\n1.1 Technical resources for data analysis and function development\\\\\\\\n1.2 Data maintenance\\\\\\\\n1.3 Community and technical support\\\\\\\\n\\\\\\\\nNode and server costs (40% of the funds)\\\\\\\\n2.1 Purchase of node services\\\\\\\\n2.2 Data storage\\\\\\\\n2.3 Computing resources according to different data tables and metrics\\\\\\\\n\\\\\\\\nWe are eager to collaborate more closely with the NEAR ecosystem and contribute positively. Looking forward to hearing feedback from the community on the proposal.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"524f24bb0320fa84ab2ea93e589019c2c4c60a3a6a45dd0577bd6e97f40f1521\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"80000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Query API\", \"Indexers\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.0008872890961e+21
+    }
+  },
+  {
+    "id": "6657130543",
+    "receipt_id": "21BadYtEvtEhmUZUWgRvFQtxi4z4H8imev7REquqn6LH",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5uTXr9hHQjGk6JVLKnusmekcxERT1zi116T14pByLwz5",
+      "block_height": 123446872,
+      "block_timestamp": 1721042143304740400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4528947740338,
+      "tokens_burnt": 452894774033800000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "EVR8hGzDwmR71H7x4PT9kKpqPApU4TkGK8WpKQ452WyD",
+    "included_in_block_hash": "86xp1vmrxmXZbftNzJ2r7je3RGsCJTf8Wz88QbXgfCMn",
+    "block_timestamp": "1721042141038769773",
+    "block": {
+      "block_height": 123446870
+    },
+    "receipt_conversion_tokens_burnt": "33047026648200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 452894774033800000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Infrastructure Committee* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @524f24bb0320fa84ab2ea93e589019c2c4c60a3a6a45dd0577bd6e97f40f1521\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Powerful Data APIs and GPT Tools for Near Developers to Easily Build\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nProblem: The Near blockchain\\\\\\\\\\\\'s data infrastructure is underdeveloped, making it difficult for developers to access and process on-chain data. The non-EVM nature of Near adds complexity to data parsing and processing. Solution: Provide standardized, structured APIs for on-chain data on Near, enabling developers to efficiently access data. Offer an AI-powered assistant for developers to gain the necessary knowledge for building on Near.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=5)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.0008872890961e+21
+    }
+  },
+  {
+    "id": "6657130544",
+    "receipt_id": "GvDfiSHEEsTnTHf1vuRMGBrtRiojPJvh2hJ5ry53uoBM",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5uTXr9hHQjGk6JVLKnusmekcxERT1zi116T14pByLwz5",
+      "block_height": 123446872,
+      "block_timestamp": 1721042143304740400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4040009062646,
+      "tokens_burnt": 404000906264600000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "EVR8hGzDwmR71H7x4PT9kKpqPApU4TkGK8WpKQ452WyD",
+    "included_in_block_hash": "86xp1vmrxmXZbftNzJ2r7je3RGsCJTf8Wz88QbXgfCMn",
+    "block_timestamp": "1721042141038769773",
+    "block": {
+      "block_height": 123446870
+    },
+    "receipt_conversion_tokens_burnt": "33047026648200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 404000906264600000000,
+        "args": "{\"proposal\": {\"id\": 5, \"snapshot\": {\"name\": \"Powerful Data APIs and GPT Tools for Near Developers to Easily Build\", \"labels\": [\"Query API\", \"Indexers\"], \"summary\": \"Problem: The Near blockchain\\\\\\\\\\\\'s data infrastructure is underdeveloped, making it difficult for developers to access and process on-chain data. The non-EVM nature of Near adds complexity to data parsing and processing. Solution: Provide standardized, structured APIs for on-chain data on Near, enabling developers to efficiently access data. Offer an AI-powered assistant for developers to gain the necessary knowledge for building on Near.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"editor_id\": \"524f24bb0320fa84ab2ea93e589019c2c4c60a3a6a45dd0577bd6e97f40f1521\", \"timestamp\": \"1721042142197486016\", \"linked_rfp\": null, \"supervisor\": null, \"description\": \"## Footprint Analytics\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\u{2019}s contact information\\\\\\\\nTelegram handle: @dplinnn\\\\\\\\n\\\\\\\\n### Size of the whole team\\\\\\\\nFootprint has a team of 20+ full-time developers - 10 AI and Big Data, 4 Backend, 3 Frontend, 2 Analysts, and 2 + Ops.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Team background and bios\\\\\\\\nOur core team is made up of experienced developers.\\\\\\\\n\\\\\\\\nPrior to venturing into the blockchain space, our team members have worked in reputed companies such as Goldman Sachs, JP Morgan Chase and Oracle.\\\\\\\\n\\\\\\\\nOur three co-founders have been working together for 11 years, showcasing a long-term commitment to shared goals and synergy.\\\\\\\\n\\\\\\\\nKey Team Profiles:\\\\\\\\n1. Tony Zhang - Co-founder & CEO \\\\\\\\n- A serial entrepreneur with over 20 years of experience on Wall Street \\\\\\\\n- Formerly Senior Vice President of Global Credit Trading at Bank of America in New York; Director of Credit - - Derivatives Trading at Merrill Lynch, also worked at Goldman Sachs Global, JPMorgan, and Lehman Brothers\\\\\\\\n2. Wade Deng - Co-founder & CTO \\\\\\\\n- Over a decade of tech experience\\\\\\\\n- Director of a fintech company where he built anti-fraud systems and AI models for credit score\\\\\\\\n- Led a crypto trading team, which focused on algo trading strategy on CeFi\\\\\\\\n3. Navy Tse - Co-founder & Head of Product\\\\\\\\n- Over 10 years of experience in fintech, big data, e-commerce, and mobile internet development\\\\\\\\n- Entered the blockchain technology space in 2017\\\\\\\\n- Led the team to develop several DeFi projects\\\\\\\\n- A pioneer in the open source community, contributed to the Open Source Project with over 37k stars.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\n\\\\\\\\n**Blockchain Data Capabilities**\\\\\\\\n\\\\\\\\nFootprint Analytics has been online for over three years and has extensive expertise in the blockchain and big data space. We are capable of handling both EVM and non-EVM chains. We have successfully indexed 30+chains,including Solana and some EVM chains\\\\\\\\u{2019} trace data, demonstrating our ability to manage large volumes of data effectively. Given Near\\\\\\\\\\\\'s substantial historical on-chain data and the high volume of daily transactions, we are confident in our ability to handle it proficiently.\\\\\\\\n\\\\\\\\nMoreover, we are dedicated to making data more accessible and lowering the barriers to entry. We excel at abstracting and summarizing data to transform it into business-meaningful insights. Our data and APIs are designed for ease of use, covering areas such as GameFi data, token data, wallet data, and more.\\\\\\\\n\\\\\\\\n**Technical Architecture Details:**\\\\\\\\n1. Program language: Python, Javascript\\\\\\\\n2. Technical design: https://www.processon.com/view/link/632d7bd8637689341d71c50d \\\\\\\\n- Query engine: Doris, Trino\\\\\\\\n- Storage: Iceberg\\\\\\\\n- Compute engine: Trino\\\\\\\\n- Real-time: Flink + Kafka\\\\\\\\n3. Data architecture, https://files.readme.io/2ab5caf-Screenshot_2022-10-27_at_08.35.37.png \\\\\\\\n- Bronze\\\\\\\\n- Silver\\\\\\\\n- Gold\\\\\\\\n\\\\\\\\n**Non-Technical Capabilities and Resources:**\\\\\\\\n1. Research Capabilities and Resources: Research portal available for the entire community, offering metrics that matter for the ecosystem and projects all in one place. Our in-house research team collaborates with media and the community to produce market reports. We can amplify Near\\\\\\\\u{2019}s progress with dashboards and research reports. We have over 50+ media channels with 500k+ exposure.\\\\\\\\n2. Marketing Resources: Footprint has over 50k Twitter followers. To maximize exposure opportunities, projects can get featured on Footprint\\\\\\\\\\\\'s Twitter, participate in our Twitter Spaces, and engage in other community activities.\\\\\\\\n3. Community Support: Footprint provides dedicated analyst support to help users or projects build data dashboards and offer data tutorials.\\\\\\\\n4. AI-Powered Growth Tool: A growth tool based on the telegram and discord communities. Unlike other quests, we can provide verification of on-chain and off-chain interactions, introduce viral functions, and help projects achieve growth in key on-chain indicators.\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\nFootprint\\\\\\\\\\\\'s proposal focuses on providing ready-to-use data APIs and AI-powered assistants to enable more developers to easily onboard their applications onto Near. Additionally, by increasing Near\\\\\\\\\\\\'s brand exposure and influence through research content, we aim to attract more developers to the Near ecosystem.\\\\\\\\n\\\\\\\\nAs a non-EVM chain, Near has a complex data structure and vast on-chain data, making it costly for ordinary projects to parse and manage this data. Footprint\\\\\\\\\\\\'s solution addresses this issue. We believe that stable and user-friendly APIs will significantly accelerate development and improve developer efficiency. Pre-configured research pages will allow investors, researchers, and KOLs to easily access and use data.\\\\\\\\n\\\\\\\\nBeyond data, we aim to bring a data-driven culture and transformation to Near. We will provide the community with free growth tools based on Telegram and Discord, combining on-chain and off-chain interactive community growth tools to assist in acquiring traffic. Provide data support for marketing efforts\\\\\\\\u{ff0c}such as TVL/DAU project/user rankings, Use viral tools to incentivize users to improve their leaderboard standings.\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\nOur implementation program consists of two main parts: data API infrastructure and AI GPT creation.\\\\\\\\n**Data APIs:**\\\\\\\\nTo support developer growth, we offer a comprehensive API suite covering chain raw data, tokens, wallets, and key project indicators. Developers can access data with a single line of code, enabling rapid on-chain app development with a user-friendly experience.\\\\\\\\n**AI Assistant:**\\\\\\\\nDevelopers face numerous challenges before building on-chain, making mentorship crucial. Our Developer AI Assistant, customized for NEAR, incorporates NEAR\\\\\\\\\\\\'s development documentation, community guidelines, and fundamental blockchain knowledge. This trained GPT helps developers quickly access information through natural language queries, including our API interfaces and documentation. This allows developers to minimize learning time, write more efficient code, and focus on building core product functionality.\\\\\\\\n\\\\\\\\n**Milestone 1 Near chain data API**\\\\\\\\nTasks: By providing the raw data API and generating structured data tables, developers can use the data API to build any application or build a data analytics system for their project.And users can use the data on Footprint to create charts and dashboards and explore the data freely.\\\\\\\\nDeliverables:\\\\\\\\nNear chain data APIs: transactions, receipts, logs and blocks\\\\\\\\nNear chain data analytics dashboard\\\\\\\\nBatch download solution for get the all historical\\\\\\\\n  \\\\\\\\n**Milestone 2: Key indicators data API for dapps on Near **\\\\\\\\nTasks: We will collect and verify the contracts belonging to the projects on the chain, and produce reference data of the contracts of the projects on the chain, so that developers can easily find all the records of the contracts corresponding to each project. Secondly, based on the contract, we will also build key indicators data and API of the protocol, which can be used to discover the popular projects on the chain and view the performance of the projects, including DAU, TVL, transaction, volume, new user growth, etc.\\\\\\\\nDeliverables:\\\\\\\\nReference data of contracts and protocols\\\\\\\\nKey indicators of Dapp: DAU, transactions, TVL and more\\\\\\\\nKey indicators data APIs\\\\\\\\nDapp ranking dashboard\\\\\\\\n  \\\\\\\\n**Milestone 3 Token price data of tokens on Near**\\\\\\\\nTasks: Real-time 5-minute coin price data will provide the most solid and widespread support for on-chain data analytics, allowing for easy calculation of volume, balance, TVL and other metrics in USD.\\\\\\\\nDeliverables:\\\\\\\\nStructured data table: token_5min_price\\\\\\\\nToken price data API\\\\\\\\n  \\\\\\\\n**Milestone 4: Developer AI assistant for Near ecosystem**\\\\\\\\nTasks: We can customize an AI gpt assistant for Near developers, and we can add project docs, whitepapers, on-chain data, etc. to the GPT to enable it to answer development questions and provide 24/7 community service.\\\\\\\\nDeliverables:\\\\\\\\nA developer GPT assistan\\\\\\\\n   \\\\\\\\n\\\\\\\\n \\\\\\\\n## Metrics\\\\\\\\nWe will measure success based on the following deliverables and metrics:\\\\\\\\n1. The APIs will all deliveried and can be called in docs.\\\\\\\\n2. We will deliver Near\\\\\\\\\\\\'s data and promote Near\\\\\\\\\\\\'s dashboard through various channels such as articles and community engagements, aiming to achieve over 100,000 views for the Near data dashboard.\\\\\\\\n3. We will collect and maintain data on Near\\\\\\\\\\\\'s blockchain, ensuring that the protocols included represent over 80% of the total value locked (TVL).\\\\\\\\n\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\nHuman resources involvement (60% of the funds)\\\\\\\\n1.1 Technical resources for data analysis and function development\\\\\\\\n1.2 Data maintenance\\\\\\\\n1.3 Community and technical support\\\\\\\\n\\\\\\\\nNode and server costs (40% of the funds)\\\\\\\\n2.1 Purchase of node services\\\\\\\\n2.2 Data storage\\\\\\\\n2.3 Computing resources according to different data tables and metrics\\\\\\\\n\\\\\\\\nWe are eager to collaborate more closely with the NEAR ecosystem and contribute positively. Looking forward to hearing feedback from the community on the proposal.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"524f24bb0320fa84ab2ea93e589019c2c4c60a3a6a45dd0577bd6e97f40f1521\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"80000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"524f24bb0320fa84ab2ea93e589019c2c4c60a3a6a45dd0577bd6e97f40f1521\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.0008872890961e+21
+    }
+  },
+  {
+    "id": "6657130545",
+    "receipt_id": "25yRAKL1cSGp2dQXjzFfqX81D6DDRuVJqmQgpkTQZX6z",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5uTXr9hHQjGk6JVLKnusmekcxERT1zi116T14pByLwz5",
+      "block_height": 123446872,
+      "block_timestamp": 1721042143304740400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3518506060545,
+      "tokens_burnt": 351850606054500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "EVR8hGzDwmR71H7x4PT9kKpqPApU4TkGK8WpKQ452WyD",
+    "included_in_block_hash": "86xp1vmrxmXZbftNzJ2r7je3RGsCJTf8Wz88QbXgfCMn",
+    "block_timestamp": "1721042141038769773",
+    "block": {
+      "block_height": 123446870
+    },
+    "receipt_conversion_tokens_burnt": "33047026648200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351850606054500000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"dplinnn\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":5,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"524f24bb0320fa84ab2ea93e589019c2c4c60a3a6a45dd0577bd6e97f40f1521\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":5,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"524f24bb0320fa84ab2ea93e589019c2c4c60a3a6a45dd0577bd6e97f40f1521\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.0008872890961e+21
+    }
+  },
+  {
+    "id": "6699049363",
+    "receipt_id": "Bea8HDuP6CaMC6dpndpQC2gFGyC8ooS4kjX7rgTihhDJ",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6dESY7MfAvVLcGETt1d3JAtt88ocvytFAy7MWkmdirYV",
+      "block_height": 123562030,
+      "block_timestamp": 1721171314088803600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7646136633010,
+      "tokens_burnt": 764613663301000000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "F5GHVcgp1oxqm7Gcu63jXgSqytdkssutLtuazQMYiHTq",
+    "included_in_block_hash": "HUwTQKDtrCdzRehfnFkqR9PYsZG7tWi7jr9SqfQsvuNt",
+    "block_timestamp": "1721171313222493828",
+    "block": {
+      "block_height": 123562029
+    },
+    "receipt_conversion_tokens_burnt": "30857152888600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 764613663301000000000,
+        "args": "{\"id\": 4, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1490906324765e+21
+    }
+  },
+  {
+    "id": "6699049746",
+    "receipt_id": "6eHSYnF8LNca86dhp2LuTxoHfvFxsahjkofixnBpXXMp",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DMTAFSogE3GVP9DtdKXjpFDzUBsLKijtD2bvkyQNKkeH",
+      "block_height": 123562031,
+      "block_timestamp": 1721171315148611800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3536198162869,
+      "tokens_burnt": 353619816286900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "F5GHVcgp1oxqm7Gcu63jXgSqytdkssutLtuazQMYiHTq",
+    "included_in_block_hash": "HUwTQKDtrCdzRehfnFkqR9PYsZG7tWi7jr9SqfQsvuNt",
+    "block_timestamp": "1721171313222493828",
+    "block": {
+      "block_height": 123562029
+    },
+    "receipt_conversion_tokens_burnt": "30857152888600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353619816286900000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"nearblocks_io.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":4,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1490906324765e+21
+    }
+  },
+  {
+    "id": "6718239935",
+    "receipt_id": "D48YFdDa6xDjQAECWXPyzGxd8F72km34hneCDH96bVRP",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7McDJKg6SmhnYQSeTE1Gk6QsrpRrpLqQcx6KtYAmrEPn",
+      "block_height": 123616197,
+      "block_timestamp": 1721231485807296500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 210284826324,
+      "tokens_burnt": 21028482632400000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "BtLUtUh5Yd8AEejeTwVYu8vT8ueeDFAXHRGSciYn3FfB",
+    "included_in_block_hash": "7McDJKg6SmhnYQSeTE1Gk6QsrpRrpLqQcx6KtYAmrEPn",
+    "block_timestamp": "1721231485807296485",
+    "block": {
+      "block_height": 123616197
+    },
+    "receipt_conversion_tokens_burnt": "21028482632400000000",
+    "actions": [
+      {
+        "action": "ADD_KEY",
+        "method": null,
+        "deposit": 0,
+        "fee": 21028482632400000000,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 42056965264800000000
+    }
+  },
+  {
+    "id": "6719443690",
+    "receipt_id": "CDft3NJZoCJua9EUsSQqkBYjwosGqqezxu4sMidzgSBA",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7Rqs1vqJtwU67jhJuFYGQUpu8F17QpHn8nx1phc1DbGo",
+      "block_height": 123619290,
+      "block_timestamp": 1721235049920835600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 1362484679125,
+      "tokens_burnt": 136248467912500000000,
+      "executor_account_id": "social.near",
+      "status": false
+    },
+    "transaction_hash": "FJkbkb6CzidoLdm9bWy6NecBQb8PNZvFDQLj9LytZ9be",
+    "included_in_block_hash": "DKcK4ftL8AcvR3X7MbVm4uqVCuLmZ9FnSqA3Pqtc1TPh",
+    "block_timestamp": "1721235048687455553",
+    "block": {
+      "block_height": 123619289
+    },
+    "receipt_conversion_tokens_burnt": "30837029482600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "grant_write_permission",
+        "deposit": 0,
+        "fee": 136248467912500000000,
+        "args": "{\"keys\": [\"infrastructure-committee.near/widget\"], \"public_key\": \"ed25519:EUxRLTnjsapHmRDD9nz2n9Uj8NP5VX35vKL5SpDwZ9Ki\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 167085497395100000000
+    }
+  },
+  {
+    "id": "6719444179",
+    "receipt_id": "3EEC5JXziRS6yctm2NmoYvxUE13wmQkoP2yexD1QTu2m",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8FMNYiH8jspow6DsYQjCm7iknNy7sj2gsPAvqKG1bPzi",
+      "block_height": 123619291,
+      "block_timestamp": 1721235051108597200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "FJkbkb6CzidoLdm9bWy6NecBQb8PNZvFDQLj9LytZ9be",
+    "included_in_block_hash": "DKcK4ftL8AcvR3X7MbVm4uqVCuLmZ9FnSqA3Pqtc1TPh",
+    "block_timestamp": "1721235048687455553",
+    "block": {
+      "block_height": 123619289
+    },
+    "receipt_conversion_tokens_burnt": "30837029482600000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.8631960376537281e+22,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 167085497395100000000
+    }
+  }
+]

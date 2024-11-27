@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "9198817935",
+    "receipt_id": "6Y7398GXnrnnFHAvz2tCm2J3dKqrKnzVAXBndkgJhP1B",
+    "predecessor_account_id": "8d51039cd656f1d9716894420b62555b68022797e7214adf4f630c77caf1cf66",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3NEHvbxihecamGm8vBZpSsXjEheKoXomXiGh89SL4w4B",
+      "block_height": 130325268,
+      "block_timestamp": 1728913117889996800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9444964374218,
+      "tokens_burnt": 944496437421800000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "DTRQ8m9EZdDE3AgUDkJq3QhWAyNEPoxBjdZqsMwJuT8p",
+    "included_in_block_hash": "CiDQoAWJR69bUegVrs65URwSoUC8zyDQesQh7Zcpzg9U",
+    "block_timestamp": "1728913116787145611",
+    "block": {
+      "block_height": 130325267
+    },
+    "receipt_conversion_tokens_burnt": "76758746145500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 944496437421800000000,
+        "args": "{\"body\": {\"name\": \"Multi vendor and heterogeneity solution for near lake\", \"summary\": \"Seamless NEAR Lake transition leveraging Lava\\\\\\\\\\\\'s proven high-performance infrastructure while reducing costs through existing resources. Lava manages 50% of \\\\\\\\n\\\\\\\\nWith proven experience operating public endpoints for Axelar, Cosmos & Evmos Lava\\\\\\\\\\\\'s decentralized stack ensures high performance by aggregating top providers like Liquify and Chainstack, and community contributors\\\\\\\\n\\\\\\\\nLava will offer discounts on multi-chain APIs to accelerate the transition to a demo environment and support Chain Abstraction\\\\\\\\n\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"linked_rfp\": 3, \"description\": \"## Submission Info\\\\\\\\nSubmitted by: Lava Foundation\\\\\\\\nDate: October 14, 2024\\\\\\\\n\\\\\\\\n## Contact Information:\\\\\\\\nName: Amir A\\\\\\\\nRole: Head of Lava Foundation\\\\\\\\nEmail: amir@lava.foundation\\\\\\\\nTelegram: @RaFuN\\\\\\\\n\\\\\\\\n## Introduction\\\\\\\\nLava is well-equipped to manage the transition and future development of NEAR Lake, leveraging our experience with decentralized infrastructure. We will ensure a smooth migration of NEAR Lake\\\\\\\\\\\\'s S3 storage, maintaining zero downtime for key stakeholders in the ecosystem. Our decentralized approach will prepare NEAR Lake for upcoming challenges like dynamic sharding, while supporting the current NEAR Lake libraries. With a proven track record of reliability, Lava is ready to handle the increasing complexity and growing demands of NEAR Lake\\\\\\\\u{2019}s infrastructure, as well as improve its access as a public good by exposing it to developers to query.\\\\\\\\n\\\\\\\\nNear lake\\\\\\\\u{2019}s integration will allow the enhancement of APIs on near, seamless replacement of vendors, and competition over performance and price, with the goal of replacing the need for RPFs in the future and allowing vendors to compete based on queries and costs.\\\\\\\\n\\\\\\\\n**This approach allows near to transition from a single provider, and a risk factor that needs to be addressed regularly by the infrastructure committee into an automatic technically solved solution that can scale and allow competitiveness.** \\\\\\\\n\\\\\\\\nVendors will be encouraged to improve their costs and will allow the flexibility of any solution to be integrated in the future. We aim for the transition to be gradual, focusing on stability and making steps towards the goal of decentralizing and monetising the solution based on usage, while still offering the base rates as a public good.\\\\\\\\n\\\\\\\\n## Technical Requirements and Solution Proposal\\\\\\\\n\\\\\\\\n- **S3 Bucket Maintenance:** We will create and maintain two AWS S3 buckets: one for testnet and one for mainnet, both in the **eu-central-1 region**. The S3 storage will be handled using **S3 Standard** for 4.2 TB per month, with an average object size of 1.8 MB. Operations will include **300M PUT, COPY, POST, LIST requests** and **1 billion GET and SELECT requests** monthly paid by the requester. Strategies to optimize costs will be focused on **querying efficiency and minimizing storage overhead** by archiving older data when appropriate.\\\\\\\\n- **Lake Indexer Nodes:** Our proposal includes maintaining **two RPC nodes per network** (testnet and mainnet) with the **indexer framework enabled**. The indexer nodes will populate the S3 buckets with a low-latency, accurate data stream. We will utilize **t4g.xlarge instances** (over aws for latency and optimal block time, as detailed in the table). Exposing Near Lake to dapps through lava endpoints, allowing seamless development of indexing solutions using athena, for seamless integration of new indexing solutions, at controlled rates.\\\\\\\\n- **Adding a Near Lake incentive pool on Lava Network:** to encourage providers to create more efficient solutions, adding verifications of the quality of the content, and creating a multi vendor setup for Near Lake\\\\\\\\n\\\\\\\\n### Cost Reduction Strategies\\\\\\\\nEnable a multi provider set up for Near Lake encouraging competition over price and quality, where rewards are given based on performance and usage of clients.\\\\\\\\n\\\\\\\\nDetach Near Lake from the node and allow it to work with RPC, utilizing existing infra solutions rather than needing to track the chain with other instances. Utilizing RPC caching, multiple vendors can host the buckets, without running their own Near indexers. Separating Near Lake indexers from the storage allows a modular approach where each part of the stack can be improved. This opens up the stack for exploration for cheaper alternatives such as a decentralized storage, dedicated bare metals etc.\\\\\\\\n\\\\\\\\n### Monitoring and Alerts\\\\\\\\n\\\\\\\\nTo ensure smooth operations and proactive monitoring, we will use:\\\\\\\\n- **Grafana Metrics:** Visualizing up to 4k time series for up to 10 users.\\\\\\\\n- **Alerting:** Set up alerts for potential last block issues or storage overruns.\\\\\\\\n- **Logging:** Using Axiom for a 1 TB/month log retention plan with 95-day retention.\\\\\\\\n- **Status Page**: A public Statuspage to provide transparency on uptime, performance, and usage metrics.\\\\\\\\n\\\\\\\\n### Scalable and Efficient Data Querying:\\\\\\\\nBuilding on our experience with LAVA\\\\\\\\\\\\'s RPC services, we will enhance NEAR Lake\\\\\\\\u{2019}s data query capabilities by implementing scalable and efficient querying mechanisms. Using Athena as an initial query engine, we will help developers integrate with Near Lake and experiment with the information it offers.\\\\\\\\n\\\\\\\\nFurthermore, we will leverage smart caching strategies to optimize frequently queried data, reducing unnecessary repetitive scans. As NEAR\\\\\\\\u{2019}s ecosystem expands, our infrastructure can scale dynamically to handle increased data loads and traffic without compromising performance. By integrating ReadRPC solutions, we will ensure that both real-time and historical data are efficiently queried, offering developers and users quick and accurate responses, even as the complexity of NEAR Lake evolves with dynamic sharding and other protocol upgrades.\\\\\\\\n\\\\\\\\nOur goal is to provide a robust querying infrastructure that balances performance with cost efficiency, ensuring NEAR Lake remains a reliable data source as the ecosystem scales, while also helping indexers leverage its offering to build.\\\\\\\\n\\\\\\\\n### Service Level Agreement (SLA)\\\\\\\\nOur proposed NEAR Lake management solution will meet all RFP requirements with the following metrics:\\\\\\\\n- Uptime: 99.99%, ensuring continuous availability and zero downtime during the transition.\\\\\\\\n- Latency: Low latency for data queries and indexing, optimized through AWS services and auto-scaling infrastructure.\\\\\\\\n\\\\\\\\n### To enhance the SLA further, we will:\\\\\\\\n- Extensive monitoring\\\\\\\\n- Dedicated support channels\\\\\\\\n- Commission extra indexer nodes as a backup to catch up when there\\\\\\\\u{2019}s a lag due to a failure\\\\\\\\nEnsure multi-region failover for uninterrupted service.\\\\\\\\n\\\\\\\\n### Support\\\\\\\\nWe will provide both public and private channels for NEAR Lake support, ensuring quick resolutions to any issues. Dedicated communication lines will be set up for NEAR <> Lava users, with a goal to respond to issues within 4 hours and fully resolve them within 24-48 hours.\\\\\\\\n\\\\\\\\n#### Our comprehensive support includes:\\\\\\\\n- 24/7 monitoring with proactive issue detection.\\\\\\\\n- Clear, transparent communication via a public status page to track performance, latency, and any ongoing incidents.\\\\\\\\n\\\\\\\\n## Proposed Timeline and Milestones:\\\\\\\\n\\\\\\\\n### Total Budget: $660,000\\\\\\\\n\\\\\\\\n**Transition and Setup:** $100,000\\\\\\\\n- Transfer and testing of NEAR Lake infrastructure\\\\\\\\n- Migration and setup of S3 buckets\\\\\\\\n- Indexer infrastructure setup and documentation\\\\\\\\n- Exposing near lake as an endpoint on lava\\\\\\\\n\\\\\\\\n**Infrastructure**:\\\\\\\\n- **$16,000/month** for the first 6 months ($16,000 * 6 = $96,000)\\\\\\\\n- **$17,500/month** for the following 6 months ($17,500 * 6 = $105,000)\\\\\\\\n- Includes S3 bucket storage, indexer nodes, networking, athena and operational costs, monitoring (see table for break down)\\\\\\\\n\\\\\\\\n**Support:** $5,000/month\\\\\\\\n- User and provider support\\\\\\\\n- Monitoring (Grafana, logging, alerts)\\\\\\\\n- Documentation\\\\\\\\n\\\\\\\\n**Development:** $25,000/month\\\\\\\\nNear lake repository - further development and integration with advancement in sharding\\\\\\\\nAllowing Near Lake to work with RPC, separating the stack allowing the indexers to run on cheaper solutions\\\\\\\\nIntegration with different storage solutions without damaging the performance and latency\\\\\\\\nIntegration with lava exposing the data with athena as a public good endpoint\\\\\\\\n\\\\\\\\n **The majority of the budget doesn\\\\\\\\u{2019}t go to Lava, it\\\\\\\\u{2019}s distributed to top providers and NEAR\\\\\\\\u{2019}s community.**\\\\\\\\n\\\\\\\\n### Milestones\\\\\\\\n- **Milestone 1 (Month 1):** Agreement signing and initial setup.\\\\\\\\n**Milestone 2 (Month 2):** Begin migration of NEAR Lake infrastructure, including S3 and indexers.\\\\\\\\n- **Milestone 3 (Month 4):** Full operation with ownership on the current solution.\\\\\\\\n- **Milestone 4 (Month 5):** athena endpoint exposed on lava.\\\\\\\\n- **Milestone 5 (Month 7):** focus on infra cost reductions - separation of indexing from state tracking, exploration of cheaper storage alternatives\\\\\\\\n- **Milestone 6 (Month 9):** setting up a second vendor based on the new tech stack, verifications in place for data integrity vs the previous solution\\\\\\\\n- **Milestone 7 (Month 10):** enabling incentives over lava based on usage for the multi vendor set up\\\\\\\\n\\\\\\\\n![https://ipfs.near.social/ipfs/bafkreifh3n4b7dnhutedfahwnhddckvwycnbdqhchvxcc3ai5cb7x5rjce](https://ipfs.near.social/ipfs/bafkreifh3n4b7dnhutedfahwnhddckvwycnbdqhchvxcc3ai5cb7x5rjce)\", \"linked_proposals\": [], \"receiver_account\": \"8d51039cd656f1d9716894420b62555b68022797e7214adf4f630c77caf1cf66\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"660000\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.2293703244349e+21
+    }
+  },
+  {
+    "id": "9198818458",
+    "receipt_id": "G84YJFKPZGSptgSd92x1Y9KpkcXoQBzjTh3wtQ8xYkGG",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9fzEyzcrcDQkWPpV6F8Y87RuMN2uAaGDMwSyHPbxzG84",
+      "block_height": 130325269,
+      "block_timestamp": 1728913118922752500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4615954171540,
+      "tokens_burnt": 461595417154000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DTRQ8m9EZdDE3AgUDkJq3QhWAyNEPoxBjdZqsMwJuT8p",
+    "included_in_block_hash": "CiDQoAWJR69bUegVrs65URwSoUC8zyDQesQh7Zcpzg9U",
+    "block_timestamp": "1728913116787145611",
+    "block": {
+      "block_height": 130325267
+    },
+    "receipt_conversion_tokens_burnt": "76758746145500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 461595417154000000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Infrastructure Committee* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @8d51039cd656f1d9716894420b62555b68022797e7214adf4f630c77caf1cf66\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Multi vendor and heterogeneity solution for near lake\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nSeamless NEAR Lake transition leveraging Lava\\\\\\\\\\\\'s proven high-performance infrastructure while reducing costs through existing resources. Lava manages 50% of \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWith proven experience operating public endpoints for Axelar, Cosmos & Evmos Lava\\\\\\\\\\\\'s decentralized stack ensures high performance by aggregating top providers like Liquify and Chainstack, and community contributors\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nLava will offer discounts on multi-chain APIs to accelerate the transition to a demo environment and support Chain Abstraction\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=44)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.2293703244349e+21
+    }
+  },
+  {
+    "id": "9198818459",
+    "receipt_id": "AG7JsWpg9qtg3JXxRwSSZk8n5kmqEhm1Gq1jxycs5Paa",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9fzEyzcrcDQkWPpV6F8Y87RuMN2uAaGDMwSyHPbxzG84",
+      "block_height": 130325269,
+      "block_timestamp": 1728913118922752500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3915631053503,
+      "tokens_burnt": 391563105350300000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "DTRQ8m9EZdDE3AgUDkJq3QhWAyNEPoxBjdZqsMwJuT8p",
+    "included_in_block_hash": "CiDQoAWJR69bUegVrs65URwSoUC8zyDQesQh7Zcpzg9U",
+    "block_timestamp": "1728913116787145611",
+    "block": {
+      "block_height": 130325267
+    },
+    "receipt_conversion_tokens_burnt": "76758746145500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 391563105350300000000,
+        "args": "{\"proposal\": {\"id\": 44, \"snapshot\": {\"name\": \"Multi vendor and heterogeneity solution for near lake\", \"labels\": [\"Data Lakes\", \"Indexers\"], \"summary\": \"Seamless NEAR Lake transition leveraging Lava\\\\\\\\\\\\'s proven high-performance infrastructure while reducing costs through existing resources. Lava manages 50% of \\\\\\\\n\\\\\\\\nWith proven experience operating public endpoints for Axelar, Cosmos & Evmos Lava\\\\\\\\\\\\'s decentralized stack ensures high performance by aggregating top providers like Liquify and Chainstack, and community contributors\\\\\\\\n\\\\\\\\nLava will offer discounts on multi-chain APIs to accelerate the transition to a demo environment and support Chain Abstraction\\\\\\\\n\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"8d51039cd656f1d9716894420b62555b68022797e7214adf4f630c77caf1cf66\", \"timestamp\": \"1728913117889996829\", \"linked_rfp\": 3, \"supervisor\": null, \"description\": \"## Submission Info\\\\\\\\nSubmitted by: Lava Foundation\\\\\\\\nDate: October 14, 2024\\\\\\\\n\\\\\\\\n## Contact Information:\\\\\\\\nName: Amir A\\\\\\\\nRole: Head of Lava Foundation\\\\\\\\nEmail: amir@lava.foundation\\\\\\\\nTelegram: @RaFuN\\\\\\\\n\\\\\\\\n## Introduction\\\\\\\\nLava is well-equipped to manage the transition and future development of NEAR Lake, leveraging our experience with decentralized infrastructure. We will ensure a smooth migration of NEAR Lake\\\\\\\\\\\\'s S3 storage, maintaining zero downtime for key stakeholders in the ecosystem. Our decentralized approach will prepare NEAR Lake for upcoming challenges like dynamic sharding, while supporting the current NEAR Lake libraries. With a proven track record of reliability, Lava is ready to handle the increasing complexity and growing demands of NEAR Lake\\\\\\\\u{2019}s infrastructure, as well as improve its access as a public good by exposing it to developers to query.\\\\\\\\n\\\\\\\\nNear lake\\\\\\\\u{2019}s integration will allow the enhancement of APIs on near, seamless replacement of vendors, and competition over performance and price, with the goal of replacing the need for RPFs in the future and allowing vendors to compete based on queries and costs.\\\\\\\\n\\\\\\\\n**This approach allows near to transition from a single provider, and a risk factor that needs to be addressed regularly by the infrastructure committee into an automatic technically solved solution that can scale and allow competitiveness.** \\\\\\\\n\\\\\\\\nVendors will be encouraged to improve their costs and will allow the flexibility of any solution to be integrated in the future. We aim for the transition to be gradual, focusing on stability and making steps towards the goal of decentralizing and monetising the solution based on usage, while still offering the base rates as a public good.\\\\\\\\n\\\\\\\\n## Technical Requirements and Solution Proposal\\\\\\\\n\\\\\\\\n- **S3 Bucket Maintenance:** We will create and maintain two AWS S3 buckets: one for testnet and one for mainnet, both in the **eu-central-1 region**. The S3 storage will be handled using **S3 Standard** for 4.2 TB per month, with an average object size of 1.8 MB. Operations will include **300M PUT, COPY, POST, LIST requests** and **1 billion GET and SELECT requests** monthly paid by the requester. Strategies to optimize costs will be focused on **querying efficiency and minimizing storage overhead** by archiving older data when appropriate.\\\\\\\\n- **Lake Indexer Nodes:** Our proposal includes maintaining **two RPC nodes per network** (testnet and mainnet) with the **indexer framework enabled**. The indexer nodes will populate the S3 buckets with a low-latency, accurate data stream. We will utilize **t4g.xlarge instances** (over aws for latency and optimal block time, as detailed in the table). Exposing Near Lake to dapps through lava endpoints, allowing seamless development of indexing solutions using athena, for seamless integration of new indexing solutions, at controlled rates.\\\\\\\\n- **Adding a Near Lake incentive pool on Lava Network:** to encourage providers to create more efficient solutions, adding verifications of the quality of the content, and creating a multi vendor setup for Near Lake\\\\\\\\n\\\\\\\\n### Cost Reduction Strategies\\\\\\\\nEnable a multi provider set up for Near Lake encouraging competition over price and quality, where rewards are given based on performance and usage of clients.\\\\\\\\n\\\\\\\\nDetach Near Lake from the node and allow it to work with RPC, utilizing existing infra solutions rather than needing to track the chain with other instances. Utilizing RPC caching, multiple vendors can host the buckets, without running their own Near indexers. Separating Near Lake indexers from the storage allows a modular approach where each part of the stack can be improved. This opens up the stack for exploration for cheaper alternatives such as a decentralized storage, dedicated bare metals etc.\\\\\\\\n\\\\\\\\n### Monitoring and Alerts\\\\\\\\n\\\\\\\\nTo ensure smooth operations and proactive monitoring, we will use:\\\\\\\\n- **Grafana Metrics:** Visualizing up to 4k time series for up to 10 users.\\\\\\\\n- **Alerting:** Set up alerts for potential last block issues or storage overruns.\\\\\\\\n- **Logging:** Using Axiom for a 1 TB/month log retention plan with 95-day retention.\\\\\\\\n- **Status Page**: A public Statuspage to provide transparency on uptime, performance, and usage metrics.\\\\\\\\n\\\\\\\\n### Scalable and Efficient Data Querying:\\\\\\\\nBuilding on our experience with LAVA\\\\\\\\\\\\'s RPC services, we will enhance NEAR Lake\\\\\\\\u{2019}s data query capabilities by implementing scalable and efficient querying mechanisms. Using Athena as an initial query engine, we will help developers integrate with Near Lake and experiment with the information it offers.\\\\\\\\n\\\\\\\\nFurthermore, we will leverage smart caching strategies to optimize frequently queried data, reducing unnecessary repetitive scans. As NEAR\\\\\\\\u{2019}s ecosystem expands, our infrastructure can scale dynamically to handle increased data loads and traffic without compromising performance. By integrating ReadRPC solutions, we will ensure that both real-time and historical data are efficiently queried, offering developers and users quick and accurate responses, even as the complexity of NEAR Lake evolves with dynamic sharding and other protocol upgrades.\\\\\\\\n\\\\\\\\nOur goal is to provide a robust querying infrastructure that balances performance with cost efficiency, ensuring NEAR Lake remains a reliable data source as the ecosystem scales, while also helping indexers leverage its offering to build.\\\\\\\\n\\\\\\\\n### Service Level Agreement (SLA)\\\\\\\\nOur proposed NEAR Lake management solution will meet all RFP requirements with the following metrics:\\\\\\\\n- Uptime: 99.99%, ensuring continuous availability and zero downtime during the transition.\\\\\\\\n- Latency: Low latency for data queries and indexing, optimized through AWS services and auto-scaling infrastructure.\\\\\\\\n\\\\\\\\n### To enhance the SLA further, we will:\\\\\\\\n- Extensive monitoring\\\\\\\\n- Dedicated support channels\\\\\\\\n- Commission extra indexer nodes as a backup to catch up when there\\\\\\\\u{2019}s a lag due to a failure\\\\\\\\nEnsure multi-region failover for uninterrupted service.\\\\\\\\n\\\\\\\\n### Support\\\\\\\\nWe will provide both public and private channels for NEAR Lake support, ensuring quick resolutions to any issues. Dedicated communication lines will be set up for NEAR <> Lava users, with a goal to respond to issues within 4 hours and fully resolve them within 24-48 hours.\\\\\\\\n\\\\\\\\n#### Our comprehensive support includes:\\\\\\\\n- 24/7 monitoring with proactive issue detection.\\\\\\\\n- Clear, transparent communication via a public status page to track performance, latency, and any ongoing incidents.\\\\\\\\n\\\\\\\\n## Proposed Timeline and Milestones:\\\\\\\\n\\\\\\\\n### Total Budget: $660,000\\\\\\\\n\\\\\\\\n**Transition and Setup:** $100,000\\\\\\\\n- Transfer and testing of NEAR Lake infrastructure\\\\\\\\n- Migration and setup of S3 buckets\\\\\\\\n- Indexer infrastructure setup and documentation\\\\\\\\n- Exposing near lake as an endpoint on lava\\\\\\\\n\\\\\\\\n**Infrastructure**:\\\\\\\\n- **$16,000/month** for the first 6 months ($16,000 * 6 = $96,000)\\\\\\\\n- **$17,500/month** for the following 6 months ($17,500 * 6 = $105,000)\\\\\\\\n- Includes S3 bucket storage, indexer nodes, networking, athena and operational costs, monitoring (see table for break down)\\\\\\\\n\\\\\\\\n**Support:** $5,000/month\\\\\\\\n- User and provider support\\\\\\\\n- Monitoring (Grafana, logging, alerts)\\\\\\\\n- Documentation\\\\\\\\n\\\\\\\\n**Development:** $25,000/month\\\\\\\\nNear lake repository - further development and integration with advancement in sharding\\\\\\\\nAllowing Near Lake to work with RPC, separating the stack allowing the indexers to run on cheaper solutions\\\\\\\\nIntegration with different storage solutions without damaging the performance and latency\\\\\\\\nIntegration with lava exposing the data with athena as a public good endpoint\\\\\\\\n\\\\\\\\n **The majority of the budget doesn\\\\\\\\u{2019}t go to Lava, it\\\\\\\\u{2019}s distributed to top providers and NEAR\\\\\\\\u{2019}s community.**\\\\\\\\n\\\\\\\\n### Milestones\\\\\\\\n- **Milestone 1 (Month 1):** Agreement signing and initial setup.\\\\\\\\n**Milestone 2 (Month 2):** Begin migration of NEAR Lake infrastructure, including S3 and indexers.\\\\\\\\n- **Milestone 3 (Month 4):** Full operation with ownership on the current solution.\\\\\\\\n- **Milestone 4 (Month 5):** athena endpoint exposed on lava.\\\\\\\\n- **Milestone 5 (Month 7):** focus on infra cost reductions - separation of indexing from state tracking, exploration of cheaper storage alternatives\\\\\\\\n- **Milestone 6 (Month 9):** setting up a second vendor based on the new tech stack, verifications in place for data integrity vs the previous solution\\\\\\\\n- **Milestone 7 (Month 10):** enabling incentives over lava based on usage for the multi vendor set up\\\\\\\\n\\\\\\\\n![https://ipfs.near.social/ipfs/bafkreifh3n4b7dnhutedfahwnhddckvwycnbdqhchvxcc3ai5cb7x5rjce](https://ipfs.near.social/ipfs/bafkreifh3n4b7dnhutedfahwnhddckvwycnbdqhchvxcc3ai5cb7x5rjce)\", \"linked_proposals\": [], \"receiver_account\": \"8d51039cd656f1d9716894420b62555b68022797e7214adf4f630c77caf1cf66\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"660000\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"author_id\": \"8d51039cd656f1d9716894420b62555b68022797e7214adf4f630c77caf1cf66\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.2293703244349e+21
+    }
+  },
+  {
+    "id": "9198818462",
+    "receipt_id": "Hton9Spdbo81wTLDkY5T1JMSTCjCt4qMG7MwTbnzB8oq",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9fzEyzcrcDQkWPpV6F8Y87RuMN2uAaGDMwSyHPbxzG84",
+      "block_height": 130325269,
+      "block_timestamp": 1728913118922752500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3549566183633,
+      "tokens_burnt": 354956618363300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DTRQ8m9EZdDE3AgUDkJq3QhWAyNEPoxBjdZqsMwJuT8p",
+    "included_in_block_hash": "CiDQoAWJR69bUegVrs65URwSoUC8zyDQesQh7Zcpzg9U",
+    "block_timestamp": "1728913116787145611",
+    "block": {
+      "block_height": 130325267
+    },
+    "receipt_conversion_tokens_burnt": "76758746145500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 354956618363300000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lava.foundation\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":44,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"8d51039cd656f1d9716894420b62555b68022797e7214adf4f630c77caf1cf66\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"RaFuN\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":44,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"8d51039cd656f1d9716894420b62555b68022797e7214adf4f630c77caf1cf66\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":44,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"8d51039cd656f1d9716894420b62555b68022797e7214adf4f630c77caf1cf66\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.2293703244349e+21
+    }
+  },
+  {
+    "id": "9198847901",
+    "receipt_id": "27fYCzW2NNFxeYS9XEejAFkz52qCZJK6CK1rXR2ebZEe",
+    "predecessor_account_id": "8d51039cd656f1d9716894420b62555b68022797e7214adf4f630c77caf1cf66",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5ZRxx8YbyAkeh3r6MqS3EXQRtFM5zSBZRoUbDzJCHfn",
+      "block_height": 130325389,
+      "block_timestamp": 1728913247954363100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6316483974499,
+      "tokens_burnt": 631648397449900000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "2bRSU1TARfF1q3uH3UnU7pCda5Ki4zT4qYMov6U28hLj",
+    "included_in_block_hash": "4HSqrAmUh7NCaNswyuQAMDv3WE7mmUw9gUSaL8xvKdEa",
+    "block_timestamp": "1728913246863818538",
+    "block": {
+      "block_height": 130325388
+    },
+    "receipt_conversion_tokens_burnt": "31444911781000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 631648397449900000000,
+        "args": "{\"id\": 44, \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0244369216134e+21
+    }
+  },
+  {
+    "id": "9198848423",
+    "receipt_id": "H2WqhhLDZhJK59bokNkVBDTBWct2DLTWqRmsWbjqEvoE",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AX7YGksSsysnhn4a8WBLU8C2bE5WvGt7pUc4AD5h65kP",
+      "block_height": 130325390,
+      "block_timestamp": 1728913249017227000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3613436123825,
+      "tokens_burnt": 361343612382500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "2bRSU1TARfF1q3uH3UnU7pCda5Ki4zT4qYMov6U28hLj",
+    "included_in_block_hash": "4HSqrAmUh7NCaNswyuQAMDv3WE7mmUw9gUSaL8xvKdEa",
+    "block_timestamp": "1728913246863818538",
+    "block": {
+      "block_height": 130325388
+    },
+    "receipt_conversion_tokens_burnt": "31444911781000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 361343612382500000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"8d51039cd656f1d9716894420b62555b68022797e7214adf4f630c77caf1cf66\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":44,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"8d51039cd656f1d9716894420b62555b68022797e7214adf4f630c77caf1cf66\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0244369216134e+21
+    }
+  },
+  {
+    "id": "9201795387",
+    "receipt_id": "1yicmc5sqXX2hhjy3CMMWpGcKXQ5eSCMUhccwsSav65",
+    "predecessor_account_id": "andrewlutsiuk.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6Y9CbaNQg1tMnX2j7YsPQmBjbyybiMnGp9YAmhMMtCq2",
+      "block_height": 130334083,
+      "block_timestamp": 1728922910097898000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9712739889702,
+      "tokens_burnt": 971273988970200000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "E5VqS9uH58NAPny626XKUKh9GnxUQMydGWrsP5ZfWmG3",
+    "included_in_block_hash": "2dfFubdhXUEcFzw8N54cGPLMSZNSETRwtrtHy8hjPC4q",
+    "block_timestamp": "1728922909053479537",
+    "block": {
+      "block_height": 130334082
+    },
+    "receipt_conversion_tokens_burnt": "59063319509000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 971273988970200000000,
+        "args": "{\"body\": {\"name\": \"RPC Service for NEAR.org by Unicsoft\", \"summary\": \"Unicsoft proposes to develop a robust and scalable RPC service for NEAR, focusing on key components such as load balancers, RPC servers, ScyllaDB integration, and NEAR node synchronization. The solution will ensure high availability, optimized performance, and seamless data synchronization, with built-in monitoring for reliability.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"linked_rfp\": 2, \"description\": \"## Organization\\\\\\\\n\\\\\\\\nUnicsoft is a technology consulting company specializing in blockchain development, artificial intelligence (AI), machine learning, data science, and custom software development. Founded in 2005, Unicsoft is headquartered in Larnaca, Cyprus, and serves clients globally. The company delivers innovative solutions to startups and enterprises across various industries, including finance, healthcare, retail, and logistics.\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\u{2019}s contact information\\\\\\\\n\\\\\\\\nName: Tomasz K\\\\\\\\u{119}czkowski\\\\\\\\nEmail: tmk@unicsoft.com \\\\\\\\n\\\\\\\\n### Size of the whole team\\\\\\\\n\\\\\\\\nWhole Team: 200+ employees.\\\\\\\\n\\\\\\\\n### Size of the engineering team\\\\\\\\n\\\\\\\\nEngineering Team: 150+ developers and engineers.\\\\\\\\n\\\\\\\\n### Team location\\\\\\\\n\\\\\\\\nLocation: Europe and Latin America.\\\\\\\\n\\\\\\\\n### Team background and bios\\\\\\\\n\\\\\\\\nUnicsoft is a technology consulting company specializing in blockchain, artificial intelligence, machine learning, and custom software development. With over 15 years of experience, the team is composed of industry experts, including:\\\\\\\\n\\\\\\\\nAleksey Zavgorodniy \\\\\\\\u{2013} Founder and CEO of Unicsoft with 15+ years of experience in IT consulting and software development.\\\\\\\\nArtem Sklyarov \\\\\\\\u{2013} Solution Architect, with over 15 years of experience, specializing in decentralized applications and blockchain solutions.\\\\\\\\nStas Sorokin\\\\\\\\u{2013} Blockchain Solution Architect with 18+ years of experience in software design and management, with a deep understanding of business needs and technical solutions.\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\n\\\\\\\\nUnicsoft has been actively developing blockchain solutions since 2016, completing over 50 successful blockchain projects worldwide. Our experience includes developing decentralized applications (dApps), smart contracts, and tokenization platforms, as well as integrating blockchain technology into existing systems to enhance security, transparency, and efficiency.\\\\\\\\n\\\\\\\\n### In-House Resources;\\\\\\\\n\\\\\\\\n[//]: # (Design, UX/UI?) \\\\\\\\nYes\\\\\\\\n\\\\\\\\n[//]: # (Project management?) \\\\\\\\nYes\\\\\\\\n\\\\\\\\n[//]: # (BD / Marketing?) \\\\\\\\nYes\\\\\\\\n\\\\\\\\n### Portfolio of relevant work\\\\\\\\n\\\\\\\\nPlease review the presentation of Blockchain expertise: https://drive.google.com/file/d/1xyofTbodzEwc8m8aM9H2Lqmky79Df649/view?usp=sharing \\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\n[//]: # (The primary approach and solution of the proposal.)\\\\\\\\n\\\\\\\\nWe propose to develop a high-performance RPC service consisting of the following components:\\\\\\\\n**Load Balancer Development**: A routing mechanism that optimizes traffic distribution based on IP and region.\\\\\\\\n**RPC Servers (Read-RPC)**: Core servers designed to manage high volumes of requests with low-latency response times.\\\\\\\\n**ScyllaDB Integration**: A high-performance database to store and manage blockchain data, ensuring fast retrieval and efficient data access.\\\\\\\\n**NEAR Node Integration**: Seamless synchronization with NEAR archival and non-archival nodes to provide robust and reliable data access.\\\\\\\\n**Monitoring and Alerts**: A real-time monitoring system (Prometheus, Grafana) for tracking system health, detecting anomalies, and ensuring high availability.\\\\\\\\n\\\\\\\\n[//]: # (Why should the committee choose this project?)\\\\\\\\n\\\\\\\\n**Scalability and Performance**: Our solution is designed to scale with growing demand, ensuring optimized performance and low-latency responses, which are crucial for NEAR\\\\\\\\u{2019}s ecosystem.\\\\\\\\n**Reliability**: Real-time monitoring and alerts will ensure any potential issues are identified and resolved swiftly, minimizing downtime.\\\\\\\\n**Comprehensive Integration**: We provide deep integration with NEAR nodes, enabling effective query handling and data synchronization, essential for NEAR\\\\\\\\u{2019}s blockchain infrastructure.\\\\\\\\n**Proven Experience**: Our team\\\\\\\\\\\\'s experience with similar blockchain infrastructure projects will ensure the timely and successful delivery of this solution.\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\nThe project will be completed over 13-15 weeks, divided into the following milestones:\\\\\\\\n**Load Balancer Development**: 2-3 weeks\\\\\\\\nImplement routing logic based on IP/region to optimize traffic distribution.\\\\\\\\n**RPC Servers (Read-RPC)**: 4-5 weeks\\\\\\\\nDevelop core servers to manage requests and ensure low-latency communication between blockchain users and the NEAR nodes.\\\\\\\\n**ScyllaDB Integration**: 2 weeks\\\\\\\\nIntegrate the high-performance ScyllaDB for rapid data retrieval and management.\\\\\\\\n**NEAR Node Integration**: 3 weeks\\\\\\\\nSynchronize the RPC service with NEAR archival and non-archival nodes to ensure reliable data access.\\\\\\\\n**Monitoring and Alerts Setup**: 2 weeks\\\\\\\\nSet up a real-time monitoring system (Prometheus, Grafana) to ensure system health and detect anomalies.\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n### Budget Total\\\\\\\\n\\\\\\\\nThe total project cost has been estimated as follows:\\\\\\\\nOptimistic Estimate: $115,022.50\\\\\\\\nPessimistic Estimate: $135,985.00\\\\\\\\nThese estimates cover all development tasks, including engineering hours, project management, and other critical activities.\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\nPlease refer to the attached spreadsheet for the detailed budget breakdown: https://drive.google.com/file/d/1b8i28UUd4foSqH18fi1GX_2JbejL866t/view?usp=drive_link \\\\\\\\nNote: Public access to this spreadsheet is closed and will be provided only for NEAR Infrastructure Committee members on request.\", \"linked_proposals\": [], \"receiver_account\": \"unicsoftfin.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"135985\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.194596130076e+21
+    }
+  },
+  {
+    "id": "9201796591",
+    "receipt_id": "2dhWQM9iFgS3FzJqqixmnXdEPo5wSnoGAg4BpMqecN4w",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "wPdcf35Zq4XBv9zwmkNCJDrqHabNapY4hWAHZXJbuDW",
+      "block_height": 130334084,
+      "block_timestamp": 1728922911277973200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4536683043988,
+      "tokens_burnt": 453668304398800000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "E5VqS9uH58NAPny626XKUKh9GnxUQMydGWrsP5ZfWmG3",
+    "included_in_block_hash": "2dfFubdhXUEcFzw8N54cGPLMSZNSETRwtrtHy8hjPC4q",
+    "block_timestamp": "1728922909053479537",
+    "block": {
+      "block_height": 130334082
+    },
+    "receipt_conversion_tokens_burnt": "59063319509000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 453668304398800000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Infrastructure Committee* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @andrewlutsiuk.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}RPC Service for NEAR.org by Unicsoft\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nUnicsoft proposes to develop a robust and scalable RPC service for NEAR, focusing on key components such as load balancers, RPC servers, ScyllaDB integration, and NEAR node synchronization. The solution will ensure high availability, optimized performance, and seamless data synchronization, with built-in monitoring for reliability.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=45)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.194596130076e+21
+    }
+  },
+  {
+    "id": "9201796598",
+    "receipt_id": "9aqmMws5Acbkx37Q1yxqBKs2N8KJQG3gFukxbZ6ApzeF",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "wPdcf35Zq4XBv9zwmkNCJDrqHabNapY4hWAHZXJbuDW",
+      "block_height": 130334084,
+      "block_timestamp": 1728922911277973200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3560053791927,
+      "tokens_burnt": 356005379192700000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "E5VqS9uH58NAPny626XKUKh9GnxUQMydGWrsP5ZfWmG3",
+    "included_in_block_hash": "2dfFubdhXUEcFzw8N54cGPLMSZNSETRwtrtHy8hjPC4q",
+    "block_timestamp": "1728922909053479537",
+    "block": {
+      "block_height": 130334082
+    },
+    "receipt_conversion_tokens_burnt": "59063319509000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 356005379192700000000,
+        "args": "{\"proposal\": {\"id\": 45, \"snapshot\": {\"name\": \"RPC Service for NEAR.org by Unicsoft\", \"labels\": [\"RPC Nodes\"], \"summary\": \"Unicsoft proposes to develop a robust and scalable RPC service for NEAR, focusing on key components such as load balancers, RPC servers, ScyllaDB integration, and NEAR node synchronization. The solution will ensure high availability, optimized performance, and seamless data synchronization, with built-in monitoring for reliability.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"andrewlutsiuk.near\", \"timestamp\": \"1728922910097897946\", \"linked_rfp\": 2, \"supervisor\": null, \"description\": \"## Organization\\\\\\\\n\\\\\\\\nUnicsoft is a technology consulting company specializing in blockchain development, artificial intelligence (AI), machine learning, data science, and custom software development. Founded in 2005, Unicsoft is headquartered in Larnaca, Cyprus, and serves clients globally. The company delivers innovative solutions to startups and enterprises across various industries, including finance, healthcare, retail, and logistics.\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\u{2019}s contact information\\\\\\\\n\\\\\\\\nName: Tomasz K\\\\\\\\u{119}czkowski\\\\\\\\nEmail: tmk@unicsoft.com \\\\\\\\n\\\\\\\\n### Size of the whole team\\\\\\\\n\\\\\\\\nWhole Team: 200+ employees.\\\\\\\\n\\\\\\\\n### Size of the engineering team\\\\\\\\n\\\\\\\\nEngineering Team: 150+ developers and engineers.\\\\\\\\n\\\\\\\\n### Team location\\\\\\\\n\\\\\\\\nLocation: Europe and Latin America.\\\\\\\\n\\\\\\\\n### Team background and bios\\\\\\\\n\\\\\\\\nUnicsoft is a technology consulting company specializing in blockchain, artificial intelligence, machine learning, and custom software development. With over 15 years of experience, the team is composed of industry experts, including:\\\\\\\\n\\\\\\\\nAleksey Zavgorodniy \\\\\\\\u{2013} Founder and CEO of Unicsoft with 15+ years of experience in IT consulting and software development.\\\\\\\\nArtem Sklyarov \\\\\\\\u{2013} Solution Architect, with over 15 years of experience, specializing in decentralized applications and blockchain solutions.\\\\\\\\nStas Sorokin\\\\\\\\u{2013} Blockchain Solution Architect with 18+ years of experience in software design and management, with a deep understanding of business needs and technical solutions.\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\n\\\\\\\\nUnicsoft has been actively developing blockchain solutions since 2016, completing over 50 successful blockchain projects worldwide. Our experience includes developing decentralized applications (dApps), smart contracts, and tokenization platforms, as well as integrating blockchain technology into existing systems to enhance security, transparency, and efficiency.\\\\\\\\n\\\\\\\\n### In-House Resources;\\\\\\\\n\\\\\\\\n[//]: # (Design, UX/UI?) \\\\\\\\nYes\\\\\\\\n\\\\\\\\n[//]: # (Project management?) \\\\\\\\nYes\\\\\\\\n\\\\\\\\n[//]: # (BD / Marketing?) \\\\\\\\nYes\\\\\\\\n\\\\\\\\n### Portfolio of relevant work\\\\\\\\n\\\\\\\\nPlease review the presentation of Blockchain expertise: https://drive.google.com/file/d/1xyofTbodzEwc8m8aM9H2Lqmky79Df649/view?usp=sharing \\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\n[//]: # (The primary approach and solution of the proposal.)\\\\\\\\n\\\\\\\\nWe propose to develop a high-performance RPC service consisting of the following components:\\\\\\\\n**Load Balancer Development**: A routing mechanism that optimizes traffic distribution based on IP and region.\\\\\\\\n**RPC Servers (Read-RPC)**: Core servers designed to manage high volumes of requests with low-latency response times.\\\\\\\\n**ScyllaDB Integration**: A high-performance database to store and manage blockchain data, ensuring fast retrieval and efficient data access.\\\\\\\\n**NEAR Node Integration**: Seamless synchronization with NEAR archival and non-archival nodes to provide robust and reliable data access.\\\\\\\\n**Monitoring and Alerts**: A real-time monitoring system (Prometheus, Grafana) for tracking system health, detecting anomalies, and ensuring high availability.\\\\\\\\n\\\\\\\\n[//]: # (Why should the committee choose this project?)\\\\\\\\n\\\\\\\\n**Scalability and Performance**: Our solution is designed to scale with growing demand, ensuring optimized performance and low-latency responses, which are crucial for NEAR\\\\\\\\u{2019}s ecosystem.\\\\\\\\n**Reliability**: Real-time monitoring and alerts will ensure any potential issues are identified and resolved swiftly, minimizing downtime.\\\\\\\\n**Comprehensive Integration**: We provide deep integration with NEAR nodes, enabling effective query handling and data synchronization, essential for NEAR\\\\\\\\u{2019}s blockchain infrastructure.\\\\\\\\n**Proven Experience**: Our team\\\\\\\\\\\\'s experience with similar blockchain infrastructure projects will ensure the timely and successful delivery of this solution.\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\nThe project will be completed over 13-15 weeks, divided into the following milestones:\\\\\\\\n**Load Balancer Development**: 2-3 weeks\\\\\\\\nImplement routing logic based on IP/region to optimize traffic distribution.\\\\\\\\n**RPC Servers (Read-RPC)**: 4-5 weeks\\\\\\\\nDevelop core servers to manage requests and ensure low-latency communication between blockchain users and the NEAR nodes.\\\\\\\\n**ScyllaDB Integration**: 2 weeks\\\\\\\\nIntegrate the high-performance ScyllaDB for rapid data retrieval and management.\\\\\\\\n**NEAR Node Integration**: 3 weeks\\\\\\\\nSynchronize the RPC service with NEAR archival and non-archival nodes to ensure reliable data access.\\\\\\\\n**Monitoring and Alerts Setup**: 2 weeks\\\\\\\\nSet up a real-time monitoring system (Prometheus, Grafana) to ensure system health and detect anomalies.\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n### Budget Total\\\\\\\\n\\\\\\\\nThe total project cost has been estimated as follows:\\\\\\\\nOptimistic Estimate: $115,022.50\\\\\\\\nPessimistic Estimate: $135,985.00\\\\\\\\nThese estimates cover all development tasks, including engineering hours, project management, and other critical activities.\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\nPlease refer to the attached spreadsheet for the detailed budget breakdown: https://drive.google.com/file/d/1b8i28UUd4foSqH18fi1GX_2JbejL866t/view?usp=drive_link \\\\\\\\nNote: Public access to this spreadsheet is closed and will be provided only for NEAR Infrastructure Committee members on request.\", \"linked_proposals\": [], \"receiver_account\": \"unicsoftfin.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"135985\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"andrewlutsiuk.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.194596130076e+21
+    }
+  },
+  {
+    "id": "9201796601",
+    "receipt_id": "EaUH4MB3kXYqE1GaGDf6dyTrW1hJvGetAmWiSs2PxsU5",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "wPdcf35Zq4XBv9zwmkNCJDrqHabNapY4hWAHZXJbuDW",
+      "block_height": 130334084,
+      "block_timestamp": 1728922911277973200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3545851380053,
+      "tokens_burnt": 354585138005300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "E5VqS9uH58NAPny626XKUKh9GnxUQMydGWrsP5ZfWmG3",
+    "included_in_block_hash": "2dfFubdhXUEcFzw8N54cGPLMSZNSETRwtrtHy8hjPC4q",
+    "block_timestamp": "1728922909053479537",
+    "block": {
+      "block_height": 130334082
+    },
+    "receipt_conversion_tokens_burnt": "59063319509000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 354585138005300000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"unicsoft.com\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":45,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"andrewlutsiuk.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":45,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"andrewlutsiuk.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.194596130076e+21
+    }
+  },
+  {
+    "id": "9201958149",
+    "receipt_id": "58ZeCa5rbz4WkR6W52eF7uBjieCkZmxUn64jtPfbmkQ5",
+    "predecessor_account_id": "andrewlutsiuk.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CQB3XGRN6AVWbD6q6889fmRvRpeSqca9sBYhAiqn2p4Q",
+      "block_height": 130334354,
+      "block_timestamp": 1728923208137595100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5649262841080,
+      "tokens_burnt": 564926284108000000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "CrmzJKkQwpXMZ2LuVuz4i2oYexonf17ob2X7rKUr6KTg",
+    "included_in_block_hash": "7WEWt66AiWjdajuZnzTGcU7c2EW8w9emCDHaoxVMJmKw",
+    "block_timestamp": "1728923207121039373",
+    "block": {
+      "block_height": 130334353
+    },
+    "receipt_conversion_tokens_burnt": "59573535259500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 564926284108000000000,
+        "args": "{\"id\": 45, \"body\": {\"name\": \"RPC Service for NEAR.org by Unicsoft\", \"summary\": \"Unicsoft proposes to develop a robust and scalable RPC service for NEAR, focusing on key components such as load balancers, RPC servers, ScyllaDB integration, and NEAR node synchronization. The solution will ensure high availability, optimized performance, and seamless data synchronization, with built-in monitoring for reliability.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": 2, \"supervisor\": null, \"description\": \"## Organization\\\\\\\\n\\\\\\\\n\\\\\\\\nUnicsoft is a technology consulting company specializing in blockchain development, artificial intelligence (AI), machine learning, data science, and custom software development. Founded in 2005, Unicsoft is headquartered in Larnaca, Cyprus, and serves clients globally. The company delivers innovative solutions to startups and enterprises across various industries, including finance, healthcare, retail, and logistics.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\u{2019}s contact information\\\\\\\\n\\\\\\\\n\\\\\\\\nName: Tomasz K\\\\\\\\u{119}czkowski\\\\\\\\nEmail: tmk@unicsoft.com \\\\\\\\n\\\\\\\\n\\\\\\\\n### Size of the whole team\\\\\\\\n\\\\\\\\n\\\\\\\\nWhole Team: 200+ employees.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Size of the engineering team\\\\\\\\n\\\\\\\\n\\\\\\\\nEngineering Team: 150+ developers and engineers.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Team location\\\\\\\\n\\\\\\\\n\\\\\\\\nLocation: Europe and Latin America.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Team background and bios\\\\\\\\n\\\\\\\\n\\\\\\\\nUnicsoft is a technology consulting company specializing in blockchain, artificial intelligence, machine learning, and custom software development. With over 15 years of experience, the team is composed of industry experts, including:\\\\\\\\n\\\\\\\\n- Aleksey Zavgorodniy \\\\\\\\u{2013} Founder and CEO of Unicsoft with 15+ years of experience in IT consulting and software development.\\\\\\\\n- Artem Sklyarov \\\\\\\\u{2013} Solution Architect, with over 15 years of experience, specializing in decentralized applications and blockchain solutions.\\\\\\\\n- Stas Sorokin\\\\\\\\u{2013} Blockchain Solution Architect with 18+ years of experience in software design and management, with a deep understanding of business needs and technical solutions.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\n\\\\\\\\n\\\\\\\\nUnicsoft has been actively developing blockchain solutions since 2016, completing over 50 successful blockchain projects worldwide. Our experience includes developing decentralized applications (dApps), smart contracts, and tokenization platforms, as well as integrating blockchain technology into existing systems to enhance security, transparency, and efficiency.\\\\\\\\n\\\\\\\\n\\\\\\\\n### In-House Resources;\\\\\\\\n\\\\\\\\n\\\\\\\\nDesign, UX/UI: Yes\\\\\\\\nProject management: Yes\\\\\\\\nBD / Marketing: Yes\\\\\\\\n\\\\\\\\n\\\\\\\\n### Portfolio of relevant work\\\\\\\\n\\\\\\\\n\\\\\\\\nPlease review the presentation of Blockchain expertise: https://drive.google.com/file/d/1xyofTbodzEwc8m8aM9H2Lqmky79Df649/view?usp=sharing \\\\\\\\n\\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\n\\\\\\\\n**The primary approach and solution of the proposal**\\\\\\\\n\\\\\\\\nWe propose to develop a high-performance RPC service consisting of the following components:\\\\\\\\n**Load Balancer Development**: A routing mechanism that optimizes traffic distribution based on IP and region.\\\\\\\\n**RPC Servers (Read-RPC)**: Core servers designed to manage high volumes of requests with low-latency response times.\\\\\\\\n**ScyllaDB Integration**: A high-performance database to store and manage blockchain data, ensuring fast retrieval and efficient data access.\\\\\\\\n**NEAR Node Integration**: Seamless synchronization with NEAR archival and non-archival nodes to provide robust and reliable data access.\\\\\\\\n**Monitoring and Alerts**: A real-time monitoring system (Prometheus, Grafana) for tracking system health, detecting anomalies, and ensuring high availability.\\\\\\\\n\\\\\\\\n**Why should the committee choose this project?**\\\\\\\\n\\\\\\\\n**Scalability and Performance**: Our solution is designed to scale with growing demand, ensuring optimized performance and low-latency responses, which are crucial for NEAR\\\\\\\\u{2019}s ecosystem.\\\\\\\\n**Reliability**: Real-time monitoring and alerts will ensure any potential issues are identified and resolved swiftly, minimizing downtime.\\\\\\\\n**Comprehensive Integration**: We provide deep integration with NEAR nodes, enabling effective query handling and data synchronization, essential for NEAR\\\\\\\\u{2019}s blockchain infrastructure.\\\\\\\\n**Proven Experience**: Our team\\\\\\\\\\\\'s experience with similar blockchain infrastructure projects will ensure the timely and successful delivery of this solution.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\n\\\\\\\\nThe project will be completed over 13-15 weeks, divided into the following milestones:\\\\\\\\n**Load Balancer Development**: 2-3 weeks\\\\\\\\nImplement routing logic based on IP/region to optimize traffic distribution.\\\\\\\\n**RPC Servers (Read-RPC)**: 4-5 weeks\\\\\\\\nDevelop core servers to manage requests and ensure low-latency communication between blockchain users and the NEAR nodes.\\\\\\\\n**ScyllaDB Integration**: 2 weeks\\\\\\\\nIntegrate the high-performance ScyllaDB for rapid data retrieval and management.\\\\\\\\n**NEAR Node Integration**: 3 weeks\\\\\\\\nSynchronize the RPC service with NEAR archival and non-archival nodes to ensure reliable data access.\\\\\\\\n**Monitoring and Alerts Setup**: 2 weeks\\\\\\\\nSet up a real-time monitoring system (Prometheus, Grafana) to ensure system health and detect anomalies.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n\\\\\\\\n### Budget Total\\\\\\\\n\\\\\\\\n\\\\\\\\nThe total project cost has been estimated as follows:\\\\\\\\nOptimistic Estimate: $115,022.50\\\\\\\\nPessimistic Estimate: $135,985.00\\\\\\\\nThese estimates cover all development tasks, including engineering hours, project management, and other critical activities.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\n\\\\\\\\nPlease refer to the attached spreadsheet for the detailed budget breakdown: https://drive.google.com/file/d/1b8i28UUd4foSqH18fi1GX_2JbejL866t/view?usp=drive_link \\\\\\\\nNote: Public access to this spreadsheet is closed and will be provided only for NEAR Infrastructure Committee members on request.\", \"linked_proposals\": [], \"receiver_account\": \"unicsoftfin.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"135985\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 983065887895600000000
+    }
+  },
+  {
+    "id": "9201959273",
+    "receipt_id": "B6QQ7fh6HeHitkzb4eA7XUifJEXf375BnhPbw3yzKUTU",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AFMdVfq2Enu1GhbVAKtDq6CWfr9rD1ASnLsPhZBUooyf",
+      "block_height": 130334355,
+      "block_timestamp": 1728923209343084300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3585660685281,
+      "tokens_burnt": 358566068528100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "CrmzJKkQwpXMZ2LuVuz4i2oYexonf17ob2X7rKUr6KTg",
+    "included_in_block_hash": "7WEWt66AiWjdajuZnzTGcU7c2EW8w9emCDHaoxVMJmKw",
+    "block_timestamp": "1728923207121039373",
+    "block": {
+      "block_height": 130334353
+    },
+    "receipt_conversion_tokens_burnt": "59573535259500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 358566068528100000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"andrewlutsiuk.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":45,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"andrewlutsiuk.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 983065887895600000000
+    }
+  },
+  {
+    "id": "9202190527",
+    "receipt_id": "FhH1qjAbiTBkDqtWXse28xf1GiA65qbUFySoEcFiDCYY",
+    "predecessor_account_id": "andrewlutsiuk.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2YjPedk7QzZT5hqDc7JNTRE7Bj9hmzjYkw7FarVfteMz",
+      "block_height": 130335052,
+      "block_timestamp": 1728923974604009500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9077658595565,
+      "tokens_burnt": 907765859556500000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "Ar3TjGYbp1VNM7hkt8pG1KAXxb2ifS1uUbiSjQbTFhnU",
+    "included_in_block_hash": "5Si4vKnuUacwtrW62LG5PnZHPeaPKTstedZrJ12WsBu5",
+    "block_timestamp": "1728923973365926499",
+    "block": {
+      "block_height": 130335051
+    },
+    "receipt_conversion_tokens_burnt": "66482905563000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 907765859556500000000,
+        "args": "{\"body\": {\"name\": \"Kit Wallet Indexer API for NEAR.org by Unicsoft\", \"summary\": \"Unicsoft proposes to develop a comprehensive and scalable **Kit Wallet Indexer API** for the NEAR blockchain. This solution will focus on integrating with the NEAR Lake Framework for real-time access to blockchain data, along with setting up a high-performance PostgreSQL database for efficient storage and querying of wallet, fungible token (FT), and non-fungible token (NFT) activities. The API will provide developers with easy access to indexed wallet data, enabling quick lookups for token trans\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"linked_rfp\": 1, \"description\": \"## Organization\\\\\\\\n\\\\\\\\n\\\\\\\\nUnicsoft is a technology consulting company specializing in blockchain development, artificial intelligence (AI), machine learning, data science, and custom software development. Founded in 2005, Unicsoft is headquartered in Larnaca, Cyprus, and serves clients globally. The company delivers innovative solutions to startups and enterprises across various industries, including finance, healthcare, retail, and logistics.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\u{2019}s contact information\\\\\\\\n\\\\\\\\n\\\\\\\\nName: Tomasz K\\\\\\\\u{119}czkowski\\\\\\\\nEmail: tmk@unicsoft.com \\\\\\\\n\\\\\\\\n\\\\\\\\n### Size of the whole team\\\\\\\\n\\\\\\\\n\\\\\\\\nWhole Team: 200+ employees.\\\\\\\\n\\\\\\\\n### Size of the engineering team\\\\\\\\n\\\\\\\\n\\\\\\\\nEngineering Team: 150+ developers and engineers.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Team location\\\\\\\\n\\\\\\\\n\\\\\\\\nLocation: Europe and Latin America.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Team background and bios\\\\\\\\n\\\\\\\\n\\\\\\\\nUnicsoft is a technology consulting company specializing in blockchain, artificial intelligence, machine learning, and custom software development. With over 15 years of experience, the team is composed of industry experts, including:\\\\\\\\n\\\\\\\\n- Aleksey Zavgorodniy \\\\\\\\u{2013} Founder and CEO of Unicsoft with 15+ years of experience in IT consulting and software development.\\\\\\\\n- Artem Sklyarov \\\\\\\\u{2013} Solution Architect, with over 15 years of experience, specializing in decentralized applications and blockchain solutions.\\\\\\\\n- Stas Sorokin\\\\\\\\u{2013} Blockchain Solution Architect with 18+ years of experience in software design and management, with a deep understanding of business needs and technical solutions.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\n\\\\\\\\n\\\\\\\\nUnicsoft has been actively developing blockchain solutions since 2016, completing over 50 successful blockchain projects worldwide. Our experience includes developing decentralized applications (dApps), smart contracts, and tokenization platforms, as well as integrating blockchain technology into existing systems to enhance security, transparency, and efficiency.\\\\\\\\n\\\\\\\\n\\\\\\\\n### In-House Resources;\\\\\\\\n\\\\\\\\n\\\\\\\\nDesign, UX/UI?: Yes\\\\\\\\n\\\\\\\\nProject management?: Yes\\\\\\\\n\\\\\\\\nBD / Marketing?: Yes\\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\n\\\\\\\\n**The primary approach and solution of the proposal.**\\\\\\\\n\\\\\\\\nThe Kit Wallet Indexer API will be developed with the following approach:\\\\\\\\n**Setting up the Project Structure and API Services:**\\\\\\\\nEstablish a solid project foundation by setting up the necessary structure and defining the API services. This will include implementing basic routes to allow querying of wallets, FT (fungible tokens), and NFT (non-fungible tokens) details.\\\\\\\\n**Integration with NEAR Lake Framework:**\\\\\\\\nIntegrate the API with the NEAR Lake Framework, which is designed to provide easy access to blockchain data streams. This integration will allow the API to retrieve and index on-chain data efficiently.\\\\\\\\n**Working with the Database (PostgreSQL):**\\\\\\\\nSet up and configure a PostgreSQL database to store indexed blockchain data. This will include implementing both writing and querying operations, ensuring that the data is structured in a way that supports fast and reliable retrieval.\\\\\\\\n**Developing Features for Wallet Data Indexing:**\\\\\\\\nBuild features to index wallet activities, including tracking token transfers (FT and NFT) and wallet-specific events. This will enable quick lookups and queries for wallet information, making the API highly efficient for various use cases within the NEAR ecosystem.\\\\\\\\n\\\\\\\\n**Why should the committee choose this project?**\\\\\\\\n\\\\\\\\n**Focused on Efficient Data Access:**\\\\\\\\nThe integration with NEAR Lake ensures efficient and scalable access to on-chain data, which is crucial for building a responsive and reliable indexer service.\\\\\\\\n**Comprehensive Data Coverage:**\\\\\\\\nThe API will support querying for a wide range of blockchain activities, including wallet transactions, fungible tokens, and NFTs. This makes it a valuable tool for developers building on the NEAR platform, ensuring comprehensive data access.\\\\\\\\n**Scalability and Performance:**\\\\\\\\nThe use of PostgreSQL as the database solution ensures scalability and high performance for both write and query operations, enabling this API to handle large amounts of data as the ecosystem grows.\\\\\\\\n**Experienced Team:**\\\\\\\\nThe estimate highlights the involvement of skilled software engineers with experience in blockchain and database integration, giving confidence in the team\\\\\\\\\\\\'s ability to deliver the project successfully.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\n\\\\\\\\n**Goals**\\\\\\\\n\\\\\\\\n**Establish a Project Structure and API:**\\\\\\\\nSet up the project\\\\\\\\u{2019}s core structure, including the foundational API routes to query wallet, FT, and NFT data.\\\\\\\\n**Integrate the NEAR Lake Framework:**\\\\\\\\nEnable the API to interact with the NEAR Lake data stream for real-time blockchain data retrieval.\\\\\\\\n**Develop Database Support (PostgreSQL):**\\\\\\\\nImplement a scalable database solution for storing and querying indexed blockchain data.\\\\\\\\n**Implement Wallet Data Indexing Features:**\\\\\\\\nDevelop features that allow indexing and querying of wallet activities, including token transfers and other blockchain events.\\\\\\\\n\\\\\\\\n**Milestones**\\\\\\\\n\\\\\\\\nThe project will be completed over 9-10 weeks, divided into the following milestones:\\\\\\\\n\\\\\\\\n**Milestone 1: Project Structure and API Services Setup** (2 weeks)\\\\\\\\nDefine the project\\\\\\\\u{2019}s structure and implement basic API routes.\\\\\\\\nTest the API for querying wallet, FT, and NFT data to ensure all routes work correctly.\\\\\\\\n\\\\\\\\n**Milestone 2: Integration with NEAR Lake Framework** (2 weeks)\\\\\\\\nSet up the connection with NEAR Lake for retrieving blockchain data.\\\\\\\\nEnsure that the integration is seamless and can handle real-time data streams efficiently.\\\\\\\\n\\\\\\\\n**Milestone 3: Database (PostgreSQL) Setup** (2 weeks)\\\\\\\\nConfigure the PostgreSQL database for data storage.\\\\\\\\nImplement necessary operations for writing and querying the indexed blockchain data.\\\\\\\\n\\\\\\\\n**Milestone 4: Wallet Data Indexing Features** (3-4 weeks)\\\\\\\\nDevelop indexing features for wallet activity tracking.\\\\\\\\nOptimize the API for querying large datasets efficiently, focusing on token transfers and wallet-specific events.\\\\\\\\n \\\\\\\\n \\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n\\\\\\\\n### Budget Total\\\\\\\\n\\\\\\\\n\\\\\\\\nThe total project cost has been estimated as follows:\\\\\\\\nOptimistic Estimate: $57,040\\\\\\\\t\\\\\\\\nPessimistic Estimate: $65,306\\\\\\\\nThese estimates cover all development tasks, including engineering hours, project management, and other critical activities.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\n\\\\\\\\nPlease refer to the attached spreadsheet for the detailed budget breakdown: https://drive.google.com/file/d/1OhakK4WCIdlzDGKK72IrikzHSZctCRaK/view?usp=drive_link \\\\\\\\nNote: Public access to this spreadsheet is closed and will be provided only for NEAR Infrastructure Committee members on request.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"unicsoftfin.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"65306\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.1577910488111e+21
+    }
+  },
+  {
+    "id": "9202190857",
+    "receipt_id": "9zaNR6KseVAVQrwznkmCYoXFjchTMfQBKceh6YxETh77",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7rAwXUfrsywJyxz5casF4WGgAT7X83WDypuzyPBgJyaD",
+      "block_height": 130335053,
+      "block_timestamp": 1728923975747951600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4593810435200,
+      "tokens_burnt": 459381043520000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Ar3TjGYbp1VNM7hkt8pG1KAXxb2ifS1uUbiSjQbTFhnU",
+    "included_in_block_hash": "5Si4vKnuUacwtrW62LG5PnZHPeaPKTstedZrJ12WsBu5",
+    "block_timestamp": "1728923973365926499",
+    "block": {
+      "block_height": 130335051
+    },
+    "receipt_conversion_tokens_burnt": "66482905563000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 459381043520000000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Infrastructure Committee* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @andrewlutsiuk.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Kit Wallet Indexer API for NEAR.org by Unicsoft\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nUnicsoft proposes to develop a comprehensive and scalable **Kit Wallet Indexer API** for the NEAR blockchain. This solution will focus on integrating with the NEAR Lake Framework for real-time access to blockchain data, along with setting up a high-performance PostgreSQL database for efficient storage and querying of wallet, fungible token (FT), and non-fungible token (NFT) activities. The API will provide developers with easy access to indexed wallet data, enabling quick lookups for token trans\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=46)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.1577910488111e+21
+    }
+  },
+  {
+    "id": "9202190858",
+    "receipt_id": "Hws89YRrpT4jD1neVj3uZEyVmp61DwSun6AfaCew194Q",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7rAwXUfrsywJyxz5casF4WGgAT7X83WDypuzyPBgJyaD",
+      "block_height": 130335053,
+      "block_timestamp": 1728923975747951600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3702112790719,
+      "tokens_burnt": 370211279071900000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "Ar3TjGYbp1VNM7hkt8pG1KAXxb2ifS1uUbiSjQbTFhnU",
+    "included_in_block_hash": "5Si4vKnuUacwtrW62LG5PnZHPeaPKTstedZrJ12WsBu5",
+    "block_timestamp": "1728923973365926499",
+    "block": {
+      "block_height": 130335051
+    },
+    "receipt_conversion_tokens_burnt": "66482905563000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 370211279071900000000,
+        "args": "{\"proposal\": {\"id\": 46, \"snapshot\": {\"name\": \"Kit Wallet Indexer API for NEAR.org by Unicsoft\", \"labels\": [\"Indexers\"], \"summary\": \"Unicsoft proposes to develop a comprehensive and scalable **Kit Wallet Indexer API** for the NEAR blockchain. This solution will focus on integrating with the NEAR Lake Framework for real-time access to blockchain data, along with setting up a high-performance PostgreSQL database for efficient storage and querying of wallet, fungible token (FT), and non-fungible token (NFT) activities. The API will provide developers with easy access to indexed wallet data, enabling quick lookups for token trans\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"andrewlutsiuk.near\", \"timestamp\": \"1728923974604009570\", \"linked_rfp\": 1, \"supervisor\": null, \"description\": \"## Organization\\\\\\\\n\\\\\\\\n\\\\\\\\nUnicsoft is a technology consulting company specializing in blockchain development, artificial intelligence (AI), machine learning, data science, and custom software development. Founded in 2005, Unicsoft is headquartered in Larnaca, Cyprus, and serves clients globally. The company delivers innovative solutions to startups and enterprises across various industries, including finance, healthcare, retail, and logistics.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\u{2019}s contact information\\\\\\\\n\\\\\\\\n\\\\\\\\nName: Tomasz K\\\\\\\\u{119}czkowski\\\\\\\\nEmail: tmk@unicsoft.com \\\\\\\\n\\\\\\\\n\\\\\\\\n### Size of the whole team\\\\\\\\n\\\\\\\\n\\\\\\\\nWhole Team: 200+ employees.\\\\\\\\n\\\\\\\\n### Size of the engineering team\\\\\\\\n\\\\\\\\n\\\\\\\\nEngineering Team: 150+ developers and engineers.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Team location\\\\\\\\n\\\\\\\\n\\\\\\\\nLocation: Europe and Latin America.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Team background and bios\\\\\\\\n\\\\\\\\n\\\\\\\\nUnicsoft is a technology consulting company specializing in blockchain, artificial intelligence, machine learning, and custom software development. With over 15 years of experience, the team is composed of industry experts, including:\\\\\\\\n\\\\\\\\n- Aleksey Zavgorodniy \\\\\\\\u{2013} Founder and CEO of Unicsoft with 15+ years of experience in IT consulting and software development.\\\\\\\\n- Artem Sklyarov \\\\\\\\u{2013} Solution Architect, with over 15 years of experience, specializing in decentralized applications and blockchain solutions.\\\\\\\\n- Stas Sorokin\\\\\\\\u{2013} Blockchain Solution Architect with 18+ years of experience in software design and management, with a deep understanding of business needs and technical solutions.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\n\\\\\\\\n\\\\\\\\nUnicsoft has been actively developing blockchain solutions since 2016, completing over 50 successful blockchain projects worldwide. Our experience includes developing decentralized applications (dApps), smart contracts, and tokenization platforms, as well as integrating blockchain technology into existing systems to enhance security, transparency, and efficiency.\\\\\\\\n\\\\\\\\n\\\\\\\\n### In-House Resources;\\\\\\\\n\\\\\\\\n\\\\\\\\nDesign, UX/UI?: Yes\\\\\\\\n\\\\\\\\nProject management?: Yes\\\\\\\\n\\\\\\\\nBD / Marketing?: Yes\\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\n\\\\\\\\n**The primary approach and solution of the proposal.**\\\\\\\\n\\\\\\\\nThe Kit Wallet Indexer API will be developed with the following approach:\\\\\\\\n**Setting up the Project Structure and API Services:**\\\\\\\\nEstablish a solid project foundation by setting up the necessary structure and defining the API services. This will include implementing basic routes to allow querying of wallets, FT (fungible tokens), and NFT (non-fungible tokens) details.\\\\\\\\n**Integration with NEAR Lake Framework:**\\\\\\\\nIntegrate the API with the NEAR Lake Framework, which is designed to provide easy access to blockchain data streams. This integration will allow the API to retrieve and index on-chain data efficiently.\\\\\\\\n**Working with the Database (PostgreSQL):**\\\\\\\\nSet up and configure a PostgreSQL database to store indexed blockchain data. This will include implementing both writing and querying operations, ensuring that the data is structured in a way that supports fast and reliable retrieval.\\\\\\\\n**Developing Features for Wallet Data Indexing:**\\\\\\\\nBuild features to index wallet activities, including tracking token transfers (FT and NFT) and wallet-specific events. This will enable quick lookups and queries for wallet information, making the API highly efficient for various use cases within the NEAR ecosystem.\\\\\\\\n\\\\\\\\n**Why should the committee choose this project?**\\\\\\\\n\\\\\\\\n**Focused on Efficient Data Access:**\\\\\\\\nThe integration with NEAR Lake ensures efficient and scalable access to on-chain data, which is crucial for building a responsive and reliable indexer service.\\\\\\\\n**Comprehensive Data Coverage:**\\\\\\\\nThe API will support querying for a wide range of blockchain activities, including wallet transactions, fungible tokens, and NFTs. This makes it a valuable tool for developers building on the NEAR platform, ensuring comprehensive data access.\\\\\\\\n**Scalability and Performance:**\\\\\\\\nThe use of PostgreSQL as the database solution ensures scalability and high performance for both write and query operations, enabling this API to handle large amounts of data as the ecosystem grows.\\\\\\\\n**Experienced Team:**\\\\\\\\nThe estimate highlights the involvement of skilled software engineers with experience in blockchain and database integration, giving confidence in the team\\\\\\\\\\\\'s ability to deliver the project successfully.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\n\\\\\\\\n**Goals**\\\\\\\\n\\\\\\\\n**Establish a Project Structure and API:**\\\\\\\\nSet up the project\\\\\\\\u{2019}s core structure, including the foundational API routes to query wallet, FT, and NFT data.\\\\\\\\n**Integrate the NEAR Lake Framework:**\\\\\\\\nEnable the API to interact with the NEAR Lake data stream for real-time blockchain data retrieval.\\\\\\\\n**Develop Database Support (PostgreSQL):**\\\\\\\\nImplement a scalable database solution for storing and querying indexed blockchain data.\\\\\\\\n**Implement Wallet Data Indexing Features:**\\\\\\\\nDevelop features that allow indexing and querying of wallet activities, including token transfers and other blockchain events.\\\\\\\\n\\\\\\\\n**Milestones**\\\\\\\\n\\\\\\\\nThe project will be completed over 9-10 weeks, divided into the following milestones:\\\\\\\\n\\\\\\\\n**Milestone 1: Project Structure and API Services Setup** (2 weeks)\\\\\\\\nDefine the project\\\\\\\\u{2019}s structure and implement basic API routes.\\\\\\\\nTest the API for querying wallet, FT, and NFT data to ensure all routes work correctly.\\\\\\\\n\\\\\\\\n**Milestone 2: Integration with NEAR Lake Framework** (2 weeks)\\\\\\\\nSet up the connection with NEAR Lake for retrieving blockchain data.\\\\\\\\nEnsure that the integration is seamless and can handle real-time data streams efficiently.\\\\\\\\n\\\\\\\\n**Milestone 3: Database (PostgreSQL) Setup** (2 weeks)\\\\\\\\nConfigure the PostgreSQL database for data storage.\\\\\\\\nImplement necessary operations for writing and querying the indexed blockchain data.\\\\\\\\n\\\\\\\\n**Milestone 4: Wallet Data Indexing Features** (3-4 weeks)\\\\\\\\nDevelop indexing features for wallet activity tracking.\\\\\\\\nOptimize the API for querying large datasets efficiently, focusing on token transfers and wallet-specific events.\\\\\\\\n \\\\\\\\n \\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n\\\\\\\\n### Budget Total\\\\\\\\n\\\\\\\\n\\\\\\\\nThe total project cost has been estimated as follows:\\\\\\\\nOptimistic Estimate: $57,040\\\\\\\\t\\\\\\\\nPessimistic Estimate: $65,306\\\\\\\\nThese estimates cover all development tasks, including engineering hours, project management, and other critical activities.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\n\\\\\\\\nPlease refer to the attached spreadsheet for the detailed budget breakdown: https://drive.google.com/file/d/1OhakK4WCIdlzDGKK72IrikzHSZctCRaK/view?usp=drive_link \\\\\\\\nNote: Public access to this spreadsheet is closed and will be provided only for NEAR Infrastructure Committee members on request.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"unicsoftfin.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"65306\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"andrewlutsiuk.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.1577910488111e+21
+    }
+  },
+  {
+    "id": "9202190859",
+    "receipt_id": "9htktioN5DtJbe4wBr5yiAZAyAe18b5tAc6oLoRDG3iR",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7rAwXUfrsywJyxz5casF4WGgAT7X83WDypuzyPBgJyaD",
+      "block_height": 130335053,
+      "block_timestamp": 1728923975747951600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3539499610997,
+      "tokens_burnt": 353949961099700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Ar3TjGYbp1VNM7hkt8pG1KAXxb2ifS1uUbiSjQbTFhnU",
+    "included_in_block_hash": "5Si4vKnuUacwtrW62LG5PnZHPeaPKTstedZrJ12WsBu5",
+    "block_timestamp": "1728923973365926499",
+    "block": {
+      "block_height": 130335051
+    },
+    "receipt_conversion_tokens_burnt": "66482905563000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353949961099700000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"unicsoft.com\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":46,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"andrewlutsiuk.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":46,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"andrewlutsiuk.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.1577910488111e+21
+    }
+  },
+  {
+    "id": "9202225244",
+    "receipt_id": "CVJmo1yRT3AF3gTNKM7FxzqGmaf7xtPXu7ZeQF6jZR6",
+    "predecessor_account_id": "andrewlutsiuk.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9d5873qCK2vYJ1hdsuSMnnC99Zqz18hEoRVZ7Gh3kxp",
+      "block_height": 130335186,
+      "block_timestamp": 1728924126283206000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5947136343512,
+      "tokens_burnt": 594713634351200000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "7be8fsSGBNUbZAaUWyerAt9cR1VihTt8dJ2BLPQd2Exp",
+    "included_in_block_hash": "4j1c6SQouDzwjbjbjbDod5G9YcpwiL9hfF1HVN59hWVd",
+    "block_timestamp": "1728924125406527945",
+    "block": {
+      "block_height": 130335185
+    },
+    "receipt_conversion_tokens_burnt": "66916827369500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 594713634351200000000,
+        "args": "{\"id\": 46, \"body\": {\"name\": \"Kit Wallet Indexer API for NEAR.org by Unicsoft\", \"summary\": \"Unicsoft proposes to develop a comprehensive and scalable **Kit Wallet Indexer API** for the NEAR blockchain. This solution will focus on integrating with the NEAR Lake Framework for real-time access to blockchain data, along with setting up a high-performance PostgreSQL database for efficient storage and querying of wallet, fungible token (FT), and non-fungible token (NFT) activities. The API will provide developers with easy access to indexed wallet data, enabling quick lookups for token trans\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": 1, \"supervisor\": null, \"description\": \"# Organization\\\\\\\\n\\\\\\\\n\\\\\\\\nUnicsoft is a technology consulting company specializing in blockchain development, artificial intelligence (AI), machine learning, data science, and custom software development. Founded in 2005, Unicsoft is headquartered in Larnaca, Cyprus, and serves clients globally. The company delivers innovative solutions to startups and enterprises across various industries, including finance, healthcare, retail, and logistics.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Primary person\\\\\\\\u{2019}s contact information\\\\\\\\n\\\\\\\\n\\\\\\\\nName: Tomasz K\\\\\\\\u{119}czkowski\\\\\\\\nEmail: tmk@unicsoft.com \\\\\\\\n\\\\\\\\n## Size of the whole team\\\\\\\\n\\\\\\\\n\\\\\\\\nWhole Team: 200+ employees.\\\\\\\\n\\\\\\\\n## Size of the engineering team\\\\\\\\n\\\\\\\\n\\\\\\\\nEngineering Team: 150+ developers and engineers.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Team location\\\\\\\\n\\\\\\\\n\\\\\\\\nLocation: Europe and Latin America.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Team background and bios\\\\\\\\n\\\\\\\\n\\\\\\\\nUnicsoft is a technology consulting company specializing in blockchain, artificial intelligence, machine learning, and custom software development. With over 15 years of experience, the team is composed of industry experts, including:\\\\\\\\n\\\\\\\\n- Aleksey Zavgorodniy \\\\\\\\u{2013} Founder and CEO of Unicsoft with 15+ years of experience in IT consulting and software development.\\\\\\\\n- Artem Sklyarov \\\\\\\\u{2013} Solution Architect, with over 15 years of experience, specializing in decentralized applications and blockchain solutions.\\\\\\\\n- Stas Sorokin\\\\\\\\u{2013} Blockchain Solution Architect with 18+ years of experience in software design and management, with a deep understanding of business needs and technical solutions.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\n\\\\\\\\n\\\\\\\\nUnicsoft has been actively developing blockchain solutions since 2016, completing over 50 successful blockchain projects worldwide. Our experience includes developing decentralized applications (dApps), smart contracts, and tokenization platforms, as well as integrating blockchain technology into existing systems to enhance security, transparency, and efficiency.\\\\\\\\n\\\\\\\\n\\\\\\\\n### In-House Resources\\\\\\\\n\\\\\\\\n\\\\\\\\nDesign, UX/UI?: Yes\\\\\\\\n\\\\\\\\nProject management?: Yes\\\\\\\\n\\\\\\\\nBD / Marketing?: Yes\\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\n\\\\\\\\n**The primary approach and solution of the proposal.**\\\\\\\\n\\\\\\\\nThe Kit Wallet Indexer API will be developed with the following approach:\\\\\\\\n**Setting up the Project Structure and API Services:**\\\\\\\\nEstablish a solid project foundation by setting up the necessary structure and defining the API services. This will include implementing basic routes to allow querying of wallets, FT (fungible tokens), and NFT (non-fungible tokens) details.\\\\\\\\n**Integration with NEAR Lake Framework:**\\\\\\\\nIntegrate the API with the NEAR Lake Framework, which is designed to provide easy access to blockchain data streams. This integration will allow the API to retrieve and index on-chain data efficiently.\\\\\\\\n**Working with the Database (PostgreSQL):**\\\\\\\\nSet up and configure a PostgreSQL database to store indexed blockchain data. This will include implementing both writing and querying operations, ensuring that the data is structured in a way that supports fast and reliable retrieval.\\\\\\\\n**Developing Features for Wallet Data Indexing:**\\\\\\\\nBuild features to index wallet activities, including tracking token transfers (FT and NFT) and wallet-specific events. This will enable quick lookups and queries for wallet information, making the API highly efficient for various use cases within the NEAR ecosystem.\\\\\\\\n\\\\\\\\n**Why should the committee choose this project?**\\\\\\\\n\\\\\\\\n**Focused on Efficient Data Access:**\\\\\\\\nThe integration with NEAR Lake ensures efficient and scalable access to on-chain data, which is crucial for building a responsive and reliable indexer service.\\\\\\\\n**Comprehensive Data Coverage:**\\\\\\\\nThe API will support querying for a wide range of blockchain activities, including wallet transactions, fungible tokens, and NFTs. This makes it a valuable tool for developers building on the NEAR platform, ensuring comprehensive data access.\\\\\\\\n**Scalability and Performance:**\\\\\\\\nThe use of PostgreSQL as the database solution ensures scalability and high performance for both write and query operations, enabling this API to handle large amounts of data as the ecosystem grows.\\\\\\\\n**Experienced Team:**\\\\\\\\nThe estimate highlights the involvement of skilled software engineers with experience in blockchain and database integration, giving confidence in the team\\\\\\\\\\\\'s ability to deliver the project successfully.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\n\\\\\\\\n**Goals**\\\\\\\\n\\\\\\\\n**Establish a Project Structure and API:**\\\\\\\\nSet up the project\\\\\\\\u{2019}s core structure, including the foundational API routes to query wallet, FT, and NFT data.\\\\\\\\n**Integrate the NEAR Lake Framework:**\\\\\\\\nEnable the API to interact with the NEAR Lake data stream for real-time blockchain data retrieval.\\\\\\\\n**Develop Database Support (PostgreSQL):**\\\\\\\\nImplement a scalable database solution for storing and querying indexed blockchain data.\\\\\\\\n**Implement Wallet Data Indexing Features:**\\\\\\\\nDevelop features that allow indexing and querying of wallet activities, including token transfers and other blockchain events.\\\\\\\\n\\\\\\\\n**Milestones**\\\\\\\\n\\\\\\\\nThe project will be completed over 9-10 weeks, divided into the following milestones:\\\\\\\\n\\\\\\\\n**Milestone 1: Project Structure and API Services Setup** (2 weeks)\\\\\\\\nDefine the project\\\\\\\\u{2019}s structure and implement basic API routes.\\\\\\\\nTest the API for querying wallet, FT, and NFT data to ensure all routes work correctly.\\\\\\\\n\\\\\\\\n**Milestone 2: Integration with NEAR Lake Framework** (2 weeks)\\\\\\\\nSet up the connection with NEAR Lake for retrieving blockchain data.\\\\\\\\nEnsure that the integration is seamless and can handle real-time data streams efficiently.\\\\\\\\n\\\\\\\\n**Milestone 3: Database (PostgreSQL) Setup** (2 weeks)\\\\\\\\nConfigure the PostgreSQL database for data storage.\\\\\\\\nImplement necessary operations for writing and querying the indexed blockchain data.\\\\\\\\n\\\\\\\\n**Milestone 4: Wallet Data Indexing Features** (3-4 weeks)\\\\\\\\nDevelop indexing features for wallet activity tracking.\\\\\\\\nOptimize the API for querying large datasets efficiently, focusing on token transfers and wallet-specific events.\\\\\\\\n \\\\\\\\n \\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n\\\\\\\\n### Budget Total\\\\\\\\n\\\\\\\\n\\\\\\\\nThe total project cost has been estimated as follows:\\\\\\\\nOptimistic Estimate: $57,040\\\\\\\\t\\\\\\\\nPessimistic Estimate: $65,306\\\\\\\\nThese estimates cover all development tasks, including engineering hours, project management, and other critical activities.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\n\\\\\\\\nPlease refer to the attached spreadsheet for the detailed budget breakdown: https://drive.google.com/file/d/1OhakK4WCIdlzDGKK72IrikzHSZctCRaK/view?usp=drive_link \\\\\\\\nNote: Public access to this spreadsheet is closed and will be provided only for NEAR Infrastructure Committee members on request.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"unicsoftfin.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"65306\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0146677478784e+21
+    }
+  },
+  {
+    "id": "9202225590",
+    "receipt_id": "3Rugm2z7wUix7gj3Gy57neSp68geRCrMeVrLwhMCuA8C",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "D3LiTrNBKhbHrZ8M33KQPfAiXUT7fvu9S7wKyjxEXiVw",
+      "block_height": 130335187,
+      "block_timestamp": 1728924127244281600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3530372861577,
+      "tokens_burnt": 353037286157700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7be8fsSGBNUbZAaUWyerAt9cR1VihTt8dJ2BLPQd2Exp",
+    "included_in_block_hash": "4j1c6SQouDzwjbjbjbDod5G9YcpwiL9hfF1HVN59hWVd",
+    "block_timestamp": "1728924125406527945",
+    "block": {
+      "block_height": 130335185
+    },
+    "receipt_conversion_tokens_burnt": "66916827369500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353037286157700000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"andrewlutsiuk.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":46,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"andrewlutsiuk.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0146677478784e+21
+    }
+  },
+  {
+    "id": "9202447598",
+    "receipt_id": "BeCZv4AapfV5cJwLgKjPH86U1gpPjjo4UsegdTFXoNZs",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GuLJ89vkF683FU765NQzjQjEJYfx5oxFXLdmNdy2mg8D",
+      "block_height": 130335996,
+      "block_timestamp": 1728925011887288300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5117842067216,
+      "tokens_burnt": 511784206721600000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "8TdTZ7W3UUcBExYCs6Na1MU45YQNjY6o7bspLCmYn4Uf",
+    "included_in_block_hash": "3BDsH15QUNQcH7Km6cAqR2yQXTySNeXjqPzp2BjPvSJk",
+    "block_timestamp": "1728925010968493593",
+    "block": {
+      "block_height": 130335995
+    },
+    "receipt_conversion_tokens_burnt": "48897151471000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 511784206721600000000,
+        "args": "{\"id\": 21, \"body\": {\"name\": \"Meteor Wallet Proposal for Swap & Bridge Fee Subsidy\", \"summary\": \"Meteor Wallet aims to improve the in-wallet swap and bridge experience on the NEAR blockchain. To offer users a seamless, fee-free service while focusing on long-term enhancements, we propose a temporary fee subsidy from the IC.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": null, \"description\": \"## Background\\\\\\\\n\\\\\\\\n- **Swap Integration with REF Finance**:\\\\\\\\n    - Integrated **REF Finance\\\\\\\\\\\\'s smart router** for \\\\\\\\\\\\\\\"exact-out\\\\\\\\\\\\\\\" swaps.\\\\\\\\n    - Charging a standard fee of **0.85%** may deter users and hinder growth.\\\\\\\\n    - **REF\\\\\\\\\\\\'s referral fees** (~0.01% per swap) are insufficient for sustainability.\\\\\\\\n    - Implementing fees currently requires a **proxy contract**, which poses security risks and worsens user experience due to longer swap times.\\\\\\\\n        - We\\\\\\\\\\\\'re working with **REF Finance** to enable fee implementation without a proxy contract in the future.\\\\\\\\n- **Bridge Integration with Cross-Chain Swap Partner**:\\\\\\\\n    - Introducing an in-wallet bridge solution to enhance cross-chain capabilities for NEAR users.\\\\\\\\n    - Due to partner agreements, we must charge a **minimum fee of 0.1%** to users.\\\\\\\\n- **Focus on Growth**:\\\\\\\\n    - High fees discourage user adoption.\\\\\\\\n    - We aim to release these features with minimal fees to generate excitement and encourage usage.\\\\\\\\n    - A subsidy allows us to offer these services at reduced costs during the initial growth phase.\\\\\\\\n\\\\\\\\n## Subsidy Proposal\\\\\\\\n\\\\\\\\nWe propose the following fee structure and subsidy request for a duration of **3 months**:\\\\\\\\n\\\\\\\\n### Swaps\\\\\\\\n\\\\\\\\n- **Total Fee per Swap**: **0.85%**\\\\\\\\n- **Charge to Users**: **0%**\\\\\\\\n- **Requested IC Subsidy**: **0.85%**\\\\\\\\n\\\\\\\\n*Explanation*: Implementing fees currently requires a proxy contract, which introduces security risks and negatively impacts user experience by increasing swap times. Until we can implement fees without these drawbacks, we prefer to offer swaps at **0%** fee to users. We request the IC to subsidize the full **0.85%** fee during this period to cover costs and support growth.\\\\\\\\n\\\\\\\\n### Bridges\\\\\\\\n\\\\\\\\n- **Total Fee per Bridge Transaction**: **0.85%**\\\\\\\\n- **Minimum Fee Charged to Users**: **0.1%** (due to partner agreements)\\\\\\\\n- **Requested IC Subsidy**: **0.75%**\\\\\\\\n\\\\\\\\n*Explanation*: We aim to launch the bridge service with the lowest possible fee to encourage adoption. Due to partner agreements, we must charge users at least **0.1%**. We request the IC to subsidize **0.75%** per transaction, reducing the cost to users and promoting usage.\\\\\\\\n\\\\\\\\n### Total Subsidy Request\\\\\\\\n\\\\\\\\n- **Estimated Monthly Subsidy**:\\\\\\\\n    - **Swaps**: $1.5 million \\\\\\\\u{d7} 0.85% = **$12,750**\\\\\\\\n    - **Bridges**: $700,000 \\\\\\\\u{d7} 0.75% = **$5,250**\\\\\\\\n    - **Total Monthly Subsidy**: **$18,000**\\\\\\\\n- **Total Estimated Subsidy Over 3 Months**: **$54,000**\\\\\\\\n- **Notes**:\\\\\\\\n    - Estimates are based on previous transaction volumes.\\\\\\\\n    - We propose a cap of **$120,000** over the 3-month period, with a maximum of **$40,000** per month. This ensures budget control, transparency, and aligns with our growth objectives and break-even point. Our goal is to scale up demand over the next few months to reach our **$40,000** monthly break-even point, enhancing sustainability.\\\\\\\\n\\\\\\\\nDuration: October to December 2024.\\\\\\\\nReporting: We will provide all metrics and performance data during this period.\\\\\\\\nPayout Request: We will then calculate the payout request in January 2025.\", \"linked_proposals\": [], \"receiver_account\": \"web3hedge.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"54000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Other\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 918011875752700000000
+    }
+  },
+  {
+    "id": "9202448677",
+    "receipt_id": "C1d2DguHJAUmZTs77RxNK679xM73CZR4KVoBXMFAfd7v",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9TmWuvpZyTjCfjBbNLNosjagFQ26b3uzic7wLNV1aeER",
+      "block_height": 130335997,
+      "block_timestamp": 1728925012978566000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3573305175601,
+      "tokens_burnt": 357330517560100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8TdTZ7W3UUcBExYCs6Na1MU45YQNjY6o7bspLCmYn4Uf",
+    "included_in_block_hash": "3BDsH15QUNQcH7Km6cAqR2yQXTySNeXjqPzp2BjPvSJk",
+    "block_timestamp": "1728925010968493593",
+    "block": {
+      "block_height": 130335995
+    },
+    "receipt_conversion_tokens_burnt": "48897151471000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357330517560100000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"web3hedge.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":21,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 918011875752700000000
+    }
+  },
+  {
+    "id": "9202975754",
+    "receipt_id": "7esFtb7CbJ8aAy3zGbDMB7BWcAmYcMtCBDrWoC3tKbNL",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GJdVdvovVeC9BcE6J5wZn16cAq3UMuz8K22KE6brmoCz",
+      "block_height": 130337051,
+      "block_timestamp": 1728926179153376800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4460598395871,
+      "tokens_burnt": 446059839587100000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "FAUnQcM8ZeWz4G1bVSKWhE29u7sZki8xW6CWFJBnShi",
+    "included_in_block_hash": "3TAk5jd7tXcgju2NMFxyRyeUcywjTg3RdAbHzgqY244N",
+    "block_timestamp": "1728926177203968288",
+    "block": {
+      "block_height": 130337050
+    },
+    "receipt_conversion_tokens_burnt": "31444911781000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 446059839587100000000,
+        "args": "{\"id\": 41, \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 830695828055200000000
+    }
+  },
+  {
+    "id": "9202976805",
+    "receipt_id": "3RXaov2prA9ddUq9jiJYaVAYqBzY2cMQUTd8HXYfe27a",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "F83TjH8krC4ooRhqqnjwvyQ8n4HLeDY6WL4QdbM4Rrz9",
+      "block_height": 130337052,
+      "block_timestamp": 1728926180324151000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3531910766871,
+      "tokens_burnt": 353191076687100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "FAUnQcM8ZeWz4G1bVSKWhE29u7sZki8xW6CWFJBnShi",
+    "included_in_block_hash": "3TAk5jd7tXcgju2NMFxyRyeUcywjTg3RdAbHzgqY244N",
+    "block_timestamp": "1728926177203968288",
+    "block": {
+      "block_height": 130337050
+    },
+    "receipt_conversion_tokens_burnt": "31444911781000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353191076687100000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"woben.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":41,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 830695828055200000000
+    }
+  },
+  {
+    "id": "9203696626",
+    "receipt_id": "HzWANJCCAdTsQKyFH6npVAzaNGVbygKEP3CYywWsLxSA",
+    "predecessor_account_id": "rektdegen.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HvgESJsXXfxWU3Km68EieN1PrveqWRX5YkzxjUDywsSK",
+      "block_height": 130338836,
+      "block_timestamp": 1728928139869444900
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9261706263660,
+      "tokens_burnt": 926170626366000000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "Ho3CpkrjJqGoB63cGthYKg5WaeMeEKA2RJfWg3R92JWF",
+    "included_in_block_hash": "9V6grwhwvrtpvtG8pr6uFsYYfAxp7S3Czd7wKAXMT4J2",
+    "block_timestamp": "1728928138827279235",
+    "block": {
+      "block_height": 130338835
+    },
+    "receipt_conversion_tokens_burnt": "64313296530500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 926170626366000000000,
+        "args": "{\"body\": {\"name\": \"Meteor Wallet Proposal for Big Query and Data Pipelines\", \"summary\": \"We propose a simpler, monolithic architecture to process NEAR blockchain data, reducing the complexity and infrastructure costs compared to building a full data pipeline with Databricks. \\\\\\\\n\\\\\\\\nThe solution will be built on top of NEAR Indexer Framework on a dedicated high-spec server, providing real-time data processing and direct uploads to Google Cloud services.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"linked_rfp\": 4, \"description\": \"**Solution Overview**:\\\\\\\\n1. We will run the `near-indexer-framework` on a dedicated server.\\\\\\\\n2. The dedicated server will host a PostgreSQL database used to temporarily save data before uploading them to Google Cloud.\\\\\\\\n3. Upon receiving a block, we process and save it following the current BigQuery structure.\\\\\\\\n4. Every 500 blocks, we will process the data and upload it to BigQuery and Google Cloud Storage in Avro format. We will use a simple job queue system to manage the status of the work.\\\\\\\\n5. We will retain data locally for up to 7 days only.\\\\\\\\n6. In case the server goes down, we should be able to catch up quickly as long as it hasn\\\\\\\\\\\\'t been 5 epochs.\\\\\\\\n7. We will run a Grafana dashboard that visualizes the current status of the server.\\\\\\\\n8. At the end of the development and during delivery, we expect to get write access to the current BigQuery dataset and Cloud Storage (or ownership transfer).\\\\\\\\n\\\\\\\\n**Advantages and Considerations**:\\\\\\\\n- Our team is more familiar with the `near-indexer-framework` and monolithic stack.\\\\\\\\n- Given the current block production time and block size, a high-spec server is more than enough to process and upload data to Google Cloud.\\\\\\\\n- It is considerably cheaper to use this stack compared to maintaining a Databricks pipeline\\\\\\\\n- It costs around **$250** per month to maintain a server versus **$3,000\\\\\\\\u{2013}$5,000 or more** per month on a full fledge data pipeline.\\\\\\\\n- We capture data more quickly directly from the NEAR core.\\\\\\\\n\\\\\\\\n**Drawbacks and Limitations:**\\\\\\\\n- We are limited to the dedicated server provider\\\\\\\\\\\\'s promised uptime (99.9%).\\\\\\\\n- There are more risks and work involved in maintaining our own infrastructure, such as keeping software dependencies updated.\\\\\\\\n- Scaling up could be harder and might incur downtime. This can easily be mitigated by using a higher-spec server unless the workload exceeds the server\\\\\\\\\\\\'s capacity.\\\\\\\\n- Although this should not happen, during a disaster scenario where the server goes down for more than 2.5 days (5 epochs) and NEAR Core can\\\\\\\\\\\\'t provide us with block data anymore, we will have to devise an alternative plan to recover data for that period.\\\\\\\\n\\\\\\\\n**Documentation and support**\\\\\\\\n- The new repository will be open-source.\\\\\\\\n- We will prepare documentation on how to set up and run another instance of the indexer to maintain the data pipeline.\\\\\\\\n- We will create a Telegram group and add all stakeholders.\\\\\\\\n- For issue support, responses will be provided within 24 hours during workdays and within 48 hours during non-workdays.\\\\\\\\n\\\\\\\\n**Costs:**\\\\\\\\n- Indexer Server\\\\\\\\n    - 16 cores / 32 threads @ 4GHz\\\\\\\\n    - 128 GB DDR5 RAM\\\\\\\\n    - 3 \\\\\\\\u{d7} 1.92 TB NVMe SSDs\\\\\\\\n    - Approximately **$250 USD** per month\\\\\\\\n\\\\\\\\n- Only if ownership transfer occurs: Assuming we will be taking over ownership of both Google Cloud BigQuery and Google Cloud Storage objects. These costs are based on the Google Cloud cost calculator and the information we have; please point out if we are mistaken.\\\\\\\\n\\\\\\\\n    - BigQuery\\\\\\\\n        - Region: us-east1\\\\\\\\n        - Maximum slots: 100 (small)\\\\\\\\n        - 100 TB storage (current size is 40 TB plus 12 months \\\\\\\\u{d7} 4 TB per month, with margin)\\\\\\\\n        - Approximately **$5,850 USD** per month\\\\\\\\n\\\\\\\\n    - Cloud Storage\\\\\\\\n        - Region: us-east1\\\\\\\\n        - Standard Storage\\\\\\\\n        - 100 TB storage (current size is 40 TB plus 12 months \\\\\\\\u{d7} 4 TB per month, with margin)\\\\\\\\n        - Approximately **$2,050 USD** per month\\\\\\\\n        - Upon further understanding the use cases of the Avro pipeline, we can better decide if we want to move some infrequently accessed historical data to a different storage class to further cut costs.\\\\\\\\n\\\\\\\\n- Team\\\\\\\\n\\\\\\\\t- 1 senior engineer and 1 intermediate engineer for redundancy (backup and support as needed)\\\\\\\\n\\\\\\\\t- **$10,000 USD** per month\\\\\\\\n\\\\\\\\n- Extra Margin\\\\\\\\n\\\\\\\\t- This amount will only be requested in case unexpected issues arise that are outside the project scope\\\\\\\\n\\\\\\\\t- **$50,000 USD**\\\\\\\\n- **Total budget for 12 months maintenance:**\\\\\\\\n    - **$3,000 USD** for the indexer server\\\\\\\\n    - **$94,800 USD** for infrastructure\\\\\\\\n    - **$120,000 USD** for the team\\\\\\\\n    - **$50,000 USD** contingency\\\\\\\\n    - **$267,800 USD** in total\\\\\\\\n\\\\\\\\n**Milestones**\\\\\\\\n- Milestone 1: 6 weeks for building the pipeline\\\\\\\\n\\\\\\\\t- Setting up the indexer and database.\\\\\\\\n\\\\\\\\t- Converting the current Python scripts into Rust code.\\\\\\\\n\\\\\\\\t- Deliverables: A BigQuery dataset and Google Cloud Storage that are publicly viewable, following the requirements of the RFP, with initial inaccuracies expected.\\\\\\\\n- Milestone 2: 4 weeks for data auditing and quality checks\\\\\\\\n\\\\\\\\t- We will build a Grafana dashboard (similar to [near lake grafana dashboard](https://nearinc.grafana.net/public-dashboards/773648953bdc423eb5eb6324b89238d8)).\\\\\\\\n\\\\\\\\t- Deliverables: Accurate BigQuery dataset and Google Cloud Storage, with high accuracy compared to current data, and a Grafana dashboard.\\\\\\\\n- Milestone 3: 4 weeks for documentation and integration with at least one partner\\\\\\\\n\\\\\\\\t- This timeline depends on the requirements of our partners, as we will have only the latest data available at this point, not the full historical data.\\\\\\\\n\\\\\\\\t- This period also involves running two systems in parallel.\\\\\\\\n\\\\\\\\t- Deliverables: An integrated system with a partner, and an open-source repository with a simple README.\\\\\\\\n- Maintenance Phase\\\\\\\\n\\\\\\\\t- The remaining time will be dedicated to maintaining the services, updating according to NEP updates, and providing issue support, with no further feature development planned.\\\\\\\\n\\\\\\\\n**Payment Schedule:**\\\\\\\\n- Initial Payment: $25,000 USD upon project commencement.\\\\\\\\n- Milestone Payments:\\\\\\\\n\\\\\\\\t- Upon Milestone 1 Completion: $15,000 USD\\\\\\\\n\\\\\\\\t- Upon Milestone 2 Completion: $15,000 USD\\\\\\\\n\\\\\\\\t- Upon Milestone 3 Completion: $15,000 USD\\\\\\\\n- Remaining Payments:\\\\\\\\n\\\\\\\\t- Depending on whether the transfer of ownership of Google Cloud BigQuery and Storage occurs, the remaining balance will be paid in three equal installments in April, June, and August.\\\\\\\\n\\\\\\\\t\\\\\\\\t- In Case of Ownership Transfer: $65,930 USD per installment.\\\\\\\\n\\\\\\\\t\\\\\\\\t- If No Ownership Transfer: $17,670 USD per installment.\\\\\\\\n- Contingency Fund:\\\\\\\\n\\\\\\\\t- The $50,000 USD contingency will only be requested if unforeseen issues arise outside the project scope.\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"rektdegen.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"267800\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.1751596469141e+21
+    }
+  },
+  {
+    "id": "9203696881",
+    "receipt_id": "DLGRBCJxBgvTE9tQK8aesNMNuQKBo26ye2T3WipvJWNB",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BjLuVNaUS7jvDP4By7sZ7nuJtbvdv1o9J17ahXeMkPrm",
+      "block_height": 130338837,
+      "block_timestamp": 1728928140911380700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4595125365496,
+      "tokens_burnt": 459512536549600000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Ho3CpkrjJqGoB63cGthYKg5WaeMeEKA2RJfWg3R92JWF",
+    "included_in_block_hash": "9V6grwhwvrtpvtG8pr6uFsYYfAxp7S3Czd7wKAXMT4J2",
+    "block_timestamp": "1728928138827279235",
+    "block": {
+      "block_height": 130338835
+    },
+    "receipt_conversion_tokens_burnt": "64313296530500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 459512536549600000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Infrastructure Committee* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @rektdegen.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Meteor Wallet Proposal for Big Query and Data Pipelines\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWe propose a simpler, monolithic architecture to process NEAR blockchain data, reducing the complexity and infrastructure costs compared to building a full data pipeline with Databricks. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe solution will be built on top of NEAR Indexer Framework on a dedicated high-spec server, providing real-time data processing and direct uploads to Google Cloud services.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=47)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.1751596469141e+21
+    }
+  },
+  {
+    "id": "9203696883",
+    "receipt_id": "3ad6dxmK4GGz5MMhxh5s5zCzBEUR1NM7G1aEvXYZeaex",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BjLuVNaUS7jvDP4By7sZ7nuJtbvdv1o9J17ahXeMkPrm",
+      "block_height": 130338837,
+      "block_timestamp": 1728928140911380700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3676492856779,
+      "tokens_burnt": 367649285677900000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "Ho3CpkrjJqGoB63cGthYKg5WaeMeEKA2RJfWg3R92JWF",
+    "included_in_block_hash": "9V6grwhwvrtpvtG8pr6uFsYYfAxp7S3Czd7wKAXMT4J2",
+    "block_timestamp": "1728928138827279235",
+    "block": {
+      "block_height": 130338835
+    },
+    "receipt_conversion_tokens_burnt": "64313296530500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 367649285677900000000,
+        "args": "{\"proposal\": {\"id\": 47, \"snapshot\": {\"name\": \"Meteor Wallet Proposal for Big Query and Data Pipelines\", \"labels\": [\"Query API\"], \"summary\": \"We propose a simpler, monolithic architecture to process NEAR blockchain data, reducing the complexity and infrastructure costs compared to building a full data pipeline with Databricks. \\\\\\\\n\\\\\\\\nThe solution will be built on top of NEAR Indexer Framework on a dedicated high-spec server, providing real-time data processing and direct uploads to Google Cloud services.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"rektdegen.near\", \"timestamp\": \"1728928139869444893\", \"linked_rfp\": 4, \"supervisor\": null, \"description\": \"**Solution Overview**:\\\\\\\\n1. We will run the `near-indexer-framework` on a dedicated server.\\\\\\\\n2. The dedicated server will host a PostgreSQL database used to temporarily save data before uploading them to Google Cloud.\\\\\\\\n3. Upon receiving a block, we process and save it following the current BigQuery structure.\\\\\\\\n4. Every 500 blocks, we will process the data and upload it to BigQuery and Google Cloud Storage in Avro format. We will use a simple job queue system to manage the status of the work.\\\\\\\\n5. We will retain data locally for up to 7 days only.\\\\\\\\n6. In case the server goes down, we should be able to catch up quickly as long as it hasn\\\\\\\\\\\\'t been 5 epochs.\\\\\\\\n7. We will run a Grafana dashboard that visualizes the current status of the server.\\\\\\\\n8. At the end of the development and during delivery, we expect to get write access to the current BigQuery dataset and Cloud Storage (or ownership transfer).\\\\\\\\n\\\\\\\\n**Advantages and Considerations**:\\\\\\\\n- Our team is more familiar with the `near-indexer-framework` and monolithic stack.\\\\\\\\n- Given the current block production time and block size, a high-spec server is more than enough to process and upload data to Google Cloud.\\\\\\\\n- It is considerably cheaper to use this stack compared to maintaining a Databricks pipeline\\\\\\\\n- It costs around **$250** per month to maintain a server versus **$3,000\\\\\\\\u{2013}$5,000 or more** per month on a full fledge data pipeline.\\\\\\\\n- We capture data more quickly directly from the NEAR core.\\\\\\\\n\\\\\\\\n**Drawbacks and Limitations:**\\\\\\\\n- We are limited to the dedicated server provider\\\\\\\\\\\\'s promised uptime (99.9%).\\\\\\\\n- There are more risks and work involved in maintaining our own infrastructure, such as keeping software dependencies updated.\\\\\\\\n- Scaling up could be harder and might incur downtime. This can easily be mitigated by using a higher-spec server unless the workload exceeds the server\\\\\\\\\\\\'s capacity.\\\\\\\\n- Although this should not happen, during a disaster scenario where the server goes down for more than 2.5 days (5 epochs) and NEAR Core can\\\\\\\\\\\\'t provide us with block data anymore, we will have to devise an alternative plan to recover data for that period.\\\\\\\\n\\\\\\\\n**Documentation and support**\\\\\\\\n- The new repository will be open-source.\\\\\\\\n- We will prepare documentation on how to set up and run another instance of the indexer to maintain the data pipeline.\\\\\\\\n- We will create a Telegram group and add all stakeholders.\\\\\\\\n- For issue support, responses will be provided within 24 hours during workdays and within 48 hours during non-workdays.\\\\\\\\n\\\\\\\\n**Costs:**\\\\\\\\n- Indexer Server\\\\\\\\n    - 16 cores / 32 threads @ 4GHz\\\\\\\\n    - 128 GB DDR5 RAM\\\\\\\\n    - 3 \\\\\\\\u{d7} 1.92 TB NVMe SSDs\\\\\\\\n    - Approximately **$250 USD** per month\\\\\\\\n\\\\\\\\n- Only if ownership transfer occurs: Assuming we will be taking over ownership of both Google Cloud BigQuery and Google Cloud Storage objects. These costs are based on the Google Cloud cost calculator and the information we have; please point out if we are mistaken.\\\\\\\\n\\\\\\\\n    - BigQuery\\\\\\\\n        - Region: us-east1\\\\\\\\n        - Maximum slots: 100 (small)\\\\\\\\n        - 100 TB storage (current size is 40 TB plus 12 months \\\\\\\\u{d7} 4 TB per month, with margin)\\\\\\\\n        - Approximately **$5,850 USD** per month\\\\\\\\n\\\\\\\\n    - Cloud Storage\\\\\\\\n        - Region: us-east1\\\\\\\\n        - Standard Storage\\\\\\\\n        - 100 TB storage (current size is 40 TB plus 12 months \\\\\\\\u{d7} 4 TB per month, with margin)\\\\\\\\n        - Approximately **$2,050 USD** per month\\\\\\\\n        - Upon further understanding the use cases of the Avro pipeline, we can better decide if we want to move some infrequently accessed historical data to a different storage class to further cut costs.\\\\\\\\n\\\\\\\\n- Team\\\\\\\\n\\\\\\\\t- 1 senior engineer and 1 intermediate engineer for redundancy (backup and support as needed)\\\\\\\\n\\\\\\\\t- **$10,000 USD** per month\\\\\\\\n\\\\\\\\n- Extra Margin\\\\\\\\n\\\\\\\\t- This amount will only be requested in case unexpected issues arise that are outside the project scope\\\\\\\\n\\\\\\\\t- **$50,000 USD**\\\\\\\\n- **Total budget for 12 months maintenance:**\\\\\\\\n    - **$3,000 USD** for the indexer server\\\\\\\\n    - **$94,800 USD** for infrastructure\\\\\\\\n    - **$120,000 USD** for the team\\\\\\\\n    - **$50,000 USD** contingency\\\\\\\\n    - **$267,800 USD** in total\\\\\\\\n\\\\\\\\n**Milestones**\\\\\\\\n- Milestone 1: 6 weeks for building the pipeline\\\\\\\\n\\\\\\\\t- Setting up the indexer and database.\\\\\\\\n\\\\\\\\t- Converting the current Python scripts into Rust code.\\\\\\\\n\\\\\\\\t- Deliverables: A BigQuery dataset and Google Cloud Storage that are publicly viewable, following the requirements of the RFP, with initial inaccuracies expected.\\\\\\\\n- Milestone 2: 4 weeks for data auditing and quality checks\\\\\\\\n\\\\\\\\t- We will build a Grafana dashboard (similar to [near lake grafana dashboard](https://nearinc.grafana.net/public-dashboards/773648953bdc423eb5eb6324b89238d8)).\\\\\\\\n\\\\\\\\t- Deliverables: Accurate BigQuery dataset and Google Cloud Storage, with high accuracy compared to current data, and a Grafana dashboard.\\\\\\\\n- Milestone 3: 4 weeks for documentation and integration with at least one partner\\\\\\\\n\\\\\\\\t- This timeline depends on the requirements of our partners, as we will have only the latest data available at this point, not the full historical data.\\\\\\\\n\\\\\\\\t- This period also involves running two systems in parallel.\\\\\\\\n\\\\\\\\t- Deliverables: An integrated system with a partner, and an open-source repository with a simple README.\\\\\\\\n- Maintenance Phase\\\\\\\\n\\\\\\\\t- The remaining time will be dedicated to maintaining the services, updating according to NEP updates, and providing issue support, with no further feature development planned.\\\\\\\\n\\\\\\\\n**Payment Schedule:**\\\\\\\\n- Initial Payment: $25,000 USD upon project commencement.\\\\\\\\n- Milestone Payments:\\\\\\\\n\\\\\\\\t- Upon Milestone 1 Completion: $15,000 USD\\\\\\\\n\\\\\\\\t- Upon Milestone 2 Completion: $15,000 USD\\\\\\\\n\\\\\\\\t- Upon Milestone 3 Completion: $15,000 USD\\\\\\\\n- Remaining Payments:\\\\\\\\n\\\\\\\\t- Depending on whether the transfer of ownership of Google Cloud BigQuery and Storage occurs, the remaining balance will be paid in three equal installments in April, June, and August.\\\\\\\\n\\\\\\\\t\\\\\\\\t- In Case of Ownership Transfer: $65,930 USD per installment.\\\\\\\\n\\\\\\\\t\\\\\\\\t- If No Ownership Transfer: $17,670 USD per installment.\\\\\\\\n- Contingency Fund:\\\\\\\\n\\\\\\\\t- The $50,000 USD contingency will only be requested if unforeseen issues arise outside the project scope.\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"rektdegen.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"267800\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"rektdegen.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.1751596469141e+21
+    }
+  }
+]

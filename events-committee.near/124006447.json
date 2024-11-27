@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "6868708965",
+    "receipt_id": "HtSbQ8njeorUZiVbZjwzYFdrQJChj2Knr4a16ipxx7Za",
+    "predecessor_account_id": "gagdiez.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BqjAwz4R9mvf84JXr75Q3hy7EAcV9s8Sup2ZGRpT5FS",
+      "block_height": 124071169,
+      "block_timestamp": 1721738340849728800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5948216115032,
+      "tokens_burnt": 594821611503200000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "AGr2nUjnsFxRepxDkunjJKwz7dAp1Z8rmYnrMNxHFVbz",
+    "included_in_block_hash": "4EiHYe7gFXTetPoz1rcuWrzjPGWQU3kffFqjNLkraSqx",
+    "block_timestamp": "1721738339934976765",
+    "block": {
+      "block_height": 124071168
+    },
+    "receipt_conversion_tokens_burnt": "30984153939800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 594821611503200000000,
+        "args": "{\"body\": {\"name\": \"ETHBrussels: Travel Expenses\", \"summary\": \"Travel Expenses for attending ETHBrussels (10 Jun - 14 Jun)\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": \"yarotska.near\", \"description\": \"Traveled to mentor and help on the booth @ ETHBrussels hackathon\\\\\\\\n\\\\\\\\n- \\\\\\\\u{2708}\\\\\\\\u{fe0f} Flights: 260.04 EUR\\\\\\\\n- \\\\\\\\u{1f695} Transportations  to/from airport: 67,41 EUR\\\\\\\\n- \\\\\\\\u{1f695} Transportations to/from venue: 17.6 EUR\\\\\\\\n- \\\\\\\\u{1f3e8} Hotel: 488 EUR\\\\\\\\n- \\\\\\\\u{1f372} Food: 67.5 EUR\\\\\\\\n\\\\\\\\n\\\\\\\\u{1f4b0}Total: 900,55 EUR\\\\\\\\n\\\\\\\\u{1f4b0} USD: 980.52 according to Revolut\\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"gagdiez.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"981\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Hackathon\", \"Travel expenses\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7323340653903e+21
+    }
+  },
+  {
+    "id": "6868709572",
+    "receipt_id": "B3sDcJ7nL63F9dvWufqbzRiBbEsyQkmEDRYFyoTscGYJ",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7AYNfww3qjBeD2ze8L1LZg3L8nSYCK38vtULui5Ff45w",
+      "block_height": 124071170,
+      "block_timestamp": 1721738342093505000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4457714207970,
+      "tokens_burnt": 445771420797000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "AGr2nUjnsFxRepxDkunjJKwz7dAp1Z8rmYnrMNxHFVbz",
+    "included_in_block_hash": "4EiHYe7gFXTetPoz1rcuWrzjPGWQU3kffFqjNLkraSqx",
+    "block_timestamp": "1721738339934976765",
+    "block": {
+      "block_height": 124071168
+    },
+    "receipt_conversion_tokens_burnt": "30984153939800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 445771420797000000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Bounty* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @gagdiez.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}ETHBrussels: Travel Expenses\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nTravel Expenses for attending ETHBrussels (10 Jun - 14 Jun)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=27)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7323340653903e+21
+    }
+  },
+  {
+    "id": "6868709573",
+    "receipt_id": "3pFsb4xGTosBnjGH9sV95jrFuy8WenKJnfR3gVcK9Jod",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7AYNfww3qjBeD2ze8L1LZg3L8nSYCK38vtULui5Ff45w",
+      "block_height": 124071170,
+      "block_timestamp": 1721738342093505000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3093089566964,
+      "tokens_burnt": 309308956696400000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "AGr2nUjnsFxRepxDkunjJKwz7dAp1Z8rmYnrMNxHFVbz",
+    "included_in_block_hash": "4EiHYe7gFXTetPoz1rcuWrzjPGWQU3kffFqjNLkraSqx",
+    "block_timestamp": "1721738339934976765",
+    "block": {
+      "block_height": 124071168
+    },
+    "receipt_conversion_tokens_burnt": "30984153939800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 309308956696400000000,
+        "args": "{\"proposal\": {\"id\": 27, \"snapshot\": {\"name\": \"ETHBrussels: Travel Expenses\", \"labels\": [\"Hackathon\", \"Travel expenses\"], \"summary\": \"Travel Expenses for attending ETHBrussels (10 Jun - 14 Jun)\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"gagdiez.near\", \"timestamp\": \"1721738340849728788\", \"supervisor\": \"yarotska.near\", \"description\": \"Traveled to mentor and help on the booth @ ETHBrussels hackathon\\\\\\\\n\\\\\\\\n- \\\\\\\\u{2708}\\\\\\\\u{fe0f} Flights: 260.04 EUR\\\\\\\\n- \\\\\\\\u{1f695} Transportations  to/from airport: 67,41 EUR\\\\\\\\n- \\\\\\\\u{1f695} Transportations to/from venue: 17.6 EUR\\\\\\\\n- \\\\\\\\u{1f3e8} Hotel: 488 EUR\\\\\\\\n- \\\\\\\\u{1f372} Food: 67.5 EUR\\\\\\\\n\\\\\\\\n\\\\\\\\u{1f4b0}Total: 900,55 EUR\\\\\\\\n\\\\\\\\u{1f4b0} USD: 980.52 according to Revolut\\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"gagdiez.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"981\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"gagdiez.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7323340653903e+21
+    }
+  },
+  {
+    "id": "6868709575",
+    "receipt_id": "Atvvn1GgEprT6jhx9y1vxSUPusd24KeAiwxGs85ijAFa",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7AYNfww3qjBeD2ze8L1LZg3L8nSYCK38vtULui5Ff45w",
+      "block_height": 124071170,
+      "block_timestamp": 1721738342093505000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3514479224539,
+      "tokens_burnt": 351447922453900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "AGr2nUjnsFxRepxDkunjJKwz7dAp1Z8rmYnrMNxHFVbz",
+    "included_in_block_hash": "4EiHYe7gFXTetPoz1rcuWrzjPGWQU3kffFqjNLkraSqx",
+    "block_timestamp": "1721738339934976765",
+    "block": {
+      "block_height": 124071168
+    },
+    "receipt_conversion_tokens_burnt": "30984153939800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351447922453900000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"yarotska.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":27,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":27,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7323340653903e+21
+    }
+  },
+  {
+    "id": "6868729864",
+    "receipt_id": "AdYet94uyqmBYEgujwRUZgmbfHJ3qdh8hn7LnVTt4mfB",
+    "predecessor_account_id": "gagdiez.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3VGKYN7iVcLUtq5DKK4eD8LWPhY58CKqr8ZVQWFRTYHM",
+      "block_height": 124071245,
+      "block_timestamp": 1721738425047113700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3912577724510,
+      "tokens_burnt": 391257772451000000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "H2223HFvUenTPtnnc4jNMkJmZV59Xqb4EkTiWsiB4RfF",
+    "included_in_block_hash": "ETAArDTN1JjVTrKmDZzHjAVwVDz4PRB2C67LpwxMaqDm",
+    "block_timestamp": "1721738423887320212",
+    "block": {
+      "block_height": 124071244
+    },
+    "receipt_conversion_tokens_burnt": "30835911515600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 391257772451000000000,
+        "args": "{\"id\": 27, \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 772124647124100000000
+    }
+  },
+  {
+    "id": "6868730291",
+    "receipt_id": "3ang4MY4QGBqzpdan6xUB7ub8QMNqskGPnpeHib3XcRw",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2GrDtoiw6N4DDYeWnwpZXkL7VSHVTkkvpdkuP7BXjQFc",
+      "block_height": 124071246,
+      "block_timestamp": 1721738426022501600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3500309631575,
+      "tokens_burnt": 350030963157500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "H2223HFvUenTPtnnc4jNMkJmZV59Xqb4EkTiWsiB4RfF",
+    "included_in_block_hash": "ETAArDTN1JjVTrKmDZzHjAVwVDz4PRB2C67LpwxMaqDm",
+    "block_timestamp": "1721738423887320212",
+    "block": {
+      "block_height": 124071244
+    },
+    "receipt_conversion_tokens_burnt": "30835911515600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 350030963157500000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":27,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 772124647124100000000
+    }
+  },
+  {
+    "id": "6870689768",
+    "receipt_id": "2AZeheZKE413E5yHsxV8GUmdLAutN47e6u7GWqfXmjXz",
+    "predecessor_account_id": "abdulkareem.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "D833sZj2kqLLPcqyj9y8VmZp628VDxELPNuEWN852Vz",
+      "block_height": 124075704,
+      "block_timestamp": 1721743402876203800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6668910225508,
+      "tokens_burnt": 666891022550800000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "FHJVFXYJsjRVaozP84uupgaRxRCoCs6nb464GiKc44FC",
+    "included_in_block_hash": "3xYEGRxSHhyPVgXiTptt7Rs8mntVYNxMHfFDCDpSw3aX",
+    "block_timestamp": "1721743401691741820",
+    "block": {
+      "block_height": 124075703
+    },
+    "receipt_conversion_tokens_burnt": "32327503087000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 666891022550800000000,
+        "args": "{\"body\": {\"name\": \"Open Web Tour\", \"summary\": \"The Open Web Tour is a comprehensive workshop and hackathon program aimed at educating and training developers, founders, and creators across Africa on NEAR and its blockchain operating system.\\\\\\\\n\\\\\\\\nDespite having 85,000 developers in Nigeria, 99% are unaware of NEAR and its blockchain-agnostic features. We are on a mission to change that by showcasing NEAR\\\\\\\\u{2019}s developer-friendly toolkits and increasing their visibility through workshops and hackathons across various cities and institutions in Nigeria\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"We successfully completed the first milestone of the program with the support from NDC. Kindly check out report [here](https://gov.near.org/t/report-start-of-program-open-web-tour/39380)\\\\\\\\n\\\\\\\\nSince achieving our first milestone, this program has gained significant traction within the founders and developers community in Nigeria. Developer from other cities and over 100 participants from our previous workshop are eagerly anticipating the continuation of this program.\\\\\\\\n\\\\\\\\nWe are proposing a continuation of this program which will entail the following activities:\\\\\\\\n\\\\\\\\n1.Workshop in city 1 (UNILAG): [COMPLETED](https://gov.near.org/t/report-start-of-program-open-web-tour/39380/2) \\\\\\\\n\\\\\\\\n2.Workshop in city 2: A workshop program in another city in Lagos, Nigeria\\\\\\\\n\\\\\\\\n3.Workshop in City 3: A workshop program in another vibrant city of large number of tech enthusiasts.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n4.Hackathon program: This hackathon will be a challenge amongst the developers & founders from these 3 cities.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n5.Hackathon Demo Day: This will be a day when projects from the hackathon will be pitched and exhibited. The Demo Day is crucial to test the usability and market fit for the products (apps) built in this hackathon. This will in turn give visibility to Near stack capability in building fully fledged blockchain applications.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n## Key Performance Indicators (KPIs):\\\\\\\\n- Train a minimum of 200 developers on how to build on the blockchain using Near SDK, BOS.\\\\\\\\n- Organize 2-3 month intensive workshops in 3 major cities\\\\\\\\n- Organize a hackathon among developers and project founders in 2 major cities\\\\\\\\n- 24 hours support for participants of our workshop\\\\\\\\n- Participants from the workshop will build & launch a minimum 5 projects on Near.\\\\\\\\n- Create tailored curriculum for different workshop training according to participants\\\\\\\\\\\\' level of expertise.\\\\\\\\n- Establish Near blockchain clubs in 3 major institutions/cities.\\\\\\\\n- Onboard 50+ web 2 developers to Near.\\\\\\\\n- Content creation and documentation from our workshop will be provided for future reference and distribution\\\\\\\\n- Continous support for developers building on Near via the Dapps over Apps community with/without a grants.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n### Budget:\\\\\\\\n**Cost breakdown per city**\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n|Item|Budget|Breakdown|\\\\\\\\n|---|---|---|\\\\\\\\n|Venue|$500|This will cover cost for the space for the workshop. This will cover the cost of the workshop space. Please note that these workshops may take place bi-weekly at each institution, depending on the participants\\\\\\\\\\\\' satisfaction with the knowledge gained.\\\\\\\\n|Bounty|$300|This bounty will be cover for incentives and prizes that will be given to participants depending on tasks completed, assignments and best workshop student.||\\\\\\\\n|Refreshment|$500|This will cover the cost of food and drink for over 100+ workshop participants.|\\\\\\\\n| Educators & Tutors| $1000| This will cover for welfare package and rewards for 2 - 4 blockchain tutors and developers.\\\\\\\\n|Power supply, Projector & Internet|$300|This will cover cost for electricity and a stable internet connection during these training.\\\\\\\\n|Promotion| $300\\\\\\\\n|Photography| $300\\\\\\\\n|Total $3,200 x 3| $6,400| This will cover for cost of the 2 city.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n**Hackathon Prize: $3,000:** One of the objectives of this program is to onboard promising projects to Near. This hackathon will serve as a building challenge amongst developers and founders in these institutions to \\\\\\\\\\\\\\\"get their hands dirty\\\\\\\\\\\\\\\". It will not only give room for participants to implement what they have learnt in this training but onboard new and existing projects to Near.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\nParticipants will be given the freedom to build. However, projected building solution of AI, account abstraction and Zero knowledge proof will be prioritized.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n**Core Team Remuneration: 1,000 * 2 = $2,000:** This will cover rewards for core team members and other subordinates during these programs.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n**Demo Day = $1,650**\\\\\\\\nVenue: $400\\\\\\\\nRefreshment - $400\\\\\\\\nScreen & Sound & lights - $200\\\\\\\\nBackdrops & banner - $150\\\\\\\\nVolunteers, ushers & protocols - $200\\\\\\\\nVideography & photography - $300\\\\\\\\nTotal: $1,650\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n**Miscellanous, logistics, accommodation, merch, banner, designs, miscellaneous: $500**\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n**TOTAL: $13,550**\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n## Organizer\\\\\\\\\\\\'s Introduction:\\\\\\\\nDapps over Apps is an organization that aims to educate traditional developers, tech enthusiasts and creative builders about web3 and the potentials of building with blockchain infrastructure.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n**Our Mission:** Bridging the gap between traditional developers, tech enthusiasts, creative builders and blockchain technology.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n**Our vision:** To onboard 1million traditional developers, tech enthusiasts and creative builders to web 3 by 2030.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n**Tractions:**\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n- Organized an intensive bootcamp program where web2 developers used were taught how to build with Near using Rust. https://gov.near.org/t/report-start-of-program-open-web-tour/39380\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n- Organized one of the biggest web 3 conferences in Africa powered by Near Protocol. We had over 500+ attendees consisting of blockchain & web 3 enthusiasts, traditional developers, creative builders, and so on. kindly see video: https://youtu.be/j5m8PW4V9g0\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n- We organized a workshop for decentralized application training for over 400+ web 3 enthusiasts and traditional developers. See video clips from the workshop below:\\\\\\\\n1. https://youtu.be/L-Rz9MSYS9M\\\\\\\\n2. https://youtu.be/THsM0hp9R7o\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n- Organized a start-up pitch competition to encourage builders to integrate blockchain technology to their businesses and projects.\\\\\\\\nLink: https://twitter.com/dappsoverapps/status/1692185380718538917?s=46\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n**[Team background](https://docs.google.com/document/d/1MdzyBHwU_W9EOYf_oX5VzAaZPtBq2k3wdS7VSd7yYWc/edit?usp=sharing)**\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\nCommunity Socials:\\\\\\\\n[X](https://twitter.com/dappsoverapps/status/1692185380718538917?s=46)\\\\\\\\n[Telegram](https://t.me/+JGur_ErNHq44MTM8)\\\\\\\\n[Website](Dappsoverapps.com)\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"abdulkareem.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"13550\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Hackathon\", \"Other\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8666325928273e+21
+    }
+  },
+  {
+    "id": "6870690011",
+    "receipt_id": "CU6hDBwXe4D8xNGfJYBC8WbdUEDoDHkDuXDEGsDvDKMC",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "E6GP3nGCYiAfNyeysnWaR3WG358ZGfx89jT3Jtzs8FKj",
+      "block_height": 124075705,
+      "block_timestamp": 1721743404089009000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4523703195694,
+      "tokens_burnt": 452370319569400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "FHJVFXYJsjRVaozP84uupgaRxRCoCs6nb464GiKc44FC",
+    "included_in_block_hash": "3xYEGRxSHhyPVgXiTptt7Rs8mntVYNxMHfFDCDpSw3aX",
+    "block_timestamp": "1721743401691741820",
+    "block": {
+      "block_height": 124075703
+    },
+    "receipt_conversion_tokens_burnt": "32327503087000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 452370319569400000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Bounty* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @abdulkareem.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Open Web Tour\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Open Web Tour is a comprehensive workshop and hackathon program aimed at educating and training developers, founders, and creators across Africa on NEAR and its blockchain operating system.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nDespite having 85,000 developers in Nigeria, 99% are unaware of NEAR and its blockchain-agnostic features. We are on a mission to change that by showcasing NEAR\\\\\\\\u{2019}s developer-friendly toolkits and increasing their visibility through workshops and hackathons across various cities and institutions in Nigeria\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=28)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8666325928273e+21
+    }
+  },
+  {
+    "id": "6870690016",
+    "receipt_id": "8vWRcHCtGjgsUb2xtnEBnadu9woKpdNt1sfLoHdXGEp1",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "E6GP3nGCYiAfNyeysnWaR3WG358ZGfx89jT3Jtzs8FKj",
+      "block_height": 124075705,
+      "block_timestamp": 1721743404089009000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3656426582082,
+      "tokens_burnt": 365642658208200000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "FHJVFXYJsjRVaozP84uupgaRxRCoCs6nb464GiKc44FC",
+    "included_in_block_hash": "3xYEGRxSHhyPVgXiTptt7Rs8mntVYNxMHfFDCDpSw3aX",
+    "block_timestamp": "1721743401691741820",
+    "block": {
+      "block_height": 124075703
+    },
+    "receipt_conversion_tokens_burnt": "32327503087000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 365642658208200000000,
+        "args": "{\"proposal\": {\"id\": 28, \"snapshot\": {\"name\": \"Open Web Tour\", \"labels\": [\"Hackathon\", \"Other\"], \"summary\": \"The Open Web Tour is a comprehensive workshop and hackathon program aimed at educating and training developers, founders, and creators across Africa on NEAR and its blockchain operating system.\\\\\\\\n\\\\\\\\nDespite having 85,000 developers in Nigeria, 99% are unaware of NEAR and its blockchain-agnostic features. We are on a mission to change that by showcasing NEAR\\\\\\\\u{2019}s developer-friendly toolkits and increasing their visibility through workshops and hackathons across various cities and institutions in Nigeria\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"abdulkareem.near\", \"timestamp\": \"1721743402876203857\", \"supervisor\": null, \"description\": \"We successfully completed the first milestone of the program with the support from NDC. Kindly check out report [here](https://gov.near.org/t/report-start-of-program-open-web-tour/39380)\\\\\\\\n\\\\\\\\nSince achieving our first milestone, this program has gained significant traction within the founders and developers community in Nigeria. Developer from other cities and over 100 participants from our previous workshop are eagerly anticipating the continuation of this program.\\\\\\\\n\\\\\\\\nWe are proposing a continuation of this program which will entail the following activities:\\\\\\\\n\\\\\\\\n1.Workshop in city 1 (UNILAG): [COMPLETED](https://gov.near.org/t/report-start-of-program-open-web-tour/39380/2) \\\\\\\\n\\\\\\\\n2.Workshop in city 2: A workshop program in another city in Lagos, Nigeria\\\\\\\\n\\\\\\\\n3.Workshop in City 3: A workshop program in another vibrant city of large number of tech enthusiasts.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n4.Hackathon program: This hackathon will be a challenge amongst the developers & founders from these 3 cities.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n5.Hackathon Demo Day: This will be a day when projects from the hackathon will be pitched and exhibited. The Demo Day is crucial to test the usability and market fit for the products (apps) built in this hackathon. This will in turn give visibility to Near stack capability in building fully fledged blockchain applications.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n## Key Performance Indicators (KPIs):\\\\\\\\n- Train a minimum of 200 developers on how to build on the blockchain using Near SDK, BOS.\\\\\\\\n- Organize 2-3 month intensive workshops in 3 major cities\\\\\\\\n- Organize a hackathon among developers and project founders in 2 major cities\\\\\\\\n- 24 hours support for participants of our workshop\\\\\\\\n- Participants from the workshop will build & launch a minimum 5 projects on Near.\\\\\\\\n- Create tailored curriculum for different workshop training according to participants\\\\\\\\\\\\' level of expertise.\\\\\\\\n- Establish Near blockchain clubs in 3 major institutions/cities.\\\\\\\\n- Onboard 50+ web 2 developers to Near.\\\\\\\\n- Content creation and documentation from our workshop will be provided for future reference and distribution\\\\\\\\n- Continous support for developers building on Near via the Dapps over Apps community with/without a grants.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n### Budget:\\\\\\\\n**Cost breakdown per city**\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n|Item|Budget|Breakdown|\\\\\\\\n|---|---|---|\\\\\\\\n|Venue|$500|This will cover cost for the space for the workshop. This will cover the cost of the workshop space. Please note that these workshops may take place bi-weekly at each institution, depending on the participants\\\\\\\\\\\\' satisfaction with the knowledge gained.\\\\\\\\n|Bounty|$300|This bounty will be cover for incentives and prizes that will be given to participants depending on tasks completed, assignments and best workshop student.||\\\\\\\\n|Refreshment|$500|This will cover the cost of food and drink for over 100+ workshop participants.|\\\\\\\\n| Educators & Tutors| $1000| This will cover for welfare package and rewards for 2 - 4 blockchain tutors and developers.\\\\\\\\n|Power supply, Projector & Internet|$300|This will cover cost for electricity and a stable internet connection during these training.\\\\\\\\n|Promotion| $300\\\\\\\\n|Photography| $300\\\\\\\\n|Total $3,200 x 3| $6,400| This will cover for cost of the 2 city.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n**Hackathon Prize: $3,000:** One of the objectives of this program is to onboard promising projects to Near. This hackathon will serve as a building challenge amongst developers and founders in these institutions to \\\\\\\\\\\\\\\"get their hands dirty\\\\\\\\\\\\\\\". It will not only give room for participants to implement what they have learnt in this training but onboard new and existing projects to Near.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\nParticipants will be given the freedom to build. However, projected building solution of AI, account abstraction and Zero knowledge proof will be prioritized.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n**Core Team Remuneration: 1,000 * 2 = $2,000:** This will cover rewards for core team members and other subordinates during these programs.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n**Demo Day = $1,650**\\\\\\\\nVenue: $400\\\\\\\\nRefreshment - $400\\\\\\\\nScreen & Sound & lights - $200\\\\\\\\nBackdrops & banner - $150\\\\\\\\nVolunteers, ushers & protocols - $200\\\\\\\\nVideography & photography - $300\\\\\\\\nTotal: $1,650\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n**Miscellanous, logistics, accommodation, merch, banner, designs, miscellaneous: $500**\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n**TOTAL: $13,550**\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n## Organizer\\\\\\\\\\\\'s Introduction:\\\\\\\\nDapps over Apps is an organization that aims to educate traditional developers, tech enthusiasts and creative builders about web3 and the potentials of building with blockchain infrastructure.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n**Our Mission:** Bridging the gap between traditional developers, tech enthusiasts, creative builders and blockchain technology.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n**Our vision:** To onboard 1million traditional developers, tech enthusiasts and creative builders to web 3 by 2030.\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n**Tractions:**\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n- Organized an intensive bootcamp program where web2 developers used were taught how to build with Near using Rust. https://gov.near.org/t/report-start-of-program-open-web-tour/39380\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n- Organized one of the biggest web 3 conferences in Africa powered by Near Protocol. We had over 500+ attendees consisting of blockchain & web 3 enthusiasts, traditional developers, creative builders, and so on. kindly see video: https://youtu.be/j5m8PW4V9g0\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n- We organized a workshop for decentralized application training for over 400+ web 3 enthusiasts and traditional developers. See video clips from the workshop below:\\\\\\\\n1. https://youtu.be/L-Rz9MSYS9M\\\\\\\\n2. https://youtu.be/THsM0hp9R7o\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n- Organized a start-up pitch competition to encourage builders to integrate blockchain technology to their businesses and projects.\\\\\\\\nLink: https://twitter.com/dappsoverapps/status/1692185380718538917?s=46\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n**[Team background](https://docs.google.com/document/d/1MdzyBHwU_W9EOYf_oX5VzAaZPtBq2k3wdS7VSd7yYWc/edit?usp=sharing)**\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\nCommunity Socials:\\\\\\\\n[X](https://twitter.com/dappsoverapps/status/1692185380718538917?s=46)\\\\\\\\n[Telegram](https://t.me/+JGur_ErNHq44MTM8)\\\\\\\\n[Website](Dappsoverapps.com)\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"abdulkareem.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"13550\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"abdulkareem.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8666325928273e+21
+    }
+  },
+  {
+    "id": "6870690017",
+    "receipt_id": "Eak1mTurkGDZfwT1NSqU2hGuWDbvRU7dDo2EKZUEcBkZ",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "E6GP3nGCYiAfNyeysnWaR3WG358ZGfx89jT3Jtzs8FKj",
+      "block_height": 124075705,
+      "block_timestamp": 1721743404089009000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3494010894119,
+      "tokens_burnt": 349401089411900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "FHJVFXYJsjRVaozP84uupgaRxRCoCs6nb464GiKc44FC",
+    "included_in_block_hash": "3xYEGRxSHhyPVgXiTptt7Rs8mntVYNxMHfFDCDpSw3aX",
+    "block_timestamp": "1721743401691741820",
+    "block": {
+      "block_height": 124075703
+    },
+    "receipt_conversion_tokens_burnt": "32327503087000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349401089411900000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":28,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"abdulkareem.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8666325928273e+21
+    }
+  },
+  {
+    "id": "6870763429",
+    "receipt_id": "9ADwa2oYHTqbDWG3kfTscmbanWY3vwgQi5hggzHpb17E",
+    "predecessor_account_id": "abdulkareem.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FVUS2nixytAtRvTKGShbBErvB1VT6yt9G6MmU2R4b28F",
+      "block_height": 124075859,
+      "block_timestamp": 1721743582917961000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5306883397048,
+      "tokens_burnt": 530688339704800000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "5FbqgjDTWN1SxHeB6RS9TBhxsdurKz9zsniyFCxABRXs",
+    "included_in_block_hash": "Dmi7rGAYdKjXydFySF44FkkHVuP5NVULxgnoRydUKcAV",
+    "block_timestamp": "1721743581704987818",
+    "block": {
+      "block_height": 124075858
+    },
+    "receipt_conversion_tokens_burnt": "30835911515600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 530688339704800000000,
+        "args": "{\"id\": 28, \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 910966671323500000000
+    }
+  },
+  {
+    "id": "6870763840",
+    "receipt_id": "ArYTXhfUkJXjGKqZbnBAC7kYQuqh5XCo58LHE17sVtuW",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FxiZrCTouczHQCo7KXakY2NYRmZ6pDNmAwe9cPKCx8jJ",
+      "block_height": 124075860,
+      "block_timestamp": 1721743583992452000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3494424201031,
+      "tokens_burnt": 349442420103100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5FbqgjDTWN1SxHeB6RS9TBhxsdurKz9zsniyFCxABRXs",
+    "included_in_block_hash": "Dmi7rGAYdKjXydFySF44FkkHVuP5NVULxgnoRydUKcAV",
+    "block_timestamp": "1721743581704987818",
+    "block": {
+      "block_height": 124075858
+    },
+    "receipt_conversion_tokens_burnt": "30835911515600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349442420103100000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"abdulkareem.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":28,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"abdulkareem.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 910966671323500000000
+    }
+  },
+  {
+    "id": "6873563180",
+    "receipt_id": "EwZbNnmvJ7XVNhKErhruEPyqUo97bNEoXvLagEDxtU4L",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Bb32Q8nHBpC8AEwPTacqfEKBtHg6avEpKGUdSKLqp9gW",
+      "block_height": 124083635,
+      "block_timestamp": 1721752281338355500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 62499170852400,
+      "tokens_burnt": 6.24991708524e+21,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "3sUPs9uzQwKp2sdRTqdRawFzwfYcFLa8xwFTc3TGp5po",
+    "included_in_block_hash": "Bb32Q8nHBpC8AEwPTacqfEKBtHg6avEpKGUdSKLqp9gW",
+    "block_timestamp": "1721752281338355518",
+    "block": {
+      "block_height": 124083635
+    },
+    "receipt_conversion_tokens_burnt": "685612783665000000000",
+    "actions": [
+      {
+        "action": "DEPLOY_CONTRACT",
+        "method": null,
+        "deposit": 0,
+        "fee": 6.24991708524e+21,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 6.935529868905e+21
+    }
+  },
+  {
+    "id": "6873580063",
+    "receipt_id": "CbdhsPhBATSZ2Siedy8v9ATGDkeWU7HUsALNnBvfbtKF",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7BRCW9DHapM71HDcSZquDTSD6rMPyiGx1YFqWUHYnWHE",
+      "block_height": 124083728,
+      "block_timestamp": 1721752383003652900
+    },
+    "receipt_outcome": {
+      "gas_burnt": 2064144386629,
+      "tokens_burnt": 206414438662900000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "EMgBFWgpG4fSVzTZFpG82UnZnu9djhyLps4tZv4CYWMB",
+    "included_in_block_hash": "7BRCW9DHapM71HDcSZquDTSD6rMPyiGx1YFqWUHYnWHE",
+    "block_timestamp": "1721752383003652785",
+    "block": {
+      "block_height": 124083728
+    },
+    "receipt_conversion_tokens_burnt": "30809527494400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "unsafe_migrate",
+        "deposit": 0,
+        "fee": 206414438662900000000,
+        "args": "{}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 237223966157300000000
+    }
+  },
+  {
+    "id": "6873580416",
+    "receipt_id": "HTRrJ4LPGVBL53VJdAQpj3dr5hAHSj7R7cUbarTHNW1Y",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DEYBLUvb43GCjub26HucRt8bm37CMBQTJknYHT4opaPP",
+      "block_height": 124083729,
+      "block_timestamp": 1721752384309850600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "EMgBFWgpG4fSVzTZFpG82UnZnu9djhyLps4tZv4CYWMB",
+    "included_in_block_hash": "7BRCW9DHapM71HDcSZquDTSD6rMPyiGx1YFqWUHYnWHE",
+    "block_timestamp": "1721752383003652785",
+    "block": {
+      "block_height": 124083728
+    },
+    "receipt_conversion_tokens_burnt": "30809527494400000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.8015097847163824e+22,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 237223966157300000000
+    }
+  },
+  {
+    "id": "6874786170",
+    "receipt_id": "9gJGo7QSA3MYZ7gpLrF31ehE15V26AkJhfKGCa72BLXg",
+    "predecessor_account_id": "yarotska.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "A9HNukU6aDkHkrpotWShxeCCzGGMLs2uwbp4gCrWRfw6",
+      "block_height": 124087074,
+      "block_timestamp": 1721756167565495000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3819002794810,
+      "tokens_burnt": 381900279481000000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "7rhSin6t29C6D3CRHNRFC8hzf1FXbF4NWKjgWEo6WoxW",
+    "included_in_block_hash": "85ou4SyUEzpgbQMDj9AiTZz6QkrW7C2sC621YQr6bsxa",
+    "block_timestamp": "1721756166416859490",
+    "block": {
+      "block_height": 124087073
+    },
+    "receipt_conversion_tokens_burnt": "31042511817200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 381900279481000000000,
+        "args": "{\"id\": 26, \"body\": {\"name\": \"DevHub event participation (design)\", \"summary\": \"DevHub event participation strategy, design and support (May 15 - June 30, 2024)\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"APPROVED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"yarotska.near\", \"description\": \"EthCC/Hackerhouse: \\\\\\\\n- EthCC comic creation, supervision and development with external subcontractors\\\\\\\\n- brand treatment R&D\\\\\\\\n- brand treatment deliverables: prints, social media assets, collateral\\\\\\\\n(comic, amenity kit prints, t-shirt prints, engraving design, pins and stickers, sunglasses)\\\\\\\\n- art-direction, calls\\\\\\\\n- rollup banner design (evergreen)\\\\\\\\n- event background design (evergreen)\\\\\\\\n\\\\\\\\n**Total hours: 80 hours\\\\\\\\nHourly rate: $55\\\\\\\\nService fee: $4400**\", \"linked_proposals\": [7], \"receiver_account\": \"sashapais.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"4400\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": [\"Other\", \"Event sponsorship\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 762747140689700000000
+    }
+  },
+  {
+    "id": "6874786566",
+    "receipt_id": "9CJDEFxRaCTjz5ybeJ9YeF53p9ixp6f9LuRMNBDuxLdy",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6MPcSRbSudqBKTESLaMovGjZ887QTk1xrS5gKAKhh6Wn",
+      "block_height": 124087075,
+      "block_timestamp": 1721756168863646700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3498043493915,
+      "tokens_burnt": 349804349391500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7rhSin6t29C6D3CRHNRFC8hzf1FXbF4NWKjgWEo6WoxW",
+    "included_in_block_hash": "85ou4SyUEzpgbQMDj9AiTZz6QkrW7C2sC621YQr6bsxa",
+    "block_timestamp": "1721756166416859490",
+    "block": {
+      "block_height": 124087073
+    },
+    "receipt_conversion_tokens_burnt": "31042511817200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349804349391500000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"sashapais.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":26,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"yarotska.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 762747140689700000000
+    }
+  },
+  {
+    "id": "6874812251",
+    "receipt_id": "5CHNwXi6FJeTicy3rXvT1zQWdA49JsRZ6jFoCbiV2upD",
+    "predecessor_account_id": "yarotska.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AwjWogj82VGGNQceJNZpTvzi94VNrxR5NtMZY1stLfAh",
+      "block_height": 124087159,
+      "block_timestamp": 1721756263279992000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4085959738415,
+      "tokens_burnt": 408595973841500000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "CzRmhnzeFYMDg4474aRHQfMXSvgLxLgsb8uErHJnwNfm",
+    "included_in_block_hash": "4LTYNKZrrEZg5f8EuUAhahJKjrw2YM4F8WD4HSrBvbcN",
+    "block_timestamp": "1721756262318142989",
+    "block": {
+      "block_height": 124087158
+    },
+    "receipt_conversion_tokens_burnt": "30836135109000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 408595973841500000000,
+        "args": "{\"id\": 25, \"timeline\": {\"status\": \"APPROVED\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 789492940358800000000
+    }
+  },
+  {
+    "id": "6874812460",
+    "receipt_id": "8ma9Gh4yaeCiz6kdiNmspTFxGcQHX3mpwH6Es8txDjX2",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5KbWuVcN1kh1oUUWZM4vavVCLd7HHNvri3E8vNL1Gd9t",
+      "block_height": 124087160,
+      "block_timestamp": 1721756264303099600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3500608314083,
+      "tokens_burnt": 350060831408300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "CzRmhnzeFYMDg4474aRHQfMXSvgLxLgsb8uErHJnwNfm",
+    "included_in_block_hash": "4LTYNKZrrEZg5f8EuUAhahJKjrw2YM4F8WD4HSrBvbcN",
+    "block_timestamp": "1721756262318142989",
+    "block": {
+      "block_height": 124087158
+    },
+    "receipt_conversion_tokens_burnt": "30836135109000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 350060831408300000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"josecouto.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":25,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"yarotska.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 789492940358800000000
+    }
+  },
+  {
+    "id": "6874842314",
+    "receipt_id": "9MRes2kV6yqSGrwz7iovU4EmGyaCfnaey4ogMTGiZrc",
+    "predecessor_account_id": "yarotska.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9rcryK8tEXgFezoW3pLwfWigx1derELzdMD99Ko8ZDVw",
+      "block_height": 124087267,
+      "block_timestamp": 1721756381149031700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3942001384663,
+      "tokens_burnt": 394200138466300000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "Bry4bcU2cGokvhbBzzcLRuebHyrdkUstoE9u6EWmMvqW",
+    "included_in_block_hash": "EFRXkUNmvwobEgEzkyWWCijwUEaqerCzQmD2LMiPXtCc",
+    "block_timestamp": "1721756380051033837",
+    "block": {
+      "block_height": 124087266
+    },
+    "receipt_conversion_tokens_burnt": "30836358702400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 394200138466300000000,
+        "args": "{\"id\": 27, \"timeline\": {\"status\": \"APPROVED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 775079953698200000000
+    }
+  },
+  {
+    "id": "6874842655",
+    "receipt_id": "C4xSyumZ6XoPmBKkYRZ4VrnpQ3kXYGDuuGrHbrc797z2",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DmFntQDe7KgGgRjbseQsHdjsfDU9jaqBZh9K9dJi6LNE",
+      "block_height": 124087268,
+      "block_timestamp": 1721756382338220300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3500434565295,
+      "tokens_burnt": 350043456529500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Bry4bcU2cGokvhbBzzcLRuebHyrdkUstoE9u6EWmMvqW",
+    "included_in_block_hash": "EFRXkUNmvwobEgEzkyWWCijwUEaqerCzQmD2LMiPXtCc",
+    "block_timestamp": "1721756380051033837",
+    "block": {
+      "block_height": 124087266
+    },
+    "receipt_conversion_tokens_burnt": "30836358702400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 350043456529500000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":27,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"yarotska.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 775079953698200000000
+    }
+  },
+  {
+    "id": "6874902295",
+    "receipt_id": "DeFNgT7MrcrnJ4t1WwN6x2E2cWnSAcj8HJNY6BHHt2fr",
+    "predecessor_account_id": "yarotska.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6iqCVF3c11qQrwvmULCDgkvHLj4VZBrdXMhjj24TKGEZ",
+      "block_height": 124087416,
+      "block_timestamp": 1721756547656691500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4131758698977,
+      "tokens_burnt": 413175869897700000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "9bF16rwEa2dQXKaCrn7XJx9GAJKrLKbpVttrm6BMuBPN",
+    "included_in_block_hash": "C8v5qAFxGUu3A7esKzZTcUppNCbtv2JgsY3oJFDe2NwP",
+    "block_timestamp": "1721756546543432574",
+    "block": {
+      "block_height": 124087415
+    },
+    "receipt_conversion_tokens_burnt": "30863637097200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 413175869897700000000,
+        "args": "{\"id\": 27, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": false, \"timeline_version\": \"V1\", \"test_transaction_sent\": false, \"sponsor_requested_review\": false, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 794069970932400000000
+    }
+  },
+  {
+    "id": "6874902483",
+    "receipt_id": "6gTZJqn8364qWQqZyRWkGQoHeFKi3vG88CZi4qDexFdm",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BnWMKURJpCATPxCdghnHrwoQq6SJtGvciBmzsXeU8JzF",
+      "block_height": 124087417,
+      "block_timestamp": 1721756548547008800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3500304639375,
+      "tokens_burnt": 350030463937500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "9bF16rwEa2dQXKaCrn7XJx9GAJKrLKbpVttrm6BMuBPN",
+    "included_in_block_hash": "C8v5qAFxGUu3A7esKzZTcUppNCbtv2JgsY3oJFDe2NwP",
+    "block_timestamp": "1721756546543432574",
+    "block": {
+      "block_height": 124087415
+    },
+    "receipt_conversion_tokens_burnt": "30863637097200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 350030463937500000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":27,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"yarotska.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 794069970932400000000
+    }
+  },
+  {
+    "id": "6874908855",
+    "receipt_id": "HXckqjm4vXxs5rf4dZcvoSzQeVGESGcsCzix6n8SX1AN",
+    "predecessor_account_id": "yarotska.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3TsJW52B6ZQEEssUm3XhACjzkzBKnxD9f3cvmFXqMLyL",
+      "block_height": 124087446,
+      "block_timestamp": 1721756580118551600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4512069007577,
+      "tokens_burnt": 451206900757700000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "HjyFYh5yNi2wJ5wfSqTiz7N8sowWn2XmWD2dvuwVwfsu",
+    "included_in_block_hash": "Bk8JqPndcwzQb5ts575XHLRDxaTLz334PbBL2Vcxn4iA",
+    "block_timestamp": "1721756579055896762",
+    "block": {
+      "block_height": 124087445
+    },
+    "receipt_conversion_tokens_burnt": "30862966317000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 451206900757700000000,
+        "args": "{\"id\": 25, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 832129964955400000000
+    }
+  },
+  {
+    "id": "6874909060",
+    "receipt_id": "3J1NP78uMxeaKFn7WGKYNUDkwtkB1EWUw1uttiiMZPoA",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "J6bvyZ6v4KfBatR6bAGaWN4KEPTQ4N8CBPE9FekuzTCj",
+      "block_height": 124087447,
+      "block_timestamp": 1721756581150087000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3500600978807,
+      "tokens_burnt": 350060097880700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "HjyFYh5yNi2wJ5wfSqTiz7N8sowWn2XmWD2dvuwVwfsu",
+    "included_in_block_hash": "Bk8JqPndcwzQb5ts575XHLRDxaTLz334PbBL2Vcxn4iA",
+    "block_timestamp": "1721756579055896762",
+    "block": {
+      "block_height": 124087445
+    },
+    "receipt_conversion_tokens_burnt": "30862966317000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 350060097880700000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"josecouto.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":25,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"yarotska.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 832129964955400000000
+    }
+  }
+]

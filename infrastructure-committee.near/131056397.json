@@ -1,0 +1,1084 @@
+[
+  {
+    "id": "9478092426",
+    "receipt_id": "DfXGK9vwZRp1hJTtvt8n2RnbSuzZQYyFbJKtjswTgY39",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9SeCp9yGF2G7Ew18QvcaYH5Z7v3b3sGHxyWx1xz9zuC4",
+      "block_height": 131056421,
+      "block_timestamp": 1729735983682153200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7530742177919,
+      "tokens_burnt": 753074217791900000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": false
+    },
+    "transaction_hash": "5ei5e6RwSk9sL5cRrJfrDqwTHBddHPiSfajko7mLniSE",
+    "included_in_block_hash": "4bgU9iQdDqGeP8sjvtXKLu9mdxPEfFr1UHuXN13DhDPh",
+    "block_timestamp": "1729735982369230789",
+    "block": {
+      "block_height": 131056420
+    },
+    "receipt_conversion_tokens_burnt": "62186602841500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 753074217791900000000,
+        "args": "{\"id\": 38, \"body\": {\"name\": \"near.org RPC service by FASTNEAR\", \"summary\": \"Provide near.org RPC service by FASTNEAR\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"APPROVED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": 2, \"supervisor\": \"trechriron71.near\", \"description\": \"# near.org RPC service by FASTNEAR\\\\\\\\n\\\\\\\\n## Organization\\\\\\\\n\\\\\\\\nFASTNEAR\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\\\\\'s contact information\\\\\\\\nEvgeny Kuzyakov (ek@fastnear.com)\\\\\\\\n\\\\\\\\n### About\\\\\\\\n\\\\\\\\n[FASTNEAR](https://fastnear.com) is NEAR Protocol Infrastructure Provider.\\\\\\\\n\\\\\\\\n#### [Services](https://fastnear.com/services)\\\\\\\\n- RPC endpoints\\\\\\\\n- API for wallets\\\\\\\\n- Snapshot data\\\\\\\\n- Indexing and Lake solutions\\\\\\\\n- Validator services\\\\\\\\n\\\\\\\\n#### Key Features\\\\\\\\n1. **Dedicated to NEAR Protocol:** We exclusively serve the NEAR ecosystem.\\\\\\\\n2. **High-Performance Infrastructure:** \\\\\\\\n   - The majority of nodes and servers hosted on bare-metal.\\\\\\\\n   - Currently ~4,000 RPC requests per second. Resulting in 320M calls per day.\\\\\\\\n\\\\\\\\n#### Reliability and Security\\\\\\\\n- Experienced in handling:\\\\\\\\n  - Traffic surges of 30,000 RPS\\\\\\\\n  - DDoS attacks (recently)\\\\\\\\n  - Provider outages\\\\\\\\n- ~100% RPCs uptime for the last 3 months\\\\\\\\n- 250ms p95 over 60min view call latency\\\\\\\\n\\\\\\\\n![latency monitoring](https://gist.github.com/user-attachments/assets/e873bdfb-b4fd-440e-a462-e7028e26ce8d)\\\\\\\\n\\\\\\\\n#### Monitoring and Performance\\\\\\\\n- Internal monitoring and alert systems\\\\\\\\n- Global RPC latency monitoring dashboards\\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\n### Hardware\\\\\\\\n\\\\\\\\nBased on the current usage of the following:\\\\\\\\n- RPC Mainnet - 10k requests/s (while currently 6k RPS)\\\\\\\\n- RPC-Archival Mainnet - 2k requests/s\\\\\\\\n- RPC Testnet - 400 requests/s\\\\\\\\n- RPC-Archival Testnet - 150 requests/s\\\\\\\\n\\\\\\\\nWe recommend the following setup:\\\\\\\\n- RPC Mainnet: 20 nodes (estimating 500 RPS each)\\\\\\\\n- RPC-Archival Mainnet: 4 full NVME nodes, with 10Gbps (at 500 RPS)\\\\\\\\n- RPC Testnet - 4 nodes (for 2X redundancy)\\\\\\\\n- RPC-Archival Testnet - 2 full NVME nodes (for 2X redundancy)\\\\\\\\n\\\\\\\\nNote, that we don\\\\\\\\\\\\'t rely on the read-rpc for this setup, due to the current setup complexity. We may consider switching to read-rpc over time.\\\\\\\\n\\\\\\\\n**Pricing**\\\\\\\\n\\\\\\\\nThree types of servers:\\\\\\\\n- RPC (mainnet/testnet): $250 with 2Tb NVME + 1Gbps\\\\\\\\n- RPC-Archive Mainnet: $2500 with 90Tb NVME + ~250TB of 10Gpbs traffic\\\\\\\\n- RPC-Archive Testnet: $1000 with ~20Tb NVME + 1Gbps\\\\\\\\n\\\\\\\\nTotal:\\\\\\\\n- 24 RPC nodes: $6000\\\\\\\\n- 4 Mainnet Archival nodes: $10000\\\\\\\\n- 2 Testnet Archival nodes: $2000\\\\\\\\n\\\\\\\\n**Total: $18000 per month**\\\\\\\\n\\\\\\\\n### Load-balancing\\\\\\\\n\\\\\\\\nOur current RPC setup is using a simple DNS-based load balancer. This works well for front-end clients which come from the different IPs. This setup has quite low cost overhead, but it can\\\\\\\\\\\\'t be used to minimize GEO-spatial latency. There is a latency overhead, because each request might be routed not to the closest server, but instead to a server on a different continent. While it does increase latency by up to ~140ms, we don\\\\\\\\\\\\'t consider it significant enough to justify costs associated with geo-spatial load-balancing.\\\\\\\\n\\\\\\\\n#### Expected load\\\\\\\\n\\\\\\\\n- ~12500 RPS\\\\\\\\n- 32.4B requests per month\\\\\\\\n- 93TB per month\\\\\\\\n\\\\\\\\nMost load balancer providers have costs associated with the number of requests. While GCP doesn\\\\\\\\\\\\'t charge for the number of requests, it has limitations of load balancing across external endpoints and does charge for the traffic.\\\\\\\\n\\\\\\\\n*Note, we don\\\\\\\\\\\\'t have enough experience with GCP load-balancing, so some assumptions might be wrong.*\\\\\\\\n\\\\\\\\nWe have considered the following options for this proposal:\\\\\\\\n1. Simple DNS-based load-balancing\\\\\\\\n3. **PREFERRED** Cloudflare Enterprise geo-spatial load-balancing.\\\\\\\\n4. Google Cloud Provider Load Balancing with proxy instances or GCP LB with simple traffic splitting.\\\\\\\\n\\\\\\\\n#### Option #1: Simple DNS-based load-balancing\\\\\\\\n\\\\\\\\nWe can use a CNAME record for each of the near.org endpoints to point to our endpoints(s).\\\\\\\\n\\\\\\\\nThis option might be fairly simple to setup at **no extra cost**.\\\\\\\\n\\\\\\\\nNote, Strict rate-limiting on HTTP referer will require extra work on nodes or an enterprise plan.\\\\\\\\n\\\\\\\\n#### Option #2: Cloudflare Enterprise Load-balancing (CF LB)\\\\\\\\n\\\\\\\\nSimple DNS-based load-balancing can be upgraded to geo-spatial load-balancing at our end.\\\\\\\\n\\\\\\\\nDuring the communication with Cloudflare sales, we\\\\\\\\\\\\'ve received an estimate for 15B requests per month. Scaling it up to 32.4B requests, the price might be around **~$6000 per month**.\\\\\\\\n\\\\\\\\nCloudflare enterprise offers rate limiting based on HTTP headers, including HTTP Referer or HTTP Origin.\\\\\\\\n\\\\\\\\n#### Option #3: Google Cloud Provider Load Balancing (GCP LB)\\\\\\\\n\\\\\\\\nGCP external load balancer has bandwidth associated with it. \\\\\\\\nBased on our estimates, the LB traffic is around $10 per TB for ingress, and $10 per TB for egress.\\\\\\\\n\\\\\\\\nGCP LB can\\\\\\\\\\\\'t be used for geo-spatial balancing without additional nodes on GCP or other cloud run/functions.\\\\\\\\n\\\\\\\\nSo there are 2 options for GCP:\\\\\\\\n- Full load-balancing. Requires RPC egress traffic with proxy nodes. Costs *estimated* **~$16000 per month**\\\\\\\\n- Splitting traffic (no geo-spatial routing). Costs around **~$2000 month**. Need to confirm feasibility.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\n- Setup (2 weeks)\\\\\\\\n    - Setup RPC nodes and Archival RPC nodes\\\\\\\\n    - Setup 4 endpoints to point traffic\\\\\\\\n    - Rate-limiters based on IPs\\\\\\\\n- Status page for new endpoints (2 weeks)\\\\\\\\n- Setup external monitoring dashboard (4 weeks)\\\\\\\\n- Setup CF LB (4-8 weeks)\\\\\\\\n    - Negotiate deal with CF for LB\\\\\\\\n    - Setup rate limiter based on the HTTP referer.\\\\\\\\n- Full endpoints migration if necessary (3-6 months)\\\\\\\\n\\\\\\\\n## Metrics\\\\\\\\n\\\\\\\\n- Requests per second\\\\\\\\n    - All request types (expected to handle steady traffic of 12,500 RPS)\\\\\\\\n    - Function calls (majority of requests)\\\\\\\\n    - TX status\\\\\\\\n    - Broadcast TX\\\\\\\\n- Latency\\\\\\\\n    - Mean latency from 3 geo endpoints (~170ms for view calls)\\\\\\\\n    - P95 latency (~250ms for calls)\\\\\\\\n    - Lower mean/p95 latency after CF LB\\\\\\\\n- Rate limiting (number of throttled calls)\\\\\\\\n- Traffic (expected up to 3Tb per day)\\\\\\\\n- Uptime (expected 99.99%)\\\\\\\\n\\\\\\\\n### Compensation\\\\\\\\n\\\\\\\\nFor maintenance and development we ask for $12,000 a month.\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n$36,000 per month (paid monthly) for the duration of 6 months.\\\\\\\\n- $18,000 nodes\\\\\\\\n- $6,000 CF LB\\\\\\\\n- $12,000 maintenance \\\\\\\\n\\\\\\\\nAfter 6 months, we expect a significant drop in the usage, so we should re-negotiate a deal based on the new requirements.\\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"treasury.fastnear.tg\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"216000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 815260820633400000000
+    }
+  },
+  {
+    "id": "9503579596",
+    "receipt_id": "437GfVQNHDCjYcoFumb4RXTCnk5e4gZJYCegsPSdrLN3",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "ARV2pKMWaqK86hnWFp9zAU8n1TWdGy87kCEw6jFy4Sut",
+      "block_height": 131120665,
+      "block_timestamp": 1729809679595632000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6608145913045,
+      "tokens_burnt": 660814591304500000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": false
+    },
+    "transaction_hash": "GYNFLWs6QiLBd1aDCyFTp4NsVoPuPxadtc1BUc6vBNmz",
+    "included_in_block_hash": "3YXbY3diUEtehqsaXZpc3AKFx8ZE8ywh35VLAZeJuGDG",
+    "block_timestamp": "1729809678441600533",
+    "block": {
+      "block_height": 131120664
+    },
+    "receipt_conversion_tokens_burnt": "63245181314500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 660814591304500000000,
+        "args": "{\"id\": 28, \"body\": {\"name\": \"Aurora Labs: NEAR Lake\", \"summary\": \"Aurora Labs proposes to take over the NEAR Lake service for further maintenance and development.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"APPROVED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": 3, \"supervisor\": \"trechriron71.near\", \"description\": \"## Organization\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\u{2019}s contact information\\\\\\\\n\\\\\\\\nAlex Shevchenko ([alex.shevchenko@aurora.dev](alex.shevchenko@aurora.dev)) - Aurora Labs CEO\\\\\\\\n\\\\\\\\n### Project DRIs\\\\\\\\n\\\\\\\\nDimitar Petkov ([dimitar.petkov@aurora.dev](dimitar.petkov@aurora.dev))\\\\\\\\nDmitry Strokov ([dmitry.strokov@aurora.dev](dimitar.petkov@aurora.dev))\\\\\\\\n\\\\\\\\n### Size of the whole team\\\\\\\\n\\\\\\\\n48 people\\\\\\\\n\\\\\\\\n### Size of the engineering team\\\\\\\\n\\\\\\\\n23 people\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\n\\\\\\\\n### Examples of relevant experience with NEAR blockchain\\\\\\\\n\\\\\\\\nAurora Labs\\\\\\\\u{2019} engineering team has developed significant expertise in indexing, storing, and distributing blockchain data to meet the demands of internal infrastructure. Over the past two and a half years, the focus has been on building and refining a robust data pipeline designed to deliver maximum speed, high availability, fault tolerance, and efficient global data access.\\\\\\\\n\\\\\\\\nTo support these capabilities, the team includes engineers with experience in the relevant parts of the nearcore codebase, which enables the maintenance and customization of an in-house version of the NEAR Indexer using the NEAR Indexer Framework. This specialized knowledge has been instrumental in operating instances of nearcores and NEAR Indexers, ensuring that Aurora RPC services consistently achieve high availability and performance.\\\\\\\\n\\\\\\\\nThe entire infrastructure is continuously monitored and backed-up to maintain optimal performance and reliability across various regions worldwide, aligning with the company\\\\\\\\\\\\'s commitment to delivering resilient and responsive blockchain services.\\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\nThe proposed solution involves adopting the current setup for NEAR Lake from the Pagoda team, with a focus on ensuring reliability and high availability, eliminating potential vulnerabilities, and establishing comprehensive monitoring. The approach includes deploying new or additional indexer instances if necessary to meet failover/latency demands.\\\\\\\\n\\\\\\\\nAdditionally, there is a plan to potentially integrate the process of writing to NEAR Lake into the existing infrastructure pipeline in the future, aiming to reduce operational costs by reusing data from the indexers for both internal needs of Aurora infrastructure and the needs of NEAR Lake.\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\n1. Conduct knowledge transfer sessions with the Pagoda team\\\\\\\\n2. Take over the ownership of S3 buckets\\\\\\\\n3. Deploy new/additional indexers\\\\\\\\n4. Set up indexers monitoring\\\\\\\\n5. Set up lake progression monitoring\\\\\\\\n6. Set up public status-page\\\\\\\\n7. Update all relevant documentation, take over support channels\\\\\\\\n8. Make announcements, finish the hand-over\\\\\\\\n9. (Optional/Later): integrate lake indexer with existing Aurora infrastructure\\\\\\\\n\\\\\\\\n## Metrics\\\\\\\\n\\\\\\\\nKey things that have to be tracked:\\\\\\\\n- Per-indexer metrics - have to be exported from indexer instances:\\\\\\\\n\\\\\\\\t- Liveness status\\\\\\\\n\\\\\\\\t- Sync/unsync status\\\\\\\\n\\\\\\\\t- Current progression\\\\\\\\n\\\\\\\\t- Errors\\\\\\\\n- Bucket progression metrics - shall be measured by reading from S3 using lake client library (indexer framework):\\\\\\\\n\\\\\\\\t- Current progression\\\\\\\\n\\\\\\\\t- Fetching/parsing errors\\\\\\\\n\\\\\\\\t- Lag from the final block (shall be compared against final block querying from RPC)\\\\\\\\n- Total uptime is calculated as: total time when lag was less than 5 blocks\\\\\\\\n\\\\\\\\nSuccess condition: uptime during the evaluation period is at least 99.9%\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\nThe budget might be re-evaluated in future due to:\\\\\\\\n\\\\\\\\t- Growth of monthly-generated NEAR data\\\\\\\\n\\\\\\\\t- Pipeline optimizations applied by Aurora Labs team\\\\\\\\n\\\\\\\\n### Budget total\\\\\\\\n\\\\\\\\n$35,000 USD per quarter\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\nS3 costs breakdown:\\\\\\\\n- Assuming that:\\\\\\\\n  - Pricing model is S3 Standard\\\\\\\\n    - Storage cost = 0,0245 USD/month/1GB\\\\\\\\n    - PUT cost = 0,0054 USD/1000 requests\\\\\\\\n    - LIST cost = 0,0054 USD/1000 requests\\\\\\\\n    - GET cost = 0,00043 USD/1000 requests\\\\\\\\n  - Every block is represented with 7 objects: 1 header + 6 chunks\\\\\\\\n  - Every object is written at most 3 times (failover replication)\\\\\\\\n    - Note: replication multiplier can be optimized with some effort\\\\\\\\n  - Readers are paying for themself\\\\\\\\n  - There\\\\\\\\u{2019}s 3 progression trackers per network (failover replication) that are reading continuously\\\\\\\\n    - Note: replication multiplier can be optimized with some effort\\\\\\\\n  - 6TB of data is written every month in average (during 1 year period)\\\\\\\\n- Storage cost:\\\\\\\\n  - Current storage: 40TB\\\\\\\\n  - Storage after 1 year: 40TB + 6TB * 12months = 112TB\\\\\\\\n  - Average (during 1 year) monthly storage: (40TB + 112TB) / 2 = 76TB\\\\\\\\n  - Average (during 1 year) monthly storage cost: 76TB * 1024 * 0.0245 USD/month/GB = 1907 USD\\\\\\\\n  - First year storage cost = 12 * 1907 USD = 22884 USD\\\\\\\\n- Blocks per year per network = 365 * 24 * 3600 / 1.2 = 26280000 blocks\\\\\\\\n- Objects per year per network = 26280000 blocks * 7 objects = 183960000 objects\\\\\\\\n- Write cost:\\\\\\\\n  - Writes cost per year per network per instance = 183960000 / 1000 * 0.0054 USD = 993 USD\\\\\\\\n  - Total writes cost per year = 1987 USD * 2 networks * 3 replicas = 5958 USD\\\\\\\\n- Read cost:\\\\\\\\n  - LIST requests per year per network per instance = 183960000 objects / 1000 = 183960 requests\\\\\\\\n  - LIST cost per year per network per instance = 183960 / 1000 * 0.0054 USD = 1 USD\\\\\\\\n  - GET cost per year per per network instance = 183960000 objects / 1000 * 0.00043 USD = 79 USD\\\\\\\\n  - Read cost per year per network per instance = 1 USD + 79 USD = 80 USD\\\\\\\\n  - Total read cost per year = 80 USD * 2 networks * 3 replicas = 480 USD\\\\\\\\n- Total S3 cost per year = 22884 USD + 5958 USD + 480 USD ~= $30k USD\\\\\\\\n\\\\\\\\nHardware costs:\\\\\\\\n- The optimal fit for one indexer is (for example) Hetzner AX52 with +2+2TB (raid-1) NVME SSD:\\\\\\\\n  - Monthly cost: 125 USD\\\\\\\\n  - Setup fee: 51 USD\\\\\\\\n  - Yearly cost: 51 + 125 * 12 = 1551 USD\\\\\\\\n- Total machines needed:\\\\\\\\n  - Indexers: 2 networks * 3 replicas = 6\\\\\\\\n  - Progression trackers/etc: collocated with other services on different machines, but is equivalent of 1 more machine\\\\\\\\n  - 7 machines in total\\\\\\\\n- Total cost per year: 7 machines * 1551 USD ~= $11k USD\\\\\\\\n\\\\\\\\nOperational overhead and safety margin:\\\\\\\\n- $8k / month ~= $96k / year\\\\\\\\n\\\\\\\\nTotal cost for the first year = $30k + $11k + $96k = ~$137k\\\\\\\\n\\\\\\\\nWe propose to structure the contract with quarterly payments: $35k/quarter\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"aurorasupport.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"35000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 724059772619000000000
+    }
+  },
+  {
+    "id": "9504162863",
+    "receipt_id": "GYZAde8B1if8C8UwQuDpRNCv7vuqAaVEg3cwhMXvcLX7",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BoSwwABWDDcQD1W4AyuQzf9BJKbAD5QbJPGz68iuRtDU",
+      "block_height": 131122707,
+      "block_timestamp": 1729811958068276000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8519568195172,
+      "tokens_burnt": 851956819517200000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": false
+    },
+    "transaction_hash": "7TxRngMLqDV526HqQpPfPgVhUKTWg1uNjvdUhNxLSFKE",
+    "included_in_block_hash": "N7xzB6F9s75WMofz7hJDwTugSpDC8ppqeYqR1RoXmWz",
+    "block_timestamp": "1729811956972931741",
+    "block": {
+      "block_height": 131122706
+    },
+    "receipt_conversion_tokens_burnt": "31440143409500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 851956819517200000000,
+        "args": "{\"id\": 51, \"timeline\": {\"status\": \"DRAFT\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 883396962926700000000
+    }
+  },
+  {
+    "id": "9504193910",
+    "receipt_id": "mqZrKRSVna4kz6pJXXaSNNk23dTsePQA7k2TokY1Wum",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DcH2ZfKFxhyuu6pykvf3QzqTTqJRMtcniwiN6s89rqvX",
+      "block_height": 131122836,
+      "block_timestamp": 1729812101465325000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8519568195172,
+      "tokens_burnt": 851956819517200000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": false
+    },
+    "transaction_hash": "2zk6RUkjvtpApZ8LiLeDTk9wYXdBZDztAMYcsWeTVC3G",
+    "included_in_block_hash": "Gfga7oMqYdJonB2SdJHGxY8XPdiqfWuszUiAM6Tw1pHd",
+    "block_timestamp": "1729812100372990048",
+    "block": {
+      "block_height": 131122835
+    },
+    "receipt_conversion_tokens_burnt": "31440143409500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 851956819517200000000,
+        "args": "{\"id\": 51, \"timeline\": {\"status\": \"DRAFT\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 883396962926700000000
+    }
+  },
+  {
+    "id": "9506771399",
+    "receipt_id": "5xeqZP8cXa2DHMuZ3NgY9Y4EtkTiDVDS9P8zPFLN9jYq",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7PB99T9JHECcEyZTqXVXpw1pheKyHhPidPr1DZRs5ZoN",
+      "block_height": 131133684,
+      "block_timestamp": 1729824121044761300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5697869333946,
+      "tokens_burnt": 569786933394600000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "21uKzH4PXA7t7fRnKtB6gNJ95DKypdoeUgjYrXkqeFej",
+    "included_in_block_hash": "8Dd5ctnhBPpnmSRQxwx4ZkKUDuu5Z9d3qCUoxMuWJrgV",
+    "block_timestamp": "1729824119798908215",
+    "block": {
+      "block_height": 131133683
+    },
+    "receipt_conversion_tokens_burnt": "54477596055000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_member",
+        "deposit": 0,
+        "fee": 569786933394600000000,
+        "args": "{\"member\": \"thomasguntenaar.near\", \"metadata\": {\"parents\": [], \"children\": [], \"description\": \"The moderator group has permissions to create and edit RFPs, edit and manage proposals, and manage admins.\", \"permissions\": {\"*\": [\"use-labels\", \"edit-post\"]}, \"member_metadata_version\": \"V0\"}}"
+      },
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_member",
+        "deposit": 0,
+        "fee": 569786933394600000000,
+        "args": "{\"member\": \"team:moderators\", \"metadata\": {\"parents\": [], \"children\": [\"woben.near\", \"polyprogrammist.near\", \"pivortex.near\", \"flmel.near\", \"mob.near\", \"eric3.near\", \"frol.near\", \"petersalomonsen.near\", \"megha19.near\", \"as2.near\", \"theori.near\", \"trechriron71.near\", \"thomasguntenaar.near\"], \"description\": \"The moderator group has permissions to create and edit RFPs, edit and manage proposals, and manage admins.\", \"permissions\": {\"*\": [\"use-labels\", \"edit-post\"]}, \"member_metadata_version\": \"V0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 624264529449600000000
+    }
+  },
+  {
+    "id": "9507452866",
+    "receipt_id": "7DQ1kGHdVDZTj5zhp7bVm9P5aj4vUNgmqnmaYMNr3Q8f",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HHh759bWdfRwoq688K9zbqM98U6bm99ankocEnaiMCKL",
+      "block_height": 131135505,
+      "block_timestamp": 1729826211233147000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8572997058340,
+      "tokens_burnt": 857299705834000000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": false
+    },
+    "transaction_hash": "JDY56cK47ERGnQXWRawkoBD2cQtQ3oGc5a3exsoZERC7",
+    "included_in_block_hash": "C92PMHbJMoGatb91De8RPqBAoJYNeEYKaJs1Etmmj7gc",
+    "block_timestamp": "1729826209905898423",
+    "block": {
+      "block_height": 131135504
+    },
+    "receipt_conversion_tokens_burnt": "31440143409500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 857299705834000000000,
+        "args": "{\"id\": 51, \"timeline\": {\"status\": \"DRAFT\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 888739849243500000000
+    }
+  },
+  {
+    "id": "9507650610",
+    "receipt_id": "A6VFFjajopxwZdVGxE4pdgpfPQ27S7eGd3ZWURFJKtMZ",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5EJBQppFgukkipBDBesQZGnDDURqVoYdSBXG7f243RkT",
+      "block_height": 131136032,
+      "block_timestamp": 1729826789353723600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8572997058340,
+      "tokens_burnt": 857299705834000000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": false
+    },
+    "transaction_hash": "53bSkfTu5FzFPn6SEhKRDSrYPkWaMEDfgLq9wpK5WpwT",
+    "included_in_block_hash": "4fyZ98CYAyfPRFTrcZoJ6YvVzggL3LsasR6XG6JSNX8y",
+    "block_timestamp": "1729826788212427738",
+    "block": {
+      "block_height": 131136031
+    },
+    "receipt_conversion_tokens_burnt": "31440143409500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 857299705834000000000,
+        "args": "{\"id\": 51, \"timeline\": {\"status\": \"DRAFT\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 888739849243500000000
+    }
+  },
+  {
+    "id": "9507730881",
+    "receipt_id": "8y838YVZ8yHe97cZyxgicrcVuc1ndgcah5rYoB3sBoCS",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DYvFWpYya1epkfPooWaMKKCDDtL72nRG5HdteVRJ5tdf",
+      "block_height": 131136206,
+      "block_timestamp": 1729826978643022000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 22318256250000000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "9TbpRU1dUV8hLnptJNtk3DbPf5zPvhMrJDiKufGbXeEx",
+    "included_in_block_hash": "5DH75gN2AHgNyqMu6fq2sxSfy365xrWgnJRLnMbaghfH",
+    "block_timestamp": "1729826977508591967",
+    "block": {
+      "block_height": 131136205
+    },
+    "receipt_conversion_tokens_burnt": "22318256250000000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1e+24,
+        "fee": 22318256250000000000,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 1e+24
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 44636512500000000000
+    }
+  },
+  {
+    "id": "9507735606",
+    "receipt_id": "9aNHCQM66CUg5xaiQ5n7gisEc3XzjsZKMUxaWMmDThZi",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "36nCgkEMuzzjeCSM4vXj5vkEzg8X7frJTwvZU22hZ81r",
+      "block_height": 131136227,
+      "block_timestamp": 1729827000968119600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8572997058340,
+      "tokens_burnt": 857299705834000000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "DMbwTWXApgEdU9FoMionQoQa38zsMVg9ijVHKm3Lo5bG",
+    "included_in_block_hash": "Az1qbbfAWhGZtkrruXAQrXXRCUUtDAgX5UbZU3M6s3JD",
+    "block_timestamp": "1729826999879203669",
+    "block": {
+      "block_height": 131136226
+    },
+    "receipt_conversion_tokens_burnt": "31440143409500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 857299705834000000000,
+        "args": "{\"id\": 51, \"timeline\": {\"status\": \"DRAFT\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2536794809328e+21
+    }
+  },
+  {
+    "id": "9507735888",
+    "receipt_id": "7H15NfsoMpcUT2LfEy4J88UKkEaKhRWos31zgLkF8Amq",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7QY5euo6Kha34sJQwABKAHMbsFvvKHYJbs1SL8ydQUTF",
+      "block_height": 131136228,
+      "block_timestamp": 1729827002052724000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3649396316893,
+      "tokens_burnt": 364939631689300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DMbwTWXApgEdU9FoMionQoQa38zsMVg9ijVHKm3Lo5bG",
+    "included_in_block_hash": "Az1qbbfAWhGZtkrruXAQrXXRCUUtDAgX5UbZU3M6s3JD",
+    "block_timestamp": "1729826999879203669",
+    "block": {
+      "block_height": 131136226
+    },
+    "receipt_conversion_tokens_burnt": "31440143409500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 364939631689300000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"shane0.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":51,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"thomasguntenaar.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2536794809328e+21
+    }
+  },
+  {
+    "id": "9507786564",
+    "receipt_id": "kiezN8NmALW3Wa4qX7AEbeABpnu5FVfhqefCvA89RUT",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "bkYwW955QvgGYaV75hLSJ1bu9uco29qavQBtk4w4YzB",
+      "block_height": 131136403,
+      "block_timestamp": 1729827197493970200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 11486608884392,
+      "tokens_burnt": 1.1486608884392e+21,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "ECEhFcjjutCXL1h6VXQw1um8VywgdskNFbnjCfFzPvb2",
+    "included_in_block_hash": "2PJY72wVJT5oYuqTaNfEVVwX8jkg95NAKKGqBHqKLvD5",
+    "block_timestamp": "1729827196199965104",
+    "block": {
+      "block_height": 131136402
+    },
+    "receipt_conversion_tokens_burnt": "31559352697000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 1.1486608884392e+21,
+        "args": "{\"id\": 51, \"timeline\": {\"status\": \"REVIEW\", \"timeline_version\": \"V1\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5374977083163e+21
+    }
+  },
+  {
+    "id": "9507787005",
+    "receipt_id": "62v1XocCKLqdEJcMLWdxz9ARaQvxaAERQALYDYzxzAUd",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "A3YauiaxVj1brB24fWwhw6FntXFa2ag485mjHVhGvHxm",
+      "block_height": 131136404,
+      "block_timestamp": 1729827198790284300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3572774671801,
+      "tokens_burnt": 357277467180100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "ECEhFcjjutCXL1h6VXQw1um8VywgdskNFbnjCfFzPvb2",
+    "included_in_block_hash": "2PJY72wVJT5oYuqTaNfEVVwX8jkg95NAKKGqBHqKLvD5",
+    "block_timestamp": "1729827196199965104",
+    "block": {
+      "block_height": 131136402
+    },
+    "receipt_conversion_tokens_burnt": "31559352697000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357277467180100000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"shane0.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":51,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"thomasguntenaar.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5374977083163e+21
+    }
+  },
+  {
+    "id": "9514718429",
+    "receipt_id": "C7GoU5kx3D3VWmkU634QmSwBnRbNDCXjX3tkmWzhf4dM",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4p28wWpjjRURPvRaBMUVf7UB7d57BFX3Bk3cergkVCXV",
+      "block_height": 131154889,
+      "block_timestamp": 1729848136785954600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 22318256250000000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "92e1Nh5dSjZuMLsCtG2aZwWv3fZSG92h9xMoEw1CV4MS",
+    "included_in_block_hash": "A3xKwFSc8G1mUqgAtTA5zwJSk5s7LfHnSKEF9Jnjgm3i",
+    "block_timestamp": "1729848135706312251",
+    "block": {
+      "block_height": 131154888
+    },
+    "receipt_conversion_tokens_burnt": "22318256250000000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 2e+25,
+        "fee": 22318256250000000000,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 2e+25
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 44636512500000000000
+    }
+  },
+  {
+    "id": "9557126414",
+    "receipt_id": "7mBPW41UeTp74SRK2kvxMvGNXk13fo18bCvbXoJd4AWT",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4RVdsvX2kk6QZzYzvQLhq56MCYPoZ6hecC4vBtiU86pJ",
+      "block_height": 131271320,
+      "block_timestamp": 1729979232047935000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 18566321345035,
+      "tokens_burnt": 1.8566321345035e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "ABH2eRRcBQqcY3NSEJvZGR9dfSdEXsC5i1jiThc5fKS3",
+    "included_in_block_hash": "4iw4NASwWuJpHZB8MuZun8Xzi5cSR3UMfvkZQ9LmW8Sa",
+    "block_timestamp": "1729979230992271134",
+    "block": {
+      "block_height": 131271319
+    },
+    "receipt_conversion_tokens_burnt": "413071988040500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.8566321345035e+21,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"widget\": {\"app\": {\"\": \"/**\\\\\\\\n * This is the main entry point for the RFP application.\\\\\\\\n * Page route gets passed in through params, along with all other page props.\\\\\\\\n */\\\\\\\\nconst { page, ...passProps } = props;\\\\\\\\n// Import our modules\\\\\\\\nconst { AppLayout } = VM.require(\\\\\\\\n  `infrastructure-committee.near/widget/components.template.AppLayout`\\\\\\\\n);\\\\\\\\nconst { Theme } = VM.require(\\\\\\\\n  `infrastructure-committee.near/widget/config.theme`\\\\\\\\n);\\\\\\\\nconst { CssContainer } = VM.require(\\\\\\\\n  `infrastructure-committee.near/widget/config.css`\\\\\\\\n);\\\\\\\\nif (!AppLayout || !Theme || !CssContainer) {\\\\\\\\n  return <p>Loading modules...</p>;\\\\\\\\n}\\\\\\\\nif (!page) {\\\\\\\\n  // If no page is specified, we default to the feed page TEMP\\\\\\\\n  page = \\\\\\\\\\\\\\\"about\\\\\\\\\\\\\\\";\\\\\\\\n}\\\\\\\\n// This is our navigation, rendering the page based on the page parameter\\\\\\\\nfunction Page() {\\\\\\\\n  const routes = page.split(\\\\\\\\\\\\\\\".\\\\\\\\\\\\\\\");\\\\\\\\n  switch (routes[0]) {\\\\\\\\n    case \\\\\\\\\\\\\\\"about\\\\\\\\\\\\\\\": {\\\\\\\\n      return (\\\\\\\\n        <Widget\\\\\\\\n          src={`infrastructure-committee.near/widget/components.pages.about`}\\\\\\\\n          props={passProps}\\\\\\\\n        />\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n    case \\\\\\\\\\\\\\\"rfps\\\\\\\\\\\\\\\": {\\\\\\\\n      return (\\\\\\\\n        <Widget\\\\\\\\n          src={`infrastructure-committee.near/widget/components.rfps.Feed`}\\\\\\\\n          props={passProps}\\\\\\\\n        />\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n    case \\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\": {\\\\\\\\n      return (\\\\\\\\n        <Widget\\\\\\\\n          src={`infrastructure-committee.near/widget/components.rfps.Rfp`}\\\\\\\\n          props={passProps}\\\\\\\\n        />\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n    case \\\\\\\\\\\\\\\"create-rfp\\\\\\\\\\\\\\\": {\\\\\\\\n      return (\\\\\\\\n        <Widget\\\\\\\\n          src={`infrastructure-committee.near/widget/components.rfps.Editor`}\\\\\\\\n          props={passProps}\\\\\\\\n        />\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n    case \\\\\\\\\\\\\\\"create-proposal\\\\\\\\\\\\\\\": {\\\\\\\\n      return (\\\\\\\\n        <Widget\\\\\\\\n          src={`infrastructure-committee.near/widget/components.proposals.Editor`}\\\\\\\\n          props={{ ...passProps }}\\\\\\\\n        />\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n    case \\\\\\\\\\\\\\\"proposals\\\\\\\\\\\\\\\": {\\\\\\\\n      return (\\\\\\\\n        <Widget\\\\\\\\n          src={`infrastructure-committee.near/widget/components.proposals.Proposals`}\\\\\\\\n          props={passProps}\\\\\\\\n        />\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n    case \\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\": {\\\\\\\\n      return (\\\\\\\\n        <Widget\\\\\\\\n          src={`infrastructure-committee.near/widget/components.proposals.Proposal`}\\\\\\\\n          props={passProps}\\\\\\\\n        />\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n    case \\\\\\\\\\\\\\\"about\\\\\\\\\\\\\\\": {\\\\\\\\n      return (\\\\\\\\n        <Widget\\\\\\\\n          src={`infrastructure-committee.near/widget/components.pages.about`}\\\\\\\\n          props={passProps}\\\\\\\\n        />\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n    case \\\\\\\\\\\\\\\"admin\\\\\\\\\\\\\\\": {\\\\\\\\n      return (\\\\\\\\n        <Widget\\\\\\\\n          src={`infrastructure-committee.near/widget/components.pages.admin`}\\\\\\\\n          props={passProps}\\\\\\\\n        />\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n    default: {\\\\\\\\n      return <Widget src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.page.notfound\\\\\\\\\\\\\\\"} />;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n}\\\\\\\\nreturn (\\\\\\\\n  <Theme>\\\\\\\\n    <CssContainer>\\\\\\\\n      <AppLayout page={page}>\\\\\\\\n        <Page />\\\\\\\\n      </AppLayout>\\\\\\\\n    </CssContainer>\\\\\\\\n  </Theme>\\\\\\\\n);\\\\\\\\n\"}, \"components.rfps.Rfp\": {\"\": \"const {\\\\\\\\n  RFP_TIMELINE_STATUS,\\\\\\\\n  fetchGraphQL,\\\\\\\\n  CANCEL_RFP_OPTIONS,\\\\\\\\n  parseJSON,\\\\\\\\n  PROPOSALS_APPROVED_STATUS_ARRAY,\\\\\\\\n  getLinkUsingCurrentGateway,\\\\\\\\n} = VM.require(`infrastructure-committee.near/widget/core.common`) || {\\\\\\\\n  RFP_TIMELINE_STATUS: {},\\\\\\\\n  CANCEL_RFP_OPTIONS: {},\\\\\\\\n  parseJSON: () => {},\\\\\\\\n  PROPOSALS_APPROVED_STATUS_ARRAY: {},\\\\\\\\n  getLinkUsingCurrentGateway: () => {},\\\\\\\\n};\\\\\\\\nconst { href } = VM.require(`devhub.near/widget/core.lib.url`) || {\\\\\\\\n  href: () => {},\\\\\\\\n};\\\\\\\\nconst { readableDate } = VM.require(`devhub.near/widget/core.lib.common`) || {\\\\\\\\n  readableDate: () => {},\\\\\\\\n};\\\\\\\\nconst { getGlobalLabels } = VM.require(\\\\\\\\n  `infrastructure-committee.near/widget/components.core.lib.contract`\\\\\\\\n) || { getGlobalLabels: () => {} };\\\\\\\\nconst accountId = context.accountId;\\\\\\\\n/*\\\\\\\\n  ---props---\\\\\\\\n  props.id: number;\\\\\\\\n  props.timestamp: number; optional\\\\\\\\n  accountId: string\\\\\\\\n  blockHeight:number\\\\\\\\n  */\\\\\\\\nconst { id, timestamp } = props;\\\\\\\\nif (id === undefined) {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src={`devhub.near/widget/devhub.page.notfound`}\\\\\\\\n      props={{ missing: \\\\\\\\\\\\\\\"rfp id\\\\\\\\\\\\\\\" }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}\\\\\\\\nconst Container = styled.div`\\\\\\\\n  .full-width-div {\\\\\\\\n    width: 100vw;\\\\\\\\n    position: relative;\\\\\\\\n    left: 50%;\\\\\\\\n    right: 50%;\\\\\\\\n    margin-left: -50vw;\\\\\\\\n    margin-right: -50vw;\\\\\\\\n  }\\\\\\\\n  .fw-bold {\\\\\\\\n    font-weight: 600 !important;\\\\\\\\n  }\\\\\\\\n  .card.no-border {\\\\\\\\n    border-left: none !important;\\\\\\\\n    border-right: none !important;\\\\\\\\n    margin-bottom: -3.5rem;\\\\\\\\n  }\\\\\\\\n  .description-box {\\\\\\\\n    font-size: 14px;\\\\\\\\n  }\\\\\\\\n  .accept-submission-info-container {\\\\\\\\n    background-color: #ecf8fb;\\\\\\\\n  }\\\\\\\\n  .text-sm {\\\\\\\\n    font-size: 13px !important;\\\\\\\\n  }\\\\\\\\n  .flex-1 {\\\\\\\\n    flex: 1;\\\\\\\\n  }\\\\\\\\n  .flex-3 {\\\\\\\\n    flex: 3;\\\\\\\\n  }\\\\\\\\n  .circle {\\\\\\\\n    width: 20px;\\\\\\\\n    height: 20px;\\\\\\\\n    border-radius: 50%;\\\\\\\\n    border: 1px solid grey;\\\\\\\\n  }\\\\\\\\n  .green-fill {\\\\\\\\n    background-color: rgb(4, 164, 110) !important;\\\\\\\\n    border-color: rgb(4, 164, 110) !important;\\\\\\\\n    color: white !important;\\\\\\\\n  }\\\\\\\\n  .yellow-fill {\\\\\\\\n    border-color: #ff7a00 !important;\\\\\\\\n  }\\\\\\\\n  .vertical-line {\\\\\\\\n    width: 2px;\\\\\\\\n    height: 180px;\\\\\\\\n    background-color: lightgrey;\\\\\\\\n  }\\\\\\\\n  @media screen and (max-width: 970px) {\\\\\\\\n    .vertical-line {\\\\\\\\n      height: 135px !important;\\\\\\\\n    }\\\\\\\\n    .vertical-line-sm {\\\\\\\\n      height: 70px !important;\\\\\\\\n    }\\\\\\\\n    .gap-6 {\\\\\\\\n      gap: 0.5rem !important;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  @media screen and (max-width: 570px) {\\\\\\\\n    .vertical-line {\\\\\\\\n      height: 180px !important;\\\\\\\\n    }\\\\\\\\n    .vertical-line-sm {\\\\\\\\n      height: 75px !important;\\\\\\\\n    }\\\\\\\\n    .gap-6 {\\\\\\\\n      gap: 0.5rem !important;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  .vertical-line-sm {\\\\\\\\n    width: 2px;\\\\\\\\n    height: 70px;\\\\\\\\n    background-color: lightgrey;\\\\\\\\n  }\\\\\\\\n  .form-check-input:disabled ~ .form-check-label,\\\\\\\\n  .form-check-input[disabled] ~ .form-check-label {\\\\\\\\n    opacity: 1;\\\\\\\\n  }\\\\\\\\n  .form-check-input {\\\\\\\\n    border-color: black !important;\\\\\\\\n  }\\\\\\\\n  .grey-btn {\\\\\\\\n    background-color: #687076;\\\\\\\\n    border: none;\\\\\\\\n    color: white;\\\\\\\\n  }\\\\\\\\n  .blue-btn {\\\\\\\\n    background-color: #3c697d;\\\\\\\\n    border: none;\\\\\\\\n    color: white;\\\\\\\\n  }\\\\\\\\n  .form-check-input:checked {\\\\\\\\n    background-color: #3c697d !important;\\\\\\\\n    border-color: #3c697d !important;\\\\\\\\n  }\\\\\\\\n  .dropdown-toggle:after {\\\\\\\\n    position: absolute;\\\\\\\\n    top: 46%;\\\\\\\\n    right: 5%;\\\\\\\\n  }\\\\\\\\n  .drop-btn {\\\\\\\\n    max-width: none !important;\\\\\\\\n  }\\\\\\\\n  .dropdown-menu {\\\\\\\\n    width: 100%;\\\\\\\\n    border-radius: 0.375rem !important;\\\\\\\\n  }\\\\\\\\n  .green-btn {\\\\\\\\n    background-color: #04a46e !important;\\\\\\\\n    border: none;\\\\\\\\n    color: white;\\\\\\\\n    &:active {\\\\\\\\n      color: white;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  .gap-6 {\\\\\\\\n    gap: 2.5rem;\\\\\\\\n  }\\\\\\\\n  .border-vertical {\\\\\\\\n    border-top: var(--bs-border-width) var(--bs-border-style)\\\\\\\\n      var(--bs-border-color) !important;\\\\\\\\n    border-bottom: var(--bs-border-width) var(--bs-border-style)\\\\\\\\n      var(--bs-border-color) !important;\\\\\\\\n  }\\\\\\\\n  button.px-0 {\\\\\\\\n    padding-inline: 0px !important;\\\\\\\\n  }\\\\\\\\n  red-icon i {\\\\\\\\n    color: red;\\\\\\\\n  }\\\\\\\\n  input[type=\\\\\\\\\\\\\\\"radio\\\\\\\\\\\\\\\"] {\\\\\\\\n    min-width: 13px;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\nconst RfpContainer = styled.div`\\\\\\\\n  border: 1px solid lightgrey;\\\\\\\\n  overflow: auto;\\\\\\\\n`;\\\\\\\\nconst Header = styled.div`\\\\\\\\n  position: relative;\\\\\\\\n  background-color: #f4f4f4;\\\\\\\\n  height: 50px;\\\\\\\\n  .menu {\\\\\\\\n    position: absolute;\\\\\\\\n    right: 10px;\\\\\\\\n    top: 4px;\\\\\\\\n    font-size: 30px;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\nconst Text = styled.p`\\\\\\\\n  display: block;\\\\\\\\n  margin: 0;\\\\\\\\n  font-size: 14px;\\\\\\\\n  line-height: 20px;\\\\\\\\n  font-weight: 400;\\\\\\\\n  color: #687076;\\\\\\\\n  white-space: nowrap;\\\\\\\\n`;\\\\\\\\nconst Actions = styled.div`\\\\\\\\n  display: flex;\\\\\\\\n  align-items: center;\\\\\\\\n  gap: 12px;\\\\\\\\n  margin: -6px -6px 6px;\\\\\\\\n`;\\\\\\\\nconst Avatar = styled.div`\\\\\\\\n  width: 40px;\\\\\\\\n  height: 40px;\\\\\\\\n  pointer-events: none;\\\\\\\\n  img {\\\\\\\\n    object-fit: cover;\\\\\\\\n    border-radius: 40px;\\\\\\\\n    width: 100%;\\\\\\\\n    height: 100%;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\nconst rfpLabelOptions = getGlobalLabels();\\\\\\\\nconst LinkProfile = ({ account, children }) => {\\\\\\\\n  return (\\\\\\\\n    <Link href={`/near/widget/ProfilePage?accountId=${account}`}>\\\\\\\\n      {children}\\\\\\\\n    </Link>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\nconst [snapshotHistory, setSnapshotHistory] = useState([]);\\\\\\\\nconst rfp = Near.view(\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"get_rfp\\\\\\\\\\\\\\\", {\\\\\\\\n  rfp_id: parseInt(id),\\\\\\\\n});\\\\\\\\nconst queryName =\\\\\\\\n  \\\\\\\\\\\\\\\"polyprogrammist_near_devhub_ic_v1_proposals_with_latest_snapshot\\\\\\\\\\\\\\\";\\\\\\\\nconst query = `query GetLatestSnapshot($offset: Int = 0, $limit: Int = 10, $where: ${queryName}_bool_exp = {}) {\\\\\\\\n  ${queryName}(\\\\\\\\n    offset: $offset\\\\\\\\n    limit: $limit\\\\\\\\n    order_by: {ts: asc}\\\\\\\\n    where: $where\\\\\\\\n  ) {\\\\\\\\n    editor_id\\\\\\\\n    name\\\\\\\\n    summary\\\\\\\\n    description\\\\\\\\n    ts\\\\\\\\n    rfp_id\\\\\\\\n    timeline\\\\\\\\n    labels\\\\\\\\n    submission_deadline\\\\\\\\n    linked_proposals\\\\\\\\n  }\\\\\\\\n}`;\\\\\\\\nconst fetchSnapshotHistory = () => {\\\\\\\\n  const variables = {\\\\\\\\n    where: { rfp_id: { _eq: id } },\\\\\\\\n  };\\\\\\\\n  if (typeof fetchGraphQL !== \\\\\\\\\\\\\\\"function\\\\\\\\\\\\\\\") {\\\\\\\\n    return;\\\\\\\\n  }\\\\\\\\n  fetchGraphQL(query, \\\\\\\\\\\\\\\"GetLatestSnapshot\\\\\\\\\\\\\\\", variables).then(async (result) => {\\\\\\\\n    if (result.status === 200) {\\\\\\\\n      if (result.body.data) {\\\\\\\\n        const data = result.body.data?.[queryName];\\\\\\\\n        const history = data.map((item) => {\\\\\\\\n          const rfpData = {\\\\\\\\n            ...item,\\\\\\\\n            timestamp: item.ts,\\\\\\\\n            timeline: parseJSON(item.timeline),\\\\\\\\n          };\\\\\\\\n          delete rfpData.ts;\\\\\\\\n          return rfpData;\\\\\\\\n        });\\\\\\\\n        setSnapshotHistory(history);\\\\\\\\n      }\\\\\\\\n    }\\\\\\\\n  });\\\\\\\\n};\\\\\\\\nuseEffect(() => {\\\\\\\\n  fetchSnapshotHistory();\\\\\\\\n}, [id]);\\\\\\\\nif (!rfp) {\\\\\\\\n  return (\\\\\\\\n    <div\\\\\\\\n      style={{ height: \\\\\\\\\\\\\\\"50vh\\\\\\\\\\\\\\\" }}\\\\\\\\n      className=\\\\\\\\\\\\\\\"d-flex justify-content-center align-items-center w-100\\\\\\\\\\\\\\\"\\\\\\\\n    >\\\\\\\\n      <Widget src={`devhub.near/widget/devhub.components.molecule.Spinner`} />\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n}\\\\\\\\nif (timestamp && rfp) {\\\\\\\\n  rfp.snapshot =\\\\\\\\n    snapshotHistory.find((item) => item.timestamp === timestamp) ??\\\\\\\\n    rfp.snapshot;\\\\\\\\n}\\\\\\\\nconst { snapshot } = rfp;\\\\\\\\nsnapshot.timeline = parseJSON(snapshot.timeline);\\\\\\\\nconst authorId = rfp.author_id;\\\\\\\\nconst blockHeight = parseInt(rfp.social_db_post_block_height);\\\\\\\\nconst item = {\\\\\\\\n  type: \\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\n  path: `infrastructure-committee.near/post/main`,\\\\\\\\n  blockHeight,\\\\\\\\n};\\\\\\\\nconst rfpURL = getLinkUsingCurrentGateway(\\\\\\\\n  `infrastructure-committee.near/widget/app?page=rfp&id=${rfp.id}&timestamp=${snapshot.timestamp}`\\\\\\\\n);\\\\\\\\nconst SidePanelItem = ({ title, children, hideBorder, ishidden }) => {\\\\\\\\n  return (\\\\\\\\n    <div\\\\\\\\n      style={{ gap: \\\\\\\\\\\\\\\"8px\\\\\\\\\\\\\\\" }}\\\\\\\\n      className={\\\\\\\\n        ishidden\\\\\\\\n          ? \\\\\\\\\\\\\\\"d-none\\\\\\\\\\\\\\\"\\\\\\\\n          : \\\\\\\\\\\\\\\"d-flex flex-column pb-3 \\\\\\\\\\\\\\\" + (!hideBorder && \\\\\\\\\\\\\\\" border-bottom\\\\\\\\\\\\\\\")\\\\\\\\n      }\\\\\\\\n    >\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"h6 mb-0\\\\\\\\\\\\\\\">{title} </div>\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"text-muted\\\\\\\\\\\\\\\">{children}</div>\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\nconst isAllowedToWriteRfp = Near.view(\\\\\\\\n  \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n  \\\\\\\\\\\\\\\"is_allowed_to_write_rfps\\\\\\\\\\\\\\\",\\\\\\\\n  {\\\\\\\\n    editor: accountId,\\\\\\\\n  }\\\\\\\\n);\\\\\\\\nconst link = href({\\\\\\\\n  widgetSrc: `infrastructure-committee.near/widget/app`,\\\\\\\\n  params: {\\\\\\\\n    page: \\\\\\\\\\\\\\\"create-rfp\\\\\\\\\\\\\\\",\\\\\\\\n    id: rfp.id,\\\\\\\\n    timestamp: timestamp,\\\\\\\\n  },\\\\\\\\n});\\\\\\\\nconst createdDate = snapshotHistory[0].timestamp ?? snapshot.timestamp;\\\\\\\\nconst [approvedProposals, setApprovedProposals] = useState([]);\\\\\\\\nconst [isCancelModalOpen, setCancelModal] = useState(false);\\\\\\\\nconst [isWarningModalOpen, setWarningModal] = useState(false);\\\\\\\\nconst [timeline, setTimeline] = useState(null);\\\\\\\\nconst [showTimelineSetting, setShowTimelineSetting] = useState(false);\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (!timeline) {\\\\\\\\n    setTimeline(snapshot.timeline);\\\\\\\\n  }\\\\\\\\n}, [snapshot]);\\\\\\\\nfunction fetchApprovedRfpProposals() {\\\\\\\\n  const queryName = \\\\\\\\\\\\\\\"polyprogrammist_near_devhub_ic_v1_rfp_snapshots\\\\\\\\\\\\\\\";\\\\\\\\n  const query = `query GetLatestSnapshot($offset: Int = 0, $limit: Int = 10, $where: ${queryName}_bool_exp = {}) {\\\\\\\\n    ${queryName}(\\\\\\\\n      offset: $offset\\\\\\\\n      limit: $limit\\\\\\\\n      order_by: {proposal_id: desc}\\\\\\\\n      where: $where\\\\\\\\n    ) {\\\\\\\\n      proposal_id\\\\\\\\n      name\\\\\\\\n      timeline\\\\\\\\n    }\\\\\\\\n  }`;\\\\\\\\n  const FETCH_LIMIT = 50;\\\\\\\\n  const variables = {\\\\\\\\n    limit: FETCH_LIMIT,\\\\\\\\n    offset,\\\\\\\\n    where: {\\\\\\\\n      proposal_id: { _in: rfp.snapshot.linked_proposals },\\\\\\\\n    },\\\\\\\\n  };\\\\\\\\n  if (typeof fetchGraphQL !== \\\\\\\\\\\\\\\"function\\\\\\\\\\\\\\\") {\\\\\\\\n    return;\\\\\\\\n  }\\\\\\\\n  fetchGraphQL(query, \\\\\\\\\\\\\\\"GetLatestSnapshot\\\\\\\\\\\\\\\", variables).then(async (result) => {\\\\\\\\n    if (result.status === 200) {\\\\\\\\n      if (result.body.data) {\\\\\\\\n        const data = result.body.data?.[queryName];\\\\\\\\n        const approved = [];\\\\\\\\n        data.map((item) => {\\\\\\\\n          const timeline = parseJSON(item.timeline);\\\\\\\\n          if (PROPOSALS_APPROVED_STATUS_ARRAY.includes(timeline.status)) {\\\\\\\\n            approved.push(item);\\\\\\\\n          }\\\\\\\\n        });\\\\\\\\n        setApprovedProposals(approved);\\\\\\\\n      }\\\\\\\\n    }\\\\\\\\n  });\\\\\\\\n}\\\\\\\\nconst editRFPStatus = () => {\\\\\\\\n  Near.call([\\\\\\\\n    {\\\\\\\\n      contractName: \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n      methodName: \\\\\\\\\\\\\\\"edit_rfp_timeline\\\\\\\\\\\\\\\",\\\\\\\\n      args: {\\\\\\\\n        id: rfp.id,\\\\\\\\n        timeline: timeline,\\\\\\\\n      },\\\\\\\\n      gas: 270000000000000,\\\\\\\\n    },\\\\\\\\n  ]);\\\\\\\\n};\\\\\\\\nconst onCancelRFP = (value) => {\\\\\\\\n  Near.call([\\\\\\\\n    {\\\\\\\\n      contractName: \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n      methodName: \\\\\\\\\\\\\\\"cancel_rfp\\\\\\\\\\\\\\\",\\\\\\\\n      args: {\\\\\\\\n        id: rfp.id,\\\\\\\\n        proposals_to_cancel:\\\\\\\\n          value === CANCEL_RFP_OPTIONS.CANCEL_PROPOSALS\\\\\\\\n            ? snapshot.linked_proposals\\\\\\\\n            : [],\\\\\\\\n        proposals_to_unlink:\\\\\\\\n          value === CANCEL_RFP_OPTIONS.UNLINK_PROPOSALS\\\\\\\\n            ? snapshot.linked_proposals\\\\\\\\n            : [],\\\\\\\\n      },\\\\\\\\n      gas: 270000000000000,\\\\\\\\n    },\\\\\\\\n  ]);\\\\\\\\n};\\\\\\\\nconst accessControlInfo =\\\\\\\\n  Near.view(\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"get_access_control_info\\\\\\\\\\\\\\\") ?? null;\\\\\\\\nconst moderatorList =\\\\\\\\n  accessControlInfo?.members_list?.[\\\\\\\\\\\\\\\"team:moderators\\\\\\\\\\\\\\\"]?.children;\\\\\\\\nfetchApprovedRfpProposals();\\\\\\\\nconst SubmitProposalBtn = () => {\\\\\\\\n  return (\\\\\\\\n    <div style={{ minWidth: \\\\\\\\\\\\\\\"fit-content\\\\\\\\\\\\\\\" }}>\\\\\\\\n      <Link\\\\\\\\n        to={href({\\\\\\\\n          widgetSrc: `infrastructure-committee.near/widget/app`,\\\\\\\\n          params: { page: \\\\\\\\\\\\\\\"create-proposal\\\\\\\\\\\\\\\", rfp_id: rfp.id },\\\\\\\\n        })}\\\\\\\\n      >\\\\\\\\n        <Widget\\\\\\\\n          src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n          props={{\\\\\\\\n            label: (\\\\\\\\n              <div className=\\\\\\\\\\\\\\\"d-flex align-items-center gap-2\\\\\\\\\\\\\\\">\\\\\\\\n                <i className=\\\\\\\\\\\\\\\"bi bi-plus-circle\\\\\\\\\\\\\\\"></i>Submit Proposal\\\\\\\\n              </div>\\\\\\\\n            ),\\\\\\\\n            classNames: { root: \\\\\\\\\\\\\\\"blue-btn\\\\\\\\\\\\\\\" },\\\\\\\\n          }}\\\\\\\\n        />\\\\\\\\n      </Link>\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\nreturn (\\\\\\\\n  <Container className=\\\\\\\\\\\\\\\"d-flex flex-column gap-2 w-100 mt-4\\\\\\\\\\\\\\\">\\\\\\\\n    <Widget\\\\\\\\n      src={`infrastructure-committee.near/widget/components.rfps.ConfirmCancelModal`}\\\\\\\\n      props={{\\\\\\\\n        isOpen: isCancelModalOpen,\\\\\\\\n        onCancelClick: () => {\\\\\\\\n          setCancelModal(false);\\\\\\\\n          setTimeline({ status: RFP_TIMELINE_STATUS.EVALUATION });\\\\\\\\n        },\\\\\\\\n        onConfirmClick: (value) => {\\\\\\\\n          setCancelModal(false);\\\\\\\\n          onCancelRFP(value);\\\\\\\\n        },\\\\\\\\n        linkedProposalIds: snapshot.linked_proposals,\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n    <Widget\\\\\\\\n      src={`infrastructure-committee.near/widget/components.rfps.WarningModal`}\\\\\\\\n      props={{\\\\\\\\n        isOpen: isWarningModalOpen,\\\\\\\\n        onConfirmClick: () => {\\\\\\\\n          setWarningModal(false);\\\\\\\\n          setTimeline({ status: RFP_TIMELINE_STATUS.EVALUATION });\\\\\\\\n        },\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"d-flex px-3 px-lg-0 justify-content-between\\\\\\\\\\\\\\\">\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center h3\\\\\\\\\\\\\\\">\\\\\\\\n        <div>{snapshot.name}</div>\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"text-muted\\\\\\\\\\\\\\\">#{rfp.id}</div>\\\\\\\\n      </div>\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n        <Widget\\\\\\\\n          src={`near/widget/ShareButton`}\\\\\\\\n          props={{\\\\\\\\n            postType: \\\\\\\\\\\\\\\"post\\\\\\\\\\\\\\\",\\\\\\\\n            url: rfpURL,\\\\\\\\n          }}\\\\\\\\n        />\\\\\\\\n        {isAllowedToWriteRfp && (\\\\\\\\n          <Link to={link} style={{ textDecoration: \\\\\\\\\\\\\\\"none\\\\\\\\\\\\\\\" }}>\\\\\\\\n            <Widget\\\\\\\\n              src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n              props={{\\\\\\\\n                label: \\\\\\\\\\\\\\\"Edit\\\\\\\\\\\\\\\",\\\\\\\\n                classNames: { root: \\\\\\\\\\\\\\\"grey-btn btn-sm\\\\\\\\\\\\\\\" },\\\\\\\\n              }}\\\\\\\\n            />\\\\\\\\n          </Link>\\\\\\\\n        )}\\\\\\\\n      </div>\\\\\\\\n    </div>\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"d-flex flex-wrap flex-md-nowrap px-3 px-lg-0 gap-2 align-items-center text-sm pb-3 w-100\\\\\\\\\\\\\\\">\\\\\\\\n      <Widget\\\\\\\\n        src={`infrastructure-committee.near/widget/components.rfps.StatusTag`}\\\\\\\\n        props={{\\\\\\\\n          timelineStatus: snapshot.timeline.status,\\\\\\\\n          size: \\\\\\\\\\\\\\\"sm\\\\\\\\\\\\\\\",\\\\\\\\n        }}\\\\\\\\n      />\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"w-100 d-flex flex-wrap flex-md-nowrap gap-1 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"fw-bold text-truncate\\\\\\\\\\\\\\\">\\\\\\\\n          <LinkProfile account={authorId}>{authorId}</LinkProfile>\\\\\\\\n        </div>\\\\\\\\n        <div>created on {readableDate(createdDate / 1000000)}</div>\\\\\\\\n      </div>\\\\\\\\n    </div>\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"card no-border rounded-0 full-width-div px-3 px-lg-0\\\\\\\\\\\\\\\">\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"container-xl py-4\\\\\\\\\\\\\\\">\\\\\\\\n        {snapshot.timeline.status ===\\\\\\\\n          RFP_TIMELINE_STATUS.ACCEPTING_SUBMISSIONS && (\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"accept-submission-info-container p-3 p-sm-4 d-flex flex-wrap flex-sm-nowrap justify-content-between align-items-center gap-2 rounded-2\\\\\\\\\\\\\\\">\\\\\\\\n            <div style={{ minWidth: \\\\\\\\\\\\\\\"300px\\\\\\\\\\\\\\\" }}>\\\\\\\\n              <b>This RFP is accepting submissions.</b>\\\\\\\\n              <p className=\\\\\\\\\\\\\\\"text-sm text-muted mt-2\\\\\\\\\\\\\\\">\\\\\\\\n                Click Submit Proposal if you want to submit a proposal.\\\\\\\\n              </p>\\\\\\\\n            </div>\\\\\\\\n            <SubmitProposalBtn />\\\\\\\\n          </div>\\\\\\\\n        )}\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"my-4\\\\\\\\\\\\\\\">\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"d-flex flex-wrap gap-6\\\\\\\\\\\\\\\">\\\\\\\\n            <div\\\\\\\\n              style={{ minWidth: \\\\\\\\\\\\\\\"350px\\\\\\\\\\\\\\\" }}\\\\\\\\n              className=\\\\\\\\\\\\\\\"flex-3 order-2 order-md-1\\\\\\\\\\\\\\\"\\\\\\\\n            >\\\\\\\\n              <div\\\\\\\\n                className=\\\\\\\\\\\\\\\"d-flex gap-2 flex-1\\\\\\\\\\\\\\\"\\\\\\\\n                style={{\\\\\\\\n                  zIndex: 99,\\\\\\\\n                  background: \\\\\\\\\\\\\\\"white\\\\\\\\\\\\\\\",\\\\\\\\n                  position: \\\\\\\\\\\\\\\"relative\\\\\\\\\\\\\\\",\\\\\\\\n                }}\\\\\\\\n              >\\\\\\\\n                <div className=\\\\\\\\\\\\\\\"d-none d-sm-flex\\\\\\\\\\\\\\\">\\\\\\\\n                  <img\\\\\\\\n                    src={\\\\\\\\n                      \\\\\\\\\\\\\\\"https://ipfs.near.social/ipfs/bafkreicbygt4kajytlxij24jj6tkg2ppc2dw3dlqhkermkjjfgdfnlizzy\\\\\\\\\\\\\\\"\\\\\\\\n                    }\\\\\\\\n                    height={35}\\\\\\\\n                    width={35}\\\\\\\\n                  />\\\\\\\\n                </div>\\\\\\\\n                <RfpContainer className=\\\\\\\\\\\\\\\"rounded-2 flex-1\\\\\\\\\\\\\\\">\\\\\\\\n                  <Header className=\\\\\\\\\\\\\\\"d-flex gap-1 align-items-center p-2 px-3 \\\\\\\\\\\\\\\">\\\\\\\\n                    <div\\\\\\\\n                      className=\\\\\\\\\\\\\\\"fw-bold text-truncate\\\\\\\\\\\\\\\"\\\\\\\\n                      style={{ maxWidth: \\\\\\\\\\\\\\\"60%\\\\\\\\\\\\\\\" }}\\\\\\\\n                    >\\\\\\\\n                      <LinkProfile account={authorId}>{authorId}</LinkProfile>\\\\\\\\n                    </div>\\\\\\\\n                    <div\\\\\\\\n                      className=\\\\\\\\\\\\\\\"text-muted\\\\\\\\\\\\\\\"\\\\\\\\n                      style={{ minWidth: \\\\\\\\\\\\\\\"fit-content\\\\\\\\\\\\\\\" }}\\\\\\\\n                    >\\\\\\\\n                      \\\\\\\\u{ff65}{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n                      <Widget\\\\\\\\n                        src={`near/widget/TimeAgo`}\\\\\\\\n                        props={{\\\\\\\\n                          blockHeight,\\\\\\\\n                          blockTimestamp: createdDate,\\\\\\\\n                        }}\\\\\\\\n                      />\\\\\\\\n                      {context.accountId && (\\\\\\\\n                        <div className=\\\\\\\\\\\\\\\"menu\\\\\\\\\\\\\\\">\\\\\\\\n                          <Widget\\\\\\\\n                            src={`near/widget/Posts.Menu`}\\\\\\\\n                            props={{\\\\\\\\n                              accountId: authorId,\\\\\\\\n                              blockHeight: blockHeight,\\\\\\\\n                            }}\\\\\\\\n                          />\\\\\\\\n                        </div>\\\\\\\\n                      )}\\\\\\\\n                    </div>\\\\\\\\n                  </Header>\\\\\\\\n                  <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-1 p-2 px-3 description-box\\\\\\\\\\\\\\\">\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"text-muted h6 border-bottom pb-1 mt-3\\\\\\\\\\\\\\\">\\\\\\\\n                      RFP CATEGORY\\\\\\\\n                      <div className=\\\\\\\\\\\\\\\"my-2\\\\\\\\\\\\\\\">\\\\\\\\n                        <Widget\\\\\\\\n                          src={`infrastructure-committee.near/widget/components.molecule.MultiSelectCategoryDropdown`}\\\\\\\\n                          props={{\\\\\\\\n                            selected: snapshot.labels,\\\\\\\\n                            disabled: true,\\\\\\\\n                            hideDropdown: true,\\\\\\\\n                            onChange: () => {},\\\\\\\\n                            availableOptions: rfpLabelOptions,\\\\\\\\n                          }}\\\\\\\\n                        />\\\\\\\\n                      </div>\\\\\\\\n                    </div>\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"text-muted h6 border-bottom pb-1 mt-3\\\\\\\\\\\\\\\">\\\\\\\\n                      SUMMARY\\\\\\\\n                    </div>\\\\\\\\n                    <div>{snapshot.summary}</div>\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"text-muted h6 border-bottom pb-1 mt-3\\\\\\\\\\\\\\\">\\\\\\\\n                      DESCRIPTION\\\\\\\\n                    </div>\\\\\\\\n                    <Widget\\\\\\\\n                      src={`devhub.near/widget/devhub.components.molecule.SimpleMDEViewer`}\\\\\\\\n                      props={{\\\\\\\\n                        content: snapshot.description,\\\\\\\\n                      }}\\\\\\\\n                    />\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center mt-3\\\\\\\\\\\\\\\">\\\\\\\\n                      <Widget\\\\\\\\n                        src={`infrastructure-committee.near/widget/components.molecule.LikeButton`}\\\\\\\\n                        props={{\\\\\\\\n                          item,\\\\\\\\n                          rfpId: rfp.id,\\\\\\\\n                          notifyAccountIds: moderatorList,\\\\\\\\n                        }}\\\\\\\\n                      />\\\\\\\\n                      <Widget\\\\\\\\n                        src={`devhub.near/widget/devhub.entity.proposal.CommentIcon`}\\\\\\\\n                        props={{\\\\\\\\n                          item,\\\\\\\\n                          showOverlay: false,\\\\\\\\n                          onClick: () => {},\\\\\\\\n                        }}\\\\\\\\n                      />\\\\\\\\n                      <Widget\\\\\\\\n                        src={`near/widget/CopyUrlButton`}\\\\\\\\n                        props={{\\\\\\\\n                          url: rfpURL,\\\\\\\\n                        }}\\\\\\\\n                      />\\\\\\\\n                    </div>\\\\\\\\n                  </div>\\\\\\\\n                </RfpContainer>\\\\\\\\n              </div>\\\\\\\\n              <div className=\\\\\\\\\\\\\\\"border-bottom pb-4 mt-4\\\\\\\\\\\\\\\">\\\\\\\\n                <Widget\\\\\\\\n                  src={`infrastructure-committee.near/widget/components.rfps.CommentsAndLogs`}\\\\\\\\n                  props={{\\\\\\\\n                    ...props,\\\\\\\\n                    id: rfp.id,\\\\\\\\n                    item: item,\\\\\\\\n                    approvedProposals: approvedProposals,\\\\\\\\n                    snapshotHistory: snapshotHistory,\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              </div>\\\\\\\\n              <div\\\\\\\\n                style={{\\\\\\\\n                  position: \\\\\\\\\\\\\\\"relative\\\\\\\\\\\\\\\",\\\\\\\\n                  zIndex: 99,\\\\\\\\n                  backgroundColor: \\\\\\\\\\\\\\\"white\\\\\\\\\\\\\\\",\\\\\\\\n                }}\\\\\\\\n                className=\\\\\\\\\\\\\\\"pt-4\\\\\\\\\\\\\\\"\\\\\\\\n              >\\\\\\\\n                <Widget\\\\\\\\n                  src={`infrastructure-committee.near/widget/components.molecule.ComposeComment`}\\\\\\\\n                  props={{\\\\\\\\n                    ...props,\\\\\\\\n                    item: item,\\\\\\\\n                    notifyAccountIds: moderatorList,\\\\\\\\n                    rfpId: rfp.id,\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n                {snapshot.timeline.status ===\\\\\\\\n                  RFP_TIMELINE_STATUS.ACCEPTING_SUBMISSIONS && (\\\\\\\\n                  <div className=\\\\\\\\\\\\\\\"accept-submission-info-container mt-3 p-3 p-sm-4 d-flex flex-wrap flex-md-nowrap justify-content-between align-items-center gap-2 rounded-2\\\\\\\\\\\\\\\">\\\\\\\\n                    <div style={{ minWidth: \\\\\\\\\\\\\\\"350px\\\\\\\\\\\\\\\" }}>\\\\\\\\n                      <b>Want to respond to this RFP? </b> This RFP is accepting\\\\\\\\n                      submissions.\\\\\\\\n                    </div>\\\\\\\\n                    <SubmitProposalBtn />\\\\\\\\n                  </div>\\\\\\\\n                )}\\\\\\\\n              </div>\\\\\\\\n            </div>\\\\\\\\n            <div\\\\\\\\n              style={{ minWidth: \\\\\\\\\\\\\\\"300px\\\\\\\\\\\\\\\" }}\\\\\\\\n              className=\\\\\\\\\\\\\\\"d-flex flex-column gap-4 flex-1 order-1 order-md-2\\\\\\\\\\\\\\\"\\\\\\\\n            >\\\\\\\\n              <SidePanelItem title=\\\\\\\\\\\\\\\"Submission Deadline\\\\\\\\\\\\\\\">\\\\\\\\n                <h5 className=\\\\\\\\\\\\\\\"text-black\\\\\\\\\\\\\\\">\\\\\\\\n                  {readableDate(\\\\\\\\n                    parseFloat(snapshot.submission_deadline / 1000000)\\\\\\\\n                  )}\\\\\\\\n                </h5>\\\\\\\\n              </SidePanelItem>\\\\\\\\n              <SidePanelItem\\\\\\\\n                title={\\\\\\\\n                  <div>\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"d-flex justify-content-between align-content-center\\\\\\\\\\\\\\\">\\\\\\\\n                      Timeline\\\\\\\\n                      {isAllowedToWriteRfp && (\\\\\\\\n                        <div\\\\\\\\n                          data-testid=\\\\\\\\\\\\\\\"setting-btn\\\\\\\\\\\\\\\"\\\\\\\\n                          onClick={() => setShowTimelineSetting(true)}\\\\\\\\n                        >\\\\\\\\n                          <i class=\\\\\\\\\\\\\\\"bi bi-gear\\\\\\\\\\\\\\\"></i>\\\\\\\\n                        </div>\\\\\\\\n                      )}\\\\\\\\n                    </div>\\\\\\\\n                  </div>\\\\\\\\n                }\\\\\\\\n              >\\\\\\\\n                <Widget\\\\\\\\n                  src={`infrastructure-committee.near/widget/components.rfps.TimelineConfigurator`}\\\\\\\\n                  props={{\\\\\\\\n                    timeline: timeline,\\\\\\\\n                    setTimeline: (v) => {\\\\\\\\n                      if (\\\\\\\\n                        snapshot.timeline.status === v.status &&\\\\\\\\n                        timeline.status === v.status\\\\\\\\n                      ) {\\\\\\\\n                        return;\\\\\\\\n                      }\\\\\\\\n                      // if proposal selected timeline is selected and no approved proposals exist, show warning\\\\\\\\n                      if (\\\\\\\\n                        v.status === RFP_TIMELINE_STATUS.PROPOSAL_SELECTED &&\\\\\\\\n                        Array.isArray(approvedProposals) &&\\\\\\\\n                        !approvedProposals.length\\\\\\\\n                      ) {\\\\\\\\n                        setWarningModal(true);\\\\\\\\n                      }\\\\\\\\n                      if (v.status === RFP_TIMELINE_STATUS.CANCELLED) {\\\\\\\\n                        setCancelModal(true);\\\\\\\\n                      }\\\\\\\\n                      setTimeline(v);\\\\\\\\n                    },\\\\\\\\n                    disabled: showTimelineSetting ? false : true,\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n                {showTimelineSetting && (\\\\\\\\n                  <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center justify-content-end text-sm mt-2\\\\\\\\\\\\\\\">\\\\\\\\n                    <Widget\\\\\\\\n                      src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n                      props={{\\\\\\\\n                        label: \\\\\\\\\\\\\\\"Cancel\\\\\\\\\\\\\\\",\\\\\\\\n                        classNames: {\\\\\\\\n                          root: \\\\\\\\\\\\\\\"btn-outline-danger border-0 shadow-none btn-sm\\\\\\\\\\\\\\\",\\\\\\\\n                        },\\\\\\\\n                        onClick: () => {\\\\\\\\n                          setShowTimelineSetting(false);\\\\\\\\n                          setTimeline(snapshot.timeline);\\\\\\\\n                        },\\\\\\\\n                      }}\\\\\\\\n                    />\\\\\\\\n                    <Widget\\\\\\\\n                      src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n                      props={{\\\\\\\\n                        label: \\\\\\\\\\\\\\\"Save\\\\\\\\\\\\\\\",\\\\\\\\n                        classNames: { root: \\\\\\\\\\\\\\\"blue-btn btn-sm\\\\\\\\\\\\\\\" },\\\\\\\\n                        onClick: () => {\\\\\\\\n                          editRFPStatus();\\\\\\\\n                          setShowTimelineSetting(false);\\\\\\\\n                        },\\\\\\\\n                      }}\\\\\\\\n                    />\\\\\\\\n                  </div>\\\\\\\\n                )}\\\\\\\\n              </SidePanelItem>\\\\\\\\n              <SidePanelItem\\\\\\\\n                title={\\\\\\\\n                  \\\\\\\\\\\\\\\"Selected Proposal\\\\\\\\\\\\\\\" + \\\\\\\\\\\\\\\" (\\\\\\\\\\\\\\\" + approvedProposals.length + \\\\\\\\\\\\\\\")\\\\\\\\\\\\\\\"\\\\\\\\n                }\\\\\\\\n                ishidden={!approvedProposals.length}\\\\\\\\n              >\\\\\\\\n                <Widget\\\\\\\\n                  src={`infrastructure-committee.near/widget/components.molecule.LinkedProposals`}\\\\\\\\n                  props={{\\\\\\\\n                    linkedProposalIds: (approvedProposals ?? []).map(\\\\\\\\n                      (i) => i.proposal_id\\\\\\\\n                    ),\\\\\\\\n                    showStatus: false,\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              </SidePanelItem>\\\\\\\\n              <SidePanelItem\\\\\\\\n                title={\\\\\\\\n                  \\\\\\\\\\\\\\\"All Proposals\\\\\\\\\\\\\\\" +\\\\\\\\n                  \\\\\\\\\\\\\\\" (\\\\\\\\\\\\\\\" +\\\\\\\\n                  snapshot.linked_proposals.length +\\\\\\\\n                  \\\\\\\\\\\\\\\")\\\\\\\\\\\\\\\"\\\\\\\\n                }\\\\\\\\n                ishidden={!snapshot.linked_proposals.length}\\\\\\\\n              >\\\\\\\\n                <Widget\\\\\\\\n                  src={`infrastructure-committee.near/widget/components.molecule.LinkedProposals`}\\\\\\\\n                  props={{\\\\\\\\n                    linkedProposalIds: snapshot.linked_proposals,\\\\\\\\n                    showStatus:\\\\\\\\n                      snapshot.timeline.status !==\\\\\\\\n                      RFP_TIMELINE_STATUS.PROPOSAL_SELECTED,\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              </SidePanelItem>\\\\\\\\n            </div>\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n      </div>\\\\\\\\n    </div>\\\\\\\\n  </Container>\\\\\\\\n);\\\\\\\\n\"}, \"components.proposals.Proposal\": {\"\": \"const { PROPOSAL_TIMELINE_STATUS, fetchGraphQL, parseJSON, isNumber } =\\\\\\\\n  VM.require(`infrastructure-committee.near/widget/core.common`) || {\\\\\\\\n    PROPOSAL_TIMELINE_STATUS: {},\\\\\\\\n    parseJSON: () => {},\\\\\\\\n    isNumber: () => {},\\\\\\\\n  };\\\\\\\\nconst { href } = VM.require(`devhub.near/widget/core.lib.url`);\\\\\\\\nhref || (href = () => {});\\\\\\\\nconst { getGlobalLabels } = VM.require(\\\\\\\\n  `infrastructure-committee.near/widget/components.core.lib.contract`\\\\\\\\n) || { getGlobalLabels: () => {} };\\\\\\\\nconst { readableDate } = VM.require(`devhub.near/widget/core.lib.common`) || {\\\\\\\\n  readableDate: () => {},\\\\\\\\n};\\\\\\\\nconst accountId = context.accountId;\\\\\\\\n/*\\\\\\\\n  ---props---\\\\\\\\n  props.id: number;\\\\\\\\n  props.timestamp: number; optional\\\\\\\\n  accountId: string\\\\\\\\n  blockHeight:number\\\\\\\\n  */\\\\\\\\nconst DecisionStage = [\\\\\\\\n  PROPOSAL_TIMELINE_STATUS.APPROVED,\\\\\\\\n  PROPOSAL_TIMELINE_STATUS.REJECTED,\\\\\\\\n  PROPOSAL_TIMELINE_STATUS.APPROVED_CONDITIONALLY,\\\\\\\\n];\\\\\\\\nconst Container = styled.div`\\\\\\\\n  .full-width-div {\\\\\\\\n    width: 100vw;\\\\\\\\n    position: relative;\\\\\\\\n    left: 50%;\\\\\\\\n    right: 50%;\\\\\\\\n    margin-left: -50vw;\\\\\\\\n    margin-right: -50vw;\\\\\\\\n  }\\\\\\\\n  .fw-bold {\\\\\\\\n    font-weight: 600 !important;\\\\\\\\n  }\\\\\\\\n  .card.no-border {\\\\\\\\n    border-left: none !important;\\\\\\\\n    border-right: none !important;\\\\\\\\n    margin-bottom: -3.5rem;\\\\\\\\n  }\\\\\\\\n  .description-box {\\\\\\\\n    font-size: 14px;\\\\\\\\n  }\\\\\\\\n  .draft-info-container {\\\\\\\\n    background-color: #ecf8fb;\\\\\\\\n  }\\\\\\\\n  .review-info-container {\\\\\\\\n    background-color: #fef6ee;\\\\\\\\n  }\\\\\\\\n  .text-sm {\\\\\\\\n    font-size: 13px !important;\\\\\\\\n  }\\\\\\\\n  .flex-1 {\\\\\\\\n    flex: 1;\\\\\\\\n  }\\\\\\\\n  .flex-3 {\\\\\\\\n    flex: 3;\\\\\\\\n  }\\\\\\\\n  .circle {\\\\\\\\n    width: 20px;\\\\\\\\n    height: 20px;\\\\\\\\n    border-radius: 50%;\\\\\\\\n    border: 1px solid grey;\\\\\\\\n  }\\\\\\\\n  .green-fill {\\\\\\\\n    background-color: rgb(4, 164, 110) !important;\\\\\\\\n    border-color: rgb(4, 164, 110) !important;\\\\\\\\n    color: white !important;\\\\\\\\n  }\\\\\\\\n  .yellow-fill {\\\\\\\\n    border-color: #ff7a00 !important;\\\\\\\\n  }\\\\\\\\n  .vertical-line {\\\\\\\\n    width: 2px;\\\\\\\\n    height: 180px;\\\\\\\\n    background-color: lightgrey;\\\\\\\\n  }\\\\\\\\n  @media screen and (max-width: 970px) {\\\\\\\\n    .vertical-line {\\\\\\\\n      height: 135px !important;\\\\\\\\n    }\\\\\\\\n    .vertical-line-sm {\\\\\\\\n      height: 70px !important;\\\\\\\\n    }\\\\\\\\n    .gap-6 {\\\\\\\\n      gap: 0.5rem !important;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  @media screen and (max-width: 570px) {\\\\\\\\n    .vertical-line {\\\\\\\\n      height: 180px !important;\\\\\\\\n    }\\\\\\\\n    .vertical-line-sm {\\\\\\\\n      height: 75px !important;\\\\\\\\n    }\\\\\\\\n    .gap-6 {\\\\\\\\n      gap: 0.5rem !important;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  .vertical-line-sm {\\\\\\\\n    width: 2px;\\\\\\\\n    height: 70px;\\\\\\\\n    background-color: lightgrey;\\\\\\\\n  }\\\\\\\\n  .form-check-input:disabled ~ .form-check-label,\\\\\\\\n  .form-check-input[disabled] ~ .form-check-label {\\\\\\\\n    opacity: 1;\\\\\\\\n  }\\\\\\\\n  .form-check-input {\\\\\\\\n    border-color: black !important;\\\\\\\\n  }\\\\\\\\n  .grey-btn {\\\\\\\\n    background-color: #687076;\\\\\\\\n    border: none;\\\\\\\\n    color: white;\\\\\\\\n  }\\\\\\\\n  .form-check-input:checked {\\\\\\\\n    background-color: #04a46e !important;\\\\\\\\n    border-color: #04a46e !important;\\\\\\\\n  }\\\\\\\\n  .dropdown-toggle:after {\\\\\\\\n    position: absolute;\\\\\\\\n    top: 46%;\\\\\\\\n    right: 5%;\\\\\\\\n  }\\\\\\\\n  .drop-btn {\\\\\\\\n    max-width: none !important;\\\\\\\\n  }\\\\\\\\n  .dropdown-menu {\\\\\\\\n    width: 100%;\\\\\\\\n    border-radius: 0.375rem !important;\\\\\\\\n  }\\\\\\\\n  .green-btn {\\\\\\\\n    background-color: #03ba16 !important;\\\\\\\\n    border: none;\\\\\\\\n    color: white;\\\\\\\\n    &:active {\\\\\\\\n      color: white;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  .gap-6 {\\\\\\\\n    gap: 2.5rem;\\\\\\\\n  }\\\\\\\\n  .border-vertical {\\\\\\\\n    border-top: var(--bs-border-width) var(--bs-border-style)\\\\\\\\n      var(--bs-border-color) !important;\\\\\\\\n    border-bottom: var(--bs-border-width) var(--bs-border-style)\\\\\\\\n      var(--bs-border-color) !important;\\\\\\\\n  }\\\\\\\\n  button.px-0 {\\\\\\\\n    padding-inline: 0px !important;\\\\\\\\n  }\\\\\\\\n  red-icon i {\\\\\\\\n    color: red;\\\\\\\\n  }\\\\\\\\n  input[type=\\\\\\\\\\\\\\\"radio\\\\\\\\\\\\\\\"] {\\\\\\\\n    min-width: 13px;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\nconst ProposalContainer = styled.div`\\\\\\\\n  border: 1px solid lightgrey;\\\\\\\\n  overflow: auto;\\\\\\\\n`;\\\\\\\\nconst Header = styled.div`\\\\\\\\n  position: relative;\\\\\\\\n  background-color: #f4f4f4;\\\\\\\\n  height: 50px;\\\\\\\\n  .menu {\\\\\\\\n    position: absolute;\\\\\\\\n    right: 10px;\\\\\\\\n    top: 4px;\\\\\\\\n    font-size: 30px;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\nconst Text = styled.p`\\\\\\\\n  display: block;\\\\\\\\n  margin: 0;\\\\\\\\n  font-size: 14px;\\\\\\\\n  line-height: 20px;\\\\\\\\n  font-weight: 400;\\\\\\\\n  color: #687076;\\\\\\\\n  white-space: nowrap;\\\\\\\\n`;\\\\\\\\nconst Actions = styled.div`\\\\\\\\n  display: flex;\\\\\\\\n  align-items: center;\\\\\\\\n  gap: 12px;\\\\\\\\n  margin: -6px -6px 6px;\\\\\\\\n`;\\\\\\\\nconst Avatar = styled.div`\\\\\\\\n  width: 40px;\\\\\\\\n  height: 40px;\\\\\\\\n  pointer-events: none;\\\\\\\\n  img {\\\\\\\\n    object-fit: cover;\\\\\\\\n    border-radius: 40px;\\\\\\\\n    width: 100%;\\\\\\\\n    height: 100%;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\nconst LinkProfile = ({ account, children }) => {\\\\\\\\n  return (\\\\\\\\n    <Link href={`/near/widget/ProfilePage?accountId=${account}`}>\\\\\\\\n      {children}\\\\\\\\n    </Link>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\nconst stepsArray = [1, 2, 3, 4, 5];\\\\\\\\nconst { id, timestamp } = props;\\\\\\\\nif (id === undefined) {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src={`devhub.near/widget/devhub.page.notfound`}\\\\\\\\n      props={{ missing: \\\\\\\\\\\\\\\"proposal id\\\\\\\\\\\\\\\" }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}\\\\\\\\nconst proposal = Near.view(\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"get_proposal\\\\\\\\\\\\\\\", {\\\\\\\\n  proposal_id: parseInt(id),\\\\\\\\n});\\\\\\\\nconst [snapshotHistory, setSnapshotHistory] = useState([]);\\\\\\\\nconst queryName = \\\\\\\\\\\\\\\"polyprogrammist_near_devhub_ic_v1_proposal_snapshots\\\\\\\\\\\\\\\";\\\\\\\\nconst query = `query GetLatestSnapshot($offset: Int = 0, $limit: Int = 10, $where: ${queryName}_bool_exp = {}) {\\\\\\\\n  ${queryName}(\\\\\\\\n    offset: $offset\\\\\\\\n    limit: $limit\\\\\\\\n    order_by: {ts: asc}\\\\\\\\n    where: $where\\\\\\\\n  ) {\\\\\\\\n    editor_id\\\\\\\\n    name\\\\\\\\n    summary\\\\\\\\n    description\\\\\\\\n    ts\\\\\\\\n    proposal_id\\\\\\\\n    timeline\\\\\\\\n    labels\\\\\\\\n    linked_proposals\\\\\\\\n    linked_rfp\\\\\\\\n    requested_sponsorship_usd_amount\\\\\\\\n    requested_sponsorship_paid_in_currency\\\\\\\\n    receiver_account\\\\\\\\n    requested_sponsor\\\\\\\\n    supervisor\\\\\\\\n  }\\\\\\\\n}`;\\\\\\\\nconst fetchSnapshotHistory = () => {\\\\\\\\n  const variables = {\\\\\\\\n    where: { proposal_id: { _eq: id } },\\\\\\\\n  };\\\\\\\\n  if (typeof fetchGraphQL !== \\\\\\\\\\\\\\\"function\\\\\\\\\\\\\\\") {\\\\\\\\n    return;\\\\\\\\n  }\\\\\\\\n  fetchGraphQL(query, \\\\\\\\\\\\\\\"GetLatestSnapshot\\\\\\\\\\\\\\\", variables).then(async (result) => {\\\\\\\\n    if (result.status === 200) {\\\\\\\\n      if (result.body.data) {\\\\\\\\n        const data = result.body.data?.[queryName];\\\\\\\\n        const history = data.map((item) => {\\\\\\\\n          const proposalData = {\\\\\\\\n            ...item,\\\\\\\\n            timestamp: item.ts,\\\\\\\\n            timeline: parseJSON(item.timeline),\\\\\\\\n          };\\\\\\\\n          delete proposalData.ts;\\\\\\\\n          return proposalData;\\\\\\\\n        });\\\\\\\\n        setSnapshotHistory(history);\\\\\\\\n      }\\\\\\\\n    }\\\\\\\\n  });\\\\\\\\n};\\\\\\\\nuseEffect(() => {\\\\\\\\n  fetchSnapshotHistory();\\\\\\\\n}, [id]);\\\\\\\\nif (!proposal) {\\\\\\\\n  return (\\\\\\\\n    <div\\\\\\\\n      style={{ height: \\\\\\\\\\\\\\\"50vh\\\\\\\\\\\\\\\" }}\\\\\\\\n      className=\\\\\\\\\\\\\\\"d-flex justify-content-center align-items-center w-100\\\\\\\\\\\\\\\"\\\\\\\\n    >\\\\\\\\n      <Widget src={`devhub.near/widget/devhub.components.molecule.Spinner`} />\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n}\\\\\\\\nif (timestamp && proposal) {\\\\\\\\n  proposal.snapshot =\\\\\\\\n    snapshotHistory.find((item) => item.timestamp === timestamp) ??\\\\\\\\n    proposal.snapshot;\\\\\\\\n}\\\\\\\\nconst { snapshot } = proposal;\\\\\\\\nsnapshot.timeline = parseJSON(snapshot.timeline);\\\\\\\\nconst authorId = proposal.author_id;\\\\\\\\nconst blockHeight = parseInt(proposal.social_db_post_block_height);\\\\\\\\nconst item = {\\\\\\\\n  type: \\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\n  path: `infrastructure-committee.near/post/main`,\\\\\\\\n  blockHeight,\\\\\\\\n};\\\\\\\\nconst comments = Social.index(\\\\\\\\\\\\\\\"comment\\\\\\\\\\\\\\\", item, { subscribe: true }) ?? [];\\\\\\\\nconst commentAuthors = [\\\\\\\\n  ...new Set(comments.map((comment) => comment.accountId)),\\\\\\\\n];\\\\\\\\nconst proposalURL = `https://infrastructure-committee.near.page/proposal/${proposal.id}`;\\\\\\\\nconst SidePanelItem = ({ title, children, hideBorder, ishidden }) => {\\\\\\\\n  return (\\\\\\\\n    <div\\\\\\\\n      style={{ gap: \\\\\\\\\\\\\\\"8px\\\\\\\\\\\\\\\" }}\\\\\\\\n      className={\\\\\\\\n        ishidden\\\\\\\\n          ? \\\\\\\\\\\\\\\"d-none\\\\\\\\\\\\\\\"\\\\\\\\n          : \\\\\\\\\\\\\\\"d-flex flex-column pb-3 \\\\\\\\\\\\\\\" + (!hideBorder && \\\\\\\\\\\\\\\" border-bottom\\\\\\\\\\\\\\\")\\\\\\\\n      }\\\\\\\\n    >\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"h6 mb-0\\\\\\\\\\\\\\\">{title} </div>\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"text-muted\\\\\\\\\\\\\\\">{children}</div>\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\nconst rfpLabelOptions = getGlobalLabels();\\\\\\\\nconst proposalStatusOptions = [\\\\\\\\n  {\\\\\\\\n    label: \\\\\\\\\\\\\\\"Draft\\\\\\\\\\\\\\\",\\\\\\\\n    value: { status: PROPOSAL_TIMELINE_STATUS.DRAFT },\\\\\\\\n  },\\\\\\\\n  {\\\\\\\\n    label: \\\\\\\\\\\\\\\"Review\\\\\\\\\\\\\\\",\\\\\\\\n    value: {\\\\\\\\n      status: PROPOSAL_TIMELINE_STATUS.REVIEW,\\\\\\\\n      sponsor_requested_review: false,\\\\\\\\n      reviewer_completed_attestation: false,\\\\\\\\n    },\\\\\\\\n  },\\\\\\\\n  {\\\\\\\\n    label: \\\\\\\\\\\\\\\"Approved\\\\\\\\\\\\\\\",\\\\\\\\n    value: {\\\\\\\\n      status: PROPOSAL_TIMELINE_STATUS.APPROVED,\\\\\\\\n      sponsor_requested_review: true,\\\\\\\\n      reviewer_completed_attestation: false,\\\\\\\\n    },\\\\\\\\n  },\\\\\\\\n  {\\\\\\\\n    label: \\\\\\\\\\\\\\\"Approved-Conditionally\\\\\\\\\\\\\\\",\\\\\\\\n    value: {\\\\\\\\n      status: PROPOSAL_TIMELINE_STATUS.APPROVED_CONDITIONALLY,\\\\\\\\n      sponsor_requested_review: true,\\\\\\\\n      reviewer_completed_attestation: false,\\\\\\\\n    },\\\\\\\\n  },\\\\\\\\n  {\\\\\\\\n    label: \\\\\\\\\\\\\\\"Rejected\\\\\\\\\\\\\\\",\\\\\\\\n    value: {\\\\\\\\n      status: PROPOSAL_TIMELINE_STATUS.REJECTED,\\\\\\\\n      sponsor_requested_review: true,\\\\\\\\n      reviewer_completed_attestation: false,\\\\\\\\n    },\\\\\\\\n  },\\\\\\\\n  {\\\\\\\\n    label: \\\\\\\\\\\\\\\"Canceled\\\\\\\\\\\\\\\",\\\\\\\\n    value: {\\\\\\\\n      status: PROPOSAL_TIMELINE_STATUS.CANCELED,\\\\\\\\n      sponsor_requested_review: false,\\\\\\\\n      reviewer_completed_attestation: false,\\\\\\\\n    },\\\\\\\\n  },\\\\\\\\n  {\\\\\\\\n    label: \\\\\\\\\\\\\\\"Payment-processing\\\\\\\\\\\\\\\",\\\\\\\\n    value: {\\\\\\\\n      status: PROPOSAL_TIMELINE_STATUS.PAYMENT_PROCESSING,\\\\\\\\n      kyc_verified: false,\\\\\\\\n      test_transaction_sent: false,\\\\\\\\n      request_for_trustees_created: false,\\\\\\\\n      sponsor_requested_review: true,\\\\\\\\n      reviewer_completed_attestation: false,\\\\\\\\n    },\\\\\\\\n  },\\\\\\\\n  {\\\\\\\\n    label: \\\\\\\\\\\\\\\"Funded\\\\\\\\\\\\\\\",\\\\\\\\n    value: {\\\\\\\\n      status: PROPOSAL_TIMELINE_STATUS.FUNDED,\\\\\\\\n      trustees_released_payment: true,\\\\\\\\n      kyc_verified: true,\\\\\\\\n      test_transaction_sent: true,\\\\\\\\n      request_for_trustees_created: true,\\\\\\\\n      sponsor_requested_review: true,\\\\\\\\n      reviewer_completed_attestation: false,\\\\\\\\n    },\\\\\\\\n  },\\\\\\\\n];\\\\\\\\nconst CheckBox = ({ value, isChecked, label, disabled, onClick }) => {\\\\\\\\n  return (\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n      <input\\\\\\\\n        class=\\\\\\\\\\\\\\\"form-check-input\\\\\\\\\\\\\\\"\\\\\\\\n        type=\\\\\\\\\\\\\\\"checkbox\\\\\\\\\\\\\\\"\\\\\\\\n        value={value}\\\\\\\\n        checked={isChecked}\\\\\\\\n        disabled={!isModerator || !showTimelineSetting || disabled}\\\\\\\\n        onChange={(e) => onClick(e.target.checked)}\\\\\\\\n      />\\\\\\\\n      <label style={{ width: \\\\\\\\\\\\\\\"90%\\\\\\\\\\\\\\\" }} class=\\\\\\\\\\\\\\\"form-check-label text-black\\\\\\\\\\\\\\\">\\\\\\\\n        {label}\\\\\\\\n      </label>\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\nconst RadioButton = ({ value, isChecked, label }) => {\\\\\\\\n  return (\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n      <input\\\\\\\\n        class=\\\\\\\\\\\\\\\"form-check-input\\\\\\\\\\\\\\\"\\\\\\\\n        type=\\\\\\\\\\\\\\\"radio\\\\\\\\\\\\\\\"\\\\\\\\n        value={value}\\\\\\\\n        checked={isChecked}\\\\\\\\n        disabled={true}\\\\\\\\n      />\\\\\\\\n      <label class=\\\\\\\\\\\\\\\"form-check-label text-black\\\\\\\\\\\\\\\">{label}</label>\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\nconst isAllowedToEditProposal = Near.view(\\\\\\\\n  \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n  \\\\\\\\\\\\\\\"is_allowed_to_edit_proposal\\\\\\\\\\\\\\\",\\\\\\\\n  {\\\\\\\\n    proposal_id: proposal.id,\\\\\\\\n    editor: accountId,\\\\\\\\n  }\\\\\\\\n);\\\\\\\\nconst isModerator = Near.view(\\\\\\\\n  \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n  \\\\\\\\\\\\\\\"is_allowed_to_write_rfps\\\\\\\\\\\\\\\",\\\\\\\\n  {\\\\\\\\n    editor: context.accountId,\\\\\\\\n  }\\\\\\\\n);\\\\\\\\nconst editProposal = ({ timeline }) => {\\\\\\\\n  const body = {\\\\\\\\n    proposal_body_version: \\\\\\\\\\\\\\\"V1\\\\\\\\\\\\\\\",\\\\\\\\n    name: snapshot.name,\\\\\\\\n    description: snapshot.description,\\\\\\\\n    category: snapshot.category,\\\\\\\\n    summary: snapshot.summary,\\\\\\\\n    linked_proposals: snapshot.linked_proposals,\\\\\\\\n    requested_sponsorship_usd_amount: snapshot.requested_sponsorship_usd_amount,\\\\\\\\n    requested_sponsorship_paid_in_currency:\\\\\\\\n      snapshot.requested_sponsorship_paid_in_currency,\\\\\\\\n    receiver_account: snapshot.receiver_account,\\\\\\\\n    requested_sponsor: snapshot.requested_sponsor,\\\\\\\\n    timeline: timeline,\\\\\\\\n    linked_rfp: snapshot.linked_rfp,\\\\\\\\n    supervisor: supervisor ?? snapshot.supervisor,\\\\\\\\n  };\\\\\\\\n  const args = {\\\\\\\\n    labels: typeof snapshot.linked_rfp === \\\\\\\\\\\\\\\"number\\\\\\\\\\\\\\\" ? [] : snapshot.labels,\\\\\\\\n    body: body,\\\\\\\\n    id: proposal.id,\\\\\\\\n  };\\\\\\\\n  Near.call([\\\\\\\\n    {\\\\\\\\n      contractName: \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n      methodName: \\\\\\\\\\\\\\\"edit_proposal\\\\\\\\\\\\\\\",\\\\\\\\n      args: args,\\\\\\\\n      gas: 270000000000000,\\\\\\\\n    },\\\\\\\\n  ]);\\\\\\\\n};\\\\\\\\nconst editProposalStatus = ({ timeline }) => {\\\\\\\\n  Near.call([\\\\\\\\n    {\\\\\\\\n      contractName: \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n      methodName: \\\\\\\\\\\\\\\"edit_proposal_timeline\\\\\\\\\\\\\\\",\\\\\\\\n      args: {\\\\\\\\n        id: proposal.id,\\\\\\\\n        timeline: timeline,\\\\\\\\n      },\\\\\\\\n      gas: 270000000000000,\\\\\\\\n    },\\\\\\\\n  ]);\\\\\\\\n};\\\\\\\\nconst [isReviewModalOpen, setReviewModal] = useState(false);\\\\\\\\nconst [isCancelModalOpen, setCancelModal] = useState(false);\\\\\\\\nconst [showTimelineSetting, setShowTimelineSetting] = useState(false);\\\\\\\\nconst proposalStatus = useCallback(\\\\\\\\n  () =>\\\\\\\\n    proposalStatusOptions.find(\\\\\\\\n      (i) => i.value.status === snapshot.timeline.status\\\\\\\\n    ),\\\\\\\\n  [snapshot]\\\\\\\\n);\\\\\\\\nconst [updatedProposalStatus, setUpdatedProposalStatus] = useState({});\\\\\\\\nuseEffect(() => {\\\\\\\\n  setUpdatedProposalStatus({\\\\\\\\n    ...proposalStatus(),\\\\\\\\n    value: { ...proposalStatus().value, ...snapshot.timeline },\\\\\\\\n  });\\\\\\\\n}, [proposal]);\\\\\\\\nconst [paymentHashes, setPaymentHashes] = useState([\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"]);\\\\\\\\nconst [supervisor, setSupervisor] = useState(snapshot.supervisor);\\\\\\\\nconst selectedStatusIndex = useMemo(\\\\\\\\n  () =>\\\\\\\\n    proposalStatusOptions.findIndex((i) => {\\\\\\\\n      return updatedProposalStatus.value.status === i.value.status;\\\\\\\\n    }),\\\\\\\\n  [updatedProposalStatus]\\\\\\\\n);\\\\\\\\nconst TimelineItems = ({ title, children, value, values }) => {\\\\\\\\n  const indexOfCurrentItem = proposalStatusOptions.findIndex((i) =>\\\\\\\\n    Array.isArray(values)\\\\\\\\n      ? values.includes(i.value.status)\\\\\\\\n      : value === i.value.status\\\\\\\\n  );\\\\\\\\n  let color = \\\\\\\\\\\\\\\"transparent\\\\\\\\\\\\\\\";\\\\\\\\n  let statusIndex = selectedStatusIndex;\\\\\\\\n  // index 2,3,4,5  is of decision\\\\\\\\n  if (selectedStatusIndex === 3 || selectedStatusIndex === 2) {\\\\\\\\n    statusIndex = 2;\\\\\\\\n  }\\\\\\\\n  if (statusIndex === indexOfCurrentItem) {\\\\\\\\n    color = \\\\\\\\\\\\\\\"#FEF6EE\\\\\\\\\\\\\\\";\\\\\\\\n  }\\\\\\\\n  if (\\\\\\\\n    statusIndex > indexOfCurrentItem ||\\\\\\\\n    updatedProposalStatus.value.status === PROPOSAL_TIMELINE_STATUS.FUNDED\\\\\\\\n  ) {\\\\\\\\n    color = \\\\\\\\\\\\\\\"#EEFEF0\\\\\\\\\\\\\\\";\\\\\\\\n  }\\\\\\\\n  // reject\\\\\\\\n  if (statusIndex === 4 && indexOfCurrentItem === 2) {\\\\\\\\n    color = \\\\\\\\\\\\\\\"#FF7F7F\\\\\\\\\\\\\\\";\\\\\\\\n  }\\\\\\\\n  // cancelled\\\\\\\\n  if (statusIndex === 5 && indexOfCurrentItem === 2) {\\\\\\\\n    color = \\\\\\\\\\\\\\\"#F4F4F4\\\\\\\\\\\\\\\";\\\\\\\\n  }\\\\\\\\n  return (\\\\\\\\n    <div\\\\\\\\n      className=\\\\\\\\\\\\\\\"p-2 rounded-3\\\\\\\\\\\\\\\"\\\\\\\\n      style={{\\\\\\\\n        backgroundColor: color,\\\\\\\\n      }}\\\\\\\\n    >\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"h6 text-black\\\\\\\\\\\\\\\"> {title}</div>\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"text-sm\\\\\\\\\\\\\\\">{children}</div>\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\nconst link = href({\\\\\\\\n  widgetSrc: `infrastructure-committee.near/widget/app`,\\\\\\\\n  params: {\\\\\\\\n    page: \\\\\\\\\\\\\\\"create-proposal\\\\\\\\\\\\\\\",\\\\\\\\n    id: proposal.id,\\\\\\\\n    timestamp: timestamp,\\\\\\\\n  },\\\\\\\\n});\\\\\\\\nconst createdDate = snapshotHistory[0]?.timestamp ?? snapshot.timestamp;\\\\\\\\nreturn (\\\\\\\\n  <Container className=\\\\\\\\\\\\\\\"d-flex flex-column gap-2 w-100 mt-4\\\\\\\\\\\\\\\">\\\\\\\\n    <Widget\\\\\\\\n      src={`devhub.near/widget/devhub.entity.proposal.ConfirmReviewModal`}\\\\\\\\n      props={{\\\\\\\\n        isOpen: isReviewModalOpen,\\\\\\\\n        onCancelClick: () => setReviewModal(false),\\\\\\\\n        onReviewClick: () => {\\\\\\\\n          setReviewModal(false);\\\\\\\\n          editProposalStatus({ timeline: proposalStatusOptions[1].value });\\\\\\\\n        },\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n    <Widget\\\\\\\\n      src={`devhub.near/widget/devhub.entity.proposal.ConfirmCancelModal`}\\\\\\\\n      props={{\\\\\\\\n        isOpen: isCancelModalOpen,\\\\\\\\n        onCancelClick: () => setCancelModal(false),\\\\\\\\n        onConfirmClick: () => {\\\\\\\\n          setCancelModal(false);\\\\\\\\n          editProposalStatus({ timeline: proposalStatusOptions[5].value });\\\\\\\\n        },\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"d-flex px-3 px-lg-0 justify-content-between\\\\\\\\\\\\\\\">\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center h3\\\\\\\\\\\\\\\">\\\\\\\\n        <div>{snapshot.name}</div>\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"text-muted\\\\\\\\\\\\\\\">#{proposal.id}</div>\\\\\\\\n      </div>\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n        <Widget\\\\\\\\n          src=\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.ShareLinkButton\\\\\\\\\\\\\\\"\\\\\\\\n          props={{\\\\\\\\n            postType: \\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\",\\\\\\\\n            url: proposalURL,\\\\\\\\n          }}\\\\\\\\n        />\\\\\\\\n        {((isAllowedToEditProposal &&\\\\\\\\n          snapshot.timeline.status === PROPOSAL_TIMELINE_STATUS.DRAFT) ||\\\\\\\\n          isModerator) && (\\\\\\\\n          <Link to={link} style={{ textDecoration: \\\\\\\\\\\\\\\"none\\\\\\\\\\\\\\\" }}>\\\\\\\\n            <Widget\\\\\\\\n              src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n              props={{\\\\\\\\n                label: \\\\\\\\\\\\\\\"Edit\\\\\\\\\\\\\\\",\\\\\\\\n                classNames: { root: \\\\\\\\\\\\\\\"grey-btn btn-sm\\\\\\\\\\\\\\\" },\\\\\\\\n              }}\\\\\\\\n            />\\\\\\\\n          </Link>\\\\\\\\n        )}\\\\\\\\n      </div>\\\\\\\\n    </div>\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"d-flex flex-wrap flex-md-nowrap px-3 px-lg-0 gap-2 align-items-center text-sm pb-3 w-100\\\\\\\\\\\\\\\">\\\\\\\\n      <Widget\\\\\\\\n        src={`devhub.near/widget/devhub.entity.proposal.StatusTag`}\\\\\\\\n        props={{\\\\\\\\n          timelineStatus: snapshot.timeline.status,\\\\\\\\n          size: \\\\\\\\\\\\\\\"sm\\\\\\\\\\\\\\\",\\\\\\\\n        }}\\\\\\\\n      />\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"w-100 d-flex flex-wrap flex-md-nowrap gap-1 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"fw-bold text-truncate\\\\\\\\\\\\\\\">\\\\\\\\n          <LinkProfile account={authorId}>{authorId}</LinkProfile>\\\\\\\\n        </div>\\\\\\\\n        <div>created on {readableDate(createdDate / 1000000)}</div>\\\\\\\\n      </div>\\\\\\\\n    </div>\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"card no-border rounded-0 full-width-div px-3 px-lg-0\\\\\\\\\\\\\\\">\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"container-xl py-4\\\\\\\\\\\\\\\">\\\\\\\\n        {snapshot.timeline.status === PROPOSAL_TIMELINE_STATUS.DRAFT &&\\\\\\\\n          isAllowedToEditProposal && (\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"draft-info-container p-3 p-sm-4 d-flex flex-wrap flex-sm-nowrap justify-content-between align-items-center gap-2 rounded-2\\\\\\\\\\\\\\\">\\\\\\\\n              <div style={{ minWidth: \\\\\\\\\\\\\\\"300px\\\\\\\\\\\\\\\" }}>\\\\\\\\n                <b>\\\\\\\\n                  This proposal is in draft mode and open for community\\\\\\\\n                  comments.\\\\\\\\n                </b>\\\\\\\\n                <p className=\\\\\\\\\\\\\\\"text-sm text-muted mt-2\\\\\\\\\\\\\\\">\\\\\\\\n                  The author can still refine the proposal and build consensus\\\\\\\\n                  before sharing it with sponsors. Click \\\\\\\\u{201c}Ready for review\\\\\\\\u{201d} when\\\\\\\\n                  you want to start the official review process. This will lock\\\\\\\\n                  the editing function, but comments are still open.\\\\\\\\n                </p>\\\\\\\\n              </div>\\\\\\\\n              <div style={{ minWidth: \\\\\\\\\\\\\\\"fit-content\\\\\\\\\\\\\\\" }}>\\\\\\\\n                <Widget\\\\\\\\n                  src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n                  props={{\\\\\\\\n                    label: \\\\\\\\\\\\\\\"Ready for review\\\\\\\\\\\\\\\",\\\\\\\\n                    classNames: { root: \\\\\\\\\\\\\\\"grey-btn btn-sm\\\\\\\\\\\\\\\" },\\\\\\\\n                    onClick: () => setReviewModal(true),\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              </div>\\\\\\\\n            </div>\\\\\\\\n          )}\\\\\\\\n        {snapshot.timeline.status === PROPOSAL_TIMELINE_STATUS.REVIEW &&\\\\\\\\n          isAllowedToEditProposal && (\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"review-info-container p-3 p-sm-4 d-flex flex-wrap flex-sm-nowrap justify-content-between align-items-center gap-2 rounded-2\\\\\\\\\\\\\\\">\\\\\\\\n              <div style={{ minWidth: \\\\\\\\\\\\\\\"300px\\\\\\\\\\\\\\\" }}>\\\\\\\\n                <b>\\\\\\\\n                  This proposal is in review mode and still open for community\\\\\\\\n                  comments.\\\\\\\\n                </b>\\\\\\\\n                <p className=\\\\\\\\\\\\\\\"text-sm text-muted mt-2\\\\\\\\\\\\\\\">\\\\\\\\n                  You can\\\\\\\\u{2019}t edit the proposal, but comments are open. Only\\\\\\\\n                  moderators can make changes. Click \\\\\\\\u{201c}Cancel Proposal\\\\\\\\u{201d} to cancel\\\\\\\\n                  your proposal. This changes the status to Canceled, signaling\\\\\\\\n                  to sponsors that it\\\\\\\\u{2019}s no longer active or relevant.\\\\\\\\n                </p>\\\\\\\\n              </div>\\\\\\\\n              <div style={{ minWidth: \\\\\\\\\\\\\\\"fit-content\\\\\\\\\\\\\\\" }}>\\\\\\\\n                <Widget\\\\\\\\n                  src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n                  props={{\\\\\\\\n                    label: (\\\\\\\\n                      <div className=\\\\\\\\\\\\\\\"d-flex align-items-center gap-1\\\\\\\\\\\\\\\">\\\\\\\\n                        <i class=\\\\\\\\\\\\\\\"bi bi-trash3\\\\\\\\\\\\\\\"></i> Cancel Proposal\\\\\\\\n                      </div>\\\\\\\\n                    ),\\\\\\\\n                    classNames: { root: \\\\\\\\\\\\\\\"btn-outline-danger btn-sm\\\\\\\\\\\\\\\" },\\\\\\\\n                    onClick: () => setCancelModal(true),\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              </div>\\\\\\\\n            </div>\\\\\\\\n          )}\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"my-4\\\\\\\\\\\\\\\">\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"d-flex flex-wrap gap-6\\\\\\\\\\\\\\\">\\\\\\\\n            <div\\\\\\\\n              style={{ minWidth: \\\\\\\\\\\\\\\"350px\\\\\\\\\\\\\\\" }}\\\\\\\\n              className=\\\\\\\\\\\\\\\"flex-3 order-2 order-md-1\\\\\\\\\\\\\\\"\\\\\\\\n            >\\\\\\\\n              <div\\\\\\\\n                className=\\\\\\\\\\\\\\\"d-flex gap-2 flex-1\\\\\\\\\\\\\\\"\\\\\\\\n                style={{\\\\\\\\n                  zIndex: 99,\\\\\\\\n                  background: \\\\\\\\\\\\\\\"white\\\\\\\\\\\\\\\",\\\\\\\\n                  position: \\\\\\\\\\\\\\\"relative\\\\\\\\\\\\\\\",\\\\\\\\n                }}\\\\\\\\n              >\\\\\\\\n                <div className=\\\\\\\\\\\\\\\"d-none d-sm-flex\\\\\\\\\\\\\\\">\\\\\\\\n                  <Widget\\\\\\\\n                    src={`devhub.near/widget/devhub.entity.proposal.Profile`}\\\\\\\\n                    props={{\\\\\\\\n                      accountId: authorId,\\\\\\\\n                    }}\\\\\\\\n                  />\\\\\\\\n                </div>\\\\\\\\n                <ProposalContainer className=\\\\\\\\\\\\\\\"rounded-2 flex-1\\\\\\\\\\\\\\\">\\\\\\\\n                  <Header className=\\\\\\\\\\\\\\\"d-flex gap-1 align-items-center p-2 px-3 \\\\\\\\\\\\\\\">\\\\\\\\n                    <div\\\\\\\\n                      className=\\\\\\\\\\\\\\\"fw-bold text-truncate\\\\\\\\\\\\\\\"\\\\\\\\n                      style={{ maxWidth: \\\\\\\\\\\\\\\"60%\\\\\\\\\\\\\\\" }}\\\\\\\\n                    >\\\\\\\\n                      <LinkProfile account={authorId}>{authorId}</LinkProfile>\\\\\\\\n                    </div>\\\\\\\\n                    <div\\\\\\\\n                      className=\\\\\\\\\\\\\\\"text-muted\\\\\\\\\\\\\\\"\\\\\\\\n                      style={{ minWidth: \\\\\\\\\\\\\\\"fit-content\\\\\\\\\\\\\\\" }}\\\\\\\\n                    >\\\\\\\\n                      \\\\\\\\u{ff65}{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n                      <Widget\\\\\\\\n                        src={`near/widget/TimeAgo`}\\\\\\\\n                        props={{\\\\\\\\n                          blockHeight,\\\\\\\\n                          blockTimestamp: createdDate,\\\\\\\\n                        }}\\\\\\\\n                      />\\\\\\\\n                      {context.accountId && (\\\\\\\\n                        <div className=\\\\\\\\\\\\\\\"menu\\\\\\\\\\\\\\\">\\\\\\\\n                          <Widget\\\\\\\\n                            src={`near/widget/Posts.Menu`}\\\\\\\\n                            props={{\\\\\\\\n                              accountId: authorId,\\\\\\\\n                              blockHeight: blockHeight,\\\\\\\\n                            }}\\\\\\\\n                          />\\\\\\\\n                        </div>\\\\\\\\n                      )}\\\\\\\\n                    </div>\\\\\\\\n                  </Header>\\\\\\\\n                  <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-1 p-2 px-3 description-box\\\\\\\\\\\\\\\">\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"text-muted h6 border-bottom pb-1 mt-3\\\\\\\\\\\\\\\">\\\\\\\\n                      PROPOSAL CATEGORY\\\\\\\\n                    </div>\\\\\\\\n                    <div>\\\\\\\\n                      <Widget\\\\\\\\n                        src={`infrastructure-committee.near/widget/components.molecule.MultiSelectCategoryDropdown`}\\\\\\\\n                        props={{\\\\\\\\n                          selected: snapshot.labels,\\\\\\\\n                          disabled: true,\\\\\\\\n                          hideDropdown: true,\\\\\\\\n                          onChange: () => {},\\\\\\\\n                          availableOptions: rfpLabelOptions,\\\\\\\\n                        }}\\\\\\\\n                      />\\\\\\\\n                    </div>\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"text-muted h6 border-bottom pb-1 mt-3\\\\\\\\\\\\\\\">\\\\\\\\n                      SUMMARY\\\\\\\\n                    </div>\\\\\\\\n                    <div>{snapshot.summary}</div>\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"text-muted h6 border-bottom pb-1 mt-3\\\\\\\\\\\\\\\">\\\\\\\\n                      DESCRIPTION\\\\\\\\n                    </div>\\\\\\\\n                    <Widget\\\\\\\\n                      src={`devhub.near/widget/devhub.components.molecule.SimpleMDEViewer`}\\\\\\\\n                      props={{\\\\\\\\n                        content: snapshot.description,\\\\\\\\n                      }}\\\\\\\\n                    />\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center mt-3\\\\\\\\\\\\\\\">\\\\\\\\n                      <Widget\\\\\\\\n                        src={`infrastructure-committee.near/widget/components.molecule.LikeButton`}\\\\\\\\n                        props={{\\\\\\\\n                          item,\\\\\\\\n                          proposalId: proposal.id,\\\\\\\\n                          notifyAccountIds: [authorId],\\\\\\\\n                        }}\\\\\\\\n                      />\\\\\\\\n                      <Widget\\\\\\\\n                        src={`devhub.near/widget/devhub.entity.proposal.CommentIcon`}\\\\\\\\n                        props={{\\\\\\\\n                          item,\\\\\\\\n                          showOverlay: false,\\\\\\\\n                          onClick: () => {},\\\\\\\\n                        }}\\\\\\\\n                      />\\\\\\\\n                      <Widget\\\\\\\\n                        src={`near/widget/CopyUrlButton`}\\\\\\\\n                        props={{\\\\\\\\n                          url: proposalURL,\\\\\\\\n                        }}\\\\\\\\n                      />\\\\\\\\n                    </div>\\\\\\\\n                  </div>\\\\\\\\n                </ProposalContainer>\\\\\\\\n              </div>\\\\\\\\n              <div className=\\\\\\\\\\\\\\\"border-bottom pb-4 mt-4\\\\\\\\\\\\\\\">\\\\\\\\n                <Widget\\\\\\\\n                  src={`devhub.near/widget/devhub.entity.proposal.CommentsAndLogs`}\\\\\\\\n                  props={{\\\\\\\\n                    ...props,\\\\\\\\n                    id: proposal.id,\\\\\\\\n                    item: item,\\\\\\\\n                    snapshotHistory: snapshotHistory,\\\\\\\\n                    latestSnapshot: snapshot,\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              </div>\\\\\\\\n              <div\\\\\\\\n                style={{\\\\\\\\n                  position: \\\\\\\\\\\\\\\"relative\\\\\\\\\\\\\\\",\\\\\\\\n                  zIndex: 99,\\\\\\\\n                  backgroundColor: \\\\\\\\\\\\\\\"white\\\\\\\\\\\\\\\",\\\\\\\\n                }}\\\\\\\\n                className=\\\\\\\\\\\\\\\"pt-4\\\\\\\\\\\\\\\"\\\\\\\\n              >\\\\\\\\n                <Widget\\\\\\\\n                  src={`infrastructure-committee.near/widget/components.molecule.ComposeComment`}\\\\\\\\n                  props={{\\\\\\\\n                    ...props,\\\\\\\\n                    item: item,\\\\\\\\n                    notifyAccountIds: [authorId],\\\\\\\\n                    proposalId: proposal.id,\\\\\\\\n                    sortedRelevantUsers: [\\\\\\\\n                      authorId,\\\\\\\\n                      snapshot.requested_sponsor,\\\\\\\\n                      ...commentAuthors,\\\\\\\\n                    ].filter((user) => user !== accountId),\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              </div>\\\\\\\\n            </div>\\\\\\\\n            <div\\\\\\\\n              style={{ minWidth: \\\\\\\\\\\\\\\"350px\\\\\\\\\\\\\\\" }}\\\\\\\\n              className=\\\\\\\\\\\\\\\"d-flex flex-column gap-4 flex-1 order-1 order-md-2\\\\\\\\\\\\\\\"\\\\\\\\n            >\\\\\\\\n              <SidePanelItem title=\\\\\\\\\\\\\\\"Author\\\\\\\\\\\\\\\">\\\\\\\\n                <Widget\\\\\\\\n                  src={`near/widget/AccountProfile`}\\\\\\\\n                  props={{\\\\\\\\n                    accountId: authorId,\\\\\\\\n                    noOverlay: true,\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              </SidePanelItem>\\\\\\\\n              <SidePanelItem\\\\\\\\n                title={\\\\\\\\\\\\\\\"Linked RFP\\\\\\\\\\\\\\\"}\\\\\\\\n                ishidden={!isNumber(snapshot.linked_rfp)}\\\\\\\\n              >\\\\\\\\n                <Widget\\\\\\\\n                  src={`infrastructure-committee.near/widget/components.molecule.LinkedRfps`}\\\\\\\\n                  props={{\\\\\\\\n                    linkedRfpIds: [snapshot.linked_rfp],\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              </SidePanelItem>\\\\\\\\n              <SidePanelItem\\\\\\\\n                title={\\\\\\\\n                  \\\\\\\\\\\\\\\"Linked Proposals \\\\\\\\\\\\\\\" + `(${snapshot.linked_proposals.length})`\\\\\\\\n                }\\\\\\\\n                ishidden={!snapshot.linked_proposals.length}\\\\\\\\n              >\\\\\\\\n                <Widget\\\\\\\\n                  src={`infrastructure-committee.near/widget/components.molecule.LinkedProposals`}\\\\\\\\n                  props={{\\\\\\\\n                    linkedProposalIds: snapshot.linked_proposals,\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              </SidePanelItem>\\\\\\\\n              <SidePanelItem title=\\\\\\\\\\\\\\\"Funding Ask\\\\\\\\\\\\\\\">\\\\\\\\n                <div className=\\\\\\\\\\\\\\\"h4 text-black\\\\\\\\\\\\\\\">\\\\\\\\n                  {snapshot.requested_sponsorship_usd_amount && (\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-1\\\\\\\\\\\\\\\">\\\\\\\\n                      <div>\\\\\\\\n                        {parseInt(\\\\\\\\n                          snapshot.requested_sponsorship_usd_amount\\\\\\\\n                        ).toLocaleString()}{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n                        USD\\\\\\\\n                      </div>\\\\\\\\n                      <div className=\\\\\\\\\\\\\\\"text-sm text-muted\\\\\\\\\\\\\\\">\\\\\\\\n                        Requested in{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n                        {snapshot.requested_sponsorship_paid_in_currency}\\\\\\\\n                      </div>\\\\\\\\n                    </div>\\\\\\\\n                  )}\\\\\\\\n                </div>\\\\\\\\n              </SidePanelItem>\\\\\\\\n              <SidePanelItem title=\\\\\\\\\\\\\\\"Recipient Wallet Address\\\\\\\\\\\\\\\">\\\\\\\\n                <Widget\\\\\\\\n                  src={`near/widget/AccountProfile`}\\\\\\\\n                  props={{\\\\\\\\n                    accountId: snapshot.receiver_account,\\\\\\\\n                    noOverlay: true,\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              </SidePanelItem>\\\\\\\\n              <SidePanelItem title=\\\\\\\\\\\\\\\"Recipient Verification Status\\\\\\\\\\\\\\\">\\\\\\\\n                <Widget\\\\\\\\n                  src={`devhub.near/widget/devhub.entity.proposal.VerificationStatus`}\\\\\\\\n                  props={{\\\\\\\\n                    receiverAccount: snapshot.receiver_account,\\\\\\\\n                    showGetVerifiedBtn:\\\\\\\\n                      accountId === snapshot.receiver_account ||\\\\\\\\n                      accountId === authorId,\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              </SidePanelItem>\\\\\\\\n              <SidePanelItem\\\\\\\\n                title=\\\\\\\\\\\\\\\"Project Coordinator\\\\\\\\\\\\\\\"\\\\\\\\n                ishidden={!snapshot.supervisor}\\\\\\\\n              >\\\\\\\\n                <Widget\\\\\\\\n                  src={`near/widget/AccountProfile`}\\\\\\\\n                  props={{\\\\\\\\n                    accountId: snapshot.supervisor,\\\\\\\\n                    noOverlay: true,\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              </SidePanelItem>\\\\\\\\n              <SidePanelItem\\\\\\\\n                hideBorder={true}\\\\\\\\n                title={\\\\\\\\n                  <div>\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"d-flex justify-content-between align-content-center\\\\\\\\\\\\\\\">\\\\\\\\n                      Timeline\\\\\\\\n                      {isModerator && (\\\\\\\\n                        <div onClick={() => setShowTimelineSetting(true)}>\\\\\\\\n                          <i class=\\\\\\\\\\\\\\\"bi bi-gear\\\\\\\\\\\\\\\"></i>\\\\\\\\n                        </div>\\\\\\\\n                      )}\\\\\\\\n                    </div>\\\\\\\\n                    {showTimelineSetting && (\\\\\\\\n                      <div className=\\\\\\\\\\\\\\\"mt-2 d-flex flex-column gap-2\\\\\\\\\\\\\\\">\\\\\\\\n                        <h6 className=\\\\\\\\\\\\\\\"mb-0\\\\\\\\\\\\\\\">Proposal Status</h6>\\\\\\\\n                        <Widget\\\\\\\\n                          src={`devhub.near/widget/devhub.components.molecule.DropDown`}\\\\\\\\n                          props={{\\\\\\\\n                            options: proposalStatusOptions,\\\\\\\\n                            selectedValue: updatedProposalStatus,\\\\\\\\n                            onUpdate: (v) => {\\\\\\\\n                              setUpdatedProposalStatus({\\\\\\\\n                                ...v,\\\\\\\\n                                value: {\\\\\\\\n                                  ...v.value,\\\\\\\\n                                  ...updatedProposalStatus.value,\\\\\\\\n                                  status: v.value.status,\\\\\\\\n                                },\\\\\\\\n                              });\\\\\\\\n                            },\\\\\\\\n                          }}\\\\\\\\n                        />\\\\\\\\n                      </div>\\\\\\\\n                    )}\\\\\\\\n                  </div>\\\\\\\\n                }\\\\\\\\n              >\\\\\\\\n                <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-2\\\\\\\\\\\\\\\">\\\\\\\\n                  <div className=\\\\\\\\\\\\\\\"d-flex gap-3 mt-2\\\\\\\\\\\\\\\">\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"d-flex flex-column\\\\\\\\\\\\\\\">\\\\\\\\n                      {stepsArray.map((_, index) => {\\\\\\\\n                        const indexOfCurrentItem = index;\\\\\\\\n                        let color = \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\";\\\\\\\\n                        let statusIndex = selectedStatusIndex;\\\\\\\\n                        // index 2,3,4 is of decision\\\\\\\\n                        if (\\\\\\\\n                          selectedStatusIndex === 3 ||\\\\\\\\n                          selectedStatusIndex === 2 ||\\\\\\\\n                          selectedStatusIndex === 4 ||\\\\\\\\n                          selectedStatusIndex === 5\\\\\\\\n                        ) {\\\\\\\\n                          statusIndex = 2;\\\\\\\\n                        }\\\\\\\\n                        if (selectedStatusIndex === 6) {\\\\\\\\n                          statusIndex = 3;\\\\\\\\n                        }\\\\\\\\n                        const current = statusIndex === indexOfCurrentItem;\\\\\\\\n                        const completed =\\\\\\\\n                          statusIndex > indexOfCurrentItem ||\\\\\\\\n                          updatedProposalStatus.value.status ===\\\\\\\\n                            PROPOSAL_TIMELINE_STATUS.FUNDED;\\\\\\\\n                        return (\\\\\\\\n                          <div className=\\\\\\\\\\\\\\\"d-flex flex-column align-items-center gap-1\\\\\\\\\\\\\\\">\\\\\\\\n                            <div\\\\\\\\n                              className={\\\\\\\\n                                \\\\\\\\\\\\\\\"circle \\\\\\\\\\\\\\\" +\\\\\\\\n                                (completed && \\\\\\\\\\\\\\\" green-fill \\\\\\\\\\\\\\\") +\\\\\\\\n                                (current && \\\\\\\\\\\\\\\" yellow-fill \\\\\\\\\\\\\\\")\\\\\\\\n                              }\\\\\\\\n                            >\\\\\\\\n                              {completed && (\\\\\\\\n                                <div\\\\\\\\n                                  className=\\\\\\\\\\\\\\\"d-flex justify-content-center align-items-center\\\\\\\\\\\\\\\"\\\\\\\\n                                  style={{ height: \\\\\\\\\\\\\\\"110%\\\\\\\\\\\\\\\" }}\\\\\\\\n                                >\\\\\\\\n                                  <i class=\\\\\\\\\\\\\\\"bi bi-check\\\\\\\\\\\\\\\"></i>\\\\\\\\n                                </div>\\\\\\\\n                              )}\\\\\\\\n                            </div>\\\\\\\\n                            {index !== stepsArray.length - 1 && (\\\\\\\\n                              <div\\\\\\\\n                                className={\\\\\\\\n                                  \\\\\\\\\\\\\\\"vertical-line\\\\\\\\\\\\\\\" +\\\\\\\\n                                  (index === stepsArray.length - 2\\\\\\\\n                                    ? \\\\\\\\\\\\\\\"-sm \\\\\\\\\\\\\\\"\\\\\\\\n                                    : \\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\") +\\\\\\\\n                                  (completed && \\\\\\\\\\\\\\\" green-fill \\\\\\\\\\\\\\\") +\\\\\\\\n                                  (current && \\\\\\\\\\\\\\\" yellow-fill \\\\\\\\\\\\\\\")\\\\\\\\n                                }\\\\\\\\n                              ></div>\\\\\\\\n                            )}\\\\\\\\n                          </div>\\\\\\\\n                        );\\\\\\\\n                      })}\\\\\\\\n                    </div>\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-3\\\\\\\\\\\\\\\">\\\\\\\\n                      <TimelineItems\\\\\\\\n                        title=\\\\\\\\\\\\\\\"1) Draft\\\\\\\\\\\\\\\"\\\\\\\\n                        value={PROPOSAL_TIMELINE_STATUS.DRAFT}\\\\\\\\n                      >\\\\\\\\n                        <div>\\\\\\\\n                          Once an author submits a proposal, it is in draft mode\\\\\\\\n                          and open for community comments. The author can still\\\\\\\\n                          make changes to the proposal during this stage and\\\\\\\\n                          submit it for official review when ready.\\\\\\\\n                        </div>\\\\\\\\n                      </TimelineItems>\\\\\\\\n                      <TimelineItems\\\\\\\\n                        title=\\\\\\\\\\\\\\\"2) Review\\\\\\\\\\\\\\\"\\\\\\\\n                        value={PROPOSAL_TIMELINE_STATUS.REVIEW}\\\\\\\\n                      >\\\\\\\\n                        <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-2\\\\\\\\\\\\\\\">\\\\\\\\n                          Sponsors who agree to consider the proposal may\\\\\\\\n                          request attestations from work groups.\\\\\\\\n                          <CheckBox\\\\\\\\n                            value=\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n                            disabled={selectedStatusIndex !== 1}\\\\\\\\n                            onClick={(value) =>\\\\\\\\n                              setUpdatedProposalStatus((prevState) => ({\\\\\\\\n                                ...prevState,\\\\\\\\n                                value: {\\\\\\\\n                                  ...prevState.value,\\\\\\\\n                                  sponsor_requested_review: value,\\\\\\\\n                                },\\\\\\\\n                              }))\\\\\\\\n                            }\\\\\\\\n                            label=\\\\\\\\\\\\\\\"Sponsor provides feedback or requests reviews\\\\\\\\\\\\\\\"\\\\\\\\n                            isChecked={\\\\\\\\n                              updatedProposalStatus.value\\\\\\\\n                                .sponsor_requested_review\\\\\\\\n                            }\\\\\\\\n                          />\\\\\\\\n                          <CheckBox\\\\\\\\n                            value=\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n                            disabled={selectedStatusIndex !== 1}\\\\\\\\n                            label=\\\\\\\\\\\\\\\"Reviewer completes attestations (Optional)\\\\\\\\\\\\\\\"\\\\\\\\n                            onClick={(value) =>\\\\\\\\n                              setUpdatedProposalStatus((prevState) => ({\\\\\\\\n                                ...prevState,\\\\\\\\n                                value: {\\\\\\\\n                                  ...prevState.value,\\\\\\\\n                                  reviewer_completed_attestation: value,\\\\\\\\n                                },\\\\\\\\n                              }))\\\\\\\\n                            }\\\\\\\\n                            isChecked={\\\\\\\\n                              updatedProposalStatus.value\\\\\\\\n                                .reviewer_completed_attestation\\\\\\\\n                            }\\\\\\\\n                          />\\\\\\\\n                        </div>\\\\\\\\n                      </TimelineItems>\\\\\\\\n                      <TimelineItems\\\\\\\\n                        title=\\\\\\\\\\\\\\\"3) Decision\\\\\\\\\\\\\\\"\\\\\\\\n                        values={[\\\\\\\\n                          PROPOSAL_TIMELINE_STATUS.APPROVED,\\\\\\\\n                          PROPOSAL_TIMELINE_STATUS.APPROVED_CONDITIONALLY,\\\\\\\\n                          PROPOSAL_TIMELINE_STATUS.REJECTED,\\\\\\\\n                        ]}\\\\\\\\n                      >\\\\\\\\n                        <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-2\\\\\\\\\\\\\\\">\\\\\\\\n                          <div>Sponsor makes a final decision:</div>\\\\\\\\n                          <RadioButton\\\\\\\\n                            value=\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n                            label={<div className=\\\\\\\\\\\\\\\"fw-bold\\\\\\\\\\\\\\\">Approved</div>}\\\\\\\\n                            isChecked={\\\\\\\\n                              updatedProposalStatus.value.status ===\\\\\\\\n                                PROPOSAL_TIMELINE_STATUS.APPROVED ||\\\\\\\\n                              updatedProposalStatus.value.status ===\\\\\\\\n                                PROPOSAL_TIMELINE_STATUS.PAYMENT_PROCESSING ||\\\\\\\\n                              updatedProposalStatus.value.status ===\\\\\\\\n                                PROPOSAL_TIMELINE_STATUS.FUNDED\\\\\\\\n                            }\\\\\\\\n                          />\\\\\\\\n                          <RadioButton\\\\\\\\n                            value=\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n                            label={\\\\\\\\n                              <>\\\\\\\\n                                <div className=\\\\\\\\\\\\\\\"fw-bold\\\\\\\\\\\\\\\">\\\\\\\\n                                  Approved - Conditional{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n                                </div>\\\\\\\\n                                <span>\\\\\\\\n                                  Requires follow up from recipient. Moderators\\\\\\\\n                                  will provide further details.\\\\\\\\n                                </span>\\\\\\\\n                              </>\\\\\\\\n                            }\\\\\\\\n                            isChecked={\\\\\\\\n                              updatedProposalStatus.value.status ===\\\\\\\\n                              PROPOSAL_TIMELINE_STATUS.APPROVED_CONDITIONALLY\\\\\\\\n                            }\\\\\\\\n                          />\\\\\\\\n                          <RadioButton\\\\\\\\n                            value=\\\\\\\\\\\\\\\"Reject\\\\\\\\\\\\\\\"\\\\\\\\n                            label={<div className=\\\\\\\\\\\\\\\"fw-bold\\\\\\\\\\\\\\\">Rejected</div>}\\\\\\\\n                            isChecked={\\\\\\\\n                              updatedProposalStatus.value.status ===\\\\\\\\n                              PROPOSAL_TIMELINE_STATUS.REJECTED\\\\\\\\n                            }\\\\\\\\n                          />\\\\\\\\n                          <RadioButton\\\\\\\\n                            value=\\\\\\\\\\\\\\\"Canceled\\\\\\\\\\\\\\\"\\\\\\\\n                            label={<div className=\\\\\\\\\\\\\\\"fw-bold\\\\\\\\\\\\\\\">Canceled</div>}\\\\\\\\n                            isChecked={\\\\\\\\n                              updatedProposalStatus.value.status ===\\\\\\\\n                              PROPOSAL_TIMELINE_STATUS.CANCELED\\\\\\\\n                            }\\\\\\\\n                          />\\\\\\\\n                        </div>\\\\\\\\n                      </TimelineItems>\\\\\\\\n                      <TimelineItems\\\\\\\\n                        title=\\\\\\\\\\\\\\\"4) Payment Processing\\\\\\\\\\\\\\\"\\\\\\\\n                        value={PROPOSAL_TIMELINE_STATUS.PAYMENT_PROCESSING}\\\\\\\\n                      >\\\\\\\\n                        <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-2\\\\\\\\\\\\\\\">\\\\\\\\n                          <CheckBox\\\\\\\\n                            value={updatedProposalStatus.value.kyc_verified}\\\\\\\\n                            label=\\\\\\\\\\\\\\\"Sponsor verifies KYC/KYB\\\\\\\\\\\\\\\"\\\\\\\\n                            disabled={selectedStatusIndex !== 6}\\\\\\\\n                            onClick={(value) =>\\\\\\\\n                              setUpdatedProposalStatus((prevState) => ({\\\\\\\\n                                ...prevState,\\\\\\\\n                                value: {\\\\\\\\n                                  ...prevState.value,\\\\\\\\n                                  kyc_verified: value,\\\\\\\\n                                },\\\\\\\\n                              }))\\\\\\\\n                            }\\\\\\\\n                            isChecked={updatedProposalStatus.value.kyc_verified}\\\\\\\\n                          />\\\\\\\\n                          <CheckBox\\\\\\\\n                            value={\\\\\\\\n                              updatedProposalStatus.value.test_transaction_sent\\\\\\\\n                            }\\\\\\\\n                            disabled={selectedStatusIndex !== 6}\\\\\\\\n                            label=\\\\\\\\\\\\\\\"Sponsor confirmed sponsorship and shared funding steps with recipient\\\\\\\\\\\\\\\"\\\\\\\\n                            onClick={(value) =>\\\\\\\\n                              setUpdatedProposalStatus((prevState) => ({\\\\\\\\n                                ...prevState,\\\\\\\\n                                value: {\\\\\\\\n                                  ...prevState.value,\\\\\\\\n                                  test_transaction_sent: value,\\\\\\\\n                                },\\\\\\\\n                              }))\\\\\\\\n                            }\\\\\\\\n                            isChecked={\\\\\\\\n                              updatedProposalStatus.value.test_transaction_sent\\\\\\\\n                            }\\\\\\\\n                          />\\\\\\\\n                        </div>\\\\\\\\n                      </TimelineItems>\\\\\\\\n                      <TimelineItems\\\\\\\\n                        title=\\\\\\\\\\\\\\\"5) Funded\\\\\\\\\\\\\\\"\\\\\\\\n                        value={PROPOSAL_TIMELINE_STATUS.FUNDED}\\\\\\\\n                      >\\\\\\\\n                        <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-2\\\\\\\\\\\\\\\">\\\\\\\\n                          {paymentHashes?.length > 1 ? (\\\\\\\\n                            paymentHashes.slice(0, -1).map((link, index) => (\\\\\\\\n                              <a\\\\\\\\n                                key={index}\\\\\\\\n                                href={link}\\\\\\\\n                                className=\\\\\\\\\\\\\\\"text-decoration-underline\\\\\\\\\\\\\\\"\\\\\\\\n                                target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n                                rel=\\\\\\\\\\\\\\\"noopener noreferrer\\\\\\\\\\\\\\\"\\\\\\\\n                              >\\\\\\\\n                                Payment Link\\\\\\\\n                                <i className=\\\\\\\\\\\\\\\"bi bi-arrow-up-right\\\\\\\\\\\\\\\"></i>\\\\\\\\n                              </a>\\\\\\\\n                            ))\\\\\\\\n                          ) : updatedProposalStatus.value.payouts.length > 0 ? (\\\\\\\\n                            <div>\\\\\\\\n                              {updatedProposalStatus.value.payouts.map(\\\\\\\\n                                (link) => {\\\\\\\\n                                  return (\\\\\\\\n                                    <a\\\\\\\\n                                      href={link}\\\\\\\\n                                      className=\\\\\\\\\\\\\\\"text-decoration-underline\\\\\\\\\\\\\\\"\\\\\\\\n                                      target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n                                      rel=\\\\\\\\\\\\\\\"noopener noreferrer\\\\\\\\\\\\\\\"\\\\\\\\n                                    >\\\\\\\\n                                      Payment Link\\\\\\\\n                                      <i class=\\\\\\\\\\\\\\\"bi bi-arrow-up-right\\\\\\\\\\\\\\\"></i>\\\\\\\\n                                    </a>\\\\\\\\n                                  );\\\\\\\\n                                }\\\\\\\\n                              )}\\\\\\\\n                            </div>\\\\\\\\n                          ) : (\\\\\\\\n                            \\\\\\\\\\\\\\\"No Payouts yet\\\\\\\\\\\\\\\"\\\\\\\\n                          )}\\\\\\\\n                        </div>\\\\\\\\n                      </TimelineItems>\\\\\\\\n                    </div>\\\\\\\\n                  </div>\\\\\\\\n                  {showTimelineSetting && (\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-2\\\\\\\\\\\\\\\">\\\\\\\\n                      <div className=\\\\\\\\\\\\\\\"border-vertical py-3 my-2\\\\\\\\\\\\\\\">\\\\\\\\n                        <label className=\\\\\\\\\\\\\\\"text-black h6\\\\\\\\\\\\\\\">\\\\\\\\n                          Project Coordinator\\\\\\\\n                        </label>\\\\\\\\n                        <Widget\\\\\\\\n                          src={`devhub.near/widget/devhub.entity.proposal.AccountInput`}\\\\\\\\n                          props={{\\\\\\\\n                            value: supervisor,\\\\\\\\n                            placeholder: \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\n                            onUpdate: setSupervisor,\\\\\\\\n                          }}\\\\\\\\n                        />\\\\\\\\n                      </div>\\\\\\\\n                      {updatedProposalStatus.value.status ===\\\\\\\\n                        PROPOSAL_TIMELINE_STATUS.FUNDED && (\\\\\\\\n                        <div className=\\\\\\\\\\\\\\\"border-vertical py-3 my-2\\\\\\\\\\\\\\\">\\\\\\\\n                          <label className=\\\\\\\\\\\\\\\"text-black h6\\\\\\\\\\\\\\\">Payment Link</label>\\\\\\\\n                          <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-2\\\\\\\\\\\\\\\">\\\\\\\\n                            {paymentHashes.map((item, index) => (\\\\\\\\n                              <div className=\\\\\\\\\\\\\\\"d-flex gap-2 justify-content-between align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n                                <Widget\\\\\\\\n                                  src={`devhub.near/widget/devhub.components.molecule.Input`}\\\\\\\\n                                  props={{\\\\\\\\n                                    className: \\\\\\\\\\\\\\\"flex-grow-1\\\\\\\\\\\\\\\",\\\\\\\\n                                    value: item,\\\\\\\\n                                    onChange: (e) => {\\\\\\\\n                                      const updatedHashes = [...paymentHashes];\\\\\\\\n                                      updatedHashes[index] = e.target.value;\\\\\\\\n                                      setPaymentHashes(updatedHashes);\\\\\\\\n                                    },\\\\\\\\n                                    skipPaddingGap: true,\\\\\\\\n                                    placeholder: \\\\\\\\\\\\\\\"Enter URL\\\\\\\\\\\\\\\",\\\\\\\\n                                  }}\\\\\\\\n                                />\\\\\\\\n                                <div style={{ minWidth: 20 }}>\\\\\\\\n                                  {index !== paymentHashes.length - 1 ? (\\\\\\\\n                                    <Widget\\\\\\\\n                                      src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n                                      props={{\\\\\\\\n                                        classNames: {\\\\\\\\n                                          root: \\\\\\\\\\\\\\\"btn-outline-danger shadow-none w-100\\\\\\\\\\\\\\\",\\\\\\\\n                                        },\\\\\\\\n                                        label: <i class=\\\\\\\\\\\\\\\"bi bi-trash3 h6\\\\\\\\\\\\\\\"></i>,\\\\\\\\n                                        onClick: () => {\\\\\\\\n                                          const updatedHashes = [\\\\\\\\n                                            ...paymentHashes,\\\\\\\\n                                          ];\\\\\\\\n                                          updatedHashes.splice(index, 1);\\\\\\\\n                                          setPaymentHashes(updatedHashes);\\\\\\\\n                                        },\\\\\\\\n                                      }}\\\\\\\\n                                    />\\\\\\\\n                                  ) : (\\\\\\\\n                                    <Widget\\\\\\\\n                                      src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n                                      props={{\\\\\\\\n                                        classNames: {\\\\\\\\n                                          root: \\\\\\\\\\\\\\\"green-btn shadow-none border-0 w-100\\\\\\\\\\\\\\\",\\\\\\\\n                                        },\\\\\\\\n                                        disabled: !item,\\\\\\\\n                                        label: <i class=\\\\\\\\\\\\\\\"bi bi-plus-lg\\\\\\\\\\\\\\\"></i>,\\\\\\\\n                                        onClick: () =>\\\\\\\\n                                          setPaymentHashes([\\\\\\\\n                                            ...paymentHashes,\\\\\\\\n                                            \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\n                                          ]),\\\\\\\\n                                      }}\\\\\\\\n                                    />\\\\\\\\n                                  )}\\\\\\\\n                                </div>\\\\\\\\n                              </div>\\\\\\\\n                            ))}\\\\\\\\n                          </div>\\\\\\\\n                        </div>\\\\\\\\n                      )}\\\\\\\\n                      <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center justify-content-end text-sm\\\\\\\\\\\\\\\">\\\\\\\\n                        <Widget\\\\\\\\n                          src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n                          props={{\\\\\\\\n                            label: \\\\\\\\\\\\\\\"Cancel\\\\\\\\\\\\\\\",\\\\\\\\n                            classNames: {\\\\\\\\n                              root: \\\\\\\\\\\\\\\"btn-outline-danger border-0 shadow-none btn-sm\\\\\\\\\\\\\\\",\\\\\\\\n                            },\\\\\\\\n                            onClick: () => {\\\\\\\\n                              setShowTimelineSetting(false);\\\\\\\\n                              setUpdatedProposalStatus(proposalStatus);\\\\\\\\n                            },\\\\\\\\n                          }}\\\\\\\\n                        />\\\\\\\\n                        <Widget\\\\\\\\n                          src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n                          props={{\\\\\\\\n                            label: \\\\\\\\\\\\\\\"Save\\\\\\\\\\\\\\\",\\\\\\\\n                            disabled:\\\\\\\\n                              !supervisor &&\\\\\\\\n                              DecisionStage.includes(\\\\\\\\n                                updatedProposalStatus.value.status\\\\\\\\n                              ),\\\\\\\\n                            classNames: { root: \\\\\\\\\\\\\\\"green-btn btn-sm\\\\\\\\\\\\\\\" },\\\\\\\\n                            onClick: () => {\\\\\\\\n                              if (snapshot.supervisor !== supervisor) {\\\\\\\\n                                editProposal({\\\\\\\\n                                  timeline: updatedProposalStatus.value,\\\\\\\\n                                });\\\\\\\\n                              } else if (\\\\\\\\n                                updatedProposalStatus.value.status ===\\\\\\\\n                                PROPOSAL_TIMELINE_STATUS.FUNDED\\\\\\\\n                              ) {\\\\\\\\n                                editProposalStatus({\\\\\\\\n                                  timeline: {\\\\\\\\n                                    ...updatedProposalStatus.value,\\\\\\\\n                                    payouts: !paymentHashes[0]\\\\\\\\n                                      ? []\\\\\\\\n                                      : paymentHashes.filter(\\\\\\\\n                                          (item) => item !== \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n                                        ),\\\\\\\\n                                  },\\\\\\\\n                                });\\\\\\\\n                              } else {\\\\\\\\n                                editProposalStatus({\\\\\\\\n                                  timeline: updatedProposalStatus.value,\\\\\\\\n                                });\\\\\\\\n                              }\\\\\\\\n                              setShowTimelineSetting(false);\\\\\\\\n                            },\\\\\\\\n                          }}\\\\\\\\n                        />\\\\\\\\n                      </div>\\\\\\\\n                    </div>\\\\\\\\n                  )}\\\\\\\\n                </div>\\\\\\\\n              </SidePanelItem>\\\\\\\\n            </div>\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n      </div>\\\\\\\\n    </div>\\\\\\\\n  </Container>\\\\\\\\n);\\\\\\\\n\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.269704122544e+21
+    }
+  },
+  {
+    "id": "9557126850",
+    "receipt_id": "8hNhpWxZ7Z9sZvwPHmRS7ERsZGaLhEZ4GkBnXRVQ5E39",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CPkC7pWbW7LUSFk18CyVkHxhKWrFSKFFenLiFP38e3XW",
+      "block_height": 131271321,
+      "block_timestamp": 1729979233134584000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "ABH2eRRcBQqcY3NSEJvZGR9dfSdEXsC5i1jiThc5fKS3",
+    "included_in_block_hash": "4iw4NASwWuJpHZB8MuZun8Xzi5cSR3UMfvkZQ9LmW8Sa",
+    "block_timestamp": "1729979230992271134",
+    "block": {
+      "block_height": 131271319
+    },
+    "receipt_conversion_tokens_burnt": "413071988040500000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.863225302066241e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.269704122544e+21
+    }
+  },
+  {
+    "id": "9564866808",
+    "receipt_id": "Bewjveo7QUVuguFnWDiZvt5JQLFLF4CSLFevfsfMBz7A",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FMkGmNtjwg4Ub1CbpMVyKjdwigpKooH6y24AdXd34nWw",
+      "block_height": 131295358,
+      "block_timestamp": 1730006384551760600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4925751830965,
+      "tokens_burnt": 492575183096500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4YNvHqs9LdECaiQJ8meNoQvk9vGKV5T4TGgZcJkjSEEo",
+    "included_in_block_hash": "91WKKUXc47u9ht1SJfEmrScg5ARq5PH98MBt22BU8sf8",
+    "block_timestamp": "1730006383375875841",
+    "block": {
+      "block_height": 131295357
+    },
+    "receipt_conversion_tokens_burnt": "60608271875000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 492575183096500000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"widget\": {\"components.organism.Navbar\": {\"\": \"const page = props.page;\\\\\\\\nconst [showMenu, setShowMenu] = useState(false);\\\\\\\\nconst { href: linkHref } = VM.require(`devhub.near/widget/core.lib.url`);\\\\\\\\nlinkHref || (linkHref = () => {});\\\\\\\\nconst Logo = () => {\\\\\\\\n  const Wrapper = styled.div`\\\\\\\\n    .text-lg {\\\\\\\\n      font-size: 22px;\\\\\\\\n    }\\\\\\\\n    a:hover {\\\\\\\\n      text-decoration: none;\\\\\\\\n    }\\\\\\\\n  `;\\\\\\\\n  return (\\\\\\\\n    <Wrapper>\\\\\\\\n      <Link\\\\\\\\n        to={linkHref({\\\\\\\\n          widgetSrc: `infrastructure-committee.near/widget/app`,\\\\\\\\n          params: { page: \\\\\\\\\\\\\\\"about\\\\\\\\\\\\\\\" },\\\\\\\\n        })}\\\\\\\\n      >\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n          <img\\\\\\\\n            height={35}\\\\\\\\n            width={35}\\\\\\\\n            src=\\\\\\\\\\\\\\\"https://ipfs.near.social/ipfs/bafkreicgbhtzxgdb3noivjfx4xcwsx6nq5pnjttdc4fpgfq74ynqj5h6mq\\\\\\\\\\\\\\\"\\\\\\\\n          />\\\\\\\\n          <b className=\\\\\\\\\\\\\\\"text-lg\\\\\\\\\\\\\\\">infrastructure committee</b>\\\\\\\\n        </div>\\\\\\\\n      </Link>\\\\\\\\n    </Wrapper>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\nconst ProfileIcon = () => {\\\\\\\\n  const Wrapper = styled.svg`\\\\\\\\n    padding: 0.25rem;\\\\\\\\n    @media screen and (max-width: 768px) {\\\\\\\\n      display: none;\\\\\\\\n    }\\\\\\\\n  `;\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src={`devhub.near/widget/devhub.components.molecule.ProfileCard`}\\\\\\\\n      props={{ iconOnly: true, accountId: context.accountId || null }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n};\\\\\\\\nconst MenuIcon = () => (\\\\\\\\n  <svg\\\\\\\\n    xmlns=\\\\\\\\\\\\\\\"http://www.w3.org/2000/svg\\\\\\\\\\\\\\\"\\\\\\\\n    width=\\\\\\\\\\\\\\\"16\\\\\\\\\\\\\\\"\\\\\\\\n    height=\\\\\\\\\\\\\\\"16\\\\\\\\\\\\\\\"\\\\\\\\n    viewBox=\\\\\\\\\\\\\\\"0 0 16 16\\\\\\\\\\\\\\\"\\\\\\\\n    fill=\\\\\\\\\\\\\\\"none\\\\\\\\\\\\\\\"\\\\\\\\n    style={{ height: 20, width: 20 }}\\\\\\\\n  >\\\\\\\\n    <path\\\\\\\\n      fill-rule=\\\\\\\\\\\\\\\"evenodd\\\\\\\\\\\\\\\"\\\\\\\\n      clip-rule=\\\\\\\\\\\\\\\"evenodd\\\\\\\\\\\\\\\"\\\\\\\\n      d=\\\\\\\\\\\\\\\"M2 12.2986H14V13.3732H2V12.2986ZM2 9.07471H14V10.1493H2V9.07471ZM2 5.85083H14V6.92546H2V5.85083ZM2 2.62695H14V3.70158H2V2.62695Z\\\\\\\\\\\\\\\"\\\\\\\\n      fill=\\\\\\\\\\\\\\\"#818181\\\\\\\\\\\\\\\"\\\\\\\\n    />\\\\\\\\n  </svg>\\\\\\\\n);\\\\\\\\nconst Navbar = styled.div`\\\\\\\\n  padding: 1.5rem 0rem;\\\\\\\\n  display: flex;\\\\\\\\n  flex-direction: row;\\\\\\\\n  justify-content: space-between;\\\\\\\\n  align-items: center;\\\\\\\\n  background: #f4f4f4;\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    padding: 1.875rem 1.375rem;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\nconst LinksContainer = styled.div`\\\\\\\\n  display: flex;\\\\\\\\n  flex-direction: row;\\\\\\\\n  align-items: center;\\\\\\\\n  gap: 1.5rem;\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    display: none;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\nconst MobileMenu = styled.button`\\\\\\\\n  all: unset;\\\\\\\\n  display: none;\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    display: block;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\nlet links = [\\\\\\\\n  {\\\\\\\\n    title: \\\\\\\\\\\\\\\"Proposals\\\\\\\\\\\\\\\",\\\\\\\\n    href: \\\\\\\\\\\\\\\"proposals\\\\\\\\\\\\\\\",\\\\\\\\n    links: [],\\\\\\\\n  },\\\\\\\\n  {\\\\\\\\n    title: \\\\\\\\\\\\\\\"RFPs\\\\\\\\\\\\\\\",\\\\\\\\n    href: \\\\\\\\\\\\\\\"rfps\\\\\\\\\\\\\\\",\\\\\\\\n    links: [],\\\\\\\\n  },\\\\\\\\n  {\\\\\\\\n    title: \\\\\\\\\\\\\\\"About\\\\\\\\\\\\\\\",\\\\\\\\n    href: \\\\\\\\\\\\\\\"about\\\\\\\\\\\\\\\",\\\\\\\\n    links: [],\\\\\\\\n  },\\\\\\\\n];\\\\\\\\nconst isModerator = Near.view(\\\\\\\\n  \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n  \\\\\\\\\\\\\\\"is_allowed_to_write_rfps\\\\\\\\\\\\\\\",\\\\\\\\n  {\\\\\\\\n    editor: context.accountId,\\\\\\\\n  }\\\\\\\\n);\\\\\\\\nif (isModerator) {\\\\\\\\n  links = [\\\\\\\\n    {\\\\\\\\n      title: \\\\\\\\\\\\\\\"Admin\\\\\\\\\\\\\\\",\\\\\\\\n      href: \\\\\\\\\\\\\\\"admin\\\\\\\\\\\\\\\",\\\\\\\\n      links: [],\\\\\\\\n    },\\\\\\\\n    ...links,\\\\\\\\n  ];\\\\\\\\n}\\\\\\\\nconst MobileNav = styled.div`\\\\\\\\n  display: none;\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    display: flex;\\\\\\\\n  }\\\\\\\\n  position: absolute;\\\\\\\\n  top: 0;\\\\\\\\n  right: 0;\\\\\\\\n  width: 207px;\\\\\\\\n  padding: 24px 36px 36px 16px;\\\\\\\\n  flex-direction: column;\\\\\\\\n  align-items: flex-end;\\\\\\\\n  gap: 2.5rem;\\\\\\\\n  flex-shrink: 0;\\\\\\\\n  border-radius: 0px 0px 0px 16px;\\\\\\\\n  background: rgba(41, 41, 41, 0.6);\\\\\\\\n  backdrop-filter: blur(5px);\\\\\\\\n  z-index: 50;\\\\\\\\n`;\\\\\\\\nconst MobileLink = styled.a`\\\\\\\\n  color: #f4f4f4 !important;\\\\\\\\n  font-size: 20px;\\\\\\\\n  font-style: normal;\\\\\\\\n  font-weight: 400;\\\\\\\\n  line-height: 20px; /* 100% */\\\\\\\\n  margin-bottom: 1rem;\\\\\\\\n  &.active {\\\\\\\\n    color: #00ec97 !important;\\\\\\\\n  }\\\\\\\\n  &:hover {\\\\\\\\n    text-decoration: none;\\\\\\\\n    color: #00ec97 !important;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\nreturn (\\\\\\\\n  <Navbar className=\\\\\\\\\\\\\\\"position-relative\\\\\\\\\\\\\\\">\\\\\\\\n    <Logo />\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"d-flex gap-3 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n      {isModerator ? (\\\\\\\\n        <Widget\\\\\\\\n          src=\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.island.contract-balance\\\\\\\\\\\\\\\"\\\\\\\\n          props={{\\\\\\\\n            accountId: \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n            dark: false,\\\\\\\\n          }}\\\\\\\\n        />\\\\\\\\n      ) : null}\\\\\\\\n      <LinksContainer>\\\\\\\\n        {links.map((link) => (\\\\\\\\n          <Widget\\\\\\\\n            src={`infrastructure-committee.near/widget/components.molecule.NavbarDropdown`}\\\\\\\\n            props={{\\\\\\\\n              title: link.title,\\\\\\\\n              href: link.href,\\\\\\\\n              links: link.links,\\\\\\\\n              page: page,\\\\\\\\n            }}\\\\\\\\n          />\\\\\\\\n        ))}\\\\\\\\n      </LinksContainer>\\\\\\\\n      {context.accountId && <ProfileIcon />}\\\\\\\\n      <MobileMenu onClick={() => setShowMenu(!showMenu)}>\\\\\\\\n        <MenuIcon />\\\\\\\\n      </MobileMenu>\\\\\\\\n    </div>\\\\\\\\n    {showMenu && (\\\\\\\\n      <MobileNav>\\\\\\\\n        <div\\\\\\\\n          onClick={() => setShowMenu(!showMenu)}\\\\\\\\n          style={{ cursor: \\\\\\\\\\\\\\\"pointer\\\\\\\\\\\\\\\" }}\\\\\\\\n        >\\\\\\\\n          <i className=\\\\\\\\\\\\\\\"bi bi-x\\\\\\\\\\\\\\\" style={{ fontSize: 20, color: \\\\\\\\\\\\\\\"#F4F4F4\\\\\\\\\\\\\\\" }}></i>\\\\\\\\n        </div>\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-2\\\\\\\\\\\\\\\">\\\\\\\\n          {links.map((link, idx) =>\\\\\\\\n            link.href ? (\\\\\\\\n              <MobileLink\\\\\\\\n                key={`mobile-link-${idx}`}\\\\\\\\n                className={link.href === props.page && \\\\\\\\\\\\\\\"active\\\\\\\\\\\\\\\"}\\\\\\\\n                href={`/infrastructure-committee.near/widget/app?page=${link.href}`}\\\\\\\\n              >\\\\\\\\n                {link.title}\\\\\\\\n              </MobileLink>\\\\\\\\n            ) : (\\\\\\\\n              link.links.map((it, idx) =>\\\\\\\\n                it.href.startsWith(\\\\\\\\\\\\\\\"http://\\\\\\\\\\\\\\\") ||\\\\\\\\n                it.href.startsWith(\\\\\\\\\\\\\\\"https://\\\\\\\\\\\\\\\") ? (\\\\\\\\n                  <MobileLink\\\\\\\\n                    key={`nested-link-${idx}`}\\\\\\\\n                    className={link.href === props.page && \\\\\\\\\\\\\\\"active\\\\\\\\\\\\\\\"}\\\\\\\\n                    href={it.href}\\\\\\\\n                    target=\\\\\\\\\\\\\\\"no_blank\\\\\\\\\\\\\\\"\\\\\\\\n                  >\\\\\\\\n                    /{it.title}\\\\\\\\n                  </MobileLink>\\\\\\\\n                ) : (\\\\\\\\n                  <MobileLink\\\\\\\\n                    key={`nested-link-${idx}`}\\\\\\\\n                    className={link.href === props.page && \\\\\\\\\\\\\\\"active\\\\\\\\\\\\\\\"}\\\\\\\\n                    href={`/infrastructure-committee.near/widget/app?page=${it.href}`}\\\\\\\\n                  >\\\\\\\\n                    /{it.title}\\\\\\\\n                  </MobileLink>\\\\\\\\n                )\\\\\\\\n              )\\\\\\\\n            )\\\\\\\\n          )}\\\\\\\\n        </div>\\\\\\\\n      </MobileNav>\\\\\\\\n    )}\\\\\\\\n  </Navbar>\\\\\\\\n);\\\\\\\\n\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 553183454971500000000
+    }
+  },
+  {
+    "id": "9564867152",
+    "receipt_id": "CzxkSqm7kbaApqGLrAkJpAVEhW1ThQ3LSpEES9zxUaEz",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2z54txyMpTGv1v15VxrN7ZXgNTxurgbLfne9qxJm9Ee4",
+      "block_height": 131295359,
+      "block_timestamp": 1730006385817736000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "4YNvHqs9LdECaiQJ8meNoQvk9vGKV5T4TGgZcJkjSEEo",
+    "included_in_block_hash": "91WKKUXc47u9ht1SJfEmrScg5ARq5PH98MBt22BU8sf8",
+    "block_timestamp": "1730006383375875841",
+    "block": {
+      "block_height": 131295357
+    },
+    "receipt_conversion_tokens_burnt": "60608271875000000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.875832845599084e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 553183454971500000000
+    }
+  },
+  {
+    "id": "9569392539",
+    "receipt_id": "7TvCB7CVRrwwqZXhtAKVW7XfMYVjXG4uR64AZUfS1Bwj",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GeAnTv6YwWUq4Pa2ZJnwnBnJGSBfdBRYrZ187evgjzb",
+      "block_height": 131307174,
+      "block_timestamp": 1730019675080194300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4251304741567,
+      "tokens_burnt": 425130474156700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "CoMLUMZqBN3Mg3gZqZFhXPMQmQnK1qA6fsgPfPqqNwaf",
+    "included_in_block_hash": "4a7mgub3dKmzzzdkgjk8iHi9CNQku54qqr8meu7vAApT",
+    "block_timestamp": "1730019673949143358",
+    "block": {
+      "block_height": 131307173
+    },
+    "receipt_conversion_tokens_burnt": "40738467834500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 425130474156700000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"widget\": {\"core.common\": {\"\": \"const RFP_TIMELINE_STATUS = {\\\\\\\\n  ACCEPTING_SUBMISSIONS: \\\\\\\\\\\\\\\"ACCEPTING_SUBMISSIONS\\\\\\\\\\\\\\\",\\\\\\\\n  EVALUATION: \\\\\\\\\\\\\\\"EVALUATION\\\\\\\\\\\\\\\",\\\\\\\\n  PROPOSAL_SELECTED: \\\\\\\\\\\\\\\"PROPOSAL_SELECTED\\\\\\\\\\\\\\\",\\\\\\\\n  CANCELLED: \\\\\\\\\\\\\\\"CANCELLED\\\\\\\\\\\\\\\",\\\\\\\\n};\\\\\\\\nconst PROPOSAL_TIMELINE_STATUS = {\\\\\\\\n  DRAFT: \\\\\\\\\\\\\\\"DRAFT\\\\\\\\\\\\\\\",\\\\\\\\n  REVIEW: \\\\\\\\\\\\\\\"REVIEW\\\\\\\\\\\\\\\",\\\\\\\\n  APPROVED: \\\\\\\\\\\\\\\"APPROVED\\\\\\\\\\\\\\\",\\\\\\\\n  REJECTED: \\\\\\\\\\\\\\\"REJECTED\\\\\\\\\\\\\\\",\\\\\\\\n  CANCELED: \\\\\\\\\\\\\\\"CANCELLED\\\\\\\\\\\\\\\",\\\\\\\\n  APPROVED_CONDITIONALLY: \\\\\\\\\\\\\\\"APPROVED_CONDITIONALLY\\\\\\\\\\\\\\\",\\\\\\\\n  PAYMENT_PROCESSING: \\\\\\\\\\\\\\\"PAYMENT_PROCESSING\\\\\\\\\\\\\\\",\\\\\\\\n  FUNDED: \\\\\\\\\\\\\\\"FUNDED\\\\\\\\\\\\\\\",\\\\\\\\n};\\\\\\\\nconst QUERYAPI_ENDPOINT = `https://near-queryapi.api.pagoda.co/v1/graphql`;\\\\\\\\nasync function fetchGraphQL(operationsDoc, operationName, variables) {\\\\\\\\n  return asyncFetch(QUERYAPI_ENDPOINT, {\\\\\\\\n    method: \\\\\\\\\\\\\\\"POST\\\\\\\\\\\\\\\",\\\\\\\\n    headers: { \\\\\\\\\\\\\\\"x-hasura-role\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"polyprogrammist_near\\\\\\\\\\\\\\\" },\\\\\\\\n    body: JSON.stringify({\\\\\\\\n      query: operationsDoc,\\\\\\\\n      variables: variables,\\\\\\\\n      operationName: operationName,\\\\\\\\n    }),\\\\\\\\n  });\\\\\\\\n}\\\\\\\\nconst CANCEL_RFP_OPTIONS = {\\\\\\\\n  CANCEL_PROPOSALS: \\\\\\\\\\\\\\\"CANCEL_PROPOSALS\\\\\\\\\\\\\\\",\\\\\\\\n  UNLINK_PROPOSALS: \\\\\\\\\\\\\\\"UNLINK_PROPOSALSS\\\\\\\\\\\\\\\",\\\\\\\\n  NONE: \\\\\\\\\\\\\\\"NONE\\\\\\\\\\\\\\\",\\\\\\\\n};\\\\\\\\nfunction parseJSON(json) {\\\\\\\\n  if (typeof json === \\\\\\\\\\\\\\\"string\\\\\\\\\\\\\\\") {\\\\\\\\n    try {\\\\\\\\n      return JSON.parse(json);\\\\\\\\n    } catch (error) {\\\\\\\\n      return json;\\\\\\\\n    }\\\\\\\\n  } else {\\\\\\\\n    return json;\\\\\\\\n  }\\\\\\\\n}\\\\\\\\nfunction isNumber(value) {\\\\\\\\n  return typeof value === \\\\\\\\\\\\\\\"number\\\\\\\\\\\\\\\";\\\\\\\\n}\\\\\\\\nconst PROPOSALS_APPROVED_STATUS_ARRAY = [\\\\\\\\n  PROPOSAL_TIMELINE_STATUS.APPROVED,\\\\\\\\n  PROPOSAL_TIMELINE_STATUS.APPROVED_CONDITIONALLY,\\\\\\\\n  PROPOSAL_TIMELINE_STATUS.PAYMENT_PROCESSING,\\\\\\\\n  PROPOSAL_TIMELINE_STATUS.FUNDED,\\\\\\\\n];\\\\\\\\nfunction getLinkUsingCurrentGateway(url) {\\\\\\\\n  const data = fetch(`https://httpbin.org/headers`);\\\\\\\\n  const gatewayURL = data?.body?.headers?.Origin ?? \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\";\\\\\\\\n  return `https://${\\\\\\\\n    gatewayURL.includes(\\\\\\\\\\\\\\\"near.org\\\\\\\\\\\\\\\") ? \\\\\\\\\\\\\\\"dev.near.org\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"near.social\\\\\\\\\\\\\\\"\\\\\\\\n  }/${url}`;\\\\\\\\n}\\\\\\\\nreturn {\\\\\\\\n  RFP_TIMELINE_STATUS,\\\\\\\\n  PROPOSAL_TIMELINE_STATUS,\\\\\\\\n  fetchGraphQL,\\\\\\\\n  CANCEL_RFP_OPTIONS,\\\\\\\\n  parseJSON,\\\\\\\\n  isNumber,\\\\\\\\n  PROPOSALS_APPROVED_STATUS_ARRAY,\\\\\\\\n  getLinkUsingCurrentGateway,\\\\\\\\n};\\\\\\\\n\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 465868941991200000000
+    }
+  },
+  {
+    "id": "9569393029",
+    "receipt_id": "2PZsFyoHBwm91ZTepxD7rimt9RPR3dzkGx1WnfwjRKg1",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3TkBw6hhnacmrZYmEbiJsJwkNi3uYDv5bv59FJU5MR9X",
+      "block_height": 131307175,
+      "block_timestamp": 1730019676164552700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "CoMLUMZqBN3Mg3gZqZFhXPMQmQnK1qA6fsgPfPqqNwaf",
+    "included_in_block_hash": "4a7mgub3dKmzzzdkgjk8iHi9CNQku54qqr8meu7vAApT",
+    "block_timestamp": "1730019673949143358",
+    "block": {
+      "block_height": 131307173
+    },
+    "receipt_conversion_tokens_burnt": "40738467834500000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.8764490568393032e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 465868941991200000000
+    }
+  },
+  {
+    "id": "9588376397",
+    "receipt_id": "GHgJB3TBUJvLRGNVazdMvekayq7ZYiViq8E6nTds6XAp",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7g3ZdpK1Bnw6d1QdeG4SZMkbxZQEEz3rQLVsCNzBsf8D",
+      "block_height": 131364184,
+      "block_timestamp": 1730082739561773800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 2017661813908,
+      "tokens_burnt": 201766181390800000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": false
+    },
+    "transaction_hash": "EQZJy5MsqJKVUbnTGkSQ17P5gSsw9XCdiUQaSYf2j4xB",
+    "included_in_block_hash": "nK3qtyotjK1nUVwsi7Ny8SEifSZJcdSRDKnp5DP7ANR",
+    "block_timestamp": "1730082738517159837",
+    "block": {
+      "block_height": 131364183
+    },
+    "receipt_conversion_tokens_burnt": "31936054045500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_rfp",
+        "deposit": 1,
+        "fee": 201766181390800000000,
+        "args": "{\"title\": \"Hello AI\", \"summary\": \"I\\\\\\\\\\\\'m creating this RFP with an AI Agent\", \"category\": \"Bridges\", \"description\": \"# RFP AI AGENT building the future of smart contract interaction\", \"consent_to_tos\": true, \"submission_deadline\": \"2024-10-27\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 1
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 233702235436300000000
+    }
+  },
+  {
+    "id": "9611340655",
+    "receipt_id": "E53LbDDRTu8ZiV24agraqLWV5szLme5TVErbePgBuyRx",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Cg2hhrAWPqeVBcJvSrc2eamBdtWSpqqAYdwvujxRDpKf",
+      "block_height": 131422530,
+      "block_timestamp": 1730147766981851000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6856792776343,
+      "tokens_burnt": 685679277634300000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "FFN4snivwT1Aq6v6ko6cprxBg5CTLi1njEkNPYGdvLQL",
+    "included_in_block_hash": "2PwXJjCBqHdquN8iZxhirCAxyj8VEAPxm1E6tTAVtPqz",
+    "block_timestamp": "1730147765886521740",
+    "block": {
+      "block_height": 131422529
+    },
+    "receipt_conversion_tokens_burnt": "54185275464500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 685679277634300000000,
+        "args": "{\"id\": 12, \"body\": {\"name\": \"Ref/Burrow Finance: To support operation of the pyth oracle\", \"summary\": \"The primary approach of this proposal is to provide Oracle to the whole ecosystem of DeFi who needed it, especially aligning with more DeFi platforms coming to near through Chain Abstraction.\\\\\\\\n Current DApp that operating with Oracle is Burrow Finance\\\\\\\\u{2019}s for the assets price feed, Delta Trade\\\\\\\\u{2019}s DCA trader and also Ref Finance trading feature meanwhile in the future there will be more lending protocol like nearlend and omnilane + atlas who might need Oracle \", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REJECTED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": null, \"supervisor\": \"trechriron71.near\", \"description\": \"## Organisation\\\\\\\\nRef Finance & Burrow Finance\\\\\\\\n\\\\\\\\n## Primary person\\\\\\\\u{2019}s contact information\\\\\\\\nAescobar Michael / Aescobar7359 (tg) \\\\\\\\n\\\\\\\\n## Size of the Whole Team\\\\\\\\n15\\\\\\\\n\\\\\\\\n## Size of the Engineering Team \\\\\\\\n8\\\\\\\\n\\\\\\\\n## Team Location\\\\\\\\nChina & South East Asia \\\\\\\\n\\\\\\\\n## Team background and bios\\\\\\\\nTeam is also the main team who run the biggest DEX on NEAR Protocol and biggest money market in NEAR Burrow Finance, also building Satoshi Bridge utilising Chain Signature.\\\\\\\\n\\\\\\\\n## Any affiliations with other NEAR ecosystem partners?\\\\\\\\nSupporting most of the ecosystem partners on NEAR from DeFi, NFT, Gaming etc\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\nRunning the Ref Finance as DEX since 2021 and continuing till now, also building more infrastructure for the NEAR Protocol Ecosystem as a whole and at the same time running Burrow Finance which Oracle is critical to the money market. \\\\\\\\n\\\\\\\\n## Examples of relevant experience with NEAR blockchain\\\\\\\\nhttps://app.ref.finance/\\\\\\\\nhttps://app.burrow.finance/ \\\\\\\\n\\\\\\\\n\\\\\\\\n## Non-technical capabilities\\\\\\\\nThe Ref team has extensive experience in building a DEX, supported by our marketing and business development strategies, which have generated $7.3 billion in total trade volume since we launched on mainnet.\\\\\\\\n\\\\\\\\n## In-House Resources\\\\\\\\nAll of the team member is InHouse Resources, including designer, project manager, BD and Marketing \\\\\\\\nDesigner: @Audrey9215\\\\\\\\nBD: @Aescobar7359\\\\\\\\n\\\\\\\\tPM: @zerochlwork\\\\\\\\n\\\\\\\\tMarketing: @anmai\\\\\\\\n\\\\\\\\n## Portfolio of Relevant Work \\\\\\\\nhttps://dappradar.com/dapp/ref-finance \\\\\\\\nhttps://dappradar.com/dapp/burrow\\\\\\\\nhttps://dappradar.com/dapp/deltatrade \\\\\\\\n\\\\\\\\n## Body\\\\\\\\n- The primary approach and solution of the proposal\\\\\\\\nThe primary approach of this proposal is to provide Oracle to the whole ecosystem of DeFi who needed it, especially aligning with more DeFi platforms coming to near through Chain Abstraction.\\\\\\\\n Current DApp that operating with Oracle is Burrow Finance\\\\\\\\u{2019}s for the assets price feed, Delta Trade\\\\\\\\u{2019}s DCA trader and also Ref Finance trading feature meanwhile in the future there will be more lending protocol like nearlend and omnilane + atlas who might need Oracle \\\\\\\\n\\\\\\\\n- Why should the committee choose this project?\\\\\\\\nThe proposal submitted under ecosystem need and how critical it is to have an Oracle \\\\\\\\n\\\\\\\\n- Will this solution be open source? What licensing are you releasing under?\\\\\\\\nThis Oracle is belong to Pyth Network and will run by Pyth it self \\\\\\\\n\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\n- More DApps want to build on top of NEAR when they know there is infra they can utilise without cutting their own cost \\\\\\\\n- Easier for the Project owner to develop their plan on NEAR without searching for extra service\\\\\\\\n- More assets come to Burrow Finance especially when they know the price feed has been supported through the Oracle \\\\\\\\n- Integrate more synthetic BTC assets \\\\\\\\n- Integrate more BTC assets that utilise Oracle on Burrow Finance\\\\\\\\n\\\\\\\\n\\\\\\\\n## Grant Timeline \\\\\\\\nGrant will cover September to December Pyth Oracle Fee\\\\\\\\n## Metrics\\\\\\\\n- Measure success by increasing the influx of assets into the NEAR Protocol, enhancing its options for trading and participation in the lending and borrowing ecosystem.\\\\\\\\n- Measurement of this implemented is the accurate price feed for each assets operating under DeFi protocol in NEAR like delta trade DCA also Ref Finance Degen Pool \\\\\\\\n\\\\\\\\n\\\\\\\\n## Usage & Examples\\\\\\\\n- Burrow Finance will use this as assets price feed \\\\\\\\n- Nearlend will use this as assets price feed \\\\\\\\n- Ref Finance will utilise Pyth for Degen Pool price feed accuracy to provide fast and accurate swap with good output \\\\\\\\n- Delta Trade utilise this for DCA vault \\\\\\\\n\\\\\\\\n## Budget Total\\\\\\\\n4K $NEAR for 4 Months September to December\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\nSeptember: 1K $NEAR to pay Pyth Oracle service\\\\\\\\nOctober: 1K $NEAR to pay Pyth Oracle service\\\\\\\\nNovember: 1K $NEAR to pay Pyth Oracle service\\\\\\\\nDecember: 1K $NEAR to pay Pyth Oracle service\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"ref-dev-teller.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"20000\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"labels\": [\"Oracles\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0916892224689e+21
+    }
+  },
+  {
+    "id": "9611340835",
+    "receipt_id": "FZgVwggxZeQtAbLgR4si4bdyTkPCYCJbf4bq5gXKhPnu",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HgxfsD1TNFao3sBLYGnKQvsgEEvrQQwrFhYsGDZG8hK6",
+      "block_height": 131422531,
+      "block_timestamp": 1730147768044916200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3518246693701,
+      "tokens_burnt": 351824669370100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "FFN4snivwT1Aq6v6ko6cprxBg5CTLi1njEkNPYGdvLQL",
+    "included_in_block_hash": "2PwXJjCBqHdquN8iZxhirCAxyj8VEAPxm1E6tTAVtPqz",
+    "block_timestamp": "1730147765886521740",
+    "block": {
+      "block_height": 131422529
+    },
+    "receipt_conversion_tokens_burnt": "54185275464500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351824669370100000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"social.ref-labs.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":12,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0916892224689e+21
+    }
+  },
+  {
+    "id": "9611498547",
+    "receipt_id": "Dv8Se6mf8xiYtSUNY8Dpu8WzheXk4ZeRXfkEsmQuaQEL",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DLts7JqMqHq8h5TjtGFRUTZo2DHm3JrmmPYxdzadrZZB",
+      "block_height": 131422905,
+      "block_timestamp": 1730148185054433800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8388536210743,
+      "tokens_burnt": 838853621074300000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "4FGLzQJkui9ca7S8RZvj8JGDBEo64cdYuGQrniKtQFxR",
+    "included_in_block_hash": "CpXHjUQUUyVQQEpkmZxDdEHN74NejVEQ2DC6gEBry3Fv",
+    "block_timestamp": "1730148184082711341",
+    "block": {
+      "block_height": 131422904
+    },
+    "receipt_conversion_tokens_burnt": "31454448524000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 838853621074300000000,
+        "args": "{\"id\": 13, \"timeline\": {\"status\": \"APPROVED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2221483443864e+21
+    }
+  },
+  {
+    "id": "9611499601",
+    "receipt_id": "Ac8rJnioV1h3AVPL2oL5EU4SaShriLveYxtkVEBAgbrc",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7xPJV8s3z4QBywoUswCUKiW6uzvvvvj43Nz1DHwQX2ba",
+      "block_height": 131422906,
+      "block_timestamp": 1730148186072667100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3518402747881,
+      "tokens_burnt": 351840274788100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4FGLzQJkui9ca7S8RZvj8JGDBEo64cdYuGQrniKtQFxR",
+    "included_in_block_hash": "CpXHjUQUUyVQQEpkmZxDdEHN74NejVEQ2DC6gEBry3Fv",
+    "block_timestamp": "1730148184082711341",
+    "block": {
+      "block_height": 131422904
+    },
+    "receipt_conversion_tokens_burnt": "31454448524000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351840274788100000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mob.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":13,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2221483443864e+21
+    }
+  },
+  {
+    "id": "9661737993",
+    "receipt_id": "8YmyHYPwuXHjbc34YrfoWC7dtocWkMKYh9nAzhKzMDtC",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "C9JJorPsQuewq9V7eD4gAF4GnJ1Wm9K1y6C5gAufghiL",
+      "block_height": 131559302,
+      "block_timestamp": 1730300077071465200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8970633902872,
+      "tokens_burnt": 897063390287200000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "FNxsaSecBgwterS8HXvuj5BLfAykC5SoxCwfW5BtERAf",
+    "included_in_block_hash": "8c7syMFeVFWnRGPZKR1G6HfTJteSxyWP5pGAtHgVU78V",
+    "block_timestamp": "1730300076025223393",
+    "block": {
+      "block_height": 131559301
+    },
+    "receipt_conversion_tokens_burnt": "67918185384500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 897063390287200000000,
+        "args": "{\"id\": 47, \"body\": {\"name\": \"Meteor Wallet Proposal for Big Query and Data Pipelines\", \"summary\": \"We propose a simpler, monolithic architecture to process NEAR blockchain data, reducing the complexity and infrastructure costs compared to building a full data pipeline with Databricks. \\\\\\\\n\\\\\\\\nThe solution will be built on top of NEAR Indexer Framework on a dedicated high-spec server, providing real-time data processing and direct uploads to Google Cloud services.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"APPROVED\", \"kyc_verified\": false, \"timeline_version\": \"V1\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": 4, \"supervisor\": \"trechriron71.near\", \"description\": \"**Solution Overview**:\\\\\\\\n1. We will run the `near-indexer-framework` on a dedicated server.\\\\\\\\n2. The dedicated server will host a PostgreSQL database used to temporarily save data before uploading them to Google Cloud.\\\\\\\\n3. Upon receiving a block, we process and save it following the current BigQuery structure.\\\\\\\\n4. Every 500 blocks, we will process the data and upload it to BigQuery and Google Cloud Storage in Avro format. We will use a simple job queue system to manage the status of the work.\\\\\\\\n5. We will retain data locally for up to 7 days only.\\\\\\\\n6. In case the server goes down, we should be able to catch up quickly as long as it hasn\\\\\\\\\\\\'t been 5 epochs.\\\\\\\\n7. We will run a Grafana dashboard that visualizes the current status of the server.\\\\\\\\n8. At the end of the development and during delivery, we expect to get write access to the current BigQuery dataset and Cloud Storage (or ownership transfer).\\\\\\\\n\\\\\\\\n**Advantages and Considerations**:\\\\\\\\n- Our team is more familiar with the near-indexer-framework and monolithic stack.\\\\\\\\n- Given the current block production time and block size, a high-spec server is more than enough to process and upload data to Google Cloud.\\\\\\\\n- It is considerably cheaper to use this stack compared to maintaining a Databricks pipeline\\\\\\\\n- It costs around **$250** per month to maintain a server versus **$3,000\\\\\\\\u{2013}$5,000 or more** per month on a full fledge data pipeline.\\\\\\\\n- We capture data more quickly directly from the NEAR core.\\\\\\\\n\\\\\\\\n**Drawbacks and Limitations:**\\\\\\\\n- We are limited to the dedicated server provider\\\\\\\\\\\\'s promised uptime (99.9%).\\\\\\\\n- There are more risks and work involved in maintaining our own infrastructure, such as keeping software dependencies updated.\\\\\\\\n- Scaling up could be harder and might incur downtime. This can easily be mitigated by using a higher-spec server unless the workload exceeds the server\\\\\\\\\\\\'s capacity.\\\\\\\\n- Although this should not happen, during a disaster scenario where the server goes down for more than 2.5 days (5 epochs) and NEAR Core can\\\\\\\\\\\\'t provide us with block data anymore, we will have to devise an alternative plan to recover data for that period.\\\\\\\\n\\\\\\\\n**Documentation and support**\\\\\\\\n- The new repository will be open-source.\\\\\\\\n- We will prepare documentation on how to set up and run another instance of the indexer to maintain the data pipeline.\\\\\\\\n- We will create a Telegram group and add all stakeholders.\\\\\\\\n- For issue support, responses will be provided within 24 hours during workdays and within 48 hours during non-workdays.\\\\\\\\n\\\\\\\\n**Costs:**\\\\\\\\n- Indexer Server\\\\\\\\n    - 16 cores / 32 threads @ 4GHz\\\\\\\\n    - 128 GB DDR5 RAM\\\\\\\\n    - 3 \\\\\\\\u{d7} 1.92 TB NVMe SSDs\\\\\\\\n    - Approximately **$250 USD** per month\\\\\\\\n\\\\\\\\n- Google Cloud Infrastructures:\\\\\\\\n\\\\\\\\t- Only if ownership transfer occurs: Assuming we will be taking over ownership of both Google Cloud BigQuery and Google Cloud Storage objects. These costs are based on the Google Cloud cost calculator and the information we have; please point out if it is inaccurate.\\\\\\\\n\\\\\\\\n    - BigQuery\\\\\\\\n        - Region: us-east1\\\\\\\\n        - Maximum slots: 100 (small)\\\\\\\\n        - 100 TB storage (current size is 40 TB plus 12 months \\\\\\\\u{d7} 4 TB per month, with margin)\\\\\\\\n        - Approximately **$5,850 USD** per month\\\\\\\\n\\\\\\\\n    - Cloud Storage\\\\\\\\n        - Region: us-east1\\\\\\\\n        - Standard Storage\\\\\\\\n        - 100 TB storage (current size is 40 TB plus 12 months \\\\\\\\u{d7} 4 TB per month, with margin)\\\\\\\\n        - Approximately **$2,050 USD** per month\\\\\\\\n        - Upon further understanding the use cases of the Avro pipeline, we can better decide if we want to move some infrequently accessed historical data to a different storage class to further cut costs.\\\\\\\\n\\\\\\\\n- Team\\\\\\\\n\\\\\\\\t- 1 senior engineer and 1 intermediate engineer for redundancy (backup and support as needed)\\\\\\\\n\\\\\\\\t- **$10,000 USD** per month\\\\\\\\n\\\\\\\\n- Extra Margin\\\\\\\\n\\\\\\\\t- This amount will only be requested in case unexpected issues arise that are outside the project scope\\\\\\\\n\\\\\\\\t- **$50,000 USD**\\\\\\\\n- **Total budget for 12 months:**\\\\\\\\n    - **$3,000 USD** for the indexer server\\\\\\\\n    - **$94,800 USD** for google cloud infrastructure\\\\\\\\n    - **$120,000 USD** for the team\\\\\\\\n    - **$50,000 USD** contingency\\\\\\\\n    - **$267,800 USD** in total\\\\\\\\n\\\\\\\\n**Milestones**\\\\\\\\n- Milestone 1: 6 weeks for building the pipeline\\\\\\\\n\\\\\\\\t- Setting up the indexer and database.\\\\\\\\n\\\\\\\\t- Converting the current Python scripts into Rust code.\\\\\\\\n\\\\\\\\t- Deliverables: A BigQuery dataset and Google Cloud Storage that are publicly viewable, following the requirements of the RFP, with initial inaccuracies expected.\\\\\\\\n- Milestone 2: 4 weeks for data auditing and quality checks\\\\\\\\n\\\\\\\\t- We will build a Grafana dashboard (similar to [near lake grafana dashboard](https://nearinc.grafana.net/public-dashboards/773648953bdc423eb5eb6324b89238d8)).\\\\\\\\n\\\\\\\\t- Deliverables: Accurate BigQuery dataset and Google Cloud Storage, with high accuracy compared to current data, and a Grafana dashboard.\\\\\\\\n- Milestone 3: 4 weeks for documentation and integration with at least one partner\\\\\\\\n\\\\\\\\t- This timeline depends on the requirements of our partners, as we will have only the latest data available at this point, not the full historical data.\\\\\\\\n\\\\\\\\t- This period also involves running two systems in parallel.\\\\\\\\n\\\\\\\\t- Deliverables: An integrated system with a partner, and an open-source repository with a simple README.\\\\\\\\n- Maintenance Phase\\\\\\\\n\\\\\\\\t- The remaining time will be dedicated to maintaining the services, updating according to NEP updates, and providing issue support, with no further feature development planned.\\\\\\\\n\\\\\\\\n**Payment Schedule:**\\\\\\\\n- Initial Payment: $25,000 USD upon project commencement.\\\\\\\\n- Milestone Payments:\\\\\\\\n\\\\\\\\t- Upon Milestone 1 Completion: $15,000 USD\\\\\\\\n\\\\\\\\t- Upon Milestone 2 Completion: $15,000 USD\\\\\\\\n\\\\\\\\t- Upon Milestone 3 Completion: $15,000 USD\\\\\\\\n- Remaining Payments:\\\\\\\\n\\\\\\\\t- Depending on whether the transfer of ownership of Google Cloud BigQuery and Storage occurs, the remaining balance will be paid in three equal installments in April, June, and August.\\\\\\\\n\\\\\\\\t\\\\\\\\t- In Case of Ownership Transfer: $65,930 USD per installment.\\\\\\\\n\\\\\\\\t\\\\\\\\t- If No Ownership Transfer: $17,670 USD per installment.\\\\\\\\n- Contingency Fund:\\\\\\\\n\\\\\\\\t- The $50,000 USD contingency will only be requested if unforeseen issues arise outside the project scope.\\\\\\\\n\\\\\\\\n**Team Background**\\\\\\\\nThe Meteor Wallet team brings extensive experience with the NEAR Protocol. We are currently developing Meteor Wallet and maintaining MyNearWallet, both of which are integral parts of the NEAR ecosystem. Our team has successfully set up a validator node and is among the validators with the highest number of unique stakers. Additionally, we are building an indexer to provide a better wallet experience, enhancing functionality and user engagement.\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\nThese are all the details of the proposal. Thank you for taking the time to review it.\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"rektdegen.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"267800\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3167121807078e+21
+    }
+  }
+]

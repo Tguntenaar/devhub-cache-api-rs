@@ -1,0 +1,1084 @@
+[
+  {
+    "id": "7596138088",
+    "receipt_id": "ARJh9JBNBKTL2SeyiFykFJaFevp6HJFDQUYcw5q1tU32",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "ENrehcTBRMwq3wQy2PoB2sGDMrtfuuzohpCP6TAU54D2",
+      "block_height": 126210586,
+      "block_timestamp": 1724200821721331000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4421423468439,
+      "tokens_burnt": 442142346843900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "Eaf6fCqGJLzNN5gSqejdq539N8QgXHrTpSrBvZ5R55ZX",
+    "included_in_block_hash": "HwMh7GuFozxvQXGveNJ8JyorpeNkfVBQj11HZRnwF8GB",
+    "block_timestamp": "1724200820479531982",
+    "block": {
+      "block_height": 126210585
+    },
+    "receipt_conversion_tokens_burnt": "53360347195000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 442142346843900000000,
+        "args": "{\"data\": {\"blog\": {\"get-started-with-decentralized-identity-04v5uf\": {\"\": \"In the ever-evolving web development landscape, a change is here in how we handle user identities. Say goodbye to the days of password fatigue and centralized data breaches-decentralized identity is here to change the game. Let\\\\\\\\\\\\'s dive into this exciting world and see how it\\\\\\\\\\\\'s shaping the future of web authentication, focusing on the NEAR Protocol and the game-changing potential of passkeys.\\\\\\\\n\\\\\\\\n## The Problem with Passwords\\\\\\\\n\\\\\\\\nWe\\\\\\\\\\\\'ve all been there - trying to remember which unique character we used in that password we created two years ago. Or worse, reusing the same password across multiple sites (we know we shouldn\\\\\\\\\\\\'t, but you know you do). Traditional centralized identity systems have left us vulnerable to data breaches and identity theft, not to mention the headache of managing countless login credentials.\\\\\\\\n\\\\\\\\n## Enter Decentralized Identity\\\\\\\\n\\\\\\\\nImagine a world where you own your digital identity, just like your passport or driver\\\\\\\\\\\\'s license in the physical world. That\\\\\\\\\\\\'s the promise of a decentralized identity. Here\\\\\\\\\\\\'s why it\\\\\\\\\\\\'s exciting:\\\\\\\\n\\\\\\\\n1. **You\\\\\\\\\\\\'re in control**: Your identity belongs to you, not to a tech giant\\\\\\\\\\\\'s database.\\\\\\\\n2. **Enhanced security**: No central honeypot for hackers to target.\\\\\\\\n3. **Seamless experiences**: Use one identity across multiple platforms.\\\\\\\\n4. **Privacy by design**: Share only what\\\\\\\\\\\\'s necessary when necessary.\\\\\\\\n\\\\\\\\n## NEAR Protocol: Making Decentralized Identity a Reality\\\\\\\\n\\\\\\\\nNEAR Protocol is at the forefront of this identity revolution. With its user-friendly approach to blockchain technology, NEAR makes implementing decentralized identity a breeze for developers. Here\\\\\\\\\\\\'s what makes it stand out:\\\\\\\\n\\\\\\\\n- **Human-readable accounts**: Say goodbye to cryptic addresses.\\\\\\\\n- **Smart contract wallets**: Enhancing security and flexibility.\\\\\\\\n- **Developer-friendly tools**: Making the transition from Web2 to Web3 smoother than ever.\\\\\\\\n\\\\\\\\n## Passkeys: The Cherry on Top\\\\\\\\n\\\\\\\\nNow, let\\\\\\\\\\\\'s talk about the exciting world of passkeys. Think of them as the superpowered cousins of passwords. Passkeys offer a passwordless authentication method that\\\\\\\\\\\\'s more secure and user-friendly. Here\\\\\\\\\\\\'s why they\\\\\\\\\\\\'re a game-changer:\\\\\\\\n\\\\\\\\n- **No more passwords to remember**: Your device becomes your key.\\\\\\\\n- **Phishing-resistant**: Can\\\\\\\\\\\\'t be stolen through fake websites.\\\\\\\\n- **Biometric security**: Use your fingerprint or face ID for protection.\\\\\\\\n- **Cross-device support**: Seamlessly authenticate across your devices.\\\\\\\\n\\\\\\\\nWhen combined with decentralized identity on platforms like NEAR, passkeys create an authentication powerhouse. Users get the security and control of decentralized systems with the ease of use that passkeys provide.\\\\\\\\n\\\\\\\\n## What This Means for Developers\\\\\\\\n\\\\\\\\nIntegrating decentralized identity with passkeys into your Web2 app might sound daunting as a developer, but it\\\\\\\\\\\\'s more achievable than you think. Here\\\\\\\\\\\\'s a high-level overview of what it involves:\\\\\\\\n\\\\\\\\n1. **Modify your app**: Add wallet connection capabilities and update your authentication flow.\\\\\\\\n2. **Leverage smart contracts**: Use NEAR\\\\\\\\\\\\'s smart contracts to manage identity data securely.\\\\\\\\n3. **Implement passkeys**: Integrate passkey support for a seamless login experience.\\\\\\\\n4. **Educate users**: Help your users understand the benefits of this new system.\\\\\\\\n\\\\\\\\n## The Road Ahead\\\\\\\\n\\\\\\\\nDecentralized identity and passkeys are set to revolutionize online authentication. While there are challenges to overcome-like ensuring a smooth user experience and managing key security-the benefits far outweigh the hurdles.\\\\\\\\n\\\\\\\\nAs we move forward, we\\\\\\\\\\\\'re looking at a future where online identity is more secure, convenient, and truly owned by users. It\\\\\\\\\\\\'s an exciting time to be a developer, with the opportunity to shape this new digital identity landscape. Get an introduction from episode 11 of \\\\\\\\\\\\\\\"Wake Up & Ship More\\\\\\\\\\\\\\\" because user-owned identity should be the future. Let\\\\\\\\\\\\'s talk about how this can happen in Web2 and Web3.\\\\\\\\n\\\\\\\\nReplay available at: [YouTube](https://www.youtube.com/live/PhCj-2rD0B0)\", \"metadata\": {\"title\": \"Get Started with Decentralized Identity\", \"author\": \"orangejoe.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"The promise of a decentralized identity\", \"createdAt\": \"2024-08-21\", \"updatedAt\": \"2024-08-21\", \"description\": \"In the ever-evolving web development landscape, a change is here in how we handle user identities.  Traditional centralized identity systems have left us vulnerable to data breaches and identity theft, not to mention the headache of managing countless login credentials. So imagine a world where you own your digital identity!\", \"publishedAt\": \"2024-08-20\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"webassemblymusic\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6134082320431e+21
+    }
+  },
+  {
+    "id": "7596138362",
+    "receipt_id": "CRoNRq29sjBoWRGV8eUaAu42zVcsRwP9aVqe8qneULw6",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3WNHGnKqvcxxommLoFkfZXRGky5boVbQLZ53ME6K6DX5",
+      "block_height": 126210587,
+      "block_timestamp": 1724200823226329300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 11179055380042,
+      "tokens_burnt": 1.1179055380042e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Eaf6fCqGJLzNN5gSqejdq539N8QgXHrTpSrBvZ5R55ZX",
+    "included_in_block_hash": "HwMh7GuFozxvQXGveNJ8JyorpeNkfVBQj11HZRnwF8GB",
+    "block_timestamp": "1724200820479531982",
+    "block": {
+      "block_height": 126210585
+    },
+    "receipt_conversion_tokens_burnt": "53360347195000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.1179055380042e+21,
+        "args": "{\"data\": {\"webassemblymusic.community.devhub.near\": {\"blog\": {\"get-started-with-decentralized-identity-04v5uf\": {\"\": \"In the ever-evolving web development landscape, a change is here in how we handle user identities. Say goodbye to the days of password fatigue and centralized data breaches-decentralized identity is here to change the game. Let\\\\\\\\\\\\'s dive into this exciting world and see how it\\\\\\\\\\\\'s shaping the future of web authentication, focusing on the NEAR Protocol and the game-changing potential of passkeys.\\\\\\\\n\\\\\\\\n## The Problem with Passwords\\\\\\\\n\\\\\\\\nWe\\\\\\\\\\\\'ve all been there - trying to remember which unique character we used in that password we created two years ago. Or worse, reusing the same password across multiple sites (we know we shouldn\\\\\\\\\\\\'t, but you know you do). Traditional centralized identity systems have left us vulnerable to data breaches and identity theft, not to mention the headache of managing countless login credentials.\\\\\\\\n\\\\\\\\n## Enter Decentralized Identity\\\\\\\\n\\\\\\\\nImagine a world where you own your digital identity, just like your passport or driver\\\\\\\\\\\\'s license in the physical world. That\\\\\\\\\\\\'s the promise of a decentralized identity. Here\\\\\\\\\\\\'s why it\\\\\\\\\\\\'s exciting:\\\\\\\\n\\\\\\\\n1. **You\\\\\\\\\\\\'re in control**: Your identity belongs to you, not to a tech giant\\\\\\\\\\\\'s database.\\\\\\\\n2. **Enhanced security**: No central honeypot for hackers to target.\\\\\\\\n3. **Seamless experiences**: Use one identity across multiple platforms.\\\\\\\\n4. **Privacy by design**: Share only what\\\\\\\\\\\\'s necessary when necessary.\\\\\\\\n\\\\\\\\n## NEAR Protocol: Making Decentralized Identity a Reality\\\\\\\\n\\\\\\\\nNEAR Protocol is at the forefront of this identity revolution. With its user-friendly approach to blockchain technology, NEAR makes implementing decentralized identity a breeze for developers. Here\\\\\\\\\\\\'s what makes it stand out:\\\\\\\\n\\\\\\\\n- **Human-readable accounts**: Say goodbye to cryptic addresses.\\\\\\\\n- **Smart contract wallets**: Enhancing security and flexibility.\\\\\\\\n- **Developer-friendly tools**: Making the transition from Web2 to Web3 smoother than ever.\\\\\\\\n\\\\\\\\n## Passkeys: The Cherry on Top\\\\\\\\n\\\\\\\\nNow, let\\\\\\\\\\\\'s talk about the exciting world of passkeys. Think of them as the superpowered cousins of passwords. Passkeys offer a passwordless authentication method that\\\\\\\\\\\\'s more secure and user-friendly. Here\\\\\\\\\\\\'s why they\\\\\\\\\\\\'re a game-changer:\\\\\\\\n\\\\\\\\n- **No more passwords to remember**: Your device becomes your key.\\\\\\\\n- **Phishing-resistant**: Can\\\\\\\\\\\\'t be stolen through fake websites.\\\\\\\\n- **Biometric security**: Use your fingerprint or face ID for protection.\\\\\\\\n- **Cross-device support**: Seamlessly authenticate across your devices.\\\\\\\\n\\\\\\\\nWhen combined with decentralized identity on platforms like NEAR, passkeys create an authentication powerhouse. Users get the security and control of decentralized systems with the ease of use that passkeys provide.\\\\\\\\n\\\\\\\\n## What This Means for Developers\\\\\\\\n\\\\\\\\nIntegrating decentralized identity with passkeys into your Web2 app might sound daunting as a developer, but it\\\\\\\\\\\\'s more achievable than you think. Here\\\\\\\\\\\\'s a high-level overview of what it involves:\\\\\\\\n\\\\\\\\n1. **Modify your app**: Add wallet connection capabilities and update your authentication flow.\\\\\\\\n2. **Leverage smart contracts**: Use NEAR\\\\\\\\\\\\'s smart contracts to manage identity data securely.\\\\\\\\n3. **Implement passkeys**: Integrate passkey support for a seamless login experience.\\\\\\\\n4. **Educate users**: Help your users understand the benefits of this new system.\\\\\\\\n\\\\\\\\n## The Road Ahead\\\\\\\\n\\\\\\\\nDecentralized identity and passkeys are set to revolutionize online authentication. While there are challenges to overcome-like ensuring a smooth user experience and managing key security-the benefits far outweigh the hurdles.\\\\\\\\n\\\\\\\\nAs we move forward, we\\\\\\\\\\\\'re looking at a future where online identity is more secure, convenient, and truly owned by users. It\\\\\\\\\\\\'s an exciting time to be a developer, with the opportunity to shape this new digital identity landscape. Get an introduction from episode 11 of \\\\\\\\\\\\\\\"Wake Up & Ship More\\\\\\\\\\\\\\\" because user-owned identity should be the future. Let\\\\\\\\\\\\'s talk about how this can happen in Web2 and Web3.\\\\\\\\n\\\\\\\\nReplay available at: [YouTube](https://www.youtube.com/live/PhCj-2rD0B0)\", \"metadata\": {\"title\": \"Get Started with Decentralized Identity\", \"author\": \"orangejoe.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"The promise of a decentralized identity\", \"createdAt\": \"2024-08-21\", \"updatedAt\": \"2024-08-21\", \"description\": \"In the ever-evolving web development landscape, a change is here in how we handle user identities.  Traditional centralized identity systems have left us vulnerable to data breaches and identity theft, not to mention the headache of managing countless login credentials. So imagine a world where you own your digital identity!\", \"publishedAt\": \"2024-08-20\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6134082320431e+21
+    }
+  },
+  {
+    "id": "7604571184",
+    "receipt_id": "DjWt5sZtU6dHwAq8cVLdRiCyb8etHGJrMdk6tSRtbdAM",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FTRD6Nnm3LAkDXyedKnN5T1KUJ7aYiLnS7hEZUA1URCS",
+      "block_height": 126229096,
+      "block_timestamp": 1724223811426194400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6506998703274,
+      "tokens_burnt": 650699870327400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "Ek4AidCLuJNxxtaod1otAuhx8w53vutaH6QmtJh4JGZe",
+    "included_in_block_hash": "832hquRzxjsw2LzTDmV9ncW4fML3RFhmdnF43cNdqZCm",
+    "block_timestamp": "1724223810057949033",
+    "block": {
+      "block_height": 126229095
+    },
+    "receipt_conversion_tokens_burnt": "31721477328000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 650699870327400000000,
+        "args": "{\"id\": 130, \"timeline\": {\"status\": \"CANCELLED\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0353418389221e+21
+    }
+  },
+  {
+    "id": "7604571942",
+    "receipt_id": "2KHemYsmQNVhDT6EKNXoEJNBCTa9ke4UeQ1sb4bAv7pg",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DbSbASSDhJqibnvhh5QgJs9srpJ6tB7uB1mvt2nUrdkP",
+      "block_height": 126229098,
+      "block_timestamp": 1724223814069772500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3529204912667,
+      "tokens_burnt": 352920491266700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Ek4AidCLuJNxxtaod1otAuhx8w53vutaH6QmtJh4JGZe",
+    "included_in_block_hash": "832hquRzxjsw2LzTDmV9ncW4fML3RFhmdnF43cNdqZCm",
+    "block_timestamp": "1724223810057949033",
+    "block": {
+      "block_height": 126229095
+    },
+    "receipt_conversion_tokens_burnt": "31721477328000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352920491266700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"524f24bb0320fa84ab2ea93e589019c2c4c60a3a6a45dd0577bd6e97f40f1521\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":130,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"frol.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0353418389221e+21
+    }
+  },
+  {
+    "id": "7611502687",
+    "receipt_id": "4mTxtnj5WGtV95BUduE6Nc4EhC7fDZJZ75KZRFdUyfeq",
+    "predecessor_account_id": "orangejoe.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DoM5PVdr8QX7odCy63295tejyqcg1iuuuqgPJyrkLS4q",
+      "block_height": 126244294,
+      "block_timestamp": 1724242763300674000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5226422964927,
+      "tokens_burnt": 522642296492700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "Fxa7VGhEGZ9yAGkgXq7VKrWdRt7ejeHfGC6dfLA8iF8B",
+    "included_in_block_hash": "FJW7ND5ZjQEfzWU5N67xGK8LF9qxj2kZoAesCEsZRvDo",
+    "block_timestamp": "1724242762086049111",
+    "block": {
+      "block_height": 126244293
+    },
+    "receipt_conversion_tokens_burnt": "53374652309500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 522642296492700000000,
+        "args": "{\"data\": {\"blog\": {\"get-started-with-decentralized-identity-bfang4\": {\"\": \"In the ever-evolving web development landscape, a change is here in how we handle user identities. Say goodbye to the days of password fatigue and centralized data breaches-decentralized identity is here to change the game. Let\\\\\\\\\\\\'s dive into this exciting world and see how it\\\\\\\\\\\\'s shaping the future of web authentication, focusing on the NEAR Protocol and the game-changing potential of passkeys.\\\\\\\\n\\\\\\\\n## The Problem with Passwords\\\\\\\\n\\\\\\\\nWe\\\\\\\\\\\\'ve all been there - trying to remember which unique character we used in that password we created two years ago. Or worse, reusing the same password across multiple sites (we know we shouldn\\\\\\\\\\\\'t, but you know you do). Traditional centralized identity systems have left us vulnerable to data breaches and identity theft, not to mention the headache of managing countless login credentials.\\\\\\\\n\\\\\\\\n## Enter Decentralized Identity\\\\\\\\n\\\\\\\\nImagine a world where you own your digital identity, just like your passport or driver\\\\\\\\\\\\'s license in the physical world. That\\\\\\\\\\\\'s the promise of a decentralized identity. Here\\\\\\\\\\\\'s why it\\\\\\\\\\\\'s exciting:\\\\\\\\n\\\\\\\\n1. **You\\\\\\\\\\\\'re in control**: Your identity belongs to you, not to a tech giant\\\\\\\\\\\\'s database.\\\\\\\\n2. **Enhanced security**: No central honeypot for hackers to target.\\\\\\\\n3. **Seamless experiences**: Use one identity across multiple platforms.\\\\\\\\n4. **Privacy by design**: Share only what\\\\\\\\\\\\'s necessary when necessary.\\\\\\\\n\\\\\\\\n## NEAR Protocol: Making Decentralized Identity a Reality\\\\\\\\n\\\\\\\\nNEAR Protocol is at the forefront of this identity revolution. With its user-friendly approach to blockchain technology, NEAR makes implementing decentralized identity a breeze for developers. Here\\\\\\\\\\\\'s what makes it stand out:\\\\\\\\n\\\\\\\\n- **Human-readable accounts**: Say goodbye to cryptic addresses.\\\\\\\\n- **Smart contract wallets**: Enhancing security and flexibility.\\\\\\\\n- **Developer-friendly tools**: Making the transition from Web2 to Web3 smoother than ever.\\\\\\\\n\\\\\\\\n## Passkeys: The Cherry on Top\\\\\\\\n\\\\\\\\nNow, let\\\\\\\\\\\\'s talk about the exciting world of passkeys. Think of them as the superpowered cousins of passwords. Passkeys offer a passwordless authentication method that\\\\\\\\\\\\'s more secure and user-friendly. Here\\\\\\\\\\\\'s why they\\\\\\\\\\\\'re a game-changer:\\\\\\\\n\\\\\\\\n- **No more passwords to remember**: Your device becomes your key.\\\\\\\\n- **Phishing-resistant**: Can\\\\\\\\\\\\'t be stolen through fake websites.\\\\\\\\n- **Biometric security**: Use your fingerprint or face ID for protection.\\\\\\\\n- **Cross-device support**: Seamlessly authenticate across your devices.\\\\\\\\n\\\\\\\\nWhen combined with decentralized identity on platforms like NEAR, passkeys create an authentication powerhouse. Users get the security and control of decentralized systems with the ease of use that passkeys provide.\\\\\\\\n\\\\\\\\n## What This Means for Developers\\\\\\\\n\\\\\\\\nIntegrating decentralized identity with passkeys into your Web2 app might sound daunting as a developer, but it\\\\\\\\\\\\'s more achievable than you think. Here\\\\\\\\\\\\'s a high-level overview of what it involves:\\\\\\\\n\\\\\\\\n1. **Modify your app**: Add wallet connection capabilities and update your authentication flow.\\\\\\\\n2. **Leverage smart contracts**: Use NEAR\\\\\\\\\\\\'s smart contracts to manage identity data securely.\\\\\\\\n3. **Implement passkeys**: Integrate passkey support for a seamless login experience.\\\\\\\\n4. **Educate users**: Help your users understand the benefits of this new system.\\\\\\\\n\\\\\\\\n## The Road Ahead\\\\\\\\n\\\\\\\\nDecentralized identity and passkeys are set to revolutionize online authentication. While there are challenges to overcome - like ensuring a smooth user experience and managing key security - the benefits far outweigh the hurdles.\\\\\\\\n\\\\\\\\nAs we move forward, we\\\\\\\\\\\\'re looking at a future where online identity is more secure, convenient, and truly owned by users. It\\\\\\\\\\\\'s an exciting time to be a developer, with the opportunity to shape this new digital identity landscape. Get an introduction from episode 11 of \\\\\\\\\\\\\\\"Wake Up & Ship More\\\\\\\\\\\\\\\" because user-owned identity should be the future. Let\\\\\\\\\\\\'s talk about how this can happen in Web2 and Web3.\\\\\\\\n\\\\\\\\nReplay available at: [YouTube](https://www.youtube.com/live/PhCj-2rD0B0)\", \"metadata\": {\"title\": \"Get Started with Decentralized Identity\", \"author\": \"orangejoe.near\", \"status\": \"PUBLISH\", \"category\": \"guide\", \"subtitle\": \"The promise of a decentralized identity\", \"createdAt\": \"2024-08-21\", \"updatedAt\": \"2024-08-21\", \"description\": \"In the ever-evolving web development landscape, a change is here in how we handle user identities.  Traditional centralized identity systems have left us vulnerable to data breaches and identity theft, not to mention the headache of managing countless login credentials. So imagine a world where you own your digital identity!\", \"publishedAt\": \"2024-08-20\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"developer-dao\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7027622876902e+21
+    }
+  },
+  {
+    "id": "7611502823",
+    "receipt_id": "5jypTw3bZ6GV2bNByEH8h7p3oA5tASuvfGh5zz5ziNat",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9BRX8415hWTsot7v59gA9r5skJALTPUv24QMrbtxuMfi",
+      "block_height": 126244295,
+      "block_timestamp": 1724242764522677200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 11267453388880,
+      "tokens_burnt": 1.126745338888e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Fxa7VGhEGZ9yAGkgXq7VKrWdRt7ejeHfGC6dfLA8iF8B",
+    "included_in_block_hash": "FJW7ND5ZjQEfzWU5N67xGK8LF9qxj2kZoAesCEsZRvDo",
+    "block_timestamp": "1724242762086049111",
+    "block": {
+      "block_height": 126244293
+    },
+    "receipt_conversion_tokens_burnt": "53374652309500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.126745338888e+21,
+        "args": "{\"data\": {\"developer-dao.community.devhub.near\": {\"blog\": {\"get-started-with-decentralized-identity-bfang4\": {\"\": \"In the ever-evolving web development landscape, a change is here in how we handle user identities. Say goodbye to the days of password fatigue and centralized data breaches-decentralized identity is here to change the game. Let\\\\\\\\\\\\'s dive into this exciting world and see how it\\\\\\\\\\\\'s shaping the future of web authentication, focusing on the NEAR Protocol and the game-changing potential of passkeys.\\\\\\\\n\\\\\\\\n## The Problem with Passwords\\\\\\\\n\\\\\\\\nWe\\\\\\\\\\\\'ve all been there - trying to remember which unique character we used in that password we created two years ago. Or worse, reusing the same password across multiple sites (we know we shouldn\\\\\\\\\\\\'t, but you know you do). Traditional centralized identity systems have left us vulnerable to data breaches and identity theft, not to mention the headache of managing countless login credentials.\\\\\\\\n\\\\\\\\n## Enter Decentralized Identity\\\\\\\\n\\\\\\\\nImagine a world where you own your digital identity, just like your passport or driver\\\\\\\\\\\\'s license in the physical world. That\\\\\\\\\\\\'s the promise of a decentralized identity. Here\\\\\\\\\\\\'s why it\\\\\\\\\\\\'s exciting:\\\\\\\\n\\\\\\\\n1. **You\\\\\\\\\\\\'re in control**: Your identity belongs to you, not to a tech giant\\\\\\\\\\\\'s database.\\\\\\\\n2. **Enhanced security**: No central honeypot for hackers to target.\\\\\\\\n3. **Seamless experiences**: Use one identity across multiple platforms.\\\\\\\\n4. **Privacy by design**: Share only what\\\\\\\\\\\\'s necessary when necessary.\\\\\\\\n\\\\\\\\n## NEAR Protocol: Making Decentralized Identity a Reality\\\\\\\\n\\\\\\\\nNEAR Protocol is at the forefront of this identity revolution. With its user-friendly approach to blockchain technology, NEAR makes implementing decentralized identity a breeze for developers. Here\\\\\\\\\\\\'s what makes it stand out:\\\\\\\\n\\\\\\\\n- **Human-readable accounts**: Say goodbye to cryptic addresses.\\\\\\\\n- **Smart contract wallets**: Enhancing security and flexibility.\\\\\\\\n- **Developer-friendly tools**: Making the transition from Web2 to Web3 smoother than ever.\\\\\\\\n\\\\\\\\n## Passkeys: The Cherry on Top\\\\\\\\n\\\\\\\\nNow, let\\\\\\\\\\\\'s talk about the exciting world of passkeys. Think of them as the superpowered cousins of passwords. Passkeys offer a passwordless authentication method that\\\\\\\\\\\\'s more secure and user-friendly. Here\\\\\\\\\\\\'s why they\\\\\\\\\\\\'re a game-changer:\\\\\\\\n\\\\\\\\n- **No more passwords to remember**: Your device becomes your key.\\\\\\\\n- **Phishing-resistant**: Can\\\\\\\\\\\\'t be stolen through fake websites.\\\\\\\\n- **Biometric security**: Use your fingerprint or face ID for protection.\\\\\\\\n- **Cross-device support**: Seamlessly authenticate across your devices.\\\\\\\\n\\\\\\\\nWhen combined with decentralized identity on platforms like NEAR, passkeys create an authentication powerhouse. Users get the security and control of decentralized systems with the ease of use that passkeys provide.\\\\\\\\n\\\\\\\\n## What This Means for Developers\\\\\\\\n\\\\\\\\nIntegrating decentralized identity with passkeys into your Web2 app might sound daunting as a developer, but it\\\\\\\\\\\\'s more achievable than you think. Here\\\\\\\\\\\\'s a high-level overview of what it involves:\\\\\\\\n\\\\\\\\n1. **Modify your app**: Add wallet connection capabilities and update your authentication flow.\\\\\\\\n2. **Leverage smart contracts**: Use NEAR\\\\\\\\\\\\'s smart contracts to manage identity data securely.\\\\\\\\n3. **Implement passkeys**: Integrate passkey support for a seamless login experience.\\\\\\\\n4. **Educate users**: Help your users understand the benefits of this new system.\\\\\\\\n\\\\\\\\n## The Road Ahead\\\\\\\\n\\\\\\\\nDecentralized identity and passkeys are set to revolutionize online authentication. While there are challenges to overcome - like ensuring a smooth user experience and managing key security - the benefits far outweigh the hurdles.\\\\\\\\n\\\\\\\\nAs we move forward, we\\\\\\\\\\\\'re looking at a future where online identity is more secure, convenient, and truly owned by users. It\\\\\\\\\\\\'s an exciting time to be a developer, with the opportunity to shape this new digital identity landscape. Get an introduction from episode 11 of \\\\\\\\\\\\\\\"Wake Up & Ship More\\\\\\\\\\\\\\\" because user-owned identity should be the future. Let\\\\\\\\\\\\'s talk about how this can happen in Web2 and Web3.\\\\\\\\n\\\\\\\\nReplay available at: [YouTube](https://www.youtube.com/live/PhCj-2rD0B0)\", \"metadata\": {\"title\": \"Get Started with Decentralized Identity\", \"author\": \"orangejoe.near\", \"status\": \"PUBLISH\", \"category\": \"guide\", \"subtitle\": \"The promise of a decentralized identity\", \"createdAt\": \"2024-08-21\", \"updatedAt\": \"2024-08-21\", \"description\": \"In the ever-evolving web development landscape, a change is here in how we handle user identities.  Traditional centralized identity systems have left us vulnerable to data breaches and identity theft, not to mention the headache of managing countless login credentials. So imagine a world where you own your digital identity!\", \"publishedAt\": \"2024-08-20\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7027622876902e+21
+    }
+  },
+  {
+    "id": "7611526454",
+    "receipt_id": "GqTPVduAJboc5bDeWroCqtbDa6csK8Jjgxhdahsqd47P",
+    "predecessor_account_id": "orangejoe.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5BAPs95QkjKTXow7moJBd1k5FJvrtwNrDRcnLCAE7zyF",
+      "block_height": 126244365,
+      "block_timestamp": 1724242854896204800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4964088400575,
+      "tokens_burnt": 496408840057500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "BC9y9HV8vuu2Cpq3M38K14D6VBWJPtP56ApYYQJJxNov",
+    "included_in_block_hash": "2G6XrLTJrTAGbJ9UtZonc6SqB2np4QUfPxxe8Q6i1LGr",
+    "block_timestamp": "1724242853675686201",
+    "block": {
+      "block_height": 126244364
+    },
+    "receipt_conversion_tokens_burnt": "41925792338000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 496408840057500000000,
+        "args": "{\"data\": {\"blog\": {\"hackathon-resources-for-redacted-lsy0pp\": {\"\": \"We\\\\\\\\\\\\'re excited to have you build on NEAR and compete in the [REDACTED] hackathon.  \\\\\\\\n\\\\\\\\nAt DevHub, we are providing a list of resources to get started with NEAR technology and how to get help. \\\\\\\\n\\\\\\\\n*This is a living document and will get updated over time.*\\\\\\\\n\\\\\\\\nLive DevRel and Community Support:\\\\\\\\n- NEAR Dev Support Channels (Telegram): https://t.me/neardev\\\\\\\\n- DevHub Announcements: https://t.me/NEARDevHub\\\\\\\\n\\\\\\\\nCompletely new to NEAR: \\\\\\\\n- https://docs.near.org/concepts/basics/protocol\\\\\\\\n- https://docs.near.org/concepts/protocol/account-model\\\\\\\\n\\\\\\\\nTutorials: \\\\\\\\n- https://docs.near.org/tutorials/welcome\\\\\\\\n- https://agorapp.dev/catalog/course?difficulty=&chains=near\\\\\\\\n\\\\\\\\nSmart Contracts:\\\\\\\\n- https://docs.near.org/build/smart-contracts/quickstart\\\\\\\\n- https://docs.near.org/build/smart-contracts/what-is\\\\\\\\n\\\\\\\\nFrontend Development:\\\\\\\\n- https://docs.near.org/build/web3-apps/quickstart\\\\\\\\n\\\\\\\\nChain Abstraction:\\\\\\\\n- https://docs.near.org/build/chain-abstraction/chain-signatures\\\\\\\\n- https://near.org/chain-abstraction\\\\\\\\n- https://linktr.ee/chainsignatures (All about Chain Signatures)\\\\\\\\n\\\\\\\\nAI:\\\\\\\\n- https://near.ai/\\\\\\\\n\\\\\\\\nAlong with these resources we have a newsletter (https://bit.ly/devhubnews) and do a weekly live show, DevHub Live, and WuASM (Wake Up & Ship More, which does not have a set schedule yet).\\\\\\\\n\\\\\\\\nOur entire video archive, which includes all live streams and community call replays are available on our [YouTube](https://youtube.com/@NEARDevHub).\\\\\\\\n\\\\\\\\nLastly, please also make sure to check out our socials to keep up to date on everything developer centric on NEAR.\\\\\\\\n[YouTube](https://youtube.com/@NEARDevHub)\\\\\\\\n[Twitch](https://twitch.tv/neardevhub)\\\\\\\\n[X](https://x.com/neardevhub)\\\\\\\\n[IG](https://instagram.com/neardevhub)\\\\\\\\n[TikTok](https://tiktok.com/@neardevhub)\\\\\\\\n[LinkedIn](https://www.linkedin.com/company/near-devhub)\\\\\\\\n[Threads](https://www.threads.net/@neardevhub)\\\\\\\\n[Reddit](https://www.reddit.com/user/NEARDevHub)\\\\\\\\n\", \"metadata\": {\"title\": \"Hackathon Resources for REDACTED\", \"author\": \"orangejoe.near\", \"status\": \"PUBLISH\", \"category\": \"reference\", \"subtitle\": \"Quick links to get started with your project\", \"updatedAt\": \"2024-08-21\", \"description\": \"Quick links to help get started with your hackathon project.\", \"publishedAt\": \"2024-08-08\"}}}}, \"handle\": \"developer-dao\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.35667148105e+21
+    }
+  },
+  {
+    "id": "7611526693",
+    "receipt_id": "9rLPx1VUaqh2j4k2rWnJhnbBaB2CjaB7iVXkymMDFQ4t",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HG5PAgAqi7FpEFXEQTNK9beajbVYPefari17zcjw1FpF",
+      "block_height": 126244366,
+      "block_timestamp": 1724242856289314600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8183368486545,
+      "tokens_burnt": 818336848654500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "BC9y9HV8vuu2Cpq3M38K14D6VBWJPtP56ApYYQJJxNov",
+    "included_in_block_hash": "2G6XrLTJrTAGbJ9UtZonc6SqB2np4QUfPxxe8Q6i1LGr",
+    "block_timestamp": "1724242853675686201",
+    "block": {
+      "block_height": 126244364
+    },
+    "receipt_conversion_tokens_burnt": "41925792338000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 818336848654500000000,
+        "args": "{\"data\": {\"developer-dao.community.devhub.near\": {\"blog\": {\"hackathon-resources-for-redacted-lsy0pp\": {\"\": \"We\\\\\\\\\\\\'re excited to have you build on NEAR and compete in the [REDACTED] hackathon.  \\\\\\\\n\\\\\\\\nAt DevHub, we are providing a list of resources to get started with NEAR technology and how to get help. \\\\\\\\n\\\\\\\\n*This is a living document and will get updated over time.*\\\\\\\\n\\\\\\\\nLive DevRel and Community Support:\\\\\\\\n- NEAR Dev Support Channels (Telegram): https://t.me/neardev\\\\\\\\n- DevHub Announcements: https://t.me/NEARDevHub\\\\\\\\n\\\\\\\\nCompletely new to NEAR: \\\\\\\\n- https://docs.near.org/concepts/basics/protocol\\\\\\\\n- https://docs.near.org/concepts/protocol/account-model\\\\\\\\n\\\\\\\\nTutorials: \\\\\\\\n- https://docs.near.org/tutorials/welcome\\\\\\\\n- https://agorapp.dev/catalog/course?difficulty=&chains=near\\\\\\\\n\\\\\\\\nSmart Contracts:\\\\\\\\n- https://docs.near.org/build/smart-contracts/quickstart\\\\\\\\n- https://docs.near.org/build/smart-contracts/what-is\\\\\\\\n\\\\\\\\nFrontend Development:\\\\\\\\n- https://docs.near.org/build/web3-apps/quickstart\\\\\\\\n\\\\\\\\nChain Abstraction:\\\\\\\\n- https://docs.near.org/build/chain-abstraction/chain-signatures\\\\\\\\n- https://near.org/chain-abstraction\\\\\\\\n- https://linktr.ee/chainsignatures (All about Chain Signatures)\\\\\\\\n\\\\\\\\nAI:\\\\\\\\n- https://near.ai/\\\\\\\\n\\\\\\\\nAlong with these resources we have a newsletter (https://bit.ly/devhubnews) and do a weekly live show, DevHub Live, and WuASM (Wake Up & Ship More, which does not have a set schedule yet).\\\\\\\\n\\\\\\\\nOur entire video archive, which includes all live streams and community call replays are available on our [YouTube](https://youtube.com/@NEARDevHub).\\\\\\\\n\\\\\\\\nLastly, please also make sure to check out our socials to keep up to date on everything developer centric on NEAR.\\\\\\\\n[YouTube](https://youtube.com/@NEARDevHub)\\\\\\\\n[Twitch](https://twitch.tv/neardevhub)\\\\\\\\n[X](https://x.com/neardevhub)\\\\\\\\n[IG](https://instagram.com/neardevhub)\\\\\\\\n[TikTok](https://tiktok.com/@neardevhub)\\\\\\\\n[LinkedIn](https://www.linkedin.com/company/near-devhub)\\\\\\\\n[Threads](https://www.threads.net/@neardevhub)\\\\\\\\n[Reddit](https://www.reddit.com/user/NEARDevHub)\\\\\\\\n\", \"metadata\": {\"title\": \"Hackathon Resources for REDACTED\", \"author\": \"orangejoe.near\", \"status\": \"PUBLISH\", \"category\": \"reference\", \"subtitle\": \"Quick links to get started with your project\", \"updatedAt\": \"2024-08-21\", \"description\": \"Quick links to help get started with your hackathon project.\", \"publishedAt\": \"2024-08-08\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.35667148105e+21
+    }
+  },
+  {
+    "id": "7612160009",
+    "receipt_id": "FBqXWSUk5VRtoEgBFBpvSwCxTACm6EQ24KW5Ep1ZrcZb",
+    "predecessor_account_id": "orangejoe.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3frwzTww4Gj9cSTtbBWttU7iTuxybyjSLMZuj89X2gRd",
+      "block_height": 126245886,
+      "block_timestamp": 1724244667051079000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4966656221559,
+      "tokens_burnt": 496665622155900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "GeExDR4Bj62terDwDibF2EteDYM9x3xRUp37zyEbQa5i",
+    "included_in_block_hash": "2AE7ahDDVBVnB3phYj6eVmQybrGgbxiorHEvESqcWC6p",
+    "block_timestamp": "1724244666111019938",
+    "block": {
+      "block_height": 126245885
+    },
+    "receipt_conversion_tokens_burnt": "42064075111500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 496665622155900000000,
+        "args": "{\"data\": {\"blog\": {\"hackathon-resources-for-redacted-lsy0pp\": {\"\": \"We\\\\\\\\\\\\'re excited to have you build on NEAR and compete in the [REDACTED] hackathon.  \\\\\\\\n\\\\\\\\nBefore you begin, make sure you are registered at [Devpost](https://redacted.devpost.com/).\\\\\\\\n\\\\\\\\nAt DevHub, we are providing a list of resources to get started with NEAR technology and how to get help. \\\\\\\\n\\\\\\\\n*This is a living document and will get updated over time.*\\\\\\\\n\\\\\\\\nLive DevRel and Community Support:\\\\\\\\n- NEAR Dev Support Channels (Telegram): https://t.me/neardev\\\\\\\\n- DevHub Announcements: https://t.me/NEARDevHub\\\\\\\\n\\\\\\\\nCompletely new to NEAR: \\\\\\\\n- https://docs.near.org/concepts/basics/protocol\\\\\\\\n- https://docs.near.org/concepts/protocol/account-model\\\\\\\\n\\\\\\\\nTutorials: https://docs.near.org/tutorials/welcome\\\\\\\\n\\\\\\\\nSmart Contracts:\\\\\\\\n- https://docs.near.org/build/smart-contracts/quickstart\\\\\\\\n- https://docs.near.org/build/smart-contracts/what-is\\\\\\\\n\\\\\\\\nFrontend Development:\\\\\\\\n- https://docs.near.org/build/web3-apps/quickstart\\\\\\\\n\\\\\\\\nChain Abstraction:\\\\\\\\n- https://docs.near.org/build/chain-abstraction/chain-signatures\\\\\\\\n- https://near.org/chain-abstraction\\\\\\\\n- https://linktr.ee/chainsignatures (All about Chain Signatures)\\\\\\\\n\\\\\\\\nAI:\\\\\\\\n- https://near.ai/\\\\\\\\n\\\\\\\\nAlong with these resources we have a newsletter (https://bit.ly/devhubnews) and do a weekly live show, DevHub Live, and WuASM (Wake Up & Ship More, which does not have a set schedule yet).\\\\\\\\n\\\\\\\\nOur entire video archive, which includes all live streams and community call replays are available on our [YouTube](https://youtube.com/@NEARDevHub).\\\\\\\\n\\\\\\\\nLastly, please also make sure to check out our socials to keep up to date on everything developer centric on NEAR.\\\\\\\\n[YouTube](https://youtube.com/@NEARDevHub)\\\\\\\\n[Twitch](https://twitch.tv/neardevhub)\\\\\\\\n[X](https://x.com/neardevhub)\\\\\\\\n[IG](https://instagram.com/neardevhub)\\\\\\\\n[TikTok](https://tiktok.com/@neardevhub)\\\\\\\\n[LinkedIn](https://www.linkedin.com/company/near-devhub)\\\\\\\\n[Threads](https://www.threads.net/@neardevhub)\\\\\\\\n[Reddit](https://www.reddit.com/user/NEARDevHub)\\\\\\\\n\", \"metadata\": {\"title\": \"Hackathon Resources for REDACTED\", \"author\": \"orangejoe.near\", \"status\": \"PUBLISH\", \"category\": \"reference\", \"subtitle\": \"Quick links to get started with your project\", \"updatedAt\": \"2024-08-21\", \"description\": \"Quick links to help get started with your hackathon project.\", \"publishedAt\": \"2024-08-08\"}}}}, \"handle\": \"developer-dao\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3633041236411e+21
+    }
+  },
+  {
+    "id": "7612160135",
+    "receipt_id": "8ghE7ajcPuAXKmjLJbzCQvS8AkYkQ58heDoW1NCZUf23",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "56mziPLGPmtW1bFzx7RWxKWwEWEWFDtDTdRqUk4j2C2G",
+      "block_height": 126245887,
+      "block_timestamp": 1724244668143588600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8245744263737,
+      "tokens_burnt": 824574426373700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "GeExDR4Bj62terDwDibF2EteDYM9x3xRUp37zyEbQa5i",
+    "included_in_block_hash": "2AE7ahDDVBVnB3phYj6eVmQybrGgbxiorHEvESqcWC6p",
+    "block_timestamp": "1724244666111019938",
+    "block": {
+      "block_height": 126245885
+    },
+    "receipt_conversion_tokens_burnt": "42064075111500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 824574426373700000000,
+        "args": "{\"data\": {\"developer-dao.community.devhub.near\": {\"blog\": {\"hackathon-resources-for-redacted-lsy0pp\": {\"\": \"We\\\\\\\\\\\\'re excited to have you build on NEAR and compete in the [REDACTED] hackathon.  \\\\\\\\n\\\\\\\\nBefore you begin, make sure you are registered at [Devpost](https://redacted.devpost.com/).\\\\\\\\n\\\\\\\\nAt DevHub, we are providing a list of resources to get started with NEAR technology and how to get help. \\\\\\\\n\\\\\\\\n*This is a living document and will get updated over time.*\\\\\\\\n\\\\\\\\nLive DevRel and Community Support:\\\\\\\\n- NEAR Dev Support Channels (Telegram): https://t.me/neardev\\\\\\\\n- DevHub Announcements: https://t.me/NEARDevHub\\\\\\\\n\\\\\\\\nCompletely new to NEAR: \\\\\\\\n- https://docs.near.org/concepts/basics/protocol\\\\\\\\n- https://docs.near.org/concepts/protocol/account-model\\\\\\\\n\\\\\\\\nTutorials: https://docs.near.org/tutorials/welcome\\\\\\\\n\\\\\\\\nSmart Contracts:\\\\\\\\n- https://docs.near.org/build/smart-contracts/quickstart\\\\\\\\n- https://docs.near.org/build/smart-contracts/what-is\\\\\\\\n\\\\\\\\nFrontend Development:\\\\\\\\n- https://docs.near.org/build/web3-apps/quickstart\\\\\\\\n\\\\\\\\nChain Abstraction:\\\\\\\\n- https://docs.near.org/build/chain-abstraction/chain-signatures\\\\\\\\n- https://near.org/chain-abstraction\\\\\\\\n- https://linktr.ee/chainsignatures (All about Chain Signatures)\\\\\\\\n\\\\\\\\nAI:\\\\\\\\n- https://near.ai/\\\\\\\\n\\\\\\\\nAlong with these resources we have a newsletter (https://bit.ly/devhubnews) and do a weekly live show, DevHub Live, and WuASM (Wake Up & Ship More, which does not have a set schedule yet).\\\\\\\\n\\\\\\\\nOur entire video archive, which includes all live streams and community call replays are available on our [YouTube](https://youtube.com/@NEARDevHub).\\\\\\\\n\\\\\\\\nLastly, please also make sure to check out our socials to keep up to date on everything developer centric on NEAR.\\\\\\\\n[YouTube](https://youtube.com/@NEARDevHub)\\\\\\\\n[Twitch](https://twitch.tv/neardevhub)\\\\\\\\n[X](https://x.com/neardevhub)\\\\\\\\n[IG](https://instagram.com/neardevhub)\\\\\\\\n[TikTok](https://tiktok.com/@neardevhub)\\\\\\\\n[LinkedIn](https://www.linkedin.com/company/near-devhub)\\\\\\\\n[Threads](https://www.threads.net/@neardevhub)\\\\\\\\n[Reddit](https://www.reddit.com/user/NEARDevHub)\\\\\\\\n\", \"metadata\": {\"title\": \"Hackathon Resources for REDACTED\", \"author\": \"orangejoe.near\", \"status\": \"PUBLISH\", \"category\": \"reference\", \"subtitle\": \"Quick links to get started with your project\", \"updatedAt\": \"2024-08-21\", \"description\": \"Quick links to help get started with your hackathon project.\", \"publishedAt\": \"2024-08-08\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3633041236411e+21
+    }
+  },
+  {
+    "id": "7612285889",
+    "receipt_id": "7w4Aedc8VUTAXqhpoLumv96h8xyiShTwpK51YdinLJ5P",
+    "predecessor_account_id": "orangejoe.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7vNMnUqwzmNKGjoHABhEzve2aqRg1LMfKaUkjbAy4eAW",
+      "block_height": 126246191,
+      "block_timestamp": 1724245026825081300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4924382835747,
+      "tokens_burnt": 492438283574700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "3D1jkBkMvaVMTJZajMJhbB9ujLgpN4ngX2AheLSBNwan",
+    "included_in_block_hash": "Fxz9NpL7QHTwJQyVL3rkaHj7VXjBAVsRXYv8kUaUhvdn",
+    "block_timestamp": "1724245025673390986",
+    "block": {
+      "block_height": 126246190
+    },
+    "receipt_conversion_tokens_burnt": "42521838775500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 492438283574700000000,
+        "args": "{\"data\": {\"blog\": {\"hackathon-resources-for-redacted-lsy0pp\": {\"\": \"We\\\\\\\\\\\\'re excited to have you build on NEAR and compete in the [REDACTED] hackathon.  \\\\\\\\n\\\\\\\\nBefore you begin, make sure you are registered at [Devpost](https://redacted.devpost.com/).\\\\\\\\n\\\\\\\\nAt DevHub, we are providing a list of resources to get started with NEAR technology and how to get help. \\\\\\\\n\\\\\\\\n*This is a living document and will get updated over time.*\\\\\\\\n\\\\\\\\nLive DevRel and Community Support:\\\\\\\\n- NEAR Dev Support Channels (Telegram): https://t.me/neardev\\\\\\\\n- DevHub Announcements: https://t.me/NEARDevHub\\\\\\\\n\\\\\\\\nCompletely new to NEAR: \\\\\\\\n- https://docs.near.org/concepts/basics/protocol\\\\\\\\n- https://docs.near.org/concepts/protocol/account-model\\\\\\\\n\\\\\\\\nTutorials: \\\\\\\\n- https://docs.near.org/tutorials/welcome\\\\\\\\n- https://agorapp.dev/catalog/course?difficulty=&chains=near\\\\\\\\n\\\\\\\\nSmart Contracts:\\\\\\\\n- https://docs.near.org/build/smart-contracts/quickstart\\\\\\\\n- https://docs.near.org/build/smart-contracts/what-is\\\\\\\\n\\\\\\\\nFrontend Development:\\\\\\\\n- https://docs.near.org/build/web3-apps/quickstart\\\\\\\\n\\\\\\\\nChain Abstraction:\\\\\\\\n- https://docs.near.org/build/chain-abstraction/chain-signatures\\\\\\\\n- https://near.org/chain-abstraction\\\\\\\\n- https://linktr.ee/chainsignatures (All about Chain Signatures)\\\\\\\\n\\\\\\\\nAI:\\\\\\\\n- https://near.ai/\\\\\\\\n\\\\\\\\nAlong with these resources we have a newsletter (https://bit.ly/devhubnews) and do a weekly live show, DevHub Live, and WuASM (Wake Up & Ship More, which does not have a set schedule yet).\\\\\\\\n\\\\\\\\nOur entire video archive, which includes all live streams and community call replays are available on our [YouTube](https://youtube.com/@NEARDevHub).\\\\\\\\n\\\\\\\\nLastly, please also make sure to check out our socials to keep up to date on everything developer centric on NEAR.\\\\\\\\n[YouTube](https://youtube.com/@NEARDevHub)\\\\\\\\n[Twitch](https://twitch.tv/neardevhub)\\\\\\\\n[X](https://x.com/neardevhub)\\\\\\\\n[IG](https://instagram.com/neardevhub)\\\\\\\\n[TikTok](https://tiktok.com/@neardevhub)\\\\\\\\n[LinkedIn](https://www.linkedin.com/company/near-devhub)\\\\\\\\n[Threads](https://www.threads.net/@neardevhub)\\\\\\\\n[Reddit](https://www.reddit.com/user/NEARDevHub)\\\\\\\\n\\\\\\\\nLast updated: Aug 21, 2024\\\\\\\\n\", \"metadata\": {\"title\": \"Hackathon Resources for REDACTED\", \"author\": \"orangejoe.near\", \"status\": \"PUBLISH\", \"category\": \"reference\", \"subtitle\": \"Quick links to get started with your project\", \"updatedAt\": \"2024-08-21\", \"description\": \"Quick links to help get started with your hackathon project.\", \"publishedAt\": \"2024-08-07\"}}}}, \"handle\": \"developer-dao\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3605965689571e+21
+    }
+  },
+  {
+    "id": "7612287870",
+    "receipt_id": "Hh6pJFv5vXxBhX95WwCpdbwr5Qd75tyrQS9vzSWTKMFn",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6HW6GnPadSbTv1KQd5NtuyE7Q85CFm5zUpxCjQUWpRhq",
+      "block_height": 126246193,
+      "block_timestamp": 1724245029675242800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8256364466069,
+      "tokens_burnt": 825636446606900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "3D1jkBkMvaVMTJZajMJhbB9ujLgpN4ngX2AheLSBNwan",
+    "included_in_block_hash": "Fxz9NpL7QHTwJQyVL3rkaHj7VXjBAVsRXYv8kUaUhvdn",
+    "block_timestamp": "1724245025673390986",
+    "block": {
+      "block_height": 126246190
+    },
+    "receipt_conversion_tokens_burnt": "42521838775500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 825636446606900000000,
+        "args": "{\"data\": {\"developer-dao.community.devhub.near\": {\"blog\": {\"hackathon-resources-for-redacted-lsy0pp\": {\"\": \"We\\\\\\\\\\\\'re excited to have you build on NEAR and compete in the [REDACTED] hackathon.  \\\\\\\\n\\\\\\\\nBefore you begin, make sure you are registered at [Devpost](https://redacted.devpost.com/).\\\\\\\\n\\\\\\\\nAt DevHub, we are providing a list of resources to get started with NEAR technology and how to get help. \\\\\\\\n\\\\\\\\n*This is a living document and will get updated over time.*\\\\\\\\n\\\\\\\\nLive DevRel and Community Support:\\\\\\\\n- NEAR Dev Support Channels (Telegram): https://t.me/neardev\\\\\\\\n- DevHub Announcements: https://t.me/NEARDevHub\\\\\\\\n\\\\\\\\nCompletely new to NEAR: \\\\\\\\n- https://docs.near.org/concepts/basics/protocol\\\\\\\\n- https://docs.near.org/concepts/protocol/account-model\\\\\\\\n\\\\\\\\nTutorials: \\\\\\\\n- https://docs.near.org/tutorials/welcome\\\\\\\\n- https://agorapp.dev/catalog/course?difficulty=&chains=near\\\\\\\\n\\\\\\\\nSmart Contracts:\\\\\\\\n- https://docs.near.org/build/smart-contracts/quickstart\\\\\\\\n- https://docs.near.org/build/smart-contracts/what-is\\\\\\\\n\\\\\\\\nFrontend Development:\\\\\\\\n- https://docs.near.org/build/web3-apps/quickstart\\\\\\\\n\\\\\\\\nChain Abstraction:\\\\\\\\n- https://docs.near.org/build/chain-abstraction/chain-signatures\\\\\\\\n- https://near.org/chain-abstraction\\\\\\\\n- https://linktr.ee/chainsignatures (All about Chain Signatures)\\\\\\\\n\\\\\\\\nAI:\\\\\\\\n- https://near.ai/\\\\\\\\n\\\\\\\\nAlong with these resources we have a newsletter (https://bit.ly/devhubnews) and do a weekly live show, DevHub Live, and WuASM (Wake Up & Ship More, which does not have a set schedule yet).\\\\\\\\n\\\\\\\\nOur entire video archive, which includes all live streams and community call replays are available on our [YouTube](https://youtube.com/@NEARDevHub).\\\\\\\\n\\\\\\\\nLastly, please also make sure to check out our socials to keep up to date on everything developer centric on NEAR.\\\\\\\\n[YouTube](https://youtube.com/@NEARDevHub)\\\\\\\\n[Twitch](https://twitch.tv/neardevhub)\\\\\\\\n[X](https://x.com/neardevhub)\\\\\\\\n[IG](https://instagram.com/neardevhub)\\\\\\\\n[TikTok](https://tiktok.com/@neardevhub)\\\\\\\\n[LinkedIn](https://www.linkedin.com/company/near-devhub)\\\\\\\\n[Threads](https://www.threads.net/@neardevhub)\\\\\\\\n[Reddit](https://www.reddit.com/user/NEARDevHub)\\\\\\\\n\\\\\\\\nLast updated: Aug 21, 2024\\\\\\\\n\", \"metadata\": {\"title\": \"Hackathon Resources for REDACTED\", \"author\": \"orangejoe.near\", \"status\": \"PUBLISH\", \"category\": \"reference\", \"subtitle\": \"Quick links to get started with your project\", \"updatedAt\": \"2024-08-21\", \"description\": \"Quick links to help get started with your hackathon project.\", \"publishedAt\": \"2024-08-07\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3605965689571e+21
+    }
+  },
+  {
+    "id": "7620408286",
+    "receipt_id": "HQGKba23Sj596Uo7AqyWnTYM4kf5S5LoMzBLJS5ardK2",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5zygxYoV5HGsUAbQzij7L5LDzikaDanqcA8z28Dp24rJ",
+      "block_height": 126270528,
+      "block_timestamp": 1724274490213441000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4214204863501,
+      "tokens_burnt": 421420486350100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "G5oVYp541pCgig45ewRmejGvGunKq9P815zKe71ViFu4",
+    "included_in_block_hash": "8DZqw3ReHXqZnuYXNfRb8AnkpJuk1RDfZiDzU4px9qkR",
+    "block_timestamp": "1724274488991282578",
+    "block": {
+      "block_height": 126270527
+    },
+    "receipt_conversion_tokens_burnt": "31721477328000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 421420486350100000000,
+        "args": "{\"id\": 51, \"timeline\": {\"status\": \"CANCELLED\", \"kyc_verified\": false, \"timeline_version\": \"V1\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 805958774517200000000
+    }
+  },
+  {
+    "id": "7620408675",
+    "receipt_id": "AvZhmxomrj8Verzwwv4JETgfYU5NvAjWSc1FETyEQztZ",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DzdLzCKCxs6pbxcjsNx2RCq2D11aBNoembkAmxG2eSVB",
+      "block_height": 126270529,
+      "block_timestamp": 1724274491524965400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3528168108391,
+      "tokens_burnt": 352816810839100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "G5oVYp541pCgig45ewRmejGvGunKq9P815zKe71ViFu4",
+    "included_in_block_hash": "8DZqw3ReHXqZnuYXNfRb8AnkpJuk1RDfZiDzU4px9qkR",
+    "block_timestamp": "1724274488991282578",
+    "block": {
+      "block_height": 126270527
+    },
+    "receipt_conversion_tokens_burnt": "31721477328000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352816810839100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"sashapais.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":51,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 805958774517200000000
+    }
+  },
+  {
+    "id": "7620414230",
+    "receipt_id": "CFBzrhxrGD95FPesbbMA4mCmH4iBXuULa4GE5C6ub3sc",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3vtDkcV78TRTGD6LKrG93Kx61HS7YcTvU1KCWuy5yhwj",
+      "block_height": 126270553,
+      "block_timestamp": 1724274520856222200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4214204863501,
+      "tokens_burnt": 421420486350100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "7SZaKVETxuoBYNJhXckQXDDDQT7mAsyfJ29cV9NQNp5H",
+    "included_in_block_hash": "AbbzqoiXTCyQsGWtCCwyJYMQNGYiiLGGnBhxRY6cWV9a",
+    "block_timestamp": "1724274519912186524",
+    "block": {
+      "block_height": 126270552
+    },
+    "receipt_conversion_tokens_burnt": "31721477328000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 421420486350100000000,
+        "args": "{\"id\": 54, \"timeline\": {\"status\": \"CANCELLED\", \"kyc_verified\": false, \"timeline_version\": \"V1\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 811138055931200000000
+    }
+  },
+  {
+    "id": "7620414596",
+    "receipt_id": "8rM8tGNWLmKhhgDqmp7nrpqihyJYdRBGV9xc2vW2S8Yb",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CchdbBuivirKS7rXCcNdH2FfYPW2bb57DwG2LySN7Leu",
+      "block_height": 126270554,
+      "block_timestamp": 1724274521945322800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3579960922531,
+      "tokens_burnt": 357996092253100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7SZaKVETxuoBYNJhXckQXDDDQT7mAsyfJ29cV9NQNp5H",
+    "included_in_block_hash": "AbbzqoiXTCyQsGWtCCwyJYMQNGYiiLGGnBhxRY6cWV9a",
+    "block_timestamp": "1724274519912186524",
+    "block": {
+      "block_height": 126270552
+    },
+    "receipt_conversion_tokens_burnt": "31721477328000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357996092253100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"sashapais.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":54,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 811138055931200000000
+    }
+  },
+  {
+    "id": "7620558448",
+    "receipt_id": "DQm2ghPAkJ7eByZFbVjLSPcLX9SgnFCejQYE9ZjziPkZ",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GxrDhrn3ii5qh8QSirzR3EaQFZ6aZjZacrnowFG9BesK",
+      "block_height": 126271108,
+      "block_timestamp": 1724275232647785200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4854276315676,
+      "tokens_burnt": 485427631567600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "2ZQ8ep2f4z4VJTJo7j2nP7iGfD71QZVXd4cqNXtqCq8G",
+    "included_in_block_hash": "AH7DSSs8LZHM9QT1vjC4poE1mrR5eD369D74APESH4fc",
+    "block_timestamp": "1724275231340370456",
+    "block": {
+      "block_height": 126271107
+    },
+    "receipt_conversion_tokens_burnt": "31697635470500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 485427631567600000000,
+        "args": "{\"id\": 184, \"timeline\": {\"status\": \"DRAFT\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 869683378452800000000
+    }
+  },
+  {
+    "id": "7620558713",
+    "receipt_id": "jW8kBHtufUH3cf3mLVqSSPVYQhwzrSNhTmbAwmUWwvD",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "J28rxEEgMPj59FmC9wNVse2MccjtGFWkbj1YxddPaBCC",
+      "block_height": 126271109,
+      "block_timestamp": 1724275233949898800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3525581114147,
+      "tokens_burnt": 352558111414700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "2ZQ8ep2f4z4VJTJo7j2nP7iGfD71QZVXd4cqNXtqCq8G",
+    "included_in_block_hash": "AH7DSSs8LZHM9QT1vjC4poE1mrR5eD369D74APESH4fc",
+    "block_timestamp": "1724275231340370456",
+    "block": {
+      "block_height": 126271107
+    },
+    "receipt_conversion_tokens_burnt": "31697635470500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352558111414700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"thomasguntenaar.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":184,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 869683378452800000000
+    }
+  },
+  {
+    "id": "7620618251",
+    "receipt_id": "33bu5ECM1LYJ4iAhX4q63z2B4RmtcUD1aQDvS7smmuhc",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HXt4Zr3MXK7FxPHiMbFpgbQWNzSpmxWgnMNrZssqF5nC",
+      "block_height": 126271355,
+      "block_timestamp": 1724275531127228000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5149586847788,
+      "tokens_burnt": 514958684778800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DdkmEW7XgDExTfGsPX6z3BtYKZYbAzpPfXJYfm1k9Hnw",
+    "included_in_block_hash": "Ei7xkXG3wU5jNSdbR8momzxAWuyfeLyBkqLUuASCtm9U",
+    "block_timestamp": "1724275529926972688",
+    "block": {
+      "block_height": 126271354
+    },
+    "receipt_conversion_tokens_burnt": "44977550098000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 514958684778800000000,
+        "args": "{\"id\": 184, \"body\": {\"name\": \"DevHub Developer Contributor report by THOMAS for 07/22/2024 \\\\\\\\u{2013}\\\\\\\\u{a0}08/09/2024\", \"summary\": \"Worked on Devhub\\\\\\\\\\\\'s code debt. Mostly the events committee portal part. Fixed small bugs and reviewed PR\\\\\\\\\\\\'s.\", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"DRAFT\", \"timeline_version\": \"V1\"}, \"supervisor\": \"theori.near\", \"description\": \"## Summary of Activities\\\\\\\\n\\\\\\\\n\\\\\\\\nWeek 1: July 22 \\\\\\\\u{2013}\\\\\\\\u{a0}July 26\\\\\\\\n\\\\\\\\nJuly 23 - 4 hours\\\\\\\\n- Merged [887](https://github.com/NEAR-DevHub/neardevhub-bos/pull/887)\\\\\\\\n- Continued [891](https://github.com/NEAR-DevHub/neardevhub-bos/pull/891)\\\\\\\\n- Called with Megha (2 hours) about refactoring and code debt created by merging the portals in a single repository [900](https://github.com/NEAR-DevHub/neardevhub-bos/issues/900)\\\\\\\\n\\\\\\\\nJuly 24 - 4 hours\\\\\\\\n- Created issue [903](https://github.com/NEAR-DevHub/neardevhub-bos/issues/903)\\\\\\\\n- Continue [848](https://github.com/NEAR-DevHub/neardevhub-bos/issues/848)\\\\\\\\n- Stand up\\\\\\\\n- Synced [Indexer](https://github.com/NEAR-DevHub/neardevhub-proposals-indexer/commit/07babcafd4701bc3856220a55122ebd6f9e2861f)\\\\\\\\n\\\\\\\\nJuly 25 - 1 hour\\\\\\\\n- Review [905](https://github.com/NEAR-DevHub/neardevhub-bos/pull/905)\\\\\\\\n- Merged [891](https://github.com/NEAR-DevHub/neardevhub-bos/pull/891)\\\\\\\\n- Merged [886](https://github.com/NEAR-DevHub/neardevhub-bos/pull/886)\\\\\\\\n- Merged [899](https://github.com/NEAR-DevHub/neardevhub-bos/pull/905)\\\\\\\\n- Collaborated with Joe to standardize hyperlink formats and ensure consistency across documents or platforms [879](https://github.com/NEAR-DevHub/neardevhub-bos/issues/879#issuecomment-2254379854)\\\\\\\\n\\\\\\\\n\\\\\\\\nTotal hours: 9 hours\\\\\\\\n\\\\\\\\nWeek 2: August 5  \\\\\\\\u{2013}\\\\\\\\u{a0}August 9\\\\\\\\n\\\\\\\\nAugust 7 - 4 hours\\\\\\\\n- Experimented with posthog\\\\\\\\\\\\'s init function in the web4_get function of our contract. [147](https://github.com/NEAR-DevHub/neardevhub-contract/pull/147)\\\\\\\\n- PR [915](https://github.com/NEAR-DevHub/neardevhub-bos/pull/915) and fix issues with tests\\\\\\\\n- Work on changes to none trivial (similar) duplicate files [916](https://github.com/NEAR-DevHub/neardevhub-bos/pull/916)\\\\\\\\n- Standup\\\\\\\\n\\\\\\\\nAugust 8 - 1 hour\\\\\\\\n- Reviewed [37](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/37)\\\\\\\\n- Merged [915](https://github.com/NEAR-DevHub/neardevhub-bos/pull/915)\\\\\\\\n- Investigated a bug where Joe was not able to post a blog with non-alpha characters in the title  [922](https://github.com/NEAR-DevHub/neardevhub-bos/pull/922)\\\\\\\\n\\\\\\\\nTotal hours: 5 hours\\\\\\\\n\\\\\\\\n\\\\\\\\n---\\\\\\\\n## Cost\\\\\\\\n\\\\\\\\n- Total hours: 14 hours\\\\\\\\n- Rate: $100/hour ~ \\\\\\\\u{20ac}90/h is an average rate for a medior freelance front end web3 developer in the Netherlands ranging from 35 (absolute beginner) to 150 (senior) [for example](https://zzpservicedesk.nl/uurtarief-freelance-developer/)\\\\\\\\n- Total amount: $1400 USD\", \"linked_proposals\": [], \"receiver_account\": \"thomasguntenaar.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"1400\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 918152014189100000000
+    }
+  },
+  {
+    "id": "7620618475",
+    "receipt_id": "7gThnArAR4qHS7ARaFhoWjo5Yubd9BfhQ93nwGREeq4P",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8dFrpjkVCri6SvsbQ7RVyWW13vhJYg1urskiR26uwBUM",
+      "block_height": 126271356,
+      "block_timestamp": 1724275532211550000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3582157793123,
+      "tokens_burnt": 358215779312300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DdkmEW7XgDExTfGsPX6z3BtYKZYbAzpPfXJYfm1k9Hnw",
+    "included_in_block_hash": "Ei7xkXG3wU5jNSdbR8momzxAWuyfeLyBkqLUuASCtm9U",
+    "block_timestamp": "1724275529926972688",
+    "block": {
+      "block_height": 126271354
+    },
+    "receipt_conversion_tokens_burnt": "44977550098000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 358215779312300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"thomasguntenaar.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":184,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"thomasguntenaar.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 918152014189100000000
+    }
+  },
+  {
+    "id": "7646674500",
+    "receipt_id": "5CfkGzkruEQHALD1qzWmbYVPk7Cyd1hZfojW9NeuTcxU",
+    "predecessor_account_id": "corey_taylor.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EJDsSToCR6LDLgqpEdXmjRa52J1eR19HP7xoQZ9QqTDf",
+      "block_height": 126334410,
+      "block_timestamp": 1724353252002674400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3342547342881,
+      "tokens_burnt": 334254734288100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "2Az48fq59i6ospc2RUfX9B5KPxHnhDZccCUn5ykZwgrR",
+    "included_in_block_hash": "34nUVNt6QYbGqfL8FufXZ4BPDgbLD4qjznrYfHQcxjyz",
+    "block_timestamp": "1724353250689255845",
+    "block": {
+      "block_height": 126334409
+    },
+    "receipt_conversion_tokens_burnt": "31144504376500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "create_discussion",
+        "deposit": 0,
+        "fee": 334254734288100000000,
+        "args": "{\"handle\": \"webassemblymusic\", \"block_height\": 126334345}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 790183043414600000000
+    }
+  },
+  {
+    "id": "7646675310",
+    "receipt_id": "CdPadEPMPq11jpdGKGzbfM7nHE218ZAdPepTB2XJDg6L",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "F9Ec9B9nCMMW3DTWNusLX8TMoz82sazY2r37XxSBhHVM",
+      "block_height": 126334411,
+      "block_timestamp": 1724353253390693400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4247838047500,
+      "tokens_burnt": 424783804750000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "2Az48fq59i6ospc2RUfX9B5KPxHnhDZccCUn5ykZwgrR",
+    "included_in_block_hash": "34nUVNt6QYbGqfL8FufXZ4BPDgbLD4qjznrYfHQcxjyz",
+    "block_timestamp": "1724353250689255845",
+    "block": {
+      "block_height": 126334409
+    },
+    "receipt_conversion_tokens_burnt": "31144504376500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 424783804750000000000,
+        "args": "{\"data\": {\"discussions.webassemblymusic.community.devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"corey_taylor.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"repost\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"item\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"path\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"corey_taylor.near/post/main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"blockHeight\\\\\\\\\\\\\\\":126334345}}}\", \"repost\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"repost\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"item\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"path\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"corey_taylor.near/post/main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"blockHeight\\\\\\\\\\\\\\\":126334345}}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"path\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"corey_taylor.near/post/main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"blockHeight\\\\\\\\\\\\\\\":126334345},\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"repost\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 790183043414600000000
+    }
+  },
+  {
+    "id": "7672964201",
+    "receipt_id": "83vUf2fmyFtKNdAPC7PrSni8fvxhvxw6EFirB4EuuvLA",
+    "predecessor_account_id": "orangejoe.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "958Ewe9b9gb7CBC97UDLQPDGjDXwyvDcFuGmLenbqHpZ",
+      "block_height": 126396571,
+      "block_timestamp": 1724428427671502300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4865151220719,
+      "tokens_burnt": 486515122071900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "6T12xirkKenK73hZBybMyPRZz8ti77pUTpqbwoqYBE1s",
+    "included_in_block_hash": "HP57wzbngCSbPBz5fEV9kouaSh6ZUX5ZCYEabKo4KJPs",
+    "block_timestamp": "1724428426766333292",
+    "block": {
+      "block_height": 126396570
+    },
+    "receipt_conversion_tokens_burnt": "40285472542000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 486515122071900000000,
+        "args": "{\"data\": {\"blog\": {\"protocol-69-nightshade-20--stateless-validation-what-does-it-mean-cu3mlf\": {\"\": \"NEAR just moved to Nightshade 2.0 and it\\\\\\\\\\\\'s the next stage in moving to stateless validation. Let\\\\\\\\\\\\'s simplify the update.\\\\\\\\n\\\\\\\\nWhat is different with stateless validation?\\\\\\\\n\\\\\\\\n1. Validators no longer need to track the state of all shards.\\\\\\\\n2. Chunk producers create \\\\\\\\\\\\\\\"state witnesses\\\\\\\\\\\\\\\" along with chunks.\\\\\\\\n3. Chunk validators verify these state witnesses instead of maintaining full shard states.\\\\\\\\n\\\\\\\\nWhat changes are happening?\\\\\\\\n\\\\\\\\n1. Introduction of Chunk Endorsements\\\\\\\\n2. For each block height, validators are randomly assigned to validate specific shards.\\\\\\\\n3. Blocks only include chunks that have received sufficient endorsements (at least 2/3 by stake).\\\\\\\\n4. The security of the network uses the random selection of chunk validators for each shard at each height.\\\\\\\\n\\\\\\\\nWhat outcomes will come from this?\\\\\\\\n\\\\\\\\n1. The network now has 3 validator roles: block producers, chunk producers, & chunk validators. \\\\\\\\n2.  Increased network traffic due to the distribution of state witnesses.\\\\\\\\n3. The network is better positioned for future scalability improvements, allowing for more shards and higher throughput.\\\\\\\\n\\\\\\\\nThis is a milestone for NEAR but also the beginning of some important changes to the protocol for the long-term.\\\\\\\\n\\\\\\\\nSee the full release notes here: [Github](https://github.com/near/nearcore/releases/tag/2.0.0)\", \"metadata\": {\"title\": \"Protocol 69, Nightshade 2.0, & Stateless Validation: What does it mean?\", \"author\": \"orangejoe.near\", \"status\": \"PUBLISH\", \"category\": \"news\", \"subtitle\": \"Understanding the changes that come with Nightshade 2.0\", \"createdAt\": \"2024-08-23\", \"updatedAt\": \"2024-08-23\", \"description\": \"NEAR just moved to Protocol Version 69 (yes, srsly)\\\\\\\\n\\\\\\\\nIt\\\\\\\\\\\\'s an important milestone but not for the reason you\\\\\\\\\\\\'re thinking.\\\\\\\\n\\\\\\\\nIt\\\\\\\\\\\\'s the next stage in moving to stateless validation. \", \"publishedAt\": \"2024-08-22\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"developer-dao\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6201126093577e+21
+    }
+  },
+  {
+    "id": "7672964390",
+    "receipt_id": "AKatv1d2rtb3w5F4F5C9h95ikTy2bbfLZeDRBk7ZrmXP",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "J7tXUGBr3XXKa5F2ZUWFSL382QG8TMVZmpTyFepyRbSV",
+      "block_height": 126396572,
+      "block_timestamp": 1724428428805106400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 10933120147438,
+      "tokens_burnt": 1.0933120147438e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "6T12xirkKenK73hZBybMyPRZz8ti77pUTpqbwoqYBE1s",
+    "included_in_block_hash": "HP57wzbngCSbPBz5fEV9kouaSh6ZUX5ZCYEabKo4KJPs",
+    "block_timestamp": "1724428426766333292",
+    "block": {
+      "block_height": 126396570
+    },
+    "receipt_conversion_tokens_burnt": "40285472542000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.0933120147438e+21,
+        "args": "{\"data\": {\"developer-dao.community.devhub.near\": {\"blog\": {\"protocol-69-nightshade-20--stateless-validation-what-does-it-mean-cu3mlf\": {\"\": \"NEAR just moved to Nightshade 2.0 and it\\\\\\\\\\\\'s the next stage in moving to stateless validation. Let\\\\\\\\\\\\'s simplify the update.\\\\\\\\n\\\\\\\\nWhat is different with stateless validation?\\\\\\\\n\\\\\\\\n1. Validators no longer need to track the state of all shards.\\\\\\\\n2. Chunk producers create \\\\\\\\\\\\\\\"state witnesses\\\\\\\\\\\\\\\" along with chunks.\\\\\\\\n3. Chunk validators verify these state witnesses instead of maintaining full shard states.\\\\\\\\n\\\\\\\\nWhat changes are happening?\\\\\\\\n\\\\\\\\n1. Introduction of Chunk Endorsements\\\\\\\\n2. For each block height, validators are randomly assigned to validate specific shards.\\\\\\\\n3. Blocks only include chunks that have received sufficient endorsements (at least 2/3 by stake).\\\\\\\\n4. The security of the network uses the random selection of chunk validators for each shard at each height.\\\\\\\\n\\\\\\\\nWhat outcomes will come from this?\\\\\\\\n\\\\\\\\n1. The network now has 3 validator roles: block producers, chunk producers, & chunk validators. \\\\\\\\n2.  Increased network traffic due to the distribution of state witnesses.\\\\\\\\n3. The network is better positioned for future scalability improvements, allowing for more shards and higher throughput.\\\\\\\\n\\\\\\\\nThis is a milestone for NEAR but also the beginning of some important changes to the protocol for the long-term.\\\\\\\\n\\\\\\\\nSee the full release notes here: [Github](https://github.com/near/nearcore/releases/tag/2.0.0)\", \"metadata\": {\"title\": \"Protocol 69, Nightshade 2.0, & Stateless Validation: What does it mean?\", \"author\": \"orangejoe.near\", \"status\": \"PUBLISH\", \"category\": \"news\", \"subtitle\": \"Understanding the changes that come with Nightshade 2.0\", \"createdAt\": \"2024-08-23\", \"updatedAt\": \"2024-08-23\", \"description\": \"NEAR just moved to Protocol Version 69 (yes, srsly)\\\\\\\\n\\\\\\\\nIt\\\\\\\\\\\\'s an important milestone but not for the reason you\\\\\\\\\\\\'re thinking.\\\\\\\\n\\\\\\\\nIt\\\\\\\\\\\\'s the next stage in moving to stateless validation. \", \"publishedAt\": \"2024-08-22\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6201126093577e+21
+    }
+  },
+  {
+    "id": "7674854192",
+    "receipt_id": "55HF7hX9SU51WR7sHn32bwQ7y8pUmn3nzkbFvscm6WYy",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "843PfzJgkGgCJJfMxX98xs2NowEBcfvLdiEdY8auFZ4S",
+      "block_height": 126400716,
+      "block_timestamp": 1724433459455969300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5773287729678,
+      "tokens_burnt": 577328772967800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "HauXZcz8Rgs2Hv9g63UiM1hGWZ4QwZvrDBw4yfRhdJTF",
+    "included_in_block_hash": "87J5YveoJ9AdwT4Yy7Yq3E53gaRHWVySBBCbgZKdMeE3",
+    "block_timestamp": "1724433458110053434",
+    "block": {
+      "block_height": 126400715
+    },
+    "receipt_conversion_tokens_burnt": "53609752442000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_member",
+        "deposit": 0,
+        "fee": 577328772967800000000,
+        "args": "{\"member\": \"2dada969f3743a4a41cfdb1a6e39581c2844ce8fbe25948700c85c598090b3e1\", \"metadata\": {\"parents\": [], \"children\": [], \"description\": \"\", \"permissions\": {}, \"member_metadata_version\": \"V0\"}}"
+      },
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_member",
+        "deposit": 0,
+        "fee": 577328772967800000000,
+        "args": "{\"member\": \"team:moderators\", \"metadata\": {\"parents\": [], \"children\": [\"theori.near\", \"frol.near\", \"tfdevhub.near\", \"gagdiez.near\", \"bo.near\", \"orangejoe.near\", \"petersalomonsen.near\", \"nearmax.near\", \"yarotska.near\", \"neardevdao.near\", \"2dada969f3743a4a41cfdb1a6e39581c2844ce8fbe25948700c85c598090b3e1\"], \"description\": \"\", \"permissions\": {\"*\": [\"edit-post\", \"use-labels\"]}, \"member_metadata_version\": \"V0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 630938525409800000000
+    }
+  }
+]

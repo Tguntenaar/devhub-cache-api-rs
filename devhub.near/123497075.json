@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "6682854556",
+    "receipt_id": "4wvFmue8kHhNqTEAFJNXEKbPtASfW9VmUiueQZRYyt7s",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3iWAxz5wGz6meueNBS2hGVjvocCxyqiwRTK1smtLwcvs",
+      "block_height": 123517254,
+      "block_timestamp": 1721120899279158000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4410190139281,
+      "tokens_burnt": 441019013928100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "2JphPVzyEWqhf8Srv3Pv39B3fuKYrwgmD1xMqqcp38N3",
+    "included_in_block_hash": "HF8MgrSYVh8JyfpqvUEBcUsu9DuZ5XeTuC9vWnyDAvE5",
+    "block_timestamp": "1721120898082331225",
+    "block": {
+      "block_height": 123517253
+    },
+    "receipt_conversion_tokens_burnt": "31476953793400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 441019013928100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"widget\": {\"devhub.components.molecule.ShareButton\": {\"\": \"const postType = props.postType ?? \\\\\\\\\\\\\\\"blog\\\\\\\\\\\\\\\";\\\\\\\\nconst externalLink = props.externalLink;\\\\\\\\nconst className = props.className;\\\\\\\\nconst size = props.size ?? \\\\\\\\\\\\\\\"20px\\\\\\\\\\\\\\\";\\\\\\\\n\\\\\\\\nconst clickbaitPrompt =\\\\\\\\n  props.clickbaitPrompt ??\\\\\\\\n  `Check out this ${postType} on @NearSocial_\\\\\\\\\\\\\\\\n#NearSocial #NEAR #BOS\\\\\\\\\\\\\\\\n${externalLink}`;\\\\\\\\n\\\\\\\\nconst xUrl = new URL(\\\\\\\\\\\\\\\"https://x.com/intent/tweet\\\\\\\\\\\\\\\");\\\\\\\\nxUrl.searchParams.set(\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\", clickbaitPrompt);\\\\\\\\n\\\\\\\\nconst mailtoUrl = new URL(\\\\\\\\\\\\\\\"mailto:\\\\\\\\\\\\\\\");\\\\\\\\nmailtoUrl.searchParams.set(\\\\\\\\n  \\\\\\\\\\\\\\\"subject\\\\\\\\\\\\\\\",\\\\\\\\n  `Check out this ${postType} on Near Social`\\\\\\\\n);\\\\\\\\nmailtoUrl.searchParams.set(\\\\\\\\n  \\\\\\\\\\\\\\\"body\\\\\\\\\\\\\\\",\\\\\\\\n  `Take a look this ${postType}.\\\\\\\\n${externalLink}\\\\\\\\n`\\\\\\\\n);\\\\\\\\n\\\\\\\\nconst shareSvg = (\\\\\\\\n  <svg\\\\\\\\n    xmlns=\\\\\\\\\\\\\\\"http://www.w3.org/2000/svg\\\\\\\\\\\\\\\"\\\\\\\\n    style={{ width: size }}\\\\\\\\n    fill=\\\\\\\\\\\\\\\"currentColor\\\\\\\\\\\\\\\"\\\\\\\\n    viewBox=\\\\\\\\\\\\\\\"0 0 16 16\\\\\\\\\\\\\\\"\\\\\\\\n    stroke=\\\\\\\\\\\\\\\"currentColor\\\\\\\\\\\\\\\"\\\\\\\\n    strokeWidth=\\\\\\\\\\\\\\\"0.363\\\\\\\\\\\\\\\"\\\\\\\\n  >\\\\\\\\n    <path d=\\\\\\\\\\\\\\\"M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z\\\\\\\\\\\\\\\" />\\\\\\\\n    <path d=\\\\\\\\\\\\\\\"M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z\\\\\\\\\\\\\\\" />\\\\\\\\n  </svg>\\\\\\\\n);\\\\\\\\n\\\\\\\\nconst Button = styled.div`\\\\\\\\n  display: inline-flex;\\\\\\\\n  align-items: center;\\\\\\\\n  justify-content: left;\\\\\\\\n  background: inherit;\\\\\\\\n  color: inherit;\\\\\\\\n  .icon {\\\\\\\\n    position: relative;\\\\\\\\n    &:before {\\\\\\\\n      content: \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\";\\\\\\\\n      position: absolute;\\\\\\\\n      top: 0;\\\\\\\\n      left: 0;\\\\\\\\n      bottom: 0;\\\\\\\\n      right: 0;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  &:not([disabled]) {\\\\\\\\n    cursor: pointer;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  &:not([disabled]):hover {\\\\\\\\n    opacity: 1 !important;\\\\\\\\n    color: rgba(0, 0, 0, 0.5);\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\n\\\\\\\\nreturn (\\\\\\\\n  <span className={className}>\\\\\\\\n    <Button data-bs-toggle=\\\\\\\\\\\\\\\"dropdown\\\\\\\\\\\\\\\" aria-expanded=\\\\\\\\\\\\\\\"false\\\\\\\\\\\\\\\" title=\\\\\\\\\\\\\\\"Share\\\\\\\\\\\\\\\">\\\\\\\\n      <span className=\\\\\\\\\\\\\\\"icon\\\\\\\\\\\\\\\">{shareSvg}</span>\\\\\\\\n      <span className=\\\\\\\\\\\\\\\"count\\\\\\\\\\\\\\\" />\\\\\\\\n    </Button>\\\\\\\\n    <ul className=\\\\\\\\\\\\\\\"dropdown-menu\\\\\\\\\\\\\\\">\\\\\\\\n      <li>\\\\\\\\n        <Widget\\\\\\\\n          src=\\\\\\\\\\\\\\\"mob.near/widget/CopyButton\\\\\\\\\\\\\\\"\\\\\\\\n          props={{\\\\\\\\n            text: externalLink,\\\\\\\\n            className: \\\\\\\\\\\\\\\"btn btn-outline-dark dropdown-item\\\\\\\\\\\\\\\",\\\\\\\\n            label: `Copy link to ${postType}`,\\\\\\\\n          }}\\\\\\\\n        />\\\\\\\\n      </li>\\\\\\\\n      <li className=\\\\\\\\\\\\\\\"dropdown-item\\\\\\\\\\\\\\\">\\\\\\\\n        <a\\\\\\\\n          className=\\\\\\\\\\\\\\\"link-dark text-decoration-none\\\\\\\\\\\\\\\"\\\\\\\\n          href={mailtoUrl.toString()}\\\\\\\\n          target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n        >\\\\\\\\n          <i className=\\\\\\\\\\\\\\\"bi bi-envelope-at\\\\\\\\\\\\\\\" /> Share by email\\\\\\\\n        </a>\\\\\\\\n      </li>\\\\\\\\n      <li className=\\\\\\\\\\\\\\\"dropdown-item\\\\\\\\\\\\\\\">\\\\\\\\n        <a\\\\\\\\n          className=\\\\\\\\\\\\\\\"link-dark text-decoration-none\\\\\\\\\\\\\\\"\\\\\\\\n          href={xUrl.toString()}\\\\\\\\n          target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n        >\\\\\\\\n          <i className=\\\\\\\\\\\\\\\"bi bi-twitter\\\\\\\\\\\\\\\" />\\\\\\\\n          Share on X\\\\\\\\n        </a>\\\\\\\\n      </li>\\\\\\\\n    </ul>\\\\\\\\n  </span>\\\\\\\\n);\\\\\\\\n\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 472495967721500000000
+    }
+  },
+  {
+    "id": "6682855150",
+    "receipt_id": "2KhaMGe2KPyPCrtCEnsqsXZvhTHjsuY3z81XuKWDQ9Nr",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GkD8ScLQEbNmjRGGPCLDbATHKt6b7nrQTwFtfC3LsbrG",
+      "block_height": 123517255,
+      "block_timestamp": 1721120900384835300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "2JphPVzyEWqhf8Srv3Pv39B3fuKYrwgmD1xMqqcp38N3",
+    "included_in_block_hash": "HF8MgrSYVh8JyfpqvUEBcUsu9DuZ5XeTuC9vWnyDAvE5",
+    "block_timestamp": "1721120898082331225",
+    "block": {
+      "block_height": 123517253
+    },
+    "receipt_conversion_tokens_burnt": "31476953793400000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.8763030009375206e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 472495967721500000000
+    }
+  },
+  {
+    "id": "6682892660",
+    "receipt_id": "HaXg82KjaqUKiVw75RHQ2RGbtu1Tipr8SKNRwS9shy16",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8ancrHiZvtX3wA99PwmQWdvTDGZ1i3bX9gU3BcMcLoq5",
+      "block_height": 123517383,
+      "block_timestamp": 1721121044052221000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7328961618047,
+      "tokens_burnt": 732896161804700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "FCTNc4twj2TsrDbdDXH64V5sZ2Bi5b5LH87fpJTuCJH",
+    "included_in_block_hash": "FCCR4zPGxRXEUPtqezpHiqkhUTn6ZgG4YRJF5gG24piK",
+    "block_timestamp": "1721121043176312072",
+    "block": {
+      "block_height": 123517382
+    },
+    "receipt_conversion_tokens_burnt": "35345566800200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 732896161804700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"widget\": {\"devhub.entity.addon.blogv2.editor.content\": {\"\": \"const { Card } =\\\\\\\\n  VM.require(\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.addon.blogv2.Card\\\\\\\\\\\\\\\") ||\\\\\\\\n  (() => <></>);\\\\\\\\nconst { href } = VM.require(\\\\\\\\\\\\\\\"devhub.near/widget/core.lib.url\\\\\\\\\\\\\\\") || (() => {});\\\\\\\\n\\\\\\\\nconst {\\\\\\\\n  data,\\\\\\\\n  handle,\\\\\\\\n  onSubmit,\\\\\\\\n  onCancel,\\\\\\\\n  onDelete,\\\\\\\\n  allBlogs: allBlogsOfThisInstance,\\\\\\\\n  communityAddonId,\\\\\\\\n  setSelectedItemChanged,\\\\\\\\n  addonParameters,\\\\\\\\n} = props;\\\\\\\\n\\\\\\\\nconst selectOptions = useMemo(() => {\\\\\\\\n  let ops = (addonParameters.categories || []).map((it) => ({\\\\\\\\n    title: it.category,\\\\\\\\n    description: \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\n    value: it.value,\\\\\\\\n  }));\\\\\\\\n  if (addonParameters.categoryRequired === \\\\\\\\\\\\\\\"required\\\\\\\\\\\\\\\") {\\\\\\\\n    return ops;\\\\\\\\n  }\\\\\\\\n  return [{ title: \\\\\\\\\\\\\\\"None\\\\\\\\\\\\\\\", value: \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\" }, ...ops];\\\\\\\\n}, [addonParameters]);\\\\\\\\n\\\\\\\\nconst Banner = styled.div`\\\\\\\\n  border-radius: var(--bs-border-radius-xl) !important;\\\\\\\\n  height: 100%;\\\\\\\\n\\\\\\\\n  & > div :not(.btn) {\\\\\\\\n    position: absolute;\\\\\\\\n    display: none;\\\\\\\\n    margin: 0 !important;\\\\\\\\n    width: 0 !important;\\\\\\\\n    height: 0 !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .btn {\\\\\\\\n    padding: 0.5rem 0.75rem !important;\\\\\\\\n    min-height: 32;\\\\\\\\n    line-height: 1;\\\\\\\\n\\\\\\\\n    border: none;\\\\\\\\n    border-radius: 50px;\\\\\\\\n    --bs-btn-color: #ffffff;\\\\\\\\n    --bs-btn-bg: #087990;\\\\\\\\n    --bs-btn-border-color: #087990;\\\\\\\\n    --bs-btn-hover-color: #ffffff;\\\\\\\\n    --bs-btn-hover-bg: #055160;\\\\\\\\n    --bs-btn-hover-border-color: #055160;\\\\\\\\n    --bs-btn-focus-shadow-rgb: 49, 132, 253;\\\\\\\\n    --bs-btn-active-color: #ffffff;\\\\\\\\n    --bs-btn-active-bg: #055160;\\\\\\\\n    --bs-btn-active-border-color: #055160;\\\\\\\\n    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\\\\\\\\n    opacity: 0.8;\\\\\\\\n\\\\\\\\n    &:hover {\\\\\\\\n      opacity: 1;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\n\\\\\\\\nconst DropdownBtnContainer = styled.div`\\\\\\\\n  font-size: 13px;\\\\\\\\n  min-width: 150px;\\\\\\\\n\\\\\\\\n  .custom-select {\\\\\\\\n    position: relative;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .select-header {\\\\\\\\n    display: flex;\\\\\\\\n    justify-content: space-between;\\\\\\\\n    align-items: center;\\\\\\\\n    border: 1px solid #ccc;\\\\\\\\n    border-radius-top: 5px;\\\\\\\\n    cursor: pointer;\\\\\\\\n    background-color: #fff;\\\\\\\\n    border-radius: 5px;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .no-border {\\\\\\\\n    border: none !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .options-card {\\\\\\\\n    position: absolute;\\\\\\\\n    bottom: 100%;\\\\\\\\n    right: 0;\\\\\\\\n    width: 200%;\\\\\\\\n    border: 1px solid #ccc;\\\\\\\\n    background-color: #fff;\\\\\\\\n    padding: 0.5rem;\\\\\\\\n    z-index: 99;\\\\\\\\n    font-size: 13px;\\\\\\\\n    border-radius:0.375rem !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .left {\\\\\\\\n    right: 0 !important;\\\\\\\\n    left: auto !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    .options-card {\\\\\\\\n      right: 0 !important;\\\\\\\\n      left: auto !important;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .option {\\\\\\\\n    margin-block: 5px;\\\\\\\\n    padding: 10px;\\\\\\\\n    cursor: pointer;\\\\\\\\n    border-bottom: 1px solid #f0f0f0;\\\\\\\\n    transition: background-color 0.3s ease;\\\\\\\\n    border-radius: 0.375rem !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .option:hover {\\\\\\\\n    background-color: #f0f0f0; /* Custom hover effect color */\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .option:last-child {\\\\\\\\n    border-bottom: none;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .selected {\\\\\\\\n    background-color: #f0f0f0;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .disabled {\\\\\\\\n    background-color: #f4f4f4 !important;\\\\\\\\n    cursor: not-allowed !important;\\\\\\\\n    font-weight: 500;\\\\\\\\n    color: #b3b3b3;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .disabled .circle {\\\\\\\\n    opacity: 0.5;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .circle {\\\\\\\\n    width: 8px;\\\\\\\\n    height: 8px;\\\\\\\\n    border-radius: 50%;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .grey {\\\\\\\\n    background-color: rgba(129, 129, 129, 0.5);\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .green {\\\\\\\\n    background-color: #00ec97;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  a:hover {\\\\\\\\n    text-decoration: none;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n}\\\\\\\\n`;\\\\\\\\n\\\\\\\\nconst allBlogKeys =\\\\\\\\n  Social.keys(`${handle}.community.devhub.near/blog/*`, \\\\\\\\\\\\\\\"final\\\\\\\\\\\\\\\") || {};\\\\\\\\n\\\\\\\\nconst initialData = data;\\\\\\\\n\\\\\\\\nconst [initialBlogAmount, setInitialBlogAmount] = useState(\\\\\\\\n  Object.keys(allBlogKeys[`${handle}.community.devhub.near`][\\\\\\\\\\\\\\\"blog\\\\\\\\\\\\\\\"] || {})\\\\\\\\n    .length || 0\\\\\\\\n);\\\\\\\\n\\\\\\\\n// Parse the date string to create a Date object\\\\\\\\nconst publishedAtDate = new Date(initialData.publishedAt || new Date());\\\\\\\\nconst year = publishedAtDate.getFullYear();\\\\\\\\nconst month = (publishedAtDate.getMonth() + 1).toString().padStart(2, \\\\\\\\\\\\\\\"0\\\\\\\\\\\\\\\");\\\\\\\\nconst day = publishedAtDate.getDate().toString().padStart(2, \\\\\\\\\\\\\\\"0\\\\\\\\\\\\\\\");\\\\\\\\nconst initialFormattedDate = year + \\\\\\\\\\\\\\\"-\\\\\\\\\\\\\\\" + month + \\\\\\\\\\\\\\\"-\\\\\\\\\\\\\\\" + day;\\\\\\\\n\\\\\\\\nconst [content, setContent] = useState(initialData.content || \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\");\\\\\\\\nconst [title, setTitle] = useState(initialData.title || \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\");\\\\\\\\nconst [subtitle, setSubtitle] = useState(initialData.subtitle || \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\");\\\\\\\\nconst [description, setDescription] = useState(initialData.description || \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\");\\\\\\\\nconst [author, setAuthor] = useState(initialData.author || context.accountId);\\\\\\\\nconst [previewMode, setPreviewMode] = useState(\\\\\\\\\\\\\\\"edit\\\\\\\\\\\\\\\"); // \\\\\\\\\\\\\\\"edit\\\\\\\\\\\\\\\" or \\\\\\\\\\\\\\\"preview\\\\\\\\\\\\\\\" // \\\\\\\\\\\\\\\"card\\\\\\\\\\\\\\\" or \\\\\\\\\\\\\\\"page\\\\\\\\\\\\\\\"\\\\\\\\nconst [date, setDate] = useState(initialFormattedDate || new Date());\\\\\\\\n\\\\\\\\n// Initial category\\\\\\\\nconst initialCategory =\\\\\\\\n  addonParameters.categoryRequired === \\\\\\\\\\\\\\\"required\\\\\\\\\\\\\\\" ? selectOptions[0].value : \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\";\\\\\\\\n\\\\\\\\nconst [category, setCategory] = useState(\\\\\\\\n  initialData.category || initialCategory\\\\\\\\n);\\\\\\\\nconst [disabledSubmitBtn, setDisabledSubmitBtn] = useState(false);\\\\\\\\nconst [isDraftBtnOpen, setDraftBtnOpen] = useState(false);\\\\\\\\nconst [selectedStatus, setSelectedStatus] = useState(\\\\\\\\n  initialData.status || \\\\\\\\\\\\\\\"DRAFT\\\\\\\\\\\\\\\"\\\\\\\\n);\\\\\\\\nconst [isDeleteModalOpen, setDeleteModal] = useState(false);\\\\\\\\n\\\\\\\\n// Dont ask me again check when deleting\\\\\\\\nconst [submittedBlogDeleted, setSubmittedBlogDeleted] = useState(null);\\\\\\\\nuseEffect(() => {\\\\\\\\n  const checkForDeletedBlogInSocialDB = () => {\\\\\\\\n    const communityAccount = `${handle}.community.devhub.near`;\\\\\\\\n    Near.asyncView(\\\\\\\\\\\\\\\"social.near\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"get\\\\\\\\\\\\\\\", {\\\\\\\\n      keys: [`${communityAccount}/blog/**`],\\\\\\\\n      options: {\\\\\\\\n        return_deleted: true,\\\\\\\\n      },\\\\\\\\n    }).then((result) => {\\\\\\\\n      try {\\\\\\\\n        if (!result[communityAccount].blog[submittedBlogDeleted]) {\\\\\\\\n          // Blog is deleted\\\\\\\\n          setSubmittedBlogDeleted(null);\\\\\\\\n        }\\\\\\\\n      } catch (e) {}\\\\\\\\n      setTimeout(() => checkForDeletedBlogInSocialDB(), 500);\\\\\\\\n    });\\\\\\\\n  };\\\\\\\\n  if (submittedBlogDeleted) {\\\\\\\\n    checkForDeletedBlogInSocialDB();\\\\\\\\n  }\\\\\\\\n}, [submittedBlogDeleted]);\\\\\\\\n\\\\\\\\n// Dont ask me again check when updating and creating blogs\\\\\\\\nconst [submittedBlogData, setSubmittedBlogData] = useState(null);\\\\\\\\nuseEffect(() => {\\\\\\\\n  const checkForNewOrUpdatedBlogInSocialDB = () => {\\\\\\\\n    const communityAccount = `${handle}.community.devhub.near`;\\\\\\\\n    Near.asyncView(\\\\\\\\\\\\\\\"social.near\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"get\\\\\\\\\\\\\\\", {\\\\\\\\n      keys: [`${communityAccount}/blog/**`],\\\\\\\\n    }).then((result) => {\\\\\\\\n      try {\\\\\\\\n        if (initialData.id) {\\\\\\\\n          // Update\\\\\\\\n          const updatedBlog =\\\\\\\\n            result[communityAccount][\\\\\\\\\\\\\\\"blog\\\\\\\\\\\\\\\"][initialData.id].metadata;\\\\\\\\n          updatedBlog.content =\\\\\\\\n            result[communityAccount][\\\\\\\\\\\\\\\"blog\\\\\\\\\\\\\\\"][initialData.id][\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"];\\\\\\\\n\\\\\\\\n          let theyMatch = true;\\\\\\\\n          let keys = Object.keys(submittedBlogData);\\\\\\\\n          for (const key of keys) {\\\\\\\\n            // Get the full data of the new blog and compare it to socialDB\\\\\\\\n            if (updatedBlog[key] !== submittedBlogData[key]) {\\\\\\\\n              theyMatch = false;\\\\\\\\n              break;\\\\\\\\n            }\\\\\\\\n          }\\\\\\\\n          if (theyMatch) {\\\\\\\\n            setSubmittedBlogData(null);\\\\\\\\n          }\\\\\\\\n        } else {\\\\\\\\n          // Create\\\\\\\\n          let blogArray = Object.keys(result).map(\\\\\\\\n            (blogKey) => result[communityAccount][\\\\\\\\\\\\\\\"blog\\\\\\\\\\\\\\\"][blogKey]\\\\\\\\n          );\\\\\\\\n\\\\\\\\n          if (\\\\\\\\n            blogArray.length &&\\\\\\\\n            blogArray.find(\\\\\\\\n              (blog) =>\\\\\\\\n                blog.metadata.title === submittedBlogData.title &&\\\\\\\\n                blog.metadata.description === submittedBlogData.description\\\\\\\\n            )\\\\\\\\n          ) {\\\\\\\\n            setSubmittedBlogData(null);\\\\\\\\n          }\\\\\\\\n        }\\\\\\\\n      } catch (e) {\\\\\\\\n        console.log(\\\\\\\\\\\\\\\"Error in useEffect checkForNewOrUpdatedBlogInSocialDB\\\\\\\\\\\\\\\", e);\\\\\\\\n      }\\\\\\\\n      setTimeout(() => checkForNewOrUpdatedBlogInSocialDB(), 1000);\\\\\\\\n    });\\\\\\\\n  };\\\\\\\\n  if (submittedBlogData) {\\\\\\\\n    checkForNewOrUpdatedBlogInSocialDB();\\\\\\\\n  }\\\\\\\\n}, [submittedBlogData]);\\\\\\\\n\\\\\\\\nconst LoadingButtonSpinner = (\\\\\\\\n  <span\\\\\\\\n    class=\\\\\\\\\\\\\\\"submit-blog-loading-indicator spinner-border spinner-border-sm\\\\\\\\\\\\\\\"\\\\\\\\n    role=\\\\\\\\\\\\\\\"status\\\\\\\\\\\\\\\"\\\\\\\\n    aria-hidden=\\\\\\\\\\\\\\\"true\\\\\\\\\\\\\\\"\\\\\\\\n  ></span>\\\\\\\\n);\\\\\\\\n\\\\\\\\nconst SubmitBtn = () => {\\\\\\\\n  const btnOptions = [\\\\\\\\n    {\\\\\\\\n      iconColor: \\\\\\\\\\\\\\\"grey\\\\\\\\\\\\\\\",\\\\\\\\n      label: \\\\\\\\\\\\\\\"Save Draft\\\\\\\\\\\\\\\",\\\\\\\\n      description:\\\\\\\\n        \\\\\\\\\\\\\\\"The author can still edit the blog before sharing it with the community.\\\\\\\\\\\\\\\",\\\\\\\\n      value: \\\\\\\\\\\\\\\"DRAFT\\\\\\\\\\\\\\\",\\\\\\\\n    },\\\\\\\\n    {\\\\\\\\n      iconColor: \\\\\\\\\\\\\\\"bg-devhub-green\\\\\\\\\\\\\\\",\\\\\\\\n      label: \\\\\\\\\\\\\\\"Publish\\\\\\\\\\\\\\\",\\\\\\\\n      description:\\\\\\\\n        \\\\\\\\\\\\\\\"The blog will be shared with the community and can be viewed by everyone.\\\\\\\\\\\\\\\",\\\\\\\\n      value: \\\\\\\\\\\\\\\"PUBLISH\\\\\\\\\\\\\\\",\\\\\\\\n    },\\\\\\\\n  ];\\\\\\\\n\\\\\\\\n  const handleOptionClick = (option) => {\\\\\\\\n    setDraftBtnOpen(false);\\\\\\\\n    setSelectedStatus(option.value);\\\\\\\\n    setSubmittedBlogData(null);\\\\\\\\n    handleSubmit(option.value);\\\\\\\\n  };\\\\\\\\n\\\\\\\\n  const toggleDropdown = () => {\\\\\\\\n    setDraftBtnOpen(!isDraftBtnOpen);\\\\\\\\n    setSubmittedBlogData(null);\\\\\\\\n  };\\\\\\\\n\\\\\\\\n  const handleSubmit = (status) => {\\\\\\\\n    // Set the title for dont ask me again check\\\\\\\\n    setSubmittedBlogData({\\\\\\\\n      title,\\\\\\\\n      subtitle,\\\\\\\\n      description,\\\\\\\\n      author,\\\\\\\\n      date,\\\\\\\\n      content,\\\\\\\\n      category,\\\\\\\\n      community: handle,\\\\\\\\n      publishedAt,\\\\\\\\n      status,\\\\\\\\n    });\\\\\\\\n    handlePublish(status);\\\\\\\\n  };\\\\\\\\n\\\\\\\\n  const selectedOption = btnOptions.find((i) => i.value === selectedStatus);\\\\\\\\n\\\\\\\\n  return (\\\\\\\\n    <DropdownBtnContainer>\\\\\\\\n      <div\\\\\\\\n        className=\\\\\\\\\\\\\\\"custom-select shadow-sm\\\\\\\\\\\\\\\"\\\\\\\\n        tabIndex=\\\\\\\\\\\\\\\"0\\\\\\\\\\\\\\\"\\\\\\\\n        onBlur={() => setDraftBtnOpen(false)}\\\\\\\\n      >\\\\\\\\n        <div\\\\\\\\n          data-testid=\\\\\\\\\\\\\\\"parent-submit-blog-button\\\\\\\\\\\\\\\"\\\\\\\\n          className={`select-header d-flex gap-1 align-items-center submit-draft-button ${\\\\\\\\n            shouldBeDisabled() ? \\\\\\\\\\\\\\\"disabled\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n          }`}\\\\\\\\n        >\\\\\\\\n          <div\\\\\\\\n            onClick={() =>\\\\\\\\n              !shouldBeDisabled() && handleSubmit(selectedOption.value)\\\\\\\\n            }\\\\\\\\n            className=\\\\\\\\\\\\\\\"py-2.5 px-2 d-flex gap-2 align-items-center \\\\\\\\\\\\\\\"\\\\\\\\n            data-testid=\\\\\\\\\\\\\\\"submit-blog-button\\\\\\\\\\\\\\\"\\\\\\\\n          >\\\\\\\\n            {submittedBlogData ? (\\\\\\\\n              LoadingButtonSpinner\\\\\\\\n            ) : (\\\\\\\\n              <div className={\\\\\\\\\\\\\\\"circle \\\\\\\\\\\\\\\" + selectedOption.iconColor}></div>\\\\\\\\n            )}\\\\\\\\n            <div className={`selected-option`}>{selectedOption.label}</div>\\\\\\\\n          </div>\\\\\\\\n          <div\\\\\\\\n            className=\\\\\\\\\\\\\\\"h-100 py-2.5 px-2\\\\\\\\\\\\\\\"\\\\\\\\n            style={{ borderLeft: \\\\\\\\\\\\\\\"1px solid #ccc\\\\\\\\\\\\\\\" }}\\\\\\\\n            onClick={toggleDropdown}\\\\\\\\n          >\\\\\\\\n            <i\\\\\\\\n              data-testid=\\\\\\\\\\\\\\\"toggle-dropdown\\\\\\\\\\\\\\\"\\\\\\\\n              class={`bi bi-chevron-${isDraftBtnOpen ? \\\\\\\\\\\\\\\"up\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"down\\\\\\\\\\\\\\\"}`}\\\\\\\\n            ></i>\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n\\\\\\\\n        {isDraftBtnOpen && (\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"options-card\\\\\\\\\\\\\\\">\\\\\\\\n            {btnOptions.map((option) => (\\\\\\\\n              <div\\\\\\\\n                key={option.value}\\\\\\\\n                className={`option ${\\\\\\\\n                  selectedOption.value === option.value ? \\\\\\\\\\\\\\\"selected\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n                }`}\\\\\\\\n                onClick={() => handleOptionClick(option)}\\\\\\\\n                data-testid={\\\\\\\\\\\\\\\"submit-button-option-\\\\\\\\\\\\\\\" + option.value}\\\\\\\\n              >\\\\\\\\n                <div className={`d-flex gap-2 align-items-center`}>\\\\\\\\n                  <div className={\\\\\\\\\\\\\\\"circle \\\\\\\\\\\\\\\" + option.iconColor}></div>\\\\\\\\n                  <div className=\\\\\\\\\\\\\\\"fw-bold\\\\\\\\\\\\\\\">{option.label}</div>\\\\\\\\n                </div>\\\\\\\\n                <div className=\\\\\\\\\\\\\\\"text-muted text-xs\\\\\\\\\\\\\\\">{option.description}</div>\\\\\\\\n              </div>\\\\\\\\n            ))}\\\\\\\\n          </div>\\\\\\\\n        )}\\\\\\\\n      </div>\\\\\\\\n    </DropdownBtnContainer>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\n\\\\\\\\nconst Container = styled.div`\\\\\\\\n  width: 100%;\\\\\\\\n  margin: 0 auto;\\\\\\\\n  text-align: left;\\\\\\\\n`;\\\\\\\\n\\\\\\\\nconst shouldBeDisabled = () => {\\\\\\\\n  return hasEmptyFields() || submittedBlogData;\\\\\\\\n};\\\\\\\\n\\\\\\\\nconst hasEmptyFields = () => {\\\\\\\\n  return (\\\\\\\\n    content.trim() === \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\" ||\\\\\\\\n    title.trim() === \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\" ||\\\\\\\\n    subtitle.trim() === \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\" ||\\\\\\\\n    description.trim() === \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\" ||\\\\\\\\n    author.trim() === \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\" ||\\\\\\\\n    date === \\\\\\\\\\\\\\\"NaN-NaN-NaN\\\\\\\\\\\\\\\" ||\\\\\\\\n    category.trim() === \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n  );\\\\\\\\n};\\\\\\\\n\\\\\\\\nconst unsavedChanges = () => {\\\\\\\\n  return (\\\\\\\\n    initialData.content !== content ||\\\\\\\\n    initialData.title !== title ||\\\\\\\\n    initialData.subtitle !== subtitle ||\\\\\\\\n    initialData.description !== description ||\\\\\\\\n    initialData.author !== author ||\\\\\\\\n    initialData.category !== category ||\\\\\\\\n    initialData.publishedAt !== date ||\\\\\\\\n    initialData.status !== selectedStatus\\\\\\\\n  );\\\\\\\\n};\\\\\\\\n\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (unsavedChanges()) {\\\\\\\\n    setSelectedItemChanged(true);\\\\\\\\n  } else {\\\\\\\\n    setSelectedItemChanged(false);\\\\\\\\n  }\\\\\\\\n}, [\\\\\\\\n  content,\\\\\\\\n  title,\\\\\\\\n  subtitle,\\\\\\\\n  description,\\\\\\\\n  author,\\\\\\\\n  category,\\\\\\\\n  date,\\\\\\\\n  selectedStatus,\\\\\\\\n]);\\\\\\\\n\\\\\\\\nconst handlePublish = (status) => {\\\\\\\\n  onSubmit &&\\\\\\\\n    onSubmit(\\\\\\\\n      {\\\\\\\\n        id: data.id || undefined,\\\\\\\\n        title,\\\\\\\\n        subtitle,\\\\\\\\n        description,\\\\\\\\n        date,\\\\\\\\n        content,\\\\\\\\n        status,\\\\\\\\n        author,\\\\\\\\n        category,\\\\\\\\n        community: handle,\\\\\\\\n      },\\\\\\\\n      data.id !== undefined\\\\\\\\n    );\\\\\\\\n};\\\\\\\\n\\\\\\\\nfunction handleDelete() {\\\\\\\\n  setSubmittedBlogDeleted(initialData.id);\\\\\\\\n  onDelete(data.id);\\\\\\\\n}\\\\\\\\n\\\\\\\\nconst tabs = [\\\\\\\\n  { name: \\\\\\\\\\\\\\\"Edit\\\\\\\\\\\\\\\", value: \\\\\\\\\\\\\\\"edit\\\\\\\\\\\\\\\", testId: \\\\\\\\\\\\\\\"edit-blog-toggle\\\\\\\\\\\\\\\" },\\\\\\\\n  { name: \\\\\\\\\\\\\\\"Preview\\\\\\\\\\\\\\\", value: \\\\\\\\\\\\\\\"preview\\\\\\\\\\\\\\\", testId: \\\\\\\\\\\\\\\"preview-page-blog-toggle\\\\\\\\\\\\\\\" },\\\\\\\\n];\\\\\\\\n\\\\\\\\nreturn (\\\\\\\\n  <Container>\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"flex flex-wrap-reverse gap-1 justify-between w-100 mb-4\\\\\\\\\\\\\\\">\\\\\\\\n      <div\\\\\\\\n        className=\\\\\\\\\\\\\\\"flex cursor-pointer align-items-center justify-content-center gap-1 px-4\\\\\\\\\\\\\\\"\\\\\\\\n        onClick={onCancel}\\\\\\\\n      >\\\\\\\\n        <i class=\\\\\\\\\\\\\\\"bi bi-arrow-left\\\\\\\\\\\\\\\"></i>\\\\\\\\n      </div>\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"sm:hidden grow rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-indigo-600\\\\\\\\\\\\\\\">\\\\\\\\n        <label\\\\\\\\n          htmlFor=\\\\\\\\\\\\\\\"tabs\\\\\\\\\\\\\\\"\\\\\\\\n          className=\\\\\\\\\\\\\\\"sr-only block text-xs font-medium text-gray-900\\\\\\\\\\\\\\\"\\\\\\\\n        >\\\\\\\\n          Select a tab\\\\\\\\n        </label>\\\\\\\\n        <select\\\\\\\\n          id=\\\\\\\\\\\\\\\"tabs\\\\\\\\\\\\\\\"\\\\\\\\n          name=\\\\\\\\\\\\\\\"tabs\\\\\\\\\\\\\\\"\\\\\\\\n          className=\\\\\\\\\\\\\\\"block w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 h-9 border-gray-300 block w-full border-0 p-0 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6\\\\\\\\\\\\\\\"\\\\\\\\n          defaultValue={tabs.find((tab) => tab.value === previewMode).name}\\\\\\\\n        >\\\\\\\\n          {tabs.map((tab) => {\\\\\\\\n            return (\\\\\\\\n              <option key={tab.name} onClick={() => setPreviewMode(tab.value)}>\\\\\\\\n                {tab.name}\\\\\\\\n              </option>\\\\\\\\n            );\\\\\\\\n          })}\\\\\\\\n        </select>\\\\\\\\n      </div>\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"hidden sm:block\\\\\\\\\\\\\\\">\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"-mb-px flex gap-x-3 px-2\\\\\\\\\\\\\\\" aria-label=\\\\\\\\\\\\\\\"Tabs\\\\\\\\\\\\\\\">\\\\\\\\n          {tabs.map((tab) => {\\\\\\\\n            return (\\\\\\\\n              <a\\\\\\\\n                data-testid={tab.testId}\\\\\\\\n                key={tab.name}\\\\\\\\n                onClick={() => setPreviewMode(tab.value)}\\\\\\\\n                className={`${\\\\\\\\n                  tab.value === previewMode ? \\\\\\\\\\\\\\\"hidden\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n                } rounded-md px-3.5 py-2.5 text-sm cursor-pointer font-semibold whitespace-nowrap overflow-hidden truncate text-devhub-gray`}\\\\\\\\n              >\\\\\\\\n                {tab.name}\\\\\\\\n              </a>\\\\\\\\n            );\\\\\\\\n          })}\\\\\\\\n        </div>\\\\\\\\n      </div>\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"flex gap-x-3\\\\\\\\\\\\\\\">\\\\\\\\n        <p className=\\\\\\\\\\\\\\\"text-nowrap text-sm text-devhub-gray font-semibold py-2.5 px-1\\\\\\\\\\\\\\\">\\\\\\\\n          Status:{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n          <span\\\\\\\\n            className={`px-3 py-2 rounded-full font-semibold text-xs ${\\\\\\\\n              initialData.status == \\\\\\\\\\\\\\\"PUBLISH\\\\\\\\\\\\\\\"\\\\\\\\n                ? \\\\\\\\\\\\\\\"text-green-600 bg-green-50\\\\\\\\\\\\\\\"\\\\\\\\n                : \\\\\\\\\\\\\\\"text-blue-600 bg-blue-50\\\\\\\\\\\\\\\"\\\\\\\\n            }`}\\\\\\\\n          >\\\\\\\\n            {initialData.status === \\\\\\\\\\\\\\\"PUBLISH\\\\\\\\\\\\\\\" ? (\\\\\\\\n              <Link\\\\\\\\n                to={href({\\\\\\\\n                  widgetSrc: \\\\\\\\\\\\\\\"devhub.near/widget/app\\\\\\\\\\\\\\\",\\\\\\\\n                  params: {\\\\\\\\n                    page: \\\\\\\\\\\\\\\"blogv2\\\\\\\\\\\\\\\",\\\\\\\\n                    id: initialData.id,\\\\\\\\n                    community: handle,\\\\\\\\n                  },\\\\\\\\n                })}\\\\\\\\n                target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n                className=\\\\\\\\\\\\\\\"cursor-pointer underline\\\\\\\\\\\\\\\"\\\\\\\\n              >\\\\\\\\n                Published\\\\\\\\n              </Link>\\\\\\\\n            ) : (\\\\\\\\n              <>Draft</>\\\\\\\\n            )}\\\\\\\\n          </span>\\\\\\\\n        </p>\\\\\\\\n      </div>\\\\\\\\n    </div>\\\\\\\\n\\\\\\\\n    <div>\\\\\\\\n      {previewMode === \\\\\\\\\\\\\\\"edit\\\\\\\\\\\\\\\" && (\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"tab-pane show active p-4\\\\\\\\\\\\\\\" id=\\\\\\\\\\\\\\\"edit\\\\\\\\\\\\\\\">\\\\\\\\n          <Widget\\\\\\\\n            src=\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.addon.blogv2.editor.form\\\\\\\\\\\\\\\"\\\\\\\\n            props={{\\\\\\\\n              title,\\\\\\\\n              setTitle,\\\\\\\\n              subtitle,\\\\\\\\n              setSubtitle,\\\\\\\\n              options: selectOptions,\\\\\\\\n              category,\\\\\\\\n              setCategory,\\\\\\\\n              description,\\\\\\\\n              setDescription,\\\\\\\\n              author,\\\\\\\\n              setAuthor,\\\\\\\\n              date,\\\\\\\\n              setDate,\\\\\\\\n              content,\\\\\\\\n              setContent,\\\\\\\\n              addonParameters,\\\\\\\\n            }}\\\\\\\\n          />\\\\\\\\n          {/* Show delete button */}\\\\\\\\n          <div\\\\\\\\n            className={\\\\\\\\\\\\\\\"d-flex align-items-center justify-between gap-3 mt-4\\\\\\\\\\\\\\\"}\\\\\\\\n          >\\\\\\\\n            {data.id ? (\\\\\\\\n              <>\\\\\\\\n                <Widget\\\\\\\\n                  src={\\\\\\\\n                    \\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.addon.blogv2.editor.ConfirmModal\\\\\\\\\\\\\\\"\\\\\\\\n                  }\\\\\\\\n                  props={{\\\\\\\\n                    isOpen: isDeleteModalOpen,\\\\\\\\n                    onCancelClick: () => setDeleteModal(false),\\\\\\\\n                    onConfirmClick: () => {\\\\\\\\n                      setDeleteModal(false);\\\\\\\\n                      handleDelete();\\\\\\\\n                    },\\\\\\\\n                    title: \\\\\\\\\\\\\\\"Are you sure you want to delete this blog?\\\\\\\\\\\\\\\",\\\\\\\\n                    content: \\\\\\\\\\\\\\\"This will permanently remove your blog.\\\\\\\\\\\\\\\",\\\\\\\\n                    confirmLabel: \\\\\\\\\\\\\\\"Ready to Delete\\\\\\\\\\\\\\\",\\\\\\\\n                    cancelLabel: \\\\\\\\\\\\\\\"Cancel\\\\\\\\\\\\\\\",\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n                <Widget\\\\\\\\n                  src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n                  props={{\\\\\\\\n                    classNames: {\\\\\\\\n                      root: \\\\\\\\\\\\\\\"btn-outline-danger shadow-none border-0 btn-sm\\\\\\\\\\\\\\\",\\\\\\\\n                    },\\\\\\\\n                    label: (\\\\\\\\n                      <div className=\\\\\\\\\\\\\\\"d-flex align-items-center gap-1\\\\\\\\\\\\\\\">\\\\\\\\n                        <i class=\\\\\\\\\\\\\\\"bi bi-trash3\\\\\\\\\\\\\\\"></i> Delete\\\\\\\\n                      </div>\\\\\\\\n                    ),\\\\\\\\n                    testId: \\\\\\\\\\\\\\\"delete-blog-button\\\\\\\\\\\\\\\",\\\\\\\\n                    disabled: submittedBlogDeleted,\\\\\\\\n                    onClick: () => setDeleteModal(true),\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              </>\\\\\\\\n            ) : (\\\\\\\\n              <div></div>\\\\\\\\n            )}\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"flex gap-x-3 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n              <Widget\\\\\\\\n                src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n                props={{\\\\\\\\n                  classNames: {\\\\\\\\n                    root: \\\\\\\\\\\\\\\"d-flex text-muted fw-bold btn-outline shadow-none border-0 btn-sm\\\\\\\\\\\\\\\",\\\\\\\\n                  },\\\\\\\\n                  label: \\\\\\\\\\\\\\\"Cancel\\\\\\\\\\\\\\\",\\\\\\\\n                  onClick: onCancel,\\\\\\\\n                }}\\\\\\\\n              />\\\\\\\\n              <SubmitBtn />\\\\\\\\n            </div>\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n      )}\\\\\\\\n      {previewMode === \\\\\\\\\\\\\\\"preview\\\\\\\\\\\\\\\" && (\\\\\\\\n        <div\\\\\\\\n          className=\\\\\\\\\\\\\\\"w-100 h-100 p-4 flex flex-column gap-4\\\\\\\\\\\\\\\"\\\\\\\\n          id=\\\\\\\\\\\\\\\"preview\\\\\\\\\\\\\\\"\\\\\\\\n          style={{ position: \\\\\\\\\\\\\\\"relative\\\\\\\\\\\\\\\" }}\\\\\\\\n        >\\\\\\\\n          <Card\\\\\\\\n            data={{\\\\\\\\n              title,\\\\\\\\n              subtitle,\\\\\\\\n              description,\\\\\\\\n              publishedAt: date,\\\\\\\\n              content,\\\\\\\\n              author,\\\\\\\\n              category,\\\\\\\\n              community: handle,\\\\\\\\n            }}\\\\\\\\n            addonParameters={addonParameters}\\\\\\\\n          />\\\\\\\\n\\\\\\\\n          <Widget\\\\\\\\n            src=\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.addon.blogv2.Page\\\\\\\\\\\\\\\"\\\\\\\\n            props={{\\\\\\\\n              data: {\\\\\\\\n                title,\\\\\\\\n                subtitle,\\\\\\\\n                description,\\\\\\\\n                publishedAt: date,\\\\\\\\n                content,\\\\\\\\n                author,\\\\\\\\n                category,\\\\\\\\n                community: handle,\\\\\\\\n                communityAddonId,\\\\\\\\n              },\\\\\\\\n              community: handle,\\\\\\\\n            }}\\\\\\\\n          />\\\\\\\\n        </div>\\\\\\\\n      )}\\\\\\\\n    </div>\\\\\\\\n  </Container>\\\\\\\\n);\\\\\\\\n\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 768241728604900000000
+    }
+  },
+  {
+    "id": "6682893077",
+    "receipt_id": "DEfTgHYJbzz5DgKfE6uWH2EN4CX1dUQngynKABi9AA9m",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "B8tg5U39dw8QvtcdFdpYiyexMm6ZWt7uFWHhYWswB4uC",
+      "block_height": 123517384,
+      "block_timestamp": 1721121045055888600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "FCTNc4twj2TsrDbdDXH64V5sZ2Bi5b5LH87fpJTuCJH",
+    "included_in_block_hash": "FCCR4zPGxRXEUPtqezpHiqkhUTn6ZgG4YRJF5gG24piK",
+    "block_timestamp": "1721121043176312072",
+    "block": {
+      "block_height": 123517382
+    },
+    "receipt_conversion_tokens_burnt": "35345566800200000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.8736260333134455e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 768241728604900000000
+    }
+  },
+  {
+    "id": "6690475272",
+    "receipt_id": "51akDsC62tiYumTRLy75aekPD6o4fxYVTfjG7wEncWcF",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Cja73NcBW2eaPsLg4bQT3Kb4xLTLP5J5g1DXaQSFDmoN",
+      "block_height": 123537086,
+      "block_timestamp": 1721143229224150500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5195912150408,
+      "tokens_burnt": 519591215040800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "BpgzzXvH1pY8giaQ9YnGdnBAPMw8vDfRaChe1kbCp8NT",
+    "included_in_block_hash": "CVZy8C3vSucZZLHQPUWZoB3QuHwJXCVGasNVnPHDQWYC",
+    "block_timestamp": "1721143227918105577",
+    "block": {
+      "block_height": 123537085
+    },
+    "receipt_conversion_tokens_burnt": "31413453267800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 519591215040800000000,
+        "args": "{\"body\": {\"name\": \"DevHub Fin Ops 06/17/24 - 06/28/24 \", \"summary\": \"Oversee that proposals flow thru the payment process efficiently.  Recommend new procedures to improve the proposal payment process.\", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": null, \"description\": \"SUMMARY\\\\\\\\nAudit and reconciliation of 2024 DevHub proposals submitted for payment processing.\\\\\\\\nDESCRIPTION\\\\\\\\nThe process to pay DevHub contributor proposals is fractured. I was brought on board to audit the current system in place, audit the records as they currently exist, propose improvements based on my findings, collaborate to implement an improved process and serve as the ongoing liason between DevHub contributors and NF as it relates to proposal payment processing.\\\\\\\\n\\\\\\\\nWeek #4 6/17/24 - 6/21/24\\\\\\\\n06/17/24 - Email, Slack, CRM updates, Research issues\\\\\\\\n06/18/24 - CRM updates, Zoom meeting w/Ori re:bottlenecks, TG w/Dan and Ori\\\\\\\\n06/19/24 - TG w/Dan, Research issues, Email to Ori\\\\\\\\n06/20/24 - Figma flow, Draft meeting agenda, Meeting re:T&C w/legal\\\\\\\\n06/21/24 - Meeting w/Ori re:o/s proposal issues, TG w/Dan, CRM updates, Slack w/Philipp, Review T&C and TG Ori w/comments\\\\\\\\nTotal 15.5 hours\\\\\\\\n\\\\\\\\nWeek #5 06/24/24 - 06/28/24\\\\\\\\n06/25/24 - Meeting w/Maria re:events CRM, TG w/Luca, CRM updates and research new errors, TG w/Dan\\\\\\\\n06/26/24 - CRM updates\\\\\\\\n06/27/24 - TG w/Dan and Luca, Slack w/Nargiza, CRM updates, TG w/Ori for access to Events CRM\\\\\\\\n06/28/24 - Meeting w/Ori, CRM updates\\\\\\\\nTotal 9 hours\\\\\\\\n\\\\\\\\nTotal 24.5 hours\\\\\\\\n\\\\\\\\nResults:\\\\\\\\n\\\\\\\\n2024 proposals are reconciled between DevHub portal and CRM.  Proposals are flowing timely.  Ideas are flowing back and forth to improve the process further.\\\\\\\\n\\\\\\\\nThere are:\\\\\\\\n5 proposals in CRM that are from the old system showing as Invoice Pending that are still in the resolution stage\\\\\\\\n\\\\\\\\n\\\\\\\\nTotal hours: 24.5\\\\\\\\nRate: $80/hour\\\\\\\\nRate determination is below the low end of the average hourly contract rate ($87 - $162) for an accountant with the same years of experience. That average rate does not account for my 5 years of blockchain specific experience. I\\\\\\\\\\\\'m not fulfilling all the duties that typically fall under this type of role, that is why I proposed a rate lower than the low end of the average.\\\\\\\\n\\\\\\\\nhttps://www.salary.com/research/salary/benchmark/controller-hourly-wages\", \"linked_proposals\": [], \"receiver_account\": \"9bd73bc9ba6ff289e2deb597dd6fe83dc0056af7a2937d6dec119660ba0146a4\", \"requested_sponsor\": \"theori.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"1960\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [], \"accepted_terms_and_conditions_version\": 123536892}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6860495827875e+21
+    }
+  },
+  {
+    "id": "6690475494",
+    "receipt_id": "4vvugRdoywtt8ArFTaei5edRWmGQZcyGSVvh7Sx7ZCmD",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HmJxEzaCZx2kvkPCwi6Wu258CrXyfDAbb8XsQAorT2ZG",
+      "block_height": 123537087,
+      "block_timestamp": 1721143230564882200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4469947260146,
+      "tokens_burnt": 446994726014600000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "BpgzzXvH1pY8giaQ9YnGdnBAPMw8vDfRaChe1kbCp8NT",
+    "included_in_block_hash": "CVZy8C3vSucZZLHQPUWZoB3QuHwJXCVGasNVnPHDQWYC",
+    "block_timestamp": "1721143227918105577",
+    "block": {
+      "block_height": 123537085
+    },
+    "receipt_conversion_tokens_burnt": "31413453267800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 446994726014600000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *DevDAO Operations* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @tfdevhub.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}DevHub Fin Ops 06/17/24 - 06/28/24 \\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nOversee that proposals flow thru the payment process efficiently.  Recommend new procedures to improve the proposal payment process.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=150)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6860495827875e+21
+    }
+  },
+  {
+    "id": "6690475498",
+    "receipt_id": "9atMHQRCCzGffnpQaSRRfVLZcjsB4bxTpmxz17EpSgm2",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HmJxEzaCZx2kvkPCwi6Wu258CrXyfDAbb8XsQAorT2ZG",
+      "block_height": 123537087,
+      "block_timestamp": 1721143230564882200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3382006966288,
+      "tokens_burnt": 338200696628800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "BpgzzXvH1pY8giaQ9YnGdnBAPMw8vDfRaChe1kbCp8NT",
+    "included_in_block_hash": "CVZy8C3vSucZZLHQPUWZoB3QuHwJXCVGasNVnPHDQWYC",
+    "block_timestamp": "1721143227918105577",
+    "block": {
+      "block_height": 123537085
+    },
+    "receipt_conversion_tokens_burnt": "31413453267800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 338200696628800000000,
+        "args": "{\"proposal\": {\"id\": 150, \"snapshot\": {\"name\": \"DevHub Fin Ops 06/17/24 - 06/28/24 \", \"labels\": [], \"summary\": \"Oversee that proposals flow thru the payment process efficiently.  Recommend new procedures to improve the proposal payment process.\", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"editor_id\": \"tfdevhub.near\", \"timestamp\": \"1721143229224150574\", \"supervisor\": null, \"description\": \"SUMMARY\\\\\\\\nAudit and reconciliation of 2024 DevHub proposals submitted for payment processing.\\\\\\\\nDESCRIPTION\\\\\\\\nThe process to pay DevHub contributor proposals is fractured. I was brought on board to audit the current system in place, audit the records as they currently exist, propose improvements based on my findings, collaborate to implement an improved process and serve as the ongoing liason between DevHub contributors and NF as it relates to proposal payment processing.\\\\\\\\n\\\\\\\\nWeek #4 6/17/24 - 6/21/24\\\\\\\\n06/17/24 - Email, Slack, CRM updates, Research issues\\\\\\\\n06/18/24 - CRM updates, Zoom meeting w/Ori re:bottlenecks, TG w/Dan and Ori\\\\\\\\n06/19/24 - TG w/Dan, Research issues, Email to Ori\\\\\\\\n06/20/24 - Figma flow, Draft meeting agenda, Meeting re:T&C w/legal\\\\\\\\n06/21/24 - Meeting w/Ori re:o/s proposal issues, TG w/Dan, CRM updates, Slack w/Philipp, Review T&C and TG Ori w/comments\\\\\\\\nTotal 15.5 hours\\\\\\\\n\\\\\\\\nWeek #5 06/24/24 - 06/28/24\\\\\\\\n06/25/24 - Meeting w/Maria re:events CRM, TG w/Luca, CRM updates and research new errors, TG w/Dan\\\\\\\\n06/26/24 - CRM updates\\\\\\\\n06/27/24 - TG w/Dan and Luca, Slack w/Nargiza, CRM updates, TG w/Ori for access to Events CRM\\\\\\\\n06/28/24 - Meeting w/Ori, CRM updates\\\\\\\\nTotal 9 hours\\\\\\\\n\\\\\\\\nTotal 24.5 hours\\\\\\\\n\\\\\\\\nResults:\\\\\\\\n\\\\\\\\n2024 proposals are reconciled between DevHub portal and CRM.  Proposals are flowing timely.  Ideas are flowing back and forth to improve the process further.\\\\\\\\n\\\\\\\\nThere are:\\\\\\\\n5 proposals in CRM that are from the old system showing as Invoice Pending that are still in the resolution stage\\\\\\\\n\\\\\\\\n\\\\\\\\nTotal hours: 24.5\\\\\\\\nRate: $80/hour\\\\\\\\nRate determination is below the low end of the average hourly contract rate ($87 - $162) for an accountant with the same years of experience. That average rate does not account for my 5 years of blockchain specific experience. I\\\\\\\\\\\\'m not fulfilling all the duties that typically fall under this type of role, that is why I proposed a rate lower than the low end of the average.\\\\\\\\n\\\\\\\\nhttps://www.salary.com/research/salary/benchmark/controller-hourly-wages\", \"linked_proposals\": [], \"receiver_account\": \"9bd73bc9ba6ff289e2deb597dd6fe83dc0056af7a2937d6dec119660ba0146a4\", \"requested_sponsor\": \"theori.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"1960\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"tfdevhub.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6860495827875e+21
+    }
+  },
+  {
+    "id": "6690475501",
+    "receipt_id": "HD2JKBbASq6Tb372sp6MzAouv93ALypcQZPyrnRytgbJ",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HmJxEzaCZx2kvkPCwi6Wu258CrXyfDAbb8XsQAorT2ZG",
+      "block_height": 123537087,
+      "block_timestamp": 1721143230564882200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3498494918355,
+      "tokens_burnt": 349849491835500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "BpgzzXvH1pY8giaQ9YnGdnBAPMw8vDfRaChe1kbCp8NT",
+    "included_in_block_hash": "CVZy8C3vSucZZLHQPUWZoB3QuHwJXCVGasNVnPHDQWYC",
+    "block_timestamp": "1721143227918105577",
+    "block": {
+      "block_height": 123537085
+    },
+    "receipt_conversion_tokens_burnt": "31413453267800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349849491835500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":150,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6860495827875e+21
+    }
+  },
+  {
+    "id": "6691106985",
+    "receipt_id": "7T3TtznTtEBvnnAJXgoHgNiGHX3J9CiYL3Qa1aUDneXW",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7LYrxmP5r25td9xp77omoHYPZND5m452qQJeLZt3FjQ5",
+      "block_height": 123538632,
+      "block_timestamp": 1721145271512491800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5225032058189,
+      "tokens_burnt": 522503205818900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "62vrr6rBUTfPZNud7GLe2SqfwGYJkLJhMmgeGNdCsyMU",
+    "included_in_block_hash": "78dg9DTt4ju2MAmP4BjPbKjAqdmSMYbZfkdKdDaJGNo",
+    "block_timestamp": "1721145269694870853",
+    "block": {
+      "block_height": 123538631
+    },
+    "receipt_conversion_tokens_burnt": "31459737101600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 522503205818900000000,
+        "args": "{\"body\": {\"name\": \"DevHub Fin Ops - 07/01/24 - 07/12/24\", \"summary\": \"Oversee that proposals flow thru the payment process efficiently. Recommend new procedures to improve the proposal payment process.\", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": null, \"description\": \"DESCRIPTION\\\\\\\\nSUMMARY\\\\\\\\nAudit and reconciliation of 2024 DevHub proposals submitted for payment processing.\\\\\\\\nDESCRIPTION\\\\\\\\nThe process to pay DevHub contributor proposals is fractured. I was brought on board to audit the current system in place, audit the records as they currently exist, propose improvements based on my findings, collaborate to implement an improved process and serve as the ongoing liason between DevHub contributors and NF as it relates to proposal payment processing.\\\\\\\\n\\\\\\\\nWeek #6 07/01/24 - 07/05/24\\\\\\\\n07/01/24 - Email, Slack, CRM updates\\\\\\\\n07/02/24 - CRM updates, TG w/Dan and Ori, Slack w/Devin\\\\\\\\n07/03/24 - Email, slack, CRM review\\\\\\\\nTotal 5.5 hours\\\\\\\\n\\\\\\\\nWeek #7 07/08/24 - 07/12/24\\\\\\\\n07/08/24 - CRM updates, TG w/Ori & Dan, Meeting w/Ori\\\\\\\\n07/09/24 - CRM updates, TG w/Ori\\\\\\\\n07/10/24 - CRM updates, email response, TG w/Dan & Ori, Write up Treasury flow\\\\\\\\n07/12/24 - Meeting w/Ori, CRM updates, email response, Slack w/Natasha\\\\\\\\nTotal 12 hours\\\\\\\\n\\\\\\\\nTotal 17.5 hours\\\\\\\\n\\\\\\\\nResults:\\\\\\\\n\\\\\\\\n2024 proposals are reconciled between DevHub portal and CRM. Proposals are flowing timely. New T&C have been implemented eliminating the need to create Ironclad contracts.  This along with eliminating the KYC/B steps during the payment process, will drastically cut down on the steps necessary and the staff necessary to process a proposal payment.  Any proposals with a number after #144 will be processed in this new way.  Any proposals with a number prior to #144 will be processed the old way, i.e. creating the Ironclad agreement.  Ori and I are now working on how or if the Treasury system is implemented.\\\\\\\\n\\\\\\\\nThere are:\\\\\\\\n5 proposals in CRM that are from the old system showing as Invoice Pending that are still in the resolution stage.\\\\\\\\n\\\\\\\\nTotal hours: 17.5\\\\\\\\nRate: $80/hour\\\\\\\\nRate determination is below the low end of the average hourly contract rate ($87 - $162) for an accountant with the same years of experience. That average rate does not account for my 5 years of blockchain specific experience. I\\\\\\\\\\\\'m not fulfilling all the duties that typically fall under this type of role, that is why I proposed a rate lower than the low end of the average.\\\\\\\\n\\\\\\\\nhttps://www.salary.com/research/salary/benchmark/controller-hourly-wages\", \"linked_proposals\": [], \"receiver_account\": \"9bd73bc9ba6ff289e2deb597dd6fe83dc0056af7a2937d6dec119660ba0146a4\", \"requested_sponsor\": \"theori.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"1400\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [], \"accepted_terms_and_conditions_version\": 123538577}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6935102047002e+21
+    }
+  },
+  {
+    "id": "6691110119",
+    "receipt_id": "kfV1enDbu2dzBeNbwyMkzQmnEcdQ36KJAF8MWT2vpQq",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "G82hR4dK78urFQepCtYYJp5c6vkbWRJ4RPgMHQ5Y33hA",
+      "block_height": 123538634,
+      "block_timestamp": 1721145273472199000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4468498943054,
+      "tokens_burnt": 446849894305400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "62vrr6rBUTfPZNud7GLe2SqfwGYJkLJhMmgeGNdCsyMU",
+    "included_in_block_hash": "78dg9DTt4ju2MAmP4BjPbKjAqdmSMYbZfkdKdDaJGNo",
+    "block_timestamp": "1721145269694870853",
+    "block": {
+      "block_height": 123538631
+    },
+    "receipt_conversion_tokens_burnt": "31459737101600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 446849894305400000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *DevDAO Operations* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @tfdevhub.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}DevHub Fin Ops - 07/01/24 - 07/12/24\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nOversee that proposals flow thru the payment process efficiently. Recommend new procedures to improve the proposal payment process.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=151)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6935102047002e+21
+    }
+  },
+  {
+    "id": "6691110122",
+    "receipt_id": "F9F2WNbi6zSXyxkaMiGLLg2QgSmeHEDFhnw9MT64JbbU",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "G82hR4dK78urFQepCtYYJp5c6vkbWRJ4RPgMHQ5Y33hA",
+      "block_height": 123538634,
+      "block_timestamp": 1721145273472199000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3400559429860,
+      "tokens_burnt": 340055942986000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "62vrr6rBUTfPZNud7GLe2SqfwGYJkLJhMmgeGNdCsyMU",
+    "included_in_block_hash": "78dg9DTt4ju2MAmP4BjPbKjAqdmSMYbZfkdKdDaJGNo",
+    "block_timestamp": "1721145269694870853",
+    "block": {
+      "block_height": 123538631
+    },
+    "receipt_conversion_tokens_burnt": "31459737101600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 340055942986000000000,
+        "args": "{\"proposal\": {\"id\": 151, \"snapshot\": {\"name\": \"DevHub Fin Ops - 07/01/24 - 07/12/24\", \"labels\": [], \"summary\": \"Oversee that proposals flow thru the payment process efficiently. Recommend new procedures to improve the proposal payment process.\", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"editor_id\": \"tfdevhub.near\", \"timestamp\": \"1721145272356081692\", \"supervisor\": null, \"description\": \"DESCRIPTION\\\\\\\\nSUMMARY\\\\\\\\nAudit and reconciliation of 2024 DevHub proposals submitted for payment processing.\\\\\\\\nDESCRIPTION\\\\\\\\nThe process to pay DevHub contributor proposals is fractured. I was brought on board to audit the current system in place, audit the records as they currently exist, propose improvements based on my findings, collaborate to implement an improved process and serve as the ongoing liason between DevHub contributors and NF as it relates to proposal payment processing.\\\\\\\\n\\\\\\\\nWeek #6 07/01/24 - 07/05/24\\\\\\\\n07/01/24 - Email, Slack, CRM updates\\\\\\\\n07/02/24 - CRM updates, TG w/Dan and Ori, Slack w/Devin\\\\\\\\n07/03/24 - Email, slack, CRM review\\\\\\\\nTotal 5.5 hours\\\\\\\\n\\\\\\\\nWeek #7 07/08/24 - 07/12/24\\\\\\\\n07/08/24 - CRM updates, TG w/Ori & Dan, Meeting w/Ori\\\\\\\\n07/09/24 - CRM updates, TG w/Ori\\\\\\\\n07/10/24 - CRM updates, email response, TG w/Dan & Ori, Write up Treasury flow\\\\\\\\n07/12/24 - Meeting w/Ori, CRM updates, email response, Slack w/Natasha\\\\\\\\nTotal 12 hours\\\\\\\\n\\\\\\\\nTotal 17.5 hours\\\\\\\\n\\\\\\\\nResults:\\\\\\\\n\\\\\\\\n2024 proposals are reconciled between DevHub portal and CRM. Proposals are flowing timely. New T&C have been implemented eliminating the need to create Ironclad contracts.  This along with eliminating the KYC/B steps during the payment process, will drastically cut down on the steps necessary and the staff necessary to process a proposal payment.  Any proposals with a number after #144 will be processed in this new way.  Any proposals with a number prior to #144 will be processed the old way, i.e. creating the Ironclad agreement.  Ori and I are now working on how or if the Treasury system is implemented.\\\\\\\\n\\\\\\\\nThere are:\\\\\\\\n5 proposals in CRM that are from the old system showing as Invoice Pending that are still in the resolution stage.\\\\\\\\n\\\\\\\\nTotal hours: 17.5\\\\\\\\nRate: $80/hour\\\\\\\\nRate determination is below the low end of the average hourly contract rate ($87 - $162) for an accountant with the same years of experience. That average rate does not account for my 5 years of blockchain specific experience. I\\\\\\\\\\\\'m not fulfilling all the duties that typically fall under this type of role, that is why I proposed a rate lower than the low end of the average.\\\\\\\\n\\\\\\\\nhttps://www.salary.com/research/salary/benchmark/controller-hourly-wages\", \"linked_proposals\": [], \"receiver_account\": \"9bd73bc9ba6ff289e2deb597dd6fe83dc0056af7a2937d6dec119660ba0146a4\", \"requested_sponsor\": \"theori.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"1400\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"tfdevhub.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6935102047002e+21
+    }
+  },
+  {
+    "id": "6691110123",
+    "receipt_id": "AFfYYx75XFXxEvRWe1hMGGZV143ynvtJ8MNF7hDazbcF",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "G82hR4dK78urFQepCtYYJp5c6vkbWRJ4RPgMHQ5Y33hA",
+      "block_height": 123538634,
+      "block_timestamp": 1721145273472199000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3526414244883,
+      "tokens_burnt": 352641424488300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "62vrr6rBUTfPZNud7GLe2SqfwGYJkLJhMmgeGNdCsyMU",
+    "included_in_block_hash": "78dg9DTt4ju2MAmP4BjPbKjAqdmSMYbZfkdKdDaJGNo",
+    "block_timestamp": "1721145269694870853",
+    "block": {
+      "block_height": 123538631
+    },
+    "receipt_conversion_tokens_burnt": "31459737101600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352641424488300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":151,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6935102047002e+21
+    }
+  },
+  {
+    "id": "6707627294",
+    "receipt_id": "9WmJ298GM2ZTZoQ3N3y1vtFzFtsyGRrJZLJRFEtqsnE3",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HtT9qnZqShjrxKyLrZXUFVUePLBQbLNd5qHxCuKLPENv",
+      "block_height": 123587986,
+      "block_timestamp": 1721200230032036000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 10017631278685,
+      "tokens_burnt": 1.0017631278685e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "BsHDCH8nmRGuM57mij535jW2NYiV7smVSzdRf72C5Ri5",
+    "included_in_block_hash": "Cove8oT73kMv5J5DDn42RiB1muyD9C6bCTAgq8im2SQ",
+    "block_timestamp": "1721200228754733423",
+    "block": {
+      "block_height": 123587985
+    },
+    "receipt_conversion_tokens_burnt": "36526587139000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.0017631278685e+21,
+        "args": "{\"data\": {\"devhub.near\": {\"widget\": {\"devhub.entity.proposal.Feed\": {\"\": \"const { href } = VM.require(\\\\\\\\\\\\\\\"devhub.near/widget/core.lib.url\\\\\\\\\\\\\\\");\\\\\\\\n\\\\\\\\nif (!href) {\\\\\\\\n  return <p>Loading modules...</p>;\\\\\\\\n}\\\\\\\\n\\\\\\\\nconst Container = styled.div`\\\\\\\\n  .full-width-div {\\\\\\\\n    width: 100vw;\\\\\\\\n    position: relative;\\\\\\\\n    left: 50%;\\\\\\\\n    right: 50%;\\\\\\\\n    margin-left: -50vw;\\\\\\\\n    margin-right: -50vw;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .card.no-border {\\\\\\\\n    border-left: none !important;\\\\\\\\n    border-right: none !important;\\\\\\\\n    margin-bottom: -3.5rem;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    font-size: 13px;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .text-sm {\\\\\\\\n    font-size: 13px;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .bg-grey {\\\\\\\\n    background-color: #f4f4f4;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .border-bottom {\\\\\\\\n    border-bottom: 1px solid grey;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .cursor-pointer {\\\\\\\\n    cursor: pointer;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .proposal-card {\\\\\\\\n    border-left: none !important;\\\\\\\\n    border-right: none !important;\\\\\\\\n    border-bottom: none !important;\\\\\\\\n    &:hover {\\\\\\\\n      background-color: #f4f4f4;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .green-btn {\\\\\\\\n    background-color: #04a46e !important;\\\\\\\\n    border: none;\\\\\\\\n    color: white;\\\\\\\\n\\\\\\\\n    &:active {\\\\\\\\n      color: white;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    .green-btn {\\\\\\\\n      padding: 0.5rem 0.8rem !important;\\\\\\\\n      min-height: 32px;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  a.no-space {\\\\\\\\n    display: inline-block;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .text-wrap {\\\\\\\\n    overflow: hidden;\\\\\\\\n    white-space: normal;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .text-center {\\\\\\\\n    text-align: center;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .btn-grey-outline {\\\\\\\\n    background-color: #fafafa;\\\\\\\\n    border: 1px solid #e6e8eb;\\\\\\\\n    color: #11181c;\\\\\\\\n\\\\\\\\n    &:hover {\\\\\\\\n      background-color: #e6e8eb;\\\\\\\\n    }\\\\\\\\n\\\\\\\\n    &:active {\\\\\\\\n      border: 2px solid #e6e8eb;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\n\\\\\\\\nconst Heading = styled.div`\\\\\\\\n  font-size: 24px;\\\\\\\\n  font-weight: 700;\\\\\\\\n  width: 100%;\\\\\\\\n\\\\\\\\n  .text-normal {\\\\\\\\n    font-weight: normal !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    font-size: 18px;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\n\\\\\\\\nconst FeedItem = ({ proposal, index }) => {\\\\\\\\n  const accountId = proposal.author_id;\\\\\\\\n  const profile = Social.get(`${accountId}/profile/**`, \\\\\\\\\\\\\\\"final\\\\\\\\\\\\\\\");\\\\\\\\n  // We will have to get the proposal from the contract to get the block height.\\\\\\\\n  const blockHeight = parseInt(proposal.social_db_post_block_height);\\\\\\\\n  const item = {\\\\\\\\n    type: \\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\n    path: `devhub.near/post/main`,\\\\\\\\n    blockHeight: blockHeight,\\\\\\\\n  };\\\\\\\\n\\\\\\\\n  return (\\\\\\\\n    <a\\\\\\\\n      href={href({\\\\\\\\n        widgetSrc: \\\\\\\\\\\\\\\"devhub.near/widget/app\\\\\\\\\\\\\\\",\\\\\\\\n        params: {\\\\\\\\n          page: \\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\",\\\\\\\\n          id: proposal.proposal_id,\\\\\\\\n        },\\\\\\\\n      })}\\\\\\\\n      onClick={(e) => e.stopPropagation()}\\\\\\\\n      style={{ textDecoration: \\\\\\\\\\\\\\\"none\\\\\\\\\\\\\\\" }}\\\\\\\\n    >\\\\\\\\n      <div\\\\\\\\n        className={\\\\\\\\n          \\\\\\\\\\\\\\\"proposal-card d-flex justify-content-between gap-2 text-muted cursor-pointer p-3 w-100 flex-wrap flex-sm-nowrap \\\\\\\\\\\\\\\" +\\\\\\\\n          (index !== 0 && \\\\\\\\\\\\\\\" border\\\\\\\\\\\\\\\")\\\\\\\\n        }\\\\\\\\n      >\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"d-flex gap-4 w-100\\\\\\\\\\\\\\\">\\\\\\\\n          <Widget\\\\\\\\n            src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.Profile\\\\\\\\\\\\\\\"}\\\\\\\\n            props={{\\\\\\\\n              accountId,\\\\\\\\n            }}\\\\\\\\n          />\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-2 w-100 text-wrap\\\\\\\\\\\\\\\">\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center flex-wrap w-100\\\\\\\\\\\\\\\">\\\\\\\\n              <div className=\\\\\\\\\\\\\\\"h6 mb-0 text-black\\\\\\\\\\\\\\\">{proposal.name}</div>\\\\\\\\n              <Widget\\\\\\\\n                src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.CategoryTag\\\\\\\\\\\\\\\"}\\\\\\\\n                props={{\\\\\\\\n                  category: proposal.category,\\\\\\\\n                }}\\\\\\\\n              />\\\\\\\\n            </div>\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center flex-wrap flex-sm-nowrap text-sm w-100\\\\\\\\\\\\\\\">\\\\\\\\n              <div>#{proposal.proposal_id} \\\\\\\\u{ff65} </div>\\\\\\\\n              <div className=\\\\\\\\\\\\\\\"text-truncate\\\\\\\\\\\\\\\">\\\\\\\\n                By {profile.name ?? accountId} \\\\\\\\u{ff65}{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n              </div>\\\\\\\\n              <Widget\\\\\\\\n                src=\\\\\\\\\\\\\\\"near/widget/TimeAgo\\\\\\\\\\\\\\\"\\\\\\\\n                props={{\\\\\\\\n                  blockHeight,\\\\\\\\n                  blockTimestamp: proposal.timestamp,\\\\\\\\n                }}\\\\\\\\n              />\\\\\\\\n            </div>\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n              <Widget\\\\\\\\n                src=\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.LikeButton\\\\\\\\\\\\\\\"\\\\\\\\n                props={{\\\\\\\\n                  item,\\\\\\\\n                  proposalId: proposal.id,\\\\\\\\n                  notifyAccountId: accountId,\\\\\\\\n                }}\\\\\\\\n              />\\\\\\\\n\\\\\\\\n              <Widget\\\\\\\\n                src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.CommentIcon\\\\\\\\\\\\\\\"}\\\\\\\\n                props={{\\\\\\\\n                  item,\\\\\\\\n                  showOverlay: false,\\\\\\\\n                  onClick: () => {},\\\\\\\\n                }}\\\\\\\\n              />\\\\\\\\n            </div>\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"align-self-center\\\\\\\\\\\\\\\" style={{ minWidth: \\\\\\\\\\\\\\\"fit-content\\\\\\\\\\\\\\\" }}>\\\\\\\\n          <Widget\\\\\\\\n            src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.StatusTag\\\\\\\\\\\\\\\"}\\\\\\\\n            props={{\\\\\\\\n              timelineStatus: proposal.timeline.status,\\\\\\\\n            }}\\\\\\\\n          />\\\\\\\\n        </div>\\\\\\\\n      </div>\\\\\\\\n    </a>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\n\\\\\\\\nconst getProposal = (proposal_id) => {\\\\\\\\n  return Near.asyncView(\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"get_proposal\\\\\\\\\\\\\\\", {\\\\\\\\n    proposal_id,\\\\\\\\n  });\\\\\\\\n};\\\\\\\\n\\\\\\\\nconst FeedPage = () => {\\\\\\\\n  const QUERYAPI_ENDPOINT = `https://near-queryapi.api.pagoda.co/v1/graphql`;\\\\\\\\n\\\\\\\\n  State.init({\\\\\\\\n    data: [],\\\\\\\\n    author: \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\n    stage: \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\n    sort: \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\n    category: \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\n    input: \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\n    loading: false,\\\\\\\\n    searchLoader: false,\\\\\\\\n    makeMoreLoader: false,\\\\\\\\n    aggregatedCount: null,\\\\\\\\n    currentlyDisplaying: 0,\\\\\\\\n  });\\\\\\\\n\\\\\\\\n  const queryName = \\\\\\\\\\\\\\\"polyprogrammist_near_devhub_prod_v1_proposals_with_latest_snapshot\\\\\\\\\\\\\\\";\\\\\\\\n  const query = `query GetLatestSnapshot($offset: Int = 0, $limit: Int = 10, $where: ${queryName}_bool_exp = {}) {\\\\\\\\n    ${queryName}(\\\\\\\\n      offset: $offset\\\\\\\\n      limit: $limit\\\\\\\\n      order_by: {proposal_id: desc}\\\\\\\\n      where: $where\\\\\\\\n    ) {\\\\\\\\n      author_id\\\\\\\\n      block_height\\\\\\\\n      name\\\\\\\\n      category\\\\\\\\n      summary\\\\\\\\n      editor_id\\\\\\\\n      proposal_id\\\\\\\\n      ts\\\\\\\\n      timeline\\\\\\\\n      views\\\\\\\\n    }\\\\\\\\n    ${queryName}_aggregate(\\\\\\\\n      order_by: {proposal_id: desc}\\\\\\\\n      where: $where\\\\\\\\n    )  {\\\\\\\\n      aggregate {\\\\\\\\n        count\\\\\\\\n      }\\\\\\\\n    }\\\\\\\\n  }`;\\\\\\\\n\\\\\\\\n  function fetchGraphQL(operationsDoc, operationName, variables) {\\\\\\\\n    return asyncFetch(QUERYAPI_ENDPOINT, {\\\\\\\\n      method: \\\\\\\\\\\\\\\"POST\\\\\\\\\\\\\\\",\\\\\\\\n      headers: { \\\\\\\\\\\\\\\"x-hasura-role\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"polyprogrammist_near\\\\\\\\\\\\\\\" },\\\\\\\\n      body: JSON.stringify({\\\\\\\\n        query: operationsDoc,\\\\\\\\n        variables: variables,\\\\\\\\n        operationName: operationName,\\\\\\\\n      }),\\\\\\\\n    });\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  function separateNumberAndText(str) {\\\\\\\\n    const numberRegex = /\\\\\\\\\\\\\\\\d+/;\\\\\\\\n\\\\\\\\n    if (numberRegex.test(str)) {\\\\\\\\n      const number = str.match(numberRegex)[0];\\\\\\\\n      const text = str.replace(numberRegex, \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\").trim();\\\\\\\\n      return { number: parseInt(number), text };\\\\\\\\n    } else {\\\\\\\\n      return { number: null, text: str.trim() };\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  const buildWhereClause = () => {\\\\\\\\n    let where = {};\\\\\\\\n    if (state.author) {\\\\\\\\n      where = { author_id: { _eq: state.author }, ...where };\\\\\\\\n    }\\\\\\\\n\\\\\\\\n    if (state.category) {\\\\\\\\n      where = { category: { _eq: state.category }, ...where };\\\\\\\\n    }\\\\\\\\n\\\\\\\\n    if (state.stage) {\\\\\\\\n      // timeline is stored as jsonb\\\\\\\\n      where = {\\\\\\\\n        timeline: { _cast: { String: { _regex: `${state.stage}` } } },\\\\\\\\n        ...where,\\\\\\\\n      };\\\\\\\\n    }\\\\\\\\n    if (state.input) {\\\\\\\\n      const { number, text } = separateNumberAndText(state.input);\\\\\\\\n      if (number) {\\\\\\\\n        where = { proposal_id: { _eq: number }, ...where };\\\\\\\\n      }\\\\\\\\n\\\\\\\\n      if (text) {\\\\\\\\n        where = {\\\\\\\\n          _or: [\\\\\\\\n            { name: { _iregex: `${text}` } },\\\\\\\\n            { summary: { _iregex: `${text}` } },\\\\\\\\n            { description: { _iregex: `${text}` } },\\\\\\\\n          ],\\\\\\\\n          ...where,\\\\\\\\n        };\\\\\\\\n      }\\\\\\\\n    }\\\\\\\\n\\\\\\\\n    return where;\\\\\\\\n  };\\\\\\\\n\\\\\\\\n  const makeMoreItems = () => {\\\\\\\\n    State.update({ makeMoreLoader: true });\\\\\\\\n    fetchProposals(state.data.length);\\\\\\\\n  };\\\\\\\\n\\\\\\\\n  const fetchProposals = (offset) => {\\\\\\\\n    if (!offset) {\\\\\\\\n      offset = 0;\\\\\\\\n    }\\\\\\\\n    if (state.loading) return;\\\\\\\\n    State.update({ loading: true });\\\\\\\\n    const FETCH_LIMIT = 10;\\\\\\\\n    const variables = {\\\\\\\\n      limit: FETCH_LIMIT,\\\\\\\\n      offset,\\\\\\\\n      where: buildWhereClause(),\\\\\\\\n    };\\\\\\\\n    fetchGraphQL(query, \\\\\\\\\\\\\\\"GetLatestSnapshot\\\\\\\\\\\\\\\", variables).then(async (result) => {\\\\\\\\n      if (result.status === 200) {\\\\\\\\n        if (result.body.data) {\\\\\\\\n          const data = result.body.data[queryName];\\\\\\\\n          const totalResult = result.body.data[`${queryName}_aggregate`];\\\\\\\\n          State.update({ aggregatedCount: totalResult.aggregate.count });\\\\\\\\n          // Parse timeline\\\\\\\\n          fetchBlockHeights(data, offset);\\\\\\\\n        }\\\\\\\\n      }\\\\\\\\n    });\\\\\\\\n  };\\\\\\\\n\\\\\\\\n  useEffect(() => {\\\\\\\\n    State.update({ searchLoader: true });\\\\\\\\n    fetchProposals();\\\\\\\\n  }, [state.author, state.sort, state.category, state.stage]);\\\\\\\\n\\\\\\\\n  const mergeItems = (newItems) => {\\\\\\\\n    const items = [\\\\\\\\n      ...new Set([...newItems, ...state.data].map((i) => JSON.stringify(i))),\\\\\\\\n    ].map((i) => JSON.parse(i));\\\\\\\\n    // Sorting in the front end\\\\\\\\n    if (state.sort === \\\\\\\\\\\\\\\"proposal_id\\\\\\\\\\\\\\\" || state.sort === \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\") {\\\\\\\\n      items.sort((a, b) => b.proposal_id - a.proposal_id);\\\\\\\\n    } else if (state.sort === \\\\\\\\\\\\\\\"views\\\\\\\\\\\\\\\") {\\\\\\\\n      items.sort((a, b) => b.views - a.views);\\\\\\\\n    }\\\\\\\\n\\\\\\\\n    return items;\\\\\\\\n  };\\\\\\\\n\\\\\\\\n  const fetchBlockHeights = (data, offset) => {\\\\\\\\n    let promises = data.map((item) => getProposal(item.proposal_id));\\\\\\\\n    Promise.all(promises).then((blockHeights) => {\\\\\\\\n      data = data.map((item, index) => ({\\\\\\\\n        ...item,\\\\\\\\n        timeline: JSON.parse(item.timeline),\\\\\\\\n        social_db_post_block_height:\\\\\\\\n          blockHeights[index].social_db_post_block_height,\\\\\\\\n      }));\\\\\\\\n      if (offset) {\\\\\\\\n        let newData = mergeItems(data);\\\\\\\\n        State.update({\\\\\\\\n          data: newData,\\\\\\\\n          currentlyDisplaying: newData.length,\\\\\\\\n          loading: false,\\\\\\\\n          searchLoader: false,\\\\\\\\n          makeMoreLoader: false,\\\\\\\\n        });\\\\\\\\n      } else {\\\\\\\\n        State.update({\\\\\\\\n          data,\\\\\\\\n          currentlyDisplaying: data.length,\\\\\\\\n          loading: false,\\\\\\\\n          searchLoader: false,\\\\\\\\n          makeMoreLoader: false,\\\\\\\\n        });\\\\\\\\n      }\\\\\\\\n    });\\\\\\\\n  };\\\\\\\\n\\\\\\\\n  const loader = (\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"d-flex justify-content-center align-items-center w-100\\\\\\\\\\\\\\\">\\\\\\\\n      <Widget\\\\\\\\n        src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.Spinner\\\\\\\\\\\\\\\"}\\\\\\\\n      />\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n\\\\\\\\n  useEffect(() => {\\\\\\\\n    const handler = setTimeout(() => {\\\\\\\\n      fetchProposals();\\\\\\\\n    }, 1000);\\\\\\\\n\\\\\\\\n    return () => {\\\\\\\\n      clearTimeout(handler);\\\\\\\\n    };\\\\\\\\n  }, [state.input]);\\\\\\\\n\\\\\\\\n  return (\\\\\\\\n    <Container className=\\\\\\\\\\\\\\\"w-100 py-4 px-2 d-flex flex-column gap-3\\\\\\\\\\\\\\\">\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"d-flex justify-content-between flex-wrap gap-2 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n        <Heading>\\\\\\\\n          DevDAO Proposals\\\\\\\\n          <span className=\\\\\\\\\\\\\\\"text-muted text-normal\\\\\\\\\\\\\\\">\\\\\\\\n            ({state.aggregatedCount ?? state.data.length}){\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n          </span>\\\\\\\\n        </Heading>\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"d-flex flex-wrap gap-4 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n          <Widget\\\\\\\\n            src={\\\\\\\\n              \\\\\\\\\\\\\\\"devhub.near/widget/devhub.feature.proposal-search.by-input\\\\\\\\\\\\\\\"\\\\\\\\n            }\\\\\\\\n            props={{\\\\\\\\n              search: state.input,\\\\\\\\n              className: \\\\\\\\\\\\\\\"w-xs-100\\\\\\\\\\\\\\\",\\\\\\\\n              onSearch: (input) => {\\\\\\\\n                State.update({ input });\\\\\\\\n              },\\\\\\\\n              onEnter: () => {\\\\\\\\n                fetchProposals();\\\\\\\\n              },\\\\\\\\n            }}\\\\\\\\n          />\\\\\\\\n          <Widget\\\\\\\\n            src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.feature.proposal-search.by-sort\\\\\\\\\\\\\\\"}\\\\\\\\n            props={{\\\\\\\\n              onStateChange: (select) => {\\\\\\\\n                State.update({ sort: select.value });\\\\\\\\n              },\\\\\\\\n            }}\\\\\\\\n          />\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"d-flex gap-4 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n            <Widget\\\\\\\\n              src={\\\\\\\\n                \\\\\\\\\\\\\\\"devhub.near/widget/devhub.feature.proposal-search.by-category\\\\\\\\\\\\\\\"\\\\\\\\n              }\\\\\\\\n              props={{\\\\\\\\n                onStateChange: (select) => {\\\\\\\\n                  State.update({ category: select.value });\\\\\\\\n                },\\\\\\\\n              }}\\\\\\\\n            />\\\\\\\\n            <Widget\\\\\\\\n              src={\\\\\\\\n                \\\\\\\\\\\\\\\"devhub.near/widget/devhub.feature.proposal-search.by-stage\\\\\\\\\\\\\\\"\\\\\\\\n              }\\\\\\\\n              props={{\\\\\\\\n                onStateChange: (select) => {\\\\\\\\n                  State.update({ stage: select.value });\\\\\\\\n                },\\\\\\\\n              }}\\\\\\\\n            />\\\\\\\\n            <Widget\\\\\\\\n              src={\\\\\\\\n                \\\\\\\\\\\\\\\"devhub.near/widget/devhub.feature.proposal-search.by-author\\\\\\\\\\\\\\\"\\\\\\\\n              }\\\\\\\\n              props={{\\\\\\\\n                onAuthorChange: (select) => {\\\\\\\\n                  State.update({ author: select.value });\\\\\\\\n                },\\\\\\\\n              }}\\\\\\\\n            />\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"mt-2 mt-xs-0\\\\\\\\\\\\\\\">\\\\\\\\n          <Link\\\\\\\\n            to={href({\\\\\\\\n              widgetSrc: \\\\\\\\\\\\\\\"devhub.near/widget/app\\\\\\\\\\\\\\\",\\\\\\\\n              params: { page: \\\\\\\\\\\\\\\"create-proposal\\\\\\\\\\\\\\\" },\\\\\\\\n            })}\\\\\\\\n          >\\\\\\\\n            <Widget\\\\\\\\n              src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.Button\\\\\\\\\\\\\\\"}\\\\\\\\n              props={{\\\\\\\\n                label: (\\\\\\\\n                  <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n                    <div>\\\\\\\\n                      <i class=\\\\\\\\\\\\\\\"bi bi-plus-circle-fill\\\\\\\\\\\\\\\"></i>\\\\\\\\n                    </div>\\\\\\\\n                    New Proposal\\\\\\\\n                  </div>\\\\\\\\n                ),\\\\\\\\n                classNames: { root: \\\\\\\\\\\\\\\"green-btn\\\\\\\\\\\\\\\" },\\\\\\\\n              }}\\\\\\\\n            />\\\\\\\\n          </Link>\\\\\\\\n        </div>\\\\\\\\n      </div>\\\\\\\\n      <div style={{ minHeight: \\\\\\\\\\\\\\\"50vh\\\\\\\\\\\\\\\" }}>\\\\\\\\n        {!Array.isArray(state.data) ? (\\\\\\\\n          loader\\\\\\\\n        ) : (\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"card no-border rounded-0 mt-4 py-3 full-width-div\\\\\\\\\\\\\\\">\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"container-xl\\\\\\\\\\\\\\\">\\\\\\\\n              <div className=\\\\\\\\\\\\\\\"text-muted bg-grey text-sm mt-2 p-3 rounded-3\\\\\\\\\\\\\\\">\\\\\\\\n                <p className=\\\\\\\\\\\\\\\"d-flex gap-3 align-items-center mb-0\\\\\\\\\\\\\\\">\\\\\\\\n                  <div>\\\\\\\\n                    <i class=\\\\\\\\\\\\\\\"bi bi-info-circle\\\\\\\\\\\\\\\"></i>\\\\\\\\n                  </div>\\\\\\\\n                  <div>\\\\\\\\n                    <span className=\\\\\\\\\\\\\\\"fw-bold\\\\\\\\\\\\\\\">\\\\\\\\n                      Welcome to\\\\\\\\n                      <a\\\\\\\\n                        href=\\\\\\\\\\\\\\\"?page=community&handle=developer-dao&tab=overview\\\\\\\\\\\\\\\"\\\\\\\\n                        target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n                        rel=\\\\\\\\\\\\\\\"noopener noreferrer\\\\\\\\\\\\\\\"\\\\\\\\n                      >\\\\\\\\n                        DevDAO\\\\\\\\u{2019}s New Proposal Feed!\\\\\\\\n                      </a>\\\\\\\\n                    </span>\\\\\\\\n                    This dedicated space replaces the\\\\\\\\n                    <a\\\\\\\\n                      href=\\\\\\\\\\\\\\\"?page=feed\\\\\\\\\\\\\\\"\\\\\\\\n                      className=\\\\\\\\\\\\\\\"text-decoration-underline no-space\\\\\\\\\\\\\\\"\\\\\\\\n                      target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n                      rel=\\\\\\\\\\\\\\\"noopener noreferrer\\\\\\\\\\\\\\\"\\\\\\\\n                    >\\\\\\\\n                      old activity feed\\\\\\\\n                    </a>\\\\\\\\n                    , making it easier to submit and track funding requests from\\\\\\\\n                    DevDAO, the primary organization behind DevHub. To submit a\\\\\\\\n                    formal proposal, click New Proposal. See our{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n                    <a\\\\\\\\n                      href=\\\\\\\\\\\\\\\"?page=community&handle=developer-dao&tab=funding\\\\\\\\\\\\\\\"\\\\\\\\n                      className=\\\\\\\\\\\\\\\"text-decoration-underline no-space\\\\\\\\\\\\\\\"\\\\\\\\n                      target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n                      rel=\\\\\\\\\\\\\\\"noopener noreferrer\\\\\\\\\\\\\\\"\\\\\\\\n                    >\\\\\\\\n                      guidelines\\\\\\\\n                    </a>\\\\\\\\n                    for details. For discussions and brainstorming, please\\\\\\\\n                    utilize the relevant{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n                    <a\\\\\\\\n                      href=\\\\\\\\\\\\\\\"?page=communities\\\\\\\\\\\\\\\"\\\\\\\\n                      className=\\\\\\\\\\\\\\\"text-decoration-underline no-space\\\\\\\\\\\\\\\"\\\\\\\\n                      target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n                      rel=\\\\\\\\\\\\\\\"noopener noreferrer\\\\\\\\\\\\\\\"\\\\\\\\n                    >\\\\\\\\n                      communities\\\\\\\\n                    </a>\\\\\\\\n                    .\\\\\\\\n                  </div>\\\\\\\\n                </p>\\\\\\\\n              </div>\\\\\\\\n              <div className=\\\\\\\\\\\\\\\"mt-4 border rounded-2\\\\\\\\\\\\\\\">\\\\\\\\n                {state.aggregatedCount === 0 ? (\\\\\\\\n                  <div class=\\\\\\\\\\\\\\\"alert alert-danger m-2\\\\\\\\\\\\\\\" role=\\\\\\\\\\\\\\\"alert\\\\\\\\\\\\\\\">\\\\\\\\n                    No proposals found for selected filter.{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n                  </div>\\\\\\\\n                ) : state.searchLoader ? (\\\\\\\\n                  loader\\\\\\\\n                ) : state.aggregatedCount > 0 ? (\\\\\\\\n                  state.data.map((item, index) => {\\\\\\\\n                    return (\\\\\\\\n                      <div\\\\\\\\n                        key={item.proposal_id}\\\\\\\\n                        className={\\\\\\\\n                          (index !== state.data.length - 1 &&\\\\\\\\n                            \\\\\\\\\\\\\\\"border-bottom \\\\\\\\\\\\\\\") +\\\\\\\\n                            index ===\\\\\\\\n                            0 && \\\\\\\\\\\\\\\" rounded-top-2\\\\\\\\\\\\\\\"\\\\\\\\n                        }\\\\\\\\n                      >\\\\\\\\n                        <FeedItem proposal={item} index={index} />\\\\\\\\n                      </div>\\\\\\\\n                    );\\\\\\\\n                  })\\\\\\\\n                ) : (\\\\\\\\n                  loader\\\\\\\\n                )}\\\\\\\\n              </div>\\\\\\\\n              {state.aggregatedCount > 0 &&\\\\\\\\n                state.aggregatedCount > state.data.length && (\\\\\\\\n                  <div className=\\\\\\\\\\\\\\\"my-3 container-xl\\\\\\\\\\\\\\\">\\\\\\\\n                    {state.makeMoreLoader ? (\\\\\\\\n                      loader\\\\\\\\n                    ) : (\\\\\\\\n                      <div>\\\\\\\\n                        {!state.loading && (\\\\\\\\n                          <div className=\\\\\\\\\\\\\\\"w-100\\\\\\\\\\\\\\\">\\\\\\\\n                            <Widget\\\\\\\\n                              src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n                              props={{\\\\\\\\n                                classNames: {\\\\\\\\n                                  root: \\\\\\\\\\\\\\\"btn-grey-outline w-100 \\\\\\\\\\\\\\\",\\\\\\\\n                                  label: \\\\\\\\\\\\\\\"text-center w-100\\\\\\\\\\\\\\\",\\\\\\\\n                                },\\\\\\\\n                                label: \\\\\\\\\\\\\\\"Load More\\\\\\\\\\\\\\\",\\\\\\\\n                                onClick: () => makeMoreItems(),\\\\\\\\n                              }}\\\\\\\\n                            />\\\\\\\\n                          </div>\\\\\\\\n                        )}\\\\\\\\n                      </div>\\\\\\\\n                    )}\\\\\\\\n                  </div>\\\\\\\\n                )}\\\\\\\\n            </div>\\\\\\\\n          </div>\\\\\\\\n        )}\\\\\\\\n      </div>\\\\\\\\n    </Container>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\n\\\\\\\\nreturn FeedPage(props);\\\\\\\\n\"}, \"devhub.entity.proposal.AcceptedTerms\": {\"\": \"const { getLinkUsingCurrentGateway } = VM.require(\\\\\\\\n  \\\\\\\\\\\\\\\"devhub.near/widget/core.lib.url\\\\\\\\\\\\\\\"\\\\\\\\n) || { getLinkUsingCurrentGateway: () => {} };\\\\\\\\n\\\\\\\\nState.init({\\\\\\\\n  proposalBlockHeight: null,\\\\\\\\n});\\\\\\\\n\\\\\\\\nconst proposalId = props.proposalId;\\\\\\\\n\\\\\\\\nconst QUERYAPI_ENDPOINT = `https://near-queryapi.api.pagoda.co/v1/graphql`;\\\\\\\\nconst fetchGraphQL = (operationsDoc, operationName, variables) => {\\\\\\\\n  return asyncFetch(QUERYAPI_ENDPOINT, {\\\\\\\\n    method: \\\\\\\\\\\\\\\"POST\\\\\\\\\\\\\\\",\\\\\\\\n    headers: { \\\\\\\\\\\\\\\"x-hasura-role\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"polyprogrammist_near\\\\\\\\\\\\\\\" },\\\\\\\\n    body: JSON.stringify({\\\\\\\\n      query: operationsDoc,\\\\\\\\n      variables: variables,\\\\\\\\n      operationName: operationName,\\\\\\\\n    }),\\\\\\\\n  });\\\\\\\\n};\\\\\\\\n\\\\\\\\nconst queryName = \\\\\\\\\\\\\\\"polyprogrammist_near_devhub_prod_v1_proposals_with_latest_snapshot\\\\\\\\\\\\\\\";\\\\\\\\nconst query = `query GetLatestSnapshot($offset: Int = 0, $limit: Int = 10, $where: ${queryName}_bool_exp = {}) {\\\\\\\\n    ${queryName}(\\\\\\\\n      offset: $offset\\\\\\\\n      limit: $limit\\\\\\\\n      order_by: {proposal_id: desc}\\\\\\\\n      where: $where\\\\\\\\n    ) {\\\\\\\\n      block_height\\\\\\\\n    }\\\\\\\\n  }`;\\\\\\\\n\\\\\\\\nconst variables = {\\\\\\\\n  limit: 10,\\\\\\\\n  offset,\\\\\\\\n  where: { proposal_id: { _eq: proposalId } },\\\\\\\\n};\\\\\\\\n\\\\\\\\nfetchGraphQL(query, \\\\\\\\\\\\\\\"GetLatestSnapshot\\\\\\\\\\\\\\\", variables).then(async (result) => {\\\\\\\\n  if (result.status === 200) {\\\\\\\\n    if (result.body.data) {\\\\\\\\n      const data = result.body.data?.[queryName];\\\\\\\\n      State.update({ proposalBlockHeight: data[0].block_height });\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n});\\\\\\\\n\\\\\\\\nlet acceptedTermsVersion = Near.block().header.height;\\\\\\\\n\\\\\\\\nif (state.proposalBlockHeight !== null) {\\\\\\\\n  const data = fetch(\\\\\\\\n    `https://mainnet.neardata.xyz/v0/block/${state.proposalBlockHeight}`\\\\\\\\n  );\\\\\\\\n  if (Array.isArray(data?.body?.shards)) {\\\\\\\\n    data.body.shards.map((shard) => {\\\\\\\\n      const data = shard.chunk.transactions.filter(\\\\\\\\n        (txn) =>\\\\\\\\n          txn.transaction.receiver_id === \\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\" &&\\\\\\\\n          txn.transaction.actions[0].FunctionCall.method_name === \\\\\\\\\\\\\\\"add_proposal\\\\\\\\\\\\\\\"\\\\\\\\n      );\\\\\\\\n      if (data?.length) {\\\\\\\\n        const args = JSON.parse(\\\\\\\\n          Buffer.from(\\\\\\\\n            data[0].transaction.actions[0].FunctionCall.args,\\\\\\\\n            \\\\\\\\\\\\\\\"base64\\\\\\\\\\\\\\\"\\\\\\\\n          ).toString(\\\\\\\\\\\\\\\"utf8\\\\\\\\\\\\\\\")\\\\\\\\n        );\\\\\\\\n        acceptedTermsVersion = args.accepted_terms_and_conditions_version;\\\\\\\\n      }\\\\\\\\n    });\\\\\\\\n  }\\\\\\\\n}\\\\\\\\n\\\\\\\\nreturn (\\\\\\\\n  <a\\\\\\\\n    href={getLinkUsingCurrentGateway(\\\\\\\\n      `devhub.near/widget/devhub.entity.proposal.TermsAndConditions@${acceptedTermsVersion}`\\\\\\\\n    )}\\\\\\\\n    className=\\\\\\\\\\\\\\\"text-decoration-underline\\\\\\\\\\\\\\\"\\\\\\\\n    target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n    rel=\\\\\\\\\\\\\\\"noopener noreferrer\\\\\\\\\\\\\\\"\\\\\\\\n  >\\\\\\\\n    DevHub\\\\\\\\u{2019}s Terms and Conditions\\\\\\\\n  </a>\\\\\\\\n);\\\\\\\\n\"}, \"devhub.entity.proposal.LinkedProposalsDropdown\": {\"\": \"const { href } = VM.require(\\\\\\\\\\\\\\\"devhub.near/widget/core.lib.url\\\\\\\\\\\\\\\");\\\\\\\\nhref || (href = () => {});\\\\\\\\n\\\\\\\\nconst linkedProposals = props.linkedProposals;\\\\\\\\nconst onChange = props.onChange;\\\\\\\\nconst [selectedProposals, setSelectedProposals] = useState(linkedProposals);\\\\\\\\nconst [proposalsOptions, setProposalsOptions] = useState([]);\\\\\\\\nconst [searchProposalId, setSearchProposalId] = useState(\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\");\\\\\\\\nconst QUERYAPI_ENDPOINT = `https://near-queryapi.api.pagoda.co/v1/graphql`;\\\\\\\\nconst queryName = \\\\\\\\\\\\\\\"polyprogrammist_near_devhub_prod_v1_proposals_with_latest_snapshot\\\\\\\\\\\\\\\";\\\\\\\\nconst query = `query GetLatestSnapshot($offset: Int = 0, $limit: Int = 10, $where: ${queryName}_bool_exp = {}) {\\\\\\\\n${queryName}(\\\\\\\\n  offset: $offset\\\\\\\\n  limit: $limit\\\\\\\\n  order_by: {proposal_id: desc}\\\\\\\\n  where: $where\\\\\\\\n) {\\\\\\\\n  name\\\\\\\\n  proposal_id\\\\\\\\n}\\\\\\\\n}`;\\\\\\\\n\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (JSON.stringify(linkedProposals) !== JSON.stringify(selectedProposals)) {\\\\\\\\n    setSelectedProposals(linkedProposals);\\\\\\\\n  }\\\\\\\\n}, [linkedProposals]);\\\\\\\\n\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (JSON.stringify(linkedProposals) !== JSON.stringify(selectedProposals)) {\\\\\\\\n    onChange(selectedProposals);\\\\\\\\n  }\\\\\\\\n}, [selectedProposals]);\\\\\\\\n\\\\\\\\nfunction separateNumberAndText(str) {\\\\\\\\n  const numberRegex = /\\\\\\\\\\\\\\\\d+/;\\\\\\\\n\\\\\\\\n  if (numberRegex.test(str)) {\\\\\\\\n    const number = str.match(numberRegex)[0];\\\\\\\\n    const text = str.replace(numberRegex, \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\").trim();\\\\\\\\n    return { number: parseInt(number), text };\\\\\\\\n  } else {\\\\\\\\n    return { number: null, text: str.trim() };\\\\\\\\n  }\\\\\\\\n}\\\\\\\\n\\\\\\\\nconst buildWhereClause = () => {\\\\\\\\n  let where = {};\\\\\\\\n  const { number, text } = separateNumberAndText(searchProposalId);\\\\\\\\n\\\\\\\\n  if (number) {\\\\\\\\n    where = { proposal_id: { _eq: number }, ...where };\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  if (text) {\\\\\\\\n    where = { name: { _ilike: `%${text}%` }, ...where };\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  return where;\\\\\\\\n};\\\\\\\\n\\\\\\\\nfunction fetchGraphQL(operationsDoc, operationName, variables) {\\\\\\\\n  return asyncFetch(QUERYAPI_ENDPOINT, {\\\\\\\\n    method: \\\\\\\\\\\\\\\"POST\\\\\\\\\\\\\\\",\\\\\\\\n    headers: { \\\\\\\\\\\\\\\"x-hasura-role\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"polyprogrammist_near\\\\\\\\\\\\\\\" },\\\\\\\\n    body: JSON.stringify({\\\\\\\\n      query: operationsDoc,\\\\\\\\n      variables: variables,\\\\\\\\n      operationName: operationName,\\\\\\\\n    }),\\\\\\\\n  });\\\\\\\\n}\\\\\\\\n\\\\\\\\nconst fetchProposals = () => {\\\\\\\\n  const FETCH_LIMIT = 30;\\\\\\\\n  const variables = {\\\\\\\\n    limit: FETCH_LIMIT,\\\\\\\\n    offset: 0,\\\\\\\\n    where: buildWhereClause(),\\\\\\\\n  };\\\\\\\\n  fetchGraphQL(query, \\\\\\\\\\\\\\\"GetLatestSnapshot\\\\\\\\\\\\\\\", variables).then(async (result) => {\\\\\\\\n    if (result.status === 200) {\\\\\\\\n      if (result.body.data) {\\\\\\\\n        const proposalsData = result.body.data[queryName];\\\\\\\\n\\\\\\\\n        const data = [];\\\\\\\\n        for (const prop of proposalsData) {\\\\\\\\n          data.push({\\\\\\\\n            label: \\\\\\\\\\\\\\\"# \\\\\\\\\\\\\\\" + prop.proposal_id + \\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\" + prop.name,\\\\\\\\n            value: prop.proposal_id,\\\\\\\\n          });\\\\\\\\n        }\\\\\\\\n        setProposalsOptions(data);\\\\\\\\n      }\\\\\\\\n    }\\\\\\\\n  });\\\\\\\\n};\\\\\\\\n\\\\\\\\nuseEffect(() => {\\\\\\\\n  fetchProposals();\\\\\\\\n}, [searchProposalId]);\\\\\\\\n\\\\\\\\nreturn (\\\\\\\\n  <>\\\\\\\\n    {selectedProposals.map((proposal) => {\\\\\\\\n      return (\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n          <a\\\\\\\\n            className=\\\\\\\\\\\\\\\"text-decoration-underline flex-1\\\\\\\\\\\\\\\"\\\\\\\\n            href={href({\\\\\\\\n              widgetSrc: \\\\\\\\\\\\\\\"devhub.near/widget/app\\\\\\\\\\\\\\\",\\\\\\\\n              params: {\\\\\\\\n                page: \\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\",\\\\\\\\n                id: proposal.value,\\\\\\\\n              },\\\\\\\\n            })}\\\\\\\\n            target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n            rel=\\\\\\\\\\\\\\\"noopener noreferrer\\\\\\\\\\\\\\\"\\\\\\\\n          >\\\\\\\\n            {proposal.label}\\\\\\\\n          </a>\\\\\\\\n          <div\\\\\\\\n            className=\\\\\\\\\\\\\\\"cursor-pointer\\\\\\\\\\\\\\\"\\\\\\\\n            onClick={() => {\\\\\\\\n              const updatedLinkedProposals = selectedProposals.filter(\\\\\\\\n                (item) => item.value !== proposal.value\\\\\\\\n              );\\\\\\\\n              setSelectedProposals(updatedLinkedProposals);\\\\\\\\n            }}\\\\\\\\n          >\\\\\\\\n            <i class=\\\\\\\\\\\\\\\"bi bi-trash3-fill\\\\\\\\\\\\\\\"></i>\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n      );\\\\\\\\n    })}\\\\\\\\n\\\\\\\\n    <Widget\\\\\\\\n      src=\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.DropDownWithSearch\\\\\\\\\\\\\\\"\\\\\\\\n      props={{\\\\\\\\n        selectedValue: \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\n        onChange: (v) => {\\\\\\\\n          if (!selectedProposals.some((item) => item.value === v.value)) {\\\\\\\\n            setSelectedProposals([...selectedProposals, v]);\\\\\\\\n          }\\\\\\\\n        },\\\\\\\\n        options: proposalsOptions,\\\\\\\\n        showSearch: true,\\\\\\\\n        searchInputPlaceholder: \\\\\\\\\\\\\\\"Search by Id\\\\\\\\\\\\\\\",\\\\\\\\n        defaultLabel: \\\\\\\\\\\\\\\"Search proposals\\\\\\\\\\\\\\\",\\\\\\\\n        searchByValue: true,\\\\\\\\n        onSearch: (value) => {\\\\\\\\n          setSearchProposalId(value);\\\\\\\\n        },\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  </>\\\\\\\\n);\\\\\\\\n\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0382897150075e+21
+    }
+  },
+  {
+    "id": "6707627862",
+    "receipt_id": "3otwS7GZpCACZt7aqNAoJEmUceTP5HBwQgiLDENmoYT4",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7uRykyHjsfUZhgdJkFBbC1cyhQJAD9fMoxcsKns8E3sy",
+      "block_height": 123587987,
+      "block_timestamp": 1721200230920377600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "BsHDCH8nmRGuM57mij535jW2NYiV7smVSzdRf72C5Ri5",
+    "included_in_block_hash": "Cove8oT73kMv5J5DDn42RiB1muyD9C6bCTAgq8im2SQ",
+    "block_timestamp": "1721200228754733423",
+    "block": {
+      "block_height": 123587985
+    },
+    "receipt_conversion_tokens_burnt": "36526587139000000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.8710111821686137e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0382897150075e+21
+    }
+  },
+  {
+    "id": "6710556173",
+    "receipt_id": "4zXbnFt79bYjcbLpyLpP9jkvV6Ngm5wgbbg3WnaB4F7A",
+    "predecessor_account_id": "hristolimechain.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "MdRdxSJfBbHgA9y2thuhN2WH1Z2m6WRFTgEuSaAnJD9",
+      "block_height": 123596632,
+      "block_timestamp": 1721209719103530000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6988778100802,
+      "tokens_burnt": 698877810080200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "9V8MEiBDsYCCp4i8pdhfc7ftUgub2drbddPVok7s8s5D",
+    "included_in_block_hash": "6z5i6LBeNe5xskudd2aSbyVnopBHG9XwGY4db7pRW9r8",
+    "block_timestamp": "1721209717952583285",
+    "block": {
+      "block_height": 123596631
+    },
+    "receipt_conversion_tokens_burnt": "34195849537400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 698877810080200000000,
+        "args": "{\"body\": {\"name\": \"Enhancement for near-sdk-js with focus on devex, performance and security\", \"summary\": \"The project four key milestones. Firstly, increasing adoption by updating the starter template, improving API references, and simplifying the README for easier onboarding. Next, it ensures performance by testing gas usage and Wasm size, addressing inefficiencies, and conducting codebase reviews. Then, it prioritizes security by securing common contract flows, and adopting industry-standard security practices. Finally, it improves NEAR-Workspaces-JS integration, devex, and maintenance.\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"**Proposal Benefits**\\\\\\\\nOur proposed milestones offer several key benefits.\\\\\\\\n\\\\\\\\n- Providing developers with cohesive tools for building and testing contracts.\\\\\\\\n    - Improving developer onboarding with enhanced starter templates, comprehensive documentation, clear README and educational resources expedite learning and deployment processes.\\\\\\\\n- Enhancing performance by leveraging gas usage and Wasm size tests to ensure efficient resource management and optimization.\\\\\\\\n- Addressing inefficiencies improves overall contract performance and reliability.\\\\\\\\n- Thorough codebase reviews and explicit security audits to minimize vulnerabilities and ensure robustness.\\\\\\\\n- Implementation of security best practices like access controls and error handling enhances contract security.\\\\\\\\n- Automating maintenance and updates by utilizing automated release pipelines and community PR reviews, providing regular audits and monitoring tools maintain code integrity and responsiveness to emerging needs.\\\\\\\\n\\\\\\\\n## **Milestone 1: Increasing Adoption**\\\\\\\\n\\\\\\\\nTo enhance the adoption of NEAR-SDK-JS by improving the developer onboarding experience, updating key resources, and integrating standard contracts to streamline the development process.\\\\\\\\n\\\\\\\\n### **1. Update Starter Template**\\\\\\\\n\\\\\\\\nEnhance the initial setup experience for developers using NEAR-SDK-JS.\\\\\\\\n\\\\\\\\n\\\\\\\\u{1f4a1} We can check the code examples from  [https://docs.near.org/tutorials/welcome](https://docs.near.org/tutorials/welcome)\\\\\\\\n\\\\\\\\n- **Revamp the Starter Template**: Update the starter template in `create-near-app` to include examples of key NEAR contract standards. This will provide developers with ready-to-use implementations of Non-Fungible Token (NFT) standards, Fungible Token standards, and Storage Management standards.\\\\\\\\n- **Documentation and Examples**: Ensure that the starter template comes with comprehensive documentation and practical examples. These resources will guide developers through the process of creating, building, and deploying contracts.\\\\\\\\n- **Simplified Flow**: Create a clear, streamlined flow for developers to create \\\\\\\\u{27a1}\\\\\\\\u{fe0f} build \\\\\\\\u{27a1}\\\\\\\\u{fe0f} deploy contracts to the testnet within 2 minutes. This flow will be prominently featured in the README file and other onboarding materials.\\\\\\\\n    - Setting up the dev environment\\\\\\\\n    - Initializing a new NEAR app\\\\\\\\n    - Examples of creating a simple smart contract\\\\\\\\n    - Step-by-step instructions for build and deploy the contract to the testnet\\\\\\\\n    - Screenshots/code snippets/video to illustrate each step\\\\\\\\n\\\\\\\\n### **2. Enhance API Reference**\\\\\\\\n\\\\\\\\nMake the API reference more user-friendly and comprehensive.\\\\\\\\n\\\\\\\\n- **Documentation**: Use relevant documentation from the Rust SDK to fill gaps in the existing API reference. This includes detailed descriptions, usage examples, and explanations of key concepts.\\\\\\\\n- **UI Improvements Research**: Conduct research on how to improve the UI/UX of the documentation. Assess the current state of the documentation, identify areas for improvement, and explore the feasibility and ease of implementing these enhancements.\\\\\\\\n\\\\\\\\n### **3. Update README**\\\\\\\\n\\\\\\\\nProvide clear guidance and resources for new users.\\\\\\\\n\\\\\\\\n- **Educational Resources**: Feature the AgorApp education course on JS SDK prominently in the README. This will provide a structured learning path for new developers.\\\\\\\\n- **Relevant Links**: Include links to the updated API reference, key documentation on [docs.near.org](http://docs.near.org/), and other essential resources.\\\\\\\\n- **Developer Path**: Outline the simplified create \\\\\\\\u{27a1}\\\\\\\\u{fe0f} build \\\\\\\\u{27a1}\\\\\\\\u{fe0f} deploy flow in the README, ensuring that new users can get up and running quickly.\\\\\\\\n\\\\\\\\n### **Timelines**\\\\\\\\n\\\\\\\\n| Milestone | Task Description | Duration |\\\\\\\\n| --- | --- | --- |\\\\\\\\n| Revamp the Starter Template | Update the starter template to include NEAR contract standards with comprehensive documentation and examples. | 0.5 week |\\\\\\\\n| Simplify Developer Flow and README updates | Create and document a streamlined flow for creating, building, and deploying contracts. Update the README to feature educational resources, relevant links, and the simplified developer path. | 0.5 week |\\\\\\\\n| Enhance API Reference | Improve the API reference with detailed documentation and UI enhancements. Conduct research on how to improve the UI/UX of the documentation. | 1 week |\\\\\\\\n| Total: |  | 2 weeks |\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n## **Milestone 2: Ensuring Performance**\\\\\\\\n\\\\\\\\nTo ensure the performance of NEAR-SDK-JS by adding tests for gas usage and Wasm size, addressing any inefficiencies found, and conducting a comprehensive codebase review, we will follow a structured approach with specific enhancements and tools.\\\\\\\\n\\\\\\\\n### **1. Add Gas Usage Tests**\\\\\\\\n\\\\\\\\nMeasure gas usage for collections to ensure efficient performance.\\\\\\\\n\\\\\\\\n- **Collections Operations**: Develop tests to measure gas usage for various collection operations including add, get, remove elements, iterate over elements, and seek + iterate over elements. This will help in identifying any inefficiencies and ensure the performance of these operations remains optimal.\\\\\\\\n- **Comparison with Rust SDK**: Compare the results with the recent performance improvements in the Rust SDK to ensure parity in performance. Reference: [near-sdk-rs PR](https://github.com/near/near-sdk-rs/pull/1195)\\\\\\\\n- **Real-time Monitoring**: Add an npm watch gas function that can output TGas while coding to allow real-time monitoring and adjustments.\\\\\\\\n- **CLI Scripts**: Add a set of CLI scripts in a utils library that would allow users to test and validate inefficiencies before build.\\\\\\\\n\\\\\\\\n### **2. Address Inefficiencies**\\\\\\\\n\\\\\\\\nIdentify and address any inefficiencies found during the gas usage tests.\\\\\\\\n\\\\\\\\n- **Scope Inefficiencies**: If gas usage tests reveal inefficiencies that could lead to malfunctioning contracts (e.g., inability to iterate under 300TGas with a growing number of entries), scope these issues and plan to address them.\\\\\\\\n- Backlog and Analysis\\\\\\\\n    - Make a backlog of inefficiencies identified.\\\\\\\\n    - Analyze the impact on development.\\\\\\\\n    - Identify potential solutions.\\\\\\\\n    - Scope solution and propose.\\\\\\\\n\\\\\\\\n### **3. Add Wasm Size Tests**\\\\\\\\n\\\\\\\\nEnsure the Wasm size remains optimal by adding size tests and making necessary adjustments.\\\\\\\\n\\\\\\\\n- **Wasm Size Measurement**: Use [https://github.com/near/near-sdk-js/tree/develop/benchmark](https://github.com/near/near-sdk-js/tree/develop/benchmark) as starting point to analyze the reasons and identify quick wins to reduce the size.\\\\\\\\n- **Integration with Build Process**: Integrate these size tests as part of the build process, possibly in an extra build scripts library, to ensure continuous monitoring and optimization.\\\\\\\\n- **Optimization Exploration Ideas:**\\\\\\\\n    - **Optimize Code and Dependencies**: Tools like Tree Shaking, minification, and careful selection of dependencies can help us to reduce code size.\\\\\\\\n    - **Use Compiler Optimizations**: Employ optimization flags (`O3`, `Os`) and Link Time Optimization (LTO) during the compilation.\\\\\\\\n    - **Wasm-Specific Tools**: Utilize `wasm-opt` from Binaryen and Emscripten with optimization flags to further reduce the Wasm binary size.\\\\\\\\n\\\\\\\\n### **4. Conduct Codebase Review**\\\\\\\\n\\\\\\\\n- **Ongoing Review**: As you go through the performance tasks, conduct an ongoing review of the codebase to identify potential performance bottlenecks and opportunities for optimization.\\\\\\\\n- **Explicit Review for Common Flows**: Conduct an explicit review for common contract flows such as contract re-initialization safeguards, promises API, and error handling to ensure they meet performance and security standards.\\\\\\\\n\\\\\\\\n### **Timelines**\\\\\\\\n\\\\\\\\n| Milestone | Task Description | Duration |\\\\\\\\n| --- | --- | --- |\\\\\\\\n| Add Gas Usage Tests | Measure gas usage for collections operations including add, get, remove, iterate, and seek + iterate. | 0.5 week |\\\\\\\\n| Address Inefficiencies | Scope and address inefficiencies found in gas usage tests. | 0.5 week |\\\\\\\\n| Add Wasm Size Tests | Measure Wasm size and implement quick wins to reduce size if it exceeds 500KB. | 0.5 week |\\\\\\\\n| Conduct Codebase Review | Perform an ongoing review of the codebase and an explicit review of common contract flows. | 0.5 week |\\\\\\\\n| Total: |  | 2 weeks |\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n## **Milestone 3: Ensuring Security**\\\\\\\\n\\\\\\\\nTo ensure the security of NEAR-SDK-JS by conducting comprehensive codebase reviews, explicitly reviewing common contract flows, and implementing best practices for error handling and contract re-initialization safeguards.\\\\\\\\n\\\\\\\\n### **1. Conduct Codebase Review**\\\\\\\\n\\\\\\\\nPerform a deep review of the codebase to identify and address potential security vulnerabilities.\\\\\\\\n\\\\\\\\n- **Ongoing Review**: Conduct an ongoing review of the entire codebase to identify potential security vulnerabilities and ensure adherence to best practices.\\\\\\\\n- **Security Standards Compliance**: Ensure that the codebase complies with established security standards and guidelines.\\\\\\\\n- **Npm Audit and Node Modules Review**: Utilize `npm audit` to check for known vulnerabilities in dependencies and review node modules to identify and remove packages that are no longer used.\\\\\\\\n\\\\\\\\n### **2.Explicit Review for Common Flows**\\\\\\\\n\\\\\\\\nPerform an explicit review for common contract flows to ensure they are secure.\\\\\\\\n\\\\\\\\n- **Contract Re-initialization Safeguards**: Review and implement safeguards to prevent unauthorized contract re-initialization.\\\\\\\\n- **Promises API**: Ensure the secure implementation of the promises API to prevent potential exploits.\\\\\\\\n- **Error Handling**: Implement robust error handling mechanisms to mitigate the risk of unexpected behaviors and security vulnerabilities.\\\\\\\\n\\\\\\\\n### **3. Implement improved security practices**\\\\\\\\n\\\\\\\\nAdopt and implement industry-standard security best practices to enhance the security of NEAR-SDK-JS.\\\\\\\\n\\\\\\\\n- **Access Controls**: Improve the handling of private variables and accessors to ensure secure access to sensitive functions and data.\\\\\\\\n- **Data Validation**: Adopt a middleware approach to allow users to plug in their preferred validation libraries, ensuring comprehensive validation of all input data to prevent injection attacks and other vulnerabilities.\\\\\\\\n- **Regular Security Audits**: Conduct regular security audits and penetration testing focusing on the following main areas:\\\\\\\\n    - Authentication and Authorization\\\\\\\\n    - Input Validation and Sanitization\\\\\\\\n    - Error Handling and Logging\\\\\\\\n    - Dependency Management\\\\\\\\n    - Code Integrity and Tampering Prevention\\\\\\\\n\\\\\\\\n### **Timelines**\\\\\\\\n\\\\\\\\n| Milestone | Task Description | Duration |\\\\\\\\n| --- | --- | --- |\\\\\\\\n| Conduct Codebase Review | Perform an ongoing review of the codebase to identify potential security vulnerabilities. | 0.5 week |\\\\\\\\n| Explicit Review for Common Flows | Review and implement safeguards for contract re-initialization, promises API, and error handling. | 0.5 week |\\\\\\\\n| Implement Security Best Practices | Implement access controls, data validation, and conduct regular security audits. | 1 week |\\\\\\\\n| Total: |  | 2 weeks |\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n# **Milestone 4: Enhancing NEAR-WORKSPACES-JS**\\\\\\\\n\\\\\\\\nTo improve the adoption, developer experience, and maintenance of NEAR-Workspaces-JS by ensuring seamless integration with near-sdk-js, enhancing documentation, and setting up automated maintenance processes.\\\\\\\\n\\\\\\\\n### **1. Get NEAR-Workspaces-JS More Adoption**\\\\\\\\n\\\\\\\\nEnhance integration and documentation to improve the adoption of NEAR-Workspaces-JS.\\\\\\\\n\\\\\\\\n- **Integration with near-sdk-js**:\\\\\\\\n    - Update the `create-near-app` template to include examples of how to use NEAR-Workspaces-JS alongside near-sdk-js.\\\\\\\\n    - Ensure that developers have access to both contract building SDKs and necessary tools for unit and integration testing.\\\\\\\\n- **Documentation and README**:\\\\\\\\n    - Update the documentation and README files to provide clear, comprehensive examples and explanations.\\\\\\\\n    - Guide developers step-by-step on how to use NEAR-Workspaces-JS with near-sdk-js.\\\\\\\\n- **Integration Testing Documentation**:\\\\\\\\n    - Review and enhance the integration testing documentation available at [NEAR Docs](https://docs.near.org/build/smart-contracts/testing/integration-test).\\\\\\\\n    - Ensure the documentation includes best practices and clear, step-by-step instructions.\\\\\\\\n\\\\\\\\n### **2. Developer Experience**\\\\\\\\n\\\\\\\\nImprove the developer experience by addressing findings and enhancing integration testing.\\\\\\\\n\\\\\\\\n- **Address Integration Testing Findings**:\\\\\\\\n    - Identify any issues or pain points in the current integration testing process.\\\\\\\\n    - Implement solutions to streamline and improve the integration testing experience.\\\\\\\\n\\\\\\\\n### **3. Maintenance**\\\\\\\\n\\\\\\\\nEnsure the sustainability and ease of maintenance for NEAR-Workspaces-JS.\\\\\\\\n\\\\\\\\n- **Automated Release Pipeline**:\\\\\\\\n    - Set up an automated release preparation and publishing pipeline using tools like release-please or similar.\\\\\\\\n    - Consider using the setup from near-api-js as a reference to streamline the process.\\\\\\\\n- **Review Community PRs**:\\\\\\\\n    - Regularly review and merge community pull requests.\\\\\\\\n    - Incorporate valuable contributions from the community to keep the project up-to-date.\\\\\\\\n\\\\\\\\n### **Timelines**\\\\\\\\n\\\\\\\\n| Milestone | Task Description | Duration |\\\\\\\\n| --- | --- | --- |\\\\\\\\n| Automated Release Pipeline | Set up an automated release preparation and publishing pipeline. | 1 week |\\\\\\\\n| Integration with near-sdk-js | Update the create-near-app template to ensure seamless integration with near-sdk-js, including necessary tools for testing. | 1 week |\\\\\\\\n| Documentation and README | Update documentation and README to provide clear guidance and comprehensive examples. | 0.5 week |\\\\\\\\n| Enhance Integration Testing Documentation | Review and enhance integration testing documentation on NEAR Docs. | 0.5 week |\\\\\\\\n| Address Integration Testing Findings | Identify and address issues to improve the integration testing experience. | 1 week |\\\\\\\\n| Review Community PRs | Regularly review and merge community pull requests. | 1 week |\\\\\\\\n| Total: |  | 5 weeks |\\\\\\\\n\\\\\\\\n**Tech Stack:**\\\\\\\\n\\\\\\\\nRust\\\\\\\\n\\\\\\\\nTypescript\\\\\\\\n\\\\\\\\nReact\\\\\\\\n\\\\\\\\n**Team Setup:**\\\\\\\\n\\\\\\\\n2 x Full-time Frontend Developers with Typescript\\\\\\\\n\\\\\\\\n1 x Full-time Blockchain Developer with Rust\\\\\\\\n\\\\\\\\n1 x Part-time Tech Lead\\\\\\\\n\\\\\\\\n**Duration:** 11 weeks\", \"linked_proposals\": [], \"receiver_account\": \"75d06b35243c61a112abc1e0ad748f58c5b146d264099798492ede675199cf93\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"138000\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"labels\": [], \"accepted_terms_and_conditions_version\": 123596505}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9847129227601e+21
+    }
+  },
+  {
+    "id": "6710556393",
+    "receipt_id": "5jC4hrihmPgdSfN1bsRwizE7ki2ER9AKc38y7LKJDkmY",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3iVxaw9tFkH4v3FX1dATCiknBsS7m6Py7YshxexcxHJr",
+      "block_height": 123596633,
+      "block_timestamp": 1721209720171293000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4507398521886,
+      "tokens_burnt": 450739852188600000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "9V8MEiBDsYCCp4i8pdhfc7ftUgub2drbddPVok7s8s5D",
+    "included_in_block_hash": "6z5i6LBeNe5xskudd2aSbyVnopBHG9XwGY4db7pRW9r8",
+    "block_timestamp": "1721209717952583285",
+    "block": {
+      "block_height": 123596631
+    },
+    "receipt_conversion_tokens_burnt": "34195849537400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 450739852188600000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Tooling & Infrastructure* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @hristolimechain.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Enhancement for near-sdk-js with focus on devex, performance and security\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe project four key milestones. Firstly, increasing adoption by updating the starter template, improving API references, and simplifying the README for easier onboarding. Next, it ensures performance by testing gas usage and Wasm size, addressing inefficiencies, and conducting codebase reviews. Then, it prioritizes security by securing common contract flows, and adopting industry-standard security practices. Finally, it improves NEAR-Workspaces-JS integration, devex, and maintenance.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=152)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9847129227601e+21
+    }
+  },
+  {
+    "id": "6710556399",
+    "receipt_id": "613xHhZK9posGvGTbpeLCTPqUUspZjCnsfAvgN4KMErL",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3iVxaw9tFkH4v3FX1dATCiknBsS7m6Py7YshxexcxHJr",
+      "block_height": 123596633,
+      "block_timestamp": 1721209720171293000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4509288315696,
+      "tokens_burnt": 450928831569600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "9V8MEiBDsYCCp4i8pdhfc7ftUgub2drbddPVok7s8s5D",
+    "included_in_block_hash": "6z5i6LBeNe5xskudd2aSbyVnopBHG9XwGY4db7pRW9r8",
+    "block_timestamp": "1721209717952583285",
+    "block": {
+      "block_height": 123596631
+    },
+    "receipt_conversion_tokens_burnt": "34195849537400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 450928831569600000000,
+        "args": "{\"proposal\": {\"id\": 152, \"snapshot\": {\"name\": \"Enhancement for near-sdk-js with focus on devex, performance and security\", \"labels\": [], \"summary\": \"The project four key milestones. Firstly, increasing adoption by updating the starter template, improving API references, and simplifying the README for easier onboarding. Next, it ensures performance by testing gas usage and Wasm size, addressing inefficiencies, and conducting codebase reviews. Then, it prioritizes security by securing common contract flows, and adopting industry-standard security practices. Finally, it improves NEAR-Workspaces-JS integration, devex, and maintenance.\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"hristolimechain.near\", \"timestamp\": \"1721209719103529971\", \"supervisor\": null, \"description\": \"**Proposal Benefits**\\\\\\\\nOur proposed milestones offer several key benefits.\\\\\\\\n\\\\\\\\n- Providing developers with cohesive tools for building and testing contracts.\\\\\\\\n    - Improving developer onboarding with enhanced starter templates, comprehensive documentation, clear README and educational resources expedite learning and deployment processes.\\\\\\\\n- Enhancing performance by leveraging gas usage and Wasm size tests to ensure efficient resource management and optimization.\\\\\\\\n- Addressing inefficiencies improves overall contract performance and reliability.\\\\\\\\n- Thorough codebase reviews and explicit security audits to minimize vulnerabilities and ensure robustness.\\\\\\\\n- Implementation of security best practices like access controls and error handling enhances contract security.\\\\\\\\n- Automating maintenance and updates by utilizing automated release pipelines and community PR reviews, providing regular audits and monitoring tools maintain code integrity and responsiveness to emerging needs.\\\\\\\\n\\\\\\\\n## **Milestone 1: Increasing Adoption**\\\\\\\\n\\\\\\\\nTo enhance the adoption of NEAR-SDK-JS by improving the developer onboarding experience, updating key resources, and integrating standard contracts to streamline the development process.\\\\\\\\n\\\\\\\\n### **1. Update Starter Template**\\\\\\\\n\\\\\\\\nEnhance the initial setup experience for developers using NEAR-SDK-JS.\\\\\\\\n\\\\\\\\n\\\\\\\\u{1f4a1} We can check the code examples from  [https://docs.near.org/tutorials/welcome](https://docs.near.org/tutorials/welcome)\\\\\\\\n\\\\\\\\n- **Revamp the Starter Template**: Update the starter template in `create-near-app` to include examples of key NEAR contract standards. This will provide developers with ready-to-use implementations of Non-Fungible Token (NFT) standards, Fungible Token standards, and Storage Management standards.\\\\\\\\n- **Documentation and Examples**: Ensure that the starter template comes with comprehensive documentation and practical examples. These resources will guide developers through the process of creating, building, and deploying contracts.\\\\\\\\n- **Simplified Flow**: Create a clear, streamlined flow for developers to create \\\\\\\\u{27a1}\\\\\\\\u{fe0f} build \\\\\\\\u{27a1}\\\\\\\\u{fe0f} deploy contracts to the testnet within 2 minutes. This flow will be prominently featured in the README file and other onboarding materials.\\\\\\\\n    - Setting up the dev environment\\\\\\\\n    - Initializing a new NEAR app\\\\\\\\n    - Examples of creating a simple smart contract\\\\\\\\n    - Step-by-step instructions for build and deploy the contract to the testnet\\\\\\\\n    - Screenshots/code snippets/video to illustrate each step\\\\\\\\n\\\\\\\\n### **2. Enhance API Reference**\\\\\\\\n\\\\\\\\nMake the API reference more user-friendly and comprehensive.\\\\\\\\n\\\\\\\\n- **Documentation**: Use relevant documentation from the Rust SDK to fill gaps in the existing API reference. This includes detailed descriptions, usage examples, and explanations of key concepts.\\\\\\\\n- **UI Improvements Research**: Conduct research on how to improve the UI/UX of the documentation. Assess the current state of the documentation, identify areas for improvement, and explore the feasibility and ease of implementing these enhancements.\\\\\\\\n\\\\\\\\n### **3. Update README**\\\\\\\\n\\\\\\\\nProvide clear guidance and resources for new users.\\\\\\\\n\\\\\\\\n- **Educational Resources**: Feature the AgorApp education course on JS SDK prominently in the README. This will provide a structured learning path for new developers.\\\\\\\\n- **Relevant Links**: Include links to the updated API reference, key documentation on [docs.near.org](http://docs.near.org/), and other essential resources.\\\\\\\\n- **Developer Path**: Outline the simplified create \\\\\\\\u{27a1}\\\\\\\\u{fe0f} build \\\\\\\\u{27a1}\\\\\\\\u{fe0f} deploy flow in the README, ensuring that new users can get up and running quickly.\\\\\\\\n\\\\\\\\n### **Timelines**\\\\\\\\n\\\\\\\\n| Milestone | Task Description | Duration |\\\\\\\\n| --- | --- | --- |\\\\\\\\n| Revamp the Starter Template | Update the starter template to include NEAR contract standards with comprehensive documentation and examples. | 0.5 week |\\\\\\\\n| Simplify Developer Flow and README updates | Create and document a streamlined flow for creating, building, and deploying contracts. Update the README to feature educational resources, relevant links, and the simplified developer path. | 0.5 week |\\\\\\\\n| Enhance API Reference | Improve the API reference with detailed documentation and UI enhancements. Conduct research on how to improve the UI/UX of the documentation. | 1 week |\\\\\\\\n| Total: |  | 2 weeks |\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n## **Milestone 2: Ensuring Performance**\\\\\\\\n\\\\\\\\nTo ensure the performance of NEAR-SDK-JS by adding tests for gas usage and Wasm size, addressing any inefficiencies found, and conducting a comprehensive codebase review, we will follow a structured approach with specific enhancements and tools.\\\\\\\\n\\\\\\\\n### **1. Add Gas Usage Tests**\\\\\\\\n\\\\\\\\nMeasure gas usage for collections to ensure efficient performance.\\\\\\\\n\\\\\\\\n- **Collections Operations**: Develop tests to measure gas usage for various collection operations including add, get, remove elements, iterate over elements, and seek + iterate over elements. This will help in identifying any inefficiencies and ensure the performance of these operations remains optimal.\\\\\\\\n- **Comparison with Rust SDK**: Compare the results with the recent performance improvements in the Rust SDK to ensure parity in performance. Reference: [near-sdk-rs PR](https://github.com/near/near-sdk-rs/pull/1195)\\\\\\\\n- **Real-time Monitoring**: Add an npm watch gas function that can output TGas while coding to allow real-time monitoring and adjustments.\\\\\\\\n- **CLI Scripts**: Add a set of CLI scripts in a utils library that would allow users to test and validate inefficiencies before build.\\\\\\\\n\\\\\\\\n### **2. Address Inefficiencies**\\\\\\\\n\\\\\\\\nIdentify and address any inefficiencies found during the gas usage tests.\\\\\\\\n\\\\\\\\n- **Scope Inefficiencies**: If gas usage tests reveal inefficiencies that could lead to malfunctioning contracts (e.g., inability to iterate under 300TGas with a growing number of entries), scope these issues and plan to address them.\\\\\\\\n- Backlog and Analysis\\\\\\\\n    - Make a backlog of inefficiencies identified.\\\\\\\\n    - Analyze the impact on development.\\\\\\\\n    - Identify potential solutions.\\\\\\\\n    - Scope solution and propose.\\\\\\\\n\\\\\\\\n### **3. Add Wasm Size Tests**\\\\\\\\n\\\\\\\\nEnsure the Wasm size remains optimal by adding size tests and making necessary adjustments.\\\\\\\\n\\\\\\\\n- **Wasm Size Measurement**: Use [https://github.com/near/near-sdk-js/tree/develop/benchmark](https://github.com/near/near-sdk-js/tree/develop/benchmark) as starting point to analyze the reasons and identify quick wins to reduce the size.\\\\\\\\n- **Integration with Build Process**: Integrate these size tests as part of the build process, possibly in an extra build scripts library, to ensure continuous monitoring and optimization.\\\\\\\\n- **Optimization Exploration Ideas:**\\\\\\\\n    - **Optimize Code and Dependencies**: Tools like Tree Shaking, minification, and careful selection of dependencies can help us to reduce code size.\\\\\\\\n    - **Use Compiler Optimizations**: Employ optimization flags (`O3`, `Os`) and Link Time Optimization (LTO) during the compilation.\\\\\\\\n    - **Wasm-Specific Tools**: Utilize `wasm-opt` from Binaryen and Emscripten with optimization flags to further reduce the Wasm binary size.\\\\\\\\n\\\\\\\\n### **4. Conduct Codebase Review**\\\\\\\\n\\\\\\\\n- **Ongoing Review**: As you go through the performance tasks, conduct an ongoing review of the codebase to identify potential performance bottlenecks and opportunities for optimization.\\\\\\\\n- **Explicit Review for Common Flows**: Conduct an explicit review for common contract flows such as contract re-initialization safeguards, promises API, and error handling to ensure they meet performance and security standards.\\\\\\\\n\\\\\\\\n### **Timelines**\\\\\\\\n\\\\\\\\n| Milestone | Task Description | Duration |\\\\\\\\n| --- | --- | --- |\\\\\\\\n| Add Gas Usage Tests | Measure gas usage for collections operations including add, get, remove, iterate, and seek + iterate. | 0.5 week |\\\\\\\\n| Address Inefficiencies | Scope and address inefficiencies found in gas usage tests. | 0.5 week |\\\\\\\\n| Add Wasm Size Tests | Measure Wasm size and implement quick wins to reduce size if it exceeds 500KB. | 0.5 week |\\\\\\\\n| Conduct Codebase Review | Perform an ongoing review of the codebase and an explicit review of common contract flows. | 0.5 week |\\\\\\\\n| Total: |  | 2 weeks |\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n## **Milestone 3: Ensuring Security**\\\\\\\\n\\\\\\\\nTo ensure the security of NEAR-SDK-JS by conducting comprehensive codebase reviews, explicitly reviewing common contract flows, and implementing best practices for error handling and contract re-initialization safeguards.\\\\\\\\n\\\\\\\\n### **1. Conduct Codebase Review**\\\\\\\\n\\\\\\\\nPerform a deep review of the codebase to identify and address potential security vulnerabilities.\\\\\\\\n\\\\\\\\n- **Ongoing Review**: Conduct an ongoing review of the entire codebase to identify potential security vulnerabilities and ensure adherence to best practices.\\\\\\\\n- **Security Standards Compliance**: Ensure that the codebase complies with established security standards and guidelines.\\\\\\\\n- **Npm Audit and Node Modules Review**: Utilize `npm audit` to check for known vulnerabilities in dependencies and review node modules to identify and remove packages that are no longer used.\\\\\\\\n\\\\\\\\n### **2.Explicit Review for Common Flows**\\\\\\\\n\\\\\\\\nPerform an explicit review for common contract flows to ensure they are secure.\\\\\\\\n\\\\\\\\n- **Contract Re-initialization Safeguards**: Review and implement safeguards to prevent unauthorized contract re-initialization.\\\\\\\\n- **Promises API**: Ensure the secure implementation of the promises API to prevent potential exploits.\\\\\\\\n- **Error Handling**: Implement robust error handling mechanisms to mitigate the risk of unexpected behaviors and security vulnerabilities.\\\\\\\\n\\\\\\\\n### **3. Implement improved security practices**\\\\\\\\n\\\\\\\\nAdopt and implement industry-standard security best practices to enhance the security of NEAR-SDK-JS.\\\\\\\\n\\\\\\\\n- **Access Controls**: Improve the handling of private variables and accessors to ensure secure access to sensitive functions and data.\\\\\\\\n- **Data Validation**: Adopt a middleware approach to allow users to plug in their preferred validation libraries, ensuring comprehensive validation of all input data to prevent injection attacks and other vulnerabilities.\\\\\\\\n- **Regular Security Audits**: Conduct regular security audits and penetration testing focusing on the following main areas:\\\\\\\\n    - Authentication and Authorization\\\\\\\\n    - Input Validation and Sanitization\\\\\\\\n    - Error Handling and Logging\\\\\\\\n    - Dependency Management\\\\\\\\n    - Code Integrity and Tampering Prevention\\\\\\\\n\\\\\\\\n### **Timelines**\\\\\\\\n\\\\\\\\n| Milestone | Task Description | Duration |\\\\\\\\n| --- | --- | --- |\\\\\\\\n| Conduct Codebase Review | Perform an ongoing review of the codebase to identify potential security vulnerabilities. | 0.5 week |\\\\\\\\n| Explicit Review for Common Flows | Review and implement safeguards for contract re-initialization, promises API, and error handling. | 0.5 week |\\\\\\\\n| Implement Security Best Practices | Implement access controls, data validation, and conduct regular security audits. | 1 week |\\\\\\\\n| Total: |  | 2 weeks |\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n# **Milestone 4: Enhancing NEAR-WORKSPACES-JS**\\\\\\\\n\\\\\\\\nTo improve the adoption, developer experience, and maintenance of NEAR-Workspaces-JS by ensuring seamless integration with near-sdk-js, enhancing documentation, and setting up automated maintenance processes.\\\\\\\\n\\\\\\\\n### **1. Get NEAR-Workspaces-JS More Adoption**\\\\\\\\n\\\\\\\\nEnhance integration and documentation to improve the adoption of NEAR-Workspaces-JS.\\\\\\\\n\\\\\\\\n- **Integration with near-sdk-js**:\\\\\\\\n    - Update the `create-near-app` template to include examples of how to use NEAR-Workspaces-JS alongside near-sdk-js.\\\\\\\\n    - Ensure that developers have access to both contract building SDKs and necessary tools for unit and integration testing.\\\\\\\\n- **Documentation and README**:\\\\\\\\n    - Update the documentation and README files to provide clear, comprehensive examples and explanations.\\\\\\\\n    - Guide developers step-by-step on how to use NEAR-Workspaces-JS with near-sdk-js.\\\\\\\\n- **Integration Testing Documentation**:\\\\\\\\n    - Review and enhance the integration testing documentation available at [NEAR Docs](https://docs.near.org/build/smart-contracts/testing/integration-test).\\\\\\\\n    - Ensure the documentation includes best practices and clear, step-by-step instructions.\\\\\\\\n\\\\\\\\n### **2. Developer Experience**\\\\\\\\n\\\\\\\\nImprove the developer experience by addressing findings and enhancing integration testing.\\\\\\\\n\\\\\\\\n- **Address Integration Testing Findings**:\\\\\\\\n    - Identify any issues or pain points in the current integration testing process.\\\\\\\\n    - Implement solutions to streamline and improve the integration testing experience.\\\\\\\\n\\\\\\\\n### **3. Maintenance**\\\\\\\\n\\\\\\\\nEnsure the sustainability and ease of maintenance for NEAR-Workspaces-JS.\\\\\\\\n\\\\\\\\n- **Automated Release Pipeline**:\\\\\\\\n    - Set up an automated release preparation and publishing pipeline using tools like release-please or similar.\\\\\\\\n    - Consider using the setup from near-api-js as a reference to streamline the process.\\\\\\\\n- **Review Community PRs**:\\\\\\\\n    - Regularly review and merge community pull requests.\\\\\\\\n    - Incorporate valuable contributions from the community to keep the project up-to-date.\\\\\\\\n\\\\\\\\n### **Timelines**\\\\\\\\n\\\\\\\\n| Milestone | Task Description | Duration |\\\\\\\\n| --- | --- | --- |\\\\\\\\n| Automated Release Pipeline | Set up an automated release preparation and publishing pipeline. | 1 week |\\\\\\\\n| Integration with near-sdk-js | Update the create-near-app template to ensure seamless integration with near-sdk-js, including necessary tools for testing. | 1 week |\\\\\\\\n| Documentation and README | Update documentation and README to provide clear guidance and comprehensive examples. | 0.5 week |\\\\\\\\n| Enhance Integration Testing Documentation | Review and enhance integration testing documentation on NEAR Docs. | 0.5 week |\\\\\\\\n| Address Integration Testing Findings | Identify and address issues to improve the integration testing experience. | 1 week |\\\\\\\\n| Review Community PRs | Regularly review and merge community pull requests. | 1 week |\\\\\\\\n| Total: |  | 5 weeks |\\\\\\\\n\\\\\\\\n**Tech Stack:**\\\\\\\\n\\\\\\\\nRust\\\\\\\\n\\\\\\\\nTypescript\\\\\\\\n\\\\\\\\nReact\\\\\\\\n\\\\\\\\n**Team Setup:**\\\\\\\\n\\\\\\\\n2 x Full-time Frontend Developers with Typescript\\\\\\\\n\\\\\\\\n1 x Full-time Blockchain Developer with Rust\\\\\\\\n\\\\\\\\n1 x Part-time Tech Lead\\\\\\\\n\\\\\\\\n**Duration:** 11 weeks\", \"linked_proposals\": [], \"receiver_account\": \"75d06b35243c61a112abc1e0ad748f58c5b146d264099798492ede675199cf93\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"138000\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"author_id\": \"hristolimechain.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9847129227601e+21
+    }
+  },
+  {
+    "id": "6710556402",
+    "receipt_id": "CoicVWvwN3YL1LK9muFHXhUbg2c37F8c2XG6pMGYGJx8",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3iVxaw9tFkH4v3FX1dATCiknBsS7m6Py7YshxexcxHJr",
+      "block_height": 123596633,
+      "block_timestamp": 1721209720171293000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3499705793843,
+      "tokens_burnt": 349970579384300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "9V8MEiBDsYCCp4i8pdhfc7ftUgub2drbddPVok7s8s5D",
+    "included_in_block_hash": "6z5i6LBeNe5xskudd2aSbyVnopBHG9XwGY4db7pRW9r8",
+    "block_timestamp": "1721209717952583285",
+    "block": {
+      "block_height": 123596631
+    },
+    "receipt_conversion_tokens_burnt": "34195849537400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349970579384300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":152,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"hristolimechain.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9847129227601e+21
+    }
+  },
+  {
+    "id": "6718232769",
+    "receipt_id": "8foasz4nvRRYf4QoNtJ4rmmtMP4m6bUKdaeqCHWoj8Z8",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9oDjdLKppTdenZimTUeZbAD1samvGUkBGiSEmTBKMCHq",
+      "block_height": 123616172,
+      "block_timestamp": 1721231457647345400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4966147822495,
+      "tokens_burnt": 496614782249500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "EoNyzB5YHmuEZRzxaJjXvyxJ4o99ZAgAqtU7eno16EL",
+    "included_in_block_hash": "5D9DJz5ewf938J6shx7qTtFcinZhZU1VYFSQtj4F37Vc",
+    "block_timestamp": "1721231456619706179",
+    "block": {
+      "block_height": 123616171
+    },
+    "receipt_conversion_tokens_burnt": "32269815989800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 496614782249500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"widget\": {\"devhub.entity.proposal.ComposeComment\": {\"\": \"const proposalId = props.id;\\\\\\\\nconst draftKey = \\\\\\\\\\\\\\\"COMMENT_DRAFT\\\\\\\\\\\\\\\" + proposalId;\\\\\\\\nlet draftComment = \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\";\\\\\\\\n\\\\\\\\nconst ComposeEmbeddCSS = `\\\\\\\\n  .CodeMirror {\\\\\\\\n    border: none !important;\\\\\\\\n    min-height: 50px !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .editor-toolbar {\\\\\\\\n    border: none !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .CodeMirror-scroll{\\\\\\\\n    min-height: 50px !important;\\\\\\\\n    max-height: 300px !important;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\nconst notifyAccountId = props.notifyAccountId;\\\\\\\\nconst accountId = context.accountId;\\\\\\\\nconst item = props.item;\\\\\\\\nconst [allowGetDraft, setAllowGetDraft] = useState(true);\\\\\\\\nconst [comment, setComment] = useState(null);\\\\\\\\nconst [isTxnCreated, setTxnCreated] = useState(false);\\\\\\\\nconst [handler, setHandler] = useState(\\\\\\\\\\\\\\\"update\\\\\\\\\\\\\\\"); // to update editor state on draft and txn approval\\\\\\\\nconst [showCommentToast, setCommentToast] = useState(false);\\\\\\\\n\\\\\\\\nif (allowGetDraft) {\\\\\\\\n  draftComment = Storage.privateGet(draftKey);\\\\\\\\n}\\\\\\\\n\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (draftComment) {\\\\\\\\n    setComment(draftComment);\\\\\\\\n    setAllowGetDraft(false);\\\\\\\\n    setHandler(\\\\\\\\\\\\\\\"refreshEditor\\\\\\\\\\\\\\\");\\\\\\\\n  }\\\\\\\\n}, [draftComment]);\\\\\\\\n\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (draftComment === comment) {\\\\\\\\n    return;\\\\\\\\n  }\\\\\\\\n  const handler = setTimeout(() => {\\\\\\\\n    Storage.privateSet(draftKey, comment);\\\\\\\\n  }, 1000);\\\\\\\\n\\\\\\\\n  return () => {\\\\\\\\n    clearTimeout(handler);\\\\\\\\n  };\\\\\\\\n}, [comment]);\\\\\\\\n\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (handler === \\\\\\\\\\\\\\\"update\\\\\\\\\\\\\\\") {\\\\\\\\n    return;\\\\\\\\n  }\\\\\\\\n  const handler = setTimeout(() => {\\\\\\\\n    setHandler(\\\\\\\\\\\\\\\"update\\\\\\\\\\\\\\\");\\\\\\\\n  }, 3000);\\\\\\\\n\\\\\\\\n  return () => {\\\\\\\\n    clearTimeout(handler);\\\\\\\\n  };\\\\\\\\n}, [handler]);\\\\\\\\n\\\\\\\\nif (!accountId) {\\\\\\\\n  return (\\\\\\\\n    <div\\\\\\\\n      style={{\\\\\\\\n        marginLeft: 10,\\\\\\\\n        backgroundColor: \\\\\\\\\\\\\\\"#ECF8FB\\\\\\\\\\\\\\\",\\\\\\\\n        border: \\\\\\\\\\\\\\\"1px solid #E2E6EC\\\\\\\\\\\\\\\",\\\\\\\\n      }}\\\\\\\\n      className=\\\\\\\\\\\\\\\"d-flex align-items-center gap-1 p-4 rounded-2 flex-wrap flex-md-nowrap\\\\\\\\\\\\\\\"\\\\\\\\n    >\\\\\\\\n      <Link to=\\\\\\\\\\\\\\\"https://near.org/signup\\\\\\\\\\\\\\\">\\\\\\\\n        <Widget\\\\\\\\n          src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.Button\\\\\\\\\\\\\\\"}\\\\\\\\n          props={{\\\\\\\\n            classNames: { root: \\\\\\\\\\\\\\\"grey-btn\\\\\\\\\\\\\\\" },\\\\\\\\n            label: \\\\\\\\\\\\\\\"Sign up\\\\\\\\\\\\\\\",\\\\\\\\n          }}\\\\\\\\n        />\\\\\\\\n      </Link>\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"fw-bold\\\\\\\\\\\\\\\">to join this conversation.</div>\\\\\\\\n      <div>Already have an account?</div>\\\\\\\\n      <a className=\\\\\\\\\\\\\\\"text-decoration-underline\\\\\\\\\\\\\\\" href=\\\\\\\\\\\\\\\"https://near.org/signin\\\\\\\\\\\\\\\">\\\\\\\\n        Log in to comment\\\\\\\\n      </a>\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n}\\\\\\\\n\\\\\\\\nfunction extractMentions(text) {\\\\\\\\n  const mentionRegex =\\\\\\\\n    /@((?:(?:[a-z\\\\\\\\\\\\\\\\d]+[-_])*[a-z\\\\\\\\\\\\\\\\d]+\\\\\\\\\\\\\\\\.)*(?:[a-z\\\\\\\\\\\\\\\\d]+[-_])*[a-z\\\\\\\\\\\\\\\\d]+)/gi;\\\\\\\\n  mentionRegex.lastIndex = 0;\\\\\\\\n  const accountIds = new Set();\\\\\\\\n  for (const match of text.matchAll(mentionRegex)) {\\\\\\\\n    if (\\\\\\\\n      !/[\\\\\\\\\\\\\\\\w`]/.test(match.input.charAt(match.index - 1)) &&\\\\\\\\n      !/[/\\\\\\\\\\\\\\\\w`]/.test(match.input.charAt(match.index + match[0].length)) &&\\\\\\\\n      match[1].length >= 2 &&\\\\\\\\n      match[1].length <= 64\\\\\\\\n    ) {\\\\\\\\n      accountIds.add(match[1].toLowerCase());\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  return [...accountIds];\\\\\\\\n}\\\\\\\\n\\\\\\\\nfunction extractTagNotifications(text, item) {\\\\\\\\n  return extractMentions(text || \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\")\\\\\\\\n    .filter((accountId) => accountId !== context.accountId)\\\\\\\\n    .map((accountId) => ({\\\\\\\\n      key: accountId,\\\\\\\\n      value: {\\\\\\\\n        type: \\\\\\\\\\\\\\\"mention\\\\\\\\\\\\\\\",\\\\\\\\n        item,\\\\\\\\n      },\\\\\\\\n    }));\\\\\\\\n}\\\\\\\\n\\\\\\\\nfunction composeData() {\\\\\\\\n  setTxnCreated(true);\\\\\\\\n  const data = {\\\\\\\\n    post: {\\\\\\\\n      comment: JSON.stringify({\\\\\\\\n        type: \\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\n        text: comment,\\\\\\\\n        item,\\\\\\\\n      }),\\\\\\\\n    },\\\\\\\\n    index: {\\\\\\\\n      comment: JSON.stringify({\\\\\\\\n        key: item,\\\\\\\\n        value: {\\\\\\\\n          type: \\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\n        },\\\\\\\\n      }),\\\\\\\\n    },\\\\\\\\n  };\\\\\\\\n\\\\\\\\n  const notifications = extractTagNotifications(comment, {\\\\\\\\n    type: \\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\n    path: `${accountId}/post/comment`,\\\\\\\\n  });\\\\\\\\n\\\\\\\\n  if (notifyAccountId && notifyAccountId !== context.accountId) {\\\\\\\\n    notifications.push({\\\\\\\\n      key: notifyAccountId,\\\\\\\\n      value: {\\\\\\\\n        type: \\\\\\\\\\\\\\\"proposal/reply\\\\\\\\\\\\\\\",\\\\\\\\n        item,\\\\\\\\n        proposal: proposalId,\\\\\\\\n        widgetAccountId: \\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\n      },\\\\\\\\n    });\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  if (notifications.length) {\\\\\\\\n    data.index.notify = JSON.stringify(\\\\\\\\n      notifications.length > 1 ? notifications : notifications[0]\\\\\\\\n    );\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  Social.set(data, {\\\\\\\\n    force: true,\\\\\\\\n    onCommit: () => {\\\\\\\\n      setCommentToast(true);\\\\\\\\n      setComment(\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\");\\\\\\\\n      Storage.privateSet(draftKey, \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\");\\\\\\\\n      setHandler(\\\\\\\\\\\\\\\"committed\\\\\\\\\\\\\\\");\\\\\\\\n      setTxnCreated(false);\\\\\\\\n    },\\\\\\\\n    onCancel: () => {\\\\\\\\n      setTxnCreated(false);\\\\\\\\n    },\\\\\\\\n  });\\\\\\\\n}\\\\\\\\n\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (props.transactionHashes && comment) {\\\\\\\\n    setComment(\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\");\\\\\\\\n  }\\\\\\\\n}, [props.transactionHashes]);\\\\\\\\n\\\\\\\\nconst LoadingButtonSpinner = (\\\\\\\\n  <span\\\\\\\\n    class=\\\\\\\\\\\\\\\"comment-btn-spinner spinner-border spinner-border-sm\\\\\\\\\\\\\\\"\\\\\\\\n    role=\\\\\\\\\\\\\\\"status\\\\\\\\\\\\\\\"\\\\\\\\n    aria-hidden=\\\\\\\\\\\\\\\"true\\\\\\\\\\\\\\\"\\\\\\\\n  ></span>\\\\\\\\n);\\\\\\\\n\\\\\\\\nconst Compose = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.Compose\\\\\\\\\\\\\\\"}\\\\\\\\n      props={{\\\\\\\\n        data: comment,\\\\\\\\n        onChangeKeyup: setComment,\\\\\\\\n        autocompleteEnabled: true,\\\\\\\\n        placeholder: \\\\\\\\\\\\\\\"Add your comment here...\\\\\\\\\\\\\\\",\\\\\\\\n        height: \\\\\\\\\\\\\\\"250\\\\\\\\\\\\\\\",\\\\\\\\n        embeddCSS: ComposeEmbeddCSS,\\\\\\\\n        handler: handler,\\\\\\\\n        showProposalIdAutoComplete: true,\\\\\\\\n        sortedRelevantUsers: props.sortedRelevantUsers,\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}, [draftComment, handler, props.sortedRelevantUsers]);\\\\\\\\n\\\\\\\\nreturn (\\\\\\\\n  <div className=\\\\\\\\\\\\\\\"d-flex gap-2\\\\\\\\\\\\\\\">\\\\\\\\n    <Widget\\\\\\\\n      src=\\\\\\\\\\\\\\\"near/widget/DIG.Toast\\\\\\\\\\\\\\\"\\\\\\\\n      props={{\\\\\\\\n        title: \\\\\\\\\\\\\\\"Comment Submitted Successfully\\\\\\\\\\\\\\\",\\\\\\\\n        type: \\\\\\\\\\\\\\\"success\\\\\\\\\\\\\\\",\\\\\\\\n        open: showCommentToast,\\\\\\\\n        onOpenChange: (v) => setCommentToast(v),\\\\\\\\n        trigger: <></>,\\\\\\\\n        providerProps: { duration: 3000 },\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n    <Widget\\\\\\\\n      src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.Profile\\\\\\\\\\\\\\\"}\\\\\\\\n      props={{\\\\\\\\n        accountId: accountId,\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-2 w-100\\\\\\\\\\\\\\\">\\\\\\\\n      <b className=\\\\\\\\\\\\\\\"mt-1\\\\\\\\\\\\\\\">Add a comment</b>\\\\\\\\n      {Compose}\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-content-center justify-content-end\\\\\\\\\\\\\\\">\\\\\\\\n        <Widget\\\\\\\\n          src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.Button\\\\\\\\\\\\\\\"}\\\\\\\\n          props={{\\\\\\\\n            label: isTxnCreated ? LoadingButtonSpinner : \\\\\\\\\\\\\\\"Comment\\\\\\\\\\\\\\\",\\\\\\\\n            [\\\\\\\\\\\\\\\"data-testid\\\\\\\\\\\\\\\"]: \\\\\\\\\\\\\\\"compose-comment\\\\\\\\\\\\\\\",\\\\\\\\n            disabled: !comment || isTxnCreated,\\\\\\\\n            classNames: { root: \\\\\\\\\\\\\\\"green-btn btn-sm\\\\\\\\\\\\\\\" },\\\\\\\\n            onClick: () => {\\\\\\\\n              composeData();\\\\\\\\n            },\\\\\\\\n          }}\\\\\\\\n        />\\\\\\\\n      </div>\\\\\\\\n    </div>\\\\\\\\n  </div>\\\\\\\\n);\\\\\\\\n\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 528884598239300000000
+    }
+  },
+  {
+    "id": "6718233506",
+    "receipt_id": "6rPHisStrx4bUn9SwFuRJuPEnrGG3n8e3r7bvGbMPpZX",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CuoBKnnReHd2GHK1gTXNfhPb3jMwJefNk1cjxgMDTqLZ",
+      "block_height": 123616173,
+      "block_timestamp": 1721231458718724000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "EoNyzB5YHmuEZRzxaJjXvyxJ4o99ZAgAqtU7eno16EL",
+    "included_in_block_hash": "5D9DJz5ewf938J6shx7qTtFcinZhZU1VYFSQtj4F37Vc",
+    "block_timestamp": "1721231456619706179",
+    "block": {
+      "block_height": 123616171
+    },
+    "receipt_conversion_tokens_burnt": "32269815989800000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.8757966003268262e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 528884598239300000000
+    }
+  },
+  {
+    "id": "6720087189",
+    "receipt_id": "6FZ18feV2VQYmpxv1SbRpsgcp5CjJahQ5ANWHaApqFEY",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "MARttGdpFx6UC9JS6ceNwMdzN3B6DKE7WatNvGND2rD",
+      "block_height": 123621033,
+      "block_timestamp": 1721237050974329000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7961036905841,
+      "tokens_burnt": 796103690584100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "5ooWayUWaU3D4Y5fDjRN2wXwW5C6mMeCxW9MbAGXf3h2",
+    "included_in_block_hash": "FNaezNMwm6B9WSxvMHLXqfMsB5WByvEnX1tF5d8T5Qyn",
+    "block_timestamp": "1721237049840868462",
+    "block": {
+      "block_height": 123621032
+    },
+    "receipt_conversion_tokens_burnt": "30871462866200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 796103690584100000000,
+        "args": "{\"id\": 122, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"kyc_verified_review\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.176790816373e+21
+    }
+  },
+  {
+    "id": "6720087249",
+    "receipt_id": "3ZN8FG5us3J7v79YK8wrq2kgo8hbC7jcV4mMu2cpEs1v",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AmY2JWKMZFWVQpd6m3AUva6M4kgRwPiurpcSxWrjbaRQ",
+      "block_height": 123621034,
+      "block_timestamp": 1721237052120893400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3498156629227,
+      "tokens_burnt": 349815662922700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5ooWayUWaU3D4Y5fDjRN2wXwW5C6mMeCxW9MbAGXf3h2",
+    "included_in_block_hash": "FNaezNMwm6B9WSxvMHLXqfMsB5WByvEnX1tF5d8T5Qyn",
+    "block_timestamp": "1721237049840868462",
+    "block": {
+      "block_height": 123621032
+    },
+    "receipt_conversion_tokens_burnt": "30871462866200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349815662922700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":122,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.176790816373e+21
+    }
+  },
+  {
+    "id": "6720250072",
+    "receipt_id": "8kNTxDwLGvibYUH871taeaH4DVpabhP8GzGTdomSshPy",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "348nHrCMEQy6Mszka1KNxXKuGBvouhEVqpBfA53S22eo",
+      "block_height": 123621432,
+      "block_timestamp": 1721237500395558400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4469518619048,
+      "tokens_burnt": 446951861904800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "HfaWZh7xf74HJ8r6xMwxjLNiZbdMavgrmbkDD3nx5SUX",
+    "included_in_block_hash": "989oH2U77L8UcckeF4wXbDR34SiQ65KeK6W6nmFKgvbv",
+    "block_timestamp": "1721237499513855167",
+    "block": {
+      "block_height": 123621431
+    },
+    "receipt_conversion_tokens_burnt": "31412782487600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 446951861904800000000,
+        "args": "{\"id\": 150, \"body\": {\"name\": \"DevHub Fin Ops 06/17/24 - 06/28/24 \", \"summary\": \"Oversee that proposals flow thru the payment process efficiently.  Recommend new procedures to improve the proposal payment process.\", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified_review\": false, \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"theori.near\", \"description\": \"SUMMARY\\\\\\\\nAudit and reconciliation of 2024 DevHub proposals submitted for payment processing.\\\\\\\\nDESCRIPTION\\\\\\\\nThe process to pay DevHub contributor proposals is fractured. I was brought on board to audit the current system in place, audit the records as they currently exist, propose improvements based on my findings, collaborate to implement an improved process and serve as the ongoing liason between DevHub contributors and NF as it relates to proposal payment processing.\\\\\\\\n\\\\\\\\nWeek #4 6/17/24 - 6/21/24\\\\\\\\n06/17/24 - Email, Slack, CRM updates, Research issues\\\\\\\\n06/18/24 - CRM updates, Zoom meeting w/Ori re:bottlenecks, TG w/Dan and Ori\\\\\\\\n06/19/24 - TG w/Dan, Research issues, Email to Ori\\\\\\\\n06/20/24 - Figma flow, Draft meeting agenda, Meeting re:T&C w/legal\\\\\\\\n06/21/24 - Meeting w/Ori re:o/s proposal issues, TG w/Dan, CRM updates, Slack w/Philipp, Review T&C and TG Ori w/comments\\\\\\\\nTotal 15.5 hours\\\\\\\\n\\\\\\\\nWeek #5 06/24/24 - 06/28/24\\\\\\\\n06/25/24 - Meeting w/Maria re:events CRM, TG w/Luca, CRM updates and research new errors, TG w/Dan\\\\\\\\n06/26/24 - CRM updates\\\\\\\\n06/27/24 - TG w/Dan and Luca, Slack w/Nargiza, CRM updates, TG w/Ori for access to Events CRM\\\\\\\\n06/28/24 - Meeting w/Ori, CRM updates\\\\\\\\nTotal 9 hours\\\\\\\\n\\\\\\\\nTotal 24.5 hours\\\\\\\\n\\\\\\\\nResults:\\\\\\\\n\\\\\\\\n2024 proposals are reconciled between DevHub portal and CRM.  Proposals are flowing timely.  Ideas are flowing back and forth to improve the process further.\\\\\\\\n\\\\\\\\nThere are:\\\\\\\\n5 proposals in CRM that are from the old system showing as Invoice Pending that are still in the resolution stage\\\\\\\\n\\\\\\\\n\\\\\\\\nTotal hours: 24.5\\\\\\\\nRate: $80/hour\\\\\\\\nRate determination is below the low end of the average hourly contract rate ($87 - $162) for an accountant with the same years of experience. That average rate does not account for my 5 years of blockchain specific experience. I\\\\\\\\\\\\'m not fulfilling all the duties that typically fall under this type of role, that is why I proposed a rate lower than the low end of the average.\\\\\\\\n\\\\\\\\nhttps://www.salary.com/research/salary/benchmark/controller-hourly-wages\", \"linked_proposals\": [], \"receiver_account\": \"9bd73bc9ba6ff289e2deb597dd6fe83dc0056af7a2937d6dec119660ba0146a4\", \"requested_sponsor\": \"theori.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"1960\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 828066658058300000000
+    }
+  },
+  {
+    "id": "6720250766",
+    "receipt_id": "FH7AQZ5fwhfztbny6zesPbXNTbfD6ozhWJxyJYBV7rpi",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "JCdEUDEuWuFyy4V4Aid4jR5UjcuHryw7mKYYiDe5r3pj",
+      "block_height": 123621433,
+      "block_timestamp": 1721237501398539000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3497020136659,
+      "tokens_burnt": 349702013665900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "HfaWZh7xf74HJ8r6xMwxjLNiZbdMavgrmbkDD3nx5SUX",
+    "included_in_block_hash": "989oH2U77L8UcckeF4wXbDR34SiQ65KeK6W6nmFKgvbv",
+    "block_timestamp": "1721237499513855167",
+    "block": {
+      "block_height": 123621431
+    },
+    "receipt_conversion_tokens_burnt": "31412782487600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349702013665900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":150,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 828066658058300000000
+    }
+  },
+  {
+    "id": "6720435394",
+    "receipt_id": "F8N9hb7YhCxCQVgc8DEZ9dtBWG2x6bBNzu4cViXXJZZM",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6MTWWwP7ZsdNLVYeBc55ro1XdoGSUZUtdnhdseBa7maW",
+      "block_height": 123621929,
+      "block_timestamp": 1721238070232813800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4882260021259,
+      "tokens_burnt": 488226002125900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "3dayvHYq7PsDQXWH5FjGTotg1fxoayJQjpcFpviugC8s",
+    "included_in_block_hash": "88o5ZLEaeDcEKAE15ZYyYo2NGV5XSj1q24xTCAF3Cfqw",
+    "block_timestamp": "1721238069132710857",
+    "block": {
+      "block_height": 123621928
+    },
+    "receipt_conversion_tokens_burnt": "30848432746000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 488226002125900000000,
+        "args": "{\"id\": 150, \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified\": false, \"timeline_version\": \"V1\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 868776448537800000000
+    }
+  }
+]

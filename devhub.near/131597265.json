@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "9674830482",
+    "receipt_id": "6g6L2QomfpX56L7rbthJyU3py5bnYFYEXje6civP4WFc",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8ZRv44f3d8JGMzTKp5CWnmiEiJhKxGiv56nbcmzCLCE7",
+      "block_height": 131597497,
+      "block_timestamp": 1730342672346281200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6677976235964,
+      "tokens_burnt": 667797623596400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "HAMkfphLocVzp6FV5WDSVRB78wJf3gGE1sVsZ44n7eyn",
+    "included_in_block_hash": "4dTFUeA2EKH8CHGyHcDk839XvZax1ghmS7VGPDdYHR98",
+    "block_timestamp": "1730342671133581301",
+    "block": {
+      "block_height": 131597496
+    },
+    "receipt_conversion_tokens_burnt": "32074336819000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 667797623596400000000,
+        "args": "{\"id\": 234, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0579987621645e+21
+    }
+  },
+  {
+    "id": "9674830754",
+    "receipt_id": "5qx9wDAxv1yVMh8snsva6messugVuyqdJ7WkGfy7m1fH",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "76gntyoeHWrUUeWvqG6Pw9NyL5HobAFjZhkCwLAC9ySw",
+      "block_height": 131597498,
+      "block_timestamp": 1730342673549990700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3581268017491,
+      "tokens_burnt": 358126801749100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "HAMkfphLocVzp6FV5WDSVRB78wJf3gGE1sVsZ44n7eyn",
+    "included_in_block_hash": "4dTFUeA2EKH8CHGyHcDk839XvZax1ghmS7VGPDdYHR98",
+    "block_timestamp": "1730342671133581301",
+    "block": {
+      "block_height": 131597496
+    },
+    "receipt_conversion_tokens_burnt": "32074336819000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 358126801749100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"thomasguntenaar.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":234,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0579987621645e+21
+    }
+  },
+  {
+    "id": "9674864599",
+    "receipt_id": "AxxJUnesTornV4oJGz6aAYsjQhPgphpqtoznaiGHR3LP",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BVxQCMGweMxmc2X7X2MEW37C6fr47fWihWnthCHWeWWN",
+      "block_height": 131597653,
+      "block_timestamp": 1730342851377325600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4892803126520,
+      "tokens_burnt": 489280312652000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "7MZDwkQUyMya2SdephaqgeeQGpPN4k47kKSSLgBSVAEh",
+    "included_in_block_hash": "HqPjp3xp7meushCU1nA6H5SZyqrxAseykWW6RwZaqjyn",
+    "block_timestamp": "1730342850145874268",
+    "block": {
+      "block_height": 131597652
+    },
+    "receipt_conversion_tokens_burnt": "32069568447500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 489280312652000000000,
+        "args": "{\"id\": 235, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 879546117323800000000
+    }
+  },
+  {
+    "id": "9674864795",
+    "receipt_id": "2NttkvFj2mcXGa6Yhhf7mCAJtzRVta7bLo3vJ3jCL3CU",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CJpCYCqX7Jun9B8rw75e7ZdbAoyatNNH9ksQgG4MmGDu",
+      "block_height": 131597654,
+      "block_timestamp": 1730342852520778000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3581962362243,
+      "tokens_burnt": 358196236224300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7MZDwkQUyMya2SdephaqgeeQGpPN4k47kKSSLgBSVAEh",
+    "included_in_block_hash": "HqPjp3xp7meushCU1nA6H5SZyqrxAseykWW6RwZaqjyn",
+    "block_timestamp": "1730342850145874268",
+    "block": {
+      "block_height": 131597652
+    },
+    "receipt_conversion_tokens_burnt": "32069568447500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 358196236224300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"djeaunty_fourmule.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":235,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 879546117323800000000
+    }
+  },
+  {
+    "id": "9689734278",
+    "receipt_id": "B8nhS5KapG41L5YnqsPaQBUaMUWLLTGjz7BLcrFg2HmH",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8MYZDnwx4c7XGbQYh6CqBJUAXRrFUoDbYxzKGsA49nmw",
+      "block_height": 131633623,
+      "block_timestamp": 1730383190895159800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5053784337566,
+      "tokens_burnt": 505378433756600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "GLb3o2icvnnrTtdZV8aDFxZZRxTz1i6PMLyo1jXF546c",
+    "included_in_block_hash": "66rrW1eTbzmQZFyxS8WQKC8yUkFB7YkNSjuAGyYPeuqR",
+    "block_timestamp": "1730383189926859674",
+    "block": {
+      "block_height": 131633622
+    },
+    "receipt_conversion_tokens_burnt": "31707172213500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 505378433756600000000,
+        "args": "{\"id\": 238, \"timeline\": {\"status\": \"APPROVED\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 890026158577600000000
+    }
+  },
+  {
+    "id": "9689734552",
+    "receipt_id": "7Jq894CzTgxKuaiAX8885fnavDBTRBQymsKSxAPJ17N9",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AkfTuEsiF6gnT4X67GvTJd5LQ6xtTe5gvVL1FxTYDPir",
+      "block_height": 131633624,
+      "block_timestamp": 1730383192000871000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3529405526075,
+      "tokens_burnt": 352940552607500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "GLb3o2icvnnrTtdZV8aDFxZZRxTz1i6PMLyo1jXF546c",
+    "included_in_block_hash": "66rrW1eTbzmQZFyxS8WQKC8yUkFB7YkNSjuAGyYPeuqR",
+    "block_timestamp": "1730383189926859674",
+    "block": {
+      "block_height": 131633622
+    },
+    "receipt_conversion_tokens_burnt": "31707172213500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352940552607500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"24a2788251373b64d58200665f12b00cfb2d6c9d2dc79b209d39cd0e433f5b3f\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":238,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"frol.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 890026158577600000000
+    }
+  },
+  {
+    "id": "9701129956",
+    "receipt_id": "HzzUDGjXtqKhGuUVFiv5oj13kJx6Y8iZDMRE8CwAmXV",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EJbzRfx1oiqaEQcCGzpZwGS6mP2DHiSNcDpyLJW39YeX",
+      "block_height": 131665831,
+      "block_timestamp": 1730418939194323000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 2017970267822,
+      "tokens_burnt": 201797026782200000000,
+      "executor_account_id": "devhub.near",
+      "status": false
+    },
+    "transaction_hash": "FPa3yj82yPmfGLsASVzAoMcybDD4cad1AQix3MGh3kLa",
+    "included_in_block_hash": "6DHhEtmQXY9nopYZaNFCG67agmdc3C6awqsvwhb69ded",
+    "block_timestamp": "1730418938183894732",
+    "block": {
+      "block_height": 131665830
+    },
+    "receipt_conversion_tokens_burnt": "31912212188000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 1,
+        "fee": 201797026782200000000,
+        "args": "{\"title\": \"DevHub Developer Contributor report by THOMAS\", \"amount\": 100, \"summary\": \"I contributed to NEAR DevHub\", \"category\": \"DevDAO Platform\", \"currency\": \"NEAR\", \"description\": \"## Summary of Activities\", \"termsAccepted\": true}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 1
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 233709238970200000000
+    }
+  },
+  {
+    "id": "9714057676",
+    "receipt_id": "3jpS49T3cQGFLRoeBtFdhrDE28PH1d4Et4UStTBx64Y2",
+    "predecessor_account_id": "denbite.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BYmtSkVsvzrFsh8ARwMnzJrNt49DnTkKnadEfHqfmgTS",
+      "block_height": 131699967,
+      "block_timestamp": 1730457285935218200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5374681419314,
+      "tokens_burnt": 537468141931400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "6r8rzwVsazEe2voVwdEUGxpjJ1EMiFYN42a5tEYWsKva",
+    "included_in_block_hash": "5GagPoALvQVrNo5U6wNPzsfuRms4DRQbxkBiFAQn89Zz",
+    "block_timestamp": "1730457284797219328",
+    "block": {
+      "block_height": 131699966
+    },
+    "receipt_conversion_tokens_burnt": "42230968114000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 537468141931400000000,
+        "args": "{\"body\": {\"name\": \"DevRel (01 - 31 October) Contributor Report\", \"summary\": \"Monthly paid developer relations contributor report. These activities aim to onboard more developers to the ecosystem, and assist existing developers with problems or enrich their experience. Activities for the last month can be seen below.\", \"category\": \"Decentralized DevRel\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"gagdiez.near\", \"description\": \"**DevRel Contribution (supervised by @gagdiez.near)**\\\\\\\\n\\\\\\\\n- Multichain DAO (31h)\\\\\\\\n\\\\\\\\t- [Contract](https://github.com/nearuaguild/abstract-dao) fixes and features (14h)\\\\\\\\n\\\\\\\\t- [Script](https://github.com/nearuaguild/multichain-dao-scripts) to relay the signature from Multichain DAO within a single command (6h 30m)\\\\\\\\n\\\\\\\\t- Step-by-step tutorial guiding through Multichain DAO use case - [PR](https://github.com/near/docs/pull/2255) (10h 30m)\\\\\\\\n- New tooling for [dev.near.org](https://dev.near.org/tools) (23h 30m)\\\\\\\\n\\\\\\\\t- DAOs - [PR](https://github.com/near/near-discovery/pull/1336) (14h 30m)\\\\\\\\n\\\\\\\\t- Fix bugs and renovate multisig factory contract - [PR](https://github.com/near/core-contracts/pull/236) (1h)\\\\\\\\n\\\\\\\\t- Multisigs - [PR](https://github.com/near/near-discovery/pull/1336) (8h)\\\\\\\\n- Inspect and dig into [asset lockup & vesting contract](https://github.com/near/core-contracts/tree/master/lockup) for further writing up a tutorial for [docs.near.org](https://docs.near.org), as well as developing tooling for [dev.near.org](https://dev.near.org/tools) for a quick roll-out of the contract (4h 30m)\\\\\\\\n- Inspect Bitte\\\\\\\\\\\\'s Remasters on an opportunity for potential integration of their relayers as tools for [dev.near.org](https://dev.near.org/tools) (6h)\\\\\\\\n- Community Support in Telegram (2h)\\\\\\\\n- Internal Meetings (1h)\\\\\\\\n\\\\\\\\n**Reimbursement**\\\\\\\\n- Roll out renovated multisig factory on mainnet - [TX](https://nearblocks.io/txns/6dnALWHSnXeAq7ic5C6spaLDdvrjwSP8ZJ3SGty8nH71#) (25$)\\\\\\\\n\\\\\\\\n**Timeline**\\\\\\\\nStart Date: 10/01/2024 \\\\\\\\nEnd Date: 10/31/2024\\\\\\\\n\\\\\\\\n**Funding**\\\\\\\\nTotal hours: 68\\\\\\\\nRate: 50$/hour\\\\\\\\n\\\\\\\\n**Total funding**\\\\\\\\n$3.425 USD\", \"linked_proposals\": [], \"receiver_account\": \"denbite.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"3425\", \"requested_sponsorship_paid_in_currency\": \"OTHER\"}, \"labels\": [], \"accepted_terms_and_conditions_version\": 131699714}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7349998572605e+21
+    }
+  },
+  {
+    "id": "9714057950",
+    "receipt_id": "CzGMLCaVg5GGsQFun7QoRFUz2un7KtCWXZiFHcMeTLuc",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2sGzKwGUUq3fj3ss6RS8jNSqyZCz8xPeSFGfVaj9muaJ",
+      "block_height": 131699968,
+      "block_timestamp": 1730457287045819100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4530895693754,
+      "tokens_burnt": 453089569375400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "6r8rzwVsazEe2voVwdEUGxpjJ1EMiFYN42a5tEYWsKva",
+    "included_in_block_hash": "5GagPoALvQVrNo5U6wNPzsfuRms4DRQbxkBiFAQn89Zz",
+    "block_timestamp": "1730457284797219328",
+    "block": {
+      "block_height": 131699966
+    },
+    "receipt_conversion_tokens_burnt": "42230968114000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 453089569375400000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Decentralized DevRel* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @denbite.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}DevRel (01 - 31 October) Contributor Report\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nMonthly paid developer relations contributor report. These activities aim to onboard more developers to the ecosystem, and assist existing developers with problems or enrich their experience. Activities for the last month can be seen below.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=239)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7349998572605e+21
+    }
+  },
+  {
+    "id": "9714057956",
+    "receipt_id": "5yVD5KY65KA6VM1VuzNidN8FJijY5tfGWSTHgCksCkkB",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2sGzKwGUUq3fj3ss6RS8jNSqyZCz8xPeSFGfVaj9muaJ",
+      "block_height": 131699968,
+      "block_timestamp": 1730457287045819100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3404586274806,
+      "tokens_burnt": 340458627480600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "6r8rzwVsazEe2voVwdEUGxpjJ1EMiFYN42a5tEYWsKva",
+    "included_in_block_hash": "5GagPoALvQVrNo5U6wNPzsfuRms4DRQbxkBiFAQn89Zz",
+    "block_timestamp": "1730457284797219328",
+    "block": {
+      "block_height": 131699966
+    },
+    "receipt_conversion_tokens_burnt": "42230968114000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 340458627480600000000,
+        "args": "{\"proposal\": {\"id\": 239, \"snapshot\": {\"name\": \"DevRel (01 - 31 October) Contributor Report\", \"labels\": [], \"summary\": \"Monthly paid developer relations contributor report. These activities aim to onboard more developers to the ecosystem, and assist existing developers with problems or enrich their experience. Activities for the last month can be seen below.\", \"category\": \"Decentralized DevRel\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"editor_id\": \"denbite.near\", \"timestamp\": \"1730457285935218228\", \"supervisor\": \"gagdiez.near\", \"description\": \"**DevRel Contribution (supervised by @gagdiez.near)**\\\\\\\\n\\\\\\\\n- Multichain DAO (31h)\\\\\\\\n\\\\\\\\t- [Contract](https://github.com/nearuaguild/abstract-dao) fixes and features (14h)\\\\\\\\n\\\\\\\\t- [Script](https://github.com/nearuaguild/multichain-dao-scripts) to relay the signature from Multichain DAO within a single command (6h 30m)\\\\\\\\n\\\\\\\\t- Step-by-step tutorial guiding through Multichain DAO use case - [PR](https://github.com/near/docs/pull/2255) (10h 30m)\\\\\\\\n- New tooling for [dev.near.org](https://dev.near.org/tools) (23h 30m)\\\\\\\\n\\\\\\\\t- DAOs - [PR](https://github.com/near/near-discovery/pull/1336) (14h 30m)\\\\\\\\n\\\\\\\\t- Fix bugs and renovate multisig factory contract - [PR](https://github.com/near/core-contracts/pull/236) (1h)\\\\\\\\n\\\\\\\\t- Multisigs - [PR](https://github.com/near/near-discovery/pull/1336) (8h)\\\\\\\\n- Inspect and dig into [asset lockup & vesting contract](https://github.com/near/core-contracts/tree/master/lockup) for further writing up a tutorial for [docs.near.org](https://docs.near.org), as well as developing tooling for [dev.near.org](https://dev.near.org/tools) for a quick roll-out of the contract (4h 30m)\\\\\\\\n- Inspect Bitte\\\\\\\\\\\\'s Remasters on an opportunity for potential integration of their relayers as tools for [dev.near.org](https://dev.near.org/tools) (6h)\\\\\\\\n- Community Support in Telegram (2h)\\\\\\\\n- Internal Meetings (1h)\\\\\\\\n\\\\\\\\n**Reimbursement**\\\\\\\\n- Roll out renovated multisig factory on mainnet - [TX](https://nearblocks.io/txns/6dnALWHSnXeAq7ic5C6spaLDdvrjwSP8ZJ3SGty8nH71#) (25$)\\\\\\\\n\\\\\\\\n**Timeline**\\\\\\\\nStart Date: 10/01/2024 \\\\\\\\nEnd Date: 10/31/2024\\\\\\\\n\\\\\\\\n**Funding**\\\\\\\\nTotal hours: 68\\\\\\\\nRate: 50$/hour\\\\\\\\n\\\\\\\\n**Total funding**\\\\\\\\n$3.425 USD\", \"linked_proposals\": [], \"receiver_account\": \"denbite.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"3425\", \"requested_sponsorship_paid_in_currency\": \"OTHER\"}, \"author_id\": \"denbite.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7349998572605e+21
+    }
+  },
+  {
+    "id": "9714057958",
+    "receipt_id": "DPzqgbx4pcnQnU2jhyDvhNjWF5kWnSCzo6ynbzEpRK79",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2sGzKwGUUq3fj3ss6RS8jNSqyZCz8xPeSFGfVaj9muaJ",
+      "block_height": 131699968,
+      "block_timestamp": 1730457287045819100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3617525503591,
+      "tokens_burnt": 361752550359100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "6r8rzwVsazEe2voVwdEUGxpjJ1EMiFYN42a5tEYWsKva",
+    "included_in_block_hash": "5GagPoALvQVrNo5U6wNPzsfuRms4DRQbxkBiFAQn89Zz",
+    "block_timestamp": "1730457284797219328",
+    "block": {
+      "block_height": 131699966
+    },
+    "receipt_conversion_tokens_burnt": "42230968114000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 361752550359100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":239,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"denbite.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":239,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"denbite.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":239,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"denbite.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7349998572605e+21
+    }
+  },
+  {
+    "id": "9752815745",
+    "receipt_id": "JC2ubRzWeA1bGVSfa2GZd3oXCc4hKWs8XbVLDN4ZbBfE",
+    "predecessor_account_id": "rubycop.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "ELtWz63pdpr68yAdJ6v9mfHcBKiki6xrHxK6Wcy28TLM",
+      "block_height": 131805038,
+      "block_timestamp": 1730574968516401400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5863484788765,
+      "tokens_burnt": 586348478876500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "GeP4LLAoPhiq3Jf7DCEHXqRdoQgPSYUM8E9DsJKsQk4N",
+    "included_in_block_hash": "Boo9mMu2yecCfKHPA1F92h8Z5Yctk2SirCnLtKSLKcBz",
+    "block_timestamp": "1730574967407806767",
+    "block": {
+      "block_height": 131805037
+    },
+    "receipt_conversion_tokens_burnt": "52492503582000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 586348478876500000000,
+        "args": "{\"body\": {\"name\": \"DevHub Developer Contributor report by Andrii for 10/21/2024 \\\\\\\\u{2013} 11/01/2024\", \"summary\": \"I was developing a Multisig Treasury Dashboard frontend app on top of SputnikDAO that allows various NEAR ecosystem organizations to have a way to easily mange their funding.\", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"theori.near\", \"description\": \"## Summary of Activities\\\\\\\\n\\\\\\\\nBasic issue link: https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/issues/88 \\\\\\\\n\\\\\\\\n**0. Onboarding and setup (5h)**\\\\\\\\n- [x] Onboarding calls with Megha\\\\\\\\n- [x] Repo setup\\\\\\\\n\\\\\\\\n**1. Sign In flow (4h)**\\\\\\\\n- [x]  The user is prompted to sign in to their own account.\\\\\\\\n- [x]  The login instructions should adapt based on the gateway the user is using (NEAR Social, NEAR Dev, etc).\\\\\\\\n\\\\\\\\n**2. Confirm Wallet (8h)**\\\\\\\\n- [x] The user is asked to confirm their NEAR wallet (name and username), which will be used for the initial setup costs.\\\\\\\\n- [x] Display the estimated costs for SputnikDAO and Frontend BOS Widget Hosting.\\\\\\\\n- [x] If the user\\\\\\\\\\\\'s wallet balance is insufficient, show a yellow warning message, and do not allow the user to proceed.\\\\\\\\n- [x] Enable the \\\\\\\\\\\\\\\"Yes, use this wallet and continue\\\\\\\\\\\\\\\" button when the user has sufficient funds. Clicking this button will lead the user to the next step.\\\\\\\\n\\\\\\\\n**3. Create Application Account (4h)**\\\\\\\\n- [x] The user enters a name for their treasury application in the format `name.near`.\\\\\\\\n- [x] Check if the entered name is available and display a warning message if the name is not available.\\\\\\\\n- [x] Enable the \\\\\\\\\\\\\\\"Next\\\\\\\\\\\\\\\" button when the user enters a valid and available Application Account name. Clicking this button will lead the user to the next step.\\\\\\\\n\\\\\\\\n**4. Create Sputnik DAO Account (5h)**\\\\\\\\n- [x] The user enters a name for their Sputnik DAO account in the format `name.sputnik-dao.near`.\\\\\\\\n- [ ] The input field is pre-populated with the name entered in the previous step (application account name), but the user can edit it.\\\\\\\\n- [x] Check if the entered Sputnik DAO account name is available and display a warning message if the name is not available.\\\\\\\\n- [x] Add an information message that explain what Sputnik DAO. Learn more should link to https://github.com/near-daos/sputnik-dao-contract.\\\\\\\\n- [x] Enable the \\\\\\\\\\\\\\\"Next\\\\\\\\\\\\\\\" button when the user enters a valid Sputnik DAO account name. Clicking this button will lead the user to the next step.\\\\\\\\n\\\\\\\\n**5. Add Members (10h)**\\\\\\\\n- [x] The initial user has \\\\\\\\\\\\\\\"Create\\\\\\\\\\\\\\\" permission by default and cannot delete or edit themselves at this stage.\\\\\\\\n- [x] The user can add members to the treasury and assign permissions (Create, Edit, Vote).\\\\\\\\n- [x] Clicking \\\\\\\\\\\\\\\"Add Member\\\\\\\\\\\\\\\" opens the add members ight panel with the following inputs:\\\\\\\\n  - [x] Username input field\\\\\\\\n  - [x] Permissions dropdown (Create, Edit, Vote)\\\\\\\\n  - [ ] Delete option for added members (except the initial creator)\\\\\\\\n  - [x] Cancel and Submit buttons\\\\\\\\n- [x] Added members with their selected permissions are displayed in the list.\\\\\\\\n\\\\\\\\n**6. Summary view (8h)**\\\\\\\\n- [x] A summary screen displays all the entered information:\\\\\\\\n  - [x] Sponsor wallet name and username\\\\\\\\n  - [x] Application account name\\\\\\\\n  - [x] Sputnik DAO account name\\\\\\\\n  - [x] Members and their permissions\\\\\\\\n  - [x] Total costs\\\\\\\\n- [x] The user can edit any of the fields by clicking the pencil icon.\\\\\\\\n- [ ] The user can click \\\\\\\\\\\\\\\"Confirm and Create\\\\\\\\\\\\\\\" button to proceed.  Clicking this button creates the treasury and takes the user to the dashboard.\\\\\\\\n\\\\\\\\n**7. Dashboard flow (4h)**\\\\\\\\n- [ ] The user is presented with their newly created treasury dashboard.\\\\\\\\n- [x] A pop-up message congratulates the user and confirms that their treasury is ready:\\\\\\\\n  - [x] The message provides URLs for accessing the dashboard through different gateways (NEAR.org, NEAR Social, web4).\\\\\\\\n  - [x] Each gateway URL has options to copy the link and share it.\\\\\\\\n- [x] The user can close the pop-up message to view the dashboard.\\\\\\\\n\\\\\\\\nApp link: https://near.social/treasury-factory.near/widget/app [is under development]\\\\\\\\n\\\\\\\\n**Calls and meetings: (3h)**\\\\\\\\n\\\\\\\\n#### Timeline\\\\\\\\nStart Date: 10/21/2024\\\\\\\\nEnd Date: 11/01/2024\\\\\\\\n\\\\\\\\n#### Funding\\\\\\\\nTotal hours: 51\\\\\\\\nRate: 40$/hour\\\\\\\\n\\\\\\\\n#### Total funding\\\\\\\\n$2040 USD\", \"linked_proposals\": [], \"receiver_account\": \"rubycop.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"2040\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [], \"accepted_terms_and_conditions_version\": 131804773}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8124935733382e+21
+    }
+  },
+  {
+    "id": "9752819238",
+    "receipt_id": "CiXYMTh44Hogd2uC5vy7f8vdBYBDzbWGKyTJZYVkn9sy",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HfzbFXux9ZJGrsu47PnMrBnAFrq6aJHPtT77uYAWDRqX",
+      "block_height": 131805040,
+      "block_timestamp": 1730574970569537500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4567963216994,
+      "tokens_burnt": 456796321699400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "GeP4LLAoPhiq3Jf7DCEHXqRdoQgPSYUM8E9DsJKsQk4N",
+    "included_in_block_hash": "Boo9mMu2yecCfKHPA1F92h8Z5Yctk2SirCnLtKSLKcBz",
+    "block_timestamp": "1730574967407806767",
+    "block": {
+      "block_height": 131805037
+    },
+    "receipt_conversion_tokens_burnt": "52492503582000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 456796321699400000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *DevDAO Platform* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @rubycop.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}DevHub Developer Contributor report by Andrii for 10/21/2024 \\\\\\\\u{2013} 11/01/2024\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nI was developing a Multisig Treasury Dashboard frontend app on top of SputnikDAO that allows various NEAR ecosystem organizations to have a way to easily mange their funding.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=240)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8124935733382e+21
+    }
+  },
+  {
+    "id": "9752819242",
+    "receipt_id": "C9SJ6JhyLnPKJagwcf1H9GAAszpFdQcvnPNNnn1pcccA",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HfzbFXux9ZJGrsu47PnMrBnAFrq6aJHPtT77uYAWDRqX",
+      "block_height": 131805040,
+      "block_timestamp": 1730574970569537500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3606414441748,
+      "tokens_burnt": 360641444174800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "GeP4LLAoPhiq3Jf7DCEHXqRdoQgPSYUM8E9DsJKsQk4N",
+    "included_in_block_hash": "Boo9mMu2yecCfKHPA1F92h8Z5Yctk2SirCnLtKSLKcBz",
+    "block_timestamp": "1730574967407806767",
+    "block": {
+      "block_height": 131805037
+    },
+    "receipt_conversion_tokens_burnt": "52492503582000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 360641444174800000000,
+        "args": "{\"proposal\": {\"id\": 240, \"snapshot\": {\"name\": \"DevHub Developer Contributor report by Andrii for 10/21/2024 \\\\\\\\u{2013} 11/01/2024\", \"labels\": [], \"summary\": \"I was developing a Multisig Treasury Dashboard frontend app on top of SputnikDAO that allows various NEAR ecosystem organizations to have a way to easily mange their funding.\", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"editor_id\": \"rubycop.near\", \"timestamp\": \"1730574969616889111\", \"supervisor\": \"theori.near\", \"description\": \"## Summary of Activities\\\\\\\\n\\\\\\\\nBasic issue link: https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/issues/88 \\\\\\\\n\\\\\\\\n**0. Onboarding and setup (5h)**\\\\\\\\n- [x] Onboarding calls with Megha\\\\\\\\n- [x] Repo setup\\\\\\\\n\\\\\\\\n**1. Sign In flow (4h)**\\\\\\\\n- [x]  The user is prompted to sign in to their own account.\\\\\\\\n- [x]  The login instructions should adapt based on the gateway the user is using (NEAR Social, NEAR Dev, etc).\\\\\\\\n\\\\\\\\n**2. Confirm Wallet (8h)**\\\\\\\\n- [x] The user is asked to confirm their NEAR wallet (name and username), which will be used for the initial setup costs.\\\\\\\\n- [x] Display the estimated costs for SputnikDAO and Frontend BOS Widget Hosting.\\\\\\\\n- [x] If the user\\\\\\\\\\\\'s wallet balance is insufficient, show a yellow warning message, and do not allow the user to proceed.\\\\\\\\n- [x] Enable the \\\\\\\\\\\\\\\"Yes, use this wallet and continue\\\\\\\\\\\\\\\" button when the user has sufficient funds. Clicking this button will lead the user to the next step.\\\\\\\\n\\\\\\\\n**3. Create Application Account (4h)**\\\\\\\\n- [x] The user enters a name for their treasury application in the format `name.near`.\\\\\\\\n- [x] Check if the entered name is available and display a warning message if the name is not available.\\\\\\\\n- [x] Enable the \\\\\\\\\\\\\\\"Next\\\\\\\\\\\\\\\" button when the user enters a valid and available Application Account name. Clicking this button will lead the user to the next step.\\\\\\\\n\\\\\\\\n**4. Create Sputnik DAO Account (5h)**\\\\\\\\n- [x] The user enters a name for their Sputnik DAO account in the format `name.sputnik-dao.near`.\\\\\\\\n- [ ] The input field is pre-populated with the name entered in the previous step (application account name), but the user can edit it.\\\\\\\\n- [x] Check if the entered Sputnik DAO account name is available and display a warning message if the name is not available.\\\\\\\\n- [x] Add an information message that explain what Sputnik DAO. Learn more should link to https://github.com/near-daos/sputnik-dao-contract.\\\\\\\\n- [x] Enable the \\\\\\\\\\\\\\\"Next\\\\\\\\\\\\\\\" button when the user enters a valid Sputnik DAO account name. Clicking this button will lead the user to the next step.\\\\\\\\n\\\\\\\\n**5. Add Members (10h)**\\\\\\\\n- [x] The initial user has \\\\\\\\\\\\\\\"Create\\\\\\\\\\\\\\\" permission by default and cannot delete or edit themselves at this stage.\\\\\\\\n- [x] The user can add members to the treasury and assign permissions (Create, Edit, Vote).\\\\\\\\n- [x] Clicking \\\\\\\\\\\\\\\"Add Member\\\\\\\\\\\\\\\" opens the add members ight panel with the following inputs:\\\\\\\\n  - [x] Username input field\\\\\\\\n  - [x] Permissions dropdown (Create, Edit, Vote)\\\\\\\\n  - [ ] Delete option for added members (except the initial creator)\\\\\\\\n  - [x] Cancel and Submit buttons\\\\\\\\n- [x] Added members with their selected permissions are displayed in the list.\\\\\\\\n\\\\\\\\n**6. Summary view (8h)**\\\\\\\\n- [x] A summary screen displays all the entered information:\\\\\\\\n  - [x] Sponsor wallet name and username\\\\\\\\n  - [x] Application account name\\\\\\\\n  - [x] Sputnik DAO account name\\\\\\\\n  - [x] Members and their permissions\\\\\\\\n  - [x] Total costs\\\\\\\\n- [x] The user can edit any of the fields by clicking the pencil icon.\\\\\\\\n- [ ] The user can click \\\\\\\\\\\\\\\"Confirm and Create\\\\\\\\\\\\\\\" button to proceed.  Clicking this button creates the treasury and takes the user to the dashboard.\\\\\\\\n\\\\\\\\n**7. Dashboard flow (4h)**\\\\\\\\n- [ ] The user is presented with their newly created treasury dashboard.\\\\\\\\n- [x] A pop-up message congratulates the user and confirms that their treasury is ready:\\\\\\\\n  - [x] The message provides URLs for accessing the dashboard through different gateways (NEAR.org, NEAR Social, web4).\\\\\\\\n  - [x] Each gateway URL has options to copy the link and share it.\\\\\\\\n- [x] The user can close the pop-up message to view the dashboard.\\\\\\\\n\\\\\\\\nApp link: https://near.social/treasury-factory.near/widget/app [is under development]\\\\\\\\n\\\\\\\\n**Calls and meetings: (3h)**\\\\\\\\n\\\\\\\\n#### Timeline\\\\\\\\nStart Date: 10/21/2024\\\\\\\\nEnd Date: 11/01/2024\\\\\\\\n\\\\\\\\n#### Funding\\\\\\\\nTotal hours: 51\\\\\\\\nRate: 40$/hour\\\\\\\\n\\\\\\\\n#### Total funding\\\\\\\\n$2040 USD\", \"linked_proposals\": [], \"receiver_account\": \"rubycop.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"2040\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"rubycop.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8124935733382e+21
+    }
+  },
+  {
+    "id": "9752819244",
+    "receipt_id": "HgFz4tGYZpNb9UGf4qWVbHnA53JK17AaPrZyP5d4QUqo",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HfzbFXux9ZJGrsu47PnMrBnAFrq6aJHPtT77uYAWDRqX",
+      "block_height": 131805040,
+      "block_timestamp": 1730574970569537500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3562148250055,
+      "tokens_burnt": 356214825005500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "GeP4LLAoPhiq3Jf7DCEHXqRdoQgPSYUM8E9DsJKsQk4N",
+    "included_in_block_hash": "Boo9mMu2yecCfKHPA1F92h8Z5Yctk2SirCnLtKSLKcBz",
+    "block_timestamp": "1730574967407806767",
+    "block": {
+      "block_height": 131805037
+    },
+    "receipt_conversion_tokens_burnt": "52492503582000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 356214825005500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":240,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rubycop.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":240,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rubycop.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8124935733382e+21
+    }
+  },
+  {
+    "id": "9801425140",
+    "receipt_id": "7hGSnpZQC4hvAhS7P7oNRMJbCd4VB7LvdCuYVnYnH3ac",
+    "predecessor_account_id": "cryptogarik.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CwiNAhJpvSjZSGByPXwfbFkx3x5j3yhAhzmHfnSrWHd2",
+      "block_height": 131935119,
+      "block_timestamp": 1730720404828553700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5153116054081,
+      "tokens_burnt": 515311605408100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "JBhHnUFXv9ympURem8CjNpwdavkHDTeAYBWLiThLG4rv",
+    "included_in_block_hash": "CCA7EAtPpsHQDMJa5Kns7aeE9LMmjxvJjsT9cEEuuLgi",
+    "block_timestamp": "1730720403642257504",
+    "block": {
+      "block_height": 131935118
+    },
+    "receipt_conversion_tokens_burnt": "36837939947500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 515311605408100000000,
+        "args": "{\"body\": {\"name\": \"DevRel Contributor Report for 2024-10-07 - 2024-11-03\", \"summary\": \"Decentralized DevRel Contribution Report by Garik Covering 7th October - 3rd November\", \"category\": \"Decentralized DevRel\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"gagdiez.near\", \"description\": \"Summary of Work\\\\\\\\n\\\\\\\\n- Meetings/reports/calls/support/etc: 15h\\\\\\\\n- Migrating tracking [create-near-app](https://github.com/near/create-near-app/pull/2159) and [cargo-near](https://github.com/near/cargo-near/pull/227) usage to Posthog: 1h\\\\\\\\n- Deploying NFT primivite contract on testnet: 1h\\\\\\\\n- Updating Near API section on [docs](https://github.com/near/docs/pull/2251): 23h\\\\\\\\n- Updating [NFT example](https://github.com/near-examples/NFT/pull/225): 22h\\\\\\\\n- Updating [FT example](https://github.com/near-examples/FT/pull/128): 10h\\\\\\\\n- Updating Near Drop example: 12h\\\\\\\\n\\\\\\\\nTotal hours: 84\\\\\\\\nHourly rate: $50/hour\\\\\\\\nTotal amount: 4200$\", \"linked_proposals\": [], \"receiver_account\": \"cryptogarik.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"4200\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [], \"accepted_terms_and_conditions_version\": 131934955}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6894091962381e+21
+    }
+  },
+  {
+    "id": "9801425433",
+    "receipt_id": "HBfP6ns1Hupq8wgag8Hb3Fdg4S9vFFxWvtF2XVPGZU3u",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9h13YMFc93LqCqEhATEufk7dcwGDWDuJRBfqo4fubhxo",
+      "block_height": 131935120,
+      "block_timestamp": 1730720405890486500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4501323432974,
+      "tokens_burnt": 450132343297400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "JBhHnUFXv9ympURem8CjNpwdavkHDTeAYBWLiThLG4rv",
+    "included_in_block_hash": "CCA7EAtPpsHQDMJa5Kns7aeE9LMmjxvJjsT9cEEuuLgi",
+    "block_timestamp": "1730720403642257504",
+    "block": {
+      "block_height": 131935118
+    },
+    "receipt_conversion_tokens_burnt": "36837939947500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 450132343297400000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Decentralized DevRel* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @cryptogarik.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}DevRel Contributor Report for 2024-10-07 - 2024-11-03\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nDecentralized DevRel Contribution Report by Garik Covering 7th October - 3rd November\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=241)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6894091962381e+21
+    }
+  },
+  {
+    "id": "9801425436",
+    "receipt_id": "F1XsmqXX7YeZrU6kzhrNfwakQdQsaqHrD1xfoEgUL8uA",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9h13YMFc93LqCqEhATEufk7dcwGDWDuJRBfqo4fubhxo",
+      "block_height": 131935120,
+      "block_timestamp": 1730720405890486500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3303817221914,
+      "tokens_burnt": 330381722191400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "JBhHnUFXv9ympURem8CjNpwdavkHDTeAYBWLiThLG4rv",
+    "included_in_block_hash": "CCA7EAtPpsHQDMJa5Kns7aeE9LMmjxvJjsT9cEEuuLgi",
+    "block_timestamp": "1730720403642257504",
+    "block": {
+      "block_height": 131935118
+    },
+    "receipt_conversion_tokens_burnt": "36837939947500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 330381722191400000000,
+        "args": "{\"proposal\": {\"id\": 241, \"snapshot\": {\"name\": \"DevRel Contributor Report for 2024-10-07 - 2024-11-03\", \"labels\": [], \"summary\": \"Decentralized DevRel Contribution Report by Garik Covering 7th October - 3rd November\", \"category\": \"Decentralized DevRel\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"editor_id\": \"cryptogarik.near\", \"timestamp\": \"1730720404828553662\", \"supervisor\": \"gagdiez.near\", \"description\": \"Summary of Work\\\\\\\\n\\\\\\\\n- Meetings/reports/calls/support/etc: 15h\\\\\\\\n- Migrating tracking [create-near-app](https://github.com/near/create-near-app/pull/2159) and [cargo-near](https://github.com/near/cargo-near/pull/227) usage to Posthog: 1h\\\\\\\\n- Deploying NFT primivite contract on testnet: 1h\\\\\\\\n- Updating Near API section on [docs](https://github.com/near/docs/pull/2251): 23h\\\\\\\\n- Updating [NFT example](https://github.com/near-examples/NFT/pull/225): 22h\\\\\\\\n- Updating [FT example](https://github.com/near-examples/FT/pull/128): 10h\\\\\\\\n- Updating Near Drop example: 12h\\\\\\\\n\\\\\\\\nTotal hours: 84\\\\\\\\nHourly rate: $50/hour\\\\\\\\nTotal amount: 4200$\", \"linked_proposals\": [], \"receiver_account\": \"cryptogarik.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"4200\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"cryptogarik.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6894091962381e+21
+    }
+  },
+  {
+    "id": "9801425438",
+    "receipt_id": "BZvJMeuCvii2gMwwVdF2LyetFxtjsaNf2QCHikcGFHWq",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9h13YMFc93LqCqEhATEufk7dcwGDWDuJRBfqo4fubhxo",
+      "block_height": 131935120,
+      "block_timestamp": 1730720405890486500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3567455853937,
+      "tokens_burnt": 356745585393700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "JBhHnUFXv9ympURem8CjNpwdavkHDTeAYBWLiThLG4rv",
+    "included_in_block_hash": "CCA7EAtPpsHQDMJa5Kns7aeE9LMmjxvJjsT9cEEuuLgi",
+    "block_timestamp": "1730720403642257504",
+    "block": {
+      "block_height": 131935118
+    },
+    "receipt_conversion_tokens_burnt": "36837939947500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 356745585393700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":241,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"cryptogarik.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":241,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"cryptogarik.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6894091962381e+21
+    }
+  },
+  {
+    "id": "9830072001",
+    "receipt_id": "HzShmX3nRQaiRTApYUUeMspjto6AEEy5kwBouThDj7zF",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8eQaCWRjsiYHR8FcXNTwnoynDukUDsygPTWHLdqbSCq9",
+      "block_height": 132010096,
+      "block_timestamp": 1730803862330051600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5115375291863,
+      "tokens_burnt": 511537529186300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7qgUqWyHhn9oswpxu7H6sMegnxesobBkL9LHEjvUn3Uq",
+    "included_in_block_hash": "GWuUk4YiQskhqyRsmFaZV2uHmaFDnoiz9hXGxg27go6R",
+    "block_timestamp": "1730803861330314780",
+    "block": {
+      "block_height": 132010095
+    },
+    "receipt_conversion_tokens_burnt": "63674334749500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 511537529186300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"widget\": {\"devhub.entity.proposal.VerificationStatus\": {\"\": \"const receiverAccount = props.receiverAccount;\\\\\\\\nconst showGetVerifiedBtn = props.showGetVerifiedBtn;\\\\\\\\nconst [verificationStatus, setVerificationStatus] = useState(null);\\\\\\\\nconst imageSize = props.imageSize ?? 40;\\\\\\\\n\\\\\\\\nconst WarningImg =\\\\\\\\n  \\\\\\\\\\\\\\\"https://ipfs.near.social/ipfs/bafkreieq4222tf3hkbccfnbw5kpgedm3bf2zcfgzbnmismxav2phqdwd7q\\\\\\\\\\\\\\\";\\\\\\\\n\\\\\\\\nconst SuccessImg =\\\\\\\\n  \\\\\\\\\\\\\\\"https://ipfs.near.social/ipfs/bafkreidqveupkcc7e3rko2e67lztsqrfnjzw3ceoajyglqeomvv7xznusm\\\\\\\\\\\\\\\";\\\\\\\\n\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (\\\\\\\\n    receiverAccount.length === 64 ||\\\\\\\\n    (receiverAccount ?? \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\").includes(\\\\\\\\\\\\\\\".near\\\\\\\\\\\\\\\") ||\\\\\\\\n    (receiverAccount ?? \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\").includes(\\\\\\\\\\\\\\\".tg\\\\\\\\\\\\\\\")\\\\\\\\n  ) {\\\\\\\\n    asyncFetch(\\\\\\\\n      `https://neardevhub-kyc-proxy-gvbr.shuttle.app/kyc/${receiverAccount}`\\\\\\\\n    ).then((res) => {\\\\\\\\n      let displayableText = \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\";\\\\\\\\n      switch (res.body.kyc_status) {\\\\\\\\n        case \\\\\\\\\\\\\\\"APPROVED\\\\\\\\\\\\\\\":\\\\\\\\n          displayableText = \\\\\\\\\\\\\\\"Verified\\\\\\\\\\\\\\\";\\\\\\\\n          break;\\\\\\\\n        case \\\\\\\\\\\\\\\"PENDING\\\\\\\\\\\\\\\":\\\\\\\\n          displayableText = \\\\\\\\\\\\\\\"Pending\\\\\\\\\\\\\\\";\\\\\\\\n          break;\\\\\\\\n        case \\\\\\\\\\\\\\\"EXPIRED\\\\\\\\\\\\\\\":\\\\\\\\n          displayableText = \\\\\\\\\\\\\\\"Expired\\\\\\\\\\\\\\\";\\\\\\\\n          break;\\\\\\\\n        case \\\\\\\\\\\\\\\"NOT_SUBMITTED\\\\\\\\\\\\\\\":\\\\\\\\n        case \\\\\\\\\\\\\\\"REJECTED\\\\\\\\\\\\\\\":\\\\\\\\n          displayableText = \\\\\\\\\\\\\\\"Not Verified\\\\\\\\\\\\\\\";\\\\\\\\n          break;\\\\\\\\n        default:\\\\\\\\n          displayableText = \\\\\\\\\\\\\\\"Failed to get status\\\\\\\\\\\\\\\";\\\\\\\\n          break;\\\\\\\\n      }\\\\\\\\n      setVerificationStatus(displayableText);\\\\\\\\n    });\\\\\\\\n  }\\\\\\\\n}, [receiverAccount]);\\\\\\\\n\\\\\\\\nconst DropdowntBtnContainer = styled.div`\\\\\\\\n  font-size: 13px;\\\\\\\\n  min-width: 150px;\\\\\\\\n\\\\\\\\n  .custom-select {\\\\\\\\n    position: relative;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .select-header {\\\\\\\\n    display: flex;\\\\\\\\n    justify-content: space-between;\\\\\\\\n    align-items: center;\\\\\\\\n    border: 1px solid #ccc;\\\\\\\\n    border-radius-top: 5px;\\\\\\\\n    cursor: pointer;\\\\\\\\n    background-color: #fff;\\\\\\\\n    border-radius: 5px;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .no-border {\\\\\\\\n    border: none !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .options-card {\\\\\\\\n    position: absolute;\\\\\\\\n    top: 100%;\\\\\\\\n    left: 0;\\\\\\\\n    width: 200%;\\\\\\\\n    border: 1px solid #ccc;\\\\\\\\n    background-color: #fff;\\\\\\\\n    padding: 0.5rem;\\\\\\\\n    z-index: 99;\\\\\\\\n    font-size: 13px;\\\\\\\\n    border-radius: 0.375rem !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .left {\\\\\\\\n    right: 0 !important;\\\\\\\\n    left: auto !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    .options-card {\\\\\\\\n      right: 0 !important;\\\\\\\\n      left: auto !important;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .option {\\\\\\\\n    margin-block: 2px;\\\\\\\\n    padding: 5px;\\\\\\\\n    cursor: pointer;\\\\\\\\n    border-bottom: 1px solid #f0f0f0;\\\\\\\\n    transition: background-color 0.3s ease;\\\\\\\\n    border-radius: 0.375rem !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .option:hover {\\\\\\\\n    background-color: #f0f0f0; /* Custom hover effect color */\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .option:last-child {\\\\\\\\n    border-bottom: none;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .selected {\\\\\\\\n    background-color: #f0f0f0;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .disabled {\\\\\\\\n    background-color: #f4f4f4 !important;\\\\\\\\n    cursor: not-allowed !important;\\\\\\\\n    font-weight: 500;\\\\\\\\n    color: #b3b3b3;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .disabled .circle {\\\\\\\\n    opacity: 0.5;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .circle {\\\\\\\\n    width: 8px;\\\\\\\\n    height: 8px;\\\\\\\\n    border-radius: 50%;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .grey {\\\\\\\\n    background-color: #818181;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .green {\\\\\\\\n    background-color: #04a46e;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  a:hover {\\\\\\\\n    text-decoration: none;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .black-btn {\\\\\\\\n    background-color: #000 !important;\\\\\\\\n    border: none;\\\\\\\\n    color: white;\\\\\\\\n    &:active {\\\\\\\\n      color: white;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\n\\\\\\\\nconst [kycOptionsOpen, setKycOptions] = useState(false);\\\\\\\\n\\\\\\\\nconst VerificationBtn = () => {\\\\\\\\n  const btnOptions = [\\\\\\\\n    {\\\\\\\\n      src: \\\\\\\\\\\\\\\"https://ipfs.near.social/ipfs/bafkreidqveupkcc7e3rko2e67lztsqrfnjzw3ceoajyglqeomvv7xznusm\\\\\\\\\\\\\\\",\\\\\\\\n      label: \\\\\\\\\\\\\\\"KYC\\\\\\\\\\\\\\\",\\\\\\\\n      description: \\\\\\\\\\\\\\\"Choose this if you are an individual.\\\\\\\\\\\\\\\",\\\\\\\\n      value: \\\\\\\\\\\\\\\"KYC\\\\\\\\\\\\\\\",\\\\\\\\n    },\\\\\\\\n    {\\\\\\\\n      src: \\\\\\\\\\\\\\\"https://ipfs.near.social/ipfs/bafkreic5ksax6b45pelvxm6a2v2j465jgbitpzrxtzpmn6zehl23gocwxm\\\\\\\\\\\\\\\",\\\\\\\\n      label: \\\\\\\\\\\\\\\"KYB\\\\\\\\\\\\\\\",\\\\\\\\n      description: \\\\\\\\\\\\\\\"Choose this if you are a business or corporate entity..\\\\\\\\\\\\\\\",\\\\\\\\n      value: \\\\\\\\\\\\\\\"KYB\\\\\\\\\\\\\\\",\\\\\\\\n    },\\\\\\\\n  ];\\\\\\\\n\\\\\\\\n  const toggleDropdown = () => {\\\\\\\\n    setKycOptions(!kycOptionsOpen);\\\\\\\\n  };\\\\\\\\n\\\\\\\\n  return (\\\\\\\\n    <DropdowntBtnContainer>\\\\\\\\n      <div\\\\\\\\n        className=\\\\\\\\\\\\\\\"custom-select\\\\\\\\\\\\\\\"\\\\\\\\n        tabIndex=\\\\\\\\\\\\\\\"0\\\\\\\\\\\\\\\"\\\\\\\\n        id=\\\\\\\\\\\\\\\"getVerifiedButton\\\\\\\\\\\\\\\"\\\\\\\\n        onClick={toggleDropdown}\\\\\\\\n        onBlur={() => {\\\\\\\\n          setTimeout(() => {\\\\\\\\n            setKycOptions(false);\\\\\\\\n          }, 100);\\\\\\\\n        }}\\\\\\\\n      >\\\\\\\\n        <div\\\\\\\\n          className={\\\\\\\\n            \\\\\\\\\\\\\\\"select-header no-border black-btn btn d-inline-flex align-items-center gap-2\\\\\\\\\\\\\\\"\\\\\\\\n          }\\\\\\\\n        >\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"d-flex align-items-center gap-1\\\\\\\\\\\\\\\">\\\\\\\\n            Get Verified\\\\\\\\n            <i class=\\\\\\\\\\\\\\\"bi bi-box-arrow-up-right\\\\\\\\\\\\\\\"></i>\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n\\\\\\\\n        {kycOptionsOpen && (\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"options-card left\\\\\\\\\\\\\\\">\\\\\\\\n            {btnOptions.map((option) => (\\\\\\\\n              <a\\\\\\\\n                target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n                rel=\\\\\\\\\\\\\\\"noopener noreferrer\\\\\\\\\\\\\\\"\\\\\\\\n                href={\\\\\\\\n                  option.value === \\\\\\\\\\\\\\\"KYC\\\\\\\\\\\\\\\"\\\\\\\\n                    ? \\\\\\\\\\\\\\\"https://go.fractal.id/near-social-kyc\\\\\\\\\\\\\\\"\\\\\\\\n                    : \\\\\\\\\\\\\\\"https://go.fractal.id/near-social-kyb\\\\\\\\\\\\\\\"\\\\\\\\n                }\\\\\\\\n              >\\\\\\\\n                <div\\\\\\\\n                  key={option.value}\\\\\\\\n                  className={`option ${\\\\\\\\n                    selectedOption.value === option.value ? \\\\\\\\\\\\\\\"selected\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n                  }`}\\\\\\\\n                >\\\\\\\\n                  <div className={`d-flex gap-2 align-items-center`}>\\\\\\\\n                    <img src={option.src} height={30} />\\\\\\\\n                    <div>\\\\\\\\n                      <div className=\\\\\\\\\\\\\\\"fw-bold\\\\\\\\\\\\\\\">{option.label}</div>\\\\\\\\n                      <div className=\\\\\\\\\\\\\\\"text-muted text-xs\\\\\\\\\\\\\\\">\\\\\\\\n                        {option.description}\\\\\\\\n                      </div>\\\\\\\\n                    </div>\\\\\\\\n                  </div>\\\\\\\\n                </div>\\\\\\\\n              </a>\\\\\\\\n            ))}\\\\\\\\n          </div>\\\\\\\\n        )}\\\\\\\\n      </div>\\\\\\\\n    </DropdowntBtnContainer>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\n\\\\\\\\nreturn (\\\\\\\\n  <div>\\\\\\\\n    {!verificationStatus ? (\\\\\\\\n      <span\\\\\\\\n        className=\\\\\\\\\\\\\\\"spinner-grow spinner-grow-sm me-1\\\\\\\\\\\\\\\"\\\\\\\\n        role=\\\\\\\\\\\\\\\"status\\\\\\\\\\\\\\\"\\\\\\\\n        aria-hidden=\\\\\\\\\\\\\\\"true\\\\\\\\\\\\\\\"\\\\\\\\n      />\\\\\\\\n    ) : (\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"d-flex text-black justify-content-between align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"d-flex\\\\\\\\\\\\\\\" style={{ gap: \\\\\\\\\\\\\\\"12px\\\\\\\\\\\\\\\" }}>\\\\\\\\n          <img\\\\\\\\n            className=\\\\\\\\\\\\\\\"align-self-center object-fit-cover\\\\\\\\\\\\\\\"\\\\\\\\n            src={verificationStatus === \\\\\\\\\\\\\\\"Verified\\\\\\\\\\\\\\\" ? SuccessImg : WarningImg}\\\\\\\\n            height={imageSize}\\\\\\\\n          />\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"d-flex flex-column justify-content-center\\\\\\\\\\\\\\\">\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"h6 mb-0\\\\\\\\\\\\\\\">Fractal</div>\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"text-sm text-muted\\\\\\\\\\\\\\\">{verificationStatus}</div>\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n        {verificationStatus !== \\\\\\\\\\\\\\\"Verified\\\\\\\\\\\\\\\" && showGetVerifiedBtn && (\\\\\\\\n          <VerificationBtn />\\\\\\\\n        )}\\\\\\\\n      </div>\\\\\\\\n    )}\\\\\\\\n  </div>\\\\\\\\n);\\\\\\\\n\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 575211863935800000000
+    }
+  },
+  {
+    "id": "9830073209",
+    "receipt_id": "BY6XAXC2xxTNaNS7NrQZWWP3n3M95i4J5hpz8JBn2c9n",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4GifoZoEsUXbkkC1kzuhL5uqwEebjrSBpBCP8ELLAh2d",
+      "block_height": 132010097,
+      "block_timestamp": 1730803863341048600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "7qgUqWyHhn9oswpxu7H6sMegnxesobBkL9LHEjvUn3Uq",
+    "included_in_block_hash": "GWuUk4YiQskhqyRsmFaZV2uHmaFDnoiz9hXGxg27go6R",
+    "block_timestamp": "1730803861330314780",
+    "block": {
+      "block_height": 132010095
+    },
+    "receipt_conversion_tokens_burnt": "63674334749500000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.8756522083755326e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 575211863935800000000
+    }
+  },
+  {
+    "id": "9842175438",
+    "receipt_id": "DJYXX6yZdmZqbn3ZhCh6GjvGGAqhhwbTBvybNHHsxigT",
+    "predecessor_account_id": "megha19.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8mmUvPz3iMadZZrZw2SjtjHBWVkEGJaw4RjZYGC8ovtK",
+      "block_height": 132035202,
+      "block_timestamp": 1730831861222527200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5714960545028,
+      "tokens_burnt": 571496054502800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "3SLm7zWz4b2hWREsTps1JhJ9dHBWsh32c3KfotARGf27",
+    "included_in_block_hash": "G8MdxYEMGFto9t7mpjn7NdiYzZ9VKNckGHf1cexsY7JH",
+    "block_timestamp": "1730831860104492935",
+    "block": {
+      "block_height": 132035201
+    },
+    "receipt_conversion_tokens_burnt": "55515651113000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 571496054502800000000,
+        "args": "{\"body\": {\"name\": \"DevHub Developer Contributor report by Megha for 10/07/2024 - 11/03/2024\", \"summary\": \"Worked on treasury dashboard, fixing bugs, adding tests, UI enhancements, new features like settings page, helped NF, infra team with their requests bugs resolution. \", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": \"theori.near\", \"description\": \"### Summary of Activities\\\\\\\\n\\\\\\\\n#### Week 1 (7 Oct to 13 Oct)\\\\\\\\n\\\\\\\\n- Fix big js error flashes [#62](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/62) (0.5h)\\\\\\\\n- Text with Trentin about issues (1h)\\\\\\\\n- Review Peter\\\\\\\\u{2019}s PR (0.5h)\\\\\\\\n- Fix comment hidden in rfp view and add tests [#952](https://github.com/NEAR-DevHub/neardevhub-bos/pull/952) (4h)\\\\\\\\n- Merge existing PRs (0.5h)\\\\\\\\n- Call with Peter to discuss about test cases to make treasury error free (1h)\\\\\\\\n- Chat and call with Tanya regarding the mintbase wallet issue, reproduce the same and text mintbase team (1.5h)\\\\\\\\n- Call with Vova and Ori (1h)\\\\\\\\n- Team sync call (1h)\\\\\\\\n- Clean the kanban board and create new tickets for treasury (1h)\\\\\\\\n- Setup infinex testing env with frontend and dao config, share it for QA with the team [#64](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/64) (2h)\\\\\\\\n- Call with Peter regarding tests (0.5h)\\\\\\\\n- Help Tanya and Lucas to test treasury dashboard, create test payment requests (1.5h)\\\\\\\\n- Text with Trentin and team regarding bugs and enhancements related to treasury and devhub portal (3h)\\\\\\\\n- Call with Ori and Trentin regarding github board cleanup (1h)\\\\\\\\n- Test the devhub and infinex testing app and add bugs (1h)\\\\\\\\n- Fix the wrong RFP shown after create rfp load and add tests for add and edit rfp [#981](https://github.com/NEAR-DevHub/neardevhub-bos/pull/981) (4h)\\\\\\\\n- Reply and work on the bugs/issues which team members mentioned in sheet, add tests, add status to sheet [#65](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/65) (2d)\\\\\\\\n\\\\\\\\nTotal: 41 hours\\\\\\\\n\\\\\\\\n#### Week 2 (14 Oct to 20 Oct)\\\\\\\\n\\\\\\\\n- Continue working on the bugs [#67](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/67) (1d)\\\\\\\\n- Fix the issue with infinex quorum and permissions (2h)\\\\\\\\n- Call with Peter and Thomas to discuss about more edge cases (1h)\\\\\\\\n- Call with Ori and Vova about quorum issues (1h)\\\\\\\\n- Call with team (1.5h)\\\\\\\\n- Call with Thomas about test cases (0.5h)\\\\\\\\n- Chat with NF and team about new requirements/tickets (2h)\\\\\\\\n- Call with Peter regarding pikespeak key and threshold issue (1h)\\\\\\\\n- Fix failing tests, playwright config update, add tests for create payment request checks [#76](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/76) (1d)\\\\\\\\n- Text with Thomas about tests, infinex quorum update with team, test the threshold for absolute member (3h)\\\\\\\\n- Fix the threshold, support Weight type [#84](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/84) (2h)\\\\\\\\n- Add multi vote tests and other fixes [#85](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/85) (1.5d)\\\\\\\\n\\\\\\\\nTotal: 42 hours\\\\\\\\n\\\\\\\\n#### Week 3 (21 Oct to 27 Oct)\\\\\\\\n\\\\\\\\n- Call with Andrii (40 mins)\\\\\\\\n- Call with Peter regarding local storage issue in tests (0.5h)\\\\\\\\n- Call with Ori and Vova (1.5h)\\\\\\\\n- Complete the tests, fix the pagination issue with pending requests, highlight proposal after vote for multivote requests (1.5d) [#85](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/85)\\\\\\\\n- Chat with Lucas and Tanya about expired requests and non updated dashboard, and with Andrii (3h)\\\\\\\\n- [Test](https://docs.google.com/document/d/1EJgqwMAMY4kL8yOZazrNtSonyO1O75-3zTxj5SFJeiM/edit?tab=t.0) edge cases for quorum and threshold with different policies (4h)\\\\\\\\n- Team call (45 mins)\\\\\\\\n- Sync with Ori, Vova and Vlad (1h)\\\\\\\\n- Move expired requests to history and add tests [#91](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/91) (1d)\\\\\\\\n- Fix link href on near.social [#96](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/96) (0.5h)\\\\\\\\n- Work on settings configuration UI [#99](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/99) (1d) \\\\\\\\n\\\\\\\\nTotal: 40 hours\\\\\\\\n\\\\\\\\n#### Week 4 (28 Oct to 3 Nov)\\\\\\\\n\\\\\\\\n- Complete settings configuration UI  [#99](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/99) (1d) \\\\\\\\n- Add tests for settings configuration UI, fix the existing failed and flaky tests [#101](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/101) (2d) \\\\\\\\n- Team call (40 mins)\\\\\\\\n- Review PRs (1h)\\\\\\\\n- Call with Ori (1.5h)\\\\\\\\n- Look into the suggestion doc shared by Ori and Trentin, share feedback with Ori (0.5h)\\\\\\\\n- Fixes bugs and improvements in stake delegation, start adding tests [#111](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/111) (2d)\\\\\\\\n- Create the stake delegation doc as requested by Ori (1h)\\\\\\\\n\\\\\\\\nTotal: 44.5 hours\\\\\\\\n\\\\\\\\nTotal Hours: 167.5\\\\\\\\nHourly rate: $50/h\\\\\\\\nTotal: 8375 USD\", \"linked_proposals\": [], \"receiver_account\": \"megha19.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"8375\", \"requested_sponsorship_paid_in_currency\": \"OTHER\"}, \"labels\": [], \"accepted_terms_and_conditions_version\": 132035017}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7998250645605e+21
+    }
+  },
+  {
+    "id": "9842176094",
+    "receipt_id": "3inNFM9At5CSGDeSnvQxTa8y9YtRWLkQiBtZzPgsfgWs",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Dtn6HiBVDzHBfGvHhFdCwt2x5SRmKWp2jsTrtQfc9Zro",
+      "block_height": 132035203,
+      "block_timestamp": 1730831862331037700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4501643858790,
+      "tokens_burnt": 450164385879000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "3SLm7zWz4b2hWREsTps1JhJ9dHBWsh32c3KfotARGf27",
+    "included_in_block_hash": "G8MdxYEMGFto9t7mpjn7NdiYzZ9VKNckGHf1cexsY7JH",
+    "block_timestamp": "1730831860104492935",
+    "block": {
+      "block_height": 132035201
+    },
+    "receipt_conversion_tokens_burnt": "55515651113000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 450164385879000000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *DevDAO Platform* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @megha19.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}DevHub Developer Contributor report by Megha for 10/07/2024 - 11/03/2024\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWorked on treasury dashboard, fixing bugs, adding tests, UI enhancements, new features like settings page, helped NF, infra team with their requests bugs resolution. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=242)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7998250645605e+21
+    }
+  },
+  {
+    "id": "9842176101",
+    "receipt_id": "3p4F7vZ8bGwF3R8UwsAyHsWvkTDy5ma7DqkKuZHciJBV",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Dtn6HiBVDzHBfGvHhFdCwt2x5SRmKWp2jsTrtQfc9Zro",
+      "block_height": 132035203,
+      "block_timestamp": 1730831862331037700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3672934970066,
+      "tokens_burnt": 367293497006600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "3SLm7zWz4b2hWREsTps1JhJ9dHBWsh32c3KfotARGf27",
+    "included_in_block_hash": "G8MdxYEMGFto9t7mpjn7NdiYzZ9VKNckGHf1cexsY7JH",
+    "block_timestamp": "1730831860104492935",
+    "block": {
+      "block_height": 132035201
+    },
+    "receipt_conversion_tokens_burnt": "55515651113000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 367293497006600000000,
+        "args": "{\"proposal\": {\"id\": 242, \"snapshot\": {\"name\": \"DevHub Developer Contributor report by Megha for 10/07/2024 - 11/03/2024\", \"labels\": [], \"summary\": \"Worked on treasury dashboard, fixing bugs, adding tests, UI enhancements, new features like settings page, helped NF, infra team with their requests bugs resolution. \", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"megha19.near\", \"timestamp\": \"1730831861222527192\", \"supervisor\": \"theori.near\", \"description\": \"### Summary of Activities\\\\\\\\n\\\\\\\\n#### Week 1 (7 Oct to 13 Oct)\\\\\\\\n\\\\\\\\n- Fix big js error flashes [#62](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/62) (0.5h)\\\\\\\\n- Text with Trentin about issues (1h)\\\\\\\\n- Review Peter\\\\\\\\u{2019}s PR (0.5h)\\\\\\\\n- Fix comment hidden in rfp view and add tests [#952](https://github.com/NEAR-DevHub/neardevhub-bos/pull/952) (4h)\\\\\\\\n- Merge existing PRs (0.5h)\\\\\\\\n- Call with Peter to discuss about test cases to make treasury error free (1h)\\\\\\\\n- Chat and call with Tanya regarding the mintbase wallet issue, reproduce the same and text mintbase team (1.5h)\\\\\\\\n- Call with Vova and Ori (1h)\\\\\\\\n- Team sync call (1h)\\\\\\\\n- Clean the kanban board and create new tickets for treasury (1h)\\\\\\\\n- Setup infinex testing env with frontend and dao config, share it for QA with the team [#64](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/64) (2h)\\\\\\\\n- Call with Peter regarding tests (0.5h)\\\\\\\\n- Help Tanya and Lucas to test treasury dashboard, create test payment requests (1.5h)\\\\\\\\n- Text with Trentin and team regarding bugs and enhancements related to treasury and devhub portal (3h)\\\\\\\\n- Call with Ori and Trentin regarding github board cleanup (1h)\\\\\\\\n- Test the devhub and infinex testing app and add bugs (1h)\\\\\\\\n- Fix the wrong RFP shown after create rfp load and add tests for add and edit rfp [#981](https://github.com/NEAR-DevHub/neardevhub-bos/pull/981) (4h)\\\\\\\\n- Reply and work on the bugs/issues which team members mentioned in sheet, add tests, add status to sheet [#65](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/65) (2d)\\\\\\\\n\\\\\\\\nTotal: 41 hours\\\\\\\\n\\\\\\\\n#### Week 2 (14 Oct to 20 Oct)\\\\\\\\n\\\\\\\\n- Continue working on the bugs [#67](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/67) (1d)\\\\\\\\n- Fix the issue with infinex quorum and permissions (2h)\\\\\\\\n- Call with Peter and Thomas to discuss about more edge cases (1h)\\\\\\\\n- Call with Ori and Vova about quorum issues (1h)\\\\\\\\n- Call with team (1.5h)\\\\\\\\n- Call with Thomas about test cases (0.5h)\\\\\\\\n- Chat with NF and team about new requirements/tickets (2h)\\\\\\\\n- Call with Peter regarding pikespeak key and threshold issue (1h)\\\\\\\\n- Fix failing tests, playwright config update, add tests for create payment request checks [#76](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/76) (1d)\\\\\\\\n- Text with Thomas about tests, infinex quorum update with team, test the threshold for absolute member (3h)\\\\\\\\n- Fix the threshold, support Weight type [#84](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/84) (2h)\\\\\\\\n- Add multi vote tests and other fixes [#85](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/85) (1.5d)\\\\\\\\n\\\\\\\\nTotal: 42 hours\\\\\\\\n\\\\\\\\n#### Week 3 (21 Oct to 27 Oct)\\\\\\\\n\\\\\\\\n- Call with Andrii (40 mins)\\\\\\\\n- Call with Peter regarding local storage issue in tests (0.5h)\\\\\\\\n- Call with Ori and Vova (1.5h)\\\\\\\\n- Complete the tests, fix the pagination issue with pending requests, highlight proposal after vote for multivote requests (1.5d) [#85](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/85)\\\\\\\\n- Chat with Lucas and Tanya about expired requests and non updated dashboard, and with Andrii (3h)\\\\\\\\n- [Test](https://docs.google.com/document/d/1EJgqwMAMY4kL8yOZazrNtSonyO1O75-3zTxj5SFJeiM/edit?tab=t.0) edge cases for quorum and threshold with different policies (4h)\\\\\\\\n- Team call (45 mins)\\\\\\\\n- Sync with Ori, Vova and Vlad (1h)\\\\\\\\n- Move expired requests to history and add tests [#91](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/91) (1d)\\\\\\\\n- Fix link href on near.social [#96](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/96) (0.5h)\\\\\\\\n- Work on settings configuration UI [#99](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/99) (1d) \\\\\\\\n\\\\\\\\nTotal: 40 hours\\\\\\\\n\\\\\\\\n#### Week 4 (28 Oct to 3 Nov)\\\\\\\\n\\\\\\\\n- Complete settings configuration UI  [#99](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/99) (1d) \\\\\\\\n- Add tests for settings configuration UI, fix the existing failed and flaky tests [#101](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/101) (2d) \\\\\\\\n- Team call (40 mins)\\\\\\\\n- Review PRs (1h)\\\\\\\\n- Call with Ori (1.5h)\\\\\\\\n- Look into the suggestion doc shared by Ori and Trentin, share feedback with Ori (0.5h)\\\\\\\\n- Fixes bugs and improvements in stake delegation, start adding tests [#111](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/111) (2d)\\\\\\\\n- Create the stake delegation doc as requested by Ori (1h)\\\\\\\\n\\\\\\\\nTotal: 44.5 hours\\\\\\\\n\\\\\\\\nTotal Hours: 167.5\\\\\\\\nHourly rate: $50/h\\\\\\\\nTotal: 8375 USD\", \"linked_proposals\": [], \"receiver_account\": \"megha19.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"8375\", \"requested_sponsorship_paid_in_currency\": \"OTHER\"}, \"author_id\": \"megha19.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7998250645605e+21
+    }
+  },
+  {
+    "id": "9842176104",
+    "receipt_id": "6zuqatnp6md3QjRoWnr1aa9ChsCSsPRzup3r1phkWwCN",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Dtn6HiBVDzHBfGvHhFdCwt2x5SRmKWp2jsTrtQfc9Zro",
+      "block_height": 132035203,
+      "block_timestamp": 1730831862331037700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3553554760591,
+      "tokens_burnt": 355355476059100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "3SLm7zWz4b2hWREsTps1JhJ9dHBWsh32c3KfotARGf27",
+    "included_in_block_hash": "G8MdxYEMGFto9t7mpjn7NdiYzZ9VKNckGHf1cexsY7JH",
+    "block_timestamp": "1730831860104492935",
+    "block": {
+      "block_height": 132035201
+    },
+    "receipt_conversion_tokens_burnt": "55515651113000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 355355476059100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":242,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"megha19.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":242,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"megha19.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7998250645605e+21
+    }
+  }
+]

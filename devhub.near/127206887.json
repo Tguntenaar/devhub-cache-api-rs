@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "7986934078",
+    "receipt_id": "9pYg6GWBpBwB3r7QSShim28jsxbcNa69sGLHFr49AhAB",
+    "predecessor_account_id": "orangejoe.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5mYuqVhxNWH7xL3mjvpFTBajF2i66QuZT1DMXGtxohBf",
+      "block_height": 127206948,
+      "block_timestamp": 1725375504544789000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5267587702497,
+      "tokens_burnt": 526758770249700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "36ikLSeQENRX5gQobEPESGc5WXV8GLdw7ubxmqT2bRvw",
+    "included_in_block_hash": "A7AXoWxL98jqASUJz1rauFBzz47LvP4uux79shUHktJC",
+    "block_timestamp": "1725375503457085542",
+    "block": {
+      "block_height": 127206947
+    },
+    "receipt_conversion_tokens_burnt": "54767016787500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 526758770249700000000,
+        "args": "{\"data\": {\"blog\": {\"hackathon-resources-for-redacted-lsy0pp\": {\"\": \"We\\\\\\\\\\\\'re excited to have you build on NEAR and compete in the **[REDACTED]** hackathon.  \\\\\\\\n\\\\\\\\nBefore you begin, make sure you are registered at [Devpost](https://redacted.devpost.com/).\\\\\\\\n\\\\\\\\nAt DevHub, we are providing a list of resources to get started with NEAR technology and how to get help. \\\\\\\\n*This is a living document and will get updated over time.*\\\\\\\\n\\\\\\\\n**Live DevRel and Community Support:**\\\\\\\\n- NEAR Dev Support Channels (Telegram): https://t.me/neardev\\\\\\\\n- DevHub Announcements: https://t.me/NEARDevHub\\\\\\\\n \\\\\\\\n## Quick links\\\\\\\\n\\\\\\\\nCompletely new to NEAR: \\\\\\\\n- https://docs.near.org/concepts/basics/protocol\\\\\\\\n- https://docs.near.org/concepts/protocol/account-model\\\\\\\\n\\\\\\\\nTutorials: \\\\\\\\n- https://docs.near.org/tutorials/welcome\\\\\\\\n- https://agorapp.dev/catalog/course?difficulty=&chains=near\\\\\\\\n\\\\\\\\nSmart Contracts:\\\\\\\\n- https://docs.near.org/build/smart-contracts/quickstart\\\\\\\\n- https://docs.near.org/build/smart-contracts/what-is\\\\\\\\n\\\\\\\\nFrontend Development:\\\\\\\\n- https://docs.near.org/build/web3-apps/quickstart\\\\\\\\n\\\\\\\\nChain Abstraction:\\\\\\\\n- https://docs.near.org/build/chain-abstraction/chain-signatures\\\\\\\\n- https://near.org/chain-abstraction\\\\\\\\n- https://linktr.ee/chainsignatures (All about Chain Signatures)\\\\\\\\n\\\\\\\\nAI:\\\\\\\\n- https://near.ai/\\\\\\\\n- [NEAR AI Cookbook](https://github.com/jbarnes850/near-ai-cookbook)\\\\\\\\n\\\\\\\\n## Intro to concepts on NEAR\\\\\\\\n\\\\\\\\n### Go multichain with **Chain Abstraction**:\\\\\\\\nIf you want your application to scale to large numbers of users, including users who aren\\\\\\\\\\\\'t using any other on-chain apps, consider chain abstraction. The idea behind chain abstraction is quite simple: blockchain technology should be abstracted away from the user experience. In other words, people should not realize when they are using a blockchain, let alone which blockchain they are using.\\\\\\\\n\\\\\\\\nTo help with this goal, NEAR Protocol allows users to create and recover accounts using email addresses, use the account without acquiring funds, and control accounts in other chains. All this happens in the most seamless way possible.\\\\\\\\n\\\\\\\\n[Fast Auth](https://docs.near.org/build/chain-abstraction/fastauth-sdk) is an SDK that makes logging in as simple as an email-based login to an off-chain application - no seed phrases or private keys to manage.\\\\\\\\n[Meta Transactions](https://docs.near.org/build/chain-abstraction/meta-transactions): With NEAR, developers can bundle transactions and subsidize gas fees for their users thanks to the baked-in meta-transactions\\\\\\\\n[Chain Signatures](https://docs.near.org/build/chain-abstraction/chain-signatures): A single NEAR account can control multiple other accounts on foreign chains.\\\\\\\\n\\\\\\\\nIf you\\\\\\\\\\\\'ve used blockchain apps and been frustrated by being limited to a single chain, or disappointed by clunky auth processes for multi-chain apps, NEAR offers a better solutions. NEAR accounts can [control multiple accounts](https://docs.near.org/build/chain-abstraction/chain-signatures) across different chains signatures make chain-agnostic projects simple, and are even more powerful in combination with other chain abstraction concepts.\\\\\\\\n\\\\\\\\n### **Smart Contracts** are more flexible than you think:\\\\\\\\nIf you want to create a small, decentralized backend service, you may want a smart contract. Smart contracts are small pieces of logic that live on the blockchain and are amazing for storing user information and acting on it. The name may sound like they\\\\\\\\\\\\'re meant for financial services, but smart contracts are very versatile and can support development of  tons of projects.\\\\\\\\n\\\\\\\\nIf you want to understand from scratch how smart contracts work, we have a dedicated docs section for them, which includes an [awesome quickstart](https://docs.near.org/build/smart-contracts/quickstart) tutorial to guide you on creating your first contract. \\\\\\\\n\\\\\\\\n### Stay up to date\\\\\\\\nAlong with these resources we have a newsletter (https://bit.ly/devhubnews) and do a weekly live show, DevHub Live, and WuASM (Wake Up & Ship More, which does not have a set schedule yet).\\\\\\\\n\\\\\\\\nOur entire video archive, which includes all live streams and community call replays are available on our [YouTube](https://youtube.com/@NEARDevHub).\\\\\\\\n\\\\\\\\nLastly, please also make sure to check out our socials to keep up to date on everything developer centric on NEAR.\\\\\\\\n[YouTube](https://youtube.com/@NEARDevHub)\\\\\\\\n[Twitch](https://twitch.tv/neardevhub)\\\\\\\\n[X](https://x.com/neardevhub)\\\\\\\\n[IG](https://instagram.com/neardevhub)\\\\\\\\n[TikTok](https://tiktok.com/@neardevhub)\\\\\\\\n[LinkedIn](https://www.linkedin.com/company/near-devhub)\\\\\\\\n[Threads](https://www.threads.net/@neardevhub)\\\\\\\\n[Reddit](https://www.reddit.com/user/NEARDevHub)\\\\\\\\n\\\\\\\\nLast updated: Sept 3, 2024\", \"metadata\": {\"title\": \"Hackathon Resources for REDACTED\", \"author\": \"orangejoe.near\", \"status\": \"PUBLISH\", \"category\": \"reference\", \"subtitle\": \"Quick links to get started with your project\", \"updatedAt\": \"2024-09-03\", \"description\": \"Quick links to help get started with your hackathon project.\", \"publishedAt\": \"2024-08-05\"}}}}, \"handle\": \"developer-dao\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4437275639815e+21
+    }
+  },
+  {
+    "id": "7986934241",
+    "receipt_id": "4thMddpFohm9KNUabAzP5PjfaWwrQDgTAXRQmLzq8Kbe",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Z7z5VZNkmP8ijPBxgXdqSgrhG6jMLnJMrwhDHwgTSW2",
+      "block_height": 127206949,
+      "block_timestamp": 1725375505837106000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8622017769443,
+      "tokens_burnt": 862201776944300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "36ikLSeQENRX5gQobEPESGc5WXV8GLdw7ubxmqT2bRvw",
+    "included_in_block_hash": "A7AXoWxL98jqASUJz1rauFBzz47LvP4uux79shUHktJC",
+    "block_timestamp": "1725375503457085542",
+    "block": {
+      "block_height": 127206947
+    },
+    "receipt_conversion_tokens_burnt": "54767016787500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 862201776944300000000,
+        "args": "{\"data\": {\"developer-dao.community.devhub.near\": {\"blog\": {\"hackathon-resources-for-redacted-lsy0pp\": {\"\": \"We\\\\\\\\\\\\'re excited to have you build on NEAR and compete in the **[REDACTED]** hackathon.  \\\\\\\\n\\\\\\\\nBefore you begin, make sure you are registered at [Devpost](https://redacted.devpost.com/).\\\\\\\\n\\\\\\\\nAt DevHub, we are providing a list of resources to get started with NEAR technology and how to get help. \\\\\\\\n*This is a living document and will get updated over time.*\\\\\\\\n\\\\\\\\n**Live DevRel and Community Support:**\\\\\\\\n- NEAR Dev Support Channels (Telegram): https://t.me/neardev\\\\\\\\n- DevHub Announcements: https://t.me/NEARDevHub\\\\\\\\n \\\\\\\\n## Quick links\\\\\\\\n\\\\\\\\nCompletely new to NEAR: \\\\\\\\n- https://docs.near.org/concepts/basics/protocol\\\\\\\\n- https://docs.near.org/concepts/protocol/account-model\\\\\\\\n\\\\\\\\nTutorials: \\\\\\\\n- https://docs.near.org/tutorials/welcome\\\\\\\\n- https://agorapp.dev/catalog/course?difficulty=&chains=near\\\\\\\\n\\\\\\\\nSmart Contracts:\\\\\\\\n- https://docs.near.org/build/smart-contracts/quickstart\\\\\\\\n- https://docs.near.org/build/smart-contracts/what-is\\\\\\\\n\\\\\\\\nFrontend Development:\\\\\\\\n- https://docs.near.org/build/web3-apps/quickstart\\\\\\\\n\\\\\\\\nChain Abstraction:\\\\\\\\n- https://docs.near.org/build/chain-abstraction/chain-signatures\\\\\\\\n- https://near.org/chain-abstraction\\\\\\\\n- https://linktr.ee/chainsignatures (All about Chain Signatures)\\\\\\\\n\\\\\\\\nAI:\\\\\\\\n- https://near.ai/\\\\\\\\n- [NEAR AI Cookbook](https://github.com/jbarnes850/near-ai-cookbook)\\\\\\\\n\\\\\\\\n## Intro to concepts on NEAR\\\\\\\\n\\\\\\\\n### Go multichain with **Chain Abstraction**:\\\\\\\\nIf you want your application to scale to large numbers of users, including users who aren\\\\\\\\\\\\'t using any other on-chain apps, consider chain abstraction. The idea behind chain abstraction is quite simple: blockchain technology should be abstracted away from the user experience. In other words, people should not realize when they are using a blockchain, let alone which blockchain they are using.\\\\\\\\n\\\\\\\\nTo help with this goal, NEAR Protocol allows users to create and recover accounts using email addresses, use the account without acquiring funds, and control accounts in other chains. All this happens in the most seamless way possible.\\\\\\\\n\\\\\\\\n[Fast Auth](https://docs.near.org/build/chain-abstraction/fastauth-sdk) is an SDK that makes logging in as simple as an email-based login to an off-chain application - no seed phrases or private keys to manage.\\\\\\\\n[Meta Transactions](https://docs.near.org/build/chain-abstraction/meta-transactions): With NEAR, developers can bundle transactions and subsidize gas fees for their users thanks to the baked-in meta-transactions\\\\\\\\n[Chain Signatures](https://docs.near.org/build/chain-abstraction/chain-signatures): A single NEAR account can control multiple other accounts on foreign chains.\\\\\\\\n\\\\\\\\nIf you\\\\\\\\\\\\'ve used blockchain apps and been frustrated by being limited to a single chain, or disappointed by clunky auth processes for multi-chain apps, NEAR offers a better solutions. NEAR accounts can [control multiple accounts](https://docs.near.org/build/chain-abstraction/chain-signatures) across different chains signatures make chain-agnostic projects simple, and are even more powerful in combination with other chain abstraction concepts.\\\\\\\\n\\\\\\\\n### **Smart Contracts** are more flexible than you think:\\\\\\\\nIf you want to create a small, decentralized backend service, you may want a smart contract. Smart contracts are small pieces of logic that live on the blockchain and are amazing for storing user information and acting on it. The name may sound like they\\\\\\\\\\\\'re meant for financial services, but smart contracts are very versatile and can support development of  tons of projects.\\\\\\\\n\\\\\\\\nIf you want to understand from scratch how smart contracts work, we have a dedicated docs section for them, which includes an [awesome quickstart](https://docs.near.org/build/smart-contracts/quickstart) tutorial to guide you on creating your first contract. \\\\\\\\n\\\\\\\\n### Stay up to date\\\\\\\\nAlong with these resources we have a newsletter (https://bit.ly/devhubnews) and do a weekly live show, DevHub Live, and WuASM (Wake Up & Ship More, which does not have a set schedule yet).\\\\\\\\n\\\\\\\\nOur entire video archive, which includes all live streams and community call replays are available on our [YouTube](https://youtube.com/@NEARDevHub).\\\\\\\\n\\\\\\\\nLastly, please also make sure to check out our socials to keep up to date on everything developer centric on NEAR.\\\\\\\\n[YouTube](https://youtube.com/@NEARDevHub)\\\\\\\\n[Twitch](https://twitch.tv/neardevhub)\\\\\\\\n[X](https://x.com/neardevhub)\\\\\\\\n[IG](https://instagram.com/neardevhub)\\\\\\\\n[TikTok](https://tiktok.com/@neardevhub)\\\\\\\\n[LinkedIn](https://www.linkedin.com/company/near-devhub)\\\\\\\\n[Threads](https://www.threads.net/@neardevhub)\\\\\\\\n[Reddit](https://www.reddit.com/user/NEARDevHub)\\\\\\\\n\\\\\\\\nLast updated: Sept 3, 2024\", \"metadata\": {\"title\": \"Hackathon Resources for REDACTED\", \"author\": \"orangejoe.near\", \"status\": \"PUBLISH\", \"category\": \"reference\", \"subtitle\": \"Quick links to get started with your project\", \"updatedAt\": \"2024-09-03\", \"description\": \"Quick links to help get started with your hackathon project.\", \"publishedAt\": \"2024-08-05\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4437275639815e+21
+    }
+  },
+  {
+    "id": "7993084824",
+    "receipt_id": "3b8o9GhqvP11udcMxTvUoRHXYWfmApezZFzexxgAPnu8",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AYTazadvFMh3nxsX5DxRuBQTajBSeMwdveWqnCSBdepB",
+      "block_height": 127221040,
+      "block_timestamp": 1725391449792047600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4701716177838,
+      "tokens_burnt": 470171617783800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "BMe944jGnqcy7fCXbgH4vJE1qnCwjgpTwLkp3cs3K8sn",
+    "included_in_block_hash": "AZ7YWzzRAGKt1gYzUXKEPLGaZZHv9Uhfjrj1WmhYPUba",
+    "block_timestamp": "1725391448599381289",
+    "block": {
+      "block_height": 127221039
+    },
+    "receipt_conversion_tokens_burnt": "32069568447500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 470171617783800000000,
+        "args": "{\"id\": 191, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 854840547176000000000
+    }
+  },
+  {
+    "id": "7993085999",
+    "receipt_id": "5LVPLyurbHSU7UnKGGiYkKdsae2VcpZa7vZXonLTXgZX",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HU5h7k9CAAxaAx9fE1RtAHuvPekqGKHXm5DxgAnvys3R",
+      "block_height": 127221041,
+      "block_timestamp": 1725391450943273500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3525993609447,
+      "tokens_burnt": 352599360944700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "BMe944jGnqcy7fCXbgH4vJE1qnCwjgpTwLkp3cs3K8sn",
+    "included_in_block_hash": "AZ7YWzzRAGKt1gYzUXKEPLGaZZHv9Uhfjrj1WmhYPUba",
+    "block_timestamp": "1725391448599381289",
+    "block": {
+      "block_height": 127221039
+    },
+    "receipt_conversion_tokens_burnt": "32069568447500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352599360944700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"djeaunty_fourmule.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":191,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 854840547176000000000
+    }
+  },
+  {
+    "id": "7998486473",
+    "receipt_id": "DHyzbqAzuUpCMbU9V1xvLrGRGnrgYqHD237oYm3JXqg6",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4Ryv5dKVxar2cwaWXW1Y4LPqTjnxhohBThozJ2AnPpnv",
+      "block_height": 127235233,
+      "block_timestamp": 1725407680554602500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4429796325103,
+      "tokens_burnt": 442979632510300000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "2oEQQFfEGoV1RMn34HJTUTThNa8uqY5jRX743dsT3TC5",
+    "included_in_block_hash": "4N8keMsvwVyporYE3svRD17tByqrCAwaiCcWF5HtM2VH",
+    "block_timestamp": "1725407679372328438",
+    "block": {
+      "block_height": 127235232
+    },
+    "receipt_conversion_tokens_burnt": "41735057478000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 442979632510300000000,
+        "args": "{\"id\": 185, \"body\": {\"name\": \"DevHub Fin Ops 07/15/2024 - 07/26/2024\", \"summary\": \"Oversee that proposals flow thru the payment process efficiently. Recommend new procedures to improve the proposal payment process.\", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified\": true, \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": false}, \"supervisor\": \"theori.near\", \"description\": \"Audit and reconciliation of 2024 DevHub proposals submitted for payment processing.  I audit the current system in place, audit the records as they currently exist, propose improvements based on my findings, collaborate to implement an improved process and serve as the ongoing liason between DevHub contributors and NF as it relates to proposal payment processing.\\\\\\\\n\\\\\\\\nWeek #6 07/15/24 - 07/19/24 \\\\\\\\n07/16/24 - CRM updates \\\\\\\\n07/17/24 - Payment updates \\\\\\\\nTotal 5.5 hours\\\\\\\\n\\\\\\\\nWeek #7 07/22/24 - 07/26/24 \\\\\\\\n07/22/24 - TG w/Ori & Dan, Ops email login\\\\\\\\n07/23/24 - Research proposal issues, Emails \\\\\\\\n07/24/24 - Payments updates, Events updates \\\\\\\\n07/25/24 - Meeting w/Ori, CRM updates, email response, Slack w/Natasha \\\\\\\\nTotal 6 hours\\\\\\\\n\\\\\\\\nTotal 11.5 hours\\\\\\\\n\\\\\\\\nResults:\\\\\\\\n2024 proposals are reconciled between DevHub portal and CRM. Proposals are flowing timely. New T&C have been implemented eliminating the need to create Ironclad contracts. KYC/B steps during the payment process have been eliminated, which drastically cut down on the steps necessary and the staff necessary to process a proposal payment. \\\\\\\\n\\\\\\\\nTotal hours: 11.5 \\\\\\\\nRate: $80/hour\\\\\\\\n$920.00\\\\\\\\n\\\\\\\\n\\\\\\\\nRate determination is below the low end of the average hourly contract rate ($87 - $162) for an accountant with the same years of experience. That average rate does not account for my 5 years of blockchain specific experience. I\\\\\\\\\\\\'m not fulfilling all the duties that typically fall under this type of role, that is why I proposed a rate lower than the low end of the average.\\\\\\\\nhttps://www.salary.com/research/salary/benchmark/controller-hourly-wages\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"9bd73bc9ba6ff289e2deb597dd6fe83dc0056af7a2937d6dec119660ba0146a4\", \"requested_sponsor\": \"theori.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"920\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 842797709310200000000
+    }
+  },
+  {
+    "id": "7998486707",
+    "receipt_id": "4eo3CMWTPVCGbXvf3Qk6rTKuJKbtSAUP9KNLA5CdrLCT",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7vbvqfpbDBTTwpSf7HdFKeKExZfDaNHD4gk4VJLFU3Ru",
+      "block_height": 127235234,
+      "block_timestamp": 1725407681551579100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3580830193219,
+      "tokens_burnt": 358083019321900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "2oEQQFfEGoV1RMn34HJTUTThNa8uqY5jRX743dsT3TC5",
+    "included_in_block_hash": "4N8keMsvwVyporYE3svRD17tByqrCAwaiCcWF5HtM2VH",
+    "block_timestamp": "1725407679372328438",
+    "block": {
+      "block_height": 127235232
+    },
+    "receipt_conversion_tokens_burnt": "41735057478000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 358083019321900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":185,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 842797709310200000000
+    }
+  },
+  {
+    "id": "7998545962",
+    "receipt_id": "AQEtEistASyYuxmTLuQ6PkXv5oR4mAPa8qhavthV6avS",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DgZ5ugwYtT5p9U85jbNsWotGSoZovm2HPGgycwA3VCpa",
+      "block_height": 127235358,
+      "block_timestamp": 1725407828746497000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4402847898476,
+      "tokens_burnt": 440284789847600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DjDhnNPfwF1ei9RWeCq25MCJyrWCnmBhHxEwQ7sfMWYc",
+    "included_in_block_hash": "39WydCv2fqXUKd5ov34Rgi9bpBpDCRuytcNrcU1M6rmt",
+    "block_timestamp": "1725407827711453753",
+    "block": {
+      "block_height": 127235357
+    },
+    "receipt_conversion_tokens_burnt": "42283420200500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 440284789847600000000,
+        "args": "{\"id\": 186, \"body\": {\"name\": \"DevHub Fin Ops 07/29/2024 - 08/09/2024\", \"summary\": \"Oversee that proposals flow thru the payment process efficiently. Recommend new procedures to improve the proposal payment process.\", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified\": true, \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": false}, \"supervisor\": \"theori.near\", \"description\": \"Audit and reconciliation of 2024 DevHub proposals submitted for payment processing.  I audit the current system in place, audit the records as they currently exist, propose improvements based on my findings, collaborate to implement an improved process and serve as the ongoing liason between DevHub contributors and NF as it relates to proposal payment processing.\\\\\\\\n\\\\\\\\nWeek 07/29/24 - 08/02/24 \\\\\\\\n07/29/24 - CRM updates, Email, Events updates \\\\\\\\n08/01/24 - Emails, Investigate email issues, Mtg w/Ori, Discuss flow change to eliminate AT form for contributor\\\\\\\\n08/02/24 - Updates\\\\\\\\nTotal 10.5 hours\\\\\\\\n\\\\\\\\nWeek 08/05/24 - 08/09/24 \\\\\\\\n08/07/24 - Email\\\\\\\\n08/08/24 - Updates, TG w/Ori \\\\\\\\nTotal 3 hours\\\\\\\\n\\\\\\\\nTotal 13.5 hours\\\\\\\\n\\\\\\\\nResults:\\\\\\\\n2024 proposals are reconciled between DevHub portal and CRM. Proposals are flowing timely. New T&C have been implemented eliminating the need to create Ironclad contracts. KYC/B steps during the payment process have been eliminated, which drastically cut down on the steps necessary and the staff necessary to process a proposal payment. We are making another adjustment to the flow process which will eliminate the need for the contributor to complete the airtable payment request form.\\\\\\\\n\\\\\\\\nTotal hours: 13.5 \\\\\\\\nRate: $80/hour\\\\\\\\n$1,080.00\\\\\\\\n\\\\\\\\n\\\\\\\\nRate determination is below the low end of the average hourly contract rate ($87 - $162) for an accountant with the same years of experience. That average rate does not account for my 5 years of blockchain specific experience. I\\\\\\\\\\\\'m not fulfilling all the duties that typically fall under this type of role, that is why I proposed a rate lower than the low end of the average.\\\\\\\\nhttps://www.salary.com/research/salary/benchmark/controller-hourly-wages\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"9bd73bc9ba6ff289e2deb597dd6fe83dc0056af7a2937d6dec119660ba0146a4\", \"requested_sponsor\": \"theori.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"1080\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 840563397269600000000
+    }
+  },
+  {
+    "id": "7998546355",
+    "receipt_id": "DiLvEhhv9ehscWDaqyxAftqXvU99nDQYC3soA4ednVzg",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7icbDY7SaEw4eo85rmSfiBhg6T6fkVwhawbAEKnQT8cs",
+      "block_height": 127235359,
+      "block_timestamp": 1725407829751071500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3579951872215,
+      "tokens_burnt": 357995187221500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DjDhnNPfwF1ei9RWeCq25MCJyrWCnmBhHxEwQ7sfMWYc",
+    "included_in_block_hash": "39WydCv2fqXUKd5ov34Rgi9bpBpDCRuytcNrcU1M6rmt",
+    "block_timestamp": "1725407827711453753",
+    "block": {
+      "block_height": 127235357
+    },
+    "receipt_conversion_tokens_burnt": "42283420200500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357995187221500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":186,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 840563397269600000000
+    }
+  },
+  {
+    "id": "7998715370",
+    "receipt_id": "H2RHvs1Tjj1coQovPnNE56z3K2EfdrnRQfSiN88BUXvj",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4i8Yn8yKtjaXHQqfGjGms5Q1bQiEXqGyn8WJcwqaXwUq",
+      "block_height": 127235887,
+      "block_timestamp": 1725408427896867300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4451075212693,
+      "tokens_burnt": 445107521269300000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "HxKBiJRtgf23BtMNrUCrsR1FBZy3EuwVYrrMdsBHG6re",
+    "included_in_block_hash": "FWumt4EXxrSDoCc2p71KV2dzeBC1beGAN8RSWsiETJYM",
+    "block_timestamp": "1725408426867573906",
+    "block": {
+      "block_height": 127235886
+    },
+    "receipt_conversion_tokens_burnt": "42936687096000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 445107521269300000000,
+        "args": "{\"id\": 187, \"body\": {\"name\": \"DevHub Fin Ops 08/12/2024 - 08/23/2024\", \"summary\": \"Oversee that proposals flow thru the payment process efficiently. Recommend new procedures to improve the proposal payment process.\", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified\": true, \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": false}, \"supervisor\": \"theori.near\", \"description\": \"Audit and reconciliation of 2024 DevHub proposals submitted for payment processing.  I audit the current system in place, audit the records as they currently exist, propose improvements based on my findings, collaborate to implement an improved process and serve as the ongoing liason between DevHub contributors and NF as it relates to proposal payment processing.\\\\\\\\n\\\\\\\\nWeek 08/12/24 - 08/16/24 \\\\\\\\n08/13/24 - CRM updates, Mtg w/Ori, Email research, Work on new process flow changes \\\\\\\\n08/14/24 - Research and reconciliation for process changes\\\\\\\\n08/15/24 - Updates, continued reconciliation for process changes\\\\\\\\n08/16/24 - Set up Ledger, Mtg w/Ori, Ledger tests\\\\\\\\nTotal 14 hours\\\\\\\\n\\\\\\\\nWeek 08/19/24 - 08/23/24 \\\\\\\\n08/20/24 - Updates, TG w/Ori & Dan\\\\\\\\n08/21/24 - Updates, Research proposal issues, TG w/Ori\\\\\\\\n08/23/24 - Mtg w/Ori\\\\\\\\nTotal 5 hours\\\\\\\\n\\\\\\\\nTotal 19 hours\\\\\\\\n\\\\\\\\nResults:\\\\\\\\n2024 proposals are reconciled between DevHub portal and CRM. Proposals are flowing timely. New T&C have been implemented eliminating the need to create Ironclad contracts. KYC/B steps during the payment process have been eliminated, which drastically cut down on the steps necessary and the staff necessary to process a proposal payment. We implemented another adjustment to the flow process which eliminates the need for the contributor to complete the airtable payment request form.\\\\\\\\n\\\\\\\\nTotal hours: 19 \\\\\\\\nRate: $80/hour\\\\\\\\n$1,520.00\\\\\\\\n\\\\\\\\n\\\\\\\\nRate determination is below the low end of the average hourly contract rate ($87 - $162) for an accountant with the same years of experience. That average rate does not account for my 5 years of blockchain specific experience. I\\\\\\\\\\\\'m not fulfilling all the duties that typically fall under this type of role, that is why I proposed a rate lower than the low end of the average.\\\\\\\\nhttps://www.salary.com/research/salary/benchmark/controller-hourly-wages\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"9bd73bc9ba6ff289e2deb597dd6fe83dc0056af7a2937d6dec119660ba0146a4\", \"requested_sponsor\": \"theori.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"1520\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 840510613216400000000
+    }
+  },
+  {
+    "id": "7998715670",
+    "receipt_id": "E474KycZFrSYGwPq2AH2vXzP65SQtxqhiSvkw1X6hgLH",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HhQJzHMGK3DcV71nNkiWg9hgHasBQr3GP4pLaAPhmzWj",
+      "block_height": 127235888,
+      "block_timestamp": 1725408428986016800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3524664048511,
+      "tokens_burnt": 352466404851100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "HxKBiJRtgf23BtMNrUCrsR1FBZy3EuwVYrrMdsBHG6re",
+    "included_in_block_hash": "FWumt4EXxrSDoCc2p71KV2dzeBC1beGAN8RSWsiETJYM",
+    "block_timestamp": "1725408426867573906",
+    "block": {
+      "block_height": 127235886
+    },
+    "receipt_conversion_tokens_burnt": "42936687096000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352466404851100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":187,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 840510613216400000000
+    }
+  },
+  {
+    "id": "7998881196",
+    "receipt_id": "Hx4P5kRqDnu6shDxNgeCmNrTyYipb5E6xSdMZNVzyLSJ",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Fh2Mde7QRKfXcfcjf1uCCmZX5HfEJ1dL5ofNgxNhez7J",
+      "block_height": 127236452,
+      "block_timestamp": 1725409058607528000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4889959905210,
+      "tokens_burnt": 488995990521000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "GCE2ZZkAnxbhxKgAGBgEFdG9wYi1tqukxSbD1f7V7VPV",
+    "included_in_block_hash": "AtzvSZHD5wmgNYkXj2dmawWUQkteBGYM5cwP1GPTAzKh",
+    "block_timestamp": "1725409057527277104",
+    "block": {
+      "block_height": 127236451
+    },
+    "receipt_conversion_tokens_burnt": "31702403842000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 488995990521000000000,
+        "args": "{\"id\": 187, \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 873164799214100000000
+    }
+  },
+  {
+    "id": "7998881420",
+    "receipt_id": "EhDQvkjj3jq3pfAdrUZ3212Q9ghrnBZugWTLPQxK4Ppv",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4cc6LNvP5AtRLmBJu7gGhQ49kZeDzHFr18zQBx3JY9iH",
+      "block_height": 127236453,
+      "block_timestamp": 1725409059620364500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3524664048511,
+      "tokens_burnt": 352466404851100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "GCE2ZZkAnxbhxKgAGBgEFdG9wYi1tqukxSbD1f7V7VPV",
+    "included_in_block_hash": "AtzvSZHD5wmgNYkXj2dmawWUQkteBGYM5cwP1GPTAzKh",
+    "block_timestamp": "1725409057527277104",
+    "block": {
+      "block_height": 127236451
+    },
+    "receipt_conversion_tokens_burnt": "31702403842000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352466404851100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":187,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 873164799214100000000
+    }
+  },
+  {
+    "id": "8007330214",
+    "receipt_id": "Dc9umHndYsqi3j1uoA52voL488RattPvXq41E8yWVrkW",
+    "predecessor_account_id": "eclipseeer.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7x45iFSzSBwN1414MsMfqy2n7bZGeNJTfyvN6y9VTFV8",
+      "block_height": 127256610,
+      "block_timestamp": 1725431595414096000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6235925122424,
+      "tokens_burnt": 623592512242400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "2LYWa7EwTnM9UKKdnb5RzrzhPCoAbmBwrtU5D6t27A5J",
+    "included_in_block_hash": "4jAdv8d9WuFGK1K9oZr3Lqsog8aiu9y6fCWgZHDzNtBs",
+    "block_timestamp": "1725431594253068806",
+    "block": {
+      "block_height": 127256609
+    },
+    "receipt_conversion_tokens_burnt": "31711940585000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 623592512242400000000,
+        "args": "{\"id\": 189, \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified\": false, \"timeline_version\": \"V1\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0078586076497e+21
+    }
+  },
+  {
+    "id": "8007330619",
+    "receipt_id": "FvR7JYmUCV4huCeErgkegc2ykAiphjKZGiwT3eGLw4iC",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Erpchj3zoDb5yQMHECFzNXF6rVgGZ3QMj6wytKpVpT2k",
+      "block_height": 127256611,
+      "block_timestamp": 1725431596640632800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3525541548223,
+      "tokens_burnt": 352554154822300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "2LYWa7EwTnM9UKKdnb5RzrzhPCoAbmBwrtU5D6t27A5J",
+    "included_in_block_hash": "4jAdv8d9WuFGK1K9oZr3Lqsog8aiu9y6fCWgZHDzNtBs",
+    "block_timestamp": "1725431594253068806",
+    "block": {
+      "block_height": 127256609
+    },
+    "receipt_conversion_tokens_burnt": "31711940585000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352554154822300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"eclipseeer.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":189,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"eclipseeer.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0078586076497e+21
+    }
+  },
+  {
+    "id": "8007608084",
+    "receipt_id": "7Gm7wSDBfB6qZWDgSyz1tx4Vo7mEY4S84CdgvxcV4q7X",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3tmfHpYMBZU4dim4LD37Cr5ANS7tfg4DPAG3otHpprQb",
+      "block_height": 127257457,
+      "block_timestamp": 1725432530583528400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7796239013982,
+      "tokens_burnt": 779623901398200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "C2v1FU3uwwh9GYDRSDJLLGnz59iMRzxTFE1KqGSytnFp",
+    "included_in_block_hash": "85s2TFxfcg6FGykNZtk1EG6DcLWDTg9wALL5c6U1dNJ4",
+    "block_timestamp": "1725432529428903113",
+    "block": {
+      "block_height": 127257456
+    },
+    "receipt_conversion_tokens_burnt": "31702403842000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 779623901398200000000,
+        "args": "{\"id\": 189, \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified\": false, \"timeline_version\": \"V1\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1624789469395e+21
+    }
+  },
+  {
+    "id": "8007608821",
+    "receipt_id": "k5jwJrVgz8enAhUzWypcVwJ5uiijiojMwSrirQUhAZH",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6buQFYTf6fBcvMJuVecKorig5CfjbsZtA5nkXisFVH8G",
+      "block_height": 127257458,
+      "block_timestamp": 1725432531763532800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3511526416993,
+      "tokens_burnt": 351152641699300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "C2v1FU3uwwh9GYDRSDJLLGnz59iMRzxTFE1KqGSytnFp",
+    "included_in_block_hash": "85s2TFxfcg6FGykNZtk1EG6DcLWDTg9wALL5c6U1dNJ4",
+    "block_timestamp": "1725432529428903113",
+    "block": {
+      "block_height": 127257456
+    },
+    "receipt_conversion_tokens_burnt": "31702403842000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351152641699300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"eclipseeer.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":189,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"frol.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1624789469395e+21
+    }
+  },
+  {
+    "id": "8013986732",
+    "receipt_id": "6hknKPRfKtSZDafHC2fumrNBqzdSccfPt8SJnqGmJTpu",
+    "predecessor_account_id": "24a2788251373b64d58200665f12b00cfb2d6c9d2dc79b209d39cd0e433f5b3f",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3RQzZRk4UThM6gEKDevmjqJimh6GB2BQHXQZFgqmTA65",
+      "block_height": 127273096,
+      "block_timestamp": 1725450039049445600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5314962284042,
+      "tokens_burnt": 531496228404200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "GZ3XrGCFeMYxu8ueeRTDDrhSXGhvVxyyLYKNUnXaZL1j",
+    "included_in_block_hash": "DuSnBf9kduSSPmUNtbUbLP7p8eLmLKKMXN6tmtomtsu6",
+    "block_timestamp": "1725450037925721639",
+    "block": {
+      "block_height": 127273095
+    },
+    "receipt_conversion_tokens_burnt": "43513660047500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 531496228404200000000,
+        "args": "{\"body\": {\"name\": \"Funding for Race of Sloths [July-August 2024]\", \"summary\": \"https://race-of-sloths.com\\\\\\\\nRace of Sloth was successfully launched at the beginning of July. \\\\\\\\nDuring this period we collected feedback, upgraded our GitHub bot, launched marketing activities (X,  Telegram), made a raffle for tickets to the UARust conference, and prepared a strategy for OctoberRoS.\\\\\\\\n\\\\\\\\nResults so far (July + August): \\\\\\\\n- 50 developers joined Race of Sloths\\\\\\\\n- 9 Hall of Fame members\\\\\\\\n- 240+ Pull Requests with Race of Sloths\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"Race of Sloths is a friendly competition where you can participate in challenges and compete with other open-source contributors within your normal workflow\\\\\\\\n\\\\\\\\nFor contributors:\\\\\\\\n\\\\\\\\u{2022} Tag the bot inside your pull requests\\\\\\\\n\\\\\\\\u{2022} Wait for the maintainer to review and score your pull request\\\\\\\\n\\\\\\\\u{2022} Check out position in the leaderboard on the landing page\\\\\\\\n\\\\\\\\u{2022} Keep weekly and monthly streaks to reach higher positions\\\\\\\\n\\\\\\\\u{2022} Boast your contributions with a dynamic picture of your Profile\\\\\\\\n\\\\\\\\nFor maintainers:\\\\\\\\n\\\\\\\\u{2022} Score pull requests that participate in the Race of Sloths\\\\\\\\n\\\\\\\\u{2022} Engage contributors with fair scoring and fast responses so they keep their streaks\\\\\\\\n\\\\\\\\u{2022} Promote the Race to the point where the Race starts promoting you\\\\\\\\n\\\\\\\\u{2022} Grow the community of your contributors\\\\\\\\n\\\\\\\\nWe use NEAR for the backend implementation and will use on-chain rewards going forward, and as such onboard real open source developers to NEAR.\\\\\\\\n\\\\\\\\nlink to GitHub project: https://github.com/orgs/NEAR-DevHub/projects/6\\\\\\\\nlink to GitHub repository: https://github.com/NEAR-DevHub/race-of-sloths\\\\\\\\nlink to Website: https://race-of-sloths.com/\\\\\\\\nlink to X: https://x.com/race_of_sloths\\\\\\\\n\\\\\\\\nPlan for September-November:\\\\\\\\n\\\\\\\\n\\\\\\\\u{2022} Add projects new projects with dependencies from NEAR\\\\\\\\n\\\\\\\\u{2022} Attract new developers to Race of Sloths out of the NEAR ecosystem\\\\\\\\n\\\\\\\\u{2022} Launch OctoberRoS \\\\\\\\n\\\\\\\\nTeam composition:\\\\\\\\n\\\\\\\\u{2022} Alex Botezatu - ops lead - ex. NDC, Aurora, Bitfury\\\\\\\\n\\\\\\\\u{2022} Gleb Palienko - product/project manager - ex. Calimero, Boosty labs, Bitfury\\\\\\\\n\\\\\\\\u{2022} Artur-Yurii Korchynskyi - tech lead - ex. NDC, GGXchain\\\\\\\\n\\\\\\\\u{2022} Paula Vuli\\\\\\\\u{107} - marketing lead - ex. Calimero\\\\\\\\n\\\\\\\\u{2022} Andrii Saichuk - frontend developer - ex. NDC\\\\\\\\n\\\\\\\\nBudget for 2 months: $19.050\\\\\\\\n\", \"linked_proposals\": [94], \"receiver_account\": \"24a2788251373b64d58200665f12b00cfb2d6c9d2dc79b209d39cd0e433f5b3f\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"19050\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": [], \"accepted_terms_and_conditions_version\": 127272841}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.72813995511e+21
+    }
+  },
+  {
+    "id": "8013987090",
+    "receipt_id": "DWdaGBEYDXyoTCW9ybSK64VsbZUGEjko8YPQMWhukEE8",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GYyMUbYZYatpdxYtwRvFvnSMCTQxPMHXmKsqKajVi3YA",
+      "block_height": 127273097,
+      "block_timestamp": 1725450040257292500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4538478794808,
+      "tokens_burnt": 453847879480800000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "GZ3XrGCFeMYxu8ueeRTDDrhSXGhvVxyyLYKNUnXaZL1j",
+    "included_in_block_hash": "DuSnBf9kduSSPmUNtbUbLP7p8eLmLKKMXN6tmtomtsu6",
+    "block_timestamp": "1725450037925721639",
+    "block": {
+      "block_height": 127273095
+    },
+    "receipt_conversion_tokens_burnt": "43513660047500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 453847879480800000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Tooling & Infrastructure* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @24a2788251373b64d58200665f12b00cfb2d6c9d2dc79b209d39cd0e433f5b3f\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Funding for Race of Sloths [July-August 2024]\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nhttps://race-of-sloths.com\\\\\\\\\\\\\\\\nRace of Sloth was successfully launched at the beginning of July. \\\\\\\\\\\\\\\\nDuring this period we collected feedback, upgraded our GitHub bot, launched marketing activities (X,  Telegram), made a raffle for tickets to the UARust conference, and prepared a strategy for OctoberRoS.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nResults so far (July + August): \\\\\\\\\\\\\\\\n- 50 developers joined Race of Sloths\\\\\\\\\\\\\\\\n- 9 Hall of Fame members\\\\\\\\\\\\\\\\n- 240+ Pull Requests with Race of Sloths\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=194)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.72813995511e+21
+    }
+  },
+  {
+    "id": "8013987094",
+    "receipt_id": "nWexeDGMdUvoyzMKBCSjgLXkfhqbmifnvFTuGhsNKRW",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GYyMUbYZYatpdxYtwRvFvnSMCTQxPMHXmKsqKajVi3YA",
+      "block_height": 127273097,
+      "block_timestamp": 1725450040257292500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3462117667088,
+      "tokens_burnt": 346211766708800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "GZ3XrGCFeMYxu8ueeRTDDrhSXGhvVxyyLYKNUnXaZL1j",
+    "included_in_block_hash": "DuSnBf9kduSSPmUNtbUbLP7p8eLmLKKMXN6tmtomtsu6",
+    "block_timestamp": "1725450037925721639",
+    "block": {
+      "block_height": 127273095
+    },
+    "receipt_conversion_tokens_burnt": "43513660047500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 346211766708800000000,
+        "args": "{\"proposal\": {\"id\": 194, \"snapshot\": {\"name\": \"Funding for Race of Sloths [July-August 2024]\", \"labels\": [], \"summary\": \"https://race-of-sloths.com\\\\\\\\nRace of Sloth was successfully launched at the beginning of July. \\\\\\\\nDuring this period we collected feedback, upgraded our GitHub bot, launched marketing activities (X,  Telegram), made a raffle for tickets to the UARust conference, and prepared a strategy for OctoberRoS.\\\\\\\\n\\\\\\\\nResults so far (July + August): \\\\\\\\n- 50 developers joined Race of Sloths\\\\\\\\n- 9 Hall of Fame members\\\\\\\\n- 240+ Pull Requests with Race of Sloths\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"24a2788251373b64d58200665f12b00cfb2d6c9d2dc79b209d39cd0e433f5b3f\", \"timestamp\": \"1725450039049445512\", \"supervisor\": null, \"description\": \"Race of Sloths is a friendly competition where you can participate in challenges and compete with other open-source contributors within your normal workflow\\\\\\\\n\\\\\\\\nFor contributors:\\\\\\\\n\\\\\\\\u{2022} Tag the bot inside your pull requests\\\\\\\\n\\\\\\\\u{2022} Wait for the maintainer to review and score your pull request\\\\\\\\n\\\\\\\\u{2022} Check out position in the leaderboard on the landing page\\\\\\\\n\\\\\\\\u{2022} Keep weekly and monthly streaks to reach higher positions\\\\\\\\n\\\\\\\\u{2022} Boast your contributions with a dynamic picture of your Profile\\\\\\\\n\\\\\\\\nFor maintainers:\\\\\\\\n\\\\\\\\u{2022} Score pull requests that participate in the Race of Sloths\\\\\\\\n\\\\\\\\u{2022} Engage contributors with fair scoring and fast responses so they keep their streaks\\\\\\\\n\\\\\\\\u{2022} Promote the Race to the point where the Race starts promoting you\\\\\\\\n\\\\\\\\u{2022} Grow the community of your contributors\\\\\\\\n\\\\\\\\nWe use NEAR for the backend implementation and will use on-chain rewards going forward, and as such onboard real open source developers to NEAR.\\\\\\\\n\\\\\\\\nlink to GitHub project: https://github.com/orgs/NEAR-DevHub/projects/6\\\\\\\\nlink to GitHub repository: https://github.com/NEAR-DevHub/race-of-sloths\\\\\\\\nlink to Website: https://race-of-sloths.com/\\\\\\\\nlink to X: https://x.com/race_of_sloths\\\\\\\\n\\\\\\\\nPlan for September-November:\\\\\\\\n\\\\\\\\n\\\\\\\\u{2022} Add projects new projects with dependencies from NEAR\\\\\\\\n\\\\\\\\u{2022} Attract new developers to Race of Sloths out of the NEAR ecosystem\\\\\\\\n\\\\\\\\u{2022} Launch OctoberRoS \\\\\\\\n\\\\\\\\nTeam composition:\\\\\\\\n\\\\\\\\u{2022} Alex Botezatu - ops lead - ex. NDC, Aurora, Bitfury\\\\\\\\n\\\\\\\\u{2022} Gleb Palienko - product/project manager - ex. Calimero, Boosty labs, Bitfury\\\\\\\\n\\\\\\\\u{2022} Artur-Yurii Korchynskyi - tech lead - ex. NDC, GGXchain\\\\\\\\n\\\\\\\\u{2022} Paula Vuli\\\\\\\\u{107} - marketing lead - ex. Calimero\\\\\\\\n\\\\\\\\u{2022} Andrii Saichuk - frontend developer - ex. NDC\\\\\\\\n\\\\\\\\nBudget for 2 months: $19.050\\\\\\\\n\", \"linked_proposals\": [94], \"receiver_account\": \"24a2788251373b64d58200665f12b00cfb2d6c9d2dc79b209d39cd0e433f5b3f\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"19050\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"author_id\": \"24a2788251373b64d58200665f12b00cfb2d6c9d2dc79b209d39cd0e433f5b3f\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.72813995511e+21
+    }
+  },
+  {
+    "id": "8013987095",
+    "receipt_id": "Got5cY7D3N9bxahcgCZQMYho28YwCfvZAWPZna1QvKW",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GYyMUbYZYatpdxYtwRvFvnSMCTQxPMHXmKsqKajVi3YA",
+      "block_height": 127273097,
+      "block_timestamp": 1725450040257292500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3530704204687,
+      "tokens_burnt": 353070420468700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "GZ3XrGCFeMYxu8ueeRTDDrhSXGhvVxyyLYKNUnXaZL1j",
+    "included_in_block_hash": "DuSnBf9kduSSPmUNtbUbLP7p8eLmLKKMXN6tmtomtsu6",
+    "block_timestamp": "1725450037925721639",
+    "block": {
+      "block_height": 127273095
+    },
+    "receipt_conversion_tokens_burnt": "43513660047500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353070420468700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":194,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"24a2788251373b64d58200665f12b00cfb2d6c9d2dc79b209d39cd0e433f5b3f\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.72813995511e+21
+    }
+  },
+  {
+    "id": "8014106802",
+    "receipt_id": "6R5ig4cs27Kkk6o9odqkqdin2X89cmXW9EQR4A5xWWPG",
+    "predecessor_account_id": "24a2788251373b64d58200665f12b00cfb2d6c9d2dc79b209d39cd0e433f5b3f",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "427s4Zu3M4ZqLG48WRmMt57ASUU33ihEMHz687ssLQDT",
+      "block_height": 127273393,
+      "block_timestamp": 1725450373452338200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4544292135260,
+      "tokens_burnt": 454429213526000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "3ws14px5bVwzMKvhicfyetvXVw18yk2j2EAenRV4DQCH",
+    "included_in_block_hash": "GejyNZGtJaDnUYmCyM9TauFMbyR5m7Y8cVNtKWqm9tXs",
+    "block_timestamp": "1725450372215309248",
+    "block": {
+      "block_height": 127273392
+    },
+    "receipt_conversion_tokens_burnt": "43322925187500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 454429213526000000000,
+        "args": "{\"id\": 194, \"body\": {\"name\": \"Funding for Race of Sloths [July-August 2024]\", \"summary\": \"https://race-of-sloths.com\\\\\\\\nRace of Sloth was successfully launched at the beginning of July. \\\\\\\\nDuring this period we collected feedback, upgraded our GitHub bot, launched marketing activities (X,  Telegram), made a raffle for tickets to the UARust conference, and prepared a strategy for OctoberRoS.\\\\\\\\n\\\\\\\\nResults so far (July + August): \\\\\\\\n- 50 developers joined Race of Sloths\\\\\\\\n- 9 Hall of Fame members\\\\\\\\n- 240+ Pull Requests with Race of Sloths\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"Race of Sloths is a friendly competition where you can participate in challenges and compete with other open-source contributors within your normal workflow\\\\\\\\n\\\\\\\\nFor contributors:\\\\\\\\n\\\\\\\\u{2022} Tag the bot inside your pull requests\\\\\\\\n\\\\\\\\u{2022} Wait for the maintainer to review and score your pull request\\\\\\\\n\\\\\\\\u{2022} Check out position in the leaderboard on the landing page\\\\\\\\n\\\\\\\\u{2022} Keep weekly and monthly streaks to reach higher positions\\\\\\\\n\\\\\\\\u{2022} Boast your contributions with a dynamic picture of your Profile\\\\\\\\n\\\\\\\\nFor maintainers:\\\\\\\\n\\\\\\\\u{2022} Score pull requests that participate in the Race of Sloths\\\\\\\\n\\\\\\\\u{2022} Engage contributors with fair scoring and fast responses so they keep their streaks\\\\\\\\n\\\\\\\\u{2022} Promote the Race to the point where the Race starts promoting you\\\\\\\\n\\\\\\\\u{2022} Grow the community of your contributors\\\\\\\\n\\\\\\\\nWe use NEAR for the backend implementation and will use on-chain rewards going forward, and as such onboard real open source developers to NEAR.\\\\\\\\n\\\\\\\\nlink to GitHub project: https://github.com/orgs/NEAR-DevHub/projects/6\\\\\\\\nlink to GitHub repository: https://github.com/NEAR-DevHub/race-of-sloths\\\\\\\\nlink to Website: https://race-of-sloths.com/\\\\\\\\nlink to X: https://x.com/race_of_sloths\\\\\\\\n\\\\\\\\nPlan for September-November:\\\\\\\\n\\\\\\\\n\\\\\\\\u{2022} Add projects new projects with dependencies from NEAR\\\\\\\\n\\\\\\\\u{2022} Attract new developers to Race of Sloths out of the NEAR ecosystem\\\\\\\\n\\\\\\\\u{2022} Launch OctoberRoS \\\\\\\\n\\\\\\\\nTeam composition:\\\\\\\\n\\\\\\\\u{2022} Alex Botezatu - ops lead - ex. NDC, Aurora, Bitfury\\\\\\\\n\\\\\\\\u{2022} Gleb Palienko - product/project manager - ex. Calimero, Boosty labs, Bitfury\\\\\\\\n\\\\\\\\u{2022} Artur-Yurii Korchynskyi - tech lead - ex. NDC, GGXchain\\\\\\\\n\\\\\\\\u{2022} Paula Vuli\\\\\\\\u{107} - marketing lead - ex. Calimero\\\\\\\\n\\\\\\\\u{2022} Andrii Saichuk - frontend developer - ex. NDC\\\\\\\\n\\\\\\\\nBudget for 2 months: $19.050\\\\\\\\n\", \"linked_proposals\": [94], \"receiver_account\": \"24a2788251373b64d58200665f12b00cfb2d6c9d2dc79b209d39cd0e433f5b3f\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"19050\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 851516340180200000000
+    }
+  },
+  {
+    "id": "8014108194",
+    "receipt_id": "9ajvLEXe6RJQt9mxqx1PZMcFKnSafdk1dE91LLju7Tj2",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CH5AnaEUdptiCyvLL4rAhLojysaRD95jp6mgu8ihNvkK",
+      "block_height": 127273395,
+      "block_timestamp": 1725450376089661200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3537642014667,
+      "tokens_burnt": 353764201466700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "3ws14px5bVwzMKvhicfyetvXVw18yk2j2EAenRV4DQCH",
+    "included_in_block_hash": "GejyNZGtJaDnUYmCyM9TauFMbyR5m7Y8cVNtKWqm9tXs",
+    "block_timestamp": "1725450372215309248",
+    "block": {
+      "block_height": 127273392
+    },
+    "receipt_conversion_tokens_burnt": "43322925187500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353764201466700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"24a2788251373b64d58200665f12b00cfb2d6c9d2dc79b209d39cd0e433f5b3f\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":194,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"24a2788251373b64d58200665f12b00cfb2d6c9d2dc79b209d39cd0e433f5b3f\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 851516340180200000000
+    }
+  },
+  {
+    "id": "8014361125",
+    "receipt_id": "BrRifaA98HEK3SivDyYLNT2XJmeRYhXaVwB7trhauSKi",
+    "predecessor_account_id": "24a2788251373b64d58200665f12b00cfb2d6c9d2dc79b209d39cd0e433f5b3f",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "u2XFgZDwharBc58BX7z1FvvYTa76s8LY5HvYtsei6Bg",
+      "block_height": 127273799,
+      "block_timestamp": 1725450835921735700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4897997142865,
+      "tokens_burnt": 489799714286500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "5qQhCwJsavB2jYCohgMjHkJuVKEdQ9idirRuCuHFg82j",
+    "included_in_block_hash": "3tjmigWDb9gCYwad8mBRYYT1JtdFzq6tWkPjkeYnaPVj",
+    "block_timestamp": "1725450834898634801",
+    "block": {
+      "block_height": 127273798
+    },
+    "receipt_conversion_tokens_burnt": "42903308495500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 489799714286500000000,
+        "args": "{\"id\": 194, \"body\": {\"name\": \"Funding for Race of Sloths [July-August 2024]\", \"summary\": \"Race of Sloth was successfully launched at the beginning of July. \\\\\\\\nDuring this period we collected feedback, upgraded our GitHub bot, launched marketing activities (X,  Telegram), made a raffle for tickets to the UARust conference, and prepared a strategy for OctoberRoS. During this period 50 developers joined Race of Sloths and did 240+ Pull Requests.\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"Race of Sloths is a friendly competition where you can participate in challenges and compete with other open-source contributors within your normal workflow\\\\\\\\n\\\\\\\\nFor contributors:\\\\\\\\n\\\\\\\\u{2022} Tag the bot inside your pull requests\\\\\\\\n\\\\\\\\u{2022} Wait for the maintainer to review and score your pull request\\\\\\\\n\\\\\\\\u{2022} Check out position in the leaderboard on the landing page\\\\\\\\n\\\\\\\\u{2022} Keep weekly and monthly streaks to reach higher positions\\\\\\\\n\\\\\\\\u{2022} Boast your contributions with a dynamic picture of your Profile\\\\\\\\n\\\\\\\\nFor maintainers:\\\\\\\\n\\\\\\\\u{2022} Score pull requests that participate in the Race of Sloths\\\\\\\\n\\\\\\\\u{2022} Engage contributors with fair scoring and fast responses so they keep their streaks\\\\\\\\n\\\\\\\\u{2022} Promote the Race to the point where the Race starts promoting you\\\\\\\\n\\\\\\\\u{2022} Grow the community of your contributors\\\\\\\\n\\\\\\\\nWe use NEAR for the backend implementation and will use on-chain rewards going forward, and as such onboard real open source developers to NEAR.\\\\\\\\n\\\\\\\\nlink to GitHub project: https://github.com/orgs/NEAR-DevHub/projects/6\\\\\\\\nlink to GitHub repository: https://github.com/NEAR-DevHub/race-of-sloths\\\\\\\\nlink to Website: https://race-of-sloths.com/\\\\\\\\nlink to X: https://x.com/race_of_sloths\\\\\\\\n\\\\\\\\nPlan for September-November:\\\\\\\\n\\\\\\\\n\\\\\\\\u{2022} Add projects new projects with dependencies from NEAR\\\\\\\\n\\\\\\\\u{2022} Attract new developers to Race of Sloths out of the NEAR ecosystem\\\\\\\\n\\\\\\\\u{2022} Launch OctoberRoS \\\\\\\\n\\\\\\\\nTeam composition:\\\\\\\\n\\\\\\\\u{2022} Alex Botezatu - ops lead - ex. NDC, Aurora, Bitfury\\\\\\\\n\\\\\\\\u{2022} Gleb Palienko - product/project manager - ex. Calimero, Boosty labs, Bitfury\\\\\\\\n\\\\\\\\u{2022} Artur-Yurii Korchynskyi - tech lead - ex. NDC, GGXchain\\\\\\\\n\\\\\\\\u{2022} Paula Vuli\\\\\\\\u{107} - marketing lead - ex. Calimero\\\\\\\\n\\\\\\\\u{2022} Andrii Saichuk - frontend developer - ex. NDC\\\\\\\\n\\\\\\\\nBudget for 2 months: $19.050\\\\\\\\n\", \"linked_proposals\": [94], \"receiver_account\": \"24a2788251373b64d58200665f12b00cfb2d6c9d2dc79b209d39cd0e433f5b3f\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"19050\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 886756928225900000000
+    }
+  },
+  {
+    "id": "8014361995",
+    "receipt_id": "Et5qkKi4eW97XSL816fSrsupiMkcF7cYUumorikbmjWe",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HupZ32W6p4v1T19catNcjnAiQw6CokVkVATzwWbRnFVa",
+      "block_height": 127273800,
+      "block_timestamp": 1725450836960682200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3540539054439,
+      "tokens_burnt": 354053905443900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5qQhCwJsavB2jYCohgMjHkJuVKEdQ9idirRuCuHFg82j",
+    "included_in_block_hash": "3tjmigWDb9gCYwad8mBRYYT1JtdFzq6tWkPjkeYnaPVj",
+    "block_timestamp": "1725450834898634801",
+    "block": {
+      "block_height": 127273798
+    },
+    "receipt_conversion_tokens_burnt": "42903308495500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 354053905443900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"24a2788251373b64d58200665f12b00cfb2d6c9d2dc79b209d39cd0e433f5b3f\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":194,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"24a2788251373b64d58200665f12b00cfb2d6c9d2dc79b209d39cd0e433f5b3f\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 886756928225900000000
+    }
+  },
+  {
+    "id": "8016091930",
+    "receipt_id": "31d6PXC32X9Z9yQ5GZMo3s2vVY3Xfj8oF7egZwVf2Tsh",
+    "predecessor_account_id": "24a2788251373b64d58200665f12b00cfb2d6c9d2dc79b209d39cd0e433f5b3f",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CXUdovsK3FP2qF8WBtDPhdwhZTVumtakQjem1p74uT28",
+      "block_height": 127277719,
+      "block_timestamp": 1725455230381682000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5421372218706,
+      "tokens_burnt": 542137221870600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "HxSDZdpYgHxcv2amx6gsdPqZi6PBmpPSkTu2ciTcDCNL",
+    "included_in_block_hash": "2gVWV78skNU8FVcT3qnLwggvg1F2xcmNvabyeRfDvZMq",
+    "block_timestamp": "1725455229304379216",
+    "block": {
+      "block_height": 127277718
+    },
+    "receipt_conversion_tokens_burnt": "31711940585000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 542137221870600000000,
+        "args": "{\"id\": 194, \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified\": false, \"timeline_version\": \"V1\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 927903067899500000000
+    }
+  }
+]

@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "9203890910",
+    "receipt_id": "BmtpqLWA3oPvcCWf9XvuYvweEFuGH76HXXU65GUkZqWY",
+    "predecessor_account_id": "rektdegen.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7YK3kWZwbLMHWhxdPS7XW6iyxupro85QioRnUztUeE6A",
+      "block_height": 130339263,
+      "block_timestamp": 1728928612861857300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5823591054873,
+      "tokens_burnt": 582359105487300000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "EJ6zxJLpDs91vhszxXBiq8NFvyer9LELidHHCXpAYZen",
+    "included_in_block_hash": "3h1vA7TUUbaWnr43qjAHQXofLs7nVhq7TUB8tj8Lw5eP",
+    "block_timestamp": "1728928611665872858",
+    "block": {
+      "block_height": 130339262
+    },
+    "receipt_conversion_tokens_burnt": "64608935563500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 582359105487300000000,
+        "args": "{\"id\": 47, \"body\": {\"name\": \"Meteor Wallet Proposal for Big Query and Data Pipelines\", \"summary\": \"We propose a simpler, monolithic architecture to process NEAR blockchain data, reducing the complexity and infrastructure costs compared to building a full data pipeline with Databricks. \\\\\\\\n\\\\\\\\nThe solution will be built on top of NEAR Indexer Framework on a dedicated high-spec server, providing real-time data processing and direct uploads to Google Cloud services.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"linked_rfp\": 4, \"supervisor\": null, \"description\": \"**Solution Overview**:\\\\\\\\n1. We will run the `near-indexer-framework` on a dedicated server.\\\\\\\\n2. The dedicated server will host a PostgreSQL database used to temporarily save data before uploading them to Google Cloud.\\\\\\\\n3. Upon receiving a block, we process and save it following the current BigQuery structure.\\\\\\\\n4. Every 500 blocks, we will process the data and upload it to BigQuery and Google Cloud Storage in Avro format. We will use a simple job queue system to manage the status of the work.\\\\\\\\n5. We will retain data locally for up to 7 days only.\\\\\\\\n6. In case the server goes down, we should be able to catch up quickly as long as it hasn\\\\\\\\\\\\'t been 5 epochs.\\\\\\\\n7. We will run a Grafana dashboard that visualizes the current status of the server.\\\\\\\\n8. At the end of the development and during delivery, we expect to get write access to the current BigQuery dataset and Cloud Storage (or ownership transfer).\\\\\\\\n\\\\\\\\n**Advantages and Considerations**:\\\\\\\\n- Our team is more familiar with the near-indexer-framework and monolithic stack.\\\\\\\\n- Given the current block production time and block size, a high-spec server is more than enough to process and upload data to Google Cloud.\\\\\\\\n- It is considerably cheaper to use this stack compared to maintaining a Databricks pipeline\\\\\\\\n- It costs around **$250** per month to maintain a server versus **$3,000\\\\\\\\u{2013}$5,000 or more** per month on a full fledge data pipeline.\\\\\\\\n- We capture data more quickly directly from the NEAR core.\\\\\\\\n\\\\\\\\n**Drawbacks and Limitations:**\\\\\\\\n- We are limited to the dedicated server provider\\\\\\\\\\\\'s promised uptime (99.9%).\\\\\\\\n- There are more risks and work involved in maintaining our own infrastructure, such as keeping software dependencies updated.\\\\\\\\n- Scaling up could be harder and might incur downtime. This can easily be mitigated by using a higher-spec server unless the workload exceeds the server\\\\\\\\\\\\'s capacity.\\\\\\\\n- Although this should not happen, during a disaster scenario where the server goes down for more than 2.5 days (5 epochs) and NEAR Core can\\\\\\\\\\\\'t provide us with block data anymore, we will have to devise an alternative plan to recover data for that period.\\\\\\\\n\\\\\\\\n**Documentation and support**\\\\\\\\n- The new repository will be open-source.\\\\\\\\n- We will prepare documentation on how to set up and run another instance of the indexer to maintain the data pipeline.\\\\\\\\n- We will create a Telegram group and add all stakeholders.\\\\\\\\n- For issue support, responses will be provided within 24 hours during workdays and within 48 hours during non-workdays.\\\\\\\\n\\\\\\\\n**Costs:**\\\\\\\\n- Indexer Server\\\\\\\\n    - 16 cores / 32 threads @ 4GHz\\\\\\\\n    - 128 GB DDR5 RAM\\\\\\\\n    - 3 \\\\\\\\u{d7} 1.92 TB NVMe SSDs\\\\\\\\n    - Approximately **$250 USD** per month\\\\\\\\n\\\\\\\\n- Google Cloud Infrastructures:\\\\\\\\n\\\\\\\\t- Only if ownership transfer occurs: Assuming we will be taking over ownership of both Google Cloud BigQuery and Google Cloud Storage objects. These costs are based on the Google Cloud cost calculator and the information we have; please point out if it is inaccurate.\\\\\\\\n\\\\\\\\n    - BigQuery\\\\\\\\n        - Region: us-east1\\\\\\\\n        - Maximum slots: 100 (small)\\\\\\\\n        - 100 TB storage (current size is 40 TB plus 12 months \\\\\\\\u{d7} 4 TB per month, with margin)\\\\\\\\n        - Approximately **$5,850 USD** per month\\\\\\\\n\\\\\\\\n    - Cloud Storage\\\\\\\\n        - Region: us-east1\\\\\\\\n        - Standard Storage\\\\\\\\n        - 100 TB storage (current size is 40 TB plus 12 months \\\\\\\\u{d7} 4 TB per month, with margin)\\\\\\\\n        - Approximately **$2,050 USD** per month\\\\\\\\n        - Upon further understanding the use cases of the Avro pipeline, we can better decide if we want to move some infrequently accessed historical data to a different storage class to further cut costs.\\\\\\\\n\\\\\\\\n- Team\\\\\\\\n\\\\\\\\t- 1 senior engineer and 1 intermediate engineer for redundancy (backup and support as needed)\\\\\\\\n\\\\\\\\t- **$10,000 USD** per month\\\\\\\\n\\\\\\\\n- Extra Margin\\\\\\\\n\\\\\\\\t- This amount will only be requested in case unexpected issues arise that are outside the project scope\\\\\\\\n\\\\\\\\t- **$50,000 USD**\\\\\\\\n- **Total budget for 12 months:**\\\\\\\\n    - **$3,000 USD** for the indexer server\\\\\\\\n    - **$94,800 USD** for google cloud infrastructure\\\\\\\\n    - **$120,000 USD** for the team\\\\\\\\n    - **$50,000 USD** contingency\\\\\\\\n    - **$267,800 USD** in total\\\\\\\\n\\\\\\\\n**Milestones**\\\\\\\\n- Milestone 1: 6 weeks for building the pipeline\\\\\\\\n\\\\\\\\t- Setting up the indexer and database.\\\\\\\\n\\\\\\\\t- Converting the current Python scripts into Rust code.\\\\\\\\n\\\\\\\\t- Deliverables: A BigQuery dataset and Google Cloud Storage that are publicly viewable, following the requirements of the RFP, with initial inaccuracies expected.\\\\\\\\n- Milestone 2: 4 weeks for data auditing and quality checks\\\\\\\\n\\\\\\\\t- We will build a Grafana dashboard (similar to [near lake grafana dashboard](https://nearinc.grafana.net/public-dashboards/773648953bdc423eb5eb6324b89238d8)).\\\\\\\\n\\\\\\\\t- Deliverables: Accurate BigQuery dataset and Google Cloud Storage, with high accuracy compared to current data, and a Grafana dashboard.\\\\\\\\n- Milestone 3: 4 weeks for documentation and integration with at least one partner\\\\\\\\n\\\\\\\\t- This timeline depends on the requirements of our partners, as we will have only the latest data available at this point, not the full historical data.\\\\\\\\n\\\\\\\\t- This period also involves running two systems in parallel.\\\\\\\\n\\\\\\\\t- Deliverables: An integrated system with a partner, and an open-source repository with a simple README.\\\\\\\\n- Maintenance Phase\\\\\\\\n\\\\\\\\t- The remaining time will be dedicated to maintaining the services, updating according to NEP updates, and providing issue support, with no further feature development planned.\\\\\\\\n\\\\\\\\n**Payment Schedule:**\\\\\\\\n- Initial Payment: $25,000 USD upon project commencement.\\\\\\\\n- Milestone Payments:\\\\\\\\n\\\\\\\\t- Upon Milestone 1 Completion: $15,000 USD\\\\\\\\n\\\\\\\\t- Upon Milestone 2 Completion: $15,000 USD\\\\\\\\n\\\\\\\\t- Upon Milestone 3 Completion: $15,000 USD\\\\\\\\n- Remaining Payments:\\\\\\\\n\\\\\\\\t- Depending on whether the transfer of ownership of Google Cloud BigQuery and Storage occurs, the remaining balance will be paid in three equal installments in April, June, and August.\\\\\\\\n\\\\\\\\t\\\\\\\\t- In Case of Ownership Transfer: $65,930 USD per installment.\\\\\\\\n\\\\\\\\t\\\\\\\\t- If No Ownership Transfer: $17,670 USD per installment.\\\\\\\\n- Contingency Fund:\\\\\\\\n\\\\\\\\t- The $50,000 USD contingency will only be requested if unforeseen issues arise outside the project scope.\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"rektdegen.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"267800\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 998838412558900000000
+    }
+  },
+  {
+    "id": "9203891472",
+    "receipt_id": "3s2hQSTCvRsYGnhgK1SFkEnLfhA7SimGZtKM65XPmrMc",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3Xi5jkf17ho2gP5zV17rHUrKUtnNnhRPUHH7E5jDgM5q",
+      "block_height": 130339264,
+      "block_timestamp": 1728928613862904000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3518703715081,
+      "tokens_burnt": 351870371508100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "EJ6zxJLpDs91vhszxXBiq8NFvyer9LELidHHCXpAYZen",
+    "included_in_block_hash": "3h1vA7TUUbaWnr43qjAHQXofLs7nVhq7TUB8tj8Lw5eP",
+    "block_timestamp": "1728928611665872858",
+    "block": {
+      "block_height": 130339262
+    },
+    "receipt_conversion_tokens_burnt": "64608935563500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351870371508100000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rektdegen.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":47,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rektdegen.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 998838412558900000000
+    }
+  },
+  {
+    "id": "9204201129",
+    "receipt_id": "GefNVFCceEGAvbLkKsTmVAJexh4BL9E4vsAZU5TRRckR",
+    "predecessor_account_id": "rektdegen.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9h9PizVKCc76ztTpVXToymJP99ifqSdEvjSuMvcw2mM",
+      "block_height": 130339831,
+      "block_timestamp": 1728929238828463000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6794789643943,
+      "tokens_burnt": 679478964394300000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "rRMSZgnuNeBcbqo2Z3ubbKRurXqUXSGLaeaexNdUmoC",
+    "included_in_block_hash": "Ggb9pcWK3vag7B94C8yBGsfpS28cC1k9RAPCqkV51CTe",
+    "block_timestamp": "1728929237607043927",
+    "block": {
+      "block_height": 130339830
+    },
+    "receipt_conversion_tokens_burnt": "67274455232000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 679478964394300000000,
+        "args": "{\"id\": 47, \"body\": {\"name\": \"Meteor Wallet Proposal for Big Query and Data Pipelines\", \"summary\": \"We propose a simpler, monolithic architecture to process NEAR blockchain data, reducing the complexity and infrastructure costs compared to building a full data pipeline with Databricks. \\\\\\\\n\\\\\\\\nThe solution will be built on top of NEAR Indexer Framework on a dedicated high-spec server, providing real-time data processing and direct uploads to Google Cloud services.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"linked_rfp\": 4, \"supervisor\": null, \"description\": \"**Solution Overview**:\\\\\\\\n1. We will run the `near-indexer-framework` on a dedicated server.\\\\\\\\n2. The dedicated server will host a PostgreSQL database used to temporarily save data before uploading them to Google Cloud.\\\\\\\\n3. Upon receiving a block, we process and save it following the current BigQuery structure.\\\\\\\\n4. Every 500 blocks, we will process the data and upload it to BigQuery and Google Cloud Storage in Avro format. We will use a simple job queue system to manage the status of the work.\\\\\\\\n5. We will retain data locally for up to 7 days only.\\\\\\\\n6. In case the server goes down, we should be able to catch up quickly as long as it hasn\\\\\\\\\\\\'t been 5 epochs.\\\\\\\\n7. We will run a Grafana dashboard that visualizes the current status of the server.\\\\\\\\n8. At the end of the development and during delivery, we expect to get write access to the current BigQuery dataset and Cloud Storage (or ownership transfer).\\\\\\\\n\\\\\\\\n**Advantages and Considerations**:\\\\\\\\n- Our team is more familiar with the near-indexer-framework and monolithic stack.\\\\\\\\n- Given the current block production time and block size, a high-spec server is more than enough to process and upload data to Google Cloud.\\\\\\\\n- It is considerably cheaper to use this stack compared to maintaining a Databricks pipeline\\\\\\\\n- It costs around **$250** per month to maintain a server versus **$3,000\\\\\\\\u{2013}$5,000 or more** per month on a full fledge data pipeline.\\\\\\\\n- We capture data more quickly directly from the NEAR core.\\\\\\\\n\\\\\\\\n**Drawbacks and Limitations:**\\\\\\\\n- We are limited to the dedicated server provider\\\\\\\\\\\\'s promised uptime (99.9%).\\\\\\\\n- There are more risks and work involved in maintaining our own infrastructure, such as keeping software dependencies updated.\\\\\\\\n- Scaling up could be harder and might incur downtime. This can easily be mitigated by using a higher-spec server unless the workload exceeds the server\\\\\\\\\\\\'s capacity.\\\\\\\\n- Although this should not happen, during a disaster scenario where the server goes down for more than 2.5 days (5 epochs) and NEAR Core can\\\\\\\\\\\\'t provide us with block data anymore, we will have to devise an alternative plan to recover data for that period.\\\\\\\\n\\\\\\\\n**Documentation and support**\\\\\\\\n- The new repository will be open-source.\\\\\\\\n- We will prepare documentation on how to set up and run another instance of the indexer to maintain the data pipeline.\\\\\\\\n- We will create a Telegram group and add all stakeholders.\\\\\\\\n- For issue support, responses will be provided within 24 hours during workdays and within 48 hours during non-workdays.\\\\\\\\n\\\\\\\\n**Costs:**\\\\\\\\n- Indexer Server\\\\\\\\n    - 16 cores / 32 threads @ 4GHz\\\\\\\\n    - 128 GB DDR5 RAM\\\\\\\\n    - 3 \\\\\\\\u{d7} 1.92 TB NVMe SSDs\\\\\\\\n    - Approximately **$250 USD** per month\\\\\\\\n\\\\\\\\n- Google Cloud Infrastructures:\\\\\\\\n\\\\\\\\t- Only if ownership transfer occurs: Assuming we will be taking over ownership of both Google Cloud BigQuery and Google Cloud Storage objects. These costs are based on the Google Cloud cost calculator and the information we have; please point out if it is inaccurate.\\\\\\\\n\\\\\\\\n    - BigQuery\\\\\\\\n        - Region: us-east1\\\\\\\\n        - Maximum slots: 100 (small)\\\\\\\\n        - 100 TB storage (current size is 40 TB plus 12 months \\\\\\\\u{d7} 4 TB per month, with margin)\\\\\\\\n        - Approximately **$5,850 USD** per month\\\\\\\\n\\\\\\\\n    - Cloud Storage\\\\\\\\n        - Region: us-east1\\\\\\\\n        - Standard Storage\\\\\\\\n        - 100 TB storage (current size is 40 TB plus 12 months \\\\\\\\u{d7} 4 TB per month, with margin)\\\\\\\\n        - Approximately **$2,050 USD** per month\\\\\\\\n        - Upon further understanding the use cases of the Avro pipeline, we can better decide if we want to move some infrequently accessed historical data to a different storage class to further cut costs.\\\\\\\\n\\\\\\\\n- Team\\\\\\\\n\\\\\\\\t- 1 senior engineer and 1 intermediate engineer for redundancy (backup and support as needed)\\\\\\\\n\\\\\\\\t- **$10,000 USD** per month\\\\\\\\n\\\\\\\\n- Extra Margin\\\\\\\\n\\\\\\\\t- This amount will only be requested in case unexpected issues arise that are outside the project scope\\\\\\\\n\\\\\\\\t- **$50,000 USD**\\\\\\\\n- **Total budget for 12 months:**\\\\\\\\n    - **$3,000 USD** for the indexer server\\\\\\\\n    - **$94,800 USD** for google cloud infrastructure\\\\\\\\n    - **$120,000 USD** for the team\\\\\\\\n    - **$50,000 USD** contingency\\\\\\\\n    - **$267,800 USD** in total\\\\\\\\n\\\\\\\\n**Milestones**\\\\\\\\n- Milestone 1: 6 weeks for building the pipeline\\\\\\\\n\\\\\\\\t- Setting up the indexer and database.\\\\\\\\n\\\\\\\\t- Converting the current Python scripts into Rust code.\\\\\\\\n\\\\\\\\t- Deliverables: A BigQuery dataset and Google Cloud Storage that are publicly viewable, following the requirements of the RFP, with initial inaccuracies expected.\\\\\\\\n- Milestone 2: 4 weeks for data auditing and quality checks\\\\\\\\n\\\\\\\\t- We will build a Grafana dashboard (similar to [near lake grafana dashboard](https://nearinc.grafana.net/public-dashboards/773648953bdc423eb5eb6324b89238d8)).\\\\\\\\n\\\\\\\\t- Deliverables: Accurate BigQuery dataset and Google Cloud Storage, with high accuracy compared to current data, and a Grafana dashboard.\\\\\\\\n- Milestone 3: 4 weeks for documentation and integration with at least one partner\\\\\\\\n\\\\\\\\t- This timeline depends on the requirements of our partners, as we will have only the latest data available at this point, not the full historical data.\\\\\\\\n\\\\\\\\t- This period also involves running two systems in parallel.\\\\\\\\n\\\\\\\\t- Deliverables: An integrated system with a partner, and an open-source repository with a simple README.\\\\\\\\n- Maintenance Phase\\\\\\\\n\\\\\\\\t- The remaining time will be dedicated to maintaining the services, updating according to NEP updates, and providing issue support, with no further feature development planned.\\\\\\\\n\\\\\\\\n**Payment Schedule:**\\\\\\\\n- Initial Payment: $25,000 USD upon project commencement.\\\\\\\\n- Milestone Payments:\\\\\\\\n\\\\\\\\t- Upon Milestone 1 Completion: $15,000 USD\\\\\\\\n\\\\\\\\t- Upon Milestone 2 Completion: $15,000 USD\\\\\\\\n\\\\\\\\t- Upon Milestone 3 Completion: $15,000 USD\\\\\\\\n- Remaining Payments:\\\\\\\\n\\\\\\\\t- Depending on whether the transfer of ownership of Google Cloud BigQuery and Storage occurs, the remaining balance will be paid in three equal installments in April, June, and August.\\\\\\\\n\\\\\\\\t\\\\\\\\t- In Case of Ownership Transfer: $65,930 USD per installment.\\\\\\\\n\\\\\\\\t\\\\\\\\t- If No Ownership Transfer: $17,670 USD per installment.\\\\\\\\n- Contingency Fund:\\\\\\\\n\\\\\\\\t- The $50,000 USD contingency will only be requested if unforeseen issues arise outside the project scope.\\\\\\\\n\\\\\\\\n**Team Background**\\\\\\\\nThe Meteor Wallet team brings extensive experience with the NEAR Protocol. We are currently developing Meteor Wallet and maintaining MyNearWallet, both of which are integral parts of the NEAR ecosystem. Our team has successfully set up a validator node and is among the validators with the highest number of unique stakers. Additionally, we are building an indexer to provide a better wallet experience, enhancing functionality and user engagement.\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\nThese are all the details of the proposal. Thank you for taking the time to review it.\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"rektdegen.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"267800\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1040188629072e+21
+    }
+  },
+  {
+    "id": "9204201422",
+    "receipt_id": "3Hjvj2W243ysjGeMSPjHVmNQ7yN5NrPUDQRXbWCbDfdg",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6L7AEjkYtxbLXjzpkB7nJQ8db1aFFJ3GwQTTu3Ut1sAC",
+      "block_height": 130339832,
+      "block_timestamp": 1728929240038616300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3572654432809,
+      "tokens_burnt": 357265443280900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "rRMSZgnuNeBcbqo2Z3ubbKRurXqUXSGLaeaexNdUmoC",
+    "included_in_block_hash": "Ggb9pcWK3vag7B94C8yBGsfpS28cC1k9RAPCqkV51CTe",
+    "block_timestamp": "1728929237607043927",
+    "block": {
+      "block_height": 130339830
+    },
+    "receipt_conversion_tokens_burnt": "67274455232000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357265443280900000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rektdegen.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":47,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rektdegen.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1040188629072e+21
+    }
+  },
+  {
+    "id": "9204220156",
+    "receipt_id": "EJJc8DAbivqjRepbJ6sNDxKFbVmdwUBpzmBJB3pqcy7H",
+    "predecessor_account_id": "rektdegen.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Fx3LWB88aCondSTvnzqtZgcBdgoFCNYZcdqnpELy18vn",
+      "block_height": 130339877,
+      "block_timestamp": 1728929289213008000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7918551467681,
+      "tokens_burnt": 791855146768100000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "HdzERc5tCAtLjCYa3Hpyiw6fjjcTzXLWtxxuRCqb7ry6",
+    "included_in_block_hash": "3131nMfviMWWe1MpNW1FxGrQv1YqZ8PbCEwYGL16U8UT",
+    "block_timestamp": "1728929288109910379",
+    "block": {
+      "block_height": 130339876
+    },
+    "receipt_conversion_tokens_burnt": "31444911781000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 791855146768100000000,
+        "args": "{\"id\": 47, \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.18056550183e+21
+    }
+  },
+  {
+    "id": "9204220727",
+    "receipt_id": "CqMsUPLMc8koubg18mctU5G8h3PLCDzYqB1hmAV6gd8f",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3mtTu4en9DSvoJ3p1LtGSkVWQwtHNpm6pGATVf4ZRAUt",
+      "block_height": 130339878,
+      "block_timestamp": 1728929290416111600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3572654432809,
+      "tokens_burnt": 357265443280900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "HdzERc5tCAtLjCYa3Hpyiw6fjjcTzXLWtxxuRCqb7ry6",
+    "included_in_block_hash": "3131nMfviMWWe1MpNW1FxGrQv1YqZ8PbCEwYGL16U8UT",
+    "block_timestamp": "1728929288109910379",
+    "block": {
+      "block_height": 130339876
+    },
+    "receipt_conversion_tokens_burnt": "31444911781000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357265443280900000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rektdegen.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":47,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rektdegen.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.18056550183e+21
+    }
+  },
+  {
+    "id": "9211356070",
+    "receipt_id": "3MaRg9fdQRTYWntsqcrbHJqMD1WUq2sbYM6VDLvb5nQY",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "D8cstDib4Q6kGmDY3mNHXDR6w1xw1vsCEZorE4rFKeG2",
+      "block_height": 130356042,
+      "block_timestamp": 1728947161740886500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7970213536369,
+      "tokens_burnt": 797021353636900000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "J1MUnQFznf8K1NFswz55BX7QWWG6VanKwRCkjMCgLktd",
+    "included_in_block_hash": "ESsw5Ksj9HQEDsfiwQHnPrcT9PyWZ1qiSvaRDUGa4UbL",
+    "block_timestamp": "1728947160561449056",
+    "block": {
+      "block_height": 130356041
+    },
+    "receipt_conversion_tokens_burnt": "31454448524000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 797021353636900000000,
+        "args": "{\"id\": 22, \"timeline\": {\"status\": \"APPROVED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1857769309614e+21
+    }
+  },
+  {
+    "id": "9211357148",
+    "receipt_id": "DUHjsb6XppgqV9twH8qhKATzT8bz7ajuP4a7F56PXXPL",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BhQhJa4HLfFeX3AnccnAnh9NX6rkEFji5zbkP2wEUWqS",
+      "block_height": 130356043,
+      "block_timestamp": 1728947162894168300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3573011288005,
+      "tokens_burnt": 357301128800500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "J1MUnQFznf8K1NFswz55BX7QWWG6VanKwRCkjMCgLktd",
+    "included_in_block_hash": "ESsw5Ksj9HQEDsfiwQHnPrcT9PyWZ1qiSvaRDUGa4UbL",
+    "block_timestamp": "1728947160561449056",
+    "block": {
+      "block_height": 130356041
+    },
+    "receipt_conversion_tokens_burnt": "31454448524000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357301128800500000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mob.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":22,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1857769309614e+21
+    }
+  },
+  {
+    "id": "9211623535",
+    "receipt_id": "97NmePqP8mKD8vEh2F88BAZM4evUJpEEKNp8V8WotxBR",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6gYkF1FUJ9tmYaHNGUWkhYXfR56BYXHyD1rdjB7CLiRy",
+      "block_height": 130356456,
+      "block_timestamp": 1728947627680067300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5669491234060,
+      "tokens_burnt": 566949123406000000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "AToVNkPGU9X8qh9u4rv8mR8YKQWX5UGMv3GxF1AXroKX",
+    "included_in_block_hash": "GotLHst9JbGYPdWkChYjZiSW3owWd84nSLnTSS6gExRP",
+    "block_timestamp": "1728947626530282904",
+    "block": {
+      "block_height": 130356455
+    },
+    "receipt_conversion_tokens_burnt": "49064044473500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 566949123406000000000,
+        "args": "{\"id\": 21, \"body\": {\"name\": \"Meteor Wallet Proposal for Swap & Bridge Fee Subsidy\", \"summary\": \"Meteor Wallet aims to improve the in-wallet swap and bridge experience on the NEAR blockchain. To offer users a seamless, fee-free service while focusing on long-term enhancements, we propose a temporary fee subsidy from the IC.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"APPROVED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": null, \"supervisor\": \"trechriron71.near\", \"description\": \"## Background\\\\\\\\n\\\\\\\\n- **Swap Integration with REF Finance**:\\\\\\\\n    - Integrated **REF Finance\\\\\\\\\\\\'s smart router** for \\\\\\\\\\\\\\\"exact-out\\\\\\\\\\\\\\\" swaps.\\\\\\\\n    - Charging a standard fee of **0.85%** may deter users and hinder growth.\\\\\\\\n    - **REF\\\\\\\\\\\\'s referral fees** (~0.01% per swap) are insufficient for sustainability.\\\\\\\\n    - Implementing fees currently requires a **proxy contract**, which poses security risks and worsens user experience due to longer swap times.\\\\\\\\n        - We\\\\\\\\\\\\'re working with **REF Finance** to enable fee implementation without a proxy contract in the future.\\\\\\\\n- **Bridge Integration with Cross-Chain Swap Partner**:\\\\\\\\n    - Introducing an in-wallet bridge solution to enhance cross-chain capabilities for NEAR users.\\\\\\\\n    - Due to partner agreements, we must charge a **minimum fee of 0.1%** to users.\\\\\\\\n- **Focus on Growth**:\\\\\\\\n    - High fees discourage user adoption.\\\\\\\\n    - We aim to release these features with minimal fees to generate excitement and encourage usage.\\\\\\\\n    - A subsidy allows us to offer these services at reduced costs during the initial growth phase.\\\\\\\\n\\\\\\\\n## Subsidy Proposal\\\\\\\\n\\\\\\\\nWe propose the following fee structure and subsidy request for a duration of **3 months**:\\\\\\\\n\\\\\\\\n### Swaps\\\\\\\\n\\\\\\\\n- **Total Fee per Swap**: **0.85%**\\\\\\\\n- **Charge to Users**: **0%**\\\\\\\\n- **Requested IC Subsidy**: **0.85%**\\\\\\\\n\\\\\\\\n*Explanation*: Implementing fees currently requires a proxy contract, which introduces security risks and negatively impacts user experience by increasing swap times. Until we can implement fees without these drawbacks, we prefer to offer swaps at **0%** fee to users. We request the IC to subsidize the full **0.85%** fee during this period to cover costs and support growth.\\\\\\\\n\\\\\\\\n### Bridges\\\\\\\\n\\\\\\\\n- **Total Fee per Bridge Transaction**: **0.85%**\\\\\\\\n- **Minimum Fee Charged to Users**: **0.1%** (due to partner agreements)\\\\\\\\n- **Requested IC Subsidy**: **0.75%**\\\\\\\\n\\\\\\\\n*Explanation*: We aim to launch the bridge service with the lowest possible fee to encourage adoption. Due to partner agreements, we must charge users at least **0.1%**. We request the IC to subsidize **0.75%** per transaction, reducing the cost to users and promoting usage.\\\\\\\\n\\\\\\\\n### Total Subsidy Request\\\\\\\\n\\\\\\\\n- **Estimated Monthly Subsidy**:\\\\\\\\n    - **Swaps**: $1.5 million \\\\\\\\u{d7} 0.85% = **$12,750**\\\\\\\\n    - **Bridges**: $700,000 \\\\\\\\u{d7} 0.75% = **$5,250**\\\\\\\\n    - **Total Monthly Subsidy**: **$18,000**\\\\\\\\n- **Total Estimated Subsidy Over 3 Months**: **$54,000**\\\\\\\\n- **Notes**:\\\\\\\\n    - Estimates are based on previous transaction volumes.\\\\\\\\n    - We propose a cap of **$120,000** over the 3-month period, with a maximum of **$40,000** per month. This ensures budget control, transparency, and aligns with our growth objectives and break-even point. Our goal is to scale up demand over the next few months to reach our **$40,000** monthly break-even point, enhancing sustainability.\\\\\\\\n\\\\\\\\nDuration: October to December 2024.\\\\\\\\nReporting: We will provide all metrics and performance data during this period.\\\\\\\\nPayout Request: We will then calculate the payout request in January 2025.\", \"linked_proposals\": [], \"receiver_account\": \"web3hedge.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"54000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Other\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 973272555286000000000
+    }
+  },
+  {
+    "id": "9211625147",
+    "receipt_id": "AdtTMTmTAQRQSqefz8YhKxvWWAHAcXy8PGoP6AF1cAu",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "926SJas54ttXE76H6kwAnrKUzuoutG5nZ4Rm8vgzfAjs",
+      "block_height": 130356457,
+      "block_timestamp": 1728947628885916000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3572593874065,
+      "tokens_burnt": 357259387406500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "AToVNkPGU9X8qh9u4rv8mR8YKQWX5UGMv3GxF1AXroKX",
+    "included_in_block_hash": "GotLHst9JbGYPdWkChYjZiSW3owWd84nSLnTSS6gExRP",
+    "block_timestamp": "1728947626530282904",
+    "block": {
+      "block_height": 130356455
+    },
+    "receipt_conversion_tokens_burnt": "49064044473500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357259387406500000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"web3hedge.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":21,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 973272555286000000000
+    }
+  },
+  {
+    "id": "9211910171",
+    "receipt_id": "DpY6j1Y9Q65fWy4pzRuzVMe3c7oAoVBFAjD2cNkBTf1J",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "H41UfvUi4RnepqvfuEQVKfMk8yzJzisjNWRyTLSzSr1j",
+      "block_height": 130357355,
+      "block_timestamp": 1728948625594516700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5630321744496,
+      "tokens_burnt": 563032174449600000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "6UkRV3RWjy9kzEh7htHuU7GxoEr7zkmVEf8GeQz9MGJM",
+    "included_in_block_hash": "6UntoDyUqXLgb4QmzuZFmbtmw3nLuffwtpWHrEwKJJGc",
+    "block_timestamp": "1728948624565942330",
+    "block": {
+      "block_height": 130357354
+    },
+    "receipt_conversion_tokens_burnt": "55401210197000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 563032174449600000000,
+        "args": "{\"id\": 20, \"body\": {\"name\": \"Nearblocks Infra Extension Request\", \"summary\": \"We are extremely happy that NEAR is growing as a chain, but this growth translates into increased hardcosts on our end. This request is to cover the increase in hardcosts.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"APPROVED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": null, \"supervisor\": \"trechriron71.near\", \"description\": \"## Organization\\\\\\\\nNearblocks.io (EXPLORE BLOCKS PTE LTD)\\\\\\\\n### Primary person\\\\\\\\u{2019}s contact information\\\\\\\\nLuke\\\\\\\\n### Size of the whole team\\\\\\\\n6\\\\\\\\n### Size of the engineering team\\\\\\\\n5\\\\\\\\n### Team location\\\\\\\\nIndonesia, Singapore\\\\\\\\n### Team background and bios\\\\\\\\nLuke - CEO : Luke manages product growth, partnerships and business development.\\\\\\\\nAndrew - CTO : Andrew manages the engineering team.\\\\\\\\n### Any affiliations with other NEAR ecosystem partners?\\\\\\\\nYes, nearblocks.io is affiliated with most of the NEAR Protocol ecosystem. we provide tools and infrastructure for developers working on NEAR, offering services like blockchain data visualization and analytics. nearblocks.io collaborates with various projects and initiatives within the NEAR community to enhance the overall developer experience and support ecosystem growth.\\\\\\\\n## Professional Experience\\\\\\\\n### Examples of relevant experience with NEAR blockchain\\\\\\\\nnearblocks.io is our flagship product, however we have built other products in the past on NEAR such as nearsend.io.\\\\\\\\n### Non-technical capabilities:\\\\\\\\nWe have proven resilience and growth within the NEAR ecosystem, by partnering up with most of the projects building on NEAR we have stimulated nearblocks.io user growth to become one of the most visited products within the ecosystem.\\\\\\\\n### In-House Resources\\\\\\\\nWith a 6-man team we are able to maintain and release regular features on the nearblocks.io product as well as grow it through partnerships. We have a smooth enquiry section which covers customer support in regards to our APIs, bugs and advertising requests.\\\\\\\\n### Portfolio of relevant work\\\\\\\\nWe have previously built nearsend.io, but nearblocks.io has been the sole focus since 2022. \\\\\\\\n## Request details\\\\\\\\nNearblocks has come a long way since funding was provided in September 2023. We have upgraded our indexer, storage design and stabilised API performance. We are close to being able to deliver consistent loading performance and reliability for all users.\\\\\\\\n\\\\\\\\nWe went on a bit of a journey with BOS but ended up finding it was not a fit for Nearblocks, causing a lot of outages and downtimes outside of our control. Since September 2024 we have reverted this. Near has also grown as a chain since September 2023 as seen in [this chart](https://nearblocks.io/charts/txns). \\\\\\\\n\\\\\\\\nWe are extremely happy that NEAR is growing as a chain, but this growth translates into increased hardcosts on our end. Here\\\\\\\\u{2019}s a comparison between September last year and this year : \\\\\\\\n\\\\\\\\n**September 2023**\\\\\\\\n\\\\\\\\n- Operation on a bare minimal infrastructure with a single point of failure\\\\\\\\n- 1 primary database server with 12TB of SSD storage used for both mainnet and testnet\\\\\\\\n\\\\\\\\n**September 2024**\\\\\\\\n\\\\\\\\n- Mainnet cluster with backup and failover solution for mainnet: Able to achieve 24 hour recovery time in the event a cluster is completely lost.\\\\\\\\n- 2x mainnet database cluster, 23TB of used SSD storage each : Able to sustain loss of 1 server.\\\\\\\\n- 1x testnet database with 4TB of used SSD storage : No failover. 8 hour recovery time if there is a failure.\\\\\\\\n- Backup server, 45TB of HDD storage for archive and disaster recovery\\\\\\\\n\\\\\\\\nWith the exponentially rising storage consumption, we expect our storage capacity will run out in 3-6 months. \\\\\\\\nOur current hosting costs are sitting at $7,000 monthly with a forecasted $14,000 monthly for the next 2 years, up from our initially budgeted $3,000. We would also like to have the budget for a testnet high availability and mainnet additional replica.\\\\\\\\n## Goals / Milestones\\\\\\\\nOur goal will always remain uptime and a smooth user-experience for users. With the gradual increase of the size of the database we are in need of additional support in regards to our infrastructure. \\\\\\\\n\\\\\\\\nThis funding request is to cover the growing distance in cost overtime over the next 2 years. We are proposing the following payments on a 3 month basis. A quarterly report will be shared to track storage size. As the infrastructure committee works on a calendar year basis, we are requesting the following amount for the remainder of the year : \\\\\\\\n\\\\\\\\nSeptember - November : $33,000\\\\\\\\n\\\\\\\\nWe will submit a proposal later this year for 2025.\\\\\\\\n\\\\\\\\n## Metrics\\\\\\\\nSuccess will be measured by our [uptime](https://status.nearblocks.io/) and we will provide monthly updates on the storage size.\\\\\\\\n## Budget\\\\\\\\n### Budget Total\\\\\\\\n$33,000\\\\\\\\n### Budget Breakdown\\\\\\\\n- September 2024 : $11,000\\\\\\\\n- October 2024 : $11,000\\\\\\\\n- November $11,000\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"nearblocks_io.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"33000\", \"requested_sponsorship_paid_in_currency\": \"OTHER\"}, \"labels\": [\"Explorers\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 970234426192300000000
+    }
+  },
+  {
+    "id": "9211910511",
+    "receipt_id": "B8Z6XH3UXnseYmHZAp19gbbC3MLTf2vvcHeMQwgmNjUj",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8SqUhfJLfBZGLYspwcjoPP9T2wcLXfPu4Gu7QoxArDdQ",
+      "block_height": 130357356,
+      "block_timestamp": 1728948626854157300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3518010415457,
+      "tokens_burnt": 351801041545700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "6UkRV3RWjy9kzEh7htHuU7GxoEr7zkmVEf8GeQz9MGJM",
+    "included_in_block_hash": "6UntoDyUqXLgb4QmzuZFmbtmw3nLuffwtpWHrEwKJJGc",
+    "block_timestamp": "1728948624565942330",
+    "block": {
+      "block_height": 130357354
+    },
+    "receipt_conversion_tokens_burnt": "55401210197000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351801041545700000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"nearblocks_io.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":20,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 970234426192300000000
+    }
+  },
+  {
+    "id": "9218275728",
+    "receipt_id": "4qRT6SrgqX89HxbtTBQGhyDqXtAKe4vrBk6uaXs5J1un",
+    "predecessor_account_id": "erickis.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8vHdwizo3snZ4BsrPeEjVVqA4AVWiK6H6C5dBk7e5WPc",
+      "block_height": 130371492,
+      "block_timestamp": 1728964633432500000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8808303031265,
+      "tokens_burnt": 880830303126500000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "4ERRLFjpBcozkk15EegnvsHHBNAhZiXRoatukWAZHhCv",
+    "included_in_block_hash": "CngEUetpLQWdiAk9xboTnaacXfH32cH8y8Riw31W9XDi",
+    "block_timestamp": "1728964632357759449",
+    "block": {
+      "block_height": 130371491
+    },
+    "receipt_conversion_tokens_burnt": "52668933327500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 880830303126500000000,
+        "args": "{\"body\": {\"name\": \"Nodies: Data Lake with Zero Egress Costs\", \"summary\": \"Founded by prev AWS and Coinbase Engineers, Nodies propose a cost effective solution using Cloudflare R2, which has a backwards-compatible API for S3 while charging ZERO egress. With this cost effective offering, most of the querying cost of the data-lake will be subsidized due to zero egress. R2 only charges for HTTP Methods (GET,POST,PUT,etc).\\\\\\\\n\\\\\\\\nNodies also already run RPC nodes at scale on our platform and use R2 for free public snapshots, https://nodies.app/snapshots.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": 3, \"description\": \"## Organization\\\\\\\\n\\\\\\\\nNodies is a web3 infrastructure company offering a broad range of services, including RPC, Snapshots, Validators, and soon Data-lake. Nodies hosts services on multi-regional, bare-metal servers, ensuring top-tier performance, high Quality of Service (QoS), and enterprise-level SLAs. Nodies currently supports 22 chains and is constantly expanding, and has to-date served over 1 trillion RPC requests. Founded by ex-AWS engineers and with over 2 years experience in operating blockchain nodes, Nodies is able to onboard and integrate with a new chain within an average of 7 days. Nodies provides a straightforward, per-request pricing model that is up to 70% more cost-effective than competitors like Alchemy and Infura. Nodies\\\\\\\\u{2019} web app platform offers intuitive endpoint creation, API Key and whitelist management, and project organization tools, all under a cost-effective pricing structure.\\\\\\\\n\\\\\\\\n(Add existing features here)\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\u{2019}s contact information\\\\\\\\n\\\\\\\\nGary Kong, gary@nodies.org\\\\\\\\n\\\\\\\\n### Size of the whole team\\\\\\\\n\\\\\\\\n12\\\\\\\\n\\\\\\\\n### Size of the engineering team\\\\\\\\n\\\\\\\\n10\\\\\\\\n\\\\\\\\n### Team location\\\\\\\\n\\\\\\\\nUnited States\\\\\\\\n\\\\\\\\n### Team background and bios\\\\\\\\n\\\\\\\\nFounders: Erick Ho Tommy Ho https://www.linkedin.com/in/erickhols/, https://www.linkedin.com/in/tommy-ho-20b42123b/ Previously AWS and Coinbase Engineers.\\\\\\\\n\\\\\\\\n1 Project Manager, 1 Business Development, 8 engineers (software + dev ops), \\\\\\\\n\\\\\\\\n### Any affiliations with other NEAR ecosystem partners?\\\\\\\\n\\\\\\\\nWe signed a contract previously with Pagoda to operate their RPC from January to April.\\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\n1. Migrate S3 Buckets to Cloudflare R2: The AWS Cost Estimates listed here does not include bandwidth. AWS charges a significant amount for egress, which will not be sustainable infrastructure spend. R2 charges ZERO for egress, allowing for infinite querying potential.\\\\\\\\n\\\\\\\\n2. Nodies already run redundant (2+) RPC nodes on their platform, so we do not need to create any new instances.\\\\\\\\n\\\\\\\\n3. Create a public grafana dashboard indicating the tip of RPC nodes and subsequently the data-lake buckets.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\nMilestone 1 (Week 1 to 2): Migrate R2 Buckets\\\\\\\\nMilestone 2 (Week 3 to 4): Run Indexer to push to R2 Buckets\\\\\\\\nMilestone 3 (Week 4 to 5): Create public grafana dashboards to see RPC tip and Nodes\\\\\\\\nMilestone 4 (Week 5 to 6): Create periodic benchmarks to ensure 1k rps benchmark is satisfied.\\\\\\\\n \\\\\\\\n100% payment delivered only after all deliverables are met. Since it is only 1 month project for us, we can front the cost.\\\\\\\\n\\\\\\\\n## Metrics\\\\\\\\n\\\\\\\\nWe will publish grafana dashboards which include historical timestamp on current RPC node head and the data-lake head to ensure that we are on track with indexing.\\\\\\\\n\\\\\\\\n\\\\\\\\nAdditionally, we will run periodic benchmarks to ensure that data querying is meeting the 1,000 RPS requirement sourced from the R2 buckets.\\\\\\\\n\\\\\\\\n## Usage & Examples\\\\\\\\n\\\\\\\\nWe already use R2 at scale for our public node snapshots and our users love the fast download speeds, https://nodies.app/snapshots\\\\\\\\n\\\\\\\\n## Budget: \\\\\\\\n\\\\\\\\n### Budget Total\\\\\\\\n\\\\\\\\n$200,000\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\n- $20,000 / month for maintenance and development costs\\\\\\\\n- $1k/month for R2 storage costs\\\\\\\\n- FREE RPC / Archival Node Access\\\\\\\\n*Rest is reserved for R2 HTTP API Methods. This cost can vary depending on how popular our R2 buckets are being used.*\\\\\\\\n\\\\\\\\nWeek 1 to 2: Migrate S3 Buckets to R2\\\\\\\\n\\\\\\\\nWeek 3 to 4: Run Indexer to Populate R2 Buckets and ensure stability with our public grafana dashboards\\\\\\\\n\\\\\\\\nWeek 5 to 6: Create periodic benchmarks to ensure 1k rps benchmark is satisfied.\\\\\\\\n\\\\\\\\nWeek 7 and onwards: Maintenance and development.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"erickis.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"200000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.0953688469074e+21
+    }
+  },
+  {
+    "id": "9218276860",
+    "receipt_id": "A51aFG1gLawKvDCYqxfmRweCUYJspBn9Be1hNvAUPPoM",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3Zf3ydfaumgnKez3ZsVpRnQGJ2Q39dUCj8edjxNGg5xw",
+      "block_height": 130371493,
+      "block_timestamp": 1728964634592152000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4594366101028,
+      "tokens_burnt": 459436610102800000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4ERRLFjpBcozkk15EegnvsHHBNAhZiXRoatukWAZHhCv",
+    "included_in_block_hash": "CngEUetpLQWdiAk9xboTnaacXfH32cH8y8Riw31W9XDi",
+    "block_timestamp": "1728964632357759449",
+    "block": {
+      "block_height": 130371491
+    },
+    "receipt_conversion_tokens_burnt": "52668933327500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 459436610102800000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Infrastructure Committee* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @erickis.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Nodies: Data Lake with Zero Egress Costs\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nFounded by prev AWS and Coinbase Engineers, Nodies propose a cost effective solution using Cloudflare R2, which has a backwards-compatible API for S3 while charging ZERO egress. With this cost effective offering, most of the querying cost of the data-lake will be subsidized due to zero egress. R2 only charges for HTTP Methods (GET,POST,PUT,etc).\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nNodies also already run RPC nodes at scale on our platform and use R2 for free public snapshots, https://nodies.app/snapshots.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=48)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.0953688469074e+21
+    }
+  },
+  {
+    "id": "9218276861",
+    "receipt_id": "CttuCzVZT5bwLigkYMpFa6YK6svaqGmLqMwwcTYe2PGm",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3Zf3ydfaumgnKez3ZsVpRnQGJ2Q39dUCj8edjxNGg5xw",
+      "block_height": 130371493,
+      "block_timestamp": 1728964634592152000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3430606565697,
+      "tokens_burnt": 343060656569700000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "4ERRLFjpBcozkk15EegnvsHHBNAhZiXRoatukWAZHhCv",
+    "included_in_block_hash": "CngEUetpLQWdiAk9xboTnaacXfH32cH8y8Riw31W9XDi",
+    "block_timestamp": "1728964632357759449",
+    "block": {
+      "block_height": 130371491
+    },
+    "receipt_conversion_tokens_burnt": "52668933327500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 343060656569700000000,
+        "args": "{\"proposal\": {\"id\": 48, \"snapshot\": {\"name\": \"Nodies: Data Lake with Zero Egress Costs\", \"labels\": [\"Data Lakes\", \"Indexers\"], \"summary\": \"Founded by prev AWS and Coinbase Engineers, Nodies propose a cost effective solution using Cloudflare R2, which has a backwards-compatible API for S3 while charging ZERO egress. With this cost effective offering, most of the querying cost of the data-lake will be subsidized due to zero egress. R2 only charges for HTTP Methods (GET,POST,PUT,etc).\\\\\\\\n\\\\\\\\nNodies also already run RPC nodes at scale on our platform and use R2 for free public snapshots, https://nodies.app/snapshots.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"editor_id\": \"erickis.near\", \"timestamp\": \"1728964633432500016\", \"linked_rfp\": 3, \"supervisor\": null, \"description\": \"## Organization\\\\\\\\n\\\\\\\\nNodies is a web3 infrastructure company offering a broad range of services, including RPC, Snapshots, Validators, and soon Data-lake. Nodies hosts services on multi-regional, bare-metal servers, ensuring top-tier performance, high Quality of Service (QoS), and enterprise-level SLAs. Nodies currently supports 22 chains and is constantly expanding, and has to-date served over 1 trillion RPC requests. Founded by ex-AWS engineers and with over 2 years experience in operating blockchain nodes, Nodies is able to onboard and integrate with a new chain within an average of 7 days. Nodies provides a straightforward, per-request pricing model that is up to 70% more cost-effective than competitors like Alchemy and Infura. Nodies\\\\\\\\u{2019} web app platform offers intuitive endpoint creation, API Key and whitelist management, and project organization tools, all under a cost-effective pricing structure.\\\\\\\\n\\\\\\\\n(Add existing features here)\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\u{2019}s contact information\\\\\\\\n\\\\\\\\nGary Kong, gary@nodies.org\\\\\\\\n\\\\\\\\n### Size of the whole team\\\\\\\\n\\\\\\\\n12\\\\\\\\n\\\\\\\\n### Size of the engineering team\\\\\\\\n\\\\\\\\n10\\\\\\\\n\\\\\\\\n### Team location\\\\\\\\n\\\\\\\\nUnited States\\\\\\\\n\\\\\\\\n### Team background and bios\\\\\\\\n\\\\\\\\nFounders: Erick Ho Tommy Ho https://www.linkedin.com/in/erickhols/, https://www.linkedin.com/in/tommy-ho-20b42123b/ Previously AWS and Coinbase Engineers.\\\\\\\\n\\\\\\\\n1 Project Manager, 1 Business Development, 8 engineers (software + dev ops), \\\\\\\\n\\\\\\\\n### Any affiliations with other NEAR ecosystem partners?\\\\\\\\n\\\\\\\\nWe signed a contract previously with Pagoda to operate their RPC from January to April.\\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\n1. Migrate S3 Buckets to Cloudflare R2: The AWS Cost Estimates listed here does not include bandwidth. AWS charges a significant amount for egress, which will not be sustainable infrastructure spend. R2 charges ZERO for egress, allowing for infinite querying potential.\\\\\\\\n\\\\\\\\n2. Nodies already run redundant (2+) RPC nodes on their platform, so we do not need to create any new instances.\\\\\\\\n\\\\\\\\n3. Create a public grafana dashboard indicating the tip of RPC nodes and subsequently the data-lake buckets.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\nMilestone 1 (Week 1 to 2): Migrate R2 Buckets\\\\\\\\nMilestone 2 (Week 3 to 4): Run Indexer to push to R2 Buckets\\\\\\\\nMilestone 3 (Week 4 to 5): Create public grafana dashboards to see RPC tip and Nodes\\\\\\\\nMilestone 4 (Week 5 to 6): Create periodic benchmarks to ensure 1k rps benchmark is satisfied.\\\\\\\\n \\\\\\\\n100% payment delivered only after all deliverables are met. Since it is only 1 month project for us, we can front the cost.\\\\\\\\n\\\\\\\\n## Metrics\\\\\\\\n\\\\\\\\nWe will publish grafana dashboards which include historical timestamp on current RPC node head and the data-lake head to ensure that we are on track with indexing.\\\\\\\\n\\\\\\\\n\\\\\\\\nAdditionally, we will run periodic benchmarks to ensure that data querying is meeting the 1,000 RPS requirement sourced from the R2 buckets.\\\\\\\\n\\\\\\\\n## Usage & Examples\\\\\\\\n\\\\\\\\nWe already use R2 at scale for our public node snapshots and our users love the fast download speeds, https://nodies.app/snapshots\\\\\\\\n\\\\\\\\n## Budget: \\\\\\\\n\\\\\\\\n### Budget Total\\\\\\\\n\\\\\\\\n$200,000\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\n- $20,000 / month for maintenance and development costs\\\\\\\\n- $1k/month for R2 storage costs\\\\\\\\n- FREE RPC / Archival Node Access\\\\\\\\n*Rest is reserved for R2 HTTP API Methods. This cost can vary depending on how popular our R2 buckets are being used.*\\\\\\\\n\\\\\\\\nWeek 1 to 2: Migrate S3 Buckets to R2\\\\\\\\n\\\\\\\\nWeek 3 to 4: Run Indexer to Populate R2 Buckets and ensure stability with our public grafana dashboards\\\\\\\\n\\\\\\\\nWeek 5 to 6: Create periodic benchmarks to ensure 1k rps benchmark is satisfied.\\\\\\\\n\\\\\\\\nWeek 7 and onwards: Maintenance and development.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"erickis.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"200000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"erickis.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.0953688469074e+21
+    }
+  },
+  {
+    "id": "9218276862",
+    "receipt_id": "EhEv8JfPfcdoZ6qxH3pGk1gAEFMU9u6cpdXGegiifC5t",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3Zf3ydfaumgnKez3ZsVpRnQGJ2Q39dUCj8edjxNGg5xw",
+      "block_height": 130371493,
+      "block_timestamp": 1728964634592152000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3593723437809,
+      "tokens_burnt": 359372343780900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4ERRLFjpBcozkk15EegnvsHHBNAhZiXRoatukWAZHhCv",
+    "included_in_block_hash": "CngEUetpLQWdiAk9xboTnaacXfH32cH8y8Riw31W9XDi",
+    "block_timestamp": "1728964632357759449",
+    "block": {
+      "block_height": 130371491
+    },
+    "receipt_conversion_tokens_burnt": "52668933327500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 359372343780900000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"nodies.org\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":48,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"erickis.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":48,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"erickis.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.0953688469074e+21
+    }
+  },
+  {
+    "id": "9218720506",
+    "receipt_id": "9pHAYZDa2HTXDmjtfH8QrPgPDX2MFCnDxVB3RU5CTkdw",
+    "predecessor_account_id": "erickis.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EwSLkY6SirJqKKifXRd2gCw7Grjj5BKrKUPDvbc7nz5A",
+      "block_height": 130372486,
+      "block_timestamp": 1728965734582425900
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8513583797590,
+      "tokens_burnt": 851358379759000000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "9kdeu623pbwDrKpmqULN5tHPzYZkRaqvkucULQ7wLmTX",
+    "included_in_block_hash": "3QkSSPiaihZvGEFwKyN4NZ9Hv2kwGzF7GEBy4m9VA814",
+    "block_timestamp": "1728965733387588490",
+    "block": {
+      "block_height": 130372485
+    },
+    "receipt_conversion_tokens_burnt": "48906688214000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 851358379759000000000,
+        "args": "{\"body\": {\"name\": \"Nodies: Multi-region indexer\", \"summary\": \"Founded by prev AWS and Coinbase Engineers, Nodies propose a cost effective solution by hosting this indexer on our bare-metal infrastructure fleet deployed in at least 3 geographic regions. (USE, DE, SGP).\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": 1, \"description\": \"## Organization\\\\\\\\n\\\\\\\\nNodies is a web3 infrastructure company offering a broad range of services, including RPC, Snapshots, Validators, and soon Data-lake. Nodies hosts services on multi-regional, bare-metal servers, ensuring top-tier performance, high Quality of Service (QoS), and enterprise-level SLAs. Nodies currently supports 22 chains and is constantly expanding, and has to-date served over 1 trillion RPC requests. Founded by ex-AWS engineers and with over 2 years experience in operating blockchain nodes, Nodies is able to onboard and integrate with a new chain within an average of 7 days. Nodies provides a straightforward, per-request pricing model that is up to 70% more cost-effective than competitors like Alchemy and Infura. Nodies\\\\\\\\u{2019} web app platform offers intuitive endpoint creation, API Key and whitelist management, and project organization tools, all under a cost-effective pricing structure.\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\u{2019}s contact information\\\\\\\\n\\\\\\\\nGary Kong, gary@nodies.org\\\\\\\\n\\\\\\\\n### Size of the whole team\\\\\\\\n\\\\\\\\n12\\\\\\\\n\\\\\\\\n### Size of the engineering team\\\\\\\\n\\\\\\\\n10\\\\\\\\n\\\\\\\\n### Team location\\\\\\\\n\\\\\\\\nUnited States\\\\\\\\n\\\\\\\\n### Team background and bios\\\\\\\\n\\\\\\\\nFounders: Erick Ho Tommy Ho https://www.linkedin.com/in/erickhols/, https://www.linkedin.com/in/tommy-ho-20b42123b/ -* Previously AWS and Coinbase Engineers.*\\\\\\\\n\\\\\\\\n1 Project Manager, 1 Business Development, 8 engineers (software + dev ops),\\\\\\\\n\\\\\\\\n### Any affiliations with other NEAR ecosystem partners?\\\\\\\\n\\\\\\\\nWe signed a contract previously with Pagoda to operate their RPC from January to April.\\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\n1. Run Kit Indexer in 3 regions: APAC, US-East and Germany to allow for geographic load balancing + low latency.\\\\\\\\n\\\\\\\\n2. Create a public grafana dashboard indicating the current RPS and latency of each region + indexer\\\\\\\\n\\\\\\\\n3. Incorporate the indexing APIs as part of our SaaS RPC Plans and logged in dashboard\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\nMilestone 1 (Week 1 to 2): Set up infrastructure to run in different regions\\\\\\\\nMilestone 3 (Week 3 to 4): Create public grafana dashboards to see RPC tip and Nodes\\\\\\\\nMilestone 4 (Week 5 to 6): Incorporate the indexing APIs as part of our main application\\\\\\\\n \\\\\\\\n100% payment delivered only after all deliverables are met. Since it is only 1 month project for us, we can front the cost.\\\\\\\\n\\\\\\\\n## Metrics\\\\\\\\n\\\\\\\\nWe will publish grafana dashboards for current latency and RPS per region.\\\\\\\\n\\\\\\\\n## Usage & Examples\\\\\\\\n\\\\\\\\nWe already offer SaaS RPC offering with team member support and create your own API endpoints\\\\\\\\n\\\\\\\\n## Budget: \\\\\\\\n\\\\\\\\n### Budget Total\\\\\\\\n\\\\\\\\n$75,000\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\n$20,000 / month for maintenance and development costs.\\\\\\\\nRest will be accredited back to a public indexed API free tier according to our pricing plans.\\\\\\\\n\\\\\\\\nMilestone 1 (Week 1 to 2): Set up infrastructure to run in different regions\\\\\\\\nMilestone 3 (Week 3 to 4): Create public grafana dashboards to see RPC tip and Nodes\\\\\\\\nMilestone 4 (Week 5 to 6): Incorporate the indexing APIs as part of our main portal\\\\\\\\n \\\\\\\\nTotal: $20-25k / month, rest will be used to power a public endpoint hosted on https://nodies.app and subsidize using our standard RPC pricing plans.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"erickis.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"75000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.0542443292638e+21
+    }
+  },
+  {
+    "id": "9218720797",
+    "receipt_id": "3uutTEh7PoTxnAT36EPMUjWYm71gtSHFy3DnhXAhn5rb",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "ENatMfj8LjtefqZ4xTpEBHzXaqMaf5seuXJSNZ5QMXPX",
+      "block_height": 130372487,
+      "block_timestamp": 1728965735693229300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4573319244352,
+      "tokens_burnt": 457331924435200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "9kdeu623pbwDrKpmqULN5tHPzYZkRaqvkucULQ7wLmTX",
+    "included_in_block_hash": "3QkSSPiaihZvGEFwKyN4NZ9Hv2kwGzF7GEBy4m9VA814",
+    "block_timestamp": "1728965733387588490",
+    "block": {
+      "block_height": 130372485
+    },
+    "receipt_conversion_tokens_burnt": "48906688214000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 457331924435200000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Infrastructure Committee* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @erickis.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Nodies: Multi-region indexer\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nFounded by prev AWS and Coinbase Engineers, Nodies propose a cost effective solution by hosting this indexer on our bare-metal infrastructure fleet deployed in at least 3 geographic regions. (USE, DE, SGP).\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=49)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.0542443292638e+21
+    }
+  },
+  {
+    "id": "9218720800",
+    "receipt_id": "9qksNbPw1oS6arsdei66kn4s9LfzgDdMW1gT2ssPzgKj",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "ENatMfj8LjtefqZ4xTpEBHzXaqMaf5seuXJSNZ5QMXPX",
+      "block_height": 130372487,
+      "block_timestamp": 1728965735693229300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3361782326687,
+      "tokens_burnt": 336178232668700000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "9kdeu623pbwDrKpmqULN5tHPzYZkRaqvkucULQ7wLmTX",
+    "included_in_block_hash": "3QkSSPiaihZvGEFwKyN4NZ9Hv2kwGzF7GEBy4m9VA814",
+    "block_timestamp": "1728965733387588490",
+    "block": {
+      "block_height": 130372485
+    },
+    "receipt_conversion_tokens_burnt": "48906688214000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 336178232668700000000,
+        "args": "{\"proposal\": {\"id\": 49, \"snapshot\": {\"name\": \"Nodies: Multi-region indexer\", \"labels\": [\"Indexers\"], \"summary\": \"Founded by prev AWS and Coinbase Engineers, Nodies propose a cost effective solution by hosting this indexer on our bare-metal infrastructure fleet deployed in at least 3 geographic regions. (USE, DE, SGP).\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"editor_id\": \"erickis.near\", \"timestamp\": \"1728965734582425859\", \"linked_rfp\": 1, \"supervisor\": null, \"description\": \"## Organization\\\\\\\\n\\\\\\\\nNodies is a web3 infrastructure company offering a broad range of services, including RPC, Snapshots, Validators, and soon Data-lake. Nodies hosts services on multi-regional, bare-metal servers, ensuring top-tier performance, high Quality of Service (QoS), and enterprise-level SLAs. Nodies currently supports 22 chains and is constantly expanding, and has to-date served over 1 trillion RPC requests. Founded by ex-AWS engineers and with over 2 years experience in operating blockchain nodes, Nodies is able to onboard and integrate with a new chain within an average of 7 days. Nodies provides a straightforward, per-request pricing model that is up to 70% more cost-effective than competitors like Alchemy and Infura. Nodies\\\\\\\\u{2019} web app platform offers intuitive endpoint creation, API Key and whitelist management, and project organization tools, all under a cost-effective pricing structure.\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\u{2019}s contact information\\\\\\\\n\\\\\\\\nGary Kong, gary@nodies.org\\\\\\\\n\\\\\\\\n### Size of the whole team\\\\\\\\n\\\\\\\\n12\\\\\\\\n\\\\\\\\n### Size of the engineering team\\\\\\\\n\\\\\\\\n10\\\\\\\\n\\\\\\\\n### Team location\\\\\\\\n\\\\\\\\nUnited States\\\\\\\\n\\\\\\\\n### Team background and bios\\\\\\\\n\\\\\\\\nFounders: Erick Ho Tommy Ho https://www.linkedin.com/in/erickhols/, https://www.linkedin.com/in/tommy-ho-20b42123b/ -* Previously AWS and Coinbase Engineers.*\\\\\\\\n\\\\\\\\n1 Project Manager, 1 Business Development, 8 engineers (software + dev ops),\\\\\\\\n\\\\\\\\n### Any affiliations with other NEAR ecosystem partners?\\\\\\\\n\\\\\\\\nWe signed a contract previously with Pagoda to operate their RPC from January to April.\\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\n1. Run Kit Indexer in 3 regions: APAC, US-East and Germany to allow for geographic load balancing + low latency.\\\\\\\\n\\\\\\\\n2. Create a public grafana dashboard indicating the current RPS and latency of each region + indexer\\\\\\\\n\\\\\\\\n3. Incorporate the indexing APIs as part of our SaaS RPC Plans and logged in dashboard\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\nMilestone 1 (Week 1 to 2): Set up infrastructure to run in different regions\\\\\\\\nMilestone 3 (Week 3 to 4): Create public grafana dashboards to see RPC tip and Nodes\\\\\\\\nMilestone 4 (Week 5 to 6): Incorporate the indexing APIs as part of our main application\\\\\\\\n \\\\\\\\n100% payment delivered only after all deliverables are met. Since it is only 1 month project for us, we can front the cost.\\\\\\\\n\\\\\\\\n## Metrics\\\\\\\\n\\\\\\\\nWe will publish grafana dashboards for current latency and RPS per region.\\\\\\\\n\\\\\\\\n## Usage & Examples\\\\\\\\n\\\\\\\\nWe already offer SaaS RPC offering with team member support and create your own API endpoints\\\\\\\\n\\\\\\\\n## Budget: \\\\\\\\n\\\\\\\\n### Budget Total\\\\\\\\n\\\\\\\\n$75,000\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\n$20,000 / month for maintenance and development costs.\\\\\\\\nRest will be accredited back to a public indexed API free tier according to our pricing plans.\\\\\\\\n\\\\\\\\nMilestone 1 (Week 1 to 2): Set up infrastructure to run in different regions\\\\\\\\nMilestone 3 (Week 3 to 4): Create public grafana dashboards to see RPC tip and Nodes\\\\\\\\nMilestone 4 (Week 5 to 6): Incorporate the indexing APIs as part of our main portal\\\\\\\\n \\\\\\\\nTotal: $20-25k / month, rest will be used to power a public endpoint hosted on https://nodies.app and subsidize using our standard RPC pricing plans.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"erickis.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"75000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"erickis.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.0542443292638e+21
+    }
+  },
+  {
+    "id": "9218720802",
+    "receipt_id": "2FXo1cBkbqmgUdjv6zwtqb7uKbcC1LxrnpK33HFaRQ2E",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "ENatMfj8LjtefqZ4xTpEBHzXaqMaf5seuXJSNZ5QMXPX",
+      "block_height": 130372487,
+      "block_timestamp": 1728965735693229300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3604691041869,
+      "tokens_burnt": 360469104186900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "9kdeu623pbwDrKpmqULN5tHPzYZkRaqvkucULQ7wLmTX",
+    "included_in_block_hash": "3QkSSPiaihZvGEFwKyN4NZ9Hv2kwGzF7GEBy4m9VA814",
+    "block_timestamp": "1728965733387588490",
+    "block": {
+      "block_height": 130372485
+    },
+    "receipt_conversion_tokens_burnt": "48906688214000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 360469104186900000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"nodies.org\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":49,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"erickis.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":49,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"erickis.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.0542443292638e+21
+    }
+  },
+  {
+    "id": "9228762103",
+    "receipt_id": "CZzV3ut8spzbJWSTgS4WBjnKtGgGWn6pAtQhGfAve1z",
+    "predecessor_account_id": "kyve_foundation.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7d4FqptfymsrSrknUdyU2zEkbPpB9BBx1AZS6YKGDqoS",
+      "block_height": 130394956,
+      "block_timestamp": 1728990714082411300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 11592911271579,
+      "tokens_burnt": 1.1592911271579e+21,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "AtsUsXD1YnTT1BqRjqQVmD1ydJyUsnTRnYDFAXh2uPg1",
+    "included_in_block_hash": "GRRWCfpyKcgy2EgYhVywnvy7bHgbAQsKnAGfxxkhKBcX",
+    "block_timestamp": "1728990712936911081",
+    "block": {
+      "block_height": 130394955
+    },
+    "receipt_conversion_tokens_burnt": "132768037784500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 1.1592911271579e+21,
+        "args": "{\"body\": {\"name\": \"NEAR Data Integration into KYVE\\\\\\\\u{2019}s Decentralized Data\", \"summary\": \"As NEAR\\\\\\\\u{2019}s data infrastructure undergoes significant changes with Pagoda winding down, there is a growing need for decentralized and validated data solutions to ensure secure and scalable access to NEAR\\\\\\\\u{2019}s blockchain data. This proposal outlines a phased approach to integrate NEAR\\\\\\\\u{2019}s blockchain data into KYVE\\\\\\\\u{2019}s Web3 data lake, enabling validated and permanently stored data streams for developers, analysts, and businesses within the NEAR ecosystem.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"linked_rfp\": 3, \"description\": \"# NEAR Data Integration into KYVE\\\\\\\\u{2019}s Decentralized Data Lake\\\\\\\\n\\\\\\\\n**Description:**\\\\\\\\n\\\\\\\\nThis is a combined proposal for the following RFPs: [**NEAR Lake](https://dev.near.org/infrastructure-committee.near/widget/app?page=rfp&id=3), [BigQuery, and Data Pipelines](https://dev.near.org/infrastructure-committee.near/widget/app?page=rfp&id=4).** It also includes a **Trustless** **API** to query NEAR historical data, with the long-term vision of decentralizing the NEAR data infrastructure and turning NEAR data into a public good.\\\\\\\\n\\\\\\\\n## **Project Abstract**\\\\\\\\n\\\\\\\\nAs NEAR\\\\\\\\u{2019}s data infrastructure undergoes significant changes with Pagoda winding down, there is a **growing need for decentralized and validated data solutions** to ensure secure and scalable access to NEAR\\\\\\\\u{2019}s blockchain data. This proposal outlines a phased approach to integrate NEAR\\\\\\\\u{2019}s blockchain data into KYVE\\\\\\\\u{2019}s Web3 data lake, enabling validated and permanently stored data streams for developers, analysts, and businesses within the NEAR ecosystem.\\\\\\\\n\\\\\\\\n**What is KYVE?**\\\\\\\\n\\\\\\\\nKYVE, a data validation and transfer protocol,  enables data providers to standardize, validate, and permanently store data streams. It leverages permanent data storage solutions like Arweave and uses its own Layer-1 Blockchain, ensuring the scalability, immutability, and availability of archived data over time.\\\\\\\\n\\\\\\\\nKYVE\\\\\\\\\\\\'s Network is powered by decentralized validators, which are rewarded in $KYVE and other tokens ([https://docs.kyve.network/](https://docs.kyve.network/)).\\\\\\\\n\\\\\\\\n## **Objectives**\\\\\\\\n\\\\\\\\nThe goal of this integration is to create a robust and sustainable data infrastructure for the NEAR ecosystem. Unlike centralized solutions, KYVE relies on a network of decentralized providers to store, validate, and serve blockchain data. This reduces the risk of single points of failure and removes dependencies on centralized services.\\\\\\\\n\\\\\\\\nThe integration of NEAR\\\\\\\\u{2019}s blockchain data into KYVE\\\\\\\\\\\\'s decentralized data lake ensures long-term availability, immutability, and verifiability. By utilizing decentralized storage providers like Arweave, NEAR data becomes a public good, eliminating the need for centralized services and reducing risks. KYVE\\\\\\\\u{2019}s built-in tools, including the Trustless API and Data Load Tool, provide seamless access to validated data, future-proofing NEAR\\\\\\\\u{2019}s data infrastructure.\\\\\\\\n\\\\\\\\n## **Outcomes**\\\\\\\\n\\\\\\\\nThe integration of NEAR\\\\\\\\u{2019}s blockchain data into KYVE\\\\\\\\u{2019}s decentralized data lake will deliver significant benefits across three major products: KYVE Data Lake, Data Load Tool, and Trustless API.\\\\\\\\n\\\\\\\\n**1. KYVE\\\\\\\\u{2019}s Decentralized Data Lake ([https://app.kyve.network/#/sources](https://app.kyve.network/#/sources))**\\\\\\\\n\\\\\\\\nNEAR\\\\\\\\u{2019}s blockchain data is validated by KYVE and stored on Arweave, ensuring permanent, decentralized storage. Validators are rewarded in $NEAR for maintaining data accuracy, reducing reliance on centralized services and securing the long-term availability of NEAR data as a public good.\\\\\\\\n\\\\\\\\n**2. Data Load Tool Support ([https://docs.kyve.network/access-data-sets/data-pipeline/overview](https://docs.kyve.network/access-data-sets/data-pipeline/overview))**\\\\\\\\n\\\\\\\\nKYVE\\\\\\\\u{2019}s Data Load Tool streamlines transferring NEAR blockchain data to external warehouses like BigQuery and Postgres, removing the need for custom pipelines. With Load and Sync commands, data is kept fresh and accessible for analysis. Additional steps enable full schematization for deeper insights.\\\\\\\\n\\\\\\\\n**3. Trustless API ([https://docs.kyve.network/access-data-sets/trustless-api/overview](https://docs.kyve.network/access-data-sets/trustless-api/overview))**\\\\\\\\n\\\\\\\\nKYVE\\\\\\\\u{2019}s Trustless API offers verifiable, decentralized access to historical and live NEAR data (2-minute latency), secured by Merkle Proofs. Developers can easily integrate data into applications via well-known endpoints. The open-source tool enables independent deployment for scalability without stressing node infrastructure.\\\\\\\\n\\\\\\\\n## **Project Team**\\\\\\\\n\\\\\\\\n*This is a joint proposal by KYVE Foundation & BCP Innovations, combining deep expertise in decentralized data infrastructure with a strong commitment to driving innovation in Web3 technologies. Together, we are committed to creating a secure, decentralized, and robust data ecosystem for the NEAR blockchain through KYVE\\\\\\\\u{2019}s cutting-edge solutions.*\\\\\\\\n\\\\\\\\n**KYVE Foundation**\\\\\\\\n\\\\\\\\nThe KYVE Foundation supports the development and growth of KYVE\\\\\\\\u{2019}s decentralized data infrastructure, with a strong emphasis on decentralization, security, and data integrity. Backed by key industry players, KYVE ensures secure and scalable data solutions for leading blockchain ecosystems like Cosmos Hub, Celestia, Archway, dYdX, and others.\\\\\\\\n\\\\\\\\n**BCP Innovations**\\\\\\\\n\\\\\\\\nBCP Innovations is a German Web3 development company specializing in blockchain infrastructure and decentralized applications. As the team behind KYVE, BCP Innovations delivers secure data validation and permanent storage. For the NEAR-KYVE integration, BCP will build secure data pipelines to ensure NEAR\\\\\\\\\\\\'s blockchain data remains available and immutable.\\\\\\\\n\\\\\\\\n**Project Team:**\\\\\\\\n\\\\\\\\n**Fabian Riewe: BCP CEO and KYVE Founder,**- ([https://github.com/fabianriewe](https://github.com/fabianriewe)) - [fabian@kyve.network](mailto:fabian@kyve.network)\\\\\\\\n\\\\\\\\n**Maximilian Breithecker:** Data Engineer and Blockchain Developer,  ([https://github.com/mbreithecker](https://github.com/mbreithecker)) - [max@kyve.network](mailto:max@kyve.network)\\\\\\\\n\\\\\\\\n**Troy Kessler:** Protocol Developer,  [https://github.com/troykessler](https://github.com/troykessler) - troy@kyve.network\\\\\\\\n\\\\\\\\n**Christopher Brumm:** Developer [https://github.com/christopherbrumm](https://github.com/christopherbrumm) - [christopher@kyve.network](mailto:christopher@kyve.network)\\\\\\\\n\\\\\\\\nFor more details on BCP contributions, please see the Github repositories. All tools from this integration will be released under an **Open Source license**, ensuring transparency, community collaboration, and wide adoption.\\\\\\\\n\\\\\\\\n- [https://github.com/KYVENetwork/chain](https://github.com/KYVENetwork/chain)\\\\\\\\n- [https://github.com/KYVENetwork/kyvejs](https://github.com/KYVENetwork/kyvejs)\\\\\\\\n- https://github.com/KYVENetwork/kyve-dlt\\\\\\\\n- [https://github.com/KYVENetwork/trustless-api](https://github.com/KYVENetwork/trustless-api)\\\\\\\\n- [https://github.com/KYVENetwork/ksync](https://github.com/KYVENetwork/ksync)\\\\\\\\n- [https://docs.kyve.network/](https://docs.kyve.network/)\\\\\\\\n\\\\\\\\n## **Usage & Examples**\\\\\\\\n\\\\\\\\n**Current Users of KYVE\\\\\\\\\\\\'s Decentralized Data Lake**\\\\\\\\n\\\\\\\\n**KYVE** serves as the trusted data infrastructure for leading blockchain ecosystems like **Celestia, Osmosis, dYdX**, and **more**  ensuring their on-chain data is securely validated and permanently stored through decentralized storage solutions like **Arweave**. These projects use KYVE to maintain the integrity, accessibility, and reliability of their mission-critical blockchain data without needing to manage complex, centralized infrastructure. By using KYVE, they benefit from decentralized validation and long-term storage, ensuring data remains immutable and available for future use as a public good. [https://app.kyve.network/#/sources](https://app.kyve.network/#/sources)\\\\\\\\n\\\\\\\\n**Statistics:**\\\\\\\\n\\\\\\\\n- **+70M Transactions**\\\\\\\\n- **+7,87 TB validated and archived on Arweave (Mainnet)**\\\\\\\\n- **+18.54 TB validated and archived on Testnet**\\\\\\\\n\\\\\\\\nKYVE continues to scale its infrastructure, making it a cornerstone for secure and scalable data management in Web3 ecosystems.\\\\\\\\n\\\\\\\\n**Google BigQuery Data Sets:**\\\\\\\\n\\\\\\\\nLeveraging KYVE\\\\\\\\u{2019}s data load pipeline, BCP Innovations has published several datasets, such as those for **Osmosis**, **dYdX, Celestia, Noble** making it significantly easier for developers and data analysts to access and use blockchain data without needing to sync it from scratch. This eliminates the time-consuming process of syncing large amounts of historical data, allowing users to quickly query and analyze data. By providing pre-synced, validated datasets, KYVE reduces infrastructure overhead, enhances data accessibility, and enables faster development cycles for applications that rely on blockchain data.\\\\\\\\n\\\\\\\\n[https://console.cloud.google.com/bigquery/analytics-hub/exchanges/projects/36527693454/locations/eu/dataExchanges/kyve_public_datasets_191a23b668b/listings/osmosis_191a28703d2](https://console.cloud.google.com/bigquery/analytics-hub/exchanges/projects/36527693454/locations/eu/dataExchanges/kyve_public_datasets_191a23b668b/listings/osmosis_191a28703d2)\\\\\\\\n\\\\\\\\n**Potential Use Cases for the NEAR <> KYVE Integration**\\\\\\\\n\\\\\\\\nNEAR Developers: KYVE\\\\\\\\u{2019}s decentralized data lake gives NEAR developers free access to validated, trustless data, eliminating the need for costly centralized services. This ensures a consistent, secure, and reliable infrastructure for applications.\\\\\\\\n\\\\\\\\ndApps and Blockchain Analytics: Decentralized applications and analytics platforms can rely on KYVE to validate and archive NEAR data in a fully decentralized way, ensuring data integrity and reducing reliance on centralized systems, while enabling in-depth analysis and insights.\\\\\\\\n\\\\\\\\n**Proof of Concept: NEAR Trustless API Demo:**\\\\\\\\n\\\\\\\\nThe **Trustless API** enables developers to seamlessly connect their applications and dApps to verified blockchain data. Each data item is verified with a **Merkle Proof** (included in the http header), ensuring the integrity and trustworthiness of the data accessed.\\\\\\\\n\\\\\\\\nYou can explore NEAR blocks using the Trustless API:\\\\\\\\n\\\\\\\\n- **First NEAR block**: [Block #127590000](https://staging-613b8d89-data.services.kyve.network/near/value?height=127590000)\\\\\\\\n- **Last NEAR block**: [Block #127591973](https://staging-613b8d89-data.services.kyve.network/near/value?height=127591973)\\\\\\\\n\\\\\\\\nThis ensures that all data retrieved through the API is cryptographically verified and secure for use in any decentralized application.\\\\\\\\n\\\\\\\\n# **Milestones**\\\\\\\\n\\\\\\\\n**Milestone 1: NEAR Runtime Development & Testnet Deployment**\\\\\\\\n\\\\\\\\n*Completion by January 31, 2025*\\\\\\\\n\\\\\\\\n- **Develop NEAR runtime** to enable the retrieval and validation of NEAR blocks and chunks (txs and receipts are included in the chunks).\\\\\\\\n- **Collaborate with NEAR team** and **Community** to ensure smooth integration and alignment.\\\\\\\\n- **Upload validated data to Arweave** for permanent decentralized storage. After testing is complete, the testnet pool will switch and continue uploading to the KYVE storage provider, a centralized storage solution for testnet operations.\\\\\\\\n- **Test the NEAR runtime on KYVE\\\\\\\\u{2019}s testnet (Kaon)** to validate data retrieval, storage processes, and functionality. This includes a beta-testing phase with KYVE/NEAR Validators.\\\\\\\\n- After successful testing, **prepare for mainnet deployment**.\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n**Milestone 2: KYVE Data Pool Deployment on Mainnet & Base Functionality Release**\\\\\\\\n\\\\\\\\n*Completion by February 1, 2025*\\\\\\\\n\\\\\\\\n- **Deploy the KYVE NEAR data pool** on mainnet to handle data extraction, validation, and permanent storage.\\\\\\\\n- Release **base functionalities** of the KYVE **Data Pipeline** and **Trustless API** for community access to validated NEAR data.\\\\\\\\n- **Integrate NEAR tokens** into the KYVE ecosystem based on existing NEAR-IBC bridges or other solutions, to fund the data pool and incentivize validators for maintaining the pool.\\\\\\\\n- **Collaborate with NEAR community** to ensure smooth deployment and provide initial performance reports for monitoring.\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n**Milestone 3: Performance Optimization, Maintenance & Optional Advanced Data Transformations**\\\\\\\\n\\\\\\\\n*Completion by March 1, 2025*\\\\\\\\n\\\\\\\\n- **Maintain and optimize the KYVE NEAR integration** for efficient data streaming, validation, and storage.\\\\\\\\n- **Monitor performance** and implement improvements based on usage and community feedback.\\\\\\\\n- **Host workshops and webinars** to engage the developer community and showcase the full capabilities of the KYVE NEAR integration.\\\\\\\\n- **Optional**: Develop advanced data transformations using **DBT (Data Build Tool)** to convert raw NEAR data into schematized BigQuery tables for advanced analytics and reporting.\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n**Milestone 4: Transition Planning & Knowledge Transfer**\\\\\\\\n\\\\\\\\n*Completion by December 31, 2025*\\\\\\\\n\\\\\\\\n- **Conduct workshops** with NEAR teams (Infrastructure Committee) to develop a detailed transition plan to KYVE\\\\\\\\u{2019}s decentralized data infrastructure.\\\\\\\\n- **Prepare a comprehensive knowledge transfer document** that outlines NEAR\\\\\\\\u{2019}s current infrastructure and the steps for transitioning to KYVE.\\\\\\\\n\\\\\\\\n## **Budget**\\\\\\\\n\\\\\\\\nA KYVE data pool requires ongoing funding to operate. This funding can be provided by any party interested in having the data archived, validated, and made publicly accessible. The funds are distributed to the protocol validators and their delegators, who ensure the data is securely validated and uploaded. If the pool runs out of funds, the uploading stops, but the previously archived data remains accessible as a public good.\\\\\\\\n\\\\\\\\n**Why Arweave?**\\\\\\\\n\\\\\\\\nAmazon S3 charges for the entire archive every month, which can add up significantly over time, especially for large volumes of data. In contrast, with Arweave, you pay a single upfront fee for permanent storage. This model drastically reduces long-term costs, making it ideal for archives where data needs to be retained indefinitely without the burden of recurring monthly payments. Additionally, Arweave allows for free data retrieval, eliminating another cost that can become substantial with traditional cloud providers. Another key advantage of Arweave is its decentralized storage model, which distributes data across a global network, increasing resilience and security by removing any single point of failure. By choosing Arweave over S3 in this proposal, the goal is to minimize long-term storage expenses while benefiting from the resilience, decentralization, and free data access that Arweave offers.\\\\\\\\n\\\\\\\\nThe cost for the integration will be split as follows:\\\\\\\\n\\\\\\\\n- 1) Initial Integration\\\\\\\\n- 2) Data Pool Funding\\\\\\\\n- 3) Maintenance\\\\\\\\n\\\\\\\\n### **Phase 1) Initial Integration -** **$60 000  (Deliverables as per Milestone 1)**\\\\\\\\n\\\\\\\\nDevelop the NEAR Runtime for KYVE to enable seamless retrieval and validation of NEAR blocks and chunks in collaboration with the NEAR team and NEAR ecosystem partners.\\\\\\\\n\\\\\\\\n- Implement functionality for uploading validated NEAR data to Arweave, ensuring permanent, decentralized storage.\\\\\\\\n- Conduct extensive testing of the NEAR runtime on KYVE\\\\\\\\u{2019}s testnet (Kaon) to validate the efficiency of data retrieval, validation, and storage processes.\\\\\\\\n- Upon successful testing and validation on the testnet, proceed with preparations for the mainnet deployment.\\\\\\\\n- Assuming a total of 600h development work divided between BCP and the validators based on $100/h.\\\\\\\\n\\\\\\\\nThis process will require two developers over a period of two months, as well as infrastructure costs (such as a NEAR archival node) to facilitate the integration testing. Additionally, collaboration with the NEAR team will be necessary to perform research and set up a customized Trustless API for optimized data access.\\\\\\\\n\\\\\\\\n### **Phase 2) Continuous Funding and Maintenance (Deliverables as per Milestone 2-4)**\\\\\\\\n\\\\\\\\n### **Option 1: Fixed Payment through Grant $335,000**\\\\\\\\n\\\\\\\\n**Historical NEAR Data Pool Funding (Genesis to current live height) - $175,000**\\\\\\\\n\\\\\\\\nThe funding costs mainly consist of storage expenses and the incentivization premium for validators to upload data. For this example, our suggestion is to use Arweave as the storage provider.\\\\\\\\n\\\\\\\\nIt can be estimated that the NEAR raw data size, with compression, is going to be around 6.5TB, based on the current size of BigQuery tables.\\\\\\\\n\\\\\\\\nCost Breakdown:\\\\\\\\n\\\\\\\\n1. **Storage on Arweave: $105,000**\\\\\\\\n    \\\\\\\\n    Calculated using the current rate for Arweave storage via AR Turbo: 6.5TB * 16.36 USD/GB\\\\\\\\n    \\\\\\\\n2. **Buffer for AR Price Fluctuation: $25,000**\\\\\\\\n    \\\\\\\\n    Includes a 25% buffer for potential AR price increases\\\\\\\\n    \\\\\\\\n3. **Validator Incentivization: $45,000**\\\\\\\\n    \\\\\\\\n    Cost to incentivize validators for data uploading and validation\\\\\\\\n    \\\\\\\\n\\\\\\\\n**Live Data Pool (Future Blocks) - $60,000, payable in monthly installments of $5,000 for one year**\\\\\\\\n\\\\\\\\nAs NEAR\\\\\\\\u{2019}s blockchain continues to grow, BCP will establish a **live data pool** to handle ongoing data from the moment of deployment on mainnet. While the historical data is managed through existing historical data pools, this live data pool will sync in real-time from NEAR\\\\\\\\u{2019}s **live height** upon deployment. The costs for this include **storage on Arweave** and the incentivization of **KYVE validators** for validating and uploading the data.\\\\\\\\n\\\\\\\\nBased on NEAR\\\\\\\\u{2019}s block speed of **1.09 seconds** and an average block size of **50KB**, the following costs are estimated: **Total Monthly Costs: $5,000**\\\\\\\\n\\\\\\\\n- **Storage on Arweave**: 3.96 GB per month (approx.) $2,000\\\\\\\\n- **Buffer for Arweave Price Fluctuations (up to 50%)**: $1,000\\\\\\\\n- **Validator Incentivization**: $2,000\\\\\\\\n\\\\\\\\n[https://lh7-rt.googleusercontent.com/docsz/AD_4nXcM2R-7AFznTUQjSCn6YrT7qC6tyUzKsyQclRCPNQJ8TQ3q917ZDD7HPqxMAxdsWNcIQXMlUVhoS9JrCvilQK65Yn2FZhIQTpJDtr7loqVcjRJKhN__qzDciIjV2dGyeBJz2nmfK6N1boLvxm6OOXEvX6Xw?key=FZqyR-A5TKe9Hux27llfRQ](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcM2R-7AFznTUQjSCn6YrT7qC6tyUzKsyQclRCPNQJ8TQ3q917ZDD7HPqxMAxdsWNcIQXMlUVhoS9JrCvilQK65Yn2FZhIQTpJDtr7loqVcjRJKhN__qzDciIjV2dGyeBJz2nmfK6N1boLvxm6OOXEvX6Xw?key=FZqyR-A5TKe9Hux27llfRQ)\\\\\\\\n\\\\\\\\n*All Data Pool funding will be directly forwarded to the corresponding NEAR data pools on KYVE.*\\\\\\\\n\\\\\\\\n**Maintenance - $100,000, payable in 10 monthly installments of $10,000**\\\\\\\\n\\\\\\\\nThis includes the maintenance of the data pool over a year in order to maintain it and follow the upgrade path, to support the validators archiving the NEAR data, and the maintenance and improvement of the Trustless API and of the Data Pipeline.\\\\\\\\n\\\\\\\\n- The above pricing includes reading data from the Trustless API and using the Data Pipeline by any data user.\\\\\\\\n\\\\\\\\nIf the total of the grant is not used, the remaining part will be returned or used to continue the funding. Once the funding is spent, the data and tooling remain accessible as a public good.\\\\\\\\n\\\\\\\\n### **Option 2: Public Good Funding (KYVE Foundation runs a validator to cover the costs)**\\\\\\\\n\\\\\\\\nKYVE\\\\\\\\\\\\'s Public Goods Funding Program is an alternative way to provide funding for the data pools and cover the maintenance.\\\\\\\\n\\\\\\\\nTo integrate NEAR\\\\\\\\u{2019}s data, KYVE requests a validator delegation from the NEAR Foundation. KYVE uses the returns from this delegation to fund the operation of a Public Good pool. This pool ensures that NEAR\\\\\\\\u{2019}s historical and live data is validated, stored, and continuously synced to live height without the need for costly archival nodes.\\\\\\\\n\\\\\\\\n- Delegation: NEAR delegates tokens to KYVE to run a Public Good validator node.\\\\\\\\n- Rewards: The data pool is funded by validator commission rewards, and both KYVE and NEAR validators receive tokens as rewards. The commission rewards should cover the costs associated with the operations of all data pools as well as the maintenance by BCP.\\\\\\\\n\\\\\\\\n[https://lh7-rt.googleusercontent.com/docsz/AD_4nXdQP4IiAdhmiwg7twwxjSsoGqi7h6F34wi3PMN17BA7WVHUCOBP2nwXZz_wQIig6hLYk6a215hhhDrDif15GuAIKwe7g1r_M7wUTehyP1WUPEV5iiLOKJ9_1SoUm0qGJJrx9vExywayOr1roEYocfqNMSmQ?key=FZqyR-A5TKe9Hux27llfRQ](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdQP4IiAdhmiwg7twwxjSsoGqi7h6F34wi3PMN17BA7WVHUCOBP2nwXZz_wQIig6hLYk6a215hhhDrDif15GuAIKwe7g1r_M7wUTehyP1WUPEV5iiLOKJ9_1SoUm0qGJJrx9vExywayOr1roEYocfqNMSmQ?key=FZqyR-A5TKe9Hux27llfRQ)\\\\\\\\n\\\\\\\\nOffloads the need for NEAR to run its own expensive data infrastructure, allowing it to scale more easily. This mutually beneficial setup ensures NEAR\\\\\\\\u{2019}s data is maintained at minimal cost while enhancing the decentralization of its data infrastructure.\\\\\\\\n\\\\\\\\n# **Conclusion**\\\\\\\\n\\\\\\\\nKYVE\\\\\\\\\\\\'s decentralized data lake provides NEAR with a complete, valid, and accessible solution for managing blockchain data. By decentralizing storage and validation, NEAR\\\\\\\\u{2019}s data becomes a public good, easily accessible without reliance on centralized infrastructure. Tools like the Trustless API and Data Load Tool allow developers to leverage NEAR\\\\\\\\u{2019}s raw data for various use cases, unlocking new opportunities for growth and innovation.\\\\\\\\n\\\\\\\\nKYVE Foundation invites the NEAR Foundation to partner with KYVE in building a decentralized, secure, and scalable data infrastructure. Together, we can future-proof NEAR\\\\\\\\u{2019}s data landscape and empower its ecosystem with robust tools for continued success.\", \"linked_proposals\": [], \"receiver_account\": \"kyve_foundation.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"395000\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.6112063102132e+21
+    }
+  },
+  {
+    "id": "9228762392",
+    "receipt_id": "6W59VP6eCzXrt2ukEAKEQ2K92u3CemRzs4tjxLaPbD2",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "roN3k2vieNVQxQdGLoFeLkgmaHm1gTg9km4zkiVmFdQ",
+      "block_height": 130394957,
+      "block_timestamp": 1728990715193865500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4526432068272,
+      "tokens_burnt": 452643206827200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "AtsUsXD1YnTT1BqRjqQVmD1ydJyUsnTRnYDFAXh2uPg1",
+    "included_in_block_hash": "GRRWCfpyKcgy2EgYhVywnvy7bHgbAQsKnAGfxxkhKBcX",
+    "block_timestamp": "1728990712936911081",
+    "block": {
+      "block_height": 130394955
+    },
+    "receipt_conversion_tokens_burnt": "132768037784500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 452643206827200000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Infrastructure Committee* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @kyve_foundation.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}NEAR Data Integration into KYVE\\\\\\\\u{2019}s Decentralized Data\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nAs NEAR\\\\\\\\u{2019}s data infrastructure undergoes significant changes with Pagoda winding down, there is a growing need for decentralized and validated data solutions to ensure secure and scalable access to NEAR\\\\\\\\u{2019}s blockchain data. This proposal outlines a phased approach to integrate NEAR\\\\\\\\u{2019}s blockchain data into KYVE\\\\\\\\u{2019}s Web3 data lake, enabling validated and permanently stored data streams for developers, analysts, and businesses within the NEAR ecosystem.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=50)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.6112063102132e+21
+    }
+  },
+  {
+    "id": "9228762396",
+    "receipt_id": "EVn6by8dTWm7KwfphEsB9exWAfNKhNGUWQtj3VRWzw9p",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "roN3k2vieNVQxQdGLoFeLkgmaHm1gTg9km4zkiVmFdQ",
+      "block_height": 130394957,
+      "block_timestamp": 1728990715193865500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4998066689507,
+      "tokens_burnt": 499806668950700000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "AtsUsXD1YnTT1BqRjqQVmD1ydJyUsnTRnYDFAXh2uPg1",
+    "included_in_block_hash": "GRRWCfpyKcgy2EgYhVywnvy7bHgbAQsKnAGfxxkhKBcX",
+    "block_timestamp": "1728990712936911081",
+    "block": {
+      "block_height": 130394955
+    },
+    "receipt_conversion_tokens_burnt": "132768037784500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 499806668950700000000,
+        "args": "{\"proposal\": {\"id\": 50, \"snapshot\": {\"name\": \"NEAR Data Integration into KYVE\\\\\\\\u{2019}s Decentralized Data\", \"labels\": [\"Data Lakes\", \"Indexers\"], \"summary\": \"As NEAR\\\\\\\\u{2019}s data infrastructure undergoes significant changes with Pagoda winding down, there is a growing need for decentralized and validated data solutions to ensure secure and scalable access to NEAR\\\\\\\\u{2019}s blockchain data. This proposal outlines a phased approach to integrate NEAR\\\\\\\\u{2019}s blockchain data into KYVE\\\\\\\\u{2019}s Web3 data lake, enabling validated and permanently stored data streams for developers, analysts, and businesses within the NEAR ecosystem.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"kyve_foundation.near\", \"timestamp\": \"1728990714082411243\", \"linked_rfp\": 3, \"supervisor\": null, \"description\": \"# NEAR Data Integration into KYVE\\\\\\\\u{2019}s Decentralized Data Lake\\\\\\\\n\\\\\\\\n**Description:**\\\\\\\\n\\\\\\\\nThis is a combined proposal for the following RFPs: [**NEAR Lake](https://dev.near.org/infrastructure-committee.near/widget/app?page=rfp&id=3), [BigQuery, and Data Pipelines](https://dev.near.org/infrastructure-committee.near/widget/app?page=rfp&id=4).** It also includes a **Trustless** **API** to query NEAR historical data, with the long-term vision of decentralizing the NEAR data infrastructure and turning NEAR data into a public good.\\\\\\\\n\\\\\\\\n## **Project Abstract**\\\\\\\\n\\\\\\\\nAs NEAR\\\\\\\\u{2019}s data infrastructure undergoes significant changes with Pagoda winding down, there is a **growing need for decentralized and validated data solutions** to ensure secure and scalable access to NEAR\\\\\\\\u{2019}s blockchain data. This proposal outlines a phased approach to integrate NEAR\\\\\\\\u{2019}s blockchain data into KYVE\\\\\\\\u{2019}s Web3 data lake, enabling validated and permanently stored data streams for developers, analysts, and businesses within the NEAR ecosystem.\\\\\\\\n\\\\\\\\n**What is KYVE?**\\\\\\\\n\\\\\\\\nKYVE, a data validation and transfer protocol,  enables data providers to standardize, validate, and permanently store data streams. It leverages permanent data storage solutions like Arweave and uses its own Layer-1 Blockchain, ensuring the scalability, immutability, and availability of archived data over time.\\\\\\\\n\\\\\\\\nKYVE\\\\\\\\\\\\'s Network is powered by decentralized validators, which are rewarded in $KYVE and other tokens ([https://docs.kyve.network/](https://docs.kyve.network/)).\\\\\\\\n\\\\\\\\n## **Objectives**\\\\\\\\n\\\\\\\\nThe goal of this integration is to create a robust and sustainable data infrastructure for the NEAR ecosystem. Unlike centralized solutions, KYVE relies on a network of decentralized providers to store, validate, and serve blockchain data. This reduces the risk of single points of failure and removes dependencies on centralized services.\\\\\\\\n\\\\\\\\nThe integration of NEAR\\\\\\\\u{2019}s blockchain data into KYVE\\\\\\\\\\\\'s decentralized data lake ensures long-term availability, immutability, and verifiability. By utilizing decentralized storage providers like Arweave, NEAR data becomes a public good, eliminating the need for centralized services and reducing risks. KYVE\\\\\\\\u{2019}s built-in tools, including the Trustless API and Data Load Tool, provide seamless access to validated data, future-proofing NEAR\\\\\\\\u{2019}s data infrastructure.\\\\\\\\n\\\\\\\\n## **Outcomes**\\\\\\\\n\\\\\\\\nThe integration of NEAR\\\\\\\\u{2019}s blockchain data into KYVE\\\\\\\\u{2019}s decentralized data lake will deliver significant benefits across three major products: KYVE Data Lake, Data Load Tool, and Trustless API.\\\\\\\\n\\\\\\\\n**1. KYVE\\\\\\\\u{2019}s Decentralized Data Lake ([https://app.kyve.network/#/sources](https://app.kyve.network/#/sources))**\\\\\\\\n\\\\\\\\nNEAR\\\\\\\\u{2019}s blockchain data is validated by KYVE and stored on Arweave, ensuring permanent, decentralized storage. Validators are rewarded in $NEAR for maintaining data accuracy, reducing reliance on centralized services and securing the long-term availability of NEAR data as a public good.\\\\\\\\n\\\\\\\\n**2. Data Load Tool Support ([https://docs.kyve.network/access-data-sets/data-pipeline/overview](https://docs.kyve.network/access-data-sets/data-pipeline/overview))**\\\\\\\\n\\\\\\\\nKYVE\\\\\\\\u{2019}s Data Load Tool streamlines transferring NEAR blockchain data to external warehouses like BigQuery and Postgres, removing the need for custom pipelines. With Load and Sync commands, data is kept fresh and accessible for analysis. Additional steps enable full schematization for deeper insights.\\\\\\\\n\\\\\\\\n**3. Trustless API ([https://docs.kyve.network/access-data-sets/trustless-api/overview](https://docs.kyve.network/access-data-sets/trustless-api/overview))**\\\\\\\\n\\\\\\\\nKYVE\\\\\\\\u{2019}s Trustless API offers verifiable, decentralized access to historical and live NEAR data (2-minute latency), secured by Merkle Proofs. Developers can easily integrate data into applications via well-known endpoints. The open-source tool enables independent deployment for scalability without stressing node infrastructure.\\\\\\\\n\\\\\\\\n## **Project Team**\\\\\\\\n\\\\\\\\n*This is a joint proposal by KYVE Foundation & BCP Innovations, combining deep expertise in decentralized data infrastructure with a strong commitment to driving innovation in Web3 technologies. Together, we are committed to creating a secure, decentralized, and robust data ecosystem for the NEAR blockchain through KYVE\\\\\\\\u{2019}s cutting-edge solutions.*\\\\\\\\n\\\\\\\\n**KYVE Foundation**\\\\\\\\n\\\\\\\\nThe KYVE Foundation supports the development and growth of KYVE\\\\\\\\u{2019}s decentralized data infrastructure, with a strong emphasis on decentralization, security, and data integrity. Backed by key industry players, KYVE ensures secure and scalable data solutions for leading blockchain ecosystems like Cosmos Hub, Celestia, Archway, dYdX, and others.\\\\\\\\n\\\\\\\\n**BCP Innovations**\\\\\\\\n\\\\\\\\nBCP Innovations is a German Web3 development company specializing in blockchain infrastructure and decentralized applications. As the team behind KYVE, BCP Innovations delivers secure data validation and permanent storage. For the NEAR-KYVE integration, BCP will build secure data pipelines to ensure NEAR\\\\\\\\\\\\'s blockchain data remains available and immutable.\\\\\\\\n\\\\\\\\n**Project Team:**\\\\\\\\n\\\\\\\\n**Fabian Riewe: BCP CEO and KYVE Founder,**- ([https://github.com/fabianriewe](https://github.com/fabianriewe)) - [fabian@kyve.network](mailto:fabian@kyve.network)\\\\\\\\n\\\\\\\\n**Maximilian Breithecker:** Data Engineer and Blockchain Developer,  ([https://github.com/mbreithecker](https://github.com/mbreithecker)) - [max@kyve.network](mailto:max@kyve.network)\\\\\\\\n\\\\\\\\n**Troy Kessler:** Protocol Developer,  [https://github.com/troykessler](https://github.com/troykessler) - troy@kyve.network\\\\\\\\n\\\\\\\\n**Christopher Brumm:** Developer [https://github.com/christopherbrumm](https://github.com/christopherbrumm) - [christopher@kyve.network](mailto:christopher@kyve.network)\\\\\\\\n\\\\\\\\nFor more details on BCP contributions, please see the Github repositories. All tools from this integration will be released under an **Open Source license**, ensuring transparency, community collaboration, and wide adoption.\\\\\\\\n\\\\\\\\n- [https://github.com/KYVENetwork/chain](https://github.com/KYVENetwork/chain)\\\\\\\\n- [https://github.com/KYVENetwork/kyvejs](https://github.com/KYVENetwork/kyvejs)\\\\\\\\n- https://github.com/KYVENetwork/kyve-dlt\\\\\\\\n- [https://github.com/KYVENetwork/trustless-api](https://github.com/KYVENetwork/trustless-api)\\\\\\\\n- [https://github.com/KYVENetwork/ksync](https://github.com/KYVENetwork/ksync)\\\\\\\\n- [https://docs.kyve.network/](https://docs.kyve.network/)\\\\\\\\n\\\\\\\\n## **Usage & Examples**\\\\\\\\n\\\\\\\\n**Current Users of KYVE\\\\\\\\\\\\'s Decentralized Data Lake**\\\\\\\\n\\\\\\\\n**KYVE** serves as the trusted data infrastructure for leading blockchain ecosystems like **Celestia, Osmosis, dYdX**, and **more**  ensuring their on-chain data is securely validated and permanently stored through decentralized storage solutions like **Arweave**. These projects use KYVE to maintain the integrity, accessibility, and reliability of their mission-critical blockchain data without needing to manage complex, centralized infrastructure. By using KYVE, they benefit from decentralized validation and long-term storage, ensuring data remains immutable and available for future use as a public good. [https://app.kyve.network/#/sources](https://app.kyve.network/#/sources)\\\\\\\\n\\\\\\\\n**Statistics:**\\\\\\\\n\\\\\\\\n- **+70M Transactions**\\\\\\\\n- **+7,87 TB validated and archived on Arweave (Mainnet)**\\\\\\\\n- **+18.54 TB validated and archived on Testnet**\\\\\\\\n\\\\\\\\nKYVE continues to scale its infrastructure, making it a cornerstone for secure and scalable data management in Web3 ecosystems.\\\\\\\\n\\\\\\\\n**Google BigQuery Data Sets:**\\\\\\\\n\\\\\\\\nLeveraging KYVE\\\\\\\\u{2019}s data load pipeline, BCP Innovations has published several datasets, such as those for **Osmosis**, **dYdX, Celestia, Noble** making it significantly easier for developers and data analysts to access and use blockchain data without needing to sync it from scratch. This eliminates the time-consuming process of syncing large amounts of historical data, allowing users to quickly query and analyze data. By providing pre-synced, validated datasets, KYVE reduces infrastructure overhead, enhances data accessibility, and enables faster development cycles for applications that rely on blockchain data.\\\\\\\\n\\\\\\\\n[https://console.cloud.google.com/bigquery/analytics-hub/exchanges/projects/36527693454/locations/eu/dataExchanges/kyve_public_datasets_191a23b668b/listings/osmosis_191a28703d2](https://console.cloud.google.com/bigquery/analytics-hub/exchanges/projects/36527693454/locations/eu/dataExchanges/kyve_public_datasets_191a23b668b/listings/osmosis_191a28703d2)\\\\\\\\n\\\\\\\\n**Potential Use Cases for the NEAR <> KYVE Integration**\\\\\\\\n\\\\\\\\nNEAR Developers: KYVE\\\\\\\\u{2019}s decentralized data lake gives NEAR developers free access to validated, trustless data, eliminating the need for costly centralized services. This ensures a consistent, secure, and reliable infrastructure for applications.\\\\\\\\n\\\\\\\\ndApps and Blockchain Analytics: Decentralized applications and analytics platforms can rely on KYVE to validate and archive NEAR data in a fully decentralized way, ensuring data integrity and reducing reliance on centralized systems, while enabling in-depth analysis and insights.\\\\\\\\n\\\\\\\\n**Proof of Concept: NEAR Trustless API Demo:**\\\\\\\\n\\\\\\\\nThe **Trustless API** enables developers to seamlessly connect their applications and dApps to verified blockchain data. Each data item is verified with a **Merkle Proof** (included in the http header), ensuring the integrity and trustworthiness of the data accessed.\\\\\\\\n\\\\\\\\nYou can explore NEAR blocks using the Trustless API:\\\\\\\\n\\\\\\\\n- **First NEAR block**: [Block #127590000](https://staging-613b8d89-data.services.kyve.network/near/value?height=127590000)\\\\\\\\n- **Last NEAR block**: [Block #127591973](https://staging-613b8d89-data.services.kyve.network/near/value?height=127591973)\\\\\\\\n\\\\\\\\nThis ensures that all data retrieved through the API is cryptographically verified and secure for use in any decentralized application.\\\\\\\\n\\\\\\\\n# **Milestones**\\\\\\\\n\\\\\\\\n**Milestone 1: NEAR Runtime Development & Testnet Deployment**\\\\\\\\n\\\\\\\\n*Completion by January 31, 2025*\\\\\\\\n\\\\\\\\n- **Develop NEAR runtime** to enable the retrieval and validation of NEAR blocks and chunks (txs and receipts are included in the chunks).\\\\\\\\n- **Collaborate with NEAR team** and **Community** to ensure smooth integration and alignment.\\\\\\\\n- **Upload validated data to Arweave** for permanent decentralized storage. After testing is complete, the testnet pool will switch and continue uploading to the KYVE storage provider, a centralized storage solution for testnet operations.\\\\\\\\n- **Test the NEAR runtime on KYVE\\\\\\\\u{2019}s testnet (Kaon)** to validate data retrieval, storage processes, and functionality. This includes a beta-testing phase with KYVE/NEAR Validators.\\\\\\\\n- After successful testing, **prepare for mainnet deployment**.\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n**Milestone 2: KYVE Data Pool Deployment on Mainnet & Base Functionality Release**\\\\\\\\n\\\\\\\\n*Completion by February 1, 2025*\\\\\\\\n\\\\\\\\n- **Deploy the KYVE NEAR data pool** on mainnet to handle data extraction, validation, and permanent storage.\\\\\\\\n- Release **base functionalities** of the KYVE **Data Pipeline** and **Trustless API** for community access to validated NEAR data.\\\\\\\\n- **Integrate NEAR tokens** into the KYVE ecosystem based on existing NEAR-IBC bridges or other solutions, to fund the data pool and incentivize validators for maintaining the pool.\\\\\\\\n- **Collaborate with NEAR community** to ensure smooth deployment and provide initial performance reports for monitoring.\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n**Milestone 3: Performance Optimization, Maintenance & Optional Advanced Data Transformations**\\\\\\\\n\\\\\\\\n*Completion by March 1, 2025*\\\\\\\\n\\\\\\\\n- **Maintain and optimize the KYVE NEAR integration** for efficient data streaming, validation, and storage.\\\\\\\\n- **Monitor performance** and implement improvements based on usage and community feedback.\\\\\\\\n- **Host workshops and webinars** to engage the developer community and showcase the full capabilities of the KYVE NEAR integration.\\\\\\\\n- **Optional**: Develop advanced data transformations using **DBT (Data Build Tool)** to convert raw NEAR data into schematized BigQuery tables for advanced analytics and reporting.\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n**Milestone 4: Transition Planning & Knowledge Transfer**\\\\\\\\n\\\\\\\\n*Completion by December 31, 2025*\\\\\\\\n\\\\\\\\n- **Conduct workshops** with NEAR teams (Infrastructure Committee) to develop a detailed transition plan to KYVE\\\\\\\\u{2019}s decentralized data infrastructure.\\\\\\\\n- **Prepare a comprehensive knowledge transfer document** that outlines NEAR\\\\\\\\u{2019}s current infrastructure and the steps for transitioning to KYVE.\\\\\\\\n\\\\\\\\n## **Budget**\\\\\\\\n\\\\\\\\nA KYVE data pool requires ongoing funding to operate. This funding can be provided by any party interested in having the data archived, validated, and made publicly accessible. The funds are distributed to the protocol validators and their delegators, who ensure the data is securely validated and uploaded. If the pool runs out of funds, the uploading stops, but the previously archived data remains accessible as a public good.\\\\\\\\n\\\\\\\\n**Why Arweave?**\\\\\\\\n\\\\\\\\nAmazon S3 charges for the entire archive every month, which can add up significantly over time, especially for large volumes of data. In contrast, with Arweave, you pay a single upfront fee for permanent storage. This model drastically reduces long-term costs, making it ideal for archives where data needs to be retained indefinitely without the burden of recurring monthly payments. Additionally, Arweave allows for free data retrieval, eliminating another cost that can become substantial with traditional cloud providers. Another key advantage of Arweave is its decentralized storage model, which distributes data across a global network, increasing resilience and security by removing any single point of failure. By choosing Arweave over S3 in this proposal, the goal is to minimize long-term storage expenses while benefiting from the resilience, decentralization, and free data access that Arweave offers.\\\\\\\\n\\\\\\\\nThe cost for the integration will be split as follows:\\\\\\\\n\\\\\\\\n- 1) Initial Integration\\\\\\\\n- 2) Data Pool Funding\\\\\\\\n- 3) Maintenance\\\\\\\\n\\\\\\\\n### **Phase 1) Initial Integration -** **$60 000  (Deliverables as per Milestone 1)**\\\\\\\\n\\\\\\\\nDevelop the NEAR Runtime for KYVE to enable seamless retrieval and validation of NEAR blocks and chunks in collaboration with the NEAR team and NEAR ecosystem partners.\\\\\\\\n\\\\\\\\n- Implement functionality for uploading validated NEAR data to Arweave, ensuring permanent, decentralized storage.\\\\\\\\n- Conduct extensive testing of the NEAR runtime on KYVE\\\\\\\\u{2019}s testnet (Kaon) to validate the efficiency of data retrieval, validation, and storage processes.\\\\\\\\n- Upon successful testing and validation on the testnet, proceed with preparations for the mainnet deployment.\\\\\\\\n- Assuming a total of 600h development work divided between BCP and the validators based on $100/h.\\\\\\\\n\\\\\\\\nThis process will require two developers over a period of two months, as well as infrastructure costs (such as a NEAR archival node) to facilitate the integration testing. Additionally, collaboration with the NEAR team will be necessary to perform research and set up a customized Trustless API for optimized data access.\\\\\\\\n\\\\\\\\n### **Phase 2) Continuous Funding and Maintenance (Deliverables as per Milestone 2-4)**\\\\\\\\n\\\\\\\\n### **Option 1: Fixed Payment through Grant $335,000**\\\\\\\\n\\\\\\\\n**Historical NEAR Data Pool Funding (Genesis to current live height) - $175,000**\\\\\\\\n\\\\\\\\nThe funding costs mainly consist of storage expenses and the incentivization premium for validators to upload data. For this example, our suggestion is to use Arweave as the storage provider.\\\\\\\\n\\\\\\\\nIt can be estimated that the NEAR raw data size, with compression, is going to be around 6.5TB, based on the current size of BigQuery tables.\\\\\\\\n\\\\\\\\nCost Breakdown:\\\\\\\\n\\\\\\\\n1. **Storage on Arweave: $105,000**\\\\\\\\n    \\\\\\\\n    Calculated using the current rate for Arweave storage via AR Turbo: 6.5TB * 16.36 USD/GB\\\\\\\\n    \\\\\\\\n2. **Buffer for AR Price Fluctuation: $25,000**\\\\\\\\n    \\\\\\\\n    Includes a 25% buffer for potential AR price increases\\\\\\\\n    \\\\\\\\n3. **Validator Incentivization: $45,000**\\\\\\\\n    \\\\\\\\n    Cost to incentivize validators for data uploading and validation\\\\\\\\n    \\\\\\\\n\\\\\\\\n**Live Data Pool (Future Blocks) - $60,000, payable in monthly installments of $5,000 for one year**\\\\\\\\n\\\\\\\\nAs NEAR\\\\\\\\u{2019}s blockchain continues to grow, BCP will establish a **live data pool** to handle ongoing data from the moment of deployment on mainnet. While the historical data is managed through existing historical data pools, this live data pool will sync in real-time from NEAR\\\\\\\\u{2019}s **live height** upon deployment. The costs for this include **storage on Arweave** and the incentivization of **KYVE validators** for validating and uploading the data.\\\\\\\\n\\\\\\\\nBased on NEAR\\\\\\\\u{2019}s block speed of **1.09 seconds** and an average block size of **50KB**, the following costs are estimated: **Total Monthly Costs: $5,000**\\\\\\\\n\\\\\\\\n- **Storage on Arweave**: 3.96 GB per month (approx.) $2,000\\\\\\\\n- **Buffer for Arweave Price Fluctuations (up to 50%)**: $1,000\\\\\\\\n- **Validator Incentivization**: $2,000\\\\\\\\n\\\\\\\\n[https://lh7-rt.googleusercontent.com/docsz/AD_4nXcM2R-7AFznTUQjSCn6YrT7qC6tyUzKsyQclRCPNQJ8TQ3q917ZDD7HPqxMAxdsWNcIQXMlUVhoS9JrCvilQK65Yn2FZhIQTpJDtr7loqVcjRJKhN__qzDciIjV2dGyeBJz2nmfK6N1boLvxm6OOXEvX6Xw?key=FZqyR-A5TKe9Hux27llfRQ](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcM2R-7AFznTUQjSCn6YrT7qC6tyUzKsyQclRCPNQJ8TQ3q917ZDD7HPqxMAxdsWNcIQXMlUVhoS9JrCvilQK65Yn2FZhIQTpJDtr7loqVcjRJKhN__qzDciIjV2dGyeBJz2nmfK6N1boLvxm6OOXEvX6Xw?key=FZqyR-A5TKe9Hux27llfRQ)\\\\\\\\n\\\\\\\\n*All Data Pool funding will be directly forwarded to the corresponding NEAR data pools on KYVE.*\\\\\\\\n\\\\\\\\n**Maintenance - $100,000, payable in 10 monthly installments of $10,000**\\\\\\\\n\\\\\\\\nThis includes the maintenance of the data pool over a year in order to maintain it and follow the upgrade path, to support the validators archiving the NEAR data, and the maintenance and improvement of the Trustless API and of the Data Pipeline.\\\\\\\\n\\\\\\\\n- The above pricing includes reading data from the Trustless API and using the Data Pipeline by any data user.\\\\\\\\n\\\\\\\\nIf the total of the grant is not used, the remaining part will be returned or used to continue the funding. Once the funding is spent, the data and tooling remain accessible as a public good.\\\\\\\\n\\\\\\\\n### **Option 2: Public Good Funding (KYVE Foundation runs a validator to cover the costs)**\\\\\\\\n\\\\\\\\nKYVE\\\\\\\\\\\\'s Public Goods Funding Program is an alternative way to provide funding for the data pools and cover the maintenance.\\\\\\\\n\\\\\\\\nTo integrate NEAR\\\\\\\\u{2019}s data, KYVE requests a validator delegation from the NEAR Foundation. KYVE uses the returns from this delegation to fund the operation of a Public Good pool. This pool ensures that NEAR\\\\\\\\u{2019}s historical and live data is validated, stored, and continuously synced to live height without the need for costly archival nodes.\\\\\\\\n\\\\\\\\n- Delegation: NEAR delegates tokens to KYVE to run a Public Good validator node.\\\\\\\\n- Rewards: The data pool is funded by validator commission rewards, and both KYVE and NEAR validators receive tokens as rewards. The commission rewards should cover the costs associated with the operations of all data pools as well as the maintenance by BCP.\\\\\\\\n\\\\\\\\n[https://lh7-rt.googleusercontent.com/docsz/AD_4nXdQP4IiAdhmiwg7twwxjSsoGqi7h6F34wi3PMN17BA7WVHUCOBP2nwXZz_wQIig6hLYk6a215hhhDrDif15GuAIKwe7g1r_M7wUTehyP1WUPEV5iiLOKJ9_1SoUm0qGJJrx9vExywayOr1roEYocfqNMSmQ?key=FZqyR-A5TKe9Hux27llfRQ](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdQP4IiAdhmiwg7twwxjSsoGqi7h6F34wi3PMN17BA7WVHUCOBP2nwXZz_wQIig6hLYk6a215hhhDrDif15GuAIKwe7g1r_M7wUTehyP1WUPEV5iiLOKJ9_1SoUm0qGJJrx9vExywayOr1roEYocfqNMSmQ?key=FZqyR-A5TKe9Hux27llfRQ)\\\\\\\\n\\\\\\\\nOffloads the need for NEAR to run its own expensive data infrastructure, allowing it to scale more easily. This mutually beneficial setup ensures NEAR\\\\\\\\u{2019}s data is maintained at minimal cost while enhancing the decentralization of its data infrastructure.\\\\\\\\n\\\\\\\\n# **Conclusion**\\\\\\\\n\\\\\\\\nKYVE\\\\\\\\\\\\'s decentralized data lake provides NEAR with a complete, valid, and accessible solution for managing blockchain data. By decentralizing storage and validation, NEAR\\\\\\\\u{2019}s data becomes a public good, easily accessible without reliance on centralized infrastructure. Tools like the Trustless API and Data Load Tool allow developers to leverage NEAR\\\\\\\\u{2019}s raw data for various use cases, unlocking new opportunities for growth and innovation.\\\\\\\\n\\\\\\\\nKYVE Foundation invites the NEAR Foundation to partner with KYVE in building a decentralized, secure, and scalable data infrastructure. Together, we can future-proof NEAR\\\\\\\\u{2019}s data landscape and empower its ecosystem with robust tools for continued success.\", \"linked_proposals\": [], \"receiver_account\": \"kyve_foundation.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"395000\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"author_id\": \"kyve_foundation.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.6112063102132e+21
+    }
+  },
+  {
+    "id": "9228762399",
+    "receipt_id": "GZfuYX3XUo54zf8je3eV3Lzvj9EPxdP7RS4EbQ5XcKna",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "roN3k2vieNVQxQdGLoFeLkgmaHm1gTg9km4zkiVmFdQ",
+      "block_height": 130394957,
+      "block_timestamp": 1728990715193865500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3666972694929,
+      "tokens_burnt": 366697269492900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "AtsUsXD1YnTT1BqRjqQVmD1ydJyUsnTRnYDFAXh2uPg1",
+    "included_in_block_hash": "GRRWCfpyKcgy2EgYhVywnvy7bHgbAQsKnAGfxxkhKBcX",
+    "block_timestamp": "1728990712936911081",
+    "block": {
+      "block_height": 130394955
+    },
+    "receipt_conversion_tokens_burnt": "132768037784500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 366697269492900000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"kyve.network\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":50,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"kyve_foundation.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"kyve.network\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":50,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"kyve_foundation.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"kyve.network\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":50,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"kyve_foundation.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"kyve.network\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":50,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"kyve_foundation.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"kyve.network\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":50,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"kyve_foundation.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"kyve.network\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":50,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"kyve_foundation.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"kyve.network\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":50,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"kyve_foundation.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":50,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"kyve_foundation.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.6112063102132e+21
+    }
+  },
+  {
+    "id": "9228839321",
+    "receipt_id": "E3xyMsbSTj8svac2PfKiF2Kct5uDZu6FFv6gfoM5vZwj",
+    "predecessor_account_id": "kyve_foundation.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8LjzXi2SQccd7NwmxQzmmPj5TLGyqoNAFTT5SCuPY5Ky",
+      "block_height": 130395264,
+      "block_timestamp": 1728991044441440800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9367609562397,
+      "tokens_burnt": 936760956239700000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "CZU7bfCiQ6iv7fd1fdq1yneVHx3dakBnwdi5BVf5eoLy",
+    "included_in_block_hash": "BXyyQza8F3PYk6Vfj8arw5Guipux9KRvWaS77HqXqeeV",
+    "block_timestamp": "1728991043355006693",
+    "block": {
+      "block_height": 130395263
+    },
+    "receipt_conversion_tokens_burnt": "130569818523000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 936760956239700000000,
+        "args": "{\"id\": 50, \"body\": {\"name\": \"NEAR Data Integration into KYVE\\\\\\\\u{2019}s Decentralized Data Lake\", \"summary\": \"As NEAR\\\\\\\\u{2019}s data infrastructure undergoes significant changes with Pagoda winding down, there is a growing need for decentralized and validated data solutions to ensure secure and scalable access to NEAR\\\\\\\\u{2019}s blockchain data. This proposal outlines a phased approach to integrate NEAR\\\\\\\\u{2019}s blockchain data into KYVE\\\\\\\\u{2019}s Web3 data lake, enabling validated and permanently stored data streams for developers, analysts, and businesses within the NEAR ecosystem.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": 3, \"supervisor\": null, \"description\": \"# NEAR Data Integration into KYVE\\\\\\\\u{2019}s Decentralized Data Lake\\\\\\\\n\\\\\\\\n**Description:**\\\\\\\\n\\\\\\\\nThis is a combined proposal for the following RFPs: [NEAR Lake](https://dev.near.org/infrastructure-committee.near/widget/app?page=rfp&id=3), [BigQuery, and Data Pipelines](https://dev.near.org/infrastructure-committee.near/widget/app?page=rfp&id=4). It also includes a **Trustless** **API** to query NEAR historical data, with the long-term vision of decentralizing the NEAR data infrastructure and turning NEAR data into a public good.\\\\\\\\n\\\\\\\\n## **Project Abstract**\\\\\\\\n\\\\\\\\nAs NEAR\\\\\\\\u{2019}s data infrastructure undergoes significant changes with Pagoda winding down, there is a **growing need for decentralized and validated data solutions** to ensure secure and scalable access to NEAR\\\\\\\\u{2019}s blockchain data. This proposal outlines a phased approach to integrate NEAR\\\\\\\\u{2019}s blockchain data into KYVE\\\\\\\\u{2019}s Web3 data lake, enabling validated and permanently stored data streams for developers, analysts, and businesses within the NEAR ecosystem.\\\\\\\\n\\\\\\\\n**What is KYVE?**\\\\\\\\n\\\\\\\\nKYVE, a data validation and transfer protocol,  enables data providers to standardize, validate, and permanently store data streams. It leverages permanent data storage solutions like Arweave and uses its own Layer-1 Blockchain, ensuring the scalability, immutability, and availability of archived data over time.\\\\\\\\n\\\\\\\\nKYVE\\\\\\\\\\\\'s Network is powered by decentralized validators, which are rewarded in $KYVE and other tokens ([https://docs.kyve.network/](https://docs.kyve.network/)).\\\\\\\\n\\\\\\\\n## **Objectives**\\\\\\\\n\\\\\\\\nThe goal of this integration is to create a robust and sustainable data infrastructure for the NEAR ecosystem. Unlike centralized solutions, KYVE relies on a network of decentralized providers to store, validate, and serve blockchain data. This reduces the risk of single points of failure and removes dependencies on centralized services.\\\\\\\\n\\\\\\\\nThe integration of NEAR\\\\\\\\u{2019}s blockchain data into KYVE\\\\\\\\\\\\'s decentralized data lake ensures long-term availability, immutability, and verifiability. By utilizing decentralized storage providers like Arweave, NEAR data becomes a public good, eliminating the need for centralized services and reducing risks. KYVE\\\\\\\\u{2019}s built-in tools, including the Trustless API and Data Load Tool, provide seamless access to validated data, future-proofing NEAR\\\\\\\\u{2019}s data infrastructure.\\\\\\\\n\\\\\\\\n## **Outcomes**\\\\\\\\n\\\\\\\\nThe integration of NEAR\\\\\\\\u{2019}s blockchain data into KYVE\\\\\\\\u{2019}s decentralized data lake will deliver significant benefits across three major products: KYVE Data Lake, Data Load Tool, and Trustless API.\\\\\\\\n\\\\\\\\n**1. KYVE\\\\\\\\u{2019}s Decentralized Data Lake ([https://app.kyve.network/#/sources](https://app.kyve.network/#/sources))**\\\\\\\\n\\\\\\\\nNEAR\\\\\\\\u{2019}s blockchain data is validated by KYVE and stored on Arweave, ensuring permanent, decentralized storage. Validators are rewarded in $NEAR for maintaining data accuracy, reducing reliance on centralized services and securing the long-term availability of NEAR data as a public good.\\\\\\\\n\\\\\\\\n**2. Data Load Tool Support ([https://docs.kyve.network/access-data-sets/data-pipeline/overview](https://docs.kyve.network/access-data-sets/data-pipeline/overview))**\\\\\\\\n\\\\\\\\nKYVE\\\\\\\\u{2019}s Data Load Tool streamlines transferring NEAR blockchain data to external warehouses like BigQuery and Postgres, removing the need for custom pipelines. With Load and Sync commands, data is kept fresh and accessible for analysis. Additional steps enable full schematization for deeper insights.\\\\\\\\n\\\\\\\\n**3. Trustless API ([https://docs.kyve.network/access-data-sets/trustless-api/overview](https://docs.kyve.network/access-data-sets/trustless-api/overview))**\\\\\\\\n\\\\\\\\nKYVE\\\\\\\\u{2019}s Trustless API offers verifiable, decentralized access to historical and live NEAR data (2-minute latency), secured by Merkle Proofs. Developers can easily integrate data into applications via well-known endpoints. The open-source tool enables independent deployment for scalability without stressing node infrastructure.\\\\\\\\n\\\\\\\\n## **Project Team**\\\\\\\\n\\\\\\\\n*This is a joint proposal by KYVE Foundation & BCP Innovations, combining deep expertise in decentralized data infrastructure with a strong commitment to driving innovation in Web3 technologies. Together, we are committed to creating a secure, decentralized, and robust data ecosystem for the NEAR blockchain through KYVE\\\\\\\\u{2019}s cutting-edge solutions.*\\\\\\\\n\\\\\\\\n**KYVE Foundation**\\\\\\\\n\\\\\\\\nThe KYVE Foundation supports the development and growth of KYVE\\\\\\\\u{2019}s decentralized data infrastructure, with a strong emphasis on decentralization, security, and data integrity. Backed by key industry players, KYVE ensures secure and scalable data solutions for leading blockchain ecosystems like Cosmos Hub, Celestia, Archway, dYdX, and others.\\\\\\\\n\\\\\\\\n**BCP Innovations**\\\\\\\\n\\\\\\\\nBCP Innovations is a German Web3 development company specializing in blockchain infrastructure and decentralized applications. As the team behind KYVE, BCP Innovations delivers secure data validation and permanent storage. For the NEAR-KYVE integration, BCP will build secure data pipelines to ensure NEAR\\\\\\\\\\\\'s blockchain data remains available and immutable.\\\\\\\\n\\\\\\\\n**Project Team:**\\\\\\\\n\\\\\\\\n**Fabian Riewe: BCP CEO and KYVE Founder,**- ([https://github.com/fabianriewe](https://github.com/fabianriewe)) - [fabian@kyve.network](mailto:fabian@kyve.network)\\\\\\\\n\\\\\\\\n**Maximilian Breithecker:** Data Engineer and Blockchain Developer,  ([https://github.com/mbreithecker](https://github.com/mbreithecker)) - [max@kyve.network](mailto:max@kyve.network)\\\\\\\\n\\\\\\\\n**Troy Kessler:** Protocol Developer,  [https://github.com/troykessler](https://github.com/troykessler) - troy@kyve.network\\\\\\\\n\\\\\\\\n**Christopher Brumm:** Developer [https://github.com/christopherbrumm](https://github.com/christopherbrumm) - [christopher@kyve.network](mailto:christopher@kyve.network)\\\\\\\\n\\\\\\\\nFor more details on BCP contributions, please see the Github repositories. All tools from this integration will be released under an **Open Source license**, ensuring transparency, community collaboration, and wide adoption.\\\\\\\\n\\\\\\\\n- [https://github.com/KYVENetwork/chain](https://github.com/KYVENetwork/chain)\\\\\\\\n- [https://github.com/KYVENetwork/kyvejs](https://github.com/KYVENetwork/kyvejs)\\\\\\\\n- https://github.com/KYVENetwork/kyve-dlt\\\\\\\\n- [https://github.com/KYVENetwork/trustless-api](https://github.com/KYVENetwork/trustless-api)\\\\\\\\n- [https://github.com/KYVENetwork/ksync](https://github.com/KYVENetwork/ksync)\\\\\\\\n- [https://docs.kyve.network/](https://docs.kyve.network/)\\\\\\\\n\\\\\\\\n## **Usage & Examples**\\\\\\\\n\\\\\\\\n**Current Users of KYVE\\\\\\\\\\\\'s Decentralized Data Lake**\\\\\\\\n\\\\\\\\n**KYVE** serves as the trusted data infrastructure for leading blockchain ecosystems like **Celestia, Osmosis, dYdX**, and **more**  ensuring their on-chain data is securely validated and permanently stored through decentralized storage solutions like **Arweave**. These projects use KYVE to maintain the integrity, accessibility, and reliability of their mission-critical blockchain data without needing to manage complex, centralized infrastructure. By using KYVE, they benefit from decentralized validation and long-term storage, ensuring data remains immutable and available for future use as a public good. [https://app.kyve.network/#/sources](https://app.kyve.network/#/sources)\\\\\\\\n\\\\\\\\n**Statistics:**\\\\\\\\n\\\\\\\\n- **+70M Transactions**\\\\\\\\n- **+7,87 TB validated and archived on Arweave (Mainnet)**\\\\\\\\n- **+18.54 TB validated and archived on Testnet**\\\\\\\\n\\\\\\\\nKYVE continues to scale its infrastructure, making it a cornerstone for secure and scalable data management in Web3 ecosystems.\\\\\\\\n\\\\\\\\n**Google BigQuery Data Sets:**\\\\\\\\n\\\\\\\\nLeveraging KYVE\\\\\\\\u{2019}s data load pipeline, BCP Innovations has published several datasets, such as those for **Osmosis**, **dYdX, Celestia, Noble** making it significantly easier for developers and data analysts to access and use blockchain data without needing to sync it from scratch. This eliminates the time-consuming process of syncing large amounts of historical data, allowing users to quickly query and analyze data. By providing pre-synced, validated datasets, KYVE reduces infrastructure overhead, enhances data accessibility, and enables faster development cycles for applications that rely on blockchain data.\\\\\\\\n\\\\\\\\n[https://console.cloud.google.com/bigquery/analytics-hub/exchanges/projects/36527693454/locations/eu/dataExchanges/kyve_public_datasets_191a23b668b/listings/osmosis_191a28703d2](https://console.cloud.google.com/bigquery/analytics-hub/exchanges/projects/36527693454/locations/eu/dataExchanges/kyve_public_datasets_191a23b668b/listings/osmosis_191a28703d2)\\\\\\\\n\\\\\\\\n**Potential Use Cases for the NEAR <> KYVE Integration**\\\\\\\\n\\\\\\\\nNEAR Developers: KYVE\\\\\\\\u{2019}s decentralized data lake gives NEAR developers free access to validated, trustless data, eliminating the need for costly centralized services. This ensures a consistent, secure, and reliable infrastructure for applications.\\\\\\\\n\\\\\\\\ndApps and Blockchain Analytics: Decentralized applications and analytics platforms can rely on KYVE to validate and archive NEAR data in a fully decentralized way, ensuring data integrity and reducing reliance on centralized systems, while enabling in-depth analysis and insights.\\\\\\\\n\\\\\\\\n**Proof of Concept: NEAR Trustless API Demo:**\\\\\\\\n\\\\\\\\nThe **Trustless API** enables developers to seamlessly connect their applications and dApps to verified blockchain data. Each data item is verified with a **Merkle Proof** (included in the http header), ensuring the integrity and trustworthiness of the data accessed.\\\\\\\\n\\\\\\\\nYou can explore NEAR blocks using the Trustless API:\\\\\\\\n\\\\\\\\n- **First NEAR block**: [Block #127590000](https://staging-613b8d89-data.services.kyve.network/near/value?height=127590000)\\\\\\\\n- **Last NEAR block**: [Block #127591973](https://staging-613b8d89-data.services.kyve.network/near/value?height=127591973)\\\\\\\\n\\\\\\\\nThis ensures that all data retrieved through the API is cryptographically verified and secure for use in any decentralized application.\\\\\\\\n\\\\\\\\n# **Milestones**\\\\\\\\n\\\\\\\\n**Milestone 1: NEAR Runtime Development & Testnet Deployment**\\\\\\\\n\\\\\\\\n*Completion by January 31, 2025*\\\\\\\\n\\\\\\\\n- **Develop NEAR runtime** to enable the retrieval and validation of NEAR blocks and chunks (txs and receipts are included in the chunks).\\\\\\\\n- **Collaborate with NEAR team** and **Community** to ensure smooth integration and alignment.\\\\\\\\n- **Upload validated data to Arweave** for permanent decentralized storage. After testing is complete, the testnet pool will switch and continue uploading to the KYVE storage provider, a centralized storage solution for testnet operations.\\\\\\\\n- **Test the NEAR runtime on KYVE\\\\\\\\u{2019}s testnet (Kaon)** to validate data retrieval, storage processes, and functionality. This includes a beta-testing phase with KYVE/NEAR Validators.\\\\\\\\n- After successful testing, **prepare for mainnet deployment**.\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n**Milestone 2: KYVE Data Pool Deployment on Mainnet & Base Functionality Release**\\\\\\\\n\\\\\\\\n*Completion by February 1, 2025*\\\\\\\\n\\\\\\\\n- **Deploy the KYVE NEAR data pool** on mainnet to handle data extraction, validation, and permanent storage.\\\\\\\\n- Release **base functionalities** of the KYVE **Data Pipeline** and **Trustless API** for community access to validated NEAR data.\\\\\\\\n- **Integrate NEAR tokens** into the KYVE ecosystem based on existing NEAR-IBC bridges or other solutions, to fund the data pool and incentivize validators for maintaining the pool.\\\\\\\\n- **Collaborate with NEAR community** to ensure smooth deployment and provide initial performance reports for monitoring.\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n**Milestone 3: Performance Optimization, Maintenance & Optional Advanced Data Transformations**\\\\\\\\n\\\\\\\\n*Completion by March 1, 2025*\\\\\\\\n\\\\\\\\n- **Maintain and optimize the KYVE NEAR integration** for efficient data streaming, validation, and storage.\\\\\\\\n- **Monitor performance** and implement improvements based on usage and community feedback.\\\\\\\\n- **Host workshops and webinars** to engage the developer community and showcase the full capabilities of the KYVE NEAR integration.\\\\\\\\n- **Optional**: Develop advanced data transformations using **DBT (Data Build Tool)** to convert raw NEAR data into schematized BigQuery tables for advanced analytics and reporting.\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n**Milestone 4: Transition Planning & Knowledge Transfer**\\\\\\\\n\\\\\\\\n*Completion by December 31, 2025*\\\\\\\\n\\\\\\\\n- **Conduct workshops** with NEAR teams (Infrastructure Committee) to develop a detailed transition plan to KYVE\\\\\\\\u{2019}s decentralized data infrastructure.\\\\\\\\n- **Prepare a comprehensive knowledge transfer document** that outlines NEAR\\\\\\\\u{2019}s current infrastructure and the steps for transitioning to KYVE.\\\\\\\\n\\\\\\\\n## **Budget**\\\\\\\\n\\\\\\\\nA KYVE data pool requires ongoing funding to operate. This funding can be provided by any party interested in having the data archived, validated, and made publicly accessible. The funds are distributed to the protocol validators and their delegators, who ensure the data is securely validated and uploaded. If the pool runs out of funds, the uploading stops, but the previously archived data remains accessible as a public good.\\\\\\\\n\\\\\\\\n**Why Arweave?**\\\\\\\\n\\\\\\\\nAmazon S3 charges for the entire archive every month, which can add up significantly over time, especially for large volumes of data. In contrast, with Arweave, you pay a single upfront fee for permanent storage. This model drastically reduces long-term costs, making it ideal for archives where data needs to be retained indefinitely without the burden of recurring monthly payments. Additionally, Arweave allows for free data retrieval, eliminating another cost that can become substantial with traditional cloud providers. Another key advantage of Arweave is its decentralized storage model, which distributes data across a global network, increasing resilience and security by removing any single point of failure. By choosing Arweave over S3 in this proposal, the goal is to minimize long-term storage expenses while benefiting from the resilience, decentralization, and free data access that Arweave offers.\\\\\\\\n\\\\\\\\nThe cost for the integration will be split as follows:\\\\\\\\n\\\\\\\\n- 1) Initial Integration\\\\\\\\n- 2) Data Pool Funding\\\\\\\\n- 3) Maintenance\\\\\\\\n\\\\\\\\n### **Phase 1) Initial Integration -** **$60 000  (Deliverables as per Milestone 1)**\\\\\\\\n\\\\\\\\nDevelop the NEAR Runtime for KYVE to enable seamless retrieval and validation of NEAR blocks and chunks in collaboration with the NEAR team and NEAR ecosystem partners.\\\\\\\\n\\\\\\\\n- Implement functionality for uploading validated NEAR data to Arweave, ensuring permanent, decentralized storage.\\\\\\\\n- Conduct extensive testing of the NEAR runtime on KYVE\\\\\\\\u{2019}s testnet (Kaon) to validate the efficiency of data retrieval, validation, and storage processes.\\\\\\\\n- Upon successful testing and validation on the testnet, proceed with preparations for the mainnet deployment.\\\\\\\\n- Assuming a total of 600h development work divided between BCP and the validators based on $100/h.\\\\\\\\n\\\\\\\\nThis process will require two developers over a period of two months, as well as infrastructure costs (such as a NEAR archival node) to facilitate the integration testing. Additionally, collaboration with the NEAR team will be necessary to perform research and set up a customized Trustless API for optimized data access.\\\\\\\\n\\\\\\\\n### **Phase 2) Continuous Funding and Maintenance (Deliverables as per Milestone 2-4)**\\\\\\\\n\\\\\\\\n### **Option 1: Fixed Payment through Grant $335,000**\\\\\\\\n\\\\\\\\n**Historical NEAR Data Pool Funding (Genesis to current live height) - $175,000**\\\\\\\\n\\\\\\\\nThe funding costs mainly consist of storage expenses and the incentivization premium for validators to upload data. For this example, our suggestion is to use Arweave as the storage provider.\\\\\\\\n\\\\\\\\nIt can be estimated that the NEAR raw data size, with compression, is going to be around 6.5TB, based on the current size of BigQuery tables.\\\\\\\\n\\\\\\\\nCost Breakdown:\\\\\\\\n\\\\\\\\n1. **Storage on Arweave: $105,000**\\\\\\\\n    \\\\\\\\n    Calculated using the current rate for Arweave storage via AR Turbo: 6.5TB * 16.36 USD/GB\\\\\\\\n    \\\\\\\\n2. **Buffer for AR Price Fluctuation: $25,000**\\\\\\\\n    \\\\\\\\n    Includes a 25% buffer for potential AR price increases\\\\\\\\n    \\\\\\\\n3. **Validator Incentivization: $45,000**\\\\\\\\n    \\\\\\\\n    Cost to incentivize validators for data uploading and validation\\\\\\\\n    \\\\\\\\n\\\\\\\\n**Live Data Pool (Future Blocks) - $60,000, payable in monthly installments of $5,000 for one year**\\\\\\\\n\\\\\\\\nAs NEAR\\\\\\\\u{2019}s blockchain continues to grow, BCP will establish a **live data pool** to handle ongoing data from the moment of deployment on mainnet. While the historical data is managed through existing historical data pools, this live data pool will sync in real-time from NEAR\\\\\\\\u{2019}s **live height** upon deployment. The costs for this include **storage on Arweave** and the incentivization of **KYVE validators** for validating and uploading the data.\\\\\\\\n\\\\\\\\nBased on NEAR\\\\\\\\u{2019}s block speed of **1.09 seconds** and an average block size of **50KB**, the following costs are estimated: **Total Monthly Costs: $5,000**\\\\\\\\n\\\\\\\\n- **Storage on Arweave**: 3.96 GB per month (approx.) $2,000\\\\\\\\n- **Buffer for Arweave Price Fluctuations (up to 50%)**: $1,000\\\\\\\\n- **Validator Incentivization**: $2,000\\\\\\\\n\\\\\\\\n![https://ipfs.near.social/ipfs/bafkreic52g47ny6rph4ljnbma6htnd6xqqy2eobie7hh4oulabdtwmphgi](https://ipfs.near.social/ipfs/bafkreic52g47ny6rph4ljnbma6htnd6xqqy2eobie7hh4oulabdtwmphgi)\\\\\\\\n\\\\\\\\n*All Data Pool funding will be directly forwarded to the corresponding NEAR data pools on KYVE.*\\\\\\\\n\\\\\\\\n**Maintenance - $100,000, payable in 10 monthly installments of $10,000**\\\\\\\\n\\\\\\\\nThis includes the maintenance of the data pool over a year in order to maintain it and follow the upgrade path, to support the validators archiving the NEAR data, and the maintenance and improvement of the Trustless API and of the Data Pipeline.\\\\\\\\n\\\\\\\\n- The above pricing includes reading data from the Trustless API and using the Data Pipeline by any data user.\\\\\\\\n\\\\\\\\nIf the total of the grant is not used, the remaining part will be returned or used to continue the funding. Once the funding is spent, the data and tooling remain accessible as a public good.\\\\\\\\n\\\\\\\\n### **Option 2: Public Good Funding (KYVE Foundation runs a validator to cover the costs)**\\\\\\\\n\\\\\\\\nKYVE\\\\\\\\\\\\'s Public Goods Funding Program is an alternative way to provide funding for the data pools and cover the maintenance.\\\\\\\\n\\\\\\\\nTo integrate NEAR\\\\\\\\u{2019}s data, KYVE requests a validator delegation from the NEAR Foundation. KYVE uses the returns from this delegation to fund the operation of a Public Good pool. This pool ensures that NEAR\\\\\\\\u{2019}s historical and live data is validated, stored, and continuously synced to live height without the need for costly archival nodes.\\\\\\\\n\\\\\\\\n- Delegation: NEAR delegates tokens to KYVE to run a Public Good validator node.\\\\\\\\n- Rewards: The data pool is funded by validator commission rewards, and both KYVE and NEAR validators receive tokens as rewards. The commission rewards should cover the costs associated with the operations of all data pools as well as the maintenance by BCP.\\\\\\\\n\\\\\\\\n![https://ipfs.near.social/ipfs/bafkreiccelx5qsyuo7e2h3ojrcd4ybeblr7fqfxagp6ophtv2lgeqdhqau](https://ipfs.near.social/ipfs/bafkreiccelx5qsyuo7e2h3ojrcd4ybeblr7fqfxagp6ophtv2lgeqdhqau)\\\\\\\\n\\\\\\\\nOffloads the need for NEAR to run its own expensive data infrastructure, allowing it to scale more easily. This mutually beneficial setup ensures NEAR\\\\\\\\u{2019}s data is maintained at minimal cost while enhancing the decentralization of its data infrastructure.\\\\\\\\n\\\\\\\\n# **Conclusion**\\\\\\\\n\\\\\\\\nKYVE\\\\\\\\\\\\'s decentralized data lake provides NEAR with a complete, valid, and accessible solution for managing blockchain data. By decentralizing storage and validation, NEAR\\\\\\\\u{2019}s data becomes a public good, easily accessible without reliance on centralized infrastructure. Tools like the Trustless API and Data Load Tool allow developers to leverage NEAR\\\\\\\\u{2019}s raw data for various use cases, unlocking new opportunities for growth and innovation.\\\\\\\\n\\\\\\\\nKYVE Foundation invites the NEAR Foundation to partner with KYVE in building a decentralized, secure, and scalable data infrastructure. Together, we can future-proof NEAR\\\\\\\\u{2019}s data landscape and empower its ecosystem with robust tools for continued success.\", \"linked_proposals\": [], \"receiver_account\": \"kyve_foundation.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"395000\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4325477054964e+21
+    }
+  }
+]

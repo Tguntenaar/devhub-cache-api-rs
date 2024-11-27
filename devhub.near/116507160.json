@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "3725946258",
+    "receipt_id": "DFfWdKHcNUzmFTjShdUG55emriSq6Pq7V4Znr56yaXno",
+    "predecessor_account_id": "bpolania.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8XcVunD42Da7igpkH6cdMGmGMgvDZMxjTCLv6QhmKkwG",
+      "block_height": 116507186,
+      "block_timestamp": 1712714010088307700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7584691921598,
+      "tokens_burnt": 758469192159800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "7bv2vqZ5sHPM3Y2WcmzcXRAUMx1XNr91TUkjNzS958Qe",
+    "included_in_block_hash": "J17nG1PVqgfE2baKSgdBpsWmhccQ1djrAH5qVPZJCgjT",
+    "block_timestamp": "1712714008773969811",
+    "block": {
+      "block_height": 116507185
+    },
+    "receipt_conversion_tokens_burnt": "242822061515600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 758469192159800000000,
+        "args": "{\"id\": 40, \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4764658788693e+21
+    }
+  },
+  {
+    "id": "3725946940",
+    "receipt_id": "79nqdarejEsEhWoV6Wa7RwuPgyKPTWH2oaiNYq3CTLft",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "C6LXGnG38TT5fjeBxrbMKUUkFX7mnDVF6xmgJtxTs248",
+      "block_height": 116507187,
+      "block_timestamp": 1712714011440166400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4751746251939,
+      "tokens_burnt": 475174625193900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7bv2vqZ5sHPM3Y2WcmzcXRAUMx1XNr91TUkjNzS958Qe",
+    "included_in_block_hash": "J17nG1PVqgfE2baKSgdBpsWmhccQ1djrAH5qVPZJCgjT",
+    "block_timestamp": "1712714008773969811",
+    "block": {
+      "block_height": 116507185
+    },
+    "receipt_conversion_tokens_burnt": "242822061515600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 475174625193900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":40,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4764658788693e+21
+    }
+  },
+  {
+    "id": "3726013145",
+    "receipt_id": "HeSzTqAPz95BLK6qrtf3porSYbC2EnLXsHGvsvuvgT5",
+    "predecessor_account_id": "bpolania.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6R7CGUbvXW8TCKa5qWHAUND9gyivqQZXXgwWkyATiP7R",
+      "block_height": 116507332,
+      "block_timestamp": 1712714194827312400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7661356199799,
+      "tokens_burnt": 766135619979900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DiB1Xz9a2K8b8Kobj6NXcSPqovrkjShei5EcT9erk8f3",
+    "included_in_block_hash": "3m5V9hbZSKdxY9WmbKhqdLTyVawiHk4irWnkQ97Ge2ux",
+    "block_timestamp": "1712714193472370372",
+    "block": {
+      "block_height": 116507331
+    },
+    "receipt_conversion_tokens_burnt": "243150967407000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 766135619979900000000,
+        "args": "{\"id\": 40, \"body\": {\"name\": \"Devrel Activities by Boris Polania (March 25 - April 5)\", \"summary\": \"This is the summary of my activities for the specified period \", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"theori.near\", \"description\": \"Devrel Activities by Boris Polania (March 25 - April 5)\\\\\\\\n\\\\\\\\n## Planned Activities\\\\\\\\nThe following activities will be completed from March 25 - April 5. ***This includes weekend work activities***\\\\\\\\n\\\\\\\\n### Devhub Activities (16 hours)\\\\\\\\n* Contributors Proposal Reviews and Approvals (2 hours)\\\\\\\\n* Devhub 2024 Planning (4 hours)\\\\\\\\n* Devhub Internal Meetings (5 hours)\\\\\\\\n* Devrels 2024 Proposal (5 hours)\\\\\\\\n### DevRel Activities (6 hours) \\\\\\\\n* Internal Meetings: weekly standup, 1-on-1 meetings with contributors. (2 hours)\\\\\\\\n* Articles and Content writing (4 hours)\\\\\\\\n### Events (60 hours)\\\\\\\\n* 2024 Q1 Event Post-event Activities (Oxford, London, Rio, Seoul) -  (4 hours)\\\\\\\\n* 2024 Q2 Event Planning (Amsterdam) -  (1 hour)\\\\\\\\n* IRL ethSeoul main hackathon and side events - Includes travel (55 hours)\\\\\\\\n### NEAR Campus (4 hours)\\\\\\\\n* Phasing-out meetngs and final proposal closing (4 hours)\\\\\\\\n### Timeline\\\\\\\\n* Start Date: 03/25/2024\\\\\\\\n* End Date: 04/05/2024\\\\\\\\n### Requested Funding\\\\\\\\n* Total hours: 86 hours\\\\\\\\n* Rate: $100/hour\\\\\\\\n* Total amount: $8,600 USD\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"bpolania.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"8600\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.487225603766e+21
+    }
+  },
+  {
+    "id": "3726013587",
+    "receipt_id": "C5ajh22WK4iYboigkjQdBMXtijN9RTyQ5GVptRxhNkR",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Dshf1txVxR1dhup3Mi8xK5MhrDH7bFh9ceFcy57qPAe1",
+      "block_height": 116507333,
+      "block_timestamp": 1712714196046167800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4779390163791,
+      "tokens_burnt": 477939016379100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DiB1Xz9a2K8b8Kobj6NXcSPqovrkjShei5EcT9erk8f3",
+    "included_in_block_hash": "3m5V9hbZSKdxY9WmbKhqdLTyVawiHk4irWnkQ97Ge2ux",
+    "block_timestamp": "1712714193472370372",
+    "block": {
+      "block_height": 116507331
+    },
+    "receipt_conversion_tokens_burnt": "243150967407000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 477939016379100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":40,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.487225603766e+21
+    }
+  },
+  {
+    "id": "3726044459",
+    "receipt_id": "CuVgg46QJzcr6cUWwAN2jV9bHEdW1KSbU8ZCAvjVAosS",
+    "predecessor_account_id": "bpolania.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BZhkrPufHSAmzRr7pKgABWBjVjKBSqcJSV7NE8fy1aWy",
+      "block_height": 116507401,
+      "block_timestamp": 1712714277501962500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7883332847871,
+      "tokens_burnt": 788333284787100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "GgEF2esoLyAhngvyWgDLf7h9ztGbxXFWYKpW5RDJyQfd",
+    "included_in_block_hash": "DfwZzkQGHGNJ9ufJd7teXTxGTe1VfdTEJ7Ykh6nX4588",
+    "block_timestamp": "1712714276547008626",
+    "block": {
+      "block_height": 116507400
+    },
+    "receipt_conversion_tokens_burnt": "243150967407000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 788333284787100000000,
+        "args": "{\"id\": 40, \"body\": {\"name\": \"Devrel Activities by Boris Polania (March 25 - April 5)\", \"summary\": \"This is the summary of my activities for the specified period \", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"theori.near\", \"description\": \"Devrel Activities by Boris Polania (March 25 - April 5)\\\\\\\\n\\\\\\\\n## Planned Activities\\\\\\\\nThe following activities will be completed from March 25 - April 5. ***This includes weekend work activities***\\\\\\\\n\\\\\\\\n### Devhub Activities (16 hours)\\\\\\\\n* Contributors Proposal Reviews and Approvals (2 hours)\\\\\\\\n* Devhub 2024 Planning (4 hours)\\\\\\\\n* Devhub Internal Meetings (5 hours)\\\\\\\\n* Devrels 2024 Proposal (5 hours)\\\\\\\\n### DevRel Activities (6 hours) \\\\\\\\n* Internal Meetings: weekly standup, 1-on-1 meetings with contributors. (2 hours)\\\\\\\\n* Articles and Content writing (4 hours)\\\\\\\\n### Events (60 hours)\\\\\\\\n* 2024 Q1 Event Post-event Activities (Oxford, London, Rio, Seoul) -  (4 hours)\\\\\\\\n* 2024 Q2 Event Planning (Amsterdam) -  (1 hour)\\\\\\\\n* IRL ethSeoul main hackathon and side events - Includes travel (55 hours)\\\\\\\\n### NEAR Campus (4 hours)\\\\\\\\n* Phasing-out meetngs and final proposal closing (4 hours)\\\\\\\\n### Timeline\\\\\\\\n* Start Date: 03/25/2024\\\\\\\\n* End Date: 04/05/2024\\\\\\\\n### Requested Funding\\\\\\\\n* Total hours: 86 hours\\\\\\\\n* Rate: $100/hour\\\\\\\\n* Total amount: $8,600 USD\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"bpolania.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"8600\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.506658877388e+21
+    }
+  },
+  {
+    "id": "3726046116",
+    "receipt_id": "FFnYUmMsu3HMSiuCCeZXwpSLDwfUFvRR3Czb4CDqRNyC",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "E8P4iUg7wESAngbjrcxfg5WBSKAhQCr5af4nTmiEj2C",
+      "block_height": 116507404,
+      "block_timestamp": 1712714282483444200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4751746251939,
+      "tokens_burnt": 475174625193900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "GgEF2esoLyAhngvyWgDLf7h9ztGbxXFWYKpW5RDJyQfd",
+    "included_in_block_hash": "DfwZzkQGHGNJ9ufJd7teXTxGTe1VfdTEJ7Ykh6nX4588",
+    "block_timestamp": "1712714276547008626",
+    "block": {
+      "block_height": 116507400
+    },
+    "receipt_conversion_tokens_burnt": "243150967407000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 475174625193900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":40,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.506658877388e+21
+    }
+  },
+  {
+    "id": "3726091557",
+    "receipt_id": "8TUDVXtzF8Qi3jSE5F6HwnQbkHyPABwtFd5ESAeMEh3u",
+    "predecessor_account_id": "bpolania.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FMZ1CcAQ2NpJoZzwf1dYDau9kFjqRx6NYezcjprN3k3f",
+      "block_height": 116507563,
+      "block_timestamp": 1712714484831881200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7518651204507,
+      "tokens_burnt": 751865120450700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "6U5raZAKtuYAxic1RW2BoRUC1eLZndN93ygwHCp3KY5t",
+    "included_in_block_hash": "6zmRNDKrnQqTdF1JkbCxtCYcLWQPBCYgmUkkcLaZCYQ1",
+    "block_timestamp": "1712714483591997174",
+    "block": {
+      "block_height": 116507562
+    },
+    "receipt_conversion_tokens_burnt": "243150967407000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 751865120450700000000,
+        "args": "{\"id\": 37, \"body\": {\"name\": \"Devrel Activities by Boris Polania (March 25 - April 5)\", \"summary\": \"This is the summary of my activities for the specified period \", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"theori.near\", \"description\": \"Devrel Activities by Boris Polania (March 25 - April 5)\\\\\\\\n\\\\\\\\n## Planned Activities\\\\\\\\nThe following activities will be completed from March 25 - April 5. ***This includes weekend work activities***\\\\\\\\n\\\\\\\\n### Devhub Activities (16 hours)\\\\\\\\n* Contributors Proposal Reviews and Approvals (2 hours)\\\\\\\\n* Devhub 2024 Planning (4 hours)\\\\\\\\n* Devhub Internal Meetings (5 hours)\\\\\\\\n* Devrels 2024 Proposal (5 hours)\\\\\\\\n### DevRel Activities (6 hours) \\\\\\\\n* Internal Meetings: weekly standup, 1-on-1 meetings with contributors. (2 hours)\\\\\\\\n* Articles and Content writing (4 hours)\\\\\\\\n### Events (60 hours)\\\\\\\\n* 2024 Q1 Event Post-event Activities (Oxford, London, Rio, Seoul) -  (4 hours)\\\\\\\\n* 2024 Q2 Event Planning (Amsterdam) -  (1 hour)\\\\\\\\n* IRL ethSeoul main hackathon and side events - Includes travel (55 hours)\\\\\\\\n### NEAR Campus (4 hours)\\\\\\\\n* Phasing-out meetngs and final proposal closing (4 hours)\\\\\\\\n### Timeline\\\\\\\\n* Start Date: 03/25/2024\\\\\\\\n* End Date: 04/05/2024\\\\\\\\n### Requested Funding\\\\\\\\n* Total hours: 86 hours\\\\\\\\n* Rate: $100/hour\\\\\\\\n* Total amount: $8,600 USD\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"bpolania.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"5330\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4701907130516e+21
+    }
+  },
+  {
+    "id": "3726091759",
+    "receipt_id": "APv43vEwnT5VaASnsKi6mMDAGukd7KkkCtWC5gzpmF6M",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DGinLmRxgAguCdP3ckkEUtYZ3ML2tARhuXQL3Ff3GoAM",
+      "block_height": 116507564,
+      "block_timestamp": 1712714486145688600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4751746251939,
+      "tokens_burnt": 475174625193900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "6U5raZAKtuYAxic1RW2BoRUC1eLZndN93ygwHCp3KY5t",
+    "included_in_block_hash": "6zmRNDKrnQqTdF1JkbCxtCYcLWQPBCYgmUkkcLaZCYQ1",
+    "block_timestamp": "1712714483591997174",
+    "block": {
+      "block_height": 116507562
+    },
+    "receipt_conversion_tokens_burnt": "243150967407000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 475174625193900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":37,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4701907130516e+21
+    }
+  },
+  {
+    "id": "3726101191",
+    "receipt_id": "7R5RjXybkJmxdDPKPVRzftYKoa2Y7hEkAX8qRRSfogG4",
+    "predecessor_account_id": "bpolania.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EwXAqfWUopfLAtkELmtU6rmfuWdPRwbi3ppPAPpSnuY4",
+      "block_height": 116507605,
+      "block_timestamp": 1712714537997278700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7657649352939,
+      "tokens_burnt": 765764935293900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "Fb63mdB9TQM1R1dFH9VLE946A3VceMogozno5HeSTBnf",
+    "included_in_block_hash": "KywAedW3RRPD1ez7kSvxL8MkhVGMiq4zxgsEkELnCBY",
+    "block_timestamp": "1712714536616387758",
+    "block": {
+      "block_height": 116507604
+    },
+    "receipt_conversion_tokens_burnt": "243150967407000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 765764935293900000000,
+        "args": "{\"id\": 37, \"body\": {\"name\": \"Devrel Activities by Boris Polania (March 25 - April 5)\", \"summary\": \"This is the summary of my activities for the specified period \", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"theori.near\", \"description\": \"Devrel Activities by Boris Polania (March 25 - April 5)\\\\\\\\n\\\\\\\\n## Planned Activities\\\\\\\\nThe following activities will be completed from March 25 - April 5. ***This includes weekend work activities***\\\\\\\\n\\\\\\\\n### Devhub Activities (16 hours)\\\\\\\\n* Contributors Proposal Reviews and Approvals (2 hours)\\\\\\\\n* Devhub 2024 Planning (4 hours)\\\\\\\\n* Devhub Internal Meetings (5 hours)\\\\\\\\n* Devrels 2024 Proposal (5 hours)\\\\\\\\n### DevRel Activities (6 hours) \\\\\\\\n* Internal Meetings: weekly standup, 1-on-1 meetings with contributors. (2 hours)\\\\\\\\n* Articles and Content writing (4 hours)\\\\\\\\n### Events (60 hours)\\\\\\\\n* 2024 Q1 Event Post-event Activities (Oxford, London, Rio, Seoul) -  (4 hours)\\\\\\\\n* 2024 Q2 Event Planning (Amsterdam) -  (1 hour)\\\\\\\\n* IRL ethSeoul main hackathon and side events - Includes travel (55 hours)\\\\\\\\n### NEAR Campus (4 hours)\\\\\\\\n* Phasing-out meetngs and final proposal closing (4 hours)\\\\\\\\n### Timeline\\\\\\\\n* Start Date: 03/25/2024\\\\\\\\n* End Date: 04/05/2024\\\\\\\\n### Requested Funding\\\\\\\\n* Total hours: 86 hours\\\\\\\\n* Rate: $100/hour\\\\\\\\n* Total amount: $8,600 USD\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"bpolania.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"8600\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4840905278948e+21
+    }
+  },
+  {
+    "id": "3726101790",
+    "receipt_id": "H2UVx4fSFNGSm33yBKME9NkU9Sko5PEC7y2o5mhZZa9W",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8jYptYw3z29jGncxz2KNdC2j3Rfy2r6uHQNNk9UfdtLN",
+      "block_height": 116507607,
+      "block_timestamp": 1712714540576190500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4751746251939,
+      "tokens_burnt": 475174625193900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Fb63mdB9TQM1R1dFH9VLE946A3VceMogozno5HeSTBnf",
+    "included_in_block_hash": "KywAedW3RRPD1ez7kSvxL8MkhVGMiq4zxgsEkELnCBY",
+    "block_timestamp": "1712714536616387758",
+    "block": {
+      "block_height": 116507604
+    },
+    "receipt_conversion_tokens_burnt": "243150967407000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 475174625193900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":37,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4840905278948e+21
+    }
+  },
+  {
+    "id": "3726702445",
+    "receipt_id": "CpWJgMyZCEN5LJQNAowioFsjDXa5exptD2ZNMnRMCL1p",
+    "predecessor_account_id": "orangejoe.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EKyWuyotK2a74gxTL6aFMCuTrUtN785JZ8TPHDHb9qPy",
+      "block_height": 116509229,
+      "block_timestamp": 1712716479074377500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 12075649457178,
+      "tokens_burnt": 1.2075649457178e+21,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "3jDgdcZW5NmeUDMNsH4w6JUyFnPxQdc5gCvAZSXyJs3U",
+    "included_in_block_hash": "DuR6HB1eczLq9QZzvMuF3Xc4dnoWditR6og8xWFhX1JH",
+    "block_timestamp": "1712716478102418517",
+    "block": {
+      "block_height": 116509228
+    },
+    "receipt_conversion_tokens_burnt": "243160134736400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 1.2075649457178e+21,
+        "args": "{\"body\": {\"name\": \"Developer Relations 3/17 - 3/30\", \"summary\": \"DevHub Moderator Contributions from 3/17-3/30\", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": \"bpolania.near\", \"description\": \"\\\\\\\\n\\\\\\\\n**Devhub Activities (18 hours)**\\\\\\\\n\\\\\\\\n- Contributors Proposal Reviews and Approvals \\\\\\\\n- Newsletter\\\\\\\\n- Developer content planning\\\\\\\\n- Workgroup support\\\\\\\\n\\\\\\\\n**DevRel (21 hours):**\\\\\\\\n\\\\\\\\n- Internal Meetings: weekly stand-ups, 1-on-1 with team members, and meetings with core team members.\\\\\\\\n- Ecosystem developer conversations and feedback collection for current and future initiatives\\\\\\\\n- Developer and community support meetings for work and proposal\\\\\\\\n- Developer follow-up\\\\\\\\n- Developer outreach\\\\\\\\n- Virtual support to hackathons\\\\\\\\n- Liaison for multiple groups and DAOs for DevRel support\\\\\\\\n\\\\\\\\n**Marketing & Retention Planning & In-Progress (44 hours):**\\\\\\\\n\\\\\\\\n- Social content planning\\\\\\\\n- Continued design and reuse of multiple short challenges and materials\\\\\\\\n- Post hackathon planning\\\\\\\\n* Update social content\\\\\\\\n* Marketing funnel work\\\\\\\\n* Chain Abstraction video content\\\\\\\\n* Chain abstraction community setup\\\\\\\\n* Video planning and scripting\\\\\\\\n* Partnership planning and meetings\\\\\\\\n\\\\\\\\n**Reimbursements:**\\\\\\\\nTypefully (for Twitter/X scheduling): $16 \\\\\\\\n\\\\\\\\n**Timeline**\\\\\\\\n\\\\\\\\n- Start Date: 3/17/2024\\\\\\\\n- End Date: 3/30/2024\\\\\\\\n\\\\\\\\n**Requested Funding**\\\\\\\\n\\\\\\\\n- Total hours: 83\\\\\\\\n- Rate: $100/hour\\\\\\\\n- Total amount: $8316 USDC\", \"linked_proposals\": [], \"receiver_account\": \"orangejoe.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"8316\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8957708022193e+21
+    }
+  },
+  {
+    "id": "3726702598",
+    "receipt_id": "8my6egUyyd5UPocga1AwsnH7hkkKprsiw5m77qzs8diD",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CfXKziC33NDnipyqDHQzsS1YSQbMWQDukMLm3Rf1JHjD",
+      "block_height": 116509230,
+      "block_timestamp": 1712716480009182500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5800658022250,
+      "tokens_burnt": 580065802225000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "3jDgdcZW5NmeUDMNsH4w6JUyFnPxQdc5gCvAZSXyJs3U",
+    "included_in_block_hash": "DuR6HB1eczLq9QZzvMuF3Xc4dnoWditR6og8xWFhX1JH",
+    "block_timestamp": "1712716478102418517",
+    "block": {
+      "block_height": 116509228
+    },
+    "receipt_conversion_tokens_burnt": "243160134736400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 580065802225000000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *DevDAO Operations* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @orangejoe.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Developer Relations 3/17 - 3/30\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nDevHub Moderator Contributions from 3/17-3/30\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=41)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8957708022193e+21
+    }
+  },
+  {
+    "id": "3726702604",
+    "receipt_id": "61TkxUAC7onT6WAMT6zUSBwxyq2y4f8cRDzhVfGhJy81",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CfXKziC33NDnipyqDHQzsS1YSQbMWQDukMLm3Rf1JHjD",
+      "block_height": 116509230,
+      "block_timestamp": 1712716480009182500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3884414971598,
+      "tokens_burnt": 388441497159800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "3jDgdcZW5NmeUDMNsH4w6JUyFnPxQdc5gCvAZSXyJs3U",
+    "included_in_block_hash": "DuR6HB1eczLq9QZzvMuF3Xc4dnoWditR6og8xWFhX1JH",
+    "block_timestamp": "1712716478102418517",
+    "block": {
+      "block_height": 116509228
+    },
+    "receipt_conversion_tokens_burnt": "243160134736400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 388441497159800000000,
+        "args": "{\"proposal\": {\"id\": 41, \"snapshot\": {\"name\": \"Developer Relations 3/17 - 3/30\", \"labels\": [], \"summary\": \"DevHub Moderator Contributions from 3/17-3/30\", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"orangejoe.near\", \"timestamp\": \"1712716479074377383\", \"supervisor\": \"bpolania.near\", \"description\": \"\\\\\\\\n\\\\\\\\n**Devhub Activities (18 hours)**\\\\\\\\n\\\\\\\\n- Contributors Proposal Reviews and Approvals \\\\\\\\n- Newsletter\\\\\\\\n- Developer content planning\\\\\\\\n- Workgroup support\\\\\\\\n\\\\\\\\n**DevRel (21 hours):**\\\\\\\\n\\\\\\\\n- Internal Meetings: weekly stand-ups, 1-on-1 with team members, and meetings with core team members.\\\\\\\\n- Ecosystem developer conversations and feedback collection for current and future initiatives\\\\\\\\n- Developer and community support meetings for work and proposal\\\\\\\\n- Developer follow-up\\\\\\\\n- Developer outreach\\\\\\\\n- Virtual support to hackathons\\\\\\\\n- Liaison for multiple groups and DAOs for DevRel support\\\\\\\\n\\\\\\\\n**Marketing & Retention Planning & In-Progress (44 hours):**\\\\\\\\n\\\\\\\\n- Social content planning\\\\\\\\n- Continued design and reuse of multiple short challenges and materials\\\\\\\\n- Post hackathon planning\\\\\\\\n* Update social content\\\\\\\\n* Marketing funnel work\\\\\\\\n* Chain Abstraction video content\\\\\\\\n* Chain abstraction community setup\\\\\\\\n* Video planning and scripting\\\\\\\\n* Partnership planning and meetings\\\\\\\\n\\\\\\\\n**Reimbursements:**\\\\\\\\nTypefully (for Twitter/X scheduling): $16 \\\\\\\\n\\\\\\\\n**Timeline**\\\\\\\\n\\\\\\\\n- Start Date: 3/17/2024\\\\\\\\n- End Date: 3/30/2024\\\\\\\\n\\\\\\\\n**Requested Funding**\\\\\\\\n\\\\\\\\n- Total hours: 83\\\\\\\\n- Rate: $100/hour\\\\\\\\n- Total amount: $8316 USDC\", \"linked_proposals\": [], \"receiver_account\": \"orangejoe.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"8316\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"orangejoe.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8957708022193e+21
+    }
+  },
+  {
+    "id": "3726702611",
+    "receipt_id": "5NitDr5GYMuCXjLCaCBmu73hMvJ6QRQ21B6ANtztGUnA",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CfXKziC33NDnipyqDHQzsS1YSQbMWQDukMLm3Rf1JHjD",
+      "block_height": 116509230,
+      "block_timestamp": 1712716480009182500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4765384223803,
+      "tokens_burnt": 476538422380300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "3jDgdcZW5NmeUDMNsH4w6JUyFnPxQdc5gCvAZSXyJs3U",
+    "included_in_block_hash": "DuR6HB1eczLq9QZzvMuF3Xc4dnoWditR6og8xWFhX1JH",
+    "block_timestamp": "1712716478102418517",
+    "block": {
+      "block_height": 116509228
+    },
+    "receipt_conversion_tokens_burnt": "243160134736400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 476538422380300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":41,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"orangejoe.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":41,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"orangejoe.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8957708022193e+21
+    }
+  },
+  {
+    "id": "3726706704",
+    "receipt_id": "8Vh7ofiSR8WKH1e13N8Y3Mu8FhqatAzfZDaNk8aFs1jH",
+    "predecessor_account_id": "orangejoe.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EZ2eNnfds7LbxHCiXFDq2wJjgkQ3RYBwBXzfFa465mZ5",
+      "block_height": 116509274,
+      "block_timestamp": 1712716525689602000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6905067879058,
+      "tokens_burnt": 690506787905800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DwTyEoXwJBdcjjEcvsA5MXBY44gK7tJtfBDt3P5bHtEv",
+    "included_in_block_hash": "BRx3ZrtH4KoC1Svrp7MAB6rXQDwrUDWEWanxYnry6YKp",
+    "block_timestamp": "1712716524723624211",
+    "block": {
+      "block_height": 116509273
+    },
+    "receipt_conversion_tokens_burnt": "242822061515600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 690506787905800000000,
+        "args": "{\"id\": 41, \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4092630936085e+21
+    }
+  },
+  {
+    "id": "3726706993",
+    "receipt_id": "3mhwnZiiLTVg1nS717mFPLsmr62NfiYBhEpfq1e4dwva",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6vhrRMgpekE6GeH2SvXaLYcdhSJoSqY55YwpE2gXFLPU",
+      "block_height": 116509275,
+      "block_timestamp": 1712716526896658200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4759342441871,
+      "tokens_burnt": 475934244187100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DwTyEoXwJBdcjjEcvsA5MXBY44gK7tJtfBDt3P5bHtEv",
+    "included_in_block_hash": "BRx3ZrtH4KoC1Svrp7MAB6rXQDwrUDWEWanxYnry6YKp",
+    "block_timestamp": "1712716524723624211",
+    "block": {
+      "block_height": 116509273
+    },
+    "receipt_conversion_tokens_burnt": "242822061515600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 475934244187100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"orangejoe.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":41,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"orangejoe.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4092630936085e+21
+    }
+  },
+  {
+    "id": "3730460423",
+    "receipt_id": "ViQHSKsMERLB5W1mLC1XmQxgmcoSv6kTqXnuDjgUBv5",
+    "predecessor_account_id": "bpolania.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FToe3WmnuDmYz1YTGZSh5uDcHmTCboZgjwq9SU2biVLd",
+      "block_height": 116519144,
+      "block_timestamp": 1712727888183195600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7934922875031,
+      "tokens_burnt": 793492287503100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "7WRFuyohYiFWFvsbr2jkd4PaXmMRsBavXi97uiib32su",
+    "included_in_block_hash": "EYtAuS4c9DefsEHbAC6NF5zxconGHiraeHX9kuXvyak9",
+    "block_timestamp": "1712727887091885882",
+    "block": {
+      "block_height": 116519143
+    },
+    "receipt_conversion_tokens_burnt": "243150967407000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 793492287503100000000,
+        "args": "{\"id\": 37, \"body\": {\"name\": \"Devrel Activities by Boris Polania (March 25 - April 5)\", \"summary\": \"This is the summary of my activities for the specified period \", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"theori.near\", \"description\": \"Devrel Activities by Boris Polania (March 25 - April 5)\\\\\\\\n\\\\\\\\n## Planned Activities\\\\\\\\nThe following activities will be completed from March 25 - April 5. ***This includes weekend work activities***\\\\\\\\n\\\\\\\\n### Devhub Activities (16 hours)\\\\\\\\n* Contributors Proposal Reviews and Approvals (2 hours)\\\\\\\\n* Devhub 2024 Planning (4 hours)\\\\\\\\n* Devhub Internal Meetings (5 hours)\\\\\\\\n* Devrels 2024 Proposal (5 hours)\\\\\\\\n### DevRel Activities (6 hours) \\\\\\\\n* Internal Meetings: weekly standup, 1-on-1 meetings with contributors. (2 hours)\\\\\\\\n* Articles and Content writing (4 hours)\\\\\\\\n### Events (60 hours)\\\\\\\\n* 2024 Q1 Event Post-event Activities (Oxford, London, Rio, Seoul) -  (4 hours)\\\\\\\\n* 2024 Q2 Event Planning (Amsterdam) -  (1 hour)\\\\\\\\n* IRL ethSeoul main hackathon and side events - Includes travel (55 hours)\\\\\\\\n### NEAR Campus (4 hours)\\\\\\\\n* Phasing-out meetngs and final proposal closing (4 hours)\\\\\\\\n### Timeline\\\\\\\\n* Start Date: 03/25/2024\\\\\\\\n* End Date: 04/05/2024\\\\\\\\n### Requested Funding\\\\\\\\n* Total hours: 86 hours\\\\\\\\n* Rate: $100/hour\\\\\\\\n* Total amount: $8,600 USD\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"bpolania.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"8600\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5145862135652e+21
+    }
+  },
+  {
+    "id": "3730460533",
+    "receipt_id": "CDGVhZGFh1kZQPqvQ8mBErkJkBitfsEmq1cmhRPjAnS4",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EPSV1iZLGBRjC3PsM7vTKosxn1z13wvtmLM4qZTgrNWv",
+      "block_height": 116519145,
+      "block_timestamp": 1712727889232559600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4779429586551,
+      "tokens_burnt": 477942958655100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7WRFuyohYiFWFvsbr2jkd4PaXmMRsBavXi97uiib32su",
+    "included_in_block_hash": "EYtAuS4c9DefsEHbAC6NF5zxconGHiraeHX9kuXvyak9",
+    "block_timestamp": "1712727887091885882",
+    "block": {
+      "block_height": 116519143
+    },
+    "receipt_conversion_tokens_burnt": "243150967407000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 477942958655100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":37,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5145862135652e+21
+    }
+  },
+  {
+    "id": "3730489380",
+    "receipt_id": "JCsRcsBKTsrK6mKUSqMocxH76sFDymM2MgNWnfpZJSdo",
+    "predecessor_account_id": "bpolania.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4JRiABAEdd53gP3XF32exVQsdVd2MZj4ywn4PsdeRPN4",
+      "block_height": 116519304,
+      "block_timestamp": 1712728057250008300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8079425116935,
+      "tokens_burnt": 807942511693500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "uRUB6gNmGRz8qMHdG8eSvtPGEjkfWnEyDGFhtdbeRhe",
+    "included_in_block_hash": "D3QVKpCNGMJMYntJvXXAXQyar6V2nAkPy9dfaz1NQ9su",
+    "block_timestamp": "1712728056243209987",
+    "block": {
+      "block_height": 116519303
+    },
+    "receipt_conversion_tokens_burnt": "243137551803000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 807942511693500000000,
+        "args": "{\"id\": 40, \"body\": {\"name\": \"[Duplicate ] Devrel Activities by Boris Polania (March 25 - April 5)\", \"summary\": \"This is the summary of my activities for the specified period \", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": \"theori.near\", \"description\": \"Devrel Activities by Boris Polania (March 25 - April 5)\\\\\\\\n\\\\\\\\n## Planned Activities\\\\\\\\nThe following activities will be completed from March 25 - April 5. ***This includes weekend work activities***\\\\\\\\n\\\\\\\\n### Devhub Activities (16 hours)\\\\\\\\n* Contributors Proposal Reviews and Approvals (2 hours)\\\\\\\\n* Devhub 2024 Planning (4 hours)\\\\\\\\n* Devhub Internal Meetings (5 hours)\\\\\\\\n* Devrels 2024 Proposal (5 hours)\\\\\\\\n### DevRel Activities (6 hours) \\\\\\\\n* Internal Meetings: weekly standup, 1-on-1 meetings with contributors. (2 hours)\\\\\\\\n* Articles and Content writing (4 hours)\\\\\\\\n### Events (60 hours)\\\\\\\\n* 2024 Q1 Event Post-event Activities (Oxford, London, Rio, Seoul) -  (4 hours)\\\\\\\\n* 2024 Q2 Event Planning (Amsterdam) -  (1 hour)\\\\\\\\n* IRL ethSeoul main hackathon and side events - Includes travel (55 hours)\\\\\\\\n### NEAR Campus (4 hours)\\\\\\\\n* Phasing-out meetngs and final proposal closing (4 hours)\\\\\\\\n### Timeline\\\\\\\\n* Start Date: 03/25/2024\\\\\\\\n* End Date: 04/05/2024\\\\\\\\n### Requested Funding\\\\\\\\n* Total hours: 86 hours\\\\\\\\n* Rate: $100/hour\\\\\\\\n* Total amount: $8,600 USD\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"bpolania.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"8600\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5304012754682e+21
+    }
+  },
+  {
+    "id": "3730490186",
+    "receipt_id": "EhGFtMb5B95DCxuG2NoVQxP7ZekYydgrJ4w8sKBc49xp",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "ChirHMsAptAQcpBPt1mxx4waD1DLsDo1eRKeN7C2A633",
+      "block_height": 116519305,
+      "block_timestamp": 1712728058348936400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4793212119717,
+      "tokens_burnt": 479321211971700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "uRUB6gNmGRz8qMHdG8eSvtPGEjkfWnEyDGFhtdbeRhe",
+    "included_in_block_hash": "D3QVKpCNGMJMYntJvXXAXQyar6V2nAkPy9dfaz1NQ9su",
+    "block_timestamp": "1712728056243209987",
+    "block": {
+      "block_height": 116519303
+    },
+    "receipt_conversion_tokens_burnt": "243137551803000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 479321211971700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":40,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5304012754682e+21
+    }
+  },
+  {
+    "id": "3736562179",
+    "receipt_id": "9w9f5VhPtKx4k8TMK56DythJDQ3cM8zgCnUUe4xg7xM",
+    "predecessor_account_id": "pivortex.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BeKwMwPntiypfEnJYQcv7h7UShR2PeTyCzCntb1Stb6K",
+      "block_height": 116534524,
+      "block_timestamp": 1712745686593800200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6715145534494,
+      "tokens_burnt": 671514553449400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "2xWpHm7ZopKpHNJyipKWJVBcTkPDfn6UpuytRpcW1gvu",
+    "included_in_block_hash": "5uUUqxqXsSW3fdLJXuoejxrW99LVHzyv7W2VpqaSBNLq",
+    "block_timestamp": "1712745685343769038",
+    "block": {
+      "block_height": 116534523
+    },
+    "receipt_conversion_tokens_burnt": "242890928282800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 671514553449400000000,
+        "args": "{\"data\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"image\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"ipfs_cid\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bafkreiadrwraqrmrc3nizvp7epvf5ycl4wow37qbrhbcxiiiziurkhz524\\\\\\\\\\\\\\\"},\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"NEAR will be sponsoring ETH DAM! A hackathon known for its focus on privacy and security. Come and join our builders Telegram group, see you there! https://t.me/+l1hv9RxZCCVkNzA0 \\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}, \"handle\": \"zero-knowledge\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5131638171214e+21
+    }
+  },
+  {
+    "id": "3736566583",
+    "receipt_id": "BN8RgEcS9WE4FWw1zAxC8Z6VoKua2XnGBmroofd4GHda",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HmZsDuKbJEgjApAsUR8p8mgkzrumooTuts7sNE3iggFa",
+      "block_height": 116534530,
+      "block_timestamp": 1712745694685842200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5987583353892,
+      "tokens_burnt": 598758335389200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "2xWpHm7ZopKpHNJyipKWJVBcTkPDfn6UpuytRpcW1gvu",
+    "included_in_block_hash": "5uUUqxqXsSW3fdLJXuoejxrW99LVHzyv7W2VpqaSBNLq",
+    "block_timestamp": "1712745685343769038",
+    "block": {
+      "block_height": 116534523
+    },
+    "receipt_conversion_tokens_burnt": "242890928282800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 598758335389200000000,
+        "args": "{\"data\": {\"zero-knowledge.community.devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"image\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"ipfs_cid\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bafkreiadrwraqrmrc3nizvp7epvf5ycl4wow37qbrhbcxiiiziurkhz524\\\\\\\\\\\\\\\"},\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"NEAR will be sponsoring ETH DAM! A hackathon known for its focus on privacy and security. Come and join our builders Telegram group, see you there! https://t.me/+l1hv9RxZCCVkNzA0 \\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5131638171214e+21
+    }
+  },
+  {
+    "id": "3736631015",
+    "receipt_id": "63Xq6waW5YtzCarEU6gWUKot2CzaxDidxoT42iLPmZv9",
+    "predecessor_account_id": "pivortex.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2yXNdGEvpHFeCswKwMYYVGKc58EqUFJHx8wNZ7nFNzoz",
+      "block_height": 116534635,
+      "block_timestamp": 1712745834383397600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8285634419308,
+      "tokens_burnt": 828563441930800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "BHnbe3bve7hm9MicMFC12ETFg8AgHJVDKuVxFDBFsgZv",
+    "included_in_block_hash": "HYpB4Bf44ryzSg9S4pBVJaK5WqbRAdBWN8jeBd7HRgT6",
+    "block_timestamp": "1712745833101444322",
+    "block": {
+      "block_height": 116534634
+    },
+    "receipt_conversion_tokens_burnt": "243482556419200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addon",
+        "deposit": 0,
+        "fee": 828563441930800000000,
+        "args": "{\"handle\": \"zero-knowledge\", \"community_addon\": {\"id\": \"lv25d8\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"About\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Zero Knowledge (ZK) proof is a method for verifying a transaction without disclosing the details of the transaction. This technology has various use cases within blockchain, such as enhancing scalability and privacy.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis community brings together individuals, experts, and organizations who are interested in developing a ZK ecosystem on NEAR. Our vision is to drive the development of ZK technology and explore its potential applications.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Structure \\\\\\\\\\\\\\\\nThe Zero Knowledge community consists of two groups: the community group and the work group working group. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Group\\\\\\\\\\\\\\\\nThis informal self-organized group provides a space for anyone interested in Zero Knowledge and its applications. While this group does not make official decisions, it offers a great opportunity to meet with others to share ideas and submit proposals. This group is not controlled by anyone but the people who are organizing it. The group has a dedicated Telegram channel as well as regular monthly calls.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Working Group\\\\\\\\\\\\\\\\nThis formal group is a selected committee of subject matter experts who make official decisions on proposals and questions related to Zero Knowledge on NEAR. They follow a strict process to review proposals, recommend funding to DAO, and hold grant takers accountable. They also engage with the broader community to understand their needs and encourage ideation.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Members**\\\\\\\\\\\\\\\\n- Anton Yezhov (@yezhov.near)\\\\\\\\\\\\\\\\n- Garvit Goel (@garvit_electron.near)\\\\\\\\\\\\\\\\n- Igor Gulamov (@igorgulamov.near)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Communication Channels \\\\\\\\\\\\\\\\nThe ZK community communicates through the [ZK Telegram group](https://t.me/NearZeroKnowledge).\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe community also community calls that take place every two months, the recordings can be found [here](https://www.youtube.com/playlist?list=PLrLLmjcJVAB9H6Jhm33S7nhwSadQplbGD). These calls give the community a chance to discuss current topics, discuss proposals and share what they have been working on. If you have a topic suggestion please reach out on Telegram.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nOur next community call is taking place on  **Wednesday the 23rd of April at 17:00 UTC**.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## How to get involved \\\\\\\\\\\\\\\\nThe best way to get involved is to join the discussion happening on our Telegram and our community calls. If you would like to contribute to an ZK project within the ecosystem check out the [Projects](https://near.social/devhub.near/widget/app?page=community&handle=zero-knowledge&tab=Projects) tab  If you have an idea or solution for enhancing ZK on NEAR please see the [Proposals](https://near.social/devhub.near/widget/app?page=community&handle=zero-knowledge&tab=Proposals) tab.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Resources\\\\\\\\\\\\\\\\nTo be completed.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you have an idea to improve this page or spot an error please fill in this [Google form](https://forms.gle/whyTeNXBWUYJAnpn7).\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"center\\\\\\\\\\\\\\\"}\", \"display_name\": \"About\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.9532930299588e+21
+    }
+  },
+  {
+    "id": "3736635760",
+    "receipt_id": "2jyngwda8Mm5MLTyNTn5XmKoDjP4waZvNrtCocS3X3b6",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6Gz49nFB24Wev8imZbW79uvwDZgNpcLGNnj7SEDc8P2G",
+      "block_height": 116534642,
+      "block_timestamp": 1712745843087614000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 18812470316088,
+      "tokens_burnt": 1.8812470316088e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "BHnbe3bve7hm9MicMFC12ETFg8AgHJVDKuVxFDBFsgZv",
+    "included_in_block_hash": "HYpB4Bf44ryzSg9S4pBVJaK5WqbRAdBWN8jeBd7HRgT6",
+    "block_timestamp": "1712745833101444322",
+    "block": {
+      "block_height": 116534634
+    },
+    "receipt_conversion_tokens_burnt": "243482556419200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.8812470316088e+21,
+        "args": "{\"data\": {\"zero-knowledge.community.devhub.near\": {\"profile\": {\"name\": \"Zero Knowledge\", \"tags\": {\"community\": \"\", \"announcements\": \"\", \"zero-knowledge\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreiaac3oa4kuwtq4k37toegyrvac4u4sowegowlioagxhq46pvmw2wy\"}, \"linktree\": {\"github\": null, \"twitter\": \"\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=zero-knowledge\", \"telegram\": \"NearZeroKnowledge\"}, \"description\": \"A community dedicated to bringing together individuals, experts, and organizations who are interested in developing a ZK ecosystem on NEAR.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=zero-knowledge).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreif7na5ljwgs3gwmqlbdbvruunorufwkev6iq2blntp4dltgfzzyci\"}}}, \"discussions.zero-knowledge.community.devhub.near\": {\"profile\": {\"name\": \"Zero Knowledge (Community Discussions)\", \"tags\": {\"community\": \"\", \"discussions\": \"\", \"zero-knowledge\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreiaac3oa4kuwtq4k37toegyrvac4u4sowegowlioagxhq46pvmw2wy\"}, \"linktree\": {\"github\": null, \"twitter\": \"\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=zero-knowledge\", \"telegram\": \"NearZeroKnowledge\"}, \"description\": \"Building a Zero Knowledge ecosystem on NEAR.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=zero-knowledge).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreif7na5ljwgs3gwmqlbdbvruunorufwkev6iq2blntp4dltgfzzyci\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.9532930299588e+21
+    }
+  },
+  {
+    "id": "3736751917",
+    "receipt_id": "9cZU3GnKYEdyfSbcbu1jQiyNfdcT5cv75srP2Wo78YAR",
+    "predecessor_account_id": "pivortex.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Ak8V6syTyLSsDE1pjphDD1zebE9ayYDdr1q3Pa4LL8jb",
+      "block_height": 116534979,
+      "block_timestamp": 1712746219524095200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8281294632898,
+      "tokens_burnt": 828129463289800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "7NA4D9rvXtGqZMPDgYbVqb5sGk4B7mH435W4tGoG6cKh",
+    "included_in_block_hash": "AeFuKYRgUePVYjAXJrcr3CpjN5kn1Eib4rXZSSuveKkf",
+    "block_timestamp": "1712746218490677059",
+    "block": {
+      "block_height": 116534978
+    },
+    "receipt_conversion_tokens_burnt": "243557013021400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addon",
+        "deposit": 0,
+        "fee": 828129463289800000000,
+        "args": "{\"handle\": \"zero-knowledge\", \"community_addon\": {\"id\": \"lv25d8\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"About\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Zero Knowledge (ZK) proof is a method for verifying a transaction without disclosing the details of the transaction. This technology has various use cases within blockchain, such as enhancing scalability and privacy.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis community brings together individuals, experts, and organizations who are interested in developing a ZK ecosystem on NEAR. Our vision is to drive the development of ZK technology and explore its potential applications.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Structure \\\\\\\\\\\\\\\\nThe Zero Knowledge community consists of two groups: the community group and the work group working group. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Community Group\\\\\\\\\\\\\\\\nThis informal self-organized group provides a space for anyone interested in Zero Knowledge and its applications. While this group does not make official decisions, it offers a great opportunity to meet with others to share ideas and submit proposals. This group is not controlled by anyone but the people who are organizing it. The group has a dedicated Telegram channel as well as regular calls every two months.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Working Group\\\\\\\\\\\\\\\\nThis formal group is a selected committee of subject matter experts who make official decisions on proposals and questions related to Zero Knowledge on NEAR. They follow a strict process to review proposals, recommend funding to DAO, and hold grant takers accountable. They also engage with the broader community to understand their needs and encourage ideation.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Members**\\\\\\\\\\\\\\\\n- Anton Yezhov (@yezhov.near)\\\\\\\\\\\\\\\\n- Garvit Goel (@garvit_electron.near)\\\\\\\\\\\\\\\\n- Igor Gulamov (@igorgulamov.near)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Communication Channels \\\\\\\\\\\\\\\\nThe ZK community communicates through the [ZK Telegram group](https://t.me/NearZeroKnowledge).\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe community also community calls that take place every two months, the recordings can be found [here](https://www.youtube.com/playlist?list=PLrLLmjcJVAB9H6Jhm33S7nhwSadQplbGD). These calls give the community a chance to discuss current topics, discuss proposals and share what they have been working on. If you have a topic suggestion please reach out on Telegram.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nOur next community call is taking place on  **Wednesday the 23rd of April at 17:00 UTC**.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## How to get involved \\\\\\\\\\\\\\\\nThe best way to get involved is to join the discussion happening in our Telegram and community calls. If you would like to contribute to an ZK project within the ecosystem check out the [Projects](https://near.social/devhub.near/widget/app?page=community&handle=zero-knowledge&tab=Projects) tab  If you have an idea or solution for enhancing ZK on NEAR please see the [Proposals](https://near.social/devhub.near/widget/app?page=community&handle=zero-knowledge&tab=Proposals) tab.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Resources\\\\\\\\\\\\\\\\n- [Telegram group](https://t.me/NearZeroKnowledge)\\\\\\\\\\\\\\\\n- [Community call recordings](https://www.youtube.com/playlist?list=PLrLLmjcJVAB9H6Jhm33S7nhwSadQplbGD)\\\\\\\\\\\\\\\\n- [Groth16 verifier](https://crates.io/crates/near_groth16_verifier)\\\\\\\\\\\\\\\\n- [Plonk verifier](https://github.com/opact-protocol/tickets/tree/main/packages/contract-libraries/plonk_verifier)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n&nbsp;\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you have an idea to improve this page or spot an error please fill in this [Google form](https://forms.gle/whyTeNXBWUYJAnpn7).\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"center\\\\\\\\\\\\\\\"}\", \"display_name\": \"About\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.9556978991052e+21
+    }
+  }
+]

@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "8835789207",
+    "receipt_id": "9CNBZ8no6wFWxMqomVsagiPbw6vF9ZHvCZNRHEFiWbHh",
+    "predecessor_account_id": "linext.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FJApY6yGzW7QFdG2hTdQuCKzdmdVNUcWyxsTXX7dBRkY",
+      "block_height": 129349313,
+      "block_timestamp": 1727825313568088600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5355523738570,
+      "tokens_burnt": 535552373857000000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "J6Niv9eFyZZwM8pBCGMwFyMzmwytQT7NMcsk84zrZ1ny",
+    "included_in_block_hash": "8jXgK9uTGqvaQC62QFkHnMZHHBxB5GmCjRPoPa1i755C",
+    "block_timestamp": "1727825312489870729",
+    "block": {
+      "block_height": 129349312
+    },
+    "receipt_conversion_tokens_burnt": "41620616562000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 535552373857000000000,
+        "args": "{\"body\": {\"name\": \"Travel Stipend for Lin participating in the IRL [REDACTED] Hackathon \", \"summary\": \"I am Lin, an experienced developer from Italy, I\\\\\\\\\\\\'m seeking a travel stipend to attend the [REDACTED] hackathon in Bangkok. With a proven track record in NEAR and ETHGlobal hackathons, I aim to contribute innovative projects to the NEAR ecosystem.\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": null, \"description\": \"Im applying for the overseas travel stipend of up to 1000 to attend the [REDACTED] hackathon in Bangkok, Thailand. As a developer based in the north of Italy, this support is crucial for my participation.\\\\\\\\n\\\\\\\\nTrack Record\\\\\\\\n\\\\\\\\nI built Near Journey, an interactive web-based learning platform to onboard near devs for NEAR MetaBUILD III Hackathon\\\\\\\\nhttps://devpost.com/software/near-journey\\\\\\\\n\\\\\\\\nfriend.tech on BOS for encode Near Hackathon\\\\\\\\nhttps://github.com/aeither/friendtech-on-bos\\\\\\\\n\\\\\\\\nTravel Details\\\\\\\\n\\\\\\\\nDeparture: Milan, Italy\\\\\\\\nDestination: Bangkok, Thailand\\\\\\\\n\\\\\\\\nEstimated Costs:\\\\\\\\n\\\\\\\\nFlight: 650\\\\\\\\nFood: 120\\\\\\\\nLocal transportation: 80\\\\\\\\nTotal: 850\\\\\\\\nTimeline and Commitments\\\\\\\\n\\\\\\\\nDevelop and submit an eligible project\\\\\\\\nUpdate this proposal with Devpost submission URL\\\\\\\\nAttend the IRL event in person\\\\\\\\nFund Utilization\\\\\\\\n\\\\\\\\nThe stipend will directly cover travel expenses, ensuring my ability to attend and contribute to the hackathon. Any remaining funds will be used for accommodation or additional development resources.\\\\\\\\n\\\\\\\\nBenefits to NEAR Community\\\\\\\\n\\\\\\\\nMy participation will bring my years of perspective and expertise to the hackathon, fostering collaboration and innovative project development within the NEAR ecosystem. Im committed to knowledge sharing and networking, which will benefit both the local and global NEAR developer communities.\\\\\\\\n\\\\\\\\nIm excited about this opportunity to contribute to NEARs growth and look forward to the committees consideration.\", \"linked_proposals\": [], \"receiver_account\": \"linext.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"850\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Travel expenses\"], \"accepted_terms_and_conditions_version\": 129349211}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6931099921479e+21
+    }
+  },
+  {
+    "id": "8835789387",
+    "receipt_id": "GFeKHKAKkpGLq3SvgSeYzpt61djGxevC1fgPnym4KWtt",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7PoVyEEonzVKBbknUnooBBZEmdDFKmFotyR9Bb3g4NvZ",
+      "block_height": 129349314,
+      "block_timestamp": 1727825314670154000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4578871753358,
+      "tokens_burnt": 457887175335800000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "J6Niv9eFyZZwM8pBCGMwFyMzmwytQT7NMcsk84zrZ1ny",
+    "included_in_block_hash": "8jXgK9uTGqvaQC62QFkHnMZHHBxB5GmCjRPoPa1i755C",
+    "block_timestamp": "1727825312489870729",
+    "block": {
+      "block_height": 129349312
+    },
+    "receipt_conversion_tokens_burnt": "41620616562000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 457887175335800000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Bounty* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @linext.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Travel Stipend for Lin participating in the IRL [REDACTED] Hackathon \\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nI am Lin, an experienced developer from Italy, I\\\\\\\\\\\\'m seeking a travel stipend to attend the [REDACTED] hackathon in Bangkok. With a proven track record in NEAR and ETHGlobal hackathons, I aim to contribute innovative projects to the NEAR ecosystem.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/events-committee.near/widget/app?page=proposal&id=53)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6931099921479e+21
+    }
+  },
+  {
+    "id": "8835789392",
+    "receipt_id": "CbrFoYcojGUGrJ1omBHNGDmAKBz5TZGFDmaM2WNuoNQQ",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7PoVyEEonzVKBbknUnooBBZEmdDFKmFotyR9Bb3g4NvZ",
+      "block_height": 129349314,
+      "block_timestamp": 1727825314670154000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3049861302388,
+      "tokens_burnt": 304986130238800000000,
+      "executor_account_id": "events-committee.near",
+      "status": false
+    },
+    "transaction_hash": "J6Niv9eFyZZwM8pBCGMwFyMzmwytQT7NMcsk84zrZ1ny",
+    "included_in_block_hash": "8jXgK9uTGqvaQC62QFkHnMZHHBxB5GmCjRPoPa1i755C",
+    "block_timestamp": "1727825312489870729",
+    "block": {
+      "block_height": 129349312
+    },
+    "receipt_conversion_tokens_burnt": "41620616562000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 304986130238800000000,
+        "args": "{\"proposal\": {\"id\": 53, \"snapshot\": {\"name\": \"Travel Stipend for Lin participating in the IRL [REDACTED] Hackathon \", \"labels\": [\"Travel expenses\"], \"summary\": \"I am Lin, an experienced developer from Italy, I\\\\\\\\\\\\'m seeking a travel stipend to attend the [REDACTED] hackathon in Bangkok. With a proven track record in NEAR and ETHGlobal hackathons, I aim to contribute innovative projects to the NEAR ecosystem.\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"editor_id\": \"linext.near\", \"timestamp\": \"1727825313568088461\", \"supervisor\": null, \"description\": \"Im applying for the overseas travel stipend of up to 1000 to attend the [REDACTED] hackathon in Bangkok, Thailand. As a developer based in the north of Italy, this support is crucial for my participation.\\\\\\\\n\\\\\\\\nTrack Record\\\\\\\\n\\\\\\\\nI built Near Journey, an interactive web-based learning platform to onboard near devs for NEAR MetaBUILD III Hackathon\\\\\\\\nhttps://devpost.com/software/near-journey\\\\\\\\n\\\\\\\\nfriend.tech on BOS for encode Near Hackathon\\\\\\\\nhttps://github.com/aeither/friendtech-on-bos\\\\\\\\n\\\\\\\\nTravel Details\\\\\\\\n\\\\\\\\nDeparture: Milan, Italy\\\\\\\\nDestination: Bangkok, Thailand\\\\\\\\n\\\\\\\\nEstimated Costs:\\\\\\\\n\\\\\\\\nFlight: 650\\\\\\\\nFood: 120\\\\\\\\nLocal transportation: 80\\\\\\\\nTotal: 850\\\\\\\\nTimeline and Commitments\\\\\\\\n\\\\\\\\nDevelop and submit an eligible project\\\\\\\\nUpdate this proposal with Devpost submission URL\\\\\\\\nAttend the IRL event in person\\\\\\\\nFund Utilization\\\\\\\\n\\\\\\\\nThe stipend will directly cover travel expenses, ensuring my ability to attend and contribute to the hackathon. Any remaining funds will be used for accommodation or additional development resources.\\\\\\\\n\\\\\\\\nBenefits to NEAR Community\\\\\\\\n\\\\\\\\nMy participation will bring my years of perspective and expertise to the hackathon, fostering collaboration and innovative project development within the NEAR ecosystem. Im committed to knowledge sharing and networking, which will benefit both the local and global NEAR developer communities.\\\\\\\\n\\\\\\\\nIm excited about this opportunity to contribute to NEARs growth and look forward to the committees consideration.\", \"linked_proposals\": [], \"receiver_account\": \"linext.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"850\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"linext.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6931099921479e+21
+    }
+  },
+  {
+    "id": "8835789396",
+    "receipt_id": "FyRUeN9VrLa63UZgQmgwmVyHyQ8fk7wj8CkvcjMXovwr",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7PoVyEEonzVKBbknUnooBBZEmdDFKmFotyR9Bb3g4NvZ",
+      "block_height": 129349314,
+      "block_timestamp": 1727825314670154000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3530636961543,
+      "tokens_burnt": 353063696154300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "J6Niv9eFyZZwM8pBCGMwFyMzmwytQT7NMcsk84zrZ1ny",
+    "included_in_block_hash": "8jXgK9uTGqvaQC62QFkHnMZHHBxB5GmCjRPoPa1i755C",
+    "block_timestamp": "1727825312489870729",
+    "block": {
+      "block_height": 129349312
+    },
+    "receipt_conversion_tokens_burnt": "41620616562000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353063696154300000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":53,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"linext.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6931099921479e+21
+    }
+  },
+  {
+    "id": "8835907312",
+    "receipt_id": "7po97hHREXea3U5nmtkDRCQDefvmBXajw6kGWprtqhDv",
+    "predecessor_account_id": "linext2.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "C2fVF8Lw6ji3YceoXdfrUBm7WLXQuUrVtRzC4X3qUUwo",
+      "block_height": 129349657,
+      "block_timestamp": 1727825690490347000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5595977771040,
+      "tokens_burnt": 559597777104000000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "23Nh7M6UnF5dJ2wVLvzabUesgYzPizzTn921tuP4RoL6",
+    "included_in_block_hash": "38ztwvVm3SNJ3YCHmnzbx6WBkn1ycXHSQ5RL9yNVCk8q",
+    "block_timestamp": "1727825689386658149",
+    "block": {
+      "block_height": 129349656
+    },
+    "receipt_conversion_tokens_burnt": "41701678877500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 559597777104000000000,
+        "args": "{\"body\": {\"name\": \"Travel Stipend for Lin participating in the IRL [REDACTED] Hackathon\", \"summary\": \"I am Lin, an experienced developer from Italy, I\\\\\\\\\\\\'m seeking a travel stipend to attend the [REDACTED] hackathon in Bangkok. With a proven track record in NEAR and ETHGlobal hackathons, I aim to contribute innovative projects to the NEAR ecosystem.\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": null, \"description\": \"Im applying for the overseas travel stipend of up to 1000 to attend the [REDACTED] hackathon in Bangkok, Thailand. As a developer based in the north of Italy, this support is crucial for my participation.\\\\\\\\n\\\\\\\\nTrack Record\\\\\\\\n\\\\\\\\nI built Near Journey, an interactive web-based learning platform to onboard near devs for NEAR MetaBUILD III Hackathon\\\\\\\\nhttps://devpost.com/software/near-journey\\\\\\\\n\\\\\\\\nfriend.tech on BOS for encode Near Hackathon\\\\\\\\nhttps://github.com/aeither/friendtech-on-bos\\\\\\\\n\\\\\\\\nTravel Details\\\\\\\\n\\\\\\\\nDeparture: Milan, Italy\\\\\\\\nDestination: Bangkok, Thailand\\\\\\\\n\\\\\\\\nEstimated Costs:\\\\\\\\n\\\\\\\\nFlight: 650\\\\\\\\nFood: 120\\\\\\\\nLocal transportation: 80\\\\\\\\nTotal: 850\\\\\\\\nTimeline and Commitments\\\\\\\\n\\\\\\\\nDevelop and submit an eligible project\\\\\\\\nUpdate this proposal with Devpost submission URL\\\\\\\\nAttend the IRL event in person\\\\\\\\nFund Utilization\\\\\\\\n\\\\\\\\nThe stipend will directly cover travel expenses, ensuring my ability to attend and contribute to the hackathon. Any remaining funds will be used for accommodation or additional development resources.\\\\\\\\n\\\\\\\\nBenefits to NEAR Community\\\\\\\\n\\\\\\\\nMy participation will bring my years of perspective and expertise to the hackathon, fostering collaboration and innovative project development within the NEAR ecosystem. Im committed to knowledge sharing and networking, which will benefit both the local and global NEAR developer communities.\\\\\\\\n\\\\\\\\nIm excited about this opportunity to contribute to NEARs growth and look forward to the committees consideration.\", \"linked_proposals\": [], \"receiver_account\": \"linext.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"850\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Travel expenses\", \"Travel expenses\"], \"accepted_terms_and_conditions_version\": 129349575}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7189737521378e+21
+    }
+  },
+  {
+    "id": "8835907750",
+    "receipt_id": "Bdbro2uyYiaenM26tzXzPzLkkdtSMgmMEVwDZeJpyLf5",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5XxQe4Y5npRG4rE3x2XkcFdE9E4pvwz5qjzvZU1yg3yG",
+      "block_height": 129349658,
+      "block_timestamp": 1727825691598788400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4578975246794,
+      "tokens_burnt": 457897524679400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "23Nh7M6UnF5dJ2wVLvzabUesgYzPizzTn921tuP4RoL6",
+    "included_in_block_hash": "38ztwvVm3SNJ3YCHmnzbx6WBkn1ycXHSQ5RL9yNVCk8q",
+    "block_timestamp": "1727825689386658149",
+    "block": {
+      "block_height": 129349656
+    },
+    "receipt_conversion_tokens_burnt": "41701678877500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 457897524679400000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Bounty* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @linext2.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Travel Stipend for Lin participating in the IRL [REDACTED] Hackathon\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nI am Lin, an experienced developer from Italy, I\\\\\\\\\\\\'m seeking a travel stipend to attend the [REDACTED] hackathon in Bangkok. With a proven track record in NEAR and ETHGlobal hackathons, I aim to contribute innovative projects to the NEAR ecosystem.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/events-committee.near/widget/app?page=proposal&id=53)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7189737521378e+21
+    }
+  },
+  {
+    "id": "8835907753",
+    "receipt_id": "Gmnod6KBfSvSrwAPczJGyRPdU2CKHsFbMqa1Yrwy9Lms",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5XxQe4Y5npRG4rE3x2XkcFdE9E4pvwz5qjzvZU1yg3yG",
+      "block_height": 129349658,
+      "block_timestamp": 1727825691598788400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3067040999186,
+      "tokens_burnt": 306704099918600000000,
+      "executor_account_id": "events-committee.near",
+      "status": false
+    },
+    "transaction_hash": "23Nh7M6UnF5dJ2wVLvzabUesgYzPizzTn921tuP4RoL6",
+    "included_in_block_hash": "38ztwvVm3SNJ3YCHmnzbx6WBkn1ycXHSQ5RL9yNVCk8q",
+    "block_timestamp": "1727825689386658149",
+    "block": {
+      "block_height": 129349656
+    },
+    "receipt_conversion_tokens_burnt": "41701678877500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 306704099918600000000,
+        "args": "{\"proposal\": {\"id\": 53, \"snapshot\": {\"name\": \"Travel Stipend for Lin participating in the IRL [REDACTED] Hackathon\", \"labels\": [\"Travel expenses\"], \"summary\": \"I am Lin, an experienced developer from Italy, I\\\\\\\\\\\\'m seeking a travel stipend to attend the [REDACTED] hackathon in Bangkok. With a proven track record in NEAR and ETHGlobal hackathons, I aim to contribute innovative projects to the NEAR ecosystem.\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"editor_id\": \"linext2.near\", \"timestamp\": \"1727825690490346966\", \"supervisor\": null, \"description\": \"Im applying for the overseas travel stipend of up to 1000 to attend the [REDACTED] hackathon in Bangkok, Thailand. As a developer based in the north of Italy, this support is crucial for my participation.\\\\\\\\n\\\\\\\\nTrack Record\\\\\\\\n\\\\\\\\nI built Near Journey, an interactive web-based learning platform to onboard near devs for NEAR MetaBUILD III Hackathon\\\\\\\\nhttps://devpost.com/software/near-journey\\\\\\\\n\\\\\\\\nfriend.tech on BOS for encode Near Hackathon\\\\\\\\nhttps://github.com/aeither/friendtech-on-bos\\\\\\\\n\\\\\\\\nTravel Details\\\\\\\\n\\\\\\\\nDeparture: Milan, Italy\\\\\\\\nDestination: Bangkok, Thailand\\\\\\\\n\\\\\\\\nEstimated Costs:\\\\\\\\n\\\\\\\\nFlight: 650\\\\\\\\nFood: 120\\\\\\\\nLocal transportation: 80\\\\\\\\nTotal: 850\\\\\\\\nTimeline and Commitments\\\\\\\\n\\\\\\\\nDevelop and submit an eligible project\\\\\\\\nUpdate this proposal with Devpost submission URL\\\\\\\\nAttend the IRL event in person\\\\\\\\nFund Utilization\\\\\\\\n\\\\\\\\nThe stipend will directly cover travel expenses, ensuring my ability to attend and contribute to the hackathon. Any remaining funds will be used for accommodation or additional development resources.\\\\\\\\n\\\\\\\\nBenefits to NEAR Community\\\\\\\\n\\\\\\\\nMy participation will bring my years of perspective and expertise to the hackathon, fostering collaboration and innovative project development within the NEAR ecosystem. Im committed to knowledge sharing and networking, which will benefit both the local and global NEAR developer communities.\\\\\\\\n\\\\\\\\nIm excited about this opportunity to contribute to NEARs growth and look forward to the committees consideration.\", \"linked_proposals\": [], \"receiver_account\": \"linext.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"850\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"linext2.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7189737521378e+21
+    }
+  },
+  {
+    "id": "8835907758",
+    "receipt_id": "A4PdNJvtw7KofGrPAT9snhnC5YZBR1jffppi8hmYq47g",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5XxQe4Y5npRG4rE3x2XkcFdE9E4pvwz5qjzvZU1yg3yG",
+      "block_height": 129349658,
+      "block_timestamp": 1727825691598788400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3530726715583,
+      "tokens_burnt": 353072671558300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "23Nh7M6UnF5dJ2wVLvzabUesgYzPizzTn921tuP4RoL6",
+    "included_in_block_hash": "38ztwvVm3SNJ3YCHmnzbx6WBkn1ycXHSQ5RL9yNVCk8q",
+    "block_timestamp": "1727825689386658149",
+    "block": {
+      "block_height": 129349656
+    },
+    "receipt_conversion_tokens_burnt": "41701678877500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353072671558300000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":53,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"linext2.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7189737521378e+21
+    }
+  },
+  {
+    "id": "8842372020",
+    "receipt_id": "9tytWoQYkeKt8GfLbjyPnEkaeNtC9v9WLY3cB3eJ4Xa9",
+    "predecessor_account_id": "prakharojha.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "H1AfHKS7xYZ8fo3C3KR63H41csZuiFybU7sLCRva9cjm",
+      "block_height": 129368383,
+      "block_timestamp": 1727846607332604200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5553279298718,
+      "tokens_burnt": 555327929871800000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "5nqXBBMRSDEhhX6mfLwmzSuB4hVnP7R5qNv3Ey5UHRVG",
+    "included_in_block_hash": "9FZ13CkDrn8J1nsrZZefg1Cduxo6MmYdWdXUPzhJ1mms",
+    "block_timestamp": "1727846606392456803",
+    "block": {
+      "block_height": 129368382
+    },
+    "receipt_conversion_tokens_burnt": "41577701218500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 555327929871800000000,
+        "args": "{\"body\": {\"name\": \"Travel Stipend [REDACTED] hackathon - Bangkok, Nov 9 - 11\", \"summary\": \"Hey Everyone! I recently graduated from college and am looking to create something valuable that can generate revenue and give back to the community. I\\\\\\\\\\\\'ve been familiar with the Near ecosystem for more than a year, I also had a chance to attend Nearcon in Lisbon but my visa got rejected. I have a passion for web3 and would love to build things in the ecosystem and ship them.\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"## Purpose of stipend\\\\\\\\nI wanted to apply for the travel stipend to support my expenses for the Near Redacted Hackathon and attend it IRL. I\\\\\\\\\\\\'d love to interact with the team and find out more about Near\\\\\\\\\\\\'s goal through in person events.\\\\\\\\n\\\\\\\\n## My Records\\\\\\\\nSo I\\\\\\\\\\\\'ve been a active hacker in the hackathons space as well as I\\\\\\\\\\\\'ve worked as a Full Stack Developer previously.\\\\\\\\n1. https://devpost.com/software/medibridge-7ky93d Here\\\\\\\\\\\\'s the project that I built for the Near Horizon X MLH Hackathon and won the first prize. \\\\\\\\n2. I\\\\\\\\\\\\'ve been part of the MLH Fellowship where we further developed the product but due to legal issues and no validation from the surroundings we had to drop the project.\\\\\\\\n3. I participated in ETHSingapore and built DeReal https://ethglobal.com/showcase/dereal-b9tsg, I scored the chainlink bounty for this.\\\\\\\\n\\\\\\\\n## Travel Itinerary:\\\\\\\\nFlights back and forth from Lucknow, India to Bangkok (8th flying from Lucknow - 17th Night traveling back)\\\\\\\\n\\\\\\\\n## Project Plan\\\\\\\\n\\\\\\\\nI want to extend DeReal\\\\\\\\\\\\'s functionality and built a proper Social Media application on Near. \\\\\\\\nAnd extension to this would be introducing more Privacy, and incentivizing the User through rewards for their data(Likes, hashtags). \\\\\\\\n\\\\\\\\nThank you for considering my application, I hope this gets the approval and I can actually attend Redacted and be part of User-Owned Future.\\\\\\\\n\\\\\\\\nHoping to meet the team,\\\\\\\\nPrakhar Ojha.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"prakharojha.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"800\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": [\"Travel expenses\"], \"accepted_terms_and_conditions_version\": 129368341}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.721103370545e+21
+    }
+  },
+  {
+    "id": "8842372163",
+    "receipt_id": "9MaeyromdcvQx3Z23pij4RWgmYMSimSQcNWHpnFx93ck",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9yu9HG52xW2HiWM6PdZdqJajdi6YgLpovzynYv1DLTZV",
+      "block_height": 129368384,
+      "block_timestamp": 1727846608277111600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4589735330310,
+      "tokens_burnt": 458973533031000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5nqXBBMRSDEhhX6mfLwmzSuB4hVnP7R5qNv3Ey5UHRVG",
+    "included_in_block_hash": "9FZ13CkDrn8J1nsrZZefg1Cduxo6MmYdWdXUPzhJ1mms",
+    "block_timestamp": "1727846606392456803",
+    "block": {
+      "block_height": 129368382
+    },
+    "receipt_conversion_tokens_burnt": "41577701218500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 458973533031000000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Bounty* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @prakharojha.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Travel Stipend [REDACTED] hackathon - Bangkok, Nov 9 - 11\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nHey Everyone! I recently graduated from college and am looking to create something valuable that can generate revenue and give back to the community. I\\\\\\\\\\\\'ve been familiar with the Near ecosystem for more than a year, I also had a chance to attend Nearcon in Lisbon but my visa got rejected. I have a passion for web3 and would love to build things in the ecosystem and ship them.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/events-committee.near/widget/app?page=proposal&id=53)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.721103370545e+21
+    }
+  },
+  {
+    "id": "8842372167",
+    "receipt_id": "DyP9DYaXBY8LuKHKoenLNp8TBKuGL55J7jzXwcGDC2vg",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9yu9HG52xW2HiWM6PdZdqJajdi6YgLpovzynYv1DLTZV",
+      "block_height": 129368384,
+      "block_timestamp": 1727846608277111600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3065908035842,
+      "tokens_burnt": 306590803584200000000,
+      "executor_account_id": "events-committee.near",
+      "status": false
+    },
+    "transaction_hash": "5nqXBBMRSDEhhX6mfLwmzSuB4hVnP7R5qNv3Ey5UHRVG",
+    "included_in_block_hash": "9FZ13CkDrn8J1nsrZZefg1Cduxo6MmYdWdXUPzhJ1mms",
+    "block_timestamp": "1727846606392456803",
+    "block": {
+      "block_height": 129368382
+    },
+    "receipt_conversion_tokens_burnt": "41577701218500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 306590803584200000000,
+        "args": "{\"proposal\": {\"id\": 53, \"snapshot\": {\"name\": \"Travel Stipend [REDACTED] hackathon - Bangkok, Nov 9 - 11\", \"labels\": [\"Travel expenses\"], \"summary\": \"Hey Everyone! I recently graduated from college and am looking to create something valuable that can generate revenue and give back to the community. I\\\\\\\\\\\\'ve been familiar with the Near ecosystem for more than a year, I also had a chance to attend Nearcon in Lisbon but my visa got rejected. I have a passion for web3 and would love to build things in the ecosystem and ship them.\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"prakharojha.near\", \"timestamp\": \"1727846607332604232\", \"supervisor\": null, \"description\": \"## Purpose of stipend\\\\\\\\nI wanted to apply for the travel stipend to support my expenses for the Near Redacted Hackathon and attend it IRL. I\\\\\\\\\\\\'d love to interact with the team and find out more about Near\\\\\\\\\\\\'s goal through in person events.\\\\\\\\n\\\\\\\\n## My Records\\\\\\\\nSo I\\\\\\\\\\\\'ve been a active hacker in the hackathons space as well as I\\\\\\\\\\\\'ve worked as a Full Stack Developer previously.\\\\\\\\n1. https://devpost.com/software/medibridge-7ky93d Here\\\\\\\\\\\\'s the project that I built for the Near Horizon X MLH Hackathon and won the first prize. \\\\\\\\n2. I\\\\\\\\\\\\'ve been part of the MLH Fellowship where we further developed the product but due to legal issues and no validation from the surroundings we had to drop the project.\\\\\\\\n3. I participated in ETHSingapore and built DeReal https://ethglobal.com/showcase/dereal-b9tsg, I scored the chainlink bounty for this.\\\\\\\\n\\\\\\\\n## Travel Itinerary:\\\\\\\\nFlights back and forth from Lucknow, India to Bangkok (8th flying from Lucknow - 17th Night traveling back)\\\\\\\\n\\\\\\\\n## Project Plan\\\\\\\\n\\\\\\\\nI want to extend DeReal\\\\\\\\\\\\'s functionality and built a proper Social Media application on Near. \\\\\\\\nAnd extension to this would be introducing more Privacy, and incentivizing the User through rewards for their data(Likes, hashtags). \\\\\\\\n\\\\\\\\nThank you for considering my application, I hope this gets the approval and I can actually attend Redacted and be part of User-Owned Future.\\\\\\\\n\\\\\\\\nHoping to meet the team,\\\\\\\\nPrakhar Ojha.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"prakharojha.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"800\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"author_id\": \"prakharojha.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.721103370545e+21
+    }
+  },
+  {
+    "id": "8842372170",
+    "receipt_id": "DwEBEqNkrqN4HErHmeKvkyH4FZWw4Ej9Mf8foDqHL79d",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9yu9HG52xW2HiWM6PdZdqJajdi6YgLpovzynYv1DLTZV",
+      "block_height": 129368384,
+      "block_timestamp": 1727846608277111600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3586334028395,
+      "tokens_burnt": 358633402839500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5nqXBBMRSDEhhX6mfLwmzSuB4hVnP7R5qNv3Ey5UHRVG",
+    "included_in_block_hash": "9FZ13CkDrn8J1nsrZZefg1Cduxo6MmYdWdXUPzhJ1mms",
+    "block_timestamp": "1727846606392456803",
+    "block": {
+      "block_height": 129368382
+    },
+    "receipt_conversion_tokens_burnt": "41577701218500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 358633402839500000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":53,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"prakharojha.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.721103370545e+21
+    }
+  },
+  {
+    "id": "8842384472",
+    "receipt_id": "Aj1XxmFhk8768ufPepoyiYRy7V63nR9pN7ayVwWrhBY7",
+    "predecessor_account_id": "prakharojha.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7NDLhmEoq6Sm3CkbA3Si1NC9R5pXL9w4EpsMcYcg5Q3m",
+      "block_height": 129368402,
+      "block_timestamp": 1727846627788281000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5349617843279,
+      "tokens_burnt": 534961784327900000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "FjdcsZMWqk3GDFaEerMyHBQqbRAU5er7MnWmWjbtjxzK",
+    "included_in_block_hash": "EFuT2YNgx9VqiD4Rm8rPsFPFkiJLSFZZVRiecVvz2kyu",
+    "block_timestamp": "1727846626625932930",
+    "block": {
+      "block_height": 129368401
+    },
+    "receipt_conversion_tokens_burnt": "41577701218500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 534961784327900000000,
+        "args": "{\"body\": {\"name\": \"Travel Stipend [REDACTED] hackathon - Bangkok, Nov 9 - 11\", \"summary\": \"Hey Everyone! I recently graduated from college and am looking to create something valuable that can generate revenue and give back to the community. I\\\\\\\\\\\\'ve been familiar with the Near ecosystem for more than a year, I also had a chance to attend Nearcon in Lisbon but my visa got rejected. I have a passion for web3 and would love to build things in the ecosystem and ship them.\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"## Purpose of stipend\\\\\\\\nI wanted to apply for the travel stipend to support my expenses for the Near Redacted Hackathon and attend it IRL. I\\\\\\\\\\\\'d love to interact with the team and find out more about Near\\\\\\\\\\\\'s goal through in person events.\\\\\\\\n\\\\\\\\n## My Records\\\\\\\\nSo I\\\\\\\\\\\\'ve been a active hacker in the hackathons space as well as I\\\\\\\\\\\\'ve worked as a Full Stack Developer previously.\\\\\\\\n1. https://devpost.com/software/medibridge-7ky93d Here\\\\\\\\\\\\'s the project that I built for the Near Horizon X MLH Hackathon and won the first prize. \\\\\\\\n2. I\\\\\\\\\\\\'ve been part of the MLH Fellowship where we further developed the product but due to legal issues and no validation from the surroundings we had to drop the project.\\\\\\\\n3. I participated in ETHSingapore and built DeReal https://ethglobal.com/showcase/dereal-b9tsg, I scored the chainlink bounty for this.\\\\\\\\n\\\\\\\\n## Travel Itinerary:\\\\\\\\nFlights back and forth from Lucknow, India to Bangkok (8th flying from Lucknow - 17th Night traveling back)\\\\\\\\n\\\\\\\\n## Project Plan\\\\\\\\n\\\\\\\\nI want to extend DeReal\\\\\\\\\\\\'s functionality and built a proper Social Media application on Near. \\\\\\\\nAnd extension to this would be introducing more Privacy, and incentivizing the User through rewards for their data(Likes, hashtags). \\\\\\\\n\\\\\\\\nThank you for considering my application, I hope this gets the approval and I can actually attend Redacted and be part of User-Owned Future.\\\\\\\\n\\\\\\\\nHoping to meet the team,\\\\\\\\nPrakhar Ojha.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"prakharojha.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"800\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": [\"Travel expenses\"], \"accepted_terms_and_conditions_version\": 129368341}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6946816328501e+21
+    }
+  },
+  {
+    "id": "8842387409",
+    "receipt_id": "2DnSEPG6YCGvBMj59wC1Hyt2JgRUV9P5KVbnPUz2McFJ",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EBGBeJpeyiGvhNU9AwKzLXpw7VAyR4dbDZid3R7ro3Sj",
+      "block_height": 129368407,
+      "block_timestamp": 1727846633401118200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4598193065034,
+      "tokens_burnt": 459819306503400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "FjdcsZMWqk3GDFaEerMyHBQqbRAU5er7MnWmWjbtjxzK",
+    "included_in_block_hash": "EFuT2YNgx9VqiD4Rm8rPsFPFkiJLSFZZVRiecVvz2kyu",
+    "block_timestamp": "1727846626625932930",
+    "block": {
+      "block_height": 129368401
+    },
+    "receipt_conversion_tokens_burnt": "41577701218500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 459819306503400000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Bounty* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @prakharojha.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Travel Stipend [REDACTED] hackathon - Bangkok, Nov 9 - 11\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nHey Everyone! I recently graduated from college and am looking to create something valuable that can generate revenue and give back to the community. I\\\\\\\\\\\\'ve been familiar with the Near ecosystem for more than a year, I also had a chance to attend Nearcon in Lisbon but my visa got rejected. I have a passion for web3 and would love to build things in the ecosystem and ship them.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/events-committee.near/widget/app?page=proposal&id=53)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6946816328501e+21
+    }
+  },
+  {
+    "id": "8842387410",
+    "receipt_id": "HkQDnny7FK9wt39gPE9G5mwoKL9UYcy24ZKi6mKmRyV5",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EBGBeJpeyiGvhNU9AwKzLXpw7VAyR4dbDZid3R7ro3Sj",
+      "block_height": 129368407,
+      "block_timestamp": 1727846633401118200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3052086079916,
+      "tokens_burnt": 305208607991600000000,
+      "executor_account_id": "events-committee.near",
+      "status": false
+    },
+    "transaction_hash": "FjdcsZMWqk3GDFaEerMyHBQqbRAU5er7MnWmWjbtjxzK",
+    "included_in_block_hash": "EFuT2YNgx9VqiD4Rm8rPsFPFkiJLSFZZVRiecVvz2kyu",
+    "block_timestamp": "1727846626625932930",
+    "block": {
+      "block_height": 129368401
+    },
+    "receipt_conversion_tokens_burnt": "41577701218500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 305208607991600000000,
+        "args": "{\"proposal\": {\"id\": 53, \"snapshot\": {\"name\": \"Travel Stipend [REDACTED] hackathon - Bangkok, Nov 9 - 11\", \"labels\": [\"Travel expenses\"], \"summary\": \"Hey Everyone! I recently graduated from college and am looking to create something valuable that can generate revenue and give back to the community. I\\\\\\\\\\\\'ve been familiar with the Near ecosystem for more than a year, I also had a chance to attend Nearcon in Lisbon but my visa got rejected. I have a passion for web3 and would love to build things in the ecosystem and ship them.\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"prakharojha.near\", \"timestamp\": \"1727846632181169004\", \"supervisor\": null, \"description\": \"## Purpose of stipend\\\\\\\\nI wanted to apply for the travel stipend to support my expenses for the Near Redacted Hackathon and attend it IRL. I\\\\\\\\\\\\'d love to interact with the team and find out more about Near\\\\\\\\\\\\'s goal through in person events.\\\\\\\\n\\\\\\\\n## My Records\\\\\\\\nSo I\\\\\\\\\\\\'ve been a active hacker in the hackathons space as well as I\\\\\\\\\\\\'ve worked as a Full Stack Developer previously.\\\\\\\\n1. https://devpost.com/software/medibridge-7ky93d Here\\\\\\\\\\\\'s the project that I built for the Near Horizon X MLH Hackathon and won the first prize. \\\\\\\\n2. I\\\\\\\\\\\\'ve been part of the MLH Fellowship where we further developed the product but due to legal issues and no validation from the surroundings we had to drop the project.\\\\\\\\n3. I participated in ETHSingapore and built DeReal https://ethglobal.com/showcase/dereal-b9tsg, I scored the chainlink bounty for this.\\\\\\\\n\\\\\\\\n## Travel Itinerary:\\\\\\\\nFlights back and forth from Lucknow, India to Bangkok (8th flying from Lucknow - 17th Night traveling back)\\\\\\\\n\\\\\\\\n## Project Plan\\\\\\\\n\\\\\\\\nI want to extend DeReal\\\\\\\\\\\\'s functionality and built a proper Social Media application on Near. \\\\\\\\nAnd extension to this would be introducing more Privacy, and incentivizing the User through rewards for their data(Likes, hashtags). \\\\\\\\n\\\\\\\\nThank you for considering my application, I hope this gets the approval and I can actually attend Redacted and be part of User-Owned Future.\\\\\\\\n\\\\\\\\nHoping to meet the team,\\\\\\\\nPrakhar Ojha.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"prakharojha.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"800\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"author_id\": \"prakharojha.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6946816328501e+21
+    }
+  },
+  {
+    "id": "8842387411",
+    "receipt_id": "4xV1RCNpozedFW6W9gZnmjvFG54ZcFJrcfE7KY35Po7e",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EBGBeJpeyiGvhNU9AwKzLXpw7VAyR4dbDZid3R7ro3Sj",
+      "block_height": 129368407,
+      "block_timestamp": 1727846633401118200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3531142328087,
+      "tokens_burnt": 353114232808700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "FjdcsZMWqk3GDFaEerMyHBQqbRAU5er7MnWmWjbtjxzK",
+    "included_in_block_hash": "EFuT2YNgx9VqiD4Rm8rPsFPFkiJLSFZZVRiecVvz2kyu",
+    "block_timestamp": "1727846626625932930",
+    "block": {
+      "block_height": 129368401
+    },
+    "receipt_conversion_tokens_burnt": "41577701218500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353114232808700000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":53,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"prakharojha.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6946816328501e+21
+    }
+  },
+  {
+    "id": "8842413222",
+    "receipt_id": "HU7mPCcYwZc7Y8vzpyu3CVFmdFnNYwszM34jb7aNsxia",
+    "predecessor_account_id": "prakharojha.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8m2VrUzNoC1pECUtp2Mw7i94eNk8nvN95CDrNvQsAgUu",
+      "block_height": 129368445,
+      "block_timestamp": 1727846675455572500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5349617843279,
+      "tokens_burnt": 534961784327900000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "HcFFMQFc5pmSDUhkMzs3XBKphxGxp33G6Yk9eqEsFVws",
+    "included_in_block_hash": "JDM6YY7G4AjeNSedXvQ19KBmTHqwsifKUEDA7SfyE6wC",
+    "block_timestamp": "1727846674445157969",
+    "block": {
+      "block_height": 129368444
+    },
+    "receipt_conversion_tokens_burnt": "41577701218500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 534961784327900000000,
+        "args": "{\"body\": {\"name\": \"Travel Stipend [REDACTED] hackathon - Bangkok, Nov 9 - 11\", \"summary\": \"Hey Everyone! I recently graduated from college and am looking to create something valuable that can generate revenue and give back to the community. I\\\\\\\\\\\\'ve been familiar with the Near ecosystem for more than a year, I also had a chance to attend Nearcon in Lisbon but my visa got rejected. I have a passion for web3 and would love to build things in the ecosystem and ship them.\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"## Purpose of stipend\\\\\\\\nI wanted to apply for the travel stipend to support my expenses for the Near Redacted Hackathon and attend it IRL. I\\\\\\\\\\\\'d love to interact with the team and find out more about Near\\\\\\\\\\\\'s goal through in person events.\\\\\\\\n\\\\\\\\n## My Records\\\\\\\\nSo I\\\\\\\\\\\\'ve been a active hacker in the hackathons space as well as I\\\\\\\\\\\\'ve worked as a Full Stack Developer previously.\\\\\\\\n1. https://devpost.com/software/medibridge-7ky93d Here\\\\\\\\\\\\'s the project that I built for the Near Horizon X MLH Hackathon and won the first prize. \\\\\\\\n2. I\\\\\\\\\\\\'ve been part of the MLH Fellowship where we further developed the product but due to legal issues and no validation from the surroundings we had to drop the project.\\\\\\\\n3. I participated in ETHSingapore and built DeReal https://ethglobal.com/showcase/dereal-b9tsg, I scored the chainlink bounty for this.\\\\\\\\n\\\\\\\\n## Travel Itinerary:\\\\\\\\nFlights back and forth from Lucknow, India to Bangkok (8th flying from Lucknow - 17th Night traveling back)\\\\\\\\n\\\\\\\\n## Project Plan\\\\\\\\n\\\\\\\\nI want to extend DeReal\\\\\\\\\\\\'s functionality and built a proper Social Media application on Near. \\\\\\\\nAnd extension to this would be introducing more Privacy, and incentivizing the User through rewards for their data(Likes, hashtags). \\\\\\\\n\\\\\\\\nThank you for considering my application, I hope this gets the approval and I can actually attend Redacted and be part of User-Owned Future.\\\\\\\\n\\\\\\\\nHoping to meet the team,\\\\\\\\nPrakhar Ojha.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"prakharojha.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"800\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": [\"Travel expenses\"], \"accepted_terms_and_conditions_version\": 129368341}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6946816328501e+21
+    }
+  },
+  {
+    "id": "8842414027",
+    "receipt_id": "3pT2KK8XhvPsb4JM8b8qScHgLv7Z5DMMX3T2Vdyh8iLJ",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5c5UcccX4H54n8KLzq3khNdYMLcDxFRXUw95MdSmFP76",
+      "block_height": 129368446,
+      "block_timestamp": 1727846676639520300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4598193065034,
+      "tokens_burnt": 459819306503400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "HcFFMQFc5pmSDUhkMzs3XBKphxGxp33G6Yk9eqEsFVws",
+    "included_in_block_hash": "JDM6YY7G4AjeNSedXvQ19KBmTHqwsifKUEDA7SfyE6wC",
+    "block_timestamp": "1727846674445157969",
+    "block": {
+      "block_height": 129368444
+    },
+    "receipt_conversion_tokens_burnt": "41577701218500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 459819306503400000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Bounty* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @prakharojha.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Travel Stipend [REDACTED] hackathon - Bangkok, Nov 9 - 11\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nHey Everyone! I recently graduated from college and am looking to create something valuable that can generate revenue and give back to the community. I\\\\\\\\\\\\'ve been familiar with the Near ecosystem for more than a year, I also had a chance to attend Nearcon in Lisbon but my visa got rejected. I have a passion for web3 and would love to build things in the ecosystem and ship them.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/events-committee.near/widget/app?page=proposal&id=53)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6946816328501e+21
+    }
+  },
+  {
+    "id": "8842414029",
+    "receipt_id": "3Qb7aBqqjCA2V16maRDuYrqNJevh6Gi61mCRf28dpxJF",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5c5UcccX4H54n8KLzq3khNdYMLcDxFRXUw95MdSmFP76",
+      "block_height": 129368446,
+      "block_timestamp": 1727846676639520300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3052086079916,
+      "tokens_burnt": 305208607991600000000,
+      "executor_account_id": "events-committee.near",
+      "status": false
+    },
+    "transaction_hash": "HcFFMQFc5pmSDUhkMzs3XBKphxGxp33G6Yk9eqEsFVws",
+    "included_in_block_hash": "JDM6YY7G4AjeNSedXvQ19KBmTHqwsifKUEDA7SfyE6wC",
+    "block_timestamp": "1727846674445157969",
+    "block": {
+      "block_height": 129368444
+    },
+    "receipt_conversion_tokens_burnt": "41577701218500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 305208607991600000000,
+        "args": "{\"proposal\": {\"id\": 53, \"snapshot\": {\"name\": \"Travel Stipend [REDACTED] hackathon - Bangkok, Nov 9 - 11\", \"labels\": [\"Travel expenses\"], \"summary\": \"Hey Everyone! I recently graduated from college and am looking to create something valuable that can generate revenue and give back to the community. I\\\\\\\\\\\\'ve been familiar with the Near ecosystem for more than a year, I also had a chance to attend Nearcon in Lisbon but my visa got rejected. I have a passion for web3 and would love to build things in the ecosystem and ship them.\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"prakharojha.near\", \"timestamp\": \"1727846675455572491\", \"supervisor\": null, \"description\": \"## Purpose of stipend\\\\\\\\nI wanted to apply for the travel stipend to support my expenses for the Near Redacted Hackathon and attend it IRL. I\\\\\\\\\\\\'d love to interact with the team and find out more about Near\\\\\\\\\\\\'s goal through in person events.\\\\\\\\n\\\\\\\\n## My Records\\\\\\\\nSo I\\\\\\\\\\\\'ve been a active hacker in the hackathons space as well as I\\\\\\\\\\\\'ve worked as a Full Stack Developer previously.\\\\\\\\n1. https://devpost.com/software/medibridge-7ky93d Here\\\\\\\\\\\\'s the project that I built for the Near Horizon X MLH Hackathon and won the first prize. \\\\\\\\n2. I\\\\\\\\\\\\'ve been part of the MLH Fellowship where we further developed the product but due to legal issues and no validation from the surroundings we had to drop the project.\\\\\\\\n3. I participated in ETHSingapore and built DeReal https://ethglobal.com/showcase/dereal-b9tsg, I scored the chainlink bounty for this.\\\\\\\\n\\\\\\\\n## Travel Itinerary:\\\\\\\\nFlights back and forth from Lucknow, India to Bangkok (8th flying from Lucknow - 17th Night traveling back)\\\\\\\\n\\\\\\\\n## Project Plan\\\\\\\\n\\\\\\\\nI want to extend DeReal\\\\\\\\\\\\'s functionality and built a proper Social Media application on Near. \\\\\\\\nAnd extension to this would be introducing more Privacy, and incentivizing the User through rewards for their data(Likes, hashtags). \\\\\\\\n\\\\\\\\nThank you for considering my application, I hope this gets the approval and I can actually attend Redacted and be part of User-Owned Future.\\\\\\\\n\\\\\\\\nHoping to meet the team,\\\\\\\\nPrakhar Ojha.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"prakharojha.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"800\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"author_id\": \"prakharojha.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6946816328501e+21
+    }
+  },
+  {
+    "id": "8842414032",
+    "receipt_id": "GtksJk5Kp3PpeMSKKsE7XPyqGRfwBi8Ewm693Mkbx679",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5c5UcccX4H54n8KLzq3khNdYMLcDxFRXUw95MdSmFP76",
+      "block_height": 129368446,
+      "block_timestamp": 1727846676639520300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3531142328087,
+      "tokens_burnt": 353114232808700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "HcFFMQFc5pmSDUhkMzs3XBKphxGxp33G6Yk9eqEsFVws",
+    "included_in_block_hash": "JDM6YY7G4AjeNSedXvQ19KBmTHqwsifKUEDA7SfyE6wC",
+    "block_timestamp": "1727846674445157969",
+    "block": {
+      "block_height": 129368444
+    },
+    "receipt_conversion_tokens_burnt": "41577701218500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353114232808700000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":53,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"prakharojha.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6946816328501e+21
+    }
+  },
+  {
+    "id": "8842428338",
+    "receipt_id": "Bz8RsA1cMwp3KJpr2MQarx3ZanN2kxMHGmJ4yUR6ydLW",
+    "predecessor_account_id": "prakharojha.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DTrXNawRHfpNgkYo7i1BysVf1n4PSLe1W2BfgaJzP7Cd",
+      "block_height": 129368468,
+      "block_timestamp": 1727846700754761200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5349617843279,
+      "tokens_burnt": 534961784327900000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "BuCFgAjCukH4Wp2ezhm6MMBDBnHkFR92hvZCExdwhbSZ",
+    "included_in_block_hash": "7iMxfAhxwccZB85MEsAQPMHpsodAiPBQhngXSwDJBUy7",
+    "block_timestamp": "1727846699606713256",
+    "block": {
+      "block_height": 129368467
+    },
+    "receipt_conversion_tokens_burnt": "41577701218500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 534961784327900000000,
+        "args": "{\"body\": {\"name\": \"Travel Stipend [REDACTED] hackathon - Bangkok, Nov 9 - 11\", \"summary\": \"Hey Everyone! I recently graduated from college and am looking to create something valuable that can generate revenue and give back to the community. I\\\\\\\\\\\\'ve been familiar with the Near ecosystem for more than a year, I also had a chance to attend Nearcon in Lisbon but my visa got rejected. I have a passion for web3 and would love to build things in the ecosystem and ship them.\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"## Purpose of stipend\\\\\\\\nI wanted to apply for the travel stipend to support my expenses for the Near Redacted Hackathon and attend it IRL. I\\\\\\\\\\\\'d love to interact with the team and find out more about Near\\\\\\\\\\\\'s goal through in person events.\\\\\\\\n\\\\\\\\n## My Records\\\\\\\\nSo I\\\\\\\\\\\\'ve been a active hacker in the hackathons space as well as I\\\\\\\\\\\\'ve worked as a Full Stack Developer previously.\\\\\\\\n1. https://devpost.com/software/medibridge-7ky93d Here\\\\\\\\\\\\'s the project that I built for the Near Horizon X MLH Hackathon and won the first prize. \\\\\\\\n2. I\\\\\\\\\\\\'ve been part of the MLH Fellowship where we further developed the product but due to legal issues and no validation from the surroundings we had to drop the project.\\\\\\\\n3. I participated in ETHSingapore and built DeReal https://ethglobal.com/showcase/dereal-b9tsg, I scored the chainlink bounty for this.\\\\\\\\n\\\\\\\\n## Travel Itinerary:\\\\\\\\nFlights back and forth from Lucknow, India to Bangkok (8th flying from Lucknow - 17th Night traveling back)\\\\\\\\n\\\\\\\\n## Project Plan\\\\\\\\n\\\\\\\\nI want to extend DeReal\\\\\\\\\\\\'s functionality and built a proper Social Media application on Near. \\\\\\\\nAnd extension to this would be introducing more Privacy, and incentivizing the User through rewards for their data(Likes, hashtags). \\\\\\\\n\\\\\\\\nThank you for considering my application, I hope this gets the approval and I can actually attend Redacted and be part of User-Owned Future.\\\\\\\\n\\\\\\\\nHoping to meet the team,\\\\\\\\nPrakhar Ojha.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"prakharojha.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"800\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": [\"Travel expenses\"], \"accepted_terms_and_conditions_version\": 129368341}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6946816328501e+21
+    }
+  },
+  {
+    "id": "8842429182",
+    "receipt_id": "128qxKJLvLYiEGCrUigLNJSWmxQdgByYx26khoAnDtQZ",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "ANq1ZpVU8fHNk6pLz8xdMJzuxF1PLp7JziLVwsy2MZhG",
+      "block_height": 129368469,
+      "block_timestamp": 1727846701892886800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4598193065034,
+      "tokens_burnt": 459819306503400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "BuCFgAjCukH4Wp2ezhm6MMBDBnHkFR92hvZCExdwhbSZ",
+    "included_in_block_hash": "7iMxfAhxwccZB85MEsAQPMHpsodAiPBQhngXSwDJBUy7",
+    "block_timestamp": "1727846699606713256",
+    "block": {
+      "block_height": 129368467
+    },
+    "receipt_conversion_tokens_burnt": "41577701218500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 459819306503400000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Bounty* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @prakharojha.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Travel Stipend [REDACTED] hackathon - Bangkok, Nov 9 - 11\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nHey Everyone! I recently graduated from college and am looking to create something valuable that can generate revenue and give back to the community. I\\\\\\\\\\\\'ve been familiar with the Near ecosystem for more than a year, I also had a chance to attend Nearcon in Lisbon but my visa got rejected. I have a passion for web3 and would love to build things in the ecosystem and ship them.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/events-committee.near/widget/app?page=proposal&id=53)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6946816328501e+21
+    }
+  },
+  {
+    "id": "8842429185",
+    "receipt_id": "5XdEWohZypuKn3g7ENsXbSjL5gTXFL6yiKornyzYU66D",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "ANq1ZpVU8fHNk6pLz8xdMJzuxF1PLp7JziLVwsy2MZhG",
+      "block_height": 129368469,
+      "block_timestamp": 1727846701892886800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3052086079916,
+      "tokens_burnt": 305208607991600000000,
+      "executor_account_id": "events-committee.near",
+      "status": false
+    },
+    "transaction_hash": "BuCFgAjCukH4Wp2ezhm6MMBDBnHkFR92hvZCExdwhbSZ",
+    "included_in_block_hash": "7iMxfAhxwccZB85MEsAQPMHpsodAiPBQhngXSwDJBUy7",
+    "block_timestamp": "1727846699606713256",
+    "block": {
+      "block_height": 129368467
+    },
+    "receipt_conversion_tokens_burnt": "41577701218500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 305208607991600000000,
+        "args": "{\"proposal\": {\"id\": 53, \"snapshot\": {\"name\": \"Travel Stipend [REDACTED] hackathon - Bangkok, Nov 9 - 11\", \"labels\": [\"Travel expenses\"], \"summary\": \"Hey Everyone! I recently graduated from college and am looking to create something valuable that can generate revenue and give back to the community. I\\\\\\\\\\\\'ve been familiar with the Near ecosystem for more than a year, I also had a chance to attend Nearcon in Lisbon but my visa got rejected. I have a passion for web3 and would love to build things in the ecosystem and ship them.\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"prakharojha.near\", \"timestamp\": \"1727846700754761215\", \"supervisor\": null, \"description\": \"## Purpose of stipend\\\\\\\\nI wanted to apply for the travel stipend to support my expenses for the Near Redacted Hackathon and attend it IRL. I\\\\\\\\\\\\'d love to interact with the team and find out more about Near\\\\\\\\\\\\'s goal through in person events.\\\\\\\\n\\\\\\\\n## My Records\\\\\\\\nSo I\\\\\\\\\\\\'ve been a active hacker in the hackathons space as well as I\\\\\\\\\\\\'ve worked as a Full Stack Developer previously.\\\\\\\\n1. https://devpost.com/software/medibridge-7ky93d Here\\\\\\\\\\\\'s the project that I built for the Near Horizon X MLH Hackathon and won the first prize. \\\\\\\\n2. I\\\\\\\\\\\\'ve been part of the MLH Fellowship where we further developed the product but due to legal issues and no validation from the surroundings we had to drop the project.\\\\\\\\n3. I participated in ETHSingapore and built DeReal https://ethglobal.com/showcase/dereal-b9tsg, I scored the chainlink bounty for this.\\\\\\\\n\\\\\\\\n## Travel Itinerary:\\\\\\\\nFlights back and forth from Lucknow, India to Bangkok (8th flying from Lucknow - 17th Night traveling back)\\\\\\\\n\\\\\\\\n## Project Plan\\\\\\\\n\\\\\\\\nI want to extend DeReal\\\\\\\\\\\\'s functionality and built a proper Social Media application on Near. \\\\\\\\nAnd extension to this would be introducing more Privacy, and incentivizing the User through rewards for their data(Likes, hashtags). \\\\\\\\n\\\\\\\\nThank you for considering my application, I hope this gets the approval and I can actually attend Redacted and be part of User-Owned Future.\\\\\\\\n\\\\\\\\nHoping to meet the team,\\\\\\\\nPrakhar Ojha.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"prakharojha.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"800\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"author_id\": \"prakharojha.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6946816328501e+21
+    }
+  },
+  {
+    "id": "8842429188",
+    "receipt_id": "atKvNHJ3bdSMZwLoTm4CD5JPKbssMJRD74k9qkgXGv1",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "ANq1ZpVU8fHNk6pLz8xdMJzuxF1PLp7JziLVwsy2MZhG",
+      "block_height": 129368469,
+      "block_timestamp": 1727846701892886800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3531142328087,
+      "tokens_burnt": 353114232808700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "BuCFgAjCukH4Wp2ezhm6MMBDBnHkFR92hvZCExdwhbSZ",
+    "included_in_block_hash": "7iMxfAhxwccZB85MEsAQPMHpsodAiPBQhngXSwDJBUy7",
+    "block_timestamp": "1727846699606713256",
+    "block": {
+      "block_height": 129368467
+    },
+    "receipt_conversion_tokens_burnt": "41577701218500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353114232808700000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":53,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"prakharojha.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6946816328501e+21
+    }
+  },
+  {
+    "id": "8842488889",
+    "receipt_id": "tUsTL62CbyizoHiM96taBgc1kihKNJZva8ANP7TG8NE",
+    "predecessor_account_id": "prakharojha.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8ZMduswSAP2pwgp1ristTSfDCQMAN4LxwxEdqxuKtEP6",
+      "block_height": 129368571,
+      "block_timestamp": 1727846814223075000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5363439799205,
+      "tokens_burnt": 536343979920500000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "CUsS1QEdMnq8BSCUbndwAd6bRvYJeG6FN9TXS5WqMxWP",
+    "included_in_block_hash": "BN1oWDcPVxuKZbXpFSj5DnFjkp168PxqDXKiYEafW5jL",
+    "block_timestamp": "1727846813033055701",
+    "block": {
+      "block_height": 129368570
+    },
+    "receipt_conversion_tokens_burnt": "41577701218500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 536343979920500000000,
+        "args": "{\"body\": {\"name\": \"Travel Stipend [REDACTED] hackathon - Bangkok, Nov 9 - 11\", \"summary\": \"Hey Everyone! I recently graduated from college and am looking to create something valuable that can generate revenue and give back to the community. I\\\\\\\\\\\\'ve been familiar with the Near ecosystem for more than a year, I also had a chance to attend Nearcon in Lisbon but my visa got rejected. I have a passion for web3 and would love to build things in the ecosystem and ship them.\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"## Purpose of stipend\\\\\\\\nI wanted to apply for the travel stipend to support my expenses for the Near Redacted Hackathon and attend it IRL. I\\\\\\\\\\\\'d love to interact with the team and find out more about Near\\\\\\\\\\\\'s goal through in person events.\\\\\\\\n\\\\\\\\n## My Records\\\\\\\\nSo I\\\\\\\\\\\\'ve been a active hacker in the hackathons space as well as I\\\\\\\\\\\\'ve worked as a Full Stack Developer previously.\\\\\\\\n1. https://devpost.com/software/medibridge-7ky93d Here\\\\\\\\\\\\'s the project that I built for the Near Horizon X MLH Hackathon and won the first prize. \\\\\\\\n2. I\\\\\\\\\\\\'ve been part of the MLH Fellowship where we further developed the product but due to legal issues and no validation from the surroundings we had to drop the project.\\\\\\\\n3. I participated in ETHSingapore and built DeReal https://ethglobal.com/showcase/dereal-b9tsg, I scored the chainlink bounty for this.\\\\\\\\n\\\\\\\\n## Travel Itinerary:\\\\\\\\nFlights back and forth from Lucknow, India to Bangkok (8th flying from Lucknow - 17th Night traveling back)\\\\\\\\n\\\\\\\\n## Project Plan\\\\\\\\n\\\\\\\\nI want to extend DeReal\\\\\\\\\\\\'s functionality and built a proper Social Media application on Near. \\\\\\\\nAnd extension to this would be introducing more Privacy, and incentivizing the User through rewards for their data(Likes, hashtags). \\\\\\\\n\\\\\\\\nThank you for considering my application, I hope this gets the approval and I can actually attend Redacted and be part of User-Owned Future.\\\\\\\\n\\\\\\\\nHoping to meet the team,\\\\\\\\nPrakhar Ojha.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"prakharojha.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"800\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": [\"Travel expenses\"], \"accepted_terms_and_conditions_version\": 129368341}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6974460240353e+21
+    }
+  }
+]

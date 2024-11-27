@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "5422736391",
+    "receipt_id": "EpSPfMZ3skBcDVJTWedFKrHB5YKZFqEW2xi9okixkSHN",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2uUA6ARbSB5jq4D7tF8sShucAuHXVdGjvVrP97c4fPsy",
+      "block_height": 120512321,
+      "block_timestamp": 1717615046415047000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4657349740651,
+      "tokens_burnt": 465734974065100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "EtWzQseqrLfZTkdRLCdFSTWNqFUjX28oYeNMnxvrNT9Q",
+    "included_in_block_hash": "F16eSnt2hAv8Vs9bhsGFJySihWNhwMavZ4MQpzz1SKcG",
+    "block_timestamp": "1717615045252505015",
+    "block": {
+      "block_height": 120512320
+    },
+    "receipt_conversion_tokens_burnt": "31337655105200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 465734974065100000000,
+        "args": "{\"data\": {\"blog\": {\"protocol-work-group-call-#10-3299\": {\"\": \"#### Summary:\\\\\\\\n\\\\\\\\nThe 10th NEAR Protocol work group call, hosted by @victorkanu1.near , to discuss NEP 539 and 522. Attendees included Jakob Meier, Bowen Wang, David Millar-Durrant, and others. The call focused on reviewing NEPs, discussing their implications, and voting for their approval.\\\\\\\\n\\\\\\\\n**Key Updates:**\\\\\\\\n1. **NEP 539 Overview:** Jakob Meier presented NEP 539, which addresses congestion control communication issues in the protocol. The proposal involves adding outgoing buffers for each shard to manage transaction acceptance.\\\\\\\\n  \\\\\\\\n2. **Review of NEP 539:** Bowen Wang summarized the advantages, highlighting faster transaction execution during congestion and system-wide improvements. Concerns included the lack of a theoretical bound on receipt buffer sizes and behavior changes in transaction handling.\\\\\\\\n\\\\\\\\n3. **Voting Results:** All four working group members leaned towards approving NEP 539, meeting the two-thirds majority required. However, NEP 522 did not pass the subject matter expert reviews and was rejected.\\\\\\\\n\\\\\\\\n4. **Discussion on Protocol Solutions:** David Millar-Durrant suggested a rigorous fee structure for using the protocol features, emphasizing the need to address issues causing system failures under load.\\\\\\\\n\\\\\\\\n5. **Consideration of Implementation Challenges:** Concerns were raised about the potential impact on system bandwidth and reliability, particularly regarding database operations and stateless validation integration.\\\\\\\\n\\\\\\\\n6. **Exploration of Alternative Solutions:** The discussion delved into alternative proposals for managing nonce, including random nonce generation and multiple nonce sets, each with its advantages and drawbacks.\\\\\\\\n\\\\\\\\n7. **Community Engagement and Future Involvement:** Victor encouraged community members to engage in the NEAR developer ecosystem by submitting ideas, collaborating with existing communities, and participating in discussions on GitHub and Telegram.\\\\\\\\n\\\\\\\\n##### Check out the recording [here](https://www.youtube.com/watch?v=O1MOBmxKqhI)\", \"metadata\": {\"id\": \"3299\", \"title\": \"Protocol work group call #10\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"\", \"createdAt\": \"2024-05-29\", \"updatedAt\": \"2024-05-29\", \"description\": \"\", \"publishedAt\": \"2024-05-29\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"protocol\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 801359080611100000000
+    }
+  },
+  {
+    "id": "5422736570",
+    "receipt_id": "F8bHWxMNnyU79UdUo6gbewKmtxEqV2Lr9jQUhL7MxrgT",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8YRxfhKQLMgnf5MB5ux4evVSTH21Khb9oXqNv8CzUNQN",
+      "block_height": 120512322,
+      "block_timestamp": 1717615047716894000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3042864514408,
+      "tokens_burnt": 304286451440800000000,
+      "executor_account_id": "social.near",
+      "status": false
+    },
+    "transaction_hash": "EtWzQseqrLfZTkdRLCdFSTWNqFUjX28oYeNMnxvrNT9Q",
+    "included_in_block_hash": "F16eSnt2hAv8Vs9bhsGFJySihWNhwMavZ4MQpzz1SKcG",
+    "block_timestamp": "1717615045252505015",
+    "block": {
+      "block_height": 120512320
+    },
+    "receipt_conversion_tokens_burnt": "31337655105200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 304286451440800000000,
+        "args": "{\"data\": {\"protocol.community.devhub.near\": {\"blog\": {\"protocol-work-group-call-#10-3299\": {\"\": \"#### Summary:\\\\\\\\n\\\\\\\\nThe 10th NEAR Protocol work group call, hosted by @victorkanu1.near , to discuss NEP 539 and 522. Attendees included Jakob Meier, Bowen Wang, David Millar-Durrant, and others. The call focused on reviewing NEPs, discussing their implications, and voting for their approval.\\\\\\\\n\\\\\\\\n**Key Updates:**\\\\\\\\n1. **NEP 539 Overview:** Jakob Meier presented NEP 539, which addresses congestion control communication issues in the protocol. The proposal involves adding outgoing buffers for each shard to manage transaction acceptance.\\\\\\\\n  \\\\\\\\n2. **Review of NEP 539:** Bowen Wang summarized the advantages, highlighting faster transaction execution during congestion and system-wide improvements. Concerns included the lack of a theoretical bound on receipt buffer sizes and behavior changes in transaction handling.\\\\\\\\n\\\\\\\\n3. **Voting Results:** All four working group members leaned towards approving NEP 539, meeting the two-thirds majority required. However, NEP 522 did not pass the subject matter expert reviews and was rejected.\\\\\\\\n\\\\\\\\n4. **Discussion on Protocol Solutions:** David Millar-Durrant suggested a rigorous fee structure for using the protocol features, emphasizing the need to address issues causing system failures under load.\\\\\\\\n\\\\\\\\n5. **Consideration of Implementation Challenges:** Concerns were raised about the potential impact on system bandwidth and reliability, particularly regarding database operations and stateless validation integration.\\\\\\\\n\\\\\\\\n6. **Exploration of Alternative Solutions:** The discussion delved into alternative proposals for managing nonce, including random nonce generation and multiple nonce sets, each with its advantages and drawbacks.\\\\\\\\n\\\\\\\\n7. **Community Engagement and Future Involvement:** Victor encouraged community members to engage in the NEAR developer ecosystem by submitting ideas, collaborating with existing communities, and participating in discussions on GitHub and Telegram.\\\\\\\\n\\\\\\\\n##### Check out the recording [here](https://www.youtube.com/watch?v=O1MOBmxKqhI)\", \"metadata\": {\"id\": \"3299\", \"title\": \"Protocol work group call #10\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"\", \"createdAt\": \"2024-05-29\", \"updatedAt\": \"2024-05-29\", \"description\": \"\", \"publishedAt\": \"2024-05-29\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 801359080611100000000
+    }
+  },
+  {
+    "id": "5423193655",
+    "receipt_id": "9WV8kRRLFaV9LFnpYdEi2r8J5YYipX2au9WoWXmriASB",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HV2chUAWNS8LTnYE2FMJLV8vpVCzWRANF2H2J1mY6zyD",
+      "block_height": 120513491,
+      "block_timestamp": 1717616395959596000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4147581827472,
+      "tokens_burnt": 414758182747200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "6LJw8a3oXm4af6G8GW3zww2nPeA7qRRQZsHT8q9KeMHL",
+    "included_in_block_hash": "Hiqgib9v5DbZ6tUPc5Mw9NM2vP4SuUo77APrKPUiw61v",
+    "block_timestamp": "1717616394898101894",
+    "block": {
+      "block_height": 120513490
+    },
+    "receipt_conversion_tokens_burnt": "31089690024600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 414758182747200000000,
+        "args": "{\"data\": {\"blog\": {\"university-of-california-san-diego-2507\": {\"\": \"#### \\\\\\\\u{1f393} Near Social Profile: @2d43bcf331706f4a8378c16f1691c95216459da22ca568a29ffb5f285a6503e4\\\\\\\\n.\\\\\\\\n.\\\\\\\\n#### \\\\\\\\u{1f393} Website: https://blockchain.ucsd.edu/\\\\\\\\n.\\\\\\\\n.\\\\\\\\n#### \\\\\\\\u{1f393} Overview\\\\\\\\n\\\\\\\\nBlockchain at San Diego is team of students at UCSD focused on advancing innovation on the blockchain through education, research, and development.\\\\\\\\n\\\\\\\\nWe strive to equip students with foundational knowledge and resources to successfully navigate the fast-evolving blockchain space and help us engineer novel blockchain solutions.\\\\\\\\n\\\\\\\\nWe partner with prominent individuals, organizations, and companies in the industry to provide practical education and connect our members to exciting career opportunities.\\\\\\\\n\\\\\\\\nProposal Near Social: https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=1918\", \"metadata\": {\"id\": \"2507\", \"title\": \"University of California, San Diego\", \"author\": \"8566fc4bb16e1a7446b5e9b1b8aea94b5751d5f8c658d7af18d8cdf642d7b31d\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"Blockchain At UC San Diego\", \"createdAt\": \"2023-12-13\", \"updatedAt\": \"2023-12-13\", \"description\": \"Blockchain At UC San Diego\", \"publishedAt\": \"2023-12-13\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"near-campus\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5825692399876e+21
+    }
+  },
+  {
+    "id": "5423193783",
+    "receipt_id": "3ku4DD6jsEDja7nm72Smt1ZLKFHjCHy2HUQk8A2P83Bb",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "amF32dWZxcSX7cS9eteHNaqw1qB2HhjCrbh4QVRfhsh",
+      "block_height": 120513492,
+      "block_timestamp": 1717616396920726300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 11367213672158,
+      "tokens_burnt": 1.1367213672158e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "6LJw8a3oXm4af6G8GW3zww2nPeA7qRRQZsHT8q9KeMHL",
+    "included_in_block_hash": "Hiqgib9v5DbZ6tUPc5Mw9NM2vP4SuUo77APrKPUiw61v",
+    "block_timestamp": "1717616394898101894",
+    "block": {
+      "block_height": 120513490
+    },
+    "receipt_conversion_tokens_burnt": "31089690024600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.1367213672158e+21,
+        "args": "{\"data\": {\"near-campus.community.devhub.near\": {\"blog\": {\"university-of-california-san-diego-2507\": {\"\": \"#### \\\\\\\\u{1f393} Near Social Profile: @2d43bcf331706f4a8378c16f1691c95216459da22ca568a29ffb5f285a6503e4\\\\\\\\n.\\\\\\\\n.\\\\\\\\n#### \\\\\\\\u{1f393} Website: https://blockchain.ucsd.edu/\\\\\\\\n.\\\\\\\\n.\\\\\\\\n#### \\\\\\\\u{1f393} Overview\\\\\\\\n\\\\\\\\nBlockchain at San Diego is team of students at UCSD focused on advancing innovation on the blockchain through education, research, and development.\\\\\\\\n\\\\\\\\nWe strive to equip students with foundational knowledge and resources to successfully navigate the fast-evolving blockchain space and help us engineer novel blockchain solutions.\\\\\\\\n\\\\\\\\nWe partner with prominent individuals, organizations, and companies in the industry to provide practical education and connect our members to exciting career opportunities.\\\\\\\\n\\\\\\\\nProposal Near Social: https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=1918\", \"metadata\": {\"id\": \"2507\", \"title\": \"University of California, San Diego\", \"author\": \"8566fc4bb16e1a7446b5e9b1b8aea94b5751d5f8c658d7af18d8cdf642d7b31d\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"Blockchain At UC San Diego\", \"createdAt\": \"2023-12-13\", \"updatedAt\": \"2023-12-13\", \"description\": \"Blockchain At UC San Diego\", \"publishedAt\": \"2023-12-13\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5825692399876e+21
+    }
+  },
+  {
+    "id": "5423195249",
+    "receipt_id": "CCd3ap6rk8w7hRVY9BVfLDyYPw9XM51882A5bhSDG9S7",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8SJYSr6k52ZsSnbpz7coLw9yzL3aRpiTWc93BxEMawRm",
+      "block_height": 120513497,
+      "block_timestamp": 1717616402166350300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4515231930142,
+      "tokens_burnt": 451523193014200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "2h8mxsqK1AdNHd4jb1BYMcwTEiiyqZ5es6c1UUrtjtFo",
+    "included_in_block_hash": "pmkc1Km1u22AvxeWyNoGp5AERgysqqsufumi5peSPP5",
+    "block_timestamp": "1717616401201196246",
+    "block": {
+      "block_height": 120513496
+    },
+    "receipt_conversion_tokens_burnt": "31264540063400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 451523193014200000000,
+        "args": "{\"data\": {\"blog\": {\"community-call-8-recap-2656\": {\"\": \"**MODERATORS**: Owen Hassall\\\\\\\\n**VIDEO**: https://youtu.be/Dn-HkMXAz20\\\\\\\\n\\\\\\\\n## AGENDA\\\\\\\\n- Electron Labs integration with NEAR DA\\\\\\\\n- Reclaim Protocol proposal\\\\\\\\n- ZKWASM\\\\\\\\n\\\\\\\\n## TOPIC SUMMARIES\\\\\\\\n- **Electron Labs integration with NEAR DA**: The ZK Light Client, built by Electron Labs, has completed their integration with NEAR DA. \\\\\\\\nFind out more [here](https://docs.google.com/presentation/d/18Ik_nO-7J0PZX_i69Y9oejoLWeQ1KHCePtfXFM01JIQ/edit?usp=sharing).\\\\\\\\n\\\\\\\\n- **Reclaim Protocol proposal**: There was an interesting discussion of Reclaim protocol\\\\\\\\u{2019}s proposal to DevHub that allows users to generate verifiable credentials using ZKP. Feel free to give your thoughts on the [proposal](https://near.social/devhub.near/widget/app?page=post&id=1969). You can also find out more [here](https://acrobat.adobe.com/id/urn:aaid:sc:EU:2a8bf47e-bfe4-4b95-b263-6fd07730fb58).\\\\\\\\n\\\\\\\\n\\\\\\\\n- **ZKWASM presentation by Pagoda**: We had the ZKWASM Pagoda team join us to give more information on ZKWASM, share future plans and take questions. The slides can be found [here](https://docs.google.com/presentation/d/1y9mcUd8dtYMotHcXXCBqvSYwG6JaXn4gM8WMrW7Kspc/edit?usp=sharing).\\\\\\\\n\\\\\\\\n- **Other Discussion**: We also heard updates from Opact (private transactions on NEAR) introducing open-source ZK ceremonies, an update about Zpoken\\\\\\\\u{2019}s ZK light client and a quick discussion on NDC and private voting.\\\\\\\\n\\\\\\\\n## ACTION ITEMS\\\\\\\\n- Please give your thoughts and attestations on the proposal by Reclaim Protocol [here](https://near.social/devhub.near/widget/app?page=post&id=1969).\", \"metadata\": {\"id\": \"2656\", \"title\": \"Community Call #8 Recap\", \"author\": \"pivortex.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Electron Labs, Reclaim Protocol, ZKWASM, Opact, Zpoken, NDC Private Voting.\", \"createdAt\": \"2024-04-10\", \"updatedAt\": \"2024-04-10\", \"description\": \"Electron Labs, Reclaim Protocol, ZKWASM, Opact, Zpoken, NDC Private Voting.\", \"publishedAt\": \"2024-04-10\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"zero-knowledge\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6228710245212e+21
+    }
+  },
+  {
+    "id": "5423195543",
+    "receipt_id": "6UiRPrAUWhjNXfMhQBdufFdanuRvoGnfcXUDRztFTDHh",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2DothQTcCaenyrKcDYYCoS4YiytaW7sWR2RPGgSwj21z",
+      "block_height": 120513498,
+      "block_timestamp": 1717616403383324200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 11400832914436,
+      "tokens_burnt": 1.1400832914436e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "2h8mxsqK1AdNHd4jb1BYMcwTEiiyqZ5es6c1UUrtjtFo",
+    "included_in_block_hash": "pmkc1Km1u22AvxeWyNoGp5AERgysqqsufumi5peSPP5",
+    "block_timestamp": "1717616401201196246",
+    "block": {
+      "block_height": 120513496
+    },
+    "receipt_conversion_tokens_burnt": "31264540063400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.1400832914436e+21,
+        "args": "{\"data\": {\"zero-knowledge.community.devhub.near\": {\"blog\": {\"community-call-8-recap-2656\": {\"\": \"**MODERATORS**: Owen Hassall\\\\\\\\n**VIDEO**: https://youtu.be/Dn-HkMXAz20\\\\\\\\n\\\\\\\\n## AGENDA\\\\\\\\n- Electron Labs integration with NEAR DA\\\\\\\\n- Reclaim Protocol proposal\\\\\\\\n- ZKWASM\\\\\\\\n\\\\\\\\n## TOPIC SUMMARIES\\\\\\\\n- **Electron Labs integration with NEAR DA**: The ZK Light Client, built by Electron Labs, has completed their integration with NEAR DA. \\\\\\\\nFind out more [here](https://docs.google.com/presentation/d/18Ik_nO-7J0PZX_i69Y9oejoLWeQ1KHCePtfXFM01JIQ/edit?usp=sharing).\\\\\\\\n\\\\\\\\n- **Reclaim Protocol proposal**: There was an interesting discussion of Reclaim protocol\\\\\\\\u{2019}s proposal to DevHub that allows users to generate verifiable credentials using ZKP. Feel free to give your thoughts on the [proposal](https://near.social/devhub.near/widget/app?page=post&id=1969). You can also find out more [here](https://acrobat.adobe.com/id/urn:aaid:sc:EU:2a8bf47e-bfe4-4b95-b263-6fd07730fb58).\\\\\\\\n\\\\\\\\n\\\\\\\\n- **ZKWASM presentation by Pagoda**: We had the ZKWASM Pagoda team join us to give more information on ZKWASM, share future plans and take questions. The slides can be found [here](https://docs.google.com/presentation/d/1y9mcUd8dtYMotHcXXCBqvSYwG6JaXn4gM8WMrW7Kspc/edit?usp=sharing).\\\\\\\\n\\\\\\\\n- **Other Discussion**: We also heard updates from Opact (private transactions on NEAR) introducing open-source ZK ceremonies, an update about Zpoken\\\\\\\\u{2019}s ZK light client and a quick discussion on NDC and private voting.\\\\\\\\n\\\\\\\\n## ACTION ITEMS\\\\\\\\n- Please give your thoughts and attestations on the proposal by Reclaim Protocol [here](https://near.social/devhub.near/widget/app?page=post&id=1969).\", \"metadata\": {\"id\": \"2656\", \"title\": \"Community Call #8 Recap\", \"author\": \"pivortex.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Electron Labs, Reclaim Protocol, ZKWASM, Opact, Zpoken, NDC Private Voting.\", \"createdAt\": \"2024-04-10\", \"updatedAt\": \"2024-04-10\", \"description\": \"Electron Labs, Reclaim Protocol, ZKWASM, Opact, Zpoken, NDC Private Voting.\", \"publishedAt\": \"2024-04-10\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6228710245212e+21
+    }
+  },
+  {
+    "id": "5423197474",
+    "receipt_id": "FvwV6u7ZNtPZVM46yzQ8RJofga1CXvJn6USR6DMknn8g",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AMpz7oMWyoucSkv4Tpwua6219eiBynBdxHBax1fHPbWa",
+      "block_height": 120513503,
+      "block_timestamp": 1717616409294119400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4529764182654,
+      "tokens_burnt": 452976418265400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "3U138G6FxCxo4UmXCqFQaVymymW72iTBnm6yMzBaavai",
+    "included_in_block_hash": "8Q2f9Biac6bXH5vQjKmX6ob3Qv4tfXkpW2AGF3UBczxA",
+    "block_timestamp": "1717616408356334557",
+    "block": {
+      "block_height": 120513502
+    },
+    "receipt_conversion_tokens_burnt": "30997122357000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 452976418265400000000,
+        "args": "{\"data\": {\"blog\": {\"protocol-work-group-call-7-2766\": {\"\": \"***Join us for the seventh #NEAR Protocol Work Group call tomorrow at 4:00 PM UTC, where the group will vote on NEP-488***\\\\\\\\n\\\\\\\\nNEP-488 introduces NEAR runtime functions for efficient BLS signature and zkSNARK verification on the BLS12-381 curve, enhancing security and unlocking compatibility with other blockchains.\\\\\\\\n\\\\\\\\n[Add to Calendar](https://bit.ly/protocol-wg-jan10)\\\\\\\\n\\\\\\\\nNote: This page will be updated with a Recap and highlights after the meeting\", \"metadata\": {\"id\": \"undefined\", \"title\": \"Protocol Work Group call #7\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Voting on NEP-488\", \"createdAt\": \"2024-01-09\", \"updatedAt\": \"2024-01-09\", \"description\": \"Voting on NEP-488\", \"publishedAt\": \"2024-01-09\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"protocol\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6476198025418e+21
+    }
+  },
+  {
+    "id": "5423197775",
+    "receipt_id": "EKAca3EUi9G2pFaCXVBsgZMBFi6rYVcFmkCwb7YChALk",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Emd5MLgXFX4LZFFUHGmXxUGEB77tPJW7H42dtixoNNf3",
+      "block_height": 120513504,
+      "block_timestamp": 1717616410267118800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 11636462619194,
+      "tokens_burnt": 1.1636462619194e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "3U138G6FxCxo4UmXCqFQaVymymW72iTBnm6yMzBaavai",
+    "included_in_block_hash": "8Q2f9Biac6bXH5vQjKmX6ob3Qv4tfXkpW2AGF3UBczxA",
+    "block_timestamp": "1717616408356334557",
+    "block": {
+      "block_height": 120513502
+    },
+    "receipt_conversion_tokens_burnt": "30997122357000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.1636462619194e+21,
+        "args": "{\"data\": {\"protocol.community.devhub.near\": {\"blog\": {\"protocol-work-group-call-7-2766\": {\"\": \"***Join us for the seventh #NEAR Protocol Work Group call tomorrow at 4:00 PM UTC, where the group will vote on NEP-488***\\\\\\\\n\\\\\\\\nNEP-488 introduces NEAR runtime functions for efficient BLS signature and zkSNARK verification on the BLS12-381 curve, enhancing security and unlocking compatibility with other blockchains.\\\\\\\\n\\\\\\\\n[Add to Calendar](https://bit.ly/protocol-wg-jan10)\\\\\\\\n\\\\\\\\nNote: This page will be updated with a Recap and highlights after the meeting\", \"metadata\": {\"id\": \"undefined\", \"title\": \"Protocol Work Group call #7\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Voting on NEP-488\", \"createdAt\": \"2024-01-09\", \"updatedAt\": \"2024-01-09\", \"description\": \"Voting on NEP-488\", \"publishedAt\": \"2024-01-09\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6476198025418e+21
+    }
+  },
+  {
+    "id": "5423199133",
+    "receipt_id": "6TiRzNgdsazP2uHrLFYTgm88sbXik24SWwB9hocyJVF3",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GKu8z3EakkEGfruH4qWpHX7SoRJNrZs3egNr33fSsD7M",
+      "block_height": 120513509,
+      "block_timestamp": 1717616415521844500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4629444472419,
+      "tokens_burnt": 462944447241900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8nTBnGhNb1xMidmvtw1EswngRUj68FHUe2icBHSWjnmR",
+    "included_in_block_hash": "CpMaVYYtyTdpNL3jn4qVdHrZ1HopfAiacCWFRimw7g74",
+    "block_timestamp": "1717616414345677704",
+    "block": {
+      "block_height": 120513508
+    },
+    "receipt_conversion_tokens_burnt": "31099751727600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 462944447241900000000,
+        "args": "{\"data\": {\"blog\": {\"protocol-work-group-call-9-2767\": {\"\": \"Moderator: @victorkanu1.near\\\\\\\\n&nbsp; \\\\\\\\n#### Summary\\\\\\\\n&nbsp;\\\\\\\\nIn the 9th year protocol work group call, participants reviewed NEP 536 and NEP 540. NEP 536, presented by Evgeny Kuzyakov, proposed adjustments to gas refunds, with all four working group members leaning towards approval.\\\\\\\\n\\\\\\\\nHowever, NEP 540, addressing storage staking adjustments, faced rejection, with all members opposing the proposal due to concerns about its potential risks and limitations. \\\\\\\\n\\\\\\\\nDespite differing voting outcomes, the group engaged in constructive discussions about alternative solutions and emphasized the importance of balancing protocol efficiency and developer experience. \\\\\\\\n\\\\\\\\nThe call concluded with an emphasis on community involvement and resources for NEAR developers.\\\\\\\\n&nbsp;\\\\\\\\n**Approved:** NEP-536\\\\\\\\n**Rejected:** NEP-540\\\\\\\\n\\\\\\\\n&nbsp; \\\\\\\\n**Recording:** [here](https://www.youtube.com/watch?v=FPGNFDQ6rRA)\", \"metadata\": {\"id\": \"2767\", \"title\": \"Protocol Work Group call #9\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"Voting on NEP-536 & NEP 540\", \"createdAt\": \"2024-05-01\", \"updatedAt\": \"2024-05-01\", \"description\": \"Voting on NEP-536 & NEP 540\", \"publishedAt\": \"2024-05-01\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"protocol\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6216735608359e+21
+    }
+  },
+  {
+    "id": "5423199434",
+    "receipt_id": "6jRU3pwrCuA3pag1XGYxTgniShVKpkXd5R55GK1GHjGu",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "J7DBGbFGMze8XAgxtBTyw8DRRyfiHAQr3Xoi2M7oxwP1",
+      "block_height": 120513510,
+      "block_timestamp": 1717616416858638300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 11276293618664,
+      "tokens_burnt": 1.1276293618664e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8nTBnGhNb1xMidmvtw1EswngRUj68FHUe2icBHSWjnmR",
+    "included_in_block_hash": "CpMaVYYtyTdpNL3jn4qVdHrZ1HopfAiacCWFRimw7g74",
+    "block_timestamp": "1717616414345677704",
+    "block": {
+      "block_height": 120513508
+    },
+    "receipt_conversion_tokens_burnt": "31099751727600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.1276293618664e+21,
+        "args": "{\"data\": {\"protocol.community.devhub.near\": {\"blog\": {\"protocol-work-group-call-9-2767\": {\"\": \"Moderator: @victorkanu1.near\\\\\\\\n&nbsp; \\\\\\\\n#### Summary\\\\\\\\n&nbsp;\\\\\\\\nIn the 9th year protocol work group call, participants reviewed NEP 536 and NEP 540. NEP 536, presented by Evgeny Kuzyakov, proposed adjustments to gas refunds, with all four working group members leaning towards approval.\\\\\\\\n\\\\\\\\nHowever, NEP 540, addressing storage staking adjustments, faced rejection, with all members opposing the proposal due to concerns about its potential risks and limitations. \\\\\\\\n\\\\\\\\nDespite differing voting outcomes, the group engaged in constructive discussions about alternative solutions and emphasized the importance of balancing protocol efficiency and developer experience. \\\\\\\\n\\\\\\\\nThe call concluded with an emphasis on community involvement and resources for NEAR developers.\\\\\\\\n&nbsp;\\\\\\\\n**Approved:** NEP-536\\\\\\\\n**Rejected:** NEP-540\\\\\\\\n\\\\\\\\n&nbsp; \\\\\\\\n**Recording:** [here](https://www.youtube.com/watch?v=FPGNFDQ6rRA)\", \"metadata\": {\"id\": \"2767\", \"title\": \"Protocol Work Group call #9\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"Voting on NEP-536 & NEP 540\", \"createdAt\": \"2024-05-01\", \"updatedAt\": \"2024-05-01\", \"description\": \"Voting on NEP-536 & NEP 540\", \"publishedAt\": \"2024-05-01\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6216735608359e+21
+    }
+  },
+  {
+    "id": "5423201067",
+    "receipt_id": "GPRFdmDxoVJDCBv5ez3duBsQySnjVurCTSM8nLHmcvZi",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Jvtki31GSpGuhoDbySzqR8j6hhCVumDfNksFZBvCKXs",
+      "block_height": 120513515,
+      "block_timestamp": 1717616422366536400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4674475933790,
+      "tokens_burnt": 467447593379000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "C3okLSDeazBg2eUJuEhktTUQ5FXvUErmpSByyMFD3XcC",
+    "included_in_block_hash": "EBevhJFA3EmW6XJ11qA45ywtjm6v7a3XLyW1TpwYE6Vi",
+    "block_timestamp": "1717616421163348325",
+    "block": {
+      "block_height": 120513514
+    },
+    "receipt_conversion_tokens_burnt": "31239497602600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 467447593379000000000,
+        "args": "{\"data\": {\"blog\": {\"protocol-community-group-3-2807\": {\"\": \"- The third meeting of the NEAR Protocol Community Group took place last week, covering discussions on various topics, including the developer experience on NEAR, a proposed mentorship program for protocol developers, BOS, and IBC.\\\\\\\\n\\\\\\\\n- @joespano.near shared his positive experience building on NEAR and suggested improving visibility of protocol changes that may impact existing work. The idea of a Rust-style weekly newsletter was discussed to address this\\\\\\\\n\\\\\\\\n- Jakob presented a proposal for a mentorship program to support developers in the NEAR ecosystem, seeking feedback from the community: [How to open protocol development to a wider audience](https://t.co/9ZHS6SbdYa)\\\\\\\\n\\\\\\\\n- New participants interested in the Blockchain Operating System (BOS) joined the call, and discussions revolved around potential integration of NEAR with the Inter Blockchain Communication Protocol, currently dependent on NEP-384.[NEAR Announces the Blockchain Operating System](https://t.co/gHw0aBeUJq) | [NEP-384](https://t.co/20sBor6xNV)\\\\\\\\n\\\\\\\\n- Alexander raised concerns about project visibility within the NEAR protocol, leading to discussions on improving transparency in this aspect.\\\\\\\\n\\\\\\\\n- Plans for a recurring monthly time for the community call were discussed, with a poll to be sent in the Telegram community group to gather input on meeting time options.\\\\\\\\n\\\\\\\\n- If you missed the meeting, you can check out the recording [here](https://youtu.be/Sx1I4YA3gNk)\\\\\\\\n\\\\\\\\n\", \"metadata\": {\"id\": \"undefined\", \"title\": \"Protocol Community Group #3\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Discussions on developer experience on NEAR, a proposed mentorship program for protocol developers, BOS, and IBC\", \"createdAt\": \"2024-01-15\", \"updatedAt\": \"2024-01-15\", \"description\": \"Summary \", \"publishedAt\": \"2024-01-15\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"protocol\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6393707793014e+21
+    }
+  },
+  {
+    "id": "5423201301",
+    "receipt_id": "36Y3fJKvvPWBKMT6onChYF36UjjZXQsCwWCPJXBRtGUY",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Bf794dKMwsahituhSV8Q7YmkSVxgwAEaQR3FTehBKAa7",
+      "block_height": 120513516,
+      "block_timestamp": 1717616423561880000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 11406836883198,
+      "tokens_burnt": 1.1406836883198e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "C3okLSDeazBg2eUJuEhktTUQ5FXvUErmpSByyMFD3XcC",
+    "included_in_block_hash": "EBevhJFA3EmW6XJ11qA45ywtjm6v7a3XLyW1TpwYE6Vi",
+    "block_timestamp": "1717616421163348325",
+    "block": {
+      "block_height": 120513514
+    },
+    "receipt_conversion_tokens_burnt": "31239497602600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.1406836883198e+21,
+        "args": "{\"data\": {\"protocol.community.devhub.near\": {\"blog\": {\"protocol-community-group-3-2807\": {\"\": \"- The third meeting of the NEAR Protocol Community Group took place last week, covering discussions on various topics, including the developer experience on NEAR, a proposed mentorship program for protocol developers, BOS, and IBC.\\\\\\\\n\\\\\\\\n- @joespano.near shared his positive experience building on NEAR and suggested improving visibility of protocol changes that may impact existing work. The idea of a Rust-style weekly newsletter was discussed to address this\\\\\\\\n\\\\\\\\n- Jakob presented a proposal for a mentorship program to support developers in the NEAR ecosystem, seeking feedback from the community: [How to open protocol development to a wider audience](https://t.co/9ZHS6SbdYa)\\\\\\\\n\\\\\\\\n- New participants interested in the Blockchain Operating System (BOS) joined the call, and discussions revolved around potential integration of NEAR with the Inter Blockchain Communication Protocol, currently dependent on NEP-384.[NEAR Announces the Blockchain Operating System](https://t.co/gHw0aBeUJq) | [NEP-384](https://t.co/20sBor6xNV)\\\\\\\\n\\\\\\\\n- Alexander raised concerns about project visibility within the NEAR protocol, leading to discussions on improving transparency in this aspect.\\\\\\\\n\\\\\\\\n- Plans for a recurring monthly time for the community call were discussed, with a poll to be sent in the Telegram community group to gather input on meeting time options.\\\\\\\\n\\\\\\\\n- If you missed the meeting, you can check out the recording [here](https://youtu.be/Sx1I4YA3gNk)\\\\\\\\n\\\\\\\\n\", \"metadata\": {\"id\": \"undefined\", \"title\": \"Protocol Community Group #3\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Discussions on developer experience on NEAR, a proposed mentorship program for protocol developers, BOS, and IBC\", \"createdAt\": \"2024-01-15\", \"updatedAt\": \"2024-01-15\", \"description\": \"Summary \", \"publishedAt\": \"2024-01-15\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6393707793014e+21
+    }
+  },
+  {
+    "id": "5423724531",
+    "receipt_id": "GUdG8iKaEZPGa5kQ5J6UvJMmV8otuPjcJNjmZx2WxSqA",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "D6S3NN4edDRaVbD9JNLxu2VmTaSDANsnYtSLEyNmG3Ym",
+      "block_height": 120514704,
+      "block_timestamp": 1717617863169950700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 896873551928,
+      "tokens_burnt": 89687355192800000000,
+      "executor_account_id": "devhub.near",
+      "status": false
+    },
+    "transaction_hash": "BtEAgjKpLR4T1bdhpWH6DaGNcyEqnuwQUMSHPWLgJS9N",
+    "included_in_block_hash": "AFCJE5itUwLBfhxURfR8CzLhiLSxmPhwfZk6W2kEHcoh",
+    "block_timestamp": "1717617861800355257",
+    "block": {
+      "block_height": 120514703
+    },
+    "receipt_conversion_tokens_burnt": "31687355182800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 89687355192800000000,
+        "args": "{\"data\": {\"blog\": {\"next-steps-for-mynearwallet-a-call-for-maintainers-2030\": {\"\": \"**2023-02-22 UPDATE:  Thanks to the thorough review done by the Wallet Standards Work Group experts, we\\\\\\\\u{2019}ve selected the [Meteor Wallet team](https://near.org/devgovgigs.near/widget/app?page=post&id=210) as the maintainer for the MyNEARWallet project.**\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n# Introduction\\\\\\\\nMyNEARWallet is transitioning to the stewardship of DeveloperDAO and is being offered to the NEAR community to maintain and evolve. We invite the community to submit their proposals to become the maintainer of MyNEARWallet.\\\\\\\\n\\\\\\\\nRequirements for chosen maintainer:\\\\\\\\n\\\\\\\\n* MyNEARWallet has to maintain a wallet on the same domain.\\\\\\\\n* The MyNEARWallet codebase remains open source, since the wallet is used actively in the developer community and is closely integrated with NEAR developer tools.\\\\\\\\n\\\\\\\\nDeliverables to chosen maintainer:\\\\\\\\n\\\\\\\\n- MyNEARWallet Codebase\\\\\\\\n- Domain Name\\\\\\\\n- AWS Infrastructure Accounts\\\\\\\\n- Cloudflare Account\\\\\\\\n- List of security requirements and concerns detailing a comprehensive security review with open issues that must be addressed\\\\\\\\n\\\\\\\\nThe Wallet work group will review these proposals and post an Attestation to their chosen proposal. We can have a security team do a separate review of security ops of the applicant and post their attestation if they pass. After the DevDAO makes the selection, the Wallet Builder group primarily will supervise the work\\\\\\\\n\\\\\\\\n## Bidding Process\\\\\\\\nTo bid, please reply with a solution to the [the post](https://near.org/devgovgigs.near/widget/app?page=post&id=210) by Friday, January 27, 2023, 24:00 UTC. In your proposal, please include the following information.\\\\\\\\n\\\\\\\\nYour Team\\\\\\\\n\\\\\\\\n1. What\\\\\\\\u{2019}s your company name, location, and the point of contact?\\\\\\\\n2. Could you tell us about your team\\\\\\\\\\\\'s background and track record?\\\\\\\\n3. How long has your team been working together?\\\\\\\\n4. How large is your team? How many developers/engineers?\\\\\\\\n5. What kinds of work/projects do you specialize in? What kinds of work/projects have you worked on in the NEAR ecosystem and/or the Blockchain space?\\\\\\\\n6. What\\\\\\\\\\\\'s your familiarity/experience working with open source projects? Web3 projects?\\\\\\\\n7. What are your technical capabilities? Specifically what languages/stacks/services do you have expertise in (including frontend, backend, mobile, and cloud)?\\\\\\\\n8. How do you handle QA and testing?\\\\\\\\n9. What are your non-technical capabilities? Do you have in-house design, UX/UI? Project management? Customer support? Other services?\\\\\\\\n\\\\\\\\nThe MyNEARWallet Roadmap and Product Vision\\\\\\\\n\\\\\\\\n1. Could you provide a go-to-market and product roadmap for MyNEARWallet in an outline format. In that roadmap, please detail your target roadmap for MyNEARWallet:\\\\\\\\n\\\\\\\\na. Short term, 3 months\\\\\\\\nb. Medium term, 1 year\\\\\\\\nc. Long term, 2-3 years\\\\\\\\n\\\\\\\\n2. What is your plan to address the most critical security items?\\\\\\\\n\\\\\\\\n## Selection Process\\\\\\\\n[DeveloperDAO](https://www.neardevgov.org/) reviews the proposals and will post an Attestation to their chosen team by Friday, February 10, 2023. The [DeveloperDAO](https://www.neardevgov.org/) will also select a runner-up in case the primary bidder does not pass KYC.\\\\\\\\n\\\\\\\\n## Funding Process \\\\\\\\n[DeveloperDAO](https://www.neardevgov.org/) selects the team, determines funding, and supervises the funding distribution process in accordance with the team meeting all requirements. Please note that the chosen team will need to go through KYC to receive funding allocation.\", \"metadata\": {\"id\": \"2030\", \"title\": \"Next Steps for MyNEARWallet: A Call for Maintainers\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"reference\", \"subtitle\": \"Learn how to submit a proposal to become a maintainer of MyNEARWallet.\", \"createdAt\": \"2023-11-03\", \"updatedAt\": \"2023-11-03\", \"description\": \"Learn how to submit a proposal to become a maintainer of MyNEARWallet.\", \"publishedAt\": \"2023-11-03\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"developer-dao\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 121374710375600000000
+    }
+  },
+  {
+    "id": "5423762992",
+    "receipt_id": "5i859oiZP1ncQ7v7pVr1n53JTeNwn64tvMX2ux9TQswd",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AwEzZ51wr6FMwTgodG2G61ZN26ewGoMhpCmvAsd9ndV2",
+      "block_height": 120514800,
+      "block_timestamp": 1717617988269734000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5103361174197,
+      "tokens_burnt": 510336117419700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "EgCp5d9Wr5ijpWCAKH4t9rswSmrGCTixZQ9fbdZzFgYC",
+    "included_in_block_hash": "7LZuduBzaRJ6hYXRm2fvK4vbX8rQL5PSfii5B7NQAgKU",
+    "block_timestamp": "1717617986950227273",
+    "block": {
+      "block_height": 120514799
+    },
+    "receipt_conversion_tokens_burnt": "31687355182800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 510336117419700000000,
+        "args": "{\"data\": {\"blog\": {\"next-steps-for-mynearwallet-a-call-for-maintainers-2030\": {\"\": \"**2023-02-22 UPDATE:  Thanks to the thorough review done by the Wallet Standards Work Group experts, we\\\\\\\\u{2019}ve selected the [Meteor Wallet team](https://near.org/devgovgigs.near/widget/app?page=post&id=210) as the maintainer for the MyNEARWallet project.**\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n# Introduction\\\\\\\\nMyNEARWallet is transitioning to the stewardship of DeveloperDAO and is being offered to the NEAR community to maintain and evolve. We invite the community to submit their proposals to become the maintainer of MyNEARWallet.\\\\\\\\n\\\\\\\\nRequirements for chosen maintainer:\\\\\\\\n\\\\\\\\n* MyNEARWallet has to maintain a wallet on the same domain.\\\\\\\\n* The MyNEARWallet codebase remains open source, since the wallet is used actively in the developer community and is closely integrated with NEAR developer tools.\\\\\\\\n\\\\\\\\nDeliverables to chosen maintainer:\\\\\\\\n\\\\\\\\n- MyNEARWallet Codebase\\\\\\\\n- Domain Name\\\\\\\\n- AWS Infrastructure Accounts\\\\\\\\n- Cloudflare Account\\\\\\\\n- List of security requirements and concerns detailing a comprehensive security review with open issues that must be addressed\\\\\\\\n\\\\\\\\nThe Wallet work group will review these proposals and post an Attestation to their chosen proposal. We can have a security team do a separate review of security ops of the applicant and post their attestation if they pass. After the DevDAO makes the selection, the Wallet Builder group primarily will supervise the work\\\\\\\\n\\\\\\\\n## Bidding Process\\\\\\\\nTo bid, please reply with a solution to the [the post](https://near.org/devgovgigs.near/widget/app?page=post&id=210) by Friday, January 27, 2023, 24:00 UTC. In your proposal, please include the following information.\\\\\\\\n\\\\\\\\nYour Team\\\\\\\\n\\\\\\\\n1. What\\\\\\\\u{2019}s your company name, location, and the point of contact?\\\\\\\\n2. Could you tell us about your team\\\\\\\\\\\\'s background and track record?\\\\\\\\n3. How long has your team been working together?\\\\\\\\n4. How large is your team? How many developers/engineers?\\\\\\\\n5. What kinds of work/projects do you specialize in? What kinds of work/projects have you worked on in the NEAR ecosystem and/or the Blockchain space?\\\\\\\\n6. What\\\\\\\\\\\\'s your familiarity/experience working with open source projects? Web3 projects?\\\\\\\\n7. What are your technical capabilities? Specifically what languages/stacks/services do you have expertise in (including frontend, backend, mobile, and cloud)?\\\\\\\\n8. How do you handle QA and testing?\\\\\\\\n9. What are your non-technical capabilities? Do you have in-house design, UX/UI? Project management? Customer support? Other services?\\\\\\\\n\\\\\\\\nThe MyNEARWallet Roadmap and Product Vision\\\\\\\\n\\\\\\\\n1. Could you provide a go-to-market and product roadmap for MyNEARWallet in an outline format. In that roadmap, please detail your target roadmap for MyNEARWallet:\\\\\\\\n\\\\\\\\na. Short term, 3 months\\\\\\\\nb. Medium term, 1 year\\\\\\\\nc. Long term, 2-3 years\\\\\\\\n\\\\\\\\n2. What is your plan to address the most critical security items?\\\\\\\\n\\\\\\\\n## Selection Process\\\\\\\\n[DeveloperDAO](https://www.neardevgov.org/) reviews the proposals and will post an Attestation to their chosen team by Friday, February 10, 2023. The [DeveloperDAO](https://www.neardevgov.org/) will also select a runner-up in case the primary bidder does not pass KYC.\\\\\\\\n\\\\\\\\n## Funding Process \\\\\\\\n[DeveloperDAO](https://www.neardevgov.org/) selects the team, determines funding, and supervises the funding distribution process in accordance with the team meeting all requirements. Please note that the chosen team will need to go through KYC to receive funding allocation.\", \"metadata\": {\"id\": \"2030\", \"title\": \"Next Steps for MyNEARWallet: A Call for Maintainers\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"reference\", \"subtitle\": \"Learn how to submit a proposal to become a maintainer of MyNEARWallet.\", \"createdAt\": \"2023-11-03\", \"updatedAt\": \"2023-11-03\", \"description\": \"Learn how to submit a proposal to become a maintainer of MyNEARWallet.\", \"publishedAt\": \"2023-11-03\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"developer-dao\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7017075468847e+21
+    }
+  },
+  {
+    "id": "5423763355",
+    "receipt_id": "7A6e9ADBJoxLRdfs3hyccknv2KTfwBynStjibqBkBarh",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "39ooyFDgDXant4QX5CSUaMNWatJb7XqnFSJe2E5DXoAf",
+      "block_height": 120514801,
+      "block_timestamp": 1717617989519295000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 11596840742822,
+      "tokens_burnt": 1.1596840742822e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "EgCp5d9Wr5ijpWCAKH4t9rswSmrGCTixZQ9fbdZzFgYC",
+    "included_in_block_hash": "7LZuduBzaRJ6hYXRm2fvK4vbX8rQL5PSfii5B7NQAgKU",
+    "block_timestamp": "1717617986950227273",
+    "block": {
+      "block_height": 120514799
+    },
+    "receipt_conversion_tokens_burnt": "31687355182800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.1596840742822e+21,
+        "args": "{\"data\": {\"developer-dao.community.devhub.near\": {\"blog\": {\"next-steps-for-mynearwallet-a-call-for-maintainers-2030\": {\"\": \"**2023-02-22 UPDATE:  Thanks to the thorough review done by the Wallet Standards Work Group experts, we\\\\\\\\u{2019}ve selected the [Meteor Wallet team](https://near.org/devgovgigs.near/widget/app?page=post&id=210) as the maintainer for the MyNEARWallet project.**\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n# Introduction\\\\\\\\nMyNEARWallet is transitioning to the stewardship of DeveloperDAO and is being offered to the NEAR community to maintain and evolve. We invite the community to submit their proposals to become the maintainer of MyNEARWallet.\\\\\\\\n\\\\\\\\nRequirements for chosen maintainer:\\\\\\\\n\\\\\\\\n* MyNEARWallet has to maintain a wallet on the same domain.\\\\\\\\n* The MyNEARWallet codebase remains open source, since the wallet is used actively in the developer community and is closely integrated with NEAR developer tools.\\\\\\\\n\\\\\\\\nDeliverables to chosen maintainer:\\\\\\\\n\\\\\\\\n- MyNEARWallet Codebase\\\\\\\\n- Domain Name\\\\\\\\n- AWS Infrastructure Accounts\\\\\\\\n- Cloudflare Account\\\\\\\\n- List of security requirements and concerns detailing a comprehensive security review with open issues that must be addressed\\\\\\\\n\\\\\\\\nThe Wallet work group will review these proposals and post an Attestation to their chosen proposal. We can have a security team do a separate review of security ops of the applicant and post their attestation if they pass. After the DevDAO makes the selection, the Wallet Builder group primarily will supervise the work\\\\\\\\n\\\\\\\\n## Bidding Process\\\\\\\\nTo bid, please reply with a solution to the [the post](https://near.org/devgovgigs.near/widget/app?page=post&id=210) by Friday, January 27, 2023, 24:00 UTC. In your proposal, please include the following information.\\\\\\\\n\\\\\\\\nYour Team\\\\\\\\n\\\\\\\\n1. What\\\\\\\\u{2019}s your company name, location, and the point of contact?\\\\\\\\n2. Could you tell us about your team\\\\\\\\\\\\'s background and track record?\\\\\\\\n3. How long has your team been working together?\\\\\\\\n4. How large is your team? How many developers/engineers?\\\\\\\\n5. What kinds of work/projects do you specialize in? What kinds of work/projects have you worked on in the NEAR ecosystem and/or the Blockchain space?\\\\\\\\n6. What\\\\\\\\\\\\'s your familiarity/experience working with open source projects? Web3 projects?\\\\\\\\n7. What are your technical capabilities? Specifically what languages/stacks/services do you have expertise in (including frontend, backend, mobile, and cloud)?\\\\\\\\n8. How do you handle QA and testing?\\\\\\\\n9. What are your non-technical capabilities? Do you have in-house design, UX/UI? Project management? Customer support? Other services?\\\\\\\\n\\\\\\\\nThe MyNEARWallet Roadmap and Product Vision\\\\\\\\n\\\\\\\\n1. Could you provide a go-to-market and product roadmap for MyNEARWallet in an outline format. In that roadmap, please detail your target roadmap for MyNEARWallet:\\\\\\\\n\\\\\\\\na. Short term, 3 months\\\\\\\\nb. Medium term, 1 year\\\\\\\\nc. Long term, 2-3 years\\\\\\\\n\\\\\\\\n2. What is your plan to address the most critical security items?\\\\\\\\n\\\\\\\\n## Selection Process\\\\\\\\n[DeveloperDAO](https://www.neardevgov.org/) reviews the proposals and will post an Attestation to their chosen team by Friday, February 10, 2023. The [DeveloperDAO](https://www.neardevgov.org/) will also select a runner-up in case the primary bidder does not pass KYC.\\\\\\\\n\\\\\\\\n## Funding Process \\\\\\\\n[DeveloperDAO](https://www.neardevgov.org/) selects the team, determines funding, and supervises the funding distribution process in accordance with the team meeting all requirements. Please note that the chosen team will need to go through KYC to receive funding allocation.\", \"metadata\": {\"id\": \"2030\", \"title\": \"Next Steps for MyNEARWallet: A Call for Maintainers\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"reference\", \"subtitle\": \"Learn how to submit a proposal to become a maintainer of MyNEARWallet.\", \"createdAt\": \"2023-11-03\", \"updatedAt\": \"2023-11-03\", \"description\": \"Learn how to submit a proposal to become a maintainer of MyNEARWallet.\", \"publishedAt\": \"2023-11-03\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7017075468847e+21
+    }
+  },
+  {
+    "id": "5423826644",
+    "receipt_id": "7VQJA7u9BxCQuqojbjMatD3b2TbBMLsyrcTmAzRjZiks",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HsGkzDC7xM7XAKt8iXe9o4tVHjjds3jj1ERMozFxPjDY",
+      "block_height": 120514928,
+      "block_timestamp": 1717618152985338600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5089539218271,
+      "tokens_burnt": 508953921827100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "49v1Ry3Nv3cPNPMCryaEu7ds8h68J99NuqXNsbJQPv71",
+    "included_in_block_hash": "32Xa2dGmokEfpNdtmq6HUMjZidhRniJWWnsUj5hD1sRy",
+    "block_timestamp": "1717618151680318732",
+    "block": {
+      "block_height": 120514927
+    },
+    "receipt_conversion_tokens_burnt": "31687355182800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 508953921827100000000,
+        "args": "{\"data\": {\"blog\": {\"next-steps-for-mynearwallet-a-call-for-maintainers-2030\": {\"\": \"**2023-02-22 UPDATE:  Thanks to the thorough review done by the Wallet Standards Work Group experts, we\\\\\\\\u{2019}ve selected the [Meteor Wallet team](https://near.org/devgovgigs.near/widget/app?page=post&id=210) as the maintainer for the MyNEARWallet project.**\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n# Introduction\\\\\\\\nMyNEARWallet is transitioning to the stewardship of DeveloperDAO and is being offered to the NEAR community to maintain and evolve. We invite the community to submit their proposals to become the maintainer of MyNEARWallet.\\\\\\\\n\\\\\\\\nRequirements for chosen maintainer:\\\\\\\\n\\\\\\\\n* MyNEARWallet has to maintain a wallet on the same domain.\\\\\\\\n* The MyNEARWallet codebase remains open source, since the wallet is used actively in the developer community and is closely integrated with NEAR developer tools.\\\\\\\\n\\\\\\\\nDeliverables to chosen maintainer:\\\\\\\\n\\\\\\\\n- MyNEARWallet Codebase\\\\\\\\n- Domain Name\\\\\\\\n- AWS Infrastructure Accounts\\\\\\\\n- Cloudflare Account\\\\\\\\n- List of security requirements and concerns detailing a comprehensive security review with open issues that must be addressed\\\\\\\\n\\\\\\\\nThe Wallet work group will review these proposals and post an Attestation to their chosen proposal. We can have a security team do a separate review of security ops of the applicant and post their attestation if they pass. After the DevDAO makes the selection, the Wallet Builder group primarily will supervise the work\\\\\\\\n\\\\\\\\n## Bidding Process\\\\\\\\nTo bid, please reply with a solution to the [the post](https://near.org/devgovgigs.near/widget/app?page=post&id=210) by Friday, January 27, 2023, 24:00 UTC. In your proposal, please include the following information.\\\\\\\\n\\\\\\\\nYour Team\\\\\\\\n\\\\\\\\n1. What\\\\\\\\u{2019}s your company name, location, and the point of contact?\\\\\\\\n2. Could you tell us about your team\\\\\\\\\\\\'s background and track record?\\\\\\\\n3. How long has your team been working together?\\\\\\\\n4. How large is your team? How many developers/engineers?\\\\\\\\n5. What kinds of work/projects do you specialize in? What kinds of work/projects have you worked on in the NEAR ecosystem and/or the Blockchain space?\\\\\\\\n6. What\\\\\\\\\\\\'s your familiarity/experience working with open source projects? Web3 projects?\\\\\\\\n7. What are your technical capabilities? Specifically what languages/stacks/services do you have expertise in (including frontend, backend, mobile, and cloud)?\\\\\\\\n8. How do you handle QA and testing?\\\\\\\\n9. What are your non-technical capabilities? Do you have in-house design, UX/UI? Project management? Customer support? Other services?\\\\\\\\n\\\\\\\\nThe MyNEARWallet Roadmap and Product Vision\\\\\\\\n\\\\\\\\n1. Could you provide a go-to-market and product roadmap for MyNEARWallet in an outline format. In that roadmap, please detail your target roadmap for MyNEARWallet:\\\\\\\\n\\\\\\\\na. Short term, 3 months\\\\\\\\nb. Medium term, 1 year\\\\\\\\nc. Long term, 2-3 years\\\\\\\\n\\\\\\\\n2. What is your plan to address the most critical security items?\\\\\\\\n\\\\\\\\n## Selection Process\\\\\\\\n[DeveloperDAO](https://www.neardevgov.org/) reviews the proposals and will post an Attestation to their chosen team by Friday, February 10, 2023. The [DeveloperDAO](https://www.neardevgov.org/) will also select a runner-up in case the primary bidder does not pass KYC.\\\\\\\\n\\\\\\\\n## Funding Process \\\\\\\\n[DeveloperDAO](https://www.neardevgov.org/) selects the team, determines funding, and supervises the funding distribution process in accordance with the team meeting all requirements. Please note that the chosen team will need to go through KYC to receive funding allocation.\", \"metadata\": {\"id\": \"2030\", \"title\": \"Next Steps for MyNEARWallet: A Call for Maintainers\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"reference\", \"subtitle\": \"Learn how to submit a proposal to become a maintainer of MyNEARWallet.\", \"createdAt\": \"2023-11-03\", \"updatedAt\": \"2023-11-03\", \"description\": \"Learn how to submit a proposal to become a maintainer of MyNEARWallet.\", \"publishedAt\": \"2023-11-03\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"developer-dao\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4948074560395e+21
+    }
+  },
+  {
+    "id": "5423828463",
+    "receipt_id": "69cftiJYhbXfEGQMwaWAdyErfwDvBT8sQTXTzuUw5tTA",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8KEiCkea9pj4AMKo7zS8P6inSqaVizfPsbi6cj5CsSft",
+      "block_height": 120514932,
+      "block_timestamp": 1717618158168059600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9541661790296,
+      "tokens_burnt": 954166179029600000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "49v1Ry3Nv3cPNPMCryaEu7ds8h68J99NuqXNsbJQPv71",
+    "included_in_block_hash": "32Xa2dGmokEfpNdtmq6HUMjZidhRniJWWnsUj5hD1sRy",
+    "block_timestamp": "1717618151680318732",
+    "block": {
+      "block_height": 120514927
+    },
+    "receipt_conversion_tokens_burnt": "31687355182800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 954166179029600000000,
+        "args": "{\"data\": {\"developer-dao.community.devhub.near\": {\"blog\": {\"next-steps-for-mynearwallet-a-call-for-maintainers-2030\": {\"\": \"**2023-02-22 UPDATE:  Thanks to the thorough review done by the Wallet Standards Work Group experts, we\\\\\\\\u{2019}ve selected the [Meteor Wallet team](https://near.org/devgovgigs.near/widget/app?page=post&id=210) as the maintainer for the MyNEARWallet project.**\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n# Introduction\\\\\\\\nMyNEARWallet is transitioning to the stewardship of DeveloperDAO and is being offered to the NEAR community to maintain and evolve. We invite the community to submit their proposals to become the maintainer of MyNEARWallet.\\\\\\\\n\\\\\\\\nRequirements for chosen maintainer:\\\\\\\\n\\\\\\\\n* MyNEARWallet has to maintain a wallet on the same domain.\\\\\\\\n* The MyNEARWallet codebase remains open source, since the wallet is used actively in the developer community and is closely integrated with NEAR developer tools.\\\\\\\\n\\\\\\\\nDeliverables to chosen maintainer:\\\\\\\\n\\\\\\\\n- MyNEARWallet Codebase\\\\\\\\n- Domain Name\\\\\\\\n- AWS Infrastructure Accounts\\\\\\\\n- Cloudflare Account\\\\\\\\n- List of security requirements and concerns detailing a comprehensive security review with open issues that must be addressed\\\\\\\\n\\\\\\\\nThe Wallet work group will review these proposals and post an Attestation to their chosen proposal. We can have a security team do a separate review of security ops of the applicant and post their attestation if they pass. After the DevDAO makes the selection, the Wallet Builder group primarily will supervise the work\\\\\\\\n\\\\\\\\n## Bidding Process\\\\\\\\nTo bid, please reply with a solution to the [the post](https://near.org/devgovgigs.near/widget/app?page=post&id=210) by Friday, January 27, 2023, 24:00 UTC. In your proposal, please include the following information.\\\\\\\\n\\\\\\\\nYour Team\\\\\\\\n\\\\\\\\n1. What\\\\\\\\u{2019}s your company name, location, and the point of contact?\\\\\\\\n2. Could you tell us about your team\\\\\\\\\\\\'s background and track record?\\\\\\\\n3. How long has your team been working together?\\\\\\\\n4. How large is your team? How many developers/engineers?\\\\\\\\n5. What kinds of work/projects do you specialize in? What kinds of work/projects have you worked on in the NEAR ecosystem and/or the Blockchain space?\\\\\\\\n6. What\\\\\\\\\\\\'s your familiarity/experience working with open source projects? Web3 projects?\\\\\\\\n7. What are your technical capabilities? Specifically what languages/stacks/services do you have expertise in (including frontend, backend, mobile, and cloud)?\\\\\\\\n8. How do you handle QA and testing?\\\\\\\\n9. What are your non-technical capabilities? Do you have in-house design, UX/UI? Project management? Customer support? Other services?\\\\\\\\n\\\\\\\\nThe MyNEARWallet Roadmap and Product Vision\\\\\\\\n\\\\\\\\n1. Could you provide a go-to-market and product roadmap for MyNEARWallet in an outline format. In that roadmap, please detail your target roadmap for MyNEARWallet:\\\\\\\\n\\\\\\\\na. Short term, 3 months\\\\\\\\nb. Medium term, 1 year\\\\\\\\nc. Long term, 2-3 years\\\\\\\\n\\\\\\\\n2. What is your plan to address the most critical security items?\\\\\\\\n\\\\\\\\n## Selection Process\\\\\\\\n[DeveloperDAO](https://www.neardevgov.org/) reviews the proposals and will post an Attestation to their chosen team by Friday, February 10, 2023. The [DeveloperDAO](https://www.neardevgov.org/) will also select a runner-up in case the primary bidder does not pass KYC.\\\\\\\\n\\\\\\\\n## Funding Process \\\\\\\\n[DeveloperDAO](https://www.neardevgov.org/) selects the team, determines funding, and supervises the funding distribution process in accordance with the team meeting all requirements. Please note that the chosen team will need to go through KYC to receive funding allocation.\", \"metadata\": {\"id\": \"2030\", \"title\": \"Next Steps for MyNEARWallet: A Call for Maintainers\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"reference\", \"subtitle\": \"Learn how to submit a proposal to become a maintainer of MyNEARWallet.\", \"createdAt\": \"2023-11-03\", \"updatedAt\": \"2023-11-03\", \"description\": \"Learn how to submit a proposal to become a maintainer of MyNEARWallet.\", \"publishedAt\": \"2023-11-03\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4948074560395e+21
+    }
+  },
+  {
+    "id": "5423838711",
+    "receipt_id": "HRjYVqFLNjsZu6S8uzaX4rwBvtMTVv6nHma5YcMagtnv",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Bza51N5M6NrwMawx2as3172KG21tEaEmDaXvrWFcDhYJ",
+      "block_height": 120514948,
+      "block_timestamp": 1717618178091309000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5103361174197,
+      "tokens_burnt": 510336117419700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "6xkHGfBNR3JHLqoTsYa5BXL4v29D2iW63TqWpJW3b5Rr",
+    "included_in_block_hash": "ZT9WwrmFDjPpB1oKXiXUEfK7DhvqotrSp79w316LVeB",
+    "block_timestamp": "1717618177026759294",
+    "block": {
+      "block_height": 120514947
+    },
+    "receipt_conversion_tokens_burnt": "31687355182800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 510336117419700000000,
+        "args": "{\"data\": {\"blog\": {\"next-steps-for-mynearwallet-a-call-for-maintainers-2030\": {\"\": \"**2023-02-22 UPDATE:  Thanks to the thorough review done by the Wallet Standards Work Group experts, we\\\\\\\\u{2019}ve selected the [Meteor Wallet team](https://near.org/devgovgigs.near/widget/app?page=post&id=210) as the maintainer for the MyNEARWallet project.**\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n# Introduction\\\\\\\\nMyNEARWallet is transitioning to the stewardship of DeveloperDAO and is being offered to the NEAR community to maintain and evolve. We invite the community to submit their proposals to become the maintainer of MyNEARWallet.\\\\\\\\n\\\\\\\\nRequirements for chosen maintainer:\\\\\\\\n\\\\\\\\n* MyNEARWallet has to maintain a wallet on the same domain.\\\\\\\\n* The MyNEARWallet codebase remains open source, since the wallet is used actively in the developer community and is closely integrated with NEAR developer tools.\\\\\\\\n\\\\\\\\nDeliverables to chosen maintainer:\\\\\\\\n\\\\\\\\n- MyNEARWallet Codebase\\\\\\\\n- Domain Name\\\\\\\\n- AWS Infrastructure Accounts\\\\\\\\n- Cloudflare Account\\\\\\\\n- List of security requirements and concerns detailing a comprehensive security review with open issues that must be addressed\\\\\\\\n\\\\\\\\nThe Wallet work group will review these proposals and post an Attestation to their chosen proposal. We can have a security team do a separate review of security ops of the applicant and post their attestation if they pass. After the DevDAO makes the selection, the Wallet Builder group primarily will supervise the work\\\\\\\\n\\\\\\\\n## Bidding Process\\\\\\\\nTo bid, please reply with a solution to the [the post](https://near.org/devgovgigs.near/widget/app?page=post&id=210) by Friday, January 27, 2023, 24:00 UTC. In your proposal, please include the following information.\\\\\\\\n\\\\\\\\nYour Team\\\\\\\\n\\\\\\\\n1. What\\\\\\\\u{2019}s your company name, location, and the point of contact?\\\\\\\\n2. Could you tell us about your team\\\\\\\\\\\\'s background and track record?\\\\\\\\n3. How long has your team been working together?\\\\\\\\n4. How large is your team? How many developers/engineers?\\\\\\\\n5. What kinds of work/projects do you specialize in? What kinds of work/projects have you worked on in the NEAR ecosystem and/or the Blockchain space?\\\\\\\\n6. What\\\\\\\\\\\\'s your familiarity/experience working with open source projects? Web3 projects?\\\\\\\\n7. What are your technical capabilities? Specifically what languages/stacks/services do you have expertise in (including frontend, backend, mobile, and cloud)?\\\\\\\\n8. How do you handle QA and testing?\\\\\\\\n9. What are your non-technical capabilities? Do you have in-house design, UX/UI? Project management? Customer support? Other services?\\\\\\\\n\\\\\\\\nThe MyNEARWallet Roadmap and Product Vision\\\\\\\\n\\\\\\\\n1. Could you provide a go-to-market and product roadmap for MyNEARWallet in an outline format. In that roadmap, please detail your target roadmap for MyNEARWallet:\\\\\\\\n\\\\\\\\na. Short term, 3 months\\\\\\\\nb. Medium term, 1 year\\\\\\\\nc. Long term, 2-3 years\\\\\\\\n\\\\\\\\n2. What is your plan to address the most critical security items?\\\\\\\\n\\\\\\\\n## Selection Process\\\\\\\\n[DeveloperDAO](https://www.neardevgov.org/) reviews the proposals and will post an Attestation to their chosen team by Friday, February 10, 2023. The [DeveloperDAO](https://www.neardevgov.org/) will also select a runner-up in case the primary bidder does not pass KYC.\\\\\\\\n\\\\\\\\n## Funding Process \\\\\\\\n[DeveloperDAO](https://www.neardevgov.org/) selects the team, determines funding, and supervises the funding distribution process in accordance with the team meeting all requirements. Please note that the chosen team will need to go through KYC to receive funding allocation.\", \"metadata\": {\"id\": \"2030\", \"title\": \"Next Steps for MyNEARWallet: A Call for Maintainers\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"reference\", \"subtitle\": \"Learn how to submit a proposal to become a maintainer of MyNEARWallet.\", \"createdAt\": \"2023-11-03\", \"updatedAt\": \"2023-11-03\", \"description\": \"Learn how to submit a proposal to become a maintainer of MyNEARWallet.\", \"publishedAt\": \"2023-11-03\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"developer-dao\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4961896516321e+21
+    }
+  },
+  {
+    "id": "5423839903",
+    "receipt_id": "7c42UmVuqFYZoPc2hohyD9Xftj89VxpdX1L8zD2L9GSc",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5fsZjrsQAT4rzhyk8AcjUS7KZEbaP6KYdLCsXeDLQuab",
+      "block_height": 120514950,
+      "block_timestamp": 1717618180443733200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9541661790296,
+      "tokens_burnt": 954166179029600000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "6xkHGfBNR3JHLqoTsYa5BXL4v29D2iW63TqWpJW3b5Rr",
+    "included_in_block_hash": "ZT9WwrmFDjPpB1oKXiXUEfK7DhvqotrSp79w316LVeB",
+    "block_timestamp": "1717618177026759294",
+    "block": {
+      "block_height": 120514947
+    },
+    "receipt_conversion_tokens_burnt": "31687355182800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 954166179029600000000,
+        "args": "{\"data\": {\"developer-dao.community.devhub.near\": {\"blog\": {\"next-steps-for-mynearwallet-a-call-for-maintainers-2030\": {\"\": \"**2023-02-22 UPDATE:  Thanks to the thorough review done by the Wallet Standards Work Group experts, we\\\\\\\\u{2019}ve selected the [Meteor Wallet team](https://near.org/devgovgigs.near/widget/app?page=post&id=210) as the maintainer for the MyNEARWallet project.**\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n# Introduction\\\\\\\\nMyNEARWallet is transitioning to the stewardship of DeveloperDAO and is being offered to the NEAR community to maintain and evolve. We invite the community to submit their proposals to become the maintainer of MyNEARWallet.\\\\\\\\n\\\\\\\\nRequirements for chosen maintainer:\\\\\\\\n\\\\\\\\n* MyNEARWallet has to maintain a wallet on the same domain.\\\\\\\\n* The MyNEARWallet codebase remains open source, since the wallet is used actively in the developer community and is closely integrated with NEAR developer tools.\\\\\\\\n\\\\\\\\nDeliverables to chosen maintainer:\\\\\\\\n\\\\\\\\n- MyNEARWallet Codebase\\\\\\\\n- Domain Name\\\\\\\\n- AWS Infrastructure Accounts\\\\\\\\n- Cloudflare Account\\\\\\\\n- List of security requirements and concerns detailing a comprehensive security review with open issues that must be addressed\\\\\\\\n\\\\\\\\nThe Wallet work group will review these proposals and post an Attestation to their chosen proposal. We can have a security team do a separate review of security ops of the applicant and post their attestation if they pass. After the DevDAO makes the selection, the Wallet Builder group primarily will supervise the work\\\\\\\\n\\\\\\\\n## Bidding Process\\\\\\\\nTo bid, please reply with a solution to the [the post](https://near.org/devgovgigs.near/widget/app?page=post&id=210) by Friday, January 27, 2023, 24:00 UTC. In your proposal, please include the following information.\\\\\\\\n\\\\\\\\nYour Team\\\\\\\\n\\\\\\\\n1. What\\\\\\\\u{2019}s your company name, location, and the point of contact?\\\\\\\\n2. Could you tell us about your team\\\\\\\\\\\\'s background and track record?\\\\\\\\n3. How long has your team been working together?\\\\\\\\n4. How large is your team? How many developers/engineers?\\\\\\\\n5. What kinds of work/projects do you specialize in? What kinds of work/projects have you worked on in the NEAR ecosystem and/or the Blockchain space?\\\\\\\\n6. What\\\\\\\\\\\\'s your familiarity/experience working with open source projects? Web3 projects?\\\\\\\\n7. What are your technical capabilities? Specifically what languages/stacks/services do you have expertise in (including frontend, backend, mobile, and cloud)?\\\\\\\\n8. How do you handle QA and testing?\\\\\\\\n9. What are your non-technical capabilities? Do you have in-house design, UX/UI? Project management? Customer support? Other services?\\\\\\\\n\\\\\\\\nThe MyNEARWallet Roadmap and Product Vision\\\\\\\\n\\\\\\\\n1. Could you provide a go-to-market and product roadmap for MyNEARWallet in an outline format. In that roadmap, please detail your target roadmap for MyNEARWallet:\\\\\\\\n\\\\\\\\na. Short term, 3 months\\\\\\\\nb. Medium term, 1 year\\\\\\\\nc. Long term, 2-3 years\\\\\\\\n\\\\\\\\n2. What is your plan to address the most critical security items?\\\\\\\\n\\\\\\\\n## Selection Process\\\\\\\\n[DeveloperDAO](https://www.neardevgov.org/) reviews the proposals and will post an Attestation to their chosen team by Friday, February 10, 2023. The [DeveloperDAO](https://www.neardevgov.org/) will also select a runner-up in case the primary bidder does not pass KYC.\\\\\\\\n\\\\\\\\n## Funding Process \\\\\\\\n[DeveloperDAO](https://www.neardevgov.org/) selects the team, determines funding, and supervises the funding distribution process in accordance with the team meeting all requirements. Please note that the chosen team will need to go through KYC to receive funding allocation.\", \"metadata\": {\"id\": \"2030\", \"title\": \"Next Steps for MyNEARWallet: A Call for Maintainers\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"reference\", \"subtitle\": \"Learn how to submit a proposal to become a maintainer of MyNEARWallet.\", \"createdAt\": \"2023-11-03\", \"updatedAt\": \"2023-11-03\", \"description\": \"Learn how to submit a proposal to become a maintainer of MyNEARWallet.\", \"publishedAt\": \"2023-11-03\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4961896516321e+21
+    }
+  },
+  {
+    "id": "5423876013",
+    "receipt_id": "8F6JSbT8x3AN3jt7G2GXibmeQH4rWB2PpzYtWA2ww9dX",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GZpzu8nMi2d8Uhymj4ZuVFBGrPWhMBHm5ku5KQ4h9wxb",
+      "block_height": 120515004,
+      "block_timestamp": 1717618251144495000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5103361174197,
+      "tokens_burnt": 510336117419700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "AehqgUYzXumxhUaoZ1g5sUF161xrmN8HmunyZLKbtZYN",
+    "included_in_block_hash": "9dYKhMmhd9BpsRofLdFci8DHeXKrmTc8wugZaVNUdSDL",
+    "block_timestamp": "1717618249858478712",
+    "block": {
+      "block_height": 120515003
+    },
+    "receipt_conversion_tokens_burnt": "31687355182800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 510336117419700000000,
+        "args": "{\"data\": {\"blog\": {\"next-steps-for-mynearwallet-a-call-for-maintainers-2030\": {\"\": \"**2023-02-22 UPDATE:  Thanks to the thorough review done by the Wallet Standards Work Group experts, we\\\\\\\\u{2019}ve selected the [Meteor Wallet team](https://near.org/devgovgigs.near/widget/app?page=post&id=210) as the maintainer for the MyNEARWallet project.**\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n# Introduction\\\\\\\\nMyNEARWallet is transitioning to the stewardship of DeveloperDAO and is being offered to the NEAR community to maintain and evolve. We invite the community to submit their proposals to become the maintainer of MyNEARWallet.\\\\\\\\n\\\\\\\\nRequirements for chosen maintainer:\\\\\\\\n\\\\\\\\n* MyNEARWallet has to maintain a wallet on the same domain.\\\\\\\\n* The MyNEARWallet codebase remains open source, since the wallet is used actively in the developer community and is closely integrated with NEAR developer tools.\\\\\\\\n\\\\\\\\nDeliverables to chosen maintainer:\\\\\\\\n\\\\\\\\n- MyNEARWallet Codebase\\\\\\\\n- Domain Name\\\\\\\\n- AWS Infrastructure Accounts\\\\\\\\n- Cloudflare Account\\\\\\\\n- List of security requirements and concerns detailing a comprehensive security review with open issues that must be addressed\\\\\\\\n\\\\\\\\nThe Wallet work group will review these proposals and post an Attestation to their chosen proposal. We can have a security team do a separate review of security ops of the applicant and post their attestation if they pass. After the DevDAO makes the selection, the Wallet Builder group primarily will supervise the work\\\\\\\\n\\\\\\\\n## Bidding Process\\\\\\\\nTo bid, please reply with a solution to the [the post](https://near.org/devgovgigs.near/widget/app?page=post&id=210) by Friday, January 27, 2023, 24:00 UTC. In your proposal, please include the following information.\\\\\\\\n\\\\\\\\nYour Team\\\\\\\\n\\\\\\\\n1. What\\\\\\\\u{2019}s your company name, location, and the point of contact?\\\\\\\\n2. Could you tell us about your team\\\\\\\\\\\\'s background and track record?\\\\\\\\n3. How long has your team been working together?\\\\\\\\n4. How large is your team? How many developers/engineers?\\\\\\\\n5. What kinds of work/projects do you specialize in? What kinds of work/projects have you worked on in the NEAR ecosystem and/or the Blockchain space?\\\\\\\\n6. What\\\\\\\\\\\\'s your familiarity/experience working with open source projects? Web3 projects?\\\\\\\\n7. What are your technical capabilities? Specifically what languages/stacks/services do you have expertise in (including frontend, backend, mobile, and cloud)?\\\\\\\\n8. How do you handle QA and testing?\\\\\\\\n9. What are your non-technical capabilities? Do you have in-house design, UX/UI? Project management? Customer support? Other services?\\\\\\\\n\\\\\\\\nThe MyNEARWallet Roadmap and Product Vision\\\\\\\\n\\\\\\\\n1. Could you provide a go-to-market and product roadmap for MyNEARWallet in an outline format. In that roadmap, please detail your target roadmap for MyNEARWallet:\\\\\\\\n\\\\\\\\na. Short term, 3 months\\\\\\\\nb. Medium term, 1 year\\\\\\\\nc. Long term, 2-3 years\\\\\\\\n\\\\\\\\n2. What is your plan to address the most critical security items?\\\\\\\\n\\\\\\\\n## Selection Process\\\\\\\\n[DeveloperDAO](https://www.neardevgov.org/) reviews the proposals and will post an Attestation to their chosen team by Friday, February 10, 2023. The [DeveloperDAO](https://www.neardevgov.org/) will also select a runner-up in case the primary bidder does not pass KYC.\\\\\\\\n\\\\\\\\n## Funding Process \\\\\\\\n[DeveloperDAO](https://www.neardevgov.org/) selects the team, determines funding, and supervises the funding distribution process in accordance with the team meeting all requirements. Please note that the chosen team will need to go through KYC to receive funding allocation.\", \"metadata\": {\"id\": \"2030\", \"title\": \"Next Steps for MyNEARWallet: A Call for Maintainers\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"reference\", \"subtitle\": \"Learn how to submit a proposal to become a maintainer of MyNEARWallet.\", \"createdAt\": \"2023-11-03\", \"updatedAt\": \"2023-11-03\", \"description\": \"Learn how to submit a proposal to become a maintainer of MyNEARWallet.\", \"publishedAt\": \"2023-11-03\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"developer-dao\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4961896516321e+21
+    }
+  },
+  {
+    "id": "5423878414",
+    "receipt_id": "95Kwh6KK6eKWYMBXtfn1PozztmJhPPJS2xGhqqK58DgM",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "B77X4BF13JxgXFJN4UosEyz1xBCcEEpfYiF2cDnYMPRT",
+      "block_height": 120515008,
+      "block_timestamp": 1717618256122233300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9541661790296,
+      "tokens_burnt": 954166179029600000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "AehqgUYzXumxhUaoZ1g5sUF161xrmN8HmunyZLKbtZYN",
+    "included_in_block_hash": "9dYKhMmhd9BpsRofLdFci8DHeXKrmTc8wugZaVNUdSDL",
+    "block_timestamp": "1717618249858478712",
+    "block": {
+      "block_height": 120515003
+    },
+    "receipt_conversion_tokens_burnt": "31687355182800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 954166179029600000000,
+        "args": "{\"data\": {\"developer-dao.community.devhub.near\": {\"blog\": {\"next-steps-for-mynearwallet-a-call-for-maintainers-2030\": {\"\": \"**2023-02-22 UPDATE:  Thanks to the thorough review done by the Wallet Standards Work Group experts, we\\\\\\\\u{2019}ve selected the [Meteor Wallet team](https://near.org/devgovgigs.near/widget/app?page=post&id=210) as the maintainer for the MyNEARWallet project.**\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n# Introduction\\\\\\\\nMyNEARWallet is transitioning to the stewardship of DeveloperDAO and is being offered to the NEAR community to maintain and evolve. We invite the community to submit their proposals to become the maintainer of MyNEARWallet.\\\\\\\\n\\\\\\\\nRequirements for chosen maintainer:\\\\\\\\n\\\\\\\\n* MyNEARWallet has to maintain a wallet on the same domain.\\\\\\\\n* The MyNEARWallet codebase remains open source, since the wallet is used actively in the developer community and is closely integrated with NEAR developer tools.\\\\\\\\n\\\\\\\\nDeliverables to chosen maintainer:\\\\\\\\n\\\\\\\\n- MyNEARWallet Codebase\\\\\\\\n- Domain Name\\\\\\\\n- AWS Infrastructure Accounts\\\\\\\\n- Cloudflare Account\\\\\\\\n- List of security requirements and concerns detailing a comprehensive security review with open issues that must be addressed\\\\\\\\n\\\\\\\\nThe Wallet work group will review these proposals and post an Attestation to their chosen proposal. We can have a security team do a separate review of security ops of the applicant and post their attestation if they pass. After the DevDAO makes the selection, the Wallet Builder group primarily will supervise the work\\\\\\\\n\\\\\\\\n## Bidding Process\\\\\\\\nTo bid, please reply with a solution to the [the post](https://near.org/devgovgigs.near/widget/app?page=post&id=210) by Friday, January 27, 2023, 24:00 UTC. In your proposal, please include the following information.\\\\\\\\n\\\\\\\\nYour Team\\\\\\\\n\\\\\\\\n1. What\\\\\\\\u{2019}s your company name, location, and the point of contact?\\\\\\\\n2. Could you tell us about your team\\\\\\\\\\\\'s background and track record?\\\\\\\\n3. How long has your team been working together?\\\\\\\\n4. How large is your team? How many developers/engineers?\\\\\\\\n5. What kinds of work/projects do you specialize in? What kinds of work/projects have you worked on in the NEAR ecosystem and/or the Blockchain space?\\\\\\\\n6. What\\\\\\\\\\\\'s your familiarity/experience working with open source projects? Web3 projects?\\\\\\\\n7. What are your technical capabilities? Specifically what languages/stacks/services do you have expertise in (including frontend, backend, mobile, and cloud)?\\\\\\\\n8. How do you handle QA and testing?\\\\\\\\n9. What are your non-technical capabilities? Do you have in-house design, UX/UI? Project management? Customer support? Other services?\\\\\\\\n\\\\\\\\nThe MyNEARWallet Roadmap and Product Vision\\\\\\\\n\\\\\\\\n1. Could you provide a go-to-market and product roadmap for MyNEARWallet in an outline format. In that roadmap, please detail your target roadmap for MyNEARWallet:\\\\\\\\n\\\\\\\\na. Short term, 3 months\\\\\\\\nb. Medium term, 1 year\\\\\\\\nc. Long term, 2-3 years\\\\\\\\n\\\\\\\\n2. What is your plan to address the most critical security items?\\\\\\\\n\\\\\\\\n## Selection Process\\\\\\\\n[DeveloperDAO](https://www.neardevgov.org/) reviews the proposals and will post an Attestation to their chosen team by Friday, February 10, 2023. The [DeveloperDAO](https://www.neardevgov.org/) will also select a runner-up in case the primary bidder does not pass KYC.\\\\\\\\n\\\\\\\\n## Funding Process \\\\\\\\n[DeveloperDAO](https://www.neardevgov.org/) selects the team, determines funding, and supervises the funding distribution process in accordance with the team meeting all requirements. Please note that the chosen team will need to go through KYC to receive funding allocation.\", \"metadata\": {\"id\": \"2030\", \"title\": \"Next Steps for MyNEARWallet: A Call for Maintainers\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"reference\", \"subtitle\": \"Learn how to submit a proposal to become a maintainer of MyNEARWallet.\", \"createdAt\": \"2023-11-03\", \"updatedAt\": \"2023-11-03\", \"description\": \"Learn how to submit a proposal to become a maintainer of MyNEARWallet.\", \"publishedAt\": \"2023-11-03\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4961896516321e+21
+    }
+  },
+  {
+    "id": "5423880484",
+    "receipt_id": "F5bxQ8Xx2v68WDZrAcXcpaiCmUabGSYfyzJkLZf4NPSF",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "zJG7oAtzaDzR29oSDaNmrwFzSQ9QzcFGj3GJz83DSPU",
+      "block_height": 120515011,
+      "block_timestamp": 1717618260049451300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5073313763405,
+      "tokens_burnt": 507331376340500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "7ETuafij7AhR6ZT92uFq4rKtGAhJ8ENmfJxdkyeZrWzg",
+    "included_in_block_hash": "ETJXkGRm7kSQMRBcJPzfM7KJ648Z654WYMvU7DJFpQGd",
+    "block_timestamp": "1717618258750082798",
+    "block": {
+      "block_height": 120515010
+    },
+    "receipt_conversion_tokens_burnt": "31650685865200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 507331376340500000000,
+        "args": "{\"data\": {\"blog\": {\"near-dev-hub-new-look-unwavering-mission-2067\": {\"\": \"\\\\\\\\nWe\\\\\\\\\\\\'re thrilled to introduce the launch of DevHub\\\\\\\\u{2019}s new brand identity and platform revamp, all aimed at strengthening the decentralized NEAR developer ecosystem. Our revamped platform is tailored to enhance your exploration of the NEAR ecosystem, foster connections with like-minded individuals, and provide the support you need to turn your ideas into reality. Welcome to the renewed DevHub, ***the decentralized home base for NEAR builders.***\\\\\\\\n\\\\\\\\n### What\\\\\\\\u{2019}s new?\\\\\\\\n\\\\\\\\n\\\\\\\\n**New Branding**\\\\\\\\nOur [new brand identity](https://drive.google.com/drive/u/4/folders/1C0GMmGq3MzbVPpxvf9807IU-7kpc2_v5) carries a sense of familiarity for developers, drawing inspiration from Unix systems where the \\\\\\\\\\\\\\\"/dev\\\\\\\\\\\\\\\" directory is ever-present as the root. Now, DevHub becomes your home directory\\\\\\\\u{2014}a base for builders in the NEAR ecosystem. We\\\\\\\\\\\\'ve also kept a visual connection with NEAR through our choice of colours and design elements while allowing flexibility to accommodate a range of user-generated content. \\\\\\\\n\\\\\\\\n**Revamped Platform**\\\\\\\\nWe\\\\\\\\u{2019}ve given the [DevHub platform](https://near.social/devhub.near/widget/app?page=feed) a sleek makeover that mirrors our new brand. Right from your first visit, you\\\\\\\\\\\\'ll notice a more user-friendly experience featuring updated colours, a fresh logo, and improved navigation. Whether you\\\\\\\\\\\\'re exploring communities, seeking opportunities to get involved, or accessing support, our platform is your trusty guide.\\\\\\\\n\\\\\\\\n**Improved Homepage**\\\\\\\\nTo make DevHub even more welcoming, we\\\\\\\\\\\\'ve separated the activity feed and introduced a [new landing page](https://near.social/devhub.near/widget/app?page=home). The homepage now provides newcomers and seasoned NEAR developers with essential information about NEAR\\\\\\\\\\\\'s technical merits. It also showcases our vibrant communities and provides a clear path for everyone to get involved, whether you want to propose new ideas, host events, or mentor developers. We\\\\\\\\\\\\'ve also created a support section that aggregates important resources for builders to bring their ideas to reality.\\\\\\\\n\\\\\\\\n**Community Widgets & Blog**\\\\\\\\nWe introduced a new widget framework, designed to offer more customization options for communities. Now you can add and configure multiple tabs, such as Wikis, GitHub boards, and telegram integration. The new blog widget enables communities to share news and updates easily, while the new blog page on DevHub curates a collection of helpful resources to empower the DevHub community.\\\\\\\\n\\\\\\\\n**Performance Improvements & Mobile Support**\\\\\\\\nLastly, DevHub has undergone comprehensive refactoring to boost load times, refine search functionality, and ensure full mobile support. With these improvements, you can access DevHub anytime, anywhere, and enjoy a smoother experience navigating the NEAR developer ecosystem.\\\\\\\\n\\\\\\\\nIn the coming weeks and months, you can expect to see more exciting changes to the DevHub platform. These changes are not just aesthetic, they\\\\\\\\u{2019}re also about amplifying our commitment to the community of NEAR builders and enabling seamless collaboration. Our mission remains unchanged: to foster a productive and innovative ecosystem of open-source developers on NEAR who are deeply committed to the common good. \\\\\\\\n\\\\\\\\nJoin us on this journey to shape the future of the Open Web together!\\\\\\\\n\\\\\\\\n\\\\\\\\n\", \"metadata\": {\"id\": \"2067\", \"title\": \"NEAR /dev/hub: New Look, Unwavering Mission\", \"author\": \"nneoma.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Announcing DevHub\\\\\\\\\\\\'s new branding and revamped platform\", \"createdAt\": \"2023-11-09\", \"updatedAt\": \"2023-11-09\", \"description\": \"Announcing DevHub\\\\\\\\\\\\'s new branding and revamped platform\", \"publishedAt\": \"2023-11-09\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"developer-dao\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6980837712077e+21
+    }
+  },
+  {
+    "id": "5423882229",
+    "receipt_id": "9o9YCsMrog4e5GjGa51h3pkHZKfH4XXZyxm6GVgqJZbz",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2BFgiEN32o4n8E7eE1wd5ghk7cr1vq7ic9rdDxnEr6UT",
+      "block_height": 120515014,
+      "block_timestamp": 1717618263716868000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 11591017090020,
+      "tokens_burnt": 1.159101709002e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7ETuafij7AhR6ZT92uFq4rKtGAhJ8ENmfJxdkyeZrWzg",
+    "included_in_block_hash": "ETJXkGRm7kSQMRBcJPzfM7KJ648Z654WYMvU7DJFpQGd",
+    "block_timestamp": "1717618258750082798",
+    "block": {
+      "block_height": 120515010
+    },
+    "receipt_conversion_tokens_burnt": "31650685865200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.159101709002e+21,
+        "args": "{\"data\": {\"developer-dao.community.devhub.near\": {\"blog\": {\"near-dev-hub-new-look-unwavering-mission-2067\": {\"\": \"\\\\\\\\nWe\\\\\\\\\\\\'re thrilled to introduce the launch of DevHub\\\\\\\\u{2019}s new brand identity and platform revamp, all aimed at strengthening the decentralized NEAR developer ecosystem. Our revamped platform is tailored to enhance your exploration of the NEAR ecosystem, foster connections with like-minded individuals, and provide the support you need to turn your ideas into reality. Welcome to the renewed DevHub, ***the decentralized home base for NEAR builders.***\\\\\\\\n\\\\\\\\n### What\\\\\\\\u{2019}s new?\\\\\\\\n\\\\\\\\n\\\\\\\\n**New Branding**\\\\\\\\nOur [new brand identity](https://drive.google.com/drive/u/4/folders/1C0GMmGq3MzbVPpxvf9807IU-7kpc2_v5) carries a sense of familiarity for developers, drawing inspiration from Unix systems where the \\\\\\\\\\\\\\\"/dev\\\\\\\\\\\\\\\" directory is ever-present as the root. Now, DevHub becomes your home directory\\\\\\\\u{2014}a base for builders in the NEAR ecosystem. We\\\\\\\\\\\\'ve also kept a visual connection with NEAR through our choice of colours and design elements while allowing flexibility to accommodate a range of user-generated content. \\\\\\\\n\\\\\\\\n**Revamped Platform**\\\\\\\\nWe\\\\\\\\u{2019}ve given the [DevHub platform](https://near.social/devhub.near/widget/app?page=feed) a sleek makeover that mirrors our new brand. Right from your first visit, you\\\\\\\\\\\\'ll notice a more user-friendly experience featuring updated colours, a fresh logo, and improved navigation. Whether you\\\\\\\\\\\\'re exploring communities, seeking opportunities to get involved, or accessing support, our platform is your trusty guide.\\\\\\\\n\\\\\\\\n**Improved Homepage**\\\\\\\\nTo make DevHub even more welcoming, we\\\\\\\\\\\\'ve separated the activity feed and introduced a [new landing page](https://near.social/devhub.near/widget/app?page=home). The homepage now provides newcomers and seasoned NEAR developers with essential information about NEAR\\\\\\\\\\\\'s technical merits. It also showcases our vibrant communities and provides a clear path for everyone to get involved, whether you want to propose new ideas, host events, or mentor developers. We\\\\\\\\\\\\'ve also created a support section that aggregates important resources for builders to bring their ideas to reality.\\\\\\\\n\\\\\\\\n**Community Widgets & Blog**\\\\\\\\nWe introduced a new widget framework, designed to offer more customization options for communities. Now you can add and configure multiple tabs, such as Wikis, GitHub boards, and telegram integration. The new blog widget enables communities to share news and updates easily, while the new blog page on DevHub curates a collection of helpful resources to empower the DevHub community.\\\\\\\\n\\\\\\\\n**Performance Improvements & Mobile Support**\\\\\\\\nLastly, DevHub has undergone comprehensive refactoring to boost load times, refine search functionality, and ensure full mobile support. With these improvements, you can access DevHub anytime, anywhere, and enjoy a smoother experience navigating the NEAR developer ecosystem.\\\\\\\\n\\\\\\\\nIn the coming weeks and months, you can expect to see more exciting changes to the DevHub platform. These changes are not just aesthetic, they\\\\\\\\u{2019}re also about amplifying our commitment to the community of NEAR builders and enabling seamless collaboration. Our mission remains unchanged: to foster a productive and innovative ecosystem of open-source developers on NEAR who are deeply committed to the common good. \\\\\\\\n\\\\\\\\nJoin us on this journey to shape the future of the Open Web together!\\\\\\\\n\\\\\\\\n\\\\\\\\n\", \"metadata\": {\"id\": \"2067\", \"title\": \"NEAR /dev/hub: New Look, Unwavering Mission\", \"author\": \"nneoma.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Announcing DevHub\\\\\\\\\\\\'s new branding and revamped platform\", \"createdAt\": \"2023-11-09\", \"updatedAt\": \"2023-11-09\", \"description\": \"Announcing DevHub\\\\\\\\\\\\'s new branding and revamped platform\", \"publishedAt\": \"2023-11-09\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6980837712077e+21
+    }
+  },
+  {
+    "id": "5423884955",
+    "receipt_id": "CTBZi4RiTcD8vhceoztspMbYdt1VTYgyus9ZdgHoREzU",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DgkKQcHiGGxFfvL7tgoExoWieJiyVmHjVjKES8v1Ktvp",
+      "block_height": 120515018,
+      "block_timestamp": 1717618268664044800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4120283473140,
+      "tokens_burnt": 412028347314000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "42wmRYRxZHEGFA9nhAKNZLHBQCi2j486H6zcq1sYJG74",
+    "included_in_block_hash": "Abbw4Uktw2EfYGn9RkFej38cFeR4GGKTCE1sTkk1T65C",
+    "block_timestamp": "1717618267408156734",
+    "block": {
+      "block_height": 120515017
+    },
+    "receipt_conversion_tokens_burnt": "31089690024600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 412028347314000000000,
+        "args": "{\"data\": {\"blog\": {\"university-of-california-san-diego-2507\": {\"\": \"#### \\\\\\\\u{1f393} Near Social Profile: @2d43bcf331706f4a8378c16f1691c95216459da22ca568a29ffb5f285a6503e4\\\\\\\\n.\\\\\\\\n.\\\\\\\\n#### \\\\\\\\u{1f393} Website: https://blockchain.ucsd.edu/\\\\\\\\n.\\\\\\\\n.\\\\\\\\n#### \\\\\\\\u{1f393} Overview\\\\\\\\n\\\\\\\\nBlockchain at San Diego is team of students at UCSD focused on advancing innovation on the blockchain through education, research, and development.\\\\\\\\n\\\\\\\\nWe strive to equip students with foundational knowledge and resources to successfully navigate the fast-evolving blockchain space and help us engineer novel blockchain solutions.\\\\\\\\n\\\\\\\\nWe partner with prominent individuals, organizations, and companies in the industry to provide practical education and connect our members to exciting career opportunities.\\\\\\\\n\\\\\\\\nProposal Near Social: https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=1918\", \"metadata\": {\"id\": \"2507\", \"title\": \"University of California, San Diego\", \"author\": \"8566fc4bb16e1a7446b5e9b1b8aea94b5751d5f8c658d7af18d8cdf642d7b31d\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"Blockchain At UC San Diego\", \"createdAt\": \"2023-12-13\", \"updatedAt\": \"2023-12-13\", \"description\": \"Blockchain At UC San Diego\", \"publishedAt\": \"2023-12-13\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"near-campus\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3530931449134e+21
+    }
+  },
+  {
+    "id": "5423887330",
+    "receipt_id": "CauyvBx99fBF3pwfrp1fK1dPbV4PbF1Fqop4dBD4kY2A",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "38gBmydvkvGbbeYFARSwqVf1d4eKxH46qFLPG2mnbK9r",
+      "block_height": 120515021,
+      "block_timestamp": 1717618272627664600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9099751075748,
+      "tokens_burnt": 909975107574800000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "42wmRYRxZHEGFA9nhAKNZLHBQCi2j486H6zcq1sYJG74",
+    "included_in_block_hash": "Abbw4Uktw2EfYGn9RkFej38cFeR4GGKTCE1sTkk1T65C",
+    "block_timestamp": "1717618267408156734",
+    "block": {
+      "block_height": 120515017
+    },
+    "receipt_conversion_tokens_burnt": "31089690024600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 909975107574800000000,
+        "args": "{\"data\": {\"near-campus.community.devhub.near\": {\"blog\": {\"university-of-california-san-diego-2507\": {\"\": \"#### \\\\\\\\u{1f393} Near Social Profile: @2d43bcf331706f4a8378c16f1691c95216459da22ca568a29ffb5f285a6503e4\\\\\\\\n.\\\\\\\\n.\\\\\\\\n#### \\\\\\\\u{1f393} Website: https://blockchain.ucsd.edu/\\\\\\\\n.\\\\\\\\n.\\\\\\\\n#### \\\\\\\\u{1f393} Overview\\\\\\\\n\\\\\\\\nBlockchain at San Diego is team of students at UCSD focused on advancing innovation on the blockchain through education, research, and development.\\\\\\\\n\\\\\\\\nWe strive to equip students with foundational knowledge and resources to successfully navigate the fast-evolving blockchain space and help us engineer novel blockchain solutions.\\\\\\\\n\\\\\\\\nWe partner with prominent individuals, organizations, and companies in the industry to provide practical education and connect our members to exciting career opportunities.\\\\\\\\n\\\\\\\\nProposal Near Social: https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=1918\", \"metadata\": {\"id\": \"2507\", \"title\": \"University of California, San Diego\", \"author\": \"8566fc4bb16e1a7446b5e9b1b8aea94b5751d5f8c658d7af18d8cdf642d7b31d\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"Blockchain At UC San Diego\", \"createdAt\": \"2023-12-13\", \"updatedAt\": \"2023-12-13\", \"description\": \"Blockchain At UC San Diego\", \"publishedAt\": \"2023-12-13\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3530931449134e+21
+    }
+  }
+]

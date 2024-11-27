@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "9666465928",
+    "receipt_id": "Ff41n7putSKmLghNob3z9CcgYPivhUimt1WcnXtpqC7o",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GtKs6wdNGj52LJkZaq1FbimhWrTVj63fKbgP7GGRa7HA",
+      "block_height": 131570530,
+      "block_timestamp": 1730312843088257500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9664279476270,
+      "tokens_burnt": 966427947627000000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "Et8gmHXBLDGRzGWGb86L7k8bN5sV9ZbGdG7SfBU1NqS7",
+    "included_in_block_hash": "3v6qADPmzn3Z6J9zKSKAMbfB8kfeDGydRomNktNeRxWi",
+    "block_timestamp": "1730312841774227869",
+    "block": {
+      "block_height": 131570529
+    },
+    "receipt_conversion_tokens_burnt": "101606730032000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 966427947627000000000,
+        "args": "{\"id\": 36, \"body\": {\"name\": \"Magic Powered: Kit Wallet Indexer API\", \"summary\": \"This proposal aims to develop a roadmap for the Magic Powered team that has managed multiple infrastructure projects on NEAR, to transfer, maintain and ultimately improve the existing  Kit Wallet Indexer API.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REJECTED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": 1, \"supervisor\": \"trechriron71.near\", \"description\": \"# Organization\\\\\\\\n\\\\\\\\n### Team\\\\\\\\n\\\\\\\\n**Oleh Kalenyk - Tech Lead**\\\\\\\\n\\\\\\\\nOleh is a senior software engineer with over 15 years of experience in full-stack application development and deployment, with a particular focus on DevOps. His expertise spans a diverse tech stack, including Rust, Java, Node.js, Objective-C, React, and AngularJS, along with strong skills in Docker, Kubernetes, and cloud platforms like AWS and Azure. He has significant experience in smart contract and blockchain development across Near, Polkadot, and Ethereum, complemented by a background in mobile application development and video streaming technologies.\\\\\\\\n\\\\\\\\nWork experience - [CV](https://docs.google.com/document/d/1pGLAkYJf5NVBqdks6fE_Ls0o7ZYQdZUqmP1Ke1RTKuk/edit)\\\\\\\\n\\\\\\\\n  \\\\\\\\n\\\\\\\\n**Anatolii Petrovskyi - Senior Rust engineer**\\\\\\\\n\\\\\\\\nAnatoli has a full stack solutions architect with 14 years of development experience under his belt. At Magic Powered, he provides technical leadership across engineering teams, optimizing performance and resolving complex challenges. His contributions extend into the Web3 ecosystem, where he builds SDKs, decentralized protocols, and launches new initiatives, blending his DevOps expertise with cutting-edge blockchain technology.\\\\\\\\n\\\\\\\\n  \\\\\\\\n\\\\\\\\nWork experience - [https://www.linkedin.com/in/anatolii-petrovskyi-76905a64/](https://www.linkedin.com/in/anatolii-petrovskyi-76905a64/)\\\\\\\\n\\\\\\\\n  \\\\\\\\n**Ihor Savchenko - Senior DevOps engineer**\\\\\\\\n\\\\\\\\nWith over 15 years of experience, Ihor specializes in developing automated, predictable, self-healing, and highly available platforms. Working in both Web3 & Web2 his extensive experience underscores a commitment to automation and resilience, which will ensure NEAR Lake as a system will be both robust and self-sustaining.\\\\\\\\n\\\\\\\\n  \\\\\\\\n\\\\\\\\nWork experience - [https://www.linkedin.com/in/gueux/](https://www.linkedin.com/in/gueux/)\\\\\\\\n\\\\\\\\nGithub - [https://github.com/gueux](https://github.com/gueux)\\\\\\\\n\\\\\\\\n  \\\\\\\\n**Denis Kudinov - Project Manager**\\\\\\\\n\\\\\\\\nWith a diverse background in Project Management, QA and BA, along with deep knowledge of blockchain technology and UI/UX design and over 7 years of experience in web3. Denis has been essential to Magic Powered success. He excels at extracting complex requirements from projects and making sure the team is working efficiently.\\\\\\\\n\\\\\\\\nWork experience - [CV](https://drive.google.com/file/d/1sWFHMOTZlu-NFLB0dfe04TOO19vUKCfC/view?usp=sharing)\\\\\\\\n\\\\\\\\n**Primary Point-of-contact**\\\\\\\\n\\\\\\\\nThe primary point of contact for this project will be **Maxim Kudinov**\\\\\\\\u{a0}\\\\\\\\n\\\\\\\\n*   Telegram - [https://t.me/brutalfluffy](https://t.me/brutalfluffy)\\\\\\\\n*   Email - [max@magicpowered.io](mailto:max@magicpowered.io)\\\\\\\\u{a0}\\\\\\\\n\\\\\\\\n# Professional Experience\\\\\\\\n\\\\\\\\nMagic Powered is a 60+ strong community of senior Designer, UX engineers and Developers who have been building in the Web3 space for the last 6 years. We have built more than 60 Dapps across a range of user cases from NFT marketplaces, Wallets, DEXs, Governance platforms, DAO interfaces, social networks and complex developer tooling.\\\\\\\\u{a0}\\\\\\\\n\\\\\\\\nMagic Powered was started with the premise that web3 can be built better. With a strong focus on user experience, MP employs data driven design and rigorous, tech stack agnostic, process driven development, to create high functional, user focused products.\\\\\\\\u{a0}\\\\\\\\n\\\\\\\\nAll our developers are senior level with a minimum 8 years of experience and our designers have training in cognitive science\\\\\\\\n\\\\\\\\n## Experience with NEAR blockchain\\\\\\\\n\\\\\\\\nMagicPowered has been operating in the NEAR ecosystem for the last 5 years, building and operating both infrastructure and Dapps.\\\\\\\\n\\\\\\\\nOur team designed and operated DAO infrastructure for the ecosystem, first in the form of SputnikDAO and then AstroDAO. In addition to designing and building the UX and frontend, the data services used to power AstroDAO were built before NEAR Lake made indexing simple. This has given the MP team a very in depth understanding of the underlying data structure of the ecosystem putting them in a position of easily managing and improving NEAR Lake.\\\\\\\\n\\\\\\\\n  \\\\\\\\n\\\\\\\\nMP also built and operated multiple projects on NEAR including\\\\\\\\u{a0}\\\\\\\\n\\\\\\\\n1. **The Auction** - secondary NFT marketplace,\\\\\\\\u{a0}\\\\\\\\n2. **The Staking platform** - crowd-funding tool using staking rewards\\\\\\\\n3. **Airloom Protocol** - Social sharing platform\\\\\\\\n4. **Membranebot** - Bot to setup discord roles based on Token holdings\\\\\\\\n\\\\\\\\n  \\\\\\\\n\\\\\\\\nIn addition, MP is currently working with RingFence to build out [Escher.ai](http://Escher.ai).\\\\\\\\n\\\\\\\\n\\\\\\\\n### Open source github\\\\\\\\n\\\\\\\\n**Near.JS** is a community driven typescript library to interact with Near blockchain.\\\\\\\\n\\\\\\\\n[https://github.com/magic-powered/near.js](https://github.com/magic-powered/near.js)\\\\\\\\n\\\\\\\\n\\\\\\\\nRepos for AstroDAO and SputnikDAO were available to the public till they were handed over to the community.\\\\\\\\n\\\\\\\\n### In-House Resources;\\\\\\\\n\\\\\\\\nMP has a deep bench of tech-stack agnostic senior developers who can design and build out any relevant\\\\\\\\u{a0}\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n# Technical Proposal\\\\\\\\n\\\\\\\\n## High level plan\\\\\\\\n\\\\\\\\n### Discovery and setup\\\\\\\\n\\\\\\\\n*   Discovery phase - knowledge exchange with Pagoda team\\\\\\\\n*   Known issues or workarounds\\\\\\\\n*   Ongoing tasks or technical debt\\\\\\\\n*   Development, staging, and production environment setup\\\\\\\\n*   External service access credentials if needed\\\\\\\\n*   CI/CD setup - GitHub Actions\\\\\\\\n*   Review(update if needed) currently used infrastructure:\\\\\\\\n*   Stick to IaC approach and avoid manual interventions\\\\\\\\n*   Proposed frameworks: Terraform/Pulumi\\\\\\\\n*   Application deployment:\\\\\\\\n*   Use Kubernetes(AWS EKS) for service deployment for scalability\\\\\\\\n*   Make sure the application is containerized(Docker) and create Helm chart if needed for deployment\\\\\\\\n*   Setup Monitoring and Logging\\\\\\\\n*   AWS Cloudwatch for logs\\\\\\\\n*   Grafana or Datadog for monitoring and alerts\\\\\\\\n*   Analyze KPIs based on the previous team reports for tracking the application health\\\\\\\\n*   Production rollout\\\\\\\\n*   Post-deployment monitoring, scaling and traffic management\\\\\\\\n\\\\\\\\n  \\\\\\\\n\\\\\\\\n### Cloud Deployment\\\\\\\\n\\\\\\\\n#### AWS EKS Cluster\\\\\\\\n\\\\\\\\n*   Create AWS EKS Cluster\\\\\\\\n*   Configure worker nodes using EC2 or Fargate\\\\\\\\n*   Setup scaling configuration\\\\\\\\n*   Setup networking (VPC, subnets and security groups)\\\\\\\\n*   Setup ECR for Docker images\\\\\\\\n*   Develop Helm chart for easier tracking of deployment history\\\\\\\\n\\\\\\\\n  \\\\\\\\n\\\\\\\\n#### GitHub Actions for CI/CD Pipeline\\\\\\\\n\\\\\\\\n*   Automate code integration: build/test/deploy\\\\\\\\n\\\\\\\\n  \\\\\\\\n\\\\\\\\n#### Continuous Monitoring and Logging\\\\\\\\n\\\\\\\\n*   CloudWatch and Prometheus: Set up AWS CloudWatch or integrate Prometheus and Grafana for monitoring and logging the application\\\\\\\\u{2019}s health and performance\\\\\\\\n*   CI/CD Notifications: Configure alerts (e.g., via Slack or email) for CI/CD pipeline status\\\\\\\\n\\\\\\\\n  \\\\\\\\n\\\\\\\\n# Transition strategy\\\\\\\\n\\\\\\\\n## Phase 1: Planning and Preparation (Week 1\\\\\\\\u{2013}2)\\\\\\\\n\\\\\\\\n### Objective\\\\\\\\n\\\\\\\\nPrepare for a smooth transition by gathering information, setting up prerequisites, and planning resources.\\\\\\\\n\\\\\\\\n### Actions\\\\\\\\n\\\\\\\\n*   Review the existing infrastructure\\\\\\\\n    *   Understand current deployment setup, traffic patterns (~350K requests/day), and performance metrics (response time, latency).\\\\\\\\n    *   Identify key components (Node.js app, PostgreSQL DB, GraphQL service).\\\\\\\\n*   Define the architecture\\\\\\\\n    *   Design the AWS EKS cluster architecture, including worker nodes (EC2 or Fargate), load balancers, networking (VPC, subnets), and storage.\\\\\\\\n*   Plan CI/CD pipeline\\\\\\\\n    *   Define a CI/CD strategy using GitHub Actions for automated builds, testing, and deployments.\\\\\\\\n*   Estimate AWS resources and costs\\\\\\\\n    *   Ensure the required resources (compute, storage, networking) are planned based on estimated traffic and budget constraints.\\\\\\\\n*   Set up access and security\\\\\\\\n    *   Plan IAM roles and policies, Kubernetes RBAC, and secure access to the EKS cluster and AWS resources.\\\\\\\\n\\\\\\\\n### Deliverables\\\\\\\\n\\\\\\\\n*   Architecture diagram and design document.\\\\\\\\n*   Detailed resource and cost estimation.\\\\\\\\n*   Security and access management plan.\\\\\\\\n\\\\\\\\n  \\\\\\\\n\\\\\\\\n## Phase 2: Infrastructure Setup (Week 3)\\\\\\\\n\\\\\\\\n### Objective\\\\\\\\n\\\\\\\\nDeploy the foundational infrastructure in AWS, including the EKS cluster, networking, and storage.\\\\\\\\n\\\\\\\\n### Actions\\\\\\\\n\\\\\\\\n*   Create EKS Cluster\\\\\\\\n    *   Set up the EKS cluster using eksctl or AWS Management Console.\\\\\\\\n    *   Define and deploy the necessary VPC, subnets, and security groups.\\\\\\\\n*   Set up worker nodes\\\\\\\\n    *   Configure EC2 instances or Fargate tasks as worker nodes.\\\\\\\\n    *   Enable auto-scaling to handle traffic spikes.\\\\\\\\n*   Provision storage\\\\\\\\n    *   Set up EBS volumes for worker nodes and any necessary persistent storage (e.g., Elastic File System for shared storage).\\\\\\\\n*   Configure networking\\\\\\\\n    *   Set up NAT Gateway, Route tables, and ensure proper network connectivity between subnets.\\\\\\\\n\\\\\\\\n\\\\\\\\u{a0}\\\\\\\\u{a0}Deploy Application Load Balancer (ALB) or Network Load Balancer (NLB).\\\\\\\\n\\\\\\\\n  \\\\\\\\n\\\\\\\\n### Deliverables\\\\\\\\n\\\\\\\\n*   Fully configured EKS cluster with worker nodes.\\\\\\\\n*   VPC, subnets, and security groups deployed.\\\\\\\\n*   Load balancer setup for external access.\\\\\\\\n*   Monitoring setup (initial CloudWatch/Prometheus).\\\\\\\\n\\\\\\\\n  \\\\\\\\n\\\\\\\\n## Phase 3: CI/CD Pipeline Setup (Week 4)\\\\\\\\n\\\\\\\\n### Objective\\\\\\\\n\\\\\\\\nAutomate the build, test, and deployment process using CI/CD pipelines.\\\\\\\\n\\\\\\\\n### Actions\\\\\\\\n\\\\\\\\n*   Create Dockerfile and Kubernetes manifests\\\\\\\\n    *   Containerize the Node.js app by writing a Dockerfile.\\\\\\\\n    *   Create Kubernetes YAML files for Deployment, Service, and Ingress.\\\\\\\\n*   Set up GitHub Actions\\\\\\\\n    *   Define a GitHub Actions workflow to build Docker images, push to AWS ECR, and deploy to EKS.\\\\\\\\n    *   Implement automated testing during CI (unit, integration, and performance tests).\\\\\\\\n*   Integrate secrets management\\\\\\\\n    *   Set up AWS Secrets Manager or Kubernetes secrets to securely handle credentials (e.g., API keys, DB credentials).\\\\\\\\n\\\\\\\\n### Deliverables\\\\\\\\u{a0}\\\\\\\\n\\\\\\\\n*   Dockerized Node.js app and Kubernetes YAML files.\\\\\\\\n*   CI/CD pipeline that automates build, testing, and deployment.\\\\\\\\n*   Secure secrets management integrated with the pipeline.\\\\\\\\n\\\\\\\\n  \\\\\\\\n\\\\\\\\n## Phase 4: Application Deployment and Testing (Week 5)\\\\\\\\n\\\\\\\\n### Objective\\\\\\\\n\\\\\\\\nDeploy the application on the new infrastructure and test its functionality in a staging environment.\\\\\\\\n\\\\\\\\n### Actions\\\\\\\\n\\\\\\\\n*   Deploy to Staging\\\\\\\\n    *   Use the CI/CD pipeline to deploy the Node.js web app to the EKS staging environment.\\\\\\\\n    *   Ensure PostgreSQL and GraphQL services are properly configured.\\\\\\\\n*   Functional and load testing\\\\\\\\n    *   Perform functional testing to validate app behavior and integration with the database and GraphQL.\\\\\\\\n    *   Conduct load testing with simulated traffic (~350K requests/day) to monitor performance, scalability, and response times.\\\\\\\\n*   Resolve issues\\\\\\\\n*   Address any bottlenecks, errors, or resource configuration issues found during testing.\\\\\\\\n\\\\\\\\n### Deliverables\\\\\\\\n\\\\\\\\n*   Successful deployment of the Node.js web app in staging.\\\\\\\\n*   Test reports (functional, performance, and load).\\\\\\\\n*   Optimized configuration for EKS resources (if needed).\\\\\\\\n\\\\\\\\n  \\\\\\\\n\\\\\\\\n## Phase 5: Production Rollout and Monitoring (Week 6-7)\\\\\\\\n\\\\\\\\n### Objective\\\\\\\\u{a0}\\\\\\\\n\\\\\\\\nMigrate the application to production, ensuring smooth operation with monitoring and scaling.\\\\\\\\n\\\\\\\\n### Actions\\\\\\\\n\\\\\\\\n*   Deploy to Production\\\\\\\\n    *   Push the application to the production environment using the established CI/CD pipeline.\\\\\\\\n    *   Redirect DNS and traffic to the new EKS-hosted app using Route 53 and load balancers.\\\\\\\\n*   Implement monitoring and logging\\\\\\\\n    *   Set up AWS CloudWatch, Prometheus, or Grafana for monitoring application health, response times, and worker node performance.\\\\\\\\n    *   Configure alerts for traffic spikes, latency, and downtime.\\\\\\\\n*   Enable auto-scaling\\\\\\\\n    *   Fine-tune auto-scaling policies to handle traffic surges, ensuring responsiveness under peak load (~50-second spikes).\\\\\\\\n\\\\\\\\n### Deliverables\\\\\\\\n\\\\\\\\n*   \\\\\\\\\\\\\\\\- Production deployment live on AWS EKS.\\\\\\\\n*   \\\\\\\\\\\\\\\\- Monitoring and alerting system in place.\\\\\\\\n*   \\\\\\\\\\\\\\\\- Auto-scaling policies configured and tested.\\\\\\\\n\\\\\\\\n  \\\\\\\\n\\\\\\\\n## Phase 6: Post-transition Optimization and Support (Week 8)\\\\\\\\n\\\\\\\\n### Objective\\\\\\\\n\\\\\\\\nOptimize the infrastructure for performance and cost efficiency and provide ongoing support.\\\\\\\\n\\\\\\\\n### Actions\\\\\\\\n\\\\\\\\n*   Performance optimization\\\\\\\\n    *   Analyze metrics (response time, latency) and optimize resource usage (e.g., node sizes, scaling policies).\\\\\\\\n*   Cost optimization\\\\\\\\n    *   Review AWS costs and implement cost-saving measures like Spot Instances, right-sizing EC2 instances, or optimizing EBS usage.\\\\\\\\n*   Support and training\\\\\\\\n    *   Provide documentation and training for the operational team on maintaining and scaling the application in EKS.\\\\\\\\n    *   Schedule regular reviews and monitoring of system performance and costs.\\\\\\\\n\\\\\\\\n### Deliverables\\\\\\\\n\\\\\\\\n*   Performance optimization report and implementation.\\\\\\\\n*   Cost-saving recommendations.\\\\\\\\n*   Operational handover documentation.\\\\\\\\n\\\\\\\\n### Project Timeline\\\\\\\\n\\\\\\\\n*   Planning and Preparation - Week 1\\\\\\\\u{2013}2\\\\\\\\n*   Infrastructure Setup - Week 3\\\\\\\\n*   CI/CD Pipeline Setup - Week 4\\\\\\\\n*   Application Deployment and Testing (Staging) - Week 5\\\\\\\\n*   Production Rollout and Monitoring - Week 6-7\\\\\\\\n*   Post-transition Optimization and Support - Week 8 - 52\\\\\\\\n\\\\\\\\n  \\\\\\\\n\\\\\\\\nThis transition strategy ensures that the Node.js web application is migrated seamlessly to AWS EKS, with automated deployment, monitoring, and scalability built in.\\\\\\\\n\\\\\\\\n  \\\\\\\\n\\\\\\\\n# Budget\\\\\\\\n\\\\\\\\n## Team Breakdown\\\\\\\\n\\\\\\\\n1 FT - Full Stack Engineer\\\\\\\\u{a0}\\\\\\\\n\\\\\\\\n1 FT - DevOps Engineer\\\\\\\\n\\\\\\\\n### Budget Total\\\\\\\\n\\\\\\\\nTotal expected budget is $187,600, plus infrastructure cost of $14,292\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\n*   Planning and Preparation (2 Weeks) - $9,200\\\\\\\\n*   Infrastructure Setup (1 Week) - $4,600\\\\\\\\n*   CI/CD Pipeline Setup (1 Week) - $4,600\\\\\\\\n*   Application Deployment and Testing (1 Week) - $4,600\\\\\\\\u{a0}\\\\\\\\n*   Production Rollout and Monitoring (2 Week) - $9 600\\\\\\\\n*   Post-transition Optimization and Support (45 Weeks) - $155,000\\\\\\\\n\\\\\\\\n### Infrastructure cost estimates\\\\\\\\n\\\\\\\\nThe average monthly cost of infrastructure is calculated at $1033 - $1191/ month depending on the node size and scaling strategy (breakdown can be found [here](https://docs.google.com/document/d/1tjL3zSQa6iMlUIntE-saiqUFaJ1KlPo_GJh6Tw5vg4g/edit?usp=sharing))\\\\\\\\u{a0}\", \"linked_proposals\": [], \"receiver_account\": \"magicmax.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"187600\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4253501635299e+21
+    }
+  },
+  {
+    "id": "9666466404",
+    "receipt_id": "4ZQMssZv65hacgECUjq7te4EoMMFuFaLPj46VwLnfYzN",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FeW9ih7h5tVoufc32gtNDEdYGsgZwhZAULrfo6sWyy9j",
+      "block_height": 131570531,
+      "block_timestamp": 1730312844355535600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3573154858709,
+      "tokens_burnt": 357315485870900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Et8gmHXBLDGRzGWGb86L7k8bN5sV9ZbGdG7SfBU1NqS7",
+    "included_in_block_hash": "3v6qADPmzn3Z6J9zKSKAMbfB8kfeDGydRomNktNeRxWi",
+    "block_timestamp": "1730312841774227869",
+    "block": {
+      "block_height": 131570529
+    },
+    "receipt_conversion_tokens_burnt": "101606730032000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357315485870900000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"denis-srgn.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":36,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4253501635299e+21
+    }
+  },
+  {
+    "id": "9666472974",
+    "receipt_id": "8rMXwsdVJVifXGyhNFgxibV5E2ZwX8bR5d2Xm4yk4mdf",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "G7J7rFEkkqY7jAUtVo6yyAsLPV2jZVUbdeyDfRd6BGjX",
+      "block_height": 131570548,
+      "block_timestamp": 1730312863485761800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5102824742757,
+      "tokens_burnt": 510282474275700000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "CohcuYgG6FsLurArSdFtNWppaUFwcreh2qbmcZUsEMU3",
+    "included_in_block_hash": "BXtnSohzqJ73Xs5Zp8WmPsYMTZHRCtSdBX8ALxyHSDw5",
+    "block_timestamp": "1730312862283073074",
+    "block": {
+      "block_height": 131570547
+    },
+    "receipt_conversion_tokens_burnt": "47504786993000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 510282474275700000000,
+        "args": "{\"id\": 35, \"body\": {\"name\": \"Public RPC for NEAR.org by QuickNode\", \"summary\": \"QuickNode offers best in class performance and developer experience for NEAR RPC. We launched NEAR on the QuickNode Platform in December 2022, have deep experience within the ecosystem, and significant scale with billions of requests per month. We can meet all requirements in a cost effective and highly performant way. \", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REJECTED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": 2, \"supervisor\": \"trechriron71.near\", \"description\": \"**Overview**\\\\\\\\nQuickNode is a blockchain development platform offering a wide range of APIs and tools, making it as easy as possible to build in web3. Consumer applications today consist of many components (front-end, back-end, database, APIs, libraries, etc.), and tying these components together is not easy. On top of that, blockchain adds another layer of complexity as it requires integration with blockchain networks with new challenges.\\\\\\\\n\\\\\\\\n**Products**\\\\\\\\nQuickNode\\\\\\\\\\\\'s diverse product suite can be used for various operations like blockchain read/write, real-time blockchain notifications, blockchain ETL (Extract, Transform, Load), and decentralized storage.\\\\\\\\n\\\\\\\\n**Core RPC API** is the flagship product of QuickNode. Core API offers fast, secure and reliable access to all the major blockchain networks. With QuickNode Core API users gets access to QuickNode\\\\\\\\\\\\'s globally distributed network of nodes that helps in blockchain interaction without having to run blockchain nodes themselves. You leave the heavy lifting to QuickNode and focus on your application. Core API can be used to make both read and write interactions on the blockchain via HTTPS and WebSocket endpoints.\\\\\\\\n\\\\\\\\n**Primary\\\\\\\\u{2019}s person contact information**\\\\\\\\nJason Hunt\\\\\\\\njason@quicknode.com\\\\\\\\nTG: jason_hunt\\\\\\\\n\\\\\\\\n**Team Size**\\\\\\\\n110 people \\\\\\\\n\\\\\\\\n**Engineering Team Size**\\\\\\\\n60 people \\\\\\\\n\\\\\\\\n**Team location**\\\\\\\\nHQ in Miami, many remote\\\\\\\\n\\\\\\\\n**Proposal**\\\\\\\\nQuickNode is super excited about the opportunity to expand our partnership with NEAR.org to run the public endpoint. We currently handle billions of requests per month on NEAR and have significant experience running public endpoints at scale (Polygon, Optimism, BASE, Blast, and many more). For public endpoints,  can customize our setup to meet all the requirements from the RFP and offer rate limits per IP at per second, per minute, and per day intervals and \\\\\\\\n\\\\\\\\nGiven the expected rate limits of 150 requests per 30 seconds, we can offer 100M requests per month at $5/million for $6K per year for a two year contract ($12K total USD, ~2,700 NEAR tokens). Additional on demand credits are available for $6 per million (up to 1K RPS). \\\\\\\\n\\\\\\\\nThe RFP also mentions a potential need up to 10K RPS. QuickNode has the technical capability to meet any performance requirements needed and currently have several customers who use 10B+ requests per month. We can provide a custom quote for higher volumes if needed, once we have the exact requirements (regions, full vs archive, sustained vs peak). \\\\\\\\n\\\\\\\\nLet me know if you have any questions. We\\\\\\\\\\\\'re in the shared \\\\\\\\\\\\\\\"NEAR x. QuickNode\\\\\\\\\\\\\\\" channel on Telegram and can be reached via DM as well. Thanks!\", \"linked_proposals\": [], \"receiver_account\": \"qnjh.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"12000\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 909594732838000000000
+    }
+  },
+  {
+    "id": "9666473415",
+    "receipt_id": "XH89DWC23nynGCZu58HxytvQdnofSbdrZWdhAkdKKw8",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "ECZa89EZBZohfBnbXp4vzXk53Pwt55FMZnkSTSDMHduA",
+      "block_height": 131570549,
+      "block_timestamp": 1730312864785261600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3518074715693,
+      "tokens_burnt": 351807471569300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "CohcuYgG6FsLurArSdFtNWppaUFwcreh2qbmcZUsEMU3",
+    "included_in_block_hash": "BXtnSohzqJ73Xs5Zp8WmPsYMTZHRCtSdBX8ALxyHSDw5",
+    "block_timestamp": "1730312862283073074",
+    "block": {
+      "block_height": 131570547
+    },
+    "receipt_conversion_tokens_burnt": "47504786993000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351807471569300000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"qnjh.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":35,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 909594732838000000000
+    }
+  },
+  {
+    "id": "9666478413",
+    "receipt_id": "CgaeypPBbGqGUs7RBV8m9byVtd13ssncirgUcBAciJJW",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "42CuqdVBok9v21t6W31sCaewn2xhWdmLBPQMasWtvLCj",
+      "block_height": 131570565,
+      "block_timestamp": 1730312882283877400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9200385130024,
+      "tokens_burnt": 920038513002400000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "3Z3SHSKiC4A6YaRU57kTt6cfZLGvSPAvvVz3H8wRcdwH",
+    "included_in_block_hash": "9xQb7m3gmH1chNrCyv7xvLB67h5tianiyrWuEvwwUEvB",
+    "block_timestamp": "1730312881151709905",
+    "block": {
+      "block_height": 131570564
+    },
+    "receipt_conversion_tokens_burnt": "95832232145500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 920038513002400000000,
+        "args": "{\"id\": 34, \"body\": {\"name\": \"Magic Powered: Near Lake\", \"summary\": \"NEAR Lake is a vital part of the NEAR ecosystem. The team that takes over from Pagoda needs to have extensive experience working on not just the service itself, but also understanding the data availability in the NEAR ecosystem in general. This proposal aims to develop a roadmap for the MP team that has managed multiple infrastructure projects on NEAR, to transfer, maintain and ultimately improve the existing data pipeline.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REJECTED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": 3, \"supervisor\": \"trechriron71.near\", \"description\": \"# Organization\\\\\\\\n## Team \\\\\\\\n**Dmitry Karpov - Tech Lead**\\\\\\\\nDmitry is a highly experienced Engineer and systems architect with over 16 years of experience building scalable, automated, and high-performance platforms. He has built and managed high functioning teams across diverse industries, from Web3 and travel to social media analytics, focusing on real-time data pipelines and resilient architectures.\\\\\\\\n\\\\\\\\nWork experience - https://www.linkedin.com/in/dmitry-k-975b6b27/ \\\\\\\\n\\\\\\\\n**Anatolii Petrovskyi - Senior Rust engineer**\\\\\\\\nAnatoli has a full stack solutions architect with 14 years of development experience under his belt. At Magic Powered, he provides technical leadership across engineering teams, optimizing performance and resolving complex challenges. His contributions extend into the Web3 ecosystem, where he builds SDKs, decentralized protocols, and launches new initiatives, blending his DevOps expertise with cutting-edge blockchain technology.\\\\\\\\n\\\\\\\\nWork experience - https://www.linkedin.com/in/anatolii-petrovskyi-76905a64/\\\\\\\\n\\\\\\\\n\\\\\\\\n**Ihor Savchenko - Senior DevOps engineer**\\\\\\\\nWith over 15 years of experience, Ihor specializes in developing automated, predictable, self-healing, and highly available platforms. Working in both Web3 & Web2 his extensive experience underscores a commitment to automation and resilience, which will ensure NEAR Lake as a system will be both robust and self-sustaining.\\\\\\\\n\\\\\\\\nWork experience - https://www.linkedin.com/in/gueux/\\\\\\\\nGithub - https://github.com/gueux\\\\\\\\n\\\\\\\\n**Volodymyr Horin - Senior Full Stack developer**\\\\\\\\nWith over 8 years of experience in software development, Vova is a skilled Senior Full Stack Developer who has worked across Media, FinTech, and Blockchain domains. He played a key role in the development of the AstroDAO platform, handling architecture, backend design, testing, and release management. Over the past 4 years, Vova has specialized in Web3 applications, gaining extensive experience in Smart Contracts integration, indexing, and API development. He is proficient with EVM and Near chains, having built applications for DEXes, DAOs, NFTs, and payment systems.\\\\\\\\n\\\\\\\\nWork experience - [Resume](https://drive.google.com/file/d/1rIsG-chyFyQiCFXLfdi0hBAlYU5vB3yS/view?usp=sharing)\\\\\\\\nGithub - https://github.com/vhorin-mp \\\\\\\\n\\\\\\\\n**Denis Kudinov - Project Manager**\\\\\\\\nWith a diverse background in Project Management, QA and BA, along with deep knowledge of blockchain technology and UI/UX design and over 7 years of experience in web3. Denis has been essential to Magic Powered success. He excels at extracting complex requirements from projects and making sure the team is working efficiently.\\\\\\\\n\\\\\\\\nWork experience - [Resume](https://drive.google.com/file/d/1sWFHMOTZlu-NFLB0dfe04TOO19vUKCfC/view?usp=sharing)\\\\\\\\n\\\\\\\\n**Primary Point-of-contact**\\\\\\\\nThe primary point of contact for this project will be Maxim Kudinov \\\\\\\\nTelegram - https://t.me/brutalfluffy\\\\\\\\nEmail - max@magicpowered.io \\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\nMagic Powered is a 60+ strong community of senior Designer, UX engineers and Developers who have been building in the Web3 space for the last 6 years. We have built more than 60 Dapps across a range of user cases from NFT marketplaces, Wallets, DEXs, Governance platforms, DAO interfaces, social networks and complex developer tooling. \\\\\\\\n\\\\\\\\nMagic Powered was started with the premise that web3 can be built better. With a strong focus on user experience, MP employs data driven design and rigorous, tech stack agnostic, process driven development, to create high functional, user focused products. \\\\\\\\n\\\\\\\\nAll our developers are senior level with a minimum 8 years of experience and our designers have training in cognitive science\\\\\\\\n\\\\\\\\n## Experience with NEAR blockchain\\\\\\\\nMagicPowered has been operating in the NEAR ecosystem for the last 5 years, building and operating both infrastructure and Dapps.\\\\\\\\n\\\\\\\\nOur team designed and operated DAO infrastructure for the ecosystem, first in the form of SputnikDAO and then AstroDAO. In addition to designing and building the UX and frontend, the data services used to power AstroDAO were built before NEAR Lake made indexing simple. This has given the MP team a very in depth understanding of the underlying data structure of the ecosystem putting them in a position of easily managing and improving NEAR Lake.\\\\\\\\n\\\\\\\\nMP also built and operated multiple projects on NEAR including \\\\\\\\n\\\\\\\\n**The Auction**, a secondary NFT marketplace, \\\\\\\\n**The Staking platform**, a crowd-funding tool using staking rewards\\\\\\\\n**Airloom Protocol** - Social sharing platform\\\\\\\\n**Membranebot** - Bot to setup discord roles based on Token holdings\\\\\\\\n\\\\\\\\nIn addition, MP is currently working with RingFence to build out Escher.ai.\\\\\\\\n\\\\\\\\nOpen source github\\\\\\\\n\\\\\\\\n**Near.JS** is a community driven typescript library to interact with Near blockchain. \\\\\\\\n\\\\\\\\nOpen sourced repo - https://github.com/magic-powered/near.js\\\\\\\\n\\\\\\\\nRepos for AstroDAO and SputnikDAO were available to the public till they were handed over to the community.\\\\\\\\n\\\\\\\\n\\\\\\\\n# Technical Proposal\\\\\\\\n## High level plan:\\\\\\\\n### **Discovery and setup**\\\\\\\\n\\\\\\\\u{2022} Discovery phase of current code base and infrastructure management practices\\\\\\\\n\\\\\\\\u{2022} Make sure everything is deployed as infrastructure as the code, and not managed manually (rewrite missing part, or entire deployment with terraform)\\\\\\\\n\\\\\\\\u{2022} Understand the current load on indexer nodes and what kind of resources are required to handle it.\\\\\\\\n\\\\\\\\u{2022} Setup CI/CD pipelines via GitHub actions.\\\\\\\\n\\\\\\\\u{2022} Deploy nodes using EKS cluster to ensure scalable and serverless env. for deploying application.\\\\\\\\n\\\\\\\\u{2022} Setup monitoring. \\\\\\\\n\\\\\\\\u{2022} Expose metrics to the end user.\\\\\\\\n\\\\\\\\u{2022} Monthly analysis of the metrics to monitor resource usage and apply cost saving practices.\\\\\\\\n\\\\\\\\n### **S3 Buckets configuration**\\\\\\\\n\\\\\\\\u{2022} Check buckets configuration and access policies\\\\\\\\n\\\\\\\\u{2022} Check the frequency of accessing the data and pick relevant storage classes.\\\\\\\\n\\\\\\\\u{2022} Configure the backup policies\\\\\\\\n\\\\\\\\n### **Deployment Using Amazon EKS with Fargate**\\\\\\\\n\\\\\\\\u{2022} Setup EKS cluster\\\\\\\\n\\\\\\\\u{2022} Dockerize or add helm support to deploy indexer nodes in K8S\\\\\\\\n\\\\\\\\n### **CI/CD Pipeline with GitHub Actions**\\\\\\\\n\\\\\\\\u{2022} Automate build test and deployment processes.\\\\\\\\n\\\\\\\\u{2022} Ensure code changes are integrated and deployed to the EKS cluster\\\\\\\\n\\\\\\\\n### **Monitoring**\\\\\\\\n\\\\\\\\u{2022} CloudWatch: Set up AWS CloudWatch to monitor the performance and health of the EKS cluster and S3 buckets.\\\\\\\\n\\\\\\\\u{2022} Logging: Implement logging for both S3 access and EKS application logs to facilitate troubleshooting and performance analysis.\\\\\\\\n\\\\\\\\u{2022} Expose monitoring dashboard to the end user\\\\\\\\n\\\\\\\\n\\\\\\\\n## Execution & Deployment\\\\\\\\n### Phase 1: Discovery Phase (1.5 weeks)\\\\\\\\n\\\\\\\\n####  Objectives\\\\\\\\n\\\\\\\\u{2022} Ensure a thorough understanding of project requirements and constraints.\\\\\\\\n\\\\\\\\u{2022} Identify key stakeholders, gather existing documentation, and clarify expectations.\\\\\\\\n\\\\\\\\n#### Activities\\\\\\\\n\\\\\\\\u{2022} Conduct meetings with key stakeholders to gather insights and clarify expectations.\\\\\\\\n\\\\\\\\u{2022} Review existing documentation and systems to identify current infrastructure, data flows, and operational needs.\\\\\\\\n\\\\\\\\u{2022} Identify potential risks and challenges in transitioning to the new infrastructure.\\\\\\\\n\\\\\\\\u{2022} Analyze existing infrastructure and define technical specifications for S3 buckets, CI/CD pipelines, and monitoring systems.\\\\\\\\n\\\\\\\\u{2022} Document findings and present a report that includes confirmed requirements, identified risks, and an updated project scope.\\\\\\\\n\\\\\\\\n#### Deliverables\\\\\\\\n\\\\\\\\u{2022} Detailed requirements document.\\\\\\\\n\\\\\\\\u{2022} Risk assessment report.\\\\\\\\n\\\\\\\\u{2022} Final confirmation of project scope and understanding.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Phase 2: Deployment Phase (2-3 weeks)\\\\\\\\n#### Objectives\\\\\\\\n\\\\\\\\u{2022} Deploy the necessary infrastructure components, including S3 buckets, CI/CD pipeline, and EKS nodes.\\\\\\\\n\\\\\\\\u{2022} Prepare infrastructure as a code:\\\\\\\\n\\\\\\\\u{2022} Write Terraform scripts to create the S3 buckets, EKS cluster, and necessary IAM roles.\\\\\\\\n\\\\\\\\u{2022} Execute Terraform scripts to provision infrastructure on AWS.\\\\\\\\n\\\\\\\\n### Deployment Execution\\\\\\\\n   \\\\\\\\n**CI/CD Pipeline Setup**\\\\\\\\n   Configure the GitHub Actions workflow for automated builds, tests, and deployments to the EKS cluster.\\\\\\\\n\\\\\\\\n**Initial Testing**\\\\\\\\n\\\\\\\\t\\\\\\\\tPerform initial tests to ensure that the infrastructure is deployed correctly and is functioning as expected.\\\\\\\\n\\\\\\\\n#### Deliverables\\\\\\\\n\\\\\\\\u{2022} Fully deployed S3 buckets.\\\\\\\\n\\\\\\\\u{2022} Operational CI/CD pipeline.\\\\\\\\n\\\\\\\\u{2022} Deployed EKS cluster with application nodes.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Phase 3: Monitoring Setup and Traffic Migration (2-3 weeks)\\\\\\\\n\\\\\\\\n#### Objectives\\\\\\\\nEstablish monitoring systems and gradually transition traffic to the new infrastructure.\\\\\\\\n\\\\\\\\n#### Monitoring Configuration:\\\\\\\\nSet up AWS CloudWatch and other monitoring tools to track performance metrics and logs for the new infrastructure.\\\\\\\\n\\\\\\\\n#### Traffic Migration Plan\\\\\\\\nDevelop a plan for gradually migrating traffic from the old infrastructure to the new system. This may include:\\\\\\\\nPerforming a blue-green deployment or canary release strategy.\\\\\\\\n\\\\\\\\n#### Gradual Traffic Switch:\\\\\\\\n\\\\\\\\u{2022} Start directing a small percentage of traffic to the new infrastructure and monitor performance.\\\\\\\\n\\\\\\\\u{2022} Gradually increase traffic as confidence in the new system grows.\\\\\\\\n\\\\\\\\n#### Performance Monitoring:\\\\\\\\nContinuously monitor system performance, looking for any issues or bottlenecks.\\\\\\\\n\\\\\\\\n#### Deliverables\\\\\\\\n\\\\\\\\u{2022} Configured monitoring systems with performance dashboards.\\\\\\\\n\\\\\\\\u{2022} Traffic migration plan and reports on traffic switching progress.\\\\\\\\n\\\\\\\\u{2022} Performance metrics indicating the success of the traffic switch.\\\\\\\\n\\\\\\\\n### Phase 4: Maintenance Phase (on going)\\\\\\\\n#### Objectives\\\\\\\\n\\\\\\\\u{2022} Ensure the new infrastructure remains operational and meets performance standards.\\\\\\\\n\\\\\\\\n#### Regular Maintenance:\\\\\\\\nImplement routine checks for system performance, security updates, and infrastructure health.\\\\\\\\n\\\\\\\\n#### Support Mechanism:\\\\\\\\nEstablish a support process for addressing any issues that arise with the new infrastructure.\\\\\\\\n\\\\\\\\n#### Performance Optimization:\\\\\\\\nAnalyze performance metrics and optimize the system as necessary (e.g., scaling resources, adjusting CI/CD pipelines).\\\\\\\\n\\\\\\\\n#### Feedback Loop:\\\\\\\\nGather feedback from stakeholders on the new infrastructure and make improvements based on their input.\\\\\\\\n\\\\\\\\n#### Deliverables\\\\\\\\n\\\\\\\\u{2022} Maintenance schedule and documentation.\\\\\\\\n\\\\\\\\u{2022} Performance optimization report.\\\\\\\\n\\\\\\\\u{2022} Stakeholder feedback report with suggested improvements.\\\\\\\\n\\\\\\\\n#### Cost Management Strategies\\\\\\\\nBased on some basic assumption we have estimated the cost from Storage, GET and PUT requests will average about $9000, with an average increase of ~$100 per month based on expected growth ([calculations here](https://docs.google.com/document/d/1f2CfIwN-JksXP4O3r4pDdrCbhO2aaqPU3JXgncYbLUA/edit?usp=sharing))\\\\\\\\n\\\\\\\\nLong term, the team will follow some cost management strategies to lower operating costs, in addition to improving the current solution.\\\\\\\\n\\\\\\\\n- S3 Lifecycle Policies: Set lifecycle policies to transition data to cheaper storage classes (e.g., S3 Glacier) after a certain period.\\\\\\\\n- EKS Cost Optimization: Regularly review resource usage in EKS and adjust configurations to ensure cost efficiency.\\\\\\\\n\\\\\\\\n## Service Level - Performance Metrics\\\\\\\\n**Transaction Throughput** >= 1000 tsp \\\\\\\\n**Lag from the final block** < 5 blocks The last available block in the NEAR Lake must be less than five blocks behind the last finalized block on NEAR RPC.\\\\\\\\n**Scalability** ~10x  initial load without performance degradation.\\\\\\\\n**Uptime** >= 99.9% for mainnet\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n### Team Composition\\\\\\\\n**Discovery & Deployment phases**\\\\\\\\n2 FT - Senior devops engineers\\\\\\\\n1 FT - Senior Rust backend engineer\\\\\\\\n1 FT - Project manager\\\\\\\\n\\\\\\\\n**Monitoring and setup phase**\\\\\\\\n\\\\\\\\n2 FT - Senior devops engineers\\\\\\\\n1 FT - Senior Rust backend engineer\\\\\\\\n\\\\\\\\n**Maintenance phase**\\\\\\\\n3 FT - Senior devops engineers -  1 full time and 4 part time working on a cascading basis to cover 24/7\\\\\\\\n0.3 FT - Senior Rust backend engineer\\\\\\\\n\\\\\\\\n**Ad hoc - primarily for status page (~2 weeks)**\\\\\\\\n1 FT - Designer\\\\\\\\n1 FT - Full Stack development\\\\\\\\n\\\\\\\\n## Budget Total\\\\\\\\nTotal budget is estimated at $417,400 with another $120,000 for infrastructure cost\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\nPhase 1: Discovery Phase (1.5 weeks) - $13,400\\\\\\\\nPhase 2: Deployment Phase (3 weeks) - $26,800\\\\\\\\nPhase 3: Monitoring Setup and Traffic Migration (3 weeks) - $20,800\\\\\\\\nPhase 4: Maintenance Phase (45 weeks) - $349,000\\\\\\\\nAd Hoc development (2 weeks) - $7,400\\\\\\\\n\\\\\\\\nCost of infrastructure - Will be billed separately, but expected annual cost will be about $120,000\\\\\\\\n\\\\\\\\n## Conclusion\\\\\\\\nHaving already built and maintained data availability infrastructure, from first principles, on the NEAR blockchain, the MP team is really well positioned to take over the operation and maintenance of NEAR Lake. The goal of the team is to provide the NEAR ecosystem with a high-speed, high-reliability \\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"magicmax.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"417400\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.367631631492e+21
+    }
+  },
+  {
+    "id": "9666479061",
+    "receipt_id": "3wdQQFeBAEnATE1sAvv1igGyKN5wvWtsERG5YN4eEvN5",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6Su5trGtBe8FggUFWWVMmKtyUx8FQxCLg3GpDfoiDUH5",
+      "block_height": 131570566,
+      "block_timestamp": 1730312883478710500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3517608863441,
+      "tokens_burnt": 351760886344100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "3Z3SHSKiC4A6YaRU57kTt6cfZLGvSPAvvVz3H8wRcdwH",
+    "included_in_block_hash": "9xQb7m3gmH1chNrCyv7xvLB67h5tianiyrWuEvwwUEvB",
+    "block_timestamp": "1730312881151709905",
+    "block": {
+      "block_height": 131570564
+    },
+    "receipt_conversion_tokens_burnt": "95832232145500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351760886344100000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"denis-srgn.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":34,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.367631631492e+21
+    }
+  },
+  {
+    "id": "9666483244",
+    "receipt_id": "43z1d721bLEKKNkDsUsTfyTZge68Sc5RArxuoBJ3Yhfv",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "39oiGnqZsiL7CAUcpTKt9osu3eLPH8nkodJYzHSx1eXz",
+      "block_height": 131570579,
+      "block_timestamp": 1730312897975267300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5595006114206,
+      "tokens_burnt": 559500611420600000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "FRuDAwM9iyYfWfjJbFdM8zAu8iGRjgPJ1S4e8rWmfi1E",
+    "included_in_block_hash": "8FCyXTz8X2jCiHcvyy8X18ePnvhqs5CarMm8XgFWJTeR",
+    "block_timestamp": "1730312896303093197",
+    "block": {
+      "block_height": 131570578
+    },
+    "receipt_conversion_tokens_burnt": "56769732817500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 559500611420600000000,
+        "args": "{\"id\": 33, \"body\": {\"name\": \"Proposal for High-Performance RPC Services in the NEAR Ecosystem\", \"summary\": \"We seek funding to enhance NEAR\\\\\\\\\\\\'s infrastructure by providing high-performance, low-latency RPC services. With experience managing NEAR validators ($40M staked), operating the NEAR MPC Network, and publishing 10+ knowledge articles, we are committed to strengthening the ecosystem. Upon approval, we\\\\\\\\u{2019}ll deploy infrastructure in multiple regions within 3 weeks to ensure high availability and top-quality service, supporting NEAR\\\\\\\\u{2019}s growth.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REJECTED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": 2, \"supervisor\": \"trechriron71.near\", \"description\": \"# About Luganodes\\\\\\\\n\\\\\\\\nLuganodes is a leading, non-custodial, institutional-grade staking provider established under the Lugano Plan B Program, a partnership between Tether and the City of Lugano. Managing $2 billion in staked assets across 45+ Proof-of-Stake (PoS) networks, it ranks as a top validator on networks like NEAR, Polygon, Polkadot, Sui, Tron, and others. With a focus on security and compliance, Luganodes is ISO 27001:2022, SOC2 Type II, and GDPR certified, with its infrastructure audited by Quantstamp. Trusted by prominent financial institutions, including Bitfinex, BitGo, and others, Luganodes provides reliable staking services for PoS assets.\\\\\\\\n\\\\\\\\n### Primary Person\\\\\\\\u{2019}s Contact Information\\\\\\\\n\\\\\\\\n**Anil Kumar, Lead, Bizops**  \\\\\\\\nTelegram: [@luganodes_anil](https://t.me/luganodes_anil)  \\\\\\\\nEmail: [anil@luganodes.com](mailto:anil@luganodes.com)  \\\\\\\\nCC: [devops@luganodes.com](mailto:devops@luganodes.com)\\\\\\\\n\\\\\\\\n## About Team and Experience\\\\\\\\n\\\\\\\\nOur team consists of over 35 people, with 15 highly skilled engineers distributed across 7 different time zones, ensuring exceptional reliability and availability for optimal service performance. Our consistent performance across multiple protocols further demonstrates this commitment.\\\\\\\\n\\\\\\\\n### Key Team Members\\\\\\\\n\\\\\\\\n- **Anuj Shankar**, CEO, Ex-McKinsey & Microsoft  \\\\\\\\n  Built and led Cloud/Platform Engineering teams for multiple startups in Southeast Asia. Founder of Luganodes, working closely with institutional clients and protocols.\\\\\\\\n\\\\\\\\n- **Cristian Lucera**, Head of Infra  \\\\\\\\n  With over 10 years of experience in blockchain, including infrastructure roles with the Cardano foundation and Stakefish. ISO 27001:2022 lead auditor certified.\\\\\\\\n\\\\\\\\n- **Max Marcisiak**, VP Business Development, Ex Finoa & Tumm  \\\\\\\\n  Several years in blockchain with strategic roles at Finoa and Tuum. Master\\\\\\\\\\\\'s in Blockchain from the University of Nicosia.\\\\\\\\n\\\\\\\\n- **Thomas Gonzalez**, Marketing Lead  \\\\\\\\n  5+ years in blockchain with a leadership role at Moralis. Holds MBAs in finance and marketing.\\\\\\\\n\\\\\\\\nOther team members have backgrounds in protocols, exchanges, custody, and blockchain infrastructure companies.\\\\\\\\n\\\\\\\\n## Expertise and Contributions in the NEAR Ecosystem\\\\\\\\n\\\\\\\\n- Managing NEAR Validators to produce blocks with more than $40m staked capital.\\\\\\\\n- Deep expertise in operating NEAR MPC Network, currently run by very few operators.\\\\\\\\n- Published 10+ knowledge articles, blogs, etc., on various NEAR forums.\\\\\\\\n- Hosting Public Community RPC - [https://metapool.near.lgns.net](https://metapool.near.lgns.net/).\\\\\\\\n- Brought more investors to stake and engage positively within the NEAR Ecosystem.\\\\\\\\n- Testnet Operators of NEAR DA aka Nuffle.\\\\\\\\n\\\\\\\\nWith our track record and contributions to the NEAR ecosystem, we are confident in providing high-performance infrastructure.\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\nUpon the approval of our proposal, we will initiate the knowledge transfer with the Pagoda team to ensure a smooth transition.  \\\\\\\\n\\\\\\\\nWe will assess and identify potential geographic areas with the most workload and plan accordingly to ensure the right resources are deployed in the right areas.\\\\\\\\n\\\\\\\\nOur main focus is to ensure we keep the core requirements at high standards: \\\\\\\\n- Low latency / Faster Response Time\\\\\\\\n- High Availability of Service\\\\\\\\n- Top Quality Customer Service\\\\\\\\n\\\\\\\\n\\\\\\\\n## Competitor Comparison\\\\\\\\n\\\\\\\\nKey differences from competitors include:\\\\\\\\n\\\\\\\\n- High-performance bare metal server setups across several continents, with backups ensuring high availability and fast migration during downtime.\\\\\\\\n- SOC 2 Type II, ISO 27001:2022 certified, and GDPR compliant, emphasizing both performance and security.\\\\\\\\n- Strong connections with protocols, foundations, and institutions, helping to bring more business into the NEAR ecosystem.\\\\\\\\n- Extensive protocol engineering experience, having worked with L1 blockchain foundations to launch and participate in devnet, testnet, and mainnet phases. (E.g., Sui, Saga, Dymension, dYdX, EigenDA, Avail, Lava, etc.)\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\nWe propose a total budget of $150,000 for the first year, distributed as follows:\\\\\\\\n\\\\\\\\n- **First Payout**: $60,000 (in NEAR tokens) at proposal approval, to procure nodes and deploy archival nodes, RPC nodes, and load balancers (LB).\\\\\\\\n- **Second Payout**: $45,000 (in NEAR tokens) after the first 6 months.\\\\\\\\n- **Third Payout**: $45,000 (in NEAR tokens) at the end of the next 6 months.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"1ba606d430ff882c0c70e7dbcf9043914a33a9c34209a80e4577525e0d5ee232\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"150000\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 973587554420200000000
+    }
+  },
+  {
+    "id": "9666484343",
+    "receipt_id": "6JFgzKCvoo2ZY1SEvAzTmmEYsmKszzGFbKUf3o3vNX4R",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AJ6nbxERjBHAmTYc1sUshwUQdmWu3thWR5Rprz1cRoeG",
+      "block_height": 131570581,
+      "block_timestamp": 1730312899746998000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3573172101821,
+      "tokens_burnt": 357317210182100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "FRuDAwM9iyYfWfjJbFdM8zAu8iGRjgPJ1S4e8rWmfi1E",
+    "included_in_block_hash": "8FCyXTz8X2jCiHcvyy8X18ePnvhqs5CarMm8XgFWJTeR",
+    "block_timestamp": "1730312896303093197",
+    "block": {
+      "block_height": 131570578
+    },
+    "receipt_conversion_tokens_burnt": "56769732817500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357317210182100000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rohilsaraf.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":33,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 973587554420200000000
+    }
+  },
+  {
+    "id": "9666496048",
+    "receipt_id": "HLPxP2UpdrbRy89BFbyhgi4TLxk4SVopUEAvTLTewjGy",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "D1Dk7mRnWpbg16ERD7ifu1rHEGaxYUFV5rZiGuyQ1EM",
+      "block_height": 131570593,
+      "block_timestamp": 1730312915061640200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6078445847253,
+      "tokens_burnt": 607844584725300000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "9LaA4gsg7t9jUhzPViy3veC3qKepuZHs2W6Se6akYDLh",
+    "included_in_block_hash": "AgmManMTncsZA5a2aoBnJM3oAjdMAYg7Me8gXjmvKiwB",
+    "block_timestamp": "1730312913953868695",
+    "block": {
+      "block_height": 131570592
+    },
+    "receipt_conversion_tokens_burnt": "67789439354000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 607844584725300000000,
+        "args": "{\"id\": 31, \"body\": {\"name\": \" NEAR Infrastructure Migration and Optimization Proposal\", \"summary\": \"We propose a phased approach to seamlessly migrate and optimize the NEAR Kit Wallet Indexer API, leveraging our expertise managing NEAR validators ($40M staked) and the MPC Network. Key goals include sub-150ms response times, 99.9% uptime, robust developer support, and scalability for future growth. Our budget request is $72,000 annually, disbursed as $6,000 per month in NEAR tokens.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REJECTED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": 1, \"supervisor\": \"trechriron71.near\", \"description\": \"# About Luganodes\\\\\\\\n\\\\\\\\nLuganodes is a leading, non-custodial, institutional-grade staking provider established under the Lugano Plan B Program, a partnership between Tether and the City of Lugano. Managing $2 billion in staked assets across 45+ Proof-of-Stake (PoS) networks, it ranks as a top validator on networks like NEAR, Polygon, Polkadot, Sui, Tron, and others. With a focus on security and compliance, Luganodes is ISO 27001:2002, SOC2 Type II, and GDPR certified, with its infrastructure audited by Quantstamp. Trusted by prominent financial institutions, including Bitfinex, BitGo, and others, Luganodes provides reliable staking services for PoS assets.\\\\\\\\n\\\\\\\\nLuganodes is an enterprise node operator for NEAR: [https://metapool.near.lgns.net/](https://metapool.near.lgns.net/)\\\\\\\\n\\\\\\\\n# Primary Person\\\\\\\\u{2019}s Contact Information\\\\\\\\n\\\\\\\\n**Anil Kumar** - Lead, Bizops  \\\\\\\\nTelegram: [@luganodes_anil](https://t.me/luganodes_anil)  \\\\\\\\nEmail: [anil@luganodes.com](mailto:anil@luganodes.com)  \\\\\\\\nCC: [devops@luganodes.com](mailto:devops@luganodes.com)\\\\\\\\n\\\\\\\\n# About Team and Experience\\\\\\\\n\\\\\\\\nOur team consists of over 35 people, along with 15 highly skilled engineers distributed across 7 different time zones, ensuring exceptional reliability and availability for optimal service performance around the clock. Our consistent performance across multiple protocols further demonstrates this commitment, as detailed in the following link: **Performance Overview**.\\\\\\\\n\\\\\\\\n### In Detail About Key Team Members:\\\\\\\\n\\\\\\\\n- **Anuj Shankar**, CEO, Ex-McKinsey & Microsoft  \\\\\\\\n  Built and led Cloud/Platform Engineering teams for multiple startups in Southeast Asia. He has founded Luganodes and has been working closely with several key institutional clients and protocols.\\\\\\\\n\\\\\\\\n- **Max Marcisiak**, VP Business Development, Ex Finoa & Tuum  \\\\\\\\n  Several years professionally in the blockchain space, with strategic roles at Finoa and Tuum. Holds a Master\\\\\\\\\\\\'s in Blockchain from the University of Nicosia.\\\\\\\\n\\\\\\\\n- **Thomas Gonzalez**, Marketing Lead  \\\\\\\\n  5+ years in blockchain, with a leadership role at Moralis. MBAs in finance and marketing.\\\\\\\\n\\\\\\\\n- **Cristian Lucera**, Head of Infra  \\\\\\\\n  With over 10 years of experience in the blockchain industry running infrastructure and working with the Cardano foundation and Stakefish. He also led the security of the systems and acquired ISO 27001:2022 lead auditor certification.\\\\\\\\n\\\\\\\\nMoreover, the other team members come from the background of working with protocols, exchanges, custody, and blockchain infrastructure companies.\\\\\\\\n\\\\\\\\n# Expertise and Contributions in the NEAR Ecosystem\\\\\\\\n\\\\\\\\n- Managing NEAR Validators to produce blocks with more than $40M staked capital.\\\\\\\\n- Expertise in operating the NEAR MPC Network, currently run by very few operators.\\\\\\\\n- Published more than 10+ knowledge articles, blogs, etc. on various NEAR forums.\\\\\\\\n- Already hosting Public Community RPC at [https://metapool.near.lgns.net/](https://metapool.near.lgns.net/).\\\\\\\\n- Attracted more investors to stake and engage positively with the NEAR Ecosystem.\\\\\\\\n- Testnet Operators for NEAR DA (aka Nuffle).\\\\\\\\n\\\\\\\\nWith this track record and our contributions to the NEAR ecosystem, we are confident in providing high-performance infrastructure.\\\\\\\\n\\\\\\\\n# Goals\\\\\\\\n\\\\\\\\nUpon approval, we commit to a 4-week transition period, focusing on:\\\\\\\\n\\\\\\\\n- **Seamless Migration**: Execute a zero-downtime transition from the current infrastructure.\\\\\\\\n- **Performance Enhancement**: Maintain sub-150ms average response time while handling 350K+ daily requests.\\\\\\\\n- **Reliability Assurance**: Achieve 99.9% uptime through robust infrastructure and proactive monitoring.\\\\\\\\n- **Scalability Preparation**: Optimize the system to easily accommodate future growth in API usage.\\\\\\\\n- **Developer Support**: Provide comprehensive documentation and responsive community support channels.\\\\\\\\n\\\\\\\\n# Proposed Approach\\\\\\\\n\\\\\\\\nWe propose a phased approach to ensure an efficient and smooth transition:\\\\\\\\n\\\\\\\\n### Phase 1: Knowledge Transfer and Analysis (1 Week)\\\\\\\\n- Conduct in-depth knowledge transfer sessions with the Pagoda team, focusing on:\\\\\\\\n  - Node.js application architecture and custom middleware.\\\\\\\\n  - Database schema and query optimization techniques.\\\\\\\\n  - NEAR Lake Framework integration specifics.\\\\\\\\n- Perform comprehensive code review.\\\\\\\\n- Analyze existing performance metrics, identifying:\\\\\\\\n  - API endpoint response times and throughput.\\\\\\\\n  - Database query performance and indexing strategies.\\\\\\\\n  - Memory usage patterns and potential memory leaks.\\\\\\\\n- Conduct a security audit, focusing on input validation, authentication mechanisms, and potential vulnerabilities.\\\\\\\\n\\\\\\\\n### Phase 2: Infrastructure Setup and Optimization (1 Week)\\\\\\\\n- Set up a mirrored production environment on our infrastructure:\\\\\\\\n  - Deploy Node.js application servers with load balancing.\\\\\\\\n  - Configure database with optimized indexing.\\\\\\\\n  - Implement Redis for efficient data caching.\\\\\\\\n  - Implement Docker containerization for consistent deployments across environments.\\\\\\\\n  - Configure Grafana dashboards for real-time monitoring:\\\\\\\\n    - Set up Prometheus for metrics collection (API response times, error rates, system health).\\\\\\\\n    - Create alerts for critical performance thresholds.\\\\\\\\n  - Enhance API responsiveness by optimizing Node.js server configuration and database connections.\\\\\\\\n\\\\\\\\n### Phase 3 & 4: Documentation, Support Transition, and Gradual Transition (2 Weeks, Concurrent)\\\\\\\\n- **Documentation and Support Transition**\\\\\\\\n  - Update API documentation using OpenAPI 3.0 specification.\\\\\\\\n  - Implement automated documentation generation from code comments using JSDoc.\\\\\\\\n  - Set up a developer portal using Docusaurus, including:\\\\\\\\n    - Establish support channels.\\\\\\\\n  \\\\\\\\n- **Gradual Transition and Testing**\\\\\\\\n  - Implement gradual traffic transition from Pagoda\\\\\\\\\\\\'s infrastructure to ours.\\\\\\\\n  - Conduct thorough testing under various load conditions:\\\\\\\\n    - Perform load testing to simulate current peak usage (350K requests/day).\\\\\\\\n    - Identify and address performance bottlenecks.\\\\\\\\n    - Continuously monitor and adjust during transition to ensure a smooth user experience.\\\\\\\\n\\\\\\\\n### Phase 5: Full Transition and Continued Improvement (Ongoing)\\\\\\\\n- Complete full transition of the Kit Wallet Indexer API to our management.\\\\\\\\n- Implement continuous monitoring and performance optimization:\\\\\\\\n  - Set up alerts for critical system issues.\\\\\\\\n  - Regularly review and optimize based on performance data.\\\\\\\\n- Ensure system security and stability:\\\\\\\\n  - Conduct periodic security audits.\\\\\\\\n  - Keep dependencies updated and apply security patches promptly.\\\\\\\\n- Maintain open communication with the NEAR community for feedback and support.\\\\\\\\n\\\\\\\\n# Budget\\\\\\\\n\\\\\\\\nOur proposal for the total budget for the first year will be $72,000. We would expect $6,000 monthly (in NEAR tokens).\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"1ba606d430ff882c0c70e7dbcf9043914a33a9c34209a80e4577525e0d5ee232\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"72000\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.027422451891e+21
+    }
+  },
+  {
+    "id": "9666497414",
+    "receipt_id": "59JhP5gFD9SUUPnMSofGbjkDL8thBQ6DtCiu4gZzgJa8",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "63mMJfejfySWKdjJRydzKt762gNfMAepx5Nomj6xQ1Bx",
+      "block_height": 131570594,
+      "block_timestamp": 1730312915997627400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3517884278117,
+      "tokens_burnt": 351788427811700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "9LaA4gsg7t9jUhzPViy3veC3qKepuZHs2W6Se6akYDLh",
+    "included_in_block_hash": "AgmManMTncsZA5a2aoBnJM3oAjdMAYg7Me8gXjmvKiwB",
+    "block_timestamp": "1730312913953868695",
+    "block": {
+      "block_height": 131570592
+    },
+    "receipt_conversion_tokens_burnt": "67789439354000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351788427811700000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rohilsaraf.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":31,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.027422451891e+21
+    }
+  },
+  {
+    "id": "9666505289",
+    "receipt_id": "Emc8HfjzEf4pKgiTRqYuuQS1MoHqNguz5xVf7X3mYCu1",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "xiFexMhNKPV9pSTKk3GUhb7ErKCZjETmbrrcgrGwjzS",
+      "block_height": 131570607,
+      "block_timestamp": 1730312931058515200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5788890412721,
+      "tokens_burnt": 578889041272100000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "7g5uZsSsjpGiR86Fhkg4RFz52GaXVg3KuFH1QcbLoUmS",
+    "included_in_block_hash": "CtroGJNNg48GFQaQrSJa1bGk42v2FmTaXtzLqEa7DJtA",
+    "block_timestamp": "1730312929872818327",
+    "block": {
+      "block_height": 131570606
+    },
+    "receipt_conversion_tokens_burnt": "63154582256000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 578889041272100000000,
+        "args": "{\"id\": 29, \"body\": {\"name\": \"Professional and efficient Infra support for Near Lake, 24/7 operation, monitor\", \"summary\": \"As an infrastructure service provider with ties to Near (Hackathon winner, Grants winner), we aim to efficiently manage the operations of Near Lake, providing the most essential infrastructure services for the Near ecosystem. At the same time, since we are already providing professional RPC services for Near, operating external Near Lake RPC nodes is also within our capabilities.\\\\\\\\n\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REJECTED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": 3, \"supervisor\": \"trechriron71.near\", \"description\": \"**Team Background and Professional Experience**\\\\\\\\nZhihao, CEO\\\\\\\\nMadao, CTO\\\\\\\\nLea, CMO\\\\\\\\nBowen, COO\\\\\\\\nAlbert, Chief Scientist\\\\\\\\n\\\\\\\\nBlockPI is a blockchain technology infrastructure service provider, primarily offering RPC services and data indexing services. The team has 8 years of experience in developing and operating internet infrastructure. And BlockPI RPC service has been live since Oct 2022. The team is mainly based in China and Canada. 20 persons in total, all are passionate about the web3 industry.\\\\\\\\n\\\\\\\\nAmong the team:\\\\\\\\nCore development team: 7 professionals\\\\\\\\nDesign, UX/UI: 2 professionals\\\\\\\\nProject Management: 2 professionals\\\\\\\\nOperation: 2 professionals\\\\\\\\nBD / Marketing/Customer Support: 7 professionals\\\\\\\\nThe team consists of experienced full-stack engineers with extensive experience in infrastructure development and operations, including network protocols, and is also familiar with AWS S3 configuration and operations. BlockPI\\\\\\\\\\\\'s RPC services are well-regarded in the industry for their excellent performance and stable service. Main works:\\\\\\\\n\\\\\\\\n1. RPC service: https://blockpi.io/\\\\\\\\n2. AA explorer: https://aaexplorer.com/live-statistics; https://github.com/BlockPILabs/aaexplorer\\\\\\\\n3. UserOps indexer: https://github.com/BlockPILabs/erc4337_user_operation_indexer\\\\\\\\n4. RPC aggregator: https://rpchub.io/; https://github.com/BlockPILabs/aggregator\\\\\\\\nIn 2021, we won second place at the Near Global Hackathon, where our award-winning demo was the precursor to BlockPI\\\\\\\\\\\\'s distributed RPC service. Subsequently, we received grants from Near to provide basic RPC services. We have also obtained funding from other ecosystems to offer RPC services and ERC4337 services, including the development of related indexers.\\\\\\\\nAs an infrastructure service provider with ties to Near, we want to efficiently manage the operations of Near Lake, providing the most essential infrastructure services for the Near ecosystem.\\\\\\\\n\\\\\\\\nAffiliations with other NEAR ecosystem partners:\\\\\\\\nRef.finance (https://www.ref.finance/) (Reference: Marco, Bowen)\\\\\\\\nOctopus network (https://oct.network/) (Reference: Liu Yi)\\\\\\\\nNearblocks.io (Reference: https://t.me/devluke)\\\\\\\\n\\\\\\\\n\\\\\\\\n**Deployment Plan**\\\\\\\\n1. The core Near Lake data buckets will continue to be maintained on AWS S3. Due to the large volume and high importance of Near Lake data, we believe that S3 is the most suitable option. We will work with Pagoda on the transition steps in AWS and conduct the necessary testing. We will use Stadard Storage tier for S3 and the same configuration to ensure that the user experience for Near Lake is identical to that before the handover.\\\\\\\\n2. The peripheral indexer RPC nodes will be deployed on Baremetal servers procured by BlockPI. We will deploy two nodes for each network in Europe, ensuring resource redundancy. Using Baremetal has two advantages: distributed deployment ensures service robustness and maintains a high SLA, and it is also cost-effective.\\\\\\\\n3. We will monitor the Near Lake S3 and the Indexer RPC nodes separately to perform RCA in the event of block height delays.\\\\\\\\n4. In addition to automated monitoring and alerting processes, we also have dedicated user support channels. We will create a dedicated customer support channel for Near on Discord. The existing ticket system allows users to submit related issues. For more details, please refer to https://blockpi.io/ticket.\\\\\\\\n \\\\\\\\n**Monitoring and Status page**\\\\\\\\n\\\\\\\\nOur Prometheus configuration includes detailed alert rules, covering various aspects from infrastructure to application layers. The Nightingale configuration ensures the prioritization and effective distribution of alerts. Our on-call team uses FlashDuty for shift scheduling, ensuring 24/7 response capability.\\\\\\\\n\\\\\\\\nWe have our own status page, and we can add Near Lake to it or develop a separate status page specifically for Near Lake. We can set the comparison to BlockPI Near RPC and others. If lag from the final block of the NEAR Lake is less than five blocks behind the last finalized block on NEAR RPC, we will make the appropriate markings and issue alerts. Please refer to https://status.blockpi.io/\\\\\\\\n\\\\\\\\n**Milestones**\\\\\\\\nMilestone #1: Complete S3 Transition\\\\\\\\n\\\\\\\\nObject: Successfully deploy the mainnet and testnet S3 bucket, finish testing, and ensure that the service performance is identical to that before the transfer.\\\\\\\\n\\\\\\\\nTime: 10 days after receiving the first grant. (This part requires cooperation from the Pagoda team.)\\\\\\\\n\\\\\\\\nMilestone #2: Setting up Indexer RPC nodes and monitoring system\\\\\\\\n\\\\\\\\nObject: Deploy two nodes for the mainnet and two nodes for the testnet in Europe. The performance should reach 1000 transactions per second and handle an additional 50% peak loads. Deploying monitoring and alerting systems, and set up a public status page.\\\\\\\\n\\\\\\\\nTime: 30 days after receiving the first grant.\\\\\\\\n\\\\\\\\n**Budget**\\\\\\\\n\\\\\\\\nBudget breakdown:\\\\\\\\n2 AWS S3 buckets costs: $50,000/month for the first billing period, adjusted based on AWS invoice for the following billing period. \\\\\\\\n4 Indexer RPC node costs ( including disk scaling, CDN integration, bandwidth cost): $2,000/month\\\\\\\\nMonitoring system and operational costs: $5,000/month\\\\\\\\n\\\\\\\\nBilling period:\\\\\\\\n1. We accept a 3-month, 6-month or 12-month billing period. \\\\\\\\n2. Due to the high and unpredictable costs of AWS, we must receive funding before we can initiate the deployment. However, to ensure transparency regarding the expenses, we will provide the AWS invoice at the end of each billing cycle. And this will serve as a reference for the next billing of AWS costs. For example, if we operate on a 3-month billing cycle, we will initially charge $171,000 including $150,000 for AWS. If the AWS invoice at the end of the 3 months is $140,000, then for the second billing period, we will only charge $140,000 for the AWS buckets costs thus $161,000 in total.\", \"linked_proposals\": [], \"receiver_account\": \"albertfromblockpi.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"171000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 999425224774600000000
+    }
+  },
+  {
+    "id": "9666506607",
+    "receipt_id": "HX36dUtPncWTjbzG23nGYs6WpnfGoSNbqYDPJFcPVKgR",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DnyEApwZcFT6F12kztqMnUsL7LyzkfcuskDKx5UmUWNU",
+      "block_height": 131570608,
+      "block_timestamp": 1730312932189261600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3573816012465,
+      "tokens_burnt": 357381601246500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7g5uZsSsjpGiR86Fhkg4RFz52GaXVg3KuFH1QcbLoUmS",
+    "included_in_block_hash": "CtroGJNNg48GFQaQrSJa1bGk42v2FmTaXtzLqEa7DJtA",
+    "block_timestamp": "1730312929872818327",
+    "block": {
+      "block_height": 131570606
+    },
+    "receipt_conversion_tokens_burnt": "63154582256000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357381601246500000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"albertfromblockpi.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":29,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 999425224774600000000
+    }
+  },
+  {
+    "id": "9666545620",
+    "receipt_id": "8qgPgkmAnEmUqCMwn2wqkREiw8cbRUoHgZr78H6MtuRk",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "64eW4huBEqjSQHT99WG5wzsJtJfqV3bSj9SDMVhBFdzA",
+      "block_height": 131570686,
+      "block_timestamp": 1730313020765263600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5596531025616,
+      "tokens_burnt": 559653102561600000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "AwiyUSxUuWNWoFD87GQpVM7GfaLQvZLDjwKmthHLYqwv",
+    "included_in_block_hash": "BSoee3GJJdLzdw2Suo1Uzxt9zejUh32GycQgTJj5wfHA",
+    "block_timestamp": "1730313019832382746",
+    "block": {
+      "block_height": 131570685
+    },
+    "receipt_conversion_tokens_burnt": "56702975616500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 559653102561600000000,
+        "args": "{\"id\": 27, \"body\": {\"name\": \"Ankr Network- Public RPC Endpoint Funding\", \"summary\": \"Ankr has been serving the Near Ecosystem by providing over 1B requests per month through our premium tier only. Ankr is looking to introduce the support of our public Near endpoint, a free tier allowing access to 1M requests a day per developer, greatly contributing to the growth of the Near ecosystem.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REJECTED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": 2, \"supervisor\": \"trechriron71.near\", \"description\": \"**#Overview**\\\\\\\\nAnkr is a pioneer in decentralized web3 infrastructure helping the developers connect to the underlying RPC nodes by creating publicly available RPC endpoints. We focus on enabling global distributions of our servers through bare metal allowing our latency benchmarks to be the lowest in the industry on a global scale. We\\\\\\\\u{2019}ve also been focusing on creating a suite of infrastructure tools such as indexing APIs and snapshot as a service.\\\\\\\\nWith a strong emphasis on developer experience, we also act as a rollup as a service provider leveraging our expertise in scaling public blockchains supporting over 500B queries on a monthly basis, to bridge our technology into each rollup we support.\\\\\\\\n\\\\\\\\n**#Organization**\\\\\\\\n**Chandler Song** - Co- Founder - CEO\\\\\\\\nAttended the University of California, Berkeley and previously work at AWS as a Software Engineer. He co-founded Ankr alongside Stanley and Ryan.\\\\\\\\n**Stanley Wu**- Co- Founder - CTO \\\\\\\\nPreviously 4th founding engineer of AWS and quickly became Senior SDM L7 right under the AWS CTO.\\\\\\\\n**Ryan Fang **-  Co- Founder - COO\\\\\\\\nBefore co-founding Ankr, Fang worked in investment banking and private equity, including roles at Morgan Stanley. He graduated from the University of California, Berkeley.\\\\\\\\n**Peter Stewart** - Head of Infrastructure\\\\\\\\n**Arsalan Evini** - Head of Business Development \\\\\\\\n**Amos Lowe** - Assistant Business Development Manager\\\\\\\\n\\\\\\\\n**#Primary person\\\\\\\\u{2019}s contact information**\\\\\\\\nAmos Lowe- Assistant Business Development Manager\\\\\\\\nTelegram: https://t.me/AmosLowe\\\\\\\\nEmail: a.lowe@asphere.xyz\\\\\\\\n\\\\\\\\n**#Size of the whole team**\\\\\\\\n150 team members\\\\\\\\n\\\\\\\\n**#Size of the engineering team**\\\\\\\\n100+\\\\\\\\n\\\\\\\\n**#Team location**\\\\\\\\nSan Francisco, California\\\\\\\\n\\\\\\\\n**#Body**\\\\\\\\nAnkr has been serving the Near Ecosystem by providing over 1B requests per month through our premium tier only. Ankr is looking to introduce the support of our public Near endpoint, a free tier allowing access to 1M requests a day per developer, greatly contributing to the growth of the Near ecosystem.\\\\\\\\nThe problem we\\\\\\\\u{2019}re solving with our infrastructure solutions are developer fragmentation tooling to build reliant, secure, and fast communication access to Near. Through our RPC technology, we have built a proprietary load-balancer architecture to ensure global scalability and multi-node provider accessibility.\\\\\\\\n\\\\\\\\n**#Goals / Milestones**\\\\\\\\nIn the span of a month, Ankr will sync Near nodes + purchasing and deployment of BareMetal servers in key regions.\\\\\\\\n\\\\\\\\nUpon receiving a grant from Near, the sole focus would be to deploy node clusters to be able to be accessed by a larger influx of developers as the Near Ecosystem scales towards mass adoption:\\\\\\\\n* Nodes deployed in N. America, S. America, Africa, Asia and Europe to increase accessibility\\\\\\\\n* Focus on maintaining sub 100 m/s Global latency\\\\\\\\n* Growth from 1B Near node queries from Premium API and expected to grow dramatically from Public API access.\\\\\\\\n\\\\\\\\n**#Competitor Comparison**\\\\\\\\nThere is other infrastructure providers on Near however our key difference are:\\\\\\\\n* Ankr is using BareMetal (vs cloud dependency).\\\\\\\\n* Higher Free request tier (1,000,000 calls per day per dev for free + Archive & Full capabilities).\\\\\\\\n* Flat Fee per Requests (whether they are Full, Archive, Trace and Debug).\\\\\\\\n* Strong integration with Cloud Partners (Ankr is IP partner with Microsoft, Tencent, GCP, Alibaba and Huawei, helping them launch dedicated node cluster for enterprise users).\\\\\\\\n* Support RaaS solution and integration of NearDA.\\\\\\\\n* Involvement in DeFi activity participating in TVL boost.\\\\\\\\n\\\\\\\\n**Node Deployment and Maintenance:** 12,500 $NEAR tokens (50% upfront)\\\\\\\\nObjective: Deploy Near nodes in key global regions (N. America, S. America, Africa, Asia, and Europe) and sync them with the Near network.\\\\\\\\nUse of Funds: Purchase BareMetal servers and cover initial deployment costs to ensure low-latency access and high performance.\\\\\\\\n\\\\\\\\n**Infrastructure Enhancement and Scalability:** 12,500 $NEAR tokens (50% at completion)\\\\\\\\nObjective: Improve our proprietary load-balancer architecture for enhanced scalability and multi-node provider accessibility.\\\\\\\\nUse of Funds: Invest in infrastructure upgrades to handle increased traffic and requests.\\\\\\\\n\\\\\\\\n**Milestone Payouts:**\\\\\\\\n50% Upfront: 12,500 $NEAR tokens  upon approval to cover initial deployment and syncing of Near nodes, and purchase of BareMetal servers.\\\\\\\\n50% at Completion: 12,500 $NEAR tokens upon completion of infrastructure enhancement and scalability improvements.\\\\\\\\n\\\\\\\\n**NOTE:** Current node support will be deprecated in the result of a rejection.\", \"linked_proposals\": [], \"receiver_account\": \"nelsonankr.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"150000\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 968190062337400000000
+    }
+  },
+  {
+    "id": "9666546697",
+    "receipt_id": "C5KGockF9sUZ8TtoTiVVZ9n2RXv5zu7yf4xXxfdBNym5",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CUrjnNZjXS79ojqf4oDkyY4e97rijyYiwswfQxS7YwtE",
+      "block_height": 131570688,
+      "block_timestamp": 1730313022885775000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3518339841593,
+      "tokens_burnt": 351833984159300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "AwiyUSxUuWNWoFD87GQpVM7GfaLQvZLDjwKmthHLYqwv",
+    "included_in_block_hash": "BSoee3GJJdLzdw2Suo1Uzxt9zejUh32GycQgTJj5wfHA",
+    "block_timestamp": "1730313019832382746",
+    "block": {
+      "block_height": 131570685
+    },
+    "receipt_conversion_tokens_burnt": "56702975616500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351833984159300000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"nelsonankr.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":27,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 968190062337400000000
+    }
+  },
+  {
+    "id": "9666550991",
+    "receipt_id": "7yZ581PNAit3qZJrLFixdUnTEUt5Uancb3SRbAityxWe",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "ADu3tzihuWy7vspypHj6yEvc1cDiiubZo7uUqqS5jiEt",
+      "block_height": 131570699,
+      "block_timestamp": 1730313035554548500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6845832438194,
+      "tokens_burnt": 684583243819400000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "FbKYqDGD2z4EqKdJTvypDkY9pBQy5GJ96rxZsfaPPPnh",
+    "included_in_block_hash": "87twayCMoGK1rK1nXaBFi7PDTGebgJ3beMWZJS3QheAs",
+    "block_timestamp": "1730313034488745532",
+    "block": {
+      "block_height": 131570698
+    },
+    "receipt_conversion_tokens_burnt": "57470683428000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 684583243819400000000,
+        "args": "{\"id\": 25, \"body\": {\"name\": \"Nearblocks.io Proposal for KitWallet Transition\", \"summary\": \"With our extensive experience in indexing and integration, we are well-positioned to ensure a seamless transition for KitWallet.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REJECTED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"linked_rfp\": 1, \"supervisor\": \"trechriron71.near\", \"description\": \"Dear Infra Committee,\\\\\\\\n\\\\\\\\nWe appreciate the opportunity to submit our proposal for the transition project and are confident that Nearblocks.io is the ideal partner for this endeavour. With our extensive experience in indexing and integration, we are well-positioned to ensure a seamless transition for KitWallet.\\\\\\\\n\\\\\\\\n## Response to Requirements\\\\\\\\n\\\\\\\\nAt Nearblocks.io, we have already created drop-in replaceable KitWallet endpoints, which means there will be no need to build additional infrastructure.\\\\\\\\n\\\\\\\\nCurrently, two wallets already use our endpoint:\\\\\\\\n\\\\\\\\nMyNEARWallet:\\\\\\\\n\\\\\\\\n![nearblocks_meteor](https://github.com/user-attachments/assets/365e8d8f-6b7d-44e9-bd22-668831a1b847)\\\\\\\\n\\\\\\\\nMeteor Wallet:\\\\\\\\n![nearblocks_mynearwallet](https://github.com/user-attachments/assets/4a333b29-6f00-450e-9d74-708fd354369a)\\\\\\\\n\\\\\\\\nA transition plan would simply be updating `https://api.kitwallet.app/` to `https://api.nearblocks.io/v1/kitwallet/`.\\\\\\\\n\\\\\\\\nThis gives us a distinct advantage in terms of efficiency and speed for this transition. Our ongoing communication with members of the Pagoda team & infrastructure committee further reinforces our commitment to staying aligned with the ecosystem.\\\\\\\\n\\\\\\\\nNearblocks is built on top of Near Lake as the data source and currently operates as the #1 explorer within the ecosystem. We believe Nearblocks is in the best position to support this transition.\\\\\\\\n\\\\\\\\n**Current live endpoints (documentation):**\\\\\\\\n\\\\\\\\n- Mainnet: https://api.nearblocks.io/api-docs/#/Kitwallet\\\\\\\\n- Testnet: https://api-testnet.nearblocks.io/api-docs/#/Kitwallet\\\\\\\\n\\\\\\\\n## Service Level\\\\\\\\n\\\\\\\\n### Monitoring\\\\\\\\nWe will set up monitoring with notifications for visualizing API availability. System health and performance are available here: https://status.nearblocks.io. From our status monitor, we can send email and/or Slack notifications to major stakeholders. For reference, Nearblocks has been able to maintain a monthly uptime of 99.83%. We are aiming for 99.99% in the coming weeks.\\\\\\\\n\\\\\\\\n### Response Time\\\\\\\\nAverage response time on the Nearblocks API is now sub-2 seconds. Legacy KitWallet endpoints are using LIKE queries, which are known to be less performant. We have avoided this due to additional indexing.\\\\\\\\n\\\\\\\\nCurrent caveat: `likelyTokens` only supports tokens which Nearblocks supports. This includes all NEP-141 tokens and *most* [legacy tokens](https://github.com/Nearblocks/nearblocks/tree/main/apps/indexer-events/src/services/contracts/ft). We are constantly working to add missing [legacy tokens](https://github.com/Nearblocks/nearblocks/issues/new?assignees=&labels=&projects=&template=token_request.md&title=).\\\\\\\\n\\\\\\\\n### Rate Limiting\\\\\\\\nNearblocks API rate limiting is enforced by IP address and API keys. Given this is a public good endpoint, we will limit 150 queries per minute per IP address. We believe this should be within a very generous fair usage policy. This can be made flexible and is open for discussion.\\\\\\\\n\\\\\\\\n### Support\\\\\\\\n- Support Availability: GitHub issues available here https://github.com/Nearblocks/nearblocks/issues \\\\\\\\n- Response Time: 24-48 hours through GitHub issues.\\\\\\\\n\\\\\\\\n### Data Integrity\\\\\\\\nThe KitWallet endpoints are backed by existing Nearblocks data, which is indexed from Near Lake.\\\\\\\\n\\\\\\\\n### Updates and Changes\\\\\\\\nWe have no plans to make changes to KitWallet endpoints. We previously created these endpoints to support drop-in replacements without any work required other than replacing the endpoint.\\\\\\\\n\\\\\\\\n### Usage\\\\\\\\nWe will track KitWallet usage through the Nearblocks API key dashboard for real-time usage. This can be made available to stakeholders.\\\\\\\\n\\\\\\\\n![API Usage Dashboard](https://github.com/user-attachments/assets/ceefc8e0-a74a-4299-8bdb-98258c0f7ca1)\\\\\\\\n\\\\\\\\n## Approach\\\\\\\\n\\\\\\\\n1. Move Nearblocks KitWallet endpoints to be accessible from the existing endpoint (i.e., https://api.kitwallet.app/) to allow for a seamless transition experience with no downtime for any existing users.\\\\\\\\n\\\\\\\\n2. We are aware that there are remaining unknown users using this legacy endpoint. As we can\\\\\\\\\\\\'t reach out to suggest a transition to alternative solutions, we will set up a landing page on kitwallet.app stating the current situation and directing them to alternative solutions as well as a point of contact that will be monitored. The landing page will explain the KitWallet transition plans with links to:\\\\\\\\n\\\\\\\\n- Existing Documentation with user guide\\\\\\\\n- Support available through GitHub Issues\\\\\\\\n- Alternatives like Nearblocks API and FastNear\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n$4,000 / month for 12 months - to ensure excess capacity for additional traffic.\\\\\\\\n\\\\\\\\n## Experience & Portfolio\\\\\\\\n\\\\\\\\nNearblocks.io is our flagship product; however, we have built other products in the past on NEAR, such as nearsend.io.\\\\\\\\n\\\\\\\\nThank you for considering Nearblocks.io. We look forward to the possibility of working together to bring this transition to completion. Please don\\\\\\\\\\\\'t hesitate to reach out with any further questions or clarifications.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"nearblocks_io.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"48000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0993959244759e+21
+    }
+  },
+  {
+    "id": "9666551459",
+    "receipt_id": "GEC3DDSB575DsXXVe9YjfEBwcmp2XBFygZSjTKzbUgmY",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3Ag6Ke7PDCkWxXb7JC4yn4EmmUkkaaKqgopMd6yakxoK",
+      "block_height": 131570700,
+      "block_timestamp": 1730313036700167200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3573419972285,
+      "tokens_burnt": 357341997228500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "FbKYqDGD2z4EqKdJTvypDkY9pBQy5GJ96rxZsfaPPPnh",
+    "included_in_block_hash": "87twayCMoGK1rK1nXaBFi7PDTGebgJ3beMWZJS3QheAs",
+    "block_timestamp": "1730313034488745532",
+    "block": {
+      "block_height": 131570698
+    },
+    "receipt_conversion_tokens_burnt": "57470683428000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357341997228500000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"nearblocks_io.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":25,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0993959244759e+21
+    }
+  },
+  {
+    "id": "9673404314",
+    "receipt_id": "HkoTi6rDn76DFixdfCqv7fPNFwDHskwKPSHoNa7eYaaZ",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6nReFvTfcYHZGaDZJ14VYfCKqsHrJTSnpYvAFRAF8sQa",
+      "block_height": 131591594,
+      "block_timestamp": 1730336146629785900
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8102928460350,
+      "tokens_burnt": 810292846035000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "E2CXgi3YKuMMVgdkvm1iGfWfLT6UxqoFXF5cZ587HXrh",
+    "included_in_block_hash": "4v9MM5Vs8msRQD5vBK8urKqC6MH2fbkuo9izxuoSkvUN",
+    "block_timestamp": "1730336145589104773",
+    "block": {
+      "block_height": 131591593
+    },
+    "receipt_conversion_tokens_burnt": "124947908524500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 810292846035000000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"widget\": {\"components.proposals.Feed\": {\"\": \"const { href } = VM.require(\\\\\\\\\\\\\\\"devhub.near/widget/core.lib.url\\\\\\\\\\\\\\\") || {\\\\\\\\n  href: () => {},\\\\\\\\n};\\\\\\\\nconst instance = props.instance ?? \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\";\\\\\\\\nconst {\\\\\\\\n  contract,\\\\\\\\n  rfpFeedIndexerQueryName,\\\\\\\\n  proposalFeedAnnouncement,\\\\\\\\n  availableCategoryOptions,\\\\\\\\n  proposalFeedIndexerQueryName,\\\\\\\\n  indexerHasuraRole,\\\\\\\\n  isDevhub,\\\\\\\\n  isInfra,\\\\\\\\n  isEvents,\\\\\\\\n} = VM.require(`${instance}/widget/config.data`);\\\\\\\\nconst loader = (\\\\\\\\n  <div className=\\\\\\\\\\\\\\\"d-flex justify-content-center align-items-center w-100\\\\\\\\\\\\\\\">\\\\\\\\n    <Widget src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.Spinner\\\\\\\\\\\\\\\"} />\\\\\\\\n  </div>\\\\\\\\n);\\\\\\\\nif (!contract) {\\\\\\\\n  return loader;\\\\\\\\n}\\\\\\\\nfunction isNumber(v) {\\\\\\\\n  return typeof v === \\\\\\\\\\\\\\\"number\\\\\\\\\\\\\\\";\\\\\\\\n}\\\\\\\\nconst Container = styled.div`\\\\\\\\n  .full-width-div {\\\\\\\\n    width: 100vw;\\\\\\\\n    position: relative;\\\\\\\\n    left: 50%;\\\\\\\\n    right: 50%;\\\\\\\\n    margin-left: -50vw;\\\\\\\\n    margin-right: -50vw;\\\\\\\\n  }\\\\\\\\n  .card.no-border {\\\\\\\\n    border-left: none !important;\\\\\\\\n    border-right: none !important;\\\\\\\\n    margin-bottom: -3.5rem;\\\\\\\\n  }\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    font-size: 13px;\\\\\\\\n  }\\\\\\\\n  .text-sm {\\\\\\\\n    font-size: 13px;\\\\\\\\n  }\\\\\\\\n  .bg-grey {\\\\\\\\n    background-color: #f4f4f4;\\\\\\\\n  }\\\\\\\\n  .border-bottom {\\\\\\\\n    border-bottom: 1px solid grey;\\\\\\\\n  }\\\\\\\\n  .cursor-pointer {\\\\\\\\n    cursor: pointer;\\\\\\\\n  }\\\\\\\\n  .proposal-card {\\\\\\\\n    border-left: none !important;\\\\\\\\n    border-right: none !important;\\\\\\\\n    border-bottom: none !important;\\\\\\\\n    &:hover {\\\\\\\\n      background-color: #f4f4f4;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    .theme-btn {\\\\\\\\n      padding: 0.5rem 0.8rem !important;\\\\\\\\n      min-height: 32px;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  a.no-space {\\\\\\\\n    display: inline-block;\\\\\\\\n  }\\\\\\\\n  .text-wrap {\\\\\\\\n    overflow: hidden;\\\\\\\\n    white-space: normal;\\\\\\\\n  }\\\\\\\\n  .text-center {\\\\\\\\n    text-align: center;\\\\\\\\n  }\\\\\\\\n  .btn-grey-outline {\\\\\\\\n    background-color: #fafafa;\\\\\\\\n    border: 1px solid #e6e8eb;\\\\\\\\n    color: #11181c;\\\\\\\\n    &:hover {\\\\\\\\n      background-color: #e6e8eb;\\\\\\\\n    }\\\\\\\\n    &:active {\\\\\\\\n      border: 2px solid #e6e8eb;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\nconst Heading = styled.div`\\\\\\\\n  font-size: 24px;\\\\\\\\n  font-weight: 700;\\\\\\\\n  width: 100%;\\\\\\\\n  .text-normal {\\\\\\\\n    font-weight: normal !important;\\\\\\\\n  }\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    font-size: 18px;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\nconst FeedItem = ({ proposal, index }) => {\\\\\\\\n  const accountId = proposal.author_id;\\\\\\\\n  const profile = Social.get(`${accountId}/profile/**`, \\\\\\\\\\\\\\\"final\\\\\\\\\\\\\\\");\\\\\\\\n  // We will have to get the proposal from the contract to get the block height.\\\\\\\\n  const blockHeight = parseInt(proposal.social_db_post_block_height);\\\\\\\\n  const item = {\\\\\\\\n    type: \\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\n    path: `${contract}/post/main`,\\\\\\\\n    blockHeight: blockHeight,\\\\\\\\n  };\\\\\\\\n  const isLinked = isNumber(proposal.linked_rfp);\\\\\\\\n  const rfpData = proposal.rfpData;\\\\\\\\n  return (\\\\\\\\n    <a\\\\\\\\n      href={href({\\\\\\\\n        widgetSrc: `${instance}/widget/app`,\\\\\\\\n        params: {\\\\\\\\n          page: \\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\",\\\\\\\\n          id: proposal.proposal_id,\\\\\\\\n        },\\\\\\\\n      })}\\\\\\\\n      onClick={(e) => e.stopPropagation()}\\\\\\\\n      style={{ textDecoration: \\\\\\\\\\\\\\\"none\\\\\\\\\\\\\\\" }}\\\\\\\\n    >\\\\\\\\n      <div\\\\\\\\n        className={\\\\\\\\n          \\\\\\\\\\\\\\\"proposal-card d-flex justify-content-between gap-2 text-muted cursor-pointer p-3 w-100 flex-wrap flex-sm-nowrap \\\\\\\\\\\\\\\" +\\\\\\\\n          (index !== 0 && \\\\\\\\\\\\\\\" border\\\\\\\\\\\\\\\")\\\\\\\\n        }\\\\\\\\n      >\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"d-flex gap-4 w-100\\\\\\\\\\\\\\\">\\\\\\\\n          <Widget\\\\\\\\n            src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.Profile\\\\\\\\\\\\\\\"}\\\\\\\\n            props={{\\\\\\\\n              accountId,\\\\\\\\n            }}\\\\\\\\n          />\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-2 w-100 text-wrap\\\\\\\\\\\\\\\">\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center flex-wrap w-100\\\\\\\\\\\\\\\">\\\\\\\\n              <div className=\\\\\\\\\\\\\\\"h6 mb-0 text-black\\\\\\\\\\\\\\\">{proposal.name}</div>\\\\\\\\n              {(isInfra || isEvents) && (\\\\\\\\n                <Widget\\\\\\\\n                  src={`devhub.near/widget/devhub.entity.proposal.MultiSelectLabelsDropdown`}\\\\\\\\n                  props={{\\\\\\\\n                    selected: proposal.labels,\\\\\\\\n                    disabled: true,\\\\\\\\n                    hideDropdown: true,\\\\\\\\n                    onChange: () => {},\\\\\\\\n                    availableOptions: availableCategoryOptions,\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              )}\\\\\\\\n              {isDevhub && (\\\\\\\\n                <Widget\\\\\\\\n                  src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.CategoryTag\\\\\\\\\\\\\\\"}\\\\\\\\n                  props={{\\\\\\\\n                    category: proposal.category,\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              )}\\\\\\\\n            </div>\\\\\\\\n            {isLinked && rfpData && (\\\\\\\\n              <div\\\\\\\\n                className=\\\\\\\\\\\\\\\"text-sm text-muted d-flex gap-1 align-items-center\\\\\\\\\\\\\\\"\\\\\\\\n                data-testid={\\\\\\\\n                  `proposalId_${proposal.proposal_id}` +\\\\\\\\n                  `_rfpId_${rfpData.rfp_id}`\\\\\\\\n                }\\\\\\\\n              >\\\\\\\\n                <i class=\\\\\\\\\\\\\\\"bi bi-link-45deg\\\\\\\\\\\\\\\"></i>\\\\\\\\n                In response to RFP :\\\\\\\\n                <a\\\\\\\\n                  className=\\\\\\\\\\\\\\\"text-decoration-underline flex-1\\\\\\\\\\\\\\\"\\\\\\\\n                  href={href({\\\\\\\\n                    widgetSrc: `${instance}/widget/app`,\\\\\\\\n                    params: {\\\\\\\\n                      page: \\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\",\\\\\\\\n                      id: rfpData.rfp_id,\\\\\\\\n                    },\\\\\\\\n                  })}\\\\\\\\n                  target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n                  rel=\\\\\\\\\\\\\\\"noopener noreferrer\\\\\\\\\\\\\\\"\\\\\\\\n                >\\\\\\\\n                  {rfpData.name}\\\\\\\\n                </a>\\\\\\\\n              </div>\\\\\\\\n            )}\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center flex-wrap flex-sm-nowrap text-sm w-100\\\\\\\\\\\\\\\">\\\\\\\\n              <div>#{proposal.proposal_id} \\\\\\\\u{ff65} </div>\\\\\\\\n              <div className=\\\\\\\\\\\\\\\"text-truncate\\\\\\\\\\\\\\\">\\\\\\\\n                By {profile.name ?? accountId} \\\\\\\\u{ff65}{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n              </div>\\\\\\\\n              <Widget\\\\\\\\n                src=\\\\\\\\\\\\\\\"near/widget/TimeAgo\\\\\\\\\\\\\\\"\\\\\\\\n                props={{\\\\\\\\n                  blockHeight,\\\\\\\\n                  blockTimestamp: proposal.timestamp,\\\\\\\\n                }}\\\\\\\\n              />\\\\\\\\n            </div>\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n              <Widget\\\\\\\\n                src=\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.LikeButton\\\\\\\\\\\\\\\"\\\\\\\\n                props={{\\\\\\\\n                  item,\\\\\\\\n                  proposalId: proposal.id,\\\\\\\\n                  notifyAccountId: accountId,\\\\\\\\n                  instance,\\\\\\\\n                }}\\\\\\\\n              />\\\\\\\\n              <Widget\\\\\\\\n                src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.CommentIcon\\\\\\\\\\\\\\\"}\\\\\\\\n                props={{\\\\\\\\n                  item,\\\\\\\\n                  showOverlay: false,\\\\\\\\n                  onClick: () => {},\\\\\\\\n                }}\\\\\\\\n              />\\\\\\\\n            </div>\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"align-self-center\\\\\\\\\\\\\\\" style={{ minWidth: \\\\\\\\\\\\\\\"fit-content\\\\\\\\\\\\\\\" }}>\\\\\\\\n          <Widget\\\\\\\\n            src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.StatusTag\\\\\\\\\\\\\\\"}\\\\\\\\n            props={{\\\\\\\\n              timelineStatus: proposal.timeline.status,\\\\\\\\n            }}\\\\\\\\n          />\\\\\\\\n        </div>\\\\\\\\n      </div>\\\\\\\\n    </a>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\nconst getProposal = (proposal_id) => {\\\\\\\\n  return Near.asyncView(contract, \\\\\\\\\\\\\\\"get_proposal\\\\\\\\\\\\\\\", {\\\\\\\\n    proposal_id,\\\\\\\\n  });\\\\\\\\n};\\\\\\\\nconst FeedPage = () => {\\\\\\\\n  const QUERYAPI_ENDPOINT = `https://near-queryapi.api.pagoda.co/v1/graphql`;\\\\\\\\n  State.init({\\\\\\\\n    data: [],\\\\\\\\n    author: \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\n    stage: \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\n    sort: \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\n    category: \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\n    input: \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\n    loading: false,\\\\\\\\n    searchLoader: false,\\\\\\\\n    makeMoreLoader: false,\\\\\\\\n    aggregatedCount: null,\\\\\\\\n    currentlyDisplaying: 0,\\\\\\\\n  });\\\\\\\\n  const query = `query GetLatestSnapshot($offset: Int = 0, $limit: Int = 20, $where: ${proposalFeedIndexerQueryName}_bool_exp = {}) {\\\\\\\\n    ${proposalFeedIndexerQueryName}(\\\\\\\\n      offset: $offset\\\\\\\\n      limit: $limit\\\\\\\\n      order_by: {proposal_id: desc}\\\\\\\\n      where: $where\\\\\\\\n    ) {\\\\\\\\n      author_id\\\\\\\\n      block_height\\\\\\\\n      name\\\\\\\\n      category\\\\\\\\n      summary\\\\\\\\n      editor_id\\\\\\\\n      proposal_id\\\\\\\\n      ts\\\\\\\\n      timeline\\\\\\\\n      views\\\\\\\\n      labels\\\\\\\\n      linked_rfp\\\\\\\\n    }\\\\\\\\n    ${proposalFeedIndexerQueryName}_aggregate(\\\\\\\\n      order_by: {proposal_id: desc}\\\\\\\\n      where: $where\\\\\\\\n    )  {\\\\\\\\n      aggregate {\\\\\\\\n        count\\\\\\\\n      }\\\\\\\\n    }\\\\\\\\n  }`;\\\\\\\\n  const rfpQuery = `query GetLatestSnapshot($offset: Int = 0, $limit: Int = 20, $where: ${rfpFeedIndexerQueryName}_bool_exp = {}) {\\\\\\\\n    ${rfpFeedIndexerQueryName}(\\\\\\\\n      offset: $offset\\\\\\\\n      limit: $limit\\\\\\\\n      order_by: {rfp_id: desc}\\\\\\\\n      where: $where\\\\\\\\n    ) {\\\\\\\\n      name\\\\\\\\n      rfp_id\\\\\\\\n    }\\\\\\\\n  }`;\\\\\\\\n  function fetchGraphQL(operationsDoc, operationName, variables) {\\\\\\\\n    return asyncFetch(QUERYAPI_ENDPOINT, {\\\\\\\\n      method: \\\\\\\\\\\\\\\"POST\\\\\\\\\\\\\\\",\\\\\\\\n      headers: { \\\\\\\\\\\\\\\"x-hasura-role\\\\\\\\\\\\\\\": indexerHasuraRole },\\\\\\\\n      body: JSON.stringify({\\\\\\\\n        query: operationsDoc,\\\\\\\\n        variables: variables,\\\\\\\\n        operationName: operationName,\\\\\\\\n      }),\\\\\\\\n    });\\\\\\\\n  }\\\\\\\\n  function separateNumberAndText(str) {\\\\\\\\n    const numberRegex = /\\\\\\\\\\\\\\\\d+/;\\\\\\\\n    if (numberRegex.test(str)) {\\\\\\\\n      const number = str.match(numberRegex)[0];\\\\\\\\n      const text = str.replace(numberRegex, \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\").trim();\\\\\\\\n      return { number: parseInt(number), text };\\\\\\\\n    } else {\\\\\\\\n      return { number: null, text: str.trim() };\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  const buildWhereClause = () => {\\\\\\\\n    let where = {};\\\\\\\\n    if (state.author) {\\\\\\\\n      where = { author_id: { _eq: state.author }, ...where };\\\\\\\\n    }\\\\\\\\n    if (state.category) {\\\\\\\\n      if (isInfra || isEvents) {\\\\\\\\n        where = { labels: { _contains: state.category }, ...where };\\\\\\\\n      } else {\\\\\\\\n        where = { category: { _eq: state.category }, ...where };\\\\\\\\n      }\\\\\\\\n    }\\\\\\\\n    if (state.stage) {\\\\\\\\n      // timeline is stored as jsonb\\\\\\\\n      where = {\\\\\\\\n        timeline: { _cast: { String: { _regex: `${state.stage}` } } },\\\\\\\\n        ...where,\\\\\\\\n      };\\\\\\\\n    }\\\\\\\\n    if (state.input) {\\\\\\\\n      const { number, text } = separateNumberAndText(state.input);\\\\\\\\n      if (number) {\\\\\\\\n        where = { proposal_id: { _eq: number }, ...where };\\\\\\\\n      }\\\\\\\\n      if (text) {\\\\\\\\n        where = {\\\\\\\\n          _or: [\\\\\\\\n            { name: { _iregex: `${text}` } },\\\\\\\\n            { summary: { _iregex: `${text}` } },\\\\\\\\n            { description: { _iregex: `${text}` } },\\\\\\\\n          ],\\\\\\\\n          ...where,\\\\\\\\n        };\\\\\\\\n      }\\\\\\\\n    }\\\\\\\\n    return where;\\\\\\\\n  };\\\\\\\\n  const makeMoreItems = () => {\\\\\\\\n    State.update({ makeMoreLoader: true });\\\\\\\\n    fetchProposals(state.data.length);\\\\\\\\n  };\\\\\\\\n  const statusOrder = {\\\\\\\\n    APPROVED: -1,\\\\\\\\n    REVIEW: 0,\\\\\\\\n    CANCELLED: 1,\\\\\\\\n    REJECTED: 1,\\\\\\\\n  };\\\\\\\\n  const fetchProposals = (offset) => {\\\\\\\\n    if (!offset) {\\\\\\\\n      offset = 0;\\\\\\\\n    }\\\\\\\\n    if (state.loading) return;\\\\\\\\n    State.update({ loading: true });\\\\\\\\n    const FETCH_LIMIT = 20;\\\\\\\\n    const variables = {\\\\\\\\n      limit: FETCH_LIMIT,\\\\\\\\n      offset,\\\\\\\\n      where: buildWhereClause(),\\\\\\\\n    };\\\\\\\\n    fetchGraphQL(query, \\\\\\\\\\\\\\\"GetLatestSnapshot\\\\\\\\\\\\\\\", variables).then(async (result) => {\\\\\\\\n      if (result.status === 200) {\\\\\\\\n        if (result.body.data) {\\\\\\\\n          const data = result.body.data[proposalFeedIndexerQueryName];\\\\\\\\n          const totalResult =\\\\\\\\n            result.body.data[`${proposalFeedIndexerQueryName}_aggregate`];\\\\\\\\n          const promises = data.map((item) => {\\\\\\\\n            if (isNumber(item.linked_rfp)) {\\\\\\\\n              return fetchGraphQL(rfpQuery, \\\\\\\\\\\\\\\"GetLatestSnapshot\\\\\\\\\\\\\\\", {\\\\\\\\n                where: { rfp_id: { _eq: item.linked_rfp } },\\\\\\\\n              }).then((result) => {\\\\\\\\n                const rfpData = result.body.data?.[rfpFeedIndexerQueryName];\\\\\\\\n                return { ...item, rfpData: rfpData[0] };\\\\\\\\n              });\\\\\\\\n            } else {\\\\\\\\n              return Promise.resolve(item);\\\\\\\\n            }\\\\\\\\n          });\\\\\\\\n          Promise.all(promises).then((res) => {\\\\\\\\n            State.update({ aggregatedCount: totalResult.aggregate.count });\\\\\\\\n            fetchBlockHeights(res, offset);\\\\\\\\n          });\\\\\\\\n        }\\\\\\\\n      }\\\\\\\\n    });\\\\\\\\n  };\\\\\\\\n  useEffect(() => {\\\\\\\\n    State.update({ searchLoader: true });\\\\\\\\n    fetchProposals();\\\\\\\\n  }, [state.author, state.sort, state.category, state.stage]);\\\\\\\\n  const mergeItems = (newItems) => {\\\\\\\\n    const items = [\\\\\\\\n      ...new Set([...newItems, ...state.data].map((i) => JSON.stringify(i))),\\\\\\\\n    ].map((i) => JSON.parse(i));\\\\\\\\n    // Sorting in the front end\\\\\\\\n    if (state.sort === \\\\\\\\\\\\\\\"proposal_id\\\\\\\\\\\\\\\" || state.sort === \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\") {\\\\\\\\n      items.sort((a, b) => b.proposal_id - a.proposal_id);\\\\\\\\n    } else if (state.sort === \\\\\\\\\\\\\\\"views\\\\\\\\\\\\\\\") {\\\\\\\\n      items.sort((a, b) => b.views - a.views);\\\\\\\\n    }\\\\\\\\n    items.sort((a, b) => {\\\\\\\\n      return statusOrder[a.timeline.status] - statusOrder[b.timeline.status];\\\\\\\\n    });\\\\\\\\n    return items;\\\\\\\\n  };\\\\\\\\n  const fetchBlockHeights = (data, offset) => {\\\\\\\\n    let promises = data.map((item) => getProposal(item.proposal_id));\\\\\\\\n    Promise.all(promises).then((blockHeights) => {\\\\\\\\n      data = data.map((item, index) => ({\\\\\\\\n        ...item,\\\\\\\\n        timeline: JSON.parse(item.timeline),\\\\\\\\n        social_db_post_block_height:\\\\\\\\n          blockHeights[index].social_db_post_block_height,\\\\\\\\n      }));\\\\\\\\n      if (offset) {\\\\\\\\n        let newData = mergeItems(data);\\\\\\\\n        State.update({\\\\\\\\n          data: newData,\\\\\\\\n          currentlyDisplaying: newData.length,\\\\\\\\n          loading: false,\\\\\\\\n          searchLoader: false,\\\\\\\\n          makeMoreLoader: false,\\\\\\\\n        });\\\\\\\\n      } else {\\\\\\\\n        let sorted = [...data].sort((a, b) => {\\\\\\\\n          return (\\\\\\\\n            statusOrder[a.timeline.status] - statusOrder[b.timeline.status]\\\\\\\\n          );\\\\\\\\n        });\\\\\\\\n        State.update({\\\\\\\\n          data: sorted,\\\\\\\\n          currentlyDisplaying: data.length,\\\\\\\\n          loading: false,\\\\\\\\n          searchLoader: false,\\\\\\\\n          makeMoreLoader: false,\\\\\\\\n        });\\\\\\\\n      }\\\\\\\\n    });\\\\\\\\n  };\\\\\\\\n  useEffect(() => {\\\\\\\\n    const handler = setTimeout(() => {\\\\\\\\n      fetchProposals();\\\\\\\\n    }, 1000);\\\\\\\\n    return () => {\\\\\\\\n      clearTimeout(handler);\\\\\\\\n    };\\\\\\\\n  }, [state.input]);\\\\\\\\n  return (\\\\\\\\n    <Container className=\\\\\\\\\\\\\\\"w-100 py-4 px-2 d-flex flex-column gap-3\\\\\\\\\\\\\\\">\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"d-flex justify-content-between flex-wrap gap-2 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n        <Heading>\\\\\\\\n          Proposals\\\\\\\\n          <span className=\\\\\\\\\\\\\\\"text-muted text-normal\\\\\\\\\\\\\\\">\\\\\\\\n            ({state.aggregatedCount ?? state.data.length}){\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n          </span>\\\\\\\\n        </Heading>\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"d-flex flex-wrap gap-4 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n          <Widget\\\\\\\\n            src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.feature.proposal-search.by-input\\\\\\\\\\\\\\\"}\\\\\\\\n            props={{\\\\\\\\n              search: state.input,\\\\\\\\n              className: \\\\\\\\\\\\\\\"w-xs-100\\\\\\\\\\\\\\\",\\\\\\\\n              onSearch: (input) => {\\\\\\\\n                State.update({ input });\\\\\\\\n              },\\\\\\\\n              onEnter: () => {\\\\\\\\n                fetchProposals();\\\\\\\\n              },\\\\\\\\n            }}\\\\\\\\n          />\\\\\\\\n          <Widget\\\\\\\\n            src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.feature.proposal-search.by-sort\\\\\\\\\\\\\\\"}\\\\\\\\n            props={{\\\\\\\\n              onStateChange: (select) => {\\\\\\\\n                State.update({ sort: select.value });\\\\\\\\n              },\\\\\\\\n            }}\\\\\\\\n          />\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"d-flex gap-4 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n            {!isInfra && (\\\\\\\\n              <Widget\\\\\\\\n                src={\\\\\\\\n                  \\\\\\\\\\\\\\\"devhub.near/widget/devhub.feature.proposal-search.by-category\\\\\\\\\\\\\\\"\\\\\\\\n                }\\\\\\\\n                props={{\\\\\\\\n                  categoryOptions: availableCategoryOptions,\\\\\\\\n                  onStateChange: (select) => {\\\\\\\\n                    State.update({ category: select.value });\\\\\\\\n                  },\\\\\\\\n                }}\\\\\\\\n              />\\\\\\\\n            )}\\\\\\\\n            <Widget\\\\\\\\n              src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.feature.proposal-search.by-stage\\\\\\\\\\\\\\\"}\\\\\\\\n              props={{\\\\\\\\n                onStateChange: (select) => {\\\\\\\\n                  State.update({ stage: select.value });\\\\\\\\n                },\\\\\\\\n              }}\\\\\\\\n            />\\\\\\\\n            <Widget\\\\\\\\n              src={\\\\\\\\n                \\\\\\\\\\\\\\\"devhub.near/widget/devhub.feature.proposal-search.by-author\\\\\\\\\\\\\\\"\\\\\\\\n              }\\\\\\\\n              props={{\\\\\\\\n                contract,\\\\\\\\n                onAuthorChange: (select) => {\\\\\\\\n                  State.update({ author: select.value });\\\\\\\\n                },\\\\\\\\n              }}\\\\\\\\n            />\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"mt-2 mt-xs-0\\\\\\\\\\\\\\\">\\\\\\\\n          <Link\\\\\\\\n            to={href({\\\\\\\\n              widgetSrc: `${instance}/widget/app`,\\\\\\\\n              params: { page: \\\\\\\\\\\\\\\"create-proposal\\\\\\\\\\\\\\\" },\\\\\\\\n            })}\\\\\\\\n          >\\\\\\\\n            <Widget\\\\\\\\n              src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.Button\\\\\\\\\\\\\\\"}\\\\\\\\n              props={{\\\\\\\\n                label: (\\\\\\\\n                  <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n                    <div>\\\\\\\\n                      <i class=\\\\\\\\\\\\\\\"bi bi-plus-circle-fill\\\\\\\\\\\\\\\"></i>\\\\\\\\n                    </div>\\\\\\\\n                    Submit Proposal\\\\\\\\n                  </div>\\\\\\\\n                ),\\\\\\\\n                classNames: { root: \\\\\\\\\\\\\\\"theme-btn\\\\\\\\\\\\\\\" },\\\\\\\\n              }}\\\\\\\\n            />\\\\\\\\n          </Link>\\\\\\\\n        </div>\\\\\\\\n      </div>\\\\\\\\n      <div style={{ minHeight: \\\\\\\\\\\\\\\"50vh\\\\\\\\\\\\\\\" }}>\\\\\\\\n        {!Array.isArray(state.data) ? (\\\\\\\\n          loader\\\\\\\\n        ) : (\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"card no-border rounded-0 mt-4 py-3 full-width-div\\\\\\\\\\\\\\\">\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"container-xl\\\\\\\\\\\\\\\">\\\\\\\\n              {proposalFeedAnnouncement}\\\\\\\\n              <div className=\\\\\\\\\\\\\\\"mt-4 border rounded-2\\\\\\\\\\\\\\\">\\\\\\\\n                {state.aggregatedCount === 0 ? (\\\\\\\\n                  <div class=\\\\\\\\\\\\\\\"alert alert-danger m-2\\\\\\\\\\\\\\\" role=\\\\\\\\\\\\\\\"alert\\\\\\\\\\\\\\\">\\\\\\\\n                    No proposals found for selected filter.{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n                  </div>\\\\\\\\n                ) : state.searchLoader ? (\\\\\\\\n                  loader\\\\\\\\n                ) : state.aggregatedCount > 0 ? (\\\\\\\\n                  state.data.map((item, index) => {\\\\\\\\n                    return (\\\\\\\\n                      <div\\\\\\\\n                        key={item.proposal_id}\\\\\\\\n                        className={\\\\\\\\n                          (index !== state.data.length - 1 &&\\\\\\\\n                            \\\\\\\\\\\\\\\"border-bottom \\\\\\\\\\\\\\\") +\\\\\\\\n                            index ===\\\\\\\\n                            0 && \\\\\\\\\\\\\\\" rounded-top-2\\\\\\\\\\\\\\\"\\\\\\\\n                        }\\\\\\\\n                      >\\\\\\\\n                        <FeedItem proposal={item} index={index} />\\\\\\\\n                      </div>\\\\\\\\n                    );\\\\\\\\n                  })\\\\\\\\n                ) : (\\\\\\\\n                  loader\\\\\\\\n                )}\\\\\\\\n              </div>\\\\\\\\n              {state.aggregatedCount > 0 &&\\\\\\\\n                state.aggregatedCount > state.data.length && (\\\\\\\\n                  <div className=\\\\\\\\\\\\\\\"my-3 container-xl\\\\\\\\\\\\\\\">\\\\\\\\n                    {state.makeMoreLoader ? (\\\\\\\\n                      loader\\\\\\\\n                    ) : (\\\\\\\\n                      <div>\\\\\\\\n                        {!state.loading && (\\\\\\\\n                          <div className=\\\\\\\\\\\\\\\"w-100\\\\\\\\\\\\\\\">\\\\\\\\n                            <Widget\\\\\\\\n                              src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n                              props={{\\\\\\\\n                                classNames: {\\\\\\\\n                                  root: \\\\\\\\\\\\\\\"btn-grey-outline w-100 \\\\\\\\\\\\\\\",\\\\\\\\n                                  label: \\\\\\\\\\\\\\\"text-center w-100\\\\\\\\\\\\\\\",\\\\\\\\n                                },\\\\\\\\n                                label: \\\\\\\\\\\\\\\"Load More\\\\\\\\\\\\\\\",\\\\\\\\n                                onClick: () => makeMoreItems(),\\\\\\\\n                              }}\\\\\\\\n                            />\\\\\\\\n                          </div>\\\\\\\\n                        )}\\\\\\\\n                      </div>\\\\\\\\n                    )}\\\\\\\\n                  </div>\\\\\\\\n                )}\\\\\\\\n            </div>\\\\\\\\n          </div>\\\\\\\\n        )}\\\\\\\\n      </div>\\\\\\\\n    </Container>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\nreturn FeedPage(props);\\\\\\\\n\"}, \"components.proposals.Proposals\": {\"\": \"return (\\\\\\\\n  <Widget\\\\\\\\n    src={\\\\\\\\\\\\\\\"infrastructure-committee.near/widget/components.proposals.Feed\\\\\\\\\\\\\\\"}\\\\\\\\n    props={{\\\\\\\\n      instance: \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n    }}\\\\\\\\n  />\\\\\\\\n);\\\\\\\\n\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 935240754559500000000
+    }
+  },
+  {
+    "id": "9673404557",
+    "receipt_id": "AByoa9haSMMRnmKbd75j6J2XuZSNyipDv5y68CJZYtiL",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3eASSFnWEuGzcmeV5C13hR6dDujwY6phqj6wv33DyvUm",
+      "block_height": 131591595,
+      "block_timestamp": 1730336147664844300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "E2CXgi3YKuMMVgdkvm1iGfWfLT6UxqoFXF5cZ587HXrh",
+    "included_in_block_hash": "4v9MM5Vs8msRQD5vBK8urKqC6MH2fbkuo9izxuoSkvUN",
+    "block_timestamp": "1730336145589104773",
+    "block": {
+      "block_height": 131591593
+    },
+    "receipt_conversion_tokens_burnt": "124947908524500000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.8728442401991146e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 935240754559500000000
+    }
+  },
+  {
+    "id": "9696329073",
+    "receipt_id": "7h2omgHUAdyE6HZDPS5uyfhT6pQYLvfnstejVNBnxsRA",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "79F1VPKzxdJhwj4T666ksjZh615nty562rDpj6g6ybyK",
+      "block_height": 131651612,
+      "block_timestamp": 1730403252475853600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8242562745141,
+      "tokens_burnt": 824256274514100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "9Jf7HSxBoHhdKBte3ZGvLV9FcZD6zgMnY3NNQy9x2cEE",
+    "included_in_block_hash": "F5MD8oV7pkwRZ3ww9ZGQkrpUqLDmhw7x763kMJp2iQrx",
+    "block_timestamp": "1730403251274741819",
+    "block": {
+      "block_height": 131651611
+    },
+    "receipt_conversion_tokens_burnt": "154745462028000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 824256274514100000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"widget\": {\"components.rfps.Rfp\": {\"\": \"const {\\\\\\\\n  RFP_TIMELINE_STATUS,\\\\\\\\n  fetchGraphQL,\\\\\\\\n  CANCEL_RFP_OPTIONS,\\\\\\\\n  parseJSON,\\\\\\\\n  PROPOSALS_APPROVED_STATUS_ARRAY,\\\\\\\\n  getLinkUsingCurrentGateway,\\\\\\\\n} = VM.require(`infrastructure-committee.near/widget/core.common`) || {\\\\\\\\n  RFP_TIMELINE_STATUS: {},\\\\\\\\n  CANCEL_RFP_OPTIONS: {},\\\\\\\\n  parseJSON: () => {},\\\\\\\\n  PROPOSALS_APPROVED_STATUS_ARRAY: {},\\\\\\\\n  getLinkUsingCurrentGateway: () => {},\\\\\\\\n};\\\\\\\\nconst { href } = VM.require(`devhub.near/widget/core.lib.url`) || {\\\\\\\\n  href: () => {},\\\\\\\\n};\\\\\\\\nconst { readableDate } = VM.require(`devhub.near/widget/core.lib.common`) || {\\\\\\\\n  readableDate: () => {},\\\\\\\\n};\\\\\\\\nconst { getGlobalLabels } = VM.require(\\\\\\\\n  `infrastructure-committee.near/widget/components.core.lib.contract`\\\\\\\\n) || { getGlobalLabels: () => {} };\\\\\\\\nconst accountId = context.accountId;\\\\\\\\n/*\\\\\\\\n  ---props---\\\\\\\\n  props.id: number;\\\\\\\\n  props.timestamp: number; optional\\\\\\\\n  accountId: string\\\\\\\\n  blockHeight:number\\\\\\\\n  */\\\\\\\\nconst { id, timestamp } = props;\\\\\\\\nif (id === undefined) {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src={`devhub.near/widget/devhub.page.notfound`}\\\\\\\\n      props={{ missing: \\\\\\\\\\\\\\\"rfp id\\\\\\\\\\\\\\\" }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}\\\\\\\\nconst Container = styled.div`\\\\\\\\n  .full-width-div {\\\\\\\\n    width: 100vw;\\\\\\\\n    position: relative;\\\\\\\\n    left: 50%;\\\\\\\\n    right: 50%;\\\\\\\\n    margin-left: -50vw;\\\\\\\\n    margin-right: -50vw;\\\\\\\\n  }\\\\\\\\n  .fw-bold {\\\\\\\\n    font-weight: 600 !important;\\\\\\\\n  }\\\\\\\\n  .card.no-border {\\\\\\\\n    border-left: none !important;\\\\\\\\n    border-right: none !important;\\\\\\\\n    margin-bottom: -3.5rem;\\\\\\\\n  }\\\\\\\\n  .description-box {\\\\\\\\n    font-size: 14px;\\\\\\\\n  }\\\\\\\\n  .accept-submission-info-container {\\\\\\\\n    background-color: #ecf8fb;\\\\\\\\n  }\\\\\\\\n  .text-sm {\\\\\\\\n    font-size: 13px !important;\\\\\\\\n  }\\\\\\\\n  .flex-1 {\\\\\\\\n    flex: 1;\\\\\\\\n  }\\\\\\\\n  .flex-3 {\\\\\\\\n    flex: 3;\\\\\\\\n  }\\\\\\\\n  .circle {\\\\\\\\n    width: 20px;\\\\\\\\n    height: 20px;\\\\\\\\n    border-radius: 50%;\\\\\\\\n    border: 1px solid grey;\\\\\\\\n  }\\\\\\\\n  .green-fill {\\\\\\\\n    background-color: rgb(4, 164, 110) !important;\\\\\\\\n    border-color: rgb(4, 164, 110) !important;\\\\\\\\n    color: white !important;\\\\\\\\n  }\\\\\\\\n  .yellow-fill {\\\\\\\\n    border-color: #ff7a00 !important;\\\\\\\\n  }\\\\\\\\n  .vertical-line {\\\\\\\\n    width: 2px;\\\\\\\\n    height: 180px;\\\\\\\\n    background-color: lightgrey;\\\\\\\\n  }\\\\\\\\n  @media screen and (max-width: 970px) {\\\\\\\\n    .vertical-line {\\\\\\\\n      height: 135px !important;\\\\\\\\n    }\\\\\\\\n    .vertical-line-sm {\\\\\\\\n      height: 70px !important;\\\\\\\\n    }\\\\\\\\n    .gap-6 {\\\\\\\\n      gap: 0.5rem !important;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  @media screen and (max-width: 570px) {\\\\\\\\n    .vertical-line {\\\\\\\\n      height: 180px !important;\\\\\\\\n    }\\\\\\\\n    .vertical-line-sm {\\\\\\\\n      height: 75px !important;\\\\\\\\n    }\\\\\\\\n    .gap-6 {\\\\\\\\n      gap: 0.5rem !important;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  .vertical-line-sm {\\\\\\\\n    width: 2px;\\\\\\\\n    height: 70px;\\\\\\\\n    background-color: lightgrey;\\\\\\\\n  }\\\\\\\\n  .form-check-input:disabled ~ .form-check-label,\\\\\\\\n  .form-check-input[disabled] ~ .form-check-label {\\\\\\\\n    opacity: 1;\\\\\\\\n  }\\\\\\\\n  .form-check-input {\\\\\\\\n    border-color: black !important;\\\\\\\\n  }\\\\\\\\n  .grey-btn {\\\\\\\\n    background-color: #687076;\\\\\\\\n    border: none;\\\\\\\\n    color: white;\\\\\\\\n  }\\\\\\\\n  .blue-btn {\\\\\\\\n    background-color: #3c697d;\\\\\\\\n    border: none;\\\\\\\\n    color: white;\\\\\\\\n  }\\\\\\\\n  .form-check-input:checked {\\\\\\\\n    background-color: #3c697d !important;\\\\\\\\n    border-color: #3c697d !important;\\\\\\\\n  }\\\\\\\\n  .dropdown-toggle:after {\\\\\\\\n    position: absolute;\\\\\\\\n    top: 46%;\\\\\\\\n    right: 5%;\\\\\\\\n  }\\\\\\\\n  .drop-btn {\\\\\\\\n    max-width: none !important;\\\\\\\\n  }\\\\\\\\n  .dropdown-menu {\\\\\\\\n    width: 100%;\\\\\\\\n    border-radius: 0.375rem !important;\\\\\\\\n  }\\\\\\\\n  .green-btn {\\\\\\\\n    background-color: #04a46e !important;\\\\\\\\n    border: none;\\\\\\\\n    color: white;\\\\\\\\n    &:active {\\\\\\\\n      color: white;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n  .gap-6 {\\\\\\\\n    gap: 2.5rem;\\\\\\\\n  }\\\\\\\\n  .border-vertical {\\\\\\\\n    border-top: var(--bs-border-width) var(--bs-border-style)\\\\\\\\n      var(--bs-border-color) !important;\\\\\\\\n    border-bottom: var(--bs-border-width) var(--bs-border-style)\\\\\\\\n      var(--bs-border-color) !important;\\\\\\\\n  }\\\\\\\\n  button.px-0 {\\\\\\\\n    padding-inline: 0px !important;\\\\\\\\n  }\\\\\\\\n  red-icon i {\\\\\\\\n    color: red;\\\\\\\\n  }\\\\\\\\n  input[type=\\\\\\\\\\\\\\\"radio\\\\\\\\\\\\\\\"] {\\\\\\\\n    min-width: 13px;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\nconst RfpContainer = styled.div`\\\\\\\\n  border: 1px solid lightgrey;\\\\\\\\n  overflow: auto;\\\\\\\\n`;\\\\\\\\nconst Header = styled.div`\\\\\\\\n  position: relative;\\\\\\\\n  background-color: #f4f4f4;\\\\\\\\n  height: 50px;\\\\\\\\n  .menu {\\\\\\\\n    position: absolute;\\\\\\\\n    right: 10px;\\\\\\\\n    top: 4px;\\\\\\\\n    font-size: 30px;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\nconst Text = styled.p`\\\\\\\\n  display: block;\\\\\\\\n  margin: 0;\\\\\\\\n  font-size: 14px;\\\\\\\\n  line-height: 20px;\\\\\\\\n  font-weight: 400;\\\\\\\\n  color: #687076;\\\\\\\\n  white-space: nowrap;\\\\\\\\n`;\\\\\\\\nconst Actions = styled.div`\\\\\\\\n  display: flex;\\\\\\\\n  align-items: center;\\\\\\\\n  gap: 12px;\\\\\\\\n  margin: -6px -6px 6px;\\\\\\\\n`;\\\\\\\\nconst Avatar = styled.div`\\\\\\\\n  width: 40px;\\\\\\\\n  height: 40px;\\\\\\\\n  pointer-events: none;\\\\\\\\n  img {\\\\\\\\n    object-fit: cover;\\\\\\\\n    border-radius: 40px;\\\\\\\\n    width: 100%;\\\\\\\\n    height: 100%;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\nconst rfpLabelOptions = getGlobalLabels();\\\\\\\\nconst LinkProfile = ({ account, children }) => {\\\\\\\\n  return (\\\\\\\\n    <Link href={`/near/widget/ProfilePage?accountId=${account}`}>\\\\\\\\n      {children}\\\\\\\\n    </Link>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\nconst [snapshotHistory, setSnapshotHistory] = useState([]);\\\\\\\\nconst rfp = Near.view(\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"get_rfp\\\\\\\\\\\\\\\", {\\\\\\\\n  rfp_id: parseInt(id),\\\\\\\\n});\\\\\\\\nconst queryName =\\\\\\\\n  \\\\\\\\\\\\\\\"polyprogrammist_near_devhub_ic_v1_proposals_with_latest_snapshot\\\\\\\\\\\\\\\";\\\\\\\\nconst query = `query GetLatestSnapshot($offset: Int = 0, $limit: Int = 10, $where: ${queryName}_bool_exp = {}) {\\\\\\\\n  ${queryName}(\\\\\\\\n    offset: $offset\\\\\\\\n    limit: $limit\\\\\\\\n    order_by: {ts: asc}\\\\\\\\n    where: $where\\\\\\\\n  ) {\\\\\\\\n    editor_id\\\\\\\\n    name\\\\\\\\n    summary\\\\\\\\n    description\\\\\\\\n    ts\\\\\\\\n    rfp_id\\\\\\\\n    timeline\\\\\\\\n    labels\\\\\\\\n    submission_deadline\\\\\\\\n    linked_proposals\\\\\\\\n  }\\\\\\\\n}`;\\\\\\\\nconst fetchSnapshotHistory = () => {\\\\\\\\n  const variables = {\\\\\\\\n    where: { rfp_id: { _eq: id } },\\\\\\\\n  };\\\\\\\\n  if (typeof fetchGraphQL !== \\\\\\\\\\\\\\\"function\\\\\\\\\\\\\\\") {\\\\\\\\n    return;\\\\\\\\n  }\\\\\\\\n  fetchGraphQL(query, \\\\\\\\\\\\\\\"GetLatestSnapshot\\\\\\\\\\\\\\\", variables).then(async (result) => {\\\\\\\\n    if (result.status === 200) {\\\\\\\\n      if (result.body.data) {\\\\\\\\n        const data = result.body.data?.[queryName];\\\\\\\\n        const history = data.map((item) => {\\\\\\\\n          const rfpData = {\\\\\\\\n            ...item,\\\\\\\\n            timestamp: item.ts,\\\\\\\\n            timeline: parseJSON(item.timeline),\\\\\\\\n          };\\\\\\\\n          delete rfpData.ts;\\\\\\\\n          return rfpData;\\\\\\\\n        });\\\\\\\\n        setSnapshotHistory(history);\\\\\\\\n      }\\\\\\\\n    }\\\\\\\\n  });\\\\\\\\n};\\\\\\\\nuseEffect(() => {\\\\\\\\n  fetchSnapshotHistory();\\\\\\\\n}, [id]);\\\\\\\\nif (!rfp) {\\\\\\\\n  return (\\\\\\\\n    <div\\\\\\\\n      style={{ height: \\\\\\\\\\\\\\\"50vh\\\\\\\\\\\\\\\" }}\\\\\\\\n      className=\\\\\\\\\\\\\\\"d-flex justify-content-center align-items-center w-100\\\\\\\\\\\\\\\"\\\\\\\\n    >\\\\\\\\n      <Widget src={`devhub.near/widget/devhub.components.molecule.Spinner`} />\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n}\\\\\\\\nif (timestamp && rfp) {\\\\\\\\n  rfp.snapshot =\\\\\\\\n    snapshotHistory.find((item) => item.timestamp === timestamp) ??\\\\\\\\n    rfp.snapshot;\\\\\\\\n}\\\\\\\\nconst { snapshot } = rfp;\\\\\\\\nsnapshot.timeline = parseJSON(snapshot.timeline);\\\\\\\\nconst authorId = rfp.author_id;\\\\\\\\nconst blockHeight = parseInt(rfp.social_db_post_block_height);\\\\\\\\nconst item = {\\\\\\\\n  type: \\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\n  path: `infrastructure-committee.near/post/main`,\\\\\\\\n  blockHeight,\\\\\\\\n};\\\\\\\\nconst rfpURL = getLinkUsingCurrentGateway(\\\\\\\\n  `infrastructure-committee.near/widget/app?page=rfp&id=${rfp.id}&timestamp=${snapshot.timestamp}`\\\\\\\\n);\\\\\\\\nconst SidePanelItem = ({ title, children, hideBorder, ishidden }) => {\\\\\\\\n  return (\\\\\\\\n    <div\\\\\\\\n      style={{ gap: \\\\\\\\\\\\\\\"8px\\\\\\\\\\\\\\\" }}\\\\\\\\n      className={\\\\\\\\n        ishidden\\\\\\\\n          ? \\\\\\\\\\\\\\\"d-none\\\\\\\\\\\\\\\"\\\\\\\\n          : \\\\\\\\\\\\\\\"d-flex flex-column pb-3 \\\\\\\\\\\\\\\" + (!hideBorder && \\\\\\\\\\\\\\\" border-bottom\\\\\\\\\\\\\\\")\\\\\\\\n      }\\\\\\\\n    >\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"h6 mb-0\\\\\\\\\\\\\\\">{title} </div>\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"text-muted\\\\\\\\\\\\\\\">{children}</div>\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\nconst isAllowedToWriteRfp = Near.view(\\\\\\\\n  \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n  \\\\\\\\\\\\\\\"is_allowed_to_write_rfps\\\\\\\\\\\\\\\",\\\\\\\\n  {\\\\\\\\n    editor: accountId,\\\\\\\\n  }\\\\\\\\n);\\\\\\\\nconst link = href({\\\\\\\\n  widgetSrc: `infrastructure-committee.near/widget/app`,\\\\\\\\n  params: {\\\\\\\\n    page: \\\\\\\\\\\\\\\"create-rfp\\\\\\\\\\\\\\\",\\\\\\\\n    id: rfp.id,\\\\\\\\n    timestamp: timestamp,\\\\\\\\n  },\\\\\\\\n});\\\\\\\\nconst createdDate = snapshotHistory[0].timestamp ?? snapshot.timestamp;\\\\\\\\nconst [approvedProposals, setApprovedProposals] = useState([]);\\\\\\\\nconst [isCancelModalOpen, setCancelModal] = useState(false);\\\\\\\\nconst [isWarningModalOpen, setWarningModal] = useState(false);\\\\\\\\nconst [timeline, setTimeline] = useState(null);\\\\\\\\nconst [showTimelineSetting, setShowTimelineSetting] = useState(false);\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (!timeline) {\\\\\\\\n    setTimeline(snapshot.timeline);\\\\\\\\n  }\\\\\\\\n}, [snapshot]);\\\\\\\\nfunction fetchApprovedRfpProposals() {\\\\\\\\n  const queryName = \\\\\\\\\\\\\\\"polyprogrammist_near_devhub_ic_v1_proposal_snapshots\\\\\\\\\\\\\\\";\\\\\\\\n  const query = `query GetLatestSnapshot($offset: Int = 0, $limit: Int = 10, $where: ${queryName}_bool_exp = {}) {\\\\\\\\n    ${queryName}(\\\\\\\\n      offset: $offset\\\\\\\\n      limit: $limit\\\\\\\\n      order_by: {proposal_id: desc}\\\\\\\\n      where: $where\\\\\\\\n    ) {\\\\\\\\n      proposal_id\\\\\\\\n      name\\\\\\\\n      timeline\\\\\\\\n    }\\\\\\\\n  }`;\\\\\\\\n  const FETCH_LIMIT = 50;\\\\\\\\n  const variables = {\\\\\\\\n    limit: FETCH_LIMIT,\\\\\\\\n    offset,\\\\\\\\n    where: {\\\\\\\\n      proposal_id: { _in: rfp.snapshot.linked_proposals },\\\\\\\\n    },\\\\\\\\n  };\\\\\\\\n  if (typeof fetchGraphQL !== \\\\\\\\\\\\\\\"function\\\\\\\\\\\\\\\") {\\\\\\\\n    return;\\\\\\\\n  }\\\\\\\\n  fetchGraphQL(query, \\\\\\\\\\\\\\\"GetLatestSnapshot\\\\\\\\\\\\\\\", variables).then(async (result) => {\\\\\\\\n    if (result.status === 200) {\\\\\\\\n      if (result.body.data) {\\\\\\\\n        const data = result.body.data?.[queryName];\\\\\\\\n        const approved = [];\\\\\\\\n        data.map((item) => {\\\\\\\\n          const timeline = parseJSON(item.timeline);\\\\\\\\n          if (PROPOSALS_APPROVED_STATUS_ARRAY.includes(timeline.status)) {\\\\\\\\n            approved.push(item);\\\\\\\\n          }\\\\\\\\n        });\\\\\\\\n        setApprovedProposals(approved);\\\\\\\\n      }\\\\\\\\n    }\\\\\\\\n  });\\\\\\\\n}\\\\\\\\nconst editRFPStatus = () => {\\\\\\\\n  Near.call([\\\\\\\\n    {\\\\\\\\n      contractName: \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n      methodName: \\\\\\\\\\\\\\\"edit_rfp_timeline\\\\\\\\\\\\\\\",\\\\\\\\n      args: {\\\\\\\\n        id: rfp.id,\\\\\\\\n        timeline: timeline,\\\\\\\\n      },\\\\\\\\n      gas: 270000000000000,\\\\\\\\n    },\\\\\\\\n  ]);\\\\\\\\n};\\\\\\\\nconst onCancelRFP = (value) => {\\\\\\\\n  Near.call([\\\\\\\\n    {\\\\\\\\n      contractName: \\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\n      methodName: \\\\\\\\\\\\\\\"cancel_rfp\\\\\\\\\\\\\\\",\\\\\\\\n      args: {\\\\\\\\n        id: rfp.id,\\\\\\\\n        proposals_to_cancel:\\\\\\\\n          value === CANCEL_RFP_OPTIONS.CANCEL_PROPOSALS\\\\\\\\n            ? snapshot.linked_proposals\\\\\\\\n            : [],\\\\\\\\n        proposals_to_unlink:\\\\\\\\n          value === CANCEL_RFP_OPTIONS.UNLINK_PROPOSALS\\\\\\\\n            ? snapshot.linked_proposals\\\\\\\\n            : [],\\\\\\\\n      },\\\\\\\\n      gas: 270000000000000,\\\\\\\\n    },\\\\\\\\n  ]);\\\\\\\\n};\\\\\\\\nconst accessControlInfo =\\\\\\\\n  Near.view(\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"get_access_control_info\\\\\\\\\\\\\\\") ?? null;\\\\\\\\nconst moderatorList =\\\\\\\\n  accessControlInfo?.members_list?.[\\\\\\\\\\\\\\\"team:moderators\\\\\\\\\\\\\\\"]?.children;\\\\\\\\nfetchApprovedRfpProposals();\\\\\\\\nconst SubmitProposalBtn = () => {\\\\\\\\n  return (\\\\\\\\n    <div style={{ minWidth: \\\\\\\\\\\\\\\"fit-content\\\\\\\\\\\\\\\" }}>\\\\\\\\n      <Link\\\\\\\\n        to={href({\\\\\\\\n          widgetSrc: `infrastructure-committee.near/widget/app`,\\\\\\\\n          params: { page: \\\\\\\\\\\\\\\"create-proposal\\\\\\\\\\\\\\\", rfp_id: rfp.id },\\\\\\\\n        })}\\\\\\\\n      >\\\\\\\\n        <Widget\\\\\\\\n          src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n          props={{\\\\\\\\n            label: (\\\\\\\\n              <div className=\\\\\\\\\\\\\\\"d-flex align-items-center gap-2\\\\\\\\\\\\\\\">\\\\\\\\n                <i className=\\\\\\\\\\\\\\\"bi bi-plus-circle\\\\\\\\\\\\\\\"></i>Submit Proposal\\\\\\\\n              </div>\\\\\\\\n            ),\\\\\\\\n            classNames: { root: \\\\\\\\\\\\\\\"blue-btn\\\\\\\\\\\\\\\" },\\\\\\\\n          }}\\\\\\\\n        />\\\\\\\\n      </Link>\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\nreturn (\\\\\\\\n  <Container className=\\\\\\\\\\\\\\\"d-flex flex-column gap-2 w-100 mt-4\\\\\\\\\\\\\\\">\\\\\\\\n    <Widget\\\\\\\\n      src={`infrastructure-committee.near/widget/components.rfps.ConfirmCancelModal`}\\\\\\\\n      props={{\\\\\\\\n        isOpen: isCancelModalOpen,\\\\\\\\n        onCancelClick: () => {\\\\\\\\n          setCancelModal(false);\\\\\\\\n          setTimeline({ status: RFP_TIMELINE_STATUS.EVALUATION });\\\\\\\\n        },\\\\\\\\n        onConfirmClick: (value) => {\\\\\\\\n          setCancelModal(false);\\\\\\\\n          onCancelRFP(value);\\\\\\\\n        },\\\\\\\\n        linkedProposalIds: snapshot.linked_proposals,\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n    <Widget\\\\\\\\n      src={`infrastructure-committee.near/widget/components.rfps.WarningModal`}\\\\\\\\n      props={{\\\\\\\\n        isOpen: isWarningModalOpen,\\\\\\\\n        onConfirmClick: () => {\\\\\\\\n          setWarningModal(false);\\\\\\\\n          setTimeline({ status: RFP_TIMELINE_STATUS.EVALUATION });\\\\\\\\n        },\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"d-flex px-3 px-lg-0 justify-content-between\\\\\\\\\\\\\\\">\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center h3\\\\\\\\\\\\\\\">\\\\\\\\n        <div>{snapshot.name}</div>\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"text-muted\\\\\\\\\\\\\\\">#{rfp.id}</div>\\\\\\\\n      </div>\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n        <Widget\\\\\\\\n          src={`near/widget/ShareButton`}\\\\\\\\n          props={{\\\\\\\\n            postType: \\\\\\\\\\\\\\\"post\\\\\\\\\\\\\\\",\\\\\\\\n            url: rfpURL,\\\\\\\\n          }}\\\\\\\\n        />\\\\\\\\n        {isAllowedToWriteRfp && (\\\\\\\\n          <Link to={link} style={{ textDecoration: \\\\\\\\\\\\\\\"none\\\\\\\\\\\\\\\" }}>\\\\\\\\n            <Widget\\\\\\\\n              src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n              props={{\\\\\\\\n                label: \\\\\\\\\\\\\\\"Edit\\\\\\\\\\\\\\\",\\\\\\\\n                classNames: { root: \\\\\\\\\\\\\\\"grey-btn btn-sm\\\\\\\\\\\\\\\" },\\\\\\\\n              }}\\\\\\\\n            />\\\\\\\\n          </Link>\\\\\\\\n        )}\\\\\\\\n      </div>\\\\\\\\n    </div>\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"d-flex flex-wrap flex-md-nowrap px-3 px-lg-0 gap-2 align-items-center text-sm pb-3 w-100\\\\\\\\\\\\\\\">\\\\\\\\n      <Widget\\\\\\\\n        src={`infrastructure-committee.near/widget/components.rfps.StatusTag`}\\\\\\\\n        props={{\\\\\\\\n          timelineStatus: snapshot.timeline.status,\\\\\\\\n          size: \\\\\\\\\\\\\\\"sm\\\\\\\\\\\\\\\",\\\\\\\\n        }}\\\\\\\\n      />\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"w-100 d-flex flex-wrap flex-md-nowrap gap-1 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"fw-bold text-truncate\\\\\\\\\\\\\\\">\\\\\\\\n          <LinkProfile account={authorId}>{authorId}</LinkProfile>\\\\\\\\n        </div>\\\\\\\\n        <div>created on {readableDate(createdDate / 1000000)}</div>\\\\\\\\n      </div>\\\\\\\\n    </div>\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"card no-border rounded-0 full-width-div px-3 px-lg-0\\\\\\\\\\\\\\\">\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"container-xl py-4\\\\\\\\\\\\\\\">\\\\\\\\n        {snapshot.timeline.status ===\\\\\\\\n          RFP_TIMELINE_STATUS.ACCEPTING_SUBMISSIONS && (\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"accept-submission-info-container p-3 p-sm-4 d-flex flex-wrap flex-sm-nowrap justify-content-between align-items-center gap-2 rounded-2\\\\\\\\\\\\\\\">\\\\\\\\n            <div style={{ minWidth: \\\\\\\\\\\\\\\"300px\\\\\\\\\\\\\\\" }}>\\\\\\\\n              <b>This RFP is accepting submissions.</b>\\\\\\\\n              <p className=\\\\\\\\\\\\\\\"text-sm text-muted mt-2\\\\\\\\\\\\\\\">\\\\\\\\n                Click Submit Proposal if you want to submit a proposal.\\\\\\\\n              </p>\\\\\\\\n            </div>\\\\\\\\n            <SubmitProposalBtn />\\\\\\\\n          </div>\\\\\\\\n        )}\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"my-4\\\\\\\\\\\\\\\">\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"d-flex flex-wrap gap-6\\\\\\\\\\\\\\\">\\\\\\\\n            <div\\\\\\\\n              style={{ minWidth: \\\\\\\\\\\\\\\"350px\\\\\\\\\\\\\\\" }}\\\\\\\\n              className=\\\\\\\\\\\\\\\"flex-3 order-2 order-md-1\\\\\\\\\\\\\\\"\\\\\\\\n            >\\\\\\\\n              <div\\\\\\\\n                className=\\\\\\\\\\\\\\\"d-flex gap-2 flex-1\\\\\\\\\\\\\\\"\\\\\\\\n                style={{\\\\\\\\n                  zIndex: 99,\\\\\\\\n                  background: \\\\\\\\\\\\\\\"white\\\\\\\\\\\\\\\",\\\\\\\\n                  position: \\\\\\\\\\\\\\\"relative\\\\\\\\\\\\\\\",\\\\\\\\n                }}\\\\\\\\n              >\\\\\\\\n                <div className=\\\\\\\\\\\\\\\"d-none d-sm-flex\\\\\\\\\\\\\\\">\\\\\\\\n                  <img\\\\\\\\n                    src={\\\\\\\\n                      \\\\\\\\\\\\\\\"https://ipfs.near.social/ipfs/bafkreicbygt4kajytlxij24jj6tkg2ppc2dw3dlqhkermkjjfgdfnlizzy\\\\\\\\\\\\\\\"\\\\\\\\n                    }\\\\\\\\n                    height={35}\\\\\\\\n                    width={35}\\\\\\\\n                  />\\\\\\\\n                </div>\\\\\\\\n                <RfpContainer className=\\\\\\\\\\\\\\\"rounded-2 flex-1\\\\\\\\\\\\\\\">\\\\\\\\n                  <Header className=\\\\\\\\\\\\\\\"d-flex gap-1 align-items-center p-2 px-3 \\\\\\\\\\\\\\\">\\\\\\\\n                    <div\\\\\\\\n                      className=\\\\\\\\\\\\\\\"fw-bold text-truncate\\\\\\\\\\\\\\\"\\\\\\\\n                      style={{ maxWidth: \\\\\\\\\\\\\\\"60%\\\\\\\\\\\\\\\" }}\\\\\\\\n                    >\\\\\\\\n                      <LinkProfile account={authorId}>{authorId}</LinkProfile>\\\\\\\\n                    </div>\\\\\\\\n                    <div\\\\\\\\n                      className=\\\\\\\\\\\\\\\"text-muted\\\\\\\\\\\\\\\"\\\\\\\\n                      style={{ minWidth: \\\\\\\\\\\\\\\"fit-content\\\\\\\\\\\\\\\" }}\\\\\\\\n                    >\\\\\\\\n                      \\\\\\\\u{ff65}{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n                      <Widget\\\\\\\\n                        src={`near/widget/TimeAgo`}\\\\\\\\n                        props={{\\\\\\\\n                          blockHeight,\\\\\\\\n                          blockTimestamp: createdDate,\\\\\\\\n                        }}\\\\\\\\n                      />\\\\\\\\n                      {context.accountId && (\\\\\\\\n                        <div className=\\\\\\\\\\\\\\\"menu\\\\\\\\\\\\\\\">\\\\\\\\n                          <Widget\\\\\\\\n                            src={`near/widget/Posts.Menu`}\\\\\\\\n                            props={{\\\\\\\\n                              accountId: authorId,\\\\\\\\n                              blockHeight: blockHeight,\\\\\\\\n                            }}\\\\\\\\n                          />\\\\\\\\n                        </div>\\\\\\\\n                      )}\\\\\\\\n                    </div>\\\\\\\\n                  </Header>\\\\\\\\n                  <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-1 p-2 px-3 description-box\\\\\\\\\\\\\\\">\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"text-muted h6 border-bottom pb-1 mt-3\\\\\\\\\\\\\\\">\\\\\\\\n                      RFP CATEGORY\\\\\\\\n                      <div className=\\\\\\\\\\\\\\\"my-2\\\\\\\\\\\\\\\">\\\\\\\\n                        <Widget\\\\\\\\n                          src={`infrastructure-committee.near/widget/components.molecule.MultiSelectCategoryDropdown`}\\\\\\\\n                          props={{\\\\\\\\n                            selected: snapshot.labels,\\\\\\\\n                            disabled: true,\\\\\\\\n                            hideDropdown: true,\\\\\\\\n                            onChange: () => {},\\\\\\\\n                            availableOptions: rfpLabelOptions,\\\\\\\\n                          }}\\\\\\\\n                        />\\\\\\\\n                      </div>\\\\\\\\n                    </div>\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"text-muted h6 border-bottom pb-1 mt-3\\\\\\\\\\\\\\\">\\\\\\\\n                      SUMMARY\\\\\\\\n                    </div>\\\\\\\\n                    <div>{snapshot.summary}</div>\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"text-muted h6 border-bottom pb-1 mt-3\\\\\\\\\\\\\\\">\\\\\\\\n                      DESCRIPTION\\\\\\\\n                    </div>\\\\\\\\n                    <Widget\\\\\\\\n                      src={`devhub.near/widget/devhub.components.molecule.SimpleMDEViewer`}\\\\\\\\n                      props={{\\\\\\\\n                        content: snapshot.description,\\\\\\\\n                      }}\\\\\\\\n                    />\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center mt-3\\\\\\\\\\\\\\\">\\\\\\\\n                      <Widget\\\\\\\\n                        src={`infrastructure-committee.near/widget/components.molecule.LikeButton`}\\\\\\\\n                        props={{\\\\\\\\n                          item,\\\\\\\\n                          rfpId: rfp.id,\\\\\\\\n                          notifyAccountIds: moderatorList,\\\\\\\\n                        }}\\\\\\\\n                      />\\\\\\\\n                      <Widget\\\\\\\\n                        src={`devhub.near/widget/devhub.entity.proposal.CommentIcon`}\\\\\\\\n                        props={{\\\\\\\\n                          item,\\\\\\\\n                          showOverlay: false,\\\\\\\\n                          onClick: () => {},\\\\\\\\n                        }}\\\\\\\\n                      />\\\\\\\\n                      <Widget\\\\\\\\n                        src={`near/widget/CopyUrlButton`}\\\\\\\\n                        props={{\\\\\\\\n                          url: rfpURL,\\\\\\\\n                        }}\\\\\\\\n                      />\\\\\\\\n                    </div>\\\\\\\\n                  </div>\\\\\\\\n                </RfpContainer>\\\\\\\\n              </div>\\\\\\\\n              <div className=\\\\\\\\\\\\\\\"border-bottom pb-4 mt-4\\\\\\\\\\\\\\\">\\\\\\\\n                <Widget\\\\\\\\n                  src={`infrastructure-committee.near/widget/components.rfps.CommentsAndLogs`}\\\\\\\\n                  props={{\\\\\\\\n                    ...props,\\\\\\\\n                    id: rfp.id,\\\\\\\\n                    item: item,\\\\\\\\n                    approvedProposals: approvedProposals,\\\\\\\\n                    snapshotHistory: snapshotHistory,\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              </div>\\\\\\\\n              <div\\\\\\\\n                style={{\\\\\\\\n                  position: \\\\\\\\\\\\\\\"relative\\\\\\\\\\\\\\\",\\\\\\\\n                  zIndex: 99,\\\\\\\\n                  backgroundColor: \\\\\\\\\\\\\\\"white\\\\\\\\\\\\\\\",\\\\\\\\n                }}\\\\\\\\n                className=\\\\\\\\\\\\\\\"pt-4\\\\\\\\\\\\\\\"\\\\\\\\n              >\\\\\\\\n                <Widget\\\\\\\\n                  src={`infrastructure-committee.near/widget/components.molecule.ComposeComment`}\\\\\\\\n                  props={{\\\\\\\\n                    ...props,\\\\\\\\n                    item: item,\\\\\\\\n                    notifyAccountIds: moderatorList,\\\\\\\\n                    rfpId: rfp.id,\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n                {snapshot.timeline.status ===\\\\\\\\n                  RFP_TIMELINE_STATUS.ACCEPTING_SUBMISSIONS && (\\\\\\\\n                  <div className=\\\\\\\\\\\\\\\"accept-submission-info-container mt-3 p-3 p-sm-4 d-flex flex-wrap flex-md-nowrap justify-content-between align-items-center gap-2 rounded-2\\\\\\\\\\\\\\\">\\\\\\\\n                    <div style={{ minWidth: \\\\\\\\\\\\\\\"350px\\\\\\\\\\\\\\\" }}>\\\\\\\\n                      <b>Want to respond to this RFP? </b> This RFP is accepting\\\\\\\\n                      submissions.\\\\\\\\n                    </div>\\\\\\\\n                    <SubmitProposalBtn />\\\\\\\\n                  </div>\\\\\\\\n                )}\\\\\\\\n              </div>\\\\\\\\n            </div>\\\\\\\\n            <div\\\\\\\\n              style={{ minWidth: \\\\\\\\\\\\\\\"300px\\\\\\\\\\\\\\\" }}\\\\\\\\n              className=\\\\\\\\\\\\\\\"d-flex flex-column gap-4 flex-1 order-1 order-md-2\\\\\\\\\\\\\\\"\\\\\\\\n            >\\\\\\\\n              <SidePanelItem title=\\\\\\\\\\\\\\\"Submission Deadline\\\\\\\\\\\\\\\">\\\\\\\\n                <h5 className=\\\\\\\\\\\\\\\"text-black\\\\\\\\\\\\\\\">\\\\\\\\n                  {readableDate(\\\\\\\\n                    parseFloat(snapshot.submission_deadline / 1000000)\\\\\\\\n                  )}\\\\\\\\n                </h5>\\\\\\\\n              </SidePanelItem>\\\\\\\\n              <SidePanelItem\\\\\\\\n                title={\\\\\\\\n                  <div>\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"d-flex justify-content-between align-content-center\\\\\\\\\\\\\\\">\\\\\\\\n                      Timeline\\\\\\\\n                      {isAllowedToWriteRfp && (\\\\\\\\n                        <div\\\\\\\\n                          data-testid=\\\\\\\\\\\\\\\"setting-btn\\\\\\\\\\\\\\\"\\\\\\\\n                          onClick={() => setShowTimelineSetting(true)}\\\\\\\\n                        >\\\\\\\\n                          <i class=\\\\\\\\\\\\\\\"bi bi-gear\\\\\\\\\\\\\\\"></i>\\\\\\\\n                        </div>\\\\\\\\n                      )}\\\\\\\\n                    </div>\\\\\\\\n                  </div>\\\\\\\\n                }\\\\\\\\n              >\\\\\\\\n                <Widget\\\\\\\\n                  src={`infrastructure-committee.near/widget/components.rfps.TimelineConfigurator`}\\\\\\\\n                  props={{\\\\\\\\n                    timeline: timeline,\\\\\\\\n                    setTimeline: (v) => {\\\\\\\\n                      if (\\\\\\\\n                        snapshot.timeline.status === v.status &&\\\\\\\\n                        timeline.status === v.status\\\\\\\\n                      ) {\\\\\\\\n                        return;\\\\\\\\n                      }\\\\\\\\n                      // if proposal selected timeline is selected and no approved proposals exist, show warning\\\\\\\\n                      if (\\\\\\\\n                        v.status === RFP_TIMELINE_STATUS.PROPOSAL_SELECTED &&\\\\\\\\n                        Array.isArray(approvedProposals) &&\\\\\\\\n                        !approvedProposals.length\\\\\\\\n                      ) {\\\\\\\\n                        setWarningModal(true);\\\\\\\\n                      }\\\\\\\\n                      if (v.status === RFP_TIMELINE_STATUS.CANCELLED) {\\\\\\\\n                        setCancelModal(true);\\\\\\\\n                      }\\\\\\\\n                      setTimeline(v);\\\\\\\\n                    },\\\\\\\\n                    disabled: showTimelineSetting ? false : true,\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n                {showTimelineSetting && (\\\\\\\\n                  <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center justify-content-end text-sm mt-2\\\\\\\\\\\\\\\">\\\\\\\\n                    <Widget\\\\\\\\n                      src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n                      props={{\\\\\\\\n                        label: \\\\\\\\\\\\\\\"Cancel\\\\\\\\\\\\\\\",\\\\\\\\n                        classNames: {\\\\\\\\n                          root: \\\\\\\\\\\\\\\"btn-outline-danger border-0 shadow-none btn-sm\\\\\\\\\\\\\\\",\\\\\\\\n                        },\\\\\\\\n                        onClick: () => {\\\\\\\\n                          setShowTimelineSetting(false);\\\\\\\\n                          setTimeline(snapshot.timeline);\\\\\\\\n                        },\\\\\\\\n                      }}\\\\\\\\n                    />\\\\\\\\n                    <Widget\\\\\\\\n                      src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n                      props={{\\\\\\\\n                        label: \\\\\\\\\\\\\\\"Save\\\\\\\\\\\\\\\",\\\\\\\\n                        classNames: { root: \\\\\\\\\\\\\\\"blue-btn btn-sm\\\\\\\\\\\\\\\" },\\\\\\\\n                        onClick: () => {\\\\\\\\n                          editRFPStatus();\\\\\\\\n                          setShowTimelineSetting(false);\\\\\\\\n                        },\\\\\\\\n                      }}\\\\\\\\n                    />\\\\\\\\n                  </div>\\\\\\\\n                )}\\\\\\\\n              </SidePanelItem>\\\\\\\\n              <SidePanelItem\\\\\\\\n                title={\\\\\\\\n                  \\\\\\\\\\\\\\\"Selected Proposal\\\\\\\\\\\\\\\" + \\\\\\\\\\\\\\\" (\\\\\\\\\\\\\\\" + approvedProposals.length + \\\\\\\\\\\\\\\")\\\\\\\\\\\\\\\"\\\\\\\\n                }\\\\\\\\n                ishidden={!approvedProposals.length}\\\\\\\\n              >\\\\\\\\n                <Widget\\\\\\\\n                  src={`infrastructure-committee.near/widget/components.molecule.LinkedProposals`}\\\\\\\\n                  props={{\\\\\\\\n                    linkedProposalIds: (approvedProposals ?? []).map(\\\\\\\\n                      (i) => i.proposal_id\\\\\\\\n                    ),\\\\\\\\n                    showStatus: false,\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              </SidePanelItem>\\\\\\\\n              <SidePanelItem\\\\\\\\n                title={\\\\\\\\n                  \\\\\\\\\\\\\\\"All Proposals\\\\\\\\\\\\\\\" +\\\\\\\\n                  \\\\\\\\\\\\\\\" (\\\\\\\\\\\\\\\" +\\\\\\\\n                  snapshot.linked_proposals.length +\\\\\\\\n                  \\\\\\\\\\\\\\\")\\\\\\\\\\\\\\\"\\\\\\\\n                }\\\\\\\\n                ishidden={!snapshot.linked_proposals.length}\\\\\\\\n              >\\\\\\\\n                <Widget\\\\\\\\n                  src={`infrastructure-committee.near/widget/components.molecule.LinkedProposals`}\\\\\\\\n                  props={{\\\\\\\\n                    linkedProposalIds: snapshot.linked_proposals,\\\\\\\\n                    showStatus:\\\\\\\\n                      snapshot.timeline.status !==\\\\\\\\n                      RFP_TIMELINE_STATUS.PROPOSAL_SELECTED,\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              </SidePanelItem>\\\\\\\\n            </div>\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n      </div>\\\\\\\\n    </div>\\\\\\\\n  </Container>\\\\\\\\n);\\\\\\\\n\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 979001736542100000000
+    }
+  },
+  {
+    "id": "9696329590",
+    "receipt_id": "QazytNoWnrJserW2QrPx6bwj7pSMqHvbKQbngEKLDj6",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "43DLBTU8K7u58ewSyJrfwZDmjx6uSGjzdg4i32Dm6Tcn",
+      "block_height": 131651613,
+      "block_timestamp": 1730403253773992000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "9Jf7HSxBoHhdKBte3ZGvLV9FcZD6zgMnY3NNQy9x2cEE",
+    "included_in_block_hash": "F5MD8oV7pkwRZ3ww9ZGQkrpUqLDmhw7x763kMJp2iQrx",
+    "block_timestamp": "1730403251274741819",
+    "block": {
+      "block_height": 131651611
+    },
+    "receipt_conversion_tokens_burnt": "154745462028000000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.8727919387248636e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 979001736542100000000
+    }
+  },
+  {
+    "id": "9699730087",
+    "receipt_id": "7DAKBSK46g8jBCdim8vGMBh73gqYNKrJpeVkhgxYYipw",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6sZz2Ac8zytuWcZoHNrimrYGyKFE3rDfYWEsrNqTeDTH",
+      "block_height": 131661163,
+      "block_timestamp": 1730413791088241400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8569378180095,
+      "tokens_burnt": 856937818009500000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "9mJzPouuHUB1XnqyUZcm772gzYQySduwn9zRgrMbtcfV",
+    "included_in_block_hash": "CaMvL7HmrvWiAvEhHfbzaVxRQ5jvQtxfwAKaFY5p9m9U",
+    "block_timestamp": "1730413789986858954",
+    "block": {
+      "block_height": 131661162
+    },
+    "receipt_conversion_tokens_burnt": "31125430890500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_rfp_timeline",
+        "deposit": 0,
+        "fee": 856937818009500000000,
+        "args": "{\"id\": 4, \"timeline\": {\"status\": \"PROPOSAL_SELECTED\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2655295527465e+21
+    }
+  },
+  {
+    "id": "9699730315",
+    "receipt_id": "8e1CEMGHgp5k91ddcUBsFyTZiV5cSjNpQGWaf7mh6Jqq",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7et7Vy5p1BYPuiXKepFkGrMuoaXeC6YK7HLxjoh6ZPZG",
+      "block_height": 131661164,
+      "block_timestamp": 1730413792207771100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3774663038465,
+      "tokens_burnt": 377466303846500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "9mJzPouuHUB1XnqyUZcm772gzYQySduwn9zRgrMbtcfV",
+    "included_in_block_hash": "CaMvL7HmrvWiAvEhHfbzaVxRQ5jvQtxfwAKaFY5p9m9U",
+    "block_timestamp": "1730413789986858954",
+    "block": {
+      "block_height": 131661162
+    },
+    "receipt_conversion_tokens_burnt": "31125430890500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 377466303846500000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"flmel.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":4,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"petersalomonsen.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":4,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"polyprogrammist.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":4,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"thomasguntenaar.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":4,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"as2.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":4,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":4,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"eric3.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":4,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":4,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"frol.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":4,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"pivortex.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":4,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"megha19.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":4,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mob.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":4,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":4,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"woben.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":4,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2655295527465e+21
+    }
+  },
+  {
+    "id": "9699750099",
+    "receipt_id": "Ahrtsu6TvyuxuWnAeDoEkuFAv4pu2Fsdw757WysXqnBw",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "C1dGVVRHdS4d8n3RPMrub71HmdfqPUKSCvKdwvog5r5y",
+      "block_height": 131661218,
+      "block_timestamp": 1730413851073194200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 11236334635056,
+      "tokens_burnt": 1.1236334635056e+21,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "D6TxQLNQaeeEF4HkNcqdGzFLHeuBRHpVauTBLcmRAqzf",
+    "included_in_block_hash": "dAiGTx16Rwp7n2X42hfLfu5fnphX2H9A9zix6zbsUQi",
+    "block_timestamp": "1730413850044131607",
+    "block": {
+      "block_height": 131661217
+    },
+    "receipt_conversion_tokens_burnt": "31125430890500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_rfp_timeline",
+        "deposit": 0,
+        "fee": 1.1236334635056e+21,
+        "args": "{\"id\": 3, \"timeline\": {\"status\": \"PROPOSAL_SELECTED\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5520330454842e+21
+    }
+  },
+  {
+    "id": "9699750306",
+    "receipt_id": "AAwL8mFAw6LxqBkkLgaf3xaTTDtapLF3Dr3scyF1SNv5",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "YiQaDLduTcPuHLGmPVDsDNbtXYTDJ5R7LLd9ehEPAoT",
+      "block_height": 131661219,
+      "block_timestamp": 1730413852242147800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3972741510881,
+      "tokens_burnt": 397274151088100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "D6TxQLNQaeeEF4HkNcqdGzFLHeuBRHpVauTBLcmRAqzf",
+    "included_in_block_hash": "dAiGTx16Rwp7n2X42hfLfu5fnphX2H9A9zix6zbsUQi",
+    "block_timestamp": "1730413850044131607",
+    "block": {
+      "block_height": 131661217
+    },
+    "receipt_conversion_tokens_burnt": "31125430890500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 397274151088100000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":3,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mob.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":3,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"eric3.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":3,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"thomasguntenaar.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":3,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"flmel.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":3,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"megha19.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":3,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":3,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"woben.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":3,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"as2.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":3,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"petersalomonsen.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":3,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":3,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"pivortex.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":3,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"frol.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":3,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"polyprogrammist.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"rfp/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"rfp\\\\\\\\\\\\\\\":3,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5520330454842e+21
+    }
+  },
+  {
+    "id": "9699753711",
+    "receipt_id": "AnzAos2e9snN3u4YWwCEt9DQXZSXYYxUUxzMSoLhApao",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8a8oQXK9e81s6zLjZD6mizNzsfrQpnzvJwCEMYQigqgD",
+      "block_height": 131661237,
+      "block_timestamp": 1730413871829504300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 14807513141322,
+      "tokens_burnt": 1.4807513141322e+21,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "72J7jE7f3Xm55ECrdZBNDpxxWdv9qgwBdQxQd6hve45P",
+    "included_in_block_hash": "2T3NbESXe2t69ByXQfhAFLZizM5brAaPJcDFgJPcNT9L",
+    "block_timestamp": "1730413870840176420",
+    "block": {
+      "block_height": 131661236
+    },
+    "receipt_conversion_tokens_burnt": "31125430890500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_rfp_timeline",
+        "deposit": 0,
+        "fee": 1.4807513141322e+21,
+        "args": "{\"id\": 2, \"timeline\": {\"status\": \"PROPOSAL_SELECTED\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9091162580832e+21
+    }
+  }
+]

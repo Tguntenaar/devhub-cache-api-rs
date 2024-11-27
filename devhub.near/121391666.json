@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "5787275228",
+    "receipt_id": "EwN4HXS6o2ZGntVBgUsg781UdBYPNzzJjRoEv3bt3wcF",
+    "predecessor_account_id": "cryptogarik.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7gSEm3tdka4LuAnxf6CjeyRqVLByRYeTSMXnRmRNpsJ4",
+      "block_height": 121435040,
+      "block_timestamp": 1718711055295882800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5137345177510,
+      "tokens_burnt": 513734517751000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "BVmUFoedn671GYiUuyzEbPFUJn8ejp2hgc3N3Eni2Bfi",
+    "included_in_block_hash": "2aK7i7nbVhHYZhAsMhL1WYWF5vtGm9fQ4jpSUs38HgvD",
+    "block_timestamp": "1718711053984499857",
+    "block": {
+      "block_height": 121435039
+    },
+    "receipt_conversion_tokens_burnt": "30997569543800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 513734517751000000000,
+        "args": "{\"body\": {\"name\": \"DevRel Contributor Report for 2024-06-03 - 2024-06-16\", \"summary\": \"Decentralized DevRel Contribution Report by Garik Covering 03 June - 16 June\", \"category\": \"Decentralized DevRel\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"gagdiez.near\", \"description\": \"Summary of Work\\\\\\\\n\\\\\\\\n- Meetings/reports/etc: 9h\\\\\\\\n- Support: 1h\\\\\\\\n- Near Rust CLI ([fix command suggestion](https://github.com/near/near-cli-rs/pull/345)): 2h\\\\\\\\n- Near Rust CLI (fix command suggestion - tests): 23h\\\\\\\\n\\\\\\\\nTotal hours: 35\\\\\\\\nHourly rate: $50/hour\\\\\\\\nTotal amount: 1750$\", \"linked_proposals\": [], \"receiver_account\": \"cryptogarik.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"1750\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.680372153686e+21
+    }
+  },
+  {
+    "id": "5787275705",
+    "receipt_id": "945NQXgfxCbdCsHr3qfi5hgyrJho79N4wHbdJLfnjqrW",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6zVgAoWCskfHmLVC869FKVaaF3W8cS8czabL62CiG3vx",
+      "block_height": 121435041,
+      "block_timestamp": 1718711056647339000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4463010264270,
+      "tokens_burnt": 446301026427000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "BVmUFoedn671GYiUuyzEbPFUJn8ejp2hgc3N3Eni2Bfi",
+    "included_in_block_hash": "2aK7i7nbVhHYZhAsMhL1WYWF5vtGm9fQ4jpSUs38HgvD",
+    "block_timestamp": "1718711053984499857",
+    "block": {
+      "block_height": 121435039
+    },
+    "receipt_conversion_tokens_burnt": "30997569543800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 446301026427000000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Decentralized DevRel* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @cryptogarik.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}DevRel Contributor Report for 2024-06-03 - 2024-06-16\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nDecentralized DevRel Contribution Report by Garik Covering 03 June - 16 June\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=123)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.680372153686e+21
+    }
+  },
+  {
+    "id": "5787275714",
+    "receipt_id": "HdyFAfmXPNcXaqpAE1Mw9HrfC2PwFvWtEWCwFyktRSiF",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6zVgAoWCskfHmLVC869FKVaaF3W8cS8czabL62CiG3vx",
+      "block_height": 121435041,
+      "block_timestamp": 1718711056647339000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3381054311207,
+      "tokens_burnt": 338105431120700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "BVmUFoedn671GYiUuyzEbPFUJn8ejp2hgc3N3Eni2Bfi",
+    "included_in_block_hash": "2aK7i7nbVhHYZhAsMhL1WYWF5vtGm9fQ4jpSUs38HgvD",
+    "block_timestamp": "1718711053984499857",
+    "block": {
+      "block_height": 121435039
+    },
+    "receipt_conversion_tokens_burnt": "30997569543800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 338105431120700000000,
+        "args": "{\"proposal\": {\"id\": 123, \"snapshot\": {\"name\": \"DevRel Contributor Report for 2024-06-03 - 2024-06-16\", \"labels\": [], \"summary\": \"Decentralized DevRel Contribution Report by Garik Covering 03 June - 16 June\", \"category\": \"Decentralized DevRel\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"editor_id\": \"cryptogarik.near\", \"timestamp\": \"1718711055295882805\", \"supervisor\": \"gagdiez.near\", \"description\": \"Summary of Work\\\\\\\\n\\\\\\\\n- Meetings/reports/etc: 9h\\\\\\\\n- Support: 1h\\\\\\\\n- Near Rust CLI ([fix command suggestion](https://github.com/near/near-cli-rs/pull/345)): 2h\\\\\\\\n- Near Rust CLI (fix command suggestion - tests): 23h\\\\\\\\n\\\\\\\\nTotal hours: 35\\\\\\\\nHourly rate: $50/hour\\\\\\\\nTotal amount: 1750$\", \"linked_proposals\": [], \"receiver_account\": \"cryptogarik.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"1750\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"cryptogarik.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.680372153686e+21
+    }
+  },
+  {
+    "id": "5787275717",
+    "receipt_id": "AFy1Kz7sDbMxAAJRr1XNDXrPL74k2BGXgt7hvu89X26T",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6zVgAoWCskfHmLVC869FKVaaF3W8cS8czabL62CiG3vx",
+      "block_height": 121435041,
+      "block_timestamp": 1718711056647339000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3512336088435,
+      "tokens_burnt": 351233608843500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "BVmUFoedn671GYiUuyzEbPFUJn8ejp2hgc3N3Eni2Bfi",
+    "included_in_block_hash": "2aK7i7nbVhHYZhAsMhL1WYWF5vtGm9fQ4jpSUs38HgvD",
+    "block_timestamp": "1718711053984499857",
+    "block": {
+      "block_height": 121435039
+    },
+    "receipt_conversion_tokens_burnt": "30997569543800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351233608843500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":123,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"cryptogarik.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":123,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"cryptogarik.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.680372153686e+21
+    }
+  },
+  {
+    "id": "5788580541",
+    "receipt_id": "G5ppYcXn6sSew3U3o7dTXMg182BPboov5RjB7TFtqbEd",
+    "predecessor_account_id": "aumerez.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4Q9A9ZJJhcqYRqKBymbGoLdGR9E77xYQtfeSDDjRyeUU",
+      "block_height": 121438553,
+      "block_timestamp": 1718715050441666600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5361117773510,
+      "tokens_burnt": 536111777351000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "5zcw6vBsk2kCj4ykUXeoCLncJm4qudpFqsY7tuhNadEh",
+    "included_in_block_hash": "BncXbnpYhxANiDj25951cyco87iTtQez63kVB62omssB",
+    "block_timestamp": "1718715049133798792",
+    "block": {
+      "block_height": 121438552
+    },
+    "receipt_conversion_tokens_burnt": "31328040589000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 536111777351000000000,
+        "args": "{\"body\": {\"name\": \"Developer Relations - Events February-March\", \"summary\": \"5 Events Hackathons: Near DevRel ETH Denver, ETH Oxford, NFT Soho, ETH London, ETH Samba\", \"category\": \"Events & Hackathons\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"bpolania.near\", \"description\": \"# Requested Funding total 5 Events\\\\\\\\nTotal Hours: 198\\\\\\\\n\\\\\\\\nRate: $50/hour\\\\\\\\n\\\\\\\\nTotal Amount: $9,900\\\\\\\\n\\\\\\\\n# Events\\\\\\\\n# ETH Denver\\\\\\\\nTimeline\\\\\\\\nStart Date: February 23, 2024\\\\\\\\n\\\\\\\\nEnd Date: March 3, 2024\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n\\\\\\\\n# Requested Funding\\\\\\\\nHours: 79\\\\\\\\n\\\\\\\\nRate: $50/hour\\\\\\\\n\\\\\\\\nSub-Total Amount: $3,950\\\\\\\\n\\\\\\\\n# Summary of Activities\\\\\\\\nSupporting developers with questions they have through Discord and Telegram.\\\\\\\\nETH Denver prep call.\\\\\\\\nETH Denver support (23/3 - 3/4) assisting look for the engaginghackers.\\\\\\\\nETH Denver judging\\\\\\\\nInteraction with NEAR Campus events and initiatives.\\\\\\\\n\\\\\\\\n# ETH Oxford - NFT-Soho - ETH London\\\\\\\\nTimeline\\\\\\\\nStart Date: March 7, 2024\\\\\\\\n\\\\\\\\nEnd Date: March 17, 2024\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n\\\\\\\\n# Requested Funding\\\\\\\\nHours: 87\\\\\\\\n\\\\\\\\nRate: $50/hour\\\\\\\\n\\\\\\\\nSub-Total Amount: $4,350\\\\\\\\n\\\\\\\\n# Summary of Activities\\\\\\\\nSupporting developers with questions they have through Telegram.\\\\\\\\nInteraction with NEAR Campus events and initiatives.\\\\\\\\nLogstic support in the events.\\\\\\\\nETH Oxford prep calls.\\\\\\\\nETH Oxford support (6/4 - 10/4) guide hackers to use near and assisting them.\\\\\\\\nETH Oxford judging.\\\\\\\\nETH NFT-Soho prep calls.\\\\\\\\nETH NFT-Soho support (13/4) guide hackers to use near and assisting them.\\\\\\\\nETH NFT-Soho judging.\\\\\\\\nETH London prep call.\\\\\\\\nETH London support (23/3 - 3/4) guide hackers to use near and assisting them.\\\\\\\\nETH London judging\\\\\\\\n\\\\\\\\n# ETH Samba\\\\\\\\nTimeline\\\\\\\\nStart Date: March 21, 2024\\\\\\\\n\\\\\\\\nEnd Date: March 24, 2024\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n\\\\\\\\n# Requested Funding\\\\\\\\nHours: 32\\\\\\\\n\\\\\\\\nRate: $50/hour\\\\\\\\n\\\\\\\\nSub-Total Amount: $1600\\\\\\\\n\\\\\\\\n# Summary of Activities\\\\\\\\nSupporting developers with questions they have through Telegram.\\\\\\\\nInteraction with NEAR Campus events and initiatives.\\\\\\\\nLogstic support in the events.\\\\\\\\nETH Samba prep calls.\\\\\\\\nETH Samba support (6/4 - 10/4) guide hackers to use near and assisting them.\\\\\\\\nETH Samba judging.\", \"linked_proposals\": [], \"receiver_account\": \"aumerez.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"9900\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.725260767336e+21
+    }
+  },
+  {
+    "id": "5788582580",
+    "receipt_id": "45SkVC266UovQVRiHSVHTfCY3sQFzPyE3WMENzJUHQfv",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5z1V5mDYob3ev2TycE9FzPEyDAtj1CHxq4bTsfrz7ceV",
+      "block_height": 121438555,
+      "block_timestamp": 1718715052651858200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4463684355642,
+      "tokens_burnt": 446368435564200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5zcw6vBsk2kCj4ykUXeoCLncJm4qudpFqsY7tuhNadEh",
+    "included_in_block_hash": "BncXbnpYhxANiDj25951cyco87iTtQez63kVB62omssB",
+    "block_timestamp": "1718715049133798792",
+    "block": {
+      "block_height": 121438552
+    },
+    "receipt_conversion_tokens_burnt": "31328040589000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 446368435564200000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Events & Hackathons* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @aumerez.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Developer Relations - Events February-March\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n5 Events Hackathons: Near DevRel ETH Denver, ETH Oxford, NFT Soho, ETH London, ETH Samba\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=124)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.725260767336e+21
+    }
+  },
+  {
+    "id": "5788582584",
+    "receipt_id": "sfhR3jDYEGzhcBFDwhNn84PEgpnX37izUSn1dBYiL3J",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5z1V5mDYob3ev2TycE9FzPEyDAtj1CHxq4bTsfrz7ceV",
+      "block_height": 121438555,
+      "block_timestamp": 1718715052651858200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3519300137975,
+      "tokens_burnt": 351930013797500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "5zcw6vBsk2kCj4ykUXeoCLncJm4qudpFqsY7tuhNadEh",
+    "included_in_block_hash": "BncXbnpYhxANiDj25951cyco87iTtQez63kVB62omssB",
+    "block_timestamp": "1718715049133798792",
+    "block": {
+      "block_height": 121438552
+    },
+    "receipt_conversion_tokens_burnt": "31328040589000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 351930013797500000000,
+        "args": "{\"proposal\": {\"id\": 124, \"snapshot\": {\"name\": \"Developer Relations - Events February-March\", \"labels\": [], \"summary\": \"5 Events Hackathons: Near DevRel ETH Denver, ETH Oxford, NFT Soho, ETH London, ETH Samba\", \"category\": \"Events & Hackathons\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"editor_id\": \"aumerez.near\", \"timestamp\": \"1718715051584221194\", \"supervisor\": \"bpolania.near\", \"description\": \"# Requested Funding total 5 Events\\\\\\\\nTotal Hours: 198\\\\\\\\n\\\\\\\\nRate: $50/hour\\\\\\\\n\\\\\\\\nTotal Amount: $9,900\\\\\\\\n\\\\\\\\n# Events\\\\\\\\n# ETH Denver\\\\\\\\nTimeline\\\\\\\\nStart Date: February 23, 2024\\\\\\\\n\\\\\\\\nEnd Date: March 3, 2024\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n\\\\\\\\n# Requested Funding\\\\\\\\nHours: 79\\\\\\\\n\\\\\\\\nRate: $50/hour\\\\\\\\n\\\\\\\\nSub-Total Amount: $3,950\\\\\\\\n\\\\\\\\n# Summary of Activities\\\\\\\\nSupporting developers with questions they have through Discord and Telegram.\\\\\\\\nETH Denver prep call.\\\\\\\\nETH Denver support (23/3 - 3/4) assisting look for the engaginghackers.\\\\\\\\nETH Denver judging\\\\\\\\nInteraction with NEAR Campus events and initiatives.\\\\\\\\n\\\\\\\\n# ETH Oxford - NFT-Soho - ETH London\\\\\\\\nTimeline\\\\\\\\nStart Date: March 7, 2024\\\\\\\\n\\\\\\\\nEnd Date: March 17, 2024\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n\\\\\\\\n# Requested Funding\\\\\\\\nHours: 87\\\\\\\\n\\\\\\\\nRate: $50/hour\\\\\\\\n\\\\\\\\nSub-Total Amount: $4,350\\\\\\\\n\\\\\\\\n# Summary of Activities\\\\\\\\nSupporting developers with questions they have through Telegram.\\\\\\\\nInteraction with NEAR Campus events and initiatives.\\\\\\\\nLogstic support in the events.\\\\\\\\nETH Oxford prep calls.\\\\\\\\nETH Oxford support (6/4 - 10/4) guide hackers to use near and assisting them.\\\\\\\\nETH Oxford judging.\\\\\\\\nETH NFT-Soho prep calls.\\\\\\\\nETH NFT-Soho support (13/4) guide hackers to use near and assisting them.\\\\\\\\nETH NFT-Soho judging.\\\\\\\\nETH London prep call.\\\\\\\\nETH London support (23/3 - 3/4) guide hackers to use near and assisting them.\\\\\\\\nETH London judging\\\\\\\\n\\\\\\\\n# ETH Samba\\\\\\\\nTimeline\\\\\\\\nStart Date: March 21, 2024\\\\\\\\n\\\\\\\\nEnd Date: March 24, 2024\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n\\\\\\\\n# Requested Funding\\\\\\\\nHours: 32\\\\\\\\n\\\\\\\\nRate: $50/hour\\\\\\\\n\\\\\\\\nSub-Total Amount: $1600\\\\\\\\n\\\\\\\\n# Summary of Activities\\\\\\\\nSupporting developers with questions they have through Telegram.\\\\\\\\nInteraction with NEAR Campus events and initiatives.\\\\\\\\nLogstic support in the events.\\\\\\\\nETH Samba prep calls.\\\\\\\\nETH Samba support (6/4 - 10/4) guide hackers to use near and assisting them.\\\\\\\\nETH Samba judging.\", \"linked_proposals\": [], \"receiver_account\": \"aumerez.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"9900\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"aumerez.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.725260767336e+21
+    }
+  },
+  {
+    "id": "5788582588",
+    "receipt_id": "CyipFFsdzJKEsYdemNdBa9fToSbbFgRXibtH1TkU1dJY",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5z1V5mDYob3ev2TycE9FzPEyDAtj1CHxq4bTsfrz7ceV",
+      "block_height": 121438555,
+      "block_timestamp": 1718715052651858200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3595225000343,
+      "tokens_burnt": 359522500034300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5zcw6vBsk2kCj4ykUXeoCLncJm4qudpFqsY7tuhNadEh",
+    "included_in_block_hash": "BncXbnpYhxANiDj25951cyco87iTtQez63kVB62omssB",
+    "block_timestamp": "1718715049133798792",
+    "block": {
+      "block_height": 121438552
+    },
+    "receipt_conversion_tokens_burnt": "31328040589000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 359522500034300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":124,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"aumerez.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":124,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"aumerez.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.725260767336e+21
+    }
+  },
+  {
+    "id": "5789305105",
+    "receipt_id": "6Wdk8fBtqPKmrBe2vU73bUgH6wPcQFP6qGew1TVoPU4W",
+    "predecessor_account_id": "devbot.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6jesgibu4ejehkZafyJe1mcVauaZ6ZLmciiV9xucE2hR",
+      "block_height": 121440421,
+      "block_timestamp": 1718717178854748400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5306804820806,
+      "tokens_burnt": 530680482080600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "9yjd4BVDuTRFpMNBb2X4ZTB1y4cWFqrghZx6s4MobrKT",
+    "included_in_block_hash": "95NgYGBaH2edTmgc8hk3onucoZRd1Pf3cJ9Hj3HuZ3pZ",
+    "block_timestamp": "1718717177835460844",
+    "block": {
+      "block_height": 121440420
+    },
+    "receipt_conversion_tokens_burnt": "30836582295800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 530680482080600000000,
+        "args": "{\"id\": 49, \"timeline\": {\"status\": \"CANCELLED\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 911328877309500000000
+    }
+  },
+  {
+    "id": "5789305458",
+    "receipt_id": "MrAxzp5DgJqZhSjTrBqZzdQzv2beLomQesXDa9X9xLQ",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CUFAye8Eio2P59AxoUbyTzNpqLzqXrePiY7gQZwddjAk",
+      "block_height": 121440422,
+      "block_timestamp": 1718717179974450200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3498118129331,
+      "tokens_burnt": 349811812933100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "9yjd4BVDuTRFpMNBb2X4ZTB1y4cWFqrghZx6s4MobrKT",
+    "included_in_block_hash": "95NgYGBaH2edTmgc8hk3onucoZRd1Pf3cJ9Hj3HuZ3pZ",
+    "block_timestamp": "1718717177835460844",
+    "block": {
+      "block_height": 121440420
+    },
+    "receipt_conversion_tokens_burnt": "30836582295800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349811812933100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devbot.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":49,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devbot.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 911328877309500000000
+    }
+  },
+  {
+    "id": "5791976878",
+    "receipt_id": "JBDDF7Yi84RjdPznaSwNUyRXrQ7Y6mok3bqAtPJpi5VX",
+    "predecessor_account_id": "aumerez.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CdNcuY6m3WsAWxdrzEWPnFsNaeDuXZibKhoBTJAcSvc4",
+      "block_height": 121447144,
+      "block_timestamp": 1718725180597169700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5200120552990,
+      "tokens_burnt": 520012055299000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "F8AqcjVTprYqp2PKSRwXufLCrjNquY9qeobVJzs2cGtN",
+    "included_in_block_hash": "FpRKgqE7vcvwUP7HUjK3zDooQXGkbKp4R5JU4PRFhuJc",
+    "block_timestamp": "1718725179329746334",
+    "block": {
+      "block_height": 121447143
+    },
+    "receipt_conversion_tokens_burnt": "31093938299200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 520012055299000000000,
+        "args": "{\"body\": {\"name\": \"Expenses for ETH Denver, ETH Oxford, ETH London, NFT-Soho and ETH Samba\", \"summary\": \"Expenses for ETH Denver, ETH Oxford, ETH London, NFT-Soho and ETH Samba hackathons and events. \", \"category\": \"Events & Hackathons\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"bpolania.near\", \"description\": \"# Expenses 5 Events\\\\\\\\nI provided DevRel support at ETH Denver (February 23, 2024 - March 3, 2024), ETH Oxford - NFT-SOHO - ETH London (March 7, 2024 - March 17, 2024) and ETH Samba (March 21, 2024 - March 24, 2024).\\\\\\\\n\\\\\\\\n# Requested\\\\\\\\nTotal: $2,720.75\\\\\\\\n\\\\\\\\n# Details\\\\\\\\n# ETH Denver\\\\\\\\nFlights: $148.91\\\\\\\\nOther travel costs (taxi, train, bus) : $251.90\\\\\\\\nFood : $215.85\\\\\\\\n\\\\\\\\nSub-Total: $616.66\\\\\\\\n\\\\\\\\n# ETH Oxford - NFT-Soho ETH London\\\\\\\\nFlights: $$858.00\\\\\\\\nHotel (4 nights): $504.32 + $108.52 = $612.84\\\\\\\\nOther travel costs (taxi, train, bus) : $124.90\\\\\\\\nFood : $327.28\\\\\\\\n\\\\\\\\nTotal: $1,931.60\\\\\\\\n\\\\\\\\n# ETH Samba\\\\\\\\nOther travel costs (taxi, train, bus) : $93.75\\\\\\\\nFood : $87.32\\\\\\\\n\\\\\\\\nTotal: $181.07\\\\\\\\n\\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"aumerez.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"2721\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6984233030686e+21
+    }
+  },
+  {
+    "id": "5791978873",
+    "receipt_id": "Fmg5wTrEhDPFUQi9eEvzjGVraNeRWeZkUGbdrz5HufWh",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8XkiJ98He9iMtq8Kgdfg18Cb4FgqEHiGAKa9Vk8JAoHN",
+      "block_height": 121447145,
+      "block_timestamp": 1718725181955523600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4549604554274,
+      "tokens_burnt": 454960455427400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "F8AqcjVTprYqp2PKSRwXufLCrjNquY9qeobVJzs2cGtN",
+    "included_in_block_hash": "FpRKgqE7vcvwUP7HUjK3zDooQXGkbKp4R5JU4PRFhuJc",
+    "block_timestamp": "1718725179329746334",
+    "block": {
+      "block_height": 121447143
+    },
+    "receipt_conversion_tokens_burnt": "31093938299200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 454960455427400000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Events & Hackathons* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @aumerez.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Expenses for ETH Denver, ETH Oxford, ETH London, NFT-Soho and ETH Samba\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nExpenses for ETH Denver, ETH Oxford, ETH London, NFT-Soho and ETH Samba hackathons and events. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=125)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6984233030686e+21
+    }
+  },
+  {
+    "id": "5791978876",
+    "receipt_id": "7c2ozivem2ohACLh7N98atNYedG5eMUc1T1xanLai7Bv",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8XkiJ98He9iMtq8Kgdfg18Cb4FgqEHiGAKa9Vk8JAoHN",
+      "block_height": 121447145,
+      "block_timestamp": 1718725181955523600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3419275801379,
+      "tokens_burnt": 341927580137900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "F8AqcjVTprYqp2PKSRwXufLCrjNquY9qeobVJzs2cGtN",
+    "included_in_block_hash": "FpRKgqE7vcvwUP7HUjK3zDooQXGkbKp4R5JU4PRFhuJc",
+    "block_timestamp": "1718725179329746334",
+    "block": {
+      "block_height": 121447143
+    },
+    "receipt_conversion_tokens_burnt": "31093938299200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 341927580137900000000,
+        "args": "{\"proposal\": {\"id\": 125, \"snapshot\": {\"name\": \"Expenses for ETH Denver, ETH Oxford, ETH London, NFT-Soho and ETH Samba\", \"labels\": [], \"summary\": \"Expenses for ETH Denver, ETH Oxford, ETH London, NFT-Soho and ETH Samba hackathons and events. \", \"category\": \"Events & Hackathons\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"editor_id\": \"aumerez.near\", \"timestamp\": \"1718725180597169714\", \"supervisor\": \"bpolania.near\", \"description\": \"# Expenses 5 Events\\\\\\\\nI provided DevRel support at ETH Denver (February 23, 2024 - March 3, 2024), ETH Oxford - NFT-SOHO - ETH London (March 7, 2024 - March 17, 2024) and ETH Samba (March 21, 2024 - March 24, 2024).\\\\\\\\n\\\\\\\\n# Requested\\\\\\\\nTotal: $2,720.75\\\\\\\\n\\\\\\\\n# Details\\\\\\\\n# ETH Denver\\\\\\\\nFlights: $148.91\\\\\\\\nOther travel costs (taxi, train, bus) : $251.90\\\\\\\\nFood : $215.85\\\\\\\\n\\\\\\\\nSub-Total: $616.66\\\\\\\\n\\\\\\\\n# ETH Oxford - NFT-Soho ETH London\\\\\\\\nFlights: $$858.00\\\\\\\\nHotel (4 nights): $504.32 + $108.52 = $612.84\\\\\\\\nOther travel costs (taxi, train, bus) : $124.90\\\\\\\\nFood : $327.28\\\\\\\\n\\\\\\\\nTotal: $1,931.60\\\\\\\\n\\\\\\\\n# ETH Samba\\\\\\\\nOther travel costs (taxi, train, bus) : $93.75\\\\\\\\nFood : $87.32\\\\\\\\n\\\\\\\\nTotal: $181.07\\\\\\\\n\\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"aumerez.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"2721\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"aumerez.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6984233030686e+21
+    }
+  },
+  {
+    "id": "5791978878",
+    "receipt_id": "78MeCJHeVjLBgX9TJ7coHTVns91tksxPBHdNGeCW4KdE",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8XkiJ98He9iMtq8Kgdfg18Cb4FgqEHiGAKa9Vk8JAoHN",
+      "block_height": 121447145,
+      "block_timestamp": 1718725181955523600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3504292739051,
+      "tokens_burnt": 350429273905100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "F8AqcjVTprYqp2PKSRwXufLCrjNquY9qeobVJzs2cGtN",
+    "included_in_block_hash": "FpRKgqE7vcvwUP7HUjK3zDooQXGkbKp4R5JU4PRFhuJc",
+    "block_timestamp": "1718725179329746334",
+    "block": {
+      "block_height": 121447143
+    },
+    "receipt_conversion_tokens_burnt": "31093938299200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 350429273905100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bpolania.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":125,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"aumerez.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":125,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"aumerez.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6984233030686e+21
+    }
+  },
+  {
+    "id": "5792394607",
+    "receipt_id": "HGYf5LbUyR5Kv6SMBq8paLr756ZeApHHqztE45Q8bK39",
+    "predecessor_account_id": "megha19.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DViJWUaKVRM4rx5SSdfrH7odUeAdKAcJjFSimjeGjXNy",
+      "block_height": 121448231,
+      "block_timestamp": 1718726466927900200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6069203423873,
+      "tokens_burnt": 606920342387300000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "EdWSmz4FyuqfnHNUcrZ6Z7ky8zrW37BcXzKPyA9cq2tC",
+    "included_in_block_hash": "8cKEcBvHUZxtYEni67qrR33WsR7wvMYgvwYy1c7MCDGP",
+    "block_timestamp": "1718726465629836114",
+    "block": {
+      "block_height": 121448230
+    },
+    "receipt_conversion_tokens_burnt": "32453609764600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 606920342387300000000,
+        "args": "{\"body\": {\"name\": \"DevHub Developer Contributor report by Megha for 04/22/2024 \\\\\\\\u{2013} 05/19/2024\", \"summary\": \"Launch Infrastructure committee, hardening tasks for events and devhub instance, start work on treasury dashboard.\", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": \"theori.near\", \"description\": \"#### Summary of Activities\\\\\\\\n\\\\\\\\n##### Week 1 (20 May to May 26)\\\\\\\\n- Add GitHub CI job to deploy components on mainnet (1h)\\\\\\\\n- Test the whole RFP and proposals flow with timeline change, admin configuration (4h)\\\\\\\\n- Prepare for alpha testing, fixed some bugs (2h)\\\\\\\\n- Discuss with Peter about failing tests and new test cases (4h)\\\\\\\\n- Create new issues [#782](https://github.com/NEAR-DevHub/neardevhub-bos/issues/782) [#781](https://github.com/NEAR-DevHub/neardevhub-bos/issues/781) (0.5h)\\\\\\\\n- Share thoughts about maintenance of multiple instances [#777](https://github.com/NEAR-DevHub/neardevhub-bos/issues/777#issuecomment-2121011295) (1h)\\\\\\\\n- Figure out why there is empty log in new proposals, discuss with Vadim about new proposal version and add the fix to UI [#785](https://github.com/NEAR-DevHub/neardevhub-bos/issues/785) (3h)\\\\\\\\n- Remove fixed positioning for near org but not social for UX, figure out way to differentiate between gateways, figure out failing tests, on all three instances [#1163](https://github.com/near/near-discovery/issues/1163) [#782](https://github.com/NEAR-DevHub/neardevhub-bos/issues/782) (1d)\\\\\\\\n- Team call (0.5h)\\\\\\\\n- Go through treasury dashboard wireframe (0.5h)\\\\\\\\n- Fix the reported bugs and minor UI changes [#11](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/11) (1d)\\\\\\\\n- Fix the labels log issue [#7](https://github.com/Tguntenaar/neardevhub-widgets/pull/7) (2h)\\\\\\\\n- Discussion with Alpha testers about bugs and feature requests (4h)\\\\\\\\n- Discussion with Peter about \\\\\\\\u{201c}Don\\\\\\\\u{2019}t ask again\\\\\\\\u{201d} limitations and possible workarounds (2h)\\\\\\\\n\\\\\\\\nTotal: 40.5 hours\\\\\\\\n\\\\\\\\n##### Week 2 (27 May to June 2)\\\\\\\\n- Work on bugs reported, hidden dropdown, test proposal selected timeline for IC [#14](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/14) (5h)\\\\\\\\n- Fix onchange and onBlur console errors [#796](https://github.com/NEAR-DevHub/neardevhub-bos/pull/796) (1h)\\\\\\\\n- Review PRs of RFP and proposal tests (1h)\\\\\\\\n- Call with Peter and Thomas about maintenance of instances (1h)\\\\\\\\n- Fix feed filter for all three instances, add regression tests [#797](https://github.com/NEAR-DevHub/neardevhub-bos/pull/797) [#16](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/16) (1d)\\\\\\\\n- Add minor fixes for events-committee [#798](https://github.com/NEAR-DevHub/neardevhub-bos/pull/798) (3h)\\\\\\\\n- Team call (1h)\\\\\\\\n- Create tickets for feature requests made on alpha testing channel (1h)\\\\\\\\n- Add amount formatting for all three instances without effecting the value, add regression tests to avoid future errors [#799](https://github.com/NEAR-DevHub/neardevhub-bos/pull/799) (5h)\\\\\\\\n- Move timeline from edit RFP to view RFP page, like proposals view page, and update playwright tests, report to Vadim about bug in snapshot history [#17](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/17) (6h)\\\\\\\\n- Show modal after RFP/Proposal is created to navigate to view page and update playwright tests [#15](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/15) (6h)\\\\\\\\n- Get fix compose comment PR merged, discuss with Peter about the failing tests [#764](https://github.com/NEAR-DevHub/neardevhub-bos/pull/764)(1h)\\\\\\\\n- Figure out issue with devhub and events feed status not updated, update indexer query [#801](https://github.com/NEAR-DevHub/neardevhub-bos/pull/801) (2h)\\\\\\\\n- Create ticket for notifications (0.5h)\\\\\\\\n- Reply on PR reviews (1h)\\\\\\\\n- Add payment links in logs and use order by for all indexer queries [#19](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/19) (1h)\\\\\\\\n\\\\\\\\nTotal: 43.5 hours\\\\\\\\n\\\\\\\\n##### Week 3 (3 June to June 9)\\\\\\\\n- Test IC with Ori (1.5h)\\\\\\\\n- Figure out issue with deployment and text Vlad about it (0.5h)\\\\\\\\n- Make IC ready for launch, add about page, links and contract updates [#22](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/22) [#23](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/23) (3h)\\\\\\\\n- Discuss with Vadim about indexer editor ID issue (0.5h)\\\\\\\\n- IC improvements [#811](https://github.com/NEAR-DevHub/neardevhub-bos/issues/811) [#809](https://github.com/NEAR-DevHub/neardevhub-bos/issues/809) [#807](https://github.com/NEAR-DevHub/neardevhub-bos/issues/807) (1d)\\\\\\\\n- Update about page content [#26](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/26) (0.5h)\\\\\\\\n- Go through treasury tickets and discuss doubts with team (1h)\\\\\\\\n- Team call (1h)\\\\\\\\n- Add about configurator [#27](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/27) (6h)\\\\\\\\n- Use current gateway links for devhub and events-committee [#829](https://github.com/NEAR-DevHub/neardevhub-bos/pull/829) [#830](https://github.com/NEAR-DevHub/neardevhub-bos/pull/830) (3h)\\\\\\\\n- Fix overflow of linked proposals [#813](https://github.com/NEAR-DevHub/neardevhub-bos/issues/813) (1h)\\\\\\\\n- Fix fractal status when API is down [#832](https://github.com/NEAR-DevHub/neardevhub-bos/pull/832) (1h)\\\\\\\\n- Add account autocomplete for moderator tabs, for devhub and events committee and update tests [#833](https://github.com/NEAR-DevHub/neardevhub-bos/pull/833) (4h)\\\\\\\\n- Generalise notifications for near social and near org and [#836](https://github.com/NEAR-DevHub/neardevhub-bos/pull/836) [#830](https://github.com/near/near-discovery-components/pull/830) (1d)\\\\\\\\n- Update build of IC to match widget endpoints of devhub and events [#30](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/30) (3h)\\\\\\\\n- Update tests for feed as per Peter\\\\\\\\u{2019}s review [#797](https://github.com/NEAR-DevHub/neardevhub-bos/pull/797) (1h)\\\\\\\\n\\\\\\\\nTotal: 43 hours\\\\\\\\n\\\\\\\\n##### Week 4 (10 June to June 16)\\\\\\\\n- Call with Vadim about contract changes for notifications (0.5h)\\\\\\\\n- Show RFPs and proposals with # character in markdown for IC [#31](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/31) (3h)\\\\\\\\n- Review Vadim\\\\\\\\u{2019}s contract PR for notifications changes and request updates (0.5h)\\\\\\\\n- Commit suggested changes to existing PRs (3h)\\\\\\\\n- Call with Peter and Thomas regarding multiple instances implementation (1h)\\\\\\\\n- Figure out how to use different contract and indexer for playwright tests for infra repo (2h) \\\\\\\\n- Start work on treasury dashboard, setup bos-workspace for handling multiple instances, deployment script, update playwright config [#26](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/26) (1d)\\\\\\\\n- Team call (1h)\\\\\\\\n- Add common css, theme, data file and integrate with navbar, layout, footer components  [#26](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/26)  (1d) \\\\\\\\n- Worked on dashboard page, portfolio and transaction history [#27](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/27) (1d)\\\\\\\\n- Discuss with Peter about transaction history, how to show absolute and relative balance, and tests for dashboard page (1h)\\\\\\\\n- Integrate near blocks API for transaction history, try to get balance after each transaction (4h)\\\\\\\\n\\\\\\\\nTotal: 40 hours\\\\\\\\n\\\\\\\\nTotal Hours: 167\\\\\\\\nHourly rate: $50/h\\\\\\\\nTotal: 8350 USD\", \"linked_proposals\": [], \"receiver_account\": \"megha19.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"8350\", \"requested_sponsorship_paid_in_currency\": \"OTHER\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8444253427293e+21
+    }
+  },
+  {
+    "id": "5792394735",
+    "receipt_id": "8krxarPGsaDP9izKEsZn8m7D4nhoZTDuNs7zGHeaFdYL",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "25e6xr62NFYAyn9eJxFzR1mLfX3UhkpMT6rhRAj9qCNf",
+      "block_height": 121448232,
+      "block_timestamp": 1718726468399553300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4470753797186,
+      "tokens_burnt": 447075379718600000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "EdWSmz4FyuqfnHNUcrZ6Z7ky8zrW37BcXzKPyA9cq2tC",
+    "included_in_block_hash": "8cKEcBvHUZxtYEni67qrR33WsR7wvMYgvwYy1c7MCDGP",
+    "block_timestamp": "1718726465629836114",
+    "block": {
+      "block_height": 121448230
+    },
+    "receipt_conversion_tokens_burnt": "32453609764600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 447075379718600000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *DevDAO Platform* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @megha19.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}DevHub Developer Contributor report by Megha for 04/22/2024 \\\\\\\\u{2013} 05/19/2024\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nLaunch Infrastructure committee, hardening tasks for events and devhub instance, start work on treasury dashboard.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=126)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8444253427293e+21
+    }
+  },
+  {
+    "id": "5792394737",
+    "receipt_id": "9w2i9Lic65wUmHsygUZmoo8wJbip2YKazdvVtWD5HQsz",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "25e6xr62NFYAyn9eJxFzR1mLfX3UhkpMT6rhRAj9qCNf",
+      "block_height": 121448232,
+      "block_timestamp": 1718726468399553300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4054181228711,
+      "tokens_burnt": 405418122871100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "EdWSmz4FyuqfnHNUcrZ6Z7ky8zrW37BcXzKPyA9cq2tC",
+    "included_in_block_hash": "8cKEcBvHUZxtYEni67qrR33WsR7wvMYgvwYy1c7MCDGP",
+    "block_timestamp": "1718726465629836114",
+    "block": {
+      "block_height": 121448230
+    },
+    "receipt_conversion_tokens_burnt": "32453609764600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 405418122871100000000,
+        "args": "{\"proposal\": {\"id\": 126, \"snapshot\": {\"name\": \"DevHub Developer Contributor report by Megha for 04/22/2024 \\\\\\\\u{2013} 05/19/2024\", \"labels\": [], \"summary\": \"Launch Infrastructure committee, hardening tasks for events and devhub instance, start work on treasury dashboard.\", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"megha19.near\", \"timestamp\": \"1718726466927900159\", \"supervisor\": \"theori.near\", \"description\": \"#### Summary of Activities\\\\\\\\n\\\\\\\\n##### Week 1 (20 May to May 26)\\\\\\\\n- Add GitHub CI job to deploy components on mainnet (1h)\\\\\\\\n- Test the whole RFP and proposals flow with timeline change, admin configuration (4h)\\\\\\\\n- Prepare for alpha testing, fixed some bugs (2h)\\\\\\\\n- Discuss with Peter about failing tests and new test cases (4h)\\\\\\\\n- Create new issues [#782](https://github.com/NEAR-DevHub/neardevhub-bos/issues/782) [#781](https://github.com/NEAR-DevHub/neardevhub-bos/issues/781) (0.5h)\\\\\\\\n- Share thoughts about maintenance of multiple instances [#777](https://github.com/NEAR-DevHub/neardevhub-bos/issues/777#issuecomment-2121011295) (1h)\\\\\\\\n- Figure out why there is empty log in new proposals, discuss with Vadim about new proposal version and add the fix to UI [#785](https://github.com/NEAR-DevHub/neardevhub-bos/issues/785) (3h)\\\\\\\\n- Remove fixed positioning for near org but not social for UX, figure out way to differentiate between gateways, figure out failing tests, on all three instances [#1163](https://github.com/near/near-discovery/issues/1163) [#782](https://github.com/NEAR-DevHub/neardevhub-bos/issues/782) (1d)\\\\\\\\n- Team call (0.5h)\\\\\\\\n- Go through treasury dashboard wireframe (0.5h)\\\\\\\\n- Fix the reported bugs and minor UI changes [#11](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/11) (1d)\\\\\\\\n- Fix the labels log issue [#7](https://github.com/Tguntenaar/neardevhub-widgets/pull/7) (2h)\\\\\\\\n- Discussion with Alpha testers about bugs and feature requests (4h)\\\\\\\\n- Discussion with Peter about \\\\\\\\u{201c}Don\\\\\\\\u{2019}t ask again\\\\\\\\u{201d} limitations and possible workarounds (2h)\\\\\\\\n\\\\\\\\nTotal: 40.5 hours\\\\\\\\n\\\\\\\\n##### Week 2 (27 May to June 2)\\\\\\\\n- Work on bugs reported, hidden dropdown, test proposal selected timeline for IC [#14](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/14) (5h)\\\\\\\\n- Fix onchange and onBlur console errors [#796](https://github.com/NEAR-DevHub/neardevhub-bos/pull/796) (1h)\\\\\\\\n- Review PRs of RFP and proposal tests (1h)\\\\\\\\n- Call with Peter and Thomas about maintenance of instances (1h)\\\\\\\\n- Fix feed filter for all three instances, add regression tests [#797](https://github.com/NEAR-DevHub/neardevhub-bos/pull/797) [#16](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/16) (1d)\\\\\\\\n- Add minor fixes for events-committee [#798](https://github.com/NEAR-DevHub/neardevhub-bos/pull/798) (3h)\\\\\\\\n- Team call (1h)\\\\\\\\n- Create tickets for feature requests made on alpha testing channel (1h)\\\\\\\\n- Add amount formatting for all three instances without effecting the value, add regression tests to avoid future errors [#799](https://github.com/NEAR-DevHub/neardevhub-bos/pull/799) (5h)\\\\\\\\n- Move timeline from edit RFP to view RFP page, like proposals view page, and update playwright tests, report to Vadim about bug in snapshot history [#17](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/17) (6h)\\\\\\\\n- Show modal after RFP/Proposal is created to navigate to view page and update playwright tests [#15](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/15) (6h)\\\\\\\\n- Get fix compose comment PR merged, discuss with Peter about the failing tests [#764](https://github.com/NEAR-DevHub/neardevhub-bos/pull/764)(1h)\\\\\\\\n- Figure out issue with devhub and events feed status not updated, update indexer query [#801](https://github.com/NEAR-DevHub/neardevhub-bos/pull/801) (2h)\\\\\\\\n- Create ticket for notifications (0.5h)\\\\\\\\n- Reply on PR reviews (1h)\\\\\\\\n- Add payment links in logs and use order by for all indexer queries [#19](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/19) (1h)\\\\\\\\n\\\\\\\\nTotal: 43.5 hours\\\\\\\\n\\\\\\\\n##### Week 3 (3 June to June 9)\\\\\\\\n- Test IC with Ori (1.5h)\\\\\\\\n- Figure out issue with deployment and text Vlad about it (0.5h)\\\\\\\\n- Make IC ready for launch, add about page, links and contract updates [#22](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/22) [#23](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/23) (3h)\\\\\\\\n- Discuss with Vadim about indexer editor ID issue (0.5h)\\\\\\\\n- IC improvements [#811](https://github.com/NEAR-DevHub/neardevhub-bos/issues/811) [#809](https://github.com/NEAR-DevHub/neardevhub-bos/issues/809) [#807](https://github.com/NEAR-DevHub/neardevhub-bos/issues/807) (1d)\\\\\\\\n- Update about page content [#26](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/26) (0.5h)\\\\\\\\n- Go through treasury tickets and discuss doubts with team (1h)\\\\\\\\n- Team call (1h)\\\\\\\\n- Add about configurator [#27](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/27) (6h)\\\\\\\\n- Use current gateway links for devhub and events-committee [#829](https://github.com/NEAR-DevHub/neardevhub-bos/pull/829) [#830](https://github.com/NEAR-DevHub/neardevhub-bos/pull/830) (3h)\\\\\\\\n- Fix overflow of linked proposals [#813](https://github.com/NEAR-DevHub/neardevhub-bos/issues/813) (1h)\\\\\\\\n- Fix fractal status when API is down [#832](https://github.com/NEAR-DevHub/neardevhub-bos/pull/832) (1h)\\\\\\\\n- Add account autocomplete for moderator tabs, for devhub and events committee and update tests [#833](https://github.com/NEAR-DevHub/neardevhub-bos/pull/833) (4h)\\\\\\\\n- Generalise notifications for near social and near org and [#836](https://github.com/NEAR-DevHub/neardevhub-bos/pull/836) [#830](https://github.com/near/near-discovery-components/pull/830) (1d)\\\\\\\\n- Update build of IC to match widget endpoints of devhub and events [#30](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/30) (3h)\\\\\\\\n- Update tests for feed as per Peter\\\\\\\\u{2019}s review [#797](https://github.com/NEAR-DevHub/neardevhub-bos/pull/797) (1h)\\\\\\\\n\\\\\\\\nTotal: 43 hours\\\\\\\\n\\\\\\\\n##### Week 4 (10 June to June 16)\\\\\\\\n- Call with Vadim about contract changes for notifications (0.5h)\\\\\\\\n- Show RFPs and proposals with # character in markdown for IC [#31](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/31) (3h)\\\\\\\\n- Review Vadim\\\\\\\\u{2019}s contract PR for notifications changes and request updates (0.5h)\\\\\\\\n- Commit suggested changes to existing PRs (3h)\\\\\\\\n- Call with Peter and Thomas regarding multiple instances implementation (1h)\\\\\\\\n- Figure out how to use different contract and indexer for playwright tests for infra repo (2h) \\\\\\\\n- Start work on treasury dashboard, setup bos-workspace for handling multiple instances, deployment script, update playwright config [#26](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/26) (1d)\\\\\\\\n- Team call (1h)\\\\\\\\n- Add common css, theme, data file and integrate with navbar, layout, footer components  [#26](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/26)  (1d) \\\\\\\\n- Worked on dashboard page, portfolio and transaction history [#27](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/27) (1d)\\\\\\\\n- Discuss with Peter about transaction history, how to show absolute and relative balance, and tests for dashboard page (1h)\\\\\\\\n- Integrate near blocks API for transaction history, try to get balance after each transaction (4h)\\\\\\\\n\\\\\\\\nTotal: 40 hours\\\\\\\\n\\\\\\\\nTotal Hours: 167\\\\\\\\nHourly rate: $50/h\\\\\\\\nTotal: 8350 USD\", \"linked_proposals\": [], \"receiver_account\": \"megha19.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"8350\", \"requested_sponsorship_paid_in_currency\": \"OTHER\"}, \"author_id\": \"megha19.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8444253427293e+21
+    }
+  },
+  {
+    "id": "5792394739",
+    "receipt_id": "EktdWVx23FPTtWmGdTJUGudpnT4icNdRc8cY8ScyAhFp",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "25e6xr62NFYAyn9eJxFzR1mLfX3UhkpMT6rhRAj9qCNf",
+      "block_height": 121448232,
+      "block_timestamp": 1718726468399553300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3525578879877,
+      "tokens_burnt": 352557887987700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "EdWSmz4FyuqfnHNUcrZ6Z7ky8zrW37BcXzKPyA9cq2tC",
+    "included_in_block_hash": "8cKEcBvHUZxtYEni67qrR33WsR7wvMYgvwYy1c7MCDGP",
+    "block_timestamp": "1718726465629836114",
+    "block": {
+      "block_height": 121448230
+    },
+    "receipt_conversion_tokens_burnt": "32453609764600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352557887987700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":126,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"megha19.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":126,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"megha19.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8444253427293e+21
+    }
+  },
+  {
+    "id": "5792427061",
+    "receipt_id": "776CGDm4xQULBbjD48ypPqvk9cKpF1oJ3siqPVfvG6Yo",
+    "predecessor_account_id": "megha19.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8k9iwczwQ4uR7BQBrPTXsAFo8iv5fv11zmSfbQQk9mjp",
+      "block_height": 121448319,
+      "block_timestamp": 1718726582144348700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5808478366799,
+      "tokens_burnt": 580847836679900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "BDMy8FbUXNEMCeHGX6b9FAofwXX9GAVz1HK1vDz684eH",
+    "included_in_block_hash": "8FKxChaKDkNV9fGNt2NZvKiviMed95o94rgNNPkFKSpY",
+    "block_timestamp": "1718726580835522664",
+    "block": {
+      "block_height": 121448318
+    },
+    "receipt_conversion_tokens_burnt": "32455845698600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 580847836679900000000,
+        "args": "{\"id\": 126, \"body\": {\"name\": \"DevHub Developer Contributor report by Megha for 05/20/2024 \\\\\\\\u{2013} 06/16/2024\", \"summary\": \"Launch Infrastructure committee, hardening tasks for events and devhub instance, start work on treasury dashboard.\", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": \"theori.near\", \"description\": \"#### Summary of Activities\\\\\\\\n\\\\\\\\n##### Week 1 (20 May to May 26)\\\\\\\\n- Add GitHub CI job to deploy components on mainnet (1h)\\\\\\\\n- Test the whole RFP and proposals flow with timeline change, admin configuration (4h)\\\\\\\\n- Prepare for alpha testing, fixed some bugs (2h)\\\\\\\\n- Discuss with Peter about failing tests and new test cases (4h)\\\\\\\\n- Create new issues [#782](https://github.com/NEAR-DevHub/neardevhub-bos/issues/782) [#781](https://github.com/NEAR-DevHub/neardevhub-bos/issues/781) (0.5h)\\\\\\\\n- Share thoughts about maintenance of multiple instances [#777](https://github.com/NEAR-DevHub/neardevhub-bos/issues/777#issuecomment-2121011295) (1h)\\\\\\\\n- Figure out why there is empty log in new proposals, discuss with Vadim about new proposal version and add the fix to UI [#785](https://github.com/NEAR-DevHub/neardevhub-bos/issues/785) (3h)\\\\\\\\n- Remove fixed positioning for near org but not social for UX, figure out way to differentiate between gateways, figure out failing tests, on all three instances [#1163](https://github.com/near/near-discovery/issues/1163) [#782](https://github.com/NEAR-DevHub/neardevhub-bos/issues/782) (1d)\\\\\\\\n- Team call (0.5h)\\\\\\\\n- Go through treasury dashboard wireframe (0.5h)\\\\\\\\n- Fix the reported bugs and minor UI changes [#11](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/11) (1d)\\\\\\\\n- Fix the labels log issue [#7](https://github.com/Tguntenaar/neardevhub-widgets/pull/7) (2h)\\\\\\\\n- Discussion with Alpha testers about bugs and feature requests (4h)\\\\\\\\n- Discussion with Peter about \\\\\\\\u{201c}Don\\\\\\\\u{2019}t ask again\\\\\\\\u{201d} limitations and possible workarounds (2h)\\\\\\\\n\\\\\\\\nTotal: 40.5 hours\\\\\\\\n\\\\\\\\n##### Week 2 (27 May to June 2)\\\\\\\\n- Work on bugs reported, hidden dropdown, test proposal selected timeline for IC [#14](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/14) (5h)\\\\\\\\n- Fix onchange and onBlur console errors [#796](https://github.com/NEAR-DevHub/neardevhub-bos/pull/796) (1h)\\\\\\\\n- Review PRs of RFP and proposal tests (1h)\\\\\\\\n- Call with Peter and Thomas about maintenance of instances (1h)\\\\\\\\n- Fix feed filter for all three instances, add regression tests [#797](https://github.com/NEAR-DevHub/neardevhub-bos/pull/797) [#16](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/16) (1d)\\\\\\\\n- Add minor fixes for events-committee [#798](https://github.com/NEAR-DevHub/neardevhub-bos/pull/798) (3h)\\\\\\\\n- Team call (1h)\\\\\\\\n- Create tickets for feature requests made on alpha testing channel (1h)\\\\\\\\n- Add amount formatting for all three instances without effecting the value, add regression tests to avoid future errors [#799](https://github.com/NEAR-DevHub/neardevhub-bos/pull/799) (5h)\\\\\\\\n- Move timeline from edit RFP to view RFP page, like proposals view page, and update playwright tests, report to Vadim about bug in snapshot history [#17](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/17) (6h)\\\\\\\\n- Show modal after RFP/Proposal is created to navigate to view page and update playwright tests [#15](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/15) (6h)\\\\\\\\n- Get fix compose comment PR merged, discuss with Peter about the failing tests [#764](https://github.com/NEAR-DevHub/neardevhub-bos/pull/764)(1h)\\\\\\\\n- Figure out issue with devhub and events feed status not updated, update indexer query [#801](https://github.com/NEAR-DevHub/neardevhub-bos/pull/801) (2h)\\\\\\\\n- Create ticket for notifications (0.5h)\\\\\\\\n- Reply on PR reviews (1h)\\\\\\\\n- Add payment links in logs and use order by for all indexer queries [#19](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/19) (1h)\\\\\\\\n\\\\\\\\nTotal: 43.5 hours\\\\\\\\n\\\\\\\\n##### Week 3 (3 June to June 9)\\\\\\\\n- Test IC with Ori (1.5h)\\\\\\\\n- Figure out issue with deployment and text Vlad about it (0.5h)\\\\\\\\n- Make IC ready for launch, add about page, links and contract updates [#22](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/22) [#23](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/23) (3h)\\\\\\\\n- Discuss with Vadim about indexer editor ID issue (0.5h)\\\\\\\\n- IC improvements [#811](https://github.com/NEAR-DevHub/neardevhub-bos/issues/811) [#809](https://github.com/NEAR-DevHub/neardevhub-bos/issues/809) [#807](https://github.com/NEAR-DevHub/neardevhub-bos/issues/807) (1d)\\\\\\\\n- Update about page content [#26](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/26) (0.5h)\\\\\\\\n- Go through treasury tickets and discuss doubts with team (1h)\\\\\\\\n- Team call (1h)\\\\\\\\n- Add about configurator [#27](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/27) (6h)\\\\\\\\n- Use current gateway links for devhub and events-committee [#829](https://github.com/NEAR-DevHub/neardevhub-bos/pull/829) [#830](https://github.com/NEAR-DevHub/neardevhub-bos/pull/830) (3h)\\\\\\\\n- Fix overflow of linked proposals [#813](https://github.com/NEAR-DevHub/neardevhub-bos/issues/813) (1h)\\\\\\\\n- Fix fractal status when API is down [#832](https://github.com/NEAR-DevHub/neardevhub-bos/pull/832) (1h)\\\\\\\\n- Add account autocomplete for moderator tabs, for devhub and events committee and update tests [#833](https://github.com/NEAR-DevHub/neardevhub-bos/pull/833) (4h)\\\\\\\\n- Generalise notifications for near social and near org and [#836](https://github.com/NEAR-DevHub/neardevhub-bos/pull/836) [#830](https://github.com/near/near-discovery-components/pull/830) (1d)\\\\\\\\n- Update build of IC to match widget endpoints of devhub and events [#30](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/30) (3h)\\\\\\\\n- Update tests for feed as per Peter\\\\\\\\u{2019}s review [#797](https://github.com/NEAR-DevHub/neardevhub-bos/pull/797) (1h)\\\\\\\\n\\\\\\\\nTotal: 43 hours\\\\\\\\n\\\\\\\\n##### Week 4 (10 June to June 16)\\\\\\\\n- Call with Vadim about contract changes for notifications (0.5h)\\\\\\\\n- Show RFPs and proposals with # character in markdown for IC [#31](https://github.com/NEAR-DevHub/near-prpsls-bos/pull/31) (3h)\\\\\\\\n- Review Vadim\\\\\\\\u{2019}s contract PR for notifications changes and request updates (0.5h)\\\\\\\\n- Commit suggested changes to existing PRs (3h)\\\\\\\\n- Call with Peter and Thomas regarding multiple instances implementation (1h)\\\\\\\\n- Figure out how to use different contract and indexer for playwright tests for infra repo (2h) \\\\\\\\n- Start work on treasury dashboard, setup bos-workspace for handling multiple instances, deployment script, update playwright config [#26](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/26) (1d)\\\\\\\\n- Team call (1h)\\\\\\\\n- Add common css, theme, data file and integrate with navbar, layout, footer components  [#26](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/26)  (1d) \\\\\\\\n- Worked on dashboard page, portfolio and transaction history [#27](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/27) (1d)\\\\\\\\n- Discuss with Peter about transaction history, how to show absolute and relative balance, and tests for dashboard page (1h)\\\\\\\\n- Integrate near blocks API for transaction history, try to get balance after each transaction (4h)\\\\\\\\n\\\\\\\\nTotal: 40 hours\\\\\\\\n\\\\\\\\nTotal Hours: 167\\\\\\\\nHourly rate: $50/h\\\\\\\\nTotal: 8350 USD\", \"linked_proposals\": [], \"receiver_account\": \"megha19.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"8350\", \"requested_sponsorship_paid_in_currency\": \"OTHER\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 963141852547200000000
+    }
+  },
+  {
+    "id": "5792430425",
+    "receipt_id": "52pTrWWkC5hN3vFe4pcJEfhCSJsMeHDMdRXwkHwernzT",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Vrbw4PmTXiAbubzUgoEHHdzGs6DsSAU2LuryFjoWo8P",
+      "block_height": 121448324,
+      "block_timestamp": 1718726588798133000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3498381701687,
+      "tokens_burnt": 349838170168700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "BDMy8FbUXNEMCeHGX6b9FAofwXX9GAVz1HK1vDz684eH",
+    "included_in_block_hash": "8FKxChaKDkNV9fGNt2NZvKiviMed95o94rgNNPkFKSpY",
+    "block_timestamp": "1718726580835522664",
+    "block": {
+      "block_height": 121448318
+    },
+    "receipt_conversion_tokens_burnt": "32455845698600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349838170168700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"megha19.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":126,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"megha19.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 963141852547200000000
+    }
+  },
+  {
+    "id": "5792467217",
+    "receipt_id": "8LoQQqUYZgSnbzMkeaW8JnaadWBQzwg1psJ72Vj1rcdN",
+    "predecessor_account_id": "megha19.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6waACGsSUeJXtnRUznzkKvbK3AZgDsvAvdZnRyNnpeut",
+      "block_height": 121448409,
+      "block_timestamp": 1718726700893430500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6749710631784,
+      "tokens_burnt": 674971063178400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "AevAYEuNuobrtu45Zd9uwqRuLEEv2fwtTRF7kHwQz1h4",
+    "included_in_block_hash": "7p3W4WxwpiqcEjQQBmhEPsbzaaUtbH9wRHws98viNW2r",
+    "block_timestamp": "1718726699635337564",
+    "block": {
+      "block_height": 121448408
+    },
+    "receipt_conversion_tokens_burnt": "30836135109000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 674971063178400000000,
+        "args": "{\"id\": 126, \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0549106832677e+21
+    }
+  },
+  {
+    "id": "5792467603",
+    "receipt_id": "BvH5YACv7VdNim6HW7DZvu2znh6sqcQ4ZCEMAMWqgR3y",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EjUhzqLdWj61qYQm8kF65DEFwknsuc6wknKcZvNJqc6V",
+      "block_height": 121448410,
+      "block_timestamp": 1718726702291740000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3491034849803,
+      "tokens_burnt": 349103484980300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "AevAYEuNuobrtu45Zd9uwqRuLEEv2fwtTRF7kHwQz1h4",
+    "included_in_block_hash": "7p3W4WxwpiqcEjQQBmhEPsbzaaUtbH9wRHws98viNW2r",
+    "block_timestamp": "1718726699635337564",
+    "block": {
+      "block_height": 121448408
+    },
+    "receipt_conversion_tokens_burnt": "30836135109000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349103484980300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"megha19.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":126,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"megha19.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0549106832677e+21
+    }
+  },
+  {
+    "id": "5793155930",
+    "receipt_id": "J9rd12u6rvpFk4CQeaCrJxLJY3HW33XToe4wA3QALutY",
+    "predecessor_account_id": "gagdiez.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9sSgM78FptSxHLB7W2MFJiRPnRoaHPaLVCtRiz1r7reE",
+      "block_height": 121450132,
+      "block_timestamp": 1718728698279915800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4191118696722,
+      "tokens_burnt": 419111869672200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "2PPVcZAndgUtBPog6NT2bpoW8ZDcQbZMCvCuSSEJA8j6",
+    "included_in_block_hash": "4fpiK4wbfKBE4raXhzS82Ya3V6Rz9DJUy6bUB8ktRdgu",
+    "block_timestamp": "1718728697285064734",
+    "block": {
+      "block_height": 121450131
+    },
+    "receipt_conversion_tokens_burnt": "30858047262200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 419111869672200000000,
+        "args": "{\"id\": 123, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": false, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 799118271571100000000
+    }
+  },
+  {
+    "id": "5793156315",
+    "receipt_id": "AZwsL6amDTfN42uMXNpagBqgsNRBy7hs5jTZjePpRqeE",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6aXWXJWutw7UFS7oTfnXKWo47rfQDN1QKrbzf9BExnNE",
+      "block_height": 121450133,
+      "block_timestamp": 1718728699512941000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3491483546367,
+      "tokens_burnt": 349148354636700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "2PPVcZAndgUtBPog6NT2bpoW8ZDcQbZMCvCuSSEJA8j6",
+    "included_in_block_hash": "4fpiK4wbfKBE4raXhzS82Ya3V6Rz9DJUy6bUB8ktRdgu",
+    "block_timestamp": "1718728697285064734",
+    "block": {
+      "block_height": 121450131
+    },
+    "receipt_conversion_tokens_burnt": "30858047262200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349148354636700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"cryptogarik.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":123,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 799118271571100000000
+    }
+  },
+  {
+    "id": "5793178455",
+    "receipt_id": "Fqfvwbt9RYv28uGHyuEKUeXkwfwUPaBjM3wK2Uh79Du5",
+    "predecessor_account_id": "gagdiez.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "pr935UqJyPgcQEZWrouVSRu811aihKVSTbzYjQm7g38",
+      "block_height": 121450188,
+      "block_timestamp": 1718728765033411800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4375510592340,
+      "tokens_burnt": 437551059234000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "ATpd1b54wpqbMe7aXWFccJUpfQVFdG4Vr8bYHQGvNN3R",
+    "included_in_block_hash": "Dft6tsTfAHV1CtiN8AW2qgYo5gYdKKfoJ1khGqDdni2a",
+    "block_timestamp": "1718728764163837158",
+    "block": {
+      "block_height": 121450187
+    },
+    "receipt_conversion_tokens_burnt": "30858047262200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 437551059234000000000,
+        "args": "{\"id\": 123, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": false, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 818949269065100000000
+    }
+  }
+]

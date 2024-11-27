@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "8625714076",
+    "receipt_id": "G72rs8zcdHgBFzFe4JUDsjqsyZzM2TkWXCR71SonBsoi",
+    "predecessor_account_id": "yarotska.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "MZyqLSWmgA3KADniz37CQCdjszaycH559enzkBFez1f",
+      "block_height": 128799554,
+      "block_timestamp": 1727192467816233000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7251467346408,
+      "tokens_burnt": 725146734640800000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "J4wPfUNkyA6ekh9Dr8fdeMGhW1Qv8JT1su9w8NErFVwv",
+    "included_in_block_hash": "5EJC8MtrB3FdSKLwgNP7m9YDXKFG1yrhfF5NWj9q92NJ",
+    "block_timestamp": "1727192466568925854",
+    "block": {
+      "block_height": 128799553
+    },
+    "receipt_conversion_tokens_burnt": "32064800076000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 725146734640800000000,
+        "args": "{\"id\": 40, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1100835725375e+21
+    }
+  },
+  {
+    "id": "8625714392",
+    "receipt_id": "5pDAPiz6g7AxS6mXZEcsF7L6jXgpyDDT1fLcL2mgTvox",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "J6qE9dXXYpGPepo8jFbeatBjDM34PEsZJqqyj5YUJZkf",
+      "block_height": 128799555,
+      "block_timestamp": 1727192469151441000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3528720378207,
+      "tokens_burnt": 352872037820700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "J4wPfUNkyA6ekh9Dr8fdeMGhW1Qv8JT1su9w8NErFVwv",
+    "included_in_block_hash": "5EJC8MtrB3FdSKLwgNP7m9YDXKFG1yrhfF5NWj9q92NJ",
+    "block_timestamp": "1727192466568925854",
+    "block": {
+      "block_height": 128799553
+    },
+    "receipt_conversion_tokens_burnt": "32064800076000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352872037820700000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"toronto-sc.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":40,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"yarotska.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1100835725375e+21
+    }
+  },
+  {
+    "id": "8642154665",
+    "receipt_id": "7WeFmP4xSFFYf2SguQTk5ve7pxWuxr1ia7PYck3G2yds",
+    "predecessor_account_id": "irvingzcc.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "yQSvK4uSFQn31QasKf9gsJrQjPXCT8LYzSpAe3LuRRZ",
+      "block_height": 128837454,
+      "block_timestamp": 1727239632076291800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7136866200888,
+      "tokens_burnt": 713686620088800000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "AychBCrFWhvTGQR1hejUrmqWFtNWbX2gNJDCMmGNJjH4",
+    "included_in_block_hash": "5U3PZJicqUtD5VnYELmWAthFMuhZfz8VW7WVjdJW25Yq",
+    "block_timestamp": "1727239631117009611",
+    "block": {
+      "block_height": 128837453
+    },
+    "receipt_conversion_tokens_burnt": "69877986071000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 713686620088800000000,
+        "args": "{\"body\": {\"name\": \"Open Web House [REDACTED] city node - Powered by Hackbox\", \"summary\": \"Open Web House [REDACTED] Powered by Hackbox is a hackathon where blockchain technologies are used to create prototypes. EVM\\\\\\\\\\\\'s backend technology and NEAR\\\\\\\\\\\\'s easy Blockchain Operating System (BOS) frontend tools generate disruptive and scalable solutions to current Web 3.0 problems.\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"### TL;DR\\\\\\\\u{26a1}\\\\\\\\nOpen Web House [REDACTED] Powered by Hackbox is a hackathon where blockchain technologies are used to create prototypes. EVM\\\\\\\\\\\\'s backend technology and NEAR\\\\\\\\\\\\'s easy Blockchain Operating System (BOS) frontend tools generate disruptive and scalable solutions to current Web 3.0 problems.\\\\\\\\n\\\\\\\\n### Past hackathons:\\\\\\\\n* Puerto Vallarta M\\\\\\\\u{e9}xico, november 2022 | [See more](https://gov.near.org/t/report-open-web-house-puerto-vallarta-mexico/31780)\\\\\\\\n* Guadalajara M\\\\\\\\u{e9}xico, march 2023 | [See more](https://gov.near.org/t/report-open-web-house-guadalajara-mexico/33459)\\\\\\\\n* Monterrey M\\\\\\\\u{e9}xico, may 2023 at CriptoM\\\\\\\\u{e9}xico | [See more](https://gov.near.org/t/report-open-web-house-monterrey-mexico/34795)\\\\\\\\n* Ciudad de M\\\\\\\\u{e9}xico, october 2023 at Ethereum M\\\\\\\\u{e9}xico 2023 | [See more](https://near.social/devhub.near/widget/app?page=post&id=2168)\\\\\\\\n* M\\\\\\\\u{e9}rida M\\\\\\\\u{e9}xico, september 2024 at Ethereum M\\\\\\\\u{e9}xico 2024 | [See more](https://x.com/openwebacademy_/status/1836512779613745343)\\\\\\\\n\\\\\\\\n### Hackathon Overview\\\\\\\\n* Date: \\\\\\\\tOctober 17-19, 2024 \\\\\\\\n* Format: IRL\\\\\\\\n* Location: M\\\\\\\\u{e9}xico\\\\\\\\n\\\\\\\\n### Organizer Team \\\\\\\\n* Organizers: Open Web Academy\\\\\\\\n* Partnerships: General Coordination of Polytechnic and Technological Universities of Nayarit, INJUVE.\\\\\\\\n\\\\\\\\n### Event Objectives\\\\\\\\n#### Goals\\\\\\\\n* Foster innovation and problem-solving through the development of blockchain solutions using BOS and EVMs\\\\\\\\n* Demonstrate BOS and EVM\\\\\\\\u{2019}s unique capabilities and potential to transform various industries jointly.\\\\\\\\n* Increase adoption and continued use of decentralized BOS and IA tools.\\\\\\\\n\\\\\\\\n#### Target Audience\\\\\\\\nFullstack developers, Javascript developers, general devs, university students and IT professionals.\\\\\\\\n\\\\\\\\n### Challenges & Themes\\\\\\\\n#### **Chain abstraction**\\\\\\\\n**Introduction**\\\\\\\\nChain abstraction is transforming the way developers build blockchain applications by simplifying cross-chain interactions and enabling decentralized applications to work seamlessly across multiple blockchain networks. With chain abstraction, developers can create a unified experience that abstracts away the complexities of different chains, such as transaction formats, consensus mechanisms, and token standards. This approach opens up possibilities for truly interoperable applications that can leverage the strengths of multiple blockchains, such as NEAR, Ethereum, Solana, Polkadot, and more.\\\\\\\\n**Expected solution**\\\\\\\\nA fully functional dApp that uses chain abstraction techniques to interact with multiple blockchains, providing a unified and simplified user experience.\\\\\\\\nThe dApp should enable actions such as cross-chain token transfers, asset swaps, or data synchronization, with all complexity hidden from the end user.\\\\\\\\n\\\\\\\\n#### **Bitte Protocol**\\\\\\\\n**Introduction**\\\\\\\\nThe future of Web3 is AI. As open source models flourish and decentralized infrastructure evolves, the integration of strong cryptocurrency custody, a simpler user experience (via AI prompts and agents), and advanced AI control has the potential to transform Web3. We expect to see agents that improve security, enhance privacy, increase adoption, and support decentralized governance.\\\\\\\\n\\\\\\\\nBy registering your agent as a plugin in the Bitte Wallet, you will allow Bitte Wallet users to take advantage of the launch of an agent that Bitte Wallet users will be able to interact with directly through the AI \\\\\\\\u{200b}\\\\\\\\u{200b}tab in the Bitte Wallet.\\\\\\\\n\\\\\\\\n**Expected Solution**\\\\\\\\nSuccessful submissions will achieve plugin verification within the Bitte Wallet.\\\\\\\\n\\\\\\\\n#### **Decentralized IA**\\\\\\\\n**Introduction**\\\\\\\\nThe intersection of AI and blockchain technology is revolutionizing the decentralized ecosystem. By integrating AI into decentralized systems, we can improve decision-making, automate complex processes, and deliver personalized user experiences, all while maintaining privacy and security. With platforms like NEAR Protocol, we can deploy AI models that operate on a decentralized infrastructure, ensuring data integrity and censorship resistance. Your task is to leverage these technologies to build an AI-powered dApp (decentralized application) that interacts with blockchain smart contracts, providing unique and valuable services to users.\\\\\\\\n\\\\\\\\n**Expected Solution**\\\\\\\\nA fully functional AI-powered dApp that consumes and interacts with a smart contract, adding significant value to the user.\\\\\\\\nUse cases can include predictive analytics, autonomous agents, recommendation engines, or any AI-driven decision-making system that operates in a decentralized environment.\\\\\\\\n\\\\\\\\n### chedule and Activities\\\\\\\\nDuration: 3 days IRL\\\\\\\\n\\\\\\\\n![Captura desde 2024-09-24 22-16-46|558x390, 100%](https://i.ibb.co/34qwdK3/Captura-desde-2024-09-24-22-16-46.png)\\\\\\\\n*show the full table in this Google Docs | [LInk](https://docs.google.com/document/d/1DTCoV3yu-M66hlqevHlt3oeC2eec5OegxLR0TsmQWJA/edit#heading=h.7xmrn16jgvhi)\\\\\\\\n\\\\\\\\n### KPIs\\\\\\\\u{1f3af}\\\\\\\\n* 120 registered participants\\\\\\\\n* 10-15 projects created using Blockchain Operating System technology or decentralized IA\\\\\\\\n* 100 new NEAR Protocol wallets\\\\\\\\n* Partner with 3 universities for the celebration of the hackathon\\\\\\\\n\\\\\\\\n### Budget\\\\\\\\nTo see the full cost breakdown of the event, please visit the following document\\\\\\\\n[Budget layout - M\\\\\\\\u{e9}xico node](https://docs.google.com/spreadsheets/d/1mmIZieBWv1b3CNi2mIs-5swpiBKeCbeU6WAtUBlEHnA/edit?usp=sharing)\\\\\\\\n**Total for the hackathon:** 14250 USD + 3000 USD in prizes.\\\\\\\\n\\\\\\\\n### Bounties and Prizes\\\\\\\\nEach proposed bounty can be awarded with up to 1000 USD, this will vary depending on the level of development achieved and the viability of the proposed project.\\\\\\\\nThe prize delivery process will be carried out by hackbox, once the Open Web Academy notifies the winners of the different challenges. Each awarded team must go through the processes required to collect the prizes.\\\\\\\\n\\\\\\\\n### Judging Criteria\\\\\\\\nWhile it is true that each challenge will have its own particular criteria for evaluation, all will follow a common line to measure the level of development: Ready to use and validated, Deployed, Idea and simulation.\\\\\\\\n\\\\\\\\n|Level|Acceptance criteria|\\\\\\\\n| --- | --- |\\\\\\\\n|Ready to use and validated|* Prototype deployed on mainnet * An iteration was made to test its value proposition to users. * It makes use of NEAR in its infrastructure to build its value proposition.|\\\\\\\\n|Deployed|* Prototype deployed on mainnet * Has a defined market and value proposition. * Makes use of NEAR in its infrastructure to build its value proposition.|\\\\\\\\n|Idea and simulation|*Presents a mockup or UI design to help evaluate the idea. *Uses NEAR in its infrastructure to build its value proposition.|\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n### Contact Information\\\\\\\\n**Our team includes:**\\\\\\\\n* Alan Estrada (@alan777.near): NEAR certified developer and co-founder of web 3.0 projects at NEAR.\\\\\\\\n* Irving Cari\\\\\\\\u{f1}o (@izcc.near): Certified NEAR Analyst, NEAR Professor and Google Lv2 Professor.\\\\\\\\n* Yair Nava (@yairnava.near): Backend developer with experience in RUST and Solidity, mentor of technical workshops\\\\\\\\n*  Luis Daniel (@syi216.near): Front end developer, with experience in BOS. Technical content creator about NEAR\\\\\\\\n* Zaida Nieto (@freyjxh98.near) Graphic designer, social media manager. businness engenier\\\\\\\\n**Our social networks**\\\\\\\\n* Website: https://ow.academy\\\\\\\\n* Youtube:https://www.youtube.com/@openwebacademy\\\\\\\\n* Twitter: https://twitter.com/openwebacademy_\\\\\\\\n* Telegram: https://t.me/openwebacademy1\\\\\\\\n* Discord: discord.gg/XhGJXszkyc\\\\\\\\n* Github: https://github.com/open-web-academy \", \"linked_proposals\": [], \"receiver_account\": \"open-web-academy.sputnik-dao.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"14250\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Hackathon\", \"Hackbox\"], \"accepted_terms_and_conditions_version\": 128837415}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9622734883649e+21
+    }
+  },
+  {
+    "id": "8642154913",
+    "receipt_id": "27FTYKCkKtGwB9pyLQ51uhmxSB56VX4HVMWKP896NQMA",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "adSinhdmB2k2SeqRDH3WeJ3HgUbmRLWyRozF8LUkq24",
+      "block_height": 128837455,
+      "block_timestamp": 1727239633101115100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4527979071538,
+      "tokens_burnt": 452797907153800000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "AychBCrFWhvTGQR1hejUrmqWFtNWbX2gNJDCMmGNJjH4",
+    "included_in_block_hash": "5U3PZJicqUtD5VnYELmWAthFMuhZfz8VW7WVjdJW25Yq",
+    "block_timestamp": "1727239631117009611",
+    "block": {
+      "block_height": 128837453
+    },
+    "receipt_conversion_tokens_burnt": "69877986071000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 452797907153800000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Bounty* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @irvingzcc.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Open Web House [REDACTED] city node - Powered by Hackbox\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nOpen Web House [REDACTED] Powered by Hackbox is a hackathon where blockchain technologies are used to create prototypes. EVM\\\\\\\\\\\\'s backend technology and NEAR\\\\\\\\\\\\'s easy Blockchain Operating System (BOS) frontend tools generate disruptive and scalable solutions to current Web 3.0 problems.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/events-committee.near/widget/app?page=proposal&id=45)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9622734883649e+21
+    }
+  },
+  {
+    "id": "8642154915",
+    "receipt_id": "JA7xCWio73cJHEynbTZ8Wpsu3e3hCPGKxVmwZqDX3qE1",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "adSinhdmB2k2SeqRDH3WeJ3HgUbmRLWyRozF8LUkq24",
+      "block_height": 128837455,
+      "block_timestamp": 1727239633101115100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3622163872226,
+      "tokens_burnt": 362216387222600000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "AychBCrFWhvTGQR1hejUrmqWFtNWbX2gNJDCMmGNJjH4",
+    "included_in_block_hash": "5U3PZJicqUtD5VnYELmWAthFMuhZfz8VW7WVjdJW25Yq",
+    "block_timestamp": "1727239631117009611",
+    "block": {
+      "block_height": 128837453
+    },
+    "receipt_conversion_tokens_burnt": "69877986071000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 362216387222600000000,
+        "args": "{\"proposal\": {\"id\": 45, \"snapshot\": {\"name\": \"Open Web House [REDACTED] city node - Powered by Hackbox\", \"labels\": [\"Hackathon\", \"Hackbox\"], \"summary\": \"Open Web House [REDACTED] Powered by Hackbox is a hackathon where blockchain technologies are used to create prototypes. EVM\\\\\\\\\\\\'s backend technology and NEAR\\\\\\\\\\\\'s easy Blockchain Operating System (BOS) frontend tools generate disruptive and scalable solutions to current Web 3.0 problems.\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"irvingzcc.near\", \"timestamp\": \"1727239632076291878\", \"supervisor\": null, \"description\": \"### TL;DR\\\\\\\\u{26a1}\\\\\\\\nOpen Web House [REDACTED] Powered by Hackbox is a hackathon where blockchain technologies are used to create prototypes. EVM\\\\\\\\\\\\'s backend technology and NEAR\\\\\\\\\\\\'s easy Blockchain Operating System (BOS) frontend tools generate disruptive and scalable solutions to current Web 3.0 problems.\\\\\\\\n\\\\\\\\n### Past hackathons:\\\\\\\\n* Puerto Vallarta M\\\\\\\\u{e9}xico, november 2022 | [See more](https://gov.near.org/t/report-open-web-house-puerto-vallarta-mexico/31780)\\\\\\\\n* Guadalajara M\\\\\\\\u{e9}xico, march 2023 | [See more](https://gov.near.org/t/report-open-web-house-guadalajara-mexico/33459)\\\\\\\\n* Monterrey M\\\\\\\\u{e9}xico, may 2023 at CriptoM\\\\\\\\u{e9}xico | [See more](https://gov.near.org/t/report-open-web-house-monterrey-mexico/34795)\\\\\\\\n* Ciudad de M\\\\\\\\u{e9}xico, october 2023 at Ethereum M\\\\\\\\u{e9}xico 2023 | [See more](https://near.social/devhub.near/widget/app?page=post&id=2168)\\\\\\\\n* M\\\\\\\\u{e9}rida M\\\\\\\\u{e9}xico, september 2024 at Ethereum M\\\\\\\\u{e9}xico 2024 | [See more](https://x.com/openwebacademy_/status/1836512779613745343)\\\\\\\\n\\\\\\\\n### Hackathon Overview\\\\\\\\n* Date: \\\\\\\\tOctober 17-19, 2024 \\\\\\\\n* Format: IRL\\\\\\\\n* Location: M\\\\\\\\u{e9}xico\\\\\\\\n\\\\\\\\n### Organizer Team \\\\\\\\n* Organizers: Open Web Academy\\\\\\\\n* Partnerships: General Coordination of Polytechnic and Technological Universities of Nayarit, INJUVE.\\\\\\\\n\\\\\\\\n### Event Objectives\\\\\\\\n#### Goals\\\\\\\\n* Foster innovation and problem-solving through the development of blockchain solutions using BOS and EVMs\\\\\\\\n* Demonstrate BOS and EVM\\\\\\\\u{2019}s unique capabilities and potential to transform various industries jointly.\\\\\\\\n* Increase adoption and continued use of decentralized BOS and IA tools.\\\\\\\\n\\\\\\\\n#### Target Audience\\\\\\\\nFullstack developers, Javascript developers, general devs, university students and IT professionals.\\\\\\\\n\\\\\\\\n### Challenges & Themes\\\\\\\\n#### **Chain abstraction**\\\\\\\\n**Introduction**\\\\\\\\nChain abstraction is transforming the way developers build blockchain applications by simplifying cross-chain interactions and enabling decentralized applications to work seamlessly across multiple blockchain networks. With chain abstraction, developers can create a unified experience that abstracts away the complexities of different chains, such as transaction formats, consensus mechanisms, and token standards. This approach opens up possibilities for truly interoperable applications that can leverage the strengths of multiple blockchains, such as NEAR, Ethereum, Solana, Polkadot, and more.\\\\\\\\n**Expected solution**\\\\\\\\nA fully functional dApp that uses chain abstraction techniques to interact with multiple blockchains, providing a unified and simplified user experience.\\\\\\\\nThe dApp should enable actions such as cross-chain token transfers, asset swaps, or data synchronization, with all complexity hidden from the end user.\\\\\\\\n\\\\\\\\n#### **Bitte Protocol**\\\\\\\\n**Introduction**\\\\\\\\nThe future of Web3 is AI. As open source models flourish and decentralized infrastructure evolves, the integration of strong cryptocurrency custody, a simpler user experience (via AI prompts and agents), and advanced AI control has the potential to transform Web3. We expect to see agents that improve security, enhance privacy, increase adoption, and support decentralized governance.\\\\\\\\n\\\\\\\\nBy registering your agent as a plugin in the Bitte Wallet, you will allow Bitte Wallet users to take advantage of the launch of an agent that Bitte Wallet users will be able to interact with directly through the AI \\\\\\\\u{200b}\\\\\\\\u{200b}tab in the Bitte Wallet.\\\\\\\\n\\\\\\\\n**Expected Solution**\\\\\\\\nSuccessful submissions will achieve plugin verification within the Bitte Wallet.\\\\\\\\n\\\\\\\\n#### **Decentralized IA**\\\\\\\\n**Introduction**\\\\\\\\nThe intersection of AI and blockchain technology is revolutionizing the decentralized ecosystem. By integrating AI into decentralized systems, we can improve decision-making, automate complex processes, and deliver personalized user experiences, all while maintaining privacy and security. With platforms like NEAR Protocol, we can deploy AI models that operate on a decentralized infrastructure, ensuring data integrity and censorship resistance. Your task is to leverage these technologies to build an AI-powered dApp (decentralized application) that interacts with blockchain smart contracts, providing unique and valuable services to users.\\\\\\\\n\\\\\\\\n**Expected Solution**\\\\\\\\nA fully functional AI-powered dApp that consumes and interacts with a smart contract, adding significant value to the user.\\\\\\\\nUse cases can include predictive analytics, autonomous agents, recommendation engines, or any AI-driven decision-making system that operates in a decentralized environment.\\\\\\\\n\\\\\\\\n### chedule and Activities\\\\\\\\nDuration: 3 days IRL\\\\\\\\n\\\\\\\\n![Captura desde 2024-09-24 22-16-46|558x390, 100%](https://i.ibb.co/34qwdK3/Captura-desde-2024-09-24-22-16-46.png)\\\\\\\\n*show the full table in this Google Docs | [LInk](https://docs.google.com/document/d/1DTCoV3yu-M66hlqevHlt3oeC2eec5OegxLR0TsmQWJA/edit#heading=h.7xmrn16jgvhi)\\\\\\\\n\\\\\\\\n### KPIs\\\\\\\\u{1f3af}\\\\\\\\n* 120 registered participants\\\\\\\\n* 10-15 projects created using Blockchain Operating System technology or decentralized IA\\\\\\\\n* 100 new NEAR Protocol wallets\\\\\\\\n* Partner with 3 universities for the celebration of the hackathon\\\\\\\\n\\\\\\\\n### Budget\\\\\\\\nTo see the full cost breakdown of the event, please visit the following document\\\\\\\\n[Budget layout - M\\\\\\\\u{e9}xico node](https://docs.google.com/spreadsheets/d/1mmIZieBWv1b3CNi2mIs-5swpiBKeCbeU6WAtUBlEHnA/edit?usp=sharing)\\\\\\\\n**Total for the hackathon:** 14250 USD + 3000 USD in prizes.\\\\\\\\n\\\\\\\\n### Bounties and Prizes\\\\\\\\nEach proposed bounty can be awarded with up to 1000 USD, this will vary depending on the level of development achieved and the viability of the proposed project.\\\\\\\\nThe prize delivery process will be carried out by hackbox, once the Open Web Academy notifies the winners of the different challenges. Each awarded team must go through the processes required to collect the prizes.\\\\\\\\n\\\\\\\\n### Judging Criteria\\\\\\\\nWhile it is true that each challenge will have its own particular criteria for evaluation, all will follow a common line to measure the level of development: Ready to use and validated, Deployed, Idea and simulation.\\\\\\\\n\\\\\\\\n|Level|Acceptance criteria|\\\\\\\\n| --- | --- |\\\\\\\\n|Ready to use and validated|* Prototype deployed on mainnet * An iteration was made to test its value proposition to users. * It makes use of NEAR in its infrastructure to build its value proposition.|\\\\\\\\n|Deployed|* Prototype deployed on mainnet * Has a defined market and value proposition. * Makes use of NEAR in its infrastructure to build its value proposition.|\\\\\\\\n|Idea and simulation|*Presents a mockup or UI design to help evaluate the idea. *Uses NEAR in its infrastructure to build its value proposition.|\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n### Contact Information\\\\\\\\n**Our team includes:**\\\\\\\\n* Alan Estrada (@alan777.near): NEAR certified developer and co-founder of web 3.0 projects at NEAR.\\\\\\\\n* Irving Cari\\\\\\\\u{f1}o (@izcc.near): Certified NEAR Analyst, NEAR Professor and Google Lv2 Professor.\\\\\\\\n* Yair Nava (@yairnava.near): Backend developer with experience in RUST and Solidity, mentor of technical workshops\\\\\\\\n*  Luis Daniel (@syi216.near): Front end developer, with experience in BOS. Technical content creator about NEAR\\\\\\\\n* Zaida Nieto (@freyjxh98.near) Graphic designer, social media manager. businness engenier\\\\\\\\n**Our social networks**\\\\\\\\n* Website: https://ow.academy\\\\\\\\n* Youtube:https://www.youtube.com/@openwebacademy\\\\\\\\n* Twitter: https://twitter.com/openwebacademy_\\\\\\\\n* Telegram: https://t.me/openwebacademy1\\\\\\\\n* Discord: discord.gg/XhGJXszkyc\\\\\\\\n* Github: https://github.com/open-web-academy \", \"linked_proposals\": [], \"receiver_account\": \"open-web-academy.sputnik-dao.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"14250\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"irvingzcc.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9622734883649e+21
+    }
+  },
+  {
+    "id": "8642154916",
+    "receipt_id": "F2ikXZxDok31yopgWfNAgDM8yhqb8WXLRyR3P4eEuzUf",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "adSinhdmB2k2SeqRDH3WeJ3HgUbmRLWyRozF8LUkq24",
+      "block_height": 128837455,
+      "block_timestamp": 1727239633101115100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3636945878287,
+      "tokens_burnt": 363694587828700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "AychBCrFWhvTGQR1hejUrmqWFtNWbX2gNJDCMmGNJjH4",
+    "included_in_block_hash": "5U3PZJicqUtD5VnYELmWAthFMuhZfz8VW7WVjdJW25Yq",
+    "block_timestamp": "1727239631117009611",
+    "block": {
+      "block_height": 128837453
+    },
+    "receipt_conversion_tokens_burnt": "69877986071000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 363694587828700000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"alan777.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":45,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"irvingzcc.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"izcc.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":45,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"irvingzcc.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"yairnava.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":45,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"irvingzcc.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"syi216.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":45,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"irvingzcc.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"freyjxh98.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":45,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"irvingzcc.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"openwebacademy\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":45,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"irvingzcc.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":45,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"irvingzcc.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9622734883649e+21
+    }
+  },
+  {
+    "id": "8642181099",
+    "receipt_id": "4AjBEFXikdsFPzB12q2GhjEF3idX5ZGJf4meNqwhc2DS",
+    "predecessor_account_id": "irvingzcc.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4x5wKmesJG1yfv3AHTfGDs7goZdSTncLtv6fotLgTgkJ",
+      "block_height": 128837526,
+      "block_timestamp": 1727239710604671200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5335166105354,
+      "tokens_burnt": 533516610535400000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "2a4qsr2UfkMMNN85fhe7JZKMZn3P1P96yxtX9PEPx3io",
+    "included_in_block_hash": "F9CJHR14MYyQCyzCkSFQFDMcb5K2szA29AnBupH55E7n",
+    "block_timestamp": "1727239709686368453",
+    "block": {
+      "block_height": 128837525
+    },
+    "receipt_conversion_tokens_burnt": "31716708956500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 533516610535400000000,
+        "args": "{\"id\": 44, \"timeline\": {\"status\": \"CANCELLED\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 918637673572200000000
+    }
+  },
+  {
+    "id": "8642181328",
+    "receipt_id": "BLgRiCCwLZYvTu3viREN4UZH6hW11rP7r6H7NT9xfQ9E",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2ReLtvJGbVtNizNwq6euMgrDqBAPMevvuSEh54eUFvxW",
+      "block_height": 128837527,
+      "block_timestamp": 1727239711718443000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3534043540803,
+      "tokens_burnt": 353404354080300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "2a4qsr2UfkMMNN85fhe7JZKMZn3P1P96yxtX9PEPx3io",
+    "included_in_block_hash": "F9CJHR14MYyQCyzCkSFQFDMcb5K2szA29AnBupH55E7n",
+    "block_timestamp": "1727239709686368453",
+    "block": {
+      "block_height": 128837525
+    },
+    "receipt_conversion_tokens_burnt": "31716708956500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353404354080300000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"irvingzcc.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":44,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"irvingzcc.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 918637673572200000000
+    }
+  },
+  {
+    "id": "8645254231",
+    "receipt_id": "HuHWzbkp651kWYWDsWezkkfGNRg8dkjaigndHqeNEVop",
+    "predecessor_account_id": "blockseblock.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6RiEnn6P6RTQSnzHUBxmeapTca58JVzSG7pKduyU5e9b",
+      "block_height": 128844475,
+      "block_timestamp": 1727247592570459100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6582903051676,
+      "tokens_burnt": 658290305167600000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "4z5PkdctTn91gvr3Ljue6kSAqxP8YZE6iq71eqeHF2uv",
+    "included_in_block_hash": "3CTUrrWuteEWS2K4nFt6ByvAVNLwUwqdrvDEFLkjV7D1",
+    "block_timestamp": "1727247591580869518",
+    "block": {
+      "block_height": 128844474
+    },
+    "receipt_conversion_tokens_burnt": "71456317037500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 658290305167600000000,
+        "args": "{\"body\": {\"name\": \"REDACTED Hackathon NEAR Innovators Bootcamp by BlockseBlock\", \"summary\": \"We are looking to organize a boot camp that will be joined by dev-entrepreneurs, builders, and developers where they will learn how to build leveraging Near Blockchain and participate in the hackathon.  Our key focus area is to provide all the required support to teams competing at the global hackathon and help build impactful projects at scale. \", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"# REDACTED Hackathon NEAR Innovators Bootcamp by BlockseBlock\\\\\\\\n\\\\\\\\nProposal Title: Redacted Hackathon NEAR Innovators Bootcamp by BlockseBlock | #PoweredByHackbox\\\\\\\\nRequested amount: $5K\\\\\\\\n\\\\\\\\n## **1. Hackathon Overview**\\\\\\\\n\\\\\\\\n**Title:** Redacted Hackathon NEAR Innovators Bootcamp by BlockseBlock \\\\\\\\n**Date & Format:** First week of October and in offline format\\\\\\\\n**Location:** Chandigarh, India\\\\\\\\n\\\\\\\\n## **2. Organizing Team**\\\\\\\\n**Organizers:** \\\\\\\\nBlockseBlock is a global hackathon hosting platform with a strong developer community in SE Asia. We are already a global hackathon platform for ICP blockchain. With our unique approach of providing personalized support to developers, we are helping thousands of builders start their projects in the web3 and blockchain domains. Some of the key stats of the platform:\\\\\\\\n#100,000+ developers\\\\\\\\n#600+ university partners\\\\\\\\n#100+ hackathons\\\\\\\\n\\\\\\\\n**Partnerships:**\\\\\\\\n#600+ university partners\\\\\\\\n#500k plus follower base influencers( CareerGPT, Web3GPT, Web3Raza, CryptoNewsBharat)\\\\\\\\n\\\\\\\\n## **3. Event Objectives**\\\\\\\\n**Goals:**\\\\\\\\n\\\\\\\\n**Onboard New Developers to the NEAR Ecosystem:**\\\\\\\\n\\\\\\\\nThe primary goal of the boot camp is to introduce and onboard new developers to the NEAR blockchain. By providing hands-on training and practical insights, the event will lower the barriers to entry for developers unfamiliar with NEAR, fostering a larger and more diverse developer community.\\\\\\\\n\\\\\\\\n**Educate Developers on NEAR Tools and Frameworks:**\\\\\\\\nThe boot camp aims to provide an in-depth understanding of NEAR\\\\\\\\u{2019}s development environment, including key tools like NEAR CLI, SDK, and smart contract languages (Rust/AssemblyScript). This will equip developers with the skills needed to build functional applications on NEAR.\\\\\\\\n\\\\\\\\n**Increase Participation in the NEAR Global Hackathon:**\\\\\\\\n\\\\\\\\nBy aligning the boot camp with NEAR\\\\\\\\\\\\'s global hackathon, we aim to act as a feeder program. The developers trained during the boot camp will be better prepared and more confident to participate in the hackathon, increasing overall participation.\\\\\\\\n\\\\\\\\n**Promote Innovation and Problem Solving:**\\\\\\\\n\\\\\\\\nThrough hands-on coding sessions and a dApp-building challenge, participants will be encouraged to think creatively and solve real-world problems using blockchain technology. This can inspire new, innovative projects that will further develop into full-scale applications during the hackathon.\\\\\\\\n\\\\\\\\n**Foster Collaboration and Networking:**\\\\\\\\n\\\\\\\\nThe boot camp will create opportunities for participants to connect with fellow developers, mentors, and industry experts. This will help foster collaboration and build teams for the global hackathon.\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n**Expected Outcomes:**\\\\\\\\n\\\\\\\\n**Increased Number of Quality Hackathon Participants:**\\\\\\\\n\\\\\\\\nWe expect a higher number of technically proficient and motivated developers to join the NEAR global hackathon, thanks to the skills and confidence they gain from this boot camp.\\\\\\\\n\\\\\\\\n**New NEAR-Based Projects and dApps:**\\\\\\\\n\\\\\\\\nParticipants will leave the boot camp with the skills to build applications on the NEAR blockchain. Some of these projects will be further developed and submitted during the global hackathon, contributing to NEAR\\\\\\\\u{2019}s ecosystem growth.\\\\\\\\n\\\\\\\\n**Strengthened NEAR Developer Community:**\\\\\\\\n\\\\\\\\nThe boot camp will create a sense of community among developers, building a network of talent that can continue collaborating beyond the event. This will contribute to the long-term growth of the NEAR ecosystem.\\\\\\\\n\\\\\\\\n**Improved Understanding of NEAR Development Tools:**\\\\\\\\n\\\\\\\\nDevelopers will leave with a solid understanding of NEAR\\\\\\\\\\\\'s development tools, enabling them to continue building on the platform even after the boot camp concludes.\\\\\\\\n\\\\\\\\n**High Engagement and Networking for Future Opportunities:**\\\\\\\\n\\\\\\\\nThe boot camp will foster relationships between developers, and mentors, potentially leading to long-term collaborations and involvement in future NEAR events and projects.\\\\\\\\nTarget Audience: Dev-Entrepreneurs, Builders and Developers who are looking to build impactful projects and applications leveraging the Near blockchain\\\\\\\\n\\\\\\\\n## **4. Challenges & Themes**\\\\\\\\n\\\\\\\\nDetails: The challenges and themes of the boot camp will be kept on similar lines of the theme of Redacted hackathon. \\\\\\\\n\\\\\\\\n## **5. Schedule and Activities**\\\\\\\\n\\\\\\\\n**Duration:** One-day boot camp of 8-10 hours\\\\\\\\n**Key Activities:** The planned activities for the developer boot camp will be as follows:\\\\\\\\n\\\\\\\\n**Introduction to NEAR Blockchain**\\\\\\\\n\\\\\\\\nOverview of NEAR Protocol and its ecosystem.\\\\\\\\nKey features of NEAR, such as scalability, security, and usability.\\\\\\\\n\\\\\\\\n**Setting Up Development Environment**\\\\\\\\n\\\\\\\\nStep-by-step guide to setting up tools (NEAR CLI, NEAR SDK, and wallet).\\\\\\\\nWalkthrough of key development resources and documentation.\\\\\\\\n\\\\\\\\n**Smart Contracts on NEAR**\\\\\\\\n\\\\\\\\nIntroduction to writing smart contracts using Rust/AssemblyScript.\\\\\\\\nBuilding a simple decentralized application (dApp).\\\\\\\\nDeploying and testing smart contracts on the NEAR testnet.\\\\\\\\n\\\\\\\\n**Interacting with NEAR Blockchain**\\\\\\\\n\\\\\\\\nUnderstanding NEAR accounts, transactions, and gas fees.\\\\\\\\nBuilding front-end applications that interact with NEAR smart contracts.\\\\\\\\nHandling wallet integrations for seamless user experience.\\\\\\\\n\\\\\\\\n**dApp Development Challenge**\\\\\\\\n\\\\\\\\nA hands-on session where participants work in teams to build a mini dApp.\\\\\\\\nLive coding support and troubleshooting by mentors.\\\\\\\\n\\\\\\\\n**Q&A and Networking**\\\\\\\\n\\\\\\\\nOpen Q&A session to clarify doubts and share insights.\\\\\\\\nNetworking opportunities with mentors and fellow developers.\\\\\\\\n\\\\\\\\n**Hackathon Prep & Best Practices**\\\\\\\\n\\\\\\\\nTips on participating in the global hackathon.\\\\\\\\nSharing best practices for creating successful NEAR-based applications.\\\\\\\\n\\\\\\\\n## **6. KPIs and Impact**\\\\\\\\n\\\\\\\\n**Key Performance Indicators:** We will be achieving the following KPIs:\\\\\\\\n\\\\\\\\n#100-150 developers\\\\\\\\n#30 prominent projects in the Redacted hackathon\\\\\\\\n\\\\\\\\n**Community Impact:**\\\\\\\\n\\\\\\\\n**Ecosystem Growth:** Attracting new developers and projects to the NEAR ecosystem, driving adoption and innovation.\\\\\\\\n**Project Creation:** Generating new projects and ideas that can be incubated and developed further within the NEAR ecosystem.\\\\\\\\n**Increased Awareness:** Raising awareness of NEAR\\\\\\\\u{2019}s technology and tools among developers and startups, positioning NEAR as a leading blockchain platform.\\\\\\\\n**Empowering Developers:** Building a stronger, more connected community through collaborative events and networking sessions.\\\\\\\\n\\\\\\\\n## **7. Budget and Funding**\\\\\\\\n\\\\\\\\n**Budget Breakdown:**\\\\\\\\nMarketing materials and merch: $1,000\\\\\\\\nFood and Beverages: $500\\\\\\\\nMarketing and PR: $1,000\\\\\\\\nVenue with audio and visual setup: $1000\\\\\\\\nTeam Cost: $500\\\\\\\\nContent and photography: $500\\\\\\\\nMiscellaneous: $500\\\\\\\\n\\\\\\\\n**Total Funding Requested:** We are requesting $5K\\\\\\\\n\\\\\\\\n## **8. Bounties and Prizes**\\\\\\\\nParticipants will compete from the prize pool of 600K $ of the REDACTED hackathon\\\\\\\\n\\\\\\\\n## **9. Judging Criteria**\\\\\\\\n\\\\\\\\nThe projects coming out of the boot camp will be directly submitted to the REDACTED hackathon and will be judged directly by the Near team.\\\\\\\\n\\\\\\\\n## **10. Marketing and Promotion**\\\\\\\\n**Strategy:** \\\\\\\\n\\\\\\\\n**Social Media Campaigns:** Leveraging platforms like Twitter, LinkedIn, and Discord to reach the developer audience.\\\\\\\\n**Email Marketing:** Sending targeted emails to our developer community of **100K plus developers**\\\\\\\\n**Influencer Engagement:** Involving our influencers to promote the event through their channels and networks with a cumulative follower base of more than **500K followers**\\\\\\\\n**University Network:** We have more than **600 university partners** across India and we will engage them for this boot camp marketing\\\\\\\\n\\\\\\\\n## **11. Contact Information**\\\\\\\\nContact Details: TG: Sahil_Thakur07 \\\\\\\\nEmail: partnerships@blockseblock.com \\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"blockseblock.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"5000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Hackathon\"], \"accepted_terms_and_conditions_version\": 128844417}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9010797543064e+21
+    }
+  },
+  {
+    "id": "8645257899",
+    "receipt_id": "ByBShNyAD8ZJMg9fsDzhQRccoqLymgCge8bMPtbdpcJQ",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5cUKDCYnizdmWHM1HfsD7kNBwoEfT2ahjw8hiXrsKmJW",
+      "block_height": 128844478,
+      "block_timestamp": 1727247595846136800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4534142736754,
+      "tokens_burnt": 453414273675400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4z5PkdctTn91gvr3Ljue6kSAqxP8YZE6iq71eqeHF2uv",
+    "included_in_block_hash": "3CTUrrWuteEWS2K4nFt6ByvAVNLwUwqdrvDEFLkjV7D1",
+    "block_timestamp": "1727247591580869518",
+    "block": {
+      "block_height": 128844474
+    },
+    "receipt_conversion_tokens_burnt": "71456317037500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 453414273675400000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Bounty* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @blockseblock.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}REDACTED Hackathon NEAR Innovators Bootcamp by BlockseBlock\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWe are looking to organize a boot camp that will be joined by dev-entrepreneurs, builders, and developers where they will learn how to build leveraging Near Blockchain and participate in the hackathon.  Our key focus area is to provide all the required support to teams competing at the global hackathon and help build impactful projects at scale. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/events-committee.near/widget/app?page=proposal&id=46)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9010797543064e+21
+    }
+  },
+  {
+    "id": "8645257900",
+    "receipt_id": "EdpiiPtXqyVnGvihZ8WaD7bSMJ5cXVB7kXYsVixBR8zP",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5cUKDCYnizdmWHM1HfsD7kNBwoEfT2ahjw8hiXrsKmJW",
+      "block_height": 128844478,
+      "block_timestamp": 1727247595846136800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3630231552012,
+      "tokens_burnt": 363023155201200000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "4z5PkdctTn91gvr3Ljue6kSAqxP8YZE6iq71eqeHF2uv",
+    "included_in_block_hash": "3CTUrrWuteEWS2K4nFt6ByvAVNLwUwqdrvDEFLkjV7D1",
+    "block_timestamp": "1727247591580869518",
+    "block": {
+      "block_height": 128844474
+    },
+    "receipt_conversion_tokens_burnt": "71456317037500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 363023155201200000000,
+        "args": "{\"proposal\": {\"id\": 46, \"snapshot\": {\"name\": \"REDACTED Hackathon NEAR Innovators Bootcamp by BlockseBlock\", \"labels\": [\"Hackathon\"], \"summary\": \"We are looking to organize a boot camp that will be joined by dev-entrepreneurs, builders, and developers where they will learn how to build leveraging Near Blockchain and participate in the hackathon.  Our key focus area is to provide all the required support to teams competing at the global hackathon and help build impactful projects at scale. \", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"blockseblock.near\", \"timestamp\": \"1727247594643082881\", \"supervisor\": null, \"description\": \"# REDACTED Hackathon NEAR Innovators Bootcamp by BlockseBlock\\\\\\\\n\\\\\\\\nProposal Title: Redacted Hackathon NEAR Innovators Bootcamp by BlockseBlock | #PoweredByHackbox\\\\\\\\nRequested amount: $5K\\\\\\\\n\\\\\\\\n## **1. Hackathon Overview**\\\\\\\\n\\\\\\\\n**Title:** Redacted Hackathon NEAR Innovators Bootcamp by BlockseBlock \\\\\\\\n**Date & Format:** First week of October and in offline format\\\\\\\\n**Location:** Chandigarh, India\\\\\\\\n\\\\\\\\n## **2. Organizing Team**\\\\\\\\n**Organizers:** \\\\\\\\nBlockseBlock is a global hackathon hosting platform with a strong developer community in SE Asia. We are already a global hackathon platform for ICP blockchain. With our unique approach of providing personalized support to developers, we are helping thousands of builders start their projects in the web3 and blockchain domains. Some of the key stats of the platform:\\\\\\\\n#100,000+ developers\\\\\\\\n#600+ university partners\\\\\\\\n#100+ hackathons\\\\\\\\n\\\\\\\\n**Partnerships:**\\\\\\\\n#600+ university partners\\\\\\\\n#500k plus follower base influencers( CareerGPT, Web3GPT, Web3Raza, CryptoNewsBharat)\\\\\\\\n\\\\\\\\n## **3. Event Objectives**\\\\\\\\n**Goals:**\\\\\\\\n\\\\\\\\n**Onboard New Developers to the NEAR Ecosystem:**\\\\\\\\n\\\\\\\\nThe primary goal of the boot camp is to introduce and onboard new developers to the NEAR blockchain. By providing hands-on training and practical insights, the event will lower the barriers to entry for developers unfamiliar with NEAR, fostering a larger and more diverse developer community.\\\\\\\\n\\\\\\\\n**Educate Developers on NEAR Tools and Frameworks:**\\\\\\\\nThe boot camp aims to provide an in-depth understanding of NEAR\\\\\\\\u{2019}s development environment, including key tools like NEAR CLI, SDK, and smart contract languages (Rust/AssemblyScript). This will equip developers with the skills needed to build functional applications on NEAR.\\\\\\\\n\\\\\\\\n**Increase Participation in the NEAR Global Hackathon:**\\\\\\\\n\\\\\\\\nBy aligning the boot camp with NEAR\\\\\\\\\\\\'s global hackathon, we aim to act as a feeder program. The developers trained during the boot camp will be better prepared and more confident to participate in the hackathon, increasing overall participation.\\\\\\\\n\\\\\\\\n**Promote Innovation and Problem Solving:**\\\\\\\\n\\\\\\\\nThrough hands-on coding sessions and a dApp-building challenge, participants will be encouraged to think creatively and solve real-world problems using blockchain technology. This can inspire new, innovative projects that will further develop into full-scale applications during the hackathon.\\\\\\\\n\\\\\\\\n**Foster Collaboration and Networking:**\\\\\\\\n\\\\\\\\nThe boot camp will create opportunities for participants to connect with fellow developers, mentors, and industry experts. This will help foster collaboration and build teams for the global hackathon.\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n**Expected Outcomes:**\\\\\\\\n\\\\\\\\n**Increased Number of Quality Hackathon Participants:**\\\\\\\\n\\\\\\\\nWe expect a higher number of technically proficient and motivated developers to join the NEAR global hackathon, thanks to the skills and confidence they gain from this boot camp.\\\\\\\\n\\\\\\\\n**New NEAR-Based Projects and dApps:**\\\\\\\\n\\\\\\\\nParticipants will leave the boot camp with the skills to build applications on the NEAR blockchain. Some of these projects will be further developed and submitted during the global hackathon, contributing to NEAR\\\\\\\\u{2019}s ecosystem growth.\\\\\\\\n\\\\\\\\n**Strengthened NEAR Developer Community:**\\\\\\\\n\\\\\\\\nThe boot camp will create a sense of community among developers, building a network of talent that can continue collaborating beyond the event. This will contribute to the long-term growth of the NEAR ecosystem.\\\\\\\\n\\\\\\\\n**Improved Understanding of NEAR Development Tools:**\\\\\\\\n\\\\\\\\nDevelopers will leave with a solid understanding of NEAR\\\\\\\\\\\\'s development tools, enabling them to continue building on the platform even after the boot camp concludes.\\\\\\\\n\\\\\\\\n**High Engagement and Networking for Future Opportunities:**\\\\\\\\n\\\\\\\\nThe boot camp will foster relationships between developers, and mentors, potentially leading to long-term collaborations and involvement in future NEAR events and projects.\\\\\\\\nTarget Audience: Dev-Entrepreneurs, Builders and Developers who are looking to build impactful projects and applications leveraging the Near blockchain\\\\\\\\n\\\\\\\\n## **4. Challenges & Themes**\\\\\\\\n\\\\\\\\nDetails: The challenges and themes of the boot camp will be kept on similar lines of the theme of Redacted hackathon. \\\\\\\\n\\\\\\\\n## **5. Schedule and Activities**\\\\\\\\n\\\\\\\\n**Duration:** One-day boot camp of 8-10 hours\\\\\\\\n**Key Activities:** The planned activities for the developer boot camp will be as follows:\\\\\\\\n\\\\\\\\n**Introduction to NEAR Blockchain**\\\\\\\\n\\\\\\\\nOverview of NEAR Protocol and its ecosystem.\\\\\\\\nKey features of NEAR, such as scalability, security, and usability.\\\\\\\\n\\\\\\\\n**Setting Up Development Environment**\\\\\\\\n\\\\\\\\nStep-by-step guide to setting up tools (NEAR CLI, NEAR SDK, and wallet).\\\\\\\\nWalkthrough of key development resources and documentation.\\\\\\\\n\\\\\\\\n**Smart Contracts on NEAR**\\\\\\\\n\\\\\\\\nIntroduction to writing smart contracts using Rust/AssemblyScript.\\\\\\\\nBuilding a simple decentralized application (dApp).\\\\\\\\nDeploying and testing smart contracts on the NEAR testnet.\\\\\\\\n\\\\\\\\n**Interacting with NEAR Blockchain**\\\\\\\\n\\\\\\\\nUnderstanding NEAR accounts, transactions, and gas fees.\\\\\\\\nBuilding front-end applications that interact with NEAR smart contracts.\\\\\\\\nHandling wallet integrations for seamless user experience.\\\\\\\\n\\\\\\\\n**dApp Development Challenge**\\\\\\\\n\\\\\\\\nA hands-on session where participants work in teams to build a mini dApp.\\\\\\\\nLive coding support and troubleshooting by mentors.\\\\\\\\n\\\\\\\\n**Q&A and Networking**\\\\\\\\n\\\\\\\\nOpen Q&A session to clarify doubts and share insights.\\\\\\\\nNetworking opportunities with mentors and fellow developers.\\\\\\\\n\\\\\\\\n**Hackathon Prep & Best Practices**\\\\\\\\n\\\\\\\\nTips on participating in the global hackathon.\\\\\\\\nSharing best practices for creating successful NEAR-based applications.\\\\\\\\n\\\\\\\\n## **6. KPIs and Impact**\\\\\\\\n\\\\\\\\n**Key Performance Indicators:** We will be achieving the following KPIs:\\\\\\\\n\\\\\\\\n#100-150 developers\\\\\\\\n#30 prominent projects in the Redacted hackathon\\\\\\\\n\\\\\\\\n**Community Impact:**\\\\\\\\n\\\\\\\\n**Ecosystem Growth:** Attracting new developers and projects to the NEAR ecosystem, driving adoption and innovation.\\\\\\\\n**Project Creation:** Generating new projects and ideas that can be incubated and developed further within the NEAR ecosystem.\\\\\\\\n**Increased Awareness:** Raising awareness of NEAR\\\\\\\\u{2019}s technology and tools among developers and startups, positioning NEAR as a leading blockchain platform.\\\\\\\\n**Empowering Developers:** Building a stronger, more connected community through collaborative events and networking sessions.\\\\\\\\n\\\\\\\\n## **7. Budget and Funding**\\\\\\\\n\\\\\\\\n**Budget Breakdown:**\\\\\\\\nMarketing materials and merch: $1,000\\\\\\\\nFood and Beverages: $500\\\\\\\\nMarketing and PR: $1,000\\\\\\\\nVenue with audio and visual setup: $1000\\\\\\\\nTeam Cost: $500\\\\\\\\nContent and photography: $500\\\\\\\\nMiscellaneous: $500\\\\\\\\n\\\\\\\\n**Total Funding Requested:** We are requesting $5K\\\\\\\\n\\\\\\\\n## **8. Bounties and Prizes**\\\\\\\\nParticipants will compete from the prize pool of 600K $ of the REDACTED hackathon\\\\\\\\n\\\\\\\\n## **9. Judging Criteria**\\\\\\\\n\\\\\\\\nThe projects coming out of the boot camp will be directly submitted to the REDACTED hackathon and will be judged directly by the Near team.\\\\\\\\n\\\\\\\\n## **10. Marketing and Promotion**\\\\\\\\n**Strategy:** \\\\\\\\n\\\\\\\\n**Social Media Campaigns:** Leveraging platforms like Twitter, LinkedIn, and Discord to reach the developer audience.\\\\\\\\n**Email Marketing:** Sending targeted emails to our developer community of **100K plus developers**\\\\\\\\n**Influencer Engagement:** Involving our influencers to promote the event through their channels and networks with a cumulative follower base of more than **500K followers**\\\\\\\\n**University Network:** We have more than **600 university partners** across India and we will engage them for this boot camp marketing\\\\\\\\n\\\\\\\\n## **11. Contact Information**\\\\\\\\nContact Details: TG: Sahil_Thakur07 \\\\\\\\nEmail: partnerships@blockseblock.com \\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"blockseblock.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"5000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"blockseblock.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9010797543064e+21
+    }
+  },
+  {
+    "id": "8645257901",
+    "receipt_id": "F4aJUNXdgQkeAQW8wBgJR71aUsGBhcrDCsSkPYRVWwnn",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5cUKDCYnizdmWHM1HfsD7kNBwoEfT2ahjw8hiXrsKmJW",
+      "block_height": 128844478,
+      "block_timestamp": 1727247595846136800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3548957032247,
+      "tokens_burnt": 354895703224700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4z5PkdctTn91gvr3Ljue6kSAqxP8YZE6iq71eqeHF2uv",
+    "included_in_block_hash": "3CTUrrWuteEWS2K4nFt6ByvAVNLwUwqdrvDEFLkjV7D1",
+    "block_timestamp": "1727247591580869518",
+    "block": {
+      "block_height": 128844474
+    },
+    "receipt_conversion_tokens_burnt": "71456317037500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 354895703224700000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"blockseblock.com\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":46,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"blockseblock.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":46,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"blockseblock.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.9010797543064e+21
+    }
+  },
+  {
+    "id": "8645377432",
+    "receipt_id": "GaKz8yMLXUXN3pSoooMRQNHxSgaGT3hif7MiUcpLbg3m",
+    "predecessor_account_id": "blockseblock.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8SC8MVNDF5zfJw2X6XmvPor1xgzcDChD3ggppZqdZNTG",
+      "block_height": 128844783,
+      "block_timestamp": 1727247940913492200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6114488120511,
+      "tokens_burnt": 611448812051100000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "369ThKXmcuo2RWGZRGwUEGyX33UhGv6ngeEyyrLsXEKA",
+    "included_in_block_hash": "DdPRRE3s2GxdV69aEKdRr8YgULge3RkXz4XM7iUv33Ax",
+    "block_timestamp": "1727247939804484064",
+    "block": {
+      "block_height": 128844782
+    },
+    "receipt_conversion_tokens_burnt": "71976069531000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 611448812051100000000,
+        "args": "{\"id\": 46, \"body\": {\"name\": \"REDACTED NEAR Innovators Bootcamp Chandigarh(India) City Node #PoweredByHackbox\", \"summary\": \"We are looking to organize a boot camp that will be joined by dev-entrepreneurs, builders, and developers where they will learn how to build leveraging Near Blockchain and participate in the hackathon.  Our key focus area is to provide all the required support to teams competing at the global hackathon and help build impactful projects at scale. \", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"# REDACTED Hackathon NEAR Innovators Bootcamp by BlockseBlock\\\\\\\\n\\\\\\\\nProposal Title: Redacted Hackathon NEAR Innovators Bootcamp by BlockseBlock | #PoweredByHackbox\\\\\\\\nRequested amount: $5K\\\\\\\\n\\\\\\\\n## **1. Hackathon Overview**\\\\\\\\n\\\\\\\\n**Title:** Redacted Hackathon NEAR Innovators Bootcamp by BlockseBlock \\\\\\\\n**Date & Format:** First week of October and in offline format\\\\\\\\n**Location:** Chandigarh, India\\\\\\\\n\\\\\\\\n## **2. Organizing Team**\\\\\\\\n**Organizers:** \\\\\\\\nBlockseBlock is a global hackathon hosting platform with a strong developer community in SE Asia. We are already a global hackathon platform for ICP blockchain. With our unique approach of providing personalized support to developers, we are helping thousands of builders start their projects in the web3 and blockchain domains. Some of the key stats of the platform:\\\\\\\\n#100,000+ developers\\\\\\\\n#600+ university partners\\\\\\\\n#100+ hackathons\\\\\\\\n\\\\\\\\n**Partnerships:**\\\\\\\\n#600+ university partners\\\\\\\\n#500k plus follower base influencers( CareerGPT, Web3GPT, Web3Raza, CryptoNewsBharat)\\\\\\\\n\\\\\\\\n## **3. Event Objectives**\\\\\\\\n**Goals:**\\\\\\\\n\\\\\\\\n**Onboard New Developers to the NEAR Ecosystem:**\\\\\\\\n\\\\\\\\nThe primary goal of the boot camp is to introduce and onboard new developers to the NEAR blockchain. By providing hands-on training and practical insights, the event will lower the barriers to entry for developers unfamiliar with NEAR, fostering a larger and more diverse developer community.\\\\\\\\n\\\\\\\\n**Educate Developers on NEAR Tools and Frameworks:**\\\\\\\\nThe boot camp aims to provide an in-depth understanding of NEAR\\\\\\\\u{2019}s development environment, including key tools like NEAR CLI, SDK, and smart contract languages (Rust/AssemblyScript). This will equip developers with the skills needed to build functional applications on NEAR.\\\\\\\\n\\\\\\\\n**Increase Participation in the NEAR Global Hackathon:**\\\\\\\\n\\\\\\\\nBy aligning the boot camp with NEAR\\\\\\\\\\\\'s global hackathon, we aim to act as a feeder program. The developers trained during the boot camp will be better prepared and more confident to participate in the hackathon, increasing overall participation.\\\\\\\\n\\\\\\\\n**Promote Innovation and Problem Solving:**\\\\\\\\n\\\\\\\\nThrough hands-on coding sessions and a dApp-building challenge, participants will be encouraged to think creatively and solve real-world problems using blockchain technology. This can inspire new, innovative projects that will further develop into full-scale applications during the hackathon.\\\\\\\\n\\\\\\\\n**Foster Collaboration and Networking:**\\\\\\\\n\\\\\\\\nThe boot camp will create opportunities for participants to connect with fellow developers, mentors, and industry experts. This will help foster collaboration and build teams for the global hackathon.\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n**Expected Outcomes:**\\\\\\\\n\\\\\\\\n**Increased Number of Quality Hackathon Participants:**\\\\\\\\n\\\\\\\\nWe expect a higher number of technically proficient and motivated developers to join the NEAR global hackathon, thanks to the skills and confidence they gain from this boot camp.\\\\\\\\n\\\\\\\\n**New NEAR-Based Projects and dApps:**\\\\\\\\n\\\\\\\\nParticipants will leave the boot camp with the skills to build applications on the NEAR blockchain. Some of these projects will be further developed and submitted during the global hackathon, contributing to NEAR\\\\\\\\u{2019}s ecosystem growth.\\\\\\\\n\\\\\\\\n**Strengthened NEAR Developer Community:**\\\\\\\\n\\\\\\\\nThe boot camp will create a sense of community among developers, building a network of talent that can continue collaborating beyond the event. This will contribute to the long-term growth of the NEAR ecosystem.\\\\\\\\n\\\\\\\\n**Improved Understanding of NEAR Development Tools:**\\\\\\\\n\\\\\\\\nDevelopers will leave with a solid understanding of NEAR\\\\\\\\\\\\'s development tools, enabling them to continue building on the platform even after the boot camp concludes.\\\\\\\\n\\\\\\\\n**High Engagement and Networking for Future Opportunities:**\\\\\\\\n\\\\\\\\nThe boot camp will foster relationships between developers, and mentors, potentially leading to long-term collaborations and involvement in future NEAR events and projects.\\\\\\\\nTarget Audience: Dev-Entrepreneurs, Builders and Developers who are looking to build impactful projects and applications leveraging the Near blockchain\\\\\\\\n\\\\\\\\n## **4. Challenges & Themes**\\\\\\\\n\\\\\\\\nDetails: The challenges and themes of the boot camp will be kept on similar lines of the theme of Redacted hackathon. \\\\\\\\n\\\\\\\\n## **5. Schedule and Activities**\\\\\\\\n\\\\\\\\n**Duration:** One-day boot camp of 8-10 hours\\\\\\\\n**Key Activities:** The planned activities for the developer boot camp will be as follows:\\\\\\\\n\\\\\\\\n**Introduction to NEAR Blockchain**\\\\\\\\n\\\\\\\\nOverview of NEAR Protocol and its ecosystem.\\\\\\\\nKey features of NEAR, such as scalability, security, and usability.\\\\\\\\n\\\\\\\\n**Setting Up Development Environment**\\\\\\\\n\\\\\\\\nStep-by-step guide to setting up tools (NEAR CLI, NEAR SDK, and wallet).\\\\\\\\nWalkthrough of key development resources and documentation.\\\\\\\\n\\\\\\\\n**Smart Contracts on NEAR**\\\\\\\\n\\\\\\\\nIntroduction to writing smart contracts using Rust/AssemblyScript.\\\\\\\\nBuilding a simple decentralized application (dApp).\\\\\\\\nDeploying and testing smart contracts on the NEAR testnet.\\\\\\\\n\\\\\\\\n**Interacting with NEAR Blockchain**\\\\\\\\n\\\\\\\\nUnderstanding NEAR accounts, transactions, and gas fees.\\\\\\\\nBuilding front-end applications that interact with NEAR smart contracts.\\\\\\\\nHandling wallet integrations for seamless user experience.\\\\\\\\n\\\\\\\\n**dApp Development Challenge**\\\\\\\\n\\\\\\\\nA hands-on session where participants work in teams to build a mini dApp.\\\\\\\\nLive coding support and troubleshooting by mentors.\\\\\\\\n\\\\\\\\n**Q&A and Networking**\\\\\\\\n\\\\\\\\nOpen Q&A session to clarify doubts and share insights.\\\\\\\\nNetworking opportunities with mentors and fellow developers.\\\\\\\\n\\\\\\\\n**Hackathon Prep & Best Practices**\\\\\\\\n\\\\\\\\nTips on participating in the global hackathon.\\\\\\\\nSharing best practices for creating successful NEAR-based applications.\\\\\\\\n\\\\\\\\n## **6. KPIs and Impact**\\\\\\\\n\\\\\\\\n**Key Performance Indicators:** We will be achieving the following KPIs:\\\\\\\\n\\\\\\\\n#100-150 developers\\\\\\\\n#30 prominent projects in the Redacted hackathon\\\\\\\\n\\\\\\\\n**Community Impact:**\\\\\\\\n\\\\\\\\n**Ecosystem Growth:** Attracting new developers and projects to the NEAR ecosystem, driving adoption and innovation.\\\\\\\\n**Project Creation:** Generating new projects and ideas that can be incubated and developed further within the NEAR ecosystem.\\\\\\\\n**Increased Awareness:** Raising awareness of NEAR\\\\\\\\u{2019}s technology and tools among developers and startups, positioning NEAR as a leading blockchain platform.\\\\\\\\n**Empowering Developers:** Building a stronger, more connected community through collaborative events and networking sessions.\\\\\\\\n\\\\\\\\n## **7. Budget and Funding**\\\\\\\\n\\\\\\\\n**Budget Breakdown:**\\\\\\\\nMarketing materials and merch: $1,000\\\\\\\\nFood and Beverages: $500\\\\\\\\nMarketing and PR: $1,000\\\\\\\\nVenue with audio and visual setup: $1000\\\\\\\\nTeam Cost: $500\\\\\\\\nContent and photography: $500\\\\\\\\nMiscellaneous: $500\\\\\\\\n\\\\\\\\n[Budget Sheet](https://docs.google.com/spreadsheets/d/11jVhjv17wMfH6zSJhccum5a8GPMOszMK_9ajtCwkD5c/edit?usp=sharing)\\\\\\\\n\\\\\\\\n**Total Funding Requested:** We are requesting $5K\\\\\\\\n\\\\\\\\n## **8. Bounties and Prizes**\\\\\\\\nParticipants will compete from the prize pool of 600K $ of the REDACTED hackathon\\\\\\\\n\\\\\\\\n## **9. Judging Criteria**\\\\\\\\n\\\\\\\\nThe projects coming out of the boot camp will be directly submitted to the REDACTED hackathon and will be judged directly by the Near team.\\\\\\\\n\\\\\\\\n## **10. Marketing and Promotion**\\\\\\\\n**Strategy:** \\\\\\\\n\\\\\\\\n**Social Media Campaigns:** Leveraging platforms like Twitter, LinkedIn, and Discord to reach the developer audience.\\\\\\\\n**Email Marketing:** Sending targeted emails to our developer community of **100K plus developers**\\\\\\\\n**Influencer Engagement:** Involving our influencers to promote the event through their channels and networks with a cumulative follower base of more than **500K followers**\\\\\\\\n**University Network:** We have more than **600 university partners** across India and we will engage them for this boot camp marketing\\\\\\\\n\\\\\\\\n## **11. Contact Information**\\\\\\\\nContact Details: TG: Sahil_Thakur07 \\\\\\\\nEmail: partnerships@blockseblock.com \\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"blockseblock.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"5000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Hackathon\", \"Hackbox\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0374647069748e+21
+    }
+  },
+  {
+    "id": "8645377780",
+    "receipt_id": "DBi2wdqQgvwaqcDHXMmtSwvRQe9kvuR42ZZfutPdxM8x",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "A4pQtrgUAdj1k3dRnKa7Xizr1ssBuFz79b32ZScPtqfr",
+      "block_height": 128844784,
+      "block_timestamp": 1727247942089979400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3540398253927,
+      "tokens_burnt": 354039825392700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "369ThKXmcuo2RWGZRGwUEGyX33UhGv6ngeEyyrLsXEKA",
+    "included_in_block_hash": "DdPRRE3s2GxdV69aEKdRr8YgULge3RkXz4XM7iUv33Ax",
+    "block_timestamp": "1727247939804484064",
+    "block": {
+      "block_height": 128844782
+    },
+    "receipt_conversion_tokens_burnt": "71976069531000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 354039825392700000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"blockseblock.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":46,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"blockseblock.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0374647069748e+21
+    }
+  },
+  {
+    "id": "8645572493",
+    "receipt_id": "F8V3LYiD9vi8YZ6396cLhNWePiVy1kbMtdyBvJFoD94U",
+    "predecessor_account_id": "blockseblock.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AYUKTZV78ELki1Auw7SEtepSB7P7meX3cHYJKRWtKtJf",
+      "block_height": 128845197,
+      "block_timestamp": 1727248393882075100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6904631115405,
+      "tokens_burnt": 690463111540500000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "5iGvUAWcF3WQ6RvbuZVo8VA4LnD51N2nxPtgzoAxckAP",
+    "included_in_block_hash": "4rcAqhHQ3C3wRjiqYGBczTezVePhVHEJNmYE83jEUPiS",
+    "block_timestamp": "1727248392793397234",
+    "block": {
+      "block_height": 128845196
+    },
+    "receipt_conversion_tokens_burnt": "72905901973500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 690463111540500000000,
+        "args": "{\"id\": 46, \"body\": {\"name\": \"REDACTED NEAR Innovators Bootcamp Chandigarh(India) City Node #PoweredByHackbox\", \"summary\": \"We are looking to organize a boot camp that will be joined by dev-entrepreneurs, builders, and developers where they will learn how to build leveraging Near Blockchain and participate in the hackathon.  Our key focus area is to provide all the required support to teams competing at the global hackathon and help build impactful projects at scale. \", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"# REDACTED Hackathon NEAR Innovators Bootcamp by BlockseBlock\\\\\\\\n\\\\\\\\nProposal Title: Redacted Hackathon NEAR Innovators Bootcamp by BlockseBlock | #PoweredByHackbox\\\\\\\\nRequested amount: $5K\\\\\\\\n\\\\\\\\n## **1. Hackathon Overview**\\\\\\\\n\\\\\\\\n**Title:** Redacted Hackathon NEAR Innovators Bootcamp by BlockseBlock \\\\\\\\n**Date & Format:** First week of October and in offline format\\\\\\\\n**Location:** Chandigarh, India\\\\\\\\n\\\\\\\\n## **2. Organizing Team**\\\\\\\\n**Organizers:** \\\\\\\\n[BlockseBlock](https://blockseblock.com/) is a global hackathon hosting platform with a strong developer community in SE Asia. We are already a global hackathon platform for ICP blockchain. With our unique approach of providing personalized support to developers, we are helping thousands of builders start their projects in the web3 and blockchain domains. Some of the key stats of the platform:\\\\\\\\n#100,000+ developers\\\\\\\\n#600+ university partners\\\\\\\\n#100+ hackathons\\\\\\\\n\\\\\\\\n**Partnerships:**\\\\\\\\n#600+ university partners\\\\\\\\n#500k plus follower base influencers( [CareerGPT](https://www.instagram.com/career_gpt_/), [Web3GPT](https://www.instagram.com/web3gpt/), [Web3Raza](https://www.instagram.com/web3raza/), [CryptoNewsBharat](https://www.instagram.com/cryptonewsbharat/))\\\\\\\\n\\\\\\\\n## **3. Event Objectives**\\\\\\\\n**Goals:**\\\\\\\\n\\\\\\\\n**Onboard New Developers to the NEAR Ecosystem:**\\\\\\\\n\\\\\\\\nThe primary goal of the boot camp is to introduce and onboard new developers to the NEAR blockchain. By providing hands-on training and practical insights, the event will lower the barriers to entry for developers unfamiliar with NEAR, fostering a larger and more diverse developer community.\\\\\\\\n\\\\\\\\n**Educate Developers on NEAR Tools and Frameworks:**\\\\\\\\nThe boot camp aims to provide an in-depth understanding of NEAR\\\\\\\\u{2019}s development environment, including key tools like NEAR CLI, SDK, and smart contract languages (Rust/AssemblyScript). This will equip developers with the skills needed to build functional applications on NEAR.\\\\\\\\n\\\\\\\\n**Increase Participation in the NEAR Global Hackathon:**\\\\\\\\n\\\\\\\\nBy aligning the boot camp with NEAR\\\\\\\\\\\\'s global hackathon, we aim to act as a feeder program. The developers trained during the boot camp will be better prepared and more confident to participate in the hackathon, increasing overall participation.\\\\\\\\n\\\\\\\\n**Promote Innovation and Problem Solving:**\\\\\\\\n\\\\\\\\nThrough hands-on coding sessions and a dApp-building challenge, participants will be encouraged to think creatively and solve real-world problems using blockchain technology. This can inspire new, innovative projects that will further develop into full-scale applications during the hackathon.\\\\\\\\n\\\\\\\\n**Foster Collaboration and Networking:**\\\\\\\\n\\\\\\\\nThe boot camp will create opportunities for participants to connect with fellow developers, mentors, and industry experts. This will help foster collaboration and build teams for the global hackathon.\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n**Expected Outcomes:**\\\\\\\\n\\\\\\\\n**Increased Number of Quality Hackathon Participants:**\\\\\\\\n\\\\\\\\nWe expect a higher number of technically proficient and motivated developers to join the NEAR global hackathon, thanks to the skills and confidence they gain from this boot camp.\\\\\\\\n\\\\\\\\n**New NEAR-Based Projects and dApps:**\\\\\\\\n\\\\\\\\nParticipants will leave the boot camp with the skills to build applications on the NEAR blockchain. Some of these projects will be further developed and submitted during the global hackathon, contributing to NEAR\\\\\\\\u{2019}s ecosystem growth.\\\\\\\\n\\\\\\\\n**Strengthened NEAR Developer Community:**\\\\\\\\n\\\\\\\\nThe boot camp will create a sense of community among developers, building a network of talent that can continue collaborating beyond the event. This will contribute to the long-term growth of the NEAR ecosystem.\\\\\\\\n\\\\\\\\n**Improved Understanding of NEAR Development Tools:**\\\\\\\\n\\\\\\\\nDevelopers will leave with a solid understanding of NEAR\\\\\\\\\\\\'s development tools, enabling them to continue building on the platform even after the boot camp concludes.\\\\\\\\n\\\\\\\\n**High Engagement and Networking for Future Opportunities:**\\\\\\\\n\\\\\\\\nThe boot camp will foster relationships between developers, and mentors, potentially leading to long-term collaborations and involvement in future NEAR events and projects.\\\\\\\\nTarget Audience: Dev-Entrepreneurs, Builders and Developers who are looking to build impactful projects and applications leveraging the Near blockchain\\\\\\\\n\\\\\\\\n## **4. Challenges & Themes**\\\\\\\\n\\\\\\\\nDetails: The challenges and themes of the boot camp will be kept on similar lines of the theme of Redacted hackathon. \\\\\\\\n\\\\\\\\n## **5. Schedule and Activities**\\\\\\\\n\\\\\\\\n**Duration:** One-day boot camp of 8-10 hours\\\\\\\\n**Key Activities:** The planned activities for the developer boot camp will be as follows:\\\\\\\\n\\\\\\\\n**Introduction to NEAR Blockchain**\\\\\\\\n\\\\\\\\nOverview of NEAR Protocol and its ecosystem.\\\\\\\\nKey features of NEAR, such as scalability, security, and usability.\\\\\\\\n\\\\\\\\n**Setting Up Development Environment**\\\\\\\\n\\\\\\\\nStep-by-step guide to setting up tools (NEAR CLI, NEAR SDK, and wallet).\\\\\\\\nWalkthrough of key development resources and documentation.\\\\\\\\n\\\\\\\\n**Smart Contracts on NEAR**\\\\\\\\n\\\\\\\\nIntroduction to writing smart contracts using Rust/AssemblyScript.\\\\\\\\nBuilding a simple decentralized application (dApp).\\\\\\\\nDeploying and testing smart contracts on the NEAR testnet.\\\\\\\\n\\\\\\\\n**Interacting with NEAR Blockchain**\\\\\\\\n\\\\\\\\nUnderstanding NEAR accounts, transactions, and gas fees.\\\\\\\\nBuilding front-end applications that interact with NEAR smart contracts.\\\\\\\\nHandling wallet integrations for seamless user experience.\\\\\\\\n\\\\\\\\n**dApp Development Challenge**\\\\\\\\n\\\\\\\\nA hands-on session where participants work in teams to build a mini dApp.\\\\\\\\nLive coding support and troubleshooting by mentors.\\\\\\\\n\\\\\\\\n**Q&A and Networking**\\\\\\\\n\\\\\\\\nOpen Q&A session to clarify doubts and share insights.\\\\\\\\nNetworking opportunities with mentors and fellow developers.\\\\\\\\n\\\\\\\\n**Hackathon Prep & Best Practices**\\\\\\\\n\\\\\\\\nTips on participating in the global hackathon.\\\\\\\\nSharing best practices for creating successful NEAR-based applications.\\\\\\\\n\\\\\\\\n## **6. KPIs and Impact**\\\\\\\\n\\\\\\\\n**Key Performance Indicators:** We will be achieving the following KPIs:\\\\\\\\n\\\\\\\\n#100-150 developers\\\\\\\\n#30 prominent projects in the Redacted hackathon\\\\\\\\n\\\\\\\\n**Community Impact:**\\\\\\\\n\\\\\\\\n**Ecosystem Growth:** Attracting new developers and projects to the NEAR ecosystem, driving adoption and innovation.\\\\\\\\n**Project Creation:** Generating new projects and ideas that can be incubated and developed further within the NEAR ecosystem.\\\\\\\\n**Increased Awareness:** Raising awareness of NEAR\\\\\\\\u{2019}s technology and tools among developers and startups, positioning NEAR as a leading blockchain platform.\\\\\\\\n**Empowering Developers:** Building a stronger, more connected community through collaborative events and networking sessions.\\\\\\\\n\\\\\\\\n## **7. Budget and Funding**\\\\\\\\n\\\\\\\\n**Budget Breakdown:**\\\\\\\\nMarketing materials and merch: $1,000\\\\\\\\nFood and Beverages: $500\\\\\\\\nMarketing and PR: $1,000\\\\\\\\nVenue with audio and visual setup: $1000\\\\\\\\nTeam Cost: $500\\\\\\\\nContent and photography: $500\\\\\\\\nMiscellaneous: $500\\\\\\\\n\\\\\\\\n[Budget Sheet](https://docs.google.com/spreadsheets/d/11jVhjv17wMfH6zSJhccum5a8GPMOszMK_9ajtCwkD5c/edit?usp=sharing)\\\\\\\\n\\\\\\\\n**Total Funding Requested:** We are requesting $5K\\\\\\\\n\\\\\\\\n## **8. Bounties and Prizes**\\\\\\\\nParticipants will compete from the prize pool of 600K $ of the REDACTED hackathon\\\\\\\\n\\\\\\\\n## **9. Judging Criteria**\\\\\\\\n\\\\\\\\nThe projects coming out of the boot camp will be directly submitted to the REDACTED hackathon and will be judged directly by the Near team.\\\\\\\\n\\\\\\\\n## **10. Marketing and Promotion**\\\\\\\\n**Strategy:** \\\\\\\\n\\\\\\\\n**Social Media Campaigns:** Leveraging platforms like Twitter, LinkedIn, and Discord to reach the developer audience.\\\\\\\\n**Email Marketing:** Sending targeted emails to our developer community of **100K plus developers**\\\\\\\\n**Influencer Engagement:** Involving our influencers to promote the event through their channels and networks with a cumulative follower base of more than **500K followers**\\\\\\\\n**University Network:** We have more than **600 university partners** across India and we will engage them for this boot camp marketing\\\\\\\\n\\\\\\\\n## **11. Contact Information**\\\\\\\\nContact Details: TG: Sahil_Thakur07 \\\\\\\\nEmail: partnerships@blockseblock.com \\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"blockseblock.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"5000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Hackathon\", \"Hackbox\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1162945572743e+21
+    }
+  },
+  {
+    "id": "8645572901",
+    "receipt_id": "9hRYNdcSHYwGzRb7Q4tuiBKtANtWWnRY5ixHvVw7HX34",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4KAR75zqN3suXBWmgcVJdFh5FHaTjaPQGSA351gUTeid",
+      "block_height": 128845198,
+      "block_timestamp": 1727248395048331800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3529255437603,
+      "tokens_burnt": 352925543760300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5iGvUAWcF3WQ6RvbuZVo8VA4LnD51N2nxPtgzoAxckAP",
+    "included_in_block_hash": "4rcAqhHQ3C3wRjiqYGBczTezVePhVHEJNmYE83jEUPiS",
+    "block_timestamp": "1727248392793397234",
+    "block": {
+      "block_height": 128845196
+    },
+    "receipt_conversion_tokens_burnt": "72905901973500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352925543760300000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"blockseblock.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":46,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"blockseblock.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1162945572743e+21
+    }
+  },
+  {
+    "id": "8645603569",
+    "receipt_id": "8ki94WdrzZUdSbyEoHReT4QvetLUCP77a5cNdk7851B2",
+    "predecessor_account_id": "blockseblock.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7sLLTd7wrSaXX2uRKHqwtkXxGDSyHu86L6DVjxpDfSUF",
+      "block_height": 128845301,
+      "block_timestamp": 1727248507955049700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8213118351408,
+      "tokens_burnt": 821311835140800000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "2C7nXDqtJ13s5bSHEnXhCjsJfEDL4ALSCSXHRMb427uq",
+    "included_in_block_hash": "Em9D6mVipy2sqBLreNqeKWN2acz5DmiMwdkHKFQcaU9",
+    "block_timestamp": "1727248507017938068",
+    "block": {
+      "block_height": 128845300
+    },
+    "receipt_conversion_tokens_burnt": "31707172213500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 821311835140800000000,
+        "args": "{\"id\": 46, \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified\": false, \"timeline_version\": \"V1\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2059445511146e+21
+    }
+  },
+  {
+    "id": "8645603863",
+    "receipt_id": "8AK45x6rXdDSAaASL27Kp6Z6FCv8yHzfiiZFqmrmojf8",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9w9SrqDk8g6YmeH44hqUD6qCVfh7SfNy8tDRNAiY5vjG",
+      "block_height": 128845302,
+      "block_timestamp": 1727248508898161700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3529255437603,
+      "tokens_burnt": 352925543760300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "2C7nXDqtJ13s5bSHEnXhCjsJfEDL4ALSCSXHRMb427uq",
+    "included_in_block_hash": "Em9D6mVipy2sqBLreNqeKWN2acz5DmiMwdkHKFQcaU9",
+    "block_timestamp": "1727248507017938068",
+    "block": {
+      "block_height": 128845300
+    },
+    "receipt_conversion_tokens_burnt": "31707172213500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352925543760300000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"blockseblock.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":46,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"blockseblock.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2059445511146e+21
+    }
+  },
+  {
+    "id": "8650287032",
+    "receipt_id": "DtPLHWA1DR8nXnMkiiPNschKryrgtDXJncqDyWfyyYpq",
+    "predecessor_account_id": "alejandro.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3GmAXceE3BvHp8WxAD9w8UyzxzKWQ35awm5GqnEGj67X",
+      "block_height": 128856802,
+      "block_timestamp": 1727261379793327400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6059971314723,
+      "tokens_burnt": 605997131472300000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "Ao21nyYAsb3Duw25WSpLJk7XqXv8pfiQpJuCLqjHUt5P",
+    "included_in_block_hash": "EA6hLQ3yMkszGCZ1VG3ASPuPBrsSgnerapqbL5p1b8my",
+    "block_timestamp": "1727261378644456551",
+    "block": {
+      "block_height": 128856801
+    },
+    "receipt_conversion_tokens_burnt": "58233622868000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 605997131472300000000,
+        "args": "{\"body\": {\"name\": \"[Redacted] Hacker House in Chinag Mai, Thailand (October 2024)\", \"summary\": \"Proposal for the [Redacted] Hacker House in Chiang Mai, a month-long residential experience for [Redacted] hackathon participants, NEAR\\\\\\\\\\\\'s presence as part of Archipelago village.\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"# NEAR Ecosystem Hacker House Proposal - Chiang Mai\\\\\\\\n\\\\\\\\n## 1. Executive Summary\\\\\\\\n\\\\\\\\nThe NEAR Ecosystem Hacker House in Chiang Mai, Thailand, is a month-long residency program designed to bring together top builders, founders, and emerging tech leaders from the NEAR ecosystem. This event is part of a larger pop-up village initiative called Archipelago, coinciding with major blockchain events in Asia. \\\\\\\\n\\\\\\\\nThe Hacker House is specifically designed to support participants of the [Redacted] Hackathon, providing a collaborative environment for NEAR ecosystem builders to develop and refine their hackathon submissions while fostering relationships with wider web3 ecosystems.\\\\\\\\n\\\\\\\\n## 2. Event Overview\\\\\\\\n\\\\\\\\n- **Event Name**: [Redacted] Hacker House (NEAR Ecosystem)\\\\\\\\n- **Location**: Chiang Mai, Thailand\\\\\\\\n- **Duration**: October 1-31, 2024 [Tentative Dates]\\\\\\\\n- **Context**: Part of Archipelago, a larger gathering of tech communities between Token 2049 and DevCon.\\\\\\\\n\\\\\\\\nThe Hacker House is intrinsically linked to the [Redacted] Hackathon, with all participants expected to be actively working on hackathon submissions throughout their stay. It\\\\\\\\\\\\'s situated within the [Archipelago](https://potlock.notion.site/Archipelago-d90ea029295a4b789464243fa206fd15), a pop-up village where many communities are setting up their own hacker houses and activities. Over 600 events are expected to take place during the month.\\\\\\\\n\\\\\\\\n## 3. Objectives and Goals\\\\\\\\n\\\\\\\\n- Support all participants in developing high-quality submissions for the [Redacted] Hackathon\\\\\\\\n- Pipeline 5-10 quality submissions for the [Redacted] Hackathon\\\\\\\\n- Foster collaboration and knowledge sharing to enhance hackathon projects\\\\\\\\n- Support projects in evolving into founded startups\\\\\\\\n- Penetrate Ethereum and high-quality builder networks\\\\\\\\n- Reinforce AI narrative through programming, content, and product integration\\\\\\\\n- Reward vetted builders with a productive and inspiring environment\\\\\\\\n- Foster deeper ecosystem collaboration\\\\\\\\n- Increase mindshare within the existing Ethereum community\\\\\\\\n- Improve community vibes and encourage extended stays\\\\\\\\n\\\\\\\\n## 4. Target Audience\\\\\\\\n\\\\\\\\n- NEAR ecosystem builders and founders participating in the [Redacted] Hackathon\\\\\\\\n- Wider web3 communities participating in Archipelago\\\\\\\\n\\\\\\\\n\\\\\\\\n## 5. Event Details\\\\\\\\n\\\\\\\\n### 5.1 Date and Duration\\\\\\\\n\\\\\\\\nOctober 1-31, 2024 \\\\\\\\n\\\\\\\\n### 5.2 Venue\\\\\\\\n\\\\\\\\nA large house in Chiang Mai, Thailand, serving as the main HQ:\\\\\\\\n- Sleeping Capacity: ~6\\\\\\\\n- Purpose: Hosting daily work sessions, collaborations, and events\\\\\\\\n- Cost: $6,400 \\\\\\\\n\\\\\\\\n### 5.3 Agenda/Schedule\\\\\\\\n\\\\\\\\nThe NEAR Ecosystem Hacker House will follow an \\\\\\\\\\\\\\\"unconference\\\\\\\\\\\\\\\" style format, with a strong focus on supporting [Redacted] Hackathon participants:\\\\\\\\n\\\\\\\\n- Participant-driven agenda: Daily schedules will be collaboratively created, focusing on sessions that support hackathon project development.\\\\\\\\n- Flexibility and spontaneity: While maintaining a hackathon focus, sessions will emerge based on participants\\\\\\\\\\\\' project needs and shared challenges.\\\\\\\\n- Interactive discussions: Emphasis on problem-solving workshops, code reviews, and design critiques relevant to hackathon projects.\\\\\\\\n- Open space technology: Participants can join sessions most relevant to their hackathon projects or contribute expertise to others.\\\\\\\\n- Self-organization: Attendees take responsibility for their project development while contributing to the community\\\\\\\\\\\\'s collective knowledge.\\\\\\\\n\\\\\\\\nCore elements will include:\\\\\\\\n- Daily standups for hackathon project progress updates and accountability\\\\\\\\n- Whiteboard sessions for product ideation and refinement\\\\\\\\n- Skillshares and mentorship opportunities focused on technologies relevant to hackathon projects\\\\\\\\n- Collaboration sessions for cross-team problem-solving\\\\\\\\n- Content creation to document the development process and showcase projects\\\\\\\\n- Flexibility to engage with broader Archipelago events that could benefit hackathon projects\\\\\\\\n\\\\\\\\n## 6. Budget Breakdown\\\\\\\\n\\\\\\\\nBudget Breakdown Available on [Spreadsheet](https://docs.google.com/spreadsheets/d/1qbvH3AT-dduTCWXAM3EoP8fZyWshnQ6S8gmB0MNYp6k/edit?usp=sharing) \\\\\\\\n\\\\\\\\nHQ House was booked in advance to secure venue. Remaining residential accomodation will be booked in coordination with participants, we expect them to stay as close to HQ as possible and come during the day to hack. Any unused funds for additional residential capacity will be returned. \\\\\\\\n\\\\\\\\n## 7. Expected Outcomes and Benefits\\\\\\\\n\\\\\\\\n- High-quality submissions to the [Redacted] Hackathon\\\\\\\\n- Strengthened NEAR ecosystem community\\\\\\\\n- Increased collaboration with other blockchain communities\\\\\\\\n- Improved mindshare within the Ethereum community\\\\\\\\n- Enhanced AI integration in NEAR ecosystem projects\\\\\\\\n\\\\\\\\n## 8. Team and Organizers\\\\\\\\n\\\\\\\\n- AVB: Host of Wild User Interviews\\\\\\\\n- Plug: Founder at Potlock, Former Head of Decentralization at Banyan Collective, Council at Build DAO\\\\\\\\n\\\\\\\\n## 9. Conclusion\\\\\\\\n\\\\\\\\nThe [Redacted] Hacker House in Chiang Mai is NEAR\\\\\\\\\\\\'s presence within Archipelago. A unique space for [Redacted] hackers to come together, build better, learn, and strengthen the community. FOUNDER MODE ON.\", \"linked_proposals\": [], \"receiver_account\": \"misfitsmedia.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"25000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Event sponsorship\"], \"accepted_terms_and_conditions_version\": 128856757}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8117772635786e+21
+    }
+  },
+  {
+    "id": "8650287116",
+    "receipt_id": "36kp7KTZvrEY69U8B486cLHsaLXqAEAN1v7BQAegtaKD",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CLtsC5XQE4bEepMQUyTipxNyYZJwfwqA7owcjA9aHArg",
+      "block_height": 128856803,
+      "block_timestamp": 1727261380765875500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4535749845584,
+      "tokens_burnt": 453574984558400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Ao21nyYAsb3Duw25WSpLJk7XqXv8pfiQpJuCLqjHUt5P",
+    "included_in_block_hash": "EA6hLQ3yMkszGCZ1VG3ASPuPBrsSgnerapqbL5p1b8my",
+    "block_timestamp": "1727261378644456551",
+    "block": {
+      "block_height": 128856801
+    },
+    "receipt_conversion_tokens_burnt": "58233622868000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 453574984558400000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Bounty* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @alejandro.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}[Redacted] Hacker House in Chinag Mai, Thailand (October 2024)\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nProposal for the [Redacted] Hacker House in Chiang Mai, a month-long residential experience for [Redacted] hackathon participants, NEAR\\\\\\\\\\\\'s presence as part of Archipelago village.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/events-committee.near/widget/app?page=proposal&id=47)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8117772635786e+21
+    }
+  },
+  {
+    "id": "8650287120",
+    "receipt_id": "BtrGxWBm45iaHLKWoSSBm69ZcEVR2eK4bG7ev2FLvLe4",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CLtsC5XQE4bEepMQUyTipxNyYZJwfwqA7owcjA9aHArg",
+      "block_height": 128856803,
+      "block_timestamp": 1727261380765875500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3395340747998,
+      "tokens_burnt": 339534074799800000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "Ao21nyYAsb3Duw25WSpLJk7XqXv8pfiQpJuCLqjHUt5P",
+    "included_in_block_hash": "EA6hLQ3yMkszGCZ1VG3ASPuPBrsSgnerapqbL5p1b8my",
+    "block_timestamp": "1727261378644456551",
+    "block": {
+      "block_height": 128856801
+    },
+    "receipt_conversion_tokens_burnt": "58233622868000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 339534074799800000000,
+        "args": "{\"proposal\": {\"id\": 47, \"snapshot\": {\"name\": \"[Redacted] Hacker House in Chinag Mai, Thailand (October 2024)\", \"labels\": [\"Event sponsorship\"], \"summary\": \"Proposal for the [Redacted] Hacker House in Chiang Mai, a month-long residential experience for [Redacted] hackathon participants, NEAR\\\\\\\\\\\\'s presence as part of Archipelago village.\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"alejandro.near\", \"timestamp\": \"1727261379793327322\", \"supervisor\": null, \"description\": \"# NEAR Ecosystem Hacker House Proposal - Chiang Mai\\\\\\\\n\\\\\\\\n## 1. Executive Summary\\\\\\\\n\\\\\\\\nThe NEAR Ecosystem Hacker House in Chiang Mai, Thailand, is a month-long residency program designed to bring together top builders, founders, and emerging tech leaders from the NEAR ecosystem. This event is part of a larger pop-up village initiative called Archipelago, coinciding with major blockchain events in Asia. \\\\\\\\n\\\\\\\\nThe Hacker House is specifically designed to support participants of the [Redacted] Hackathon, providing a collaborative environment for NEAR ecosystem builders to develop and refine their hackathon submissions while fostering relationships with wider web3 ecosystems.\\\\\\\\n\\\\\\\\n## 2. Event Overview\\\\\\\\n\\\\\\\\n- **Event Name**: [Redacted] Hacker House (NEAR Ecosystem)\\\\\\\\n- **Location**: Chiang Mai, Thailand\\\\\\\\n- **Duration**: October 1-31, 2024 [Tentative Dates]\\\\\\\\n- **Context**: Part of Archipelago, a larger gathering of tech communities between Token 2049 and DevCon.\\\\\\\\n\\\\\\\\nThe Hacker House is intrinsically linked to the [Redacted] Hackathon, with all participants expected to be actively working on hackathon submissions throughout their stay. It\\\\\\\\\\\\'s situated within the [Archipelago](https://potlock.notion.site/Archipelago-d90ea029295a4b789464243fa206fd15), a pop-up village where many communities are setting up their own hacker houses and activities. Over 600 events are expected to take place during the month.\\\\\\\\n\\\\\\\\n## 3. Objectives and Goals\\\\\\\\n\\\\\\\\n- Support all participants in developing high-quality submissions for the [Redacted] Hackathon\\\\\\\\n- Pipeline 5-10 quality submissions for the [Redacted] Hackathon\\\\\\\\n- Foster collaboration and knowledge sharing to enhance hackathon projects\\\\\\\\n- Support projects in evolving into founded startups\\\\\\\\n- Penetrate Ethereum and high-quality builder networks\\\\\\\\n- Reinforce AI narrative through programming, content, and product integration\\\\\\\\n- Reward vetted builders with a productive and inspiring environment\\\\\\\\n- Foster deeper ecosystem collaboration\\\\\\\\n- Increase mindshare within the existing Ethereum community\\\\\\\\n- Improve community vibes and encourage extended stays\\\\\\\\n\\\\\\\\n## 4. Target Audience\\\\\\\\n\\\\\\\\n- NEAR ecosystem builders and founders participating in the [Redacted] Hackathon\\\\\\\\n- Wider web3 communities participating in Archipelago\\\\\\\\n\\\\\\\\n\\\\\\\\n## 5. Event Details\\\\\\\\n\\\\\\\\n### 5.1 Date and Duration\\\\\\\\n\\\\\\\\nOctober 1-31, 2024 \\\\\\\\n\\\\\\\\n### 5.2 Venue\\\\\\\\n\\\\\\\\nA large house in Chiang Mai, Thailand, serving as the main HQ:\\\\\\\\n- Sleeping Capacity: ~6\\\\\\\\n- Purpose: Hosting daily work sessions, collaborations, and events\\\\\\\\n- Cost: $6,400 \\\\\\\\n\\\\\\\\n### 5.3 Agenda/Schedule\\\\\\\\n\\\\\\\\nThe NEAR Ecosystem Hacker House will follow an \\\\\\\\\\\\\\\"unconference\\\\\\\\\\\\\\\" style format, with a strong focus on supporting [Redacted] Hackathon participants:\\\\\\\\n\\\\\\\\n- Participant-driven agenda: Daily schedules will be collaboratively created, focusing on sessions that support hackathon project development.\\\\\\\\n- Flexibility and spontaneity: While maintaining a hackathon focus, sessions will emerge based on participants\\\\\\\\\\\\' project needs and shared challenges.\\\\\\\\n- Interactive discussions: Emphasis on problem-solving workshops, code reviews, and design critiques relevant to hackathon projects.\\\\\\\\n- Open space technology: Participants can join sessions most relevant to their hackathon projects or contribute expertise to others.\\\\\\\\n- Self-organization: Attendees take responsibility for their project development while contributing to the community\\\\\\\\\\\\'s collective knowledge.\\\\\\\\n\\\\\\\\nCore elements will include:\\\\\\\\n- Daily standups for hackathon project progress updates and accountability\\\\\\\\n- Whiteboard sessions for product ideation and refinement\\\\\\\\n- Skillshares and mentorship opportunities focused on technologies relevant to hackathon projects\\\\\\\\n- Collaboration sessions for cross-team problem-solving\\\\\\\\n- Content creation to document the development process and showcase projects\\\\\\\\n- Flexibility to engage with broader Archipelago events that could benefit hackathon projects\\\\\\\\n\\\\\\\\n## 6. Budget Breakdown\\\\\\\\n\\\\\\\\nBudget Breakdown Available on [Spreadsheet](https://docs.google.com/spreadsheets/d/1qbvH3AT-dduTCWXAM3EoP8fZyWshnQ6S8gmB0MNYp6k/edit?usp=sharing) \\\\\\\\n\\\\\\\\nHQ House was booked in advance to secure venue. Remaining residential accomodation will be booked in coordination with participants, we expect them to stay as close to HQ as possible and come during the day to hack. Any unused funds for additional residential capacity will be returned. \\\\\\\\n\\\\\\\\n## 7. Expected Outcomes and Benefits\\\\\\\\n\\\\\\\\n- High-quality submissions to the [Redacted] Hackathon\\\\\\\\n- Strengthened NEAR ecosystem community\\\\\\\\n- Increased collaboration with other blockchain communities\\\\\\\\n- Improved mindshare within the Ethereum community\\\\\\\\n- Enhanced AI integration in NEAR ecosystem projects\\\\\\\\n\\\\\\\\n## 8. Team and Organizers\\\\\\\\n\\\\\\\\n- AVB: Host of Wild User Interviews\\\\\\\\n- Plug: Founder at Potlock, Former Head of Decentralization at Banyan Collective, Council at Build DAO\\\\\\\\n\\\\\\\\n## 9. Conclusion\\\\\\\\n\\\\\\\\nThe [Redacted] Hacker House in Chiang Mai is NEAR\\\\\\\\\\\\'s presence within Archipelago. A unique space for [Redacted] hackers to come together, build better, learn, and strengthen the community. FOUNDER MODE ON.\", \"linked_proposals\": [], \"receiver_account\": \"misfitsmedia.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"25000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"alejandro.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8117772635786e+21
+    }
+  },
+  {
+    "id": "8650287123",
+    "receipt_id": "C9Jcs944eShDkrqXdGdv22LSmhSmtdB8QedGXuBBUTf4",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CLtsC5XQE4bEepMQUyTipxNyYZJwfwqA7owcjA9aHArg",
+      "block_height": 128856803,
+      "block_timestamp": 1727261380765875500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3544374498801,
+      "tokens_burnt": 354437449880100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Ao21nyYAsb3Duw25WSpLJk7XqXv8pfiQpJuCLqjHUt5P",
+    "included_in_block_hash": "EA6hLQ3yMkszGCZ1VG3ASPuPBrsSgnerapqbL5p1b8my",
+    "block_timestamp": "1727261378644456551",
+    "block": {
+      "block_height": 128856801
+    },
+    "receipt_conversion_tokens_burnt": "58233622868000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 354437449880100000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":47,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"alejandro.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8117772635786e+21
+    }
+  },
+  {
+    "id": "8650356727",
+    "receipt_id": "HXYnZj9cWX7PUB8746TVnJX1ru5vJ6kyC1GUfGZRcCqH",
+    "predecessor_account_id": "yarotska.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Fxabn5rFsRiXCwz9UbwjgUC8QZWVeja1cSoKN1ubao1m",
+      "block_height": 128856996,
+      "block_timestamp": 1727261591666196700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5685671013156,
+      "tokens_burnt": 568567101315600000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "3UsxSUbBoSfRMKxn8JTRRB8cBsL2j3K9sAUM827HpLdx",
+    "included_in_block_hash": "9DtkBSDKT7dkBmVnLptFf8GCWyGxZahC3CYRv3AG4PKC",
+    "block_timestamp": "1727261590794626436",
+    "block": {
+      "block_height": 128856995
+    },
+    "receipt_conversion_tokens_burnt": "70168856732500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 568567101315600000000,
+        "args": "{\"id\": 45, \"body\": {\"name\": \"Open Web House [REDACTED] city node - Powered by Hackbox\", \"summary\": \"Open Web House [REDACTED] Powered by Hackbox is a hackathon where blockchain technologies are used to create prototypes. EVM\\\\\\\\\\\\'s backend technology and NEAR\\\\\\\\\\\\'s easy Blockchain Operating System (BOS) frontend tools generate disruptive and scalable solutions to current Web 3.0 problems.\", \"category\": \"Bounty\", \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified\": true, \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": true}, \"supervisor\": \"yarotska.near\", \"description\": \"### TL;DR\\\\\\\\u{26a1}\\\\\\\\nOpen Web House [REDACTED] Powered by Hackbox is a hackathon where blockchain technologies are used to create prototypes. EVM\\\\\\\\\\\\'s backend technology and NEAR\\\\\\\\\\\\'s easy Blockchain Operating System (BOS) frontend tools generate disruptive and scalable solutions to current Web 3.0 problems.\\\\\\\\n\\\\\\\\n### Past hackathons:\\\\\\\\n* Puerto Vallarta M\\\\\\\\u{e9}xico, november 2022 | [See more](https://gov.near.org/t/report-open-web-house-puerto-vallarta-mexico/31780)\\\\\\\\n* Guadalajara M\\\\\\\\u{e9}xico, march 2023 | [See more](https://gov.near.org/t/report-open-web-house-guadalajara-mexico/33459)\\\\\\\\n* Monterrey M\\\\\\\\u{e9}xico, may 2023 at CriptoM\\\\\\\\u{e9}xico | [See more](https://gov.near.org/t/report-open-web-house-monterrey-mexico/34795)\\\\\\\\n* Ciudad de M\\\\\\\\u{e9}xico, october 2023 at Ethereum M\\\\\\\\u{e9}xico 2023 | [See more](https://near.social/devhub.near/widget/app?page=post&id=2168)\\\\\\\\n* M\\\\\\\\u{e9}rida M\\\\\\\\u{e9}xico, september 2024 at Ethereum M\\\\\\\\u{e9}xico 2024 | [See more](https://x.com/openwebacademy_/status/1836512779613745343)\\\\\\\\n\\\\\\\\n### Hackathon Overview\\\\\\\\n* Date: \\\\\\\\tOctober 17-19, 2024 \\\\\\\\n* Format: IRL\\\\\\\\n* Location: M\\\\\\\\u{e9}xico\\\\\\\\n\\\\\\\\n### Organizer Team \\\\\\\\n* Organizers: Open Web Academy\\\\\\\\n* Partnerships: General Coordination of Polytechnic and Technological Universities of Nayarit, INJUVE.\\\\\\\\n\\\\\\\\n### Event Objectives\\\\\\\\n#### Goals\\\\\\\\n* Foster innovation and problem-solving through the development of blockchain solutions using BOS and EVMs\\\\\\\\n* Demonstrate BOS and EVM\\\\\\\\u{2019}s unique capabilities and potential to transform various industries jointly.\\\\\\\\n* Increase adoption and continued use of decentralized BOS and IA tools.\\\\\\\\n\\\\\\\\n#### Target Audience\\\\\\\\nFullstack developers, Javascript developers, general devs, university students and IT professionals.\\\\\\\\n\\\\\\\\n### Challenges & Themes\\\\\\\\n#### **Chain abstraction**\\\\\\\\n**Introduction**\\\\\\\\nChain abstraction is transforming the way developers build blockchain applications by simplifying cross-chain interactions and enabling decentralized applications to work seamlessly across multiple blockchain networks. With chain abstraction, developers can create a unified experience that abstracts away the complexities of different chains, such as transaction formats, consensus mechanisms, and token standards. This approach opens up possibilities for truly interoperable applications that can leverage the strengths of multiple blockchains, such as NEAR, Ethereum, Solana, Polkadot, and more.\\\\\\\\n**Expected solution**\\\\\\\\nA fully functional dApp that uses chain abstraction techniques to interact with multiple blockchains, providing a unified and simplified user experience.\\\\\\\\nThe dApp should enable actions such as cross-chain token transfers, asset swaps, or data synchronization, with all complexity hidden from the end user.\\\\\\\\n\\\\\\\\n#### **Bitte Protocol**\\\\\\\\n**Introduction**\\\\\\\\nThe future of Web3 is AI. As open source models flourish and decentralized infrastructure evolves, the integration of strong cryptocurrency custody, a simpler user experience (via AI prompts and agents), and advanced AI control has the potential to transform Web3. We expect to see agents that improve security, enhance privacy, increase adoption, and support decentralized governance.\\\\\\\\n\\\\\\\\nBy registering your agent as a plugin in the Bitte Wallet, you will allow Bitte Wallet users to take advantage of the launch of an agent that Bitte Wallet users will be able to interact with directly through the AI \\\\\\\\u{200b}\\\\\\\\u{200b}tab in the Bitte Wallet.\\\\\\\\n\\\\\\\\n**Expected Solution**\\\\\\\\nSuccessful submissions will achieve plugin verification within the Bitte Wallet.\\\\\\\\n\\\\\\\\n#### **Decentralized IA**\\\\\\\\n**Introduction**\\\\\\\\nThe intersection of AI and blockchain technology is revolutionizing the decentralized ecosystem. By integrating AI into decentralized systems, we can improve decision-making, automate complex processes, and deliver personalized user experiences, all while maintaining privacy and security. With platforms like NEAR Protocol, we can deploy AI models that operate on a decentralized infrastructure, ensuring data integrity and censorship resistance. Your task is to leverage these technologies to build an AI-powered dApp (decentralized application) that interacts with blockchain smart contracts, providing unique and valuable services to users.\\\\\\\\n\\\\\\\\n**Expected Solution**\\\\\\\\nA fully functional AI-powered dApp that consumes and interacts with a smart contract, adding significant value to the user.\\\\\\\\nUse cases can include predictive analytics, autonomous agents, recommendation engines, or any AI-driven decision-making system that operates in a decentralized environment.\\\\\\\\n\\\\\\\\n### chedule and Activities\\\\\\\\nDuration: 3 days IRL\\\\\\\\n\\\\\\\\n![Captura desde 2024-09-24 22-16-46|558x390, 100%](https://i.ibb.co/34qwdK3/Captura-desde-2024-09-24-22-16-46.png)\\\\\\\\n*show the full table in this Google Docs | [LInk](https://docs.google.com/document/d/1DTCoV3yu-M66hlqevHlt3oeC2eec5OegxLR0TsmQWJA/edit#heading=h.7xmrn16jgvhi)\\\\\\\\n\\\\\\\\n### KPIs\\\\\\\\u{1f3af}\\\\\\\\n* 120 registered participants\\\\\\\\n* 10-15 projects created using Blockchain Operating System technology or decentralized IA\\\\\\\\n* 100 new NEAR Protocol wallets\\\\\\\\n* Partner with 3 universities for the celebration of the hackathon\\\\\\\\n\\\\\\\\n### Budget\\\\\\\\nTo see the full cost breakdown of the event, please visit the following document\\\\\\\\n[Budget layout - M\\\\\\\\u{e9}xico node](https://docs.google.com/spreadsheets/d/1mmIZieBWv1b3CNi2mIs-5swpiBKeCbeU6WAtUBlEHnA/edit?usp=sharing)\\\\\\\\n**Total for the hackathon:** 14250 USD + 3000 USD in prizes.\\\\\\\\n\\\\\\\\n### Bounties and Prizes\\\\\\\\nEach proposed bounty can be awarded with up to 1000 USD, this will vary depending on the level of development achieved and the viability of the proposed project.\\\\\\\\nThe prize delivery process will be carried out by hackbox, once the Open Web Academy notifies the winners of the different challenges. Each awarded team must go through the processes required to collect the prizes.\\\\\\\\n\\\\\\\\n### Judging Criteria\\\\\\\\nWhile it is true that each challenge will have its own particular criteria for evaluation, all will follow a common line to measure the level of development: Ready to use and validated, Deployed, Idea and simulation.\\\\\\\\n\\\\\\\\n|Level|Acceptance criteria|\\\\\\\\n| --- | --- |\\\\\\\\n|Ready to use and validated|* Prototype deployed on mainnet * An iteration was made to test its value proposition to users. * It makes use of NEAR in its infrastructure to build its value proposition.|\\\\\\\\n|Deployed|* Prototype deployed on mainnet * Has a defined market and value proposition. * Makes use of NEAR in its infrastructure to build its value proposition.|\\\\\\\\n|Idea and simulation|*Presents a mockup or UI design to help evaluate the idea. *Uses NEAR in its infrastructure to build its value proposition.|\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n### Contact Information\\\\\\\\n**Our team includes:**\\\\\\\\n* Alan Estrada (@alan777.near): NEAR certified developer and co-founder of web 3.0 projects at NEAR.\\\\\\\\n* Irving Cari\\\\\\\\u{f1}o (@izcc.near): Certified NEAR Analyst, NEAR Professor and Google Lv2 Professor.\\\\\\\\n* Yair Nava (@yairnava.near): Backend developer with experience in RUST and Solidity, mentor of technical workshops\\\\\\\\n*  Luis Daniel (@syi216.near): Front end developer, with experience in BOS. Technical content creator about NEAR\\\\\\\\n* Zaida Nieto (@freyjxh98.near) Graphic designer, social media manager. businness engenier\\\\\\\\n**Our social networks**\\\\\\\\n* Website: https://ow.academy\\\\\\\\n* Youtube:https://www.youtube.com/@openwebacademy\\\\\\\\n* Twitter: https://twitter.com/openwebacademy_\\\\\\\\n* Telegram: https://t.me/openwebacademy1\\\\\\\\n* Discord: discord.gg/XhGJXszkyc\\\\\\\\n* Github: https://github.com/open-web-academy \", \"linked_proposals\": [], \"receiver_account\": \"open-web-academy.sputnik-dao.near\", \"requested_sponsor\": \"events-committee.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"14250\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Hackbox\", \"Hackathon\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 991651638608400000000
+    }
+  },
+  {
+    "id": "8650357053",
+    "receipt_id": "CqRhQJ9JW4AWwSe7RYjP5zow8wa8iHuegxsznuLFouH5",
+    "predecessor_account_id": "events-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4zGKweDuGrtLnLhcJa2pbFeiHQGdEuJPWDs5Jwc1suk3",
+      "block_height": 128856997,
+      "block_timestamp": 1727261592773518800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3529156805603,
+      "tokens_burnt": 352915680560300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "3UsxSUbBoSfRMKxn8JTRRB8cBsL2j3K9sAUM827HpLdx",
+    "included_in_block_hash": "9DtkBSDKT7dkBmVnLptFf8GCWyGxZahC3CYRv3AG4PKC",
+    "block_timestamp": "1727261590794626436",
+    "block": {
+      "block_height": 128856995
+    },
+    "receipt_conversion_tokens_burnt": "70168856732500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352915680560300000000,
+        "args": "{\"data\": {\"events-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"irvingzcc.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":45,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"events-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"yarotska.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 991651638608400000000
+    }
+  },
+  {
+    "id": "8650365650",
+    "receipt_id": "7mwuav3143xp23JcKemQwmyVyn2oRR5XLVDTzc971BeJ",
+    "predecessor_account_id": "yarotska.near",
+    "receiver_account_id": "events-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "A1ZpmRXbqCg6CgZdSdYLPCt4UJyvdTKCGAEnxXr9UoLf",
+      "block_height": 128857025,
+      "block_timestamp": 1727261623831962400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6791901057946,
+      "tokens_burnt": 679190105794600000000,
+      "executor_account_id": "events-committee.near",
+      "status": true
+    },
+    "transaction_hash": "H3Jgkm6KMeRf5SXFkot9tmMKrqFrBEk31VhMQ8SX7Wev",
+    "included_in_block_hash": "H4x36rP29CG6FQ2EULBqQGa2LWxogFyebgZcEgNFqQsf",
+    "block_timestamp": "1727261622835167026",
+    "block": {
+      "block_height": 128857024
+    },
+    "receipt_conversion_tokens_burnt": "31692867099000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 679190105794600000000,
+        "args": "{\"id\": 45, \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0637081954871e+21
+    }
+  }
+]

@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "8910975814",
+    "receipt_id": "A2tg8XPLxuxVGwfTBTesg3appfMwW46Lv8xcPSAbUr9g",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5TaGAZeYWApAWYoW6za5zQLKrBnNfvh6wpRRzChEW4yD",
+      "block_height": 129550352,
+      "block_timestamp": 1728050231525205500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5366931363623,
+      "tokens_burnt": 536693136362300000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "E24LVu1gdd31bvfhRaqfNh9Wk6GxjwpLfVYvJYWQYUK7",
+    "included_in_block_hash": "4ArY7SqUWJxfc5WHWhceHaYnMtsv5RF1b5dfyr4uuEY1",
+    "block_timestamp": "1728050230248475527",
+    "block": {
+      "block_height": 129550351
+    },
+    "receipt_conversion_tokens_burnt": "32737140457500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 536693136362300000000,
+        "args": "{\"id\": 217, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"https://nearblocks.io/txns/J9BHXduzKd5WpB5uW5A3dEHVuziHpZwjezjBjdqworyP\"], \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"kyc_verified_deprecated\": false, \"sponsor_requested_review\": true, \"trustees_released_payment\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 927478375026500000000
+    }
+  },
+  {
+    "id": "8910976343",
+    "receipt_id": "251ecimL3BDxeS95rUsf7UKfiogXFAhCdkSvsYhEbUqf",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "F4vYAB6chZDQnFiSFGReHba2EEwnbbaQi7QeunDSXF8S",
+      "block_height": 129550353,
+      "block_timestamp": 1728050232830997800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3580480982067,
+      "tokens_burnt": 358048098206700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "E24LVu1gdd31bvfhRaqfNh9Wk6GxjwpLfVYvJYWQYUK7",
+    "included_in_block_hash": "4ArY7SqUWJxfc5WHWhceHaYnMtsv5RF1b5dfyr4uuEY1",
+    "block_timestamp": "1728050230248475527",
+    "block": {
+      "block_height": 129550351
+    },
+    "receipt_conversion_tokens_burnt": "32737140457500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 358048098206700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"joespano.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":217,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 927478375026500000000
+    }
+  },
+  {
+    "id": "9008050425",
+    "receipt_id": "H7HTwi1X4cBoUPLWywZwyoC9vaMSgDCodbSEB39sWbMx",
+    "predecessor_account_id": "pivortex.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "UfKS5ahbiFct2iqgdFmNCNaQbt8LHkC6nKsLX2Hfn8j",
+      "block_height": 129782788,
+      "block_timestamp": 1728310432323465000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5257505434689,
+      "tokens_burnt": 525750543468900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "teRQmM9QTZE4FHCsmbU9gfj52mcFdd7HTznQE4xxy7W",
+    "included_in_block_hash": "BCqrs9eykf8nvPag8mkJeDdfmvkHZG1gE9BHixU9qyNM",
+    "block_timestamp": "1728310431074052872",
+    "block": {
+      "block_height": 129782787
+    },
+    "receipt_conversion_tokens_burnt": "39884929336000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 525750543468900000000,
+        "args": "{\"body\": {\"name\": \"Owen DevRel Contributor Report 9 September - 22 September 2024\", \"summary\": \"Bi-weekly paid developer relations contributor report. These activities aim to improve the developer experience in the NEAR ecosystem. \", \"category\": \"Decentralized DevRel\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": \"gagdiez.near\", \"description\": \"## Timeline\\\\\\\\nStart Date: September 9, 2024\\\\\\\\n\\\\\\\\nEnd Date: September 22, 2024\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n## Requested Funding\\\\\\\\nHours: 39:35 \\\\\\\\n\\\\\\\\nRate: $50/hour \\\\\\\\n\\\\\\\\nTotal Amount: $1979 \\\\\\\\n\\\\\\\\n# Summary of Activities\\\\\\\\n\\\\\\\\n### Developer and community support \\\\\\\\n- 9:00 Supporting developers through Discord, Telegram and office hours\\\\\\\\n\\\\\\\\n### Contributions\\\\\\\\n- 13:20 Completing auction tutorial (completing indexing, fixing factory and finishing docs). [Docs](https://github.com/near/docs), [Repo](https://github.com/near-examples/auctions-tutorial/tree/main)\\\\\\\\n\\\\\\\\n### Content \\\\\\\\n- 9:30 Aggregating, writing and pushing out the dev Newsletter for two weeks\\\\\\\\n- 2:30 [near-multichain video production](https://www.youtube.com/watch?v=seA32rvko1c)\\\\\\\\n- 0:20 Testing create near app\\\\\\\\n- 0:40 Testing and [fixing near-multichain](https://github.com/near-examples/near-multichain/commit/578ad9ad53d2e3898db1fe45953647ab740ca084)\\\\\\\\n- 0:30 Assisting with AI builder call \\\\\\\\n\\\\\\\\n#### General / Other \\\\\\\\n- 1:45 DevRel team calls\\\\\\\\n- 0:40 Setting up moderation bots in Telegram channels\\\\\\\\n- 0:30 One-on-one with manager Guillermo\\\\\\\\n- 0:50 Misc activities, little odd jobs like reading updates and messaging with team\\\\\\\\n\\\\\\\\nNote that during this period I also supported at ETH Singapore which will be billed separately to the events committee.\", \"linked_proposals\": [], \"receiver_account\": \"icespice.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"1979\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [], \"accepted_terms_and_conditions_version\": 129782591}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7030684694825e+21
+    }
+  },
+  {
+    "id": "9008050827",
+    "receipt_id": "8pKVTF8twabjkFCpRSqfkKdqvuEA3cAwVRkZ25k9MEFh",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9hGeJxcZ88RY1bN6cPcmC5VV9qGXWPpjwZH7BtpwnRjh",
+      "block_height": 129782789,
+      "block_timestamp": 1728310433577656000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4494227902306,
+      "tokens_burnt": 449422790230600000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "teRQmM9QTZE4FHCsmbU9gfj52mcFdd7HTznQE4xxy7W",
+    "included_in_block_hash": "BCqrs9eykf8nvPag8mkJeDdfmvkHZG1gE9BHixU9qyNM",
+    "block_timestamp": "1728310431074052872",
+    "block": {
+      "block_height": 129782787
+    },
+    "receipt_conversion_tokens_burnt": "39884929336000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 449422790230600000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Decentralized DevRel* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @pivortex.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Owen DevRel Contributor Report 9 September - 22 September 2024\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nBi-weekly paid developer relations contributor report. These activities aim to improve the developer experience in the NEAR ecosystem. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=218)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7030684694825e+21
+    }
+  },
+  {
+    "id": "9008050832",
+    "receipt_id": "6TAXkCdp9WcQ8A7FhkS1yekthaUUMo5crdTitL7zoQmW",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9hGeJxcZ88RY1bN6cPcmC5VV9qGXWPpjwZH7BtpwnRjh",
+      "block_height": 129782789,
+      "block_timestamp": 1728310433577656000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3364057345767,
+      "tokens_burnt": 336405734576700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "teRQmM9QTZE4FHCsmbU9gfj52mcFdd7HTznQE4xxy7W",
+    "included_in_block_hash": "BCqrs9eykf8nvPag8mkJeDdfmvkHZG1gE9BHixU9qyNM",
+    "block_timestamp": "1728310431074052872",
+    "block": {
+      "block_height": 129782787
+    },
+    "receipt_conversion_tokens_burnt": "39884929336000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 336405734576700000000,
+        "args": "{\"proposal\": {\"id\": 218, \"snapshot\": {\"name\": \"Owen DevRel Contributor Report 9 September - 22 September 2024\", \"labels\": [], \"summary\": \"Bi-weekly paid developer relations contributor report. These activities aim to improve the developer experience in the NEAR ecosystem. \", \"category\": \"Decentralized DevRel\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"pivortex.near\", \"timestamp\": \"1728310432323464984\", \"supervisor\": \"gagdiez.near\", \"description\": \"## Timeline\\\\\\\\nStart Date: September 9, 2024\\\\\\\\n\\\\\\\\nEnd Date: September 22, 2024\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n## Requested Funding\\\\\\\\nHours: 39:35 \\\\\\\\n\\\\\\\\nRate: $50/hour \\\\\\\\n\\\\\\\\nTotal Amount: $1979 \\\\\\\\n\\\\\\\\n# Summary of Activities\\\\\\\\n\\\\\\\\n### Developer and community support \\\\\\\\n- 9:00 Supporting developers through Discord, Telegram and office hours\\\\\\\\n\\\\\\\\n### Contributions\\\\\\\\n- 13:20 Completing auction tutorial (completing indexing, fixing factory and finishing docs). [Docs](https://github.com/near/docs), [Repo](https://github.com/near-examples/auctions-tutorial/tree/main)\\\\\\\\n\\\\\\\\n### Content \\\\\\\\n- 9:30 Aggregating, writing and pushing out the dev Newsletter for two weeks\\\\\\\\n- 2:30 [near-multichain video production](https://www.youtube.com/watch?v=seA32rvko1c)\\\\\\\\n- 0:20 Testing create near app\\\\\\\\n- 0:40 Testing and [fixing near-multichain](https://github.com/near-examples/near-multichain/commit/578ad9ad53d2e3898db1fe45953647ab740ca084)\\\\\\\\n- 0:30 Assisting with AI builder call \\\\\\\\n\\\\\\\\n#### General / Other \\\\\\\\n- 1:45 DevRel team calls\\\\\\\\n- 0:40 Setting up moderation bots in Telegram channels\\\\\\\\n- 0:30 One-on-one with manager Guillermo\\\\\\\\n- 0:50 Misc activities, little odd jobs like reading updates and messaging with team\\\\\\\\n\\\\\\\\nNote that during this period I also supported at ETH Singapore which will be billed separately to the events committee.\", \"linked_proposals\": [], \"receiver_account\": \"icespice.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"1979\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"pivortex.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7030684694825e+21
+    }
+  },
+  {
+    "id": "9008050834",
+    "receipt_id": "FGqgPbbPzv7gn8E8HFnm8Q2wPXymNVs5FonMXvebuyW7",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9hGeJxcZ88RY1bN6cPcmC5VV9qGXWPpjwZH7BtpwnRjh",
+      "block_height": 129782789,
+      "block_timestamp": 1728310433577656000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3516044718703,
+      "tokens_burnt": 351604471870300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "teRQmM9QTZE4FHCsmbU9gfj52mcFdd7HTznQE4xxy7W",
+    "included_in_block_hash": "BCqrs9eykf8nvPag8mkJeDdfmvkHZG1gE9BHixU9qyNM",
+    "block_timestamp": "1728310431074052872",
+    "block": {
+      "block_height": 129782787
+    },
+    "receipt_conversion_tokens_burnt": "39884929336000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351604471870300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":218,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"pivortex.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":218,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"pivortex.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7030684694825e+21
+    }
+  },
+  {
+    "id": "9008550864",
+    "receipt_id": "BRoa92DsAU4FRRhecUP9hJbSmxRSAu3eoyNVTPz6W6DT",
+    "predecessor_account_id": "pivortex.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8E4mUQiCXYduspXYDt1WGAuTr6vmaHBc3yqxuQ4EPoaC",
+      "block_height": 129783948,
+      "block_timestamp": 1728311710173124000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4377316245537,
+      "tokens_burnt": 437731624553700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "2GBzGGj8KTw8w4zxbLy6vQc563dCu66SY6BfqABuN9h3",
+    "included_in_block_hash": "2HxVnWGeN6UMMb6s8J5sieUQhjzjm6kUHobuGv7TyYcf",
+    "block_timestamp": "1728311708794534367",
+    "block": {
+      "block_height": 129783947
+    },
+    "receipt_conversion_tokens_burnt": "39694194476000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 437731624553700000000,
+        "args": "{\"id\": 218, \"body\": {\"name\": \"Owen DevRel Contributor Report 9 September - 22 September 2024\", \"summary\": \"Bi-weekly paid developer relations contributor report. These activities aim to improve the developer experience in the NEAR ecosystem. \", \"category\": \"Decentralized DevRel\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": \"gagdiez.near\", \"description\": \"## Timeline\\\\\\\\nStart Date: September 9, 2024\\\\\\\\n\\\\\\\\nEnd Date: September 22, 2024\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n## Requested Funding\\\\\\\\nHours: 39:35 \\\\\\\\n\\\\\\\\nRate: $50/hour \\\\\\\\n\\\\\\\\nTotal Amount: $1979 \\\\\\\\n\\\\\\\\n# Summary of Activities\\\\\\\\n\\\\\\\\n### Developer and community support \\\\\\\\n- 9:00 Supporting developers through Discord, Telegram and office hours\\\\\\\\n\\\\\\\\n### Contributions\\\\\\\\n- 13:20 Completing auction tutorial (completing indexing, fixing factory and finishing docs). [Docs](https://github.com/near/docs), [Repo](https://github.com/near-examples/auctions-tutorial/tree/main)\\\\\\\\n- 0:20 Testing create near app\\\\\\\\n- 0:40 Testing and [fixing near-multichain](https://github.com/near-examples/near-multichain/commit/578ad9ad53d2e3898db1fe45953647ab740ca084)\\\\\\\\n\\\\\\\\n### Content \\\\\\\\n- 9:30 Aggregating, writing and pushing out the dev Newsletter for two weeks\\\\\\\\n- 2:30 [near-multichain video production](https://www.youtube.com/watch?v=seA32rvko1c)\\\\\\\\n- 0:30 Assisting with AI builder call \\\\\\\\n\\\\\\\\n#### General / Other \\\\\\\\n- 1:45 DevRel team calls\\\\\\\\n- 0:40 Setting up moderation bots in Telegram channels\\\\\\\\n- 0:30 One-on-one with manager Guillermo\\\\\\\\n- 0:50 Misc activities, little odd jobs like reading updates and messaging with team\\\\\\\\n\\\\\\\\nNote that during this period I also supported at ETH Singapore which will be billed separately to the events committee.\", \"linked_proposals\": [], \"receiver_account\": \"icespice.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"1979\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 828169045145600000000
+    }
+  },
+  {
+    "id": "9008551122",
+    "receipt_id": "Am3GrpnSajzGZJiiosfnpEWj2qgk8AaYkWRK5mVPjV6N",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BkJbJtV57hpabsHf5mQgPfhRkxw4iRahTys1jLk5XDrg",
+      "block_height": 129783949,
+      "block_timestamp": 1728311711339816400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3507432261159,
+      "tokens_burnt": 350743226115900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "2GBzGGj8KTw8w4zxbLy6vQc563dCu66SY6BfqABuN9h3",
+    "included_in_block_hash": "2HxVnWGeN6UMMb6s8J5sieUQhjzjm6kUHobuGv7TyYcf",
+    "block_timestamp": "1728311708794534367",
+    "block": {
+      "block_height": 129783947
+    },
+    "receipt_conversion_tokens_burnt": "39694194476000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 350743226115900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"pivortex.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":218,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"pivortex.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 828169045145600000000
+    }
+  },
+  {
+    "id": "9008872372",
+    "receipt_id": "3fH37X4Bi6peej46EFv1gkLT5LeiZLvDS5D6SMXqz6D1",
+    "predecessor_account_id": "pivortex.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EzGnTfywm6vSkGgQpZ4RsNhQ7prChR5fBnmpQnR9u6jD",
+      "block_height": 129784746,
+      "block_timestamp": 1728312583626586600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5213677086589,
+      "tokens_burnt": 521367708658900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "E71uVuWu5KWnn9fGekoAp7wFgGEvvMeZhzTRAiQdzBoQ",
+    "included_in_block_hash": "9hatsjtjXVDtV5vyfokEgWxEAEFP4KHy7WeLYmXipERb",
+    "block_timestamp": "1728312582728375428",
+    "block": {
+      "block_height": 129784745
+    },
+    "receipt_conversion_tokens_burnt": "38187389082000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 521367708658900000000,
+        "args": "{\"body\": {\"name\": \"Owen DevRel Contributor Report 23 September - 8 October 2024\", \"summary\": \"Bi-weekly paid developer relations contributor report. These activities aim to improve the developer experience in the NEAR ecosystem. \\\\\\\\n\", \"category\": \"Decentralized DevRel\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": \"gagdiez.near\", \"description\": \"## Timeline\\\\\\\\nStart Date: September 23, 2024\\\\\\\\n\\\\\\\\nEnd Date: October 6, 2024\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n## Requested Funding\\\\\\\\nHours: 19:20\\\\\\\\n\\\\\\\\nRate: $50/hour \\\\\\\\n\\\\\\\\nTotal Amount: $967\\\\\\\\n\\\\\\\\n# Summary of Activities\\\\\\\\n\\\\\\\\n### Developer and community support \\\\\\\\n- 3:30 Supporting developers through Discord, Telegram and office hours\\\\\\\\n- 1:00 Post ETH Singapore devrel duties (getting in touch with teams and following up)\\\\\\\\n\\\\\\\\n### Contributions\\\\\\\\n- 3:50 Working on reorg of auction tutorial [PR](https://github.com/near-examples/auctions-tutorial/pull/16)\\\\\\\\n- 1:30 Creating docs page on ZK [PR](https://github.com/near/docs/pull/2243)\\\\\\\\n\\\\\\\\n### Content \\\\\\\\n- 4:00 Aggregating and writing the dev Newsletter for one week\\\\\\\\n- 1:10 Participation in DevHub live\\\\\\\\n\\\\\\\\n#### General / Other \\\\\\\\n- 0:30 DevRel team calls\\\\\\\\n- 0:40 One-on-one with manager Guillermo\\\\\\\\n- 0:10 Misc activities, little odd jobs like reading updates and messaging with team\\\\\\\\n\\\\\\\\nI took leave during this period\", \"linked_proposals\": [], \"receiver_account\": \"icespice.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"967\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [], \"accepted_terms_and_conditions_version\": 129784606}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6973242533377e+21
+    }
+  },
+  {
+    "id": "9008872460",
+    "receipt_id": "6DDJrogoVkEPp8F9rG6pNpaSD4niLCBGZPzxPWs41jxM",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3Uwdyg6PMRWat4NV4U5FW38gSCFWcLbtrkEs2bUrVJ7e",
+      "block_height": 129784747,
+      "block_timestamp": 1728312584585624000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4503030424658,
+      "tokens_burnt": 450303042465800000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "E71uVuWu5KWnn9fGekoAp7wFgGEvvMeZhzTRAiQdzBoQ",
+    "included_in_block_hash": "9hatsjtjXVDtV5vyfokEgWxEAEFP4KHy7WeLYmXipERb",
+    "block_timestamp": "1728312582728375428",
+    "block": {
+      "block_height": 129784745
+    },
+    "receipt_conversion_tokens_burnt": "38187389082000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 450303042465800000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Decentralized DevRel* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @pivortex.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Owen DevRel Contributor Report 23 September - 8 October 2024\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nBi-weekly paid developer relations contributor report. These activities aim to improve the developer experience in the NEAR ecosystem. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=219)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6973242533377e+21
+    }
+  },
+  {
+    "id": "9008872464",
+    "receipt_id": "66ZKKT3fnw3HCDRZ2bNGLHRFH6tCmLCdqPXFC296QyTq",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3Uwdyg6PMRWat4NV4U5FW38gSCFWcLbtrkEs2bUrVJ7e",
+      "block_height": 129784747,
+      "block_timestamp": 1728312584585624000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3330972500755,
+      "tokens_burnt": 333097250075500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "E71uVuWu5KWnn9fGekoAp7wFgGEvvMeZhzTRAiQdzBoQ",
+    "included_in_block_hash": "9hatsjtjXVDtV5vyfokEgWxEAEFP4KHy7WeLYmXipERb",
+    "block_timestamp": "1728312582728375428",
+    "block": {
+      "block_height": 129784745
+    },
+    "receipt_conversion_tokens_burnt": "38187389082000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 333097250075500000000,
+        "args": "{\"proposal\": {\"id\": 219, \"snapshot\": {\"name\": \"Owen DevRel Contributor Report 23 September - 8 October 2024\", \"labels\": [], \"summary\": \"Bi-weekly paid developer relations contributor report. These activities aim to improve the developer experience in the NEAR ecosystem. \\\\\\\\n\", \"category\": \"Decentralized DevRel\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"pivortex.near\", \"timestamp\": \"1728312583626586563\", \"supervisor\": \"gagdiez.near\", \"description\": \"## Timeline\\\\\\\\nStart Date: September 23, 2024\\\\\\\\n\\\\\\\\nEnd Date: October 6, 2024\\\\\\\\n\\\\\\\\u{200b}\\\\\\\\n## Requested Funding\\\\\\\\nHours: 19:20\\\\\\\\n\\\\\\\\nRate: $50/hour \\\\\\\\n\\\\\\\\nTotal Amount: $967\\\\\\\\n\\\\\\\\n# Summary of Activities\\\\\\\\n\\\\\\\\n### Developer and community support \\\\\\\\n- 3:30 Supporting developers through Discord, Telegram and office hours\\\\\\\\n- 1:00 Post ETH Singapore devrel duties (getting in touch with teams and following up)\\\\\\\\n\\\\\\\\n### Contributions\\\\\\\\n- 3:50 Working on reorg of auction tutorial [PR](https://github.com/near-examples/auctions-tutorial/pull/16)\\\\\\\\n- 1:30 Creating docs page on ZK [PR](https://github.com/near/docs/pull/2243)\\\\\\\\n\\\\\\\\n### Content \\\\\\\\n- 4:00 Aggregating and writing the dev Newsletter for one week\\\\\\\\n- 1:10 Participation in DevHub live\\\\\\\\n\\\\\\\\n#### General / Other \\\\\\\\n- 0:30 DevRel team calls\\\\\\\\n- 0:40 One-on-one with manager Guillermo\\\\\\\\n- 0:10 Misc activities, little odd jobs like reading updates and messaging with team\\\\\\\\n\\\\\\\\nI took leave during this period\", \"linked_proposals\": [], \"receiver_account\": \"icespice.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"967\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"pivortex.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6973242533377e+21
+    }
+  },
+  {
+    "id": "9008872465",
+    "receipt_id": "HW22iYrjCZ88J9aaTWfqAHXfgsBwECjRF4gb4Hnyx61Q",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3Uwdyg6PMRWat4NV4U5FW38gSCFWcLbtrkEs2bUrVJ7e",
+      "block_height": 129784747,
+      "block_timestamp": 1728312584585624000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3543688630555,
+      "tokens_burnt": 354368863055500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "E71uVuWu5KWnn9fGekoAp7wFgGEvvMeZhzTRAiQdzBoQ",
+    "included_in_block_hash": "9hatsjtjXVDtV5vyfokEgWxEAEFP4KHy7WeLYmXipERb",
+    "block_timestamp": "1728312582728375428",
+    "block": {
+      "block_height": 129784745
+    },
+    "receipt_conversion_tokens_burnt": "38187389082000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 354368863055500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":219,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"pivortex.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":219,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"pivortex.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6973242533377e+21
+    }
+  },
+  {
+    "id": "9011826114",
+    "receipt_id": "A7XQtYnoeqXFwWYWuT8FhRe8Jz6ezYn5x5uEW8LNgsK7",
+    "predecessor_account_id": "megha19.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DFmm2iVenaG8KY1LsUy91CCim9DYj47vDYH2BcjXaFvo",
+      "block_height": 129791541,
+      "block_timestamp": 1728320114070951000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5741731272485,
+      "tokens_burnt": 574173127248500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "4MtU5DdpMWQTe8akavoSeLhbgfh15LRfPBpSNEHb8XHw",
+    "included_in_block_hash": "BcPiSc1akpuF8b1EFkzqAsUF5XDEztrfoVeGPJYYWDK1",
+    "block_timestamp": "1728320112881870480",
+    "block": {
+      "block_height": 129791540
+    },
+    "receipt_conversion_tokens_burnt": "57804469433000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 574173127248500000000,
+        "args": "{\"body\": {\"name\": \"DevHub Developer Contributor report by Megha for 09/09/2024 - 10/06/2024\", \"summary\": \"Worked on integrating new features to treasury dashboard, like asset exchange using the ref-sdk API, stake delegation, made first version live for devhub, fixed some bugs with devhub and other instances.\", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": \"theori.near\", \"description\": \"### Summary of Activities\\\\\\\\n\\\\\\\\n#### Week 1 (9 Sept to 15 Sept)\\\\\\\\n\\\\\\\\n- Add new create exchange UI page (as per Vova\\\\\\\\u{2019}s redesign), add endpoints to backend to get smart swap using multiple pools, integrate backend APIs with frontend to create multiple proposals for swap, show current slippage to restrict vote, figure out way to club the same swap proposals (near to any other FT token) together for vote, add history page with settings dropdown, figure out issue with \\\\\\\\u{2018}digit\\\\\\\\u{2019} error with add_proposal [#54](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/54) [#1](https://github.com/NEAR-DevHub/ref-sdk-api/pull/1) (4.7d) \\\\\\\\n- Team call (0.5h)\\\\\\\\n- Fix linked RFP on proposal feed page [#934](https://github.com/NEAR-DevHub/neardevhub-bos/pull/934) (0.5h) \\\\\\\\n\\\\\\\\nTotal: 40 hours\\\\\\\\n\\\\\\\\n#### Week 2 (16 Sept to 22 Sept)\\\\\\\\n\\\\\\\\n- Discuss with Peter about better solutions for multiple txn call in one proposal, share the possible solutions with Vlad (0.5h)\\\\\\\\n- Look for ways to improve the performance of the backend API, add smartPath API of ref finance, change from nearblocks and fastnear to pikespeak API for user balances, add endpoints for (un)wrap NEAR [#2](https://github.com/NEAR-DevHub/ref-sdk-api/pull/2) (1.5d)\\\\\\\\n- Call with Peter regarding laggy widgets input (1h) \\\\\\\\n- Call with Ori (20 mins)\\\\\\\\n- Call with Vova (20 mins)\\\\\\\\n- Call with Ori and Vova (20 mins)\\\\\\\\n- Look for API to get account balances of FT and near on certain timestamp for chart, discuss with Peter and Vlad, start working on API for balance chart on dashboard screen (5h)\\\\\\\\n- Fix RFP timeline issue [#935](https://github.com/NEAR-DevHub/neardevhub-bos/pull/935) (0.5h)\\\\\\\\n- Reply to Trentin queries (1h)\\\\\\\\n- Fix the tests with the markdown viewer, test it on near dev and fix minor CSS, add image upload to editor [#931](https://github.com/NEAR-DevHub/neardevhub-bos/pull/931) (2d)\\\\\\\\n- Update the asset exchange create request to include warnings for NEAR to FT swap, loader skeleton [#54](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/54) (4h) \\\\\\\\n\\\\\\\\nTotal: 41 hours\\\\\\\\n\\\\\\\\n#### Week 3 (23 Sept to 29 Sept)\\\\\\\\n\\\\\\\\n- Call with Peter to discuss about failing tests and adding new ones (1h)\\\\\\\\n- Add test to check the linked RFP by mocking RPC data [#934](https://github.com/NEAR-DevHub/neardevhub-bos/pull/934) (2h)\\\\\\\\n- Work on new updates swap of near <> wNear and FT contract register call by creator [#54](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/54) (5h)\\\\\\\\n- Add the UI design for balance chart on dashboard [#58](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/58) (1d)\\\\\\\\n- Team call (0.5h)\\\\\\\\n- Fix add RFP and clean draft state after RFP is submitted [#940](https://github.com/NEAR-DevHub/neardevhub-bos/pull/940) (1h) \\\\\\\\n- Create new issues regarding tests and instance management [#939](https://github.com/NEAR-DevHub/neardevhub-bos/issues/939) [#937](https://github.com/NEAR-DevHub/neardevhub-bos/issues/937) (0.5h) \\\\\\\\n- Add table css to markdown viewer [#941](https://github.com/NEAR-DevHub/neardevhub-bos/pull/941) (0.5h)\\\\\\\\n- Call with Trentin (10 mins)\\\\\\\\n- Make all screens mobile responsive [#57](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/57) (1h)\\\\\\\\n- Match iframe text style to that of outside frame[ #943](https://github.com/NEAR-DevHub/neardevhub-bos/pull/943) (0.5h)\\\\\\\\n- Fix the labels issue with linking RFP for proposal and add tests [#947](https://github.com/NEAR-DevHub/neardevhub-bos/pull/947)  (3h) \\\\\\\\n- Help Tanya with wallet issues (1h)\\\\\\\\n- Work on create stake and unstake request [#60](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/60) (2d) \\\\\\\\n- Convert USD to near tokens for near requested token, add tests for near and stable transfers [#61](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/61) (4h)\\\\\\\\n\\\\\\\\nTotal: 45 hours\\\\\\\\n\\\\\\\\n#### Week 4 (30 Sept to 6 Oct)\\\\\\\\n\\\\\\\\n- Add pending and history pages for stake delegation, redirect to history when proposal is voted on. [#60](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/60) (2d) \\\\\\\\n- Update dashboard to include locked NEAR tokens and for available balance reduce the staked near, display stake txn in transactions history [#60](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/60) (3h)\\\\\\\\n- Remove the markdown iframe and import the css, add tests to view links and mention account in viewer [#949](https://github.com/NEAR-DevHub/neardevhub-bos/pull/949) (1d)\\\\\\\\n- Setup new instance for infinex, create dao and widget account, hide few items from UI, change theme, discuss with Vova about dark theme design, chat with Peter for tests  [#59](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/59) (1d)\\\\\\\\n- Call with Peter about tests issue (0.5h)\\\\\\\\n- Discuss with Vova about time gap between unstake and withdraw, how to display in UI (0.5h)\\\\\\\\n- Look at the design for dark theme, start work on it. (4h)\\\\\\\\n\\\\\\\\nTotal: 40 hours\\\\\\\\n\\\\\\\\nTotal Hours: 166\\\\\\\\nHourly rate: $50/h\\\\\\\\nTotal: 8300 USD\", \"linked_proposals\": [], \"receiver_account\": \"megha19.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"8300\", \"requested_sponsorship_paid_in_currency\": \"OTHER\"}, \"labels\": [], \"accepted_terms_and_conditions_version\": 129791344}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8050709353451e+21
+    }
+  },
+  {
+    "id": "9011826264",
+    "receipt_id": "2a2zgSUXEyKxpxLaRHADtEnHhniZUQoW3rptBn9UU9Pn",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6PfwWZCeXEqDEakGEPgQ3oueigAtmXkqNmNppAc6SQYU",
+      "block_height": 129791542,
+      "block_timestamp": 1728320115247330000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4508894762410,
+      "tokens_burnt": 450889476241000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4MtU5DdpMWQTe8akavoSeLhbgfh15LRfPBpSNEHb8XHw",
+    "included_in_block_hash": "BcPiSc1akpuF8b1EFkzqAsUF5XDEztrfoVeGPJYYWDK1",
+    "block_timestamp": "1728320112881870480",
+    "block": {
+      "block_height": 129791540
+    },
+    "receipt_conversion_tokens_burnt": "57804469433000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 450889476241000000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *DevDAO Platform* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @megha19.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}DevHub Developer Contributor report by Megha for 09/09/2024 - 10/06/2024\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWorked on integrating new features to treasury dashboard, like asset exchange using the ref-sdk API, stake delegation, made first version live for devhub, fixed some bugs with devhub and other instances.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=220)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8050709353451e+21
+    }
+  },
+  {
+    "id": "9011826270",
+    "receipt_id": "CnerBniAstJ1nZtzAgMSDFanTw3FqZmFF4QEge2ZDnuF",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6PfwWZCeXEqDEakGEPgQ3oueigAtmXkqNmNppAc6SQYU",
+      "block_height": 129791542,
+      "block_timestamp": 1728320115247330000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3668796302331,
+      "tokens_burnt": 366879630233100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "4MtU5DdpMWQTe8akavoSeLhbgfh15LRfPBpSNEHb8XHw",
+    "included_in_block_hash": "BcPiSc1akpuF8b1EFkzqAsUF5XDEztrfoVeGPJYYWDK1",
+    "block_timestamp": "1728320112881870480",
+    "block": {
+      "block_height": 129791540
+    },
+    "receipt_conversion_tokens_burnt": "57804469433000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 366879630233100000000,
+        "args": "{\"proposal\": {\"id\": 220, \"snapshot\": {\"name\": \"DevHub Developer Contributor report by Megha for 09/09/2024 - 10/06/2024\", \"labels\": [], \"summary\": \"Worked on integrating new features to treasury dashboard, like asset exchange using the ref-sdk API, stake delegation, made first version live for devhub, fixed some bugs with devhub and other instances.\", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"megha19.near\", \"timestamp\": \"1728320114070950862\", \"supervisor\": \"theori.near\", \"description\": \"### Summary of Activities\\\\\\\\n\\\\\\\\n#### Week 1 (9 Sept to 15 Sept)\\\\\\\\n\\\\\\\\n- Add new create exchange UI page (as per Vova\\\\\\\\u{2019}s redesign), add endpoints to backend to get smart swap using multiple pools, integrate backend APIs with frontend to create multiple proposals for swap, show current slippage to restrict vote, figure out way to club the same swap proposals (near to any other FT token) together for vote, add history page with settings dropdown, figure out issue with \\\\\\\\u{2018}digit\\\\\\\\u{2019} error with add_proposal [#54](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/54) [#1](https://github.com/NEAR-DevHub/ref-sdk-api/pull/1) (4.7d) \\\\\\\\n- Team call (0.5h)\\\\\\\\n- Fix linked RFP on proposal feed page [#934](https://github.com/NEAR-DevHub/neardevhub-bos/pull/934) (0.5h) \\\\\\\\n\\\\\\\\nTotal: 40 hours\\\\\\\\n\\\\\\\\n#### Week 2 (16 Sept to 22 Sept)\\\\\\\\n\\\\\\\\n- Discuss with Peter about better solutions for multiple txn call in one proposal, share the possible solutions with Vlad (0.5h)\\\\\\\\n- Look for ways to improve the performance of the backend API, add smartPath API of ref finance, change from nearblocks and fastnear to pikespeak API for user balances, add endpoints for (un)wrap NEAR [#2](https://github.com/NEAR-DevHub/ref-sdk-api/pull/2) (1.5d)\\\\\\\\n- Call with Peter regarding laggy widgets input (1h) \\\\\\\\n- Call with Ori (20 mins)\\\\\\\\n- Call with Vova (20 mins)\\\\\\\\n- Call with Ori and Vova (20 mins)\\\\\\\\n- Look for API to get account balances of FT and near on certain timestamp for chart, discuss with Peter and Vlad, start working on API for balance chart on dashboard screen (5h)\\\\\\\\n- Fix RFP timeline issue [#935](https://github.com/NEAR-DevHub/neardevhub-bos/pull/935) (0.5h)\\\\\\\\n- Reply to Trentin queries (1h)\\\\\\\\n- Fix the tests with the markdown viewer, test it on near dev and fix minor CSS, add image upload to editor [#931](https://github.com/NEAR-DevHub/neardevhub-bos/pull/931) (2d)\\\\\\\\n- Update the asset exchange create request to include warnings for NEAR to FT swap, loader skeleton [#54](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/54) (4h) \\\\\\\\n\\\\\\\\nTotal: 41 hours\\\\\\\\n\\\\\\\\n#### Week 3 (23 Sept to 29 Sept)\\\\\\\\n\\\\\\\\n- Call with Peter to discuss about failing tests and adding new ones (1h)\\\\\\\\n- Add test to check the linked RFP by mocking RPC data [#934](https://github.com/NEAR-DevHub/neardevhub-bos/pull/934) (2h)\\\\\\\\n- Work on new updates swap of near <> wNear and FT contract register call by creator [#54](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/54) (5h)\\\\\\\\n- Add the UI design for balance chart on dashboard [#58](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/58) (1d)\\\\\\\\n- Team call (0.5h)\\\\\\\\n- Fix add RFP and clean draft state after RFP is submitted [#940](https://github.com/NEAR-DevHub/neardevhub-bos/pull/940) (1h) \\\\\\\\n- Create new issues regarding tests and instance management [#939](https://github.com/NEAR-DevHub/neardevhub-bos/issues/939) [#937](https://github.com/NEAR-DevHub/neardevhub-bos/issues/937) (0.5h) \\\\\\\\n- Add table css to markdown viewer [#941](https://github.com/NEAR-DevHub/neardevhub-bos/pull/941) (0.5h)\\\\\\\\n- Call with Trentin (10 mins)\\\\\\\\n- Make all screens mobile responsive [#57](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/57) (1h)\\\\\\\\n- Match iframe text style to that of outside frame[ #943](https://github.com/NEAR-DevHub/neardevhub-bos/pull/943) (0.5h)\\\\\\\\n- Fix the labels issue with linking RFP for proposal and add tests [#947](https://github.com/NEAR-DevHub/neardevhub-bos/pull/947)  (3h) \\\\\\\\n- Help Tanya with wallet issues (1h)\\\\\\\\n- Work on create stake and unstake request [#60](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/60) (2d) \\\\\\\\n- Convert USD to near tokens for near requested token, add tests for near and stable transfers [#61](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/61) (4h)\\\\\\\\n\\\\\\\\nTotal: 45 hours\\\\\\\\n\\\\\\\\n#### Week 4 (30 Sept to 6 Oct)\\\\\\\\n\\\\\\\\n- Add pending and history pages for stake delegation, redirect to history when proposal is voted on. [#60](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/60) (2d) \\\\\\\\n- Update dashboard to include locked NEAR tokens and for available balance reduce the staked near, display stake txn in transactions history [#60](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/60) (3h)\\\\\\\\n- Remove the markdown iframe and import the css, add tests to view links and mention account in viewer [#949](https://github.com/NEAR-DevHub/neardevhub-bos/pull/949) (1d)\\\\\\\\n- Setup new instance for infinex, create dao and widget account, hide few items from UI, change theme, discuss with Vova about dark theme design, chat with Peter for tests  [#59](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/59) (1d)\\\\\\\\n- Call with Peter about tests issue (0.5h)\\\\\\\\n- Discuss with Vova about time gap between unstake and withdraw, how to display in UI (0.5h)\\\\\\\\n- Look at the design for dark theme, start work on it. (4h)\\\\\\\\n\\\\\\\\nTotal: 40 hours\\\\\\\\n\\\\\\\\nTotal Hours: 166\\\\\\\\nHourly rate: $50/h\\\\\\\\nTotal: 8300 USD\", \"linked_proposals\": [], \"receiver_account\": \"megha19.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"8300\", \"requested_sponsorship_paid_in_currency\": \"OTHER\"}, \"author_id\": \"megha19.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8050709353451e+21
+    }
+  },
+  {
+    "id": "9011826273",
+    "receipt_id": "4Q4R6XnQkrfydxAjfvPMkbDuk8Si1DvXuKHNMaMvxJzE",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6PfwWZCeXEqDEakGEPgQ3oueigAtmXkqNmNppAc6SQYU",
+      "block_height": 129791542,
+      "block_timestamp": 1728320115247330000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3553242321895,
+      "tokens_burnt": 355324232189500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4MtU5DdpMWQTe8akavoSeLhbgfh15LRfPBpSNEHb8XHw",
+    "included_in_block_hash": "BcPiSc1akpuF8b1EFkzqAsUF5XDEztrfoVeGPJYYWDK1",
+    "block_timestamp": "1728320112881870480",
+    "block": {
+      "block_height": 129791540
+    },
+    "receipt_conversion_tokens_burnt": "57804469433000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 355324232189500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":220,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"megha19.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":220,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"megha19.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8050709353451e+21
+    }
+  },
+  {
+    "id": "9012140867",
+    "receipt_id": "8W3u5i5eKc5nZEy6uKqWk47wMrZDmohjCkibvzD9MRCh",
+    "predecessor_account_id": "megha19.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8hhmeNqZ1t3aNWTCoLxpu3Sw6eUM9HaFpT1A5NbFKKc3",
+      "block_height": 129792267,
+      "block_timestamp": 1728320922279747800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5153067164249,
+      "tokens_burnt": 515306716424900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "CZNE44kfZ6NUGhdEWCrovcvx2V95QWU4FjHp6WvZGNN5",
+    "included_in_block_hash": "3hUXadXAdzGWxYfntbitrmxKAppGVthw2hoo7LHfRcrA",
+    "block_timestamp": "1728320921142259927",
+    "block": {
+      "block_height": 129792266
+    },
+    "receipt_conversion_tokens_burnt": "31711940585000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 515306716424900000000,
+        "args": "{\"id\": 220, \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified\": false, \"timeline_version\": \"V1\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 900461683667000000000
+    }
+  },
+  {
+    "id": "9012141163",
+    "receipt_id": "7rXnqxtxZfDjTvy55fArv2YfUuN7gtmiZsmxt2oiAFnT",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FvzDfCsZyDCM3Jp2EHXFJ6NeB5h1e7dfejN6K8o22DQL",
+      "block_height": 129792268,
+      "block_timestamp": 1728320923260789200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3534430266571,
+      "tokens_burnt": 353443026657100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "CZNE44kfZ6NUGhdEWCrovcvx2V95QWU4FjHp6WvZGNN5",
+    "included_in_block_hash": "3hUXadXAdzGWxYfntbitrmxKAppGVthw2hoo7LHfRcrA",
+    "block_timestamp": "1728320921142259927",
+    "block": {
+      "block_height": 129792266
+    },
+    "receipt_conversion_tokens_burnt": "31711940585000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353443026657100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"megha19.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":220,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"megha19.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 900461683667000000000
+    }
+  },
+  {
+    "id": "9015523676",
+    "receipt_id": "BaZjJ1jub2eb5cDB1hbj73RR4vAgqFmZqt5GyXCY5F61",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "63VrHvbsbdSd1SCfby1r3rD7QBku21iPuvHyLBJ5LJ2B",
+      "block_height": 129800701,
+      "block_timestamp": 1728330214723757300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 10387529098415,
+      "tokens_burnt": 1.0387529098415e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "2FMRM93xhAhCfoVUXWqgTzjTXHE8im5xpPmJfuEg5TdX",
+    "included_in_block_hash": "HeAbKwp2Gmt4taUEK4yNwUCpgA77GzgNVbfXSMT6BC99",
+    "block_timestamp": "1728330213527654776",
+    "block": {
+      "block_height": 129800700
+    },
+    "receipt_conversion_tokens_burnt": "215208412648000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.0387529098415e+21,
+        "args": "{\"data\": {\"devhub.near\": {\"widget\": {\"devhub.entity.proposal.Editor\": {\"\": \"const { href } = VM.require(\\\\\\\\\\\\\\\"devhub.near/widget/core.lib.url\\\\\\\\\\\\\\\");\\\\\\\\nconst draftKey = \\\\\\\\\\\\\\\"PROPOSAL_EDIT\\\\\\\\\\\\\\\";\\\\\\\\nhref || (href = () => {});\\\\\\\\nconst { getLinkUsingCurrentGateway } = VM.require(\\\\\\\\n  \\\\\\\\\\\\\\\"devhub.near/widget/core.lib.url\\\\\\\\\\\\\\\"\\\\\\\\n) || { getLinkUsingCurrentGateway: () => {} };\\\\\\\\nconst { id, timestamp } = props;\\\\\\\\n\\\\\\\\nconst isEditPage = typeof id === \\\\\\\\\\\\\\\"string\\\\\\\\\\\\\\\";\\\\\\\\nconst author = context.accountId;\\\\\\\\nconst FundingDocs = getLinkUsingCurrentGateway(\\\\\\\\n  `devhub.near/widget/app?page=community&handle=developer-dao&tab=funding`\\\\\\\\n);\\\\\\\\n\\\\\\\\nif (!author) {\\\\\\\\n  return (\\\\\\\\n    <Widget src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.LoginScreen\\\\\\\\\\\\\\\"} />\\\\\\\\n  );\\\\\\\\n}\\\\\\\\nlet editProposalData = null;\\\\\\\\nlet draftProposalData = null;\\\\\\\\n\\\\\\\\nif (isEditPage) {\\\\\\\\n  editProposalData = Near.view(\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"get_proposal\\\\\\\\\\\\\\\", {\\\\\\\\n    proposal_id: parseInt(id),\\\\\\\\n  });\\\\\\\\n}\\\\\\\\n\\\\\\\\nconst Container = styled.div`\\\\\\\\n  input {\\\\\\\\n    font-size: 14px !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .card.no-border {\\\\\\\\n    border-left: none !important;\\\\\\\\n    border-right: none !important;\\\\\\\\n    margin-bottom: -3.5rem;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  textarea {\\\\\\\\n    font-size: 14px !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .full-width-div {\\\\\\\\n    width: 100vw;\\\\\\\\n    position: relative;\\\\\\\\n    left: 50%;\\\\\\\\n    right: 50%;\\\\\\\\n    margin-left: -50vw;\\\\\\\\n    margin-right: -50vw;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .text-sm {\\\\\\\\n    font-size: 13px;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    .h6 {\\\\\\\\n      font-size: 14px !important;\\\\\\\\n    }\\\\\\\\n\\\\\\\\n    .h5 {\\\\\\\\n      font-size: 16px !important;\\\\\\\\n    }\\\\\\\\n\\\\\\\\n    .text-sm {\\\\\\\\n      font-size: 11px;\\\\\\\\n    }\\\\\\\\n\\\\\\\\n    .gap-6 {\\\\\\\\n      gap: 0.5rem !important;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .border-bottom {\\\\\\\\n    border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .text-xs {\\\\\\\\n    font-size: 10px;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .flex-2 {\\\\\\\\n    flex: 2;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .flex-1 {\\\\\\\\n    flex: 1;\\\\\\\\n  }\\\\\\\\n  .bg-grey {\\\\\\\\n    background-color: #f4f4f4;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .border-bottom {\\\\\\\\n    border-bottom: 1px solid grey;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .cursor-pointer {\\\\\\\\n    cursor: pointer;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .proposal-card {\\\\\\\\n    &:hover {\\\\\\\\n      background-color: #f4f4f4;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .border-1 {\\\\\\\\n    border: 1px solid #e2e6ec;\\\\\\\\n  }\\\\\\\\n  .green-btn {\\\\\\\\n    background-color: #04a46e !important;\\\\\\\\n    border: none;\\\\\\\\n    color: white;\\\\\\\\n    &:active {\\\\\\\\n      color: white;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .black-btn {\\\\\\\\n    background-color: #000 !important;\\\\\\\\n    border: none;\\\\\\\\n    color: white;\\\\\\\\n    &:active {\\\\\\\\n      color: white;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .dropdown-toggle:after {\\\\\\\\n    position: absolute;\\\\\\\\n    top: 46%;\\\\\\\\n    right: 5%;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .drop-btn {\\\\\\\\n    max-width: none !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .dropdown-menu {\\\\\\\\n    width: 100%;\\\\\\\\n    border-radius: 0.375rem !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .input-icon {\\\\\\\\n    display: flex;\\\\\\\\n    height: 100%;\\\\\\\\n    align-items: center;\\\\\\\\n    border-right: 1px solid #dee2e6;\\\\\\\\n    padding-right: 10px;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  /* Tooltip container */\\\\\\\\n  .custom-tooltip {\\\\\\\\n    position: relative;\\\\\\\\n    display: inline-block;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  /* Tooltip text */\\\\\\\\n  .custom-tooltip .tooltiptext {\\\\\\\\n    visibility: hidden;\\\\\\\\n    width: 250px;\\\\\\\\n    background-color: #fff;\\\\\\\\n    color: #6c757d;\\\\\\\\n    text-align: center;\\\\\\\\n    padding: 10px;\\\\\\\\n    border-radius: 6px;\\\\\\\\n    font-size: 12px;\\\\\\\\n    border: 0.2px solid #6c757d;\\\\\\\\n\\\\\\\\n    /* Position the tooltip text */\\\\\\\\n    position: absolute;\\\\\\\\n    z-index: 1;\\\\\\\\n    bottom: 125%;\\\\\\\\n    left: -30px;\\\\\\\\n\\\\\\\\n    /* Fade in tooltip */\\\\\\\\n    opacity: 0;\\\\\\\\n    transition: opacity 0.3s;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  /* Tooltip arrow */\\\\\\\\n  .custom-tooltip .tooltiptext::after {\\\\\\\\n    content: \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\";\\\\\\\\n    position: absolute;\\\\\\\\n    top: 100%;\\\\\\\\n    left: 15%;\\\\\\\\n    margin-left: -5px;\\\\\\\\n    border-width: 5px;\\\\\\\\n    border-style: solid;\\\\\\\\n    border-color: #555 transparent transparent transparent;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  /* Show the tooltip text when you mouse over the tooltip container */\\\\\\\\n  .custom-tooltip:hover .tooltiptext {\\\\\\\\n    visibility: visible;\\\\\\\\n    opacity: 1;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .form-check-input:checked {\\\\\\\\n    background-color: #04a46e !important;\\\\\\\\n    border-color: #04a46e !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .gap-6 {\\\\\\\\n    gap: 2.5rem;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  a.no-space {\\\\\\\\n    display: inline-block;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\n\\\\\\\\nconst Heading = styled.div`\\\\\\\\n  font-size: 24px;\\\\\\\\n  font-weight: 700;\\\\\\\\n\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    font-size: 18px;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\n\\\\\\\\nconst tokensOptions = [\\\\\\\\n  { label: \\\\\\\\\\\\\\\"NEAR\\\\\\\\\\\\\\\", value: \\\\\\\\\\\\\\\"NEAR\\\\\\\\\\\\\\\" },\\\\\\\\n  { label: \\\\\\\\\\\\\\\"USDT\\\\\\\\\\\\\\\", value: \\\\\\\\\\\\\\\"USDT\\\\\\\\\\\\\\\" },\\\\\\\\n  {\\\\\\\\n    label: \\\\\\\\\\\\\\\"USDC\\\\\\\\\\\\\\\",\\\\\\\\n    value: \\\\\\\\\\\\\\\"USDC\\\\\\\\\\\\\\\",\\\\\\\\n  },\\\\\\\\n  {\\\\\\\\n    label: \\\\\\\\\\\\\\\"Other\\\\\\\\\\\\\\\",\\\\\\\\n    value: \\\\\\\\\\\\\\\"OTHER\\\\\\\\\\\\\\\",\\\\\\\\n  },\\\\\\\\n];\\\\\\\\n\\\\\\\\nconst devdaoAccount = \\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\";\\\\\\\\n\\\\\\\\nconst [category, setCategory] = useState(null);\\\\\\\\nconst [title, setTitle] = useState(null);\\\\\\\\nconst [description, setDescription] = useState(null);\\\\\\\\nconst [summary, setSummary] = useState(null);\\\\\\\\nconst [consent, setConsent] = useState({ toc: false, coc: false });\\\\\\\\nconst [linkedProposals, setLinkedProposals] = useState([]);\\\\\\\\nconst [receiverAccount, setReceiverAccount] = useState(context.accountId);\\\\\\\\nconst [requestedSponsor, setRequestedSponsor] = useState(devdaoAccount);\\\\\\\\nconst [requestedSponsorshipAmount, setRequestedSponsorshipAmount] =\\\\\\\\n  useState(null);\\\\\\\\nconst [requestedSponsorshipToken, setRequestedSponsorshipToken] = useState(\\\\\\\\n  tokensOptions[2]\\\\\\\\n);\\\\\\\\nconst [supervisor, setSupervisor] = useState(null);\\\\\\\\nconst [allowDraft, setAllowDraft] = useState(true);\\\\\\\\n\\\\\\\\nconst [loading, setLoading] = useState(true);\\\\\\\\nconst [disabledSubmitBtn, setDisabledSubmitBtn] = useState(false);\\\\\\\\nconst [isDraftBtnOpen, setDraftBtnOpen] = useState(false);\\\\\\\\nconst [selectedStatus, setSelectedStatus] = useState(\\\\\\\\\\\\\\\"draft\\\\\\\\\\\\\\\");\\\\\\\\nconst [isReviewModalOpen, setReviewModal] = useState(false);\\\\\\\\nconst [isCancelModalOpen, setCancelModal] = useState(false);\\\\\\\\n\\\\\\\\nconst [showProposalPage, setShowProposalPage] = useState(false); // when user creates/edit a proposal and confirm the txn, this is true\\\\\\\\nconst [proposalId, setProposalId] = useState(null);\\\\\\\\nconst [proposalIdsArray, setProposalIdsArray] = useState(null);\\\\\\\\nconst [isTxnCreated, setCreateTxn] = useState(false);\\\\\\\\nconst [oldProposalData, setOldProposalData] = useState(null);\\\\\\\\n\\\\\\\\nif (allowDraft) {\\\\\\\\n  draftProposalData = Storage.privateGet(draftKey);\\\\\\\\n}\\\\\\\\n\\\\\\\\nconst memoizedDraftData = useMemo(\\\\\\\\n  () => ({\\\\\\\\n    id: editProposalData.id ?? null,\\\\\\\\n    snapshot: {\\\\\\\\n      name: title,\\\\\\\\n      description: description,\\\\\\\\n      category: category,\\\\\\\\n      summary: summary,\\\\\\\\n      requested_sponsorship_usd_amount: requestedSponsorshipAmount,\\\\\\\\n      requested_sponsorship_paid_in_currency: requestedSponsorshipToken.value,\\\\\\\\n      receiver_account: receiverAccount,\\\\\\\\n      supervisor: supervisor,\\\\\\\\n      requested_sponsor: requestedSponsor,\\\\\\\\n    },\\\\\\\\n  }),\\\\\\\\n  [\\\\\\\\n    title,\\\\\\\\n    summary,\\\\\\\\n    description,\\\\\\\\n    category,\\\\\\\\n    requestedSponsorshipAmount,\\\\\\\\n    requestedSponsorshipToken,\\\\\\\\n    receiverAccount,\\\\\\\\n    supervisor,\\\\\\\\n    requestedSponsor,\\\\\\\\n  ]\\\\\\\\n);\\\\\\\\n\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (allowDraft) {\\\\\\\\n    let data = editProposalData || JSON.parse(draftProposalData);\\\\\\\\n    let snapshot = data.snapshot;\\\\\\\\n    if (data) {\\\\\\\\n      if (timestamp) {\\\\\\\\n        snapshot =\\\\\\\\n          data.snapshot_history.find((item) => item.timestamp === timestamp) ??\\\\\\\\n          data.snapshot;\\\\\\\\n      }\\\\\\\\n      if (\\\\\\\\n        draftProposalData &&\\\\\\\\n        editProposalData &&\\\\\\\\n        editProposalData.id === JSON.parse(draftProposalData).id\\\\\\\\n      ) {\\\\\\\\n        snapshot = {\\\\\\\\n          ...editProposalData.snapshot,\\\\\\\\n          ...JSON.parse(draftProposalData).snapshot,\\\\\\\\n        };\\\\\\\\n      }\\\\\\\\n      setCategory(snapshot.category);\\\\\\\\n      setTitle(snapshot.name);\\\\\\\\n      setSummary(snapshot.summary);\\\\\\\\n      setDescription(snapshot.description);\\\\\\\\n      setReceiverAccount(snapshot.receiver_account);\\\\\\\\n      setRequestedSponsor(snapshot.requested_sponsor);\\\\\\\\n      setRequestedSponsorshipAmount(snapshot.requested_sponsorship_usd_amount);\\\\\\\\n      setSupervisor(snapshot.supervisor);\\\\\\\\n\\\\\\\\n      const token = tokensOptions.find(\\\\\\\\n        (item) => item.value === snapshot.requested_sponsorship_paid_in_currency\\\\\\\\n      );\\\\\\\\n      setRequestedSponsorshipToken(token ?? tokensOptions[2]);\\\\\\\\n      if (isEditPage) {\\\\\\\\n        setConsent({ toc: true, coc: true });\\\\\\\\n      }\\\\\\\\n    }\\\\\\\\n    setLoading(false);\\\\\\\\n  }\\\\\\\\n}, [editProposalData, draftProposalData, allowDraft]);\\\\\\\\n\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (draftProposalData) {\\\\\\\\n    setAllowDraft(false);\\\\\\\\n  }\\\\\\\\n}, [draftProposalData]);\\\\\\\\n\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (showProposalPage) {\\\\\\\\n    return;\\\\\\\\n  }\\\\\\\\n  setDisabledSubmitBtn(\\\\\\\\n    isTxnCreated ||\\\\\\\\n      !title ||\\\\\\\\n      !description ||\\\\\\\\n      !summary ||\\\\\\\\n      !category ||\\\\\\\\n      !requestedSponsorshipAmount ||\\\\\\\\n      !receiverAccount ||\\\\\\\\n      !requestedSponsor ||\\\\\\\\n      !consent.toc ||\\\\\\\\n      !consent.coc\\\\\\\\n  );\\\\\\\\n  const handler = setTimeout(() => {\\\\\\\\n    Storage.privateSet(draftKey, JSON.stringify(memoizedDraftData));\\\\\\\\n  }, 10000);\\\\\\\\n\\\\\\\\n  return () => clearTimeout(handler);\\\\\\\\n}, [\\\\\\\\n  memoizedDraftData,\\\\\\\\n  draftKey,\\\\\\\\n  draftProposalData,\\\\\\\\n  consent,\\\\\\\\n  isTxnCreated,\\\\\\\\n  showProposalPage,\\\\\\\\n]);\\\\\\\\n\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (\\\\\\\\n    editProposalData &&\\\\\\\\n    editProposalData?.snapshot?.linked_proposals?.length > 0\\\\\\\\n  ) {\\\\\\\\n    editProposalData.snapshot.linked_proposals.map((item) => {\\\\\\\\n      useCache(\\\\\\\\n        () =>\\\\\\\\n          Near.asyncView(\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"get_proposal\\\\\\\\\\\\\\\", {\\\\\\\\n            proposal_id: parseInt(item),\\\\\\\\n          }).then((proposal) => {\\\\\\\\n            setLinkedProposals([\\\\\\\\n              ...linkedProposals,\\\\\\\\n              {\\\\\\\\n                label: \\\\\\\\\\\\\\\"# \\\\\\\\\\\\\\\" + proposal.id + \\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\" + proposal.snapshot.name,\\\\\\\\n                value: proposal.id,\\\\\\\\n              },\\\\\\\\n            ]);\\\\\\\\n          }),\\\\\\\\n        item + \\\\\\\\\\\\\\\"linked_proposals\\\\\\\\\\\\\\\",\\\\\\\\n        { subscribe: false }\\\\\\\\n      );\\\\\\\\n    });\\\\\\\\n  }\\\\\\\\n}, [editProposalData]);\\\\\\\\n\\\\\\\\nconst InputContainer = ({ heading, description, children }) => {\\\\\\\\n  return (\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-1 gap-sm-2 w-100\\\\\\\\\\\\\\\">\\\\\\\\n      <b className=\\\\\\\\\\\\\\\"h6 mb-0\\\\\\\\\\\\\\\">{heading}</b>\\\\\\\\n      {description && (\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"text-muted w-100 text-sm\\\\\\\\\\\\\\\">{description}</div>\\\\\\\\n      )}\\\\\\\\n      {children}\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\n\\\\\\\\nfunction checkIfLatestProposalMatchesTitleAndDescription() {\\\\\\\\n  Near.asyncView(\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"get_all_proposal_ids\\\\\\\\\\\\\\\").then(\\\\\\\\n    (proposalIds) => {\\\\\\\\n      const latestProposalId = proposalIds[proposalIds.length - 1];\\\\\\\\n      Near.asyncView(\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"get_proposal\\\\\\\\\\\\\\\", {\\\\\\\\n        proposal_id: latestProposalId,\\\\\\\\n      }).then((latestProposal) => {\\\\\\\\n        if (\\\\\\\\n          latestProposal.snapshot.name === title &&\\\\\\\\n          latestProposal.snapshot.description === description\\\\\\\\n        ) {\\\\\\\\n          setCreateTxn(false);\\\\\\\\n          setProposalId(proposalIds[proposalIds.length - 1]);\\\\\\\\n          setShowProposalPage(true);\\\\\\\\n        } else {\\\\\\\\n          setTimeout(\\\\\\\\n            () => checkIfLatestProposalMatchesTitleAndDescription(),\\\\\\\\n            500\\\\\\\\n          );\\\\\\\\n        }\\\\\\\\n      });\\\\\\\\n    }\\\\\\\\n  );\\\\\\\\n}\\\\\\\\n\\\\\\\\n// show proposal created after txn approval for popup wallet\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (isTxnCreated) {\\\\\\\\n    if (editProposalData) {\\\\\\\\n      setOldProposalData(editProposalData);\\\\\\\\n      if (\\\\\\\\n        editProposalData &&\\\\\\\\n        typeof editProposalData === \\\\\\\\\\\\\\\"object\\\\\\\\\\\\\\\" &&\\\\\\\\n        oldProposalData &&\\\\\\\\n        typeof oldProposalData === \\\\\\\\\\\\\\\"object\\\\\\\\\\\\\\\" &&\\\\\\\\n        JSON.stringify(editProposalData) !== JSON.stringify(oldProposalData)\\\\\\\\n      ) {\\\\\\\\n        setCreateTxn(false);\\\\\\\\n        setProposalId(editProposalData.id);\\\\\\\\n        setShowProposalPage(true);\\\\\\\\n      }\\\\\\\\n    } else {\\\\\\\\n      checkIfLatestProposalMatchesTitleAndDescription();\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n});\\\\\\\\n\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (props.transactionHashes) {\\\\\\\\n    setLoading(true);\\\\\\\\n    useCache(\\\\\\\\n      () =>\\\\\\\\n        asyncFetch(\\\\\\\\\\\\\\\"https://rpc.mainnet.near.org\\\\\\\\\\\\\\\", {\\\\\\\\n          method: \\\\\\\\\\\\\\\"POST\\\\\\\\\\\\\\\",\\\\\\\\n          headers: {\\\\\\\\n            \\\\\\\\\\\\\\\"content-type\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"application/json\\\\\\\\\\\\\\\",\\\\\\\\n          },\\\\\\\\n          body: JSON.stringify({\\\\\\\\n            jsonrpc: \\\\\\\\\\\\\\\"2.0\\\\\\\\\\\\\\\",\\\\\\\\n            id: \\\\\\\\\\\\\\\"dontcare\\\\\\\\\\\\\\\",\\\\\\\\n            method: \\\\\\\\\\\\\\\"tx\\\\\\\\\\\\\\\",\\\\\\\\n            params: [props.transactionHashes, context.accountId],\\\\\\\\n          }),\\\\\\\\n        }).then((transaction) => {\\\\\\\\n          const transaction_method_name =\\\\\\\\n            transaction?.body?.result?.transaction?.actions[0].FunctionCall\\\\\\\\n              .method_name;\\\\\\\\n\\\\\\\\n          const is_edit_or_add_post_transaction =\\\\\\\\n            transaction_method_name == \\\\\\\\\\\\\\\"add_proposal\\\\\\\\\\\\\\\" ||\\\\\\\\n            transaction_method_name == \\\\\\\\\\\\\\\"edit_proposal\\\\\\\\\\\\\\\";\\\\\\\\n\\\\\\\\n          if (is_edit_or_add_post_transaction) {\\\\\\\\n            setShowProposalPage(true);\\\\\\\\n            Storage.privateSet(draftKey, null);\\\\\\\\n          }\\\\\\\\n          // show the latest created proposal to user\\\\\\\\n          if (transaction_method_name == \\\\\\\\\\\\\\\"add_proposal\\\\\\\\\\\\\\\") {\\\\\\\\n            useCache(\\\\\\\\n              () =>\\\\\\\\n                Near.asyncView(\\\\\\\\n                  \\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\n                  \\\\\\\\\\\\\\\"get_all_proposal_ids\\\\\\\\\\\\\\\"\\\\\\\\n                ).then((proposalIdsArray) => {\\\\\\\\n                  setProposalId(\\\\\\\\n                    proposalIdsArray?.[proposalIdsArray?.length - 1]\\\\\\\\n                  );\\\\\\\\n                }),\\\\\\\\n              props.transactionHashes + \\\\\\\\\\\\\\\"proposalIds\\\\\\\\\\\\\\\",\\\\\\\\n              { subscribe: false }\\\\\\\\n            );\\\\\\\\n          } else {\\\\\\\\n            setProposalId(id);\\\\\\\\n          }\\\\\\\\n          setLoading(false);\\\\\\\\n        }),\\\\\\\\n      props.transactionHashes + context.accountId,\\\\\\\\n      { subscribe: false }\\\\\\\\n    );\\\\\\\\n  } else {\\\\\\\\n    if (showProposalPage) {\\\\\\\\n      setShowProposalPage(false);\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n}, [props.transactionHashes]);\\\\\\\\n\\\\\\\\nconst DropdowntBtnContainer = styled.div`\\\\\\\\n  font-size: 13px;\\\\\\\\n  min-width: 150px;\\\\\\\\n\\\\\\\\n  .custom-select {\\\\\\\\n    position: relative;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .select-header {\\\\\\\\n    display: flex;\\\\\\\\n    justify-content: space-between;\\\\\\\\n    align-items: center;\\\\\\\\n    border: 1px solid #ccc;\\\\\\\\n    border-radius-top: 5px;\\\\\\\\n    cursor: pointer;\\\\\\\\n    background-color: #fff;\\\\\\\\n    border-radius: 5px;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .no-border {\\\\\\\\n    border: none !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .options-card {\\\\\\\\n    position: absolute;\\\\\\\\n    top: 100%;\\\\\\\\n    left: 0;\\\\\\\\n    width: 200%;\\\\\\\\n    border: 1px solid #ccc;\\\\\\\\n    background-color: #fff;\\\\\\\\n    padding: 0.5rem;\\\\\\\\n    z-index: 99;\\\\\\\\n    font-size: 13px;\\\\\\\\n    border-radius:0.375rem !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .left {\\\\\\\\n    right: 0 !important;\\\\\\\\n    left: auto !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    .options-card {\\\\\\\\n      right: 0 !important;\\\\\\\\n      left: auto !important;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .option {\\\\\\\\n    margin-block: 5px;\\\\\\\\n    padding: 10px;\\\\\\\\n    cursor: pointer;\\\\\\\\n    border-bottom: 1px solid #f0f0f0;\\\\\\\\n    transition: background-color 0.3s ease;\\\\\\\\n    border-radius: 0.375rem !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .option:hover {\\\\\\\\n    background-color: #f0f0f0; /* Custom hover effect color */\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .option:last-child {\\\\\\\\n    border-bottom: none;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .selected {\\\\\\\\n    background-color: #f0f0f0;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .disabled {\\\\\\\\n    background-color: #f4f4f4 !important;\\\\\\\\n    cursor: not-allowed !important;\\\\\\\\n    font-weight: 500;\\\\\\\\n    color: #b3b3b3;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .disabled .circle {\\\\\\\\n    opacity: 0.5;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .circle {\\\\\\\\n    width: 8px;\\\\\\\\n    height: 8px;\\\\\\\\n    border-radius: 50%;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .grey {\\\\\\\\n    background-color: #818181;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .green {\\\\\\\\n    background-color: #04a46e;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  a:hover {\\\\\\\\n    text-decoration: none;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n}\\\\\\\\n`;\\\\\\\\n\\\\\\\\nconst LoadingButtonSpinner = (\\\\\\\\n  <span\\\\\\\\n    class=\\\\\\\\\\\\\\\"submit-proposal-draft-loading-indicator spinner-border spinner-border-sm\\\\\\\\\\\\\\\"\\\\\\\\n    role=\\\\\\\\\\\\\\\"status\\\\\\\\\\\\\\\"\\\\\\\\n    aria-hidden=\\\\\\\\\\\\\\\"true\\\\\\\\\\\\\\\"\\\\\\\\n  ></span>\\\\\\\\n);\\\\\\\\n\\\\\\\\nconst SubmitBtn = () => {\\\\\\\\n  const btnOptions = [\\\\\\\\n    {\\\\\\\\n      iconColor: \\\\\\\\\\\\\\\"grey\\\\\\\\\\\\\\\",\\\\\\\\n      label: \\\\\\\\\\\\\\\"Submit Draft\\\\\\\\\\\\\\\",\\\\\\\\n      description:\\\\\\\\n        \\\\\\\\\\\\\\\"The author can still edit the proposal and build consensus before sharing it with sponsors.\\\\\\\\\\\\\\\",\\\\\\\\n      value: \\\\\\\\\\\\\\\"draft\\\\\\\\\\\\\\\",\\\\\\\\n    },\\\\\\\\n    {\\\\\\\\n      iconColor: \\\\\\\\\\\\\\\"green\\\\\\\\\\\\\\\",\\\\\\\\n      label: \\\\\\\\\\\\\\\"Ready for Review\\\\\\\\\\\\\\\",\\\\\\\\n      description:\\\\\\\\n        \\\\\\\\\\\\\\\"Start the official review process with sponsors. This will lock the editing function, but comments are still open.\\\\\\\\\\\\\\\",\\\\\\\\n      value: \\\\\\\\\\\\\\\"review\\\\\\\\\\\\\\\",\\\\\\\\n    },\\\\\\\\n  ];\\\\\\\\n\\\\\\\\n  const handleOptionClick = (option) => {\\\\\\\\n    setDraftBtnOpen(false);\\\\\\\\n    setSelectedStatus(option.value);\\\\\\\\n    handleSubmit(option.value);\\\\\\\\n  };\\\\\\\\n\\\\\\\\n  const toggleDropdown = () => {\\\\\\\\n    setDraftBtnOpen(!isDraftBtnOpen);\\\\\\\\n  };\\\\\\\\n\\\\\\\\n  const handleSubmit = (status) => {\\\\\\\\n    const isDraft = status === \\\\\\\\\\\\\\\"draft\\\\\\\\\\\\\\\";\\\\\\\\n    if (isDraft) {\\\\\\\\n      onSubmit({ isDraft });\\\\\\\\n      cleanDraft();\\\\\\\\n    } else {\\\\\\\\n      setReviewModal(true);\\\\\\\\n    }\\\\\\\\n  };\\\\\\\\n\\\\\\\\n  const selectedOption = btnOptions.find((i) => i.value === selectedStatus);\\\\\\\\n\\\\\\\\n  return (\\\\\\\\n    <DropdowntBtnContainer>\\\\\\\\n      <div\\\\\\\\n        className=\\\\\\\\\\\\\\\"custom-select\\\\\\\\\\\\\\\"\\\\\\\\n        tabIndex=\\\\\\\\\\\\\\\"0\\\\\\\\\\\\\\\"\\\\\\\\n        onBlur={() => setDraftBtnOpen(false)}\\\\\\\\n      >\\\\\\\\n        <div\\\\\\\\n          className={\\\\\\\\n            \\\\\\\\\\\\\\\"select-header d-flex gap-1 align-items-center submit-draft-button \\\\\\\\\\\\\\\" +\\\\\\\\n            (disabledSubmitBtn && \\\\\\\\\\\\\\\"disabled\\\\\\\\\\\\\\\")\\\\\\\\n          }\\\\\\\\n        >\\\\\\\\n          <div\\\\\\\\n            onClick={() => !disabledSubmitBtn && handleSubmit(selectedStatus)}\\\\\\\\n            className=\\\\\\\\\\\\\\\"p-2 d-flex gap-2 align-items-center \\\\\\\\\\\\\\\"\\\\\\\\n          >\\\\\\\\n            {isTxnCreated ? (\\\\\\\\n              LoadingButtonSpinner\\\\\\\\n            ) : (\\\\\\\\n              <div className={\\\\\\\\\\\\\\\"circle \\\\\\\\\\\\\\\" + selectedOption.iconColor}></div>\\\\\\\\n            )}\\\\\\\\n            <div className={`selected-option`}>{selectedOption.label}</div>\\\\\\\\n          </div>\\\\\\\\n          <div\\\\\\\\n            className=\\\\\\\\\\\\\\\"h-100 p-2\\\\\\\\\\\\\\\"\\\\\\\\n            style={{ borderLeft: \\\\\\\\\\\\\\\"1px solid #ccc\\\\\\\\\\\\\\\" }}\\\\\\\\n            onClick={!disabledSubmitBtn && toggleDropdown}\\\\\\\\n          >\\\\\\\\n            <i class={`bi bi-chevron-${isDraftBtnOpen ? \\\\\\\\\\\\\\\"up\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"down\\\\\\\\\\\\\\\"}`}></i>\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n\\\\\\\\n        {isDraftBtnOpen && (\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"options-card\\\\\\\\\\\\\\\">\\\\\\\\n            {btnOptions.map((option) => (\\\\\\\\n              <div\\\\\\\\n                key={option.value}\\\\\\\\n                className={`option ${\\\\\\\\n                  selectedOption.value === option.value ? \\\\\\\\\\\\\\\"selected\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n                }`}\\\\\\\\n                onClick={() => handleOptionClick(option)}\\\\\\\\n              >\\\\\\\\n                <div className={`d-flex gap-2 align-items-center`}>\\\\\\\\n                  <div className={\\\\\\\\\\\\\\\"circle \\\\\\\\\\\\\\\" + option.iconColor}></div>\\\\\\\\n                  <div className=\\\\\\\\\\\\\\\"fw-bold\\\\\\\\\\\\\\\">{option.label}</div>\\\\\\\\n                </div>\\\\\\\\n                <div className=\\\\\\\\\\\\\\\"text-muted text-xs\\\\\\\\\\\\\\\">{option.description}</div>\\\\\\\\n              </div>\\\\\\\\n            ))}\\\\\\\\n          </div>\\\\\\\\n        )}\\\\\\\\n      </div>\\\\\\\\n    </DropdowntBtnContainer>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\n\\\\\\\\nconst onSubmit = ({ isDraft, isCancel }) => {\\\\\\\\n  setCreateTxn(true);\\\\\\\\n  console.log(\\\\\\\\\\\\\\\"submitting transaction\\\\\\\\\\\\\\\");\\\\\\\\n  const linkedProposalsIds = linkedProposals.map((item) => item.value) ?? [];\\\\\\\\n  const body = {\\\\\\\\n    proposal_body_version: \\\\\\\\\\\\\\\"V0\\\\\\\\\\\\\\\",\\\\\\\\n    name: title,\\\\\\\\n    description: description,\\\\\\\\n    category: category,\\\\\\\\n    summary: summary,\\\\\\\\n    linked_proposals: linkedProposalsIds,\\\\\\\\n    requested_sponsorship_usd_amount: requestedSponsorshipAmount,\\\\\\\\n    requested_sponsorship_paid_in_currency: requestedSponsorshipToken.value,\\\\\\\\n    receiver_account: receiverAccount,\\\\\\\\n    supervisor: supervisor || null,\\\\\\\\n    requested_sponsor: requestedSponsor,\\\\\\\\n    timeline: isCancel\\\\\\\\n      ? {\\\\\\\\n          status: \\\\\\\\\\\\\\\"CANCELLED\\\\\\\\\\\\\\\",\\\\\\\\n          sponsor_requested_review: false,\\\\\\\\n          reviewer_completed_attestation: false,\\\\\\\\n          kyc_verified: false,\\\\\\\\n        }\\\\\\\\n      : isDraft\\\\\\\\n      ? { status: \\\\\\\\\\\\\\\"DRAFT\\\\\\\\\\\\\\\" }\\\\\\\\n      : isEditPage\\\\\\\\n      ? editProposalData.snapshot.timeline\\\\\\\\n      : {\\\\\\\\n          status: \\\\\\\\\\\\\\\"REVIEW\\\\\\\\\\\\\\\",\\\\\\\\n          sponsor_requested_review: false,\\\\\\\\n          reviewer_completed_attestation: false,\\\\\\\\n        },\\\\\\\\n  };\\\\\\\\n  const args = {\\\\\\\\n    labels: [],\\\\\\\\n    body: body,\\\\\\\\n  };\\\\\\\\n  if (isEditPage) {\\\\\\\\n    args[\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\"] = editProposalData.id;\\\\\\\\n  } else {\\\\\\\\n    args[\\\\\\\\\\\\\\\"accepted_terms_and_conditions_version\\\\\\\\\\\\\\\"] = parseInt(\\\\\\\\n      Near.block().header.height\\\\\\\\n    );\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  Near.call([\\\\\\\\n    {\\\\\\\\n      contractName: \\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\n      methodName: isEditPage ? \\\\\\\\\\\\\\\"edit_proposal\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"add_proposal\\\\\\\\\\\\\\\",\\\\\\\\n      args: args,\\\\\\\\n      gas: 270000000000000,\\\\\\\\n    },\\\\\\\\n  ]);\\\\\\\\n};\\\\\\\\n\\\\\\\\nfunction cleanDraft() {\\\\\\\\n  Storage.privateSet(draftKey, null);\\\\\\\\n}\\\\\\\\n\\\\\\\\nif (loading) {\\\\\\\\n  return (\\\\\\\\n    <div\\\\\\\\n      style={{ height: \\\\\\\\\\\\\\\"50vh\\\\\\\\\\\\\\\" }}\\\\\\\\n      className=\\\\\\\\\\\\\\\"d-flex justify-content-center align-items-center w-100\\\\\\\\\\\\\\\"\\\\\\\\n    >\\\\\\\\n      <Widget\\\\\\\\n        src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.Spinner\\\\\\\\\\\\\\\"}\\\\\\\\n      />\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n}\\\\\\\\n\\\\\\\\nconst [collapseState, setCollapseState] = useState({});\\\\\\\\n\\\\\\\\nconst CollapsibleContainer = ({ title, children, noPaddingTop }) => {\\\\\\\\n  return (\\\\\\\\n    <div\\\\\\\\n      className={\\\\\\\\n        \\\\\\\\\\\\\\\"border-bottom py-4 \\\\\\\\\\\\\\\" +\\\\\\\\n        (noPaddingTop && \\\\\\\\\\\\\\\"pt-0 \\\\\\\\\\\\\\\") +\\\\\\\\n        (collapseState[title] && \\\\\\\\\\\\\\\" pb-0\\\\\\\\\\\\\\\")\\\\\\\\n      }\\\\\\\\n    >\\\\\\\\n      <div className={\\\\\\\\\\\\\\\"d-flex justify-content-between \\\\\\\\\\\\\\\"}>\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"h5 text-muted mb-2 mb-sm-3\\\\\\\\\\\\\\\">{title}</div>\\\\\\\\n        <div\\\\\\\\n          className=\\\\\\\\\\\\\\\"d-flex d-sm-none cursor-pointer\\\\\\\\\\\\\\\"\\\\\\\\n          onClick={() =>\\\\\\\\n            setCollapseState((prevState) => ({\\\\\\\\n              ...prevState,\\\\\\\\n              [title]: !prevState[title],\\\\\\\\n            }))\\\\\\\\n          }\\\\\\\\n        >\\\\\\\\n          {!collapseState[title] ? (\\\\\\\\n            <i class=\\\\\\\\\\\\\\\"bi bi-chevron-up h4\\\\\\\\\\\\\\\"></i>\\\\\\\\n          ) : (\\\\\\\\n            <i class=\\\\\\\\\\\\\\\"bi bi-chevron-down h4\\\\\\\\\\\\\\\"></i>\\\\\\\\n          )}\\\\\\\\n        </div>\\\\\\\\n      </div>\\\\\\\\n      <div className={!collapseState[title] ? \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"d-none\\\\\\\\\\\\\\\"}>{children}</div>\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\n\\\\\\\\nconst CategoryDropdown = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.CategoryDropdown\\\\\\\\\\\\\\\"}\\\\\\\\n      props={{\\\\\\\\n        selectedValue: category,\\\\\\\\n        onChange: setCategory,\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}, [draftProposalData]);\\\\\\\\n\\\\\\\\nconst TitleComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src=\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.Input\\\\\\\\\\\\\\\"\\\\\\\\n      props={{\\\\\\\\n        className: \\\\\\\\\\\\\\\"flex-grow-1\\\\\\\\\\\\\\\",\\\\\\\\n        value: title,\\\\\\\\n        onBlur: (e) => {\\\\\\\\n          setTitle(e.target.value);\\\\\\\\n        },\\\\\\\\n        skipPaddingGap: true,\\\\\\\\n        inputProps: {\\\\\\\\n          max: 80,\\\\\\\\n        },\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}, [draftProposalData]);\\\\\\\\n\\\\\\\\nconst SummaryComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src=\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.Input\\\\\\\\\\\\\\\"\\\\\\\\n      props={{\\\\\\\\n        className: \\\\\\\\\\\\\\\"flex-grow-1\\\\\\\\\\\\\\\",\\\\\\\\n        value: summary,\\\\\\\\n        multiline: true,\\\\\\\\n        onBlur: (e) => {\\\\\\\\n          setSummary(e.target.value);\\\\\\\\n        },\\\\\\\\n        skipPaddingGap: true,\\\\\\\\n        inputProps: {\\\\\\\\n          max: 500,\\\\\\\\n        },\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}, [draftProposalData]);\\\\\\\\n\\\\\\\\nconst DescriptionComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.Compose\\\\\\\\\\\\\\\"}\\\\\\\\n      props={{\\\\\\\\n        data: description,\\\\\\\\n        onChange: setDescription,\\\\\\\\n        autocompleteEnabled: true,\\\\\\\\n        autoFocus: false,\\\\\\\\n        showProposalIdAutoComplete: true,\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}, [draftProposalData]);\\\\\\\\n\\\\\\\\nconst ConsentComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-2\\\\\\\\\\\\\\\">\\\\\\\\n      <Widget\\\\\\\\n        src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.Checkbox\\\\\\\\\\\\\\\"}\\\\\\\\n        props={{\\\\\\\\n          value: \\\\\\\\\\\\\\\"toc\\\\\\\\\\\\\\\",\\\\\\\\n          label: (\\\\\\\\n            <>\\\\\\\\n              I\\\\\\\\u{2019}ve agree to{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n              <Widget\\\\\\\\n                src={\\\\\\\\n                  \\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.AcceptedTerms\\\\\\\\\\\\\\\"\\\\\\\\n                }\\\\\\\\n                props={{ proposalId: proposalId, portal: \\\\\\\\\\\\\\\"DevHub\\\\\\\\\\\\\\\" }}\\\\\\\\n              />\\\\\\\\n              and commit to honoring it\\\\\\\\n            </>\\\\\\\\n          ),\\\\\\\\n          isChecked: consent.toc,\\\\\\\\n          onClick: (value) =>\\\\\\\\n            setConsent((prevConsent) => ({\\\\\\\\n              ...prevConsent,\\\\\\\\n              toc: value,\\\\\\\\n            })),\\\\\\\\n        }}\\\\\\\\n      />\\\\\\\\n      <Widget\\\\\\\\n        src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.Checkbox\\\\\\\\\\\\\\\"}\\\\\\\\n        props={{\\\\\\\\n          value: \\\\\\\\\\\\\\\"coc\\\\\\\\\\\\\\\",\\\\\\\\n          label: (\\\\\\\\n            <>\\\\\\\\n              I\\\\\\\\u{2019}ve read{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n              <a\\\\\\\\n                href={\\\\\\\\n                  \\\\\\\\\\\\\\\"https://docs.google.com/document/d/1c6XV8Sj_BRKw8jnTIsjdLPPN6Al5eEStt1ZLYSuqw9U/edit\\\\\\\\\\\\\\\"\\\\\\\\n                }\\\\\\\\n                className=\\\\\\\\\\\\\\\"text-decoration-underline\\\\\\\\\\\\\\\"\\\\\\\\n                target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n                rel=\\\\\\\\\\\\\\\"noopener noreferrer\\\\\\\\\\\\\\\"\\\\\\\\n              >\\\\\\\\n                DevHub\\\\\\\\u{2019}s Code of Conduct\\\\\\\\n              </a>\\\\\\\\n              and commit to honoring it\\\\\\\\n            </>\\\\\\\\n          ),\\\\\\\\n          isChecked: consent.coc,\\\\\\\\n          onClick: (value) =>\\\\\\\\n            setConsent((prevConsent) => ({\\\\\\\\n              ...prevConsent,\\\\\\\\n              coc: value,\\\\\\\\n            })),\\\\\\\\n        }}\\\\\\\\n      />\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n}, [draftProposalData]);\\\\\\\\n\\\\\\\\nconst ProfileComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src=\\\\\\\\\\\\\\\"mob.near/widget/Profile.ShortInlineBlock\\\\\\\\\\\\\\\"\\\\\\\\n      props={{\\\\\\\\n        accountId: author,\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}, []);\\\\\\\\n\\\\\\\\nconst LinkedProposalsComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-1\\\\\\\\\\\\\\\">\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"text-muted w-100 text-sm\\\\\\\\\\\\\\\">\\\\\\\\n        Link any relevant proposals (e.g. previous milestones).\\\\\\\\n      </div>\\\\\\\\n      <Widget\\\\\\\\n        src=\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.LinkedProposalsDropdown\\\\\\\\\\\\\\\"\\\\\\\\n        props={{\\\\\\\\n          onChange: setLinkedProposals,\\\\\\\\n          linkedProposals: linkedProposals,\\\\\\\\n        }}\\\\\\\\n      />\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n}, [draftProposalData]);\\\\\\\\n\\\\\\\\nconst ReceiverAccountComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src=\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.AccountInput\\\\\\\\\\\\\\\"\\\\\\\\n      props={{\\\\\\\\n        value: receiverAccount,\\\\\\\\n        placeholder: devdaoAccount,\\\\\\\\n        onUpdate: setReceiverAccount,\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}, [draftProposalData]);\\\\\\\\n\\\\\\\\nconst AmountComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src=\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.Input\\\\\\\\\\\\\\\"\\\\\\\\n      props={{\\\\\\\\n        className: \\\\\\\\\\\\\\\"flex-grow-1\\\\\\\\\\\\\\\",\\\\\\\\n        value: requestedSponsorshipAmount,\\\\\\\\n        onChange: (e) => {\\\\\\\\n          setRequestedSponsorshipAmount(e.target.value);\\\\\\\\n        },\\\\\\\\n        skipPaddingGap: true,\\\\\\\\n        inputProps: {\\\\\\\\n          type: \\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\",\\\\\\\\n          prefix: \\\\\\\\\\\\\\\"$\\\\\\\\\\\\\\\",\\\\\\\\n          inputmode: \\\\\\\\\\\\\\\"numeric\\\\\\\\\\\\\\\",\\\\\\\\n          pattern: \\\\\\\\\\\\\\\"[0-9]*\\\\\\\\\\\\\\\",\\\\\\\\n        },\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}, [draftProposalData]);\\\\\\\\n\\\\\\\\nconst CurrencyComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src=\\\\\\\\\\\\\\\"devhub.near/widget/devhub.components.molecule.DropDown\\\\\\\\\\\\\\\"\\\\\\\\n      props={{\\\\\\\\n        options: tokensOptions,\\\\\\\\n        selectedValue: requestedSponsorshipToken,\\\\\\\\n        onUpdate: (v) => {\\\\\\\\n          setRequestedSponsorshipToken(v);\\\\\\\\n        },\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}, [draftProposalData]);\\\\\\\\n\\\\\\\\nconst SponsorComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src=\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.AccountInput\\\\\\\\\\\\\\\"\\\\\\\\n      props={{\\\\\\\\n        value: requestedSponsor,\\\\\\\\n        placeholder: \\\\\\\\\\\\\\\"NEARDevDAO\\\\\\\\\\\\\\\",\\\\\\\\n        onUpdate: setRequestedSponsor,\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}, [draftProposalData]);\\\\\\\\n\\\\\\\\nconst SupervisorComponent = useMemo(() => {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src=\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.AccountInput\\\\\\\\\\\\\\\"\\\\\\\\n      props={{\\\\\\\\n        value: supervisor,\\\\\\\\n        onUpdate: setSupervisor,\\\\\\\\n      }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n}, [draftProposalData]);\\\\\\\\n\\\\\\\\nif (showProposalPage) {\\\\\\\\n  return (\\\\\\\\n    <Widget\\\\\\\\n      src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.Proposal\\\\\\\\\\\\\\\"}\\\\\\\\n      props={{ id: proposalId, ...props }}\\\\\\\\n    />\\\\\\\\n  );\\\\\\\\n} else\\\\\\\\n  return (\\\\\\\\n    <Container className=\\\\\\\\\\\\\\\"w-100 py-4 px-0 px-sm-2 d-flex flex-column gap-3\\\\\\\\\\\\\\\">\\\\\\\\n      <Heading className=\\\\\\\\\\\\\\\"px-2 px-sm-0\\\\\\\\\\\\\\\">\\\\\\\\n        {isEditPage ? \\\\\\\\\\\\\\\"Edit\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"Create\\\\\\\\\\\\\\\"} Proposal\\\\\\\\n      </Heading>\\\\\\\\n      <Widget\\\\\\\\n        src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.ConfirmReviewModal\\\\\\\\\\\\\\\"}\\\\\\\\n        props={{\\\\\\\\n          isOpen: isReviewModalOpen,\\\\\\\\n          onCancelClick: () => setReviewModal(false),\\\\\\\\n          onReviewClick: () => {\\\\\\\\n            setReviewModal(false);\\\\\\\\n            cleanDraft();\\\\\\\\n            onSubmit({ isDraft: false });\\\\\\\\n          },\\\\\\\\n        }}\\\\\\\\n      />\\\\\\\\n      <Widget\\\\\\\\n        src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.ConfirmCancelModal\\\\\\\\\\\\\\\"}\\\\\\\\n        props={{\\\\\\\\n          isOpen: isCancelModalOpen,\\\\\\\\n          onCancelClick: () => setCancelModal(false),\\\\\\\\n          onConfirmClick: () => {\\\\\\\\n            setCancelModal(false);\\\\\\\\n            onSubmit({ isCancel: true });\\\\\\\\n          },\\\\\\\\n        }}\\\\\\\\n      />\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"card no-border rounded-0 px-2 p-lg-0 full-width-div\\\\\\\\\\\\\\\">\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"container-xl py-4 d-flex flex-wrap gap-6 w-100\\\\\\\\\\\\\\\">\\\\\\\\n          <div\\\\\\\\n            style={{ minWidth: \\\\\\\\\\\\\\\"350px\\\\\\\\\\\\\\\" }}\\\\\\\\n            className=\\\\\\\\\\\\\\\"flex-2 w-100 order-2 order-md-1\\\\\\\\\\\\\\\"\\\\\\\\n          >\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"d-flex gap-2 w-100\\\\\\\\\\\\\\\">\\\\\\\\n              <div className=\\\\\\\\\\\\\\\"d-none d-sm-flex\\\\\\\\\\\\\\\">\\\\\\\\n                <Widget\\\\\\\\n                  src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.Profile\\\\\\\\\\\\\\\"}\\\\\\\\n                  props={{\\\\\\\\n                    accountId: author,\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              </div>\\\\\\\\n              <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-4 w-100\\\\\\\\\\\\\\\">\\\\\\\\n                <InputContainer\\\\\\\\n                  heading=\\\\\\\\\\\\\\\"Category\\\\\\\\\\\\\\\"\\\\\\\\n                  description={\\\\\\\\n                    <>\\\\\\\\n                      Select the category that best aligns with your\\\\\\\\n                      contribution to the NEAR developer community. Need\\\\\\\\n                      guidance? See{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n                      <a\\\\\\\\n                        href={FundingDocs}\\\\\\\\n                        className=\\\\\\\\\\\\\\\"text-decoration-underline no-space\\\\\\\\\\\\\\\"\\\\\\\\n                        target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n                        rel=\\\\\\\\\\\\\\\"noopener noreferrer\\\\\\\\\\\\\\\"\\\\\\\\n                      >\\\\\\\\n                        Funding Docs\\\\\\\\n                      </a>\\\\\\\\n                      .\\\\\\\\n                    </>\\\\\\\\n                  }\\\\\\\\n                >\\\\\\\\n                  {CategoryDropdown}\\\\\\\\n                </InputContainer>\\\\\\\\n                <InputContainer\\\\\\\\n                  heading=\\\\\\\\\\\\\\\"Title\\\\\\\\\\\\\\\"\\\\\\\\n                  description=\\\\\\\\\\\\\\\"Highlight the essence of your proposal in a few words. This will appear on your proposal\\\\\\\\u{2019}s detail page and the main proposal feed. Keep it short, please :)\\\\\\\\\\\\\\\"\\\\\\\\n                >\\\\\\\\n                  {TitleComponent}\\\\\\\\n                </InputContainer>\\\\\\\\n                <InputContainer\\\\\\\\n                  heading=\\\\\\\\\\\\\\\"Summary\\\\\\\\\\\\\\\"\\\\\\\\n                  description=\\\\\\\\\\\\\\\"Explain your proposal briefly. This is your chance to make a good first impression on the community. Include what needs or goals your work will address, your solution, and the benefit for the NEAR developer community.\\\\\\\\\\\\\\\"\\\\\\\\n                >\\\\\\\\n                  {SummaryComponent}\\\\\\\\n                </InputContainer>\\\\\\\\n                <InputContainer\\\\\\\\n                  heading=\\\\\\\\\\\\\\\"Description\\\\\\\\\\\\\\\"\\\\\\\\n                  description={\\\\\\\\n                    <>\\\\\\\\n                      Expand on your summary with any relevant details like your\\\\\\\\n                      contribution timeline, key milestones, team background,\\\\\\\\n                      and a clear breakdown of how the funds will be used.\\\\\\\\n                      Proposals should be simple and clear (e.g. 1 month). For\\\\\\\\n                      more complex projects, treat each milestone as a separate\\\\\\\\n                      proposal. Need more guidance?\\\\\\\\n                      <a\\\\\\\\n                        href={FundingDocs}\\\\\\\\n                        className=\\\\\\\\\\\\\\\"text-decoration-underline no-space\\\\\\\\\\\\\\\"\\\\\\\\n                        target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n                        rel=\\\\\\\\\\\\\\\"noopener noreferrer\\\\\\\\\\\\\\\"\\\\\\\\n                      >\\\\\\\\n                        See Funding Docs\\\\\\\\n                      </a>\\\\\\\\n                      .\\\\\\\\n                    </>\\\\\\\\n                  }\\\\\\\\n                >\\\\\\\\n                  {DescriptionComponent}\\\\\\\\n                </InputContainer>\\\\\\\\n                <InputContainer heading=\\\\\\\\\\\\\\\"Final Consent\\\\\\\\\\\\\\\">\\\\\\\\n                  {ConsentComponent}\\\\\\\\n                </InputContainer>\\\\\\\\n                <div className=\\\\\\\\\\\\\\\"d-flex justify-content-between gap-2 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n                  <div>\\\\\\\\n                    {isEditPage && (\\\\\\\\n                      <Widget\\\\\\\\n                        src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n                        props={{\\\\\\\\n                          classNames: {\\\\\\\\n                            root: \\\\\\\\\\\\\\\"btn-outline-danger shadow-none border-0 btn-sm\\\\\\\\\\\\\\\",\\\\\\\\n                          },\\\\\\\\n                          label: (\\\\\\\\n                            <div className=\\\\\\\\\\\\\\\"d-flex align-items-center gap-1\\\\\\\\\\\\\\\">\\\\\\\\n                              <i class=\\\\\\\\\\\\\\\"bi bi-trash3\\\\\\\\\\\\\\\"></i> Cancel Proposal\\\\\\\\n                            </div>\\\\\\\\n                          ),\\\\\\\\n                          onClick: () => setCancelModal(true),\\\\\\\\n                        }}\\\\\\\\n                      />\\\\\\\\n                    )}\\\\\\\\n                  </div>\\\\\\\\n                  <div className=\\\\\\\\\\\\\\\"d-flex gap-2\\\\\\\\\\\\\\\">\\\\\\\\n                    <Link\\\\\\\\n                      to={\\\\\\\\n                        isEditPage\\\\\\\\n                          ? href({\\\\\\\\n                              widgetSrc: \\\\\\\\\\\\\\\"devhub.near/widget/app\\\\\\\\\\\\\\\",\\\\\\\\n                              params: {\\\\\\\\n                                page: \\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\",\\\\\\\\n                                id: parseInt(id),\\\\\\\\n                              },\\\\\\\\n                            })\\\\\\\\n                          : href({\\\\\\\\n                              widgetSrc: \\\\\\\\\\\\\\\"devhub.near/widget/app\\\\\\\\\\\\\\\",\\\\\\\\n                              params: {\\\\\\\\n                                page: \\\\\\\\\\\\\\\"proposals\\\\\\\\\\\\\\\",\\\\\\\\n                              },\\\\\\\\n                            })\\\\\\\\n                      }\\\\\\\\n                    >\\\\\\\\n                      <Widget\\\\\\\\n                        src={`devhub.near/widget/devhub.components.molecule.Button`}\\\\\\\\n                        props={{\\\\\\\\n                          classNames: {\\\\\\\\n                            root: \\\\\\\\\\\\\\\"d-flex h-100 text-muted fw-bold btn-outline shadow-none border-0 btn-sm\\\\\\\\\\\\\\\",\\\\\\\\n                          },\\\\\\\\n                          label: \\\\\\\\\\\\\\\"Discard Changes\\\\\\\\\\\\\\\",\\\\\\\\n                          onClick: cleanDraft,\\\\\\\\n                        }}\\\\\\\\n                      />\\\\\\\\n                    </Link>\\\\\\\\n                    <SubmitBtn />\\\\\\\\n                  </div>\\\\\\\\n                </div>\\\\\\\\n              </div>\\\\\\\\n            </div>\\\\\\\\n          </div>\\\\\\\\n          <div\\\\\\\\n            style={{ minWidth: \\\\\\\\\\\\\\\"350px\\\\\\\\\\\\\\\" }}\\\\\\\\n            className=\\\\\\\\\\\\\\\"flex-1 w-100 order-1 order-md-2\\\\\\\\\\\\\\\"\\\\\\\\n          >\\\\\\\\n            <CollapsibleContainer noPaddingTop={true} title=\\\\\\\\\\\\\\\"Author Details\\\\\\\\\\\\\\\">\\\\\\\\n              <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-3 gap-sm-4\\\\\\\\\\\\\\\">\\\\\\\\n                <InputContainer heading=\\\\\\\\\\\\\\\"Author\\\\\\\\\\\\\\\">\\\\\\\\n                  {ProfileComponent}\\\\\\\\n                </InputContainer>\\\\\\\\n              </div>\\\\\\\\n            </CollapsibleContainer>\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"my-2\\\\\\\\\\\\\\\">\\\\\\\\n              <CollapsibleContainer title=\\\\\\\\\\\\\\\"Link Proposals (Optional)\\\\\\\\\\\\\\\">\\\\\\\\n                {LinkedProposalsComponent}\\\\\\\\n              </CollapsibleContainer>\\\\\\\\n            </div>\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"my-2\\\\\\\\\\\\\\\">\\\\\\\\n              <CollapsibleContainer title=\\\\\\\\\\\\\\\"Funding Details\\\\\\\\\\\\\\\">\\\\\\\\n                <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-3 gap-sm-4\\\\\\\\\\\\\\\">\\\\\\\\n                  <InputContainer\\\\\\\\n                    heading=\\\\\\\\\\\\\\\"Recipient NEAR Wallet Address\\\\\\\\\\\\\\\"\\\\\\\\n                    description=\\\\\\\\\\\\\\\"Enter the address that will receive the funds. We\\\\\\\\u{2019}ll need this to send a test transaction once your proposal is approved.\\\\\\\\\\\\\\\"\\\\\\\\n                  >\\\\\\\\n                    {ReceiverAccountComponent}\\\\\\\\n                  </InputContainer>\\\\\\\\n                  <InputContainer\\\\\\\\n                    heading={\\\\\\\\n                      <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n                        Recipient Verification Status\\\\\\\\n                        <div className=\\\\\\\\\\\\\\\"custom-tooltip\\\\\\\\\\\\\\\">\\\\\\\\n                          <i class=\\\\\\\\\\\\\\\"bi bi-info-circle-fill\\\\\\\\\\\\\\\"></i>\\\\\\\\n                          <span class=\\\\\\\\\\\\\\\"tooltiptext\\\\\\\\\\\\\\\">\\\\\\\\n                            To get approved and receive payments on our\\\\\\\\n                            platform, you must complete KYC/KYB verification\\\\\\\\n                            using Fractal, a trusted identity verification\\\\\\\\n                            solution. This helps others trust transactions with\\\\\\\\n                            your account. Click \\\\\\\\\\\\\\\"Get Verified\\\\\\\\\\\\\\\" to start. <br />\\\\\\\\n                            <br />\\\\\\\\n                            Once verified, your profile will display a badge,\\\\\\\\n                            which is valid for 365 days from the date of your\\\\\\\\n                            verification. You must renew your verification upon\\\\\\\\n                            expiration OR if any of your personal information\\\\\\\\n                            changes.\\\\\\\\n                          </span>\\\\\\\\n                        </div>\\\\\\\\n                      </div>\\\\\\\\n                    }\\\\\\\\n                    description=\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n                  >\\\\\\\\n                    <div className=\\\\\\\\\\\\\\\"border border-1 p-3 rounded-2\\\\\\\\\\\\\\\">\\\\\\\\n                      <Widget\\\\\\\\n                        src=\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.VerificationStatus\\\\\\\\\\\\\\\"\\\\\\\\n                        props={{\\\\\\\\n                          receiverAccount: receiverAccount,\\\\\\\\n                          showGetVerifiedBtn: true,\\\\\\\\n                          imageSize: 30,\\\\\\\\n                        }}\\\\\\\\n                      />\\\\\\\\n                    </div>\\\\\\\\n                  </InputContainer>\\\\\\\\n                  <InputContainer\\\\\\\\n                    heading=\\\\\\\\\\\\\\\"Total Amount (USD)\\\\\\\\\\\\\\\"\\\\\\\\n                    description={\\\\\\\\n                      <>\\\\\\\\n                        Enter the exact amount you are seeking. See\\\\\\\\n                        <a\\\\\\\\n                          href={FundingDocs}\\\\\\\\n                          className=\\\\\\\\\\\\\\\"text-decoration-underline\\\\\\\\\\\\\\\"\\\\\\\\n                          target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n                          rel=\\\\\\\\\\\\\\\"noopener noreferrer\\\\\\\\\\\\\\\"\\\\\\\\n                        >\\\\\\\\n                          Funding Documentation\\\\\\\\n                        </a>\\\\\\\\n                        for guidelines.\\\\\\\\n                      </>\\\\\\\\n                    }\\\\\\\\n                  >\\\\\\\\n                    {AmountComponent}\\\\\\\\n                  </InputContainer>\\\\\\\\n                  <InputContainer\\\\\\\\n                    heading=\\\\\\\\\\\\\\\"Currency\\\\\\\\\\\\\\\"\\\\\\\\n                    description=\\\\\\\\\\\\\\\"Select your preferred currency for receiving funds. Note: The exchange rate for NEAR tokens will be the closing rate at the day of the invoice.\\\\\\\\\\\\\\\"\\\\\\\\n                  >\\\\\\\\n                    {CurrencyComponent}\\\\\\\\n                  </InputContainer>\\\\\\\\n                  <InputContainer heading=\\\\\\\\\\\\\\\"Requested Sponsor\\\\\\\\\\\\\\\" description=\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\">\\\\\\\\n                    {SponsorComponent}\\\\\\\\n                  </InputContainer>\\\\\\\\n                  <InputContainer\\\\\\\\n                    heading=\\\\\\\\\\\\\\\"Supervisor (Optional)\\\\\\\\\\\\\\\"\\\\\\\\n                    description=\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n                  >\\\\\\\\n                    {SupervisorComponent}\\\\\\\\n                  </InputContainer>\\\\\\\\n                </div>\\\\\\\\n              </CollapsibleContainer>\\\\\\\\n            </div>\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n      </div>\\\\\\\\n    </Container>\\\\\\\\n  );\\\\\\\\n\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2539613224895e+21
+    }
+  },
+  {
+    "id": "9015524052",
+    "receipt_id": "8UnTuCTgFbtHNsyar763KdzvCi5nAkvL7KKoRQturJGe",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9DkncjWgPGCYBfgSBVrh1Hr29MZrDM9EoscnQeDWAnKM",
+      "block_height": 129800702,
+      "block_timestamp": 1728330215725923300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "2FMRM93xhAhCfoVUXWqgTzjTXHE8im5xpPmJfuEg5TdX",
+    "included_in_block_hash": "HeAbKwp2Gmt4taUEK4yNwUCpgA77GzgNVbfXSMT6BC99",
+    "block_timestamp": "1728330213527654776",
+    "block": {
+      "block_height": 129800700
+    },
+    "receipt_conversion_tokens_burnt": "215208412648000000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.8708241815310788e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2539613224895e+21
+    }
+  },
+  {
+    "id": "9015678025",
+    "receipt_id": "4Y76U3pa21Rbb8xga77LKSepHeWiqnV39zU2ZcLHugNm",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3hxKdjkpyKqiLv4QewR4dcR9azeK5WxMGRa7PxRiQnK4",
+      "block_height": 129801084,
+      "block_timestamp": 1728330658596223000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4866448914855,
+      "tokens_burnt": 486644891485500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "6XYcARdPh4eY4b91RBnPNemwcYa1W5iUjobnpFYc8QKw",
+    "included_in_block_hash": "7KTQsZjfDGjnPcq6vwTPUdQ5HLPVAyYRCkVJ9BtsuodZ",
+    "block_timestamp": "1728330657251500923",
+    "block": {
+      "block_height": 129801083
+    },
+    "receipt_conversion_tokens_burnt": "32737140457500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 486644891485500000000,
+        "args": "{\"id\": 215, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"https://nearblocks.io/txns/uVm7TfJbHBfvTGDJMp9FStao7oaoBD5PCRGbWDS715d\"], \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"kyc_verified_deprecated\": false, \"sponsor_requested_review\": false, \"trustees_released_payment\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 873249892240700000000
+    }
+  },
+  {
+    "id": "9015678830",
+    "receipt_id": "ER4jVwTaYdQQnirF4nupxQz47vPxUUfqdxzmtqSrV5Lk",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7hUkt3azsJVauFc3z4HPNdtvQUjjTNXh9vbYYCoyfu51",
+      "block_height": 129801086,
+      "block_timestamp": 1728330661228355800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3538678602977,
+      "tokens_burnt": 353867860297700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "6XYcARdPh4eY4b91RBnPNemwcYa1W5iUjobnpFYc8QKw",
+    "included_in_block_hash": "7KTQsZjfDGjnPcq6vwTPUdQ5HLPVAyYRCkVJ9BtsuodZ",
+    "block_timestamp": "1728330657251500923",
+    "block": {
+      "block_height": 129801083
+    },
+    "receipt_conversion_tokens_burnt": "32737140457500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353867860297700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"maguila.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":215,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 873249892240700000000
+    }
+  },
+  {
+    "id": "9018490129",
+    "receipt_id": "3Sj6hfuVj4z8sDDMXugAUHAqDTMKD4fGFugfiAuXZrCm",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "UdxQWAxAF6J694oGw2AUNco6VBJn8xYm4qZqxb9sbJa",
+      "block_height": 129808548,
+      "block_timestamp": 1728338892844510000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6062867406835,
+      "tokens_burnt": 606286740683500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "2h9GZ1UPCtEyueM1EZ6ZvV8YDq3kb4bAnzLKJDZefogt",
+    "included_in_block_hash": "5Z3bSGMNpAYucDDesvD69Mn1SBapUMabbWP6p45vN5Kv",
+    "block_timestamp": "1728338891780865273",
+    "block": {
+      "block_height": 129808547
+    },
+    "receipt_conversion_tokens_burnt": "31702403842000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 606286740683500000000,
+        "args": "{\"id\": 220, \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 990468538081400000000
+    }
+  },
+  {
+    "id": "9018490308",
+    "receipt_id": "7acnkZ8v8dVVVeC6GVeBAyZP7scfVKBq6GwAWHUtm4GV",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FzhPJ4PvQpGgLyAZCG2ASAignknr8NXEfUJzgM5jQXbV",
+      "block_height": 129808549,
+      "block_timestamp": 1728338893932422000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3524793935559,
+      "tokens_burnt": 352479393555900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "2h9GZ1UPCtEyueM1EZ6ZvV8YDq3kb4bAnzLKJDZefogt",
+    "included_in_block_hash": "5Z3bSGMNpAYucDDesvD69Mn1SBapUMabbWP6p45vN5Kv",
+    "block_timestamp": "1728338891780865273",
+    "block": {
+      "block_height": 129808547
+    },
+    "receipt_conversion_tokens_burnt": "31702403842000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352479393555900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"megha19.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":220,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 990468538081400000000
+    }
+  },
+  {
+    "id": "9018494436",
+    "receipt_id": "9Uf5X9eaCFGrEiwK2x3TKjJN2xxJdTUrBwiWrxGz8f3o",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2dDrZ9Rt1PkPFN86BZ1h9SFRWSrVL3UFmmbKNDrrrc83",
+      "block_height": 129808564,
+      "block_timestamp": 1728338911044733400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7043979887853,
+      "tokens_burnt": 704397988785300000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "EafxDx9UrK4cny9wAU3yuPM1eUkrtef21QUdNiMnUMu1",
+    "included_in_block_hash": "EQbVM1NR1xKRSX7DogPKf793CMr3g7DGW2G6ph5dnHG",
+    "block_timestamp": "1728338909855329925",
+    "block": {
+      "block_height": 129808563
+    },
+    "receipt_conversion_tokens_burnt": "31711940585000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 704397988785300000000,
+        "args": "{\"id\": 220, \"timeline\": {\"status\": \"APPROVED\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0885853806502e+21
+    }
+  }
+]

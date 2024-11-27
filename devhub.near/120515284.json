@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "5423993904",
+    "receipt_id": "2YdLYHysSP67zT8W9N7zJjHXnLe9f1WkC1KTURa9wnUJ",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "RZ3QMFzuRcvDfGUMNeeCYnt3LhteeFqGrEhECP9xEvy",
+      "block_height": 120515289,
+      "block_timestamp": 1717618600028891100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5150209430142,
+      "tokens_burnt": 515020943014200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "54GKwSVn2yK6Ab7aPSFHhBSTBSXEXfQfwJ5BGJPwkdtN",
+    "included_in_block_hash": "EXcFCLe6SdjjQiCV1ENthChuzzaW1aw1KnWf3hYmdPni",
+    "block_timestamp": "1717618598996998718",
+    "block": {
+      "block_height": 120515288
+    },
+    "receipt_conversion_tokens_burnt": "32958483661800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 515020943014200000000,
+        "args": "{\"data\": {\"blog\": {\"quick-guide-to-building-ethereum-apps-on-the-bos-2524\": {\"\": \"# Introduction\\\\\\\\n\\\\\\\\nBuilding Ethereum dApps on the BOS Network involves interacting with your Ethereum wallet and smart contracts. BOS allows you to connect the Ether.js library (Ethereum API) within its virtual machine (VM), enabling seamless interaction with smart contracts and your MetaMask wallet. This quick guide will walk you through the essential steps.\\\\\\\\n\\\\\\\\n### **Step 1: Getting the Contract Address**\\\\\\\\n\\\\\\\\nThe first step is to identify the smart contract you want to interact with. Most projects, like Gains Network on the BOS or Uniswap, provide a website with links to their contract addresses. Once you have the contract address in mind, you\\\\\\\\\\\\'ll need to obtain the ABI (Application Binary Interface) for the contract. The ABI defines the functions that you can call on the contract, and it can usually be found on Etherscan.\\\\\\\\n\\\\\\\\n### **Step 2: Establishing Wallet Connectivity**\\\\\\\\n\\\\\\\\nTo interact, you need to connect your wallet because it is used to make RPC calls. BOS provides a widget known as `\\\\\\\\\\\\\\\"web3 connect\\\\\\\\\\\\\\\"` to handle wallet connections. This component seamlessly integrates with MetaMask. When you click on it, it opens up your MetaMask, prompting you to grant permission to connect your wallet.\\\\\\\\n\\\\\\\\n\\\\\\\\n```\\\\\\\\n<Web3Connect\\\\\\\\n          className=\\\\\\\\\\\\\\\"CssClassName\\\\\\\\\\\\\\\"\\\\\\\\n           connectLabel=\\\\\\\\\\\\\\\"ButtonLabel\\\\\\\\\\\\\\\"\\\\\\\\n     />\\\\\\\\n  )}\\\\\\\\n```\\\\\\\\n\\\\\\\\nOnce the connection is successful you have access to the connected account, you can make contract calls with your existing deployed contract using your existing contract address (Address that was used to deploy your contract) and ABI (Application Binary Interface). \\\\\\\\n\\\\\\\\n**Note**: This means you must have deployed your App and you actually have an ABI before trying to make such contract calls.\\\\\\\\n\\\\\\\\n\\\\\\\\n### **Step 3: Setting up the Contract Interface**\\\\\\\\n\\\\\\\\nNow you need to call the contract, so you have to convert the ABI into a proper interface by calling an ethers function and then passing in that ABI to the function. To convert the ABI into a usable interface, you can use the following code:\\\\\\\\n\\\\\\\\n```\\\\\\\\nconst iface = new ethers.utils.Interface(stakingAbi.body);\\\\\\\\n```\\\\\\\\n\\\\\\\\nThis code transforms the ABI into a proper interface. With this interface, you can call functions from the contract with ease. For example:\\\\\\\\n\\\\\\\\n```\\\\\\\\nconst getTokenBalance = (receiver) => {\\\\\\\\n  const encodedData = tokenIFace.encodeFunctionData(\\\\\\\\\\\\\\\"balanceOf\\\\\\\\\\\\\\\", [receiver]);\\\\\\\\n```\\\\\\\\n\\\\\\\\nBasically you call the interface you converted, then you do `.encodefunctiondata` which means you\\\\\\\\\\\\'re trying to encode the function that we are trying to call. Then you pass in the name of the function which is `balanceOf` , and if the function takes a parameter, you pass in an \\\\\\\\\\\\\\\"array\\\\\\\\\\\\\\\".\\\\\\\\n\\\\\\\\n### **Step 4: Interacting with the Contract**\\\\\\\\n\\\\\\\\n```\\\\\\\\nconst getRewardBalance = () => {\\\\\\\\n  const encodedData = iface.encodeFunctionData(\\\\\\\\\\\\\\\"accDaiPerToken\\\\\\\\\\\\\\\");\\\\\\\\n  return Ethers.provider()\\\\\\\\n    .call({\\\\\\\\n      to: gainsStakingContract,\\\\\\\\n      data: encodedData,\\\\\\\\n    })\\\\\\\\n```\\\\\\\\n\\\\\\\\ngetRewardBalance is a javascript function responsible for calling the contract method called `\\\\\\\\u{201c}accDaiPerToken\\\\\\\\u{201d}` on the Gains Staking contract. it does this by encoding the call data on the interface and then making an RPC call with the `Ethers.provider` code piece to the gainsContract sending the encoded data along. `\\\\\\\\u{201c}accDaiPerToken\\\\\\\\u{201d}` function call takes no params, if it did the the data encoding will change thus: `const encodedData = iface.encodeFunctionData(\\\\\\\\\\\\\\\"accDaiPerToken\\\\\\\\\\\\\\\", [param1, param2]);` where param1 and param2 are function parameters of `\\\\\\\\u{201c}accDaiPerToken\\\\\\\\u{201d}`\\\\\\\\n\\\\\\\\nThis function fetches the reward balance of a user for the staked token. Make sure to adjust this code according to the specific contract functions you want to interact with.\\\\\\\\n\\\\\\\\n### **Step 5: State Management**\\\\\\\\n\\\\\\\\nAfter interacting with the contract , you obviously want to manage the variables, you can do so by using state management api on the BOS\\\\\\\\n\\\\\\\\n**2 functions:**\\\\\\\\n\\\\\\\\n`State.init` : This is what you use to initialize your contract state , to set default values \\\\\\\\n\\\\\\\\n`State.update`: This changes values on your state\\\\\\\\n\\\\\\\\n```\\\\\\\\ngetRewardBalance().then((rewards) => {\\\\\\\\n        State.update({ rewards });\\\\\\\\n      });\\\\\\\\n```\\\\\\\\n\\\\\\\\nIn the snippet above, after calling the getRewardBalance function which calls a contract function to get this value, we await the response and then set it in state using State.update updates a value if found in state, if the value does not exist prior, it sets it.\\\\\\\\n\\\\\\\\nNote: Styling on the BOS can be done using either \\\\\\\\u{201c}styled components\\\\\\\\u{201d} or \\\\\\\\u{201c}Bootstrap\\\\\\\\u{201d}\\\\\\\\n\\\\\\\\n\\\\\\\\n### **Calling swap methods on Uniswap**\\\\\\\\n\\\\\\\\nIn case you\\\\\\\\\\\\'re wondering how calling a swap method on Uniswap would look like, take a look at this code snippet:\\\\\\\\n\\\\\\\\n```jsx\\\\\\\\nconst SwapToken = () => {\\\\\\\\n  const encodedData = uniIface.encodeFunctionData(\\\\\\\\\\\\\\\"exactInputSingle\\\\\\\\\\\\\\\", [tokenIn, tokenOut,fee,recipient,deadline,amountIn,amountOutMinimum,sqrtPriceLimitX96]);\\\\\\\\n  return Ethers.provider()\\\\\\\\n    .call({\\\\\\\\n      to: swapRouterContract,\\\\\\\\n      data: encodedData,\\\\\\\\n    })\\\\\\\\n```\\\\\\\\n\\\\\\\\nThe above snippet is a sample contract call to the uniswap router contract which swaps a token `tokenIn` for another token `tokenOut`.\\\\\\\\n\\\\\\\\n**More examples of calling swap methods on Uniswap:** https://docs.uniswap.org/contracts/v3/guides/swaps/single-swaps\\\\\\\\n\\\\\\\\n\\\\\\\\n## **List of API\\\\\\\\\\\\'s for building on ethereum**\\\\\\\\n\\\\\\\\nBOS has imported the Ethers Library (ethers.js) allowing for seamless connection with Ethereum nodes.\\\\\\\\n\\\\\\\\nThe Ethers Object Exposes the Provider Connection.\\\\\\\\n\\\\\\\\n- `Ethers.provider()` - this is a read-only connection to the blockchain which allows querying the blockchain state. This can be used to fetch information about accounts, block or transaction details, or even event logs.\\\\\\\\n    - `Ethers().provider().getSigner()` - abstracts the class that interacts with an account.\\\\\\\\n    - `Ethers().provider().getBlockNumber()`- Looks up current block number. e.t.c you can reference the [ethers docs](https://docs.ethers.org/v6/getting-started/) for more examples\\\\\\\\n    \\\\\\\\n\\\\\\\\t**Examples**\\\\\\\\n\\\\\\\\n1. **How to get a User account:**\\\\\\\\n    \\\\\\\\n    *`const* receiver = Ethers.provider().send(\\\\\\\\\\\\\\\"eth_requestAccounts\\\\\\\\\\\\\\\", [])[0];` \\\\\\\\n    \\\\\\\\n    This single line of code will check for the user-connected account on which ever chain and assign it to the variable `receiver`. Keep in mind that if the user is connected to a web3 wallet (e.g Metamask) it\\\\\\\\u{2019}s going to return a `null` value.\\\\\\\\n    \\\\\\\\n2. **How to get Current ChainID:** \\\\\\\\n    \\\\\\\\n    This is very useful when working with multi-chain, it\\\\\\\\u{2019}s good to know which chain the user is connected to, allowing you to throw errors when connected to the wrong chains, also most contract calls needs to be made with the chain Id.\\\\\\\\n    \\\\\\\\n    ```jsx\\\\\\\\n    Ethers.provider().getNetwork().then((chainIdData) => {`\\\\\\\\n    \\\\\\\\n    `console.log(chainIdData.chainId);`\\\\\\\\n    \\\\\\\\n    });\\\\\\\\n    ```\\\\\\\\n    \\\\\\\\n    The `chainId` is logged out in the above example, but you could also assign that to a state variable\\\\\\\\n    \\\\\\\\n3. ****************************How to Retrieve Gas Price:**************************** \\\\\\\\n    \\\\\\\\n    When interacting with the Ethereum blockchain, it\\\\\\\\\\\\'s important to be aware of the current gas prices to estimate transaction fees. The following code snippet demonstrates how to retrieve the current gas price:\\\\\\\\n\\\\\\\\t\\\\\\\\n```\\\\\\\\n\\\\\\\\nEthers.provider().getGasPrice().then((gasPrice) => {\\\\\\\\nconsole.log(Current gas price: ${gasPrice.toString()} Wei);\\\\\\\\n});\\\\\\\\n```\\\\\\\\n\\\\\\\\n4. **Fetch Transaction Receipt:**\\\\\\\\n    \\\\\\\\n    After sending a transaction, it\\\\\\\\\\\\'s often necessary to check its status and obtain additional details. The **`getTransactionReceipt`** method can be used for this purpose:\\\\\\\\n    \\\\\\\\n    ```jsx\\\\\\\\n    const txHash = \\\\\\\\\\\\'0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890\\\\\\\\\\\\';\\\\\\\\n    \\\\\\\\n    Ethers.provider().getTransactionReceipt(txHash).then((receipt) => {\\\\\\\\n      console.log(`Transaction Receipt: ${JSON.stringify(receipt, null, 2)}`);\\\\\\\\n    });\\\\\\\\n    ```\\\\\\\\n    \\\\\\\\n5. **Query Contract State**\\\\\\\\n    \\\\\\\\n    ```jsx\\\\\\\\n    const contractAddress = \\\\\\\\\\\\'0x1234567890123456789012345678901234567890\\\\\\\\\\\\';\\\\\\\\n    const contractAbi = [...]; // ABI of your contract (After Compiling)\\\\\\\\n    \\\\\\\\n    For example, if you have a Solidity file named MyContract.sol, compiling it with solc might generate a file like MyContract.json that contains the ABI. \\\\\\\\n    \\\\\\\\n    const contract = new ethers.Contract(contractAddress, contractAbi, Ethers.provider());\\\\\\\\n    \\\\\\\\n    contract.someReadOnlyFunction().then((result) => {\\\\\\\\n      console.log(`Result of read-only function: ${result}`);\\\\\\\\n    });\\\\\\\\n    \\\\\\\\n    // someReadOnlyFunction is just a placeholder for the name of the read-only\\\\\\\\n    // function in your contract, so it could be anything based on what\\\\\\\\\\\\'s defined\\\\\\\\n    // in your contract\\\\\\\\n    ```\\\\\\\\n    \\\\\\\\n    **Note**: When you compile your Solidity contract using a Solidity compiler, such as solc (the Solidity compiler), the compiler will generate various artifacts, including the ABI. This information is often stored in a separate file, usually with a `.json` extension.\\\\\\\\n    \\\\\\\\n    Also Remember to replace the placeholder values like `txHash`, `contractAddress`, and `contractAbi` with your actual values. \\\\\\\\n    \\\\\\\\n    **These examples demonstrate different use cases for the `Provider` object in the Ethers library.**\\\\\\\\n\\\\\\\\t\", \"metadata\": {\"id\": \"undefined\", \"title\": \"Quick Guide to Building Ethereum Apps on the BOS \\\\\\\\u{1f468}\\\\\\\\u{1f3fd}\\\\\\\\u{200d}\\\\\\\\u{1f4bb}\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"\", \"createdAt\": \"2023-12-13\", \"updatedAt\": \"2023-12-13\", \"description\": \"\", \"publishedAt\": \"2023-12-13\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"devrel\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5948979418144e+21
+    }
+  },
+  {
+    "id": "5423994191",
+    "receipt_id": "4f1W135WifMada3S9LNPnPyoRwTYuJ7451qh5yvfk6rG",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BzBTErLamboXWCPPu7xAJZ16zDFvshPjjgDgcLr8mMCa",
+      "block_height": 120515290,
+      "block_timestamp": 1717618601104025000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 10469185151384,
+      "tokens_burnt": 1.0469185151384e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "54GKwSVn2yK6Ab7aPSFHhBSTBSXEXfQfwJ5BGJPwkdtN",
+    "included_in_block_hash": "EXcFCLe6SdjjQiCV1ENthChuzzaW1aw1KnWf3hYmdPni",
+    "block_timestamp": "1717618598996998718",
+    "block": {
+      "block_height": 120515288
+    },
+    "receipt_conversion_tokens_burnt": "32958483661800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.0469185151384e+21,
+        "args": "{\"data\": {\"devrel.community.devhub.near\": {\"blog\": {\"quick-guide-to-building-ethereum-apps-on-the-bos-2524\": {\"\": \"# Introduction\\\\\\\\n\\\\\\\\nBuilding Ethereum dApps on the BOS Network involves interacting with your Ethereum wallet and smart contracts. BOS allows you to connect the Ether.js library (Ethereum API) within its virtual machine (VM), enabling seamless interaction with smart contracts and your MetaMask wallet. This quick guide will walk you through the essential steps.\\\\\\\\n\\\\\\\\n### **Step 1: Getting the Contract Address**\\\\\\\\n\\\\\\\\nThe first step is to identify the smart contract you want to interact with. Most projects, like Gains Network on the BOS or Uniswap, provide a website with links to their contract addresses. Once you have the contract address in mind, you\\\\\\\\\\\\'ll need to obtain the ABI (Application Binary Interface) for the contract. The ABI defines the functions that you can call on the contract, and it can usually be found on Etherscan.\\\\\\\\n\\\\\\\\n### **Step 2: Establishing Wallet Connectivity**\\\\\\\\n\\\\\\\\nTo interact, you need to connect your wallet because it is used to make RPC calls. BOS provides a widget known as `\\\\\\\\\\\\\\\"web3 connect\\\\\\\\\\\\\\\"` to handle wallet connections. This component seamlessly integrates with MetaMask. When you click on it, it opens up your MetaMask, prompting you to grant permission to connect your wallet.\\\\\\\\n\\\\\\\\n\\\\\\\\n```\\\\\\\\n<Web3Connect\\\\\\\\n          className=\\\\\\\\\\\\\\\"CssClassName\\\\\\\\\\\\\\\"\\\\\\\\n           connectLabel=\\\\\\\\\\\\\\\"ButtonLabel\\\\\\\\\\\\\\\"\\\\\\\\n     />\\\\\\\\n  )}\\\\\\\\n```\\\\\\\\n\\\\\\\\nOnce the connection is successful you have access to the connected account, you can make contract calls with your existing deployed contract using your existing contract address (Address that was used to deploy your contract) and ABI (Application Binary Interface). \\\\\\\\n\\\\\\\\n**Note**: This means you must have deployed your App and you actually have an ABI before trying to make such contract calls.\\\\\\\\n\\\\\\\\n\\\\\\\\n### **Step 3: Setting up the Contract Interface**\\\\\\\\n\\\\\\\\nNow you need to call the contract, so you have to convert the ABI into a proper interface by calling an ethers function and then passing in that ABI to the function. To convert the ABI into a usable interface, you can use the following code:\\\\\\\\n\\\\\\\\n```\\\\\\\\nconst iface = new ethers.utils.Interface(stakingAbi.body);\\\\\\\\n```\\\\\\\\n\\\\\\\\nThis code transforms the ABI into a proper interface. With this interface, you can call functions from the contract with ease. For example:\\\\\\\\n\\\\\\\\n```\\\\\\\\nconst getTokenBalance = (receiver) => {\\\\\\\\n  const encodedData = tokenIFace.encodeFunctionData(\\\\\\\\\\\\\\\"balanceOf\\\\\\\\\\\\\\\", [receiver]);\\\\\\\\n```\\\\\\\\n\\\\\\\\nBasically you call the interface you converted, then you do `.encodefunctiondata` which means you\\\\\\\\\\\\'re trying to encode the function that we are trying to call. Then you pass in the name of the function which is `balanceOf` , and if the function takes a parameter, you pass in an \\\\\\\\\\\\\\\"array\\\\\\\\\\\\\\\".\\\\\\\\n\\\\\\\\n### **Step 4: Interacting with the Contract**\\\\\\\\n\\\\\\\\n```\\\\\\\\nconst getRewardBalance = () => {\\\\\\\\n  const encodedData = iface.encodeFunctionData(\\\\\\\\\\\\\\\"accDaiPerToken\\\\\\\\\\\\\\\");\\\\\\\\n  return Ethers.provider()\\\\\\\\n    .call({\\\\\\\\n      to: gainsStakingContract,\\\\\\\\n      data: encodedData,\\\\\\\\n    })\\\\\\\\n```\\\\\\\\n\\\\\\\\ngetRewardBalance is a javascript function responsible for calling the contract method called `\\\\\\\\u{201c}accDaiPerToken\\\\\\\\u{201d}` on the Gains Staking contract. it does this by encoding the call data on the interface and then making an RPC call with the `Ethers.provider` code piece to the gainsContract sending the encoded data along. `\\\\\\\\u{201c}accDaiPerToken\\\\\\\\u{201d}` function call takes no params, if it did the the data encoding will change thus: `const encodedData = iface.encodeFunctionData(\\\\\\\\\\\\\\\"accDaiPerToken\\\\\\\\\\\\\\\", [param1, param2]);` where param1 and param2 are function parameters of `\\\\\\\\u{201c}accDaiPerToken\\\\\\\\u{201d}`\\\\\\\\n\\\\\\\\nThis function fetches the reward balance of a user for the staked token. Make sure to adjust this code according to the specific contract functions you want to interact with.\\\\\\\\n\\\\\\\\n### **Step 5: State Management**\\\\\\\\n\\\\\\\\nAfter interacting with the contract , you obviously want to manage the variables, you can do so by using state management api on the BOS\\\\\\\\n\\\\\\\\n**2 functions:**\\\\\\\\n\\\\\\\\n`State.init` : This is what you use to initialize your contract state , to set default values \\\\\\\\n\\\\\\\\n`State.update`: This changes values on your state\\\\\\\\n\\\\\\\\n```\\\\\\\\ngetRewardBalance().then((rewards) => {\\\\\\\\n        State.update({ rewards });\\\\\\\\n      });\\\\\\\\n```\\\\\\\\n\\\\\\\\nIn the snippet above, after calling the getRewardBalance function which calls a contract function to get this value, we await the response and then set it in state using State.update updates a value if found in state, if the value does not exist prior, it sets it.\\\\\\\\n\\\\\\\\nNote: Styling on the BOS can be done using either \\\\\\\\u{201c}styled components\\\\\\\\u{201d} or \\\\\\\\u{201c}Bootstrap\\\\\\\\u{201d}\\\\\\\\n\\\\\\\\n\\\\\\\\n### **Calling swap methods on Uniswap**\\\\\\\\n\\\\\\\\nIn case you\\\\\\\\\\\\'re wondering how calling a swap method on Uniswap would look like, take a look at this code snippet:\\\\\\\\n\\\\\\\\n```jsx\\\\\\\\nconst SwapToken = () => {\\\\\\\\n  const encodedData = uniIface.encodeFunctionData(\\\\\\\\\\\\\\\"exactInputSingle\\\\\\\\\\\\\\\", [tokenIn, tokenOut,fee,recipient,deadline,amountIn,amountOutMinimum,sqrtPriceLimitX96]);\\\\\\\\n  return Ethers.provider()\\\\\\\\n    .call({\\\\\\\\n      to: swapRouterContract,\\\\\\\\n      data: encodedData,\\\\\\\\n    })\\\\\\\\n```\\\\\\\\n\\\\\\\\nThe above snippet is a sample contract call to the uniswap router contract which swaps a token `tokenIn` for another token `tokenOut`.\\\\\\\\n\\\\\\\\n**More examples of calling swap methods on Uniswap:** https://docs.uniswap.org/contracts/v3/guides/swaps/single-swaps\\\\\\\\n\\\\\\\\n\\\\\\\\n## **List of API\\\\\\\\\\\\'s for building on ethereum**\\\\\\\\n\\\\\\\\nBOS has imported the Ethers Library (ethers.js) allowing for seamless connection with Ethereum nodes.\\\\\\\\n\\\\\\\\nThe Ethers Object Exposes the Provider Connection.\\\\\\\\n\\\\\\\\n- `Ethers.provider()` - this is a read-only connection to the blockchain which allows querying the blockchain state. This can be used to fetch information about accounts, block or transaction details, or even event logs.\\\\\\\\n    - `Ethers().provider().getSigner()` - abstracts the class that interacts with an account.\\\\\\\\n    - `Ethers().provider().getBlockNumber()`- Looks up current block number. e.t.c you can reference the [ethers docs](https://docs.ethers.org/v6/getting-started/) for more examples\\\\\\\\n    \\\\\\\\n\\\\\\\\t**Examples**\\\\\\\\n\\\\\\\\n1. **How to get a User account:**\\\\\\\\n    \\\\\\\\n    *`const* receiver = Ethers.provider().send(\\\\\\\\\\\\\\\"eth_requestAccounts\\\\\\\\\\\\\\\", [])[0];` \\\\\\\\n    \\\\\\\\n    This single line of code will check for the user-connected account on which ever chain and assign it to the variable `receiver`. Keep in mind that if the user is connected to a web3 wallet (e.g Metamask) it\\\\\\\\u{2019}s going to return a `null` value.\\\\\\\\n    \\\\\\\\n2. **How to get Current ChainID:** \\\\\\\\n    \\\\\\\\n    This is very useful when working with multi-chain, it\\\\\\\\u{2019}s good to know which chain the user is connected to, allowing you to throw errors when connected to the wrong chains, also most contract calls needs to be made with the chain Id.\\\\\\\\n    \\\\\\\\n    ```jsx\\\\\\\\n    Ethers.provider().getNetwork().then((chainIdData) => {`\\\\\\\\n    \\\\\\\\n    `console.log(chainIdData.chainId);`\\\\\\\\n    \\\\\\\\n    });\\\\\\\\n    ```\\\\\\\\n    \\\\\\\\n    The `chainId` is logged out in the above example, but you could also assign that to a state variable\\\\\\\\n    \\\\\\\\n3. ****************************How to Retrieve Gas Price:**************************** \\\\\\\\n    \\\\\\\\n    When interacting with the Ethereum blockchain, it\\\\\\\\\\\\'s important to be aware of the current gas prices to estimate transaction fees. The following code snippet demonstrates how to retrieve the current gas price:\\\\\\\\n\\\\\\\\t\\\\\\\\n```\\\\\\\\n\\\\\\\\nEthers.provider().getGasPrice().then((gasPrice) => {\\\\\\\\nconsole.log(Current gas price: ${gasPrice.toString()} Wei);\\\\\\\\n});\\\\\\\\n```\\\\\\\\n\\\\\\\\n4. **Fetch Transaction Receipt:**\\\\\\\\n    \\\\\\\\n    After sending a transaction, it\\\\\\\\\\\\'s often necessary to check its status and obtain additional details. The **`getTransactionReceipt`** method can be used for this purpose:\\\\\\\\n    \\\\\\\\n    ```jsx\\\\\\\\n    const txHash = \\\\\\\\\\\\'0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890\\\\\\\\\\\\';\\\\\\\\n    \\\\\\\\n    Ethers.provider().getTransactionReceipt(txHash).then((receipt) => {\\\\\\\\n      console.log(`Transaction Receipt: ${JSON.stringify(receipt, null, 2)}`);\\\\\\\\n    });\\\\\\\\n    ```\\\\\\\\n    \\\\\\\\n5. **Query Contract State**\\\\\\\\n    \\\\\\\\n    ```jsx\\\\\\\\n    const contractAddress = \\\\\\\\\\\\'0x1234567890123456789012345678901234567890\\\\\\\\\\\\';\\\\\\\\n    const contractAbi = [...]; // ABI of your contract (After Compiling)\\\\\\\\n    \\\\\\\\n    For example, if you have a Solidity file named MyContract.sol, compiling it with solc might generate a file like MyContract.json that contains the ABI. \\\\\\\\n    \\\\\\\\n    const contract = new ethers.Contract(contractAddress, contractAbi, Ethers.provider());\\\\\\\\n    \\\\\\\\n    contract.someReadOnlyFunction().then((result) => {\\\\\\\\n      console.log(`Result of read-only function: ${result}`);\\\\\\\\n    });\\\\\\\\n    \\\\\\\\n    // someReadOnlyFunction is just a placeholder for the name of the read-only\\\\\\\\n    // function in your contract, so it could be anything based on what\\\\\\\\\\\\'s defined\\\\\\\\n    // in your contract\\\\\\\\n    ```\\\\\\\\n    \\\\\\\\n    **Note**: When you compile your Solidity contract using a Solidity compiler, such as solc (the Solidity compiler), the compiler will generate various artifacts, including the ABI. This information is often stored in a separate file, usually with a `.json` extension.\\\\\\\\n    \\\\\\\\n    Also Remember to replace the placeholder values like `txHash`, `contractAddress`, and `contractAbi` with your actual values. \\\\\\\\n    \\\\\\\\n    **These examples demonstrate different use cases for the `Provider` object in the Ethers library.**\\\\\\\\n\\\\\\\\t\", \"metadata\": {\"id\": \"undefined\", \"title\": \"Quick Guide to Building Ethereum Apps on the BOS \\\\\\\\u{1f468}\\\\\\\\u{1f3fd}\\\\\\\\u{200d}\\\\\\\\u{1f4bb}\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"\", \"createdAt\": \"2023-12-13\", \"updatedAt\": \"2023-12-13\", \"description\": \"\", \"publishedAt\": \"2023-12-13\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.5948979418144e+21
+    }
+  },
+  {
+    "id": "5423994992",
+    "receipt_id": "2BEiAwKWjYjF5o3yAWPdJTVTfcfWMyY393e7wWK2bZbt",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CP9EZWAt7x8aDTGF3xHuftsh7m9HRAq26xRsG1FCzEkG",
+      "block_height": 120515293,
+      "block_timestamp": 1717618604438598000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5209020205844,
+      "tokens_burnt": 520902020584400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8wL5QuUYWzWrfheyZj6fckyJPxReq8JBm9nv3pjaiKn4",
+    "included_in_block_hash": "9ibY7fjGweCjEe33ofQXVcJbkgZr2o4NNiF9MXxcTx3L",
+    "block_timestamp": "1717618603333967233",
+    "block": {
+      "block_height": 120515292
+    },
+    "receipt_conversion_tokens_burnt": "32968768958200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 520902020584400000000,
+        "args": "{\"data\": {\"blog\": {\"getting-started-on-near-s-bos-as-a-web2-developer-2553\": {\"\": \"The Blockchain Operating System (BOS) makes it easier to create, share, and use decentralized websites. It\\\\\\\\\\\\'s like a toolbox where you can quickly get pieces (components) to build your site. \\\\\\\\n\\\\\\\\nIt functions as a development and social environment, offering users effortless access to components, seamless forking of other users\\\\\\\\\\\\' components, and convenient deployment on the near network. \\\\\\\\n\\\\\\\\nIn contrast to Web2 applications, where the typical workflow involves building, pushing changes to GitHub, and then deploying the application, BOS provides a swift alternative. With BOS, users can effortlessly create a component, deploy it on-chain within minutes, and instantly preview their work on a Gateway (near.social or near.org.) \\\\\\\\n\\\\\\\\nThis eliminates the need to push changes to GitHub, enhancing security by ensuring components remain on-chain. Additionally, deploying on BOS is notably faster than traditional methods, enabling the deployment of new front-ends for smart contracts to the mainnet in a matter of minutes.\\\\\\\\n\\\\\\\\n## Keywords to Note (The 3 Pillars of BOS)\\\\\\\\n\\\\\\\\nA few key terms to pay attention to, which you\\\\\\\\\\\\'ve either encountered or will encounter throughout this article, are crucial for a comprehensive understanding when working with BOS, as they constitute the foundational elements of the system:\\\\\\\\n\\\\\\\\n***Components***: These are composable frontends that solve specific problems, akin to React, if you\\\\\\\\\\\\'re familiar with React, Navigating BOS development would be relatively straightforward. There are also a couple of built-in components that come in handy (I\\\\\\\\\\\\'ll be discussing this later).\\\\\\\\n\\\\\\\\n***Blockchain***: Remember I mentioned the code is being stored on-chain, Think of this as GitHub on how code is being stored on web2, this is to store the component\\\\\\\\\\\\'s code as well as assets and data. This is done on the Near chain.\\\\\\\\n\\\\\\\\n***Gateways***: Think of these as hosting platforms similar to Vercel. Gateways serve as platforms that deliver decentralized frontends (components) to a wider audience. e.g. near.org, near.social\\\\\\\\n\\\\\\\\n\\\\\\\\n## Getting Started\\\\\\\\nThe first thing to note when getting started is that you\\\\\\\\\\\\'re building on Near and all your changes are being deployed on-chain. Hence, you need to create a near account, and deposit a small token for gas purposes. I recommend utilizing Meteor Wallet and installing its extension in your browser for a swifter experience in saving changes. This is notably faster than employing the mynear app, which redirects you to another window everytime you want to deploy. Saving each time on chain requires you to sign a contract (Don\\\\\\\\\\\\'t worry the gas you need to deploy is not much at all, In fact, depending on your project, it might take weeks before you exhaust a single Near token).\\\\\\\\n\\\\\\\\n***Next Steps...***\\\\\\\\nOnce you\\\\\\\\\\\\'re done with the step next thing is to start building. Again, this is just my suggestion as I consider the fastest way to build and deploy easily on BOS.\\\\\\\\nHead over to `jutsu.ai`, and log in using the near account you just created.\\\\\\\\n\\\\\\\\nAs I mentioned earlier, if you\\\\\\\\\\\\'re familiar with React, you would recognize most of the concepts but not everything in React is fully integrated. Currently, only `useState` `useEffect` `useCallback` `useMemo` have been integrated on BOS, I\\\\\\\\\\\\'ll be showing you how to use them.\\\\\\\\n\\\\\\\\n\\\\\\\\nIn the Image Example above, I created a simple toggle button component using the useState hook. a couple of things to take note of:\\\\\\\\n\\\\\\\\n- You don\\\\\\\\\\\\'t need import statements, everything is happening behind the scenes, you just need to call the hook.\\\\\\\\n\\\\\\\\n- whatever JSX code you pass in your return statement is what is being rendered in the preview screen.\\\\\\\\n\\\\\\\\n- the deploy button on the top-right is used to deploy on-chain and you can view your application in any gateway(Link to the above example, this example took me less than 10 minutes to build and deploy).\\\\\\\\n\\\\\\\\n- you also have access to your console, which is useful for debugging.\\\\\\\\n\\\\\\\\n## BOS 101 - How is the BOS VM Different?\\\\\\\\n\\\\\\\\nThe BOS VM comes with some functions and components already setup, with ongoing additions. It\\\\\\\\\\\\'s essential to note that it doesn\\\\\\\\\\\\'t function exactly like React, so processes may not align precisely.\\\\\\\\n\\\\\\\\n- Unlike React, you don\\\\\\\\\\\\'t import hooks with statements; you just initialize them when you need them.\\\\\\\\n\\\\\\\\n- There is no such thing as having a general App.js whereby you have to call the function and export it in order for it to work, that\\\\\\\\\\\\'s not how components (BOS) work, just return your JSX code it\\\\\\\\\\\\'s that simple.\\\\\\\\n\\\\\\\\n- You can\\\\\\\\\\\\'t just simply download any npm package and import, you have access to a couple of built-in packages that you could work with.\\\\\\\\n\\\\\\\\n- fetch: the fetch function on BOS acts like a hook, instead of returning a promise, it returns a value.\\\\\\\\n\\\\\\\\n```\\\\\\\\n const res = fetch(\\\\\\\\\\\\\\\"https://rpc.mainnet.near.org/status\\\\\\\\\\\\\\\");\\\\\\\\n\\\\\\\\n return res.body;\\\\\\\\n\\\\\\\\n```\\\\\\\\n\\\\\\\\n- `asyncFetch`: this is the version that returns a promise, in case it is mandatory that you handle the API call asynchronously:\\\\\\\\n\\\\\\\\n```\\\\\\\\n function reportUptime() {\\\\\\\\n   asyncFetch(\\\\\\\\\\\\\\\"https://rpc.mainnet.near.org/status\\\\\\\\\\\\\\\").then((res) => {\\\\\\\\n     const uptime = res.body.uptime_sec;\\\\\\\\n     Near.call(\\\\\\\\\\\\\\\"uptime.near\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"reportUptime\\\\\\\\\\\\\\\", { uptime });\\\\\\\\n   });\\\\\\\\n }\\\\\\\\n\\\\\\\\n return <button onClick={reportUptime}>Report Uptime</button>;\\\\\\\\n\\\\\\\\n```\\\\\\\\n\\\\\\\\n- Caching: The VM implements a caching layer for most network requests, but in case you want to handle it manually you have access to the `useCache` hook.\\\\\\\\n\\\\\\\\n```\\\\\\\\n const status = useCache(\\\\\\\\n   () =>\\\\\\\\n     asyncFetch(\\\\\\\\\\\\\\\"https://rpc.mainnet.near.org/status\\\\\\\\\\\\\\\").then((res) => res.body),\\\\\\\\n   \\\\\\\\\\\\\\\"mainnetRpcStatus\\\\\\\\\\\\\\\",\\\\\\\\n   { subscribe: true }\\\\\\\\n );\\\\\\\\n\\\\\\\\n return status;\\\\\\\\n\\\\\\\\n```\\\\\\\\n\\\\\\\\n- list of Primitive APIs available on BOS can be found [here](https://docs.near.org/bos/api/primitives)\\\\\\\\n\\\\\\\\n\\\\\\\\n## BOS 102 - Widgets and Props\\\\\\\\nWidgets are predefined components (Components that have already been built and deployed) that allow you to include an existing component in your code, Think of it as importing another component in your code, thereby breaking down complex long code to make your code cleaner and live in seperating components. Here are some tips about widgets:\\\\\\\\n\\\\\\\\n- Widget has a `src` property in which you pass the component you\\\\\\\\\\\\'re trying to import, you get an error if your component is wrong or not deployed yet.\\\\\\\\n\\\\\\\\n- ***Props***: just like React Components, you can also pass in props to widgets but in the VM you have to make sure you call the props and pass your props into the object.\\\\\\\\n\\\\\\\\nIn the previous example above I defined a useState example, we can see (the Image above) that all I did here was import the component in the form of a widget, and just like that the the component is rendered in this component and we can also build on this as much as we want. This allows us to break large components into smaller bits and make our code cleaner and easily readable.\\\\\\\\n\\\\\\\\n## Useful built-in Components\\\\\\\\n- Image Uploader: for handling image upload on BOS, All images on BOS are uploaded using the built-in component called `IpfsImageUpload` ,the images are uploaded to the near social [IPFS](https://docs.ipfs.tech/) and you get the returned hash in an object, you extract the hash from a field called `cid`\\\\\\\\n\\\\\\\\n```\\\\\\\\n const [state, setState] = useState(null)\\\\\\\\n\\\\\\\\n return (\\\\\\\\n   <div className=\\\\\\\\\\\\'container row\\\\\\\\\\\\'>\\\\\\\\n     <div>\\\\\\\\n       Image upload: <br />\\\\\\\\n       <IpfsImageUpload image={state} />\\\\\\\\n     </div>\\\\\\\\n     <div className=\\\\\\\\\\\\'mt-2\\\\\\\\\\\\'>\\\\\\\\n       {state.img.cid && (\\\\\\\\n         <img\\\\\\\\n           src={`https://ipfs.near.social/ipfs/${state.cid}`}\\\\\\\\n           alt=\\\\\\\\\\\\'uploaded\\\\\\\\\\\\'\\\\\\\\n         />\\\\\\\\n       )}\\\\\\\\n     </div>\\\\\\\\n   </div>\\\\\\\\n );\\\\\\\\n\\\\\\\\n```\\\\\\\\n\\\\\\\\n- Web3 connect: The BOS is chain-agnostic, making it a flexible solution for developers working with different blockchains (EVM chains like Ethereum, polygon, celo).\\\\\\\\n\\\\\\\\n```\\\\\\\\n return (\\\\\\\\n   <div>\\\\\\\\n     <Web3Connect /> \\\\\\\\n   </div>\\\\\\\\n );\\\\\\\\n // The Web3Connect Component gives you access to Metamask, Wallet Connect and Ledger\\\\\\\\n // In order to connect to different chains\\\\\\\\n\\\\\\\\n```\\\\\\\\n\\\\\\\\n## BOS 103 - Styling on BOS\\\\\\\\n\\\\\\\\nstyling on BOS is quite different from React, as it is done with the built-in Styled Component or Bootstrap, so if you\\\\\\\\\\\\'re familiar with either of them you would be able to work style your components easily, if you\\\\\\\\\\\\'re not you could always check their docs on getting started.\\\\\\\\n\\\\\\\\n\\\\\\\\n## How to Fork a Widget on BOS\\\\\\\\nYes, Forking is also possible on BOS, You can effortlessly fork a component, either to further develop it or to run it locally and study it. In this visual example, I\\\\\\\\\\\\'m utilizing the Near social gateway, and you can find the fork button in the top menu bar on the right.\\\\\\\\n\\\\\\\\n## Conclusion\\\\\\\\nStarting out with Near BOS as a Web2 developer opens up a whole new way to build websites. BOS makes it easy with its toolkit, letting you grab pieces and quickly create your site on the Near network. It\\\\\\\\\\\\'s different from how we usually do things on regular websites.\\\\\\\\n\\\\\\\\nThink of BOS like a box with three important parts: Components, Blockchain, and Gateways. They work together to keep things safe and accessible. It\\\\\\\\\\\\'s a simple, secure, and efficient way for Web2 developers to explore the world of decentralized applications. Start your BOS journey and see where it takes you!\\\\\\\\n\\\\\\\\nFor a deeper understanding on BOS visit the [docs](https://docs.near.org/bos/overview)\", \"metadata\": {\"id\": \"2553\", \"title\": \"Getting Started on Near\\\\\\\\\\\\'s BOS as a Web2 Developer \\\\\\\\u{26a1}\\\\\\\\u{fe0f}\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"\", \"createdAt\": \"2023-12-14\", \"updatedAt\": \"2023-12-14\", \"description\": \"\", \"publishedAt\": \"2023-12-14\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"devrel\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6010254955856e+21
+    }
+  },
+  {
+    "id": "5423995212",
+    "receipt_id": "8MrzaQMof32dyWLWSW7ZhVpK7CXeoGHeRBwVYJPKGmEu",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9fkGXMjdQcAqWmq6PPpQo5K2DQH8jM7KhCPHb5g63Pnr",
+      "block_height": 120515294,
+      "block_timestamp": 1717618606050963700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 10471547060430,
+      "tokens_burnt": 1.047154706043e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8wL5QuUYWzWrfheyZj6fckyJPxReq8JBm9nv3pjaiKn4",
+    "included_in_block_hash": "9ibY7fjGweCjEe33ofQXVcJbkgZr2o4NNiF9MXxcTx3L",
+    "block_timestamp": "1717618603333967233",
+    "block": {
+      "block_height": 120515292
+    },
+    "receipt_conversion_tokens_burnt": "32968768958200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.047154706043e+21,
+        "args": "{\"data\": {\"devrel.community.devhub.near\": {\"blog\": {\"getting-started-on-near-s-bos-as-a-web2-developer-2553\": {\"\": \"The Blockchain Operating System (BOS) makes it easier to create, share, and use decentralized websites. It\\\\\\\\\\\\'s like a toolbox where you can quickly get pieces (components) to build your site. \\\\\\\\n\\\\\\\\nIt functions as a development and social environment, offering users effortless access to components, seamless forking of other users\\\\\\\\\\\\' components, and convenient deployment on the near network. \\\\\\\\n\\\\\\\\nIn contrast to Web2 applications, where the typical workflow involves building, pushing changes to GitHub, and then deploying the application, BOS provides a swift alternative. With BOS, users can effortlessly create a component, deploy it on-chain within minutes, and instantly preview their work on a Gateway (near.social or near.org.) \\\\\\\\n\\\\\\\\nThis eliminates the need to push changes to GitHub, enhancing security by ensuring components remain on-chain. Additionally, deploying on BOS is notably faster than traditional methods, enabling the deployment of new front-ends for smart contracts to the mainnet in a matter of minutes.\\\\\\\\n\\\\\\\\n## Keywords to Note (The 3 Pillars of BOS)\\\\\\\\n\\\\\\\\nA few key terms to pay attention to, which you\\\\\\\\\\\\'ve either encountered or will encounter throughout this article, are crucial for a comprehensive understanding when working with BOS, as they constitute the foundational elements of the system:\\\\\\\\n\\\\\\\\n***Components***: These are composable frontends that solve specific problems, akin to React, if you\\\\\\\\\\\\'re familiar with React, Navigating BOS development would be relatively straightforward. There are also a couple of built-in components that come in handy (I\\\\\\\\\\\\'ll be discussing this later).\\\\\\\\n\\\\\\\\n***Blockchain***: Remember I mentioned the code is being stored on-chain, Think of this as GitHub on how code is being stored on web2, this is to store the component\\\\\\\\\\\\'s code as well as assets and data. This is done on the Near chain.\\\\\\\\n\\\\\\\\n***Gateways***: Think of these as hosting platforms similar to Vercel. Gateways serve as platforms that deliver decentralized frontends (components) to a wider audience. e.g. near.org, near.social\\\\\\\\n\\\\\\\\n\\\\\\\\n## Getting Started\\\\\\\\nThe first thing to note when getting started is that you\\\\\\\\\\\\'re building on Near and all your changes are being deployed on-chain. Hence, you need to create a near account, and deposit a small token for gas purposes. I recommend utilizing Meteor Wallet and installing its extension in your browser for a swifter experience in saving changes. This is notably faster than employing the mynear app, which redirects you to another window everytime you want to deploy. Saving each time on chain requires you to sign a contract (Don\\\\\\\\\\\\'t worry the gas you need to deploy is not much at all, In fact, depending on your project, it might take weeks before you exhaust a single Near token).\\\\\\\\n\\\\\\\\n***Next Steps...***\\\\\\\\nOnce you\\\\\\\\\\\\'re done with the step next thing is to start building. Again, this is just my suggestion as I consider the fastest way to build and deploy easily on BOS.\\\\\\\\nHead over to `jutsu.ai`, and log in using the near account you just created.\\\\\\\\n\\\\\\\\nAs I mentioned earlier, if you\\\\\\\\\\\\'re familiar with React, you would recognize most of the concepts but not everything in React is fully integrated. Currently, only `useState` `useEffect` `useCallback` `useMemo` have been integrated on BOS, I\\\\\\\\\\\\'ll be showing you how to use them.\\\\\\\\n\\\\\\\\n\\\\\\\\nIn the Image Example above, I created a simple toggle button component using the useState hook. a couple of things to take note of:\\\\\\\\n\\\\\\\\n- You don\\\\\\\\\\\\'t need import statements, everything is happening behind the scenes, you just need to call the hook.\\\\\\\\n\\\\\\\\n- whatever JSX code you pass in your return statement is what is being rendered in the preview screen.\\\\\\\\n\\\\\\\\n- the deploy button on the top-right is used to deploy on-chain and you can view your application in any gateway(Link to the above example, this example took me less than 10 minutes to build and deploy).\\\\\\\\n\\\\\\\\n- you also have access to your console, which is useful for debugging.\\\\\\\\n\\\\\\\\n## BOS 101 - How is the BOS VM Different?\\\\\\\\n\\\\\\\\nThe BOS VM comes with some functions and components already setup, with ongoing additions. It\\\\\\\\\\\\'s essential to note that it doesn\\\\\\\\\\\\'t function exactly like React, so processes may not align precisely.\\\\\\\\n\\\\\\\\n- Unlike React, you don\\\\\\\\\\\\'t import hooks with statements; you just initialize them when you need them.\\\\\\\\n\\\\\\\\n- There is no such thing as having a general App.js whereby you have to call the function and export it in order for it to work, that\\\\\\\\\\\\'s not how components (BOS) work, just return your JSX code it\\\\\\\\\\\\'s that simple.\\\\\\\\n\\\\\\\\n- You can\\\\\\\\\\\\'t just simply download any npm package and import, you have access to a couple of built-in packages that you could work with.\\\\\\\\n\\\\\\\\n- fetch: the fetch function on BOS acts like a hook, instead of returning a promise, it returns a value.\\\\\\\\n\\\\\\\\n```\\\\\\\\n const res = fetch(\\\\\\\\\\\\\\\"https://rpc.mainnet.near.org/status\\\\\\\\\\\\\\\");\\\\\\\\n\\\\\\\\n return res.body;\\\\\\\\n\\\\\\\\n```\\\\\\\\n\\\\\\\\n- `asyncFetch`: this is the version that returns a promise, in case it is mandatory that you handle the API call asynchronously:\\\\\\\\n\\\\\\\\n```\\\\\\\\n function reportUptime() {\\\\\\\\n   asyncFetch(\\\\\\\\\\\\\\\"https://rpc.mainnet.near.org/status\\\\\\\\\\\\\\\").then((res) => {\\\\\\\\n     const uptime = res.body.uptime_sec;\\\\\\\\n     Near.call(\\\\\\\\\\\\\\\"uptime.near\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"reportUptime\\\\\\\\\\\\\\\", { uptime });\\\\\\\\n   });\\\\\\\\n }\\\\\\\\n\\\\\\\\n return <button onClick={reportUptime}>Report Uptime</button>;\\\\\\\\n\\\\\\\\n```\\\\\\\\n\\\\\\\\n- Caching: The VM implements a caching layer for most network requests, but in case you want to handle it manually you have access to the `useCache` hook.\\\\\\\\n\\\\\\\\n```\\\\\\\\n const status = useCache(\\\\\\\\n   () =>\\\\\\\\n     asyncFetch(\\\\\\\\\\\\\\\"https://rpc.mainnet.near.org/status\\\\\\\\\\\\\\\").then((res) => res.body),\\\\\\\\n   \\\\\\\\\\\\\\\"mainnetRpcStatus\\\\\\\\\\\\\\\",\\\\\\\\n   { subscribe: true }\\\\\\\\n );\\\\\\\\n\\\\\\\\n return status;\\\\\\\\n\\\\\\\\n```\\\\\\\\n\\\\\\\\n- list of Primitive APIs available on BOS can be found [here](https://docs.near.org/bos/api/primitives)\\\\\\\\n\\\\\\\\n\\\\\\\\n## BOS 102 - Widgets and Props\\\\\\\\nWidgets are predefined components (Components that have already been built and deployed) that allow you to include an existing component in your code, Think of it as importing another component in your code, thereby breaking down complex long code to make your code cleaner and live in seperating components. Here are some tips about widgets:\\\\\\\\n\\\\\\\\n- Widget has a `src` property in which you pass the component you\\\\\\\\\\\\'re trying to import, you get an error if your component is wrong or not deployed yet.\\\\\\\\n\\\\\\\\n- ***Props***: just like React Components, you can also pass in props to widgets but in the VM you have to make sure you call the props and pass your props into the object.\\\\\\\\n\\\\\\\\nIn the previous example above I defined a useState example, we can see (the Image above) that all I did here was import the component in the form of a widget, and just like that the the component is rendered in this component and we can also build on this as much as we want. This allows us to break large components into smaller bits and make our code cleaner and easily readable.\\\\\\\\n\\\\\\\\n## Useful built-in Components\\\\\\\\n- Image Uploader: for handling image upload on BOS, All images on BOS are uploaded using the built-in component called `IpfsImageUpload` ,the images are uploaded to the near social [IPFS](https://docs.ipfs.tech/) and you get the returned hash in an object, you extract the hash from a field called `cid`\\\\\\\\n\\\\\\\\n```\\\\\\\\n const [state, setState] = useState(null)\\\\\\\\n\\\\\\\\n return (\\\\\\\\n   <div className=\\\\\\\\\\\\'container row\\\\\\\\\\\\'>\\\\\\\\n     <div>\\\\\\\\n       Image upload: <br />\\\\\\\\n       <IpfsImageUpload image={state} />\\\\\\\\n     </div>\\\\\\\\n     <div className=\\\\\\\\\\\\'mt-2\\\\\\\\\\\\'>\\\\\\\\n       {state.img.cid && (\\\\\\\\n         <img\\\\\\\\n           src={`https://ipfs.near.social/ipfs/${state.cid}`}\\\\\\\\n           alt=\\\\\\\\\\\\'uploaded\\\\\\\\\\\\'\\\\\\\\n         />\\\\\\\\n       )}\\\\\\\\n     </div>\\\\\\\\n   </div>\\\\\\\\n );\\\\\\\\n\\\\\\\\n```\\\\\\\\n\\\\\\\\n- Web3 connect: The BOS is chain-agnostic, making it a flexible solution for developers working with different blockchains (EVM chains like Ethereum, polygon, celo).\\\\\\\\n\\\\\\\\n```\\\\\\\\n return (\\\\\\\\n   <div>\\\\\\\\n     <Web3Connect /> \\\\\\\\n   </div>\\\\\\\\n );\\\\\\\\n // The Web3Connect Component gives you access to Metamask, Wallet Connect and Ledger\\\\\\\\n // In order to connect to different chains\\\\\\\\n\\\\\\\\n```\\\\\\\\n\\\\\\\\n## BOS 103 - Styling on BOS\\\\\\\\n\\\\\\\\nstyling on BOS is quite different from React, as it is done with the built-in Styled Component or Bootstrap, so if you\\\\\\\\\\\\'re familiar with either of them you would be able to work style your components easily, if you\\\\\\\\\\\\'re not you could always check their docs on getting started.\\\\\\\\n\\\\\\\\n\\\\\\\\n## How to Fork a Widget on BOS\\\\\\\\nYes, Forking is also possible on BOS, You can effortlessly fork a component, either to further develop it or to run it locally and study it. In this visual example, I\\\\\\\\\\\\'m utilizing the Near social gateway, and you can find the fork button in the top menu bar on the right.\\\\\\\\n\\\\\\\\n## Conclusion\\\\\\\\nStarting out with Near BOS as a Web2 developer opens up a whole new way to build websites. BOS makes it easy with its toolkit, letting you grab pieces and quickly create your site on the Near network. It\\\\\\\\\\\\'s different from how we usually do things on regular websites.\\\\\\\\n\\\\\\\\nThink of BOS like a box with three important parts: Components, Blockchain, and Gateways. They work together to keep things safe and accessible. It\\\\\\\\\\\\'s a simple, secure, and efficient way for Web2 developers to explore the world of decentralized applications. Start your BOS journey and see where it takes you!\\\\\\\\n\\\\\\\\nFor a deeper understanding on BOS visit the [docs](https://docs.near.org/bos/overview)\", \"metadata\": {\"id\": \"2553\", \"title\": \"Getting Started on Near\\\\\\\\\\\\'s BOS as a Web2 Developer \\\\\\\\u{26a1}\\\\\\\\u{fe0f}\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"\", \"createdAt\": \"2023-12-14\", \"updatedAt\": \"2023-12-14\", \"description\": \"\", \"publishedAt\": \"2023-12-14\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6010254955856e+21
+    }
+  },
+  {
+    "id": "5423996287",
+    "receipt_id": "6bjKgz52LUWhPkMDqNQUp7dJeQAHSybAkzJEe6oABHPW",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6TXoMEruFFqK3hNmKChm4W2GoGrmrdZL7NKWBaksJuFq",
+      "block_height": 120515297,
+      "block_timestamp": 1717618609391994000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4516157530642,
+      "tokens_burnt": 451615753064200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8eTf3ufCRrUZ8zsUkvZXPun55CVHifgbzP4ZaxmB5Wfg",
+    "included_in_block_hash": "2ZzkTCqyceUHmS6gAiH3iXMbD84Rzh6A47sghYzJdtRZ",
+    "block_timestamp": "1717618608253088425",
+    "block": {
+      "block_height": 120515296
+    },
+    "receipt_conversion_tokens_burnt": "31264540063400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 451615753064200000000,
+        "args": "{\"data\": {\"blog\": {\"community-call-8-recap-2656\": {\"\": \"**MODERATORS**: Owen Hassall\\\\\\\\n**VIDEO**: https://youtu.be/Dn-HkMXAz20\\\\\\\\n\\\\\\\\n## AGENDA\\\\\\\\n- Electron Labs integration with NEAR DA\\\\\\\\n- Reclaim Protocol proposal\\\\\\\\n- ZKWASM\\\\\\\\n\\\\\\\\n## TOPIC SUMMARIES\\\\\\\\n- **Electron Labs integration with NEAR DA**: The ZK Light Client, built by Electron Labs, has completed their integration with NEAR DA. \\\\\\\\nFind out more [here](https://docs.google.com/presentation/d/18Ik_nO-7J0PZX_i69Y9oejoLWeQ1KHCePtfXFM01JIQ/edit?usp=sharing).\\\\\\\\n\\\\\\\\n- **Reclaim Protocol proposal**: There was an interesting discussion of Reclaim protocol\\\\\\\\u{2019}s proposal to DevHub that allows users to generate verifiable credentials using ZKP. Feel free to give your thoughts on the [proposal](https://near.social/devhub.near/widget/app?page=post&id=1969). You can also find out more [here](https://acrobat.adobe.com/id/urn:aaid:sc:EU:2a8bf47e-bfe4-4b95-b263-6fd07730fb58).\\\\\\\\n\\\\\\\\n\\\\\\\\n- **ZKWASM presentation by Pagoda**: We had the ZKWASM Pagoda team join us to give more information on ZKWASM, share future plans and take questions. The slides can be found [here](https://docs.google.com/presentation/d/1y9mcUd8dtYMotHcXXCBqvSYwG6JaXn4gM8WMrW7Kspc/edit?usp=sharing).\\\\\\\\n\\\\\\\\n- **Other Discussion**: We also heard updates from Opact (private transactions on NEAR) introducing open-source ZK ceremonies, an update about Zpoken\\\\\\\\u{2019}s ZK light client and a quick discussion on NDC and private voting.\\\\\\\\n\\\\\\\\n## ACTION ITEMS\\\\\\\\n- Please give your thoughts and attestations on the proposal by Reclaim Protocol [here](https://near.social/devhub.near/widget/app?page=post&id=1969).\", \"metadata\": {\"id\": \"2656\", \"title\": \"Community Call #8 Recap\", \"author\": \"pivortex.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Electron Labs, Reclaim Protocol, ZKWASM, Opact, Zpoken, NDC Private Voting.\", \"createdAt\": \"2024-04-10\", \"updatedAt\": \"2024-04-10\", \"description\": \"Electron Labs, Reclaim Protocol, ZKWASM, Opact, Zpoken, NDC Private Voting.\", \"publishedAt\": \"2024-04-10\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"zero-knowledge\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4055216154198e+21
+    }
+  },
+  {
+    "id": "5423996401",
+    "receipt_id": "5LQoWntQs9mxmkkgA9xzrzCTQYQZ6JY2PJVHp7inEF9a",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HFPVKevnHWVnnsgJMhFg1RxPM6m4VXvP5BcgeveCrcC6",
+      "block_height": 120515298,
+      "block_timestamp": 1717618610492281900
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9226413222922,
+      "tokens_burnt": 922641322292200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8eTf3ufCRrUZ8zsUkvZXPun55CVHifgbzP4ZaxmB5Wfg",
+    "included_in_block_hash": "2ZzkTCqyceUHmS6gAiH3iXMbD84Rzh6A47sghYzJdtRZ",
+    "block_timestamp": "1717618608253088425",
+    "block": {
+      "block_height": 120515296
+    },
+    "receipt_conversion_tokens_burnt": "31264540063400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 922641322292200000000,
+        "args": "{\"data\": {\"zero-knowledge.community.devhub.near\": {\"blog\": {\"community-call-8-recap-2656\": {\"\": \"**MODERATORS**: Owen Hassall\\\\\\\\n**VIDEO**: https://youtu.be/Dn-HkMXAz20\\\\\\\\n\\\\\\\\n## AGENDA\\\\\\\\n- Electron Labs integration with NEAR DA\\\\\\\\n- Reclaim Protocol proposal\\\\\\\\n- ZKWASM\\\\\\\\n\\\\\\\\n## TOPIC SUMMARIES\\\\\\\\n- **Electron Labs integration with NEAR DA**: The ZK Light Client, built by Electron Labs, has completed their integration with NEAR DA. \\\\\\\\nFind out more [here](https://docs.google.com/presentation/d/18Ik_nO-7J0PZX_i69Y9oejoLWeQ1KHCePtfXFM01JIQ/edit?usp=sharing).\\\\\\\\n\\\\\\\\n- **Reclaim Protocol proposal**: There was an interesting discussion of Reclaim protocol\\\\\\\\u{2019}s proposal to DevHub that allows users to generate verifiable credentials using ZKP. Feel free to give your thoughts on the [proposal](https://near.social/devhub.near/widget/app?page=post&id=1969). You can also find out more [here](https://acrobat.adobe.com/id/urn:aaid:sc:EU:2a8bf47e-bfe4-4b95-b263-6fd07730fb58).\\\\\\\\n\\\\\\\\n\\\\\\\\n- **ZKWASM presentation by Pagoda**: We had the ZKWASM Pagoda team join us to give more information on ZKWASM, share future plans and take questions. The slides can be found [here](https://docs.google.com/presentation/d/1y9mcUd8dtYMotHcXXCBqvSYwG6JaXn4gM8WMrW7Kspc/edit?usp=sharing).\\\\\\\\n\\\\\\\\n- **Other Discussion**: We also heard updates from Opact (private transactions on NEAR) introducing open-source ZK ceremonies, an update about Zpoken\\\\\\\\u{2019}s ZK light client and a quick discussion on NDC and private voting.\\\\\\\\n\\\\\\\\n## ACTION ITEMS\\\\\\\\n- Please give your thoughts and attestations on the proposal by Reclaim Protocol [here](https://near.social/devhub.near/widget/app?page=post&id=1969).\", \"metadata\": {\"id\": \"2656\", \"title\": \"Community Call #8 Recap\", \"author\": \"pivortex.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Electron Labs, Reclaim Protocol, ZKWASM, Opact, Zpoken, NDC Private Voting.\", \"createdAt\": \"2024-04-10\", \"updatedAt\": \"2024-04-10\", \"description\": \"Electron Labs, Reclaim Protocol, ZKWASM, Opact, Zpoken, NDC Private Voting.\", \"publishedAt\": \"2024-04-10\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4055216154198e+21
+    }
+  },
+  {
+    "id": "5423997270",
+    "receipt_id": "4Z9uhg2yJP9fS9zSkvdikLMXQVSfVZKVMkKYhLKBMghu",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CtcAGMaSKA9kb5eAUmg38b1Jdh3ydAXbvWqutc6oaLMi",
+      "block_height": 120515301,
+      "block_timestamp": 1717618613654518800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4558573775529,
+      "tokens_burnt": 455857377552900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "GLtTieqbFABgxL9NCxpGtTk52SbFe62s1eMyba3FsAv2",
+    "included_in_block_hash": "E74ah25gdrRBbppEWWGCKxhK2HpoouDMLpV2Vfkny8qp",
+    "block_timestamp": "1717618612675978626",
+    "block": {
+      "block_height": 120515300
+    },
+    "receipt_conversion_tokens_burnt": "31492828924800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 455857377552900000000,
+        "args": "{\"data\": {\"blog\": {\"webfusion-lagos-2023-bridging-the-gap-between-web2-and-web3-2710\": {\"\": \"Developers gathered at the ALX Hub in Lagos, Nigeria for the first-ever in-person hackathon \\\\\\\\\\\\\\\"WebFusion\\\\\\\\\\\\\\\" Hosted by DevHub in collaboration with Nearafrica.\\\\\\\\n\\\\\\\\n### Breaking Barriers \\\\\\\\u{1f423}\\\\\\\\n\\\\\\\\nBlockchain development is often associated with a complicated onboarding process, deterring potential developers. DevHub sought to change this narrative by introducing WebFusion. The primary objective was to provide web developers in Lagos with a seamless transition from Web2 to Web3 using their existing expertise in Javascript and React.\\\\\\\\n\\\\\\\\nUnlike traditional blockchain development, WebFusion focused on using the BOS, eliminating the need for developers to learn new programming languages. This approach not only simplifies the development process but also encourages a more diverse set of developers to explore the possibilities of blockchain technology.\\\\\\\\n\\\\\\\\n### Four Days of Non-stop Building \\\\\\\\u{1f92f}\\\\\\\\n\\\\\\\\nThe hackathon kicked off with an insightful introduction to the NEAR Ecosystem, followed by an onboarding session led by DevHub DevRel Victor Kanu. For many participants, this marked their introduction into blockchain development. \\\\\\\\n\\\\\\\\nDevHub also conducted a workshop and a Q&A session guiding developers through the features of NEAR\\\\\\\\\\\\'s Blockchain Operating System. The focus was on understanding composable dApps. \\\\\\\\n\\\\\\\\n### Teams, Collaboration, and Innovation \\\\\\\\u{1f91d}\\\\\\\\n\\\\\\\\nThirty developers, eager to embrace the challenges and opportunities of the BOS, formed seven teams for 4 intense days of learning and coding. \\\\\\\\n\\\\\\\\nThe efforts of the participating teams culminated in some remarkable projects, each showcasing developer talent and the potential of BOS. \\\\\\\\n\\\\\\\\nThe winning projects included: \\\\\\\\n\\\\\\\\n1st Place - [PostX](https://taikai.network/hackbox/hackathons/webfusionlagos/projects/clpjwo7fo007z0z01kfk8hqhz/idea) a revolutionary content discovery gateway on the BOS platform, \\\\\\\\n2nd place - [Kegha](https://taikai.network/hackbox/hackathons/webfusionlagos/projects/clpk6l8s300bi0z01tim9nv28/idea), a secure linkage between Telegram accounts and BOS profiles, \\\\\\\\n3rd Place - [DTECTEET](https://taikai.network/hackbox/hackathons/webfusionlagos/projects/clpkjle4m00e60z01qe46v30o/idea), a detection tool for API calls in widget source code.\\\\\\\\n\\\\\\\\n### Conclusion \\\\\\\\n\\\\\\\\nWebFusion Lagos wasn\\\\\\\\\\\\'t just about winning prizes, it was about building bridges, fostering growth, and celebrating diversity within the tech community. The event successfully brought together web2 developers, and created an environment ripe for collaboration and sparking groundbreaking projects.\\\\\\\\n\", \"metadata\": {\"id\": \"undefined\", \"title\": \"WebFusion Lagos 2023 \\\\\\\\u{1f1f3}\\\\\\\\u{1f1ec}: Bridging the Gap between Web2 and Web3\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"DevHub onboards Web2 Devs with WebFusion\", \"createdAt\": \"2024-01-01\", \"updatedAt\": \"2024-01-01\", \"description\": \"DevHub onboards Web2 Devs with WebFusion\", \"publishedAt\": \"2024-01-01\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"devrel\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4263992983231e+21
+    }
+  },
+  {
+    "id": "5423997582",
+    "receipt_id": "Dh1UCakuJ73PtwWAF8pHGXDcCJ2JNDeuUHmnM6eHGJ2k",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2tmuW6HKxeQgfBgHCBcbW1oFJLjg7AkPY9n6KArPiWXa",
+      "block_height": 120515302,
+      "block_timestamp": 1717618614650947800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9390490918454,
+      "tokens_burnt": 939049091845400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "GLtTieqbFABgxL9NCxpGtTk52SbFe62s1eMyba3FsAv2",
+    "included_in_block_hash": "E74ah25gdrRBbppEWWGCKxhK2HpoouDMLpV2Vfkny8qp",
+    "block_timestamp": "1717618612675978626",
+    "block": {
+      "block_height": 120515300
+    },
+    "receipt_conversion_tokens_burnt": "31492828924800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 939049091845400000000,
+        "args": "{\"data\": {\"devrel.community.devhub.near\": {\"blog\": {\"webfusion-lagos-2023-bridging-the-gap-between-web2-and-web3-2710\": {\"\": \"Developers gathered at the ALX Hub in Lagos, Nigeria for the first-ever in-person hackathon \\\\\\\\\\\\\\\"WebFusion\\\\\\\\\\\\\\\" Hosted by DevHub in collaboration with Nearafrica.\\\\\\\\n\\\\\\\\n### Breaking Barriers \\\\\\\\u{1f423}\\\\\\\\n\\\\\\\\nBlockchain development is often associated with a complicated onboarding process, deterring potential developers. DevHub sought to change this narrative by introducing WebFusion. The primary objective was to provide web developers in Lagos with a seamless transition from Web2 to Web3 using their existing expertise in Javascript and React.\\\\\\\\n\\\\\\\\nUnlike traditional blockchain development, WebFusion focused on using the BOS, eliminating the need for developers to learn new programming languages. This approach not only simplifies the development process but also encourages a more diverse set of developers to explore the possibilities of blockchain technology.\\\\\\\\n\\\\\\\\n### Four Days of Non-stop Building \\\\\\\\u{1f92f}\\\\\\\\n\\\\\\\\nThe hackathon kicked off with an insightful introduction to the NEAR Ecosystem, followed by an onboarding session led by DevHub DevRel Victor Kanu. For many participants, this marked their introduction into blockchain development. \\\\\\\\n\\\\\\\\nDevHub also conducted a workshop and a Q&A session guiding developers through the features of NEAR\\\\\\\\\\\\'s Blockchain Operating System. The focus was on understanding composable dApps. \\\\\\\\n\\\\\\\\n### Teams, Collaboration, and Innovation \\\\\\\\u{1f91d}\\\\\\\\n\\\\\\\\nThirty developers, eager to embrace the challenges and opportunities of the BOS, formed seven teams for 4 intense days of learning and coding. \\\\\\\\n\\\\\\\\nThe efforts of the participating teams culminated in some remarkable projects, each showcasing developer talent and the potential of BOS. \\\\\\\\n\\\\\\\\nThe winning projects included: \\\\\\\\n\\\\\\\\n1st Place - [PostX](https://taikai.network/hackbox/hackathons/webfusionlagos/projects/clpjwo7fo007z0z01kfk8hqhz/idea) a revolutionary content discovery gateway on the BOS platform, \\\\\\\\n2nd place - [Kegha](https://taikai.network/hackbox/hackathons/webfusionlagos/projects/clpk6l8s300bi0z01tim9nv28/idea), a secure linkage between Telegram accounts and BOS profiles, \\\\\\\\n3rd Place - [DTECTEET](https://taikai.network/hackbox/hackathons/webfusionlagos/projects/clpkjle4m00e60z01qe46v30o/idea), a detection tool for API calls in widget source code.\\\\\\\\n\\\\\\\\n### Conclusion \\\\\\\\n\\\\\\\\nWebFusion Lagos wasn\\\\\\\\\\\\'t just about winning prizes, it was about building bridges, fostering growth, and celebrating diversity within the tech community. The event successfully brought together web2 developers, and created an environment ripe for collaboration and sparking groundbreaking projects.\\\\\\\\n\", \"metadata\": {\"id\": \"undefined\", \"title\": \"WebFusion Lagos 2023 \\\\\\\\u{1f1f3}\\\\\\\\u{1f1ec}: Bridging the Gap between Web2 and Web3\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"DevHub onboards Web2 Devs with WebFusion\", \"createdAt\": \"2024-01-01\", \"updatedAt\": \"2024-01-01\", \"description\": \"DevHub onboards Web2 Devs with WebFusion\", \"publishedAt\": \"2024-01-01\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4263992983231e+21
+    }
+  },
+  {
+    "id": "5423999053",
+    "receipt_id": "6ffHBXdpw9sKAAKV5WeU9pY47rpDyLKgbNUFEsZ4mGFR",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7SxfHzjw6xvZ1uL1WcjeUrNiUC7tucaCgskWJUAM4UUG",
+      "block_height": 120515306,
+      "block_timestamp": 1717618619134153500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4529713171782,
+      "tokens_burnt": 452971317178200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "G4M7tVJNbXXivpdRcnhjnqS9eLYnYPChhfrSzvXLWNpT",
+    "included_in_block_hash": "6czpfBD2JSs8gFkZGgmrR7Rhf4uRQCdH9zApsNj3QA8P",
+    "block_timestamp": "1717618618102326215",
+    "block": {
+      "block_height": 120515305
+    },
+    "receipt_conversion_tokens_burnt": "30997122357000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 452971317178200000000,
+        "args": "{\"data\": {\"blog\": {\"protocol-work-group-call-7-2766\": {\"\": \"***Join us for the seventh #NEAR Protocol Work Group call tomorrow at 4:00 PM UTC, where the group will vote on NEP-488***\\\\\\\\n\\\\\\\\nNEP-488 introduces NEAR runtime functions for efficient BLS signature and zkSNARK verification on the BLS12-381 curve, enhancing security and unlocking compatibility with other blockchains.\\\\\\\\n\\\\\\\\n[Add to Calendar](https://bit.ly/protocol-wg-jan10)\\\\\\\\n\\\\\\\\nNote: This page will be updated with a Recap and highlights after the meeting\", \"metadata\": {\"id\": \"undefined\", \"title\": \"Protocol Work Group call #7\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Voting on NEP-488\", \"createdAt\": \"2024-01-09\", \"updatedAt\": \"2024-01-09\", \"description\": \"Voting on NEP-488\", \"publishedAt\": \"2024-01-09\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"protocol\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3881849683384e+21
+    }
+  },
+  {
+    "id": "5423999173",
+    "receipt_id": "7hZ5fZX1VdL9V1KvgRtoU1b67a1jbsHQse7VLEwzn2Mt",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9GTdENu2Xk6MHUbVhQBaVw3tpAGKcby76SPWxgDfooau",
+      "block_height": 120515307,
+      "block_timestamp": 1717618620404404200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9042165288032,
+      "tokens_burnt": 904216528803200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "G4M7tVJNbXXivpdRcnhjnqS9eLYnYPChhfrSzvXLWNpT",
+    "included_in_block_hash": "6czpfBD2JSs8gFkZGgmrR7Rhf4uRQCdH9zApsNj3QA8P",
+    "block_timestamp": "1717618618102326215",
+    "block": {
+      "block_height": 120515305
+    },
+    "receipt_conversion_tokens_burnt": "30997122357000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 904216528803200000000,
+        "args": "{\"data\": {\"protocol.community.devhub.near\": {\"blog\": {\"protocol-work-group-call-7-2766\": {\"\": \"***Join us for the seventh #NEAR Protocol Work Group call tomorrow at 4:00 PM UTC, where the group will vote on NEP-488***\\\\\\\\n\\\\\\\\nNEP-488 introduces NEAR runtime functions for efficient BLS signature and zkSNARK verification on the BLS12-381 curve, enhancing security and unlocking compatibility with other blockchains.\\\\\\\\n\\\\\\\\n[Add to Calendar](https://bit.ly/protocol-wg-jan10)\\\\\\\\n\\\\\\\\nNote: This page will be updated with a Recap and highlights after the meeting\", \"metadata\": {\"id\": \"undefined\", \"title\": \"Protocol Work Group call #7\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Voting on NEP-488\", \"createdAt\": \"2024-01-09\", \"updatedAt\": \"2024-01-09\", \"description\": \"Voting on NEP-488\", \"publishedAt\": \"2024-01-09\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3881849683384e+21
+    }
+  },
+  {
+    "id": "5424000038",
+    "receipt_id": "4q8KpXXxiex1cMvZxDR85HpdLi5MiVSbTjz1R2qDKa6C",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BrV3CMXEXXhq65EMCX3KjR4FhRmZR2bLVgfRC2hQuYBp",
+      "block_height": 120515310,
+      "block_timestamp": 1717618624316308500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4574347528107,
+      "tokens_burnt": 457434752810700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DxRaSMyBrYgUcZYTBN1csaAqXdchoBxj3VTVHQ29CyJW",
+    "included_in_block_hash": "5L7zs9iF46DRL8XTC55JwhZDjXkQLcRnyeoTqBcrf51Z",
+    "block_timestamp": "1717618623009288972",
+    "block": {
+      "block_height": 120515309
+    },
+    "receipt_conversion_tokens_burnt": "31099751727600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 457434752810700000000,
+        "args": "{\"data\": {\"blog\": {\"protocol-work-group-call-9-2767\": {\"\": \"Moderator: @victorkanu1.near\\\\\\\\n&nbsp; \\\\\\\\n#### Summary\\\\\\\\n&nbsp;\\\\\\\\nIn the 9th year protocol work group call, participants reviewed NEP 536 and NEP 540. NEP 536, presented by Evgeny Kuzyakov, proposed adjustments to gas refunds, with all four working group members leaning towards approval.\\\\\\\\n\\\\\\\\nHowever, NEP 540, addressing storage staking adjustments, faced rejection, with all members opposing the proposal due to concerns about its potential risks and limitations. \\\\\\\\n\\\\\\\\nDespite differing voting outcomes, the group engaged in constructive discussions about alternative solutions and emphasized the importance of balancing protocol efficiency and developer experience. \\\\\\\\n\\\\\\\\nThe call concluded with an emphasis on community involvement and resources for NEAR developers.\\\\\\\\n&nbsp;\\\\\\\\n**Approved:** NEP-536\\\\\\\\n**Rejected:** NEP-540\\\\\\\\n\\\\\\\\n&nbsp; \\\\\\\\n**Recording:** [here](https://www.youtube.com/watch?v=FPGNFDQ6rRA)\", \"metadata\": {\"id\": \"2767\", \"title\": \"Protocol Work Group call #9\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"Voting on NEP-536 & NEP 540\", \"createdAt\": \"2024-05-01\", \"updatedAt\": \"2024-05-01\", \"description\": \"Voting on NEP-536 & NEP 540\", \"publishedAt\": \"2024-05-01\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"protocol\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3976589980399e+21
+    }
+  },
+  {
+    "id": "5424000334",
+    "receipt_id": "2XuwnFP3Rcmor2eKSjt2xxNkLP3erUs2QPaDgdxEcmjp",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GVZtWtL77UhE589YmHQYtcwBNqhhpkzpK6XGeKbAxN95",
+      "block_height": 120515311,
+      "block_timestamp": 1717618625486413000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9091244935016,
+      "tokens_burnt": 909124493501600000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DxRaSMyBrYgUcZYTBN1csaAqXdchoBxj3VTVHQ29CyJW",
+    "included_in_block_hash": "5L7zs9iF46DRL8XTC55JwhZDjXkQLcRnyeoTqBcrf51Z",
+    "block_timestamp": "1717618623009288972",
+    "block": {
+      "block_height": 120515309
+    },
+    "receipt_conversion_tokens_burnt": "31099751727600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 909124493501600000000,
+        "args": "{\"data\": {\"protocol.community.devhub.near\": {\"blog\": {\"protocol-work-group-call-9-2767\": {\"\": \"Moderator: @victorkanu1.near\\\\\\\\n&nbsp; \\\\\\\\n#### Summary\\\\\\\\n&nbsp;\\\\\\\\nIn the 9th year protocol work group call, participants reviewed NEP 536 and NEP 540. NEP 536, presented by Evgeny Kuzyakov, proposed adjustments to gas refunds, with all four working group members leaning towards approval.\\\\\\\\n\\\\\\\\nHowever, NEP 540, addressing storage staking adjustments, faced rejection, with all members opposing the proposal due to concerns about its potential risks and limitations. \\\\\\\\n\\\\\\\\nDespite differing voting outcomes, the group engaged in constructive discussions about alternative solutions and emphasized the importance of balancing protocol efficiency and developer experience. \\\\\\\\n\\\\\\\\nThe call concluded with an emphasis on community involvement and resources for NEAR developers.\\\\\\\\n&nbsp;\\\\\\\\n**Approved:** NEP-536\\\\\\\\n**Rejected:** NEP-540\\\\\\\\n\\\\\\\\n&nbsp; \\\\\\\\n**Recording:** [here](https://www.youtube.com/watch?v=FPGNFDQ6rRA)\", \"metadata\": {\"id\": \"2767\", \"title\": \"Protocol Work Group call #9\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"Voting on NEP-536 & NEP 540\", \"createdAt\": \"2024-05-01\", \"updatedAt\": \"2024-05-01\", \"description\": \"Voting on NEP-536 & NEP 540\", \"publishedAt\": \"2024-05-01\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3976589980399e+21
+    }
+  },
+  {
+    "id": "5424001928",
+    "receipt_id": "ChY16GHciUvsuvvb9Coh3pVGrT7b8TwziARhRe2R9y6n",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GVTgxuzMuPv2RZeXiETJ9m6wrP6Pw36WvtHcnRtbyw6k",
+      "block_height": 120515315,
+      "block_timestamp": 1717618630597755600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4602015047240,
+      "tokens_burnt": 460201504724000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "FQpW9Cze4R1TNvPbiATrLPTJv5pk8y9YH6N5UoTruRL9",
+    "included_in_block_hash": "F6zT7Sya62hxtrLi5s8bVoAbUvZMAstDZ28m8t3QcYyd",
+    "block_timestamp": "1717618629290168879",
+    "block": {
+      "block_height": 120515314
+    },
+    "receipt_conversion_tokens_burnt": "31189859867800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 460201504724000000000,
+        "args": "{\"data\": {\"blog\": {\"protocol-community-group-2-2806\": {\"\": \"- NEAR Protocol Community Group\\\\\\\\\\\\'s second meeting covered scalability with ZK-compression, network congestion challenges, and developer experience on NEAR.\\\\\\\\n\\\\\\\\n- Gravit Goel from Electron Labs proposed building a ZK Ultra Light client for NEAR: [Check it out](https://docs.google.com/presentation/d/1cUjo1-hCZJ1mTFR5bLTVTxgJwDdgI1lGTIMmI3XPuyo/edit?usp=sharing)\\\\\\\\n \\\\\\\\n- Network congestion challenges were discussed, with Min presenting key questions. Solutions included burning prepaid gas and refining transaction gas accuracy: [See the document](https://t.co/dtgtoXhTNR)\\\\\\\\n\\\\\\\\n- Exploration of solutions for changing how developers interact with cross-contract calls is underway, seeking input from the developer community.\\\\\\\\n\\\\\\\\n- @joespano.near shared his transition from web2 to crypto and highlighted advantages of building on NEAR, celebrating the growing developer community.\\\\\\\\n\\\\\\\\n- Check out the recording of the Meeting [here](https://www.youtube.com/watch?v=rByLvScOBho) and join out telegram to stap udated with more information on community/workgroup calls \\\\\\\\n\\\\\\\\n\\\\\\\\nNext call scheduled for March 29.\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\", \"metadata\": {\"id\": \"undefined\", \"title\": \"Protocol Community Group #2\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Discussing scalability using ZK-compression, network congestion challenges, and the developer experience on #NEAR.\", \"createdAt\": \"2024-01-15\", \"updatedAt\": \"2024-01-15\", \"description\": \"Discussing scalability using ZK-compression, network congestion challenges, and the developer experience on #NEAR.\", \"publishedAt\": \"2024-01-15\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"protocol\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4082761248452e+21
+    }
+  },
+  {
+    "id": "5424002004",
+    "receipt_id": "EpgB7HricAeZMhqsRvLwSy1t78hq6qDHBhNj1xidts2n",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "44EZCB9XMxSjEVRVjbRYnF859ieHwBJUf2RAFFkPdZ7P",
+      "block_height": 120515316,
+      "block_timestamp": 1717618631893543400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9168847602534,
+      "tokens_burnt": 916884760253400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "FQpW9Cze4R1TNvPbiATrLPTJv5pk8y9YH6N5UoTruRL9",
+    "included_in_block_hash": "F6zT7Sya62hxtrLi5s8bVoAbUvZMAstDZ28m8t3QcYyd",
+    "block_timestamp": "1717618629290168879",
+    "block": {
+      "block_height": 120515314
+    },
+    "receipt_conversion_tokens_burnt": "31189859867800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 916884760253400000000,
+        "args": "{\"data\": {\"protocol.community.devhub.near\": {\"blog\": {\"protocol-community-group-2-2806\": {\"\": \"- NEAR Protocol Community Group\\\\\\\\\\\\'s second meeting covered scalability with ZK-compression, network congestion challenges, and developer experience on NEAR.\\\\\\\\n\\\\\\\\n- Gravit Goel from Electron Labs proposed building a ZK Ultra Light client for NEAR: [Check it out](https://docs.google.com/presentation/d/1cUjo1-hCZJ1mTFR5bLTVTxgJwDdgI1lGTIMmI3XPuyo/edit?usp=sharing)\\\\\\\\n \\\\\\\\n- Network congestion challenges were discussed, with Min presenting key questions. Solutions included burning prepaid gas and refining transaction gas accuracy: [See the document](https://t.co/dtgtoXhTNR)\\\\\\\\n\\\\\\\\n- Exploration of solutions for changing how developers interact with cross-contract calls is underway, seeking input from the developer community.\\\\\\\\n\\\\\\\\n- @joespano.near shared his transition from web2 to crypto and highlighted advantages of building on NEAR, celebrating the growing developer community.\\\\\\\\n\\\\\\\\n- Check out the recording of the Meeting [here](https://www.youtube.com/watch?v=rByLvScOBho) and join out telegram to stap udated with more information on community/workgroup calls \\\\\\\\n\\\\\\\\n\\\\\\\\nNext call scheduled for March 29.\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\\\\\\\\n\", \"metadata\": {\"id\": \"undefined\", \"title\": \"Protocol Community Group #2\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Discussing scalability using ZK-compression, network congestion challenges, and the developer experience on #NEAR.\", \"createdAt\": \"2024-01-15\", \"updatedAt\": \"2024-01-15\", \"description\": \"Discussing scalability using ZK-compression, network congestion challenges, and the developer experience on #NEAR.\", \"publishedAt\": \"2024-01-15\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4082761248452e+21
+    }
+  },
+  {
+    "id": "5424003198",
+    "receipt_id": "zkRAaBQJv1Kqb3d2aeH99yHLXmjv7KjbCkRgt5uZUAT",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9hUoQkv8fyxdy5Tb3fMzsU8x9caEdjdfD9CDYBg5wXhM",
+      "block_height": 120515319,
+      "block_timestamp": 1717618635999106800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4618463262050,
+      "tokens_burnt": 461846326205000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "84NkfjMPkYibDdwTCq7RxZ1Nrt6W4yP8Hy1j9dSCFzDL",
+    "included_in_block_hash": "6a6BA4GjQ1hFeNCVbru5Y7S3mKXdZHjXqcwmzEd9vhic",
+    "block_timestamp": "1717618634601034610",
+    "block": {
+      "block_height": 120515318
+    },
+    "receipt_conversion_tokens_burnt": "31239497602600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 461846326205000000000,
+        "args": "{\"data\": {\"blog\": {\"protocol-community-group-3-2807\": {\"\": \"- The third meeting of the NEAR Protocol Community Group took place last week, covering discussions on various topics, including the developer experience on NEAR, a proposed mentorship program for protocol developers, BOS, and IBC.\\\\\\\\n\\\\\\\\n- @joespano.near shared his positive experience building on NEAR and suggested improving visibility of protocol changes that may impact existing work. The idea of a Rust-style weekly newsletter was discussed to address this\\\\\\\\n\\\\\\\\n- Jakob presented a proposal for a mentorship program to support developers in the NEAR ecosystem, seeking feedback from the community: [How to open protocol development to a wider audience](https://t.co/9ZHS6SbdYa)\\\\\\\\n\\\\\\\\n- New participants interested in the Blockchain Operating System (BOS) joined the call, and discussions revolved around potential integration of NEAR with the Inter Blockchain Communication Protocol, currently dependent on NEP-384.[NEAR Announces the Blockchain Operating System](https://t.co/gHw0aBeUJq) | [NEP-384](https://t.co/20sBor6xNV)\\\\\\\\n\\\\\\\\n- Alexander raised concerns about project visibility within the NEAR protocol, leading to discussions on improving transparency in this aspect.\\\\\\\\n\\\\\\\\n- Plans for a recurring monthly time for the community call were discussed, with a poll to be sent in the Telegram community group to gather input on meeting time options.\\\\\\\\n\\\\\\\\n- If you missed the meeting, you can check out the recording [here](https://youtu.be/Sx1I4YA3gNk)\\\\\\\\n\\\\\\\\n\", \"metadata\": {\"id\": \"undefined\", \"title\": \"Protocol Community Group #3\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Discussions on developer experience on NEAR, a proposed mentorship program for protocol developers, BOS, and IBC\", \"createdAt\": \"2024-01-15\", \"updatedAt\": \"2024-01-15\", \"description\": \"Summary \", \"publishedAt\": \"2024-01-15\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"protocol\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4164030910526e+21
+    }
+  },
+  {
+    "id": "5424003379",
+    "receipt_id": "21zo2hriLCeKfJsGP4rJL3B63TNzPBpk61p3MUjWtFBH",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7PaAjNturBqZoBiTwaE9492icfD7dLJqxAdGs1SmGe4z",
+      "block_height": 120515320,
+      "block_timestamp": 1717618637306739200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9233172672450,
+      "tokens_burnt": 923317267245000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "84NkfjMPkYibDdwTCq7RxZ1Nrt6W4yP8Hy1j9dSCFzDL",
+    "included_in_block_hash": "6a6BA4GjQ1hFeNCVbru5Y7S3mKXdZHjXqcwmzEd9vhic",
+    "block_timestamp": "1717618634601034610",
+    "block": {
+      "block_height": 120515318
+    },
+    "receipt_conversion_tokens_burnt": "31239497602600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 923317267245000000000,
+        "args": "{\"data\": {\"protocol.community.devhub.near\": {\"blog\": {\"protocol-community-group-3-2807\": {\"\": \"- The third meeting of the NEAR Protocol Community Group took place last week, covering discussions on various topics, including the developer experience on NEAR, a proposed mentorship program for protocol developers, BOS, and IBC.\\\\\\\\n\\\\\\\\n- @joespano.near shared his positive experience building on NEAR and suggested improving visibility of protocol changes that may impact existing work. The idea of a Rust-style weekly newsletter was discussed to address this\\\\\\\\n\\\\\\\\n- Jakob presented a proposal for a mentorship program to support developers in the NEAR ecosystem, seeking feedback from the community: [How to open protocol development to a wider audience](https://t.co/9ZHS6SbdYa)\\\\\\\\n\\\\\\\\n- New participants interested in the Blockchain Operating System (BOS) joined the call, and discussions revolved around potential integration of NEAR with the Inter Blockchain Communication Protocol, currently dependent on NEP-384.[NEAR Announces the Blockchain Operating System](https://t.co/gHw0aBeUJq) | [NEP-384](https://t.co/20sBor6xNV)\\\\\\\\n\\\\\\\\n- Alexander raised concerns about project visibility within the NEAR protocol, leading to discussions on improving transparency in this aspect.\\\\\\\\n\\\\\\\\n- Plans for a recurring monthly time for the community call were discussed, with a poll to be sent in the Telegram community group to gather input on meeting time options.\\\\\\\\n\\\\\\\\n- If you missed the meeting, you can check out the recording [here](https://youtu.be/Sx1I4YA3gNk)\\\\\\\\n\\\\\\\\n\", \"metadata\": {\"id\": \"undefined\", \"title\": \"Protocol Community Group #3\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Discussions on developer experience on NEAR, a proposed mentorship program for protocol developers, BOS, and IBC\", \"createdAt\": \"2024-01-15\", \"updatedAt\": \"2024-01-15\", \"description\": \"Summary \", \"publishedAt\": \"2024-01-15\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4164030910526e+21
+    }
+  },
+  {
+    "id": "5424004962",
+    "receipt_id": "G8B4Z1gC4FiJHXy25nEQYixAQvqpPCYUiVqDGuUTHJ5g",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6Lh4twboEsUAksSB5E9A43sKA54tXUJ3M7j6ckwfmcqc",
+      "block_height": 120515324,
+      "block_timestamp": 1717618642710158300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4544862816854,
+      "tokens_burnt": 454486281685400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "5qAHS99aBsTwXUby7GRJPwoxa96RYPucpjYMwEjknauL",
+    "included_in_block_hash": "3AsiPHq3BSiYv4HCjySBThNe5w1pTK5fPDWHwsy8JJUK",
+    "block_timestamp": "1717618641422250306",
+    "block": {
+      "block_height": 120515323
+    },
+    "receipt_conversion_tokens_burnt": "31035580421800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 454486281685400000000,
+        "args": "{\"data\": {\"blog\": {\"protocol-work-group-5-2808\": {\"\": \"- The Work Group voted to **approve** NEP-492, which restricts the creation of Ethereum addresses on NEAR. This potentially enables the future use of Ethereum wallets to perform NEAR transactions, further expanding NEAR and Ethereum/EVM interoperability.\\\\\\\\n\\\\\\\\n- [Proposal to restrict ethereum address on NEAR](https://t.co/3fJMbZmGZ0)\\\\\\\\n\\\\\\\\n- Learn more on the NEP and watch the recording [here](https://youtu.be/oi0ooi9QBuk). A big thank you to the author for submitting this NEP and to everyone who helped review it.\\\\\\\\n\\\\\\\\n-Join our community telegram to stay updated with all community/work group calls \\\\\\\\u{1f680}\", \"metadata\": {\"id\": \"undefined\", \"title\": \"Protocol Work Group #5\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Vote on NEP\\\\\\\\u{2013}492: Restricting Ethereum Addresses on NEAR\", \"createdAt\": \"2024-01-15\", \"updatedAt\": \"2024-01-15\", \"description\": \"Summary \", \"publishedAt\": \"2024-01-15\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"protocol\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.616214455802e+21
+    }
+  },
+  {
+    "id": "5424005251",
+    "receipt_id": "3aauLabERjhqdEGzCGMdrEgc7nLA7wYJ4XQvx8aTghEu",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5AdV8vfCpt8ZAfQxMw1yYGBwLC2d9JZcbDuwWWc8sCPk",
+      "block_height": 120515325,
+      "block_timestamp": 1717618644091049700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 11306925936948,
+      "tokens_burnt": 1.1306925936948e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5qAHS99aBsTwXUby7GRJPwoxa96RYPucpjYMwEjknauL",
+    "included_in_block_hash": "3AsiPHq3BSiYv4HCjySBThNe5w1pTK5fPDWHwsy8JJUK",
+    "block_timestamp": "1717618641422250306",
+    "block": {
+      "block_height": 120515323
+    },
+    "receipt_conversion_tokens_burnt": "31035580421800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.1306925936948e+21,
+        "args": "{\"data\": {\"protocol.community.devhub.near\": {\"blog\": {\"protocol-work-group-5-2808\": {\"\": \"- The Work Group voted to **approve** NEP-492, which restricts the creation of Ethereum addresses on NEAR. This potentially enables the future use of Ethereum wallets to perform NEAR transactions, further expanding NEAR and Ethereum/EVM interoperability.\\\\\\\\n\\\\\\\\n- [Proposal to restrict ethereum address on NEAR](https://t.co/3fJMbZmGZ0)\\\\\\\\n\\\\\\\\n- Learn more on the NEP and watch the recording [here](https://youtu.be/oi0ooi9QBuk). A big thank you to the author for submitting this NEP and to everyone who helped review it.\\\\\\\\n\\\\\\\\n-Join our community telegram to stay updated with all community/work group calls \\\\\\\\u{1f680}\", \"metadata\": {\"id\": \"undefined\", \"title\": \"Protocol Work Group #5\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Vote on NEP\\\\\\\\u{2013}492: Restricting Ethereum Addresses on NEAR\", \"createdAt\": \"2024-01-15\", \"updatedAt\": \"2024-01-15\", \"description\": \"Summary \", \"publishedAt\": \"2024-01-15\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.616214455802e+21
+    }
+  },
+  {
+    "id": "5424006318",
+    "receipt_id": "7ZQKf1scyimRgwTT1Heq9sCLAXpgWm6s1d5xkEB6VN4P",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9v1DGu3nG3vvRksezRYX9zTHD6BnfjyL2uLZjQDuXXm9",
+      "block_height": 120515328,
+      "block_timestamp": 1717618648174639900
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4603844865449,
+      "tokens_burnt": 460384486544900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "Bb7SForGpDvz7phpePeJaZGEDowJkCUqGpSQznKU8pga",
+    "included_in_block_hash": "2GA5P4qcJiNqiCCwPo9WVH9nLt5GNKw5kgpm7npm67Xp",
+    "block_timestamp": "1717618646811434735",
+    "block": {
+      "block_height": 120515327
+    },
+    "receipt_conversion_tokens_burnt": "31048325245600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 460384486544900000000,
+        "args": "{\"data\": {\"blog\": {\"protocol-work-group-call-6-2809\": {\"\": \"- The Work Group voted to **approve** [NEP-491](https://t.co/9JpFgL0FfO), which introduces non-refundable storage, allowing businesses to create accounts with persistent state for users without worrying about refund abuse. \\\\\\\\n\\\\\\\\n- The Work Group voted to **approve** [NEP-508](https://t.co/g1eUZALygs), which proposes a new approach to resharding (v2), extending NEP-40 by addressing shard overloading and optimizing network performance. \\\\\\\\n\\\\\\\\n- If you missed the meeting, Check out the recording [here](https://www.youtube.com/watch?v=84d9AobpfY4&list=PL9tzQn_TEuFVetFJmhs7FiCB7MejFXAJR)\\\\\\\\n\\\\\\\\n- Join our Protocol Telegram group to stay updated with Community/Work Group Calls \\\\\\\\u{26a1}\\\\\\\\u{fe0f}\\\\\\\\n\", \"metadata\": {\"id\": \"undefined\", \"title\": \"Protocol Work Group Call #6\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Vote on NEP-491 and NEP-508\", \"createdAt\": \"2024-01-15\", \"updatedAt\": \"2024-01-15\", \"description\": \"Summary \", \"publishedAt\": \"2024-01-15\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"protocol\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6307082642291e+21
+    }
+  },
+  {
+    "id": "5424006539",
+    "receipt_id": "4eh6Lr3z2WiwM8ay2LB2DC87k9uKoiCPbaRfKy4mwBsx",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5f36PjqztTJNud1om1uuCKSpbg6aGVrW3dseH9zpqeh",
+      "block_height": 120515329,
+      "block_timestamp": 1717618649469554700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 11392754524386,
+      "tokens_burnt": 1.1392754524386e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Bb7SForGpDvz7phpePeJaZGEDowJkCUqGpSQznKU8pga",
+    "included_in_block_hash": "2GA5P4qcJiNqiCCwPo9WVH9nLt5GNKw5kgpm7npm67Xp",
+    "block_timestamp": "1717618646811434735",
+    "block": {
+      "block_height": 120515327
+    },
+    "receipt_conversion_tokens_burnt": "31048325245600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.1392754524386e+21,
+        "args": "{\"data\": {\"protocol.community.devhub.near\": {\"blog\": {\"protocol-work-group-call-6-2809\": {\"\": \"- The Work Group voted to **approve** [NEP-491](https://t.co/9JpFgL0FfO), which introduces non-refundable storage, allowing businesses to create accounts with persistent state for users without worrying about refund abuse. \\\\\\\\n\\\\\\\\n- The Work Group voted to **approve** [NEP-508](https://t.co/g1eUZALygs), which proposes a new approach to resharding (v2), extending NEP-40 by addressing shard overloading and optimizing network performance. \\\\\\\\n\\\\\\\\n- If you missed the meeting, Check out the recording [here](https://www.youtube.com/watch?v=84d9AobpfY4&list=PL9tzQn_TEuFVetFJmhs7FiCB7MejFXAJR)\\\\\\\\n\\\\\\\\n- Join our Protocol Telegram group to stay updated with Community/Work Group Calls \\\\\\\\u{26a1}\\\\\\\\u{fe0f}\\\\\\\\n\", \"metadata\": {\"id\": \"undefined\", \"title\": \"Protocol Work Group Call #6\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Vote on NEP-491 and NEP-508\", \"createdAt\": \"2024-01-15\", \"updatedAt\": \"2024-01-15\", \"description\": \"Summary \", \"publishedAt\": \"2024-01-15\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6307082642291e+21
+    }
+  },
+  {
+    "id": "5424008091",
+    "receipt_id": "1NPgyRwnrMhxKGpHiYuG2jMCoDiBekRygfZf6KmbxS3",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7sMUPqRG7k4bUZbXhSgqsCFzSP7yPN27C6FcQhBFFfPi",
+      "block_height": 120515333,
+      "block_timestamp": 1717618653686794800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4537220993561,
+      "tokens_burnt": 453722099356100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "347dNoD8LNtrVcR3G3DA7bmi6BbxndzfUdGoo1VTHb9T",
+    "included_in_block_hash": "BWaaBuvLr61J3tURPhA1o4Fi9L2UnCSgWj35Kccs4QqP",
+    "block_timestamp": "1717618652743713770",
+    "block": {
+      "block_height": 120515332
+    },
+    "receipt_conversion_tokens_burnt": "31008078433600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 453722099356100000000,
+        "args": "{\"data\": {\"blog\": {\"protocol-work-group-call-7-2810\": {\"\": \"\\\\\\\\nModerated by @victorkanu1.near\\\\\\\\n\\\\\\\\n- The Work Group voted to **approve** NEP-488, which introduces NEAR runtime functions for efficient BLS signature and zkSNARK verification on the BLS12-381 curve, enhancing security and unlocking compatibility with other blockchains.\\\\\\\\n\\\\\\\\n- Learn more about [NEP-488](https://t.co/cMdgyoKmYR)\\\\\\\\n\\\\\\\\n- If you missed the meeting, check out the recording [here](https://youtu.be/PpcPHZeVJMs)\\\\\\\\n\\\\\\\\n- Join our Protocol Telegram Group to stay updated on community/work group calls \\\\\\\\u{1f4ab}\", \"metadata\": {\"id\": \"undefined\", \"title\": \"Protocol Work Group Call #7\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Voting on NEP-488\", \"createdAt\": \"2024-01-15\", \"updatedAt\": \"2024-01-15\", \"description\": \"Summary \", \"publishedAt\": \"2024-01-15\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"protocol\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6255629085359e+21
+    }
+  },
+  {
+    "id": "5424008191",
+    "receipt_id": "5jNan7Z8Grta6PsbXUGqx6mQ9BYauvyynsFhNJBAdozH",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7KEbKqBrWfn2hcaPTCUGshpsQLQpAU3RzjrkxMb9rBdW",
+      "block_height": 120515334,
+      "block_timestamp": 1717618654881071000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 11408327307462,
+      "tokens_burnt": 1.1408327307462e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "347dNoD8LNtrVcR3G3DA7bmi6BbxndzfUdGoo1VTHb9T",
+    "included_in_block_hash": "BWaaBuvLr61J3tURPhA1o4Fi9L2UnCSgWj35Kccs4QqP",
+    "block_timestamp": "1717618652743713770",
+    "block": {
+      "block_height": 120515332
+    },
+    "receipt_conversion_tokens_burnt": "31008078433600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.1408327307462e+21,
+        "args": "{\"data\": {\"protocol.community.devhub.near\": {\"blog\": {\"protocol-work-group-call-7-2810\": {\"\": \"\\\\\\\\nModerated by @victorkanu1.near\\\\\\\\n\\\\\\\\n- The Work Group voted to **approve** NEP-488, which introduces NEAR runtime functions for efficient BLS signature and zkSNARK verification on the BLS12-381 curve, enhancing security and unlocking compatibility with other blockchains.\\\\\\\\n\\\\\\\\n- Learn more about [NEP-488](https://t.co/cMdgyoKmYR)\\\\\\\\n\\\\\\\\n- If you missed the meeting, check out the recording [here](https://youtu.be/PpcPHZeVJMs)\\\\\\\\n\\\\\\\\n- Join our Protocol Telegram Group to stay updated on community/work group calls \\\\\\\\u{1f4ab}\", \"metadata\": {\"id\": \"undefined\", \"title\": \"Protocol Work Group Call #7\", \"author\": \"victorkanu1.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"Voting on NEP-488\", \"createdAt\": \"2024-01-15\", \"updatedAt\": \"2024-01-15\", \"description\": \"Summary \", \"publishedAt\": \"2024-01-15\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6255629085359e+21
+    }
+  },
+  {
+    "id": "5424009288",
+    "receipt_id": "Bp5q16VjPjxK7X7vAAVym8TpajuMv1Xy9QWfSWRVeVHT",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3Z8SJGuFNwcLzxbwgiGwcpLyWDxYogSvA6MphB9XBnXJ",
+      "block_height": 120515337,
+      "block_timestamp": 1717618658394053000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4403654090706,
+      "tokens_burnt": 440365409070600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "FLgs5P6jD5bfUrKUFmRroPvKMh5nXSrUPq1BLHiEXqdB",
+    "included_in_block_hash": "9RTX5QwM33wDByvLX7QoUf2UzCSLNweeJMpQGjPjZN4h",
+    "block_timestamp": "1717618657324741611",
+    "block": {
+      "block_height": 120515336
+    },
+    "receipt_conversion_tokens_burnt": "31101764068200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 440365409070600000000,
+        "args": "{\"data\": {\"blog\": {\"community-call-1-recap-2846\": {\"\": \"**MODERATORS**: Ori A, Maksym Z, Vlad F\\\\\\\\n**VIDEO**: https://www.youtube.com/watch?v=3gdLiZS7Ibw&feature=youtu.be\\\\\\\\n\\\\\\\\n## AGENDA\\\\\\\\n- NEAR ZK Light Client\\\\\\\\n- Value of Zero-Knowledge CG to NEAR ecosystem\\\\\\\\n- Challenges to building a ZK bridge\\\\\\\\n\\\\\\\\n## TOPIC SUMMARIES\\\\\\\\n- **NEAR ZK Light Client**: The group discussed the variety of benefits of a ZK Light client on NEAR\\\\\\\\n\\\\\\\\n- **Value of the Zero-Knowledge CG to NEAR ecosystem**: The group discussed the acute need for auditors, security criteria in ZK space, and how the ZK CG can help close that gap in aspects like security standards and community audits.\\\\\\\\n\\\\\\\\n- **Challenges to building ZK bridge**: The group discussed the feasibility and practicality of implementing a recursive ZK light client (Plonky2), and the challenges of ZK bridges\", \"metadata\": {\"id\": \"2846\", \"title\": \"Community Call #1 Recap\", \"author\": \"pivortex.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"NEAR ZK Light Clients, Value of the ZK CG to the ecosystem, Challanges building a ZK bridge\", \"createdAt\": \"2024-04-10\", \"updatedAt\": \"2024-04-10\", \"description\": \"NEAR ZK Light Clients, Value of the ZK CG to the ecosystem, Challanges building a ZK bridge\", \"publishedAt\": \"2024-04-10\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"zero-knowledge\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6110537759068e+21
+    }
+  },
+  {
+    "id": "5424009441",
+    "receipt_id": "7GxmHsGbe3j9dFWWZzUJj9TTguThXM1kB81DBdiqF1bn",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8UGfy1Uhrfj5CdUVnPCxkUbZwTtWJsrzW9n83mvFUXAn",
+      "block_height": 120515338,
+      "block_timestamp": 1717618659398941200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 11395866027680,
+      "tokens_burnt": 1.139586602768e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "FLgs5P6jD5bfUrKUFmRroPvKMh5nXSrUPq1BLHiEXqdB",
+    "included_in_block_hash": "9RTX5QwM33wDByvLX7QoUf2UzCSLNweeJMpQGjPjZN4h",
+    "block_timestamp": "1717618657324741611",
+    "block": {
+      "block_height": 120515336
+    },
+    "receipt_conversion_tokens_burnt": "31101764068200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.139586602768e+21,
+        "args": "{\"data\": {\"zero-knowledge.community.devhub.near\": {\"blog\": {\"community-call-1-recap-2846\": {\"\": \"**MODERATORS**: Ori A, Maksym Z, Vlad F\\\\\\\\n**VIDEO**: https://www.youtube.com/watch?v=3gdLiZS7Ibw&feature=youtu.be\\\\\\\\n\\\\\\\\n## AGENDA\\\\\\\\n- NEAR ZK Light Client\\\\\\\\n- Value of Zero-Knowledge CG to NEAR ecosystem\\\\\\\\n- Challenges to building a ZK bridge\\\\\\\\n\\\\\\\\n## TOPIC SUMMARIES\\\\\\\\n- **NEAR ZK Light Client**: The group discussed the variety of benefits of a ZK Light client on NEAR\\\\\\\\n\\\\\\\\n- **Value of the Zero-Knowledge CG to NEAR ecosystem**: The group discussed the acute need for auditors, security criteria in ZK space, and how the ZK CG can help close that gap in aspects like security standards and community audits.\\\\\\\\n\\\\\\\\n- **Challenges to building ZK bridge**: The group discussed the feasibility and practicality of implementing a recursive ZK light client (Plonky2), and the challenges of ZK bridges\", \"metadata\": {\"id\": \"2846\", \"title\": \"Community Call #1 Recap\", \"author\": \"pivortex.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"NEAR ZK Light Clients, Value of the ZK CG to the ecosystem, Challanges building a ZK bridge\", \"createdAt\": \"2024-04-10\", \"updatedAt\": \"2024-04-10\", \"description\": \"NEAR ZK Light Clients, Value of the ZK CG to the ecosystem, Challanges building a ZK bridge\", \"publishedAt\": \"2024-04-10\", \"communityAddonId\": \"blogv2\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6110537759068e+21
+    }
+  },
+  {
+    "id": "5424010502",
+    "receipt_id": "FdokRX2C4sgN3whXoGvEzS5iUCLFvrxhGCzkZt76soWc",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "zRSDujN25mne7DCFVEtXs4ERVMovPLp9twkMhvU6A6E",
+      "block_height": 120515342,
+      "block_timestamp": 1717618663854675700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4479885871161,
+      "tokens_burnt": 447988587116100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8gMB5iybLkbJV9imkU9r9zyC96rv5gP9rtNMCEUArqLK",
+    "included_in_block_hash": "E4mGsq1Mzv1FiDABUE9onG3vpdZa8xJpcWzvdtTzdSps",
+    "block_timestamp": "1717618662682463455",
+    "block": {
+      "block_height": 120515341
+    },
+    "receipt_conversion_tokens_burnt": "31280862381600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 447988587116100000000,
+        "args": "{\"data\": {\"blog\": {\"community-call-2-recap-2847\": {\"\": \"**MODERATORS**: Ori A, Maksym Z, Vlad Frolov\\\\\\\\n**VIDEO**: https://www.youtube.com/watch?v=WTWq6UxifHA&list=PLrLLmjcJVAB9H6Jhm33S7nhwSadQplbGD&index=7\\\\\\\\n\\\\\\\\n## AGENDA : \\\\\\\\n- MiMC Precompile\\\\\\\\n- ZK Auditors\\\\\\\\n- ED25519 Compression\\\\\\\\n- Wormhole Update\\\\\\\\n- ZK Identity\\\\\\\\n\\\\\\\\n## TOPIC SUMMARIES\\\\\\\\n- **MiMC Precompile**: There is a general consensus that translating crypto primitives in blockchain to ZK Circuits is too costly, hence the need for more cost-effective and easier alternatives such as an MiMC Hash.\\\\\\\\n\\\\\\\\n- **ZK Auditors**: There is general agreement that there is a need for auditors in the ZK space to verify the security of critical projects. A proposal was made to whitelist select ZK qualified auditors.\\\\\\\\n\\\\\\\\n- **ED25519 Compression**: The group discussed adding an ED25519 Compression to Aurora\\\\\\\\u{2019}s rainbow bridge. Electron Labs proposed using their code as a test bridge.\\\\\\\\n\\\\\\\\n- **Wormhole Update**: The Wormhole team shared an update on their architecture plan for bridging using ZK Light Client. The need to determine how to interoperate non-ZK and ZK bridges was raised, since not all chains allow ZK bridges. The team relayed their evaluation of a proof system compatible with all chains. Plonke2 was cited as a good example.\\\\\\\\n\\\\\\\\n- **ZK Identity**: Reps from Notebook Labs discussed their partnership with NEAR to help projects credential their users, reduce fraud and eliminate bad actors.\\\\\\\\n\\\\\\\\n\\\\\\\\n## ACTION ITEMS\\\\\\\\n- Proposal to whitelist ZK qualified auditors by Electron Labs.\\\\\\\\n- Proposal to use code as test bridge by Electron Labs.\\\\\\\\n- Proposal to use ZK to verify credentials of users of projects on NEAR.\", \"metadata\": {\"id\": \"2847\", \"title\": \"Community Call #2 Recap\", \"author\": \"pivortex.near\", \"status\": \"DRAFT\", \"category\": \"news\", \"subtitle\": \"MiMC Precompile, ZK auditors, ED25519 Compression, Wormhole update, ZK identity\", \"createdAt\": \"2024-04-10\", \"updatedAt\": \"2024-04-10\", \"description\": \"MiMC Precompile, ZK auditors, ED25519 Compression, Wormhole update, ZK identity\", \"publishedAt\": \"2024-04-10\", \"communityAddonId\": \"blogv2\"}}}}, \"handle\": \"zero-knowledge\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6257731618675e+21
+    }
+  }
+]

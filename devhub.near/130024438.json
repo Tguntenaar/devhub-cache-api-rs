@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "9107123130",
+    "receipt_id": "94U3VF5Hsp9UzV2Ri6ywpC72MFurrQCKjiz2LK9nH393",
+    "predecessor_account_id": "freski.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7rVy7TBtSySx8Xgs6ujJtnw5KNpREUbU6k7cpGY6b92G",
+      "block_height": 130024590,
+      "block_timestamp": 1728581966474165500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5230999172417,
+      "tokens_burnt": 523099917241700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "5RLfv5hRkQ9pYQ6Tq3WuBimsBq9JB6Pq5aq8vdV31rFG",
+    "included_in_block_hash": "14qVC9L2pskoq82sH9zgnM4W5GZvX65yV18CGG6wfwzo",
+    "block_timestamp": "1728581965371782573",
+    "block": {
+      "block_height": 130024589
+    },
+    "receipt_conversion_tokens_burnt": "39293651270000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 523099917241700000000,
+        "args": "{\"body\": {\"name\": \"Tresury Management System - Research and Improvements (15 Jul - 30 Sep )\", \"summary\": \"Over the past month, I conducted alpha testing and usability sessions with key stakeholders, gathering valuable feedback to identify and prioritize usability issues. I proposed and implemented improvements, addressing gaps in the design and resolving various edge cases. Additionally, I developed a draft version of a key process flow. \", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": \"theori.near\", \"description\": \"# **Key Achievements:**\\\\\\\\n\\\\\\\\n\\\\\\\\n**Alpha Testing with NEAR Foundation Members**\\\\\\\\n\\\\\\\\n- Collaborated with [**theori.near**](https://dev.near.org/near/widget/ProfilePage?accountId=theori.near) to conduct the first usability testing and feedback sessions with potential TMS users from NEAR Foundation.\\\\\\\\n- Prepared a usability testing report that outlined general feedback, identified usability issues, and prioritized them.\\\\\\\\n- Developed design improvements based on the findings from the research.\\\\\\\\n\\\\\\\\n**Addressing Corner Cases and Logical Gaps**\\\\\\\\n\\\\\\\\n- As the main TMS developer, [**megha19.near**](https://dev.near.org/near/widget/ProfilePage?accountId=megha19.near) encountered several design gaps and unaddressed scenarios. I focused on finding the most suitable solutions and implemented them.\\\\\\\\n\\\\\\\\n**TMS Creation Flow**\\\\\\\\n\\\\\\\\n- Drafted the initial design for the Treasury Creation Flow.\\\\\\\\n\\\\\\\\t\\\\\\\\n\\\\\\\\n **Cost**\\\\\\\\n- *Rate: $2500/month*\\\\\\\\n- *Total amount: $2500.00 USD*\", \"linked_proposals\": [208], \"receiver_account\": \"freski.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"2500\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": [], \"accepted_terms_and_conditions_version\": 130024542}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7029659881219e+21
+    }
+  },
+  {
+    "id": "9107123418",
+    "receipt_id": "J4awwEpjz87ket7W6jcyq1VJCzvcKKpeHto3NV69JJ1s",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HNkezMHrSQAjaQe9dVGc3WtxaMGiXWqYJNjThsHSMgQZ",
+      "block_height": 130024591,
+      "block_timestamp": 1728581967544495400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4519472018350,
+      "tokens_burnt": 451947201835000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5RLfv5hRkQ9pYQ6Tq3WuBimsBq9JB6Pq5aq8vdV31rFG",
+    "included_in_block_hash": "14qVC9L2pskoq82sH9zgnM4W5GZvX65yV18CGG6wfwzo",
+    "block_timestamp": "1728581965371782573",
+    "block": {
+      "block_height": 130024589
+    },
+    "receipt_conversion_tokens_burnt": "39293651270000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 451947201835000000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *DevDAO Platform* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @freski.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Tresury Management System - Research and Improvements (15 Jul - 30 Sep )\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nOver the past month, I conducted alpha testing and usability sessions with key stakeholders, gathering valuable feedback to identify and prioritize usability issues. I proposed and implemented improvements, addressing gaps in the design and resolving various edge cases. Additionally, I developed a draft version of a key process flow. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=224)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7029659881219e+21
+    }
+  },
+  {
+    "id": "9107123423",
+    "receipt_id": "4kDfecpBdGbFCupT3W15BKZjwUtJNnEqaS8j5nsGoKUs",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HNkezMHrSQAjaQe9dVGc3WtxaMGiXWqYJNjThsHSMgQZ",
+      "block_height": 130024591,
+      "block_timestamp": 1728581967544495400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3333765907309,
+      "tokens_burnt": 333376590730900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "5RLfv5hRkQ9pYQ6Tq3WuBimsBq9JB6Pq5aq8vdV31rFG",
+    "included_in_block_hash": "14qVC9L2pskoq82sH9zgnM4W5GZvX65yV18CGG6wfwzo",
+    "block_timestamp": "1728581965371782573",
+    "block": {
+      "block_height": 130024589
+    },
+    "receipt_conversion_tokens_burnt": "39293651270000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 333376590730900000000,
+        "args": "{\"proposal\": {\"id\": 224, \"snapshot\": {\"name\": \"Tresury Management System - Research and Improvements (15 Jul - 30 Sep )\", \"labels\": [], \"summary\": \"Over the past month, I conducted alpha testing and usability sessions with key stakeholders, gathering valuable feedback to identify and prioritize usability issues. I proposed and implemented improvements, addressing gaps in the design and resolving various edge cases. Additionally, I developed a draft version of a key process flow. \", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"freski.near\", \"timestamp\": \"1728581966474165438\", \"supervisor\": \"theori.near\", \"description\": \"# **Key Achievements:**\\\\\\\\n\\\\\\\\n\\\\\\\\n**Alpha Testing with NEAR Foundation Members**\\\\\\\\n\\\\\\\\n- Collaborated with [**theori.near**](https://dev.near.org/near/widget/ProfilePage?accountId=theori.near) to conduct the first usability testing and feedback sessions with potential TMS users from NEAR Foundation.\\\\\\\\n- Prepared a usability testing report that outlined general feedback, identified usability issues, and prioritized them.\\\\\\\\n- Developed design improvements based on the findings from the research.\\\\\\\\n\\\\\\\\n**Addressing Corner Cases and Logical Gaps**\\\\\\\\n\\\\\\\\n- As the main TMS developer, [**megha19.near**](https://dev.near.org/near/widget/ProfilePage?accountId=megha19.near) encountered several design gaps and unaddressed scenarios. I focused on finding the most suitable solutions and implemented them.\\\\\\\\n\\\\\\\\n**TMS Creation Flow**\\\\\\\\n\\\\\\\\n- Drafted the initial design for the Treasury Creation Flow.\\\\\\\\n\\\\\\\\t\\\\\\\\n\\\\\\\\n **Cost**\\\\\\\\n- *Rate: $2500/month*\\\\\\\\n- *Total amount: $2500.00 USD*\", \"linked_proposals\": [208], \"receiver_account\": \"freski.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"2500\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"author_id\": \"freski.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7029659881219e+21
+    }
+  },
+  {
+    "id": "9107123427",
+    "receipt_id": "DhHByhat2kwAMJ8LjcVGXyaR68yszfyoY7V2LzsysNtz",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HNkezMHrSQAjaQe9dVGc3WtxaMGiXWqYJNjThsHSMgQZ",
+      "block_height": 130024591,
+      "block_timestamp": 1728581967544495400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3552486270443,
+      "tokens_burnt": 355248627044300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5RLfv5hRkQ9pYQ6Tq3WuBimsBq9JB6Pq5aq8vdV31rFG",
+    "included_in_block_hash": "14qVC9L2pskoq82sH9zgnM4W5GZvX65yV18CGG6wfwzo",
+    "block_timestamp": "1728581965371782573",
+    "block": {
+      "block_height": 130024589
+    },
+    "receipt_conversion_tokens_burnt": "39293651270000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 355248627044300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":224,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"freski.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":224,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"freski.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.7029659881219e+21
+    }
+  },
+  {
+    "id": "9107556490",
+    "receipt_id": "9Y2pa2rGfc6CnduD7qNY3SW7F6F1axhXiyQdhB8FpUD4",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GUbgYCCgPxcrudYwpJZJFSop118tKoEqqgK4CiCtD7vL",
+      "block_height": 130025713,
+      "block_timestamp": 1728583197175591000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4319839135727,
+      "tokens_burnt": 431983913572700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "5DXAztjhD8UyoVBcUcP8vHZP3FU4y8AATNT2amVVq3tA",
+    "included_in_block_hash": "7ukru2984SYQiiPRZQaHqZgpPcqGFKoQZGMPoQu9pnPS",
+    "block_timestamp": "1728583196097368637",
+    "block": {
+      "block_height": 130025712
+    },
+    "receipt_conversion_tokens_burnt": "31702403842000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 431983913572700000000,
+        "args": "{\"id\": 224, \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 817109343326600000000
+    }
+  },
+  {
+    "id": "9107556700",
+    "receipt_id": "BdLMT21k1u5DrPBigmNKkA7Qc7gtDe3xfpXHjtXqvJ1v",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GHX3ubKgcURHvTWnizuw6aMoEUd5y8s8VaCzrCpp4poi",
+      "block_height": 130025714,
+      "block_timestamp": 1728583198187689000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3534230259119,
+      "tokens_burnt": 353423025911900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5DXAztjhD8UyoVBcUcP8vHZP3FU4y8AATNT2amVVq3tA",
+    "included_in_block_hash": "7ukru2984SYQiiPRZQaHqZgpPcqGFKoQZGMPoQu9pnPS",
+    "block_timestamp": "1728583196097368637",
+    "block": {
+      "block_height": 130025712
+    },
+    "receipt_conversion_tokens_burnt": "31702403842000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353423025911900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"freski.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":224,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 817109343326600000000
+    }
+  },
+  {
+    "id": "9107559024",
+    "receipt_id": "BenpVSMBrYW26Ks4vKg9ampseQexT8UMobfBzsq1yVEH",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9xKxc4h1Lkb32FYMLAxiKiaSHvbCt6s7dowtn5hGK1Pj",
+      "block_height": 130025726,
+      "block_timestamp": 1728583210947113500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4612071226891,
+      "tokens_burnt": 461207122689100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "6WkypSwfwbhzBCLRUQyw13kKnhqcoKhmxYmZruGKYXFN",
+    "included_in_block_hash": "EoAuK181mRLMsaw27CpJUFwcLbGjri2vJPJpy8483BU4",
+    "block_timestamp": "1728583209840093010",
+    "block": {
+      "block_height": 130025725
+    },
+    "receipt_conversion_tokens_burnt": "31711940585000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 461207122689100000000,
+        "args": "{\"id\": 224, \"timeline\": {\"status\": \"APPROVED\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 845381593397600000000
+    }
+  },
+  {
+    "id": "9107559271",
+    "receipt_id": "3bnjocqCe4AeQ8ypJyG1cqCXhQheYdUDzp8sTStMyEPT",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "67yYyXGAsCL8zQvThTQYMV2MdQt8QXXvQQSMwcXXNTLm",
+      "block_height": 130025727,
+      "block_timestamp": 1728583212078227500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3524625301235,
+      "tokens_burnt": 352462530123500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "6WkypSwfwbhzBCLRUQyw13kKnhqcoKhmxYmZruGKYXFN",
+    "included_in_block_hash": "EoAuK181mRLMsaw27CpJUFwcLbGjri2vJPJpy8483BU4",
+    "block_timestamp": "1728583209840093010",
+    "block": {
+      "block_height": 130025725
+    },
+    "receipt_conversion_tokens_burnt": "31711940585000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352462530123500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"freski.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":224,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 845381593397600000000
+    }
+  },
+  {
+    "id": "9107694772",
+    "receipt_id": "BjupEB3FVvsdhcR3x7mMqR88HiEpLxErAPMZn51bhwwt",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5H3DZYbvENwy57qoYaxL65n2GhprNoeDZWmJMHTj1p8m",
+      "block_height": 130026096,
+      "block_timestamp": 1728583625265962200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5737646910351,
+      "tokens_burnt": 573764691035100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "Af5MRZ6FPzxPLrTvPdMZ4yzXJ9DLu34qVt7yyNNy8szB",
+    "included_in_block_hash": "144BwWqCJNU1dwtfYqQWxQFCQbGCuZTbQ3EvEMBjt5g1",
+    "block_timestamp": "1728583624327448875",
+    "block": {
+      "block_height": 130026095
+    },
+    "receipt_conversion_tokens_burnt": "54113749892000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 573764691035100000000,
+        "args": "{\"body\": {\"name\": \"DevHub Developer Contributor report by Thomas for 09/16/2024 \\\\\\\\u{2013}\\\\\\\\u{a0}09/27/2024\", \"summary\": \"I worked on the development flow of Subquery\\\\\\\\\\\\'s indexer until we decided to take another route with our own solution since we only produce around 200 proposals a year. Additionally, Subquery became harder to work with as the developments progressed and gradually became overkill for our use case.\", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"theori.near\", \"description\": \"## Summary of Activities\\\\\\\\n\\\\\\\\n**Week 1: September 16 \\\\\\\\u{2013}\\\\\\\\u{a0}September 20**\\\\\\\\n\\\\\\\\nSeptember 16 - 5 hours\\\\\\\\n- Worked on the SubQuery test driven development approach in order to iterate quicker over RFP indexing development. [928](https://github.com/NEAR-DevHub/neardevhub-bos/issues/928)\\\\\\\\n\\\\\\\\nSeptember 17 - 5 hours\\\\\\\\n- SubQuery test driven development approach to develop indexing RFP\\\\\\\\\\\\'s. [928](https://github.com/NEAR-DevHub/neardevhub-bos/issues/928)\\\\\\\\n\\\\\\\\nSeptember 18 - 5 hours\\\\\\\\n- Attended standup\\\\\\\\n- Call with Peter on subqueries testing library / implementing our own solution.\\\\\\\\n- Investigated how to implement our own test driven solution, like storing indexable blocks locally and manually creating the database entries to quickly be able to test. [928](https://github.com/NEAR-DevHub/neardevhub-bos/issues/928)\\\\\\\\n\\\\\\\\nSeptember 19 - 5 hours\\\\\\\\n- Worked on linking a proposal in the function mapped to `add_propsosal`. Creating a two way relationship between linked proposals and a proposal entity.\\\\\\\\n- Started developing with composite id\\\\\\\\\\\\'s in order to manage duplicate keys of proposals and linked proposals between different accounts like events, infra and DevHub. This way we don\\\\\\\\\\\\'t have to deploy 3x 150 / month indexers but just 1. [928](https://github.com/NEAR-DevHub/neardevhub-bos/issues/928)\\\\\\\\n\\\\\\\\nSeptember 20 - 5 hours\\\\\\\\n- Deployed on Subquery network in order to share the code with the subquery team. [928](https://github.com/NEAR-DevHub/neardevhub-bos/issues/928)\\\\\\\\n- Found these showstoppers after further investigation, so decided to investigate alternative solutions to Subquery\\\\\\\\n\\\\\\\\t- The testing framework is designed for testing individual mapping handlers, not for integration or end-to-end testing of SubQuery projects.\\\\\\\\n\\\\\\\\t- It does not persist state between test cases, making it unsuitable for scenarios where mapping handlers rely on previous state changes.\\\\\\\\n\\\\\\\\t- The framework does not support testing dynamic data sources, focusing instead on validating data indexed in SubQuery projects, but without functionality for testing dynamic data source changes during runtime.\\\\\\\\n\\\\\\\\n**Total hours: 25 hours**\\\\\\\\n\\\\\\\\n\\\\\\\\n**Week 2: September 23 \\\\\\\\u{2013}\\\\\\\\u{a0}September 27**\\\\\\\\n\\\\\\\\nSeptember 23 - 5 hours\\\\\\\\n- Researched building a cache API using Bun, TypeScript, and Rust Rocket. Initiated the development of a minimal Proof of Concept (PoC)\\\\\\\\n- Deployed demo\\\\\\\\\\\\'s on fly.io of both serverless microVm\\\\\\\\\\\\'s as well as postgres database.\\\\\\\\n- Worked on [948](https://github.com/NEAR-DevHub/neardevhub-bos/issues/948)\\\\\\\\n\\\\\\\\nSeptember 25 - 5 hours\\\\\\\\n- Following feedback from the SubQuery team, I attempted one final integration, but encountered additional issues that hindered further progress. [928](https://github.com/NEAR-DevHub/neardevhub-bos/issues/928) \\\\\\\\n- Attended standup\\\\\\\\n\\\\\\\\nSeptember 26 - 5 hours\\\\\\\\n- Worked on [948](https://github.com/NEAR-DevHub/neardevhub-bos/issues/948) while I studied more about rust macro\\\\\\\\\\\\'s and how they work in the rust rocket framework among other Rust features.\\\\\\\\n\\\\\\\\nSeptember 27 - 5 hours\\\\\\\\n- Got near-api to work on a rocket endpoint\\\\\\\\n- Created issue [948](https://github.com/NEAR-DevHub/neardevhub-bos/issues/948) after I had been working on a different solution than subquery and closing [928](https://github.com/NEAR-DevHub/neardevhub-bos/issues/928) .\\\\\\\\n- While integrating the new near-api-rs into my project, I discovered its dependencies had been removed from the crates registry. Upon further investigation, I found that the repository had not yet been published to crates.io, requiring me to reference it locally or link directly to the GitHub repository to utilize the newly developed RPC library. [948](https://github.com/NEAR-DevHub/neardevhub-bos/issues/948)\\\\\\\\n\\\\\\\\n**Total hours: 20 hours**\\\\\\\\n  \\\\\\\\n---\\\\\\\\n## Cost\\\\\\\\n\\\\\\\\n- Total hours: 45\\\\\\\\n-  Rate: $100/hour ~ \\\\\\\\u{20ac}90/hour is an average rate for a mid-level freelance front-end web3 developer in the Netherlands, ranging from \\\\\\\\u{20ac}35 (absolute beginner) to \\\\\\\\u{20ac}150 (senior) [for example](https://zzpservicedesk.nl/uurtarief-freelance-developer/)\\\\\\\\n- Total amount: $4500 USD\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"thomasguntenaar.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"4500\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"labels\": [], \"accepted_terms_and_conditions_version\": 130025832}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8043879200155e+21
+    }
+  },
+  {
+    "id": "9107694963",
+    "receipt_id": "FkvAmSqBiKpNTqBowESE2N2fBnDqrtRGY5i9XVjPMfXC",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3zgVJodWvzWhKntF9sb9XoxSLaLbJTWpVdaHQmxcL7tu",
+      "block_height": 130026097,
+      "block_timestamp": 1728583626428627000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4590062942382,
+      "tokens_burnt": 459006294238200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Af5MRZ6FPzxPLrTvPdMZ4yzXJ9DLu34qVt7yyNNy8szB",
+    "included_in_block_hash": "144BwWqCJNU1dwtfYqQWxQFCQbGCuZTbQ3EvEMBjt5g1",
+    "block_timestamp": "1728583624327448875",
+    "block": {
+      "block_height": 130026095
+    },
+    "receipt_conversion_tokens_burnt": "54113749892000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 459006294238200000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *DevDAO Platform* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @thomasguntenaar.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}DevHub Developer Contributor report by Thomas for 09/16/2024 \\\\\\\\u{2013}\\\\\\\\u{a0}09/27/2024\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nI worked on the development flow of Subquery\\\\\\\\\\\\'s indexer until we decided to take another route with our own solution since we only produce around 200 proposals a year. Additionally, Subquery became harder to work with as the developments progressed and gradually became overkill for our use case.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=225)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8043879200155e+21
+    }
+  },
+  {
+    "id": "9107694964",
+    "receipt_id": "JDRwudcJLmu64wJjvzexQGxQXDsbsvt7DjhUxP5THxRx",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3zgVJodWvzWhKntF9sb9XoxSLaLbJTWpVdaHQmxcL7tu",
+      "block_height": 130026097,
+      "block_timestamp": 1728583626428627000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3630451899631,
+      "tokens_burnt": 363045189963100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "Af5MRZ6FPzxPLrTvPdMZ4yzXJ9DLu34qVt7yyNNy8szB",
+    "included_in_block_hash": "144BwWqCJNU1dwtfYqQWxQFCQbGCuZTbQ3EvEMBjt5g1",
+    "block_timestamp": "1728583624327448875",
+    "block": {
+      "block_height": 130026095
+    },
+    "receipt_conversion_tokens_burnt": "54113749892000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 363045189963100000000,
+        "args": "{\"proposal\": {\"id\": 225, \"snapshot\": {\"name\": \"DevHub Developer Contributor report by Thomas for 09/16/2024 \\\\\\\\u{2013}\\\\\\\\u{a0}09/27/2024\", \"labels\": [], \"summary\": \"I worked on the development flow of Subquery\\\\\\\\\\\\'s indexer until we decided to take another route with our own solution since we only produce around 200 proposals a year. Additionally, Subquery became harder to work with as the developments progressed and gradually became overkill for our use case.\", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"editor_id\": \"thomasguntenaar.near\", \"timestamp\": \"1728583625265962140\", \"supervisor\": \"theori.near\", \"description\": \"## Summary of Activities\\\\\\\\n\\\\\\\\n**Week 1: September 16 \\\\\\\\u{2013}\\\\\\\\u{a0}September 20**\\\\\\\\n\\\\\\\\nSeptember 16 - 5 hours\\\\\\\\n- Worked on the SubQuery test driven development approach in order to iterate quicker over RFP indexing development. [928](https://github.com/NEAR-DevHub/neardevhub-bos/issues/928)\\\\\\\\n\\\\\\\\nSeptember 17 - 5 hours\\\\\\\\n- SubQuery test driven development approach to develop indexing RFP\\\\\\\\\\\\'s. [928](https://github.com/NEAR-DevHub/neardevhub-bos/issues/928)\\\\\\\\n\\\\\\\\nSeptember 18 - 5 hours\\\\\\\\n- Attended standup\\\\\\\\n- Call with Peter on subqueries testing library / implementing our own solution.\\\\\\\\n- Investigated how to implement our own test driven solution, like storing indexable blocks locally and manually creating the database entries to quickly be able to test. [928](https://github.com/NEAR-DevHub/neardevhub-bos/issues/928)\\\\\\\\n\\\\\\\\nSeptember 19 - 5 hours\\\\\\\\n- Worked on linking a proposal in the function mapped to `add_propsosal`. Creating a two way relationship between linked proposals and a proposal entity.\\\\\\\\n- Started developing with composite id\\\\\\\\\\\\'s in order to manage duplicate keys of proposals and linked proposals between different accounts like events, infra and DevHub. This way we don\\\\\\\\\\\\'t have to deploy 3x 150 / month indexers but just 1. [928](https://github.com/NEAR-DevHub/neardevhub-bos/issues/928)\\\\\\\\n\\\\\\\\nSeptember 20 - 5 hours\\\\\\\\n- Deployed on Subquery network in order to share the code with the subquery team. [928](https://github.com/NEAR-DevHub/neardevhub-bos/issues/928)\\\\\\\\n- Found these showstoppers after further investigation, so decided to investigate alternative solutions to Subquery\\\\\\\\n\\\\\\\\t- The testing framework is designed for testing individual mapping handlers, not for integration or end-to-end testing of SubQuery projects.\\\\\\\\n\\\\\\\\t- It does not persist state between test cases, making it unsuitable for scenarios where mapping handlers rely on previous state changes.\\\\\\\\n\\\\\\\\t- The framework does not support testing dynamic data sources, focusing instead on validating data indexed in SubQuery projects, but without functionality for testing dynamic data source changes during runtime.\\\\\\\\n\\\\\\\\n**Total hours: 25 hours**\\\\\\\\n\\\\\\\\n\\\\\\\\n**Week 2: September 23 \\\\\\\\u{2013}\\\\\\\\u{a0}September 27**\\\\\\\\n\\\\\\\\nSeptember 23 - 5 hours\\\\\\\\n- Researched building a cache API using Bun, TypeScript, and Rust Rocket. Initiated the development of a minimal Proof of Concept (PoC)\\\\\\\\n- Deployed demo\\\\\\\\\\\\'s on fly.io of both serverless microVm\\\\\\\\\\\\'s as well as postgres database.\\\\\\\\n- Worked on [948](https://github.com/NEAR-DevHub/neardevhub-bos/issues/948)\\\\\\\\n\\\\\\\\nSeptember 25 - 5 hours\\\\\\\\n- Following feedback from the SubQuery team, I attempted one final integration, but encountered additional issues that hindered further progress. [928](https://github.com/NEAR-DevHub/neardevhub-bos/issues/928) \\\\\\\\n- Attended standup\\\\\\\\n\\\\\\\\nSeptember 26 - 5 hours\\\\\\\\n- Worked on [948](https://github.com/NEAR-DevHub/neardevhub-bos/issues/948) while I studied more about rust macro\\\\\\\\\\\\'s and how they work in the rust rocket framework among other Rust features.\\\\\\\\n\\\\\\\\nSeptember 27 - 5 hours\\\\\\\\n- Got near-api to work on a rocket endpoint\\\\\\\\n- Created issue [948](https://github.com/NEAR-DevHub/neardevhub-bos/issues/948) after I had been working on a different solution than subquery and closing [928](https://github.com/NEAR-DevHub/neardevhub-bos/issues/928) .\\\\\\\\n- While integrating the new near-api-rs into my project, I discovered its dependencies had been removed from the crates registry. Upon further investigation, I found that the repository had not yet been published to crates.io, requiring me to reference it locally or link directly to the GitHub repository to utilize the newly developed RPC library. [948](https://github.com/NEAR-DevHub/neardevhub-bos/issues/948)\\\\\\\\n\\\\\\\\n**Total hours: 20 hours**\\\\\\\\n  \\\\\\\\n---\\\\\\\\n## Cost\\\\\\\\n\\\\\\\\n- Total hours: 45\\\\\\\\n-  Rate: $100/hour ~ \\\\\\\\u{20ac}90/hour is an average rate for a mid-level freelance front-end web3 developer in the Netherlands, ranging from \\\\\\\\u{20ac}35 (absolute beginner) to \\\\\\\\u{20ac}150 (senior) [for example](https://zzpservicedesk.nl/uurtarief-freelance-developer/)\\\\\\\\n- Total amount: $4500 USD\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"thomasguntenaar.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"4500\", \"requested_sponsorship_paid_in_currency\": \"USDT\"}, \"author_id\": \"thomasguntenaar.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8043879200155e+21
+    }
+  },
+  {
+    "id": "9107694966",
+    "receipt_id": "8oghqody1bt1vSCTeyJU685m44q9mmcW78tk79kcNBF5",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3zgVJodWvzWhKntF9sb9XoxSLaLbJTWpVdaHQmxcL7tu",
+      "block_height": 130026097,
+      "block_timestamp": 1728583626428627000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3544579948871,
+      "tokens_burnt": 354457994887100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Af5MRZ6FPzxPLrTvPdMZ4yzXJ9DLu34qVt7yyNNy8szB",
+    "included_in_block_hash": "144BwWqCJNU1dwtfYqQWxQFCQbGCuZTbQ3EvEMBjt5g1",
+    "block_timestamp": "1728583624327448875",
+    "block": {
+      "block_height": 130026095
+    },
+    "receipt_conversion_tokens_burnt": "54113749892000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 354457994887100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":225,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"thomasguntenaar.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":225,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"thomasguntenaar.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8043879200155e+21
+    }
+  },
+  {
+    "id": "9118672995",
+    "receipt_id": "GuThmK8zeuaY39wxWGUWUpZN28LwSUrpQ7s8sY1MkN3P",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5z2ikQqJmTgkAeQuipVUoafAjE3LtcRQXg45GUHYVrh5",
+      "block_height": 130055558,
+      "block_timestamp": 1728616287117174800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 22155486809881,
+      "tokens_burnt": 2.2155486809881e+21,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "F4etsNuH6ivvuk95P5pRD19EyYyUzpANA6oSrvyakSbE",
+    "included_in_block_hash": "5z2ikQqJmTgkAeQuipVUoafAjE3LtcRQXg45GUHYVrh5",
+    "block_timestamp": "1728616287117174683",
+    "block": {
+      "block_height": 130055558
+    },
+    "receipt_conversion_tokens_burnt": "253831869950800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "unsafe_self_upgrade",
+        "deposit": 0,
+        "fee": 2.2155486809881e+21,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 9.1494564903721e+21
+    }
+  },
+  {
+    "id": "9118673274",
+    "receipt_id": "G8Rkbxo5ehU3jFTeYcyEeqmaeXrBdMpX4LTHPCyFvauk",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4RwsZDN4pp2tfkYbZTFgxoaCgAqvHHc35i6xhFCW2SSY",
+      "block_height": 130055559,
+      "block_timestamp": 1728616288373781000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 2100103162140,
+      "tokens_burnt": 210010316214000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "F4etsNuH6ivvuk95P5pRD19EyYyUzpANA6oSrvyakSbE",
+    "included_in_block_hash": "5z2ikQqJmTgkAeQuipVUoafAjE3LtcRQXg45GUHYVrh5",
+    "block_timestamp": "1728616287117174683",
+    "block": {
+      "block_height": 130055558
+    },
+    "receipt_conversion_tokens_burnt": "253831869950800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "unsafe_migrate",
+        "deposit": 0,
+        "fee": 210010316214000000000,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 9.1494564903721e+21
+    }
+  },
+  {
+    "id": "9118673276",
+    "receipt_id": "8TuHWps9zwFomezFzxLr5ePTBKALHGRAgS5kveeMt8j4",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4RwsZDN4pp2tfkYbZTFgxoaCgAqvHHc35i6xhFCW2SSY",
+      "block_height": 130055559,
+      "block_timestamp": 1728616288373781000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "F4etsNuH6ivvuk95P5pRD19EyYyUzpANA6oSrvyakSbE",
+    "included_in_block_hash": "5z2ikQqJmTgkAeQuipVUoafAjE3LtcRQXg45GUHYVrh5",
+    "block_timestamp": "1728616287117174683",
+    "block": {
+      "block_height": 130055558
+    },
+    "receipt_conversion_tokens_burnt": "253831869950800000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.039400808681573e+22,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 9.1494564903721e+21
+    }
+  },
+  {
+    "id": "9118674709",
+    "receipt_id": "9a9t4j9XveUJdS4iy9Yg6XGn3tFt3p2rrPXXU1jzsBKd",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GJjs5uzKj2expc52dvWJgtCw3wojGQfE5iJAxkdeqQ5H",
+      "block_height": 130055564,
+      "block_timestamp": 1728616295027755500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 64700656232192,
+      "tokens_burnt": 6.4700656232192e+21,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "F4etsNuH6ivvuk95P5pRD19EyYyUzpANA6oSrvyakSbE",
+    "included_in_block_hash": "5z2ikQqJmTgkAeQuipVUoafAjE3LtcRQXg45GUHYVrh5",
+    "block_timestamp": "1728616287117174683",
+    "block": {
+      "block_height": 130055558
+    },
+    "receipt_conversion_tokens_burnt": "253831869950800000000",
+    "actions": [
+      {
+        "action": "DEPLOY_CONTRACT",
+        "method": null,
+        "deposit": 0,
+        "fee": 6.4700656232192e+21,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 9.1494564903721e+21
+    }
+  },
+  {
+    "id": "9118675084",
+    "receipt_id": "59ma7v6iu7b6Z1ZZnxyzMjaZvdcaBCLSd5pmXdrKQPUt",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "87i7KmkwotyM8f92cQfqu7eNvqRRzwgApCjnuUkxFXfy",
+      "block_height": 130055565,
+      "block_timestamp": 1728616296303038200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "F4etsNuH6ivvuk95P5pRD19EyYyUzpANA6oSrvyakSbE",
+    "included_in_block_hash": "5z2ikQqJmTgkAeQuipVUoafAjE3LtcRQXg45GUHYVrh5",
+    "block_timestamp": "1728616287117174683",
+    "block": {
+      "block_height": 130055558
+    },
+    "receipt_conversion_tokens_burnt": "253831869950800000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.5268700941264773e+22,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 9.1494564903721e+21
+    }
+  },
+  {
+    "id": "9118675294",
+    "receipt_id": "7hdnYssZRwqJDG2eyQCjVcrTVxfZcrqXEx4KASfBZG64",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8s9mgSMEYH3GoML1UYMjYFtWGMqtssvHDNq61nkg35wS",
+      "block_height": 130055566,
+      "block_timestamp": 1728616297641898200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "F4etsNuH6ivvuk95P5pRD19EyYyUzpANA6oSrvyakSbE",
+    "included_in_block_hash": "5z2ikQqJmTgkAeQuipVUoafAjE3LtcRQXg45GUHYVrh5",
+    "block_timestamp": "1728616287117174683",
+    "block": {
+      "block_height": 130055558
+    },
+    "receipt_conversion_tokens_burnt": "253831869950800000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 3.368736851768579e+22,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 9.1494564903721e+21
+    }
+  },
+  {
+    "id": "9127724222",
+    "receipt_id": "5DrqfVgbbHLdtEgc4FfmrmfGYhok1tRfvwye23Pgi8WD",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9jHiMw1ywLthzN4v6D7vTXb3FWBb6j7YqVqnbusShEek",
+      "block_height": 130077927,
+      "block_timestamp": 1728641167746957300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5125846527544,
+      "tokens_burnt": 512584652754400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "FouDw8282U7wnBKR2PoP39TyngwPiPnSnpnfREsWN8dx",
+    "included_in_block_hash": "8cmsxV2cMkYyCc5Z9G9GmjCwJJySNaSsjTznCCxDL7EE",
+    "block_timestamp": "1728641166609658685",
+    "block": {
+      "block_height": 130077926
+    },
+    "receipt_conversion_tokens_burnt": "31707172213500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 512584652754400000000,
+        "args": "{\"id\": 222, \"timeline\": {\"status\": \"APPROVED\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 897815643463000000000
+    }
+  },
+  {
+    "id": "9127725405",
+    "receipt_id": "BW9EtnAtebXvebJZCgFVMY7v4cPBvfmFr4gE4ai6PNTs",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8mfs88xKfmYjkmdLK62kjnQ6Ej9qyoJzU1JTK9amhi1d",
+      "block_height": 130077928,
+      "block_timestamp": 1728641168904244700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3535238184951,
+      "tokens_burnt": 353523818495100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "FouDw8282U7wnBKR2PoP39TyngwPiPnSnpnfREsWN8dx",
+    "included_in_block_hash": "8cmsxV2cMkYyCc5Z9G9GmjCwJJySNaSsjTznCCxDL7EE",
+    "block_timestamp": "1728641166609658685",
+    "block": {
+      "block_height": 130077926
+    },
+    "receipt_conversion_tokens_burnt": "31707172213500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353523818495100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"yurtur.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":222,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"frol.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 897815643463000000000
+    }
+  },
+  {
+    "id": "9178397679",
+    "receipt_id": "2dkYZEG186wpfv3m8SghJrr6fp5hAXcJnHq88fvzydXn",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "G23v7Dvd6FGduF525vMFmo7tSW5ub4TevEPhjVkL3Lp8",
+      "block_height": 130240822,
+      "block_timestamp": 1728820109726930000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6536864387073,
+      "tokens_burnt": 653686438707300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8bs8tn8VgpyUTczHqqHGSqYxNDomqe852M6qSgpDhHZ7",
+    "included_in_block_hash": "EF2tC3hDpVY3nbwhocHVxQye2WnJ7c9gk91h2gGG1oFE",
+    "block_timestamp": "1728820108417199054",
+    "block": {
+      "block_height": 130240821
+    },
+    "receipt_conversion_tokens_burnt": "104019526011000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 653686438707300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"widget\": {\"devhub.entity.proposal.CommentsAndLogs\": {\"\": \"const { getLinkUsingCurrentGateway } = VM.require(\\\\\\\\n  \\\\\\\\\\\\\\\"devhub.near/widget/core.lib.url\\\\\\\\\\\\\\\"\\\\\\\\n) || { getLinkUsingCurrentGateway: () => {} };\\\\\\\\nconst snapshotHistory = props.snapshotHistory;\\\\\\\\nconst proposalId = props.id;\\\\\\\\nconst instanceAccount = props.item.path.split(\\\\\\\\\\\\\\\"/\\\\\\\\\\\\\\\")[0];\\\\\\\\n\\\\\\\\nconst Wrapper = styled.div`\\\\\\\\n  position: relative;\\\\\\\\n  .log-line {\\\\\\\\n    position: absolute;\\\\\\\\n    left: 7%;\\\\\\\\n    top: -30px;\\\\\\\\n    bottom: 0;\\\\\\\\n    z-index: 1;\\\\\\\\n    width: 1px;\\\\\\\\n    background-color: var(--bs-border-color);\\\\\\\\n    z-index: 1;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .text-wrap {\\\\\\\\n    overflow: hidden;\\\\\\\\n    white-space: normal;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .fw-bold {\\\\\\\\n    font-weight: 600 !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .inline-flex {\\\\\\\\n    display: -webkit-inline-box !important;\\\\\\\\n    align-items: center !important;\\\\\\\\n    gap: 0.25rem !important;\\\\\\\\n    margin-right: 2px;\\\\\\\\n    flex-wrap: wrap;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\n\\\\\\\\nconst CommentContainer = styled.div`\\\\\\\\n  border: 1px solid lightgrey;\\\\\\\\n  overflow: auto;\\\\\\\\n`;\\\\\\\\n\\\\\\\\nconst Header = styled.div`\\\\\\\\n  position: relative;\\\\\\\\n  background-color: #f4f4f4;\\\\\\\\n  height: 50px;\\\\\\\\n\\\\\\\\n  .menu {\\\\\\\\n    position: absolute;\\\\\\\\n    right: 10px;\\\\\\\\n    top: 4px;\\\\\\\\n    font-size: 30px;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\n\\\\\\\\n// check snapshot history all keys and values for differences\\\\\\\\nfunction getDifferentKeysWithValues(obj1, obj2) {\\\\\\\\n  return Object.keys(obj1)\\\\\\\\n    .filter((key) => {\\\\\\\\n      if (key !== \\\\\\\\\\\\\\\"editor_id\\\\\\\\\\\\\\\" && obj2.hasOwnProperty(key)) {\\\\\\\\n        const value1 = obj1[key];\\\\\\\\n        const value2 = obj2[key];\\\\\\\\n\\\\\\\\n        if (typeof value1 === \\\\\\\\\\\\\\\"object\\\\\\\\\\\\\\\" && typeof value2 === \\\\\\\\\\\\\\\"object\\\\\\\\\\\\\\\") {\\\\\\\\n          return JSON.stringify(value1) !== JSON.stringify(value2);\\\\\\\\n        } else if (Array.isArray(value1) && Array.isArray(value2)) {\\\\\\\\n          return JSON.stringify(value1) !== JSON.stringify(value2);\\\\\\\\n        } else {\\\\\\\\n          return value1 !== value2;\\\\\\\\n        }\\\\\\\\n      }\\\\\\\\n      return false;\\\\\\\\n    })\\\\\\\\n    .map((key) => ({\\\\\\\\n      key,\\\\\\\\n      originalValue: obj1[key],\\\\\\\\n      modifiedValue: obj2[key],\\\\\\\\n    }));\\\\\\\\n}\\\\\\\\n\\\\\\\\nState.init({\\\\\\\\n  data: null,\\\\\\\\n  socialComments: null,\\\\\\\\n  changedKeysListWithValues: null,\\\\\\\\n  snapshotHistoryLength: 0,\\\\\\\\n});\\\\\\\\n\\\\\\\\nfunction sortTimelineAndComments() {\\\\\\\\n  const comments = Social.index(\\\\\\\\\\\\\\\"comment\\\\\\\\\\\\\\\", props.item, { subscribe: true });\\\\\\\\n\\\\\\\\n  if (snapshotHistory.length > state.snapshotHistoryLength) {\\\\\\\\n    const changedKeysListWithValues = snapshotHistory\\\\\\\\n      .slice(1)\\\\\\\\n      .map((item, index) => {\\\\\\\\n        const startingPoint = snapshotHistory[index]; // Set comparison to the previous item\\\\\\\\n        // we don\\\\\\\\\\\\'t show timeline_version in logs\\\\\\\\n        delete startingPoint.timeline.timeline_version;\\\\\\\\n        delete item.timeline.timeline_version;\\\\\\\\n        if (\\\\\\\\n          startingPoint.timeline.kyc_verified === undefined &&\\\\\\\\n          item.timeline.kyc_verified === false\\\\\\\\n        ) {\\\\\\\\n          startingPoint.timeline.kyc_verified = false;\\\\\\\\n        }\\\\\\\\n\\\\\\\\n        return {\\\\\\\\n          editorId: item.editor_id,\\\\\\\\n          ...getDifferentKeysWithValues(startingPoint, item),\\\\\\\\n        };\\\\\\\\n      });\\\\\\\\n\\\\\\\\n    // add log for accepting terms and condition\\\\\\\\n    changedKeysListWithValues.unshift({\\\\\\\\n      0: {\\\\\\\\n        key: \\\\\\\\\\\\\\\"timestamp\\\\\\\\\\\\\\\",\\\\\\\\n        originalValue: \\\\\\\\\\\\\\\"0\\\\\\\\\\\\\\\",\\\\\\\\n        modifiedValue: snapshotHistory[0].timestamp,\\\\\\\\n      },\\\\\\\\n      1: {\\\\\\\\n        key: \\\\\\\\\\\\\\\"terms_and_condition\\\\\\\\\\\\\\\",\\\\\\\\n        originalValue: \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\n        modifiedValue: \\\\\\\\\\\\\\\"accepted\\\\\\\\\\\\\\\",\\\\\\\\n      },\\\\\\\\n      editorId: snapshotHistory[0].editor_id,\\\\\\\\n    });\\\\\\\\n\\\\\\\\n    State.update({\\\\\\\\n      changedKeysListWithValues,\\\\\\\\n      snapshotHistoryLength: snapshotHistory.length,\\\\\\\\n    });\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  // sort comments and timeline logs by time\\\\\\\\n  const snapShotTimeStamp = Array.isArray(snapshotHistory)\\\\\\\\n    ? snapshotHistory.map((i) => {\\\\\\\\n        return { blockHeight: null, timestamp: parseFloat(i.timestamp / 1e6) };\\\\\\\\n      })\\\\\\\\n    : [];\\\\\\\\n\\\\\\\\n  const commentsTimeStampPromise = Array.isArray(comments)\\\\\\\\n    ? Promise.all(\\\\\\\\n        comments.map((item) => {\\\\\\\\n          return asyncFetch(\\\\\\\\n            `https://api.near.social/time?blockHeight=${item.blockHeight}`\\\\\\\\n          ).then((res) => {\\\\\\\\n            const timeMs = parseFloat(res.body);\\\\\\\\n            return {\\\\\\\\n              blockHeight: item.blockHeight,\\\\\\\\n              timestamp: timeMs,\\\\\\\\n            };\\\\\\\\n          });\\\\\\\\n        })\\\\\\\\n      ).then((res) => res)\\\\\\\\n    : Promise.resolve([]);\\\\\\\\n\\\\\\\\n  commentsTimeStampPromise.then((commentsTimeStamp) => {\\\\\\\\n    const combinedArray = [...snapShotTimeStamp, ...commentsTimeStamp];\\\\\\\\n    combinedArray.sort((a, b) => a.timestamp - b.timestamp);\\\\\\\\n    State.update({ data: combinedArray, socialComments: comments });\\\\\\\\n  });\\\\\\\\n}\\\\\\\\n\\\\\\\\nsortTimelineAndComments();\\\\\\\\nconst Comment = ({ commentItem }) => {\\\\\\\\n  const { accountId, blockHeight } = commentItem;\\\\\\\\n  const item = {\\\\\\\\n    type: \\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\n    path: `${accountId}/post/comment`,\\\\\\\\n    blockHeight,\\\\\\\\n  };\\\\\\\\n  const content = JSON.parse(Social.get(item.path, blockHeight) ?? \\\\\\\\\\\\\\\"null\\\\\\\\\\\\\\\");\\\\\\\\n  const link = `https://${instanceAccount}.page/proposal/${proposalId}?accountId=${accountId}&blockHeight=${blockHeight}`;\\\\\\\\n  const hightlightComment =\\\\\\\\n    parseInt(props.blockHeight ?? \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\") === blockHeight &&\\\\\\\\n    props.accountId === accountId;\\\\\\\\n\\\\\\\\n  return (\\\\\\\\n    <div style={{ zIndex: 99, background: \\\\\\\\\\\\\\\"white\\\\\\\\\\\\\\\" }}>\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"d-flex gap-2 flex-1\\\\\\\\\\\\\\\">\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"d-none d-sm-flex\\\\\\\\\\\\\\\">\\\\\\\\n          <Widget\\\\\\\\n            src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.Profile\\\\\\\\\\\\\\\"}\\\\\\\\n            props={{\\\\\\\\n              accountId: accountId,\\\\\\\\n            }}\\\\\\\\n          />\\\\\\\\n        </div>\\\\\\\\n        <CommentContainer\\\\\\\\n          id={`${accountId.replace(/[^a-z0-9]/g, \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\")}${blockHeight}`}\\\\\\\\n          style={{ border: hightlightComment ? \\\\\\\\\\\\\\\"2px solid black\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\" }}\\\\\\\\n          className=\\\\\\\\\\\\\\\"rounded-2 flex-1\\\\\\\\\\\\\\\"\\\\\\\\n        >\\\\\\\\n          <Header className=\\\\\\\\\\\\\\\"d-flex gap-3 align-items-center p-2 px-3\\\\\\\\\\\\\\\">\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"text-muted\\\\\\\\\\\\\\\">\\\\\\\\n              <Link href={`/near/widget/ProfilePage?accountId=${accountId}`}>\\\\\\\\n                <span className=\\\\\\\\\\\\\\\"fw-bold text-black\\\\\\\\\\\\\\\">{accountId}</span>\\\\\\\\n              </Link>\\\\\\\\n              commented \\\\\\\\u{ff65}{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n              <Widget\\\\\\\\n                src=\\\\\\\\\\\\\\\"near/widget/TimeAgo\\\\\\\\\\\\\\\"\\\\\\\\n                props={{\\\\\\\\n                  blockHeight: blockHeight,\\\\\\\\n                }}\\\\\\\\n              />\\\\\\\\n            </div>\\\\\\\\n            {context.accountId && (\\\\\\\\n              <div className=\\\\\\\\\\\\\\\"menu\\\\\\\\\\\\\\\">\\\\\\\\n                <Widget\\\\\\\\n                  src=\\\\\\\\\\\\\\\"near/widget/Posts.Menu\\\\\\\\\\\\\\\"\\\\\\\\n                  props={{\\\\\\\\n                    accountId: accountId,\\\\\\\\n                    blockHeight: blockHeight,\\\\\\\\n                    contentPath: `/post/comment`,\\\\\\\\n                    contentType: \\\\\\\\\\\\\\\"comment\\\\\\\\\\\\\\\",\\\\\\\\n                  }}\\\\\\\\n                />\\\\\\\\n              </div>\\\\\\\\n            )}\\\\\\\\n          </Header>\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"p-2 px-3\\\\\\\\\\\\\\\">\\\\\\\\n            <Widget\\\\\\\\n              src={`devhub.near/widget/devhub.components.molecule.SimpleMDEViewer`}\\\\\\\\n              props={{\\\\\\\\n                content: content.text,\\\\\\\\n              }}\\\\\\\\n            />\\\\\\\\n\\\\\\\\n            <div className=\\\\\\\\\\\\\\\"d-flex gap-2 align-items-center mt-3\\\\\\\\\\\\\\\">\\\\\\\\n              <Widget\\\\\\\\n                src=\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.LikeButton\\\\\\\\\\\\\\\"\\\\\\\\n                props={{\\\\\\\\n                  item: item,\\\\\\\\n                  notifyAccountId: accountId,\\\\\\\\n                }}\\\\\\\\n              />\\\\\\\\n              <Widget\\\\\\\\n                src=\\\\\\\\\\\\\\\"near/widget/CopyUrlButton\\\\\\\\\\\\\\\"\\\\\\\\n                props={{\\\\\\\\n                  url: link,\\\\\\\\n                }}\\\\\\\\n              />\\\\\\\\n            </div>\\\\\\\\n          </div>\\\\\\\\n        </CommentContainer>\\\\\\\\n      </div>\\\\\\\\n    </div>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\n\\\\\\\\nfunction capitalizeFirstLetter(string) {\\\\\\\\n  const updated = string.replace(\\\\\\\\\\\\\\\"_\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\");\\\\\\\\n  return updated.charAt(0).toUpperCase() + updated.slice(1).toLowerCase();\\\\\\\\n}\\\\\\\\n\\\\\\\\nfunction parseTimelineKeyAndValue(timeline, originalValue, modifiedValue) {\\\\\\\\n  const oldValue = originalValue[timeline];\\\\\\\\n  const newValue = modifiedValue[timeline];\\\\\\\\n  switch (timeline) {\\\\\\\\n    case \\\\\\\\\\\\\\\"status\\\\\\\\\\\\\\\":\\\\\\\\n      return (\\\\\\\\n        oldValue !== newValue && (\\\\\\\\n          <span className=\\\\\\\\\\\\\\\"inline-flex\\\\\\\\\\\\\\\">\\\\\\\\n            moved proposal from{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n            <Widget\\\\\\\\n              src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.StatusTag\\\\\\\\\\\\\\\"}\\\\\\\\n              props={{\\\\\\\\n                timelineStatus: oldValue,\\\\\\\\n              }}\\\\\\\\n            />\\\\\\\\n            to{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n            <Widget\\\\\\\\n              src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.StatusTag\\\\\\\\\\\\\\\"}\\\\\\\\n              props={{\\\\\\\\n                timelineStatus: newValue,\\\\\\\\n              }}\\\\\\\\n            />\\\\\\\\n            stage\\\\\\\\n          </span>\\\\\\\\n        )\\\\\\\\n      );\\\\\\\\n    case \\\\\\\\\\\\\\\"sponsor_requested_review\\\\\\\\\\\\\\\": {\\\\\\\\n      if (!oldValue && newValue) {\\\\\\\\n        return <span>completed review</span>;\\\\\\\\n      } else if (oldValue && !newValue) return <span>unmarked review</span>;\\\\\\\\n      return null;\\\\\\\\n    }\\\\\\\\n    case \\\\\\\\\\\\\\\"reviewer_completed_attestation\\\\\\\\\\\\\\\":\\\\\\\\n      return !oldValue && newValue && <span>completed attestation</span>;\\\\\\\\n    case \\\\\\\\\\\\\\\"kyc_verified\\\\\\\\\\\\\\\":\\\\\\\\n      return !oldValue && newValue && <span>verified KYC/KYB</span>;\\\\\\\\n    case \\\\\\\\\\\\\\\"test_transaction_sent\\\\\\\\\\\\\\\":\\\\\\\\n      return (\\\\\\\\n        !oldValue &&\\\\\\\\n        newValue && (\\\\\\\\n          <span>\\\\\\\\n            confirmed sponsorship and shared funding steps with recipient\\\\\\\\n          </span>\\\\\\\\n        )\\\\\\\\n      );\\\\\\\\n    case \\\\\\\\\\\\\\\"payouts\\\\\\\\\\\\\\\":\\\\\\\\n      return <span>updated the funding payment links.</span>;\\\\\\\\n    // we don\\\\\\\\\\\\'t have this step for now\\\\\\\\n    // case \\\\\\\\\\\\\\\"request_for_trustees_created\\\\\\\\\\\\\\\":\\\\\\\\n    //   return !oldValue && newValue && <span>successfully created request for trustees</span>;\\\\\\\\n    default:\\\\\\\\n      return null;\\\\\\\\n  }\\\\\\\\n}\\\\\\\\n\\\\\\\\nconst AccountProfile = ({ accountId }) => {\\\\\\\\n  return (\\\\\\\\n    <span className=\\\\\\\\\\\\\\\"inline-flex fw-bold text-black\\\\\\\\\\\\\\\">\\\\\\\\n      <Widget\\\\\\\\n        src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.Profile\\\\\\\\\\\\\\\"}\\\\\\\\n        props={{\\\\\\\\n          accountId: accountId,\\\\\\\\n          size: \\\\\\\\\\\\\\\"sm\\\\\\\\\\\\\\\",\\\\\\\\n          showAccountId: true,\\\\\\\\n        }}\\\\\\\\n      />\\\\\\\\n    </span>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\n\\\\\\\\nconst parseProposalKeyAndValue = (key, modifiedValue, originalValue) => {\\\\\\\\n  switch (key) {\\\\\\\\n    case \\\\\\\\\\\\\\\"terms_and_condition\\\\\\\\\\\\\\\": {\\\\\\\\n      return (\\\\\\\\n        <span>\\\\\\\\n          accepted\\\\\\\\n          <Widget\\\\\\\\n            src={\\\\\\\\\\\\\\\"devhub.near/widget/devhub.entity.proposal.AcceptedTerms\\\\\\\\\\\\\\\"}\\\\\\\\n            props={{ proposalId: proposalId }}\\\\\\\\n          />\\\\\\\\n        </span>\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n    case \\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\n      return <span>changed title</span>;\\\\\\\\n    case \\\\\\\\\\\\\\\"summary\\\\\\\\\\\\\\\":\\\\\\\\n    case \\\\\\\\\\\\\\\"description\\\\\\\\\\\\\\\":\\\\\\\\n      return <span>changed {key}</span>;\\\\\\\\n    case \\\\\\\\\\\\\\\"category\\\\\\\\\\\\\\\":\\\\\\\\n      return (\\\\\\\\n        <span>\\\\\\\\n          changed category from {originalValue} to {modifiedValue}\\\\\\\\n        </span>\\\\\\\\n      );\\\\\\\\n    case \\\\\\\\\\\\\\\"linked_proposals\\\\\\\\\\\\\\\":\\\\\\\\n      return <span>updated linked proposals</span>;\\\\\\\\n    case \\\\\\\\\\\\\\\"requested_sponsorship_usd_amount\\\\\\\\\\\\\\\":\\\\\\\\n      return (\\\\\\\\n        <span>\\\\\\\\n          changed sponsorship amount from {originalValue} to {modifiedValue}\\\\\\\\n        </span>\\\\\\\\n      );\\\\\\\\n    case \\\\\\\\\\\\\\\"requested_sponsorship_paid_in_currency\\\\\\\\\\\\\\\":\\\\\\\\n      return (\\\\\\\\n        <span>\\\\\\\\n          changed sponsorship currency from {originalValue} to {modifiedValue}\\\\\\\\n        </span>\\\\\\\\n      );\\\\\\\\n    case \\\\\\\\\\\\\\\"receiver_account\\\\\\\\\\\\\\\":\\\\\\\\n      return (\\\\\\\\n        <span className=\\\\\\\\\\\\\\\"inline-flex\\\\\\\\\\\\\\\">\\\\\\\\n          changed receiver account from{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n          <AccountProfile accountId={originalValue} />\\\\\\\\n          to <AccountProfile accountId={modifiedValue} />\\\\\\\\n        </span>\\\\\\\\n      );\\\\\\\\n    case \\\\\\\\\\\\\\\"supervisor\\\\\\\\\\\\\\\":\\\\\\\\n      return !originalValue && modifiedValue ? (\\\\\\\\n        <span className=\\\\\\\\\\\\\\\"inline-flex\\\\\\\\\\\\\\\">\\\\\\\\n          added\\\\\\\\n          <AccountProfile accountId={modifiedValue} />\\\\\\\\n          as supervisor\\\\\\\\n        </span>\\\\\\\\n      ) : (\\\\\\\\n        <span className=\\\\\\\\\\\\\\\"inline-flex\\\\\\\\\\\\\\\">\\\\\\\\n          changed receiver account from{\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"}\\\\\\\\n          <AccountProfile accountId={originalValue} />\\\\\\\\n          to <AccountProfile accountId={modifiedValue} />\\\\\\\\n        </span>\\\\\\\\n      );\\\\\\\\n    case \\\\\\\\\\\\\\\"requested_sponsor\\\\\\\\\\\\\\\":\\\\\\\\n      return (\\\\\\\\n        <span className=\\\\\\\\\\\\\\\"inline-flex\\\\\\\\\\\\\\\">\\\\\\\\n          changed sponsor from <AccountProfile accountId={originalValue} />\\\\\\\\n          to <AccountProfile accountId={modifiedValue} />\\\\\\\\n        </span>\\\\\\\\n      );\\\\\\\\n    case \\\\\\\\\\\\\\\"timeline\\\\\\\\\\\\\\\": {\\\\\\\\n      const modifiedKeys = Object.keys(modifiedValue);\\\\\\\\n      const originalKeys = Object.keys(originalValue);\\\\\\\\n      return modifiedKeys.map((i, index) => {\\\\\\\\n        const text = parseTimelineKeyAndValue(i, originalValue, modifiedValue);\\\\\\\\n        return (\\\\\\\\n          text && (\\\\\\\\n            <span key={index} className=\\\\\\\\\\\\\\\"inline-flex\\\\\\\\\\\\\\\">\\\\\\\\n              {text}\\\\\\\\n              {text && \\\\\\\\\\\\\\\"\\\\\\\\u{ff65}\\\\\\\\\\\\\\\"}\\\\\\\\n            </span>\\\\\\\\n          )\\\\\\\\n        );\\\\\\\\n      });\\\\\\\\n    }\\\\\\\\n    default:\\\\\\\\n      return null;\\\\\\\\n  }\\\\\\\\n};\\\\\\\\n\\\\\\\\nconst LogIconContainer = styled.div`\\\\\\\\n  margin-left: 50px;\\\\\\\\n  z-index: 99;\\\\\\\\n\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    margin-left: 10px;\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\n\\\\\\\\nconst Log = ({ timestamp }) => {\\\\\\\\n  const updatedData = useMemo(\\\\\\\\n    () =>\\\\\\\\n      state.changedKeysListWithValues.find((obj) =>\\\\\\\\n        Object.values(obj).some(\\\\\\\\n          (value) =>\\\\\\\\n            value && parseFloat(value.modifiedValue / 1e6) === timestamp\\\\\\\\n        )\\\\\\\\n      ),\\\\\\\\n    [state.changedKeysListWithValues, timestamp]\\\\\\\\n  );\\\\\\\\n\\\\\\\\n  const editorId = updatedData.editorId;\\\\\\\\n  const valuesArray = Object.values(updatedData ?? {});\\\\\\\\n  // if valuesArray length is 2 that means it only has timestamp and editorId\\\\\\\\n  if (!updatedData || valuesArray.length === 2) {\\\\\\\\n    return <></>;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  return valuesArray.map((i, index) => {\\\\\\\\n    if (i.key && i.key !== \\\\\\\\\\\\\\\"timestamp\\\\\\\\\\\\\\\" && i.key !== \\\\\\\\\\\\\\\"proposal_body_version\\\\\\\\\\\\\\\") {\\\\\\\\n      return (\\\\\\\\n        <LogIconContainer\\\\\\\\n          className=\\\\\\\\\\\\\\\"d-flex gap-3 align-items-center\\\\\\\\\\\\\\\"\\\\\\\\n          key={index}\\\\\\\\n        >\\\\\\\\n          <img\\\\\\\\n            src=\\\\\\\\\\\\\\\"https://ipfs.near.social/ipfs/bafkreiffqrxdi4xqu7erf46gdlwuodt6dm6rji2jtixs3iionjvga6rhdi\\\\\\\\\\\\\\\"\\\\\\\\n            height={30}\\\\\\\\n          />\\\\\\\\n          <div\\\\\\\\n            className={\\\\\\\\n              \\\\\\\\\\\\\\\"flex-1 gap-1 w-100 text-wrap text-muted align-items-center \\\\\\\\\\\\\\\" +\\\\\\\\n              (i.key === \\\\\\\\\\\\\\\"timeline\\\\\\\\\\\\\\\" &&\\\\\\\\n              Object.keys(i.originalValue ?? {}).length > 1\\\\\\\\n                ? \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n                : \\\\\\\\\\\\\\\"inline-flex\\\\\\\\\\\\\\\")\\\\\\\\n            }\\\\\\\\n          >\\\\\\\\n            <span\\\\\\\\n              className=\\\\\\\\\\\\\\\"inline-flex fw-bold text-black\\\\\\\\\\\\\\\"\\\\\\\\n              style={{ marginRight: 0 }}\\\\\\\\n            >\\\\\\\\n              <AccountProfile accountId={editorId} showAccountId={true} />\\\\\\\\n            </span>\\\\\\\\n            {parseProposalKeyAndValue(i.key, i.modifiedValue, i.originalValue)}\\\\\\\\n            {i.key !== \\\\\\\\\\\\\\\"timeline\\\\\\\\\\\\\\\" && \\\\\\\\\\\\\\\"\\\\\\\\u{ff65}\\\\\\\\\\\\\\\"}\\\\\\\\n            <Widget\\\\\\\\n              src=\\\\\\\\\\\\\\\"near/widget/TimeAgo\\\\\\\\\\\\\\\"\\\\\\\\n              props={{\\\\\\\\n                blockTimestamp: timestamp * 1000000,\\\\\\\\n              }}\\\\\\\\n            />\\\\\\\\n          </div>\\\\\\\\n        </LogIconContainer>\\\\\\\\n      );\\\\\\\\n    }\\\\\\\\n  });\\\\\\\\n};\\\\\\\\n\\\\\\\\nif (Array.isArray(state.data)) {\\\\\\\\n  return (\\\\\\\\n    <Wrapper>\\\\\\\\n      <div\\\\\\\\n        className=\\\\\\\\\\\\\\\"log-line\\\\\\\\\\\\\\\"\\\\\\\\n        style={{ height: state.data.length > 2 ? \\\\\\\\\\\\\\\"110%\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"150%\\\\\\\\\\\\\\\" }}\\\\\\\\n      ></div>\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"d-flex flex-column gap-4\\\\\\\\\\\\\\\">\\\\\\\\n        {state.data.map((i, index) => {\\\\\\\\n          if (i.blockHeight) {\\\\\\\\n            const item = state.socialComments.find(\\\\\\\\n              (t) => t.blockHeight === i.blockHeight\\\\\\\\n            );\\\\\\\\n            return <Comment commentItem={item} />;\\\\\\\\n          } else {\\\\\\\\n            return <Log timestamp={i.timestamp} key={index} />;\\\\\\\\n          }\\\\\\\\n        })}\\\\\\\\n      </div>\\\\\\\\n    </Wrapper>\\\\\\\\n  );\\\\\\\\n}\\\\\\\\n\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 757705964718300000000
+    }
+  },
+  {
+    "id": "9178398203",
+    "receipt_id": "CnCwAuTRKa5Pq4GU3rySv6aNEhYsWmwpDKmUU8yqiwsb",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "D54hTE1Z53rWcDdQWLH4foHHuT6bsCq88dqiFfX8GwD6",
+      "block_height": 130240823,
+      "block_timestamp": 1728820110913453800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8bs8tn8VgpyUTczHqqHGSqYxNDomqe852M6qSgpDhHZ7",
+    "included_in_block_hash": "EF2tC3hDpVY3nbwhocHVxQye2WnJ7c9gk91h2gGG1oFE",
+    "block_timestamp": "1728820108417199054",
+    "block": {
+      "block_height": 130240821
+    },
+    "receipt_conversion_tokens_burnt": "104019526011000000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.874348965865373e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 757705964718300000000
+    }
+  },
+  {
+    "id": "9205231226",
+    "receipt_id": "2NN7H1AkqZPav5KRzapZDttVhF8K9D6J5tVJ6tscTiBe",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "C5dcRie32GTo95b3Za1iYF4XD3KXNBVADQU639BvVVeK",
+      "block_height": 130342523,
+      "block_timestamp": 1728932182677997000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8757054238070,
+      "tokens_burnt": 875705423807000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "7qiVKBa1bxoTThYj3zPTd96DpDq3URFZwdKGUCfpUMxW",
+    "included_in_block_hash": "32tzx4K8fb7BEvAnr47AQhfDZedS8ozLuJcymVKm7gKG",
+    "block_timestamp": "1728932181790966836",
+    "block": {
+      "block_height": 130342522
+    },
+    "receipt_conversion_tokens_burnt": "32436733053000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 875705423807000000000,
+        "args": "{\"id\": 220, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"Bank Pmt\"], \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"kyc_verified_deprecated\": false, \"sponsor_requested_review\": true, \"trustees_released_payment\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2606072665707e+21
+    }
+  },
+  {
+    "id": "9205231733",
+    "receipt_id": "4PQT5bzyt6BhwuzGzpEuXmKQbYg6huWKt5XG4std4CYN",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "37vqg6oTFTFH6hTbomTpzi8SB9fSV5nbqNqkJ9R1iA6u",
+      "block_height": 130342524,
+      "block_timestamp": 1728932183858594300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3524651097107,
+      "tokens_burnt": 352465109710700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7qiVKBa1bxoTThYj3zPTd96DpDq3URFZwdKGUCfpUMxW",
+    "included_in_block_hash": "32tzx4K8fb7BEvAnr47AQhfDZedS8ozLuJcymVKm7gKG",
+    "block_timestamp": "1728932181790966836",
+    "block": {
+      "block_height": 130342522
+    },
+    "receipt_conversion_tokens_burnt": "32436733053000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352465109710700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"megha19.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":220,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2606072665707e+21
+    }
+  },
+  {
+    "id": "9213060436",
+    "receipt_id": "4DHtJhbVSCi7iAgYkpRxSNK2s4hhxLdXRkzYhpo3QvkQ",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GmKm44BRaYiJ57a1Lu2eaJbUvTa2EiiX52hii8RqLuoT",
+      "block_height": 130359492,
+      "block_timestamp": 1728950994050190600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4970543592056,
+      "tokens_burnt": 497054359205600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "6HJxRPzbTZq4BqdkWYrBYukVZVWRDKnSFAYPE5vXAtid",
+    "included_in_block_hash": "F6m9gdFjwCpdeosRALwGUxrsdcBinDzcXii2Rv4XpGrw",
+    "block_timestamp": "1728950992903578887",
+    "block": {
+      "block_height": 130359491
+    },
+    "receipt_conversion_tokens_burnt": "32074336819000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 497054359205600000000,
+        "args": "{\"id\": 224, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 887135233802500000000
+    }
+  }
+]

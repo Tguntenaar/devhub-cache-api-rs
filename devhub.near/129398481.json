@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "8853774690",
+    "receipt_id": "BPLutd2gzrp13J3kM7EHxpNuB9GU59Kt4Mx3hrcuAYqB",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DsqJTVVCamjHiQwoNbBF4TWSpUxLofRJkwJ7B4M9QAuk",
+      "block_height": 129399791,
+      "block_timestamp": 1727882082568338200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5102580554901,
+      "tokens_burnt": 510258055490100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "HpAJDcBkDRu1mz6kmHh8G7DUdTVJHfn2nho67xjzETNu",
+    "included_in_block_hash": "H2b4gR2Gs6wowjnGTX6E8P1bsW3FcSv889cUyU1W29ET",
+    "block_timestamp": "1727882081285135687",
+    "block": {
+      "block_height": 129399790
+    },
+    "receipt_conversion_tokens_burnt": "32069568447500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 510258055490100000000,
+        "args": "{\"id\": 214, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 895917010658300000000
+    }
+  },
+  {
+    "id": "8853774997",
+    "receipt_id": "28zjLvTMpGoWGVMJ43wWKrGbV1RiLPZBc7rjPWatUThY",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EbxyZAXt2nuXCVMxZkMjGcUyej3N31JVUSxU7CnqgeaG",
+      "block_height": 129399792,
+      "block_timestamp": 1727882083847355100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3535893867207,
+      "tokens_burnt": 353589386720700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "HpAJDcBkDRu1mz6kmHh8G7DUdTVJHfn2nho67xjzETNu",
+    "included_in_block_hash": "H2b4gR2Gs6wowjnGTX6E8P1bsW3FcSv889cUyU1W29ET",
+    "block_timestamp": "1727882081285135687",
+    "block": {
+      "block_height": 129399790
+    },
+    "receipt_conversion_tokens_burnt": "32069568447500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353589386720700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"djeaunty_fourmule.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":214,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 895917010658300000000
+    }
+  },
+  {
+    "id": "8861586069",
+    "receipt_id": "GMrPmZdfFnkaaU8RPSRMfVyCw66z8ALMYJATQLT4wqHY",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6C62jrHPsxhyb68L3KhYVLiCakQ4uteZetgAU5DhfXzK",
+      "block_height": 129420387,
+      "block_timestamp": 1727905259915330000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7026738827503,
+      "tokens_burnt": 702673882750300000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DiwpEfAJqHV8ANXWhGj1JcoBcAYYZ5aLM2EsH4aaAwG8",
+    "included_in_block_hash": "H3tuwfPu6Sa9yxN7SybxNyAkssDH2wkxNbKKALizbTB1",
+    "block_timestamp": "1727905259058501547",
+    "block": {
+      "block_height": 129420386
+    },
+    "receipt_conversion_tokens_burnt": "32737140457500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 702673882750300000000,
+        "args": "{\"id\": 205, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"https://nearblocks.io/txns/D2oZ5vc4Q2rtvrqxkn98j3sKB3j6vkjzcM4SPvtecgkA\"], \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"kyc_verified_deprecated\": false, \"sponsor_requested_review\": true, \"trustees_released_payment\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0935851056157e+21
+    }
+  },
+  {
+    "id": "8861586339",
+    "receipt_id": "BgQEhFtCngetFoPLXoNRqyUjiFh9cpNnEac6v1ta19TD",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EZaN2rAYE6CX8PW5WZVL2X4mnSrJrEhHuLSNJH1A3ib5",
+      "block_height": 129420388,
+      "block_timestamp": 1727905261000539600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3581740824079,
+      "tokens_burnt": 358174082407900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DiwpEfAJqHV8ANXWhGj1JcoBcAYYZ5aLM2EsH4aaAwG8",
+    "included_in_block_hash": "H3tuwfPu6Sa9yxN7SybxNyAkssDH2wkxNbKKALizbTB1",
+    "block_timestamp": "1727905259058501547",
+    "block": {
+      "block_height": 129420386
+    },
+    "receipt_conversion_tokens_burnt": "32737140457500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 358174082407900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"thomasguntenaar.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":205,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0935851056157e+21
+    }
+  },
+  {
+    "id": "8863700348",
+    "receipt_id": "FZUK3EWgChVsDVNa77dApz8osQaNsAG6mfcyUc4gAwuU",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9XcBJhzmC8gNH6tnrCMz4EQZ6P4Zt5ZuSyA2LTin7ZQL",
+      "block_height": 129425944,
+      "block_timestamp": 1727911473897624000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4433565440475,
+      "tokens_burnt": 443356544047500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "EDvpJQ6FDSFjQEmsZE6BZ74jQEjrfcxCrsvuG9ysAxBL",
+    "included_in_block_hash": "BJwDV3VKGn56eDqSfkcGGzLihd4gpvvDhzhLoocY4878",
+    "block_timestamp": "1727911472676185412",
+    "block": {
+      "block_height": 129425943
+    },
+    "receipt_conversion_tokens_burnt": "31702403842000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 443356544047500000000,
+        "args": "{\"id\": 217, \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 827595255713000000000
+    }
+  },
+  {
+    "id": "8863700568",
+    "receipt_id": "69LX8LdUT6Hyk59Qq74kAgMb8UjiCA1KTFQudzTzs4Vp",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CQTgZHJnUytTCUco4tF9nwju6jUoToujW5r4ptzmW6hM",
+      "block_height": 129425945,
+      "block_timestamp": 1727911475104600300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3525363078235,
+      "tokens_burnt": 352536307823500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "EDvpJQ6FDSFjQEmsZE6BZ74jQEjrfcxCrsvuG9ysAxBL",
+    "included_in_block_hash": "BJwDV3VKGn56eDqSfkcGGzLihd4gpvvDhzhLoocY4878",
+    "block_timestamp": "1727911472676185412",
+    "block": {
+      "block_height": 129425943
+    },
+    "receipt_conversion_tokens_burnt": "31702403842000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352536307823500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"joespano.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":217,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 827595255713000000000
+    }
+  },
+  {
+    "id": "8863703968",
+    "receipt_id": "955mTFFbmyBP1hGXmabMejwtubtBNxXURST27u9KBbZj",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Emo4PZwR6jMN2XkrjbzbnR96FM3rbZCwQZAAwNZZ4Are",
+      "block_height": 129425959,
+      "block_timestamp": 1727911490764824800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4748366047253,
+      "tokens_burnt": 474836604725300000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "ApWnjrCsRsynFdqq6UaF3mHXFja2Fe2Q3RybqiS6AhFh",
+    "included_in_block_hash": "4RySHa9QGiGYNhDujWATi38ZR58nsnnyMavjjHh9B6zf",
+    "block_timestamp": "1727911489630380011",
+    "block": {
+      "block_height": 129425958
+    },
+    "receipt_conversion_tokens_burnt": "31711940585000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 474836604725300000000,
+        "args": "{\"id\": 217, \"timeline\": {\"status\": \"APPROVED\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 860397145754000000000
+    }
+  },
+  {
+    "id": "8863704207",
+    "receipt_id": "Fpi86p5EWHeCqJJdozfGgv1AcfmHiEEwepfpMbBT249v",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Hz3vyLu1z9g9fVhxBnv9qcC1Dg5EjufBjmpTFk2EinUP",
+      "block_height": 129425960,
+      "block_timestamp": 1727911491767490000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3538486004437,
+      "tokens_burnt": 353848600443700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "ApWnjrCsRsynFdqq6UaF3mHXFja2Fe2Q3RybqiS6AhFh",
+    "included_in_block_hash": "4RySHa9QGiGYNhDujWATi38ZR58nsnnyMavjjHh9B6zf",
+    "block_timestamp": "1727911489630380011",
+    "block": {
+      "block_height": 129425958
+    },
+    "receipt_conversion_tokens_burnt": "31711940585000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353848600443700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"joespano.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":217,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 860397145754000000000
+    }
+  },
+  {
+    "id": "8873667819",
+    "receipt_id": "FJxeDqwFAkZuE3pyfn1cHWKg2CzmXXce91GCYB4Yv7jb",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "G2mFvLwzawotCT21UgBEZjfS7fXmucDW5oeD7YSgMkoA",
+      "block_height": 129451740,
+      "block_timestamp": 1727940395009342000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8123919559048,
+      "tokens_burnt": 812391955904800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8NjfmSXcenCWPzDPKsLfMFL36M7yEWibchdPvBP9TAgA",
+    "included_in_block_hash": "21kayogdMmxAE823DFznzjKNsKqVzfuyMrAyePpqztDz",
+    "block_timestamp": "1727940393680789313",
+    "block": {
+      "block_height": 129451739
+    },
+    "receipt_conversion_tokens_burnt": "73544863754500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 812391955904800000000,
+        "args": "{\"id\": 206, \"body\": {\"name\": \"Enhancing Wallet Selector: Streamlined Authentication & Transaction Flexibility\", \"summary\": \"The project aims to provide a seamless and secure experience for users and app developers, improving both authentication flows and transaction management in the wallet selector.\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"APPROVED\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": true}, \"supervisor\": \"frol.near\", \"description\": \"## Organization\\\\\\\\nLimeChain Tech ( https://limechain.tech/ )\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\u{2019}s contact information\\\\\\\\nHristo Gergov , hristo.gergov@limechain.tech\\\\\\\\n\\\\\\\\n### Size of the whole team \\\\\\\\n140 team members\\\\\\\\n\\\\\\\\n### Size of the engineering team\\\\\\\\n110 team members\\\\\\\\n\\\\\\\\n### Team location \\\\\\\\nSofia, Bulgaria\\\\\\\\n\\\\\\\\n### Any affiliations with other NEAR ecosystem partners?\\\\\\\\n\\\\\\\\nLimechain is not anyhow affiliated with other Near ecosystem partners\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\n\\\\\\\\n LimeChain is a blockchain software development service company with 180+ successfully executed projects. We are a team of more than 130 enthusiasts and can proudly place ourselves among the prominent builders of Web3, constantly seeking ways to innovate and revolutionize the ecosystem. We are blockchain agnostic and our long-term goal is to further expand our heavy-lifting experience in core protocol development across the leading blockchain networks, such as NEAR. \\\\\\\\n\\\\\\\\n### Examples of relevant experience with NEAR blockchain\\\\\\\\n\\\\\\\\nThrough the course of the last 2 years, LimeChain successfully  implemented a variety of contributions within the near ecosystem. Those include the following:\\\\\\\\n\\\\\\\\n* https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=1749 - Streamline development and addressing key issues, improvements to  the documentation site\\\\\\\\\\\\'s user experience, and providing educational content for integrating near-api-js with React.\\\\\\\\n* https://near.social/devgovgigs.near/widget/gigs-board.pages.Post?id=2765 - This second phase of the project focused on addressing GitHub issues and PRs, enhancing security and Developer Experience (DX), and creating beginner-friendly templates for interacting with NAJ.\\\\\\\\n* https://dev.near.org/devhub.near/widget/app?page=post&id=3307 - This project enhanced the NEAR wallet selector by updating near-api-js to use native JavaScript bigint, reducing bundle size, and ensuring compatibility, while also improving the login flow for multiple contracts and user experience. It focused on dependency management, addressed community-reported issues, and designed a systematic approach for automatic wallet testing.\\\\\\\\n* https://devhub.near.page/proposal/152 - The project had four key milestones. Firstly, it increased adoption by updating the starter template, improving API references, and simplifying the README for easier onboarding. Next, it ensured performance by testing gas usage and Wasm size, addressing inefficiencies, and conducting codebase reviews. Then, it prioritized security by securing common contract flows and adopting industry-standard security practices. Finally, it improved NEAR-Workspaces-JS integration, developer experience, and maintenance.\\\\\\\\n\\\\\\\\n\\\\\\\\n### Portfolio of relevant work \\\\\\\\nOn top of our contributions, our team has extensive experience in wallet integrations, authentication protocols, and transaction handling across various decentralized applications (dApps). We have successfully delivered similar projects that include improving wallet authentication flows, transaction signing mechanisms, and enhancing user experience through customized APIs and fallback mechanisms for non-supportive wallets.\\\\\\\\nYou can find further details in our research page - https://limechain.tech/research\\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\nThe work mentioned in this potential project will enhance the current wallet authentication process by removing the need for users to generate new access keys each time they authenticate. The solution focuses on improving security and user experience through more efficient use of existing keys, while also coordinating with the Wallets team for compatibility across different wallet. The introduction of a new API for transaction signing without submission will give app developers more flexibility in managing transaction workflows. By allowing them to sign transactions but handle submission at a later stage, developers can create more seamless user experiences through optimistic UI updates and customized error handling mechanisms.\\\\\\\\n\\\\\\\\nWe believe that the committee should choose this project because it really makes life easier for both users and developers. By allowing wallet authentication without having to create new access keys every time, we\\\\\\\\u{2019}re simplifying the process and making it a lot less confusing. This means that the users can dive right into what they love without the hassle of managing multiple keys. It\\\\\\\\\\\\'s a smoother experience that will make them feel more secure and comfortable using the platform.\\\\\\\\nOn top of that, we\\\\\\\\u{2019}re introducing a new API that lets developers sign transactions without immediately submitting them. This gives them the freedom to manage transactions on their own terms, which can lead to some really cool and creative applications. By enabling features like optimistic UI updates, users will see instant feedback, which keeps things feeling snappy and engaging.\\\\\\\\nWe\\\\\\\\u{2019}re also committed to working closely with the Wallets team to ensure everything runs smoothly across different wallets. If a wallet doesn\\\\\\\\u{2019}t support the new features, we\\\\\\\\u{2019}ll have fallback options in place so users aren\\\\\\\\u{2019}t left hanging. Our goal is to create a seamless experience that feels intuitive and friendly.\\\\\\\\nIt\\\\\\\\u{2019}s all about making things better for the community and ensuring they have the best tools at their fingertips.\\\\\\\\n\\\\\\\\n\\\\\\\\nThe solution will be open source and will be contributed to the wallet selector repo - https://github.com/near/wallet-selector \\\\\\\\n\\\\\\\\n### Goals / Milestones\\\\\\\\n\\\\\\\\n#### 1.1 Wallet Selector Support for Authentication Without Creating a New Access Key\\\\\\\\n\\\\\\\\nImplement support for wallet authentication that avoids creating new access keys and coordinate it with the Wallets team to ensure proper support and a fallback mechanism.\\\\\\\\n\\\\\\\\n- Wallet Selector Enhancement: Modify the existing Wallet Selector mechanism to allow users to authenticate without needing to generate a new access key each time. This will reduce overhead and improve security and user experience, especially for users who already have established keys.\\\\\\\\n- Coordination with Wallets Team: Collaborate with the Wallets team to ensure the feature is properly implemented and supported across wallets, ensuring consistency in how authentication is handled.\\\\\\\\n- Graceful Fallback: In cases where a wallet does not support authentication without a new access key, a fallback mechanism should be implemented. This ensures a seamless experience for the user, defaulting to the existing behavior (i.e., generating an access key) when necessary.\\\\\\\\n\\\\\\\\n### Deliverables:\\\\\\\\n- Updated Wallet Selector component.\\\\\\\\n- Fallback logic in place for non-supportive wallets.\\\\\\\\n- Documentation of the authentication process changes.\\\\\\\\n\\\\\\\\n### Timeline\\\\\\\\n2 weeks\\\\\\\\n\\\\\\\\n### 1.2 Introduce a New API for Transaction Signing Without Submission\\\\\\\\nCreate a new API that allows wallets to only sign a transaction and return it, providing flexibility for app developers to handle transaction submission and response management independently.\\\\\\\\n\\\\\\\\n- API Development: Build an API that interacts with wallets to request only the transaction signing, without submitting it on-chain. This gives app developers the ability to send the transaction at a later time or under specific conditions.\\\\\\\\n- Optimistic Results Handling: The new API will enable developers to implement \\\\\\\\\\\\\\\"optimistic UI updates\\\\\\\\\\\\\\\" by showing a positive result to the user after the transaction is signed, even before it\\\\\\\\\\\\'s confirmed on-chain. This enhances the user experience by reducing waiting times.\\\\\\\\n- Graceful Handling of Contract Errors: Developers should be able to handle contract errors or return values within their own app, allowing for more customized error management and fallback logic. This flexibility can reduce the risk of failed transactions disrupting the user flow.\\\\\\\\n\\\\\\\\n### Deliverables:\\\\\\\\n- New API for signing transactions without submission.\\\\\\\\n- Example implementation with documentation.\\\\\\\\n- Fallback mechanisms for error handling.\\\\\\\\n\\\\\\\\n#### Timeline\\\\\\\\n1 week\\\\\\\\n\\\\\\\\n### Metrics\\\\\\\\n\\\\\\\\nThe primary metric for the project\\\\\\\\\\\\'s success will be the number of wallets that integrate the new solutions. Currently, the wallet selector is already adopted by most of the widely-used wallets in the NEAR ecosystem.\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"75d06b35243c61a112abc1e0ad748f58c5b146d264099798492ede675199cf93\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"11000\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2439994274152e+21
+    }
+  },
+  {
+    "id": "8873668086",
+    "receipt_id": "3414CUu7UW1QK8hYXjJWmpEenVDfW5nfQKaQmLaK3cD4",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AvYj7vVPf4Js5ytjpBhzJ2EvHB6rwaKioQTQziRnErvc",
+      "block_height": 129451741,
+      "block_timestamp": 1727940396321935000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3580626077559,
+      "tokens_burnt": 358062607755900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8NjfmSXcenCWPzDPKsLfMFL36M7yEWibchdPvBP9TAgA",
+    "included_in_block_hash": "21kayogdMmxAE823DFznzjKNsKqVzfuyMrAyePpqztDz",
+    "block_timestamp": "1727940393680789313",
+    "block": {
+      "block_height": 129451739
+    },
+    "receipt_conversion_tokens_burnt": "73544863754500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 358062607755900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"hristolimechain.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":206,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"frol.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2439994274152e+21
+    }
+  },
+  {
+    "id": "8875042066",
+    "receipt_id": "GiuPdKEFchnEo2XXrTs5CGdqyzr5bscuxuwRyqePm43J",
+    "predecessor_account_id": "gagdiez.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "J2bbCfShXFE3dCqpQHrLp4xJZVvLRmDMA4uF7RyXGN6Q",
+      "block_height": 129455600,
+      "block_timestamp": 1727944683641085400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4129227118889,
+      "tokens_burnt": 412922711888900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "HNqTgCcDTFWEMvHU1NaSKurr37SqZowcpVrrbiemhxaw",
+    "included_in_block_hash": "6wytAkNefGf3Vjqenp8MsXYxkYbXsPaa959zwVUBehdL",
+    "block_timestamp": "1727944682527806122",
+    "block": {
+      "block_height": 129455599
+    },
+    "receipt_conversion_tokens_burnt": "31716708956500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 412922711888900000000,
+        "args": "{\"id\": 213, \"timeline\": {\"status\": \"APPROVED\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 797141994851300000000
+    }
+  },
+  {
+    "id": "8875042352",
+    "receipt_id": "FdFrydyc16L7eVbpoMp12gCKN199FjaGC61izXCUSAfh",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Ep9zMSjsPpJnx3yc8n3BCG7kxUJbT4bNLD5sv52X8vuv",
+      "block_height": 129455601,
+      "block_timestamp": 1727944684546603800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3525025740059,
+      "tokens_burnt": 352502574005900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "HNqTgCcDTFWEMvHU1NaSKurr37SqZowcpVrrbiemhxaw",
+    "included_in_block_hash": "6wytAkNefGf3Vjqenp8MsXYxkYbXsPaa959zwVUBehdL",
+    "block_timestamp": "1727944682527806122",
+    "block": {
+      "block_height": 129455599
+    },
+    "receipt_conversion_tokens_burnt": "31716708956500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352502574005900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"flmel.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":213,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 797141994851300000000
+    }
+  },
+  {
+    "id": "8875151326",
+    "receipt_id": "DLw2oJbi4WHkjxeEjGP5dVAJKhdYbiq8thkjmUvPbZAF",
+    "predecessor_account_id": "gagdiez.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "F5D4Fdz8oK5c5ozQqy7xCmtVUoYZW449CuL5mP14pk8B",
+      "block_height": 129455843,
+      "block_timestamp": 1727944955776369200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4423718702301,
+      "tokens_burnt": 442371870230100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8KEm5RK8fyLeVqgLqJtPSYrtuJRU9x4sroWfpwFxUyTj",
+    "included_in_block_hash": "GqPez5TjvdRgih8HbpdNZ3fwXQmM3KhhGoKeXxYoLBJq",
+    "block_timestamp": "1727944954629860531",
+    "block": {
+      "block_height": 129455842
+    },
+    "receipt_conversion_tokens_burnt": "31716708956500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 442371870230100000000,
+        "args": "{\"id\": 215, \"timeline\": {\"status\": \"APPROVED\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 826563629928500000000
+    }
+  },
+  {
+    "id": "8875151695",
+    "receipt_id": "D4eiWCWqK6HsXM4mk9JLK3adqU7CJLPf2RfceTrUeN8L",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5TSNLFhSoRsHCmANDk45qMVhNvNj4xHzSB4ZKBkYGqhi",
+      "block_height": 129455844,
+      "block_timestamp": 1727944957051582500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3524750507419,
+      "tokens_burnt": 352475050741900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8KEm5RK8fyLeVqgLqJtPSYrtuJRU9x4sroWfpwFxUyTj",
+    "included_in_block_hash": "GqPez5TjvdRgih8HbpdNZ3fwXQmM3KhhGoKeXxYoLBJq",
+    "block_timestamp": "1727944954629860531",
+    "block": {
+      "block_height": 129455842
+    },
+    "receipt_conversion_tokens_burnt": "31716708956500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352475050741900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"maguila.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":215,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 826563629928500000000
+    }
+  },
+  {
+    "id": "8875315820",
+    "receipt_id": "GZqNe6AfoqKpYhwJmL8jrfkNmw5xFbkiA2GasAk3kHrK",
+    "predecessor_account_id": "gagdiez.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3p6ZnG8WtT3MGiQ2UWM6LGfVRNujpLa8NFkhocnickLM",
+      "block_height": 129456234,
+      "block_timestamp": 1727945384363949000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4238501512455,
+      "tokens_burnt": 423850151245500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DTsKgvYX2QmZqpWF4GR6zvuX4cYy2VkSrCF6TvbHXM5Z",
+    "included_in_block_hash": "JBjgQm3HPu7h9Herw1H3Sh6y8WLqR7qSU5PKhW29PX5e",
+    "block_timestamp": "1727945383266572948",
+    "block": {
+      "block_height": 129456233
+    },
+    "receipt_conversion_tokens_burnt": "31716708956500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 423850151245500000000,
+        "args": "{\"id\": 216, \"timeline\": {\"status\": \"APPROVED\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 808027341209900000000
+    }
+  },
+  {
+    "id": "8875316074",
+    "receipt_id": "8oyVXBssC3CBACtkrCVGbR1ppDPTG5qMnCcxepLZvk17",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "oxMGzyBQPXjDUTFPqLjaFmoFupJyaq12de5RoWuaNs1",
+      "block_height": 129456235,
+      "block_timestamp": 1727945385360839700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3524604810079,
+      "tokens_burnt": 352460481007900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DTsKgvYX2QmZqpWF4GR6zvuX4cYy2VkSrCF6TvbHXM5Z",
+    "included_in_block_hash": "JBjgQm3HPu7h9Herw1H3Sh6y8WLqR7qSU5PKhW29PX5e",
+    "block_timestamp": "1727945383266572948",
+    "block": {
+      "block_height": 129456233
+    },
+    "receipt_conversion_tokens_burnt": "31716708956500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352460481007900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"denbite.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":216,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 808027341209900000000
+    }
+  },
+  {
+    "id": "8886818383",
+    "receipt_id": "6ZQ1Z3ipiFLu2EWSh1zXrY1aQr4JM8tNn2DU7iRpWW1D",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FAv15SeaXNyt4XYgK764t5WVbJH7aPyrEnq4PQ6NajR1",
+      "block_height": 129486570,
+      "block_timestamp": 1727979443928754000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9745705771211,
+      "tokens_burnt": 974570577121100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "3Jpk85wH2T3QYzs1WZeW94CxEucy64TBKRXQuGtbWuhF",
+    "included_in_block_hash": "FGiSKE4hFthqt4P6zX959LNqEqWT18AVxdduGotko1Kq",
+    "block_timestamp": "1727979442755732468",
+    "block": {
+      "block_height": 129486569
+    },
+    "receipt_conversion_tokens_burnt": "32069568447500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 974570577121100000000,
+        "args": "{\"id\": 206, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3647368448773e+21
+    }
+  },
+  {
+    "id": "8886818595",
+    "receipt_id": "3uBZ5JNUmiyCH5cyWpZU6RgL5MjRxWaV4czi8w4Apdam",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EcgjBFdcq88FYv1zspqTMYwvXbDAxLAXxA4P26SmgcQK",
+      "block_height": 129486571,
+      "block_timestamp": 1727979445128304000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3580966993087,
+      "tokens_burnt": 358096699308700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "3Jpk85wH2T3QYzs1WZeW94CxEucy64TBKRXQuGtbWuhF",
+    "included_in_block_hash": "FGiSKE4hFthqt4P6zX959LNqEqWT18AVxdduGotko1Kq",
+    "block_timestamp": "1727979442755732468",
+    "block": {
+      "block_height": 129486569
+    },
+    "receipt_conversion_tokens_burnt": "32069568447500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 358096699308700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"hristolimechain.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":206,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3647368448773e+21
+    }
+  },
+  {
+    "id": "8887081153",
+    "receipt_id": "DTaehLRnP1U4BC8kiWwo4QKuZagqDjGp9V66HS883H3G",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BDjnFViHL429eEWfUEWiaopMDbVhiYtJc9GbHAqQPGZx",
+      "block_height": 129487148,
+      "block_timestamp": 1727980096874246000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4633092521061,
+      "tokens_burnt": 463309252106100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "7WjuyxmYxKuM2mnzCgMnDRx7qmq5pUWGgvBU2CfYZitp",
+    "included_in_block_hash": "DcZb9hByLk7u5AdES7cwUVmxsAS3bHmEMLVKwGVwqkzr",
+    "block_timestamp": "1727980095558147681",
+    "block": {
+      "block_height": 129487147
+    },
+    "receipt_conversion_tokens_burnt": "32079105190500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 463309252106100000000,
+        "args": "{\"id\": 215, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": false, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 847933475972900000000
+    }
+  },
+  {
+    "id": "8887082848",
+    "receipt_id": "DoHSWayhJTAzkqfk1USRWsNaeJP3qfvZ7z5ssiMAaZGs",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "35brECAvLsJ6E7BNLX6B7BbqNFwbHSuARTD4n64rTUJH",
+      "block_height": 129487149,
+      "block_timestamp": 1727980098180361000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3525451186763,
+      "tokens_burnt": 352545118676300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7WjuyxmYxKuM2mnzCgMnDRx7qmq5pUWGgvBU2CfYZitp",
+    "included_in_block_hash": "DcZb9hByLk7u5AdES7cwUVmxsAS3bHmEMLVKwGVwqkzr",
+    "block_timestamp": "1727980095558147681",
+    "block": {
+      "block_height": 129487147
+    },
+    "receipt_conversion_tokens_burnt": "32079105190500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352545118676300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"maguila.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":215,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 847933475972900000000
+    }
+  },
+  {
+    "id": "8887113898",
+    "receipt_id": "9dMktM8d3wfgvPazb4Bc9C8CMHRHsgLpVN4fXq3MFkYp",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "G2SRoaMD4EhzdzvVEZoEUt49m1239BfzzQeHCqD92H2S",
+      "block_height": 129487208,
+      "block_timestamp": 1727980163886043600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4279215212391,
+      "tokens_burnt": 427921521239100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "Asvf9HxY7x14BKkemze1XAw14vJQFpV1Yr8QAJwqYNkq",
+    "included_in_block_hash": "HwPCKmJkxBik9EG8HBCGSJHdcw8gDHKNumi6PFZnFjJU",
+    "block_timestamp": "1727980162832668156",
+    "block": {
+      "block_height": 129487207
+    },
+    "receipt_conversion_tokens_burnt": "32083873562000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 427921521239100000000,
+        "args": "{\"id\": 213, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": false, \"sponsor_requested_review\": false, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 812482402364600000000
+    }
+  },
+  {
+    "id": "8887114181",
+    "receipt_id": "5f99z5DrYKsJkvBNDzctRtNLCUGQW72AynKtTs4W38yZ",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GU2LtDG9hxhPyCJgfPUmj6JE21LoBVBMgNSoDjVHCzS7",
+      "block_height": 129487209,
+      "block_timestamp": 1727980165372707300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3524770075635,
+      "tokens_burnt": 352477007563500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Asvf9HxY7x14BKkemze1XAw14vJQFpV1Yr8QAJwqYNkq",
+    "included_in_block_hash": "HwPCKmJkxBik9EG8HBCGSJHdcw8gDHKNumi6PFZnFjJU",
+    "block_timestamp": "1727980162832668156",
+    "block": {
+      "block_height": 129487207
+    },
+    "receipt_conversion_tokens_burnt": "32083873562000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352477007563500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"flmel.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":213,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 812482402364600000000
+    }
+  },
+  {
+    "id": "8887272158",
+    "receipt_id": "8YZd1BmMNcydpo27XjwpFxbQmeSPSv2XJszTsamMNP59",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "p5fvLZ1Dr8qBN7cmA8sSK2wb1yKTbw5CPfwaa6UoFny",
+      "block_height": 129487584,
+      "block_timestamp": 1727980583834366700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4322947187915,
+      "tokens_burnt": 432294718791500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "C2k2UQ9VidUpq7AE54MPJRwhUpDFEggqh48KfyN1u2jH",
+    "included_in_block_hash": "vcpp6VQzUSvnNpbmyXHatigh7uo1vhtn1EwgSR3zEfx",
+    "block_timestamp": "1727980582594896438",
+    "block": {
+      "block_height": 129487583
+    },
+    "receipt_conversion_tokens_burnt": "32231693078500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 432294718791500000000,
+        "args": "{\"id\": 216, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": false, \"trustees_released_payment\": true, \"request_for_trustees_created\": true, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 817022117674700000000
+    }
+  },
+  {
+    "id": "8887272347",
+    "receipt_id": "5HsT4h1uBHMNFW5abKMUccvckAHSziy7QJhp8MnPvV2x",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "B3sSHbdmvACv4dZhNQviL6Smo6VtPX2LyoRrDRx6jTA9",
+      "block_height": 129487585,
+      "block_timestamp": 1727980585198617600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3524957058047,
+      "tokens_burnt": 352495705804700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "C2k2UQ9VidUpq7AE54MPJRwhUpDFEggqh48KfyN1u2jH",
+    "included_in_block_hash": "vcpp6VQzUSvnNpbmyXHatigh7uo1vhtn1EwgSR3zEfx",
+    "block_timestamp": "1727980582594896438",
+    "block": {
+      "block_height": 129487583
+    },
+    "receipt_conversion_tokens_burnt": "32231693078500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352495705804700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"denbite.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":216,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 817022117674700000000
+    }
+  },
+  {
+    "id": "8910941172",
+    "receipt_id": "CJpWUq12rWXC7bdXpTkpSq6qsw8ZRUdCwguutXbdLCmK",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FoKodkNPPYsaFigcTtLNX9ojSmh7yFtsMBSXUb6fLoNb",
+      "block_height": 129550251,
+      "block_timestamp": 1728050122231820500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4982172451675,
+      "tokens_burnt": 498217245167500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "4xycjJihcYo4q7UqKzHRuFbCzdA2TM41PZAFBRuodhtU",
+    "included_in_block_hash": "6gkbCUQVFLNxXm3JAS2Ty5HS4fHgkubH4yJYQDTLWM8P",
+    "block_timestamp": "1728050121241041480",
+    "block": {
+      "block_height": 129550250
+    },
+    "receipt_conversion_tokens_burnt": "32074336819000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 498217245167500000000,
+        "args": "{\"id\": 217, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 882809338062800000000
+    }
+  }
+]

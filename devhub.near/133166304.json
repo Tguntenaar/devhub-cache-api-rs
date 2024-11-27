@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "10302620050",
+    "receipt_id": "HW3FjhPPmxL7Sw5rPTzhpP5vYtiYM1JKdD8dWa4Zv2Av",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FsdpQ8nTwmKrEo1Bg3Q4EknZ4baMEjdGcFq97ZcirYxj",
+      "block_height": 133166530,
+      "block_timestamp": 1732145058666770000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4334520249155,
+      "tokens_burnt": 433452024915500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "CFnKxk6GtVpvZ8E9sEQtu3LmU2WoatBGdjtqUsiseWzK",
+    "included_in_block_hash": "286UA8B4ftpPEhWg4au5XK66ZJA4ZdyeRQfE99mF1xY3",
+    "block_timestamp": "1732145057580719937",
+    "block": {
+      "block_height": 133166529
+    },
+    "receipt_conversion_tokens_burnt": "32079105190500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 433452024915500000000,
+        "args": "{\"id\": 255, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": false, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 818071287191200000000
+    }
+  },
+  {
+    "id": "10302620192",
+    "receipt_id": "DB3bpE1FC2E6effyp2uAGh96CHn3goJcf9RK8k4gKRE5",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8PPXxkMp3tPeTGUXnxakGJ7hpj6haCc1Ncf12JpJNFnG",
+      "block_height": 133166531,
+      "block_timestamp": 1732145059761246500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3525401570852,
+      "tokens_burnt": 352540157085200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "CFnKxk6GtVpvZ8E9sEQtu3LmU2WoatBGdjtqUsiseWzK",
+    "included_in_block_hash": "286UA8B4ftpPEhWg4au5XK66ZJA4ZdyeRQfE99mF1xY3",
+    "block_timestamp": "1732145057580719937",
+    "block": {
+      "block_height": 133166529
+    },
+    "receipt_conversion_tokens_burnt": "32079105190500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352540157085200000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"cryptogarik.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":255,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 818071287191200000000
+    }
+  },
+  {
+    "id": "10303432181",
+    "receipt_id": "BvJFzkemZjgKDf9FYAgFDoHWjxa4L26uC9t17HJEdd9A",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AoxCWFbsdzn6m1dNFGQ3dFdBNzcWB1vpiEzeiUzzqDjg",
+      "block_height": 133169420,
+      "block_timestamp": 1732148224835721500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4477909249803,
+      "tokens_burnt": 447790924980300000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8eNY79mdi9p21NUp5rxZYiWbkBxXCp4R7zJKXCuMY6qb",
+    "included_in_block_hash": "AtfefG8BqcX2iPExhRMydNpMB4YeJuC8rR5wkV32Dfii",
+    "block_timestamp": "1732148223699705500",
+    "block": {
+      "block_height": 133169419
+    },
+    "receipt_conversion_tokens_burnt": "31702403842000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 447790924980300000000,
+        "args": "{\"id\": 254, \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 837538357629900000000
+    }
+  },
+  {
+    "id": "10303432447",
+    "receipt_id": "JCBwFXcfv5uxwidQ4WzuetzNf8jqXueCwiJvecviZxks",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FrPEbxs62UHN8CDRCNojK9SkKVq29m5RprBnZwnEYHZS",
+      "block_height": 133169421,
+      "block_timestamp": 1732148225617684700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3580450288076,
+      "tokens_burnt": 358045028807600000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8eNY79mdi9p21NUp5rxZYiWbkBxXCp4R7zJKXCuMY6qb",
+    "included_in_block_hash": "AtfefG8BqcX2iPExhRMydNpMB4YeJuC8rR5wkV32Dfii",
+    "block_timestamp": "1732148223699705500",
+    "block": {
+      "block_height": 133169419
+    },
+    "receipt_conversion_tokens_burnt": "31702403842000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 358045028807600000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":254,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 837538357629900000000
+    }
+  },
+  {
+    "id": "10303437018",
+    "receipt_id": "2kywjMSNkopM9wqknVE5jMgqL7J1p17vY6Le9crAirXC",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Hc7rssZjGDQ4qn9hc5rnYcpDtymLhb57Zp5wgs9788Gp",
+      "block_height": 133169442,
+      "block_timestamp": 1732148248149526000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4466088119879,
+      "tokens_burnt": 446608811987900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "4USQnUHq3TTyQkqu6kZGPd8jNLr2ZKZ6g1RhbZZEEPes",
+    "included_in_block_hash": "J388hKMsfWVYHYgNb7fiDkBs7c4zeBWfKrxr3rKQeNp",
+    "block_timestamp": "1732148247287795653",
+    "block": {
+      "block_height": 133169441
+    },
+    "receipt_conversion_tokens_burnt": "42426471345500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 446608811987900000000,
+        "args": "{\"id\": 253, \"body\": {\"name\": \"DevHub Fin Ops 09/23/2024 - 09/27/2024\", \"summary\": \"Oversee that proposals flow thru the payment process efficiently. Continuously improve upon the process.\", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified\": true, \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": false}, \"supervisor\": \"theori.near\", \"description\": \"I facilitate the payment processing of proposal submissions. I operate as the hub between DevHub admin, contributors and NF in communictions and problem solving as it relates to payments of completed work by the community.\\\\\\\\nThe time I spend in this capacity involves weekly update meetings with DevHub admin, email and TG communications with NF legal, NF finance, DevHub admins and DevHub community contributors. We utilize database tools to manage the payment process.\\\\\\\\nThe DevHub community members have benefited by receiving their proposal payments much more timely, recently narrowing in on 48 hr turn around and reducing the administrative steps each contributor had to complete to receive payment. The larger NEAR ecosystem has benefited by reducing the amount of time spent by the NF Legal and Finance team members, as well as DevHub admins, on the proposal payment process. These process improvements brought additional controls ensuring overall accuracy as DevHub has a fiduciary responsibility to NF that grant funds are spent responsibly, payments are correct and appropriate KYC/KYB measures have been taken.\\\\\\\\nWeek 09/23/2024 - 09/27/2024\\\\\\\\nExtra time was spent setting up testing invoicing for the Treasury system and communicating with teammembers on various hurdles and outcomes.\\\\\\\\nTotal hours 15 @$80/hr\\\\\\\\nRate determination is below the low end of the average hourly contract rate ($87 - $162) for an accountant with the same years of experience. That average rate does not account for my 5 years of blockchain specific experience. I\\\\\\\\\\\\'m not fulfilling all the duties that typically fall under this type of role, that is why I proposed a rate lower than the low end of the average. https://www.salary.com/research/salary/benchmark/controller-hourly-wages\", \"linked_proposals\": [], \"receiver_account\": \"9bd73bc9ba6ff289e2deb597dd6fe83dc0056af7a2937d6dec119660ba0146a4\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"1200\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 847030470509900000000
+    }
+  },
+  {
+    "id": "10303437252",
+    "receipt_id": "3yFfG7UYJ4hsMf6EBhyEwHC4vGfGCLQQvAwnvpZ7T6LT",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4nkyJorRRqYfVkCwZJHacb4PMBapHSdwF399GKsk3fJP",
+      "block_height": 133169443,
+      "block_timestamp": 1732148249269424400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3579951871765,
+      "tokens_burnt": 357995187176500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4USQnUHq3TTyQkqu6kZGPd8jNLr2ZKZ6g1RhbZZEEPes",
+    "included_in_block_hash": "J388hKMsfWVYHYgNb7fiDkBs7c4zeBWfKrxr3rKQeNp",
+    "block_timestamp": "1732148247287795653",
+    "block": {
+      "block_height": 133169441
+    },
+    "receipt_conversion_tokens_burnt": "42426471345500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357995187176500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":253,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 847030470509900000000
+    }
+  },
+  {
+    "id": "10303443213",
+    "receipt_id": "L4YdiUiFe97SspSpZsDn4WcnjAewv9BHVURmq9ZDjLE",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4pVjW4EUZR91MiPi3DdMUsojf6Y4JTqfVDymRA1TsD6S",
+      "block_height": 133169471,
+      "block_timestamp": 1732148280289339000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4840142138691,
+      "tokens_burnt": 484014213869100000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DZac75aWZTP1JpcNSHhZhjt7yvjTkXw3TPKvZ9RTd8nB",
+    "included_in_block_hash": "2Pf1JtwweZsZW4tfmGsepwwesJDc7xXfDUjtSeG1jCo5",
+    "block_timestamp": "1732148279246527455",
+    "block": {
+      "block_height": 133169470
+    },
+    "receipt_conversion_tokens_burnt": "42660121549000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 484014213869100000000,
+        "args": "{\"id\": 254, \"body\": {\"name\": \"DevHub Fin Ops 09/30/2024 - 11/01/2024\", \"summary\": \"Oversee that proposals flow thru the payment process efficiently. Continuously improve upon the process.\", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"APPROVED\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": false}, \"supervisor\": \"theori.near\", \"description\": \"I facilitate the payment processing of proposal submissions. I operate as the hub between DevHub admin, contributors and NF in communictions and problem solving as it relates to payments of completed work by the community.\\\\\\\\nThe time I spend in this capacity involves weekly update meetings with DevHub admin, email and TG communications with NF legal, NF finance, DevHub admins and DevHub community contributors. We utilize database tools to manage the payment process.\\\\\\\\nThe DevHub community members have benefited by receiving their proposal payments much more timely, recently narrowing in on 48 hr turn around and reducing the administrative steps each contributor had to complete to receive payment. The larger NEAR ecosystem has benefited by reducing the amount of time spent by the NF Legal and Finance team members, as well as DevHub admins, on the proposal payment process. These process improvements brought additional controls ensuring overall accuracy as DevHub has a fiduciary responsibility to NF that grant funds are spent responsibly, payments are correct and appropriate KYC/KYB measures have been taken.\\\\\\\\nWeek 09/30/2024 - 10/04/2024 - 12 hrs\\\\\\\\nWeek 10/07/2024 - 10/11/2024 - 10 hrs\\\\\\\\nWeek 10/14/2024 - 10/18/2024 - 10 hrs\\\\\\\\nWeek 10/21/2024- 10/25/2024 - 10 hrs\\\\\\\\nWeek 10/28/2024 - 11/01/2024 - 10 hrs\\\\\\\\n\\\\\\\\nTotal hours 52 @$80/hr\\\\\\\\nRate determination is below the low end of the average hourly contract rate ($87 - $162) for an accountant with the same years of experience. That average rate does not account for my 5 years of blockchain specific experience. I\\\\\\\\\\\\'m not fulfilling all the duties that typically fall under this type of role, that is why I proposed a rate lower than the low end of the average. https://www.salary.com/research/salary/benchmark/controller-hourly-wages\", \"linked_proposals\": [], \"receiver_account\": \"9bd73bc9ba6ff289e2deb597dd6fe83dc0056af7a2937d6dec119660ba0146a4\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"4160\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 884669522594600000000
+    }
+  },
+  {
+    "id": "10303443456",
+    "receipt_id": "DWBJ54XyH8QEJSAfpYB5qdkifZHpEYVec97EK6pcNaUD",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "C55KBcB2HwhxxZeReVBuLsh1Wv5MSJcnb66Qwd4vE5vm",
+      "block_height": 133169472,
+      "block_timestamp": 1732148281160815900
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3579951871765,
+      "tokens_burnt": 357995187176500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DZac75aWZTP1JpcNSHhZhjt7yvjTkXw3TPKvZ9RTd8nB",
+    "included_in_block_hash": "2Pf1JtwweZsZW4tfmGsepwwesJDc7xXfDUjtSeG1jCo5",
+    "block_timestamp": "1732148279246527455",
+    "block": {
+      "block_height": 133169470
+    },
+    "receipt_conversion_tokens_burnt": "42660121549000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357995187176500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":254,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 884669522594600000000
+    }
+  },
+  {
+    "id": "10303444176",
+    "receipt_id": "Ey4xaEXYsjGPNVtxkta3dUQ7yhEMq7s7FTGxfDh7Q8bT",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GXT6S3xKvr7w2w8byxTNS8mZ6rVhDcAf9kyfgZTAuSAE",
+      "block_height": 133169475,
+      "block_timestamp": 1732148284402408700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4910344727990,
+      "tokens_burnt": 491034472799000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DSRG8gR1uEEnkYK7FxShcYAWRvnqwKvZbS6ZhnXDCp8d",
+    "included_in_block_hash": "4or5PhXn779Ubq2oGuwpsQVKE4AwAwmgxJGpGyaMFSgG",
+    "block_timestamp": "1732148283240390075",
+    "block": {
+      "block_height": 133169474
+    },
+    "receipt_conversion_tokens_burnt": "31711940585000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 491034472799000000000,
+        "args": "{\"id\": 253, \"timeline\": {\"status\": \"APPROVED\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 880741600560500000000
+    }
+  },
+  {
+    "id": "10303444354",
+    "receipt_id": "HikEJZVz9vyuJKnyQi9NztCigBZQLcpmoPCLWWZt5mtF",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CQm2Ytb2yKhMsZwio8zX9mmd4f9LPtQxEwvxwpKTRtQJ",
+      "block_height": 133169476,
+      "block_timestamp": 1732148285473158000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3579951871765,
+      "tokens_burnt": 357995187176500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DSRG8gR1uEEnkYK7FxShcYAWRvnqwKvZbS6ZhnXDCp8d",
+    "included_in_block_hash": "4or5PhXn779Ubq2oGuwpsQVKE4AwAwmgxJGpGyaMFSgG",
+    "block_timestamp": "1732148283240390075",
+    "block": {
+      "block_height": 133169474
+    },
+    "receipt_conversion_tokens_burnt": "31711940585000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357995187176500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":253,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 880741600560500000000
+    }
+  },
+  {
+    "id": "10325182786",
+    "receipt_id": "6qYzwJ5xqB8paAHea1AbdR8Q7MXRgya3CjHDTsWKcwU6",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6bR4W9VT9Jvn83EKE8KK9fhPKH5aHTgzGyuksogjBs5h",
+      "block_height": 133224755,
+      "block_timestamp": 1732209587439194000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9913791174689,
+      "tokens_burnt": 991379117468900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "7EwCRkujuZE4HUifRYKWsjV6qnWU8ZDJJyK4coUHcUfD",
+    "included_in_block_hash": "5fqmv9CiLeCvzXrcGfsNWnaS1Bvye9fAU7VfVwtjF9NB",
+    "block_timestamp": "1732209586627709397",
+    "block": {
+      "block_height": 133224754
+    },
+    "receipt_conversion_tokens_burnt": "197279335808000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 991379117468900000000,
+        "args": "{\"body\": {\"name\": \"DevHub Developer Contributor report by Peter for 2024-10-21 - 2024-11-20\", \"summary\": \"Requesting funding for my DevHub contributions in the period October 21st to November 20th 2024. 61 hours in total. Highlights are Treasury test coverage, Exploration of Superteam Earn, Treasury Factory contract, and Voting duration setting. As part of the latter is also using near-workspaces-rs for contract interaction during frontend-development, so that less real test transactions needs to be made.\", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": \"theori.near\", \"description\": \"Below is a log of the time spent for various tasks. As usual I am asking for the compensation rate of $150 per hour, which I consider the rate for a senior developer/architect in Norway, also then taking into account expenses of self employment.\\\\\\\\n\\\\\\\\n| Date       | Amount | Task                                         | Issue/PR                                                                                                                                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |\\\\\\\\n| ---------- | ------ | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |\\\\\\\\n| 2024-10-21 | 0,5    | Treasury dashboard voting                    |                                                                                                                                                | Call with Megha about refreshing table after voting, which is not storing component src in BOS VM storage when running on localhost. Changed approach to pass callback function via props.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |\\\\\\\\n| 2024-10-22 | 1      | Indexer replacement                          |                                                                                                                                                | Call with Thomas. Using nearblocks API to get latest changes. Replace queryapi URL to break tests.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |\\\\\\\\n| 2024-10-27 | 0,5    | Review                                       | https://github.com/NEAR-DevHub/neardevhub-bos/pull/973<br>https://github.com/NEAR-DevHub/neardevhub-bos/pull/916                               | Review of PRs for showing contract balance for admins, and removal of redundant/duplicated code across instances                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |\\\\\\\\n| 2024-10-27 | 2      | Treasury dashboard test cases                | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/93](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/93)   | add test for cancelling payment request for a linked proposal and that submit should be disabled when incorrect receiver id is mentioned or empty amount or empty proposal name or empty token                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |\\\\\\\\n| 2024-10-28 | 1      | Treasury dashboard test cases                | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/97](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/97)   | On add member transaction modal, click confirm, ensure full access key are present so that wallet redirection takes place                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |\\\\\\\\n| 2024-10-29 | 1,5    | Default page events committee / Devhub Cache | https://github.com/Tguntenaar/devhub-cache-api-rs/pull/1<br>https://github.com/NEAR-DevHub/neardevhub-bos/pull/975                             | Call with Thomas about setting up postgres for Devhub cache API in devcontainer, Default page proposals for events committee                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\\\\\\\\n| 2024-10-30 | 1      | Call about SuperteamDAO/earn                 | [https://github.com/SuperteamDAO/earn](https://github.com/SuperteamDAO/earn)                                                                   | Call with Ori, Vlad and Vova about evaluating superteam earn                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\\\\\\\\n| 2024-10-30 | 0,5    | Quorum UI                                    | https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/99<br>https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/101  | Review of Quorum UI Pull Requests                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |\\\\\\\\n| 2024-10-30 | 2      | Treasury dashboard test add member           | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/97](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/97)   | override wallet signandsendtransactions. wait for tx to complete, and wait for add member form to disappear                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |\\\\\\\\n| 2024-10-31 | 3      | Treasury dashboard test add member           | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/97](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/97)   | use callback instead of storage to refresh members table ( localstorage does not work with dev gateway ). Fix other failing tests: Cancel requests with linked proposals, and create NEAR payment request which needs to search for linked proposals. Split test action in 3 separate concurrent jobs. Fix that \\\\\\\\\\\\\\\"view in history\\\\\\\\\\\\\\\" does not always open history tab, because VM.require is not always loading the dependency in time for e.g. useEffect.                                                                                                                                                                                                                                                            |\\\\\\\\n| 2024-10-31 | 1      | Treasury Dashboard: Fix unstable tests       | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/106](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/106) | Fix \\\\\\\\\\\\\\\"test ended\\\\\\\\\\\\\\\" error by adding page.unrouteAll to the tests that didn\\\\\\\\\\\\'t have it. Make staking delegation test more stable by waiting for staking select buttons to appear and be enabled.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |\\\\\\\\n| 2024-11-01 | 2      | Superteam Earn                               | [https://github.com/SuperteamDAO/earn/pull/819](https://github.com/SuperteamDAO/earn/pull/819)                                                 | Devcontainer setup and Docker build                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\\\\\\\\n| 2024-11-02 | 5      | Superteam Earn                               | [https://github.com/SuperteamDAO/earn/pull/819](https://github.com/SuperteamDAO/earn/pull/819)                                                 | Deployment to Google Cloud Run, Investigated and fixed auth callback redirect ( environment variable NEXTAUTH_URL ), Email validation API ( zerobounce ) setup. skip zerobounce validation if api key is not provided ( because of max limit of 5 validations, and just creating accounts by an admin does not seem to be supported ). Persistent storage not available in cloud run, but moved to a VM in GCP Compute Engine. Studying the application, and publishing of listing, where the first listing from a sponsor seems to need manual verification by updating the isPublished field directly in the database, and then the next listing is published without verification.                              |\\\\\\\\n| 2024-11-04 | 2      | KYC expiration support                       | [https://github.com/NEAR-DevHub/neardevhub-bos/pull/980](https://github.com/NEAR-DevHub/neardevhub-bos/pull/980)                               | Set the displayed verification status if the wallet address doesn\\\\\\\\\\\\'t meet the criteria ( e.g. devhub-payouts.nea, which is missing an r in the end ). This caused the events committe test to fail scrolling the comment into view ( which requires that loading indicators should be finished ). [https://events-committee.near.page/proposal/1?accountId=rimberjack.near&blockHeight=118849805<br><br>](https://events-committee.near.page/proposal/1?accountId=rimberjack.near&blockHeight=118849805)Also investigated issue with neardata-server ( from fastnear ) which does not allow CORS anymore. Looked into alternative with RPC, and also reported the issue back to Evgeny K ( he is looking into it ). |\\\\\\\\n| 2024-11-05 | 0,5    | Devhub cache API                             |                                                                                                                                                | Call with Thomas about calling the contract for getting the proposal contents and full history when updating the cache database after a change                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |\\\\\\\\n| 2024-11-05 | 0,5    | Review                                       | https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/111<br>https://github.com/NEAR-DevHub/neardevhub-bos/pull/981                | Review new staking delegation features and tests(Treasury dashboard), and fix for seeing the RFP you\\\\\\\\\\\\'ve submitted ( DevHUB portal )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\\\\\\\\n| 2024-11-06 | 1      | Sync                                         |                                                                                                                                                | Weekly sync call. Created followup ticket for Treasury Dasboard self-creation flow helper contract. https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/issues/113<br>Follow-up call with Ori on settings change requests for Treasury dashboard, general settings with vote duration.                                                                                                                                                                                                                                                                                                                                                                                                                    |\\\\\\\\n| 2024-11-07 | 0,5    | Treasury factory contract                    | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | Initial setup of treasury factory contract, with web4 handler.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |\\\\\\\\n| 2024-11-08 | 0,5    | Review                                       | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/117](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/117) | Review of table for approving treasury dashboard requests                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |\\\\\\\\n| 2024-11-09 | 6      | Treasury factory contract                    | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | test for setting up sputnik-dao factory in near-workspaces-rs, create dao from treasury instance factory cross contract call, deploy web4 and near social widget contents, function to update instance widget from reference widget account ( treasury-testing.near )                                                                                                                                                                                                                                                                                                                                                                                                                                              |\\\\\\\\n| 2024-11-10 | 3      | Treasury factory contract                    | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | Assign fixed gas amount for dao creation. Setup of github action. Treasury factory test passing in near-workspaces-rs. Use cargo-near for building web4 in treasury-factory [build.rs](http://build.rs/), and also instead of using unstable contract build feature of near-workspaces-rs.                                                                                                                                                                                                                                                                                                                                                                                                                         |\\\\\\\\n| 2024-11-10 | 2      | Voting duration setting                      | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121) | Initial page and form setup for Voting duration setting. rpc sandbox for checking policy change requests.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |\\\\\\\\n| 2024-11-11 | 2      | Voting duration setting                      | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121) | Example with RPC sandbox for adding proposal (request) for changing proposal_period. Create transaction on clicking submit, get initial value from existing policy.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\\\\\\\\n| 2024-11-12 | 3      | Treasury factory contract                    | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | Fully configurable which sputnikdao, widget reference and social db account to use. Testing of instance creation via testnet deployment. Call with Andrew going through the implementation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |\\\\\\\\n| 2024-11-12 | 1      | Voting duration setting                      | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121) | Playwright test for voting duration. Simple README for RPC sandbox                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |\\\\\\\\n| 2024-11-13 | 0,5    | Treasury factory / RPC sandbox               |                                                                                                                                                | Call with Megha showing how to do RPC calls with the sandbox, without having to do real transactions. Also going through the treasury-factory contract flow.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\\\\\\\\n| 2024-11-13 | 1,5    | Sync                                         |                                                                                                                                                | Weekly sync call, and sidebar about voting duration impact on pending proposals. Suggesting a simple list of the pending proposals, showing the new expiration date.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |\\\\\\\\n| 2024-11-14 | 0,5    | Voting duration setting                      | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121) | Cancel voting duration                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |\\\\\\\\n| 2024-11-16 | 4      | Voting duration setting                      | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121) | test with sputnik dao contract in near-workspaces sandbox, helper functions for adding payment request proposal to sandbox, and listing proposals                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |\\\\\\\\n| 2024-11-17 | 5      | Voting duration setting                      | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121) | sandbox time travel, test voting on expired proposals ( which fails, even after extending voting duration ). Detect proposals that will expire when lowering duration days, and show them in a table. Test lowering voting duration one more day at the time, and see that the list of new expired proposals grow. Show toast after submission. Fix unstake test, by skipping waiting for loader.                                                                                                                                                                                                                                                                                                                  |\\\\\\\\n| 2024-11-17 | 0,5    | Treasury factory contract                    | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | Note about reference widget config, and web4 subaccount support. PoC implementation of handling subaccounts in web4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\\\\\\\\n| 2024-11-19 | 2      | Vote reject test                             | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/128](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/128) | Debugging session with Megha trying to figure out why reject test is not able to click \\\\\\\\\\\\\\\"View in history\\\\\\\\\\\\\\\". Found that the \\\\\\\\\\\\\\\"View in history\\\\\\\\\\\\\\\" text was too close to the status text, and needed to add an extra line break. Review of the PR.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |\\\\\\\\n| 2024-11-19 | 1      | Treasury factory                             | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | Tested link-drop create_account_advanced to avoid subaccount, and yes, it is able to create the account and deploy a small contract. no problem to deploy a tiny contract, but the web4 contract is 190 Kb which exceeds the gas. I believe this is because of the use of a number array for the contract bytes ( would probably work if it was a base64 string ). Not sure yet how to reduce the contract size, and what the limit actually is here when deploying this way. Deploying to a subaccount does not have this limitation.                                                                                                                                                                             |\\\\\\\\n| 2024-11-20 | 1      | Sync                                         |                                                                                                                                                | Weekly sync call                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |\\\\\\\\n| 2024-11-20 | 2      | Treasury factory                             | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | Reduce web4 contract size, use linkdrop contract with base64 for uploading contract                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\\\\\\\\n\\\\\\\\nTotal hours: 61\\\\\\\\nHourly rate (USD): $150\\\\\\\\nTotal requested amount (USD): 9150\", \"linked_proposals\": [], \"receiver_account\": \"petersalomonsen.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"9150\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [], \"accepted_terms_and_conditions_version\": 133224651}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.6303985902869e+21
+    }
+  },
+  {
+    "id": "10325183048",
+    "receipt_id": "5NGnUFokfonaJWT8J5gpYkUy5fVZMibj9FnriJAPGs8L",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "56Dq9t63xDUgaUbDaUJJsfQJ3k5gQJ5AyrMF4iNMPvPB",
+      "block_height": 133224756,
+      "block_timestamp": 1732209588486269200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4576826410665,
+      "tokens_burnt": 457682641066500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7EwCRkujuZE4HUifRYKWsjV6qnWU8ZDJJyK4coUHcUfD",
+    "included_in_block_hash": "5fqmv9CiLeCvzXrcGfsNWnaS1Bvye9fAU7VfVwtjF9NB",
+    "block_timestamp": "1732209586627709397",
+    "block": {
+      "block_height": 133224754
+    },
+    "receipt_conversion_tokens_burnt": "197279335808000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 457682641066500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *DevDAO Platform* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @petersalomonsen.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}DevHub Developer Contributor report by Peter for 2024-10-21 - 2024-11-20\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRequesting funding for my DevHub contributions in the period October 21st to November 20th 2024. 61 hours in total. Highlights are Treasury test coverage, Exploration of Superteam Earn, Treasury Factory contract, and Voting duration setting. As part of the latter is also using near-workspaces-rs for contract interaction during frontend-development, so that less real test transactions needs to be made.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=257)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.6303985902869e+21
+    }
+  },
+  {
+    "id": "10325183053",
+    "receipt_id": "3z2h2DiMVWvcLRMmt4pX6keSP4yhoXHCEAG2jUF8CTVZ",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "56Dq9t63xDUgaUbDaUJJsfQJ3k5gQJ5AyrMF4iNMPvPB",
+      "block_height": 133224756,
+      "block_timestamp": 1732209588486269200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6296036218342,
+      "tokens_burnt": 629603621834200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "7EwCRkujuZE4HUifRYKWsjV6qnWU8ZDJJyK4coUHcUfD",
+    "included_in_block_hash": "5fqmv9CiLeCvzXrcGfsNWnaS1Bvye9fAU7VfVwtjF9NB",
+    "block_timestamp": "1732209586627709397",
+    "block": {
+      "block_height": 133224754
+    },
+    "receipt_conversion_tokens_burnt": "197279335808000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 629603621834200000000,
+        "args": "{\"proposal\": {\"id\": 257, \"snapshot\": {\"name\": \"DevHub Developer Contributor report by Peter for 2024-10-21 - 2024-11-20\", \"labels\": [], \"summary\": \"Requesting funding for my DevHub contributions in the period October 21st to November 20th 2024. 61 hours in total. Highlights are Treasury test coverage, Exploration of Superteam Earn, Treasury Factory contract, and Voting duration setting. As part of the latter is also using near-workspaces-rs for contract interaction during frontend-development, so that less real test transactions needs to be made.\", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"petersalomonsen.near\", \"timestamp\": \"1732209587439194142\", \"supervisor\": \"theori.near\", \"description\": \"Below is a log of the time spent for various tasks. As usual I am asking for the compensation rate of $150 per hour, which I consider the rate for a senior developer/architect in Norway, also then taking into account expenses of self employment.\\\\\\\\n\\\\\\\\n| Date       | Amount | Task                                         | Issue/PR                                                                                                                                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |\\\\\\\\n| ---------- | ------ | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |\\\\\\\\n| 2024-10-21 | 0,5    | Treasury dashboard voting                    |                                                                                                                                                | Call with Megha about refreshing table after voting, which is not storing component src in BOS VM storage when running on localhost. Changed approach to pass callback function via props.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |\\\\\\\\n| 2024-10-22 | 1      | Indexer replacement                          |                                                                                                                                                | Call with Thomas. Using nearblocks API to get latest changes. Replace queryapi URL to break tests.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |\\\\\\\\n| 2024-10-27 | 0,5    | Review                                       | https://github.com/NEAR-DevHub/neardevhub-bos/pull/973<br>https://github.com/NEAR-DevHub/neardevhub-bos/pull/916                               | Review of PRs for showing contract balance for admins, and removal of redundant/duplicated code across instances                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |\\\\\\\\n| 2024-10-27 | 2      | Treasury dashboard test cases                | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/93](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/93)   | add test for cancelling payment request for a linked proposal and that submit should be disabled when incorrect receiver id is mentioned or empty amount or empty proposal name or empty token                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |\\\\\\\\n| 2024-10-28 | 1      | Treasury dashboard test cases                | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/97](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/97)   | On add member transaction modal, click confirm, ensure full access key are present so that wallet redirection takes place                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |\\\\\\\\n| 2024-10-29 | 1,5    | Default page events committee / Devhub Cache | https://github.com/Tguntenaar/devhub-cache-api-rs/pull/1<br>https://github.com/NEAR-DevHub/neardevhub-bos/pull/975                             | Call with Thomas about setting up postgres for Devhub cache API in devcontainer, Default page proposals for events committee                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\\\\\\\\n| 2024-10-30 | 1      | Call about SuperteamDAO/earn                 | [https://github.com/SuperteamDAO/earn](https://github.com/SuperteamDAO/earn)                                                                   | Call with Ori, Vlad and Vova about evaluating superteam earn                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\\\\\\\\n| 2024-10-30 | 0,5    | Quorum UI                                    | https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/99<br>https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/101  | Review of Quorum UI Pull Requests                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |\\\\\\\\n| 2024-10-30 | 2      | Treasury dashboard test add member           | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/97](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/97)   | override wallet signandsendtransactions. wait for tx to complete, and wait for add member form to disappear                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |\\\\\\\\n| 2024-10-31 | 3      | Treasury dashboard test add member           | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/97](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/97)   | use callback instead of storage to refresh members table ( localstorage does not work with dev gateway ). Fix other failing tests: Cancel requests with linked proposals, and create NEAR payment request which needs to search for linked proposals. Split test action in 3 separate concurrent jobs. Fix that \\\\\\\\\\\\\\\"view in history\\\\\\\\\\\\\\\" does not always open history tab, because VM.require is not always loading the dependency in time for e.g. useEffect.                                                                                                                                                                                                                                                            |\\\\\\\\n| 2024-10-31 | 1      | Treasury Dashboard: Fix unstable tests       | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/106](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/106) | Fix \\\\\\\\\\\\\\\"test ended\\\\\\\\\\\\\\\" error by adding page.unrouteAll to the tests that didn\\\\\\\\\\\\'t have it. Make staking delegation test more stable by waiting for staking select buttons to appear and be enabled.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |\\\\\\\\n| 2024-11-01 | 2      | Superteam Earn                               | [https://github.com/SuperteamDAO/earn/pull/819](https://github.com/SuperteamDAO/earn/pull/819)                                                 | Devcontainer setup and Docker build                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\\\\\\\\n| 2024-11-02 | 5      | Superteam Earn                               | [https://github.com/SuperteamDAO/earn/pull/819](https://github.com/SuperteamDAO/earn/pull/819)                                                 | Deployment to Google Cloud Run, Investigated and fixed auth callback redirect ( environment variable NEXTAUTH_URL ), Email validation API ( zerobounce ) setup. skip zerobounce validation if api key is not provided ( because of max limit of 5 validations, and just creating accounts by an admin does not seem to be supported ). Persistent storage not available in cloud run, but moved to a VM in GCP Compute Engine. Studying the application, and publishing of listing, where the first listing from a sponsor seems to need manual verification by updating the isPublished field directly in the database, and then the next listing is published without verification.                              |\\\\\\\\n| 2024-11-04 | 2      | KYC expiration support                       | [https://github.com/NEAR-DevHub/neardevhub-bos/pull/980](https://github.com/NEAR-DevHub/neardevhub-bos/pull/980)                               | Set the displayed verification status if the wallet address doesn\\\\\\\\\\\\'t meet the criteria ( e.g. devhub-payouts.nea, which is missing an r in the end ). This caused the events committe test to fail scrolling the comment into view ( which requires that loading indicators should be finished ). [https://events-committee.near.page/proposal/1?accountId=rimberjack.near&blockHeight=118849805<br><br>](https://events-committee.near.page/proposal/1?accountId=rimberjack.near&blockHeight=118849805)Also investigated issue with neardata-server ( from fastnear ) which does not allow CORS anymore. Looked into alternative with RPC, and also reported the issue back to Evgeny K ( he is looking into it ). |\\\\\\\\n| 2024-11-05 | 0,5    | Devhub cache API                             |                                                                                                                                                | Call with Thomas about calling the contract for getting the proposal contents and full history when updating the cache database after a change                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |\\\\\\\\n| 2024-11-05 | 0,5    | Review                                       | https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/111<br>https://github.com/NEAR-DevHub/neardevhub-bos/pull/981                | Review new staking delegation features and tests(Treasury dashboard), and fix for seeing the RFP you\\\\\\\\\\\\'ve submitted ( DevHUB portal )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\\\\\\\\n| 2024-11-06 | 1      | Sync                                         |                                                                                                                                                | Weekly sync call. Created followup ticket for Treasury Dasboard self-creation flow helper contract. https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/issues/113<br>Follow-up call with Ori on settings change requests for Treasury dashboard, general settings with vote duration.                                                                                                                                                                                                                                                                                                                                                                                                                    |\\\\\\\\n| 2024-11-07 | 0,5    | Treasury factory contract                    | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | Initial setup of treasury factory contract, with web4 handler.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |\\\\\\\\n| 2024-11-08 | 0,5    | Review                                       | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/117](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/117) | Review of table for approving treasury dashboard requests                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |\\\\\\\\n| 2024-11-09 | 6      | Treasury factory contract                    | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | test for setting up sputnik-dao factory in near-workspaces-rs, create dao from treasury instance factory cross contract call, deploy web4 and near social widget contents, function to update instance widget from reference widget account ( treasury-testing.near )                                                                                                                                                                                                                                                                                                                                                                                                                                              |\\\\\\\\n| 2024-11-10 | 3      | Treasury factory contract                    | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | Assign fixed gas amount for dao creation. Setup of github action. Treasury factory test passing in near-workspaces-rs. Use cargo-near for building web4 in treasury-factory [build.rs](http://build.rs/), and also instead of using unstable contract build feature of near-workspaces-rs.                                                                                                                                                                                                                                                                                                                                                                                                                         |\\\\\\\\n| 2024-11-10 | 2      | Voting duration setting                      | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121) | Initial page and form setup for Voting duration setting. rpc sandbox for checking policy change requests.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |\\\\\\\\n| 2024-11-11 | 2      | Voting duration setting                      | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121) | Example with RPC sandbox for adding proposal (request) for changing proposal_period. Create transaction on clicking submit, get initial value from existing policy.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\\\\\\\\n| 2024-11-12 | 3      | Treasury factory contract                    | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | Fully configurable which sputnikdao, widget reference and social db account to use. Testing of instance creation via testnet deployment. Call with Andrew going through the implementation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |\\\\\\\\n| 2024-11-12 | 1      | Voting duration setting                      | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121) | Playwright test for voting duration. Simple README for RPC sandbox                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |\\\\\\\\n| 2024-11-13 | 0,5    | Treasury factory / RPC sandbox               |                                                                                                                                                | Call with Megha showing how to do RPC calls with the sandbox, without having to do real transactions. Also going through the treasury-factory contract flow.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\\\\\\\\n| 2024-11-13 | 1,5    | Sync                                         |                                                                                                                                                | Weekly sync call, and sidebar about voting duration impact on pending proposals. Suggesting a simple list of the pending proposals, showing the new expiration date.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |\\\\\\\\n| 2024-11-14 | 0,5    | Voting duration setting                      | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121) | Cancel voting duration                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |\\\\\\\\n| 2024-11-16 | 4      | Voting duration setting                      | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121) | test with sputnik dao contract in near-workspaces sandbox, helper functions for adding payment request proposal to sandbox, and listing proposals                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |\\\\\\\\n| 2024-11-17 | 5      | Voting duration setting                      | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121) | sandbox time travel, test voting on expired proposals ( which fails, even after extending voting duration ). Detect proposals that will expire when lowering duration days, and show them in a table. Test lowering voting duration one more day at the time, and see that the list of new expired proposals grow. Show toast after submission. Fix unstake test, by skipping waiting for loader.                                                                                                                                                                                                                                                                                                                  |\\\\\\\\n| 2024-11-17 | 0,5    | Treasury factory contract                    | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | Note about reference widget config, and web4 subaccount support. PoC implementation of handling subaccounts in web4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\\\\\\\\n| 2024-11-19 | 2      | Vote reject test                             | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/128](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/128) | Debugging session with Megha trying to figure out why reject test is not able to click \\\\\\\\\\\\\\\"View in history\\\\\\\\\\\\\\\". Found that the \\\\\\\\\\\\\\\"View in history\\\\\\\\\\\\\\\" text was too close to the status text, and needed to add an extra line break. Review of the PR.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |\\\\\\\\n| 2024-11-19 | 1      | Treasury factory                             | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | Tested link-drop create_account_advanced to avoid subaccount, and yes, it is able to create the account and deploy a small contract. no problem to deploy a tiny contract, but the web4 contract is 190 Kb which exceeds the gas. I believe this is because of the use of a number array for the contract bytes ( would probably work if it was a base64 string ). Not sure yet how to reduce the contract size, and what the limit actually is here when deploying this way. Deploying to a subaccount does not have this limitation.                                                                                                                                                                             |\\\\\\\\n| 2024-11-20 | 1      | Sync                                         |                                                                                                                                                | Weekly sync call                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |\\\\\\\\n| 2024-11-20 | 2      | Treasury factory                             | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | Reduce web4 contract size, use linkdrop contract with base64 for uploading contract                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\\\\\\\\n\\\\\\\\nTotal hours: 61\\\\\\\\nHourly rate (USD): $150\\\\\\\\nTotal requested amount (USD): 9150\", \"linked_proposals\": [], \"receiver_account\": \"petersalomonsen.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"9150\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"petersalomonsen.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.6303985902869e+21
+    }
+  },
+  {
+    "id": "10325183056",
+    "receipt_id": "DSfpWzaSy5n5sX6k2SPuJANmZFgF7G3yEUPtdkVZnNCd",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "56Dq9t63xDUgaUbDaUJJsfQJ3k5gQJ5AyrMF4iNMPvPB",
+      "block_height": 133224756,
+      "block_timestamp": 1732209588486269200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3544538741093,
+      "tokens_burnt": 354453874109300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7EwCRkujuZE4HUifRYKWsjV6qnWU8ZDJJyK4coUHcUfD",
+    "included_in_block_hash": "5fqmv9CiLeCvzXrcGfsNWnaS1Bvye9fAU7VfVwtjF9NB",
+    "block_timestamp": "1732209586627709397",
+    "block": {
+      "block_height": 133224754
+    },
+    "receipt_conversion_tokens_burnt": "197279335808000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 354453874109300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":257,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"petersalomonsen.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":257,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"petersalomonsen.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.6303985902869e+21
+    }
+  },
+  {
+    "id": "10325323519",
+    "receipt_id": "54MGE7uHoaffJAwYKYqoxdqTwVDLPqVVCAANLMHF2yTt",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DADxg9Rw8wE1PKvycpnQj1KmsaoQj1aStZRH8HQ1D62j",
+      "block_height": 133225057,
+      "block_timestamp": 1732209920924437200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 12568604713723,
+      "tokens_burnt": 1.2568604713723e+21,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "Bt4L6xWC5HfPf6q8dJPKPJNBuDa6qMmbcaZkpnA4H3GP",
+    "included_in_block_hash": "CzWNJJhRVqdJ4S8xaX9DHee4g5MWVKKCzmb2CUgWkFSR",
+    "block_timestamp": "1732209920022740612",
+    "block": {
+      "block_height": 133225056
+    },
+    "receipt_conversion_tokens_burnt": "196993233518000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 1.2568604713723e+21,
+        "args": "{\"id\": 257, \"body\": {\"name\": \"DevHub Developer Contributor report by Peter for 2024-10-21 - 2024-11-20\", \"summary\": \"Requesting funding for my DevHub contributions in the period October 21st to November 20th 2024. 61 hours in total. Highlights are Treasury test coverage, Exploration of Superteam Earn, Treasury Factory contract, and Voting duration setting. As part of the latter is also using near-workspaces-rs for contract interaction during frontend-development, so that less real test transactions needs to be made.\", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": \"theori.near\", \"description\": \"Below is a log of the time spent for various tasks. As usual I am asking for the compensation rate of $150 per hour, which I consider the rate for a senior developer/architect in Norway, also then taking into account expenses of self employment.\\\\\\\\n\\\\\\\\n| Date       | Amount | Task                                         | Issue/PR                                                                                                                                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |\\\\\\\\n| ---------- | ------ | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |\\\\\\\\n| 2024-10-21 | 0,5    | Treasury dashboard voting                    |                                                                                                                                                | Call with Megha about refreshing table after voting, which is not storing component src in BOS VM storage when running on localhost. Changed approach to pass callback function via props.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |\\\\\\\\n| 2024-10-22 | 1      | Indexer replacement                          |                                                                                                                                                | Call with Thomas. Using nearblocks API to get latest changes. Replace queryapi URL to break tests.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |\\\\\\\\n| 2024-10-27 | 0,5    | Review                                       | https://github.com/NEAR-DevHub/neardevhub-bos/pull/973 https://github.com/NEAR-DevHub/neardevhub-bos/pull/916                               | Review of PRs for showing contract balance for admins, and removal of redundant/duplicated code across instances                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |\\\\\\\\n| 2024-10-27 | 2      | Treasury dashboard test cases                | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/93](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/93)   | add test for cancelling payment request for a linked proposal and that submit should be disabled when incorrect receiver id is mentioned or empty amount or empty proposal name or empty token                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |\\\\\\\\n| 2024-10-28 | 1      | Treasury dashboard test cases                | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/97](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/97)   | On add member transaction modal, click confirm, ensure full access key are present so that wallet redirection takes place                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |\\\\\\\\n| 2024-10-29 | 1,5    | Default page events committee / Devhub Cache | https://github.com/Tguntenaar/devhub-cache-api-rs/pull/1 https://github.com/NEAR-DevHub/neardevhub-bos/pull/975                             | Call with Thomas about setting up postgres for Devhub cache API in devcontainer, Default page proposals for events committee                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\\\\\\\\n| 2024-10-30 | 1      | Call about SuperteamDAO/earn                 | [https://github.com/SuperteamDAO/earn](https://github.com/SuperteamDAO/earn)                                                                   | Call with Ori, Vlad and Vova about evaluating superteam earn                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\\\\\\\\n| 2024-10-30 | 0,5    | Quorum UI                                    | https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/99 https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/101  | Review of Quorum UI Pull Requests                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |\\\\\\\\n| 2024-10-30 | 2      | Treasury dashboard test add member           | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/97](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/97)   | override wallet signandsendtransactions. wait for tx to complete, and wait for add member form to disappear                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |\\\\\\\\n| 2024-10-31 | 3      | Treasury dashboard test add member           | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/97](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/97)   | use callback instead of storage to refresh members table ( localstorage does not work with dev gateway ). Fix other failing tests: Cancel requests with linked proposals, and create NEAR payment request which needs to search for linked proposals. Split test action in 3 separate concurrent jobs. Fix that \\\\\\\\\\\\\\\"view in history\\\\\\\\\\\\\\\" does not always open history tab, because VM.require is not always loading the dependency in time for e.g. useEffect.                                                                                                                                                                                                                                                            |\\\\\\\\n| 2024-10-31 | 1      | Treasury Dashboard: Fix unstable tests       | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/106](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/106) | Fix \\\\\\\\\\\\\\\"test ended\\\\\\\\\\\\\\\" error by adding page.unrouteAll to the tests that didn\\\\\\\\\\\\'t have it. Make staking delegation test more stable by waiting for staking select buttons to appear and be enabled.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |\\\\\\\\n| 2024-11-01 | 2      | Superteam Earn                               | [https://github.com/SuperteamDAO/earn/pull/819](https://github.com/SuperteamDAO/earn/pull/819)                                                 | Devcontainer setup and Docker build                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\\\\\\\\n| 2024-11-02 | 5      | Superteam Earn                               | [https://github.com/SuperteamDAO/earn/pull/819](https://github.com/SuperteamDAO/earn/pull/819)                                                 | Deployment to Google Cloud Run, Investigated and fixed auth callback redirect ( environment variable NEXTAUTH_URL ), Email validation API ( zerobounce ) setup. skip zerobounce validation if api key is not provided ( because of max limit of 5 validations, and just creating accounts by an admin does not seem to be supported ). Persistent storage not available in cloud run, but moved to a VM in GCP Compute Engine. Studying the application, and publishing of listing, where the first listing from a sponsor seems to need manual verification by updating the isPublished field directly in the database, and then the next listing is published without verification.                              |\\\\\\\\n| 2024-11-04 | 2      | KYC expiration support                       | [https://github.com/NEAR-DevHub/neardevhub-bos/pull/980](https://github.com/NEAR-DevHub/neardevhub-bos/pull/980)                               | Set the displayed verification status if the wallet address doesn\\\\\\\\\\\\'t meet the criteria ( e.g. devhub-payouts.nea, which is missing an r in the end ). This caused the events committe test to fail scrolling the comment into view ( which requires that loading indicators should be finished ). [https://events-committee.near.page/proposal/1?accountId=rimberjack.near&blockHeight=118849805](https://events-committee.near.page/proposal/1?accountId=rimberjack.near&blockHeight=118849805). Also investigated issue with neardata-server ( from fastnear ) which does not allow CORS anymore. Looked into alternative with RPC, and also reported the issue back to Evgeny K ( he is looking into it ). |\\\\\\\\n| 2024-11-05 | 0,5    | Devhub cache API                             |                                                                                                                                                | Call with Thomas about calling the contract for getting the proposal contents and full history when updating the cache database after a change                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |\\\\\\\\n| 2024-11-05 | 0,5    | Review                                       | https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/111 https://github.com/NEAR-DevHub/neardevhub-bos/pull/981                | Review new staking delegation features and tests(Treasury dashboard), and fix for seeing the RFP you\\\\\\\\\\\\'ve submitted ( DevHUB portal )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\\\\\\\\n| 2024-11-06 | 1      | Sync                                         |                                                                                                                                                | Weekly sync call. Created followup ticket for Treasury Dasboard self-creation flow helper contract. https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/issues/113. Follow-up call with Ori on settings change requests for Treasury dashboard, general settings with vote duration.                                                                                                                                                                                                                                                                                                                                                                                                                    |\\\\\\\\n| 2024-11-07 | 0,5    | Treasury factory contract                    | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | Initial setup of treasury factory contract, with web4 handler.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |\\\\\\\\n| 2024-11-08 | 0,5    | Review                                       | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/117](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/117) | Review of table for approving treasury dashboard requests                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |\\\\\\\\n| 2024-11-09 | 6      | Treasury factory contract                    | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | test for setting up sputnik-dao factory in near-workspaces-rs, create dao from treasury instance factory cross contract call, deploy web4 and near social widget contents, function to update instance widget from reference widget account ( treasury-testing.near )                                                                                                                                                                                                                                                                                                                                                                                                                                              |\\\\\\\\n| 2024-11-10 | 3      | Treasury factory contract                    | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | Assign fixed gas amount for dao creation. Setup of github action. Treasury factory test passing in near-workspaces-rs. Use cargo-near for building web4 in treasury-factory [build.rs](http://build.rs/), and also instead of using unstable contract build feature of near-workspaces-rs.                                                                                                                                                                                                                                                                                                                                                                                                                         |\\\\\\\\n| 2024-11-10 | 2      | Voting duration setting                      | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121) | Initial page and form setup for Voting duration setting. rpc sandbox for checking policy change requests.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |\\\\\\\\n| 2024-11-11 | 2      | Voting duration setting                      | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121) | Example with RPC sandbox for adding proposal (request) for changing proposal_period. Create transaction on clicking submit, get initial value from existing policy.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\\\\\\\\n| 2024-11-12 | 3      | Treasury factory contract                    | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | Fully configurable which sputnikdao, widget reference and social db account to use. Testing of instance creation via testnet deployment. Call with Andrew going through the implementation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |\\\\\\\\n| 2024-11-12 | 1      | Voting duration setting                      | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121) | Playwright test for voting duration. Simple README for RPC sandbox                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |\\\\\\\\n| 2024-11-13 | 0,5    | Treasury factory / RPC sandbox               |                                                                                                                                                | Call with Megha showing how to do RPC calls with the sandbox, without having to do real transactions. Also going through the treasury-factory contract flow.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\\\\\\\\n| 2024-11-13 | 1,5    | Sync                                         |                                                                                                                                                | Weekly sync call, and sidebar about voting duration impact on pending proposals. Suggesting a simple list of the pending proposals, showing the new expiration date.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |\\\\\\\\n| 2024-11-14 | 0,5    | Voting duration setting                      | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121) | Cancel voting duration                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |\\\\\\\\n| 2024-11-16 | 4      | Voting duration setting                      | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121) | test with sputnik dao contract in near-workspaces sandbox, helper functions for adding payment request proposal to sandbox, and listing proposals                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |\\\\\\\\n| 2024-11-17 | 5      | Voting duration setting                      | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/121) | sandbox time travel, test voting on expired proposals ( which fails, even after extending voting duration ). Detect proposals that will expire when lowering duration days, and show them in a table. Test lowering voting duration one more day at the time, and see that the list of new expired proposals grow. Show toast after submission. Fix unstake test, by skipping waiting for loader.                                                                                                                                                                                                                                                                                                                  |\\\\\\\\n| 2024-11-17 | 0,5    | Treasury factory contract                    | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | Note about reference widget config, and web4 subaccount support. PoC implementation of handling subaccounts in web4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\\\\\\\\n| 2024-11-19 | 2      | Vote reject test                             | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/128](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/128) | Debugging session with Megha trying to figure out why reject test is not able to click \\\\\\\\\\\\\\\"View in history\\\\\\\\\\\\\\\". Found that the \\\\\\\\\\\\\\\"View in history\\\\\\\\\\\\\\\" text was too close to the status text, and needed to add an extra line break. Review of the PR.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |\\\\\\\\n| 2024-11-19 | 1      | Treasury factory                             | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | Tested link-drop create_account_advanced to avoid subaccount, and yes, it is able to create the account and deploy a small contract. no problem to deploy a tiny contract, but the web4 contract is 190 Kb which exceeds the gas. I believe this is because of the use of a number array for the contract bytes ( would probably work if it was a base64 string ). Not sure yet how to reduce the contract size, and what the limit actually is here when deploying this way. Deploying to a subaccount does not have this limitation.                                                                                                                                                                             |\\\\\\\\n| 2024-11-20 | 1      | Sync                                         |                                                                                                                                                | Weekly sync call                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |\\\\\\\\n| 2024-11-20 | 2      | Treasury factory                             | [https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115](https://github.com/NEAR-DevHub/neardevhub-treasury-dashboard/pull/115) | Reduce web4 contract size, use linkdrop contract with base64 for uploading contract                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |\\\\\\\\n\\\\\\\\nTotal hours: 61\\\\\\\\nHourly rate (USD): $150\\\\\\\\nTotal requested amount (USD): 9150\", \"linked_proposals\": [], \"receiver_account\": \"petersalomonsen.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"9150\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8130874592873e+21
+    }
+  },
+  {
+    "id": "10325323879",
+    "receipt_id": "8EkyXm7Ny9gAHHkT855SP2oxLdggRFwCN4DrYvBtuGUs",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "62dbZYVPBXZ3MBsn1mVmtg1rA3rzWPiSvhdxZsh79YE4",
+      "block_height": 133225058,
+      "block_timestamp": 1732209922172575700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3592337543970,
+      "tokens_burnt": 359233754397000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Bt4L6xWC5HfPf6q8dJPKPJNBuDa6qMmbcaZkpnA4H3GP",
+    "included_in_block_hash": "CzWNJJhRVqdJ4S8xaX9DHee4g5MWVKKCzmb2CUgWkFSR",
+    "block_timestamp": "1732209920022740612",
+    "block": {
+      "block_height": 133225056
+    },
+    "receipt_conversion_tokens_burnt": "196993233518000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 359233754397000000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"petersalomonsen.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":257,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"petersalomonsen.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8130874592873e+21
+    }
+  },
+  {
+    "id": "10325348237",
+    "receipt_id": "G3KwuRzqQhrvytMm17X2XLZBZx7NHHxM8W4dKaeWP763",
+    "predecessor_account_id": "petersalomonsen.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "B21Yy6wLyYpeSeKpGM4b9Phgm4zYMrMy71mCPP5MPj96",
+      "block_height": 133225126,
+      "block_timestamp": 1732210005405033000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 17125233666688,
+      "tokens_burnt": 1.7125233666688e+21,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "H3bhLfrYtF7zVYGtSvqsoCd7KwgQbfNKvrbjD3TqH7od",
+    "included_in_block_hash": "J4V1uFqb5ybLipGSrr1fAvDfHZSZYmrSAgZjJJnffF9R",
+    "block_timestamp": "1732210004050096097",
+    "block": {
+      "block_height": 133225125
+    },
+    "receipt_conversion_tokens_burnt": "31711940585000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 1.7125233666688e+21,
+        "args": "{\"id\": 257, \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified\": false, \"timeline_version\": \"V1\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.0969577336451e+21
+    }
+  },
+  {
+    "id": "10325348571",
+    "receipt_id": "6DNYGsY2gJzbqwycKU2ZsMjkpL6BkysVunKyibNR3mro",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "51AtAbkSPiB3h4G52PQm8USQwdQiiicmtJhB4WTYQz7f",
+      "block_height": 133225127,
+      "block_timestamp": 1732210006636497200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3527224263913,
+      "tokens_burnt": 352722426391300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "H3bhLfrYtF7zVYGtSvqsoCd7KwgQbfNKvrbjD3TqH7od",
+    "included_in_block_hash": "J4V1uFqb5ybLipGSrr1fAvDfHZSZYmrSAgZjJJnffF9R",
+    "block_timestamp": "1732210004050096097",
+    "block": {
+      "block_height": 133225125
+    },
+    "receipt_conversion_tokens_burnt": "31711940585000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352722426391300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"petersalomonsen.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":257,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"petersalomonsen.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.0969577336451e+21
+    }
+  },
+  {
+    "id": "10326022773",
+    "receipt_id": "2bn2NF5uwgQKHtDTEcTvziC4e6fDtCxnFJr6pmf321EU",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Cyvpuf9m93C6DZSra2kX5eMYHYkGCF89kwoba1n2W9Ch",
+      "block_height": 133226609,
+      "block_timestamp": 1732211691526169000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3137276094107,
+      "tokens_burnt": 313727609410700000000,
+      "executor_account_id": "devhub.near",
+      "status": false
+    },
+    "transaction_hash": "BDPebK8LNsyxSRGP5sDn1bzCZFViLP5N4QYQQ3tXms2x",
+    "included_in_block_hash": "8kxsLe5XUuD2GBgcErZRfj4Y8dEPSqbdPiYuH9C7AYR6",
+    "block_timestamp": "1732211690432307059",
+    "block": {
+      "block_height": 133226608
+    },
+    "receipt_conversion_tokens_burnt": "42865161523500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 313727609410700000000,
+        "args": "{\"id\": 254, \"body\": {\"name\": \"DevHub Fin Ops 09/30/2024 - 11/01/2024\", \"summary\": \"Oversee that proposals flow thru the payment process efficiently. Continuously improve upon the process.\", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": null, \"description\": \"I facilitate the payment processing of proposal submissions. I operate as the hub between DevHub admin, contributors and NF in communictions and problem solving as it relates to payments of completed work by the community.\\\\\\\\nThe time I spend in this capacity involves weekly update meetings with DevHub admin, email and TG communications with NF legal, NF finance, DevHub admins and DevHub community contributors. We utilize database tools to manage the payment process.\\\\\\\\nThe DevHub community members have benefited by receiving their proposal payments much more timely, recently narrowing in on 48 hr turn around and reducing the administrative steps each contributor had to complete to receive payment. The larger NEAR ecosystem has benefited by reducing the amount of time spent by the NF Legal and Finance team members, as well as DevHub admins, on the proposal payment process. These process improvements brought additional controls ensuring overall accuracy as DevHub has a fiduciary responsibility to NF that grant funds are spent responsibly, payments are correct and appropriate KYC/KYB measures have been taken.\\\\\\\\nWeek 09/30/2024 - 10/04/2024 - 12 hrs\\\\\\\\nWeek 10/07/2024 - 10/11/2024 - 10 hrs\\\\\\\\nWeek 10/14/2024 - 10/18/2024 - 10 hrs\\\\\\\\nWeek 10/21/2024- 10/25/2024 - 10 hrs\\\\\\\\nWeek 10/28/2024 - 11/01/2024 - 10 hrs\\\\\\\\n\\\\\\\\nTotal hours 52 @$80/hr\\\\\\\\nRate determination is below the low end of the average hourly contract rate ($87 - $162) for an accountant with the same years of experience. That average rate does not account for my 5 years of blockchain specific experience. I\\\\\\\\\\\\'m not fulfilling all the duties that typically fall under this type of role, that is why I proposed a rate lower than the low end of the average. https://www.salary.com/research/salary/benchmark/controller-hourly-wages\", \"linked_proposals\": [], \"receiver_account\": \"9bd73bc9ba6ff289e2deb597dd6fe83dc0056af7a2937d6dec119660ba0146a4\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"4160\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 356592770934200000000
+    }
+  },
+  {
+    "id": "10326027880",
+    "receipt_id": "7ZKd5pH9p9o76XRSpFAtCJPpSjMRyxxD1WG9faFPSAD6",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CDm23XhDnbrQoJqYv999Ytmpk9h2xvMM4gzAKbA7GKeo",
+      "block_height": 133226630,
+      "block_timestamp": 1732211714040669400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3137276094107,
+      "tokens_burnt": 313727609410700000000,
+      "executor_account_id": "devhub.near",
+      "status": false
+    },
+    "transaction_hash": "FmoCCZAs8xLwGwXEzFBMcEdHA4fQhq2D4Yf6HQZJZXwd",
+    "included_in_block_hash": "CreJbuxia6wmaNEum8d4od6VfkYE4wtAz4vwTUoXYVj7",
+    "block_timestamp": "1732211713006837072",
+    "block": {
+      "block_height": 133226629
+    },
+    "receipt_conversion_tokens_burnt": "42865161523500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 313727609410700000000,
+        "args": "{\"id\": 254, \"body\": {\"name\": \"DevHub Fin Ops 09/30/2024 - 11/01/2024\", \"summary\": \"Oversee that proposals flow thru the payment process efficiently. Continuously improve upon the process.\", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": null, \"description\": \"I facilitate the payment processing of proposal submissions. I operate as the hub between DevHub admin, contributors and NF in communictions and problem solving as it relates to payments of completed work by the community.\\\\\\\\nThe time I spend in this capacity involves weekly update meetings with DevHub admin, email and TG communications with NF legal, NF finance, DevHub admins and DevHub community contributors. We utilize database tools to manage the payment process.\\\\\\\\nThe DevHub community members have benefited by receiving their proposal payments much more timely, recently narrowing in on 48 hr turn around and reducing the administrative steps each contributor had to complete to receive payment. The larger NEAR ecosystem has benefited by reducing the amount of time spent by the NF Legal and Finance team members, as well as DevHub admins, on the proposal payment process. These process improvements brought additional controls ensuring overall accuracy as DevHub has a fiduciary responsibility to NF that grant funds are spent responsibly, payments are correct and appropriate KYC/KYB measures have been taken.\\\\\\\\nWeek 09/30/2024 - 10/04/2024 - 12 hrs\\\\\\\\nWeek 10/07/2024 - 10/11/2024 - 10 hrs\\\\\\\\nWeek 10/14/2024 - 10/18/2024 - 10 hrs\\\\\\\\nWeek 10/21/2024- 10/25/2024 - 10 hrs\\\\\\\\nWeek 10/28/2024 - 11/01/2024 - 10 hrs\\\\\\\\n\\\\\\\\nTotal hours 52 @$80/hr\\\\\\\\nRate determination is below the low end of the average hourly contract rate ($87 - $162) for an accountant with the same years of experience. That average rate does not account for my 5 years of blockchain specific experience. I\\\\\\\\\\\\'m not fulfilling all the duties that typically fall under this type of role, that is why I proposed a rate lower than the low end of the average. https://www.salary.com/research/salary/benchmark/controller-hourly-wages\", \"linked_proposals\": [], \"receiver_account\": \"9bd73bc9ba6ff289e2deb597dd6fe83dc0056af7a2937d6dec119660ba0146a4\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"4160\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 356592770934200000000
+    }
+  },
+  {
+    "id": "10326040603",
+    "receipt_id": "4Tny5iqHSpYxEKKdW5jmSMtVYUcBXCz7m4P9r2CxvN9S",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8G1MRujhesfia74jwmfQyG1qvVhoKD9fytsDsdADkZ9p",
+      "block_height": 133226682,
+      "block_timestamp": 1732211769438970000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5211400701568,
+      "tokens_burnt": 521140070156800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "AYUirNdHikyXMU73pSZUtuwEshhMUtRdu8B9S4TRJvD8",
+    "included_in_block_hash": "85K8dpJX4aahY8EaobehcPukMPuDnBwag16spaFktWA8",
+    "block_timestamp": "1732211768441809159",
+    "block": {
+      "block_height": 133226681
+    },
+    "receipt_conversion_tokens_burnt": "32074336819000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 521140070156800000000,
+        "args": "{\"id\": 254, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 905823189948700000000
+    }
+  },
+  {
+    "id": "10326040841",
+    "receipt_id": "J5XAShZ5hZ9tKzdpZbYLGjJN4QttU17TpbtwQX4vHhCz",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "C2Rd7Uyk4nevuZivEqZ7T7m9FX59eZJNGQwoQro8BHvE",
+      "block_height": 133226683,
+      "block_timestamp": 1732211770522193700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3526087829729,
+      "tokens_burnt": 352608782972900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "AYUirNdHikyXMU73pSZUtuwEshhMUtRdu8B9S4TRJvD8",
+    "included_in_block_hash": "85K8dpJX4aahY8EaobehcPukMPuDnBwag16spaFktWA8",
+    "block_timestamp": "1732211768441809159",
+    "block": {
+      "block_height": 133226681
+    },
+    "receipt_conversion_tokens_burnt": "32074336819000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352608782972900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":254,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 905823189948700000000
+    }
+  },
+  {
+    "id": "10326095648",
+    "receipt_id": "HPqfX9RnBr66XnJmpMVJXrQejk2px1AiNUEZxx3wZeUc",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DZKeW1JbenqNqueesBLS6hd1FMuKuihQjaPKPAgFdtJt",
+      "block_height": 133226797,
+      "block_timestamp": 1732211893808166100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5236655378764,
+      "tokens_burnt": 523665537876400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "AMuN3iPdhMQ5uudbBu3FrnCNSJV5dPkKpDJtLxTNzqCm",
+    "included_in_block_hash": "GA8wkT3Kp5FXWNacdEsNmjw7rLtijVJy7KHdozGkkTQp",
+    "block_timestamp": "1732211892698057615",
+    "block": {
+      "block_height": 133226796
+    },
+    "receipt_conversion_tokens_burnt": "32074336819000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 523665537876400000000,
+        "args": "{\"id\": 253, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 913787972856900000000
+    }
+  },
+  {
+    "id": "10326097446",
+    "receipt_id": "5vMkY6ALxXpLoZ1E1Yq4kHwcn9DmYardo5b3cz5JCRaG",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6FyNkyUVDn5V1r8Bewgo9LU1Z6MQE5M9Bk2tAibkVHD6",
+      "block_height": 133226799,
+      "block_timestamp": 1732211896132675600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3580480981615,
+      "tokens_burnt": 358048098161500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "AMuN3iPdhMQ5uudbBu3FrnCNSJV5dPkKpDJtLxTNzqCm",
+    "included_in_block_hash": "GA8wkT3Kp5FXWNacdEsNmjw7rLtijVJy7KHdozGkkTQp",
+    "block_timestamp": "1732211892698057615",
+    "block": {
+      "block_height": 133226796
+    },
+    "receipt_conversion_tokens_burnt": "32074336819000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 358048098161500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":253,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tfdevhub.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 913787972856900000000
+    }
+  },
+  {
+    "id": "10353931311",
+    "receipt_id": "5J8XwKRNFx1RTXAFbTJu4S8u4RBpJ9xK6dEE6cyXJRiF",
+    "predecessor_account_id": "tfdevhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9rssqpj8wtkH2hBfztaGUPnnwYgBHtpx26xAMXW1ZQ6p",
+      "block_height": 133300683,
+      "block_timestamp": 1732293996196045000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8994401241282,
+      "tokens_burnt": 899440124128200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "yERVvzSVwPT6e8v5ht8kZQEcqzuisa8maqZjnQi2NLr",
+    "included_in_block_hash": "Dz3vYsPZHNcMZkc8ppqmL9NKQnrinw7wKpbwjbMQT7sy",
+    "block_timestamp": "1732293994956911170",
+    "block": {
+      "block_height": 133300682
+    },
+    "receipt_conversion_tokens_burnt": "32436733053000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 899440124128200000000,
+        "args": "{\"id\": 242, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [\"Bank Pmt\"], \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"kyc_verified_deprecated\": false, \"sponsor_requested_review\": true, \"trustees_released_payment\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2843780649767e+21
+    }
+  }
+]

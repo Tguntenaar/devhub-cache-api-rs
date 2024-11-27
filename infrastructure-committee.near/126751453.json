@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "7804513337",
+    "receipt_id": "7LFXnKZJRcJ2WMdQEuNfLhpP6Hre9EKicY6e9QMQZepq",
+    "predecessor_account_id": "social.ref-labs.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FD91qMEm8Ysmqqid1xjpbQRwAbm7xxFQmSkSjSvRji3R",
+      "block_height": 126751486,
+      "block_timestamp": 1724852272840756200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5243199054615,
+      "tokens_burnt": 524319905461500000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "8VeveAJneAHp8aWhVHoZQWHPMQ2GbETuNeF9Hy8sVvpp",
+    "included_in_block_hash": "HbDAMydMVwvZbiqDLcNSHmN6mLj2oqUTDyLeAT7T8kC8",
+    "block_timestamp": "1724852272082856476",
+    "block": {
+      "block_height": 126751485
+    },
+    "receipt_conversion_tokens_burnt": "31444911781000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 524319905461500000000,
+        "args": "{\"id\": 11, \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 907666322826200000000
+    }
+  },
+  {
+    "id": "7804513733",
+    "receipt_id": "3nCY8qD96RREhwa6eqzwRAv7cHme1gcyWUha7Z88mgGw",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "JBG2wqqy6mbqYi89EvuVhTqUYc9xLwRVXyXbmdraBJqk",
+      "block_height": 126751487,
+      "block_timestamp": 1724852274072793300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3519015055837,
+      "tokens_burnt": 351901505583700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8VeveAJneAHp8aWhVHoZQWHPMQ2GbETuNeF9Hy8sVvpp",
+    "included_in_block_hash": "HbDAMydMVwvZbiqDLcNSHmN6mLj2oqUTDyLeAT7T8kC8",
+    "block_timestamp": "1724852272082856476",
+    "block": {
+      "block_height": 126751485
+    },
+    "receipt_conversion_tokens_burnt": "31444911781000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351901505583700000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"social.ref-labs.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":11,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"social.ref-labs.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 907666322826200000000
+    }
+  },
+  {
+    "id": "7806211827",
+    "receipt_id": "weBb8p1ZB9vcpQpfchAzQzsyRNGPpW6cnwzFitGgqYc",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CyjuSmV6khQq1aRXL39YBSdUGBcbWQPJyyHSoWTZZAWd",
+      "block_height": 126755273,
+      "block_timestamp": 1724857221059619800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8126018660112,
+      "tokens_burnt": 812601866011200000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "An7T6STp5rkPQfdhCGujxagGUhgkcJsY65tee1BPx2LL",
+    "included_in_block_hash": "9y8MzJm6if3EKzxML2qrcPBBFgfboJDr2dzdwBtETViT",
+    "block_timestamp": "1724857219744118440",
+    "block": {
+      "block_height": 126755272
+    },
+    "receipt_conversion_tokens_burnt": "32079105190500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 812601866011200000000,
+        "args": "{\"id\": 7, \"timeline\": {\"status\": \"FUNDED\", \"payouts\": [], \"kyc_verified\": false, \"test_transaction_sent\": false, \"sponsor_requested_review\": false, \"trustees_released_payment\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1951648658668e+21
+    }
+  },
+  {
+    "id": "7806212241",
+    "receipt_id": "DrMJuiTzaCy6Q9MjeLQzo7ZMf54qRDmWSoumS7qY4MJU",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5LdmrXRcj4apE3PjkNohQxQw5Z87GyfWh2pAVaJPHprS",
+      "block_height": 126755274,
+      "block_timestamp": 1724857222423641900
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3504838946651,
+      "tokens_burnt": 350483894665100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "An7T6STp5rkPQfdhCGujxagGUhgkcJsY65tee1BPx2LL",
+    "included_in_block_hash": "9y8MzJm6if3EKzxML2qrcPBBFgfboJDr2dzdwBtETViT",
+    "block_timestamp": "1724857219744118440",
+    "block": {
+      "block_height": 126755272
+    },
+    "receipt_conversion_tokens_burnt": "32079105190500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 350483894665100000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"stillemail8340.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":7,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1951648658668e+21
+    }
+  },
+  {
+    "id": "7810158342",
+    "receipt_id": "CEwCAEqV8w8wYS7QVui4ZoRH7Ngvod5RnQHNjuYb1pMk",
+    "predecessor_account_id": "mob.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EgqGkko6LWQHxgbyXezKBXikm6gKWrZizoqDksjtgp6Q",
+      "block_height": 126763385,
+      "block_timestamp": 1724867802890584600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6525846987465,
+      "tokens_burnt": 652584698746500000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "GctoyMZVtQHyS4kmgcE4bA8Q9chgs5ELiy7ZpePsbnMV",
+    "included_in_block_hash": "uW9oPfMy9x3Dwj5mrxPLh7W7zJxSTja6tdhGTY1JhYY",
+    "block_timestamp": "1724867801575864739",
+    "block": {
+      "block_height": 126763384
+    },
+    "receipt_conversion_tokens_burnt": "46956424270500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 652584698746500000000,
+        "args": "{\"body\": {\"name\": \"Read-RPC development support\", \"summary\": \"This proposal seeks to continue the development of read-rpc as an open-source project, focusing on compensating the two primary developers working on it.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"description\": \"# Read-RPC development support\\\\\\\\n\\\\\\\\n## Organization\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\\\\\'s contact information\\\\\\\\nEvgeny Kuzyakov (ek at fastnear.com)\\\\\\\\n\\\\\\\\n### Size of the whole team\\\\\\\\n3 developers\\\\\\\\n\\\\\\\\n### Size of the engineering team\\\\\\\\n3 developers\\\\\\\\n\\\\\\\\n### Team location\\\\\\\\nRemote\\\\\\\\n\\\\\\\\n### Team background and bios\\\\\\\\n\\\\\\\\n- Evgeny Kuzyakov (https://github.com/evgenykuzyakov)\\\\\\\\n- Bohdan Khorolets (https://github.com/khorolets) \\\\\\\\n- Yurii Koba (https://github.com/kobayurii)\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\n\\\\\\\\n- Development and maintenance of read-rpc (https://github.com/near/read-rpc)\\\\\\\\n- Development and serving of the alternative indexing solution at FASTNEAR, e.g. https://mainnet.neardata.xyz (https://github.com/fastnear/neardata-server/)\\\\\\\\n\\\\\\\\n## Body\\\\\\\\nThe read-rpc project aims to provide a centralized RPC solution for serving read-only requests for NEAR blockchain data. It mimics the json-rpc client from nearcore while supporting archival data and maintaining fast response times with low latency. This proposal seeks to continue the development of read-rpc as an open-source project, focusing on compensating the two primary developers working on it.\\\\\\\\n\\\\\\\\nKey benefits of continuing read-rpc development in open-source:\\\\\\\\n1. Improved access to NEAR blockchain data for developers and applications\\\\\\\\n2. Enhanced performance for read-only operations\\\\\\\\n3. Support for archival data\\\\\\\\n4. Open-source nature promotes transparency and community involvement\\\\\\\\n\\\\\\\\nThe project development and documentation will remain under the MIT or Apache2 License.\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\n- Continious improvement of read-rpc functions.\\\\\\\\n- Release of the read-rpc with postgres database support (transitioning from ScyllaDB).\\\\\\\\n- Extensive documentation on how to setup read-rpc node from scratch.\\\\\\\\n- Ability to sync read-rpc database from alternative indexing sources like neardata.xyz instead of NEAR Lake Framework.\\\\\\\\n- 1 year development supoprt of the read-rpc, to maintain parity with the original json-rpc client from nearcore.\\\\\\\\n\\\\\\\\n## Metrics\\\\\\\\n- Requests per second benchmarks.\\\\\\\\n- Database size and hardware requirements.\\\\\\\\n- Query response time: Measure and maintain low latency for read operations\\\\\\\\n- Number of unique users/applications utilizing read-rpc\\\\\\\\n- Community engagement: Track GitHub stars, forks, and contributions\\\\\\\\n\\\\\\\\n## Usage & Examples\\\\\\\\n- Current users: Pagoda RPC service\\\\\\\\n- Usage metrics: unavialble\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n### Budget Total\\\\\\\\n$220,000 USD per year\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n- Developer compensation: $170,000 USD per year\\\\\\\\n- Infrastructure cost for tests, benchmarks and development: $50,000 USD per year\\\\\\\\n\\\\\\\\nThis budget covers the compensation for the two primary developers working on the read-rpc project for one year. The funds will be used to ensure continued development, maintenance, and improvement of the read-rpc solution.\", \"linked_proposals\": [], \"receiver_account\": \"treasury.fastnear.tg\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"220000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Indexers\", \"RPC Nodes\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8504470951784e+21
+    }
+  },
+  {
+    "id": "7810159275",
+    "receipt_id": "H9pqjegN3ma3z5ZxADALPJvq6pbjhvQc247UJr7KuDrd",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "F5HTRrRMzGXLpBUeizWGcrVxsNtxPQiUrVJQiQKKxg4v",
+      "block_height": 126763386,
+      "block_timestamp": 1724867804261919500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4513308926320,
+      "tokens_burnt": 451330892632000000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "GctoyMZVtQHyS4kmgcE4bA8Q9chgs5ELiy7ZpePsbnMV",
+    "included_in_block_hash": "uW9oPfMy9x3Dwj5mrxPLh7W7zJxSTja6tdhGTY1JhYY",
+    "block_timestamp": "1724867801575864739",
+    "block": {
+      "block_height": 126763384
+    },
+    "receipt_conversion_tokens_burnt": "46956424270500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 451330892632000000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Infrastructure Committee* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @mob.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Read-RPC development support\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis proposal seeks to continue the development of read-rpc as an open-source project, focusing on compensating the two primary developers working on it.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=13)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8504470951784e+21
+    }
+  },
+  {
+    "id": "7810159279",
+    "receipt_id": "CwoDa3rykh4ZrZdH168DbkUGXBJfNqJ2p3zrx9BqUSe1",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "F5HTRrRMzGXLpBUeizWGcrVxsNtxPQiUrVJQiQKKxg4v",
+      "block_height": 126763386,
+      "block_timestamp": 1724867804261919500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3462063555491,
+      "tokens_burnt": 346206355549100000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "GctoyMZVtQHyS4kmgcE4bA8Q9chgs5ELiy7ZpePsbnMV",
+    "included_in_block_hash": "uW9oPfMy9x3Dwj5mrxPLh7W7zJxSTja6tdhGTY1JhYY",
+    "block_timestamp": "1724867801575864739",
+    "block": {
+      "block_height": 126763384
+    },
+    "receipt_conversion_tokens_burnt": "46956424270500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 346206355549100000000,
+        "args": "{\"proposal\": {\"id\": 13, \"snapshot\": {\"name\": \"Read-RPC development support\", \"labels\": [\"Indexers\", \"RPC Nodes\"], \"summary\": \"This proposal seeks to continue the development of read-rpc as an open-source project, focusing on compensating the two primary developers working on it.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"mob.near\", \"timestamp\": \"1724867802890584480\", \"linked_rfp\": null, \"supervisor\": null, \"description\": \"# Read-RPC development support\\\\\\\\n\\\\\\\\n## Organization\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\\\\\'s contact information\\\\\\\\nEvgeny Kuzyakov (ek at fastnear.com)\\\\\\\\n\\\\\\\\n### Size of the whole team\\\\\\\\n3 developers\\\\\\\\n\\\\\\\\n### Size of the engineering team\\\\\\\\n3 developers\\\\\\\\n\\\\\\\\n### Team location\\\\\\\\nRemote\\\\\\\\n\\\\\\\\n### Team background and bios\\\\\\\\n\\\\\\\\n- Evgeny Kuzyakov (https://github.com/evgenykuzyakov)\\\\\\\\n- Bohdan Khorolets (https://github.com/khorolets) \\\\\\\\n- Yurii Koba (https://github.com/kobayurii)\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\n\\\\\\\\n- Development and maintenance of read-rpc (https://github.com/near/read-rpc)\\\\\\\\n- Development and serving of the alternative indexing solution at FASTNEAR, e.g. https://mainnet.neardata.xyz (https://github.com/fastnear/neardata-server/)\\\\\\\\n\\\\\\\\n## Body\\\\\\\\nThe read-rpc project aims to provide a centralized RPC solution for serving read-only requests for NEAR blockchain data. It mimics the json-rpc client from nearcore while supporting archival data and maintaining fast response times with low latency. This proposal seeks to continue the development of read-rpc as an open-source project, focusing on compensating the two primary developers working on it.\\\\\\\\n\\\\\\\\nKey benefits of continuing read-rpc development in open-source:\\\\\\\\n1. Improved access to NEAR blockchain data for developers and applications\\\\\\\\n2. Enhanced performance for read-only operations\\\\\\\\n3. Support for archival data\\\\\\\\n4. Open-source nature promotes transparency and community involvement\\\\\\\\n\\\\\\\\nThe project development and documentation will remain under the MIT or Apache2 License.\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\n- Continious improvement of read-rpc functions.\\\\\\\\n- Release of the read-rpc with postgres database support (transitioning from ScyllaDB).\\\\\\\\n- Extensive documentation on how to setup read-rpc node from scratch.\\\\\\\\n- Ability to sync read-rpc database from alternative indexing sources like neardata.xyz instead of NEAR Lake Framework.\\\\\\\\n- 1 year development supoprt of the read-rpc, to maintain parity with the original json-rpc client from nearcore.\\\\\\\\n\\\\\\\\n## Metrics\\\\\\\\n- Requests per second benchmarks.\\\\\\\\n- Database size and hardware requirements.\\\\\\\\n- Query response time: Measure and maintain low latency for read operations\\\\\\\\n- Number of unique users/applications utilizing read-rpc\\\\\\\\n- Community engagement: Track GitHub stars, forks, and contributions\\\\\\\\n\\\\\\\\n## Usage & Examples\\\\\\\\n- Current users: Pagoda RPC service\\\\\\\\n- Usage metrics: unavialble\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n### Budget Total\\\\\\\\n$220,000 USD per year\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n- Developer compensation: $170,000 USD per year\\\\\\\\n- Infrastructure cost for tests, benchmarks and development: $50,000 USD per year\\\\\\\\n\\\\\\\\nThis budget covers the compensation for the two primary developers working on the read-rpc project for one year. The funds will be used to ensure continued development, maintenance, and improvement of the read-rpc solution.\", \"linked_proposals\": [], \"receiver_account\": \"treasury.fastnear.tg\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"220000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"mob.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8504470951784e+21
+    }
+  },
+  {
+    "id": "7810159284",
+    "receipt_id": "yiEjD48yaNfLf3Nm5unsyCCcxksSH3gPSGTAqsBEnbB",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "F5HTRrRMzGXLpBUeizWGcrVxsNtxPQiUrVJQiQKKxg4v",
+      "block_height": 126763386,
+      "block_timestamp": 1724867804261919500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3533687239803,
+      "tokens_burnt": 353368723980300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "GctoyMZVtQHyS4kmgcE4bA8Q9chgs5ELiy7ZpePsbnMV",
+    "included_in_block_hash": "uW9oPfMy9x3Dwj5mrxPLh7W7zJxSTja6tdhGTY1JhYY",
+    "block_timestamp": "1724867801575864739",
+    "block": {
+      "block_height": 126763384
+    },
+    "receipt_conversion_tokens_burnt": "46956424270500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 353368723980300000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":13,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mob.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8504470951784e+21
+    }
+  },
+  {
+    "id": "7858431877",
+    "receipt_id": "2BJxLx8hezwyouPS8TZ7avSukFcoWfzyRCJMifiCSESC",
+    "predecessor_account_id": "summoners.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "G23jX3zdpjtZKkSMbj9HogG3wGjFpKK6ukhVZnjHd3x",
+      "block_height": 126884054,
+      "block_timestamp": 1725007738985858600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6493760269503,
+      "tokens_burnt": 649376026950300000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "7qV7KkZnoWnwhfp5apw4gJ1JYNJUfjB8i85W8VXNvGX8",
+    "included_in_block_hash": "gGDbdedagDrs3f5vVnprjDEoLjbdH7DouwYiYKsbnZT",
+    "block_timestamp": "1725007737977474692",
+    "block": {
+      "block_height": 126884053
+    },
+    "receipt_conversion_tokens_burnt": "60942057880000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 649376026950300000000,
+        "args": "{\"body\": {\"name\": \"NEAR-STAKING.COM INFRASTRUCTURE UPGRADE PROPOSAL\", \"summary\": \"This proposal seeks to upgrade the infrastructure and enhance the accuracy of staking rewards and balance displays on near-staking.com, a vital platform in the NEAR ecosystem. Managed by NEARWEEK AG, the experienced team aims to improve data reliability and service uptime over a 1-year period. The project, requiring $5,000 USD monthly (totaling $60,000), will involve backend/frontend updates and infrastructure enhancements to meet ecosystem needs and stakeholder feedback.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"description\": \"\\\\\\\\n# Overview\\\\\\\\n\\\\\\\\nThis proposal outlines the plan for upgrading the infrastructure and quality of staking rewards and balances displayed to the NEAR ecosystem on [near-staking.com](https://near-staking.com).\\\\\\\\n\\\\\\\\n## Organisation\\\\\\\\n\\\\\\\\nNEAR-Staking is a part of NEARWEEK, operated by NEARWEEK AG, based in Zug, Switzerland.\\\\\\\\n\\\\\\\\n### Primary Contact Information\\\\\\\\n\\\\\\\\n- **Name:** DenysK\\\\\\\\n- **Email:** denys@nearweek.com\\\\\\\\n- **NEAR ID:** denysk.near \\\\\\\\n\\\\\\\\n### Team Details\\\\\\\\n\\\\\\\\n- **Total Team Size:** 3\\\\\\\\n- **Engineering Team Size:** 3\\\\\\\\n- **Team Locations:** Portugal, Estonia & Ukraine\\\\\\\\n\\\\\\\\n## Team Background, Bios & NEAR Experience\\\\\\\\n\\\\\\\\nDenys K, a NEAR OG with 3+ years of NEAR developer experience, is the CTO of NEARWEEK and the original creator of the near-staking.com platform. The team includes a senior front-end developer and a senior back-end developer. Their work includes:\\\\\\\\n\\\\\\\\n- [heroes.build application](https://heroes.build)\\\\\\\\n- NEARWEEK BOS widgets\\\\\\\\n- Various Github, Telegram & Twitter bots\\\\\\\\n\\\\\\\\n### Examples of Relevant Experience with NEAR Blockchain\\\\\\\\n\\\\\\\\n- [Near-Staking.com](https://near-staking.com/)\\\\\\\\n- [SputnikDAO](https://nearweek.github.io/sputnik-dao-2-ui-reference-mainnet/#/genesis.sputnik-dao.near)\\\\\\\\n- Lockup contract and UI\\\\\\\\n- Multisig UI\\\\\\\\n- Various BOS components: \\\\\\\\n  - [NearStats](https://dev.near.org/denysk.near/widget/NearStats)\\\\\\\\n  - [PriceStats](https://near.social/denysk.near/widget/PriceStats)\\\\\\\\n\\\\\\\\n### Affiliations with Other NEAR Ecosystem Partners\\\\\\\\n\\\\\\\\nNEARWEEK is the official newsletter of the NEAR ecosystem, collaborating with major NEAR stakeholders and cross-chain platforms like Messari, Coingecko, and CoinmarketCap.\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\n\\\\\\\\nThe team has 10+ years of full-stack experience, including Java and C++, and 2 years of experience with Rust for the NEAR blockchain, alongside JavaScript and React for frontend development.\\\\\\\\n\\\\\\\\n### Non-Technical Capabilities\\\\\\\\n\\\\\\\\nNEARWEEK has a large team focused on marketing, social media, and design, but these will not be relevant to the near-staking project, which is primarily a development effort.\\\\\\\\n\\\\\\\\n## Motivation for the Proposal\\\\\\\\n\\\\\\\\nIn the blockchain industry, especially on proof-of-stake blockchains, a thriving validator ecosystem is crucial for a transparent and tamper-proof decentralized ledger. Accurate real-time data on validator uptime and staking rewards is essential. Near-staking.com has provided this service for over 3 years, receiving valuable feedback from the ecosystem. This proposal aims to upgrade the near-staking infrastructure based on that feedback. We have adjusted our initial proposal based on the IC feedback, please find the thread [here](https://github.com/near/Infrastructure-Working-Group/discussions/129)\\\\\\\\n\\\\\\\\n### Building Blocks of Near-Staking.com\\\\\\\\n\\\\\\\\n- **Near-Staking Rewards and Balances** - Review and confirm data reliability.\\\\\\\\n- **Validator Dashboard**\\\\\\\\n- **NEAR Private RPC Node**\\\\\\\\n- **NEAR Fastnear Indexer** - Significantly upgrade underlying server infrastructure.\\\\\\\\n\\\\\\\\n### Required Technical Expertise\\\\\\\\n\\\\\\\\n- Senior Rust Developer\\\\\\\\n- Mid/Senior Frontend Developers\\\\\\\\n- UI Designer\\\\\\\\n- Senior DevOps/Validator\\\\\\\\n- Database Engineer\\\\\\\\n\\\\\\\\nAll required resources are available in-house.\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\nThe proposal covers a 1-year period, including specific infrastructure upgrades and general maintenance. Key milestones include:\\\\\\\\n\\\\\\\\n- **Upgrade NEAR indexer server infrastructure** (1 month of backend/frontend work)\\\\\\\\n- **Analyze reliability of rewards & balances data** (2 months of QA work)\\\\\\\\n- **Push required updates** based on findings (up to 2 months of frontend & backend implementation)\\\\\\\\n\\\\\\\\n### Metrics\\\\\\\\n\\\\\\\\n- **Uptime of near-staking service:** Target 95% uptime.\\\\\\\\n- **Precision of staking rewards & balances data:** Aim for up to 0.5% accuracy, with potential for 0.1% inaccuracies in specific cases.\\\\\\\\n\\\\\\\\n## Competitor Comparison\\\\\\\\n\\\\\\\\nSince [NEAR Validators](https://pages.near.org/about/network/validators/) has been discontinued, the following projects offer complementary services:\\\\\\\\n\\\\\\\\n- **[Nearblocks.io](https://nearblocks.io/):** A block explorer that provides different data, not specializing in accurate staking rewards & balances.\\\\\\\\n- **[Pikespeak.ai](https://pikespeak.ai/):** A data platform for the NEAR ecosystem with explorer capabilities and data dashboards but does not specialize in accurate staking rewards & balances.\\\\\\\\n- **[Nearscope.net](https://nearscope.net/):** Similar to near-staking, but lacks reliable transaction-based rewards data. Provides historical network performance graphs, which near-staking does not.\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n### Budget Total\\\\\\\\n\\\\\\\\nWe request $5,000 USD equivalent per month over a 1-year period, totaling $60,000 USD equivalent. The detailed budget breakdown is as follows:\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\n| Category                                                                                      | Monthly Cost USD equivalent |\\\\\\\\n|-----------------------------------------------------------------------------------------------|-----------------------------|\\\\\\\\n| Indexer, Infrastructure & AWS S3 Costs, external RPC service and Near-Staking Hosted server    | $1,500                     |\\\\\\\\n| Front-End, Back-End, QA & On-Call DevOps                                                      | $3,500                      |\\\\\\\\n\\\\\\\\n| **Total monthly budget**                                                                       | **$5,000**                  |\\\\\\\\n```\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"summoners.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"60000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Other\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8944743409599e+21
+    }
+  },
+  {
+    "id": "7858432187",
+    "receipt_id": "AexcJPkY44ptjHZC4DQjwY46wBR9ts841B5zb7rJfoa1",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Ck25SqcnAiYFVKTxegwJKczgkgiZafqLvvShGZSJwgZs",
+      "block_height": 126884055,
+      "block_timestamp": 1725007740112961300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4522148902904,
+      "tokens_burnt": 452214890290400000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7qV7KkZnoWnwhfp5apw4gJ1JYNJUfjB8i85W8VXNvGX8",
+    "included_in_block_hash": "gGDbdedagDrs3f5vVnprjDEoLjbdH7DouwYiYKsbnZT",
+    "block_timestamp": "1725007737977474692",
+    "block": {
+      "block_height": 126884053
+    },
+    "receipt_conversion_tokens_burnt": "60942057880000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 452214890290400000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Infrastructure Committee* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @summoners.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}NEAR-STAKING.COM INFRASTRUCTURE UPGRADE PROPOSAL\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis proposal seeks to upgrade the infrastructure and enhance the accuracy of staking rewards and balance displays on near-staking.com, a vital platform in the NEAR ecosystem. Managed by NEARWEEK AG, the experienced team aims to improve data reliability and service uptime over a 1-year period. The project, requiring $5,000 USD monthly (totaling $60,000), will involve backend/frontend updates and infrastructure enhancements to meet ecosystem needs and stakeholder feedback.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=14)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8944743409599e+21
+    }
+  },
+  {
+    "id": "7858432191",
+    "receipt_id": "578s7yKpLTQBnQRJmQfmjmW8ZME3ogGPUrKwQiuP8yKD",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Ck25SqcnAiYFVKTxegwJKczgkgiZafqLvvShGZSJwgZs",
+      "block_height": 126884055,
+      "block_timestamp": 1725007740112961300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3724761130591,
+      "tokens_burnt": 372476113059100000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "7qV7KkZnoWnwhfp5apw4gJ1JYNJUfjB8i85W8VXNvGX8",
+    "included_in_block_hash": "gGDbdedagDrs3f5vVnprjDEoLjbdH7DouwYiYKsbnZT",
+    "block_timestamp": "1725007737977474692",
+    "block": {
+      "block_height": 126884053
+    },
+    "receipt_conversion_tokens_burnt": "60942057880000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 372476113059100000000,
+        "args": "{\"proposal\": {\"id\": 14, \"snapshot\": {\"name\": \"NEAR-STAKING.COM INFRASTRUCTURE UPGRADE PROPOSAL\", \"labels\": [\"Other\"], \"summary\": \"This proposal seeks to upgrade the infrastructure and enhance the accuracy of staking rewards and balance displays on near-staking.com, a vital platform in the NEAR ecosystem. Managed by NEARWEEK AG, the experienced team aims to improve data reliability and service uptime over a 1-year period. The project, requiring $5,000 USD monthly (totaling $60,000), will involve backend/frontend updates and infrastructure enhancements to meet ecosystem needs and stakeholder feedback.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"summoners.near\", \"timestamp\": \"1725007738985858583\", \"linked_rfp\": null, \"supervisor\": null, \"description\": \"\\\\\\\\n# Overview\\\\\\\\n\\\\\\\\nThis proposal outlines the plan for upgrading the infrastructure and quality of staking rewards and balances displayed to the NEAR ecosystem on [near-staking.com](https://near-staking.com).\\\\\\\\n\\\\\\\\n## Organisation\\\\\\\\n\\\\\\\\nNEAR-Staking is a part of NEARWEEK, operated by NEARWEEK AG, based in Zug, Switzerland.\\\\\\\\n\\\\\\\\n### Primary Contact Information\\\\\\\\n\\\\\\\\n- **Name:** DenysK\\\\\\\\n- **Email:** denys@nearweek.com\\\\\\\\n- **NEAR ID:** denysk.near \\\\\\\\n\\\\\\\\n### Team Details\\\\\\\\n\\\\\\\\n- **Total Team Size:** 3\\\\\\\\n- **Engineering Team Size:** 3\\\\\\\\n- **Team Locations:** Portugal, Estonia & Ukraine\\\\\\\\n\\\\\\\\n## Team Background, Bios & NEAR Experience\\\\\\\\n\\\\\\\\nDenys K, a NEAR OG with 3+ years of NEAR developer experience, is the CTO of NEARWEEK and the original creator of the near-staking.com platform. The team includes a senior front-end developer and a senior back-end developer. Their work includes:\\\\\\\\n\\\\\\\\n- [heroes.build application](https://heroes.build)\\\\\\\\n- NEARWEEK BOS widgets\\\\\\\\n- Various Github, Telegram & Twitter bots\\\\\\\\n\\\\\\\\n### Examples of Relevant Experience with NEAR Blockchain\\\\\\\\n\\\\\\\\n- [Near-Staking.com](https://near-staking.com/)\\\\\\\\n- [SputnikDAO](https://nearweek.github.io/sputnik-dao-2-ui-reference-mainnet/#/genesis.sputnik-dao.near)\\\\\\\\n- Lockup contract and UI\\\\\\\\n- Multisig UI\\\\\\\\n- Various BOS components: \\\\\\\\n  - [NearStats](https://dev.near.org/denysk.near/widget/NearStats)\\\\\\\\n  - [PriceStats](https://near.social/denysk.near/widget/PriceStats)\\\\\\\\n\\\\\\\\n### Affiliations with Other NEAR Ecosystem Partners\\\\\\\\n\\\\\\\\nNEARWEEK is the official newsletter of the NEAR ecosystem, collaborating with major NEAR stakeholders and cross-chain platforms like Messari, Coingecko, and CoinmarketCap.\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\n\\\\\\\\nThe team has 10+ years of full-stack experience, including Java and C++, and 2 years of experience with Rust for the NEAR blockchain, alongside JavaScript and React for frontend development.\\\\\\\\n\\\\\\\\n### Non-Technical Capabilities\\\\\\\\n\\\\\\\\nNEARWEEK has a large team focused on marketing, social media, and design, but these will not be relevant to the near-staking project, which is primarily a development effort.\\\\\\\\n\\\\\\\\n## Motivation for the Proposal\\\\\\\\n\\\\\\\\nIn the blockchain industry, especially on proof-of-stake blockchains, a thriving validator ecosystem is crucial for a transparent and tamper-proof decentralized ledger. Accurate real-time data on validator uptime and staking rewards is essential. Near-staking.com has provided this service for over 3 years, receiving valuable feedback from the ecosystem. This proposal aims to upgrade the near-staking infrastructure based on that feedback. We have adjusted our initial proposal based on the IC feedback, please find the thread [here](https://github.com/near/Infrastructure-Working-Group/discussions/129)\\\\\\\\n\\\\\\\\n### Building Blocks of Near-Staking.com\\\\\\\\n\\\\\\\\n- **Near-Staking Rewards and Balances** - Review and confirm data reliability.\\\\\\\\n- **Validator Dashboard**\\\\\\\\n- **NEAR Private RPC Node**\\\\\\\\n- **NEAR Fastnear Indexer** - Significantly upgrade underlying server infrastructure.\\\\\\\\n\\\\\\\\n### Required Technical Expertise\\\\\\\\n\\\\\\\\n- Senior Rust Developer\\\\\\\\n- Mid/Senior Frontend Developers\\\\\\\\n- UI Designer\\\\\\\\n- Senior DevOps/Validator\\\\\\\\n- Database Engineer\\\\\\\\n\\\\\\\\nAll required resources are available in-house.\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\nThe proposal covers a 1-year period, including specific infrastructure upgrades and general maintenance. Key milestones include:\\\\\\\\n\\\\\\\\n- **Upgrade NEAR indexer server infrastructure** (1 month of backend/frontend work)\\\\\\\\n- **Analyze reliability of rewards & balances data** (2 months of QA work)\\\\\\\\n- **Push required updates** based on findings (up to 2 months of frontend & backend implementation)\\\\\\\\n\\\\\\\\n### Metrics\\\\\\\\n\\\\\\\\n- **Uptime of near-staking service:** Target 95% uptime.\\\\\\\\n- **Precision of staking rewards & balances data:** Aim for up to 0.5% accuracy, with potential for 0.1% inaccuracies in specific cases.\\\\\\\\n\\\\\\\\n## Competitor Comparison\\\\\\\\n\\\\\\\\nSince [NEAR Validators](https://pages.near.org/about/network/validators/) has been discontinued, the following projects offer complementary services:\\\\\\\\n\\\\\\\\n- **[Nearblocks.io](https://nearblocks.io/):** A block explorer that provides different data, not specializing in accurate staking rewards & balances.\\\\\\\\n- **[Pikespeak.ai](https://pikespeak.ai/):** A data platform for the NEAR ecosystem with explorer capabilities and data dashboards but does not specialize in accurate staking rewards & balances.\\\\\\\\n- **[Nearscope.net](https://nearscope.net/):** Similar to near-staking, but lacks reliable transaction-based rewards data. Provides historical network performance graphs, which near-staking does not.\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n### Budget Total\\\\\\\\n\\\\\\\\nWe request $5,000 USD equivalent per month over a 1-year period, totaling $60,000 USD equivalent. The detailed budget breakdown is as follows:\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\n| Category                                                                                      | Monthly Cost USD equivalent |\\\\\\\\n|-----------------------------------------------------------------------------------------------|-----------------------------|\\\\\\\\n| Indexer, Infrastructure & AWS S3 Costs, external RPC service and Near-Staking Hosted server    | $1,500                     |\\\\\\\\n| Front-End, Back-End, QA & On-Call DevOps                                                      | $3,500                      |\\\\\\\\n\\\\\\\\n| **Total monthly budget**                                                                       | **$5,000**                  |\\\\\\\\n```\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"summoners.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"60000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"summoners.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8944743409599e+21
+    }
+  },
+  {
+    "id": "7858432194",
+    "receipt_id": "3S4NYSvJjswQbu6aThrf87M9fTaVqJ7YaMRjkgFivL8b",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Ck25SqcnAiYFVKTxegwJKczgkgiZafqLvvShGZSJwgZs",
+      "block_height": 126884055,
+      "block_timestamp": 1725007740112961300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3594652527801,
+      "tokens_burnt": 359465252780100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7qV7KkZnoWnwhfp5apw4gJ1JYNJUfjB8i85W8VXNvGX8",
+    "included_in_block_hash": "gGDbdedagDrs3f5vVnprjDEoLjbdH7DouwYiYKsbnZT",
+    "block_timestamp": "1725007737977474692",
+    "block": {
+      "block_height": 126884053
+    },
+    "receipt_conversion_tokens_burnt": "60942057880000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 359465252780100000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"nearweek.com\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":14,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"summoners.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":14,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"summoners.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.8944743409599e+21
+    }
+  },
+  {
+    "id": "7858462444",
+    "receipt_id": "DPbSRQeQmuSPpPpjFgLTa99ynJTHJdx1mpK3bZD5DrJq",
+    "predecessor_account_id": "summoners.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3XsdUaTbwPgGzW2xn2hFe8o1Vgeh8ffKbLwViBhKBbSE",
+      "block_height": 126884149,
+      "block_timestamp": 1725007844150033700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5406387652762,
+      "tokens_burnt": 540638765276200000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "77hiEf9TAGA2RUCYhfHWgT7VprptpwoLVMSzEfX3NuHZ",
+    "included_in_block_hash": "CToq1ccjf8MCdKERpzpmJgT9FvsUxsS8UJQ3YHBFv49m",
+    "block_timestamp": "1725007843198550147",
+    "block": {
+      "block_height": 126884148
+    },
+    "receipt_conversion_tokens_burnt": "60975436480500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 540638765276200000000,
+        "args": "{\"id\": 14, \"body\": {\"name\": \"NEAR-STAKING.COM INFRASTRUCTURE UPGRADE PROPOSAL\", \"summary\": \"This proposal seeks to upgrade the infrastructure and enhance the accuracy of staking rewards and balance displays on near-staking.com, a vital platform in the NEAR ecosystem. Managed by NEARWEEK AG, the experienced team aims to improve data reliability and service uptime over a 1-year period. The project, requiring $5,000 USD monthly (totaling $60,000), will involve backend/frontend updates and infrastructure enhancements to meet ecosystem needs and stakeholder feedback.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"\\\\\\\\n# Overview\\\\\\\\n\\\\\\\\nThis proposal outlines the plan for upgrading the infrastructure and quality of staking rewards and balances displayed to the NEAR ecosystem on [near-staking.com](https://near-staking.com).\\\\\\\\n\\\\\\\\n## Organisation\\\\\\\\n\\\\\\\\nNEAR-Staking is a part of NEARWEEK, operated by NEARWEEK AG, based in Zug, Switzerland.\\\\\\\\n\\\\\\\\n### Primary Contact Information\\\\\\\\n\\\\\\\\n- **Name:** DenysK\\\\\\\\n- **Email:** denys@nearweek.com\\\\\\\\n- **NEAR ID:** denysk.near \\\\\\\\n\\\\\\\\n### Team Details\\\\\\\\n\\\\\\\\n- **Total Team Size:** 3\\\\\\\\n- **Engineering Team Size:** 3\\\\\\\\n- **Team Locations:** Portugal, Estonia & Ukraine\\\\\\\\n\\\\\\\\n## Team Background, Bios & NEAR Experience\\\\\\\\n\\\\\\\\nDenys K, a NEAR OG with 3+ years of NEAR developer experience, is the CTO of NEARWEEK and the original creator of the near-staking.com platform. The team includes a senior front-end developer and a senior back-end developer. Their work includes:\\\\\\\\n\\\\\\\\n- [heroes.build application](https://heroes.build)\\\\\\\\n- NEARWEEK BOS widgets\\\\\\\\n- Various Github, Telegram & Twitter bots\\\\\\\\n\\\\\\\\n### Examples of Relevant Experience with NEAR Blockchain\\\\\\\\n\\\\\\\\n- [Near-Staking.com](https://near-staking.com/)\\\\\\\\n- [SputnikDAO](https://nearweek.github.io/sputnik-dao-2-ui-reference-mainnet/#/genesis.sputnik-dao.near)\\\\\\\\n- Lockup contract and UI\\\\\\\\n- Multisig UI\\\\\\\\n- Various BOS components: \\\\\\\\n  - [NearStats](https://dev.near.org/denysk.near/widget/NearStats)\\\\\\\\n  - [PriceStats](https://near.social/denysk.near/widget/PriceStats)\\\\\\\\n\\\\\\\\n### Affiliations with Other NEAR Ecosystem Partners\\\\\\\\n\\\\\\\\nNEARWEEK is the official newsletter of the NEAR ecosystem, collaborating with major NEAR stakeholders and cross-chain platforms like Messari, Coingecko, and CoinmarketCap.\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\n\\\\\\\\nThe team has 10+ years of full-stack experience, including Java and C++, and 2 years of experience with Rust for the NEAR blockchain, alongside JavaScript and React for frontend development.\\\\\\\\n\\\\\\\\n### Non-Technical Capabilities\\\\\\\\n\\\\\\\\nNEARWEEK has a large team focused on marketing, social media, and design, but these will not be relevant to the near-staking project, which is primarily a development effort.\\\\\\\\n\\\\\\\\n## Motivation for the Proposal\\\\\\\\n\\\\\\\\nIn the blockchain industry, especially on proof-of-stake blockchains, a thriving validator ecosystem is crucial for a transparent and tamper-proof decentralized ledger. Accurate real-time data on validator uptime and staking rewards is essential. Near-staking.com has provided this service for over 3 years, receiving valuable feedback from the ecosystem. This proposal aims to upgrade the near-staking infrastructure based on that feedback. We have adjusted our initial proposal based on the IC feedback, please find the thread [here](https://github.com/near/Infrastructure-Working-Group/discussions/129)\\\\\\\\n\\\\\\\\n### Building Blocks of Near-Staking.com\\\\\\\\n\\\\\\\\n- **Near-Staking Rewards and Balances** - Review and confirm data reliability.\\\\\\\\n- **Validator Dashboard**\\\\\\\\n- **NEAR Private RPC Node**\\\\\\\\n- **NEAR Fastnear Indexer** - Significantly upgrade underlying server infrastructure.\\\\\\\\n\\\\\\\\n### Required Technical Expertise\\\\\\\\n\\\\\\\\n- Senior Rust Developer\\\\\\\\n- Mid/Senior Frontend Developers\\\\\\\\n- UI Designer\\\\\\\\n- Senior DevOps/Validator\\\\\\\\n- Database Engineer\\\\\\\\n\\\\\\\\nAll required resources are available in-house.\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\nThe proposal covers a 1-year period, including specific infrastructure upgrades and general maintenance. Key milestones include:\\\\\\\\n\\\\\\\\n- **Upgrade NEAR indexer server infrastructure** (1 month of backend/frontend work)\\\\\\\\n- **Analyze reliability of rewards & balances data** (2 months of QA work)\\\\\\\\n- **Push required updates** based on findings (up to 2 months of frontend & backend implementation)\\\\\\\\n\\\\\\\\n### Metrics\\\\\\\\n\\\\\\\\n- **Uptime of near-staking service:** Target 95% uptime.\\\\\\\\n- **Precision of staking rewards & balances data:** Aim for up to 0.5% accuracy, with potential for 0.1% inaccuracies in specific cases.\\\\\\\\n\\\\\\\\n## Competitor Comparison\\\\\\\\n\\\\\\\\nSince [NEAR Validators](https://pages.near.org/about/network/validators/) has been discontinued, the following projects offer complementary services:\\\\\\\\n\\\\\\\\n- **[Nearblocks.io](https://nearblocks.io/):** A block explorer that provides different data, not specializing in accurate staking rewards & balances.\\\\\\\\n- **[Pikespeak.ai](https://pikespeak.ai/):** A data platform for the NEAR ecosystem with explorer capabilities and data dashboards but does not specialize in accurate staking rewards & balances.\\\\\\\\n- **[Nearscope.net](https://nearscope.net/):** Similar to near-staking, but lacks reliable transaction-based rewards data. Provides historical network performance graphs, which near-staking does not.\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\nWe request $5,000 USD equivalent per month over a 1-year period, totaling $60,000 USD equivalent. The detailed budget breakdown is as follows:\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\n| Category                                                                                      | Monthly Cost USD equivalent |\\\\\\\\n|-----------------------------------------------------------------------------------------------|-----------------------------|\\\\\\\\n| Indexer, Infrastructure & AWS S3 Costs, external RPC service and Near-Staking Hosted server    | $1,500                     |\\\\\\\\n| Front-End, Back-End, QA & On-Call DevOps                                                      | $3,500                      |\\\\\\\\n\\\\\\\\n| **Total monthly budget**                                                                       | **$5,000**                  |\\\\\\\\n```\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"summoners.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"60000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Other\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 960063654662000000000
+    }
+  },
+  {
+    "id": "7858462802",
+    "receipt_id": "H1CASgHNEK3VdABXRPs2H1aA7k6rBY5YAd8aWSph7w11",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6je7DTp1o3TFdvFxE7oqmYduK5a6g7R3D2sGkE8urtZA",
+      "block_height": 126884150,
+      "block_timestamp": 1725007845287146800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3584494529053,
+      "tokens_burnt": 358449452905300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "77hiEf9TAGA2RUCYhfHWgT7VprptpwoLVMSzEfX3NuHZ",
+    "included_in_block_hash": "CToq1ccjf8MCdKERpzpmJgT9FvsUxsS8UJQ3YHBFv49m",
+    "block_timestamp": "1725007843198550147",
+    "block": {
+      "block_height": 126884148
+    },
+    "receipt_conversion_tokens_burnt": "60975436480500000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 358449452905300000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"summoners.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":14,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"summoners.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 960063654662000000000
+    }
+  },
+  {
+    "id": "7869023247",
+    "receipt_id": "qVaRvPAWxombNi4Zp5GxjA5GMfHgZXBgApHG9DAFrua",
+    "predecessor_account_id": "mob.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4AUrbFXhiFonZcvotGoRrWnQjcCL6Qbm8QmPtFBeF45t",
+      "block_height": 126909851,
+      "block_timestamp": 1725036643035782000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4608232005375,
+      "tokens_burnt": 460823200537500000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "3BmxhQFicNLhcYGj9Z2kwWB5EvuHHUNU5F6JDSd5MT5E",
+    "included_in_block_hash": "G49Y7zFP2qsk42uXFKjAKNK8iEhX7p3zTxRwVoyPMyuJ",
+    "block_timestamp": "1725036641921485721",
+    "block": {
+      "block_height": 126909850
+    },
+    "receipt_conversion_tokens_burnt": "31444911781000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 460823200537500000000,
+        "args": "{\"id\": 13, \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 849502367059400000000
+    }
+  },
+  {
+    "id": "7869024624",
+    "receipt_id": "Ht8aPM9xeHDNJyBSg9bypC3JpDC8HDB3Coy6fYp5A42Z",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EHFWkqBY6GCYURCYK8pVUBy4gPuTNWUwcPaCTEUfi2iJ",
+      "block_height": 126909852,
+      "block_timestamp": 1725036643818281000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3572342547409,
+      "tokens_burnt": 357234254740900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "3BmxhQFicNLhcYGj9Z2kwWB5EvuHHUNU5F6JDSd5MT5E",
+    "included_in_block_hash": "G49Y7zFP2qsk42uXFKjAKNK8iEhX7p3zTxRwVoyPMyuJ",
+    "block_timestamp": "1725036641921485721",
+    "block": {
+      "block_height": 126909850
+    },
+    "receipt_conversion_tokens_burnt": "31444911781000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 357234254740900000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mob.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":13,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mob.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 849502367059400000000
+    }
+  },
+  {
+    "id": "7929175921",
+    "receipt_id": "5dR28Dj5bKm9SEzbrgtQ136taFYBxocNjN4TzM6Wv7ok",
+    "predecessor_account_id": "summoners.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5v8MfbRk5KH87sqSvCvY7RY5T53rkkBVXbW1e3rM2KZ8",
+      "block_height": 127062947,
+      "block_timestamp": 1725213652231139600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6242682199107,
+      "tokens_burnt": 624268219910700000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "3MVoM22cdo3bvPGxPs1EGrCiagXN7JkbT8SZvTHKofkH",
+    "included_in_block_hash": "Fse7dQ5ssLMx6VN8HoUgdD28VMTxanLwjU5jNHAyZvme",
+    "block_timestamp": "1725213651238296790",
+    "block": {
+      "block_height": 127062946
+    },
+    "receipt_conversion_tokens_burnt": "31444911781000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 624268219910700000000,
+        "args": "{\"id\": 14, \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0073684637506e+21
+    }
+  },
+  {
+    "id": "7929176303",
+    "receipt_id": "9sFy2ZLuyQfGPx5u4RZ1eam6cc4ju1szPKNFAadX3yBv",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6TBy13rjNCruSHWU3rrrpP6A1rA6AnJi41MvMuhHdHPa",
+      "block_height": 127062948,
+      "block_timestamp": 1725213653411010800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3516553320589,
+      "tokens_burnt": 351655332058900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "3MVoM22cdo3bvPGxPs1EGrCiagXN7JkbT8SZvTHKofkH",
+    "included_in_block_hash": "Fse7dQ5ssLMx6VN8HoUgdD28VMTxanLwjU5jNHAyZvme",
+    "block_timestamp": "1725213651238296790",
+    "block": {
+      "block_height": 127062946
+    },
+    "receipt_conversion_tokens_burnt": "31444911781000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351655332058900000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"summoners.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":14,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"summoners.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0073684637506e+21
+    }
+  },
+  {
+    "id": "8025201351",
+    "receipt_id": "FwrWgJLH8f31wZcpKctwDUx7iPeHPNq4eiYNPx3NJQ1k",
+    "predecessor_account_id": "trechriron71.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DGnJyCtfQiGXh7szUZerQDUi1NjfE2dxSHs3gvbUus2Q",
+      "block_height": 127298492,
+      "block_timestamp": 1725478567805086500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7114064921430,
+      "tokens_burnt": 711406492143000000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "JCWgrHZ7Aa98qb4h3yi9CoEGUivdXpLcW9sKJBxHJN4R",
+    "included_in_block_hash": "2NPN4o3XsC9TrCDnxC2mUW3YsFnRrcRpSiiYJ4ZsECK7",
+    "block_timestamp": "1725478566623470627",
+    "block": {
+      "block_height": 127298491
+    },
+    "receipt_conversion_tokens_burnt": "61371211315000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 711406492143000000000,
+        "args": "{\"id\": 14, \"body\": {\"name\": \"NEARWeek: NEAR-STAKING.COM INFRASTRUCTURE UPGRADE PROPOSAL\", \"summary\": \"This proposal seeks to upgrade the infrastructure and enhance the accuracy of staking rewards and balance displays on near-staking.com, a vital platform in the NEAR ecosystem. Managed by NEARWEEK AG, the experienced team aims to improve data reliability and service uptime over a 1-year period. The project, requiring $5,000 USD monthly (totaling $60,000), will involve backend/frontend updates and infrastructure enhancements to meet ecosystem needs and stakeholder feedback.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": null, \"description\": \"\\\\\\\\n# Overview\\\\\\\\n\\\\\\\\nThis proposal outlines the plan for upgrading the infrastructure and quality of staking rewards and balances displayed to the NEAR ecosystem on [near-staking.com](https://near-staking.com).\\\\\\\\n\\\\\\\\n## Organisation\\\\\\\\n\\\\\\\\nNEAR-Staking is a part of NEARWEEK, operated by NEARWEEK AG, based in Zug, Switzerland.\\\\\\\\n\\\\\\\\n### Primary Contact Information\\\\\\\\n\\\\\\\\n- **Name:** DenysK\\\\\\\\n- **Email:** denys@nearweek.com\\\\\\\\n- **NEAR ID:** denysk.near \\\\\\\\n\\\\\\\\n### Team Details\\\\\\\\n\\\\\\\\n- **Total Team Size:** 3\\\\\\\\n- **Engineering Team Size:** 3\\\\\\\\n- **Team Locations:** Portugal, Estonia & Ukraine\\\\\\\\n\\\\\\\\n## Team Background, Bios & NEAR Experience\\\\\\\\n\\\\\\\\nDenys K, a NEAR OG with 3+ years of NEAR developer experience, is the CTO of NEARWEEK and the original creator of the near-staking.com platform. The team includes a senior front-end developer and a senior back-end developer. Their work includes:\\\\\\\\n\\\\\\\\n- [heroes.build application](https://heroes.build)\\\\\\\\n- NEARWEEK BOS widgets\\\\\\\\n- Various Github, Telegram & Twitter bots\\\\\\\\n\\\\\\\\n### Examples of Relevant Experience with NEAR Blockchain\\\\\\\\n\\\\\\\\n- [Near-Staking.com](https://near-staking.com/)\\\\\\\\n- [SputnikDAO](https://nearweek.github.io/sputnik-dao-2-ui-reference-mainnet/#/genesis.sputnik-dao.near)\\\\\\\\n- Lockup contract and UI\\\\\\\\n- Multisig UI\\\\\\\\n- Various BOS components: \\\\\\\\n  - [NearStats](https://dev.near.org/denysk.near/widget/NearStats)\\\\\\\\n  - [PriceStats](https://near.social/denysk.near/widget/PriceStats)\\\\\\\\n\\\\\\\\n### Affiliations with Other NEAR Ecosystem Partners\\\\\\\\n\\\\\\\\nNEARWEEK is the official newsletter of the NEAR ecosystem, collaborating with major NEAR stakeholders and cross-chain platforms like Messari, Coingecko, and CoinmarketCap.\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\n\\\\\\\\nThe team has 10+ years of full-stack experience, including Java and C++, and 2 years of experience with Rust for the NEAR blockchain, alongside JavaScript and React for frontend development.\\\\\\\\n\\\\\\\\n### Non-Technical Capabilities\\\\\\\\n\\\\\\\\nNEARWEEK has a large team focused on marketing, social media, and design, but these will not be relevant to the near-staking project, which is primarily a development effort.\\\\\\\\n\\\\\\\\n## Motivation for the Proposal\\\\\\\\n\\\\\\\\nIn the blockchain industry, especially on proof-of-stake blockchains, a thriving validator ecosystem is crucial for a transparent and tamper-proof decentralized ledger. Accurate real-time data on validator uptime and staking rewards is essential. Near-staking.com has provided this service for over 3 years, receiving valuable feedback from the ecosystem. This proposal aims to upgrade the near-staking infrastructure based on that feedback. We have adjusted our initial proposal based on the IC feedback, please find the thread [here](https://github.com/near/Infrastructure-Working-Group/discussions/129)\\\\\\\\n\\\\\\\\n### Building Blocks of Near-Staking.com\\\\\\\\n\\\\\\\\n- **Near-Staking Rewards and Balances** - Review and confirm data reliability.\\\\\\\\n- **Validator Dashboard**\\\\\\\\n- **NEAR Private RPC Node**\\\\\\\\n- **NEAR Fastnear Indexer** - Significantly upgrade underlying server infrastructure.\\\\\\\\n\\\\\\\\n### Required Technical Expertise\\\\\\\\n\\\\\\\\n- Senior Rust Developer\\\\\\\\n- Mid/Senior Frontend Developers\\\\\\\\n- UI Designer\\\\\\\\n- Senior DevOps/Validator\\\\\\\\n- Database Engineer\\\\\\\\n\\\\\\\\nAll required resources are available in-house.\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n\\\\\\\\nThe proposal covers a 1-year period, including specific infrastructure upgrades and general maintenance. Key milestones include:\\\\\\\\n\\\\\\\\n- **Upgrade NEAR indexer server infrastructure** (1 month of backend/frontend work)\\\\\\\\n- **Analyze reliability of rewards & balances data** (2 months of QA work)\\\\\\\\n- **Push required updates** based on findings (up to 2 months of frontend & backend implementation)\\\\\\\\n\\\\\\\\n### Metrics\\\\\\\\n\\\\\\\\n- **Uptime of near-staking service:** Target 95% uptime.\\\\\\\\n- **Precision of staking rewards & balances data:** Aim for up to 0.5% accuracy, with potential for 0.1% inaccuracies in specific cases.\\\\\\\\n\\\\\\\\n## Competitor Comparison\\\\\\\\n\\\\\\\\nSince [NEAR Validators](https://pages.near.org/about/network/validators/) has been discontinued, the following projects offer complementary services:\\\\\\\\n\\\\\\\\n- **[Nearblocks.io](https://nearblocks.io/):** A block explorer that provides different data, not specializing in accurate staking rewards & balances.\\\\\\\\n- **[Pikespeak.ai](https://pikespeak.ai/):** A data platform for the NEAR ecosystem with explorer capabilities and data dashboards but does not specialize in accurate staking rewards & balances.\\\\\\\\n- **[Nearscope.net](https://nearscope.net/):** Similar to near-staking, but lacks reliable transaction-based rewards data. Provides historical network performance graphs, which near-staking does not.\\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\nWe request $5,000 USD equivalent per month over a 1-year period, totaling $60,000 USD equivalent. The detailed budget breakdown is as follows:\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\n| Category                                                                                      | Monthly Cost USD equivalent |\\\\\\\\n|-----------------------------------------------------------------------------------------------|-----------------------------|\\\\\\\\n| Indexer, Infrastructure & AWS S3 Costs, external RPC service and Near-Staking Hosted server    | $1,500                     |\\\\\\\\n| Front-End, Back-End, QA & On-Call DevOps                                                      | $3,500                      |\\\\\\\\n\\\\\\\\n| **Total monthly budget**                                                                       | **$5,000**                  |\\\\\\\\n```\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"summoners.near\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"60000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Other\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1245321579889e+21
+    }
+  },
+  {
+    "id": "8025202830",
+    "receipt_id": "Aqcnp7Pp8aoCYB7oTkZVK7LDANgmRCLu9n8J8vtVoHBH",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AUcZ7pQwnoAwaf22yDjLVebqTMYARQLR4NgKhjd7Mqth",
+      "block_height": 127298493,
+      "block_timestamp": 1725478568848904400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3517544545309,
+      "tokens_burnt": 351754454530900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "JCWgrHZ7Aa98qb4h3yi9CoEGUivdXpLcW9sKJBxHJN4R",
+    "included_in_block_hash": "2NPN4o3XsC9TrCDnxC2mUW3YsFnRrcRpSiiYJ4ZsECK7",
+    "block_timestamp": "1725478566623470627",
+    "block": {
+      "block_height": 127298491
+    },
+    "receipt_conversion_tokens_burnt": "61371211315000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351754454530900000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"summoners.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":14,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"trechriron71.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1245321579889e+21
+    }
+  },
+  {
+    "id": "8052120392",
+    "receipt_id": "rHGVKeuDT729hkGGugZscP1xcGJZnk6NYz9onrxtR3G",
+    "predecessor_account_id": "7b060e2e85dbdfbd1ad55e735c4b28da904f7df9f9d409bb0c422923010ac99c",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Efd8Y1nCJrK8YGVzwvz4rgv88YbAXyUhuY5GTmmtCtqe",
+      "block_height": 127357218,
+      "block_timestamp": 1725549794010348500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8266187205451,
+      "tokens_burnt": 826618720545100000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "CE6LMjV46vmxzbazryvNovtUhN9XQ4SES9QqZTwvrb1A",
+    "included_in_block_hash": "2rZ2j9Qgb5VXt8KYjmXxhs6EHZiEgYgyx83tQV6ZasEU",
+    "block_timestamp": "1725549792702276867",
+    "block": {
+      "block_height": 127357217
+    },
+    "receipt_conversion_tokens_burnt": "118029001478000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 826618720545100000000,
+        "args": "{\"body\": {\"name\": \"Data Marketplace NEAR by The Indexing Company\", \"summary\": \"The Indexing Company is introducing a new data solution called the Data Marketplace to empower developers with reliable and affordable data pipelines for the NEAR ecosystem. The Data Marketplace offers reliable indexing, highly configurable data pipelines and connections to the required data infrastructure. \\\\\\\\n\\\\\\\\nBenefits include: faster data access, reduced costs, scalability and faster development times.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"## Organization\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\u{2019}s contact information\\\\\\\\nStephen King \\\\\\\\nEmail: stephen@indexing.co\\\\\\\\nTelegram: https://t.me/stephenkinger \\\\\\\\nCompany website: www.indexing.co  \\\\\\\\n\\\\\\\\n### Size of the whole team\\\\\\\\n7 team members 1 COO, 1 CTO, 1 CMO, 1 Biz Dev / Analyst, 3 developers\\\\\\\\n\\\\\\\\n### Size of the engineering team\\\\\\\\n1 CTO, 3 developers, 1 on-chain analyst\\\\\\\\n\\\\\\\\n### Team location\\\\\\\\nWorldwide, but most members are located in the US. \\\\\\\\n\\\\\\\\n### Team background and bios\\\\\\\\nBrock Haugen, CEO\\\\\\\\nBrock is a long-time engineer with a degree in Mathematics, now co-founder. He\\\\\\\\u{2019}s spent the last 7 years leading engineering efforts for products and infrastructure in the web3 space for companies such as Coinbase and Dappcentral.\\\\\\\\n\\\\\\\\nStephen King, COO\\\\\\\\nStephen is a second-time web3 founder, with a background in product, sales & operations. Stephen has also been an active angel investor in projects such Polkadot, OpenZeppelin & Messari. \\\\\\\\n\\\\\\\\nBobby Miller, Principal Engineer\\\\\\\\nBobby is a software engineering leader who has led product engineering teams at a variety of consumer facing startups including Moat, Daily Harvest, and most recently Kava Labs. He has been an avid participant of the crypto space since 2015. He is also the Hot Dog Honcho.\\\\\\\\n\\\\\\\\nDennis Verstappen, Data analyst\\\\\\\\nDennis is a data analyst with a passion for making data actionable. Been in crypto since 2017 where he gained experience with trading, DeFi, venture capital. Dennis worked with various projects on product development, analytics, tokenomics and marketing.\\\\\\\\n\\\\\\\\n### Any affiliations with other NEAR ecosystem partners?\\\\\\\\nBlockPi - we saw BlockPi in the Infra Comm request group too. We use BlockPi as our Main RPC provider for our indexing since they provide reliable node infrastructure and RPC endpoints. \\\\\\\\n\\\\\\\\nIn addition to these affiliations our team members spoke to NEAR team members and projects in the ecosystem in the past. We learned  that the data infrastructure on NEAR was underserved. These initial contacts let us dive deeper into the NEAR blockchain ecosystem which is why we like to get involved.\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\n\\\\\\\\n### Examples of relevant experience with NEAR blockchain\\\\\\\\nA previous co-founder, Russell McLernon, was very active in NEAR around 2018-2019. More recently, we\\\\\\\\u{2019}ve garnered interest from projects building in the AI space and we believe NEAR could be a great platform for those applications. \\\\\\\\n\\\\\\\\n### Non-technical capabilities\\\\\\\\nSince our proposal is an infrastructure proposal most of the capabilities needed will be developer work and on-chain analysis. \\\\\\\\n\\\\\\\\nNon-technical capabilities crucial to this proposal include market research and business development. These skills will help us understand the data needs of projects within the NEAR ecosystem. Our business development team will reach out to ecosystem projects during the development phase to gather feedback and insights. Any introductions by the NEAR foundation are welcome. Upon completion, we will actively seek out projects interested in integrating our solution to enhance their products with reliable and efficient data processing.\\\\\\\\n\\\\\\\\n\\\\\\\\n### In-House Resources\\\\\\\\nDesign, UX/UI: If there is a GUI component, our developer team can design the UX/UI themselves.\\\\\\\\nProject management: since this is a technical project, the CTO will take care of the project management.\\\\\\\\nCustomer support: for the product, we will have developer support through documentation and contacts ready for support via chat or calls from our developer team or BD team. \\\\\\\\nBD / Marketing: our BD team will actively engage with projects in the NEAR ecosystem to implement our technology and find users. Warm introductions from the NEAR Foundation will help lay these contacts. Our CMO and BD team will work on content related to the Data Marketplace. \\\\\\\\n\\\\\\\\n\\\\\\\\n### Portfolio of relevant work\\\\\\\\nCase Study, Once Upon: Block Explorer that we are currently serving +27 chains.\\\\\\\\nhttps://www.indexing.co/once-upon \\\\\\\\n\\\\\\\\nCase Study, Wovn: NFT Marketplace where we replaced two backend engineers ($150k/year) to process & supply data from multiple ecosystems. \\\\\\\\nhttps://www.indexing.co/wovn \\\\\\\\n\\\\\\\\nMesh Testimonial: https://www.linkedin.com/posts/meshconnectapi_embeddedfinance-fintech-web3-activity-7181666883652186113-bJHg\\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\n#### The primary approach and solution of the proposal\\\\\\\\nIn Web3 most data solutions are stuck in web2 approaches. Data is often provided through APIs, which provide fiction and additional costs for projects. Other indexing tools require custom coding and hosting. Specific data models are frequently introduced, which allows for too many intermediate steps that add friction and costs. The current data providers come with their own opinions on how data should be processed, stored, and sold. All of this leads to web3 businesses being forced to further build data infrastructure in-house to get the end data their products actually need. When solving this problem, we can try to eliminate the API layers on top of centralized solutions, make the data infrastructure reliable, and ensure developers have enough control over retrieving the data. \\\\\\\\n\\\\\\\\nWe started The Indexing Company to directly address the actual problems web3 businesses face in accessing data. They need affordable, reliable data infrastructure that they control. That infrastructure is fully configurable by and therefore controlled by, end businesses. All of which translates to the elimination of much of the \\\\\\\\u{201c}standard\\\\\\\\u{201d} web3 data architecture. With us, a business gets exactly the data they need in their databases or in their dApps from the beginning. We aim to have no centralized database or data to sell directly.\\\\\\\\n\\\\\\\\nOne of the challenges in the expansion of the NEAR ecosystem is to service the developers with good data tooling so they can work towards Chain Abstraction and the fast throughput of NEAR. NEAR\\\\\\\\\\\\'s high throughput, with daily transaction amounts varying between 2 million to 6 million last year, generates a vast amount of data that requires efficient processing. Developers need a way to find exactly the data they require without having to process excess information. The challenge lies in:\\\\\\\\n- Maintaining the indexers and data infrastructure needed to get data from these chains.\\\\\\\\n- Having data pipelines that can handle the high throughput of NEAR. \\\\\\\\n- Getting data from other chains and data related to AVS like Validator data. \\\\\\\\n- Acquiring talented developers to manage this infrastructure, do the indexing and perform the data engineering.\\\\\\\\n\\\\\\\\nWe are planning to develop a solution called the Data Marketplace. Developers of dApps can come to the console of the marketplace to configure the data pipelines they want by selecting the data, do custom transformations and stream the data directly to their own data infrastructure. \\\\\\\\n\\\\\\\\nDevelopers need a way to find exactly the data they require without having to process excess information. We believe the Data Marketplace is an excellent solution to this problem, as it streamlines data access and reduces the burden on developers, allowing them to focus on building innovative applications. In the long run we want to open up the Data Marketplace for other suppliers, for now we want to focus on solving the demand and making the data pipeline configuration as easy as possible.\\\\\\\\n\\\\\\\\n#### The Data Marketplace\\\\\\\\n\\\\\\\\nThe Data Marketplace can be interacted with by developers through an easy to use interface. Since we believe the future is multi-chain and modular, the Data Marketplace will be fitting for the NEAR ecosystem and data needs of the builders. This means that the data offered in the interface can come from NEAR, while we also can offer other types of data like Farcaster data or other chains. For the Farcaster data we have an example workflow live: https://console.indexing.co/marketplace/66b3798bcc24e0cc3333b2d9\\\\\\\\nWe aim to support whole ecosystems like NEAR and can provide support with guidance from the ecosystem. The perspective from the NEAR ecosystem can help with defining presets and templates, while being opinionated on which data is most important for the builders.\\\\\\\\n\\\\\\\\nThe interface will give developers an easy way to configure which data they want:\\\\\\\\n1. Data selection: Developers can select the chain(s) they want data from. Since they might need specific data they could select wide data criteria like all ERC20/token transfers, logs, or DEX Swaps. If they only want specific data like contracts or events they will be able to select these specifically. This way of configuration ensures only processing happens for the data they want and reduces the amount of data storage on the developers end.\\\\\\\\n2. Backfilling historical data: After selecting the data we can use those parameters to get the historical data and backfill that data. Because of the cache we build up for a chain and optimized infrastructure the backfills can be done really fast.\\\\\\\\n3. Real time data streaming: For new data being indexed based on that data selection the pipelines can provide low-latency throughput to the target data infrastructure.\\\\\\\\n4. Custom transformations: To ensure the data fits the target data schemas and reduce further processing by the developers, custom transformations can be done in the data pipelines. This enables developers to build a more unified data schema and makes integrating new data and chains easier. \\\\\\\\n5. Support and feedback function: Developers might not be familiar with the interface or need help configuring the data pipelines. We aim to have personalized and custom support easily available to get the developers setup as fast as possible. \\\\\\\\n\\\\\\\\n\\\\\\\\n#### Why should the committee choose this project\\\\\\\\nWe believe that for Web3 to scale, the barrier to entry to build needs to be easier and more cost-effective. Currently, there is this rite of passage when it comes to getting clean, usable Web3 data: Accumulate third-party API providers, combine them with your own in-house custom logic, and you get a messy pipeline that begins to break down as you scale. Our solution eliminates all of that with fast, affordable, on-demand processing. We\\\\\\\\u{2019}re proving this out by saving companies like Once Upon, Bello and Mesh hundreds of thousands per year and months of development time.\\\\\\\\n\\\\\\\\nThe Data Marketplace will help NEAR developers have an easy way to get the data they need, delivered wherever they need since we not only have the indexing on demand, but the self-service interface will reduce the effort needed to configure the data pipeline.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n1. Onboard NEAR to our Indexing Pipelines and our internal Data Marketplace. Processing the data once, helps us develop the test environment and eventually use this historical data.\\\\\\\\n2. Identify 3-5 key NEAR ecosystem data needs such as NFT sales or DeFi swaps and build presets for those. The research of these data needs helps us define our presets, while ensuring NEAR developers can use these presets directly in their applications. \\\\\\\\n3. Create a self-serve interface for developers to easily configure the data pipelines. We would like to make the onboarding process as easy as possible and thus a graphical interface could streamline the process.\\\\\\\\n4. Create connectors to the target data infrastructure and create templates for data schemas. To ensure good connectivity between our pipelines and the target data infrastructure various most commonly used connectors should be programmed. Data schemas could be provided to help developers easily setup the structure in their own data infrastructure and make the setup process seamless.\\\\\\\\n\\\\\\\\n \\\\\\\\n## Metrics\\\\\\\\n#### Indexer and fast backfills\\\\\\\\nTo remove the need for developers to setup and maintain the data infrastructure for the indexer and data pipelines. Since NEAR is a high throughput chain, we will optimize the indexer for speed. Focusing on high throughput optimization will enable fast backfilling of historical data. For real time indexing we aim to reduce the time from block confirmation to hit the data infrastructure within max 5 seconds.. We will have the option for developers to delay blocks being processed with a cache, to ensure finality on the chain.\\\\\\\\n\\\\\\\\n#### Data Marketplace Presets \\\\\\\\n3-5 key ecosystem data needs to be exposed as presets on the Data Marketplace. These presets come from the needs of the developers and dApps on NEAR. A few examples of what these presets can be:\\\\\\\\n- DeFi swaps and token pricing\\\\\\\\n- Token and NFT metadata on-chain\\\\\\\\n- Token transfers\\\\\\\\n- NFT transfers\\\\\\\\n- Wallet holdings \\\\\\\\n\\\\\\\\n#### Self-Service interface\\\\\\\\nThe self-service interface will remove the need from developers to create complex configuration files and learn a new framework. We will have the possibility to do transformations and custom calculations in both the interface and in code. We can\\\\\\\\u{2019}t give estimates on the time and frustration reduction on the developers end although we aim to have the following elements in the interface:\\\\\\\\n- Previewing the data\\\\\\\\n- Custom transformation in both the UI and in a code editor\\\\\\\\n- Selection of data output data infrastructure\\\\\\\\n- Possibility to backfill the data\\\\\\\\n- Support functionality\\\\\\\\n\\\\\\\\n#### Data infrastructure connectivity\\\\\\\\nWe aim to support the most common databases, starting with Postgres while we also would like to support writing to AWS S3. We also would like to support Webhooks. Further output targets and connectors could be determined together with the NEAR builders and ecosystem.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Usage & Examples\\\\\\\\n\\\\\\\\nThe Data Marketplace itself is in development while pieces of the technology of the underlying data infrastructure and indexer are already active for more than 15 businesses using our technology. Users include: Mesh, Bello, Disco, Karma3Labs, Crystal, Absinthe Labs. With more new businesses and ecosystems in the pipeline. A solution called Just In Time Indexing received support and a grant from the Starknet ecosystem, which is currently being developed.   \\\\\\\\n\\\\\\\\nFor the more than 15 customers we have, we process more than 250M transformations per month, with in some months tapping into more than 500M transformations when more backfills are needed. \\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n### Budget Total\\\\\\\\n$85.000 for onboarding the data, the indexer, the Data Marketplace interface and the connectivity to the output infrastructure. An additional $50.000 could be budgeted for resources for the NEAR developer community.\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\n#### $10.000 for onboarding NEAR data\\\\\\\\nTo onboard the NEAR data we will have costs to process the historical data and keep up with the real time data. We call historical nodes to retrieve the data, decode all data and store them in compressed files. These files will be needed for efficiently backfilling the historical data.\\\\\\\\n\\\\\\\\n#### $25.000 to build the NEAR Data Marketplace presets\\\\\\\\nFor building the Data Marketplace presets we will have to do market research and on-chain analytics to define which subsets of data will be the base for the presets. Presets might be obvious like NFT transfers or DeFi transactions, but we will have to include finding edge cases to make the data reliable. The developers need to build out these presets so they can easily be queried or requested. Finally, the testing and checks of the data is included in this estimation. \\\\\\\\n\\\\\\\\n#### $25.000 for the self-service user interface\\\\\\\\nTo ensure a smooth developer experience we will create a compelling self-service user interface to ensure easy onboarding and less custom development work. In addition we will create documentation and content for developers to easily understand the interface and functionalities. These materials will be used in marketing for the Data Marketplace for further visibility.\\\\\\\\n\\\\\\\\n#### $25.000 for the output data infrastructure connectivity\\\\\\\\nTo tailor to the wishes of the developers we would like to support as much popular target databases and infrastructure as possible. Ensuring the proper connectors are in place will help reduce the setup time and burden on the end-user. We would like to provide configuration files and data schemas for the developers to reduce the setups and data engineering they have to do in their own data infrastructure.\\\\\\\\n\\\\\\\\n#### (Optionally) $50.000 to support builders with free data processing\\\\\\\\nSince we would like to support builders as fast as possible and without any hurdles, the NEAR Infrastructure grant committee could decide to cover costs upfront so builders can use the data marketplace for free during the first period. We can determine the amount of blocks or budget beforehand. Important is that during the processing we would only count the blocks being processed for a data pipeline, which means only blocks that fit the conditions will be counted. For example, if a data pipeline only processed DEX trades, if a block does not contain a DEX trade, this won\\\\\\\\u{2019}t be processed and thus won\\\\\\\\u{2019}t count for this budget. This removes unnecessary block processing which makes this very optimized for this budget. \\\\\\\\n\\\\\\\\nWe have a different pricing for real time and backfilling data. The backfills can be more optimized and do not require real time monitoring, hence why these are cheaper. \\\\\\\\n- $0.80 / 1000 blocks for real time processing. On a $50.000 budget that would mean 62.5 million blocks can be processed.\\\\\\\\n- $0.20 / 1000 blocks for backfilling historical data. On a $50.000 budget that would mean 250 million blocks can be used during the backfilling process. \", \"linked_proposals\": [], \"receiver_account\": \"7b060e2e85dbdfbd1ad55e735c4b28da904f7df9f9d409bb0c422923010ac99c\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"85000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Indexers\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.2384870578667e+21
+    }
+  },
+  {
+    "id": "8052121048",
+    "receipt_id": "A2o2y9TaY3AMznm2XGmiMdnaeopWcktLPvBpzDpZqs2q",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8Ru8giPhfoNG5Bq5wkfoKbX53KCn6pT8CkVydsqS7rfy",
+      "block_height": 127357219,
+      "block_timestamp": 1725549795363257900
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4545080611392,
+      "tokens_burnt": 454508061139200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "CE6LMjV46vmxzbazryvNovtUhN9XQ4SES9QqZTwvrb1A",
+    "included_in_block_hash": "2rZ2j9Qgb5VXt8KYjmXxhs6EHZiEgYgyx83tQV6ZasEU",
+    "block_timestamp": "1725549792702276867",
+    "block": {
+      "block_height": 127357217
+    },
+    "receipt_conversion_tokens_burnt": "118029001478000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 454508061139200000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Infrastructure Committee* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @7b060e2e85dbdfbd1ad55e735c4b28da904f7df9f9d409bb0c422923010ac99c\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Data Marketplace NEAR by The Indexing Company\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe Indexing Company is introducing a new data solution called the Data Marketplace to empower developers with reliable and affordable data pipelines for the NEAR ecosystem. The Data Marketplace offers reliable indexing, highly configurable data pipelines and connections to the required data infrastructure. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nBenefits include: faster data access, reduced costs, scalability and faster development times.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=15)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.2384870578667e+21
+    }
+  },
+  {
+    "id": "8052121051",
+    "receipt_id": "7dqGUABjKubSutgJ9bwfDEcaEDQisEoChwFfch4ddqmQ",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8Ru8giPhfoNG5Bq5wkfoKbX53KCn6pT8CkVydsqS7rfy",
+      "block_height": 127357219,
+      "block_timestamp": 1725549795363257900
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4790972942371,
+      "tokens_burnt": 479097294237100000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "CE6LMjV46vmxzbazryvNovtUhN9XQ4SES9QqZTwvrb1A",
+    "included_in_block_hash": "2rZ2j9Qgb5VXt8KYjmXxhs6EHZiEgYgyx83tQV6ZasEU",
+    "block_timestamp": "1725549792702276867",
+    "block": {
+      "block_height": 127357217
+    },
+    "receipt_conversion_tokens_burnt": "118029001478000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 479097294237100000000,
+        "args": "{\"proposal\": {\"id\": 15, \"snapshot\": {\"name\": \"Data Marketplace NEAR by The Indexing Company\", \"labels\": [\"Indexers\"], \"summary\": \"The Indexing Company is introducing a new data solution called the Data Marketplace to empower developers with reliable and affordable data pipelines for the NEAR ecosystem. The Data Marketplace offers reliable indexing, highly configurable data pipelines and connections to the required data infrastructure. \\\\\\\\n\\\\\\\\nBenefits include: faster data access, reduced costs, scalability and faster development times.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"7b060e2e85dbdfbd1ad55e735c4b28da904f7df9f9d409bb0c422923010ac99c\", \"timestamp\": \"1725549794010348611\", \"linked_rfp\": null, \"supervisor\": null, \"description\": \"## Organization\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\u{2019}s contact information\\\\\\\\nStephen King \\\\\\\\nEmail: stephen@indexing.co\\\\\\\\nTelegram: https://t.me/stephenkinger \\\\\\\\nCompany website: www.indexing.co  \\\\\\\\n\\\\\\\\n### Size of the whole team\\\\\\\\n7 team members 1 COO, 1 CTO, 1 CMO, 1 Biz Dev / Analyst, 3 developers\\\\\\\\n\\\\\\\\n### Size of the engineering team\\\\\\\\n1 CTO, 3 developers, 1 on-chain analyst\\\\\\\\n\\\\\\\\n### Team location\\\\\\\\nWorldwide, but most members are located in the US. \\\\\\\\n\\\\\\\\n### Team background and bios\\\\\\\\nBrock Haugen, CEO\\\\\\\\nBrock is a long-time engineer with a degree in Mathematics, now co-founder. He\\\\\\\\u{2019}s spent the last 7 years leading engineering efforts for products and infrastructure in the web3 space for companies such as Coinbase and Dappcentral.\\\\\\\\n\\\\\\\\nStephen King, COO\\\\\\\\nStephen is a second-time web3 founder, with a background in product, sales & operations. Stephen has also been an active angel investor in projects such Polkadot, OpenZeppelin & Messari. \\\\\\\\n\\\\\\\\nBobby Miller, Principal Engineer\\\\\\\\nBobby is a software engineering leader who has led product engineering teams at a variety of consumer facing startups including Moat, Daily Harvest, and most recently Kava Labs. He has been an avid participant of the crypto space since 2015. He is also the Hot Dog Honcho.\\\\\\\\n\\\\\\\\nDennis Verstappen, Data analyst\\\\\\\\nDennis is a data analyst with a passion for making data actionable. Been in crypto since 2017 where he gained experience with trading, DeFi, venture capital. Dennis worked with various projects on product development, analytics, tokenomics and marketing.\\\\\\\\n\\\\\\\\n### Any affiliations with other NEAR ecosystem partners?\\\\\\\\nBlockPi - we saw BlockPi in the Infra Comm request group too. We use BlockPi as our Main RPC provider for our indexing since they provide reliable node infrastructure and RPC endpoints. \\\\\\\\n\\\\\\\\nIn addition to these affiliations our team members spoke to NEAR team members and projects in the ecosystem in the past. We learned  that the data infrastructure on NEAR was underserved. These initial contacts let us dive deeper into the NEAR blockchain ecosystem which is why we like to get involved.\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\n\\\\\\\\n### Examples of relevant experience with NEAR blockchain\\\\\\\\nA previous co-founder, Russell McLernon, was very active in NEAR around 2018-2019. More recently, we\\\\\\\\u{2019}ve garnered interest from projects building in the AI space and we believe NEAR could be a great platform for those applications. \\\\\\\\n\\\\\\\\n### Non-technical capabilities\\\\\\\\nSince our proposal is an infrastructure proposal most of the capabilities needed will be developer work and on-chain analysis. \\\\\\\\n\\\\\\\\nNon-technical capabilities crucial to this proposal include market research and business development. These skills will help us understand the data needs of projects within the NEAR ecosystem. Our business development team will reach out to ecosystem projects during the development phase to gather feedback and insights. Any introductions by the NEAR foundation are welcome. Upon completion, we will actively seek out projects interested in integrating our solution to enhance their products with reliable and efficient data processing.\\\\\\\\n\\\\\\\\n\\\\\\\\n### In-House Resources\\\\\\\\nDesign, UX/UI: If there is a GUI component, our developer team can design the UX/UI themselves.\\\\\\\\nProject management: since this is a technical project, the CTO will take care of the project management.\\\\\\\\nCustomer support: for the product, we will have developer support through documentation and contacts ready for support via chat or calls from our developer team or BD team. \\\\\\\\nBD / Marketing: our BD team will actively engage with projects in the NEAR ecosystem to implement our technology and find users. Warm introductions from the NEAR Foundation will help lay these contacts. Our CMO and BD team will work on content related to the Data Marketplace. \\\\\\\\n\\\\\\\\n\\\\\\\\n### Portfolio of relevant work\\\\\\\\nCase Study, Once Upon: Block Explorer that we are currently serving +27 chains.\\\\\\\\nhttps://www.indexing.co/once-upon \\\\\\\\n\\\\\\\\nCase Study, Wovn: NFT Marketplace where we replaced two backend engineers ($150k/year) to process & supply data from multiple ecosystems. \\\\\\\\nhttps://www.indexing.co/wovn \\\\\\\\n\\\\\\\\nMesh Testimonial: https://www.linkedin.com/posts/meshconnectapi_embeddedfinance-fintech-web3-activity-7181666883652186113-bJHg\\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\n#### The primary approach and solution of the proposal\\\\\\\\nIn Web3 most data solutions are stuck in web2 approaches. Data is often provided through APIs, which provide fiction and additional costs for projects. Other indexing tools require custom coding and hosting. Specific data models are frequently introduced, which allows for too many intermediate steps that add friction and costs. The current data providers come with their own opinions on how data should be processed, stored, and sold. All of this leads to web3 businesses being forced to further build data infrastructure in-house to get the end data their products actually need. When solving this problem, we can try to eliminate the API layers on top of centralized solutions, make the data infrastructure reliable, and ensure developers have enough control over retrieving the data. \\\\\\\\n\\\\\\\\nWe started The Indexing Company to directly address the actual problems web3 businesses face in accessing data. They need affordable, reliable data infrastructure that they control. That infrastructure is fully configurable by and therefore controlled by, end businesses. All of which translates to the elimination of much of the \\\\\\\\u{201c}standard\\\\\\\\u{201d} web3 data architecture. With us, a business gets exactly the data they need in their databases or in their dApps from the beginning. We aim to have no centralized database or data to sell directly.\\\\\\\\n\\\\\\\\nOne of the challenges in the expansion of the NEAR ecosystem is to service the developers with good data tooling so they can work towards Chain Abstraction and the fast throughput of NEAR. NEAR\\\\\\\\\\\\'s high throughput, with daily transaction amounts varying between 2 million to 6 million last year, generates a vast amount of data that requires efficient processing. Developers need a way to find exactly the data they require without having to process excess information. The challenge lies in:\\\\\\\\n- Maintaining the indexers and data infrastructure needed to get data from these chains.\\\\\\\\n- Having data pipelines that can handle the high throughput of NEAR. \\\\\\\\n- Getting data from other chains and data related to AVS like Validator data. \\\\\\\\n- Acquiring talented developers to manage this infrastructure, do the indexing and perform the data engineering.\\\\\\\\n\\\\\\\\nWe are planning to develop a solution called the Data Marketplace. Developers of dApps can come to the console of the marketplace to configure the data pipelines they want by selecting the data, do custom transformations and stream the data directly to their own data infrastructure. \\\\\\\\n\\\\\\\\nDevelopers need a way to find exactly the data they require without having to process excess information. We believe the Data Marketplace is an excellent solution to this problem, as it streamlines data access and reduces the burden on developers, allowing them to focus on building innovative applications. In the long run we want to open up the Data Marketplace for other suppliers, for now we want to focus on solving the demand and making the data pipeline configuration as easy as possible.\\\\\\\\n\\\\\\\\n#### The Data Marketplace\\\\\\\\n\\\\\\\\nThe Data Marketplace can be interacted with by developers through an easy to use interface. Since we believe the future is multi-chain and modular, the Data Marketplace will be fitting for the NEAR ecosystem and data needs of the builders. This means that the data offered in the interface can come from NEAR, while we also can offer other types of data like Farcaster data or other chains. For the Farcaster data we have an example workflow live: https://console.indexing.co/marketplace/66b3798bcc24e0cc3333b2d9\\\\\\\\nWe aim to support whole ecosystems like NEAR and can provide support with guidance from the ecosystem. The perspective from the NEAR ecosystem can help with defining presets and templates, while being opinionated on which data is most important for the builders.\\\\\\\\n\\\\\\\\nThe interface will give developers an easy way to configure which data they want:\\\\\\\\n1. Data selection: Developers can select the chain(s) they want data from. Since they might need specific data they could select wide data criteria like all ERC20/token transfers, logs, or DEX Swaps. If they only want specific data like contracts or events they will be able to select these specifically. This way of configuration ensures only processing happens for the data they want and reduces the amount of data storage on the developers end.\\\\\\\\n2. Backfilling historical data: After selecting the data we can use those parameters to get the historical data and backfill that data. Because of the cache we build up for a chain and optimized infrastructure the backfills can be done really fast.\\\\\\\\n3. Real time data streaming: For new data being indexed based on that data selection the pipelines can provide low-latency throughput to the target data infrastructure.\\\\\\\\n4. Custom transformations: To ensure the data fits the target data schemas and reduce further processing by the developers, custom transformations can be done in the data pipelines. This enables developers to build a more unified data schema and makes integrating new data and chains easier. \\\\\\\\n5. Support and feedback function: Developers might not be familiar with the interface or need help configuring the data pipelines. We aim to have personalized and custom support easily available to get the developers setup as fast as possible. \\\\\\\\n\\\\\\\\n\\\\\\\\n#### Why should the committee choose this project\\\\\\\\nWe believe that for Web3 to scale, the barrier to entry to build needs to be easier and more cost-effective. Currently, there is this rite of passage when it comes to getting clean, usable Web3 data: Accumulate third-party API providers, combine them with your own in-house custom logic, and you get a messy pipeline that begins to break down as you scale. Our solution eliminates all of that with fast, affordable, on-demand processing. We\\\\\\\\u{2019}re proving this out by saving companies like Once Upon, Bello and Mesh hundreds of thousands per year and months of development time.\\\\\\\\n\\\\\\\\nThe Data Marketplace will help NEAR developers have an easy way to get the data they need, delivered wherever they need since we not only have the indexing on demand, but the self-service interface will reduce the effort needed to configure the data pipeline.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n1. Onboard NEAR to our Indexing Pipelines and our internal Data Marketplace. Processing the data once, helps us develop the test environment and eventually use this historical data.\\\\\\\\n2. Identify 3-5 key NEAR ecosystem data needs such as NFT sales or DeFi swaps and build presets for those. The research of these data needs helps us define our presets, while ensuring NEAR developers can use these presets directly in their applications. \\\\\\\\n3. Create a self-serve interface for developers to easily configure the data pipelines. We would like to make the onboarding process as easy as possible and thus a graphical interface could streamline the process.\\\\\\\\n4. Create connectors to the target data infrastructure and create templates for data schemas. To ensure good connectivity between our pipelines and the target data infrastructure various most commonly used connectors should be programmed. Data schemas could be provided to help developers easily setup the structure in their own data infrastructure and make the setup process seamless.\\\\\\\\n\\\\\\\\n \\\\\\\\n## Metrics\\\\\\\\n#### Indexer and fast backfills\\\\\\\\nTo remove the need for developers to setup and maintain the data infrastructure for the indexer and data pipelines. Since NEAR is a high throughput chain, we will optimize the indexer for speed. Focusing on high throughput optimization will enable fast backfilling of historical data. For real time indexing we aim to reduce the time from block confirmation to hit the data infrastructure within max 5 seconds.. We will have the option for developers to delay blocks being processed with a cache, to ensure finality on the chain.\\\\\\\\n\\\\\\\\n#### Data Marketplace Presets \\\\\\\\n3-5 key ecosystem data needs to be exposed as presets on the Data Marketplace. These presets come from the needs of the developers and dApps on NEAR. A few examples of what these presets can be:\\\\\\\\n- DeFi swaps and token pricing\\\\\\\\n- Token and NFT metadata on-chain\\\\\\\\n- Token transfers\\\\\\\\n- NFT transfers\\\\\\\\n- Wallet holdings \\\\\\\\n\\\\\\\\n#### Self-Service interface\\\\\\\\nThe self-service interface will remove the need from developers to create complex configuration files and learn a new framework. We will have the possibility to do transformations and custom calculations in both the interface and in code. We can\\\\\\\\u{2019}t give estimates on the time and frustration reduction on the developers end although we aim to have the following elements in the interface:\\\\\\\\n- Previewing the data\\\\\\\\n- Custom transformation in both the UI and in a code editor\\\\\\\\n- Selection of data output data infrastructure\\\\\\\\n- Possibility to backfill the data\\\\\\\\n- Support functionality\\\\\\\\n\\\\\\\\n#### Data infrastructure connectivity\\\\\\\\nWe aim to support the most common databases, starting with Postgres while we also would like to support writing to AWS S3. We also would like to support Webhooks. Further output targets and connectors could be determined together with the NEAR builders and ecosystem.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Usage & Examples\\\\\\\\n\\\\\\\\nThe Data Marketplace itself is in development while pieces of the technology of the underlying data infrastructure and indexer are already active for more than 15 businesses using our technology. Users include: Mesh, Bello, Disco, Karma3Labs, Crystal, Absinthe Labs. With more new businesses and ecosystems in the pipeline. A solution called Just In Time Indexing received support and a grant from the Starknet ecosystem, which is currently being developed.   \\\\\\\\n\\\\\\\\nFor the more than 15 customers we have, we process more than 250M transformations per month, with in some months tapping into more than 500M transformations when more backfills are needed. \\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n### Budget Total\\\\\\\\n$85.000 for onboarding the data, the indexer, the Data Marketplace interface and the connectivity to the output infrastructure. An additional $50.000 could be budgeted for resources for the NEAR developer community.\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\n#### $10.000 for onboarding NEAR data\\\\\\\\nTo onboard the NEAR data we will have costs to process the historical data and keep up with the real time data. We call historical nodes to retrieve the data, decode all data and store them in compressed files. These files will be needed for efficiently backfilling the historical data.\\\\\\\\n\\\\\\\\n#### $25.000 to build the NEAR Data Marketplace presets\\\\\\\\nFor building the Data Marketplace presets we will have to do market research and on-chain analytics to define which subsets of data will be the base for the presets. Presets might be obvious like NFT transfers or DeFi transactions, but we will have to include finding edge cases to make the data reliable. The developers need to build out these presets so they can easily be queried or requested. Finally, the testing and checks of the data is included in this estimation. \\\\\\\\n\\\\\\\\n#### $25.000 for the self-service user interface\\\\\\\\nTo ensure a smooth developer experience we will create a compelling self-service user interface to ensure easy onboarding and less custom development work. In addition we will create documentation and content for developers to easily understand the interface and functionalities. These materials will be used in marketing for the Data Marketplace for further visibility.\\\\\\\\n\\\\\\\\n#### $25.000 for the output data infrastructure connectivity\\\\\\\\nTo tailor to the wishes of the developers we would like to support as much popular target databases and infrastructure as possible. Ensuring the proper connectors are in place will help reduce the setup time and burden on the end-user. We would like to provide configuration files and data schemas for the developers to reduce the setups and data engineering they have to do in their own data infrastructure.\\\\\\\\n\\\\\\\\n#### (Optionally) $50.000 to support builders with free data processing\\\\\\\\nSince we would like to support builders as fast as possible and without any hurdles, the NEAR Infrastructure grant committee could decide to cover costs upfront so builders can use the data marketplace for free during the first period. We can determine the amount of blocks or budget beforehand. Important is that during the processing we would only count the blocks being processed for a data pipeline, which means only blocks that fit the conditions will be counted. For example, if a data pipeline only processed DEX trades, if a block does not contain a DEX trade, this won\\\\\\\\u{2019}t be processed and thus won\\\\\\\\u{2019}t count for this budget. This removes unnecessary block processing which makes this very optimized for this budget. \\\\\\\\n\\\\\\\\nWe have a different pricing for real time and backfilling data. The backfills can be more optimized and do not require real time monitoring, hence why these are cheaper. \\\\\\\\n- $0.80 / 1000 blocks for real time processing. On a $50.000 budget that would mean 62.5 million blocks can be processed.\\\\\\\\n- $0.20 / 1000 blocks for backfilling historical data. On a $50.000 budget that would mean 250 million blocks can be used during the backfilling process. \", \"linked_proposals\": [], \"receiver_account\": \"7b060e2e85dbdfbd1ad55e735c4b28da904f7df9f9d409bb0c422923010ac99c\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"85000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"7b060e2e85dbdfbd1ad55e735c4b28da904f7df9f9d409bb0c422923010ac99c\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.2384870578667e+21
+    }
+  },
+  {
+    "id": "8052121054",
+    "receipt_id": "Hj8tZ3NqEkN8Eb6tj9Yh3UiqeL6iBzLyH2i9pt2cQyWN",
+    "predecessor_account_id": "infrastructure-committee.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8Ru8giPhfoNG5Bq5wkfoKbX53KCn6pT8CkVydsqS7rfy",
+      "block_height": 127357219,
+      "block_timestamp": 1725549795363257900
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3602339804673,
+      "tokens_burnt": 360233980467300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "CE6LMjV46vmxzbazryvNovtUhN9XQ4SES9QqZTwvrb1A",
+    "included_in_block_hash": "2rZ2j9Qgb5VXt8KYjmXxhs6EHZiEgYgyx83tQV6ZasEU",
+    "block_timestamp": "1725549792702276867",
+    "block": {
+      "block_height": 127357217
+    },
+    "receipt_conversion_tokens_burnt": "118029001478000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 360233980467300000000,
+        "args": "{\"data\": {\"infrastructure-committee.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"indexing.co\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":15,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"7b060e2e85dbdfbd1ad55e735c4b28da904f7df9f9d409bb0c422923010ac99c\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":15,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"infrastructure-committee.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"7b060e2e85dbdfbd1ad55e735c4b28da904f7df9f9d409bb0c422923010ac99c\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.2384870578667e+21
+    }
+  },
+  {
+    "id": "8061655395",
+    "receipt_id": "EBhCpRrFnQJ7cZ3Pqsg5wZEsWosfyHbmP3Dhjuttndsd",
+    "predecessor_account_id": "7b060e2e85dbdfbd1ad55e735c4b28da904f7df9f9d409bb0c422923010ac99c",
+    "receiver_account_id": "infrastructure-committee.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "wvS6DGp1cgZm9EsDvgs2oyrCqhzfxAeJdC4YhvGujJ9",
+      "block_height": 127378790,
+      "block_timestamp": 1725577339152628000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8387445818245,
+      "tokens_burnt": 838744581824500000000,
+      "executor_account_id": "infrastructure-committee.near",
+      "status": true
+    },
+    "transaction_hash": "Ad3FKuF4GnuUwEJu63cMRH1bGkFyoc7wQ1tbutSy1e1e",
+    "included_in_block_hash": "C6oeoBJNz7vHAdyNTwM6RYREDVKdikLQGfKtLhCSCrV3",
+    "block_timestamp": "1725577337857624206",
+    "block": {
+      "block_height": 127378789
+    },
+    "receipt_conversion_tokens_burnt": "118114832165000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 838744581824500000000,
+        "args": "{\"id\": 15, \"body\": {\"name\": \"Data Marketplace NEAR by The Indexing Company\", \"summary\": \"The Indexing Company is introducing a new data solution called the Data Marketplace to empower developers with reliable and affordable data pipelines for the NEAR ecosystem. The Data Marketplace offers reliable indexing, highly configurable data pipelines and connections to the required data infrastructure. \\\\\\\\n\\\\\\\\nBenefits include: faster data access, reduced costs, scalability and faster development times.\", \"category\": \"Infrastructure Committee\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"## Organization\\\\\\\\n\\\\\\\\n### Primary person\\\\\\\\u{2019}s contact information\\\\\\\\nStephen King \\\\\\\\nEmail: stephen@indexing.co\\\\\\\\nTelegram: https://t.me/stephenkinger \\\\\\\\nCompany website: www.indexing.co  \\\\\\\\n\\\\\\\\n### Size of the whole team\\\\\\\\n7 team members 1 COO, 1 CTO, 1 CMO, 1 Biz Dev / Analyst, 3 developers\\\\\\\\n\\\\\\\\n### Size of the engineering team\\\\\\\\n1 CTO, 3 developers, 1 on-chain analyst\\\\\\\\n\\\\\\\\n### Team location\\\\\\\\nWorldwide, but most members are located in the US. \\\\\\\\n\\\\\\\\n### Team background and bios\\\\\\\\nBrock Haugen, CEO\\\\\\\\nBrock is a long-time engineer with a degree in Mathematics, now co-founder. He\\\\\\\\u{2019}s spent the last 7 years leading engineering efforts for products and infrastructure in the web3 space for companies such as Coinbase and Dappcentral.\\\\\\\\n\\\\\\\\nStephen King, COO\\\\\\\\nStephen is a second-time web3 founder, with a background in product, sales & operations. Stephen has also been an active angel investor in projects such Polkadot, OpenZeppelin & Messari. \\\\\\\\n\\\\\\\\nBobby Miller, Principal Engineer\\\\\\\\nBobby is a software engineering leader who has led product engineering teams at a variety of consumer facing startups including Moat, Daily Harvest, and most recently Kava Labs. He has been an avid participant of the crypto space since 2015. He is also the Hot Dog Honcho.\\\\\\\\n\\\\\\\\nDennis Verstappen, Data analyst\\\\\\\\nDennis is a data analyst with a passion for making data actionable. Been in crypto since 2017 where he gained experience with trading, DeFi, venture capital. Dennis worked with various projects on product development, analytics, tokenomics and marketing.\\\\\\\\n\\\\\\\\n### Any affiliations with other NEAR ecosystem partners?\\\\\\\\nBlockPi - we saw BlockPi in the Infra Comm request group too. We use BlockPi as our Main RPC provider for our indexing since they provide reliable node infrastructure and RPC endpoints. \\\\\\\\n\\\\\\\\nIn addition to these affiliations our team members spoke to NEAR team members and projects in the ecosystem in the past. We learned  that the data infrastructure on NEAR was underserved. These initial contacts let us dive deeper into the NEAR blockchain ecosystem which is why we like to get involved.\\\\\\\\n\\\\\\\\n## Professional Experience\\\\\\\\n\\\\\\\\n### Examples of relevant experience with NEAR blockchain\\\\\\\\nA previous co-founder, Russell McLernon, was very active in NEAR around 2018-2019. More recently, we\\\\\\\\u{2019}ve garnered interest from projects building in the AI space and we believe NEAR could be a great platform for those applications. \\\\\\\\n\\\\\\\\n### Non-technical capabilities\\\\\\\\nSince our proposal is an infrastructure proposal most of the capabilities needed will be developer work and on-chain analysis. \\\\\\\\n\\\\\\\\nNon-technical capabilities crucial to this proposal include market research and business development. These skills will help us understand the data needs of projects within the NEAR ecosystem. Our business development team will reach out to ecosystem projects during the development phase to gather feedback and insights. Any introductions by the NEAR foundation are welcome. Upon completion, we will actively seek out projects interested in integrating our solution to enhance their products with reliable and efficient data processing.\\\\\\\\n\\\\\\\\n\\\\\\\\n### In-House Resources\\\\\\\\nDesign, UX/UI: If there is a GUI component, our developer team can design the UX/UI themselves.\\\\\\\\nProject management: since this is a technical project, the CTO will take care of the project management.\\\\\\\\nCustomer support: for the product, we will have developer support through documentation and contacts ready for support via chat or calls from our developer team or BD team. \\\\\\\\nBD / Marketing: our BD team will actively engage with projects in the NEAR ecosystem to implement our technology and find users. Warm introductions from the NEAR Foundation will help lay these contacts. Our CMO and BD team will work on content related to the Data Marketplace. \\\\\\\\n\\\\\\\\n\\\\\\\\n### Portfolio of relevant work\\\\\\\\nCase Study, Once Upon: Block Explorer that we are currently serving +27 chains.\\\\\\\\nhttps://www.indexing.co/once-upon \\\\\\\\n\\\\\\\\nCase Study, Wovn: NFT Marketplace where we replaced two backend engineers ($150,000/year) to process & supply data from multiple ecosystems. \\\\\\\\nhttps://www.indexing.co/wovn \\\\\\\\n\\\\\\\\nMesh Testimonial: https://www.linkedin.com/posts/meshconnectapi_embeddedfinance-fintech-web3-activity-7181666883652186113-bJHg\\\\\\\\n\\\\\\\\n## Body\\\\\\\\n\\\\\\\\n#### The primary approach and solution of the proposal\\\\\\\\nIn Web3 most data solutions are stuck in web2 approaches. Data is often provided through APIs, which provide fiction and additional costs for projects. Other indexing tools require custom coding and hosting. Specific data models are frequently introduced, which allows for too many intermediate steps that add friction and costs. The current data providers come with their own opinions on how data should be processed, stored, and sold. All of this leads to web3 businesses being forced to further build data infrastructure in-house to get the end data their products actually need. When solving this problem, we can try to eliminate the API layers on top of centralized solutions, make the data infrastructure reliable, and ensure developers have enough control over retrieving the data. \\\\\\\\n\\\\\\\\nWe started The Indexing Company to directly address the actual problems web3 businesses face in accessing data. They need affordable, reliable data infrastructure that they control. That infrastructure is fully configurable by and therefore controlled by, end businesses. All of which translates to the elimination of much of the \\\\\\\\u{201c}standard\\\\\\\\u{201d} web3 data architecture. With us, a business gets exactly the data they need in their databases or in their dApps from the beginning. We aim to have no centralized database or data to sell directly.\\\\\\\\n\\\\\\\\nOne of the challenges in the expansion of the NEAR ecosystem is to service the developers with good data tooling so they can work towards Chain Abstraction and the fast throughput of NEAR. NEAR\\\\\\\\\\\\'s high throughput, with daily transaction amounts varying between 2 million to 6 million last year, generates a vast amount of data that requires efficient processing. Developers need a way to find exactly the data they require without having to process excess information. The challenge lies in:\\\\\\\\n- Maintaining the indexers and data infrastructure needed to get data from these chains.\\\\\\\\n- Having data pipelines that can handle the high throughput of NEAR. \\\\\\\\n- Getting data from other chains and data related to AVS like Validator data. \\\\\\\\n- Acquiring talented developers to manage this infrastructure, do the indexing and perform the data engineering.\\\\\\\\n\\\\\\\\nWe are planning to develop a solution called the Data Marketplace. Developers of dApps can come to the console of the marketplace to configure the data pipelines they want by selecting the data, do custom transformations and stream the data directly to their own data infrastructure. \\\\\\\\n\\\\\\\\nDevelopers need a way to find exactly the data they require without having to process excess information. We believe the Data Marketplace is an excellent solution to this problem, as it streamlines data access and reduces the burden on developers, allowing them to focus on building innovative applications. In the long run we want to open up the Data Marketplace for other suppliers, for now we want to focus on solving the demand and making the data pipeline configuration as easy as possible.\\\\\\\\n\\\\\\\\n#### The Data Marketplace\\\\\\\\n\\\\\\\\nThe Data Marketplace can be interacted with by developers through an easy to use interface. Since we believe the future is multi-chain and modular, the Data Marketplace will be fitting for the NEAR ecosystem and data needs of the builders. This means that the data offered in the interface can come from NEAR, while we also can offer other types of data like Farcaster data or other chains. For the Farcaster data we have an example workflow live: https://console.indexing.co/marketplace/66b3798bcc24e0cc3333b2d9\\\\\\\\nWe aim to support whole ecosystems like NEAR and can provide support with guidance from the ecosystem. The perspective from the NEAR ecosystem can help with defining presets and templates, while being opinionated on which data is most important for the builders.\\\\\\\\n\\\\\\\\nThe interface will give developers an easy way to configure which data they want:\\\\\\\\n1. Data selection: Developers can select the chain(s) they want data from. Since they might need specific data they could select wide data criteria like all ERC20/token transfers, logs, or DEX Swaps. If they only want specific data like contracts or events they will be able to select these specifically. This way of configuration ensures only processing happens for the data they want and reduces the amount of data storage on the developers end.\\\\\\\\n2. Backfilling historical data: After selecting the data we can use those parameters to get the historical data and backfill that data. Because of the cache we build up for a chain and optimized infrastructure the backfills can be done really fast.\\\\\\\\n3. Real time data streaming: For new data being indexed based on that data selection the pipelines can provide low-latency throughput to the target data infrastructure.\\\\\\\\n4. Custom transformations: To ensure the data fits the target data schemas and reduce further processing by the developers, custom transformations can be done in the data pipelines. This enables developers to build a more unified data schema and makes integrating new data and chains easier. \\\\\\\\n5. Support and feedback function: Developers might not be familiar with the interface or need help configuring the data pipelines. We aim to have personalized and custom support easily available to get the developers setup as fast as possible. \\\\\\\\n\\\\\\\\n\\\\\\\\n#### Why should the committee choose this project\\\\\\\\nWe believe that for Web3 to scale, the barrier to entry to build needs to be easier and more cost-effective. Currently, there is this rite of passage when it comes to getting clean, usable Web3 data: Accumulate third-party API providers, combine them with your own in-house custom logic, and you get a messy pipeline that begins to break down as you scale. Our solution eliminates all of that with fast, affordable, on-demand processing. We\\\\\\\\u{2019}re proving this out by saving companies like Once Upon, Bello and Mesh hundreds of thousands per year and months of development time.\\\\\\\\n\\\\\\\\nThe Data Marketplace will help NEAR developers have an easy way to get the data they need, delivered wherever they need since we not only have the indexing on demand, but the self-service interface will reduce the effort needed to configure the data pipeline.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Goals / Milestones\\\\\\\\n1. Onboard NEAR to our Indexing Pipelines and our internal Data Marketplace. Processing the data once, helps us develop the test environment and eventually use this historical data.\\\\\\\\n2. Identify 3-5 key NEAR ecosystem data needs such as NFT sales or DeFi swaps and build presets for those. The research of these data needs helps us define our presets, while ensuring NEAR developers can use these presets directly in their applications. \\\\\\\\n3. Create a self-serve interface for developers to easily configure the data pipelines. We would like to make the onboarding process as easy as possible and thus a graphical interface could streamline the process.\\\\\\\\n4. Create connectors to the target data infrastructure and create templates for data schemas. To ensure good connectivity between our pipelines and the target data infrastructure various most commonly used connectors should be programmed. Data schemas could be provided to help developers easily setup the structure in their own data infrastructure and make the setup process seamless.\\\\\\\\n\\\\\\\\n \\\\\\\\n## Metrics\\\\\\\\n#### Indexer and fast backfills\\\\\\\\nTo remove the need for developers to setup and maintain the data infrastructure for the indexer and data pipelines. Since NEAR is a high throughput chain, we will optimize the indexer for speed. Focusing on high throughput optimization will enable fast backfilling of historical data. For real time indexing we aim to reduce the time from block confirmation to hit the data infrastructure within max 5 seconds.. We will have the option for developers to delay blocks being processed with a cache, to ensure finality on the chain.\\\\\\\\n\\\\\\\\n#### Data Marketplace Presets \\\\\\\\n3-5 key ecosystem data needs to be exposed as presets on the Data Marketplace. These presets come from the needs of the developers and dApps on NEAR. A few examples of what these presets can be:\\\\\\\\n- DeFi swaps and token pricing\\\\\\\\n- Token and NFT metadata on-chain\\\\\\\\n- Token transfers\\\\\\\\n- NFT transfers\\\\\\\\n- Wallet holdings \\\\\\\\n\\\\\\\\n#### Self-Service interface\\\\\\\\nThe self-service interface will remove the need from developers to create complex configuration files and learn a new framework. We will have the possibility to do transformations and custom calculations in both the interface and in code. We can\\\\\\\\u{2019}t give estimates on the time and frustration reduction on the developers end although we aim to have the following elements in the interface:\\\\\\\\n- Previewing the data\\\\\\\\n- Custom transformation in both the UI and in a code editor\\\\\\\\n- Selection of data output data infrastructure\\\\\\\\n- Possibility to backfill the data\\\\\\\\n- Support functionality\\\\\\\\n\\\\\\\\n#### Data infrastructure connectivity\\\\\\\\nWe aim to support the most common databases, starting with Postgres while we also would like to support writing to AWS S3. We also would like to support Webhooks. Further output targets and connectors could be determined together with the NEAR builders and ecosystem.\\\\\\\\n\\\\\\\\n\\\\\\\\n## Usage & Examples\\\\\\\\n\\\\\\\\nThe Data Marketplace itself is in development while pieces of the technology of the underlying data infrastructure and indexer are already active for more than 15 businesses using our technology. Users include: Mesh, Bello, Disco, Karma3Labs, Crystal, Absinthe Labs. With more new businesses and ecosystems in the pipeline. A solution called Just In Time Indexing received support and a grant from the Starknet ecosystem, which is currently being developed.   \\\\\\\\n\\\\\\\\nFor the more than 15 customers we have, we process more than 250M transformations per month, with in some months tapping into more than 500M transformations when more backfills are needed. \\\\\\\\n\\\\\\\\n## Budget\\\\\\\\n\\\\\\\\n### Budget Total\\\\\\\\n$85,000 for onboarding the data, the indexer, the Data Marketplace interface and the connectivity to the output infrastructure. An additional $50,000 could be budgeted for resources for the NEAR developer community.\\\\\\\\n\\\\\\\\n### Budget Breakdown\\\\\\\\n\\\\\\\\n#### $10,000 for onboarding NEAR data\\\\\\\\nTo onboard the NEAR data we will have costs to process the historical data and keep up with the real time data. We call historical nodes to retrieve the data, decode all data and store them in compressed files. These files will be needed for efficiently backfilling the historical data.\\\\\\\\n\\\\\\\\n#### $25,000 to build the NEAR Data Marketplace presets\\\\\\\\nFor building the Data Marketplace presets we will have to do market research and on-chain analytics to define which subsets of data will be the base for the presets. Presets might be obvious like NFT transfers or DeFi transactions, but we will have to include finding edge cases to make the data reliable. The developers need to build out these presets so they can easily be queried or requested. Finally, the testing and checks of the data is included in this estimation. \\\\\\\\n\\\\\\\\n#### $25,000 for the self-service user interface\\\\\\\\nTo ensure a smooth developer experience we will create a compelling self-service user interface to ensure easy onboarding and less custom development work. In addition we will create documentation and content for developers to easily understand the interface and functionalities. These materials will be used in marketing for the Data Marketplace for further visibility.\\\\\\\\n\\\\\\\\n#### $25,000 for the output data infrastructure connectivity\\\\\\\\nTo tailor to the wishes of the developers we would like to support as much popular target databases and infrastructure as possible. Ensuring the proper connectors are in place will help reduce the setup time and burden on the end-user. We would like to provide configuration files and data schemas for the developers to reduce the setups and data engineering they have to do in their own data infrastructure.\\\\\\\\n\\\\\\\\n#### (Optionally) $50,000 to support builders with free data processing\\\\\\\\nSince we would like to support builders as fast as possible and without any hurdles, the NEAR Infrastructure grant committee could decide to cover costs upfront so builders can use the data marketplace for free during the first period. We can determine the amount of blocks or budget beforehand. Important is that during the processing we would only count the blocks being processed for a data pipeline, which means only blocks that fit the conditions will be counted. For example, if a data pipeline only processed DEX trades, if a block does not contain a DEX trade, this won\\\\\\\\u{2019}t be processed and thus won\\\\\\\\u{2019}t count for this budget. This removes unnecessary block processing which makes this very optimized for this budget. \\\\\\\\n\\\\\\\\nWe have a different pricing for real time and backfilling data. The backfills can be more optimized and do not require real time monitoring, hence why these are cheaper. \\\\\\\\n- $0.80 / 1000 blocks for real time processing. On a $50,000 budget that would mean 62.5 million blocks can be processed.\\\\\\\\n- $0.20 / 1000 blocks for backfilling historical data. On a $50,000 budget that would mean 250 million blocks can be used during the backfilling process. \\\\\\\\n\\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"7b060e2e85dbdfbd1ad55e735c4b28da904f7df9f9d409bb0c422923010ac99c\", \"requested_sponsor\": \"infrastructure-committee.near\", \"proposal_body_version\": \"V1\", \"requested_sponsorship_usd_amount\": \"85000\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [\"Indexers\"]}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.31682296558e+21
+    }
+  }
+]

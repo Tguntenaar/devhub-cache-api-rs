@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "6852893330",
+    "receipt_id": "3mHdxsrx8iCSW5D32P4Mt2kcic92vNZ1w6LTMLFugQmQ",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "26ULJK6AaUUifhEfgTsXbcFyuvzQpQ8wFsTQCV4vWGXS",
+      "block_height": 124026182,
+      "block_timestamp": 1721687699523006200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6125535675444,
+      "tokens_burnt": 612553567544400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "6wAwyy5x1S2yi2oDmQS4rP8LVAi1qDL55tMNfX6u73qP",
+    "included_in_block_hash": "ALAsVLHnU94RU95QJimNqyDbUGqHZHqVxjGdjw8Rdd9k",
+    "block_timestamp": "1721687698202355774",
+    "block": {
+      "block_height": 124026181
+    },
+    "receipt_conversion_tokens_burnt": "30865425844400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 612553567544400000000,
+        "args": "{\"id\": 156, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 993268225313500000000
+    }
+  },
+  {
+    "id": "6852893469",
+    "receipt_id": "FLMt4PoZtG5yqFusnNrtbWKhNgoHuAzR9ZZDZ93Me7y1",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "F9JEqAVE3w88a8E2dMaPEUo7zDf4efK4gJAZ4KAdMknb",
+      "block_height": 124026183,
+      "block_timestamp": 1721687700793885400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3498492319247,
+      "tokens_burnt": 349849231924700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "6wAwyy5x1S2yi2oDmQS4rP8LVAi1qDL55tMNfX6u73qP",
+    "included_in_block_hash": "ALAsVLHnU94RU95QJimNqyDbUGqHZHqVxjGdjw8Rdd9k",
+    "block_timestamp": "1721687698202355774",
+    "block": {
+      "block_height": 124026181
+    },
+    "receipt_conversion_tokens_burnt": "30865425844400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349849231924700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"thomasguntenaar.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":156,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"theori.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 993268225313500000000
+    }
+  },
+  {
+    "id": "6864605379",
+    "receipt_id": "7rPGgHd2beEYtvxFMUcwHKKavVtCiVscWupxfujsiqZN",
+    "predecessor_account_id": "pivortex.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HKZB2BkpKmmCtT3T46u9TvxijF9tBamKLhEwwAFXhgxt",
+      "block_height": 124059585,
+      "block_timestamp": 1721725354517639400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3814978671328,
+      "tokens_burnt": 381497867132800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "4RFo9ChmJnNcYC7YrSCBXxQ7BnqpuxTpian2Y8nT24vE",
+    "included_in_block_hash": "6FLxSXqCriNVDUZFS51JuF4FqM11bnyu3re7Lw2NxM3G",
+    "block_timestamp": "1721725353411522093",
+    "block": {
+      "block_height": 124059584
+    },
+    "receipt_conversion_tokens_burnt": "30917970293400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 381497867132800000000,
+        "args": "{\"data\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"image\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"ipfs_cid\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bafybeifhmpgae5ajo5cdyhcnzyzk3n4uy5c3k3xgqinakgb6kpevg2t2le\\\\\\\\\\\\\\\"},\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[NEAR Dev News #21](https://near.social/devhub.near/widget/app?page=blog&id=3318) is out!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIt was actually released yesterday, which you would have seen if you were subscribed \\\\\\\\u{1f609}\\\\\\\\u{1f447}\\\\\\\\\\\\\\\\n[SUBSCRIBE](https://newsletter.neardevhub.org/)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}, \"handle\": \"neardevnews\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 883222229972400000000
+    }
+  },
+  {
+    "id": "6864605707",
+    "receipt_id": "pLnRFEV32Q5SV8YpYPxtDW8fj1h4LAhDTtquMGkHU7y",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AxYXHsP4a85uzqwoZU9uStFxf62m64EnQVLmo4vrwGuu",
+      "block_height": 124059586,
+      "block_timestamp": 1721725355848148000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4708063925462,
+      "tokens_burnt": 470806392546200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4RFo9ChmJnNcYC7YrSCBXxQ7BnqpuxTpian2Y8nT24vE",
+    "included_in_block_hash": "6FLxSXqCriNVDUZFS51JuF4FqM11bnyu3re7Lw2NxM3G",
+    "block_timestamp": "1721725353411522093",
+    "block": {
+      "block_height": 124059584
+    },
+    "receipt_conversion_tokens_burnt": "30917970293400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 470806392546200000000,
+        "args": "{\"data\": {\"neardevnews.community.devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"image\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"ipfs_cid\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bafybeifhmpgae5ajo5cdyhcnzyzk3n4uy5c3k3xgqinakgb6kpevg2t2le\\\\\\\\\\\\\\\"},\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[NEAR Dev News #21](https://near.social/devhub.near/widget/app?page=blog&id=3318) is out!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIt was actually released yesterday, which you would have seen if you were subscribed \\\\\\\\u{1f609}\\\\\\\\u{1f447}\\\\\\\\\\\\\\\\n[SUBSCRIBE](https://newsletter.neardevhub.org/)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 883222229972400000000
+    }
+  },
+  {
+    "id": "6869192677",
+    "receipt_id": "J19jNDG6GGnH7e9MZgrXH31LAQGzjsuouDnhnpXjsxL4",
+    "predecessor_account_id": "cryptogarik.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7xcNRyzFRGMmvx6hebHUMYov11sBSbNdsEyZDmnKErzh",
+      "block_height": 124072650,
+      "block_timestamp": 1721739995209728800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5063174106962,
+      "tokens_burnt": 506317410696200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "EXc7wV6KT4EmneMsgcj5KNK4K4abeaVkoN9ohyR179av",
+    "included_in_block_hash": "58AnPZmrhrMJanub6Y5GMqNvoWN5imF2yfCNDgS7LaUg",
+    "block_timestamp": "1721739993929144366",
+    "block": {
+      "block_height": 124072649
+    },
+    "receipt_conversion_tokens_burnt": "31080522695200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 506317410696200000000,
+        "args": "{\"body\": {\"name\": \"DevRel Contributor Report for 2024-07-01 - 2024-07-14\", \"summary\": \"Decentralized DevRel Contribution Report by Garik Covering 01 July - 14 July\", \"category\": \"Decentralized DevRel\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"supervisor\": \"gagdiez.near\", \"description\": \"Summary of Work\\\\\\\\n\\\\\\\\n- Meetings/reports/calls/etc: 9h\\\\\\\\n- Near Rust CLI (fix command suggestion - [tests](https://github.com/near/near-cli-rs/pull/345)): 6h\\\\\\\\n- Near CLI (fix command suggestion - changes after review): 6h\\\\\\\\n- Update Collections doc (research): 2h\\\\\\\\n- Update Collections doc ([rust](https://github.com/near-examples/storage-examples/pull/10)): 5h\\\\\\\\n- Update Collections doc ([docs](https://github.com/near/docs/pull/2146)): 1h\\\\\\\\n- Unit Testing section ([review + minor changes](https://github.com/near/docs/pull/2130)): 1h\\\\\\\\n\\\\\\\\nTotal hours: 30\\\\\\\\nHourly rate: $50/hour\\\\\\\\nTotal amount: 1500$\", \"linked_proposals\": [], \"receiver_account\": \"cryptogarik.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"1500\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [], \"accepted_terms_and_conditions_version\": 124072448}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6590142799065e+21
+    }
+  },
+  {
+    "id": "6869194328",
+    "receipt_id": "5Uqn4ArGW1PbAN3Va9LmhgTD7Bek5GydSM37C772XQUe",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EWKFH7CASgvLfTc2KpvuQu8DvnxnbpwW8CXpdhALG7Bs",
+      "block_height": 124072652,
+      "block_timestamp": 1721739997475662600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4459957758378,
+      "tokens_burnt": 445995775837800000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "EXc7wV6KT4EmneMsgcj5KNK4K4abeaVkoN9ohyR179av",
+    "included_in_block_hash": "58AnPZmrhrMJanub6Y5GMqNvoWN5imF2yfCNDgS7LaUg",
+    "block_timestamp": "1721739993929144366",
+    "block": {
+      "block_height": 124072649
+    },
+    "receipt_conversion_tokens_burnt": "31080522695200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 445995775837800000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Decentralized DevRel* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @cryptogarik.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}DevRel Contributor Report for 2024-07-01 - 2024-07-14\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nDecentralized DevRel Contribution Report by Garik Covering 01 July - 14 July\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=162)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6590142799065e+21
+    }
+  },
+  {
+    "id": "6869194332",
+    "receipt_id": "Rk9cfrDpiCWmgaW4J5uJYajYZnqXAipKF5Q9WKb7tCS",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EWKFH7CASgvLfTc2KpvuQu8DvnxnbpwW8CXpdhALG7Bs",
+      "block_height": 124072652,
+      "block_timestamp": 1721739997475662600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3239363469510,
+      "tokens_burnt": 323936346951000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "EXc7wV6KT4EmneMsgcj5KNK4K4abeaVkoN9ohyR179av",
+    "included_in_block_hash": "58AnPZmrhrMJanub6Y5GMqNvoWN5imF2yfCNDgS7LaUg",
+    "block_timestamp": "1721739993929144366",
+    "block": {
+      "block_height": 124072649
+    },
+    "receipt_conversion_tokens_burnt": "31080522695200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 323936346951000000000,
+        "args": "{\"proposal\": {\"id\": 162, \"snapshot\": {\"name\": \"DevRel Contributor Report for 2024-07-01 - 2024-07-14\", \"labels\": [], \"summary\": \"Decentralized DevRel Contribution Report by Garik Covering 01 July - 14 July\", \"category\": \"Decentralized DevRel\", \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}, \"editor_id\": \"cryptogarik.near\", \"timestamp\": \"1721739996477408730\", \"supervisor\": \"gagdiez.near\", \"description\": \"Summary of Work\\\\\\\\n\\\\\\\\n- Meetings/reports/calls/etc: 9h\\\\\\\\n- Near Rust CLI (fix command suggestion - [tests](https://github.com/near/near-cli-rs/pull/345)): 6h\\\\\\\\n- Near CLI (fix command suggestion - changes after review): 6h\\\\\\\\n- Update Collections doc (research): 2h\\\\\\\\n- Update Collections doc ([rust](https://github.com/near-examples/storage-examples/pull/10)): 5h\\\\\\\\n- Update Collections doc ([docs](https://github.com/near/docs/pull/2146)): 1h\\\\\\\\n- Unit Testing section ([review + minor changes](https://github.com/near/docs/pull/2130)): 1h\\\\\\\\n\\\\\\\\nTotal hours: 30\\\\\\\\nHourly rate: $50/hour\\\\\\\\nTotal amount: 1500$\", \"linked_proposals\": [], \"receiver_account\": \"cryptogarik.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"1500\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"cryptogarik.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6590142799065e+21
+    }
+  },
+  {
+    "id": "6869194333",
+    "receipt_id": "GLwxobSAJYcNUrdQecbTXpYjbmuepddPGvMJfeFEjuPa",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EWKFH7CASgvLfTc2KpvuQu8DvnxnbpwW8CXpdhALG7Bs",
+      "block_height": 124072652,
+      "block_timestamp": 1721739997475662600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3516842237263,
+      "tokens_burnt": 351684223726300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "EXc7wV6KT4EmneMsgcj5KNK4K4abeaVkoN9ohyR179av",
+    "included_in_block_hash": "58AnPZmrhrMJanub6Y5GMqNvoWN5imF2yfCNDgS7LaUg",
+    "block_timestamp": "1721739993929144366",
+    "block": {
+      "block_height": 124072649
+    },
+    "receipt_conversion_tokens_burnt": "31080522695200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 351684223726300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":162,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"cryptogarik.near\\\\\\\\\\\\\\\"}},{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":162,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"cryptogarik.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6590142799065e+21
+    }
+  },
+  {
+    "id": "6869618717",
+    "receipt_id": "H5catzUbzXhfSxR2GV8fStQW6PudHLtHjzPhW3DbyoUg",
+    "predecessor_account_id": "gagdiez.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CnfCnKJrHTBdwKjuxuuhSo9QiixYcbQznt8dRRtPkQV4",
+      "block_height": 124073783,
+      "block_timestamp": 1721741275297456400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4119383667565,
+      "tokens_burnt": 411938366756500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "HYjdPhmqhyppPDuEwLkCUWMGzUy3aMMVnrpkVdNzH86F",
+    "included_in_block_hash": "35WmswPJTWqNt6Wb5Y3j4GW9MaipsWuDmNCyd6fGXtvb",
+    "block_timestamp": "1721741274281481316",
+    "block": {
+      "block_height": 124073782
+    },
+    "receipt_conversion_tokens_burnt": "30865649437800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 411938366756500000000,
+        "args": "{\"id\": 162, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": false, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 793585905711000000000
+    }
+  },
+  {
+    "id": "6869618956",
+    "receipt_id": "HiV6DoPspoFsTVVSSoxKusczXCX614UonYMGRGsUk4eP",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GsM22CttdYwCqBngqx3a6hE9NB4ajDSQuGX9TqcMggXK",
+      "block_height": 124073784,
+      "block_timestamp": 1721741276506649600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3507818895167,
+      "tokens_burnt": 350781889516700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "HYjdPhmqhyppPDuEwLkCUWMGzUy3aMMVnrpkVdNzH86F",
+    "included_in_block_hash": "35WmswPJTWqNt6Wb5Y3j4GW9MaipsWuDmNCyd6fGXtvb",
+    "block_timestamp": "1721741274281481316",
+    "block": {
+      "block_height": 124073782
+    },
+    "receipt_conversion_tokens_burnt": "30865649437800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 350781889516700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"cryptogarik.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":162,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 793585905711000000000
+    }
+  },
+  {
+    "id": "6870511293",
+    "receipt_id": "HuA8vQDvmnoU9PJEJQk3pt6gq5mpJvZQfccUY3J5cGpx",
+    "predecessor_account_id": "gagdiez.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2x2AgcWERNqtq2bkbJYu7sij1ZFgQRUsjyJFTaGJH1y8",
+      "block_height": 124075207,
+      "block_timestamp": 1721742850451773700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4244600240882,
+      "tokens_burnt": 424460024088200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "J5gp5UFKAqVgyvLzkVcjUKxtpAZqtnRjqbdudDpdWLMi",
+    "included_in_block_hash": "94HMLK32KL2sCzhbbqmtwMfAiNKC7wfpsMU7ZhAxrkZi",
+    "block_timestamp": "1721742849373252453",
+    "block": {
+      "block_height": 124075206
+    },
+    "receipt_conversion_tokens_burnt": "30848432746000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 424460024088200000000,
+        "args": "{\"id\": 149, \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified\": false, \"timeline_version\": \"V1\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 805062379861700000000
+    }
+  },
+  {
+    "id": "6870511497",
+    "receipt_id": "B4T1UBFsGp8ojHqavCTzZiZYj3eZtC66DMYmsxKz5dZu",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7UYtPyHRpYjwTrdhtenk31Nny8mwLxsdCcdCWFnLd6CW",
+      "block_height": 124075208,
+      "block_timestamp": 1721742851498118000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3497539230275,
+      "tokens_burnt": 349753923027500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "J5gp5UFKAqVgyvLzkVcjUKxtpAZqtnRjqbdudDpdWLMi",
+    "included_in_block_hash": "94HMLK32KL2sCzhbbqmtwMfAiNKC7wfpsMU7ZhAxrkZi",
+    "block_timestamp": "1721742849373252453",
+    "block": {
+      "block_height": 124075206
+    },
+    "receipt_conversion_tokens_burnt": "30848432746000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349753923027500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"pivortex.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":149,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 805062379861700000000
+    }
+  },
+  {
+    "id": "6870521677",
+    "receipt_id": "51Jh8SSvZyr9Tf9hSBqCHqfqYp5ftPTDU1fUty91RHJ8",
+    "predecessor_account_id": "gagdiez.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AkFzjS5RYQsLqrLFMLGfskNSNdgi5EmwHAUJagbcA8xm",
+      "block_height": 124075247,
+      "block_timestamp": 1721742893498062800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4571926477696,
+      "tokens_burnt": 457192647769600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "HhwE43Zz55xw6tsMxdz3vAYVe8M85NYNZaVSZWrq31qc",
+    "included_in_block_hash": "HKQKzXataYNFxXeG8UPsUsouJ32xuu5UqMnpc4GEnF4F",
+    "block_timestamp": "1721742892195892578",
+    "block": {
+      "block_height": 124075246
+    },
+    "receipt_conversion_tokens_burnt": "30865649437800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 457192647769600000000,
+        "args": "{\"id\": 149, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": false, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 840551610066900000000
+    }
+  },
+  {
+    "id": "6870522030",
+    "receipt_id": "4JwmS2JD4qSefe9u9dFmZuUBvxyBKv9AHNVZFYPZdQp1",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GVbsnxx3u3iMiPfAyQt6VC5AvVtyweNxkRiCvPWdgWDZ",
+      "block_height": 124075248,
+      "block_timestamp": 1721742894905049300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3524933128595,
+      "tokens_burnt": 352493312859500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "HhwE43Zz55xw6tsMxdz3vAYVe8M85NYNZaVSZWrq31qc",
+    "included_in_block_hash": "HKQKzXataYNFxXeG8UPsUsouJ32xuu5UqMnpc4GEnF4F",
+    "block_timestamp": "1721742892195892578",
+    "block": {
+      "block_height": 124075246
+    },
+    "receipt_conversion_tokens_burnt": "30865649437800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352493312859500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"pivortex.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":149,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"gagdiez.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 840551610066900000000
+    }
+  },
+  {
+    "id": "6898218024",
+    "receipt_id": "524uatFEwNptdHUtJ7ELhnj7D18yzCusDpBH3jXw1pp7",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FPDVqDVK5UY4dYyKDiVyAaYR5PfETRdyz5T4gYeLs7Ro",
+      "block_height": 124150732,
+      "block_timestamp": 1721828628248960800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 2392848517277,
+      "tokens_burnt": 239284851727700000000,
+      "executor_account_id": "devhub.near",
+      "status": false
+    },
+    "transaction_hash": "9UrXHzY1SBjd8XDRUSkPngMdrWHZ4tmVbDmym58z8XyJ",
+    "included_in_block_hash": "En9NYo3qkuBwfDW9Do1JwAoJuNwbFPtkxQnwAWkupedp",
+    "block_timestamp": "1721828626419913665",
+    "block": {
+      "block_height": 124150731
+    },
+    "receipt_conversion_tokens_burnt": "30971632709400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 239284851727700000000,
+        "args": "{\"body\": {\"name\": \"DevHub Developer Contributor report by THOMAS for 07/22/2024 \\\\\\\\u{2013}\\\\\\\\u{a0}08/02/2024\", \"summary\": \"Contributions to the DevHub platform\", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"## Summary of Activities\\\\\\\\n\\\\\\\\n\\\\\\\\nWeek 1: July 22 \\\\\\\\u{2013}\\\\\\\\u{a0}July 26\\\\\\\\n\\\\\\\\nTotal hours: #\\\\\\\\n\\\\\\\\n\\\\\\\\nWeek 2: July 29 \\\\\\\\u{2013}\\\\\\\\u{a0}August 2\\\\\\\\n\\\\\\\\n- Provide a list of any specific deliverables (links to GitHub tickets) or activities\\\\\\\\n\\\\\\\\nTotal hours: #\\\\\\\\n\\\\\\\\n\\\\\\\\n---\\\\\\\\n## Cost\\\\\\\\n\\\\\\\\n- Total hours: #\\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"thomasguntenaar.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"1\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 270256484437100000000
+    }
+  },
+  {
+    "id": "6898223023",
+    "receipt_id": "2of3EAr6V4EJp5icyoyk4SYt9Npqo251LyKXb8Fg21S4",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CK3n4cUSJBVZNPgR4yJy1qHKHbJMdxfzBYQH2EGNCqmA",
+      "block_height": 124150749,
+      "block_timestamp": 1721828648694199600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 2392848517277,
+      "tokens_burnt": 239284851727700000000,
+      "executor_account_id": "devhub.near",
+      "status": false
+    },
+    "transaction_hash": "3pSDD5mUm2ZV9bhBzRvwc2wsbeHsASiKfSN6tvLUgAX3",
+    "included_in_block_hash": "9jvpotT63AcHjxRCL1eKW6RC859fofF1pkakskq4KgZJ",
+    "block_timestamp": "1721828647525553869",
+    "block": {
+      "block_height": 124150748
+    },
+    "receipt_conversion_tokens_burnt": "30971632709400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 239284851727700000000,
+        "args": "{\"body\": {\"name\": \"DevHub Developer Contributor report by THOMAS for 07/22/2024 \\\\\\\\u{2013}\\\\\\\\u{a0}08/02/2024\", \"summary\": \"Contributions to the DevHub platform\", \"category\": \"DevDAO Platform\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"## Summary of Activities\\\\\\\\n\\\\\\\\n\\\\\\\\nWeek 1: July 22 \\\\\\\\u{2013}\\\\\\\\u{a0}July 26\\\\\\\\n\\\\\\\\nTotal hours: #\\\\\\\\n\\\\\\\\n\\\\\\\\nWeek 2: July 29 \\\\\\\\u{2013}\\\\\\\\u{a0}August 2\\\\\\\\n\\\\\\\\n- Provide a list of any specific deliverables (links to GitHub tickets) or activities\\\\\\\\n\\\\\\\\nTotal hours: #\\\\\\\\n\\\\\\\\n\\\\\\\\n---\\\\\\\\n## Cost\\\\\\\\n\\\\\\\\n- Total hours: #\\\\\\\\n\\\\\\\\n\", \"linked_proposals\": [], \"receiver_account\": \"thomasguntenaar.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"1\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": false
+    },
+    "outcomes_agg": {
+      "transaction_fee": 270256484437100000000
+    }
+  },
+  {
+    "id": "6933380917",
+    "receipt_id": "HHMFrPmNUQnwQbsgE9Gf6WRQstMa3cDJzRvNbFMZ715V",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2E7JoPMhH6vCUQKU79MyHvvqnpnkNxoWkiW7v4ksfJtj",
+      "block_height": 124242423,
+      "block_timestamp": 1721934517415323600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7140617075688,
+      "tokens_burnt": 714061707568800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "CHpPndku9ynMYgbVM9KQgTLXtUMPXHP2rp19Gj9pNWqS",
+    "included_in_block_hash": "Gv3aubUfcDQQJdBYcCi1U3owksXsqJya23hZYEbEuGi3",
+    "block_timestamp": "1721934516428543735",
+    "block": {
+      "block_height": 124242422
+    },
+    "receipt_conversion_tokens_burnt": "30848432746000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 714061707568800000000,
+        "args": "{\"id\": 152, \"timeline\": {\"status\": \"REVIEW\", \"kyc_verified\": false, \"timeline_version\": \"V1\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0946917478275e+21
+    }
+  },
+  {
+    "id": "6933381275",
+    "receipt_id": "E4UkpU6xBy87ocTUHjmStNxnaXU9y7U598tkrVdaV6ZX",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9nUnfjNYmUpQuS36feuQhUc5tYA6eNmQUjamCLRqbJMA",
+      "block_height": 124242424,
+      "block_timestamp": 1721934518604161000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3497816075127,
+      "tokens_burnt": 349781607512700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "CHpPndku9ynMYgbVM9KQgTLXtUMPXHP2rp19Gj9pNWqS",
+    "included_in_block_hash": "Gv3aubUfcDQQJdBYcCi1U3owksXsqJya23hZYEbEuGi3",
+    "block_timestamp": "1721934516428543735",
+    "block": {
+      "block_height": 124242422
+    },
+    "receipt_conversion_tokens_burnt": "30848432746000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349781607512700000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"hristolimechain.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":152,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"frol.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0946917478275e+21
+    }
+  },
+  {
+    "id": "6933450826",
+    "receipt_id": "3qdsmxdT5diq3t33rJyDfvwuUppUGztJDjnoKJ1k22aP",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DQKUEqEPYia6SVhLrbB2HHaHNFZ6GUro4HGZ1dpNz3EC",
+      "block_height": 124242562,
+      "block_timestamp": 1721934696965395500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9482778955505,
+      "tokens_burnt": 948277895550500000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "J4AYmUB252HmCy9t1TzCUiPY3zUkWkKU6zy1sUSdBwC",
+    "included_in_block_hash": "3CJ9y4b2f5MXQABmygLuNv7Ctsg5F6hffm6Bb8erkAEB",
+    "block_timestamp": "1721934695831006174",
+    "block": {
+      "block_height": 124242561
+    },
+    "receipt_conversion_tokens_burnt": "34231624481400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal",
+        "deposit": 0,
+        "fee": 948277895550500000000,
+        "args": "{\"id\": 152, \"body\": {\"name\": \"Enhancement for near-sdk-js with focus on devex, performance and security\", \"summary\": \"The project four key milestones. Firstly, increasing adoption by updating the starter template, improving API references, and simplifying the README for easier onboarding. Next, it ensures performance by testing gas usage and Wasm size, addressing inefficiencies, and conducting codebase reviews. Then, it prioritizes security by securing common contract flows, and adopting industry-standard security practices. Finally, it improves NEAR-Workspaces-JS integration, devex, and maintenance.\", \"category\": \"Tooling & Infrastructure\", \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": true}, \"supervisor\": \"frol.near\", \"description\": \"**Proposal Benefits**\\\\\\\\nOur proposed milestones offer several key benefits.\\\\\\\\n\\\\\\\\n- Providing developers with cohesive tools for building and testing contracts.\\\\\\\\n    - Improving developer onboarding with enhanced starter templates, comprehensive documentation, clear README and educational resources expedite learning and deployment processes.\\\\\\\\n- Enhancing performance by leveraging gas usage and Wasm size tests to ensure efficient resource management and optimization.\\\\\\\\n- Addressing inefficiencies improves overall contract performance and reliability.\\\\\\\\n- Thorough codebase reviews and explicit security audits to minimize vulnerabilities and ensure robustness.\\\\\\\\n- Implementation of security best practices like access controls and error handling enhances contract security.\\\\\\\\n- Automating maintenance and updates by utilizing automated release pipelines and community PR reviews, providing regular audits and monitoring tools maintain code integrity and responsiveness to emerging needs.\\\\\\\\n\\\\\\\\n## **Milestone 1: Increasing Adoption**\\\\\\\\n\\\\\\\\nTo enhance the adoption of NEAR-SDK-JS by improving the developer onboarding experience, updating key resources, and integrating standard contracts to streamline the development process.\\\\\\\\n\\\\\\\\n### **1. Update Starter Template**\\\\\\\\n\\\\\\\\nEnhance the initial setup experience for developers using NEAR-SDK-JS.\\\\\\\\n\\\\\\\\n\\\\\\\\u{1f4a1} We can check the code examples from  [https://docs.near.org/tutorials/welcome](https://docs.near.org/tutorials/welcome)\\\\\\\\n\\\\\\\\n- **Revamp the Starter Template**: Update the starter template in `create-near-app` to include examples of key NEAR contract standards. This will provide developers with ready-to-use implementations of Non-Fungible Token (NFT) standards, Fungible Token standards, and Storage Management standards.\\\\\\\\n- **Documentation and Examples**: Ensure that the starter template comes with comprehensive documentation and practical examples. These resources will guide developers through the process of creating, building, and deploying contracts.\\\\\\\\n- **Simplified Flow**: Create a clear, streamlined flow for developers to create \\\\\\\\u{27a1}\\\\\\\\u{fe0f} build \\\\\\\\u{27a1}\\\\\\\\u{fe0f} deploy contracts to the testnet within 2 minutes. This flow will be prominently featured in the README file and other onboarding materials.\\\\\\\\n    - Setting up the dev environment\\\\\\\\n    - Initializing a new NEAR app\\\\\\\\n    - Examples of creating a simple smart contract\\\\\\\\n    - Step-by-step instructions for build and deploy the contract to the testnet\\\\\\\\n    - Screenshots/code snippets/video to illustrate each step\\\\\\\\n\\\\\\\\n### **2. Enhance API Reference**\\\\\\\\n\\\\\\\\nMake the API reference more user-friendly and comprehensive.\\\\\\\\n\\\\\\\\n- **Documentation**: Use relevant documentation from the Rust SDK to fill gaps in the existing API reference. This includes detailed descriptions, usage examples, and explanations of key concepts.\\\\\\\\n- **UI Improvements Research**: Conduct research on how to improve the UI/UX of the documentation. Assess the current state of the documentation, identify areas for improvement, and explore the feasibility and ease of implementing these enhancements.\\\\\\\\n\\\\\\\\n### **3. Update README**\\\\\\\\n\\\\\\\\nProvide clear guidance and resources for new users.\\\\\\\\n\\\\\\\\n- **Educational Resources**: Feature the AgorApp education course on JS SDK prominently in the README. This will provide a structured learning path for new developers.\\\\\\\\n- **Relevant Links**: Include links to the updated API reference, key documentation on [docs.near.org](http://docs.near.org/), and other essential resources.\\\\\\\\n- **Developer Path**: Outline the simplified create \\\\\\\\u{27a1}\\\\\\\\u{fe0f} build \\\\\\\\u{27a1}\\\\\\\\u{fe0f} deploy flow in the README, ensuring that new users can get up and running quickly.\\\\\\\\n\\\\\\\\n### **Timelines**\\\\\\\\n\\\\\\\\n| Milestone | Task Description | Duration |\\\\\\\\n| --- | --- | --- |\\\\\\\\n| Revamp the Starter Template | Update the starter template to include NEAR contract standards with comprehensive documentation and examples. | 0.5 week |\\\\\\\\n| Simplify Developer Flow and README updates | Create and document a streamlined flow for creating, building, and deploying contracts. Update the README to feature educational resources, relevant links, and the simplified developer path. | 0.5 week |\\\\\\\\n| Enhance API Reference | Improve the API reference with detailed documentation and UI enhancements. Conduct research on how to improve the UI/UX of the documentation. | 1 week |\\\\\\\\n| Total: |  | 2 weeks |\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n## **Milestone 2: Ensuring Performance**\\\\\\\\n\\\\\\\\nTo ensure the performance of NEAR-SDK-JS by adding tests for gas usage and Wasm size, addressing any inefficiencies found, and conducting a comprehensive codebase review, we will follow a structured approach with specific enhancements and tools.\\\\\\\\n\\\\\\\\n### **1. Add Gas Usage Tests**\\\\\\\\n\\\\\\\\nMeasure gas usage for collections to ensure efficient performance.\\\\\\\\n\\\\\\\\n- **Collections Operations**: Develop tests to measure gas usage for various collection operations including add, get, remove elements, iterate over elements, and seek + iterate over elements. This will help in identifying any inefficiencies and ensure the performance of these operations remains optimal.\\\\\\\\n- **Comparison with Rust SDK**: Compare the results with the recent performance improvements in the Rust SDK to ensure parity in performance. Reference: [near-sdk-rs PR](https://github.com/near/near-sdk-rs/pull/1195)\\\\\\\\n- **Real-time Monitoring**: Add an npm watch gas function that can output TGas while coding to allow real-time monitoring and adjustments.\\\\\\\\n- **CLI Scripts**: Add a set of CLI scripts in a utils library that would allow users to test and validate inefficiencies before build.\\\\\\\\n\\\\\\\\n### **2. Address Inefficiencies**\\\\\\\\n\\\\\\\\nIdentify and address any inefficiencies found during the gas usage tests.\\\\\\\\n\\\\\\\\n- **Scope Inefficiencies**: If gas usage tests reveal inefficiencies that could lead to malfunctioning contracts (e.g., inability to iterate under 300TGas with a growing number of entries), scope these issues and plan to address them.\\\\\\\\n- Backlog and Analysis\\\\\\\\n    - Make a backlog of inefficiencies identified.\\\\\\\\n    - Analyze the impact on development.\\\\\\\\n    - Identify potential solutions.\\\\\\\\n    - Scope solution and propose.\\\\\\\\n\\\\\\\\n### **3. Add Wasm Size Tests**\\\\\\\\n\\\\\\\\nEnsure the Wasm size remains optimal by adding size tests and making necessary adjustments.\\\\\\\\n\\\\\\\\n- **Wasm Size Measurement**: Use [https://github.com/near/near-sdk-js/tree/develop/benchmark](https://github.com/near/near-sdk-js/tree/develop/benchmark) as starting point to analyze the reasons and identify quick wins to reduce the size.\\\\\\\\n- **Integration with Build Process**: Integrate these size tests as part of the build process, possibly in an extra build scripts library, to ensure continuous monitoring and optimization.\\\\\\\\n- **Optimization Exploration Ideas:**\\\\\\\\n    - **Optimize Code and Dependencies**: Tools like Tree Shaking, minification, and careful selection of dependencies can help us to reduce code size.\\\\\\\\n    - **Use Compiler Optimizations**: Employ optimization flags (`O3`, `Os`) and Link Time Optimization (LTO) during the compilation.\\\\\\\\n    - **Wasm-Specific Tools**: Utilize `wasm-opt` from Binaryen and Emscripten with optimization flags to further reduce the Wasm binary size.\\\\\\\\n\\\\\\\\n### **4. Conduct Codebase Review**\\\\\\\\n\\\\\\\\n- **Ongoing Review**: As you go through the performance tasks, conduct an ongoing review of the codebase to identify potential performance bottlenecks and opportunities for optimization.\\\\\\\\n- **Explicit Review for Common Flows**: Conduct an explicit review for common contract flows such as contract re-initialization safeguards, promises API, and error handling to ensure they meet performance and security standards.\\\\\\\\n\\\\\\\\n### **Timelines**\\\\\\\\n\\\\\\\\n| Milestone | Task Description | Duration |\\\\\\\\n| --- | --- | --- |\\\\\\\\n| Add Gas Usage Tests | Measure gas usage for collections operations including add, get, remove, iterate, and seek + iterate. | 0.5 week |\\\\\\\\n| Address Inefficiencies | Scope and address inefficiencies found in gas usage tests. | 0.5 week |\\\\\\\\n| Add Wasm Size Tests | Measure Wasm size and implement quick wins to reduce size if it exceeds 500KB. | 0.5 week |\\\\\\\\n| Conduct Codebase Review | Perform an ongoing review of the codebase and an explicit review of common contract flows. | 0.5 week |\\\\\\\\n| Total: |  | 2 weeks |\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n## **Milestone 3: Ensuring Security**\\\\\\\\n\\\\\\\\nTo ensure the security of NEAR-SDK-JS by conducting comprehensive codebase reviews, explicitly reviewing common contract flows, and implementing best practices for error handling and contract re-initialization safeguards.\\\\\\\\n\\\\\\\\n### **1. Conduct Codebase Review**\\\\\\\\n\\\\\\\\nPerform a deep review of the codebase to identify and address potential security vulnerabilities.\\\\\\\\n\\\\\\\\n- **Ongoing Review**: Conduct an ongoing review of the entire codebase to identify potential security vulnerabilities and ensure adherence to best practices.\\\\\\\\n- **Security Standards Compliance**: Ensure that the codebase complies with established security standards and guidelines.\\\\\\\\n- **Npm Audit and Node Modules Review**: Utilize `npm audit` to check for known vulnerabilities in dependencies and review node modules to identify and remove packages that are no longer used.\\\\\\\\n\\\\\\\\n### **2.Explicit Review for Common Flows**\\\\\\\\n\\\\\\\\nPerform an explicit review for common contract flows to ensure they are secure.\\\\\\\\n\\\\\\\\n- **Contract Re-initialization Safeguards**: Review and implement safeguards to prevent unauthorized contract re-initialization.\\\\\\\\n- **Promises API**: Ensure the secure implementation of the promises API to prevent potential exploits.\\\\\\\\n- **Error Handling**: Implement robust error handling mechanisms to mitigate the risk of unexpected behaviors and security vulnerabilities.\\\\\\\\n\\\\\\\\n### **3. Implement improved security practices**\\\\\\\\n\\\\\\\\nAdopt and implement industry-standard security best practices to enhance the security of NEAR-SDK-JS.\\\\\\\\n\\\\\\\\n- **Access Controls**: Improve the handling of private variables and accessors to ensure secure access to sensitive functions and data.\\\\\\\\n- **Data Validation**: Adopt a middleware approach to allow users to plug in their preferred validation libraries, ensuring comprehensive validation of all input data to prevent injection attacks and other vulnerabilities.\\\\\\\\n- **Regular Security Audits**: Conduct regular security audits and penetration testing focusing on the following main areas:\\\\\\\\n    - Authentication and Authorization\\\\\\\\n    - Input Validation and Sanitization\\\\\\\\n    - Error Handling and Logging\\\\\\\\n    - Dependency Management\\\\\\\\n    - Code Integrity and Tampering Prevention\\\\\\\\n\\\\\\\\n### **Timelines**\\\\\\\\n\\\\\\\\n| Milestone | Task Description | Duration |\\\\\\\\n| --- | --- | --- |\\\\\\\\n| Conduct Codebase Review | Perform an ongoing review of the codebase to identify potential security vulnerabilities. | 0.5 week |\\\\\\\\n| Explicit Review for Common Flows | Review and implement safeguards for contract re-initialization, promises API, and error handling. | 0.5 week |\\\\\\\\n| Implement Security Best Practices | Implement access controls, data validation, and conduct regular security audits. | 1 week |\\\\\\\\n| Total: |  | 2 weeks |\\\\\\\\n\\\\\\\\n---\\\\\\\\n\\\\\\\\n# **Milestone 4: Enhancing NEAR-WORKSPACES-JS**\\\\\\\\n\\\\\\\\nTo improve the adoption, developer experience, and maintenance of NEAR-Workspaces-JS by ensuring seamless integration with near-sdk-js, enhancing documentation, and setting up automated maintenance processes.\\\\\\\\n\\\\\\\\n### **1. Get NEAR-Workspaces-JS More Adoption**\\\\\\\\n\\\\\\\\nEnhance integration and documentation to improve the adoption of NEAR-Workspaces-JS.\\\\\\\\n\\\\\\\\n- **Integration with near-sdk-js**:\\\\\\\\n    - Update the `create-near-app` template to include examples of how to use NEAR-Workspaces-JS alongside near-sdk-js.\\\\\\\\n    - Ensure that developers have access to both contract building SDKs and necessary tools for unit and integration testing.\\\\\\\\n- **Documentation and README**:\\\\\\\\n    - Update the documentation and README files to provide clear, comprehensive examples and explanations.\\\\\\\\n    - Guide developers step-by-step on how to use NEAR-Workspaces-JS with near-sdk-js.\\\\\\\\n- **Integration Testing Documentation**:\\\\\\\\n    - Review and enhance the integration testing documentation available at [NEAR Docs](https://docs.near.org/build/smart-contracts/testing/integration-test).\\\\\\\\n    - Ensure the documentation includes best practices and clear, step-by-step instructions.\\\\\\\\n\\\\\\\\n### **2. Developer Experience**\\\\\\\\n\\\\\\\\nImprove the developer experience by addressing findings and enhancing integration testing.\\\\\\\\n\\\\\\\\n- **Address Integration Testing Findings**:\\\\\\\\n    - Identify any issues or pain points in the current integration testing process.\\\\\\\\n    - Implement solutions to streamline and improve the integration testing experience.\\\\\\\\n\\\\\\\\n### **3. Maintenance**\\\\\\\\n\\\\\\\\nEnsure the sustainability and ease of maintenance for NEAR-Workspaces-JS.\\\\\\\\n\\\\\\\\n- **Automated Release Pipeline**:\\\\\\\\n    - Set up an automated release preparation and publishing pipeline using tools like release-please or similar.\\\\\\\\n    - Consider using the setup from near-api-js as a reference to streamline the process.\\\\\\\\n- **Review Community PRs**:\\\\\\\\n    - Regularly review and merge community pull requests.\\\\\\\\n    - Incorporate valuable contributions from the community to keep the project up-to-date.\\\\\\\\n\\\\\\\\n### **Timelines**\\\\\\\\n\\\\\\\\n| Milestone | Task Description | Duration |\\\\\\\\n| --- | --- | --- |\\\\\\\\n| Automated Release Pipeline | Set up an automated release preparation and publishing pipeline. | 1 week |\\\\\\\\n| Integration with near-sdk-js | Update the create-near-app template to ensure seamless integration with near-sdk-js, including necessary tools for testing. | 1 week |\\\\\\\\n| Documentation and README | Update documentation and README to provide clear guidance and comprehensive examples. | 0.5 week |\\\\\\\\n| Enhance Integration Testing Documentation | Review and enhance integration testing documentation on NEAR Docs. | 0.5 week |\\\\\\\\n| Address Integration Testing Findings | Identify and address issues to improve the integration testing experience. | 1 week |\\\\\\\\n| Review Community PRs | Regularly review and merge community pull requests. | 1 week |\\\\\\\\n| Total: |  | 5 weeks |\\\\\\\\n\\\\\\\\n**Tech Stack:**\\\\\\\\n\\\\\\\\nRust\\\\\\\\n\\\\\\\\nTypescript\\\\\\\\n\\\\\\\\nReact\\\\\\\\n\\\\\\\\n**Team Setup:**\\\\\\\\n\\\\\\\\n2 x Full-time Frontend Developers with Typescript\\\\\\\\n\\\\\\\\n1 x Full-time Blockchain Developer with Rust\\\\\\\\n\\\\\\\\n1 x Part-time Tech Lead\\\\\\\\n\\\\\\\\n**Duration:** 11 weeks\", \"linked_proposals\": [], \"receiver_account\": \"75d06b35243c61a112abc1e0ad748f58c5b146d264099798492ede675199cf93\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"138000\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3323165367994e+21
+    }
+  },
+  {
+    "id": "6933451129",
+    "receipt_id": "Fucui2MfgVYdTvkQHCTpJs8jEqXsTAeUSpE4sy7pN8xX",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "DD8dGyZvT4BkTCmi4STwTQgNB2be349SV6ceEeFmW2eD",
+      "block_height": 124242563,
+      "block_timestamp": 1721934698205261300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3498070167675,
+      "tokens_burnt": 349807016767500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "J4AYmUB252HmCy9t1TzCUiPY3zUkWkKU6zy1sUSdBwC",
+    "included_in_block_hash": "3CJ9y4b2f5MXQABmygLuNv7Ctsg5F6hffm6Bb8erkAEB",
+    "block_timestamp": "1721934695831006174",
+    "block": {
+      "block_height": 124242561
+    },
+    "receipt_conversion_tokens_burnt": "34231624481400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 349807016767500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"hristolimechain.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":152,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"frol.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3323165367994e+21
+    }
+  },
+  {
+    "id": "6933972367",
+    "receipt_id": "4o1eC5JXqNYoFkwaWKVMnUqyAQ6Y3cdsYGegJtASH2dg",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "CiXZULYZX3cZXsfjRiSMVxmGZFFuo9P77if7XJSREXHQ",
+      "block_height": 124243903,
+      "block_timestamp": 1721936292440993500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6103017148884,
+      "tokens_burnt": 610301714888400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "4WCc8ae4rajMK2z3484L5xpY2H6bB4ogAQ3TmkpzUgFP",
+    "included_in_block_hash": "EUTndYvuSoXcL2VpFuVcLDjCqRMdEHbj4yGKuAsjPguB",
+    "block_timestamp": "1721936291104087248",
+    "block": {
+      "block_height": 124243902
+    },
+    "receipt_conversion_tokens_burnt": "30848879932800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_versioned_timeline",
+        "deposit": 0,
+        "fee": 610301714888400000000,
+        "args": "{\"id\": 143, \"timeline\": {\"status\": \"CANCELLED\", \"kyc_verified\": true, \"timeline_version\": \"V1\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 993707507541100000000
+    }
+  },
+  {
+    "id": "6933972732",
+    "receipt_id": "AM5x383UvhgDPnwZBcuSEdugGABFb89co6fdNkYDDg88",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EXjhvnp2QLFaWjvGyke11kCSryKYkdVgNKjEU9FSB2uQ",
+      "block_height": 124243904,
+      "block_timestamp": 1721936293669554700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3525569127199,
+      "tokens_burnt": 352556912719900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4WCc8ae4rajMK2z3484L5xpY2H6bB4ogAQ3TmkpzUgFP",
+    "included_in_block_hash": "EUTndYvuSoXcL2VpFuVcLDjCqRMdEHbj4yGKuAsjPguB",
+    "block_timestamp": "1721936291104087248",
+    "block": {
+      "block_height": 124243902
+    },
+    "receipt_conversion_tokens_burnt": "30848879932800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352556912719900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"nearblocks_io.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"proposal/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":143,\\\\\\\\\\\\\\\"widgetAccountId\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"frol.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 993707507541100000000
+    }
+  },
+  {
+    "id": "6946248652",
+    "receipt_id": "FpWZRUaVUXkbL6LZ49dz4D8AgZo7sEXyx6XMUSTLMDC5",
+    "predecessor_account_id": "polyprogrammist.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3GnN4x65pyiXiEngPghkssVNzEB1mcJfTnXUcBtnbFUm",
+      "block_height": 124287397,
+      "block_timestamp": 1721985387890622000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4918052314800,
+      "tokens_burnt": 491805231480000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "E942jBxJFT1iQJvXf6aR3RoH1xNyfLfnX1vrP8LMKgjZ",
+    "included_in_block_hash": "J96AJzStUB8T8YCFKZVv5yyMaXGWLdqYQiTe31q7dfso",
+    "block_timestamp": "1721985386779785369",
+    "block": {
+      "block_height": 124287396
+    },
+    "receipt_conversion_tokens_burnt": "30902765942200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 491805231480000000000,
+        "args": "{\"body\": {\"name\": \"test t&c\", \"summary\": \"q\", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"q\", \"linked_proposals\": [], \"receiver_account\": \"polyprogrammist.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"100\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"labels\": [], \"accepted_terms_and_conditions_version\": 124287373}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6372072393161e+21
+    }
+  },
+  {
+    "id": "6946248718",
+    "receipt_id": "512YKDTNL31gAfYyXCCC5aqKLr7D5PJ9AZvnKxKvG5EL",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Fh4yRfCfBPDqaqpbpYmo847XLqbQvPaWXvvCEbs6joj5",
+      "block_height": 124287398,
+      "block_timestamp": 1721985388922418000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4479681019342,
+      "tokens_burnt": 447968101934200000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "E942jBxJFT1iQJvXf6aR3RoH1xNyfLfnX1vrP8LMKgjZ",
+    "included_in_block_hash": "J96AJzStUB8T8YCFKZVv5yyMaXGWLdqYQiTe31q7dfso",
+    "block_timestamp": "1721985386779785369",
+    "block": {
+      "block_height": 124287396
+    },
+    "receipt_conversion_tokens_burnt": "30902765942200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 447968101934200000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *DevDAO Operations* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @polyprogrammist.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}test t&c\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nq\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=163)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6372072393161e+21
+    }
+  },
+  {
+    "id": "6946248722",
+    "receipt_id": "2QaAtEYBZCTTC5dNXVFzQqApK7s9iiwHzMFFPoXUMRLe",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Fh4yRfCfBPDqaqpbpYmo847XLqbQvPaWXvvCEbs6joj5",
+      "block_height": 124287398,
+      "block_timestamp": 1721985388922418000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3165784897034,
+      "tokens_burnt": 316578489703400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "E942jBxJFT1iQJvXf6aR3RoH1xNyfLfnX1vrP8LMKgjZ",
+    "included_in_block_hash": "J96AJzStUB8T8YCFKZVv5yyMaXGWLdqYQiTe31q7dfso",
+    "block_timestamp": "1721985386779785369",
+    "block": {
+      "block_height": 124287396
+    },
+    "receipt_conversion_tokens_burnt": "30902765942200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 316578489703400000000,
+        "args": "{\"proposal\": {\"id\": 163, \"snapshot\": {\"name\": \"test t&c\", \"labels\": [], \"summary\": \"q\", \"category\": \"DevDAO Operations\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"polyprogrammist.near\", \"timestamp\": \"1721985387890621897\", \"supervisor\": null, \"description\": \"q\", \"linked_proposals\": [], \"receiver_account\": \"polyprogrammist.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"100\", \"requested_sponsorship_paid_in_currency\": \"USDC\"}, \"author_id\": \"polyprogrammist.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.6372072393161e+21
+    }
+  }
+]

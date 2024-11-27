@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "3322338218",
+    "receipt_id": "AjpUoYQ9HfiYoNscVuD5jh8AsSbwu5meHWPvQj3Pa1Rs",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Bs8vsep64XPGJ7X4Qdc1TGNKFPwwEihVEKFXaMgdbocC",
+      "block_height": 115568637,
+      "block_timestamp": 1711527689933342700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6287841278211,
+      "tokens_burnt": 628784127821100000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "62i8uorKceyJoKXUY1MTTEXSjdxLuiEgo9JRqSyJWqtQ",
+    "included_in_block_hash": "AJUxdjov4FRFBRFSf8hxwdpemX4nkJEiedw36io8gEfq",
+    "block_timestamp": "1711527688665476959",
+    "block": {
+      "block_height": 115568636
+    },
+    "receipt_conversion_tokens_burnt": "244275865802400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 628784127821100000000,
+        "args": "{\"data\": {\"devhub.near\": {\"widget\": {\"devhub.entity.proposal.VerificationStatus\": {\"\": \"const receiverAccount = props.receiverAccount;\\\\\\\\nconst showGetVerifiedBtn = props.showGetVerifiedBtn;\\\\\\\\nconst [verificationStatus, setVerificationStatus] = useState(null);\\\\\\\\nconst imageSize = props.imageSize ?? 40;\\\\\\\\n\\\\\\\\nconst WarningImg =\\\\\\\\n  \\\\\\\\\\\\\\\"https://ipfs.near.social/ipfs/bafkreieq4222tf3hkbccfnbw5kpgedm3bf2zcfgzbnmismxav2phqdwd7q\\\\\\\\\\\\\\\";\\\\\\\\n\\\\\\\\nconst SuccessImg =\\\\\\\\n  \\\\\\\\\\\\\\\"https://ipfs.near.social/ipfs/bafkreidqveupkcc7e3rko2e67lztsqrfnjzw3ceoajyglqeomvv7xznusm\\\\\\\\\\\\\\\";\\\\\\\\n\\\\\\\\nuseEffect(() => {\\\\\\\\n  if (\\\\\\\\n    receiverAccount.length === 64 ||\\\\\\\\n    (receiverAccount ?? \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\").includes(\\\\\\\\\\\\\\\".near\\\\\\\\\\\\\\\")\\\\\\\\n  ) {\\\\\\\\n    useCache(\\\\\\\\n      () =>\\\\\\\\n        asyncFetch(\\\\\\\\n          `https://neardevhub-kyc-proxy.shuttleapp.rs/kyc/${receiverAccount}`\\\\\\\\n        ).then((res) => {\\\\\\\\n          let displayableText = \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\";\\\\\\\\n          switch (res.body.kyc_status) {\\\\\\\\n            case \\\\\\\\\\\\\\\"Approved\\\\\\\\\\\\\\\":\\\\\\\\n              displayableText = \\\\\\\\\\\\\\\"Verified\\\\\\\\\\\\\\\";\\\\\\\\n              break;\\\\\\\\n            case \\\\\\\\\\\\\\\"Pending\\\\\\\\\\\\\\\":\\\\\\\\n              displayableText = \\\\\\\\\\\\\\\"Pending\\\\\\\\\\\\\\\";\\\\\\\\n              break;\\\\\\\\n            default:\\\\\\\\n              displayableText = \\\\\\\\\\\\\\\"Not Verfied\\\\\\\\\\\\\\\";\\\\\\\\n              break;\\\\\\\\n          }\\\\\\\\n          setVerificationStatus(displayableText);\\\\\\\\n        }),\\\\\\\\n      \\\\\\\\\\\\\\\"ky-check-proposal\\\\\\\\\\\\\\\" + receiverAccount,\\\\\\\\n      { subscribe: false }\\\\\\\\n    );\\\\\\\\n  }\\\\\\\\n}, [receiverAccount]);\\\\\\\\n\\\\\\\\nconst DropdowntBtnContainer = styled.div`\\\\\\\\n  font-size: 13px;\\\\\\\\n  min-width: 150px;\\\\\\\\n\\\\\\\\n  .custom-select {\\\\\\\\n    position: relative;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .select-header {\\\\\\\\n    display: flex;\\\\\\\\n    justify-content: space-between;\\\\\\\\n    align-items: center;\\\\\\\\n    border: 1px solid #ccc;\\\\\\\\n    border-radius-top: 5px;\\\\\\\\n    cursor: pointer;\\\\\\\\n    background-color: #fff;\\\\\\\\n    border-radius: 5px;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .no-border {\\\\\\\\n    border: none !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .options-card {\\\\\\\\n    position: absolute;\\\\\\\\n    top: 100%;\\\\\\\\n    left: 0;\\\\\\\\n    width: 200%;\\\\\\\\n    border: 1px solid #ccc;\\\\\\\\n    background-color: #fff;\\\\\\\\n    padding: 0.5rem;\\\\\\\\n    z-index: 9999;\\\\\\\\n    font-size: 13px;\\\\\\\\n    border-radius: 0.375rem !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .left {\\\\\\\\n    right: 0 !important;\\\\\\\\n    left: auto !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  @media screen and (max-width: 768px) {\\\\\\\\n    .options-card {\\\\\\\\n      right: 0 !important;\\\\\\\\n      left: auto !important;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .option {\\\\\\\\n    margin-block: 2px;\\\\\\\\n    padding: 5px;\\\\\\\\n    cursor: pointer;\\\\\\\\n    border-bottom: 1px solid #f0f0f0;\\\\\\\\n    transition: background-color 0.3s ease;\\\\\\\\n    border-radius: 0.375rem !important;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .option:hover {\\\\\\\\n    background-color: #f0f0f0; /* Custom hover effect color */\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .option:last-child {\\\\\\\\n    border-bottom: none;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .selected {\\\\\\\\n    background-color: #f0f0f0;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .disabled {\\\\\\\\n    background-color: #f4f4f4 !important;\\\\\\\\n    cursor: not-allowed !important;\\\\\\\\n    font-weight: 500;\\\\\\\\n    color: #b3b3b3;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .disabled .circle {\\\\\\\\n    opacity: 0.5;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .circle {\\\\\\\\n    width: 8px;\\\\\\\\n    height: 8px;\\\\\\\\n    border-radius: 50%;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .grey {\\\\\\\\n    background-color: #818181;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .green {\\\\\\\\n    background-color: #04a46e;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  a:hover {\\\\\\\\n    text-decoration: none;\\\\\\\\n  }\\\\\\\\n\\\\\\\\n  .black-btn {\\\\\\\\n    background-color: #000 !important;\\\\\\\\n    border: none;\\\\\\\\n    color: white;\\\\\\\\n    &:active {\\\\\\\\n      color: white;\\\\\\\\n    }\\\\\\\\n  }\\\\\\\\n`;\\\\\\\\n\\\\\\\\nconst [kycOptionsOpen, setKycOptions] = useState(false);\\\\\\\\n\\\\\\\\nconst VerificationBtn = () => {\\\\\\\\n  const btnOptions = [\\\\\\\\n    {\\\\\\\\n      src: \\\\\\\\\\\\\\\"https://ipfs.near.social/ipfs/bafkreidqveupkcc7e3rko2e67lztsqrfnjzw3ceoajyglqeomvv7xznusm\\\\\\\\\\\\\\\",\\\\\\\\n      label: \\\\\\\\\\\\\\\"KYC\\\\\\\\\\\\\\\",\\\\\\\\n      description: \\\\\\\\\\\\\\\"Choose this if you are an individual.\\\\\\\\\\\\\\\",\\\\\\\\n      value: \\\\\\\\\\\\\\\"KYC\\\\\\\\\\\\\\\",\\\\\\\\n    },\\\\\\\\n    {\\\\\\\\n      src: \\\\\\\\\\\\\\\"https://ipfs.near.social/ipfs/bafkreic5ksax6b45pelvxm6a2v2j465jgbitpzrxtzpmn6zehl23gocwxm\\\\\\\\\\\\\\\",\\\\\\\\n      label: \\\\\\\\\\\\\\\"KYB\\\\\\\\\\\\\\\",\\\\\\\\n      description: \\\\\\\\\\\\\\\"Choose this if you are a business or corporate entity..\\\\\\\\\\\\\\\",\\\\\\\\n      value: \\\\\\\\\\\\\\\"KYB\\\\\\\\\\\\\\\",\\\\\\\\n    },\\\\\\\\n  ];\\\\\\\\n\\\\\\\\n  const toggleDropdown = () => {\\\\\\\\n    setKycOptions(!kycOptionsOpen);\\\\\\\\n  };\\\\\\\\n\\\\\\\\n  return (\\\\\\\\n    <DropdowntBtnContainer>\\\\\\\\n      <div\\\\\\\\n        className=\\\\\\\\\\\\\\\"custom-select\\\\\\\\\\\\\\\"\\\\\\\\n        tabIndex=\\\\\\\\\\\\\\\"0\\\\\\\\\\\\\\\"\\\\\\\\n        id=\\\\\\\\\\\\\\\"getVerifiedButton\\\\\\\\\\\\\\\"\\\\\\\\n        onClick={toggleDropdown}\\\\\\\\n        onBlur={() => {\\\\\\\\n          setTimeout(() => {\\\\\\\\n            setKycOptions(false);\\\\\\\\n          }, 0);\\\\\\\\n        }}\\\\\\\\n      >\\\\\\\\n        <div\\\\\\\\n          className={\\\\\\\\n            \\\\\\\\\\\\\\\"select-header no-border black-btn btn d-inline-flex align-items-center gap-2\\\\\\\\\\\\\\\"\\\\\\\\n          }\\\\\\\\n        >\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"d-flex align-items-center gap-1\\\\\\\\\\\\\\\">\\\\\\\\n            Get Verified\\\\\\\\n            <i class=\\\\\\\\\\\\\\\"bi bi-box-arrow-up-right\\\\\\\\\\\\\\\"></i>\\\\\\\\n          </div>\\\\\\\\n        </div>\\\\\\\\n\\\\\\\\n        {kycOptionsOpen && (\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"options-card left\\\\\\\\\\\\\\\">\\\\\\\\n            {btnOptions.map((option) => (\\\\\\\\n              <a\\\\\\\\n                target=\\\\\\\\\\\\\\\"_blank\\\\\\\\\\\\\\\"\\\\\\\\n                rel=\\\\\\\\\\\\\\\"noopener noreferrer\\\\\\\\\\\\\\\"\\\\\\\\n                href={\\\\\\\\n                  option.value === \\\\\\\\\\\\\\\"KYC\\\\\\\\\\\\\\\"\\\\\\\\n                    ? \\\\\\\\\\\\\\\"https://go.fractal.id/near-social-kyc\\\\\\\\\\\\\\\"\\\\\\\\n                    : \\\\\\\\\\\\\\\"https://go.fractal.id/near-social-kyb\\\\\\\\\\\\\\\"\\\\\\\\n                }\\\\\\\\n              >\\\\\\\\n                <div\\\\\\\\n                  key={option.value}\\\\\\\\n                  className={`option ${\\\\\\\\n                    selectedOption.value === option.value ? \\\\\\\\\\\\\\\"selected\\\\\\\\\\\\\\\" : \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\n                  }`}\\\\\\\\n                  onClick={() => setKycOptions(false)}\\\\\\\\n                >\\\\\\\\n                  <div className={`d-flex gap-2 align-items-center`}>\\\\\\\\n                    <img src={option.src} height={30} />\\\\\\\\n                    <div>\\\\\\\\n                      <div className=\\\\\\\\\\\\\\\"fw-bold\\\\\\\\\\\\\\\">{option.label}</div>\\\\\\\\n                      <div className=\\\\\\\\\\\\\\\"text-muted text-xs\\\\\\\\\\\\\\\">\\\\\\\\n                        {option.description}\\\\\\\\n                      </div>\\\\\\\\n                    </div>\\\\\\\\n                  </div>\\\\\\\\n                </div>\\\\\\\\n              </a>\\\\\\\\n            ))}\\\\\\\\n          </div>\\\\\\\\n        )}\\\\\\\\n      </div>\\\\\\\\n    </DropdowntBtnContainer>\\\\\\\\n  );\\\\\\\\n};\\\\\\\\n\\\\\\\\nreturn (\\\\\\\\n  <div>\\\\\\\\n    <div className=\\\\\\\\\\\\\\\"d-flex text-black justify-content-between align-items-center\\\\\\\\\\\\\\\">\\\\\\\\n      <div className=\\\\\\\\\\\\\\\"d-flex\\\\\\\\\\\\\\\" style={{ gap: \\\\\\\\\\\\\\\"12px\\\\\\\\\\\\\\\" }}>\\\\\\\\n        <img\\\\\\\\n          className=\\\\\\\\\\\\\\\"align-self-center object-fit-cover\\\\\\\\\\\\\\\"\\\\\\\\n          src={verificationStatus === \\\\\\\\\\\\\\\"Verified\\\\\\\\\\\\\\\" ? SuccessImg : WarningImg}\\\\\\\\n          height={imageSize}\\\\\\\\n        />\\\\\\\\n        <div className=\\\\\\\\\\\\\\\"d-flex flex-column justify-content-center\\\\\\\\\\\\\\\">\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"h6 mb-0\\\\\\\\\\\\\\\">Fractal</div>\\\\\\\\n          <div className=\\\\\\\\\\\\\\\"text-sm text-muted\\\\\\\\\\\\\\\">{verificationStatus}</div>\\\\\\\\n        </div>\\\\\\\\n      </div>\\\\\\\\n      {verificationStatus !== \\\\\\\\\\\\\\\"Verified\\\\\\\\\\\\\\\" && showGetVerifiedBtn && (\\\\\\\\n        <VerificationBtn />\\\\\\\\n      )}\\\\\\\\n    </div>\\\\\\\\n  </div>\\\\\\\\n);\\\\\\\\n\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 873059993623500000000
+    }
+  },
+  {
+    "id": "3322338474",
+    "receipt_id": "2yivVSoHqnGkrXyLb3s4zyj79qzwmKedNbvf6FzHqks4",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AjArvmt1CDGoYqqW72UL5Hfr1DDzcwAJBDifKRchXoYy",
+      "block_height": 115568638,
+      "block_timestamp": 1711527691132807700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "62i8uorKceyJoKXUY1MTTEXSjdxLuiEgo9JRqSyJWqtQ",
+    "included_in_block_hash": "AJUxdjov4FRFBRFSf8hxwdpemX4nkJEiedw36io8gEfq",
+    "block_timestamp": "1711527688665476959",
+    "block": {
+      "block_height": 115568636
+    },
+    "receipt_conversion_tokens_burnt": "244275865802400000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.8841009036883023e+23,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 873059993623500000000
+    }
+  },
+  {
+    "id": "3327653873",
+    "receipt_id": "42k4MjoVhqvXV5rNZoQazNwnqoK7FS36wWjj7jgMhpT8",
+    "predecessor_account_id": "orangejoe.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5YWsoajbvTxz69kSLuucL3jZij9duA8UY2umUA9EZUay",
+      "block_height": 115585812,
+      "block_timestamp": 1711549342122111500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7424983146003,
+      "tokens_burnt": 742498314600300000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "6SgrKrXEXPqGKxMmgpugDXe3SyB46XL7TpKmzPQnG69A",
+    "included_in_block_hash": "EEhPW81Z5TwU4KsmidB87qjujg48yweiXAiLoDbn8h5b",
+    "block_timestamp": "1711549340841996326",
+    "block": {
+      "block_height": 115585811
+    },
+    "receipt_conversion_tokens_burnt": "242965608478400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addon",
+        "deposit": 0,
+        "fee": 742498314600300000000,
+        "args": "{\"handle\": \"chain-abstraction\", \"community_addon\": {\"id\": \"hxwcax\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Videos\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Learn about and experience Chain Abstraction\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[Introduction to Chain Abstraction](https://www.youtube.com/playlist?list=PLrLLmjcJVAB-hMq0mgAyzlOqccMHvQFys)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[Cross-Chain Without Bridges: Secure Interoperability With Threshold Signatures | Kendall Cole](https://www.youtube.com/watch?v=gCkOTjbJD3c)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[Send ETH on Ethereum Using Near Account in 1 TX](https://www.youtube.com/watch?v=0h-uY_fEoZE)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[Steps for Chain Signatures](https://youtu.be/bBGAispDnR0)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[Why Chain Abstraction is Great For Devs](https://youtu.be/Q3J3mxRct5Q)\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Videos\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8739110287753e+21
+    }
+  },
+  {
+    "id": "3327654290",
+    "receipt_id": "75eKRGjoSnAwfRC5GRUuQnQ8dVbbAvuQH5YUbzM47pBF",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BuD9w1WY9dEsNKHRmQ5s4wSGMBVid7Ly4uz5pRvKHxYX",
+      "block_height": 115585813,
+      "block_timestamp": 1711549343255069400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 18884471056966,
+      "tokens_burnt": 1.8884471056966e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "6SgrKrXEXPqGKxMmgpugDXe3SyB46XL7TpKmzPQnG69A",
+    "included_in_block_hash": "EEhPW81Z5TwU4KsmidB87qjujg48yweiXAiLoDbn8h5b",
+    "block_timestamp": "1711549340841996326",
+    "block": {
+      "block_height": 115585811
+    },
+    "receipt_conversion_tokens_burnt": "242965608478400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.8884471056966e+21,
+        "args": "{\"data\": {\"chain-abstraction.community.devhub.near\": {\"profile\": {\"name\": \"Chain Abstraction\", \"tags\": {\"community\": \"\", \"announcements\": \"\", \"chain-abstraction\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibysr2mkwhb4j36h2t7mqwhynqdy4vzjfygfkfg65kuspd2bawauu\"}, \"linktree\": {\"github\": \"near-examples/near-multichain\", \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=chain-abstraction\", \"telegram\": \"+RXYjlPob_XM5N2Ex\"}, \"description\": \"Learn more about how to build using Chain Abstraction on NEAR\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=chain-abstraction).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreiabxysjawaxxumkuv3sirzrk7wqlket24fqhwhzn6vyeivsb3gy3m\"}}}, \"discussions.chain-abstraction.community.devhub.near\": {\"profile\": {\"name\": \"Chain Abstraction (Community Discussions)\", \"tags\": {\"community\": \"\", \"discussions\": \"\", \"chain-abstraction\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibysr2mkwhb4j36h2t7mqwhynqdy4vzjfygfkfg65kuspd2bawauu\"}, \"linktree\": {\"github\": \"near-examples/near-multichain\", \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=chain-abstraction\", \"telegram\": \"+RXYjlPob_XM5N2Ex\"}, \"description\": \"Chain and Account Abstraction\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=chain-abstraction).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreiabxysjawaxxumkuv3sirzrk7wqlket24fqhwhzn6vyeivsb3gy3m\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.8739110287753e+21
+    }
+  },
+  {
+    "id": "3332341693",
+    "receipt_id": "HMUPSThVdWRaktcJqJ7voGiF1cViwzetnBrvLyxinZAg",
+    "predecessor_account_id": "theori.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "93gAhYsPmRTMnvuTwmABhpFTSp4G8JfvHRvtnCGCA4BX",
+      "block_height": 115598602,
+      "block_timestamp": 1711565616915613700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8122748127387,
+      "tokens_burnt": 812274812738700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "HbgUyDthvGLo5zBBn9ZHRAJBzw7Ntgf7rHmFiWbU2imj",
+    "included_in_block_hash": "N64iiXu5HYSufkBNX4pcDi2B9tK3Wjo5oYbctEDEczA",
+    "block_timestamp": "1711565615774507877",
+    "block": {
+      "block_height": 115598601
+    },
+    "receipt_conversion_tokens_burnt": "244418071204800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "update_community",
+        "deposit": 0,
+        "fee": 812274812738700000000,
+        "args": "{\"handle\": \"devhub-platform\", \"community\": {\"tag\": \"devhub-platform\", \"name\": \"DevHub Platform\", \"addons\": [{\"id\": \"p56v0f\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"# \\\\\\\\u{1f44b} Welcome!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis community is all about delivering high impact features to the [NEAR DevHub Platform](http://neardevhub.org), a decentralized community platform for NEAR developers to contribute to the ecosystem and stay informed. This space aims to serve as an entry point to individuals, experts, and organizations who are interested in contributing. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Our Groups\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWe have two main groups:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### 1. Working group\\\\\\\\\\\\\\\\nThis formal group is a group of subject matter experts who make official decisions on proposals and questions related to the DevHub Platform. They follow a strict process to review proposals, recommend funding to DAO, and hold grant takers accountable. They also engage with the broader community to understand their needs and encourage ideation. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Members**\\\\\\\\\\\\\\\\n- @frol.near\\\\\\\\\\\\\\\\n- @ori.near\\\\\\\\\\\\\\\\n- @bo.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### 2. Community contributors\\\\\\\\\\\\\\\\nWe have a core group of regular product & technical community contributors who regularly work on making the DevHub platform better, from contributing code to reporting and triaging issues. These individuals collaborate across different time zones using lightweight and mostly asynchronous processes. To learn more about how we work, check out our project [README](https://github.com/near/neardevhub-widgets#how-to-contribute) page on GitHub.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## What are we working on?\\\\\\\\\\\\\\\\nTo track our progress and manage issues effectively, we use a [Kanban board](https://github.com/orgs/near/projects/60/views/1). You can also check out our [current](https://github.com/near/neardevhub-widgets/milestones) and [past](https://github.com/near/neardevhub-widgets/milestones?state=closed) initiatives.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Communication channels\\\\\\\\\\\\\\\\nWe use the following channels for communication:\\\\\\\\\\\\\\\\n- [GitHub:](https://github.com/orgs/near/projects/60/views/1) For specific issues and pull requests. Enable notifications to ensure you get the latest updates.\\\\\\\\\\\\\\\\n- [Telegram:](https://t.me/devhubplatform) For general questions or concerns.\\\\\\\\\\\\\\\\n- [Weekly Standup Calls](https://bit.ly/DevHubCalendar): To align on priorities and discuss progress, plans, and blockers.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## How to get involved\\\\\\\\\\\\\\\\nAnyone is welcome to contribute to the DevHub platform. Here are ways to get involved:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* **Contribute code**: Review the list of [good first issues](https://github.com/near/devgigsboard-widgets/contribute). You can pick any issues from the [Backlog column](https://github.com/orgs/near/projects/60) and indicate your interest by leaving comments. Before you get started, we encourage you to check out [how we work](https://github.com/near/devgigsboard-widgets/blob/main/docs/how-we-work.md) and the [developer guidelines](https://github.com/near/devgigsboard-widgets/blob/main/CONTRIBUTING.md).\\\\\\\\\\\\\\\\n* **Report issues**: To report a [bug](https://github.com/near/devgigsboard-widgets/issues/new?assignees=&labels=bug&template=bug_report.md&title=) or a [feature request](https://github.com/near/devgigsboard-widgets/issues/new?assignees=&labels=enhancement&template=feature-request.md&title=), please review all open and closed [issues](https://github.com/near/devgigsboard-widgets/issues?q=is%3Aissue+is%3Aall+) to make sure no one has previously created a similar topic. If you have a more robust proposal or idea that you\\\\\\\\\\\\'d like to discuss, you are also welcome to create an idea or solution post on our community here.\\\\\\\\\\\\\\\\n* **Triage issues**: You are welcome to help us triage by verifying or reproducing bugs, adding more specific reproduction instructions, or voting on issues by adding a \\\\\\\\u{1f44d} thumbs-up reaction to the issue\\\\\\\\\\\\'s description comment.  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### How to become a paid contributor\\\\\\\\\\\\\\\\nAs an an open-source project, we greatly approach the contributions of each individual. We aim to grow an ecosystem of developers who are here because they like the technology and community. Given that there\\\\\\\\u{2019}s a lot of time and effort that goes into this, we have financial means to compensate for some activities and projects for regular contributors.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you are interested in getting compensate for contributing your skills and expertise to our project, the best way to get started is to first familiarize yourself with [DevHub](https://www.neardevhub.org) and start getting involved (see section above). Once you\\\\\\\\u{2019}ve gained the community\\\\\\\\u{2019}s trust by demonstrating high-quality contributions and ongoing commitment, you can [apply here](https://near.social/#/devgovgigs.near/widget/gigs-board.pages.Post?id=507). \\\\\\\\\\\\\\\"}\", \"display_name\": \"About us \\\\\\\\u{2b50}\\\\\\\\u{fe0f}\"}, {\"id\": \"870s2b\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"A Developer\\\\\\\\\\\\'s Guide to Active Participation in the DevHub\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"**The DevHub Platform is your homebase for connecting with other developers and mentors, sharing ideas, proposing events, accessing resources, and finding communities working on diverse projects \\\\\\\\u{2013} from protocol development to tooling and documentation**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Ways to Participate \\\\\\\\u{1f468}\\\\\\\\u{200d}\\\\\\\\u{1f4bb}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **Join a Community:** Explore communities [here](https://near.social/devhub.near/widget/app?page=communities).\\\\\\\\\\\\\\\\n- **Improve NEAR Documentation:** Contribute on [GitHub](https://github.com/near/docs).\\\\\\\\\\\\\\\\n- **Seek Mentorship:** Check out Office hours hosted on Discord and connect with all DevRels via our DevRel Telegram.\\\\\\\\\\\\\\\\n- **Host an Event/Hackathon:** Wunna host an event / hackathon? Power it up with [Hackbox](https://near.social/hackbox.near/widget/home).\\\\\\\\\\\\\\\\n- **Join NEAR Campus:** To support your blockchain club / university...Be part of [NEAR Campus](https://near.social/devhub.near/widget/app?page=community&handle=near-campus).\\\\\\\\\\\\\\\\n- **Post a Proposal:** Got an idea you\\\\\\\\\\\\'ll like to bring to the Ecosystem? Use this [Guide](https://near.social/devhub.near/widget/app?page=blog&id=203)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### How to Stay Updated:\\\\\\\\\\\\\\\\nSubscribe to our [newsletter](https://newsletter.neardevhub.org/) and join the Telegram group for the latest updates.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Get Involved:\\\\\\\\\\\\\\\\nRegardless of your background or wherever you are in the world, we invite you to explore, find your community, and discover paths to contribute that are most gratifying for you. Let\\\\\\\\\\\\'s build the open web together!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"How to use DevHub \\\\\\\\u{1f468}\\\\\\\\u{200d}\\\\\\\\u{1f4bb}\"}, {\"id\": \"5jy6ev\", \"enabled\": true, \"addon_id\": \"blog\", \"parameters\": \"{}\", \"display_name\": \"DevHub Blog\"}], \"admins\": [\"theori.near\", \"victorkanu1.near\", \"frol.near\", \"petersalomonsen.near\", \"megha19.near\"], \"handle\": \"devhub-platform\", \"logo_url\": \"https://ipfs.near.social/ipfs/bafkreickgqvypgp5vty4udeuslxxaxm3n6lemwjfkebyddzzl4jif3qddi\", \"banner_url\": \"https://ipfs.near.social/ipfs/bafkreievtx75idx2aw3ipy7q2etvvzxh2kn6e3evzqsgm3cjyh6otehtjy\", \"description\": \"Delivering high impact features to the DevHub Platform.\", \"website_url\": \"neardevhub.org\", \"bio_markdown\": \"A community of product & technical contributors focusing on delivering high impact features to the DevHub Platform that empower NEAR developers to thrive and contribute.\", \"github_handle\": \"near-devhub\", \"twitter_handle\": \"NEARDevHub\", \"telegram_handle\": \"neardevhub\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.9492628429297e+21
+    }
+  },
+  {
+    "id": "3332342254",
+    "receipt_id": "BF3bD29CRuQWgNPc9QcPexL7JknyGekng7tYjteyMmXc",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "3WGwbBdzF3oiS9SzGJRYbkNJPhAez7T6rAg2b47HhExD",
+      "block_height": 115598603,
+      "block_timestamp": 1711565617892644600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 18925699589862,
+      "tokens_burnt": 1.8925699589862e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "HbgUyDthvGLo5zBBn9ZHRAJBzw7Ntgf7rHmFiWbU2imj",
+    "included_in_block_hash": "N64iiXu5HYSufkBNX4pcDi2B9tK3Wjo5oYbctEDEczA",
+    "block_timestamp": "1711565615774507877",
+    "block": {
+      "block_height": 115598601
+    },
+    "receipt_conversion_tokens_burnt": "244418071204800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.8925699589862e+21,
+        "args": "{\"data\": {\"devhub-platform.community.devhub.near\": {\"profile\": {\"name\": \"DevHub Platform\", \"tags\": {\"community\": \"\", \"announcements\": \"\", \"devhub-platform\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreickgqvypgp5vty4udeuslxxaxm3n6lemwjfkebyddzzl4jif3qddi\"}, \"linktree\": {\"github\": \"near-devhub\", \"twitter\": \"NEARDevHub\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=devhub-platform\", \"telegram\": \"neardevhub\"}, \"description\": \"A community of product & technical contributors focusing on delivering high impact features to the DevHub Platform that empower NEAR developers to thrive and contribute.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=devhub-platform).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreievtx75idx2aw3ipy7q2etvvzxh2kn6e3evzqsgm3cjyh6otehtjy\"}}}, \"discussions.devhub-platform.community.devhub.near\": {\"profile\": {\"name\": \"DevHub Platform (Community Discussions)\", \"tags\": {\"community\": \"\", \"discussions\": \"\", \"devhub-platform\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreickgqvypgp5vty4udeuslxxaxm3n6lemwjfkebyddzzl4jif3qddi\"}, \"linktree\": {\"github\": \"near-devhub\", \"twitter\": \"NEARDevHub\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=devhub-platform\", \"telegram\": \"neardevhub\"}, \"description\": \"Delivering high impact features to the DevHub Platform.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=devhub-platform).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreievtx75idx2aw3ipy7q2etvvzxh2kn6e3evzqsgm3cjyh6otehtjy\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.9492628429297e+21
+    }
+  },
+  {
+    "id": "3337539322",
+    "receipt_id": "BazJD74u3w81fzPZ1JJUQSDxoxTS81SBYPSGUx1RnmnK",
+    "predecessor_account_id": "orangejoe.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2fPxA3WnkDvEWvLqJmqGpVk7YQxzJqNDtj4PStn8Y963",
+      "block_height": 115612720,
+      "block_timestamp": 1711582867982189600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7335688667286,
+      "tokens_burnt": 733568866728600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "EukLEKzjmkwrXVG7BMVbDeTTDagSackUiQvnQR2tNTMo",
+    "included_in_block_hash": "7V8WgudScm9YWuQAcSvphpQVbZRiPdxTmwNPKEdAoQDs",
+    "block_timestamp": "1711582866836620471",
+    "block": {
+      "block_height": 115612719
+    },
+    "receipt_conversion_tokens_burnt": "243450582563000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "update_community",
+        "deposit": 0,
+        "fee": 733568866728600000000,
+        "args": "{\"handle\": \"chain-abstraction\", \"community\": {\"tag\": \"chain-abstraction\", \"name\": \"Chain Abstraction\", \"addons\": [{\"id\": \"y2iqqs\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Introduction to Chain Abstraction Articles\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[Why Chain Abstraction Is the Next Frontier for Web3](https://pages.near.org/blog/why-chain-abstraction-is-the-next-frontier-for-web3/)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[Unlocking Web3 Usability with Account Aggregation](https://pages.near.org/blog/unlocking-web3-usability-with-account-aggregation/)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[A First Look at Chain Signatures: Cross-Chain Without Bridges](https://medium.com/@ProximityFi/a-first-look-at-chain-signatures-cross-chain-without-bridges-81c8421d153c)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Introduction\"}, {\"id\": \"hxwcax\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Videos\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Learn about and experience Chain Abstraction\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[Introduction to Chain Abstraction](https://www.youtube.com/playlist?list=PLrLLmjcJVAB-hMq0mgAyzlOqccMHvQFys)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[Cross-Chain Without Bridges: Secure Interoperability With Threshold Signatures | Kendall Cole](https://www.youtube.com/watch?v=gCkOTjbJD3c)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[Send ETH on Ethereum Using Near Account in 1 TX](https://www.youtube.com/watch?v=0h-uY_fEoZE)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[Steps for Chain Signatures](https://youtu.be/bBGAispDnR0)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[Why Chain Abstraction is Great For Devs](https://youtu.be/Q3J3mxRct5Q)\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Videos\"}, {\"id\": \"lipr6d\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Technical Resources\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Start building with Chain Abstraction\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[Chain Signatures Docs](https://docs.near.org/abstraction/chain-signatures)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[NEAR Account Model](https://docs.near.org/concepts/protocol/account-model)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[Chain Signature API](https://github.com/near/near-fastauth-wallet/blob/dmd/chain_sig_docs/docs/chain_signature_api.org)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[NEAR Chain Abstraction Library](https://github.com/Mintbase/near-ca)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nExamples:\\\\\\\\\\\\\\\\n[Basic Example](https://github.com/near-examples/near-multichain)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[Example Transaction](https://testnet.nearblocks.io/txns/9d1DHqWY3fwjScujsqEhJER8qnc5so33T2VbeCVBcPFQ)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[MPC Script - send ETH, BTC, and DOGE transactions through NEAR](https://github.com/mattlockyer/mpc-script)\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"Technical Resources\"}], \"admins\": [\"orangejoe.near\"], \"handle\": \"chain-abstraction\", \"logo_url\": \"https://ipfs.near.social/ipfs/bafkreibi2p7h2jailau6fwt4zf2xdifsqhc4dabsowmngzswpzr7r4ikiq\", \"banner_url\": \"https://ipfs.near.social/ipfs/bafybeihku3mz7yboz22sg2uxq25gepz7p32d55h7lqf3l2yleq2qo5iatm\", \"description\": \"Chain and Account Abstraction\", \"website_url\": \"docs.near.org/abstraction/what-is\", \"bio_markdown\": \"Learn more about how to build using Chain Abstraction on NEAR\", \"github_handle\": \"near-examples/near-multichain\", \"twitter_handle\": null, \"telegram_handle\": \"+RXYjlPob_XM5N2Ex\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.869613141766e+21
+    }
+  },
+  {
+    "id": "3337540340",
+    "receipt_id": "6Q7ucJxJJzx83iGQkz38FNs5XcAzB5PMEwxrGEywN2jS",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6eQCRm2TDsKCPgSvxnS6nNhNQqRvbdeownKUA9sDUc73",
+      "block_height": 115612721,
+      "block_timestamp": 1711582869229368600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 18925936924744,
+      "tokens_burnt": 1.8925936924744e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "EukLEKzjmkwrXVG7BMVbDeTTDagSackUiQvnQR2tNTMo",
+    "included_in_block_hash": "7V8WgudScm9YWuQAcSvphpQVbZRiPdxTmwNPKEdAoQDs",
+    "block_timestamp": "1711582866836620471",
+    "block": {
+      "block_height": 115612719
+    },
+    "receipt_conversion_tokens_burnt": "243450582563000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.8925936924744e+21,
+        "args": "{\"data\": {\"chain-abstraction.community.devhub.near\": {\"profile\": {\"name\": \"Chain Abstraction\", \"tags\": {\"community\": \"\", \"announcements\": \"\", \"chain-abstraction\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibi2p7h2jailau6fwt4zf2xdifsqhc4dabsowmngzswpzr7r4ikiq\"}, \"linktree\": {\"github\": \"near-examples/near-multichain\", \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=chain-abstraction\", \"telegram\": \"+RXYjlPob_XM5N2Ex\"}, \"description\": \"Learn more about how to build using Chain Abstraction on NEAR\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=chain-abstraction).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafybeihku3mz7yboz22sg2uxq25gepz7p32d55h7lqf3l2yleq2qo5iatm\"}}}, \"discussions.chain-abstraction.community.devhub.near\": {\"profile\": {\"name\": \"Chain Abstraction (Community Discussions)\", \"tags\": {\"community\": \"\", \"discussions\": \"\", \"chain-abstraction\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreibi2p7h2jailau6fwt4zf2xdifsqhc4dabsowmngzswpzr7r4ikiq\"}, \"linktree\": {\"github\": \"near-examples/near-multichain\", \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=chain-abstraction\", \"telegram\": \"+RXYjlPob_XM5N2Ex\"}, \"description\": \"Chain and Account Abstraction\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=chain-abstraction).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafybeihku3mz7yboz22sg2uxq25gepz7p32d55h7lqf3l2yleq2qo5iatm\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.869613141766e+21
+    }
+  },
+  {
+    "id": "3337703103",
+    "receipt_id": "2WDNoJ65hop4JGtjjfGgBkTgbno84G43y2DEES8w84KM",
+    "predecessor_account_id": "orangejoe.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5gKAa9rerujsbk5cHdeJYkBU4Rsiod1hYbwACz51Ykqc",
+      "block_height": 115613341,
+      "block_timestamp": 1711583579415174400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6491643488834,
+      "tokens_burnt": 649164348883400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "99r4Gmduxx5dcN3AUYekNeyv5HFcV257P1VeKhZAnMZx",
+    "included_in_block_hash": "FewXsrh1juJkqgKHZCQwTiBufDmaCMx5cQRFVX5qd8UR",
+    "block_timestamp": "1711583578468263607",
+    "block": {
+      "block_height": 115613340
+    },
+    "receipt_conversion_tokens_burnt": "242863202701200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 649164348883400000000,
+        "args": "{\"data\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"New video released on [why Chain Abstraction is a strong solution for developers.](https://twitter.com/NEARDevHub/status/1772995116099112971)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}, \"handle\": \"chain-abstraction\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4884718329732e+21
+    }
+  },
+  {
+    "id": "3337703278",
+    "receipt_id": "BkoikiEX1putLfTqmQsc8dTf3uqWJ8w2T5Z82Rrw3fgj",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5ASUWFpGq1YeyGi7ydfRD2tysG8hPvdyjugiHKv9BJnb",
+      "block_height": 115613342,
+      "block_timestamp": 1711583580509464300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5964442813886,
+      "tokens_burnt": 596444281388600000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "99r4Gmduxx5dcN3AUYekNeyv5HFcV257P1VeKhZAnMZx",
+    "included_in_block_hash": "FewXsrh1juJkqgKHZCQwTiBufDmaCMx5cQRFVX5qd8UR",
+    "block_timestamp": "1711583578468263607",
+    "block": {
+      "block_height": 115613340
+    },
+    "receipt_conversion_tokens_burnt": "242863202701200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 596444281388600000000,
+        "args": "{\"data\": {\"chain-abstraction.community.devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"New video released on [why Chain Abstraction is a strong solution for developers.](https://twitter.com/NEARDevHub/status/1772995116099112971)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4884718329732e+21
+    }
+  },
+  {
+    "id": "3340217590",
+    "receipt_id": "DfPpZscizMZAg4LmdxVLo8JnhnMVSphzvyjjaJrixSEd",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2MMC3JfPEgHRH2pyFQHbAY3C1fXMJh2stDmaWRYyhQ2V",
+      "block_height": 115620277,
+      "block_timestamp": 1711591925648644400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 9659428048407,
+      "tokens_burnt": 965942804840700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "7REeTyPnAp1jj8mvEGqJFR3NvEf9kNxCEFepUzeqcCYs",
+    "included_in_block_hash": "3sL868RjCJrn8gqhjeDSzXrMKF68SKPsSoUGLGZrfvgF",
+    "block_timestamp": "1711591924480661784",
+    "block": {
+      "block_height": 115620276
+    },
+    "receipt_conversion_tokens_burnt": "245453085053400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 965942804840700000000,
+        "args": "{\"addons\": [{\"id\": \"des7nb\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"About the Protocol Community\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"## Who are we\\\\\\\\\\\\\\\\nWithin the NEAR ecosystem, Protocol refers to the layer 1 blockchain, the foundation of NEAR ([ref](https://nomicon.io/Architecture)); contributors of Protocol mostly work on nearcore Github repository, containing critical implementation powering NEAR protocol blockchain including chain, sharding, network, storage and runtime. Through various researches, investigations, and rigorous discussions, we aim to build secure, reliable, and scalable blockchain infrastructure, where the vision of Blockchain OS and innovative Web3 apps can live on. \\\\\\\\\\\\\\\\nIf you are interested in how NEAR blockchain works and want to make contributions, this is the place for you!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## What is this space about\\\\\\\\\\\\\\\\nThis space aims to serve as an entry point to individuals, experts, and organizations who are interested in contributing to the ongoing innovation of the NEAR protocol. You will be able to find information about ongoing community programs, access to relevant documentations, and communication channels for you to participate in.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Community Groups\\\\\\\\\\\\\\\\nAs of now, the Protocol community consists of two groups: working group(PWG) and community group.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n### Protocol working group\\\\\\\\\\\\\\\\nThis formal group is a selected committee of subject matter experts who make official decisions on proposals related to the NEAR protocol. They follow a strict process to review proposals, recommend funding to DAO or grant programs, and hold grant takers accountable. They engage with the broader community to understand their needs and encourage ideation. Due to its significance, we pay special attention to the member selection process and make sure that each member can bring unique perspectives and experiences to improve NEAR protocol. With great power comes great responsibility.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### Current committee members\\\\\\\\\\\\\\\\nA protocol working group member will constantly seek a community member with deep expertise on how protocol works. When a qualified candidate is discovered, the committee goes through the nomination and alignment process to send an invitation.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nCurrent committee members are as follows:\\\\\\\\\\\\\\\\n* Bowen Wang ([Pagoda](https://www.pagoda.co/))\\\\\\\\\\\\\\\\n  * Near social: [@woben.near](https://near.social/#/mob.near/widget/ProfilePage?accountId=woben.near)\\\\\\\\\\\\\\\\n  * Github: [bowenwang1996](https://github.com/bowenwang1996)\\\\\\\\\\\\\\\\n* Marcelo Fornet\\\\\\\\\\\\\\\\n  * Near social: [@marcelo.near](https://near.social/#/mob.near/widget/ProfilePage?accountId=marcelo.near)\\\\\\\\\\\\\\\\n  * Github: [mfornet](https://github.com/mfornet)\\\\\\\\\\\\\\\\n  * Telegram: mnaeraxr\\\\\\\\\\\\\\\\n* Marcin Michalski ([Matter Labs](https://matter-labs.io/))\\\\\\\\\\\\\\\\n  * Github: [mm-near](https://github.com/mm-near)\\\\\\\\\\\\\\\\n* Michael Birch (Aurora)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### Responsibility\\\\\\\\\\\\\\\\n* Make decisions on Near Enhancement Proposals(A.K.A NEPs)\\\\\\\\\\\\\\\\n* Budget allocation for protocol development initiatives including RFPs, security audits, etc. This includes review of funding requests.\\\\\\\\\\\\\\\\n* Steer the general direction of protocol development\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### Communication channels\\\\\\\\\\\\\\\\n* Attend Protocol work group calls \\\\\\\\\\\\\\\\n* Message on Telegram channel: [link](https://t.me/NEAR_Protocol_Community_Group)\\\\\\\\\\\\\\\\n* Post on NEAR.org and tag [Pagoda](https://near.org/near/widget/ProfilePage?accountId=pagodaplatform.near)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n### Protocol community group\\\\\\\\\\\\\\\\nCommunity group is an open group providing a space for anyone interested in changes to the NEAR protocol. Unlike the Protocol working group, the community group does not require any commitment or membership. It focuses on offering a place where members can freely ask questions, seek/offer support, exchange ideas and initiate discussions. All contributors to nearcore repository, including [Pagoda](https://www.pagoda.co/) protocol team members, are implicit members of the community, and actively participate in community discussions.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* [Protocol Community Group TG Channel](https://t.me/NEAR_Protocol_Community_Group)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### Ongoing projects\\\\\\\\\\\\\\\\n* [Protocol roadmap](https://medium.com/nearprotocol/q1-protocol-roadmap-update-progress-and-changes-e2d61626e4a1)\\\\\\\\\\\\\\\\n* Github \\\\\\\\\\\\\\\\n  * [Major projects](https://github.com/near/nearcore/labels/C-tracking-issue)\\\\\\\\\\\\\\\\n  * [Discussions](https://github.com/near/nearcore/discussions)\\\\\\\\\\\\\\\\n  * [PRs](https://github.com/near/nearcore/pulls)\\\\\\\\\\\\\\\\n* [Sponsored projects](https://near.social/#/devgovgigs.near/widget/gigs-board.pages.community.Sponsorship?label=protocol)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Communication channels\\\\\\\\\\\\\\\\n* Attend periodic Protocol community group calls\\\\\\\\\\\\\\\\n* [Telegram channel](https://t.me/NEAR_Protocol_Community_Group)\\\\\\\\\\\\\\\\n* [Zulip](https://near.zulipchat.com/#narrow/stream/295558-pagoda.2Fcore)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n## Documents\\\\\\\\\\\\\\\\nProtocol community maintains several documents/wikis so community members can stay informative and efficient to find what they are seeking for. Here are major worth noting ones.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* [Guide to nearcore development](https://near.github.io/nearcore/index.html): Explains how each part of nearcore operates, e.g. how state sync, garbage collection, epoch works, how storage layer interacts with the layers on top, etc.\\\\\\\\\\\\\\\\n* [Nomicon](https://nomicon.io/): Near protocol specification\\\\\\\\\\\\\\\\n* [Near nodes](https://near-nodes.io/): Explains how near node works and how one can become a node operator \\\\\\\\\\\\\\\\n* [Near doc](https://docs.near.org/develop/welcome): Walks you through on how to develop on top of NEAR protocol, e.g. how to build a smart contract on NEAR\\\\\\\\\\\\\\\\n* [Rust](https://www.rust-lang.org/learn): Learn Rust, the programming language NEAR protocol is written in\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"About Us\"}, {\"id\": \"730ru7\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"How to contribute\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Protocol community group runs various events and programs you can participate in to improve NEAR blockchain. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Virtual meet ups\\\\\\\\\\\\\\\\nStay up-to-date on upcoming and past events in the NEAR protocol space. Whether it\\\\\\\\u{2019}s a monthly community call, hackathon, or meetup, you\\\\\\\\u{2019}ll find the details here to connect with other community members.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nCurrently, we have two periodic virtual meetups, one for general community group and another for working group.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n### Community Calls\\\\\\\\\\\\\\\\nThe Protocol Community Group hosts a monthly call to connect, share ideas or concerns, and stay up-to-date on the latest developments in the NEAR protocol.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### How to join the call\\\\\\\\\\\\\\\\nFind out about the latest meetings below or on our [Telegram channel](https://t.me/NEAR_Protocol_Community_Group).\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Who can attend\\\\\\\\\\\\\\\\nAnyone is welcome to attend the monthly call. Whether you\\\\\\\\\\\\'re an individual, organization, or an expert in the NEAR Protocol, it is open to all. Each call is recorded and posted on this page.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Format\\\\\\\\\\\\\\\\nThe monthly call is a free-format discussion with basic moderation. Anyone can volunteer to facilitate and lead future calls. The agenda typically starts with introductions from participants and follows with a list of potential discussion topics. The group will prioritize the topics based on what participants want to discuss the most. Topics may include updates from various members on any developments or initiatives, presentations on the latest research, as well as open discussion from questions and ideas to challenges and opportunities.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n## Work Group Calls\\\\\\\\\\\\\\\\nMostly, Protocol Working group reviews and discusses NEP asynchronously within the NEP\\\\\\\\u{2019}s public thread. This allows for broad participation and ensures transparency.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nHowever, if a discussion becomes circular and could benefit from a synchronous conversation, the Protocol Working Group may host public formal calls to review specific proposals, discuss attestations, or vote on decisions. For example, if a reviewer and author have multiple rounds of comments, they may request a call. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n## Monthly protocol engineer virtual meetup day\\\\\\\\\\\\\\\\nOnce a month, protocol engineers meet virtually on [Gather town](https://app.gather.town/app) to simulate \\\\\\\\u{2018}office working environment\\\\\\\\u{2019} by presenting in the virtual workspace during their work hours. By doing so, we encourage adhoc discussions and conversations to build stronger relationships and maximize our creativity. During this day, we also host a social hour so we can have fun activities together as well.\\\\\\\\\\\\\\\\nVirtual working day schedule is shared on [Zulip general stream](https://near.zulipchat.com/#narrow/stream/295302-general/topic/virtual.20meetup.20day)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n# Bug bounty program\\\\\\\\\\\\\\\\nBug bounty program is to leverage power of community to make NEAR protocol more secure and fraud-proof. If you notice any issues that can be a threat to our users on nearcore repo, please report them and claim the bounty! Please follow the [LINK](https://hackenproof.com/near/near-protocol) to Hacken proof Near protocol page to know more about the program\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n------\\\\\\\\\\\\\\\\n# Funding Proposal\\\\\\\\\\\\\\\\nIf you have the idea that can make NEAR protocol more scalable/reliable/secure, you can submit a proposal to get funding for your precious time and effort. Currently, NEAR DevDAO is running the funding program by collaborating with Protocol working group. Once a proposal is submitted, DevDAO will work with Protocol working group to determine the necessity of the project by thoroughly reviewing the proposal. Once conclusion is made, DevDAO will reach out to the proposer to share the final decision and work with them on the next step.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nTo learn more about the guidelines and how to submit a proposal for funding, please visit [here](https://near.social/devhub.near/widget/app?page=community&handle=developer-dao&tab=funding). \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#### How to participate\\\\\\\\\\\\\\\\nThere are several ways to participate in community activities. Here are common examples. \\\\\\\\\\\\\\\\n##### You have a feedback to share with developers or want to initiate a discussion\\\\\\\\\\\\\\\\n* Create a topic in [Zulip pagoda/core stream](https://near.zulipchat.com/#narrow/stream/295558-pagoda.2Fcore)\\\\\\\\\\\\\\\\n* Protocol community group discussion board\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### You want to know more about the NEAR protocol and have questions\\\\\\\\\\\\\\\\n* Ask a question in [Zulip pagoda/core/questions topic](https://near.zulipchat.com/#narrow/stream/295558-pagoda.2Fcore/topic/questions)\\\\\\\\\\\\\\\\n* As a question in [Protocol telegram](https://t.me/NEAR_Protocol_Community_Group)\\\\\\\\\\\\\\\\n* Protocol community group discussion board\\\\\\\\\\\\\\\\n* Post your question on [Near social](https://near.social/)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### You want to learn about NEAR protocol by working on a simple issue\\\\\\\\\\\\\\\\n* Request an onboarding task in [Zulip pagoda/core stream](https://near.zulipchat.com/#narrow/stream/295558-pagoda.2Fcore)\\\\\\\\\\\\\\\\n* Check out Github issues labeled with good-first-issue: [link](https://github.com/near/nearcore/labels/C-good-first-issue)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### You want to talk to Pagoda protocol team\\\\\\\\\\\\\\\\n* Simply start a conversation in [Zulip pagoda/core stream](https://near.zulipchat.com/#narrow/stream/295558-pagoda.2Fcore) and tag @ protocol\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### You want to know more about proposals on protocol specification\\\\\\\\\\\\\\\\n* Visit [Github NEP board](https://github.com/orgs/near/projects/51/views/3) to see open/completed proposals\\\\\\\\\\\\\\\\n* Read through [Near Enhancement Proposal guideline](https://github.com/near/NEPs/blob/master/neps/nep-0001.md) to learn about NEP approval process how to submit a proposal\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### You have an idea and want to request funding\\\\\\\\\\\\\\\\n* Please check \\\\\\\\u{2018}Event\\\\\\\\u{2019} tab\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n##### You have found a bug on NEAR and want to claim reward via bug bounty program\\\\\\\\\\\\\\\\n* Please check \\\\\\\\u{2018}Event\\\\\\\\u{2019} tab\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"How to contribute \\\\\\\\u{1f468}\\\\\\\\u{200d}\\\\\\\\u{1f4bb}\"}, {\"id\": \"3i6q64\", \"enabled\": true, \"addon_id\": \"blog\", \"parameters\": \"{}\", \"display_name\": \"Community Calls / Events \\\\\\\\u{1f3c6}\"}], \"handle\": \"protocol\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 3.1083290261811e+21
+    }
+  },
+  {
+    "id": "3340217892",
+    "receipt_id": "CTfH4QSAzgjbh2MrdD1t8Rxn9Qa1zEqNr4xWTYNmc72y",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "ABUxAMe6eHuUswb7fWxfbxJL2TP5yvq4e2VVQHtCstbT",
+      "block_height": 115620278,
+      "block_timestamp": 1711591926757449500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 18969331362870,
+      "tokens_burnt": 1.896933136287e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "7REeTyPnAp1jj8mvEGqJFR3NvEf9kNxCEFepUzeqcCYs",
+    "included_in_block_hash": "3sL868RjCJrn8gqhjeDSzXrMKF68SKPsSoUGLGZrfvgF",
+    "block_timestamp": "1711591924480661784",
+    "block": {
+      "block_height": 115620276
+    },
+    "receipt_conversion_tokens_burnt": "245453085053400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.896933136287e+21,
+        "args": "{\"data\": {\"protocol.community.devhub.near\": {\"profile\": {\"name\": \"Protocol\", \"tags\": {\"protocol\": \"\", \"community\": \"\", \"announcements\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreicjvpczuukqwp5wy7zvgq7marjudv6aoj7lld4tmjirowilqky3fq\"}, \"linktree\": {\"github\": \"https://near.social/near.org/#/devgovgigs.near/widget/gigs-board.pages.community.github?label=protocol\", \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=protocol\", \"telegram\": \"NEAR_Protocol_Community_Group\"}, \"description\": \"This space brings together individuals, experts, and organizations who are interested in contributing to the ongoing innovation of the NEAR protocol.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=protocol).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreia7otwa4yrxrer6swsotdsphzjk76soh2oyivn6nroavrq4cqwj4y\"}}}, \"discussions.protocol.community.devhub.near\": {\"profile\": {\"name\": \"Protocol (Community Discussions)\", \"tags\": {\"protocol\": \"\", \"community\": \"\", \"discussions\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreicjvpczuukqwp5wy7zvgq7marjudv6aoj7lld4tmjirowilqky3fq\"}, \"linktree\": {\"github\": \"https://near.social/near.org/#/devgovgigs.near/widget/gigs-board.pages.community.github?label=protocol\", \"twitter\": null, \"website\": \"near.social/devhub.near/widget/app?page=community&handle=protocol\", \"telegram\": \"NEAR_Protocol_Community_Group\"}, \"description\": \"Supporting the ongoing innovation of the NEAR Protocol.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=protocol).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreia7otwa4yrxrer6swsotdsphzjk76soh2oyivn6nroavrq4cqwj4y\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 3.1083290261811e+21
+    }
+  },
+  {
+    "id": "3344844483",
+    "receipt_id": "CZmJJuYmsaabnbUHwFgzCss92i8oy6BmBh5bpXmkaLF7",
+    "predecessor_account_id": "impishlass.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2oEXS9TwTkZEmc9xFZ9ZeXwmePd57k6H7zvxhYzagDiT",
+      "block_height": 115634572,
+      "block_timestamp": 1711609385366686200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 12577786373837,
+      "tokens_burnt": 1.2577786373837e+21,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "5qxJwos5PjVFwaAoCp6tJik77rNEocsGRvqwL5DS2CYF",
+    "included_in_block_hash": "GGhgYhWRhSURPTYwg52rcMJgxTxkcUuLDrH77CsVEsSi",
+    "block_timestamp": "1711609383604070631",
+    "block": {
+      "block_height": 115634571
+    },
+    "receipt_conversion_tokens_burnt": "243846342881000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "add_proposal",
+        "deposit": 0,
+        "fee": 1.2577786373837e+21,
+        "args": "{\"body\": {\"name\": \"Edu Warriors is a student-led movement, aiming to be a global platform\", \"summary\": \"EDU Warriors, a group of dedicated educators, enhances learning with aids in coding and blockchain. We recently held a technical workshop in Mumbai for 250 participants, led by alumni involved in social causes. Since 2021, we\\\\\\\\\\\\'ve focused on web3, blockchain, and metaverse topics in our boot camps, attracting 400 students to our August 2023 event. Serving over 30,000 students, we plan to host more events and boot camps.\", \"category\": \"Events & Hackathons\", \"timeline\": {\"status\": \"DRAFT\"}, \"supervisor\": null, \"description\": \"**Intro:** I am Meena Mishra, an educator, and an award-winning author. I teach at school and also conduct workshops for students on Literature, Language, and Technology. Since 2021, we have introduced blockchain, web3, metaverse, and cryptos. I have been watching how Near Ecosystem works and would like to propose to onboard my community to get better reach, learn, and contribute to the system.\\\\\\\\n\\\\\\\\n**PROPOSAL:** EDU Warriors, a group of dedicated educators, enhances learning with aids in coding and blockchain. We recently held a technical workshop in Mumbai for 250 participants, led by alumni involved in social causes. Since 2021, we\\\\\\\\\\\\'ve focused on web3, blockchain, and metaverse topics in our boot camps, attracting 400 students to our August 2023 event. Serving over 30,000 students, we plan to host more events and boot camps.\\\\\\\\n\\\\\\\\n**ROAD MAP:**`April 2024 - June 2024`\\\\\\\\n\\\\\\\\n- We\\\\\\\\\\\\'ve scheduled 4 boot camps and 3 workshops focusing on Blockchain, Cryptos, and the Metaverse.\\\\\\\\n- Already, 1000 students have registered for these workshops.\\\\\\\\n\\\\\\\\n**What\\\\\\\\\\\\'s in the pipeline for Near?**\\\\\\\\n\\\\\\\\n- Our goal is to welcome these students into the NEAR ECOSYSTEM, offering insight into how an L1 chain operates, and assisting in NFT minting.\\\\\\\\n- We\\\\\\\\\\\\'ve consulted with Near University materials and video content, which we\\\\\\\\\\\\'ll incorporate into the workshop.\\\\\\\\n- Our strategy is to engage a group of 1000 students, providing them with resources and teaching them how to navigate the platform, create NFTs, and contribute positively to the ecosystem.\\\\\\\\n\\\\\\\\n`June 2024 - August 2024`\\\\\\\\n\\\\\\\\n- We\\\\\\\\\\\\'ll host an event allowing these students to gain firsthand experience with the Near Ecosystem.\\\\\\\\n- Our emphasis will be on enabling these students to create NFTs and future DApps.\\\\\\\\n\\\\\\\\n**Target: **\\\\\\\\n\\\\\\\\n- We plan to onboard 3000 students to NearEcosystem\\\\\\\\n- 3000 Students to the NEAR Ecosystem with their wallets, custom wallet names.\\\\\\\\n- We plan to have bounties and contests to engage our community members.\\\\\\\\n- We will have free NFTs for new people\\\\\\\\n -\\\\\\\\u{a0}*Onboarding of new members and new nfts etc*\\\\\\\\n    - Metrics for measuring success:\\\\\\\\u{a0}*We have plans of having over 3000+ students joining the ecosystem by June 2024*\\\\\\\\n    - Estimated timeline and achievement milestones\\\\\\\\u{a0}*June 2024*\\\\\\\\n\\\\\\\\n**Funding: **\\\\\\\\nWe required $3500 USD\\\\\\\\n\\\\\\\\nFunding breakdown:\\\\\\\\n\\\\\\\\n- Venue Cost: $400 (For three different locations)\\\\\\\\n- Material Printing Cost: $300 (For notepads, pens, printed materials, whiteboards, markers, etc.)\\\\\\\\n- Refreshments: $200 (For tea/coffee and snacks during workshops)\\\\\\\\n- Promotional Material: $400 (For banners and posters displayed across the venue and local institutions)\\\\\\\\n- Social Media Promotion: $300 (For digital banners and posters on Facebook, Instagram, and Twitter)\\\\\\\\n- Participant Goodies: $400 (For items like stickers, badges, notebooks, t-shirts, etc. for top performers)\\\\\\\\n- WEB#3 Space: $500 (For creating Near wallets, Mintbase/Paras accounts, and student onboarding)\\\\\\\\n- Rewards: $1000 (For bounties, rewards, and recognition)\\\\\\\\n\\\\\\\\nI am enthusiastic about this opportunity and eagerly anticipate your support.\\\\\\\\n\\\\\\\\n\\\\\\\\nPleasse note:  I\\\\\\\\\\\\'ve been an active contributor and promoter in the Near ecosystem for the past 2 years. This time, I\\\\\\\\\\\\'ve sought the support of fellow Near members:\\\\\\\\n\\\\\\\\n1. Bernard D\\\\\\\\\\\\'sa (bernarddsa.near), who manages the creators DAO, RaindropsDAO, on Near.\\\\\\\\n2. Jackie (Jackierodz.near), who operates Paperless DAO and has published various books with other Near members.\\\\\\\\n\\\\\\\\nI\\\\\\\\\\\\'ve approached them for their support in bringing this mission to life, and they have agreed to join and support me in this endeavor.\\\\\\\\n\\\\\\\\nI have successfully directed a bootcamp and maintained ongoing communication with the Near India team, who expressed their support after observing the progress. However, I have not yet received any funding, which leads me to make a request for it here.\", \"linked_proposals\": [], \"receiver_account\": \"impishlass.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"3500\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"labels\": []}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.9855039065096e+21
+    }
+  },
+  {
+    "id": "3344847215",
+    "receipt_id": "Abrvs4wc7CJqy7fFpjvi6F2RMX7oXVNk5Bt8mqpej4he",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4CWtEXeUuveroUhVWo6RoiCDma8qJxvWXgrvj6GDatHU",
+      "block_height": 115634576,
+      "block_timestamp": 1711609391198046000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 5844871622078,
+      "tokens_burnt": 584487162207800000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5qxJwos5PjVFwaAoCp6tJik77rNEocsGRvqwL5DS2CYF",
+    "included_in_block_hash": "GGhgYhWRhSURPTYwg52rcMJgxTxkcUuLDrH77CsVEsSi",
+    "block_timestamp": "1711609383604070631",
+    "block": {
+      "block_height": 115634571
+    },
+    "receipt_conversion_tokens_burnt": "243846342881000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 584487162207800000000,
+        "args": "{\"data\": {\"devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"We have just received a new *Events & Hackathons* proposal.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**By**: @impishlass.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Title**: \\\\\\\\u{201c}Edu Warriors is a student-led movement, aiming to be a global platform\\\\\\\\u{201c}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Summary**:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nEDU Warriors, a group of dedicated educators, enhances learning with aids in coding and blockchain. We recently held a technical workshop in Mumbai for 250 participants, led by alumni involved in social causes. Since 2021, we\\\\\\\\\\\\'ve focused on web3, blockchain, and metaverse topics in our boot camps, attracting 400 students to our August 2023 event. Serving over 30,000 students, we plan to host more events and boot camps.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\u{2014}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nRead the full proposal and share your feedback on [DevHub](/devhub.near/widget/app?page=proposal&id=20)\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.9855039065096e+21
+    }
+  },
+  {
+    "id": "3344847217",
+    "receipt_id": "9FkvphxhhUHGPKs57v7MWqy7mQgCisR3DVdZ2PwNvPcD",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4CWtEXeUuveroUhVWo6RoiCDma8qJxvWXgrvj6GDatHU",
+      "block_height": 115634576,
+      "block_timestamp": 1711609391198046000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4158755140096,
+      "tokens_burnt": 415875514009600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "5qxJwos5PjVFwaAoCp6tJik77rNEocsGRvqwL5DS2CYF",
+    "included_in_block_hash": "GGhgYhWRhSURPTYwg52rcMJgxTxkcUuLDrH77CsVEsSi",
+    "block_timestamp": "1711609383604070631",
+    "block": {
+      "block_height": 115634571
+    },
+    "receipt_conversion_tokens_burnt": "243846342881000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_block_height_callback",
+        "deposit": 0,
+        "fee": 415875514009600000000,
+        "args": "{\"proposal\": {\"id\": 20, \"snapshot\": {\"name\": \"Edu Warriors is a student-led movement, aiming to be a global platform\", \"labels\": [], \"summary\": \"EDU Warriors, a group of dedicated educators, enhances learning with aids in coding and blockchain. We recently held a technical workshop in Mumbai for 250 participants, led by alumni involved in social causes. Since 2021, we\\\\\\\\\\\\'ve focused on web3, blockchain, and metaverse topics in our boot camps, attracting 400 students to our August 2023 event. Serving over 30,000 students, we plan to host more events and boot camps.\", \"category\": \"Events & Hackathons\", \"timeline\": {\"status\": \"DRAFT\"}, \"editor_id\": \"impishlass.near\", \"timestamp\": \"1711609389718930534\", \"supervisor\": null, \"description\": \"**Intro:** I am Meena Mishra, an educator, and an award-winning author. I teach at school and also conduct workshops for students on Literature, Language, and Technology. Since 2021, we have introduced blockchain, web3, metaverse, and cryptos. I have been watching how Near Ecosystem works and would like to propose to onboard my community to get better reach, learn, and contribute to the system.\\\\\\\\n\\\\\\\\n**PROPOSAL:** EDU Warriors, a group of dedicated educators, enhances learning with aids in coding and blockchain. We recently held a technical workshop in Mumbai for 250 participants, led by alumni involved in social causes. Since 2021, we\\\\\\\\\\\\'ve focused on web3, blockchain, and metaverse topics in our boot camps, attracting 400 students to our August 2023 event. Serving over 30,000 students, we plan to host more events and boot camps.\\\\\\\\n\\\\\\\\n**ROAD MAP:**`April 2024 - June 2024`\\\\\\\\n\\\\\\\\n- We\\\\\\\\\\\\'ve scheduled 4 boot camps and 3 workshops focusing on Blockchain, Cryptos, and the Metaverse.\\\\\\\\n- Already, 1000 students have registered for these workshops.\\\\\\\\n\\\\\\\\n**What\\\\\\\\\\\\'s in the pipeline for Near?**\\\\\\\\n\\\\\\\\n- Our goal is to welcome these students into the NEAR ECOSYSTEM, offering insight into how an L1 chain operates, and assisting in NFT minting.\\\\\\\\n- We\\\\\\\\\\\\'ve consulted with Near University materials and video content, which we\\\\\\\\\\\\'ll incorporate into the workshop.\\\\\\\\n- Our strategy is to engage a group of 1000 students, providing them with resources and teaching them how to navigate the platform, create NFTs, and contribute positively to the ecosystem.\\\\\\\\n\\\\\\\\n`June 2024 - August 2024`\\\\\\\\n\\\\\\\\n- We\\\\\\\\\\\\'ll host an event allowing these students to gain firsthand experience with the Near Ecosystem.\\\\\\\\n- Our emphasis will be on enabling these students to create NFTs and future DApps.\\\\\\\\n\\\\\\\\n**Target: **\\\\\\\\n\\\\\\\\n- We plan to onboard 3000 students to NearEcosystem\\\\\\\\n- 3000 Students to the NEAR Ecosystem with their wallets, custom wallet names.\\\\\\\\n- We plan to have bounties and contests to engage our community members.\\\\\\\\n- We will have free NFTs for new people\\\\\\\\n -\\\\\\\\u{a0}*Onboarding of new members and new nfts etc*\\\\\\\\n    - Metrics for measuring success:\\\\\\\\u{a0}*We have plans of having over 3000+ students joining the ecosystem by June 2024*\\\\\\\\n    - Estimated timeline and achievement milestones\\\\\\\\u{a0}*June 2024*\\\\\\\\n\\\\\\\\n**Funding: **\\\\\\\\nWe required $3500 USD\\\\\\\\n\\\\\\\\nFunding breakdown:\\\\\\\\n\\\\\\\\n- Venue Cost: $400 (For three different locations)\\\\\\\\n- Material Printing Cost: $300 (For notepads, pens, printed materials, whiteboards, markers, etc.)\\\\\\\\n- Refreshments: $200 (For tea/coffee and snacks during workshops)\\\\\\\\n- Promotional Material: $400 (For banners and posters displayed across the venue and local institutions)\\\\\\\\n- Social Media Promotion: $300 (For digital banners and posters on Facebook, Instagram, and Twitter)\\\\\\\\n- Participant Goodies: $400 (For items like stickers, badges, notebooks, t-shirts, etc. for top performers)\\\\\\\\n- WEB#3 Space: $500 (For creating Near wallets, Mintbase/Paras accounts, and student onboarding)\\\\\\\\n- Rewards: $1000 (For bounties, rewards, and recognition)\\\\\\\\n\\\\\\\\nI am enthusiastic about this opportunity and eagerly anticipate your support.\\\\\\\\n\\\\\\\\n\\\\\\\\nPleasse note:  I\\\\\\\\\\\\'ve been an active contributor and promoter in the Near ecosystem for the past 2 years. This time, I\\\\\\\\\\\\'ve sought the support of fellow Near members:\\\\\\\\n\\\\\\\\n1. Bernard D\\\\\\\\\\\\'sa (bernarddsa.near), who manages the creators DAO, RaindropsDAO, on Near.\\\\\\\\n2. Jackie (Jackierodz.near), who operates Paperless DAO and has published various books with other Near members.\\\\\\\\n\\\\\\\\nI\\\\\\\\\\\\'ve approached them for their support in bringing this mission to life, and they have agreed to join and support me in this endeavor.\\\\\\\\n\\\\\\\\nI have successfully directed a bootcamp and maintained ongoing communication with the Near India team, who expressed their support after observing the progress. However, I have not yet received any funding, which leads me to make a request for it here.\", \"linked_proposals\": [], \"receiver_account\": \"impishlass.near\", \"requested_sponsor\": \"neardevdao.near\", \"proposal_body_version\": \"V0\", \"requested_sponsorship_usd_amount\": \"3500\", \"requested_sponsorship_paid_in_currency\": \"NEAR\"}, \"author_id\": \"impishlass.near\", \"snapshot_history\": [], \"social_db_post_block_height\": \"0\"}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.9855039065096e+21
+    }
+  },
+  {
+    "id": "3344847220",
+    "receipt_id": "Fjb7Kt7GmTdX18Ux2fbFmTLuHEnRLQhRVfZLiW9oghVv",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "4CWtEXeUuveroUhVWo6RoiCDma8qJxvWXgrvj6GDatHU",
+      "block_height": 115634576,
+      "block_timestamp": 1711609391198046000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4835162500275,
+      "tokens_burnt": 483516250027500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5qxJwos5PjVFwaAoCp6tJik77rNEocsGRvqwL5DS2CYF",
+    "included_in_block_hash": "GGhgYhWRhSURPTYwg52rcMJgxTxkcUuLDrH77CsVEsSi",
+    "block_timestamp": "1711609383604070631",
+    "block": {
+      "block_height": 115634571
+    },
+    "receipt_conversion_tokens_burnt": "243846342881000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 483516250027500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"[{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"neardevdao.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":20,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"impishlass.near\\\\\\\\\\\\\\\"}}]\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.9855039065096e+21
+    }
+  },
+  {
+    "id": "3344881615",
+    "receipt_id": "HR56giPoJMK1jen2381s9qYoYW9EruyWuJvqUKp46MWc",
+    "predecessor_account_id": "impishlass.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "G53qnHTPmryYjs1fJH8rjBNYCaQXUjGyfpBBFHBM7djS",
+      "block_height": 115634661,
+      "block_timestamp": 1711609507110392600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7550860729284,
+      "tokens_burnt": 755086072928400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8GKg81qjFp6bUxJUJs7Ty2b1VT2MnokofYNkAf45d6Wh",
+    "included_in_block_hash": "Fq7wM5dVHGHdiFvkf2223cH9M41ksuYU1GaeWXohM77F",
+    "block_timestamp": "1711609505839379785",
+    "block": {
+      "block_height": 115634660
+    },
+    "receipt_conversion_tokens_burnt": "242822061515600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 755086072928400000000,
+        "args": "{\"id\": 20, \"timeline\": {\"status\": \"REVIEW\", \"sponsor_requested_review\": false, \"reviewer_completed_attestation\": false}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4759355129843e+21
+    }
+  },
+  {
+    "id": "3344883906",
+    "receipt_id": "5b381MZLEJ8AQRTGYdiQfW42KRjVyjoVRhpyu6kVoSKd",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2yoLfGPh77cFC3CMi24HrB67QJWWRGAsBnHpqtfkxLxL",
+      "block_height": 115634666,
+      "block_timestamp": 1711609513890048000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4780273785403,
+      "tokens_burnt": 478027378540300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8GKg81qjFp6bUxJUJs7Ty2b1VT2MnokofYNkAf45d6Wh",
+    "included_in_block_hash": "Fq7wM5dVHGHdiFvkf2223cH9M41ksuYU1GaeWXohM77F",
+    "block_timestamp": "1711609505839379785",
+    "block": {
+      "block_height": 115634660
+    },
+    "receipt_conversion_tokens_burnt": "242822061515600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 478027378540300000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"impishlass.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":20,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"impishlass.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4759355129843e+21
+    }
+  },
+  {
+    "id": "3346879531",
+    "receipt_id": "8harTzGy9eRkdcSoQVPFZNsmXJXeyJaQ5b4er7MhkpEN",
+    "predecessor_account_id": "megha19.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GTANzbKzHsLqAFMcXBHtsHNWo74rejirRDrGiwEER1gQ",
+      "block_height": 115639896,
+      "block_timestamp": 1711616095394283000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8401761821897,
+      "tokens_burnt": 840176182189700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "Ef8hYm5nPUEvLoF9gWwUEfjZvK6UCdy6qddv5RP6pEt7",
+    "included_in_block_hash": "7czTRGZ7qyhT2UiRnGEiHwrzbstLBZhYwd2UDA6E5AfJ",
+    "block_timestamp": "1711616094135277148",
+    "block": {
+      "block_height": 115639895
+    },
+    "receipt_conversion_tokens_burnt": "244246127880200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 840176182189700000000,
+        "args": "{\"addons\": [{\"id\": \"p56v0f\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"# \\\\\\\\u{1f44b} Welcome!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis community is all about delivering high impact features to the [NEAR DevHub Platform](http://neardevhub.org), a decentralized community platform for NEAR developers to contribute to the ecosystem and stay informed. This space aims to serve as an entry point to individuals, experts, and organizations who are interested in contributing. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Our Groups\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWe have two main groups:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### 1. Working group\\\\\\\\\\\\\\\\nThis formal group is a group of subject matter experts who make official decisions on proposals and questions related to the DevHub Platform. They follow a strict process to review proposals, recommend funding to DAO, and hold grant takers accountable. They also engage with the broader community to understand their needs and encourage ideation. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Members**\\\\\\\\\\\\\\\\n- @frol.near\\\\\\\\\\\\\\\\n- @ori.near\\\\\\\\\\\\\\\\n- @bo.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### 2. Community contributors\\\\\\\\\\\\\\\\nWe have a core group of regular product & technical community contributors who regularly work on making the DevHub platform better, from contributing code to reporting and triaging issues. These individuals collaborate across different time zones using lightweight and mostly asynchronous processes. To learn more about how we work, check out our project [README](https://github.com/near/neardevhub-widgets#how-to-contribute) page on GitHub.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## What are we working on?\\\\\\\\\\\\\\\\nTo track our progress and manage issues effectively, we use a [Kanban board](https://github.com/orgs/near/projects/60/views/1). You can also check out our [current](https://github.com/near/neardevhub-widgets/milestones) and [past](https://github.com/near/neardevhub-widgets/milestones?state=closed) initiatives.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Communication channels\\\\\\\\\\\\\\\\nWe use the following channels for communication:\\\\\\\\\\\\\\\\n- [GitHub:](https://github.com/orgs/near/projects/60/views/1) For specific issues and pull requests. Enable notifications to ensure you get the latest updates.\\\\\\\\\\\\\\\\n- [Telegram:](https://t.me/devhubplatform) For general questions or concerns.\\\\\\\\\\\\\\\\n- [Weekly Standup Calls](https://bit.ly/DevHubCalendar): To align on priorities and discuss progress, plans, and blockers.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## How to get involved\\\\\\\\\\\\\\\\nAnyone is welcome to contribute to the DevHub platform. Here are ways to get involved:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* **Contribute code**: Review the list of [good first issues](https://github.com/near/devgigsboard-widgets/contribute). You can pick any issues from the [Backlog column](https://github.com/orgs/near/projects/60) and indicate your interest by leaving comments. Before you get started, we encourage you to check out [how we work](https://github.com/near/devgigsboard-widgets/blob/main/docs/how-we-work.md) and the [developer guidelines](https://github.com/near/devgigsboard-widgets/blob/main/CONTRIBUTING.md).\\\\\\\\\\\\\\\\n* **Report issues**: To report a [bug](https://github.com/near/devgigsboard-widgets/issues/new?assignees=&labels=bug&template=bug_report.md&title=) or a [feature request](https://github.com/near/devgigsboard-widgets/issues/new?assignees=&labels=enhancement&template=feature-request.md&title=), please review all open and closed [issues](https://github.com/near/devgigsboard-widgets/issues?q=is%3Aissue+is%3Aall+) to make sure no one has previously created a similar topic. If you have a more robust proposal or idea that you\\\\\\\\\\\\'d like to discuss, you are also welcome to create an idea or solution post on our community here.\\\\\\\\\\\\\\\\n* **Triage issues**: You are welcome to help us triage by verifying or reproducing bugs, adding more specific reproduction instructions, or voting on issues by adding a \\\\\\\\u{1f44d} thumbs-up reaction to the issue\\\\\\\\\\\\'s description comment.  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### How to become a paid contributor\\\\\\\\\\\\\\\\nAs an an open-source project, we greatly approach the contributions of each individual. We aim to grow an ecosystem of developers who are here because they like the technology and community. Given that there\\\\\\\\u{2019}s a lot of time and effort that goes into this, we have financial means to compensate for some activities and projects for regular contributors.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you are interested in getting compensate for contributing your skills and expertise to our project, the best way to get started is to first familiarize yourself with [DevHub](https://www.neardevhub.org) and start getting involved (see section above). Once you\\\\\\\\u{2019}ve gained the community\\\\\\\\u{2019}s trust by demonstrating high-quality contributions and ongoing commitment, you can [apply here](https://near.social/#/devgovgigs.near/widget/gigs-board.pages.Post?id=507). \\\\\\\\\\\\\\\"}\", \"display_name\": \"About us \\\\\\\\u{2b50}\\\\\\\\u{fe0f}\"}, {\"id\": \"870s2b\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"A Developer\\\\\\\\\\\\'s Guide to Active Participation in the DevHub\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"**The DevHub Platform is your homebase for connecting with other developers and mentors, sharing ideas, proposing events, accessing resources, and finding communities working on diverse projects \\\\\\\\u{2013} from protocol development to tooling and documentation**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Ways to Participate \\\\\\\\u{1f468}\\\\\\\\u{200d}\\\\\\\\u{1f4bb}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **Join a Community:** Explore communities [here](https://near.social/devhub.near/widget/app?page=communities).\\\\\\\\\\\\\\\\n- **Improve NEAR Documentation:** Contribute on [GitHub](https://github.com/near/docs).\\\\\\\\\\\\\\\\n- **Seek Mentorship:** Check out Office hours hosted on Discord and connect with all DevRels via our DevRel Telegram.\\\\\\\\\\\\\\\\n- **Host an Event/Hackathon:** Wunna host an event / hackathon? Power it up with [Hackbox](https://near.social/hackbox.near/widget/home).\\\\\\\\\\\\\\\\n- **Join NEAR Campus:** To support your blockchain club / university...Be part of [NEAR Campus](https://near.social/devhub.near/widget/app?page=community&handle=near-campus).\\\\\\\\\\\\\\\\n- **Post a Proposal:** Got an idea you\\\\\\\\\\\\'ll like to bring to the Ecosystem? Use this [Guide](https://near.social/devhub.near/widget/app?page=blog&id=203)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### How to Stay Updated:\\\\\\\\\\\\\\\\nSubscribe to our [newsletter](https://newsletter.neardevhub.org/) and join the Telegram group for the latest updates.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Get Involved:\\\\\\\\\\\\\\\\nRegardless of your background or wherever you are in the world, we invite you to explore, find your community, and discover paths to contribute that are most gratifying for you. Let\\\\\\\\\\\\'s build the open web together!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"How to use DevHub \\\\\\\\u{1f468}\\\\\\\\u{200d}\\\\\\\\u{1f4bb}\"}, {\"id\": \"5jy6ev\", \"enabled\": true, \"addon_id\": \"blog\", \"parameters\": \"{}\", \"display_name\": \"DevHub Blog\"}], \"handle\": \"devhub-platform\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.9769922690561e+21
+    }
+  },
+  {
+    "id": "3346880712",
+    "receipt_id": "9TrAm63PVjHBbdBruBYpdk4m7VzL27JMeqDLoZumcmMi",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8qdwmnUvvEWPvQKdNVX4tKo9WRYaszYuxMsB9skqX3yx",
+      "block_height": 115639897,
+      "block_timestamp": 1711616096728974000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 18925699589862,
+      "tokens_burnt": 1.8925699589862e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "Ef8hYm5nPUEvLoF9gWwUEfjZvK6UCdy6qddv5RP6pEt7",
+    "included_in_block_hash": "7czTRGZ7qyhT2UiRnGEiHwrzbstLBZhYwd2UDA6E5AfJ",
+    "block_timestamp": "1711616094135277148",
+    "block": {
+      "block_height": 115639895
+    },
+    "receipt_conversion_tokens_burnt": "244246127880200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.8925699589862e+21,
+        "args": "{\"data\": {\"devhub-platform.community.devhub.near\": {\"profile\": {\"name\": \"DevHub Platform\", \"tags\": {\"community\": \"\", \"announcements\": \"\", \"devhub-platform\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreickgqvypgp5vty4udeuslxxaxm3n6lemwjfkebyddzzl4jif3qddi\"}, \"linktree\": {\"github\": \"near-devhub\", \"twitter\": \"NEARDevHub\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=devhub-platform\", \"telegram\": \"neardevhub\"}, \"description\": \"A community of product & technical contributors focusing on delivering high impact features to the DevHub Platform that empower NEAR developers to thrive and contribute.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=devhub-platform).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreievtx75idx2aw3ipy7q2etvvzxh2kn6e3evzqsgm3cjyh6otehtjy\"}}}, \"discussions.devhub-platform.community.devhub.near\": {\"profile\": {\"name\": \"DevHub Platform (Community Discussions)\", \"tags\": {\"community\": \"\", \"discussions\": \"\", \"devhub-platform\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreickgqvypgp5vty4udeuslxxaxm3n6lemwjfkebyddzzl4jif3qddi\"}, \"linktree\": {\"github\": \"near-devhub\", \"twitter\": \"NEARDevHub\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=devhub-platform\", \"telegram\": \"neardevhub\"}, \"description\": \"Delivering high impact features to the DevHub Platform.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=devhub-platform).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreievtx75idx2aw3ipy7q2etvvzxh2kn6e3evzqsgm3cjyh6otehtjy\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.9769922690561e+21
+    }
+  },
+  {
+    "id": "3346907696",
+    "receipt_id": "4jVeEBtmtFcGFKVudA1BBAT91EEME6Wqm4jXJKFbuNsQ",
+    "predecessor_account_id": "megha19.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Df5HZBucvghSQnDQUTgUqApmx86qJJUkkWiTnQrdhxpm",
+      "block_height": 115639942,
+      "block_timestamp": 1711616154011515600
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8413711815029,
+      "tokens_burnt": 841371181502900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "5h63vnogDxbKmRmRKqy5joUyYg1ffP5fDAh99eDJAFfF",
+    "included_in_block_hash": "4mVv9HUMRxbfBVFuLUmioZvAhM9LxqUMGSAZGHtTmGfN",
+    "block_timestamp": "1711616153035753955",
+    "block": {
+      "block_height": 115639941
+    },
+    "receipt_conversion_tokens_burnt": "244266922066400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_addons",
+        "deposit": 0,
+        "fee": 841371181502900000000,
+        "args": "{\"addons\": [{\"id\": \"p56v0f\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Overview\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"# \\\\\\\\u{1f44b} Welcome!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThis community is all about delivering high impact features to the [NEAR DevHub Platform](http://neardevhub.org), a decentralized community platform for NEAR developers to contribute to the ecosystem and stay informed. This space aims to serve as an entry point to individuals, experts, and organizations who are interested in contributing. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Our Groups\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWe have two main groups:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### 1. Working group\\\\\\\\\\\\\\\\nThis formal group is a group of subject matter experts who make official decisions on proposals and questions related to the DevHub Platform. They follow a strict process to review proposals, recommend funding to DAO, and hold grant takers accountable. They also engage with the broader community to understand their needs and encourage ideation. \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n**Members**\\\\\\\\\\\\\\\\n- @frol.near\\\\\\\\\\\\\\\\n- @ori.near\\\\\\\\\\\\\\\\n- @bo.near\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### 2. Community contributors\\\\\\\\\\\\\\\\nWe have a core group of regular product & technical community contributors who regularly work on making the DevHub platform better, from contributing code to reporting and triaging issues. These individuals collaborate across different time zones using lightweight and mostly asynchronous processes. To learn more about how we work, check out our project [README](https://github.com/near/neardevhub-widgets#how-to-contribute) page on GitHub.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## What are we working on?\\\\\\\\\\\\\\\\nTo track our progress and manage issues effectively, we use a [Kanban board](https://github.com/orgs/near/projects/60/views/1). You can also check out our [current](https://github.com/near/neardevhub-widgets/milestones) and [past](https://github.com/near/neardevhub-widgets/milestones?state=closed) initiatives.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Communication channels\\\\\\\\\\\\\\\\nWe use the following channels for communication:\\\\\\\\\\\\\\\\n- [GitHub:](https://github.com/orgs/near/projects/60/views/1) For specific issues and pull requests. Enable notifications to ensure you get the latest updates.\\\\\\\\\\\\\\\\n- [Telegram:](https://t.me/devhubplatform) For general questions or concerns.\\\\\\\\\\\\\\\\n- [Weekly Standup Calls](https://bit.ly/DevHubCalendar): To align on priorities and discuss progress, plans, and blockers.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## How to get involved\\\\\\\\\\\\\\\\nAnyone is welcome to contribute to the DevHub platform. Here are ways to get involved:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* **Contribute code**: Review the list of [good first issues](https://github.com/near/devgigsboard-widgets/contribute). You can pick any issues from the [Backlog column](https://github.com/orgs/near/projects/60) and indicate your interest by leaving comments. Before you get started, we encourage you to check out [how we work](https://github.com/near/devgigsboard-widgets/blob/main/docs/how-we-work.md) and the [developer guidelines](https://github.com/near/devgigsboard-widgets/blob/main/CONTRIBUTING.md).\\\\\\\\\\\\\\\\n* **Report issues**: To report a [bug](https://github.com/near/devgigsboard-widgets/issues/new?assignees=&labels=bug&template=bug_report.md&title=) or a [feature request](https://github.com/near/devgigsboard-widgets/issues/new?assignees=&labels=enhancement&template=feature-request.md&title=), please review all open and closed [issues](https://github.com/near/devgigsboard-widgets/issues?q=is%3Aissue+is%3Aall+) to make sure no one has previously created a similar topic. If you have a more robust proposal or idea that you\\\\\\\\\\\\'d like to discuss, you are also welcome to create an idea or solution post on our community here.\\\\\\\\\\\\\\\\n* **Triage issues**: You are welcome to help us triage by verifying or reproducing bugs, adding more specific reproduction instructions, or voting on issues by adding a \\\\\\\\u{1f44d} thumbs-up reaction to the issue\\\\\\\\\\\\'s description comment.  \\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### How to become a paid contributor\\\\\\\\\\\\\\\\nAs an an open-source project, we greatly approach the contributions of each individual. We aim to grow an ecosystem of developers who are here because they like the technology and community. Given that there\\\\\\\\u{2019}s a lot of time and effort that goes into this, we have financial means to compensate for some activities and projects for regular contributors.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nIf you are interested in getting compensate for contributing your skills and expertise to our project, the best way to get started is to first familiarize yourself with [DevHub](https://www.neardevhub.org) and start getting involved (see section above). Once you\\\\\\\\u{2019}ve gained the community\\\\\\\\u{2019}s trust by demonstrating high-quality contributions and ongoing commitment, you can [apply here](https://near.social/#/devgovgigs.near/widget/gigs-board.pages.Post?id=507). \\\\\\\\\\\\\\\"}\", \"display_name\": \"About us \\\\\\\\u{2b50}\\\\\\\\u{fe0f}\"}, {\"id\": \"870s2b\", \"enabled\": true, \"addon_id\": \"wiki\", \"parameters\": \"{\\\\\\\\\\\\\\\"title\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"A Developer\\\\\\\\\\\\'s Guide to Active Participation in the DevHub\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"subtitle\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"content\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"**The DevHub Platform is your homebase for connecting with other developers and mentors, sharing ideas, proposing events, accessing resources, and finding communities working on diverse projects \\\\\\\\u{2013} from protocol development to tooling and documentation**\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Ways to Participate \\\\\\\\u{1f468}\\\\\\\\u{200d}\\\\\\\\u{1f4bb}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n- **Join a Community:** Explore communities [here](https://near.social/devhub.near/widget/app?page=communities).\\\\\\\\\\\\\\\\n- **Improve NEAR Documentation:** Contribute on [GitHub](https://github.com/near/docs).\\\\\\\\\\\\\\\\n- **Seek Mentorship:** Check out Office hours hosted on Discord and connect with all DevRels via our DevRel Telegram.\\\\\\\\\\\\\\\\n- **Host an Event/Hackathon:** Wunna host an event / hackathon? Power it up with [Hackbox](https://near.social/hackbox.near/widget/home).\\\\\\\\\\\\\\\\n- **Join NEAR Campus:** To support your blockchain club / university...Be part of [NEAR Campus](https://near.social/devhub.near/widget/app?page=community&handle=near-campus).\\\\\\\\\\\\\\\\n- **Post a Proposal:** Got an idea you\\\\\\\\\\\\'ll like to bring to the Ecosystem? Use this [Guide](https://near.social/devhub.near/widget/app?page=blog&id=203)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### How to Stay Updated:\\\\\\\\\\\\\\\\nSubscribe to our [newsletter](https://newsletter.neardevhub.org/) and join the Telegram group for the latest updates.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n### Get Involved:\\\\\\\\\\\\\\\\nRegardless of your background or wherever you are in the world, we invite you to explore, find your community, and discover paths to contribute that are most gratifying for you. Let\\\\\\\\\\\\'s build the open web together!\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"textAlign\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"left\\\\\\\\\\\\\\\"}\", \"display_name\": \"How to use DevHub \\\\\\\\u{1f468}\\\\\\\\u{200d}\\\\\\\\u{1f4bb}\"}, {\"id\": \"5jy6ev\", \"enabled\": true, \"addon_id\": \"blog\", \"parameters\": \"{}\", \"display_name\": \"DevHub Blog\"}, {\"id\": \"h4y8yr\", \"enabled\": true, \"addon_id\": \"github\", \"parameters\": \"{}\", \"display_name\": \"Github\"}], \"handle\": \"devhub-platform\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.9740614757777e+21
+    }
+  },
+  {
+    "id": "3346907977",
+    "receipt_id": "AEctyDE7FTAFTL5Da6QWGBVQc6HveA9Nc2Sbrq7qkLzE",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2faQJncAq5tVCMmuRjbt41hVio6AW9W3Ps3VtH4SvQ3z",
+      "block_height": 115639943,
+      "block_timestamp": 1711616155122761700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 18884233722084,
+      "tokens_burnt": 1.8884233722084e+21,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "5h63vnogDxbKmRmRKqy5joUyYg1ffP5fDAh99eDJAFfF",
+    "included_in_block_hash": "4mVv9HUMRxbfBVFuLUmioZvAhM9LxqUMGSAZGHtTmGfN",
+    "block_timestamp": "1711616153035753955",
+    "block": {
+      "block_height": 115639941
+    },
+    "receipt_conversion_tokens_burnt": "244266922066400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 1.8884233722084e+21,
+        "args": "{\"data\": {\"devhub-platform.community.devhub.near\": {\"profile\": {\"name\": \"DevHub Platform\", \"tags\": {\"community\": \"\", \"announcements\": \"\", \"devhub-platform\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreickgqvypgp5vty4udeuslxxaxm3n6lemwjfkebyddzzl4jif3qddi\"}, \"linktree\": {\"github\": \"near-devhub\", \"twitter\": \"NEARDevHub\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=devhub-platform\", \"telegram\": \"neardevhub\"}, \"description\": \"A community of product & technical contributors focusing on delivering high impact features to the DevHub Platform that empower NEAR developers to thrive and contribute.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=devhub-platform).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreievtx75idx2aw3ipy7q2etvvzxh2kn6e3evzqsgm3cjyh6otehtjy\"}}}, \"discussions.devhub-platform.community.devhub.near\": {\"profile\": {\"name\": \"DevHub Platform (Community Discussions)\", \"tags\": {\"community\": \"\", \"discussions\": \"\", \"devhub-platform\": \"\"}, \"image\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreickgqvypgp5vty4udeuslxxaxm3n6lemwjfkebyddzzl4jif3qddi\"}, \"linktree\": {\"github\": \"near-devhub\", \"twitter\": \"NEARDevHub\", \"website\": \"near.social/devhub.near/widget/app?page=community&handle=devhub-platform\", \"telegram\": \"neardevhub\"}, \"description\": \"Delivering high impact features to the DevHub Platform.\\\\\\\\n\\\\\\\\nLearn more about our community [on DevHub](/devhub.near/widget/app?page=community&handle=devhub-platform).\", \"backgroundImage\": {\"url\": \"https://ipfs.near.social/ipfs/bafkreievtx75idx2aw3ipy7q2etvvzxh2kn6e3evzqsgm3cjyh6otehtjy\"}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 2.9740614757777e+21
+    }
+  },
+  {
+    "id": "3356893768",
+    "receipt_id": "8Fo217FsuoWfNrkWPb8tGGPZKgariTa8e8msrr4q1Kp2",
+    "predecessor_account_id": "victorkanu1.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7zA3EEjZ9GzywBxshLPF4AtUkYMmp2fxdZuiA9cKiVBY",
+      "block_height": 115665248,
+      "block_timestamp": 1711647602716575500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6453273901100,
+      "tokens_burnt": 645327390110000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "2yEiEFBtYmHPSNy7JEbNW4DYix9jbg8bfDx8odCL1jpr",
+    "included_in_block_hash": "CL8CKHytztY9NwVGC75WQ1BWRnHRguT6AFBwXaTMuMm4",
+    "block_timestamp": "1711647601368439934",
+    "block": {
+      "block_height": 115665247
+    },
+    "receipt_conversion_tokens_burnt": "242965161291600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 645327390110000000000,
+        "args": "{\"data\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"image\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"ipfs_cid\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bafkreigfjky4xsuiapenglamzkttdyt2ll2gnulfeut37sfvznoygdljgq\\\\\\\\\\\\\\\"},\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"**Can you believe it\\\\\\\\\\\\'s already the end of March!?** NEAR DevHub thanks you for being a part of this month\\\\\\\\\\\\'s journey with NEAR Dev NEWS! \\\\\\\\u{1f973}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWe hope you enjoyed the insightful updates, featured releases, developer discussions, and tips shared in our newsletters.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nBe sure to check out this weeks edition [NEAR Dev NEWS #5](https://near.social/devhub.near/widget/app?page=blog&id=3240) for the latest in technical updates across the ecosystem.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nStay tuned for the next edition and see you in April! \\\\\\\\u{2728}\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}, \"handle\": \"neardevnews\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4916782841394e+21
+    }
+  },
+  {
+    "id": "3356894540",
+    "receipt_id": "G51W7yctKuyWdfgS1gd9R7sZNEp5UtEjfXawGTPKPm6e",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HMetxQERoTeJrAkYvZad6Nkf2DburmoWkArPxMpwo9K3",
+      "block_height": 115665249,
+      "block_timestamp": 1711647604032715500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6033857327378,
+      "tokens_burnt": 603385732737800000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "2yEiEFBtYmHPSNy7JEbNW4DYix9jbg8bfDx8odCL1jpr",
+    "included_in_block_hash": "CL8CKHytztY9NwVGC75WQ1BWRnHRguT6AFBwXaTMuMm4",
+    "block_timestamp": "1711647601368439934",
+    "block": {
+      "block_height": 115665247
+    },
+    "receipt_conversion_tokens_burnt": "242965161291600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 603385732737800000000,
+        "args": "{\"data\": {\"neardevnews.community.devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"image\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"ipfs_cid\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"bafkreigfjky4xsuiapenglamzkttdyt2ll2gnulfeut37sfvznoygdljgq\\\\\\\\\\\\\\\"},\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"**Can you believe it\\\\\\\\\\\\'s already the end of March!?** NEAR DevHub thanks you for being a part of this month\\\\\\\\\\\\'s journey with NEAR Dev NEWS! \\\\\\\\u{1f973}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nWe hope you enjoyed the insightful updates, featured releases, developer discussions, and tips shared in our newsletters.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nBe sure to check out this weeks edition [NEAR Dev NEWS #5](https://near.social/devhub.near/widget/app?page=blog&id=3240) for the latest in technical updates across the ecosystem.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nStay tuned for the next edition and see you in April! \\\\\\\\u{2728}\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.4916782841394e+21
+    }
+  },
+  {
+    "id": "3359668115",
+    "receipt_id": "6L7NT2CNL3grCFpamQJxB9XA5zvYrtUH74mKc2uSKRwh",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FNux9sz6UdKcEkfZ5J3YBZwZqZjwaugL9onmJBZiWEon",
+      "block_height": 115670806,
+      "block_timestamp": 1711655126126921500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6748841474159,
+      "tokens_burnt": 674884147415900000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "BE1BHs2MCXmBPYfnfVSJ6PecDrVCGWGRqFwgo9gyWPgu",
+    "included_in_block_hash": "BPe8rTmgK8c4J1tTE3dxsyoPmaxUY7nnQqT759QXnV7x",
+    "block_timestamp": "1711655124803983689",
+    "block": {
+      "block_height": 115670805
+    },
+    "receipt_conversion_tokens_burnt": "243044984135400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 674884147415900000000,
+        "args": "{\"data\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"# NEAR Rust SDK 5.1 is out\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe highlights of the release can be found here:\\\\\\\\\\\\\\\\nhttps://github.com/near/near-sdk-rs/releases/tag/near-sdk-v5.1.0\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nKudos to @polyprogrammist.near for contributing the massive reduction to the boilerplate! Look at this beautifully clean example now:\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n```rust\\\\\\\\\\\\\\\\nuse near_sdk::{near, env};\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#[near(contract_state)]\\\\\\\\\\\\\\\\n#[derive(Default)]\\\\\\\\\\\\\\\\npub struct StatusMessage {\\\\\\\\\\\\\\\\n    records: HashMap<AccountId, String>,\\\\\\\\\\\\\\\\n}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n#[near]\\\\\\\\\\\\\\\\nimpl StatusMessage {\\\\\\\\\\\\\\\\n    pub fn set_status(&mut self, message: String) {\\\\\\\\\\\\\\\\n        let account_id = env::signer_account_id();\\\\\\\\\\\\\\\\n        self.records.insert(account_id, message);\\\\\\\\\\\\\\\\n    }\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n    pub fn get_status(&self, account_id: AccountId) -> Option<String> {\\\\\\\\\\\\\\\\n        self.records.get(&account_id).cloned()\\\\\\\\\\\\\\\\n    }\\\\\\\\\\\\\\\\n}\\\\\\\\\\\\\\\\n```\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\", \"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"polyprogrammist.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mention\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"item\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"social\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"path\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tooling.community.devhub.near/post/main\\\\\\\\\\\\\\\"}}}\"}}, \"handle\": \"tooling\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.569069430405e+21
+    }
+  }
+]

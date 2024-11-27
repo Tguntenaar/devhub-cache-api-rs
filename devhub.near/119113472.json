@@ -1,0 +1,1077 @@
+[
+  {
+    "id": "4763401660",
+    "receipt_id": "8n3aoZUysfjiARjvuTXWtkMnERoDVzXZNGeKdYz4Zxt2",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8FofdXtwipvFXdn1UoezJPbhdURvVwbbJcgHbBbgXP8X",
+      "block_height": 119114104,
+      "block_timestamp": 1715942255205942800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4598778460770,
+      "tokens_burnt": 459877846077000000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8yQ7fuWrG1a9JXNVTTbcn4RCh6AgWLvHys1dzJK3aHGU",
+    "included_in_block_hash": "Fqo5HLGBecDGsj5q1p1msGAc86tQ27hTN9Zc3opa4x6q",
+    "block_timestamp": "1715942254322563009",
+    "block": {
+      "block_height": 119114103
+    },
+    "receipt_conversion_tokens_burnt": "30835911515600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 459877846077000000000,
+        "args": "{\"id\": 81, \"timeline\": {\"status\": \"APPROVED\", \"sponsor_requested_review\": true, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 849109237296100000000
+    }
+  },
+  {
+    "id": "4763402024",
+    "receipt_id": "AVp9Kp1cYLNx2aidjo4WF9hvHRDA2H8VMAMDvCaGgHY4",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EAwWWjPHGucehK7X6FznL3qvmMLjFjTNACBrz1qyCJm9",
+      "block_height": 119114105,
+      "block_timestamp": 1715942256263628300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3583954797035,
+      "tokens_burnt": 358395479703500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8yQ7fuWrG1a9JXNVTTbcn4RCh6AgWLvHys1dzJK3aHGU",
+    "included_in_block_hash": "Fqo5HLGBecDGsj5q1p1msGAc86tQ27hTN9Zc3opa4x6q",
+    "block_timestamp": "1715942254322563009",
+    "block": {
+      "block_height": 119114103
+    },
+    "receipt_conversion_tokens_burnt": "30835911515600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 358395479703500000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"22516c1b4e5d40db919e5e56a040c5670eac947fcb53a71207d5ce640a973820\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":81,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"frol.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 849109237296100000000
+    }
+  },
+  {
+    "id": "4763683568",
+    "receipt_id": "FxoGJLqm6LGPBoDUtKww6TESFvLx4v49BTEmW3TnSA11",
+    "predecessor_account_id": "frol.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "FR6KWR8ys3e3JP7azCLih6rMDozy3qm3HUhvfX13ZoRT",
+      "block_height": 119114844,
+      "block_timestamp": 1715943086832725800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6580100291113,
+      "tokens_burnt": 658010029111300000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "6FPbPihjwXyZ2pa7DBwFdvyXeMVyx8FGXqUKdvXghfJZ",
+    "included_in_block_hash": "49GMo13puxnsWZ2vGm74h1sih5VMVH97HKSSVSNrdJB7",
+    "block_timestamp": "1715943085919880894",
+    "block": {
+      "block_height": 119114843
+    },
+    "receipt_conversion_tokens_burnt": "30857376482000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "edit_proposal_timeline",
+        "deposit": 0,
+        "fee": 658010029111300000000,
+        "args": "{\"id\": 62, \"timeline\": {\"status\": \"PAYMENT_PROCESSING\", \"kyc_verified\": true, \"test_transaction_sent\": true, \"sponsor_requested_review\": true, \"request_for_trustees_created\": false, \"reviewer_completed_attestation\": true}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0410198339252e+21
+    }
+  },
+  {
+    "id": "4763683839",
+    "receipt_id": "5farzpW3WzapunXxqrTfPjCusXrEojSmdXqYdiRyWmHE",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9VafSnbT2wU18o5imptqLV9iSdjaEb5sGfPk3Qs4kTWC",
+      "block_height": 119114845,
+      "block_timestamp": 1715943087875374300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3521524283319,
+      "tokens_burnt": 352152428331900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "6FPbPihjwXyZ2pa7DBwFdvyXeMVyx8FGXqUKdvXghfJZ",
+    "included_in_block_hash": "49GMo13puxnsWZ2vGm74h1sih5VMVH97HKSSVSNrdJB7",
+    "block_timestamp": "1715943085919880894",
+    "block": {
+      "block_height": 119114843
+    },
+    "receipt_conversion_tokens_burnt": "30857376482000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 352152428331900000000,
+        "args": "{\"data\": {\"devhub.near\": {\"index\": {\"notify\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"iamwal.near\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"devhub/edit\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"proposal\\\\\\\\\\\\\\\":62,\\\\\\\\\\\\\\\"notifier\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"frol.near\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.0410198339252e+21
+    }
+  },
+  {
+    "id": "4770697310",
+    "receipt_id": "45cNE3B2Gqvzq6y6JP9AmiCxzhvsKwqVA8Mr91EtzyLT",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BbFLCBibu2nVcwXNJCUZVfWAwP4i194HhrSwCqbxGdLS",
+      "block_height": 119131819,
+      "block_timestamp": 1715963240341630000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4089292490624,
+      "tokens_burnt": 408929249062400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "DFKR1t8JMsBBSbYnvgeTaw44opjm7FiQj7JLvCtUPLJC",
+    "included_in_block_hash": "Ao1BhBAFdBc4CXZ9JWoMY7S8ViiuHAdcdAC66KgaZU54",
+    "block_timestamp": "1715963239135633635",
+    "block": {
+      "block_height": 119131818
+    },
+    "receipt_conversion_tokens_burnt": "31819946069000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 408929249062400000000,
+        "args": "{\"data\": {\"blog\": {\"blog-title-2-f3byj2\": {\"\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac risus consectetur, ultrices lectus a, vestibulum lectus. Donec commodo blandit ipsum, id elementum ipsum bibendum non. Aenean faucibus lorem sagittis commodo malesuada. Aliquam fermentum diam vitae scelerisque ornare. Mauris malesuada hendrerit neque, eget mollis nulla suscipit quis. Fusce posuere enim vitae lectus dictum accumsan. Maecenas ut rutrum lectus, sed ultrices justo. Etiam tempor vitae magna id sodales. Donec a viverra magna. Nulla dapibus enim id sapien congue fermentum. Phasellus quis neque pellentesque, aliquam mi sit amet, ornare leo. Mauris venenatis, massa eget lacinia vestibulum, quam quam convallis magna, vitae pharetra enim nunc pellentesque ligula. Maecenas in ipsum ut mauris interdum scelerisque. Morbi dolor dolor, porttitor vel urna sed, sodales auctor lacus. In bibendum congue nulla vel lobortis.\\\\\\\\n\\\\\\\\nVivamus consequat, velit sit amet fermentum sollicitudin, nisi ligula aliquet massa, eget efficitur lacus nulla sit amet libero. Maecenas varius facilisis ullamcorper. Quisque ultricies, massa sed pulvinar varius, nunc ante gravida sapien, ac rhoncus lectus nisl ac odio. Sed non accumsan mi. Suspendisse velit urna, tincidunt ac urna quis, accumsan malesuada erat. Mauris pellentesque interdum varius. Phasellus ornare tellus mattis velit venenatis blandit. In posuere enim ut efficitur molestie. Donec fringilla nibh sed nulla rutrum convallis. Vestibulum sit amet leo maximus, imperdiet purus quis, pretium ex. Vestibulum commodo lacinia erat id bibendum. Morbi congue ipsum a orci varius, eget varius nulla tempor. Curabitur maximus pharetra massa, et egestas nisl porttitor quis. Praesent hendrerit quam et diam dictum eleifend. Donec eget eros felis.\\\\\\\\n\\\\\\\\nMaecenas dignissim vel neque in venenatis. Nam condimentum est eget nibh consectetur, ac feugiat erat imperdiet. Sed consectetur mauris accumsan augue pharetra rhoncus. Suspendisse at ultricies tellus, in euismod magna. Nam aliquet metus in dolor ultricies sollicitudin. Quisque massa est, feugiat eu magna a, tincidunt accumsan risus. Nunc gravida magna sem. Duis luctus scelerisque ultricies. Etiam placerat sapien eget diam pulvinar venenatis. Pellentesque finibus fringilla arcu, non placerat erat volutpat at. Donec ac laoreet tortor. Praesent interdum purus non diam ullamcorper, quis tristique nibh mattis.\\\\\\\\n\\\\\\\\nAliquam sit amet sem vel tellus dictum ullamcorper vitae eget ex. Suspendisse elementum risus sed scelerisque rutrum. Morbi vehicula hendrerit neque, in tristique purus gravida sed. In hac habitasse platea dictumst. Duis massa leo, aliquam sed condimentum ut, ultrices vitae tortor. Integer a congue purus. Morbi cursus vitae arcu sed laoreet. Nulla laoreet, nisi eget interdum bibendum, quam est pretium purus, sed aliquam ex est ac leo. Donec volutpat sit amet ante quis cursus. Proin ultricies risus vitae mi aliquam aliquam. Fusce viverra eros sit amet leo bibendum cursus.\\\\\\\\n\\\\\\\\nQuisque dolor felis, finibus eu purus vel, dictum elementum urna. Nullam eros diam, porta in metus fringilla, euismod pulvinar erat. Duis non aliquet lacus. Mauris bibendum luctus lectus at auctor. In faucibus rhoncus metus. Nam posuere elit sit amet lectus tempor dapibus. Nulla tempor lectus quis diam luctus mattis. Nullam pulvinar faucibus elit ac ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque tristique, lorem ut viverra semper, magna arcu posuere risus, at vestibulum sapien ligula non libero. Mauris suscipit placerat nisl ut aliquam. Donec nec vestibulum metus. Aenean lacus metus, sagittis vel risus a, auctor viverra ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\", \"metadata\": {\"title\": \"Blog title 2 2\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"Subtitle 2\", \"updatedAt\": \"2024-05-17\", \"description\": \"This is a description 2. Vivamus consequat, velit sit amet fermentum sollicitudin, nisi ligula aliquet massa, eget efficitur lacus nulla sit amet libero. Maecenas varius facilisis ullamcorper. Quisque ultricies, massa sed pulvinar varius, nunc ante gravida sapien, ac rhoncus lectus nisl ac odio. Sed non accumsan mi. Suspendisse velit urna, tincidunt ac urna quis, accumsan malesuada erat. Mauris pellentesque interdum varius. Phasellus ornare tellus mattis velit venenatis blandit. In posuere enim.\", \"publishedAt\": \"2024-05-14\"}}}}, \"handle\": \"webassemblymusic\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2945435324299e+21
+    }
+  },
+  {
+    "id": "4770697885",
+    "receipt_id": "Ax66wo9mVMJCRGPm2vB4iu1upkwk1s8X1ujFHEn66PsV",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "8fb7gzUYVac3bdoxYYMNTyubmrxC3ak1Je6QfbGLhr8i",
+      "block_height": 119131820,
+      "block_timestamp": 1715963241540606500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8537943372985,
+      "tokens_burnt": 853794337298500000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "DFKR1t8JMsBBSbYnvgeTaw44opjm7FiQj7JLvCtUPLJC",
+    "included_in_block_hash": "Ao1BhBAFdBc4CXZ9JWoMY7S8ViiuHAdcdAC66KgaZU54",
+    "block_timestamp": "1715963239135633635",
+    "block": {
+      "block_height": 119131818
+    },
+    "receipt_conversion_tokens_burnt": "31819946069000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 853794337298500000000,
+        "args": "{\"data\": {\"webassemblymusic.community.devhub.near\": {\"blog\": {\"blog-title-2-f3byj2\": {\"\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac risus consectetur, ultrices lectus a, vestibulum lectus. Donec commodo blandit ipsum, id elementum ipsum bibendum non. Aenean faucibus lorem sagittis commodo malesuada. Aliquam fermentum diam vitae scelerisque ornare. Mauris malesuada hendrerit neque, eget mollis nulla suscipit quis. Fusce posuere enim vitae lectus dictum accumsan. Maecenas ut rutrum lectus, sed ultrices justo. Etiam tempor vitae magna id sodales. Donec a viverra magna. Nulla dapibus enim id sapien congue fermentum. Phasellus quis neque pellentesque, aliquam mi sit amet, ornare leo. Mauris venenatis, massa eget lacinia vestibulum, quam quam convallis magna, vitae pharetra enim nunc pellentesque ligula. Maecenas in ipsum ut mauris interdum scelerisque. Morbi dolor dolor, porttitor vel urna sed, sodales auctor lacus. In bibendum congue nulla vel lobortis.\\\\\\\\n\\\\\\\\nVivamus consequat, velit sit amet fermentum sollicitudin, nisi ligula aliquet massa, eget efficitur lacus nulla sit amet libero. Maecenas varius facilisis ullamcorper. Quisque ultricies, massa sed pulvinar varius, nunc ante gravida sapien, ac rhoncus lectus nisl ac odio. Sed non accumsan mi. Suspendisse velit urna, tincidunt ac urna quis, accumsan malesuada erat. Mauris pellentesque interdum varius. Phasellus ornare tellus mattis velit venenatis blandit. In posuere enim ut efficitur molestie. Donec fringilla nibh sed nulla rutrum convallis. Vestibulum sit amet leo maximus, imperdiet purus quis, pretium ex. Vestibulum commodo lacinia erat id bibendum. Morbi congue ipsum a orci varius, eget varius nulla tempor. Curabitur maximus pharetra massa, et egestas nisl porttitor quis. Praesent hendrerit quam et diam dictum eleifend. Donec eget eros felis.\\\\\\\\n\\\\\\\\nMaecenas dignissim vel neque in venenatis. Nam condimentum est eget nibh consectetur, ac feugiat erat imperdiet. Sed consectetur mauris accumsan augue pharetra rhoncus. Suspendisse at ultricies tellus, in euismod magna. Nam aliquet metus in dolor ultricies sollicitudin. Quisque massa est, feugiat eu magna a, tincidunt accumsan risus. Nunc gravida magna sem. Duis luctus scelerisque ultricies. Etiam placerat sapien eget diam pulvinar venenatis. Pellentesque finibus fringilla arcu, non placerat erat volutpat at. Donec ac laoreet tortor. Praesent interdum purus non diam ullamcorper, quis tristique nibh mattis.\\\\\\\\n\\\\\\\\nAliquam sit amet sem vel tellus dictum ullamcorper vitae eget ex. Suspendisse elementum risus sed scelerisque rutrum. Morbi vehicula hendrerit neque, in tristique purus gravida sed. In hac habitasse platea dictumst. Duis massa leo, aliquam sed condimentum ut, ultrices vitae tortor. Integer a congue purus. Morbi cursus vitae arcu sed laoreet. Nulla laoreet, nisi eget interdum bibendum, quam est pretium purus, sed aliquam ex est ac leo. Donec volutpat sit amet ante quis cursus. Proin ultricies risus vitae mi aliquam aliquam. Fusce viverra eros sit amet leo bibendum cursus.\\\\\\\\n\\\\\\\\nQuisque dolor felis, finibus eu purus vel, dictum elementum urna. Nullam eros diam, porta in metus fringilla, euismod pulvinar erat. Duis non aliquet lacus. Mauris bibendum luctus lectus at auctor. In faucibus rhoncus metus. Nam posuere elit sit amet lectus tempor dapibus. Nulla tempor lectus quis diam luctus mattis. Nullam pulvinar faucibus elit ac ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque tristique, lorem ut viverra semper, magna arcu posuere risus, at vestibulum sapien ligula non libero. Mauris suscipit placerat nisl ut aliquam. Donec nec vestibulum metus. Aenean lacus metus, sagittis vel risus a, auctor viverra ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\", \"metadata\": {\"title\": \"Blog title 2 2\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"Subtitle 2\", \"updatedAt\": \"2024-05-17\", \"description\": \"This is a description 2. Vivamus consequat, velit sit amet fermentum sollicitudin, nisi ligula aliquet massa, eget efficitur lacus nulla sit amet libero. Maecenas varius facilisis ullamcorper. Quisque ultricies, massa sed pulvinar varius, nunc ante gravida sapien, ac rhoncus lectus nisl ac odio. Sed non accumsan mi. Suspendisse velit urna, tincidunt ac urna quis, accumsan malesuada erat. Mauris pellentesque interdum varius. Phasellus ornare tellus mattis velit venenatis blandit. In posuere enim.\", \"publishedAt\": \"2024-05-14\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.2945435324299e+21
+    }
+  },
+  {
+    "id": "4771294880",
+    "receipt_id": "CfzQFBUxLPwQJ7oa8goXXmwfEQkrs3P6Ug3ojNHgntjS",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "Gya73gwDYhwoTHEn22zxBzy5urjYNPtgJHpWcuVysnKF",
+      "block_height": 119133209,
+      "block_timestamp": 1715964853648412200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4088996473446,
+      "tokens_burnt": 408899647344600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "48RiprJWsjYadKjaqCn4LT36ZkQzxacMrGKiafBjd6wA",
+    "included_in_block_hash": "AaUoCdaaWpo2dL2NCDGDTjYr4SGyA7fv2ifTxkJk9vhs",
+    "block_timestamp": "1715964852543028472",
+    "block": {
+      "block_height": 119133208
+    },
+    "receipt_conversion_tokens_burnt": "31820393255800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 408899647344600000000,
+        "args": "{\"data\": {\"blog\": {\"blog-title-2-f3byj2\": {\"\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac risus consectetur, ultrices lectus a, vestibulum lectus. Donec commodo blandit ipsum, id elementum ipsum bibendum non. Aenean faucibus lorem sagittis commodo malesuada. Aliquam fermentum diam vitae scelerisque ornare. Mauris malesuada hendrerit neque, eget mollis nulla suscipit quis. Fusce posuere enim vitae lectus dictum accumsan. Maecenas ut rutrum lectus, sed ultrices justo. Etiam tempor vitae magna id sodales. Donec a viverra magna. Nulla dapibus enim id sapien congue fermentum. Phasellus quis neque pellentesque, aliquam mi sit amet, ornare leo. Mauris venenatis, massa eget lacinia vestibulum, quam quam convallis magna, vitae pharetra enim nunc pellentesque ligula. Maecenas in ipsum ut mauris interdum scelerisque. Morbi dolor dolor, porttitor vel urna sed, sodales auctor lacus. In bibendum congue nulla vel lobortis.\\\\\\\\n\\\\\\\\nVivamus consequat, velit sit amet fermentum sollicitudin, nisi ligula aliquet massa, eget efficitur lacus nulla sit amet libero. Maecenas varius facilisis ullamcorper. Quisque ultricies, massa sed pulvinar varius, nunc ante gravida sapien, ac rhoncus lectus nisl ac odio. Sed non accumsan mi. Suspendisse velit urna, tincidunt ac urna quis, accumsan malesuada erat. Mauris pellentesque interdum varius. Phasellus ornare tellus mattis velit venenatis blandit. In posuere enim ut efficitur molestie. Donec fringilla nibh sed nulla rutrum convallis. Vestibulum sit amet leo maximus, imperdiet purus quis, pretium ex. Vestibulum commodo lacinia erat id bibendum. Morbi congue ipsum a orci varius, eget varius nulla tempor. Curabitur maximus pharetra massa, et egestas nisl porttitor quis. Praesent hendrerit quam et diam dictum eleifend. Donec eget eros felis.\\\\\\\\n\\\\\\\\nMaecenas dignissim vel neque in venenatis. Nam condimentum est eget nibh consectetur, ac feugiat erat imperdiet. Sed consectetur mauris accumsan augue pharetra rhoncus. Suspendisse at ultricies tellus, in euismod magna. Nam aliquet metus in dolor ultricies sollicitudin. Quisque massa est, feugiat eu magna a, tincidunt accumsan risus. Nunc gravida magna sem. Duis luctus scelerisque ultricies. Etiam placerat sapien eget diam pulvinar venenatis. Pellentesque finibus fringilla arcu, non placerat erat volutpat at. Donec ac laoreet tortor. Praesent interdum purus non diam ullamcorper, quis tristique nibh mattis.\\\\\\\\n\\\\\\\\nAliquam sit amet sem vel tellus dictum ullamcorper vitae eget ex. Suspendisse elementum risus sed scelerisque rutrum. Morbi vehicula hendrerit neque, in tristique purus gravida sed. In hac habitasse platea dictumst. Duis massa leo, aliquam sed condimentum ut, ultrices vitae tortor. Integer a congue purus. Morbi cursus vitae arcu sed laoreet. Nulla laoreet, nisi eget interdum bibendum, quam est pretium purus, sed aliquam ex est ac leo. Donec volutpat sit amet ante quis cursus. Proin ultricies risus vitae mi aliquam aliquam. Fusce viverra eros sit amet leo bibendum cursus.\\\\\\\\n\\\\\\\\nQuisque dolor felis, finibus eu purus vel, dictum elementum urna. Nullam eros diam, porta in metus fringilla, euismod pulvinar erat. Duis non aliquet lacus. Mauris bibendum luctus lectus at auctor. In faucibus rhoncus metus. Nam posuere elit sit amet lectus tempor dapibus. Nulla tempor lectus quis diam luctus mattis. Nullam pulvinar faucibus elit ac ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque tristique, lorem ut viverra semper, magna arcu posuere risus, at vestibulum sapien ligula non libero. Mauris suscipit placerat nisl ut aliquam. Donec nec vestibulum metus. Aenean lacus metus, sagittis vel risus a, auctor viverra ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\", \"metadata\": {\"title\": \"Blog title 2 2\", \"author\": \"theori.near\", \"status\": \"PUBLISH\", \"category\": \"guide\", \"subtitle\": \"Subtitle 2\", \"updatedAt\": \"2024-05-17\", \"description\": \"This is a description 2. Vivamus consequat, velit sit amet fermentum sollicitudin, nisi ligula aliquet massa, eget efficitur lacus nulla sit amet libero. Maecenas varius facilisis ullamcorper. Quisque ultricies, massa sed pulvinar varius, nunc ante gravida sapien, ac rhoncus lectus nisl ac odio. Sed non accumsan mi. Suspendisse velit urna, tincidunt ac urna quis, accumsan malesuada erat. Mauris pellentesque interdum varius. Phasellus ornare tellus mattis velit venenatis blandit. In posuere enim.\", \"publishedAt\": \"2024-05-14\"}}}}, \"handle\": \"webassemblymusic\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3000361885233e+21
+    }
+  },
+  {
+    "id": "4771295276",
+    "receipt_id": "FtxpiuKvZKw4s1DycZNzxo7vB66zpYW3iaTpE8UbeYoQ",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AZsGbPhXpp8pAMSENtD13TW1HC19hsTDuUVYQgLA2wkd",
+      "block_height": 119133210,
+      "block_timestamp": 1715964854820900000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8593161479229,
+      "tokens_burnt": 859316147922900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "48RiprJWsjYadKjaqCn4LT36ZkQzxacMrGKiafBjd6wA",
+    "included_in_block_hash": "AaUoCdaaWpo2dL2NCDGDTjYr4SGyA7fv2ifTxkJk9vhs",
+    "block_timestamp": "1715964852543028472",
+    "block": {
+      "block_height": 119133208
+    },
+    "receipt_conversion_tokens_burnt": "31820393255800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 859316147922900000000,
+        "args": "{\"data\": {\"webassemblymusic.community.devhub.near\": {\"blog\": {\"blog-title-2-f3byj2\": {\"\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac risus consectetur, ultrices lectus a, vestibulum lectus. Donec commodo blandit ipsum, id elementum ipsum bibendum non. Aenean faucibus lorem sagittis commodo malesuada. Aliquam fermentum diam vitae scelerisque ornare. Mauris malesuada hendrerit neque, eget mollis nulla suscipit quis. Fusce posuere enim vitae lectus dictum accumsan. Maecenas ut rutrum lectus, sed ultrices justo. Etiam tempor vitae magna id sodales. Donec a viverra magna. Nulla dapibus enim id sapien congue fermentum. Phasellus quis neque pellentesque, aliquam mi sit amet, ornare leo. Mauris venenatis, massa eget lacinia vestibulum, quam quam convallis magna, vitae pharetra enim nunc pellentesque ligula. Maecenas in ipsum ut mauris interdum scelerisque. Morbi dolor dolor, porttitor vel urna sed, sodales auctor lacus. In bibendum congue nulla vel lobortis.\\\\\\\\n\\\\\\\\nVivamus consequat, velit sit amet fermentum sollicitudin, nisi ligula aliquet massa, eget efficitur lacus nulla sit amet libero. Maecenas varius facilisis ullamcorper. Quisque ultricies, massa sed pulvinar varius, nunc ante gravida sapien, ac rhoncus lectus nisl ac odio. Sed non accumsan mi. Suspendisse velit urna, tincidunt ac urna quis, accumsan malesuada erat. Mauris pellentesque interdum varius. Phasellus ornare tellus mattis velit venenatis blandit. In posuere enim ut efficitur molestie. Donec fringilla nibh sed nulla rutrum convallis. Vestibulum sit amet leo maximus, imperdiet purus quis, pretium ex. Vestibulum commodo lacinia erat id bibendum. Morbi congue ipsum a orci varius, eget varius nulla tempor. Curabitur maximus pharetra massa, et egestas nisl porttitor quis. Praesent hendrerit quam et diam dictum eleifend. Donec eget eros felis.\\\\\\\\n\\\\\\\\nMaecenas dignissim vel neque in venenatis. Nam condimentum est eget nibh consectetur, ac feugiat erat imperdiet. Sed consectetur mauris accumsan augue pharetra rhoncus. Suspendisse at ultricies tellus, in euismod magna. Nam aliquet metus in dolor ultricies sollicitudin. Quisque massa est, feugiat eu magna a, tincidunt accumsan risus. Nunc gravida magna sem. Duis luctus scelerisque ultricies. Etiam placerat sapien eget diam pulvinar venenatis. Pellentesque finibus fringilla arcu, non placerat erat volutpat at. Donec ac laoreet tortor. Praesent interdum purus non diam ullamcorper, quis tristique nibh mattis.\\\\\\\\n\\\\\\\\nAliquam sit amet sem vel tellus dictum ullamcorper vitae eget ex. Suspendisse elementum risus sed scelerisque rutrum. Morbi vehicula hendrerit neque, in tristique purus gravida sed. In hac habitasse platea dictumst. Duis massa leo, aliquam sed condimentum ut, ultrices vitae tortor. Integer a congue purus. Morbi cursus vitae arcu sed laoreet. Nulla laoreet, nisi eget interdum bibendum, quam est pretium purus, sed aliquam ex est ac leo. Donec volutpat sit amet ante quis cursus. Proin ultricies risus vitae mi aliquam aliquam. Fusce viverra eros sit amet leo bibendum cursus.\\\\\\\\n\\\\\\\\nQuisque dolor felis, finibus eu purus vel, dictum elementum urna. Nullam eros diam, porta in metus fringilla, euismod pulvinar erat. Duis non aliquet lacus. Mauris bibendum luctus lectus at auctor. In faucibus rhoncus metus. Nam posuere elit sit amet lectus tempor dapibus. Nulla tempor lectus quis diam luctus mattis. Nullam pulvinar faucibus elit ac ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque tristique, lorem ut viverra semper, magna arcu posuere risus, at vestibulum sapien ligula non libero. Mauris suscipit placerat nisl ut aliquam. Donec nec vestibulum metus. Aenean lacus metus, sagittis vel risus a, auctor viverra ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\", \"metadata\": {\"title\": \"Blog title 2 2\", \"author\": \"theori.near\", \"status\": \"PUBLISH\", \"category\": \"guide\", \"subtitle\": \"Subtitle 2\", \"updatedAt\": \"2024-05-17\", \"description\": \"This is a description 2. Vivamus consequat, velit sit amet fermentum sollicitudin, nisi ligula aliquet massa, eget efficitur lacus nulla sit amet libero. Maecenas varius facilisis ullamcorper. Quisque ultricies, massa sed pulvinar varius, nunc ante gravida sapien, ac rhoncus lectus nisl ac odio. Sed non accumsan mi. Suspendisse velit urna, tincidunt ac urna quis, accumsan malesuada erat. Mauris pellentesque interdum varius. Phasellus ornare tellus mattis velit venenatis blandit. In posuere enim.\", \"publishedAt\": \"2024-05-14\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3000361885233e+21
+    }
+  },
+  {
+    "id": "4771312978",
+    "receipt_id": "G2EufxqBGAFTDC4P4u7NN2PWDYBpAffrJbTvVUpNTQr",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "6PdgUkkA7mK4LjWWX3oUARZs6N8qr33M4rnsPWwXfRMT",
+      "block_height": 119133248,
+      "block_timestamp": 1715964897643072000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4089292490624,
+      "tokens_burnt": 408929249062400000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "AriFC3nCH2tZgfj2uLL7y7sHLbDrpLyjZ9NJF3vo59j9",
+    "included_in_block_hash": "Aog2ZCDNADZMupVzTRRhr7fwdxXLjB4Fx3CwukgMuomP",
+    "block_timestamp": "1715964896142698942",
+    "block": {
+      "block_height": 119133246
+    },
+    "receipt_conversion_tokens_burnt": "31819946069000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 408929249062400000000,
+        "args": "{\"data\": {\"blog\": {\"blog-title-2-f3byj2\": {\"\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac risus consectetur, ultrices lectus a, vestibulum lectus. Donec commodo blandit ipsum, id elementum ipsum bibendum non. Aenean faucibus lorem sagittis commodo malesuada. Aliquam fermentum diam vitae scelerisque ornare. Mauris malesuada hendrerit neque, eget mollis nulla suscipit quis. Fusce posuere enim vitae lectus dictum accumsan. Maecenas ut rutrum lectus, sed ultrices justo. Etiam tempor vitae magna id sodales. Donec a viverra magna. Nulla dapibus enim id sapien congue fermentum. Phasellus quis neque pellentesque, aliquam mi sit amet, ornare leo. Mauris venenatis, massa eget lacinia vestibulum, quam quam convallis magna, vitae pharetra enim nunc pellentesque ligula. Maecenas in ipsum ut mauris interdum scelerisque. Morbi dolor dolor, porttitor vel urna sed, sodales auctor lacus. In bibendum congue nulla vel lobortis.\\\\\\\\n\\\\\\\\nVivamus consequat, velit sit amet fermentum sollicitudin, nisi ligula aliquet massa, eget efficitur lacus nulla sit amet libero. Maecenas varius facilisis ullamcorper. Quisque ultricies, massa sed pulvinar varius, nunc ante gravida sapien, ac rhoncus lectus nisl ac odio. Sed non accumsan mi. Suspendisse velit urna, tincidunt ac urna quis, accumsan malesuada erat. Mauris pellentesque interdum varius. Phasellus ornare tellus mattis velit venenatis blandit. In posuere enim ut efficitur molestie. Donec fringilla nibh sed nulla rutrum convallis. Vestibulum sit amet leo maximus, imperdiet purus quis, pretium ex. Vestibulum commodo lacinia erat id bibendum. Morbi congue ipsum a orci varius, eget varius nulla tempor. Curabitur maximus pharetra massa, et egestas nisl porttitor quis. Praesent hendrerit quam et diam dictum eleifend. Donec eget eros felis.\\\\\\\\n\\\\\\\\nMaecenas dignissim vel neque in venenatis. Nam condimentum est eget nibh consectetur, ac feugiat erat imperdiet. Sed consectetur mauris accumsan augue pharetra rhoncus. Suspendisse at ultricies tellus, in euismod magna. Nam aliquet metus in dolor ultricies sollicitudin. Quisque massa est, feugiat eu magna a, tincidunt accumsan risus. Nunc gravida magna sem. Duis luctus scelerisque ultricies. Etiam placerat sapien eget diam pulvinar venenatis. Pellentesque finibus fringilla arcu, non placerat erat volutpat at. Donec ac laoreet tortor. Praesent interdum purus non diam ullamcorper, quis tristique nibh mattis.\\\\\\\\n\\\\\\\\nAliquam sit amet sem vel tellus dictum ullamcorper vitae eget ex. Suspendisse elementum risus sed scelerisque rutrum. Morbi vehicula hendrerit neque, in tristique purus gravida sed. In hac habitasse platea dictumst. Duis massa leo, aliquam sed condimentum ut, ultrices vitae tortor. Integer a congue purus. Morbi cursus vitae arcu sed laoreet. Nulla laoreet, nisi eget interdum bibendum, quam est pretium purus, sed aliquam ex est ac leo. Donec volutpat sit amet ante quis cursus. Proin ultricies risus vitae mi aliquam aliquam. Fusce viverra eros sit amet leo bibendum cursus.\\\\\\\\n\\\\\\\\nQuisque dolor felis, finibus eu purus vel, dictum elementum urna. Nullam eros diam, porta in metus fringilla, euismod pulvinar erat. Duis non aliquet lacus. Mauris bibendum luctus lectus at auctor. In faucibus rhoncus metus. Nam posuere elit sit amet lectus tempor dapibus. Nulla tempor lectus quis diam luctus mattis. Nullam pulvinar faucibus elit ac ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque tristique, lorem ut viverra semper, magna arcu posuere risus, at vestibulum sapien ligula non libero. Mauris suscipit placerat nisl ut aliquam. Donec nec vestibulum metus. Aenean lacus metus, sagittis vel risus a, auctor viverra ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\", \"metadata\": {\"title\": \"Blog title 2 2\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"Subtitle 2\", \"updatedAt\": \"2024-05-17\", \"description\": \"This is a description 2. Vivamus consequat, velit sit amet fermentum sollicitudin, nisi ligula aliquet massa, eget efficitur lacus nulla sit amet libero. Maecenas varius facilisis ullamcorper. Quisque ultricies, massa sed pulvinar varius, nunc ante gravida sapien, ac rhoncus lectus nisl ac odio. Sed non accumsan mi. Suspendisse velit urna, tincidunt ac urna quis, accumsan malesuada erat. Mauris pellentesque interdum varius. Phasellus ornare tellus mattis velit venenatis blandit. In posuere enim.\", \"publishedAt\": \"2024-05-14\"}}}}, \"handle\": \"webassemblymusic\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3000723148003e+21
+    }
+  },
+  {
+    "id": "4771313376",
+    "receipt_id": "2LVdfrzj9M63ajBxtrJ2AYSiV3FBGbtbeWJNRSHK2siR",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "7HWEfkLtX3jDGxQPrT3zW1bfDSGkatCdwpPgu4o4fN7n",
+      "block_height": 119133249,
+      "block_timestamp": 1715964899548710100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8593231196689,
+      "tokens_burnt": 859323119668900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "AriFC3nCH2tZgfj2uLL7y7sHLbDrpLyjZ9NJF3vo59j9",
+    "included_in_block_hash": "Aog2ZCDNADZMupVzTRRhr7fwdxXLjB4Fx3CwukgMuomP",
+    "block_timestamp": "1715964896142698942",
+    "block": {
+      "block_height": 119133246
+    },
+    "receipt_conversion_tokens_burnt": "31819946069000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 859323119668900000000,
+        "args": "{\"data\": {\"webassemblymusic.community.devhub.near\": {\"blog\": {\"blog-title-2-f3byj2\": {\"\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac risus consectetur, ultrices lectus a, vestibulum lectus. Donec commodo blandit ipsum, id elementum ipsum bibendum non. Aenean faucibus lorem sagittis commodo malesuada. Aliquam fermentum diam vitae scelerisque ornare. Mauris malesuada hendrerit neque, eget mollis nulla suscipit quis. Fusce posuere enim vitae lectus dictum accumsan. Maecenas ut rutrum lectus, sed ultrices justo. Etiam tempor vitae magna id sodales. Donec a viverra magna. Nulla dapibus enim id sapien congue fermentum. Phasellus quis neque pellentesque, aliquam mi sit amet, ornare leo. Mauris venenatis, massa eget lacinia vestibulum, quam quam convallis magna, vitae pharetra enim nunc pellentesque ligula. Maecenas in ipsum ut mauris interdum scelerisque. Morbi dolor dolor, porttitor vel urna sed, sodales auctor lacus. In bibendum congue nulla vel lobortis.\\\\\\\\n\\\\\\\\nVivamus consequat, velit sit amet fermentum sollicitudin, nisi ligula aliquet massa, eget efficitur lacus nulla sit amet libero. Maecenas varius facilisis ullamcorper. Quisque ultricies, massa sed pulvinar varius, nunc ante gravida sapien, ac rhoncus lectus nisl ac odio. Sed non accumsan mi. Suspendisse velit urna, tincidunt ac urna quis, accumsan malesuada erat. Mauris pellentesque interdum varius. Phasellus ornare tellus mattis velit venenatis blandit. In posuere enim ut efficitur molestie. Donec fringilla nibh sed nulla rutrum convallis. Vestibulum sit amet leo maximus, imperdiet purus quis, pretium ex. Vestibulum commodo lacinia erat id bibendum. Morbi congue ipsum a orci varius, eget varius nulla tempor. Curabitur maximus pharetra massa, et egestas nisl porttitor quis. Praesent hendrerit quam et diam dictum eleifend. Donec eget eros felis.\\\\\\\\n\\\\\\\\nMaecenas dignissim vel neque in venenatis. Nam condimentum est eget nibh consectetur, ac feugiat erat imperdiet. Sed consectetur mauris accumsan augue pharetra rhoncus. Suspendisse at ultricies tellus, in euismod magna. Nam aliquet metus in dolor ultricies sollicitudin. Quisque massa est, feugiat eu magna a, tincidunt accumsan risus. Nunc gravida magna sem. Duis luctus scelerisque ultricies. Etiam placerat sapien eget diam pulvinar venenatis. Pellentesque finibus fringilla arcu, non placerat erat volutpat at. Donec ac laoreet tortor. Praesent interdum purus non diam ullamcorper, quis tristique nibh mattis.\\\\\\\\n\\\\\\\\nAliquam sit amet sem vel tellus dictum ullamcorper vitae eget ex. Suspendisse elementum risus sed scelerisque rutrum. Morbi vehicula hendrerit neque, in tristique purus gravida sed. In hac habitasse platea dictumst. Duis massa leo, aliquam sed condimentum ut, ultrices vitae tortor. Integer a congue purus. Morbi cursus vitae arcu sed laoreet. Nulla laoreet, nisi eget interdum bibendum, quam est pretium purus, sed aliquam ex est ac leo. Donec volutpat sit amet ante quis cursus. Proin ultricies risus vitae mi aliquam aliquam. Fusce viverra eros sit amet leo bibendum cursus.\\\\\\\\n\\\\\\\\nQuisque dolor felis, finibus eu purus vel, dictum elementum urna. Nullam eros diam, porta in metus fringilla, euismod pulvinar erat. Duis non aliquet lacus. Mauris bibendum luctus lectus at auctor. In faucibus rhoncus metus. Nam posuere elit sit amet lectus tempor dapibus. Nulla tempor lectus quis diam luctus mattis. Nullam pulvinar faucibus elit ac ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque tristique, lorem ut viverra semper, magna arcu posuere risus, at vestibulum sapien ligula non libero. Mauris suscipit placerat nisl ut aliquam. Donec nec vestibulum metus. Aenean lacus metus, sagittis vel risus a, auctor viverra ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\", \"metadata\": {\"title\": \"Blog title 2 2\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"Subtitle 2\", \"updatedAt\": \"2024-05-17\", \"description\": \"This is a description 2. Vivamus consequat, velit sit amet fermentum sollicitudin, nisi ligula aliquet massa, eget efficitur lacus nulla sit amet libero. Maecenas varius facilisis ullamcorper. Quisque ultricies, massa sed pulvinar varius, nunc ante gravida sapien, ac rhoncus lectus nisl ac odio. Sed non accumsan mi. Suspendisse velit urna, tincidunt ac urna quis, accumsan malesuada erat. Mauris pellentesque interdum varius. Phasellus ornare tellus mattis velit venenatis blandit. In posuere enim.\", \"publishedAt\": \"2024-05-14\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3000723148003e+21
+    }
+  },
+  {
+    "id": "4771319476",
+    "receipt_id": "CH2GqTfK2xiSUP2a611FCSn4bENzieeSMPF4FXCL65fL",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "856v1xQbXrtHWCrukjwzwMRgQDEm29U8EthvJx9hdEGe",
+      "block_height": 119133269,
+      "block_timestamp": 1715964922056740900
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4144580314328,
+      "tokens_burnt": 414458031432800000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "4uzt5BP8UsF89k1CrmgtUaSo6T8wL4y46L5bVWXDLBeW",
+    "included_in_block_hash": "4Q4qLRbMcZ2NK7nhqdBs6c2paPjJ7YyWM7m14x8QqrVK",
+    "block_timestamp": "1715964920979618255",
+    "block": {
+      "block_height": 119133268
+    },
+    "receipt_conversion_tokens_burnt": "31819946069000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 414458031432800000000,
+        "args": "{\"data\": {\"blog\": {\"blog-title-2-f3byj2\": {\"\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac risus consectetur, ultrices lectus a, vestibulum lectus. Donec commodo blandit ipsum, id elementum ipsum bibendum non. Aenean faucibus lorem sagittis commodo malesuada. Aliquam fermentum diam vitae scelerisque ornare. Mauris malesuada hendrerit neque, eget mollis nulla suscipit quis. Fusce posuere enim vitae lectus dictum accumsan. Maecenas ut rutrum lectus, sed ultrices justo. Etiam tempor vitae magna id sodales. Donec a viverra magna. Nulla dapibus enim id sapien congue fermentum. Phasellus quis neque pellentesque, aliquam mi sit amet, ornare leo. Mauris venenatis, massa eget lacinia vestibulum, quam quam convallis magna, vitae pharetra enim nunc pellentesque ligula. Maecenas in ipsum ut mauris interdum scelerisque. Morbi dolor dolor, porttitor vel urna sed, sodales auctor lacus. In bibendum congue nulla vel lobortis.\\\\\\\\n\\\\\\\\nVivamus consequat, velit sit amet fermentum sollicitudin, nisi ligula aliquet massa, eget efficitur lacus nulla sit amet libero. Maecenas varius facilisis ullamcorper. Quisque ultricies, massa sed pulvinar varius, nunc ante gravida sapien, ac rhoncus lectus nisl ac odio. Sed non accumsan mi. Suspendisse velit urna, tincidunt ac urna quis, accumsan malesuada erat. Mauris pellentesque interdum varius. Phasellus ornare tellus mattis velit venenatis blandit. In posuere enim ut efficitur molestie. Donec fringilla nibh sed nulla rutrum convallis. Vestibulum sit amet leo maximus, imperdiet purus quis, pretium ex. Vestibulum commodo lacinia erat id bibendum. Morbi congue ipsum a orci varius, eget varius nulla tempor. Curabitur maximus pharetra massa, et egestas nisl porttitor quis. Praesent hendrerit quam et diam dictum eleifend. Donec eget eros felis.\\\\\\\\n\\\\\\\\nMaecenas dignissim vel neque in venenatis. Nam condimentum est eget nibh consectetur, ac feugiat erat imperdiet. Sed consectetur mauris accumsan augue pharetra rhoncus. Suspendisse at ultricies tellus, in euismod magna. Nam aliquet metus in dolor ultricies sollicitudin. Quisque massa est, feugiat eu magna a, tincidunt accumsan risus. Nunc gravida magna sem. Duis luctus scelerisque ultricies. Etiam placerat sapien eget diam pulvinar venenatis. Pellentesque finibus fringilla arcu, non placerat erat volutpat at. Donec ac laoreet tortor. Praesent interdum purus non diam ullamcorper, quis tristique nibh mattis.\\\\\\\\n\\\\\\\\nAliquam sit amet sem vel tellus dictum ullamcorper vitae eget ex. Suspendisse elementum risus sed scelerisque rutrum. Morbi vehicula hendrerit neque, in tristique purus gravida sed. In hac habitasse platea dictumst. Duis massa leo, aliquam sed condimentum ut, ultrices vitae tortor. Integer a congue purus. Morbi cursus vitae arcu sed laoreet. Nulla laoreet, nisi eget interdum bibendum, quam est pretium purus, sed aliquam ex est ac leo. Donec volutpat sit amet ante quis cursus. Proin ultricies risus vitae mi aliquam aliquam. Fusce viverra eros sit amet leo bibendum cursus.\\\\\\\\n\\\\\\\\nQuisque dolor felis, finibus eu purus vel, dictum elementum urna. Nullam eros diam, porta in metus fringilla, euismod pulvinar erat. Duis non aliquet lacus. Mauris bibendum luctus lectus at auctor. In faucibus rhoncus metus. Nam posuere elit sit amet lectus tempor dapibus. Nulla tempor lectus quis diam luctus mattis. Nullam pulvinar faucibus elit ac ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque tristique, lorem ut viverra semper, magna arcu posuere risus, at vestibulum sapien ligula non libero. Mauris suscipit placerat nisl ut aliquam. Donec nec vestibulum metus. Aenean lacus metus, sagittis vel risus a, auctor viverra ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\", \"metadata\": {\"title\": \"Blog title 2 2\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"Subtitle 2\", \"updatedAt\": \"2024-05-17\", \"description\": \"This is a description 2. Vivamus consequat, velit sit amet fermentum sollicitudin, nisi ligula aliquet massa, eget efficitur lacus nulla sit amet libero. Maecenas varius facilisis ullamcorper. Quisque ultricies, massa sed pulvinar varius, nunc ante gravida sapien, ac rhoncus lectus nisl ac odio. Sed non accumsan mi. Suspendisse velit urna, tincidunt ac urna quis, accumsan malesuada erat. Mauris pellentesque interdum varius. Phasellus ornare tellus mattis velit venenatis blandit. In posuere enim.\", \"publishedAt\": \"2024-05-14\"}}}}, \"handle\": \"webassemblymusic\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3055813579795e+21
+    }
+  },
+  {
+    "id": "4771319798",
+    "receipt_id": "BMMpCuGbWsYfmmBJLTnRee3KRdTMjiCeNtawx6U6FVMU",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "AwU7dSzuLyGjcpLgVjfkdVxhBZmyYdtWeuwbXqSe7u1F",
+      "block_height": 119133270,
+      "block_timestamp": 1715964923098985200
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8593033804777,
+      "tokens_burnt": 859303380477700000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "4uzt5BP8UsF89k1CrmgtUaSo6T8wL4y46L5bVWXDLBeW",
+    "included_in_block_hash": "4Q4qLRbMcZ2NK7nhqdBs6c2paPjJ7YyWM7m14x8QqrVK",
+    "block_timestamp": "1715964920979618255",
+    "block": {
+      "block_height": 119133268
+    },
+    "receipt_conversion_tokens_burnt": "31819946069000000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 859303380477700000000,
+        "args": "{\"data\": {\"webassemblymusic.community.devhub.near\": {\"blog\": {\"blog-title-2-f3byj2\": {\"\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac risus consectetur, ultrices lectus a, vestibulum lectus. Donec commodo blandit ipsum, id elementum ipsum bibendum non. Aenean faucibus lorem sagittis commodo malesuada. Aliquam fermentum diam vitae scelerisque ornare. Mauris malesuada hendrerit neque, eget mollis nulla suscipit quis. Fusce posuere enim vitae lectus dictum accumsan. Maecenas ut rutrum lectus, sed ultrices justo. Etiam tempor vitae magna id sodales. Donec a viverra magna. Nulla dapibus enim id sapien congue fermentum. Phasellus quis neque pellentesque, aliquam mi sit amet, ornare leo. Mauris venenatis, massa eget lacinia vestibulum, quam quam convallis magna, vitae pharetra enim nunc pellentesque ligula. Maecenas in ipsum ut mauris interdum scelerisque. Morbi dolor dolor, porttitor vel urna sed, sodales auctor lacus. In bibendum congue nulla vel lobortis.\\\\\\\\n\\\\\\\\nVivamus consequat, velit sit amet fermentum sollicitudin, nisi ligula aliquet massa, eget efficitur lacus nulla sit amet libero. Maecenas varius facilisis ullamcorper. Quisque ultricies, massa sed pulvinar varius, nunc ante gravida sapien, ac rhoncus lectus nisl ac odio. Sed non accumsan mi. Suspendisse velit urna, tincidunt ac urna quis, accumsan malesuada erat. Mauris pellentesque interdum varius. Phasellus ornare tellus mattis velit venenatis blandit. In posuere enim ut efficitur molestie. Donec fringilla nibh sed nulla rutrum convallis. Vestibulum sit amet leo maximus, imperdiet purus quis, pretium ex. Vestibulum commodo lacinia erat id bibendum. Morbi congue ipsum a orci varius, eget varius nulla tempor. Curabitur maximus pharetra massa, et egestas nisl porttitor quis. Praesent hendrerit quam et diam dictum eleifend. Donec eget eros felis.\\\\\\\\n\\\\\\\\nMaecenas dignissim vel neque in venenatis. Nam condimentum est eget nibh consectetur, ac feugiat erat imperdiet. Sed consectetur mauris accumsan augue pharetra rhoncus. Suspendisse at ultricies tellus, in euismod magna. Nam aliquet metus in dolor ultricies sollicitudin. Quisque massa est, feugiat eu magna a, tincidunt accumsan risus. Nunc gravida magna sem. Duis luctus scelerisque ultricies. Etiam placerat sapien eget diam pulvinar venenatis. Pellentesque finibus fringilla arcu, non placerat erat volutpat at. Donec ac laoreet tortor. Praesent interdum purus non diam ullamcorper, quis tristique nibh mattis.\\\\\\\\n\\\\\\\\nAliquam sit amet sem vel tellus dictum ullamcorper vitae eget ex. Suspendisse elementum risus sed scelerisque rutrum. Morbi vehicula hendrerit neque, in tristique purus gravida sed. In hac habitasse platea dictumst. Duis massa leo, aliquam sed condimentum ut, ultrices vitae tortor. Integer a congue purus. Morbi cursus vitae arcu sed laoreet. Nulla laoreet, nisi eget interdum bibendum, quam est pretium purus, sed aliquam ex est ac leo. Donec volutpat sit amet ante quis cursus. Proin ultricies risus vitae mi aliquam aliquam. Fusce viverra eros sit amet leo bibendum cursus.\\\\\\\\n\\\\\\\\nQuisque dolor felis, finibus eu purus vel, dictum elementum urna. Nullam eros diam, porta in metus fringilla, euismod pulvinar erat. Duis non aliquet lacus. Mauris bibendum luctus lectus at auctor. In faucibus rhoncus metus. Nam posuere elit sit amet lectus tempor dapibus. Nulla tempor lectus quis diam luctus mattis. Nullam pulvinar faucibus elit ac ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque tristique, lorem ut viverra semper, magna arcu posuere risus, at vestibulum sapien ligula non libero. Mauris suscipit placerat nisl ut aliquam. Donec nec vestibulum metus. Aenean lacus metus, sagittis vel risus a, auctor viverra ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\", \"metadata\": {\"title\": \"Blog title 2 2\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"guide\", \"subtitle\": \"Subtitle 2\", \"updatedAt\": \"2024-05-17\", \"description\": \"This is a description 2. Vivamus consequat, velit sit amet fermentum sollicitudin, nisi ligula aliquet massa, eget efficitur lacus nulla sit amet libero. Maecenas varius facilisis ullamcorper. Quisque ultricies, massa sed pulvinar varius, nunc ante gravida sapien, ac rhoncus lectus nisl ac odio. Sed non accumsan mi. Suspendisse velit urna, tincidunt ac urna quis, accumsan malesuada erat. Mauris pellentesque interdum varius. Phasellus ornare tellus mattis velit venenatis blandit. In posuere enim.\", \"publishedAt\": \"2024-05-14\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3055813579795e+21
+    }
+  },
+  {
+    "id": "4771566610",
+    "receipt_id": "J1bLCDAMuTp2MdriZepDZYkGYii1i5LdWUbUZbJA9SiU",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "9s7ANDuf7QhXS2698ySUZ9mrdmrQCaknFJ2bYeq2ZAkK",
+      "block_height": 119133851,
+      "block_timestamp": 1715965626284539100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4088996473446,
+      "tokens_burnt": 408899647344600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "kR9RmRFUakr3mUrtKHaBJJJB3ee14NJvsjbZK4vejdG",
+    "included_in_block_hash": "8Zu3q7bWCHu4EJjzRxmPVsQbnQde9aWkH5Kouv9Xc3Uj",
+    "block_timestamp": "1715965624977292452",
+    "block": {
+      "block_height": 119133850
+    },
+    "receipt_conversion_tokens_burnt": "31820393255800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 408899647344600000000,
+        "args": "{\"data\": {\"blog\": {\"blog-title-2-f3byj2\": {\"\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac risus consectetur, ultrices lectus a, vestibulum lectus. Donec commodo blandit ipsum, id elementum ipsum bibendum non. Aenean faucibus lorem sagittis commodo malesuada. Aliquam fermentum diam vitae scelerisque ornare. Mauris malesuada hendrerit neque, eget mollis nulla suscipit quis. Fusce posuere enim vitae lectus dictum accumsan. Maecenas ut rutrum lectus, sed ultrices justo. Etiam tempor vitae magna id sodales. Donec a viverra magna. Nulla dapibus enim id sapien congue fermentum. Phasellus quis neque pellentesque, aliquam mi sit amet, ornare leo. Mauris venenatis, massa eget lacinia vestibulum, quam quam convallis magna, vitae pharetra enim nunc pellentesque ligula. Maecenas in ipsum ut mauris interdum scelerisque. Morbi dolor dolor, porttitor vel urna sed, sodales auctor lacus. In bibendum congue nulla vel lobortis.\\\\\\\\n\\\\\\\\nVivamus consequat, velit sit amet fermentum sollicitudin, nisi ligula aliquet massa, eget efficitur lacus nulla sit amet libero. Maecenas varius facilisis ullamcorper. Quisque ultricies, massa sed pulvinar varius, nunc ante gravida sapien, ac rhoncus lectus nisl ac odio. Sed non accumsan mi. Suspendisse velit urna, tincidunt ac urna quis, accumsan malesuada erat. Mauris pellentesque interdum varius. Phasellus ornare tellus mattis velit venenatis blandit. In posuere enim ut efficitur molestie. Donec fringilla nibh sed nulla rutrum convallis. Vestibulum sit amet leo maximus, imperdiet purus quis, pretium ex. Vestibulum commodo lacinia erat id bibendum. Morbi congue ipsum a orci varius, eget varius nulla tempor. Curabitur maximus pharetra massa, et egestas nisl porttitor quis. Praesent hendrerit quam et diam dictum eleifend. Donec eget eros felis.\\\\\\\\n\\\\\\\\nMaecenas dignissim vel neque in venenatis. Nam condimentum est eget nibh consectetur, ac feugiat erat imperdiet. Sed consectetur mauris accumsan augue pharetra rhoncus. Suspendisse at ultricies tellus, in euismod magna. Nam aliquet metus in dolor ultricies sollicitudin. Quisque massa est, feugiat eu magna a, tincidunt accumsan risus. Nunc gravida magna sem. Duis luctus scelerisque ultricies. Etiam placerat sapien eget diam pulvinar venenatis. Pellentesque finibus fringilla arcu, non placerat erat volutpat at. Donec ac laoreet tortor. Praesent interdum purus non diam ullamcorper, quis tristique nibh mattis.\\\\\\\\n\\\\\\\\nAliquam sit amet sem vel tellus dictum ullamcorper vitae eget ex. Suspendisse elementum risus sed scelerisque rutrum. Morbi vehicula hendrerit neque, in tristique purus gravida sed. In hac habitasse platea dictumst. Duis massa leo, aliquam sed condimentum ut, ultrices vitae tortor. Integer a congue purus. Morbi cursus vitae arcu sed laoreet. Nulla laoreet, nisi eget interdum bibendum, quam est pretium purus, sed aliquam ex est ac leo. Donec volutpat sit amet ante quis cursus. Proin ultricies risus vitae mi aliquam aliquam. Fusce viverra eros sit amet leo bibendum cursus.\\\\\\\\n\\\\\\\\nQuisque dolor felis, finibus eu purus vel, dictum elementum urna. Nullam eros diam, porta in metus fringilla, euismod pulvinar erat. Duis non aliquet lacus. Mauris bibendum luctus lectus at auctor. In faucibus rhoncus metus. Nam posuere elit sit amet lectus tempor dapibus. Nulla tempor lectus quis diam luctus mattis. Nullam pulvinar faucibus elit ac ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque tristique, lorem ut viverra semper, magna arcu posuere risus, at vestibulum sapien ligula non libero. Mauris suscipit placerat nisl ut aliquam. Donec nec vestibulum metus. Aenean lacus metus, sagittis vel risus a, auctor viverra ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\", \"metadata\": {\"title\": \"Blog title 2 2\", \"author\": \"theori.near\", \"status\": \"PUBLISH\", \"category\": \"guide\", \"subtitle\": \"Subtitle 2\", \"updatedAt\": \"2024-05-17\", \"description\": \"This is a description 2. Vivamus consequat, velit sit amet fermentum sollicitudin, nisi ligula aliquet massa, eget efficitur lacus nulla sit amet libero. Maecenas varius facilisis ullamcorper. Quisque ultricies, massa sed pulvinar varius, nunc ante gravida sapien, ac rhoncus lectus nisl ac odio. Sed non accumsan mi. Suspendisse velit urna, tincidunt ac urna quis, accumsan malesuada erat. Mauris pellentesque interdum varius. Phasellus ornare tellus mattis velit venenatis blandit. In posuere enim.\", \"publishedAt\": \"2024-05-14\"}}}}, \"handle\": \"webassemblymusic\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3000361885233e+21
+    }
+  },
+  {
+    "id": "4771567046",
+    "receipt_id": "9mdPeYR8Guv33Fnm54rDUwRtiEKS4QdnTJGGE5wXsxXZ",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "EMf2SbnPLAuS5aehFjPXGXmEkLkwtnYwUw9sAbZxGxSc",
+      "block_height": 119133852,
+      "block_timestamp": 1715965627610576400
+    },
+    "receipt_outcome": {
+      "gas_burnt": 8593161479229,
+      "tokens_burnt": 859316147922900000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "kR9RmRFUakr3mUrtKHaBJJJB3ee14NJvsjbZK4vejdG",
+    "included_in_block_hash": "8Zu3q7bWCHu4EJjzRxmPVsQbnQde9aWkH5Kouv9Xc3Uj",
+    "block_timestamp": "1715965624977292452",
+    "block": {
+      "block_height": 119133850
+    },
+    "receipt_conversion_tokens_burnt": "31820393255800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 859316147922900000000,
+        "args": "{\"data\": {\"webassemblymusic.community.devhub.near\": {\"blog\": {\"blog-title-2-f3byj2\": {\"\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac risus consectetur, ultrices lectus a, vestibulum lectus. Donec commodo blandit ipsum, id elementum ipsum bibendum non. Aenean faucibus lorem sagittis commodo malesuada. Aliquam fermentum diam vitae scelerisque ornare. Mauris malesuada hendrerit neque, eget mollis nulla suscipit quis. Fusce posuere enim vitae lectus dictum accumsan. Maecenas ut rutrum lectus, sed ultrices justo. Etiam tempor vitae magna id sodales. Donec a viverra magna. Nulla dapibus enim id sapien congue fermentum. Phasellus quis neque pellentesque, aliquam mi sit amet, ornare leo. Mauris venenatis, massa eget lacinia vestibulum, quam quam convallis magna, vitae pharetra enim nunc pellentesque ligula. Maecenas in ipsum ut mauris interdum scelerisque. Morbi dolor dolor, porttitor vel urna sed, sodales auctor lacus. In bibendum congue nulla vel lobortis.\\\\\\\\n\\\\\\\\nVivamus consequat, velit sit amet fermentum sollicitudin, nisi ligula aliquet massa, eget efficitur lacus nulla sit amet libero. Maecenas varius facilisis ullamcorper. Quisque ultricies, massa sed pulvinar varius, nunc ante gravida sapien, ac rhoncus lectus nisl ac odio. Sed non accumsan mi. Suspendisse velit urna, tincidunt ac urna quis, accumsan malesuada erat. Mauris pellentesque interdum varius. Phasellus ornare tellus mattis velit venenatis blandit. In posuere enim ut efficitur molestie. Donec fringilla nibh sed nulla rutrum convallis. Vestibulum sit amet leo maximus, imperdiet purus quis, pretium ex. Vestibulum commodo lacinia erat id bibendum. Morbi congue ipsum a orci varius, eget varius nulla tempor. Curabitur maximus pharetra massa, et egestas nisl porttitor quis. Praesent hendrerit quam et diam dictum eleifend. Donec eget eros felis.\\\\\\\\n\\\\\\\\nMaecenas dignissim vel neque in venenatis. Nam condimentum est eget nibh consectetur, ac feugiat erat imperdiet. Sed consectetur mauris accumsan augue pharetra rhoncus. Suspendisse at ultricies tellus, in euismod magna. Nam aliquet metus in dolor ultricies sollicitudin. Quisque massa est, feugiat eu magna a, tincidunt accumsan risus. Nunc gravida magna sem. Duis luctus scelerisque ultricies. Etiam placerat sapien eget diam pulvinar venenatis. Pellentesque finibus fringilla arcu, non placerat erat volutpat at. Donec ac laoreet tortor. Praesent interdum purus non diam ullamcorper, quis tristique nibh mattis.\\\\\\\\n\\\\\\\\nAliquam sit amet sem vel tellus dictum ullamcorper vitae eget ex. Suspendisse elementum risus sed scelerisque rutrum. Morbi vehicula hendrerit neque, in tristique purus gravida sed. In hac habitasse platea dictumst. Duis massa leo, aliquam sed condimentum ut, ultrices vitae tortor. Integer a congue purus. Morbi cursus vitae arcu sed laoreet. Nulla laoreet, nisi eget interdum bibendum, quam est pretium purus, sed aliquam ex est ac leo. Donec volutpat sit amet ante quis cursus. Proin ultricies risus vitae mi aliquam aliquam. Fusce viverra eros sit amet leo bibendum cursus.\\\\\\\\n\\\\\\\\nQuisque dolor felis, finibus eu purus vel, dictum elementum urna. Nullam eros diam, porta in metus fringilla, euismod pulvinar erat. Duis non aliquet lacus. Mauris bibendum luctus lectus at auctor. In faucibus rhoncus metus. Nam posuere elit sit amet lectus tempor dapibus. Nulla tempor lectus quis diam luctus mattis. Nullam pulvinar faucibus elit ac ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque tristique, lorem ut viverra semper, magna arcu posuere risus, at vestibulum sapien ligula non libero. Mauris suscipit placerat nisl ut aliquam. Donec nec vestibulum metus. Aenean lacus metus, sagittis vel risus a, auctor viverra ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\", \"metadata\": {\"title\": \"Blog title 2 2\", \"author\": \"theori.near\", \"status\": \"PUBLISH\", \"category\": \"guide\", \"subtitle\": \"Subtitle 2\", \"updatedAt\": \"2024-05-17\", \"description\": \"This is a description 2. Vivamus consequat, velit sit amet fermentum sollicitudin, nisi ligula aliquet massa, eget efficitur lacus nulla sit amet libero. Maecenas varius facilisis ullamcorper. Quisque ultricies, massa sed pulvinar varius, nunc ante gravida sapien, ac rhoncus lectus nisl ac odio. Sed non accumsan mi. Suspendisse velit urna, tincidunt ac urna quis, accumsan malesuada erat. Mauris pellentesque interdum varius. Phasellus ornare tellus mattis velit venenatis blandit. In posuere enim.\", \"publishedAt\": \"2024-05-14\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.3000361885233e+21
+    }
+  },
+  {
+    "id": "4771986454",
+    "receipt_id": "EtMHRGQCFLtfCmqKvRdomGRq1DvL5TF3GZhhRC5nCKyg",
+    "predecessor_account_id": "thomasguntenaar.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "GHmKyzPjGyQM1SWsPCn59SSQyRjtSBh42byNNms6dg9w",
+      "block_height": 119134806,
+      "block_timestamp": 1715966790278132000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3746439852607,
+      "tokens_burnt": 374643985260700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8KcpsvAqByuRLhD99pnRvrBhMQUzNmfKazSrNDiZ8U5Q",
+    "included_in_block_hash": "HjL792bn2ew9tLtzZY6aYkt6BfRb13Kb1KUNa6yoXzJL",
+    "block_timestamp": "1715966789404005325",
+    "block": {
+      "block_height": 119134805
+    },
+    "receipt_conversion_tokens_burnt": "30891809865600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 374643985260700000000,
+        "args": "{\"data\": {\"blog\": {\"this-is-the-blog-title-xfxkzh\": {\"\": \"This is the content\", \"metadata\": {\"title\": \"This is the blog title is longer than expectd\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"reference\", \"subtitle\": \"This is the subtitle\", \"updatedAt\": \"2024-05-17\", \"description\": \"this is a description\", \"publishedAt\": \"2024-02-13\"}}}}, \"handle\": \"webassemblymusic\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1960730332436e+21
+    }
+  },
+  {
+    "id": "4771987845",
+    "receipt_id": "2nVCpB6Rxgfs7Zvn9Bq9NuwFBF99tufExYv6rViXpRKF",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "2poEqEv4YN39ivdtihhp42zFK8Fh9U4MQRw26ybadL3n",
+      "block_height": 119134807,
+      "block_timestamp": 1715966791487223800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 7905372381173,
+      "tokens_burnt": 790537238117300000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "8KcpsvAqByuRLhD99pnRvrBhMQUzNmfKazSrNDiZ8U5Q",
+    "included_in_block_hash": "HjL792bn2ew9tLtzZY6aYkt6BfRb13Kb1KUNa6yoXzJL",
+    "block_timestamp": "1715966789404005325",
+    "block": {
+      "block_height": 119134805
+    },
+    "receipt_conversion_tokens_burnt": "30891809865600000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 790537238117300000000,
+        "args": "{\"data\": {\"webassemblymusic.community.devhub.near\": {\"blog\": {\"this-is-the-blog-title-xfxkzh\": {\"\": \"This is the content\", \"metadata\": {\"title\": \"This is the blog title is longer than expectd\", \"author\": \"theori.near\", \"status\": \"DRAFT\", \"category\": \"reference\", \"subtitle\": \"This is the subtitle\", \"updatedAt\": \"2024-05-17\", \"description\": \"this is a description\", \"publishedAt\": \"2024-02-13\"}}}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1960730332436e+21
+    }
+  },
+  {
+    "id": "4772858785",
+    "receipt_id": "HwmCS7z8uJYopFa7WyaAHgtqbwn5y126E9amNq6XLNCd",
+    "predecessor_account_id": "izcc.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "D16BB8q1hnWLR7bEfhDdSdWdXRDQZSguPrfDWF36YRMN",
+      "block_height": 119136978,
+      "block_timestamp": 1715969342516987000
+    },
+    "receipt_outcome": {
+      "gas_burnt": 4561781811817,
+      "tokens_burnt": 456178181181700000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "9xCWnK4BwKmcnQ9wkAzGvbHPJRXhSRVJzvTaRDKAiY3d",
+    "included_in_block_hash": "AvsKges3U87fYArf44b9QvtoGBLhbC6YYcB9zg7EQ121",
+    "block_timestamp": "1715969341132109239",
+    "block": {
+      "block_height": 119136977
+    },
+    "receipt_conversion_tokens_burnt": "33163071622800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set_community_socialdb",
+        "deposit": 0,
+        "fee": 456178181181700000000,
+        "args": "{\"data\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"# Report | NEAR Education Path Q1 2024\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nDuring the first quarter of 2024, the Open Web Academy team presented a proposal to implement an educational plan that included the design, promotion, and execution of 8 different certification groups focused on development in BOS in Spanish, the creation of smart contracts, and the basic understanding of the NEAR Protocol. The goal was to incorporate new developers into the ecosystem, develop new dApp solutions, and actively promote the use of the Blockchain Operating System and the NEAR technology stack.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nProposal last flow: https://near.org/devhub.near/widget/app?page=post&id=2837\\\\\\\\\\\\\\\\nProposal new flow: https://near.org/devhub.near/widget/app?page=proposal&id=82\\\\\\\\\\\\\\\\nShow the report in Google Sheet: [Report | NEAR Education Path](https://docs.google.com/spreadsheets/d/1YLtfmOgEy0k0nE487dgwekVo8_ue8tKM9jv86hjlvu8/edit#gid=0)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nShow the report in Google Sheet: [Report | NEAR Education Path](https://docs.google.com/spreadsheets/d/1YLtfmOgEy0k0nE487dgwekVo8_ue8tKM9jv86hjlvu8/edit#gid=0)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nShow the report in Google Slides: [Report-NEAR education Path](https://docs.google.com/presentation/d/1t2jcGag6YpzcY5TieUr88bGorVAac3idGT02kJqo2JI/edit#slide=id.g29212b18971_0_3)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# About NEAR Education Path \\\\\\\\u{1f9d1}\\\\\\\\u{200d}\\\\\\\\u{1f3eb}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe NEAR education Path by Open Web Academy consists of the design and execution of an educational path of 3 synchronous certifications via video call with asynchronous content to educate the general public and developers about the NEAR protocol and the development of solutions using NEAR\\\\\\\\\\\\'s smarcconract and Blockchain Operating System interfaces\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe complex and ever-evolving nature of blockchains, specifically NEAR, coupled with the lack of a standardized educational offering, makes it difficult for individuals to acquire an adequate level of proficiency in implementing and developing blockchain-based solutions. This can result in a gap between the growing demand for trained professionals and the availability of qualified talent to meet this demand.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# NEAR Education Path in numbers \\\\\\\\u{1f522}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* 8 different certification groups\\\\\\\\\\\\\\\\n* 3 different certifications\\\\\\\\\\\\\\\\n* 490 registered people\\\\\\\\\\\\\\\\n* 210 people actively participating on average\\\\\\\\\\\\\\\\n* 39 certificates\\\\\\\\\\\\\\\\n* 13 projects developed\\\\\\\\\\\\\\\\n* 40 hours of synchronous follow-up\\\\\\\\\\\\\\\\n* 35 hours of office hours for mentoring\\\\\\\\\\\\\\\\n* 4 universities involved\\\\\\\\\\\\\\\\n* 1 government organization\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n![|602x124](https://lh7-us.googleusercontent.com/BCIdzlQAk1X0x3Y2ZIFD1G0XyHNa3CpmzeZRqec7bReSTfLnx673F1YEIVv5N73LU7wxgLRSP7Su_jWjB2RGWByFFJyjgCZ4QjQkuMK53L1btDalWF2a2UqGEgoa1mTYZ72eG7bZ_tQ-qXDo20cf4XU)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Activities executed \\\\\\\\u{1f477}\\\\\\\\u{200d}\\\\\\\\u{2642}\\\\\\\\u{fe0f}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* Curricular and pedagogical development of the NEAR Elementals (NEC) Bootcamp with experts in education and technical experts\\\\\\\\\\\\\\\\n* Design and updated of Curriculum NEAR Certified Developer Bootcamp (NCD) with experts in education and technical experts\\\\\\\\\\\\\\\\n* Instructional design for the teaching of NEC and NCD\\\\\\\\\\\\\\\\n* Promotional activities and engagement with those interested in the program\\\\\\\\\\\\\\\\n* Delivery of the 2 x NEAR Elementals Certified Bootcamp (NEC)\\\\\\\\\\\\\\\\n* Delivery of the 3 x BOS Certified Developer Bootcamp (BCD)\\\\\\\\\\\\\\\\n* Delivery of the 3 x NEAR Certified Developer Bootcamp (NCD)\\\\\\\\\\\\\\\\n* Partnerships with regional educational authorities to teach certifications with professors and university students.\\\\\\\\\\\\\\\\n* Evaluation of deliverables and give feedback to the participants\\\\\\\\\\\\\\\\n* Office Hours sessions to ensure learning and 1:1 support with technical questions.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Participant metrics \\\\\\\\u{1f4c8}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[General metrics about participants](https://docs.google.com/spreadsheets/d/1NRJo9Az7QJmM-OMEafQBVIs-yDlsv7WfUKl8TbZE3Dc/edit?usp=sharing)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n![|446x276](https://lh7-us.googleusercontent.com/kNFS4fLJb7sfaitEXvIDqFo7verR20iNUmmMz6NCKS2djF_F2hkwKWasr2QUbfNbwCmwJ8dhVayruoNmOr4LICKSQaEOwMXZNkAJHnxdbXeQX8BOVx5w9DCSkGz0LGy66e09P9_lgKI1LZBd7Ms8Jbo)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n![|423x263](https://lh7-us.googleusercontent.com/rPh5nCGiMRo12tW_l_VT7y6qE1Qf6SuYz57EnmXragsiD-Y5BunjvRP2sPrXVXpFE1g-ylNHEp5vGOM3HRsLOx3-6jLsfCE4E5hrrMQIYAU5rTSB7U8TPB56vLwSVB6PM-zqZRnWkrz0c7H9GX48_68)![|419x259](https://lh7-us.googleusercontent.com/O2wdvkRBquoIdjlXLQx3g8oyhOld5KlG8iyAbc1KX_CovD8fSkROGGgkjGEqZcnvD6LQjMAcxM8gQDwXMeBB_QVKCxho_PM0IBZ13QrGkgTngXPmztZqK8GTvpTqQp6mGc21yINvwwq40xQbyjl5LRQ)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Projects developed in certification \\\\\\\\u{1f477}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n|Groups|Official notice of certificates|Certified projects|Video demo|\\\\\\\\\\\\\\\\n| --- | --- | --- | --- |\\\\\\\\\\\\\\\\n|NEAR Elementals Certified Bootcamp G12024|https://hackmd.io/@open-web-academy/resultados-NEC-G12024|-|-|\\\\\\\\\\\\\\\\n|NEAR Elementals Certified Bootacamp G22024|https://hackmd.io/@open-web-academy/resultado-certificaciones-abril-2024|-|-|\\\\\\\\\\\\\\\\n|BOS Certified Developer Bootcamp G12024|https://hackmd.io/@open-web-academy/resultados-BCD-G12024|https://test.near.social/manueldesarrolla.testnet/widget/donate-to-artists.index|https://vimeo.com/916132030?share=copy|\\\\\\\\\\\\\\\\n|https://near.org/valecreativo.near/widget/ElOraculo|https://youtu.be/qECN3o_A7Q4|\\\\\\\\\\\\\\\\n|https://github.com/ToritoElite/Proyecto_BOS_NEAR.git|https://drive.google.com/file/d/1kEZI5EAZ00H9zg0Re1EsSmtfvIf52DgK/view?usp=sharing|\\\\\\\\\\\\\\\\n|BOS Certified Developer Bootcamp G22024|https://hackmd.io/@open-web-academy/resultado-certificaciones-abril-2024|https://test.near.social/elicruz.testnet/widget/container|https://drive.google.com/file/d/1Q3SBUY9Rm_GeTDc9Gl3AjFIo-tT7k5Fc/view?usp=sharing|\\\\\\\\\\\\\\\\n|BOS Certified Developer Bootcamp G32024|https://hackmd.io/@open-web-academy/resultado-certificaciones-abril-2024|https://test.near.social/kenlymar.testnet/widget/Foodquiz|https://www.youtube.com/watch?v=WPQC3mVP_LQ|\\\\\\\\\\\\\\\\n|https://near.org/ceemalvarezji.near/widget/MyProject|https://youtu.be/uqj-sbDZzIk|\\\\\\\\\\\\\\\\n|https://test.near.social/osweld.testnet/widget/SearchMovieByTitle|https://drive.google.com/file/d/10LHKM56EPAoqg0evVyJz9W8n7QU-3V37/view?usp=sharing|\\\\\\\\\\\\\\\\n|https://test.near.social/edson_eduardo.testnet/widget/final|https://youtu.be/rDP1DvfAn5Y?si=t-k1hsPj5mqXlB0m|\\\\\\\\\\\\\\\\n|NEAR Certified Developer Bootcamp G12024|https://hackmd.io/@open-web-academy/resultados-NCD-G12024|https://github.com/ManuelenRed/Donate_to_artists-JS.git|https://vimeo.com/913860826|\\\\\\\\\\\\\\\\n|https://github.com/MarianoCaro/BidTEC2?tab=readme-ov-file|https://www.canva.com/design/DAF8-j-kWjY/M9uzLZAx3e7MevLys-N7Zw/watch?utm_content=DAF8-j-kWjY&utm_campaign=designshare&utm_medium=link&utm_source=editor|\\\\\\\\\\\\\\\\n|https://github.com/FranciscoMezaV/AttendanceTracking|https://drive.google.com/file/d/1z4qAQ64Cb4SGhpbXZ4vKGGeoD2Ed6rRg/view?usp=sharing|\\\\\\\\\\\\\\\\n|NEAR Certified Developer Bootcamp G22024|-|-|-|\\\\\\\\\\\\\\\\n|NEAR Certified Developer Bootcamp G32024|https://hackmd.io/@open-web-academy/resultado-certificaciones-abril-2024|https://github.com/ManuelenRed/Donate_to_artists-JS|https://vimeo.com/941078265|\\\\\\\\\\\\\\\\n|https://github.com/MrcNio/ContratoInteligente_TrackingVehicle.git|-|\\\\\\\\\\\\\\\\n|||||\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Deliveries \\\\\\\\u{2705}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n|Certifications|Syllabus|Evaluation rubric|Initial slides|Ending Slides|More docs|\\\\\\\\\\\\\\\\n| --- | --- | --- | --- | --- | --- |\\\\\\\\\\\\\\\\n|NEAR Elementals Certified|[Syllabus NEAR Elementals Certified Practitioner](https://docs.google.com/document/d/18IXI1yvwRBod5mcQAm4sDFoV0OhrAG5wi8txYe6b200/edit?usp=sharing)|[R\\\\\\\\u{fa}brica de Evaluaci\\\\\\\\u{f3}n Proyectos - NEAR Elementals](https://docs.google.com/spreadsheets/d/1FYAfwRLM-1tITQzE4v6Xd6JdM1BwKpx4wt56mRvtvVE/edit?usp=sharing)|[NEAR Elementals - Bienvenida](https://docs.google.com/presentation/d/1j47QzkTjWNuqaqv7AdDn38h1Z_tG5bA643uBSLGP8YU/edit?usp=sharing)|[NEAR Elementals - Cierre](https://docs.google.com/presentation/d/1JagH-z0OZcmcOiUWAdmFStsV2gKags1oMt1stiAxjYQ/edit?usp=sharing)|[Bateria preguntas certificacion](https://docs.google.com/document/d/13pVCBdTgEuc9aGWB0nX9mKS9MUb43F6-i_nkgBCEe7g/edit?usp=sharing)|\\\\\\\\\\\\\\\\n|BOS Certified Developer|[Syllabus BOS Certified Developer](https://docs.google.com/document/d/1G_7hSKGyA3AUyZ7gVOINAJ5HhBsJ-BePH3oHVxiVCUY/edit)|[R\\\\\\\\u{fa}brica de Evaluaci\\\\\\\\u{f3}n Proyectos](https://docs.google.com/spreadsheets/d/16nIE1uJwO9PHxtqai8fJV7dYOjsYkbYcRAfR9csFdUg/edit#gid=0)|[BCD Bootcamp - Bienvenida](https://docs.google.com/presentation/d/1UInl5rnO_YwqiB3oU4dcnma0v2hy9y4w7p6tFiADaVQ/edit)|[BCD Bootcamp - Cierre](https://docs.google.com/presentation/d/15pxZsNR2KbKLcDZwsd4EqckHGPlnZbFD9jKVQ21aIAQ/edit)||\\\\\\\\\\\\\\\\n|NEAR Certified Developer|[New Syllabus NCD](https://docs.google.com/document/d/1mZrOBi6_7FYs34rD25Z2Y8pEI-Wh0qcJwKUT1ZXJhzQ/edit?usp=sharing)|[R\\\\\\\\u{fa}brica de Evaluaci\\\\\\\\u{f3}n Proyectos](https://docs.google.com/spreadsheets/d/1pMiHS4yxAOKE85tR7b9L833-_Or3uracIOugcXU8Cjc/edit#gid=0)|[NCD - Bienvenida](https://docs.google.com/presentation/d/1Gjla-WYVjRmZp_APXBQ1JwrnjdDY73_KwkcTG28ErzQ/edit#slide=id.g28fdf74dbc7_0_0)|[NCD - Cierre](https://docs.google.com/presentation/d/1eZAGlSPNKj2ylWT58OKG_igQH_b6uxrAj_gqxjSnZ9Q/edit#slide=id.g28fdf74dbc7_0_0)|[Contenidos - Link to contracts in repository](https://docs.google.com/spreadsheets/d/1eC0tG82JeLRheGJwjTlstiHHxp7bqlYVCWMrHJFmzDs/edit#gid=0)|\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* 35 office hour sessions.\\\\\\\\\\\\\\\\n* NEC and NCD Certified Developer Playbook\\\\\\\\\\\\\\\\n* NEC and NCD Certified Developer syllabus\\\\\\\\\\\\\\\\n* NEC and NCD Certified Developer evaluation rubrics\\\\\\\\\\\\\\\\n* 1x general playbook about NEAR Education Path\\\\\\\\\\\\\\\\n* Learning Management System (LMS) to solve automated exams and certify knowledge of the NEAR Elementals Certified.\\\\\\\\\\\\\\\\n* Slides about all certifications to run Certification in another country\\\\\\\\\\\\\\\\n* Recordings of certification sessions\\\\\\\\\\\\\\\\n* Pre-recorded content and technical certification materials\\\\\\\\\\\\\\\\n* 1x pack of multimedia material to promote certifications.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Playbook - Download zone\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nDo you want to execute your own educational path? Find here the documents, templates and playbooks necessary to run your certified bootcamp series\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nURL: [TEMPLATES -NEAR Education Path - MAKE A COPY](https://docs.google.com/spreadsheets/d/1b8u5x1-1gieWSrlwc-UAmU5MkWPSQxjewEUm1ZTJEQs/edit?usp=sharing)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Transparency\\\\\\\\u{1f9ff}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nView and track the monetary transactions carried out for the development of this proposal, as well as payment distribution from the Open Web Academy DAO panel.*[ https://near.org/astraplusplus.ndctools.near/widget/home?tab=proposals&daoId=open-web-academy.sputnik-dao.near&page=dao](https://near.org/astraplusplus.ndctools.near/widget/home?tab=proposals&daoId=open-web-academy.sputnik-dao.near&page=dao) *Disclaimer: Total expenses could not necessarily be reflected in real time in DAO\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}, \"handle\": \"owa\"}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1512976234241e+21
+    }
+  },
+  {
+    "id": "4772859439",
+    "receipt_id": "G3P6aic89SKn3VRTqwiMqWDjTJRfjXfuoFmve8caUtCo",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "social.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "G67QN1Lc3xmLbJztARPDWDFd1G7djeFrfDvWYXZHxQUt",
+      "block_height": 119136979,
+      "block_timestamp": 1715969343837158100
+    },
+    "receipt_outcome": {
+      "gas_burnt": 6619563706196,
+      "tokens_burnt": 661956370619600000000,
+      "executor_account_id": "social.near",
+      "status": true
+    },
+    "transaction_hash": "9xCWnK4BwKmcnQ9wkAzGvbHPJRXhSRVJzvTaRDKAiY3d",
+    "included_in_block_hash": "AvsKges3U87fYArf44b9QvtoGBLhbC6YYcB9zg7EQ121",
+    "block_timestamp": "1715969341132109239",
+    "block": {
+      "block_height": 119136977
+    },
+    "receipt_conversion_tokens_burnt": "33163071622800000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "set",
+        "deposit": 0,
+        "fee": 661956370619600000000,
+        "args": "{\"data\": {\"owa.community.devhub.near\": {\"post\": {\"main\": \"{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"text\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"# Report | NEAR Education Path Q1 2024\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nDuring the first quarter of 2024, the Open Web Academy team presented a proposal to implement an educational plan that included the design, promotion, and execution of 8 different certification groups focused on development in BOS in Spanish, the creation of smart contracts, and the basic understanding of the NEAR Protocol. The goal was to incorporate new developers into the ecosystem, develop new dApp solutions, and actively promote the use of the Blockchain Operating System and the NEAR technology stack.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nProposal last flow: https://near.org/devhub.near/widget/app?page=post&id=2837\\\\\\\\\\\\\\\\nProposal new flow: https://near.org/devhub.near/widget/app?page=proposal&id=82\\\\\\\\\\\\\\\\nShow the report in Google Sheet: [Report | NEAR Education Path](https://docs.google.com/spreadsheets/d/1YLtfmOgEy0k0nE487dgwekVo8_ue8tKM9jv86hjlvu8/edit#gid=0)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nShow the report in Google Sheet: [Report | NEAR Education Path](https://docs.google.com/spreadsheets/d/1YLtfmOgEy0k0nE487dgwekVo8_ue8tKM9jv86hjlvu8/edit#gid=0)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nShow the report in Google Slides: [Report-NEAR education Path](https://docs.google.com/presentation/d/1t2jcGag6YpzcY5TieUr88bGorVAac3idGT02kJqo2JI/edit#slide=id.g29212b18971_0_3)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# About NEAR Education Path \\\\\\\\u{1f9d1}\\\\\\\\u{200d}\\\\\\\\u{1f3eb}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe NEAR education Path by Open Web Academy consists of the design and execution of an educational path of 3 synchronous certifications via video call with asynchronous content to educate the general public and developers about the NEAR protocol and the development of solutions using NEAR\\\\\\\\\\\\'s smarcconract and Blockchain Operating System interfaces\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nThe complex and ever-evolving nature of blockchains, specifically NEAR, coupled with the lack of a standardized educational offering, makes it difficult for individuals to acquire an adequate level of proficiency in implementing and developing blockchain-based solutions. This can result in a gap between the growing demand for trained professionals and the availability of qualified talent to meet this demand.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# NEAR Education Path in numbers \\\\\\\\u{1f522}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* 8 different certification groups\\\\\\\\\\\\\\\\n* 3 different certifications\\\\\\\\\\\\\\\\n* 490 registered people\\\\\\\\\\\\\\\\n* 210 people actively participating on average\\\\\\\\\\\\\\\\n* 39 certificates\\\\\\\\\\\\\\\\n* 13 projects developed\\\\\\\\\\\\\\\\n* 40 hours of synchronous follow-up\\\\\\\\\\\\\\\\n* 35 hours of office hours for mentoring\\\\\\\\\\\\\\\\n* 4 universities involved\\\\\\\\\\\\\\\\n* 1 government organization\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n![|602x124](https://lh7-us.googleusercontent.com/BCIdzlQAk1X0x3Y2ZIFD1G0XyHNa3CpmzeZRqec7bReSTfLnx673F1YEIVv5N73LU7wxgLRSP7Su_jWjB2RGWByFFJyjgCZ4QjQkuMK53L1btDalWF2a2UqGEgoa1mTYZ72eG7bZ_tQ-qXDo20cf4XU)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Activities executed \\\\\\\\u{1f477}\\\\\\\\u{200d}\\\\\\\\u{2642}\\\\\\\\u{fe0f}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* Curricular and pedagogical development of the NEAR Elementals (NEC) Bootcamp with experts in education and technical experts\\\\\\\\\\\\\\\\n* Design and updated of Curriculum NEAR Certified Developer Bootcamp (NCD) with experts in education and technical experts\\\\\\\\\\\\\\\\n* Instructional design for the teaching of NEC and NCD\\\\\\\\\\\\\\\\n* Promotional activities and engagement with those interested in the program\\\\\\\\\\\\\\\\n* Delivery of the 2 x NEAR Elementals Certified Bootcamp (NEC)\\\\\\\\\\\\\\\\n* Delivery of the 3 x BOS Certified Developer Bootcamp (BCD)\\\\\\\\\\\\\\\\n* Delivery of the 3 x NEAR Certified Developer Bootcamp (NCD)\\\\\\\\\\\\\\\\n* Partnerships with regional educational authorities to teach certifications with professors and university students.\\\\\\\\\\\\\\\\n* Evaluation of deliverables and give feedback to the participants\\\\\\\\\\\\\\\\n* Office Hours sessions to ensure learning and 1:1 support with technical questions.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Participant metrics \\\\\\\\u{1f4c8}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n[General metrics about participants](https://docs.google.com/spreadsheets/d/1NRJo9Az7QJmM-OMEafQBVIs-yDlsv7WfUKl8TbZE3Dc/edit?usp=sharing)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n![|446x276](https://lh7-us.googleusercontent.com/kNFS4fLJb7sfaitEXvIDqFo7verR20iNUmmMz6NCKS2djF_F2hkwKWasr2QUbfNbwCmwJ8dhVayruoNmOr4LICKSQaEOwMXZNkAJHnxdbXeQX8BOVx5w9DCSkGz0LGy66e09P9_lgKI1LZBd7Ms8Jbo)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n![|423x263](https://lh7-us.googleusercontent.com/rPh5nCGiMRo12tW_l_VT7y6qE1Qf6SuYz57EnmXragsiD-Y5BunjvRP2sPrXVXpFE1g-ylNHEp5vGOM3HRsLOx3-6jLsfCE4E5hrrMQIYAU5rTSB7U8TPB56vLwSVB6PM-zqZRnWkrz0c7H9GX48_68)![|419x259](https://lh7-us.googleusercontent.com/O2wdvkRBquoIdjlXLQx3g8oyhOld5KlG8iyAbc1KX_CovD8fSkROGGgkjGEqZcnvD6LQjMAcxM8gQDwXMeBB_QVKCxho_PM0IBZ13QrGkgTngXPmztZqK8GTvpTqQp6mGc21yINvwwq40xQbyjl5LRQ)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Projects developed in certification \\\\\\\\u{1f477}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n|Groups|Official notice of certificates|Certified projects|Video demo|\\\\\\\\\\\\\\\\n| --- | --- | --- | --- |\\\\\\\\\\\\\\\\n|NEAR Elementals Certified Bootcamp G12024|https://hackmd.io/@open-web-academy/resultados-NEC-G12024|-|-|\\\\\\\\\\\\\\\\n|NEAR Elementals Certified Bootacamp G22024|https://hackmd.io/@open-web-academy/resultado-certificaciones-abril-2024|-|-|\\\\\\\\\\\\\\\\n|BOS Certified Developer Bootcamp G12024|https://hackmd.io/@open-web-academy/resultados-BCD-G12024|https://test.near.social/manueldesarrolla.testnet/widget/donate-to-artists.index|https://vimeo.com/916132030?share=copy|\\\\\\\\\\\\\\\\n|https://near.org/valecreativo.near/widget/ElOraculo|https://youtu.be/qECN3o_A7Q4|\\\\\\\\\\\\\\\\n|https://github.com/ToritoElite/Proyecto_BOS_NEAR.git|https://drive.google.com/file/d/1kEZI5EAZ00H9zg0Re1EsSmtfvIf52DgK/view?usp=sharing|\\\\\\\\\\\\\\\\n|BOS Certified Developer Bootcamp G22024|https://hackmd.io/@open-web-academy/resultado-certificaciones-abril-2024|https://test.near.social/elicruz.testnet/widget/container|https://drive.google.com/file/d/1Q3SBUY9Rm_GeTDc9Gl3AjFIo-tT7k5Fc/view?usp=sharing|\\\\\\\\\\\\\\\\n|BOS Certified Developer Bootcamp G32024|https://hackmd.io/@open-web-academy/resultado-certificaciones-abril-2024|https://test.near.social/kenlymar.testnet/widget/Foodquiz|https://www.youtube.com/watch?v=WPQC3mVP_LQ|\\\\\\\\\\\\\\\\n|https://near.org/ceemalvarezji.near/widget/MyProject|https://youtu.be/uqj-sbDZzIk|\\\\\\\\\\\\\\\\n|https://test.near.social/osweld.testnet/widget/SearchMovieByTitle|https://drive.google.com/file/d/10LHKM56EPAoqg0evVyJz9W8n7QU-3V37/view?usp=sharing|\\\\\\\\\\\\\\\\n|https://test.near.social/edson_eduardo.testnet/widget/final|https://youtu.be/rDP1DvfAn5Y?si=t-k1hsPj5mqXlB0m|\\\\\\\\\\\\\\\\n|NEAR Certified Developer Bootcamp G12024|https://hackmd.io/@open-web-academy/resultados-NCD-G12024|https://github.com/ManuelenRed/Donate_to_artists-JS.git|https://vimeo.com/913860826|\\\\\\\\\\\\\\\\n|https://github.com/MarianoCaro/BidTEC2?tab=readme-ov-file|https://www.canva.com/design/DAF8-j-kWjY/M9uzLZAx3e7MevLys-N7Zw/watch?utm_content=DAF8-j-kWjY&utm_campaign=designshare&utm_medium=link&utm_source=editor|\\\\\\\\\\\\\\\\n|https://github.com/FranciscoMezaV/AttendanceTracking|https://drive.google.com/file/d/1z4qAQ64Cb4SGhpbXZ4vKGGeoD2Ed6rRg/view?usp=sharing|\\\\\\\\\\\\\\\\n|NEAR Certified Developer Bootcamp G22024|-|-|-|\\\\\\\\\\\\\\\\n|NEAR Certified Developer Bootcamp G32024|https://hackmd.io/@open-web-academy/resultado-certificaciones-abril-2024|https://github.com/ManuelenRed/Donate_to_artists-JS|https://vimeo.com/941078265|\\\\\\\\\\\\\\\\n|https://github.com/MrcNio/ContratoInteligente_TrackingVehicle.git|-|\\\\\\\\\\\\\\\\n|||||\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Deliveries \\\\\\\\u{2705}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n|Certifications|Syllabus|Evaluation rubric|Initial slides|Ending Slides|More docs|\\\\\\\\\\\\\\\\n| --- | --- | --- | --- | --- | --- |\\\\\\\\\\\\\\\\n|NEAR Elementals Certified|[Syllabus NEAR Elementals Certified Practitioner](https://docs.google.com/document/d/18IXI1yvwRBod5mcQAm4sDFoV0OhrAG5wi8txYe6b200/edit?usp=sharing)|[R\\\\\\\\u{fa}brica de Evaluaci\\\\\\\\u{f3}n Proyectos - NEAR Elementals](https://docs.google.com/spreadsheets/d/1FYAfwRLM-1tITQzE4v6Xd6JdM1BwKpx4wt56mRvtvVE/edit?usp=sharing)|[NEAR Elementals - Bienvenida](https://docs.google.com/presentation/d/1j47QzkTjWNuqaqv7AdDn38h1Z_tG5bA643uBSLGP8YU/edit?usp=sharing)|[NEAR Elementals - Cierre](https://docs.google.com/presentation/d/1JagH-z0OZcmcOiUWAdmFStsV2gKags1oMt1stiAxjYQ/edit?usp=sharing)|[Bateria preguntas certificacion](https://docs.google.com/document/d/13pVCBdTgEuc9aGWB0nX9mKS9MUb43F6-i_nkgBCEe7g/edit?usp=sharing)|\\\\\\\\\\\\\\\\n|BOS Certified Developer|[Syllabus BOS Certified Developer](https://docs.google.com/document/d/1G_7hSKGyA3AUyZ7gVOINAJ5HhBsJ-BePH3oHVxiVCUY/edit)|[R\\\\\\\\u{fa}brica de Evaluaci\\\\\\\\u{f3}n Proyectos](https://docs.google.com/spreadsheets/d/16nIE1uJwO9PHxtqai8fJV7dYOjsYkbYcRAfR9csFdUg/edit#gid=0)|[BCD Bootcamp - Bienvenida](https://docs.google.com/presentation/d/1UInl5rnO_YwqiB3oU4dcnma0v2hy9y4w7p6tFiADaVQ/edit)|[BCD Bootcamp - Cierre](https://docs.google.com/presentation/d/15pxZsNR2KbKLcDZwsd4EqckHGPlnZbFD9jKVQ21aIAQ/edit)||\\\\\\\\\\\\\\\\n|NEAR Certified Developer|[New Syllabus NCD](https://docs.google.com/document/d/1mZrOBi6_7FYs34rD25Z2Y8pEI-Wh0qcJwKUT1ZXJhzQ/edit?usp=sharing)|[R\\\\\\\\u{fa}brica de Evaluaci\\\\\\\\u{f3}n Proyectos](https://docs.google.com/spreadsheets/d/1pMiHS4yxAOKE85tR7b9L833-_Or3uracIOugcXU8Cjc/edit#gid=0)|[NCD - Bienvenida](https://docs.google.com/presentation/d/1Gjla-WYVjRmZp_APXBQ1JwrnjdDY73_KwkcTG28ErzQ/edit#slide=id.g28fdf74dbc7_0_0)|[NCD - Cierre](https://docs.google.com/presentation/d/1eZAGlSPNKj2ylWT58OKG_igQH_b6uxrAj_gqxjSnZ9Q/edit#slide=id.g28fdf74dbc7_0_0)|[Contenidos - Link to contracts in repository](https://docs.google.com/spreadsheets/d/1eC0tG82JeLRheGJwjTlstiHHxp7bqlYVCWMrHJFmzDs/edit#gid=0)|\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n* 35 office hour sessions.\\\\\\\\\\\\\\\\n* NEC and NCD Certified Developer Playbook\\\\\\\\\\\\\\\\n* NEC and NCD Certified Developer syllabus\\\\\\\\\\\\\\\\n* NEC and NCD Certified Developer evaluation rubrics\\\\\\\\\\\\\\\\n* 1x general playbook about NEAR Education Path\\\\\\\\\\\\\\\\n* Learning Management System (LMS) to solve automated exams and certify knowledge of the NEAR Elementals Certified.\\\\\\\\\\\\\\\\n* Slides about all certifications to run Certification in another country\\\\\\\\\\\\\\\\n* Recordings of certification sessions\\\\\\\\\\\\\\\\n* Pre-recorded content and technical certification materials\\\\\\\\\\\\\\\\n* 1x pack of multimedia material to promote certifications.\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n## Playbook - Download zone\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nDo you want to execute your own educational path? Find here the documents, templates and playbooks necessary to run your certified bootcamp series\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nURL: [TEMPLATES -NEAR Education Path - MAKE A COPY](https://docs.google.com/spreadsheets/d/1b8u5x1-1gieWSrlwc-UAmU5MkWPSQxjewEUm1ZTJEQs/edit?usp=sharing)\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\n# Transparency\\\\\\\\u{1f9ff}\\\\\\\\\\\\\\\\n\\\\\\\\\\\\\\\\nView and track the monetary transactions carried out for the development of this proposal, as well as payment distribution from the Open Web Academy DAO panel.*[ https://near.org/astraplusplus.ndctools.near/widget/home?tab=proposals&daoId=open-web-academy.sputnik-dao.near&page=dao](https://near.org/astraplusplus.ndctools.near/widget/home?tab=proposals&daoId=open-web-academy.sputnik-dao.near&page=dao) *Disclaimer: Total expenses could not necessarily be reflected in real time in DAO\\\\\\\\\\\\\\\"}\"}, \"index\": {\"post\": \"{\\\\\\\\\\\\\\\"key\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"main\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"value\\\\\\\\\\\\\\\":{\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"md\\\\\\\\\\\\\\\"}}\"}}}}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.1512976234241e+21
+    }
+  },
+  {
+    "id": "4847258214",
+    "receipt_id": "E8kPtwnN9eouXaMjXRXwNC8wUQUSbXihNEwoN93arPQX",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HPZWGoHHm3AQKpEWgbbkqGYyqL1rEDCQ2pz8aTckGoGz",
+      "block_height": 119339725,
+      "block_timestamp": 1716202901077070300
+    },
+    "receipt_outcome": {
+      "gas_burnt": 24435668879470,
+      "tokens_burnt": 2.443566887947e+21,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8QwJ4BujEAbMK1ffdPNidEUKwGDWLY7pVAwcCtjAin2N",
+    "included_in_block_hash": "HPZWGoHHm3AQKpEWgbbkqGYyqL1rEDCQ2pz8aTckGoGz",
+    "block_timestamp": "1716202901077070371",
+    "block": {
+      "block_height": 119339725
+    },
+    "receipt_conversion_tokens_burnt": "280429646441200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "unsafe_self_upgrade",
+        "deposit": 0,
+        "fee": 2.443566887947e+21,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.02998353081444e+22
+    }
+  },
+  {
+    "id": "4847258531",
+    "receipt_id": "Cts4YKbJcYr79fpWVL8aMkPLnpkjnZ9saswHmq7faJqE",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5Jz3fGBUPAbxFRTYUjLwYSuRm4yQbonmhuPsLRXQiVwo",
+      "block_height": 119339726,
+      "block_timestamp": 1716202902398573800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 72381995358656,
+      "tokens_burnt": 7.2381995358656e+21,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8QwJ4BujEAbMK1ffdPNidEUKwGDWLY7pVAwcCtjAin2N",
+    "included_in_block_hash": "HPZWGoHHm3AQKpEWgbbkqGYyqL1rEDCQ2pz8aTckGoGz",
+    "block_timestamp": "1716202901077070371",
+    "block": {
+      "block_height": 119339725
+    },
+    "receipt_conversion_tokens_burnt": "280429646441200000000",
+    "actions": [
+      {
+        "action": "DEPLOY_CONTRACT",
+        "method": null,
+        "deposit": 0,
+        "fee": 7.2381995358656e+21,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.02998353081444e+22
+    }
+  },
+  {
+    "id": "4847258534",
+    "receipt_id": "3o8VjAH6jv6UfGBd2icKGtL7AvPY6CnYnBwFSGdKjNs3",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5Jz3fGBUPAbxFRTYUjLwYSuRm4yQbonmhuPsLRXQiVwo",
+      "block_height": 119339726,
+      "block_timestamp": 1716202902398573800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 3376392378906,
+      "tokens_burnt": 337639237890600000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8QwJ4BujEAbMK1ffdPNidEUKwGDWLY7pVAwcCtjAin2N",
+    "included_in_block_hash": "HPZWGoHHm3AQKpEWgbbkqGYyqL1rEDCQ2pz8aTckGoGz",
+    "block_timestamp": "1716202901077070371",
+    "block": {
+      "block_height": 119339725
+    },
+    "receipt_conversion_tokens_burnt": "280429646441200000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "unsafe_migrate",
+        "deposit": 0,
+        "fee": 337639237890600000000,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.02998353081444e+22
+    }
+  },
+  {
+    "id": "4847258538",
+    "receipt_id": "29PUFsoA2n8mDbSa3XLXSqiNFvMyfDBjVqFDLWgsLuXn",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5Jz3fGBUPAbxFRTYUjLwYSuRm4yQbonmhuPsLRXQiVwo",
+      "block_height": 119339726,
+      "block_timestamp": 1716202902398573800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8QwJ4BujEAbMK1ffdPNidEUKwGDWLY7pVAwcCtjAin2N",
+    "included_in_block_hash": "HPZWGoHHm3AQKpEWgbbkqGYyqL1rEDCQ2pz8aTckGoGz",
+    "block_timestamp": "1716202901077070371",
+    "block": {
+      "block_height": 119339725
+    },
+    "receipt_conversion_tokens_burnt": "280429646441200000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 7.67450340942995e+21,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.02998353081444e+22
+    }
+  },
+  {
+    "id": "4847258854",
+    "receipt_id": "Cvkdo3yTLdBSM5yARkamefWuTyR1XtyAM7k4MUGc7FR3",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "HJiuP5CxqLGmamAHkWwrdJznUa4oFntH3Fatkos3Ymn4",
+      "block_height": 119339727,
+      "block_timestamp": 1716202904119189800
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8QwJ4BujEAbMK1ffdPNidEUKwGDWLY7pVAwcCtjAin2N",
+    "included_in_block_hash": "HPZWGoHHm3AQKpEWgbbkqGYyqL1rEDCQ2pz8aTckGoGz",
+    "block_timestamp": "1716202901077070371",
+    "block": {
+      "block_height": 119339725
+    },
+    "receipt_conversion_tokens_burnt": "280429646441200000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 1.7081419339815725e+22,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.02998353081444e+22
+    }
+  },
+  {
+    "id": "4847259098",
+    "receipt_id": "ByZSZYQaTvZPpVjWDQYtShSjU2UM4o2KQco6PtUPwjQY",
+    "predecessor_account_id": "system",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "BHn4Mna9yZh8p99aP2ZjKTAEj4migEBzdVpsUE8513c2",
+      "block_height": 119339728,
+      "block_timestamp": 1716202904953310700
+    },
+    "receipt_outcome": {
+      "gas_burnt": 223182562500,
+      "tokens_burnt": 0,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "8QwJ4BujEAbMK1ffdPNidEUKwGDWLY7pVAwcCtjAin2N",
+    "included_in_block_hash": "HPZWGoHHm3AQKpEWgbbkqGYyqL1rEDCQ2pz8aTckGoGz",
+    "block_timestamp": "1716202901077070371",
+    "block": {
+      "block_height": 119339725
+    },
+    "receipt_conversion_tokens_burnt": "280429646441200000000",
+    "actions": [
+      {
+        "action": "TRANSFER",
+        "method": null,
+        "deposit": 3.355973959600919e+22,
+        "fee": 0,
+        "args": null
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 1.02998353081444e+22
+    }
+  },
+  {
+    "id": "4847261314",
+    "receipt_id": "4NBfR68inSSzo1kPon4g17Q7myfmcxRKoHoqGizrxGCk",
+    "predecessor_account_id": "devhub.near",
+    "receiver_account_id": "devhub.near",
+    "receipt_kind": "ACTION",
+    "receipt_block": {
+      "block_hash": "5y9dReUgSx9YVFqjDXnRjakCKRVLVa2GtAGLrqNT1QHb",
+      "block_height": 119339734,
+      "block_timestamp": 1716202912770100500
+    },
+    "receipt_outcome": {
+      "gas_burnt": 2229541004972,
+      "tokens_burnt": 222954100497200000000,
+      "executor_account_id": "devhub.near",
+      "status": true
+    },
+    "transaction_hash": "9wVNNqPhtvCR8ZxgwPLqWgNNezuHvzsYUtXcWv2Gqo1R",
+    "included_in_block_hash": "5y9dReUgSx9YVFqjDXnRjakCKRVLVa2GtAGLrqNT1QHb",
+    "block_timestamp": "1716202912770100597",
+    "block": {
+      "block_height": 119339734
+    },
+    "receipt_conversion_tokens_burnt": "30809527494400000000",
+    "actions": [
+      {
+        "action": "FUNCTION_CALL",
+        "method": "unsafe_migrate",
+        "deposit": 0,
+        "fee": 222954100497200000000,
+        "args": "{}"
+      }
+    ],
+    "actions_agg": {
+      "deposit": 0
+    },
+    "outcomes": {
+      "status": true
+    },
+    "outcomes_agg": {
+      "transaction_fee": 253763627991600000000
+    }
+  }
+]
