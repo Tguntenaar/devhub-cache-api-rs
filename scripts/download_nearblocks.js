@@ -26,7 +26,7 @@ const path = require("path");
 const ACCOUNT = "events-committee.near";
 const BASE_URL = "https://api.nearblocks.io/v1/account";
 const PER_PAGE = 25;
-const API_KEY = "B83DA4366D994DE6AC7CEFED2E6987F1";
+const API_KEY = "API_KEY";
 const START_AFTER_BLOCK = 0;
 
 async function saveTransactions(blockHeight, transactions) {
