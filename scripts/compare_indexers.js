@@ -76,4 +76,3 @@ const compare_results = async () => {
 };
 
 compare_results();
-fetch_from_pagoda();
