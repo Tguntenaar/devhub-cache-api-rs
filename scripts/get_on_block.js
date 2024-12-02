@@ -32,4 +32,4 @@ const fetch_from_rpc = async (proposal_id, block_height) => {
   return result;
 };
 
-fetch_from_rpc(260, 133635071);
+fetch_from_rpc(250, 132540186);

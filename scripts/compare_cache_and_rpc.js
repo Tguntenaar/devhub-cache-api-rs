@@ -78,7 +78,10 @@ const compare_results = async (id) => {
     console.log(
       `proposal_id: ${cache_only_useful_fields[i].proposal_id} snapshot ${i}`
     );
-    print_object_diff(cache_only_useful_fields[i], rpc_only_useful_fields[i]);
+    print_all_object_diffs(
+      cache_only_useful_fields[i],
+      rpc_only_useful_fields[i]
+    );
   }
 };
 
@@ -96,21 +99,68 @@ const get_only_useful_fields = (snapshot) => {
     timeline: snapshot.timeline,
     // timestamp and block height are not in the rpc response
     // ts: snapshot.ts,
-    // block_height: snapshot.block_height,
+    block_height: snapshot.block_height,
   };
 };
 
-const print_object_diff = (obj1, obj2) => {
-  // Find the first key that is different
-  // console.log(Object.keys(obj1));
-  let key = Object.keys(obj1).find((key) => {
+const print_all_object_diffs = (cache_obj, rpc_obj) => {
+  let differences = [];
+
+  Object.keys(cache_obj).forEach((key) => {
     if (key === "timeline") {
-      return obj1[key].status !== obj2[key].status;
+      if (SKIP_TIMELINE) {
+        return;
+      }
+      if (cache_obj[key].status !== rpc_obj[key].status) {
+        differences.push({
+          key,
+          cache: cache_obj[key],
+          rpc: rpc_obj[key],
+          block_height: cache_obj.block_height,
+        });
+      }
+    } else if (cache_obj[key] !== rpc_obj[key]) {
+      differences.push({
+        key,
+        cache: cache_obj[key],
+        rpc: rpc_obj[key],
+        block_height: cache_obj.block_height,
+      });
     }
-    return obj1[key] !== obj2[key];
+  });
+
+  if (differences.length > 0) {
+    console.log("\nFound differences:");
+    differences.forEach((diff) => {
+      console.log(`  ${diff.key}:`);
+      console.log(`    cache:`, diff.cache);
+      console.log(`    rpc:  `, diff.rpc);
+      console.log(` on block: ${diff.block_height}`);
+    });
+    console.log();
+  } else {
+    console.log(" No differences found");
+  }
+};
+
+const print_object_diff = (cache_obj, rpc_obj) => {
+  // Find the first key that is different
+  let key = Object.keys(cache_obj).find((key) => {
+    if (key === "timeline") {
+      return cache_obj[key].status !== rpc_obj[key].status;
+    }
+    return cache_obj[key] !== rpc_obj[key];
   });
   if (key) {
-    console.log(" Diff: ", key, obj1[key], obj2[key]);
+    console.log(
+      " \n Diff: ",
+      key,
+      "cache:",
+      cache_obj[key],
+      "rpc: ",
+      rpc_obj[key],
+      "\n"
+    );
   } else {
     console.log(" No diff found");
   }
@@ -120,6 +170,7 @@ const START_ID = 250;
 const END_ID = 260;
 const ARCHIVAL_RPC_URL = "https://archival-rpc.mainnet.near.org/";
 const CACHE_API_URL = "https://devhub-cache-api-rs.fly.dev/";
+const SKIP_TIMELINE = true;
 
 const runComparisons = async () => {
   for (let i = START_ID; i < END_ID; i++) {

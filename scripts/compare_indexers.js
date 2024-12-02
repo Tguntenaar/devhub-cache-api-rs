@@ -3,8 +3,8 @@ const fetch_from_pagoda = async () => {
     query:
       "query GetLatestSnapshot($offset: Int = 0, $limit: Int = 10, $where: polyprogrammist_near_devhub_prod_v1_proposals_with_latest_snapshot_bool_exp = {}) {\n    polyprogrammist_near_devhub_prod_v1_proposals_with_latest_snapshot(\n      offset: $offset\n      limit: $limit\n      order_by: {proposal_id: desc}\n      where: $where\n    ) {\n      author_id\n      block_height\n      name\n      category\n      summary\n      editor_id\n      proposal_id\n      ts\n      timeline\n      views\n      labels\n      linked_rfp\n    }\n    polyprogrammist_near_devhub_prod_v1_proposals_with_latest_snapshot_aggregate(\n      order_by: {proposal_id: desc}\n      where: $where\n    )  {\n      aggregate {\n        count\n      }\n    }\n  }",
     variables: {
-      limit: 10,
-      offset: 0,
+      limit: LIMIT,
+      offset: OFFSET,
       where: {},
     },
     operationName: "GetLatestSnapshot",
@@ -24,7 +24,7 @@ const fetch_from_pagoda = async () => {
 
 const fetch_from_cache = async () => {
   const response = await fetch(
-    `https://devhub-cache-api-rs.fly.dev/proposals`,
+    `https://devhub-cache-api-rs.fly.dev/proposals?limit=${LIMIT}&offset=${OFFSET}`,
     {
       method: "GET",
       headers: { "Content-Type": "application/json" },
@@ -74,5 +74,8 @@ const compare_results = async () => {
 
   console.log("pagoda_total, cache_total", pagoda_total, cache_total);
 };
+
+const LIMIT = 10;
+const OFFSET = 10;
 
 compare_results();
