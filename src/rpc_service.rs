@@ -119,8 +119,7 @@ impl RpcService {
                 Ok(proposal) => Ok(proposal.data),
                 Err(rpc_error) => {
                     // After Block 122723375 & 122938305
-                    // TODO caught error:
-                    // Failed to get proposal on block: DeserializeError(Error("missing field `kyc_verified`", line: 0, column: 0))
+                    // TODO caught error: Failed to get proposal on block: DeserializeError(Error("missing field `kyc_verified`", line: 0, column: 0))
                     eprintln!(
                         "Failed to get proposal from RPC on block height {} and id {}",
                         block_id, proposal_id,
