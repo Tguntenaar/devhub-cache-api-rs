@@ -161,10 +161,18 @@ async fn set_timestamp(block_height: i64, db: &State<DB>) -> Result<(), Status> 
 // TODO remove after testing
 #[get("/info/clean")]
 async fn clean(db: &State<DB>) -> Result<(), Status> {
-    match db.remove_all_snapshots().await {
+    let _ = match db.remove_all_snapshots().await {
         Ok(()) => Ok(()),
         Err(e) => {
             eprintln!("Error cleaning snapshots: {:?}", e);
+            Err(Status::InternalServerError)
+        }
+    };
+
+    match db.remove_all_data().await {
+        Ok(()) => Ok(()),
+        Err(e) => {
+            eprintln!("Error cleaning data: {:?}", e);
             Err(Status::InternalServerError)
         }
     }
@@ -183,7 +191,6 @@ async fn get_proposal(
     contract: &State<AccountId>,
 ) -> Result<Json<VersionedProposal>, rocket::http::Status> {
     let rpc_service = RpcService::new(contract.inner().clone());
-    // We should cache this in the future
     // We should also add rate limiting to this endpoint
     match rpc_service.get_proposal(proposal_id).await {
         Ok(proposal) => Ok(Json(proposal.data)),

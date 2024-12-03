@@ -501,6 +501,23 @@ impl DB {
         Ok(())
     }
 
+    pub async fn remove_all_data(&self) -> anyhow::Result<()> {
+        sqlx::query!(r#"DELETE FROM proposals"#)
+            .execute(&self.0)
+            .await?;
+
+        sqlx::query!(r#"DELETE FROM rfps"#).execute(&self.0).await?;
+
+        sqlx::query!(r#"DELETE FROM proposal_snapshots"#)
+            .execute(&self.0)
+            .await?;
+
+        sqlx::query!(r#"DELETE FROM rfp_snapshots"#)
+            .execute(&self.0)
+            .await?;
+        Ok(())
+    }
+
     pub async fn insert_rfp_snapshot(
         tx: &mut Transaction<'static, Postgres>,
         snapshot: &RfpSnapshotRecord,
@@ -642,10 +659,10 @@ impl DB {
                 AND ($5 IS NULL OR ps.timeline::text ~ $5)
                 AND ($6 IS NULL OR ps.category = $6)
                 AND ($7 IS NULL OR ps.labels::jsonb ?| $7)
-            ORDER BY {order}
+            ORDER BY {}
             LIMIT $1 OFFSET $2
             "#,
-            order = order_clause,
+            order_clause,
         );
 
         // Build the SQL query for counting total records
@@ -803,6 +820,8 @@ impl DB {
             proposal_snapshots proposal
         WHERE
            proposal.proposal_id = $1
+        ORDER BY
+            proposal.ts DESC
         "#;
 
         // Execute the data query

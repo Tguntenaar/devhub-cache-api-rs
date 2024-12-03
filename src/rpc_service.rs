@@ -55,7 +55,6 @@ impl RpcService {
         &self,
         proposal_id: i32,
     ) -> Result<Data<VersionedProposal>, near_api::errors::QueryError<RpcQueryRequest>> {
-        // TODO get cached proposal
         let result: Result<Data<VersionedProposal>, _> = self
             .contract
             .call_function("get_proposal", json!({ "proposal_id": proposal_id }))
@@ -121,8 +120,8 @@ impl RpcService {
                 // TODO caught error:
                 // Failed to get proposal on block: DeserializeError(Error("missing field `kyc_verified`", line: 0, column: 0))
                 eprintln!(
-                    "Failed to get proposal on block: {:?}, block_id: {}",
-                    e, block_id
+                    "Failed to get proposal on block: {:?}, Error: {:?}",
+                    block_id, e
                 );
                 Err(Status::InternalServerError)
             }

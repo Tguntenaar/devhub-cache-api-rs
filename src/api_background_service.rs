@@ -40,7 +40,7 @@ impl ApiBackgroundService {
                         contract.parse::<AccountId>().unwrap(),
                         None,
                         Some(50),
-                        None,
+                        Some("asc".to_string()),
                         Some(1),
                     )
                     .await
