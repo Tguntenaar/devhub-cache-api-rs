@@ -23,15 +23,16 @@
 const fs = require("fs");
 const path = require("path");
 
-const ACCOUNT = "events-committee.near";
+const ACCOUNT = "devhub.near";
 const BASE_URL = "https://api.nearblocks.io/v1/account";
 const PER_PAGE = 25;
 const API_KEY = "API_KEY";
 const START_AFTER_BLOCK = 0;
+const RECEIPT = false;
 
 async function saveTransactions(blockHeight, transactions) {
   // Create a Blob containing the JSON data
-  const outputDir = `./${ACCOUNT}`;
+  const outputDir = `./${ACCOUNT}${RECEIPT ? "-receipt" : ""}-${PER_PAGE}`;
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir);
   }
@@ -43,7 +44,7 @@ async function saveTransactions(blockHeight, transactions) {
 }
 
 async function fetchTransactions(afterBlock) {
-  const url = `${BASE_URL}/${ACCOUNT}/txns?after_block=${afterBlock}&per_page=${PER_PAGE}&order=asc&page=1`;
+  const url = `${BASE_URL}/${ACCOUNT}/txns?to=${ACCOUNT}&after_block=${afterBlock}&per_page=${PER_PAGE}&order=asc&page=1`;
 
   try {
     console.log(url);
@@ -82,7 +83,8 @@ async function downloadAllTransactions() {
 
     // Update afterBlock to the block height of the last transaction
     const lastTx = transactions[transactions.length - 1];
-    afterBlock = lastTx.receipt_block.block_height;
+    let index = RECEIPT ? "receipt_block" : "block";
+    afterBlock = lastTx[index].block_height;
     console.log(`Next after_block: ${afterBlock}`);
 
     console.log(
