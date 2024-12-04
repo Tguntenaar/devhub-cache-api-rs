@@ -38,17 +38,29 @@ const print_all_object_diffs = (cache_obj, pagoda_obj) => {
   let differences = [];
 
   Object.keys(cache_obj).forEach((key) => {
-    if (key === "views") {
+    if (
+      key === "views" ||
+      key === "proposal_body_version" ||
+      key === "proposal_version"
+    ) {
       return;
+    }
+    if (key === "description") {
+      if (SKIP_DESCRIPTION) {
+        return;
+      }
     }
     if (key === "labels") {
       let cache_labels = cache_obj[key].length;
       let pagoda_labels = pagoda_obj[key].length;
-      console.log("label types", cache_labels, pagoda_labels);
-
-      return;
-    }
-    if (key === "timeline") {
+      if (JSON.stringify(cache_labels) !== JSON.stringify(pagoda_labels)) {
+        differences.push({
+          key,
+          cache: cache_labels,
+          pagoda: pagoda_labels,
+        });
+      }
+    } else if (key === "timeline") {
       if (SKIP_TIMELINE) {
         return;
       }
@@ -109,7 +121,7 @@ const compare_results = async () => {
 
   for (let i = 0; i < pagoda_records.length; i++) {
     console.log(`proposal_id: ${pagoda_records[i].proposal_id} snapshot ${i}`);
-    print_all_object_diffs(pagoda_records[i], cache_records[i]);
+    print_all_object_diffs(cache_records[i], pagoda_records[i]);
   }
 
   console.log("pagoda_total, cache_total", pagoda_total, cache_total);
@@ -118,5 +130,6 @@ const compare_results = async () => {
 const LIMIT = 10;
 const OFFSET = 10;
 const SKIP_TIMELINE = false;
+const SKIP_DESCRIPTION = true;
 
 compare_results();

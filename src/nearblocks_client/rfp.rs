@@ -1,8 +1,8 @@
-use crate::db::db_types::RfpSnapshotRecord;
 use crate::db::DB;
 use crate::entrypoints::rfp::rfp_types::*;
 use crate::nearblocks_client::types::Transaction;
 use crate::rpc_service::RpcService;
+use crate::{db::db_types::RfpSnapshotRecord, nearblocks_client::types::BLOCK_HEIGHT_OFFSET};
 use devhub_shared::rfp::VersionedRFP;
 use near_account_id::AccountId;
 use rocket::{http::Status, State};
@@ -88,7 +88,10 @@ pub async fn handle_edit_rfp(
     })?;
     println!("Updating rfp {}", id);
     let versioned_rfp = match rpc_service
-        .get_rfp_on_block(id, transaction.receipt_block.block_height)
+        .get_rfp_on_block(
+            id,
+            transaction.receipt_block.block_height + BLOCK_HEIGHT_OFFSET,
+        )
         .await
     {
         Ok(rfp) => rfp,

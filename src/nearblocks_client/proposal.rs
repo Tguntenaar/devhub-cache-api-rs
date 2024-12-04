@@ -3,7 +3,7 @@ use crate::db::DB;
 use crate::entrypoints::proposal::proposal_types::{
     FromContractProposal, PartialEditProposalArgs, SetBlockHeightCallbackArgs,
 };
-use crate::nearblocks_client::types::{LinkedProposals, Transaction};
+use crate::nearblocks_client::types::{LinkedProposals, Transaction, BLOCK_HEIGHT_OFFSET};
 use crate::rpc_service::RpcService;
 use devhub_shared::proposal::VersionedProposal;
 use near_account_id::AccountId;
@@ -91,7 +91,10 @@ pub async fn handle_edit_proposal(
     })?;
     println!("Updating proposal {}", id);
     let versioned_proposal = match rpc_service
-        .get_proposal_on_block(id, transaction.receipt_block.block_height)
+        .get_proposal_on_block(
+            id,
+            transaction.receipt_block.block_height + BLOCK_HEIGHT_OFFSET,
+        )
         .await
     {
         Ok(proposal) => proposal,

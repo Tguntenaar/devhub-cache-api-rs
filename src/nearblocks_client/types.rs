@@ -3,6 +3,8 @@ use serde_json::Value;
 
 use crate::db::db_types::BlockHeight;
 
+// The RPC is sometimes not yet updated with the at the receipt block height, so we add an offset to ensure latest version
+pub const BLOCK_HEIGHT_OFFSET: i64 = 10;
 pub struct LinkedProposals(pub Vec<i32>);
 
 impl From<Option<Value>> for LinkedProposals {
