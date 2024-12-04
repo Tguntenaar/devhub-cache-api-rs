@@ -1,11 +1,11 @@
 use near_sdk::AccountId;
 use reqwest::Client;
 use serde::{Deserialize, Serialize};
+pub mod proposal;
+pub mod rfp;
 pub mod transactions;
 pub mod types;
 use types::Transaction;
-
-// TODO use nearblocks API KEY
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct ApiResponse {
@@ -56,13 +56,28 @@ impl ApiClient {
         );
         let endpoint = format!("v1/account/{}/txns", account_id);
         let url = self.base_url.clone() + &endpoint + &query_params;
-        println!("Fetching from {}", url);
-        self.client
+
+        println!("Fetching transactions from {}", url);
+
+        let response = self
+            .client
             .get(&url)
             .header("Authorization", format!("Bearer {}", self.api_key))
             .send()
-            .await?
-            .json::<ApiResponse>()
-            .await
+            .await?;
+
+        match response.json::<ApiResponse>().await {
+            Ok(api_response) => {
+                println!(
+                    "Successfully fetched {} transactions",
+                    api_response.txns.len()
+                );
+                Ok(api_response)
+            }
+            Err(e) => {
+                eprintln!("Failed to parse API response: {}", e);
+                Err(e)
+            }
+        }
     }
 }

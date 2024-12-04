@@ -908,6 +908,43 @@ impl DB {
 
         Ok((rfps, total_count))
     }
+
+    pub async fn get_proposal_with_latest_snapshot_view(
+        &self,
+        proposal_id: i32,
+    ) -> Result<Option<ProposalWithLatestSnapshotView>, sqlx::Error> {
+        let sql = r#"
+          SELECT *
+          FROM proposals_with_latest_snapshot
+          WHERE proposal_id = $1
+        "#;
+        let proposal = sqlx::query_as::<_, ProposalWithLatestSnapshotView>(sql)
+            .bind(proposal_id)
+            .fetch_optional(&self.0)
+            .await?;
+
+        Ok(proposal)
+    }
+
+    pub async fn get_latest_rfp_snapshot(
+        &self,
+        rfp_id: i32,
+    ) -> Result<Option<RfpSnapshotRecord>, sqlx::Error> {
+        let sql = r#"
+          SELECT *
+          FROM rfp_snapshots
+          WHERE rfp_id = $1
+          ORDER BY ts DESC
+          LIMIT 1
+        "#;
+
+        let snapshot = sqlx::query_as::<_, RfpSnapshotRecord>(sql)
+            .bind(rfp_id)
+            .fetch_optional(&self.0)
+            .await?;
+
+        Ok(snapshot)
+    }
 }
 
 async fn run_migrations(rocket: Rocket<Build>) -> fairing::Result {

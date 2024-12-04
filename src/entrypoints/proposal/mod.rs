@@ -13,7 +13,7 @@ use rocket::{get, http::Status, State};
 use std::convert::TryInto;
 pub mod proposal_types;
 
-// TODO use caching in search
+// TODO Use caching of search terms
 #[utoipa::path(get, path = "/proposals/search?<input>", params(
   ("input"= &str, Path, description ="The string to search for in proposal name, description, summary, and category fields."),
 ))]
@@ -158,7 +158,7 @@ async fn set_timestamp(block_height: i64, db: &State<DB>) -> Result<(), Status> 
     }
 }
 
-// TODO remove after testing
+// TODO Remove this once we go in production or put it behind authentication or a flag
 #[get("/info/clean")]
 async fn clean(db: &State<DB>) -> Result<(), Status> {
     let _ = match db.remove_all_snapshots().await {
@@ -190,7 +190,7 @@ async fn get_proposal(
     proposal_id: i32,
     contract: &State<AccountId>,
 ) -> Result<Json<VersionedProposal>, rocket::http::Status> {
-    let rpc_service = RpcService::new(contract.inner().clone());
+    let rpc_service = RpcService::new(contract);
     // We should also add rate limiting to this endpoint
     match rpc_service.get_proposal(proposal_id).await {
         Ok(proposal) => Ok(Json(proposal.data)),

@@ -25,10 +25,13 @@ const path = require("path");
 
 const ACCOUNT = "devhub.near";
 const BASE_URL = "https://api.nearblocks.io/v1/account";
-const PER_PAGE = 25;
-const API_KEY = "API_KEY";
+const PER_PAGE = 50;
+const API_KEY = process.env.NEARBLOCKS_API_KEY;
+if (!API_KEY) {
+  throw new Error("NEARBLOCKS_API_KEY environment variable is required");
+}
 const START_AFTER_BLOCK = 0;
-const RECEIPT = false;
+const RECEIPT = false; // Can't use receipt because it's not supported by the API after_block only checks after the block
 
 async function saveTransactions(blockHeight, transactions) {
   // Create a Blob containing the JSON data
@@ -44,7 +47,7 @@ async function saveTransactions(blockHeight, transactions) {
 }
 
 async function fetchTransactions(afterBlock) {
-  const url = `${BASE_URL}/${ACCOUNT}/txns?to=${ACCOUNT}&after_block=${afterBlock}&per_page=${PER_PAGE}&order=asc&page=1`;
+  const url = `${BASE_URL}/${ACCOUNT}/txns?&after_block=${afterBlock}&per_page=${PER_PAGE}&order=asc&page=1`;
 
   try {
     console.log(url);

@@ -29,9 +29,6 @@ struct QueryResponse {
 struct QueryResponseResult {
     // result is an array of bytes, to be specific it is an ASCII code of the string
     result: Vec<i32>,
-    // block_hash: String,
-    // block_height: i64,
-    // logs: Vec<String>,
 }
 
 impl Default for RpcService {
@@ -44,10 +41,10 @@ impl Default for RpcService {
 }
 
 impl RpcService {
-    pub fn new(id: AccountId) -> Self {
+    pub fn new(id: &AccountId) -> Self {
         Self {
             network: NetworkConfig::mainnet(),
-            contract: Contract(id),
+            contract: Contract(id.clone()),
         }
     }
 
