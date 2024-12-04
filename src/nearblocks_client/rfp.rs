@@ -12,15 +12,6 @@ pub async fn handle_set_rfp_block_height_callback(
     db: &State<DB>,
     contract: &AccountId,
 ) -> Result<(), Status> {
-    if !transaction.receipt_outcome.status {
-        eprintln!(
-            "RFP receipt outcome status is {:?}",
-            transaction.receipt_outcome.status
-        );
-        eprintln!("On transaction: {:?}", transaction);
-        return Ok(());
-    }
-
     let action = transaction
         .actions
         .as_ref()
@@ -56,8 +47,8 @@ pub async fn handle_set_rfp_block_height_callback(
 
     let snapshot = RfpSnapshotRecord::from_contract_rfp(
         versioned_rfp.into(),
-        transaction.receipt_block.block_timestamp,
-        transaction.receipt_block.block_height,
+        transaction.block_timestamp.parse::<i64>().unwrap(),
+        transaction.block.block_height,
     );
 
     DB::insert_rfp_snapshot(&mut tx, &snapshot).await.unwrap();
@@ -112,13 +103,13 @@ pub async fn handle_edit_rfp(
     let contract_rfp: ContractRFP = versioned_rfp.clone().into();
     println!(
         "RFP {} timestamp {}",
-        contract_rfp.id, transaction.receipt_block.block_timestamp
+        contract_rfp.id, transaction.block_timestamp
     );
 
     let snapshot = RfpSnapshotRecord::from_contract_rfp(
         versioned_rfp.into(),
-        transaction.receipt_block.block_timestamp,
-        transaction.receipt_block.block_height,
+        transaction.block_timestamp.parse::<i64>().unwrap(),
+        transaction.block.block_height,
     );
 
     DB::insert_rfp_snapshot(&mut tx, &snapshot)

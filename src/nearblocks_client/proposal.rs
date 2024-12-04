@@ -14,15 +14,6 @@ pub async fn handle_set_block_height_callback(
     db: &State<DB>,
     contract: &AccountId,
 ) -> Result<(), Status> {
-    if !transaction.receipt_outcome.status {
-        eprintln!(
-            "Proposal receipt outcome status is {:?}",
-            transaction.receipt_outcome.status
-        );
-        eprintln!("On transaction: {:?}", transaction);
-        return Ok(());
-    }
-
     let action = transaction
         .actions
         .as_ref()
@@ -66,8 +57,8 @@ pub async fn handle_set_block_height_callback(
 
     let snapshot = ProposalSnapshotRecord::from_contract_proposal(
         versioned_proposal.clone().into(),
-        transaction.receipt_block.block_timestamp,
-        transaction.receipt_block.block_height,
+        transaction.block_timestamp.parse::<i64>().unwrap(),
+        transaction.block.block_height,
     );
 
     DB::insert_proposal_snapshot(&mut tx, &snapshot)
@@ -84,17 +75,6 @@ pub async fn handle_set_block_height_callback(
         eprintln!("Failed to commit transaction: {:?}", e);
         Status::InternalServerError
     })?;
-
-    // Handle linked proposals update
-    // let new_linked_rfp = snapshot.linked_rfp;
-    // update_linked_proposals(
-    //     id,
-    //     new_linked_rfp,
-    //     transaction.receipt_block.block_height,
-    //     transaction.receipt_block.block_timestamp,
-    //     db,
-    // )
-    // .await?;
 
     Ok(())
 }
@@ -128,8 +108,8 @@ pub async fn handle_edit_proposal(
 
     let snapshot = ProposalSnapshotRecord::from_contract_proposal(
         versioned_proposal.clone().into(),
-        transaction.receipt_block.block_timestamp,
-        transaction.receipt_block.block_height,
+        transaction.block_timestamp.parse::<i64>().unwrap(),
+        transaction.block.block_height,
     );
 
     DB::insert_proposal_snapshot(&mut tx, &snapshot)
@@ -146,17 +126,6 @@ pub async fn handle_edit_proposal(
         eprintln!("Failed to commit transaction: {:?}", e);
         Status::InternalServerError
     })?;
-
-    // Handle linked proposals update
-    // let new_linked_rfp = snapshot.linked_rfp;
-    // update_linked_proposals(
-    //     id,
-    //     new_linked_rfp,
-    //     transaction.receipt_block.block_height,
-    //     transaction.receipt_block.block_timestamp,
-    //     db,
-    // )
-    // .await?;
 
     Ok(())
 }

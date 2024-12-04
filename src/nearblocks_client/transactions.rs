@@ -59,6 +59,14 @@ pub async fn process(
             .as_ref()
             .and_then(|actions| actions.first())
         {
+            if !transaction.receipt_outcome.status {
+                eprintln!(
+                    "Proposal receipt outcome status is {:?}",
+                    transaction.receipt_outcome.status
+                );
+                eprintln!("On transaction: {:?}", transaction);
+                continue;
+            }
             let result = match action.method.as_deref().unwrap_or("") {
                 "set_block_height_callback" => {
                     handle_set_block_height_callback(transaction.to_owned(), db, contract).await

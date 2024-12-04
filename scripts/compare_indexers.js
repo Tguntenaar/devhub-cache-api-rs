@@ -31,8 +31,57 @@ const fetch_from_cache = async () => {
     }
   );
   let json = await response.json();
-  // console.log(json);
   return json;
+};
+
+const print_all_object_diffs = (cache_obj, pagoda_obj) => {
+  let differences = [];
+
+  Object.keys(cache_obj).forEach((key) => {
+    if (key === "views") {
+      return;
+    }
+    if (key === "labels") {
+      let cache_labels = cache_obj[key].length;
+      let pagoda_labels = pagoda_obj[key].length;
+      console.log("label types", cache_labels, pagoda_labels);
+
+      return;
+    }
+    if (key === "timeline") {
+      if (SKIP_TIMELINE) {
+        return;
+      }
+      if (cache_obj[key].status !== pagoda_obj[key].status) {
+        differences.push({
+          key,
+          cache: cache_obj[key],
+          pagoda: pagoda_obj[key],
+          block_height: cache_obj.block_height,
+        });
+      }
+    } else if (cache_obj[key] !== pagoda_obj[key]) {
+      differences.push({
+        key,
+        cache: cache_obj[key],
+        pagoda: pagoda_obj[key],
+        block_height: cache_obj.block_height,
+      });
+    }
+  });
+
+  if (differences.length > 0) {
+    console.log("\nFound differences:");
+    differences.forEach((diff) => {
+      console.log(`  ${diff.key}:`);
+      console.log(`    cache: `, diff.cache);
+      console.log(`    pagoda: `, diff.pagoda);
+      console.log(` on block: ${diff.block_height}`);
+    });
+    console.log();
+  } else {
+    console.log(" No differences found");
+  }
 };
 
 const compare_results = async () => {
@@ -49,33 +98,25 @@ const compare_results = async () => {
 
   let cache_total = cache_result.total_records;
 
-  // Check which proposals is not the same in both indexers
-  console.log(
-    "Proposals that are not the same in both indexers: ",
-    pagoda_records
-      .filter(
-        (p) =>
-          !cache_records.some(
-            (c) =>
-              JSON.parse(p.timeline).status === JSON.parse(c.timeline).status
-          )
-      )
-      .map((p) => p.proposal_id)
-  );
+  // console.log(
+  //   "Pagoda ids: ",
+  //   pagoda_records.map((p) => [p.proposal_id, JSON.parse(p.timeline).status])
+  // );
+  // console.log(
+  //   "Cache ids: ",
+  //   cache_records.map((c) => [c.proposal_id, JSON.parse(c.timeline).status])
+  // );
 
-  console.log(
-    "Pagoda ids: ",
-    pagoda_records.map((p) => [p.proposal_id, JSON.parse(p.timeline).status])
-  );
-  console.log(
-    "Cache ids: ",
-    cache_records.map((c) => [c.proposal_id, JSON.parse(c.timeline).status])
-  );
+  for (let i = 0; i < pagoda_records.length; i++) {
+    console.log(`proposal_id: ${pagoda_records[i].proposal_id} snapshot ${i}`);
+    print_all_object_diffs(pagoda_records[i], cache_records[i]);
+  }
 
   console.log("pagoda_total, cache_total", pagoda_total, cache_total);
 };
 
 const LIMIT = 10;
 const OFFSET = 10;
+const SKIP_TIMELINE = false;
 
 compare_results();
