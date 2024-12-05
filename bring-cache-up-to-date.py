@@ -1,7 +1,7 @@
 import time
 import requests
 
-local = True 
+local = False 
 reset_from_zero = False # False to continue from where it left off  
 fly_app_name = "devhub-cache-api-rs"
 # ~120 calls for devhub
@@ -26,7 +26,7 @@ def call_api(count):
         print(response.json())
 
 def reset_cache():
-    url = f"{base_url}proposals/info/0"  # Replace with your API URL
+    url = f"{base_url}proposals/info/reset"  # Replace with your API URL
     try:
         response = requests.get(url)
         if response.status_code == 200:

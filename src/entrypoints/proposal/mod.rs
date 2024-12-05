@@ -158,6 +158,17 @@ async fn set_timestamp(cursor: &str, db: &State<DB>) -> Result<(), Status> {
     }
 }
 
+#[get("/info/reset")]
+async fn reset(db: &State<DB>) -> Result<(), Status> {
+    match db.set_last_updated_info(0, 0, "".to_string()).await {
+        Ok(()) => Ok(()),
+        Err(e) => {
+            eprintln!("Error updating timestamp: {:?}", e);
+            Err(Status::InternalServerError)
+        }
+    }
+}
+
 // TODO Remove this once we go in production or put it behind authentication or a flag
 #[get("/info/clean")]
 async fn clean(db: &State<DB>) -> Result<(), Status> {
@@ -221,7 +232,14 @@ pub fn stage() -> rocket::fairing::AdHoc {
         rocket
             .mount(
                 "/proposals/",
-                rocket::routes![get_proposals, set_timestamp, get_timestamp, search, clean],
+                rocket::routes![
+                    get_proposals,
+                    set_timestamp,
+                    get_timestamp,
+                    search,
+                    clean,
+                    reset
+                ],
             )
             .mount(
                 "/proposal/",

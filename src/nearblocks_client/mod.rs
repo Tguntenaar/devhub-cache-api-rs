@@ -95,7 +95,7 @@ impl ApiClient {
         if cursor.is_empty() {
             format!("{}&after_block=0", base_params)
         } else {
-            format!("{}&cursor={:?}", base_params, cursor)
+            format!("{}&cursor={}", base_params, cursor)
         }
     }
 }

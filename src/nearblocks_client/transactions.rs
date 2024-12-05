@@ -40,10 +40,10 @@ pub async fn update_nearblocks_data(
         || nearblocks_unwrapped
             .cursor
             .as_ref()
-            .unwrap()
+            .expect("Something went wrong with the cursor")
             .parse::<i64>()
-            .unwrap()
-            < cursor.parse::<i64>().unwrap()
+            .expect("Cursor is not a number")
+            < cursor.parse::<i64>().unwrap_or(0)
     {
         println!("Cursor has wrapped around, no new transactions to process");
         return;
