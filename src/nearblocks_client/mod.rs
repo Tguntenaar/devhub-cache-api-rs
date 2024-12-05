@@ -11,6 +11,7 @@ use types::Transaction;
 pub struct ApiResponse {
     #[serde(default)]
     pub txns: Vec<Transaction>,
+    pub cursor: Option<String>,
 }
 
 #[derive(Clone)]
@@ -42,18 +43,13 @@ impl ApiClient {
     pub async fn get_account_txns_by_pagination(
         &self,
         account_id: AccountId,
-        after_block: Option<i64>,
+        cursor: String,
         limit: Option<i32>,
         order: Option<String>,
         page: Option<i32>,
     ) -> Result<ApiResponse, reqwest::Error> {
-        let query_params = format!(
-            "?after_block={}&per_page={}&order={}&page={}",
-            after_block.unwrap_or(0),
-            limit.unwrap_or(50),
-            order.unwrap_or("asc".to_string()),
-            page.unwrap_or(1)
-        );
+        let base_params = self.build_pagination_params(limit, order, page);
+        let query_params = self.add_cursor_param(base_params, cursor);
         let endpoint = format!("v1/account/{}/txns", account_id);
         let url = self.base_url.clone() + &endpoint + &query_params;
 
@@ -78,6 +74,28 @@ impl ApiClient {
                 eprintln!("Failed to parse API response: {}", e);
                 Err(e)
             }
+        }
+    }
+
+    fn build_pagination_params(
+        &self,
+        limit: Option<i32>,
+        order: Option<String>,
+        page: Option<i32>,
+    ) -> String {
+        format!(
+            "?per_page={}&order={}&page={}",
+            limit.unwrap_or(50),
+            order.unwrap_or_else(|| "asc".to_string()),
+            page.unwrap_or(1),
+        )
+    }
+
+    fn add_cursor_param(&self, base_params: String, cursor: String) -> String {
+        if cursor.is_empty() {
+            format!("{}&after_block=0", base_params)
+        } else {
+            format!("{}&cursor={:?}", base_params, cursor)
         }
     }
 }

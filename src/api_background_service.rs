@@ -38,7 +38,7 @@ impl ApiBackgroundService {
                 match api_client
                     .get_account_txns_by_pagination(
                         contract.parse::<AccountId>().unwrap(),
-                        None,
+                        "".to_string(),
                         Some(50),
                         Some("asc".to_string()),
                         Some(1),

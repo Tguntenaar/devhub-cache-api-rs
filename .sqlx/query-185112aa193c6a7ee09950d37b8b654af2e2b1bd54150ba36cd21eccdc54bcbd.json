@@ -1,6 +1,6 @@
 {
   "db_name": "PostgreSQL",
-  "query": "\n            SELECT after_date, after_block FROM last_updated_info\n            ",
+  "query": "\n            SELECT after_date, after_block, cursor FROM last_updated_info\n            ",
   "describe": {
     "columns": [
       {
@@ -12,6 +12,11 @@
         "ordinal": 1,
         "name": "after_block",
         "type_info": "Int8"
+      },
+      {
+        "ordinal": 2,
+        "name": "cursor",
+        "type_info": "Varchar"
       }
     ],
     "parameters": {
@@ -19,8 +24,9 @@
     },
     "nullable": [
       false,
+      false,
       false
     ]
   },
-  "hash": "a27a7db324a999ef7fe62b3eb3472358b32821e7605e4837fe0a242c4c988980"
+  "hash": "185112aa193c6a7ee09950d37b8b654af2e2b1bd54150ba36cd21eccdc54bcbd"
 }

@@ -99,7 +99,7 @@ async fn get_proposals(
             db.inner(),
             contract.inner(),
             nearblocks_api_key.inner(),
-            last_updated_info,
+            last_updated_info.2,
         )
         .await;
     }
@@ -132,7 +132,7 @@ async fn get_proposal_with_all_snapshots(
             db.inner(),
             contract.inner(),
             nearblocks_api_key.inner(),
-            last_updated_info,
+            last_updated_info.2,
         )
         .await;
     }
@@ -147,9 +147,9 @@ async fn get_proposal_with_all_snapshots(
     }
 }
 
-#[get("/info/<block_height>")]
-async fn set_timestamp(block_height: i64, db: &State<DB>) -> Result<(), Status> {
-    match db.set_last_updated_info(0, block_height).await {
+#[get("/info/<cursor>")]
+async fn set_timestamp(cursor: &str, db: &State<DB>) -> Result<(), Status> {
+    match db.set_last_updated_info(0, 0, cursor.to_string()).await {
         Ok(()) => Ok(()),
         Err(e) => {
             eprintln!("Error updating timestamp: {:?}", e);
@@ -179,9 +179,9 @@ async fn clean(db: &State<DB>) -> Result<(), Status> {
 }
 
 #[get("/info")]
-async fn get_timestamp(db: &State<DB>) -> Result<Json<(i64, i64)>, Status> {
-    let (timestamp, block_height) = db.get_last_updated_info().await.unwrap();
-    Ok(Json((timestamp, block_height)))
+async fn get_timestamp(db: &State<DB>) -> Result<Json<(i64, i64, String)>, Status> {
+    let (timestamp, block_height, cursor) = db.get_last_updated_info().await.unwrap();
+    Ok(Json((timestamp, block_height, cursor)))
 }
 
 #[utoipa::path(get, path = "/proposal/{proposal_id}")]

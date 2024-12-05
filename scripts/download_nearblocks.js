@@ -30,24 +30,30 @@ const API_KEY = process.env.NEARBLOCKS_API_KEY;
 if (!API_KEY) {
   throw new Error("NEARBLOCKS_API_KEY environment variable is required");
 }
-const START_AFTER_BLOCK = 0;
+
+const CURSOR = "";
 const RECEIPT = false; // Can't use receipt because it's not supported by the API after_block only checks after the block
 
-async function saveTransactions(blockHeight, transactions) {
+async function saveTransactions(cursor, transactions) {
   // Create a Blob containing the JSON data
-  const outputDir = `./${ACCOUNT}${RECEIPT ? "-receipt" : ""}-${PER_PAGE}`;
+  const outputDir = `./${ACCOUNT}${
+    RECEIPT ? "-receipt" : ""
+  }-${PER_PAGE}-cursor`;
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir);
   }
 
   // Save file to disk
-  const filePath = path.join(outputDir, `${blockHeight}.json`);
+  const filePath = path.join(outputDir, `${cursor ? cursor : "0"}.json`);
   await fs.promises.writeFile(filePath, JSON.stringify(transactions, null, 2));
   console.log(`Saved file: ${filePath}`);
 }
 
-async function fetchTransactions(afterBlock) {
-  const url = `${BASE_URL}/${ACCOUNT}/txns?&after_block=${afterBlock}&per_page=${PER_PAGE}&order=asc&page=1`;
+async function fetchTransactions(cursor = "") {
+  // Initial start at block 0 and use cursor afterwards
+  const url = cursor
+    ? `${BASE_URL}/${ACCOUNT}/txns?per_page=${PER_PAGE}&order=asc&cursor=${cursor}`
+    : `${BASE_URL}/${ACCOUNT}/txns?after_block=0&per_page=${PER_PAGE}&order=asc&page=1`;
 
   try {
     console.log(url);
@@ -57,7 +63,7 @@ async function fetchTransactions(afterBlock) {
       },
     });
     const data = await response.json();
-    return data.txns || [];
+    return data || [];
   } catch (error) {
     console.error(
       `Error fetching transactions after block ${afterBlock}:`,
@@ -68,27 +74,25 @@ async function fetchTransactions(afterBlock) {
 }
 
 async function downloadAllTransactions() {
-  let afterBlock = START_AFTER_BLOCK;
+  let cursor = CURSOR;
   let totalDownloaded = 0;
 
   while (true) {
-    console.log(`Fetching transactions after block ${afterBlock}...`);
+    console.log(`Fetching transactions with cursor "${cursor}"...`);
 
-    const transactions = await fetchTransactions(afterBlock);
+    const data = await fetchTransactions(cursor);
+    let transactions = data.txns;
 
     if (transactions.length === 0) {
       console.log("No more transactions found. Download complete!");
       break;
     }
 
-    await saveTransactions(afterBlock, transactions);
+    await saveTransactions(cursor, transactions);
     totalDownloaded += transactions.length;
 
-    // Update afterBlock to the block height of the last transaction
-    const lastTx = transactions[transactions.length - 1];
-    let index = RECEIPT ? "receipt_block" : "block";
-    afterBlock = lastTx[index].block_height;
-    console.log(`Next after_block: ${afterBlock}`);
+    cursor = data.cursor;
+    console.log(`Next cursor: ${cursor}`);
 
     console.log(
       `Saved ${transactions.length} transactions. Total downloaded: ${totalDownloaded}`

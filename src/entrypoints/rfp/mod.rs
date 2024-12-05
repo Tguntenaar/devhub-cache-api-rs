@@ -97,7 +97,7 @@ async fn get_rfps(
             db.inner(),
             contract.inner(),
             nearblocks_api_key.inner(),
-            last_updated_info,
+            last_updated_info.2,
         )
         .await;
     }
@@ -143,7 +143,8 @@ async fn get_rfp_with_snapshots(
             db.inner(),
             contract.inner(),
             nearblocks_api_key.inner(),
-            last_updated_info,
+            // TODO stop using tuples
+            last_updated_info.2,
         )
         .await;
     }

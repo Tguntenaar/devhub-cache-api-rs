@@ -60,21 +60,23 @@ impl DB {
         }
     }
 
-    pub async fn get_last_updated_info(&self) -> Result<(i64, i64), Error> {
+    pub async fn get_last_updated_info(&self) -> Result<(i64, i64, String), Error> {
         let rec = query!(
             r#"
-            SELECT after_date, after_block FROM last_updated_info
+            SELECT after_date, after_block, cursor FROM last_updated_info
             "#
         )
         .fetch_one(&self.0)
         .await?;
-        Ok((rec.after_date, rec.after_block))
+        Ok((rec.after_date, rec.after_block, rec.cursor))
     }
 
+    // TODO: Remove after_date and block_height if cursor is working
     pub async fn set_last_updated_info(
         &self,
         after_date: i64,
         after_block: BlockHeight,
+        cursor: String,
     ) -> Result<(), Error> {
         println!(
             "Storing timestamp: {} and block: {}",
@@ -83,10 +85,11 @@ impl DB {
         println!("Storing date: {}", timestamp_to_date_string(after_date));
         sqlx::query!(
             r#"
-            UPDATE last_updated_info SET after_date = $1, after_block = $2
+            UPDATE last_updated_info SET after_date = $1, after_block = $2, cursor = $3
             "#,
             after_date,
-            after_block
+            after_block,
+            cursor
         )
         .execute(&self.0)
         .await?;

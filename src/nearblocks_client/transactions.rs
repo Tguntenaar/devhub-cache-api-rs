@@ -10,14 +10,14 @@ pub async fn update_nearblocks_data(
     db: &DB,
     contract: &AccountId,
     nearblocks_api_key: &str,
-    last_updated_info: (i64, i64),
+    cursor: String,
 ) {
     let nearblocks_client = nearblocks_client::ApiClient::new(nearblocks_api_key.to_string());
 
     let nearblocks_unwrapped = match nearblocks_client
         .get_account_txns_by_pagination(
             contract.clone(),
-            Some(last_updated_info.1),
+            cursor.clone(),
             Some(50),
             Some("asc".to_string()),
             Some(1),
@@ -36,6 +36,19 @@ pub async fn update_nearblocks_data(
         nearblocks_unwrapped.txns.len()
     );
 
+    if nearblocks_unwrapped.cursor.is_none()
+        || nearblocks_unwrapped
+            .cursor
+            .as_ref()
+            .unwrap()
+            .parse::<i64>()
+            .unwrap()
+            < cursor.parse::<i64>().unwrap()
+    {
+        println!("Cursor has wrapped around, no new transactions to process");
+        return;
+    }
+
     let _ =
         nearblocks_client::transactions::process(&nearblocks_unwrapped.txns, db.into(), contract)
             .await;
@@ -43,7 +56,11 @@ pub async fn update_nearblocks_data(
     if let Some(transaction) = nearblocks_unwrapped.txns.last() {
         let timestamp_nano = transaction.block_timestamp.parse::<i64>().unwrap();
         let _ = db
-            .set_last_updated_info(timestamp_nano, transaction.block.block_height)
+            .set_last_updated_info(
+                timestamp_nano,
+                transaction.block.block_height,
+                nearblocks_unwrapped.cursor.as_ref().unwrap().clone(),
+            )
             .await;
     }
 }
@@ -64,7 +81,7 @@ pub async fn process(
                     "Proposal receipt outcome status is {:?}",
                     transaction.receipt_outcome.status
                 );
-                eprintln!("On transaction: {:?}", transaction);
+                // eprintln!("On transaction: {:?}", transaction);
                 continue;
             }
             let result = match action.method.as_deref().unwrap_or("") {
