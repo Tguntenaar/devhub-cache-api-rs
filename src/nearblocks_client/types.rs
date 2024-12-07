@@ -1,6 +1,37 @@
 use serde::{Deserialize, Serialize};
+use serde_json::Value;
 
 use crate::db::db_types::BlockHeight;
+
+// The RPC is sometimes not yet updated with the at the receipt block height, so we add an offset to ensure latest version
+pub const BLOCK_HEIGHT_OFFSET: i64 = 10;
+pub struct LinkedProposals(pub Vec<i32>);
+
+impl From<Option<Value>> for LinkedProposals {
+    fn from(value: Option<Value>) -> Self {
+        if let Some(Value::Array(arr)) = value {
+            let vec = arr
+                .into_iter()
+                .filter_map(|v| v.as_i64().map(|n| n as i32))
+                .collect();
+            LinkedProposals(vec)
+        } else {
+            LinkedProposals(Vec::new())
+        }
+    }
+}
+
+impl From<LinkedProposals> for Option<Value> {
+    fn from(linked_proposals: LinkedProposals) -> Self {
+        Some(Value::Array(
+            linked_proposals
+                .0
+                .into_iter()
+                .map(|n| Value::Number(n.into()))
+                .collect(),
+        ))
+    }
+}
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Transaction {

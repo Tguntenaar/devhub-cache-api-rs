@@ -60,21 +60,23 @@ impl DB {
         }
     }
 
-    pub async fn get_last_updated_info(&self) -> Result<(i64, i64), Error> {
+    pub async fn get_last_updated_info(&self) -> Result<(i64, i64, String), Error> {
         let rec = query!(
             r#"
-            SELECT after_date, after_block FROM last_updated_info
+            SELECT after_date, after_block, cursor FROM last_updated_info
             "#
         )
         .fetch_one(&self.0)
         .await?;
-        Ok((rec.after_date, rec.after_block))
+        Ok((rec.after_date, rec.after_block, rec.cursor))
     }
 
+    // TODO: Remove after_date and block_height if cursor is working
     pub async fn set_last_updated_info(
         &self,
         after_date: i64,
         after_block: BlockHeight,
+        cursor: String,
     ) -> Result<(), Error> {
         println!(
             "Storing timestamp: {} and block: {}",
@@ -83,10 +85,11 @@ impl DB {
         println!("Storing date: {}", timestamp_to_date_string(after_date));
         sqlx::query!(
             r#"
-            UPDATE last_updated_info SET after_date = $1, after_block = $2
+            UPDATE last_updated_info SET after_date = $1, after_block = $2, cursor = $3
             "#,
             after_date,
-            after_block
+            after_block,
+            cursor
         )
         .execute(&self.0)
         .await?;
@@ -501,6 +504,23 @@ impl DB {
         Ok(())
     }
 
+    pub async fn remove_all_data(&self) -> anyhow::Result<()> {
+        sqlx::query!(r#"DELETE FROM proposals"#)
+            .execute(&self.0)
+            .await?;
+
+        sqlx::query!(r#"DELETE FROM rfps"#).execute(&self.0).await?;
+
+        sqlx::query!(r#"DELETE FROM proposal_snapshots"#)
+            .execute(&self.0)
+            .await?;
+
+        sqlx::query!(r#"DELETE FROM rfp_snapshots"#)
+            .execute(&self.0)
+            .await?;
+        Ok(())
+    }
+
     pub async fn insert_rfp_snapshot(
         tx: &mut Transaction<'static, Postgres>,
         snapshot: &RfpSnapshotRecord,
@@ -642,10 +662,10 @@ impl DB {
                 AND ($5 IS NULL OR ps.timeline::text ~ $5)
                 AND ($6 IS NULL OR ps.category = $6)
                 AND ($7 IS NULL OR ps.labels::jsonb ?| $7)
-            ORDER BY {order}
+            ORDER BY {}
             LIMIT $1 OFFSET $2
             "#,
-            order = order_clause,
+            order_clause,
         );
 
         // Build the SQL query for counting total records
@@ -803,6 +823,8 @@ impl DB {
             proposal_snapshots proposal
         WHERE
            proposal.proposal_id = $1
+        ORDER BY
+            proposal.ts DESC
         "#;
 
         // Execute the data query
@@ -888,6 +910,43 @@ impl DB {
             .await?;
 
         Ok((rfps, total_count))
+    }
+
+    pub async fn get_proposal_with_latest_snapshot_view(
+        &self,
+        proposal_id: i32,
+    ) -> Result<Option<ProposalWithLatestSnapshotView>, sqlx::Error> {
+        let sql = r#"
+          SELECT *
+          FROM proposals_with_latest_snapshot
+          WHERE proposal_id = $1
+        "#;
+        let proposal = sqlx::query_as::<_, ProposalWithLatestSnapshotView>(sql)
+            .bind(proposal_id)
+            .fetch_optional(&self.0)
+            .await?;
+
+        Ok(proposal)
+    }
+
+    pub async fn get_latest_rfp_snapshot(
+        &self,
+        rfp_id: i32,
+    ) -> Result<Option<RfpSnapshotRecord>, sqlx::Error> {
+        let sql = r#"
+          SELECT *
+          FROM rfp_snapshots
+          WHERE rfp_id = $1
+          ORDER BY ts DESC
+          LIMIT 1
+        "#;
+
+        let snapshot = sqlx::query_as::<_, RfpSnapshotRecord>(sql)
+            .bind(rfp_id)
+            .fetch_optional(&self.0)
+            .await?;
+
+        Ok(snapshot)
     }
 }
 

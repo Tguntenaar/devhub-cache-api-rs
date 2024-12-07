@@ -29,9 +29,6 @@ struct QueryResponse {
 struct QueryResponseResult {
     // result is an array of bytes, to be specific it is an ASCII code of the string
     result: Vec<i32>,
-    // block_hash: String,
-    // block_height: i64,
-    // logs: Vec<String>,
 }
 
 impl Default for RpcService {
@@ -44,10 +41,10 @@ impl Default for RpcService {
 }
 
 impl RpcService {
-    pub fn new(id: AccountId) -> Self {
+    pub fn new(id: &AccountId) -> Self {
         Self {
             network: NetworkConfig::mainnet(),
-            contract: Contract(id),
+            contract: Contract(id.clone()),
         }
     }
 
@@ -55,7 +52,6 @@ impl RpcService {
         &self,
         proposal_id: i32,
     ) -> Result<Data<VersionedProposal>, near_api::errors::QueryError<RpcQueryRequest>> {
-        // TODO get cached proposal
         let result: Result<Data<VersionedProposal>, _> = self
             .contract
             .call_function("get_proposal", json!({ "proposal_id": proposal_id }))
@@ -116,16 +112,18 @@ impl RpcService {
 
         match result {
             Ok(res) => Ok(res.data),
-            Err(e) => {
-                // After Block 122723375 & 122938305
-                // TODO caught error:
-                // Failed to get proposal on block: DeserializeError(Error("missing field `kyc_verified`", line: 0, column: 0))
-                eprintln!(
-                    "Failed to get proposal on block: {:?}, block_id: {}",
-                    e, block_id
-                );
-                Err(Status::InternalServerError)
-            }
+            Err(on_block_error) => match self.get_proposal(proposal_id).await {
+                Ok(proposal) => Ok(proposal.data),
+                Err(rpc_error) => {
+                    eprintln!(
+                        "Failed to get proposal from RPC on block height {} and id {}",
+                        block_id, proposal_id,
+                    );
+                    eprintln!("{:?}", on_block_error);
+                    eprintln!("{:?}", rpc_error);
+                    Err(Status::InternalServerError)
+                }
+            },
         }
     }
 
