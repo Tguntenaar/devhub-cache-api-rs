@@ -116,12 +116,13 @@ async fn get_proposals(
     )))
 }
 
-#[get("/sync")]
+#[get("/sync?<limit>")]
 async fn sync_proposals(
     db: &State<DB>,
     contract: &State<AccountId>,
+    limit: Option<usize>,
 ) -> Result<Json<Vec<i32>>, Status> {
-    match PeriodicUpdater::sync_proposals(db, contract).await {
+    match PeriodicUpdater::sync_proposals(db, contract, limit).await {
         Ok(last_ten_proposal_ids) => Ok(Json(last_ten_proposal_ids)),
         Err(e) => {
             eprintln!("Failed to sync proposals: {}", e);

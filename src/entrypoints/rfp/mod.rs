@@ -67,9 +67,13 @@ async fn fetch_rfps(
     }
 }
 
-#[get("/sync")]
-async fn sync_rfps(db: &State<DB>, contract: &State<AccountId>) -> Result<Json<Vec<i32>>, Status> {
-    match PeriodicUpdater::sync_rfps(db, contract).await {
+#[get("/sync?<limit>")]
+async fn sync_rfps(
+    db: &State<DB>,
+    contract: &State<AccountId>,
+    limit: Option<usize>,
+) -> Result<Json<Vec<i32>>, Status> {
+    match PeriodicUpdater::sync_rfps(db, contract, limit).await {
         Ok(last_ten_rfp_ids) => Ok(Json(last_ten_rfp_ids)),
         Err(e) => {
             eprintln!("Failed to sync RFPs: {}", e);

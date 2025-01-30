@@ -19,7 +19,11 @@ pub struct PeriodicUpdater {
 
 impl PeriodicUpdater {
     // Helper function to sync proposals
-    pub async fn sync_proposals(db: &DB, contract: &AccountId) -> Result<Vec<i32>, String> {
+    pub async fn sync_proposals(
+        db: &DB,
+        contract: &AccountId,
+        limit: Option<usize>,
+    ) -> Result<Vec<i32>, String> {
         let rpc_service = RpcService::new(contract);
         let proposal_ids = match rpc_service.get_all_proposal_ids().await {
             Ok(ids) => ids,
@@ -29,10 +33,10 @@ impl PeriodicUpdater {
             }
         };
 
-        let last_ten_proposal_ids = proposal_ids
+        let last_proposal_ids = proposal_ids
             .iter()
             .rev()
-            .take(20)
+            .take(limit.unwrap_or(15))
             .copied()
             .collect::<Vec<_>>();
 
@@ -41,7 +45,7 @@ impl PeriodicUpdater {
             e.to_string()
         })?;
 
-        for proposal_id in last_ten_proposal_ids.clone() {
+        for proposal_id in last_proposal_ids.clone() {
             println!("syncing proposal_id: {}", proposal_id);
             let proposal = rpc_service.get_proposal(proposal_id).await.unwrap();
             let block_timestamp = rpc_service
@@ -76,11 +80,15 @@ impl PeriodicUpdater {
             e.to_string()
         })?;
 
-        Ok(last_ten_proposal_ids)
+        Ok(last_proposal_ids)
     }
 
     // Helper function to sync RFPs
-    pub async fn sync_rfps(db: &DB, contract: &AccountId) -> Result<Vec<i32>, String> {
+    pub async fn sync_rfps(
+        db: &DB,
+        contract: &AccountId,
+        limit: Option<usize>,
+    ) -> Result<Vec<i32>, String> {
         let rpc_service = RpcService::new(contract);
         let rfp_ids = match rpc_service.get_all_rfp_ids().await {
             Ok(ids) => ids,
@@ -90,14 +98,19 @@ impl PeriodicUpdater {
             }
         };
 
-        let last_ten_rfp_ids = rfp_ids.iter().rev().take(10).copied().collect::<Vec<_>>();
+        let last_rfp_ids = rfp_ids
+            .iter()
+            .rev()
+            .take(limit.unwrap_or(5))
+            .copied()
+            .collect::<Vec<_>>();
 
         let mut tx = db.begin().await.map_err(|e| {
             eprintln!("Failed to begin transaction: {:?}", e);
             e.to_string()
         })?;
 
-        for rfp_id in last_ten_rfp_ids.clone() {
+        for rfp_id in last_rfp_ids.clone() {
             println!("syncing rfp_id: {}", rfp_id);
             let rfp = rpc_service.get_rfp(rfp_id).await.unwrap();
             let block_timestamp = rpc_service.block_timestamp(rfp.block_height).await.unwrap();
@@ -126,7 +139,7 @@ impl PeriodicUpdater {
             e.to_string()
         })?;
 
-        Ok(last_ten_rfp_ids)
+        Ok(last_rfp_ids)
     }
 }
 
@@ -161,7 +174,8 @@ impl Fairing for PeriodicUpdater {
                 loop {
                     interval.tick().await;
                     println!("Running periodic update for Proposals...");
-                    if let Err(e) = Self::sync_proposals(&db_clone, &contract_clone).await {
+                    if let Err(e) = Self::sync_proposals(&db_clone, &contract_clone, Some(15)).await
+                    {
                         eprintln!("Error during proposal sync: {}", e);
                     }
                 }
@@ -179,7 +193,7 @@ impl Fairing for PeriodicUpdater {
                 loop {
                     interval.tick().await;
                     println!("Running periodic update for RFPs...");
-                    if let Err(e) = Self::sync_rfps(&db_clone, &contract_clone).await {
+                    if let Err(e) = Self::sync_rfps(&db_clone, &contract_clone, Some(5)).await {
                         eprintln!("Error during RFP sync: {}", e);
                     }
                 }
