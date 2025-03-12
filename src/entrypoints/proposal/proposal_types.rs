@@ -1,16 +1,25 @@
+use crate::db::db_types::ProposalSnapshotRecord;
 use devhub_shared::proposal::{
     Proposal, ProposalFundingCurrency, ProposalId, VersionedProposalBody,
 };
 use near_sdk::near;
+use rocket::form::FromForm;
 use rocket::serde::{Deserialize, Serialize};
 use std::collections::HashSet;
-
-// Assuming these are the types you are working with
-use devhub_cache_api::db::types::ProposalSnapshotRecord;
+use utoipa::ToSchema;
 // NOTE should this be VersionedProposal instead of Proposal?
 use devhub_shared::proposal::Proposal as ContractProposal;
 
-// Define a trait for accessing various fields
+#[derive(Clone, Debug, FromForm, ToSchema)]
+pub struct GetProposalFilters {
+    pub category: Option<String>,
+    pub labels: Option<Vec<String>>,
+    pub input: Option<String>,
+    pub author_id: Option<String>,
+    pub stage: Option<String>,
+    pub block_timestamp: Option<i64>,
+}
+
 pub trait ProposalBodyFields {
     fn get_name(&self) -> &String;
     fn get_category(&self) -> &String;
@@ -30,7 +39,6 @@ pub trait ProposalFundingCurrencyToString {
     fn to_string(&self) -> String;
 }
 
-// Implement the new trait for ProposalFundingCurrency
 impl ProposalFundingCurrencyToString for ProposalFundingCurrency {
     fn to_string(&self) -> String {
         match self {
@@ -41,7 +49,7 @@ impl ProposalFundingCurrencyToString for ProposalFundingCurrency {
         }
     }
 }
-// Implement the trait for VersionedProposalBody
+
 impl ProposalBodyFields for VersionedProposalBody {
     fn get_name(&self) -> &String {
         match self {
@@ -150,14 +158,12 @@ impl ProposalBodyFields for VersionedProposalBody {
             }
         }
     }
-    // Implement more methods as needed
 }
 
-// Define a trait for the conversion
 pub trait FromContractProposal {
     fn from_contract_proposal(
         proposal: ContractProposal,
-        timestamp: String,
+        timestamp: i64,
         block_height: i64,
     ) -> Self;
 }
@@ -165,13 +171,13 @@ pub trait FromContractProposal {
 impl FromContractProposal for ProposalSnapshotRecord {
     fn from_contract_proposal(
         proposal: ContractProposal,
-        timestamp: String,
+        timestamp: i64,
         block_height: i64,
     ) -> Self {
         ProposalSnapshotRecord {
             proposal_id: proposal.id as i32,
             block_height,
-            ts: timestamp.parse::<i64>().unwrap_or_default(),
+            ts: timestamp,
             editor_id: proposal.snapshot.editor_id.to_string(),
             social_db_post_block_height: proposal.social_db_post_block_height as i64,
             labels: serde_json::Value::from(Vec::from_iter(

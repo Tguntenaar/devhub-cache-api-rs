@@ -1,83 +1,35 @@
-use rocket::{catch, catchers, get, launch, routes};
-use std::sync::Arc;
-use utoipa::OpenApi;
-use utoipa_swagger_ui::SwaggerUi;
-mod entrypoints;
-use devhub_cache_api::db;
-use entrypoints::ApiDoc;
-use rocket_cors::AllowedOrigins;
+pub mod changelog;
+pub mod db;
+pub mod entrypoints;
+pub mod nearblocks_client;
+pub mod rpc_service;
+pub mod types;
 
-#[get("/")]
-fn index() -> &'static str {
-    "Welcome from fly.io!!!!!"
+use chrono::DateTime;
+use regex::Regex;
+
+pub fn timestamp_to_date_string(timestamp: i64) -> String {
+    // Convert the timestamp to a NaiveDateTime
+    let datetime = DateTime::from_timestamp_nanos(timestamp);
+
+    // Format the NaiveDateTime to a string in YYYY-MM-DD format
+    datetime.format("%Y-%m-%d").to_string()
 }
 
-// Allow robots to crawl the site
-#[get("/robots.txt")]
-fn robots() -> &'static str {
-    "User-agent: *\nDisallow: /"
-}
+pub fn separate_number_and_text(s: &str) -> (Option<i32>, String) {
+    let number_regex = Regex::new(r"\d+").unwrap();
 
-#[catch(422)]
-fn unprocessable_entity() -> &'static str {
-    "Custom 422 Error: Unprocessable Entity"
-}
-
-#[catch(500)]
-fn internal_server_error() -> &'static str {
-    "Custom 500 Error: Internal Server Error"
-}
-
-#[catch(404)]
-fn not_found() -> &'static str {
-    "Custom 404 Error: Not Found"
-}
-
-#[catch(400)]
-fn bad_request() -> &'static str {
-    "Custom 400 Error: Bad Request"
-}
-
-#[launch]
-fn rocket() -> _ {
-    dotenvy::dotenv().ok();
-    let atomic_bool = Arc::new(std::sync::atomic::AtomicBool::new(true));
-
-    let allowed_origins = AllowedOrigins::some_exact(&[
-        "http://localhost:3000",
-        "https://devhub-cache-api-rs.fly.dev", // TODO Add prod urls here
-    ]);
-    let cors = rocket_cors::CorsOptions {
-        allowed_origins,
-        ..Default::default()
+    if let Some(matched) = number_regex.find(s) {
+        let number_str = matched.as_str();
+        let number = number_str.parse::<i32>().unwrap();
+        let text = s.replacen(number_str, "", 1).trim().to_string();
+        (Some(number), text)
+    } else {
+        (None, s.trim().to_string())
     }
-    .to_cors()
-    .expect("Failed to create cors config");
+}
 
-    rocket::build()
-        .attach(cors)
-        .attach(db::stage())
-        .mount("/", routes![robots, index])
-        .attach(entrypoints::stage())
-        .attach(rocket::fairing::AdHoc::on_shutdown(
-            "Stop loading users from Near and Github metadata",
-            |_| {
-                Box::pin(async move {
-                    atomic_bool.store(false, std::sync::atomic::Ordering::Relaxed);
-                })
-            },
-        ))
-        .mount(
-            "/",
-            SwaggerUi::new("/swagger-ui/<_..>").url("/api-docs/openapi.json", ApiDoc::openapi()),
-        )
-        .register(
-            "/",
-            catchers![
-                unprocessable_entity,
-                internal_server_error,
-                not_found,
-                bad_request
-            ],
-        )
+#[rocket::launch]
+fn rocket() -> _ {
+    devhub_cache_api::rocket(None)
 }

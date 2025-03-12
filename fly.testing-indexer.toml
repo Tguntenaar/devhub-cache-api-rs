@@ -1,13 +1,15 @@
-# fly.toml app configuration file generated for devhub-cache-api-rs on 2024-11-09T09:10:37+07:00
+# fly.toml app configuration file generated for testing-indexer on 2024-11-15T08:25:29-06:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'devhub-cache-api-rs'
+app = 'testing-indexer'
 primary_region = 'ams'
 
+[build]
+
 [env]
-CONTRACT = 'devhub.near'
+CONTRACT = 'testing-indexer.near'
 ROCKET_PROFILE = 'release'
 
 [http_service]

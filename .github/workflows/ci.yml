@@ -14,26 +14,46 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Install Rust
-        uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
-          components: clippy
+      - name: Install Rust toolchain
+        uses: dsherret/rust-toolchain-file@v1
 
-      - name: Build the project
-        run: cargo build --verbose
-
-      - name: Run tests
-        run: cargo test --verbose
-
-      - name: Run clippy
-        run: cargo clippy -- -D warnings
-
-      - name: Install cargo audit
+      - name: Install Dependencies and Set up PostgreSQL
         run: |
-          cargo install cargo-audit
+          sudo apt-get update -y && sudo apt-get install -y libssl-dev ca-certificates libudev-dev libusb-1.0-0-dev pkg-config libudev-dev build-essential
+          sudo service postgresql start
+          sudo su - postgres -c "
+            psql -c \"CREATE DATABASE devhub_cache_api_rs\"
+            psql -c \"CREATE ROLE devhub_cache_api_rs WITH LOGIN SUPERUSER PASSWORD 'password';\"
+            psql -c \"ALTER ROLE devhub_cache_api_rs CREATEDB;\"
+            psql -d devhub_cache_api_rs -c \"GRANT ALL PRIVILEGES ON DATABASE devhub_cache_api_rs TO devhub_cache_api_rs;\"
+            psql -d devhub_cache_api_rs -c \"GRANT ALL ON SCHEMA public TO devhub_cache_api_rs;\"
+          "
 
-      - name: Run cargo audit
-        run: cargo audit
+      - name: Install SQlx and cargo audit
+        run: cargo install sqlx-cli cargo-audit
+
+      - name: Create database and Run migrations
+        run: |
+          cargo sqlx database create
+          cargo sqlx migrate run
+        env:
+          DATABASE_URL: postgres://devhub_cache_api_rs:password@127.0.0.1:5432/devhub_cache_api_rs
+
+      - name: Build and test the project
+        run: |
+          cargo build --verbose
+          cargo test --verbose
+        env:
+          SQLX_OFFLINE: true
+          CONTRACT: devhub.near
+          DATABASE_URL: postgres://devhub_cache_api_rs:password@127.0.0.1:5432/devhub_cache_api_rs
+          NEARBLOCKS_API_KEY: ${{ secrets.NEARBLOCKS_API_KEY }}
+          FASTNEAR_API_KEY: ${{ secrets.FASTNEAR_API_KEY }}
+          ENV: GH_ACTION
+
+      - name: Run clippy and audit
+        run:
+          cargo clippy -- -D warnings
+          # cargo audit

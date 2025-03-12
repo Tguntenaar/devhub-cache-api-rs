@@ -1,0 +1,14 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "DELETE FROM rfp_snapshots WHERE rfp_id = $1",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Int4"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "81b0805a56a580053568584dc4dffabd011cffd0fdb1a5d685d1b1cf03ad04c9"
+}

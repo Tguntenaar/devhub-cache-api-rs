@@ -5,6 +5,12 @@ This repository leverages PostgreSQL as a caching layer to reduce DevHub's RPC c
 ## Develop
 
 ```sh
+cargo run
+```
+
+or
+
+```sh
 cargo watch -q -c -w src/ -x 'run '
 ```
 
@@ -13,6 +19,8 @@ cargo watch -q -c -w src/ -x 'run '
 [More information](https://github.com/launchbadge/sqlx/tree/main/sqlx-cli)
 
 ### Create and run migrations
+
+*Github codespace*: If the database server is not running, you can start it by typing `sudo service postgresql start`.
 
 ```bash
 sqlx migrate add <name>
@@ -30,17 +38,27 @@ sqlx migrate run
 Compares the migration history of the running database against the `migrations/` folder and runs
 any scripts that are still pending.
 
----
+## Deploy
 
-## Rust + Rocket + Fly.io
+Until the ci/cd.yml is fixed the only way to deploy is with the fly cli.
 
-```sh
-git clone --single-branch --branch rocket git@github.com:superfly/rust-templates.git rocket-app
-cd rocket-app
-```
-
+Install for linux:
 ```sh
 curl -L https://fly.io/install.sh | sh
-fly launch --generate-name
 ```
+
+Install for Mac:
+```sh
+brew install flyctl
+```
+
+Then 
+```
+fly deploy -c fly.*.toml
+```
+
+
+How to deploy when Starting from a blockheight. For instance templar we added proposals removed everything and rebuild it
+Templar contract was deleted after https://nearblocks.io/txns/FzKXtDhvR3oFWxqDvfXNVp8HUgmcrNkYtmccEjbaFCMj this txn. So we only want to indexer after this.
+
 
